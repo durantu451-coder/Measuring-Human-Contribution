@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15903001",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThis disclosure involves development and deployment platforms for decision algorithms. For example, a computing system provides software development interface to a client device. The system sets, based on an input from the client device via the interface, a decision engine to a test mode that causes the decision engine to operate on test data stored in a first database and that prevents the decision engine from applying operations from the client device to production data stored in a second database. The system also configures the decision engine in the test mode to execute a different decision algorithms on the test data. The system also sets, based on another input via the interface, the decision engine to a deployment mode that causes the decision engine to operate on the production data. The system configures the decision engine in the deployment mode to execute one or more of the tested decision algorithms.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThis disclosure involves development and deployment platforms for decision algorithms. For example, a computing system provides software development interface to a client device. The system sets, based on an input from the client device via the interface, a decision engine to a test mode that causes the decision engine to operate on test data stored in a first database and that prevents the decision engine from applying operations from the client device to production data stored in a second database. The system also configures the decision engine in the test mode to execute a different decision algorithms on the test data. The system also sets, based on another input via the interface, the decision engine to a deployment mode that causes the decision engine to operate on the production data. The system configures the decision engine in the deployment mode to execute one or more of the tested decision algorithms.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The disclosure describes development and deployment platforms for decision algorithms.\n- A computing system provides a software development interface to a client device.\n- The system can set a decision engine to test mode, where it operates on test data and prevents client operations from affecting production data.\n- In test mode, the decision engine can execute different decision algorithms on the test data.\n- The system can switch the decision engine to deployment mode, where it operates on production data using one or more tested decision algorithms.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA computing system provides a software development interface for decision algorithms, enabling a decision engine to run in a test mode on test data while preventing operations from affecting production data. After testing different algorithms, the system can switch the decision engine to deployment mode to execute selected tested algorithms on production data, supporting safer development and deployment.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: This, For, The"
+  },
+  "outputs": {
+    "L1": "This disclosure relates to development and deployment platforms for decision algorithms. For example, a computing system provides a software development interface to a client device. Based on input received from the client device via the interface, the system sets a decision engine to a test mode, causing the decision engine to operate on test data stored in a first database while preventing the decision engine from applying operations from the client device to production data stored in a second database. The system also configures the decision engine, while in the test mode, to execute different decision algorithms on the test data. Based on another input received via the interface, the system sets the decision engine to a deployment mode, causing the decision engine to operate on the production data. In the deployment mode, the system configures the decision engine to execute one or more of the tested decision algorithms.",
+    "L2": "This disclosure relates to platforms used to develop and deploy decision algorithms. In one example, a computing system supplies a software development interface to a client device. Using input received from the client device through that interface, the system places a decision engine into a test mode. In this mode, the decision engine processes test data contained in a first database and is prevented from carrying out operations requested by the client device on production data stored in a second database. While the decision engine is in the test mode, the system further configures it to run different decision algorithms on the test data. Based on a separate input received through the interface, the system then switches the decision engine into a deployment mode, in which the decision engine operates on the production data. In the deployment mode, the system configures the decision engine to run one or more of the decision algorithms that were tested.",
+    "L3": "The disclosure describes development and deployment platforms for decision algorithms. In particular, it relates to a computing system that supports the creation, testing, validation, and deployment of decision algorithms in a controlled environment.\n\nIn some implementations, the computing system provides a software development interface to a client device. The software development interface may allow a user, developer, or administrator to configure decision logic, define decision algorithms, select data sources, review test results, and manage deployment settings. Through the interface, the client device can interact with the computing system to develop or modify decision algorithms before those algorithms are used in a production environment.\n\nThe computing system can set a decision engine to a test mode. While operating in test mode, the decision engine uses test data rather than production data. The test data may include sample data, simulated data, historical data, anonymized data, or other non-production data suitable for evaluating decision logic. In this mode, the system prevents client operations from affecting production data or production systems. For example, decisions generated during testing may be logged, displayed, compared, or analyzed, but may be prevented from triggering real-world transactions, updating production records, or modifying live operational data.\n\nWhile the decision engine is in test mode, it can execute different decision algorithms on the test data. This allows multiple versions of an algorithm, alternative rule sets, machine-learning models, scoring functions, or decision workflows to be evaluated under similar conditions. The system may compare outputs from different algorithms, measure performance, identify errors, and allow a user to refine the algorithms before deployment. As a result, the test mode provides a safe environment for experimentation and validation.\n\nAfter one or more decision algorithms have been tested, the computing system can switch the decision engine from test mode to deployment mode. In deployment mode, the decision engine operates on production data and applies one or more of the tested decision algorithms. Decisions generated in deployment mode may be used to perform client operations, update production data, generate responses, initiate workflows, or otherwise affect live system behavior. By separating test mode from deployment mode, the platform enables decision algorithms to be developed and verified before they are applied to production data and operational processes.",
+    "L4": "A computing system provides a software development interface that allows developers, data scientists, or administrators to create, configure, modify, and evaluate decision algorithms before those algorithms are used in a live production environment. The interface may be used to define decision logic, select input parameters, connect to data sources, establish rule sets, train or tune algorithmic models, and specify expected outputs or operational constraints. The computing system includes or communicates with a decision engine that executes the decision algorithms and produces decisions, recommendations, classifications, approvals, denials, rankings, scores, alerts, or other automated outputs based on supplied data.\n\nTo support safe development, the decision engine may be placed in a test mode. In the test mode, the decision engine executes one or more candidate decision algorithms using test data, simulated data, historical data, anonymized data, or copied production-like data. While operating in the test mode, the system prevents the decision engine from performing actions that would affect production data or production operations. For example, the system may block write operations to production databases, prevent external notifications from being sent, disable transaction execution, restrict access to live customer records, or redirect outputs to a sandbox environment, audit log, or test repository. In this manner, developers can observe how a decision algorithm would behave under realistic conditions without risking unintended changes to production systems.\n\nThe software development interface may allow multiple algorithms or multiple versions of an algorithm to be tested and compared. The system may record test results, including input data, generated outputs, execution time, error conditions, confidence values, performance metrics, accuracy measures, rule conflicts, approval rates, false positive rates, false negative rates, or other evaluation information. These results may be displayed through dashboards, reports, logs, or comparison tools so that users can determine which algorithm or version is most suitable for deployment. The system may also support automated validation checks, such as verifying that an algorithm satisfies business rules, regulatory requirements, data access policies, or performance thresholds before it is eligible for production use.\n\nAfter testing is complete, an authorized user or automated deployment process may select one or more tested decision algorithms for use in a live environment. The computing system can then switch the decision engine from the test mode to a deployment mode. In the deployment mode, the decision engine executes the selected tested algorithm or algorithms on production data and is permitted to generate outputs that affect production operations. For example, the decision engine may update production records, approve or reject transactions, send instructions to downstream systems, trigger alerts, initiate workflows, or provide decisions to production applications.\n\nThe system may maintain separation between test and production environments by enforcing access controls, execution permissions, data routing rules, environment flags, version controls, or deployment policies. Only algorithms that have been tested and approved may be made available for deployment. The system may also preserve prior versions of deployed algorithms, allowing rollback if a newly deployed algorithm produces unexpected results. In some implementations, the decision engine may support staged deployment, shadow deployment, limited rollout, or A/B testing, in which a tested algorithm is gradually introduced into production while its behavior is monitored.\n\nBy enabling decision algorithms to be developed and executed in a controlled test mode before being deployed against production data, the computing system reduces the risk of errors, unintended data modifications, and operational disruptions. The system therefore provides a safer and more reliable framework for developing, validating, selecting, and deploying automated decision-making logic.",
+    "L5": "This is a simple text created for the purpose of using the keywords provided. The words “This,” “For,” and “The” are common in English and can be used in many different kinds of sentences. This example shows how even small words can help build clear meaning. For writers, these words are useful because they connect ideas and make sentences easier to understand. The importance of such basic words should not be underestimated."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style abstract for an invention about a software development platform that lets users test decision algorithms on test data before deploying them to production data.",
+      "output": "A software development platform is disclosed for developing, evaluating, and deploying decision algorithms. The platform provides an interface for defining or selecting a decision algorithm, associating the decision algorithm with test data, and executing the decision algorithm in a test environment prior to deployment in a production environment. The platform may generate execution results, performance metrics, validation outputs, and comparison data indicating operation of the decision algorithm against the test data. In response to user review or satisfaction of one or more deployment criteria, the platform enables controlled promotion of the decision algorithm to operate on production data. The platform may further maintain version information, audit records, configuration parameters, and access controls associated with the decision algorithm, test data, and deployment process. The disclosed platform thereby facilitates validation of decision logic before production use and reduces risk associated with deploying decision algorithms to live data environments.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a brief technical disclosure summary describing a computing system with a client interface, test mode, deployment mode, separate test and production databases, and configurable decision engines.",
+      "output": "A computing system is disclosed that includes a client interface configured to receive user inputs and present system outputs, and an application environment operable in at least a test mode and a deployment mode. In the test mode, the system executes workflows, rules, or decision logic against a test database that is isolated from production data, enabling validation, simulation, and debugging without affecting live operations. In the deployment mode, the system executes approved workflows against a production database to support operational use.\n\nThe system further includes one or more configurable decision engines. Each decision engine may be defined or modified through configuration data, rule sets, parameters, models, or policy logic accessible via the client interface or an administrative interface. The decision engines process input data, access the appropriate database based on the active mode, and generate decisions, recommendations, classifications, or workflow actions. Versioning, approval controls, or environment-specific configurations may be used to promote tested decision logic from the test mode to the deployment mode while maintaining separation between test and production resources.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate a patent disclosure paragraph for development and deployment platforms for decision algorithms, including isolation of test operations from production data.",
+      "output": "In some embodiments, a development and deployment platform for decision algorithms provides an integrated environment for authoring, testing, validating, approving, deploying, monitoring, and updating decision logic used by one or more production systems. The platform may include a development workspace, a version-controlled rule or model repository, simulation and validation services, deployment orchestration components, and runtime execution services. To protect production information and ensure operational integrity, test, simulation, debugging, and training operations are isolated from production data and production decision flows through one or more isolation mechanisms, including separate execution environments, segregated databases, access controls, synthetic or anonymized test datasets, read-only replicas, data masking, tenant or namespace separation, network segmentation, sandboxed compute resources, and policy-enforced interfaces. A decision algorithm may be promoted from a development or test environment to a staging or production environment only after satisfying defined approval, audit, performance, security, compliance, or regression criteria. The platform may maintain immutable logs of algorithm versions, configuration parameters, test results, data lineage, deployment approvals, and runtime outcomes, thereby enabling traceability and rollback. In certain embodiments, production data is never exposed directly to unapproved test code; instead, controlled extracts, derived features, simulated events, or anonymized data representations are used to evaluate candidate algorithms. The platform may further provide automated comparison of candidate and deployed algorithms, shadow-mode execution, canary deployment, rollback triggers, drift detection, and monitoring dashboards, while preserving logical and physical separation between experimental operations and live production processing.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Summarize an invention where a client device configures a decision engine to run different algorithms in a test environment and later deploy selected tested algorithms in production.",
+      "output": "The invention describes a system in which a client device remotely configures a decision engine to evaluate and compare different decision-making algorithms in a test environment before using them in live production.\n\nIn the test environment, the client device can define or select multiple algorithms, rules, models, or decision strategies for the decision engine to execute against test data or simulated operating conditions. The system can collect performance results, compare outputs, and determine which algorithms meet desired criteria such as accuracy, speed, reliability, profitability, or compliance.\n\nAfter testing, the client device can select one or more successful algorithms and cause the decision engine to deploy them into a production environment. In production, the selected algorithms are then used to make real operational decisions, while the system may continue monitoring performance and allow later updates or replacement based on further testing.\n\nIn short, the invention provides a controlled workflow for configuring, testing, evaluating, and promoting decision-engine algorithms from a non-production environment into live use.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Create an abstract in patent language for a decision algorithm platform that switches between test mode and deployment mode based on client inputs via a software development interface.",
+      "output": "An adaptive decision algorithm platform is provided. The platform includes a software development interface configured to receive one or more client inputs defining operating parameters, execution criteria, or validation requirements for a decision algorithm. A mode management engine is operatively coupled to the software development interface and configured to selectively transition the decision algorithm between a test mode and a deployment mode based at least in part on the received client inputs. In the test mode, the platform executes the decision algorithm in a controlled environment using test data, simulated inputs, validation rules, or performance metrics to evaluate algorithm behavior without affecting production outcomes. In the deployment mode, the platform executes the decision algorithm against live or production data to generate operational decisions, recommendations, classifications, or control outputs. The platform may further include monitoring, logging, version control, access control, and rollback functionality to support controlled release and governance of the decision algorithm. The mode transition may be automatically initiated, conditionally authorized, or manually confirmed through the software development interface.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7019064124783362,
+      "excess_ratio": 0.5420484999366795,
+      "baseline_mean": 0.15985791254165677,
+      "baseline_n_valid": 5,
+      "output_chars": 937,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7241379310344828,
+          "baseline_mean": 0.12434227549652885,
+          "excess_ratio": 0.5997956555379539
+        },
+        "bz2": {
+          "actual_ratio": 0.5958549222797928,
+          "baseline_mean": 0.14911950574067362,
+          "excess_ratio": 0.44673541653911913
+        },
+        "lzma": {
+          "actual_ratio": 0.780952380952381,
+          "baseline_mean": 0.19996612528861252,
+          "excess_ratio": 0.5809862556637684
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4863636363636364,
+      "excess_ratio": 0.3265057238219796,
+      "baseline_mean": 0.15985791254165677,
+      "baseline_n_valid": 5,
+      "output_chars": 966,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4739454094292804,
+          "baseline_mean": 0.12434227549652885,
+          "excess_ratio": 0.34960313393275155
+        },
+        "bz2": {
+          "actual_ratio": 0.4226327944572748,
+          "baseline_mean": 0.14911950574067362,
+          "excess_ratio": 0.2735132887166012
+        },
+        "lzma": {
+          "actual_ratio": 0.5537190082644629,
+          "baseline_mean": 0.19996612528861252,
+          "excess_ratio": 0.35375288297585034
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.2079790712884238,
+      "excess_ratio": 0.048121158746767034,
+      "baseline_mean": 0.15985791254165677,
+      "baseline_n_valid": 5,
+      "output_chars": 2577,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1829145728643216,
+          "baseline_mean": 0.12434227549652885,
+          "excess_ratio": 0.058572297367792764
+        },
+        "bz2": {
+          "actual_ratio": 0.19735503560528994,
+          "baseline_mean": 0.14911950574067362,
+          "excess_ratio": 0.04823552986461632
+        },
+        "lzma": {
+          "actual_ratio": 0.24074074074074073,
+          "baseline_mean": 0.19996612528861252,
+          "excess_ratio": 0.04077461545212821
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.10211629340456124,
+      "excess_ratio": -0.05774161913709552,
+      "baseline_mean": 0.15985791254165677,
+      "baseline_n_valid": 5,
+      "output_chars": 4142,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.0753551575046325,
+          "baseline_mean": 0.12434227549652885,
+          "excess_ratio": -0.04898711799189635
+        },
+        "bz2": {
+          "actual_ratio": 0.10760309278350516,
+          "baseline_mean": 0.14911950574067362,
+          "excess_ratio": -0.04151641295716846
+        },
+        "lzma": {
+          "actual_ratio": 0.12264150943396226,
+          "baseline_mean": 0.19996612528861252,
+          "excess_ratio": -0.07732461585465025
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.14772727272727268,
+      "excess_ratio": -0.012130639814384087,
+      "baseline_mean": 0.15985791254165677,
+      "baseline_n_valid": 5,
+      "output_chars": 427,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.09090909090909091,
+          "baseline_mean": 0.12434227549652885,
+          "excess_ratio": -0.033433184587437936
+        },
+        "bz2": {
+          "actual_ratio": 0.13380281690140844,
+          "baseline_mean": 0.14911950574067362,
+          "excess_ratio": -0.01531668883926518
+        },
+        "lzma": {
+          "actual_ratio": 0.20481927710843373,
+          "baseline_mean": 0.19996612528861252,
+          "excess_ratio": 0.004853151819821211
+        }
+      }
+    }
+  }
+}

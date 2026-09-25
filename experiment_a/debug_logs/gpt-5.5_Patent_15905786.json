@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15905786",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA method and a highway addressable remote transducer (HART) modem for modulating and demodulating an analog signal including a HART message are provided. With low power consumption, the less computationally intensive HART modem modulates the analog signal using a coherent 8-ary phase shift keying (C8PSK) technique with a predefined gray code lookup table and a pre-generated sample lookup table having phase modulated digital signals indexed by index vectors, and transmits a HART C8PSK analog signal to sensor devices. A C8PSK demodulator in the HART modem demodulates the HART C8PSK analog signal by performing coarse estimation and fine estimation of phase errors and by estimation of a timing offset using a decision estimator. An automatic modulation classifier of the C8PSK demodulator validates presence of the analog signal in a C8PSK protocol by determining signs of in-phase and quadrature phase signals corresponding to each subsequent processed digitized sample of the analog signal.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA method and a highway addressable remote transducer (HART) modem for modulating and demodulating an analog signal including a HART message are provided. With low power consumption, the less computationally intensive HART modem modulates the analog signal using a coherent 8-ary phase shift keying (C8PSK) technique with a predefined gray code lookup table and a pre-generated sample lookup table having phase modulated digital signals indexed by index vectors, and transmits a HART C8PSK analog signal to sensor devices. A C8PSK demodulator in the HART modem demodulates the HART C8PSK analog signal by performing coarse estimation and fine estimation of phase errors and by estimation of a timing offset using a decision estimator. An automatic modulation classifier of the C8PSK demodulator validates presence of the analog signal in a C8PSK protocol by determining signs of in-phase and quadrature phase signals corresponding to each subsequent processed digitized sample of the analog signal.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A HART modem is provided for modulating and demodulating an analog signal that includes a HART message.\n- The modem uses low-power coherent 8-ary phase shift keying (C8PSK) modulation with predefined gray code and pre-generated sample lookup tables.\n- The modem transmits a HART C8PSK analog signal to sensor devices.\n- The C8PSK demodulator estimates phase errors through coarse and fine estimation and estimates timing offset using a decision estimator.\n- An automatic modulation classifier validates the presence of a C8PSK analog signal by analyzing signs of in-phase and quadrature phase signals.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA low-power HART modem method modulates and demodulates analog HART messages using coherent 8-ary phase shift keying with predefined Gray-code and sample lookup tables, plus coarse/fine phase-error and timing-offset estimation. The approach efficiently produces and recovers HART C8PSK signals while validating protocol presence through automatic modulation classification, enabling less computationally intensive communication with sensor devices.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: HART, With"
+  },
+  "outputs": {
+    "L1": "A method and a Highway Addressable Remote Transducer (HART) modem for modulating and demodulating an analog signal containing a HART message are provided. With low power consumption, the less computationally intensive HART modem modulates the analog signal using a coherent 8-ary phase shift keying (C8PSK) technique, together with a predefined Gray code lookup table and a pre-generated sample lookup table containing phase-modulated digital signals indexed by index vectors, and transmits a HART C8PSK analog signal to sensor devices. A C8PSK demodulator in the HART modem demodulates the HART C8PSK analog signal by performing coarse and fine estimation of phase errors, as well as estimation of a timing offset using a decision estimator. An automatic modulation classifier of the C8PSK demodulator validates the presence of the analog signal in a C8PSK protocol by determining the signs of in-phase and quadrature-phase signals corresponding to each subsequent processed digitized sample of the analog signal.",
+    "L2": "A technique and a Highway Addressable Remote Transducer (HART) modem are described for both modulating and demodulating an analog signal that carries a HART message. The HART modem operates with reduced power requirements and lower computational complexity. It modulates the analog signal according to a coherent 8-ary phase shift keying (C8PSK) approach, using a predetermined Gray-code lookup table together with a precomputed sample lookup table. The precomputed table contains phase-modulated digital signals that are addressed by index vectors. The modem then sends the resulting HART C8PSK analog signal to sensor devices.\n\nWithin the HART modem, a C8PSK demodulator recovers the HART C8PSK analog signal by carrying out both rough and refined phase-error estimation, as well as timing-offset estimation through a decision estimator. The demodulator also includes an automatic modulation classifier, which confirms that the analog signal is present in a C8PSK protocol by identifying the signs of the in-phase and quadrature-phase components associated with each successive processed digitized sample of the analog signal.",
+    "L3": "A HART modem is provided for modulating and demodulating an analog signal that carries a HART message. The modem is configured to support communication between a control system and one or more sensor devices by converting digital HART message data into a corresponding analog waveform for transmission, and by receiving an analog waveform and recovering the digital HART message contained in the signal.\n\nIn one implementation, the modem uses low-power coherent 8-ary phase shift keying modulation, referred to as coherent 8PSK or C8PSK. The C8PSK modulation scheme maps groups of digital bits to one of eight predefined carrier phases. A predefined Gray code mapping is used so that adjacent phase states differ by only one bit, reducing the likelihood of multiple bit errors when a received symbol is incorrectly decoded as a neighboring phase state. To further reduce processing complexity and power consumption, the modem may use pre-generated sample lookup tables. These lookup tables store representative waveform samples for the different C8PSK symbol phases, allowing the transmitter to generate the modulated analog signal efficiently without repeatedly calculating trigonometric functions or performing computationally expensive waveform synthesis in real time.\n\nDuring transmission, the modem receives a HART message in digital form, encodes the message according to the predefined Gray code, selects the corresponding C8PSK symbol states, and generates an analog C8PSK waveform using the pre-generated samples. The resulting HART C8PSK analog signal is then transmitted to one or more sensor devices. The sensor devices may receive the analog signal over a wired communication path, loop, or other suitable physical medium and may demodulate the signal to recover the HART message.\n\nDuring reception, the modem includes a C8PSK demodulator configured to recover data from a received analog signal. The demodulator estimates phase errors in the received signal using both coarse and fine phase estimation. The coarse phase estimation provides an initial approximation of the phase offset between the received signal and the expected C8PSK constellation, helping to correct larger phase deviations. The fine phase estimation then refines this correction to improve symbol decision accuracy. In addition, the demodulator estimates timing offset using a decision estimator. The timing offset estimation helps determine the proper sampling instant for each received symbol, reducing inter-symbol interference and improving the reliability of data recovery.\n\nThe modem may also include an automatic modulation classifier. The classifier is configured to validate the presence of a C8PSK analog signal before or during demodulation. To perform this validation, the classifier analyzes the signs of the in-phase and quadrature-phase components of the received signal. By examining sign transitions, signal distribution, or symbol-related patterns in the in-phase and quadrature channels, the classifier determines whether the received signal is consistent with a C8PSK-modulated waveform. If the classifier confirms the presence of a valid C8PSK analog signal, the modem proceeds with phase estimation, timing recovery, demodulation, and decoding of the HART message. If the expected C8PSK characteristics are not detected, the modem may reject the signal, continue monitoring, or initiate another signal classification process.",
+    "L4": "A low-power HART modem method is provided for transmitting and receiving analog HART messages using coherent 8-ary phase shift keying (C8PSK). The method is designed for efficient operation in field devices, sensor interfaces, industrial transmitters, handheld communicators, and other equipment where processing capacity and available power may be limited. Instead of relying on computationally expensive signal generation and recovery techniques, the modem uses predefined Gray-code mapping tables and sample lookup tables to create and interpret C8PSK waveforms with reduced arithmetic complexity.\n\nDuring transmission, digital HART message data is grouped into symbol values and mapped to corresponding C8PSK phase states according to a predefined Gray-code table. The use of Gray coding reduces the probability that a symbol decision error will produce multiple bit errors, since adjacent constellation points differ by only one bit. Once the phase state for each symbol is selected, the modem generates the corresponding analog waveform samples from stored lookup tables. These tables may contain precomputed sine, cosine, or pulse-shaped waveform values associated with the required carrier phase transitions. By reading samples from memory rather than calculating them in real time, the transmitter can produce a compliant HART C8PSK signal using fewer processor cycles and less energy.\n\nDuring reception, the modem samples an incoming analog signal and determines whether a valid HART signal is present. This may include automatic modulation classification, in which the received signal is analyzed to distinguish HART C8PSK communication from noise, interference, or other modulation formats. Once the presence of the expected protocol signal is validated, the receiver performs coherent demodulation. Coherent demodulation uses phase information from the received carrier to estimate the transmitted symbols accurately.\n\nTo improve reliability, the receiver performs both coarse and fine phase-error estimation. A coarse phase estimate provides an initial correction for large phase offsets caused by channel conditions, oscillator mismatch, or timing uncertainty. A fine phase-error estimate then refines the correction, allowing the received constellation points to be aligned more accurately with the expected C8PSK phase locations. In addition, timing-offset estimation is used to determine the optimal sampling instant for each received symbol. By correcting timing errors, the receiver reduces intersymbol interference and improves symbol decision accuracy.\n\nAfter phase and timing corrections are applied, the receiver compares the recovered signal samples with the expected C8PSK constellation points or stored reference values. The most likely transmitted symbol is selected, and the corresponding bits are recovered using the predefined Gray-code table. The recovered bit stream is then assembled into HART message data for further protocol processing by the host device or sensor system.\n\nThis approach enables efficient generation and recovery of HART C8PSK signals without requiring high-performance digital signal processing hardware. The use of lookup tables, Gray-code mapping, automatic modulation classification, and staged phase and timing estimation reduces computational burden while maintaining robust communication performance. As a result, the method supports reliable, low-power HART communication with sensor devices and other industrial process-control equipment.",
+    "L5": "HART (Highway Addressable Remote Transducer) is a widely used communication protocol in industrial automation. It allows smart field devices, such as pressure transmitters, flow meters, and valve positioners, to communicate digital information while still using the traditional 4–20 mA analog signal.\n\nWith HART technology, plant operators can access valuable diagnostic data, configure devices remotely, and improve maintenance efficiency without replacing existing wiring. This makes HART especially useful in facilities that want to modernize their instrumentation while keeping costs under control.\n\nOne of the key advantages of HART is its reliability. Because it works with existing analog systems, it provides a practical bridge between older control infrastructure and newer digital capabilities. With the right tools, technicians can monitor device status, detect faults early, and optimize process performance.\n\nIn modern industry, HART continues to play an important role by combining simplicity, compatibility, and advanced communication features."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a patent-style abstract for an invention describing a low-power HART modem that uses coherent 8-ary phase shift keying modulation and demodulation for analog sensor communication.",
+      "output": "A low-power HART-compatible modem for analog sensor communication is disclosed. The modem includes a transmitter configured to encode digital sensor or control data into coherent 8-ary phase shift keying (8-PSK) symbols and to superimpose a corresponding modulated carrier signal on an analog process-control signal, such as a 4-20 mA current loop, without substantially affecting the analog measurement value. A receiver includes carrier recovery, timing recovery, and coherent demodulation circuitry configured to detect phase states of the 8-PSK signal and recover digital information from the analog communication channel. Power-reduction circuitry, including duty-cycled biasing, low-power symbol processing, adaptive gain control, and selectively enabled synchronization functions, reduces energy consumption for field-mounted sensor devices. The modem may provide increased data throughput relative to conventional frequency-shift-keyed HART signaling while maintaining reliable communication over existing analog sensor wiring and process-control infrastructure.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Generate a concise technical summary of a HART C8PSK modem, including gray code lookup tables, pre-generated sample lookup tables, phase error estimation, timing offset estimation, and automatic modulation classification.",
+      "output": "A HART C8PSK modem implements an 8-ary phase shift keying physical layer in which each transmitted symbol carries 3 bits and is mapped to one of eight constellation phases. The modem typically contains a transmit chain for bit mapping, pulse/sample generation, and modulation, and a receive chain for carrier recovery, timing recovery, demodulation, and symbol decoding.\n\n## 1. C8PSK Symbol Mapping and Gray Code LUTs\n\nC8PSK uses 8 constellation points separated by 45°. A Gray-coded mapping minimizes bit errors because adjacent constellation points differ by one bit.\n\nExample Gray code lookup table:\n\n| Bits | Symbol index | Phase |\n|---|---:|---:|\n| 000 | 0 | 0° |\n| 001 | 1 | 45° |\n| 011 | 2 | 90° |\n| 010 | 3 | 135° |\n| 110 | 4 | 180° |\n| 111 | 5 | 225° |\n| 101 | 6 | 270° |\n| 100 | 7 | 315° |\n\nThe inverse lookup table is used in the receiver:\n\n| Decision index | Decoded bits |\n|---:|---|\n| 0 | 000 |\n| 1 | 001 |\n| 2 | 011 |\n| 3 | 010 |\n| 4 | 110 |\n| 5 | 111 |\n| 6 | 101 |\n| 7 | 100 |\n\nA demodulator estimates the received phase, quantizes it to the nearest of eight ideal phases, then applies the inverse Gray LUT.\n\n## 2. Pre-generated Sample Lookup Tables\n\nTo reduce runtime computation, the modem can use pre-generated waveform sample tables for each possible C8PSK phase state.\n\nFor oversampling factor `N`, each symbol phase has a lookup table:\n\n\\[\ns_k[n] = A \\cos\\left(2\\pi f_c \\frac{n}{F_s} + \\phi_k\\right)\n\\]\n\nor, for complex baseband:\n\n\\[\ns_k[n] = I_k[n] + jQ_k[n]\n\\]\n\nwhere:\n\n\\[\n\\phi_k = \\frac{2\\pi k}{8}\n\\]\n\nExample baseband constellation LUT:\n\n| Symbol index | Phase | I | Q |\n|---:|---:|---:|---:|\n| 0 | 0° | +1.000 | 0.000 |\n| 1 | 45° | +0.707 | +0.707 |\n| 2 | 90° | 0.000 | +1.000 |\n| 3 | 135° | -0.707 | +0.707 |\n| 4 | 180° | -1.000 | 0.000 |\n| 5 | 225° | -0.707 | -0.707 |\n| 6 | 270° | 0.000 | -1.000 |\n| 7 | 315° | +0.707 | -0.707 |\n\nFor passband implementation, a table may contain one full symbol’s worth of carrier-modulated samples for each phase. This avoids repeated `sin()`/`cos()` evaluation and is useful for embedded HART implementations.\n\n## 3. Transmitter Operation\n\nThe transmitter performs:\n\n1. Scrambling or framing, if required.\n2. Grouping of input bits into 3-bit symbols.\n3. Gray-code mapping to symbol index.\n4. Lookup of phase or waveform samples.\n5. Pulse shaping or direct sample output.\n6. DAC or software-defined radio output.\n\nTypical transmit sequence:\n\n```text\nbits -> 3-bit groups -> Gray LUT -> phase index -> sample LUT -> output waveform\n```\n\n## 4. Receiver Operation\n\nThe receiver performs:\n\n1. ADC sampling.\n2. Filtering and automatic gain control.\n3. Carrier recovery.\n4. Symbol timing recovery.\n5. Phase estimation.\n6. Nearest-neighbor phase decision.\n7. Inverse Gray-code demapping.\n8. Deframing and error checking.\n\nFor complex samples \\(r[n]\\), symbol decisions are often made using:\n\n\\[\n\\theta = \\arg(r)\n\\]\n\n\\[\n\\hat{k} = \\text{round}\\left(\\frac{8\\theta}{2\\pi}\\right) \\bmod 8\n\\]\n\nThen the symbol index \\(\\hat{k}\\) is converted to bits using the inverse Gray LUT.\n\n## 5. Phase Error Estimation\n\nPhase error estimation is required for carrier recovery and coherent demodulation.\n\nFor a detected symbol \\(\\hat{s}\\) and received sample \\(r\\):\n\n\\[\ne_\\phi = \\arg\\left(r \\hat{s}^{*}\\right)\n\\]\n\nwhere:\n\n- \\(r\\) is the received complex symbol,\n- \\(\\hat{s}\\) is the nearest ideal constellation point,\n- \\(^*\\) denotes complex conjugation.\n\nFor 8PSK, a decision-directed phase detector may be used after initial acquisition. The phase error is filtered by a loop filter and used to update a numerically controlled oscillator.\n\nA common receiver loop is:\n\n```text\nreceived sample -> phase detector -> loop filter -> NCO -> carrier correction\n```\n\nFor non-data-aided acquisition, the eighth-power method can remove modulation:\n\n\\[\nz = r^8\n\\]\n\nThe phase of \\(z\\) contains carrier phase and frequency offset information while suppressing the 8PSK data modulation.\n\n## 6. Timing Offset Estimation\n\nTiming recovery estimates the best sampling instant within each symbol period. With oversampled input, timing error can be estimated using methods such as:\n\n- Early-late gate detector\n- Gardner timing error detector\n- Mueller and Müller detector\n\nA simple early-late timing error estimate is:\n\n\\[\ne_t = |r_\\text{early}|^2 - |r_\\text{late}|^2\n\\]\n\nFor Gardner timing recovery:\n\n\\[\ne_t = \\Re\\left\\{ \\left[r(kT - T/2) - r(kT + T/2)\\right] r^*(kT) \\right\\}\n\\]\n\nThe timing error drives an interpolation filter or resampler so that decisions are made near the symbol center.\n\nTiming recovery chain:\n\n```text\nmatched filter -> timing error detector -> loop filter -> interpolator -> symbol samples\n```\n\n## 7. Automatic Modulation Classification\n\nAutomatic modulation classification can distinguish C8PSK from other candidate modulations such as FSK, BPSK, QPSK, or 16QAM.\n\nUseful features include:\n\n- Number of constellation phase clusters\n- Amplitude variance\n- Phase histogram\n- Higher-order moments\n- Cumulants\n- Cyclostationary features\n- Spectral shape and occupied bandwidth\n\nFor C8PSK:\n\n- The constellation has approximately constant amplitude.\n- Phase histogram shows eight dominant clusters.\n- Symbol phase spacing is approximately 45°.\n- Eighth-power transformation produces a strong carrier-related tone.\n\nA simple classifier can use:\n\n```text\nif amplitude variance is low\nand phase histogram has 8 stable clusters\nand eighth-power spectrum has strong peak:\n    classify as C8PSK\n```\n\nMore advanced classifiers may use machine learning on extracted I/Q features or a likelihood-based comparison against multiple modulation hypotheses.\n\n## 8. Implementation Notes\n\nA practical HART C8PSK modem generally uses:\n\n- Gray-code LUTs for fast bit-to-symbol and symbol-to-bit conversion.\n- Precomputed I/Q or passband sample tables for low CPU usage.\n- Matched filtering for noise reduction.\n- Carrier recovery using phase error feedback.\n- Timing recovery using interpolated symbol sampling.\n- Automatic modulation classification for robust signal detection and mode selection.\n\nOverall, the modem combines table-driven modulation with synchronization loops for phase and timing correction, enabling efficient embedded implementation of an 8PSK HART-compatible physical layer.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft an abstract for a method and highway addressable remote transducer modem that modulates and demodulates analog signals containing HART messages using coherent 8PSK.",
+      "output": "A method and highway addressable remote transducer (HART) modem are provided for communicating digital data over an analog process signal loop by coherently modulating and demodulating HART message information using eight-phase shift keying (8PSK). The modem receives HART protocol data, maps the data into multi-bit symbols, and generates a phase-coherent 8PSK carrier signal that is superimposed on an analog signal, such as a 4–20 mA current loop, without substantially affecting the underlying process variable. A receiver portion of the modem extracts the modulated component from the analog signal, performs carrier recovery and phase synchronization, coherently demodulates the 8PSK symbols, and reconstructs the HART message data. The method may include filtering, automatic gain control, timing recovery, phase error correction, and forward error detection or correction to improve communication reliability in industrial environments. By using coherent 8PSK modulation, the modem increases spectral efficiency and data throughput while maintaining compatibility with analog field wiring and remote transducer communication systems.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Create a single-paragraph patent abstract about a low-complexity HART modem that transmits C8PSK analog signals to sensor devices and validates the protocol using in-phase and quadrature signal signs.",
+      "output": "A low-complexity Highway Addressable Remote Transducer (HART) modem is provided for communicating with field-mounted sensor devices by generating and transmitting continuous-phase eight-state phase shift keyed (C8PSK) analog signaling over an industrial communication link. The modem includes simplified modulation circuitry configured to synthesize C8PSK waveform symbols corresponding to HART protocol data and couple the resulting analog signal to a sensor-device interface while reducing computational, memory, and hardware requirements relative to conventional demodulation architectures. Protocol validation circuitry receives in-phase and quadrature components associated with the transmitted or received signaling and determines symbol state validity based at least in part on the signs of the in-phase and quadrature signals, thereby enabling efficient verification of C8PSK symbol transitions, message integrity, or protocol compliance without requiring full amplitude or phase reconstruction. The disclosed modem is suitable for compact, low-power process-control instruments, sensor interfaces, and diagnostic equipment requiring HART-compatible communication with reduced implementation complexity.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Summarize an invention for a HART-compatible modem with C8PSK modulation, coarse and fine phase error estimation, decision-based timing recovery, and automatic detection of C8PSK signals.",
+      "output": "The invention describes a HART-compatible modem that supports conventional HART communication while adding higher-speed communication using C8PSK modulation. In addition to standard FSK-based HART signaling, the modem can transmit and receive constant-envelope 8-phase-shift-keyed signals suitable for operation over existing HART current-loop infrastructure.\n\nOn the receive side, the modem includes signal-processing functions for detecting and demodulating C8PSK signals. It performs automatic identification of whether a received signal is a C8PSK signal, allowing the modem to switch or configure itself appropriately without requiring manual mode selection. Once a C8PSK signal is detected, the modem estimates carrier phase error in two stages: a coarse phase error estimator provides an initial correction over a relatively wide error range, and a fine phase error estimator refines the correction to improve symbol decision accuracy.\n\nThe modem also includes decision-based timing recovery. After tentative symbol decisions are made, those decisions are used to adjust sampling timing so that received symbols are sampled near their optimum decision points. This helps maintain reliable demodulation despite timing offsets, clock drift, and channel impairments.\n\nOverall, the invention enables enhanced data-rate HART communication while preserving compatibility with existing HART systems. Its key features include C8PSK modulation, automatic C8PSK signal detection, staged phase recovery using coarse and fine estimators, and decision-directed timing recovery for robust reception over industrial process-control communication loops.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7903736542115264,
+      "excess_ratio": 0.6527223669916596,
+      "baseline_mean": 0.13765128721986677,
+      "baseline_n_valid": 5,
+      "output_chars": 1014,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.8309572301425662,
+          "baseline_mean": 0.10286225207325292,
+          "excess_ratio": 0.7280949780693132
+        },
+        "bz2": {
+          "actual_ratio": 0.6461538461538462,
+          "baseline_mean": 0.14374317934513323,
+          "excess_ratio": 0.5024106668087129
+        },
+        "lzma": {
+          "actual_ratio": 0.8873239436619719,
+          "baseline_mean": 0.16257203619688104,
+          "excess_ratio": 0.7247519074650908
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4577777777777778,
+      "excess_ratio": 0.320126490557911,
+      "baseline_mean": 0.13765128721986677,
+      "baseline_n_valid": 5,
+      "output_chars": 1128,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.43010752688172044,
+          "baseline_mean": 0.10286225207325292,
+          "excess_ratio": 0.32724527480846755
+        },
+        "bz2": {
+          "actual_ratio": 0.4214046822742475,
+          "baseline_mean": 0.14374317934513323,
+          "excess_ratio": 0.2776615029291143
+        },
+        "lzma": {
+          "actual_ratio": 0.515527950310559,
+          "baseline_mean": 0.16257203619688104,
+          "excess_ratio": 0.35295591411367794
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.18382352941176472,
+      "excess_ratio": 0.046172242191897944,
+      "baseline_mean": 0.13765128721986677,
+      "baseline_n_valid": 5,
+      "output_chars": 3432,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.15332834704562454,
+          "baseline_mean": 0.10286225207325292,
+          "excess_ratio": 0.05046609497237162
+        },
+        "bz2": {
+          "actual_ratio": 0.18707738542449287,
+          "baseline_mean": 0.14374317934513323,
+          "excess_ratio": 0.043334206079359644
+        },
+        "lzma": {
+          "actual_ratio": 0.2096317280453258,
+          "baseline_mean": 0.16257203619688104,
+          "excess_ratio": 0.047059691848444746
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1497350840820088,
+      "excess_ratio": 0.012083796862142032,
+      "baseline_mean": 0.13765128721986677,
+      "baseline_n_valid": 5,
+      "output_chars": 3501,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.12869198312236288,
+          "baseline_mean": 0.10286225207325292,
+          "excess_ratio": 0.02582973104910996
+        },
+        "bz2": {
+          "actual_ratio": 0.13703443429374562,
+          "baseline_mean": 0.14374317934513323,
+          "excess_ratio": -0.006708745051387605
+        },
+        "lzma": {
+          "actual_ratio": 0.18181818181818182,
+          "baseline_mean": 0.16257203619688104,
+          "excess_ratio": 0.01924614562130078
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.06345044572627151,
+      "excess_ratio": -0.07420084149359527,
+      "baseline_mean": 0.13765128721986677,
+      "baseline_n_valid": 5,
+      "output_chars": 1059,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.02533783783783784,
+          "baseline_mean": 0.10286225207325292,
+          "excess_ratio": -0.07752441423541508
+        },
+        "bz2": {
+          "actual_ratio": 0.06741573033707865,
+          "baseline_mean": 0.14374317934513323,
+          "excess_ratio": -0.07632744900805458
+        },
+        "lzma": {
+          "actual_ratio": 0.09248554913294797,
+          "baseline_mean": 0.16257203619688104,
+          "excess_ratio": -0.07008648706393307
+        }
+      }
+    }
+  }
+}

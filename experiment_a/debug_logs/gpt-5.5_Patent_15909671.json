@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15909671",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nInterpolation logic described herein provides a good approximation to a bicubic interpolation, which is generally smoother than bilinear interpolation, without performing all the calculations normally needed for a bicubic interpolation. This allows an approximation of smooth bicubic interpolation to be performed on devices (e.g. mobile devices) which have limited processing resources. At each of a set of predetermined interpolation positions within an array of data points, a set of predetermined weights represent a bicubic interpolation which can be applied to the data points. For a plurality of the predetermined interpolation positions which surround the sampling position, the corresponding sets of predetermined weights and the data points are used to determine a plurality of surrounding interpolated values which represent results of performing the bicubic interpolation at the surrounding predetermined interpolation positions. A linear interpolation is then performed on the surrounding interpolated values to determine an interpolated value at the sampling position.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nInterpolation logic described herein provides a good approximation to a bicubic interpolation, which is generally smoother than bilinear interpolation, without performing all the calculations normally needed for a bicubic interpolation. This allows an approximation of smooth bicubic interpolation to be performed on devices (e.g. mobile devices) which have limited processing resources. At each of a set of predetermined interpolation positions within an array of data points, a set of predetermined weights represent a bicubic interpolation which can be applied to the data points. For a plurality of the predetermined interpolation positions which surround the sampling position, the corresponding sets of predetermined weights and the data points are used to determine a plurality of surrounding interpolated values which represent results of performing the bicubic interpolation at the surrounding predetermined interpolation positions. A linear interpolation is then performed on the surrounding interpolated values to determine an interpolated value at the sampling position.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The interpolation logic provides an approximation of bicubic interpolation that is smoother than bilinear interpolation.\n- The method avoids the full computational cost normally required for bicubic interpolation.\n- This approach enables smoother interpolation on devices with limited processing resources, such as mobile devices.\n- Predetermined weights are used at fixed interpolation positions to represent bicubic interpolation applied to data points.\n- Linear interpolation is performed on surrounding bicubic-approximated values to determine the interpolated value at the sampling position.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe text describes an interpolation method that approximates bicubic interpolation by using predetermined weights at nearby interpolation positions and then applying linear interpolation to the resulting values. This approach produces smoother results than bilinear interpolation while reducing computation, making bicubic-like interpolation practical for resource-limited devices such as mobile devices.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Interpolation, This, For"
+  },
+  "outputs": {
+    "L1": "The interpolation logic described herein provides a close approximation of bicubic interpolation, which is generally smoother than bilinear interpolation, without requiring the full set of calculations typically associated with bicubic interpolation. This enables an approximation of smooth bicubic interpolation to be performed on devices, such as mobile devices, that have limited processing resources.\n\nAt each of a set of predetermined interpolation positions within an array of data points, a corresponding set of predetermined weights represents a bicubic interpolation that can be applied to the data points. For a plurality of predetermined interpolation positions surrounding the sampling position, the corresponding sets of predetermined weights are applied to the data points to determine a plurality of surrounding interpolated values, which represent the results of performing bicubic interpolation at those surrounding predetermined interpolation positions. A linear interpolation is then performed on the surrounding interpolated values to determine an interpolated value at the sampling position.",
+    "L2": "The interpolation approach described here produces a close estimate of bicubic interpolation, which is typically smoother than bilinear interpolation, while avoiding the full set of computations ordinarily required for true bicubic interpolation. As a result, devices with restricted processing capability, such as mobile devices, can generate an approximation of smooth bicubic interpolation. For each predetermined interpolation location in an array of data points, predefined weight sets correspond to a bicubic interpolation that may be applied to those data points. For multiple predetermined interpolation locations surrounding a sampling location, the associated predefined weight sets are combined with the data points to calculate several neighboring interpolated values, each representing the outcome of bicubic interpolation at those nearby predetermined locations. A linear interpolation is then carried out using those neighboring interpolated values to obtain the final interpolated value at the sampling location.",
+    "L3": "The interpolation logic provides an approximation of bicubic interpolation that produces smoother results than standard bilinear interpolation. While bilinear interpolation uses a relatively simple calculation based on nearby data points, it can sometimes produce visible artifacts or less refined transitions. By approximating bicubic interpolation, the method achieves improved smoothness and better visual quality, especially in areas where gradual changes between values are important.\n\nAt the same time, the method avoids the full computational cost normally associated with true bicubic interpolation. Full bicubic interpolation typically requires more complex calculations and a larger number of operations, which can be expensive in terms of processing time and power consumption. Instead of performing the complete bicubic computation at every sampling position, this approach uses a simplified process that preserves much of the smoothness of bicubic interpolation while reducing the required workload.\n\nThis makes the technique particularly useful for devices with limited processing resources, such as mobile phones, tablets, embedded systems, and other power-constrained hardware. These devices often need to balance image quality, speed, and energy efficiency. By reducing computational complexity while still providing smoother interpolation than bilinear methods, the approach enables higher-quality rendering or image processing without placing excessive demands on the processor.\n\nThe method relies on predetermined weights at fixed interpolation positions. These weights are selected to represent the effect of bicubic interpolation when applied to nearby data points. By predefining the weights, the system can avoid recalculating complex bicubic coefficients during operation. Instead, it can quickly apply the appropriate weights to generate bicubic-approximated values at certain known positions.\n\nOnce these surrounding bicubic-approximated values have been generated, linear interpolation is performed between them to determine the final interpolated value at the desired sampling position. In this way, the method combines the smoothness benefits of bicubic-style interpolation with the efficiency of simpler linear interpolation. The result is an interpolation technique that offers improved quality compared with bilinear interpolation while remaining practical for real-time use on devices with limited computational capacity.",
+    "L4": "The text presents an interpolation method designed to approximate the visual quality of bicubic interpolation while requiring less computation. In conventional image scaling or resampling, bilinear interpolation is often used because it is simple and fast, but it can produce results that appear somewhat blurred or less smooth. Bicubic interpolation generally produces smoother and more natural-looking images by considering a larger neighborhood of pixels and applying more complex calculations. However, true bicubic interpolation requires more processing power, which can be a disadvantage on devices with limited computational resources.\n\nTo address this issue, the described method uses a set of predetermined interpolation weights for positions near the target interpolation point. Instead of calculating the full bicubic formula each time, the method first obtains several intermediate values using these precomputed weights. It then applies linear interpolation to those intermediate values to estimate the final pixel value. By combining stored or predetermined weighting information with simpler linear interpolation, the method closely imitates the behavior of bicubic interpolation without performing all of its expensive calculations.\n\nThis technique provides a useful balance between image quality and processing efficiency. Compared with bilinear interpolation, it can generate smoother transitions and reduce visible artifacts, making the scaled image look closer to one produced by bicubic interpolation. At the same time, because it avoids many of the calculations normally required for full bicubic processing, it can be implemented more efficiently in hardware or software.\n\nAs a result, this bicubic-like interpolation method is especially suitable for resource-limited environments, such as mobile phones, tablets, embedded systems, digital cameras, and other portable devices. These devices often need to process images or video in real time while minimizing power consumption and preserving battery life. By reducing computational complexity while maintaining good visual quality, the method makes high-quality image scaling more practical for such applications.",
+    "L5": "**Interpolation: What This Means and What It Is For**\n\nInterpolation is a method used to estimate unknown values that lie between known data points. This technique is common in mathematics, statistics, computer graphics, engineering, and data analysis. For example, if you know the temperature at 10:00 and 12:00, interpolation can help estimate the temperature at 11:00.\n\nThis process is useful because real-world data is often incomplete. Instead of measuring every possible point, we can use interpolation to fill in the gaps. For many applications, this saves time, reduces cost, and provides a smooth approximation of missing information.\n\nThere are different types of interpolation, such as linear interpolation, polynomial interpolation, and spline interpolation. Linear interpolation is the simplest form, connecting two known points with a straight line. More advanced methods create smoother curves and can be more accurate for complex data.\n\nIn computer graphics, interpolation is used to create smooth animations and color transitions. In science, it helps researchers estimate values between measurements. For engineers, this method can support modeling, simulations, and predictions.\n\nOverall, interpolation is an important tool for understanding and working with data. This technique allows us to make reasonable estimates, and for many fields, it is essential for solving practical problems."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a patent-style summary describing an efficient interpolation method that approximates bicubic interpolation using precomputed weights and then linearly interpolates between nearby predetermined positions.",
+      "output": "A method is provided for efficiently approximating bicubic interpolation of image, video, or other sampled data by using precomputed interpolation coefficients corresponding to a set of predetermined fractional sample positions and by linearly interpolating between coefficient sets or between intermediate interpolation results associated with nearby predetermined positions.\n\nIn one embodiment, an input signal is represented by discrete samples arranged along one or more dimensions, such as pixels in a two-dimensional image. For a desired output sample located at a non-integer coordinate, the method determines a fractional offset of the desired coordinate relative to neighboring input samples. Rather than computing bicubic interpolation coefficients directly for the fractional offset, the method identifies two or more predetermined fractional positions that bound or are nearest to the desired fractional offset. Bicubic interpolation weights for the predetermined fractional positions are stored in a lookup table or other memory structure.\n\nFor each relevant dimension, a set of precomputed weights corresponding to the nearby predetermined positions is retrieved. The retrieved weights may be applied to surrounding input samples to form respective intermediate interpolated values. A linear interpolation is then performed between the intermediate values according to the relative distance of the desired fractional offset from the nearby predetermined positions. Alternatively, the precomputed weight sets themselves may be linearly interpolated to generate an approximate weight set, which is then applied to the neighboring samples. In either case, the resulting output sample approximates a bicubic interpolation result while reducing computational complexity.\n\nIn a two-dimensional implementation, separable interpolation may be performed. For example, horizontal intermediate values may be generated using precomputed bicubic weight sets for selected horizontal fractional positions, followed by linear interpolation between such horizontal results. A corresponding vertical interpolation may then be performed using precomputed vertical bicubic weight sets and linear blending between adjacent predetermined vertical positions. The order of horizontal and vertical processing may be reversed, or combined in a separable filtering architecture.\n\nThe predetermined fractional positions may be uniformly spaced, such as at fixed sub-pixel intervals, or non-uniformly spaced to reduce error in regions where bicubic coefficients vary more rapidly. The number of predetermined positions may be selected according to desired tradeoffs among memory usage, computational cost, and interpolation accuracy. In some embodiments, the lookup table stores coefficients for a bicubic kernel over a finite support, such as four samples per dimension. The coefficients may be quantized for fixed-point implementation and normalized to preserve signal amplitude.\n\nThe disclosed technique reduces or eliminates repeated evaluation of cubic polynomial expressions for arbitrary fractional positions. By replacing direct coefficient computation with table lookup and one or more linear interpolation operations, the method is well suited for real-time image scaling, video processing, texture mapping, display resampling, medical imaging, remote sensing, and other applications requiring high-throughput interpolation. The approximation may provide visual and numerical quality close to bicubic interpolation while requiring fewer multiplications, additions, and memory accesses than a full bicubic implementation.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Explain a technique for achieving smoother-than-bilinear image interpolation on low-power mobile devices without computing full bicubic interpolation at every sampled pixel.",
+      "output": "A practical low-cost technique is to use **smooth bilinear interpolation**: keep the same 4 texel samples as bilinear filtering, but replace the linear interpolation weights with a smooth cubic curve such as `smoothstep`.\n\nInstead of interpolating with:\n\n```text\nw = t\n```\n\nuse:\n\n```text\nw = t * t * (3 - 2 * t)\n```\n\nwhere `t` is the fractional position between two pixels.\n\nFor 2D image sampling:\n\n```text\nfx = fractional x position\nfy = fractional y position\n\nwx = fx * fx * (3 - 2 * fx)\nwy = fy * fy * (3 - 2 * fy)\n```\n\nThen blend the four neighboring pixels using `wx` and `wy`, just like bilinear interpolation:\n\n```text\na = lerp(p00, p10, wx)\nb = lerp(p01, p11, wx)\nresult = lerp(a, b, wy)\n```\n\nThis gives smoother transitions than ordinary bilinear interpolation because the weight curve has a gentler slope near pixel boundaries. It avoids the hard linear ramp of bilinear filtering while still requiring only four samples, unlike bicubic interpolation, which typically needs sixteen samples.\n\nOn mobile GPUs, this can be especially cheap because the same idea can be implemented by slightly remapping the texture coordinate inside each texel cell and then using the hardware bilinear sampler:\n\n```text\nsmoothFx = smoothstep(0.0, 1.0, fx)\nsmoothFy = smoothstep(0.0, 1.0, fy)\n```\n\nThen sample at the coordinate using those adjusted fractional offsets.\n\nThis is not true bicubic interpolation, so it will not preserve as much sharpness or detail as a full bicubic filter. However, it is often a good compromise for low-power devices because it provides a visibly smoother result than bilinear interpolation with almost the same memory bandwidth and only a few extra arithmetic operations.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft an abstract for an invention involving predetermined interpolation positions, stored bicubic weights, surrounding interpolated values, and a final linear interpolation step.",
+      "output": "An interpolation system and method are disclosed for efficiently generating output sample values from input data using predetermined interpolation positions. For each output position, a corresponding fractional position is mapped to one of a plurality of predetermined interpolation positions having associated stored bicubic interpolation weights. Surrounding input sample values are selected and combined with the stored bicubic weights to compute a plurality of surrounding interpolated values. A final output value is then generated by performing a linear interpolation between at least two of the surrounding interpolated values. By storing bicubic weights for predetermined positions and using a final linear interpolation step, the disclosed technique reduces computational complexity and memory requirements while maintaining high interpolation accuracy, making it suitable for image scaling, video processing, graphics rendering, and other digital signal processing applications.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Can you describe, in formal technical language, an algorithm that approximates bicubic interpolation by evaluating bicubic results at nearby grid positions and interpolating among them?",
+      "output": "A suitable formal description is:\n\n---\n\n### Algorithm: Local Resampling Approximation to Bicubic Interpolation\n\nLet \\(I : \\mathbb{Z}^2 \\to \\mathbb{R}\\) be a discrete image or scalar-valued grid. The goal is to approximate the bicubic interpolant \\(B(x,y)\\) at a continuous coordinate \\((x,y) \\in \\mathbb{R}^2\\), without evaluating the full bicubic expression directly at \\((x,y)\\). Instead, bicubic interpolation is evaluated at a small set of nearby auxiliary positions, and the final value is obtained by a lower-order interpolation over those values.\n\n---\n\n### 1. Bicubic Interpolant\n\nAssume a standard bicubic interpolation operator\n\n\\[\nB(x,y) = \\mathcal{B}[I](x,y),\n\\]\n\nwhere \\(\\mathcal{B}\\) denotes bicubic reconstruction from the discrete samples of \\(I\\). In a typical separable formulation,\n\n\\[\nB(x,y)\n=\n\\sum_{m=-1}^{2}\n\\sum_{n=-1}^{2}\nI(i+m,j+n)\n\\, k(m-\\alpha)\n\\, k(n-\\beta),\n\\]\n\nwith\n\n\\[\ni = \\lfloor x \\rfloor,\\qquad\nj = \\lfloor y \\rfloor,\n\\]\n\n\\[\n\\alpha = x-i,\\qquad\n\\beta = y-j,\n\\]\n\nand \\(k(\\cdot)\\) a cubic convolution kernel.\n\n---\n\n### 2. Auxiliary Sampling Grid\n\nChoose a small local auxiliary grid around \\((x,y)\\). For example, choose two nearby positions in each dimension,\n\n\\[\nx_0 \\le x \\le x_1,\n\\qquad\ny_0 \\le y \\le y_1,\n\\]\n\nwhere \\(x_0,x_1,y_0,y_1\\) are nearby grid-aligned or subgrid-aligned coordinates.\n\nFor instance, if an auxiliary resolution \\(h > 0\\) is used,\n\n\\[\nx_0 = h \\left\\lfloor \\frac{x}{h} \\right\\rfloor,\n\\qquad\nx_1 = x_0 + h,\n\\]\n\n\\[\ny_0 = h \\left\\lfloor \\frac{y}{h} \\right\\rfloor,\n\\qquad\ny_1 = y_0 + h.\n\\]\n\n---\n\n### 3. Bicubic Evaluation at Nearby Positions\n\nEvaluate the true bicubic interpolant at the four neighboring auxiliary positions:\n\n\\[\nb_{00} = B(x_0,y_0),\n\\]\n\n\\[\nb_{10} = B(x_1,y_0),\n\\]\n\n\\[\nb_{01} = B(x_0,y_1),\n\\]\n\n\\[\nb_{11} = B(x_1,y_1).\n\\]\n\nEach value \\(b_{pq}\\) is obtained using a standard bicubic interpolation operation on the original grid \\(I\\).\n\n---\n\n### 4. Local Interpolation of Bicubic Values\n\nCompute normalized local coordinates inside the auxiliary cell:\n\n\\[\nu = \\frac{x-x_0}{x_1-x_0},\n\\qquad\nv = \\frac{y-y_0}{y_1-y_0}.\n\\]\n\nThen approximate \\(B(x,y)\\) by bilinear interpolation of the neighboring bicubic evaluations:\n\n\\[\n\\widetilde{B}(x,y)\n=\n(1-u)(1-v)b_{00}\n+\nu(1-v)b_{10}\n+\n(1-u)v b_{01}\n+\nuv b_{11}.\n\\]\n\nThe value \\(\\widetilde{B}(x,y)\\) is the approximation to the bicubic interpolation result at \\((x,y)\\).\n\n---\n\n### 5. Pseudocode\n\n```text\nfunction ApproxBicubic(I, x, y, h):\n    x0 = h * floor(x / h)\n    x1 = x0 + h\n\n    y0 = h * floor(y / h)\n    y1 = y0 + h\n\n    b00 = Bicubic(I, x0, y0)\n    b10 = Bicubic(I, x1, y0)\n    b01 = Bicubic(I, x0, y1)\n    b11 = Bicubic(I, x1, y1)\n\n    u = (x - x0) / (x1 - x0)\n    v = (y - y0) / (y1 - y0)\n\n    return (1-u)*(1-v)*b00\n         + u*(1-v)*b10\n         + (1-u)*v*b01\n         + u*v*b11\n```\n\n---\n\n### Interpretation\n\nThis procedure constructs a secondary interpolant over samples of the bicubic interpolant itself. The exact bicubic result \\(B(x,y)\\) is not evaluated at the target coordinate directly; instead, it is sampled at nearby positions and approximated locally.\n\nThe method may be viewed as a two-stage interpolation scheme:\n\n1. **Primary reconstruction:** bicubic interpolation from the original discrete image.\n2. **Secondary approximation:** lower-order interpolation over nearby bicubic reconstruction samples.\n\nFormally,\n\n\\[\n\\widetilde{B}(x,y)\n=\n\\mathcal{L}\n\\left(\n\\left\\{\n\\mathcal{B}[I](x_p,y_q)\n\\right\\}_{p,q}\n\\right),\n\\]\n\nwhere \\(\\mathcal{L}\\) is a local interpolation operator, such as bilinear interpolation.\n\n---\n\n### Accuracy Considerations\n\nIf \\(h\\) is small, then \\(\\widetilde{B}(x,y)\\) approximates \\(B(x,y)\\) closely. Since the secondary interpolation above is bilinear, the approximation error is governed by the second derivatives of the bicubic surface over the auxiliary cell. In general,\n\n\\[\n\\widetilde{B}(x,y) = B(x,y) + O(h^2),\n\\]\n\nassuming \\(B\\) is sufficiently smooth over the local region.\n\nSmaller auxiliary spacing \\(h\\) improves accuracy but requires more bicubic evaluations or a denser precomputed auxiliary table. Larger \\(h\\) reduces cost but increases approximation error.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate a concise patent disclosure paragraph for interpolation logic that uses precomputed bicubic weight sets at fixed positions in an array to reduce processing requirements while maintaining smooth results.",
+      "output": "An interpolation system includes logic configured to perform bicubic interpolation using a plurality of precomputed bicubic weight sets stored in a memory array, each weight set corresponding to a fixed fractional sample position within an interpolation interval. For an input coordinate, the logic quantizes or maps a fractional component of the coordinate to one of the fixed positions, retrieves the associated precomputed weight set, and applies the weights to neighboring source samples to generate an interpolated output value. By replacing real-time calculation of bicubic coefficients with indexed access to stored weight sets, the system reduces arithmetic complexity, processing latency, and power consumption while preserving smooth interpolation characteristics associated with bicubic filtering.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6860986547085202,
+      "excess_ratio": 0.5599935144279536,
+      "baseline_mean": 0.12610514028056652,
+      "baseline_n_valid": 5,
+      "output_chars": 1112,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6995073891625616,
+          "baseline_mean": 0.09111760960898635,
+          "excess_ratio": 0.6083897795535753
+        },
+        "bz2": {
+          "actual_ratio": 0.5900900900900901,
+          "baseline_mean": 0.12732576525503833,
+          "excess_ratio": 0.4627643248350517
+        },
+        "lzma": {
+          "actual_ratio": 0.7622950819672131,
+          "baseline_mean": 0.15517940263224686,
+          "excess_ratio": 0.6071156793349662
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.419971671388102,
+      "excess_ratio": 0.29386653110753547,
+      "baseline_mean": 0.12610514028056652,
+      "baseline_n_valid": 5,
+      "output_chars": 1028,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.35962877030162416,
+          "baseline_mean": 0.09111760960898635,
+          "excess_ratio": 0.2685111606926378
+        },
+        "bz2": {
+          "actual_ratio": 0.420824295010846,
+          "baseline_mean": 0.12732576525503833,
+          "excess_ratio": 0.2934985297558077
+        },
+        "lzma": {
+          "actual_ratio": 0.46923076923076923,
+          "baseline_mean": 0.15517940263224686,
+          "excess_ratio": 0.3140513665985224
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.2147375079063884,
+      "excess_ratio": 0.08863236762582188,
+      "baseline_mean": 0.12610514028056652,
+      "baseline_n_valid": 5,
+      "output_chars": 2455,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.19844357976653695,
+          "baseline_mean": 0.09111760960898635,
+          "excess_ratio": 0.1073259701575506
+        },
+        "bz2": {
+          "actual_ratio": 0.19155206286836934,
+          "baseline_mean": 0.12732576525503833,
+          "excess_ratio": 0.06422629761333101
+        },
+        "lzma": {
+          "actual_ratio": 0.25089605734767023,
+          "baseline_mean": 0.15517940263224686,
+          "excess_ratio": 0.09571665471542337
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1642975206611571,
+      "excess_ratio": 0.038192380380590585,
+      "baseline_mean": 0.12610514028056652,
+      "baseline_n_valid": 5,
+      "output_chars": 2187,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.13065843621399176,
+          "baseline_mean": 0.09111760960898635,
+          "excess_ratio": 0.03954082660500541
+        },
+        "bz2": {
+          "actual_ratio": 0.15892672858617132,
+          "baseline_mean": 0.12732576525503833,
+          "excess_ratio": 0.03160096333113299
+        },
+        "lzma": {
+          "actual_ratio": 0.1992619926199262,
+          "baseline_mean": 0.15517940263224686,
+          "excess_ratio": 0.04408258998767933
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.05722326454033766,
+      "excess_ratio": -0.06888187574022886,
+      "baseline_mean": 0.12610514028056652,
+      "baseline_n_valid": 5,
+      "output_chars": 1407,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.029850746268656716,
+          "baseline_mean": 0.09111760960898635,
+          "excess_ratio": -0.06126686334032963
+        },
+        "bz2": {
+          "actual_ratio": 0.04871060171919771,
+          "baseline_mean": 0.12732576525503833,
+          "excess_ratio": -0.07861516353584062
+        },
+        "lzma": {
+          "actual_ratio": 0.08900523560209424,
+          "baseline_mean": 0.15517940263224686,
+          "excess_ratio": -0.06617416703015262
+        }
+      }
+    }
+  }
+}

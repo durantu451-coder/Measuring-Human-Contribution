@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15758622",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA system performs runtime adjustment of a configuration model. The system receives, at runtime, a change request directed at one or more modified entities in the configuration model. Based on leadership information, one or more infringing entities are identified among the one or more modified entities. The leadership information indicates an impact that one entity has on another entity with respect to a given constraint. Based on the leadership information, a propagation scope is identified for a constraint violated by an infringing entity. The propagation scope includes the infringing entity and other entities that are potentially affected by the request. For resolving single constraint violation, a collection of paths are created in the propagation scope and a path is selected one at a time starting from the shortest path in the collection. For resolving multiple constraint violation, a bonded path is formed for a group of propagation scopes that overlap.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA system performs runtime adjustment of a configuration model. The system receives, at runtime, a change request directed at one or more modified entities in the configuration model. Based on leadership information, one or more infringing entities are identified among the one or more modified entities. The leadership information indicates an impact that one entity has on another entity with respect to a given constraint. Based on the leadership information, a propagation scope is identified for a constraint violated by an infringing entity. The propagation scope includes the infringing entity and other entities that are potentially affected by the request. For resolving single constraint violation, a collection of paths are created in the propagation scope and a path is selected one at a time starting from the shortest path in the collection. For resolving multiple constraint violation, a bonded path is formed for a group of propagation scopes that overlap.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The system adjusts a configuration model at runtime in response to a change request affecting one or more entities.\n- Leadership information identifies infringing entities and describes how one entity impacts another with respect to a constraint.\n- For each violated constraint, the system determines a propagation scope containing the infringing entity and other potentially affected entities.\n- To resolve a single constraint violation, the system creates candidate paths within the propagation scope and evaluates them one at a time, starting with the shortest.\n- To resolve multiple constraint violations, the system forms a bonded path for overlapping propagation scopes.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe system adjusts a configuration model at runtime by using leadership information to identify constraint-violating entities and their propagation scopes, then generating paths for single violations or bonded paths for overlapping multiple violations. It prioritizes the shortest path for single violations and consolidates overlapping scopes for multiple violations, enabling targeted and efficient constraint resolution.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, Based, For"
+  },
+  "outputs": {
+    "L1": "A system dynamically adjusts a configuration model at runtime. The system receives a runtime change request directed to one or more modified entities within the configuration model. Based on leadership information, the system identifies one or more infringing entities among the modified entities. The leadership information indicates the impact of one entity on another with respect to a given constraint. For a constraint violated by an infringing entity, the system uses the leadership information to identify a propagation scope that includes the infringing entity and other entities potentially affected by the request. To resolve a single constraint violation, the system creates a collection of paths within the propagation scope and selects the paths one at a time, beginning with the shortest path in the collection. To resolve multiple constraint violations, the system forms a bonded path for a group of overlapping propagation scopes.",
+    "L2": "A system dynamically updates a configuration model during operation. When a runtime modification request targets one or more entities in the model, the system uses leadership data to determine which of those modified entities are in violation. This data describes how one entity influences another in relation to a particular constraint. For each constraint breached by an infringing entity, the system relies on the leadership data to define a propagation scope containing both the infringing entity and any other entities that the request could affect. To address a single constraint breach, the system generates multiple paths within that scope and evaluates them individually, beginning with the shortest. When several constraints are violated, the system creates a bonded path for propagation scopes that overlap.",
+    "L3": "The system dynamically adjusts a configuration model at runtime in response to a change request affecting one or more entities. When the requested change causes a constraint to be violated, leadership information is used to identify the infringing entities and describe how changes to one entity may affect another with respect to that constraint.\n\nFor each violated constraint, the system determines a propagation scope. This scope includes the infringing entity and any additional entities that may be affected by, or may contribute to resolving, the violation. The propagation scope therefore defines the portion of the configuration model within which corrective changes can be considered.\n\nWhen resolving a single constraint violation, the system creates candidate paths through the corresponding propagation scope. Each path represents a possible sequence of entity adjustments that could restore compliance. The candidate paths are evaluated individually, beginning with the shortest path, so that more limited corrective actions are considered before broader changes.\n\nWhen multiple constraint violations occur, their propagation scopes may overlap. In that case, the system combines the relevant candidate paths into a bonded path. The bonded path provides a coordinated basis for evaluating and applying adjustments across the overlapping scopes, allowing the system to address related violations together while accounting for dependencies among the affected entities.",
+    "L4": "The system dynamically adjusts a configuration model at runtime to resolve constraint violations while minimizing unnecessary changes. It begins by analyzing leadership information, which indicates how entities influence, control, or depend on one another within the model. Using this information, the system identifies the entities that violate one or more constraints and determines each violation’s propagation scope—the set of related entities that may need to be considered or modified for the violation to be resolved.\n\nWhen an entity is affected by a single constraint violation, the system generates one or more candidate adjustment paths through the configuration model. Each path represents a sequence of entities or configuration changes capable of propagating the required correction from the relevant leader to the violating entity. The system compares these candidates and prioritizes the shortest valid path. This reduces the number of affected components, limits runtime disruption, and avoids changes to unrelated parts of the configuration.\n\nMultiple simultaneous violations require additional coordination, particularly when their propagation scopes overlap. Rather than treating each violation independently and potentially producing conflicting or redundant changes, the system detects the shared portions of their scopes and generates bonded paths. These bonded paths combine the adjustment routes for related violations, allowing common entities and dependencies to be handled as a unified resolution structure. Overlapping scopes are therefore consolidated, while independent scopes can continue to be processed separately.\n\nBy distinguishing between isolated and overlapping violations, the system can select an adjustment strategy appropriate to the structure of the problem. Shortest-path selection provides an efficient solution for single violations, while bonded-path generation coordinates the resolution of multiple interacting violations. The result is a targeted runtime adaptation process that reduces redundant operations, limits the impact of changes, and resolves configuration constraints more consistently and efficiently.",
+    "L5": "**The** foundation of progress is curiosity. **Based** on knowledge and experience, people can make thoughtful decisions **for** a better future. Each word, idea, and action contributes to meaningful change."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize the following patent abstract about runtime adjustment of a configuration model, preserving the key concepts of leadership information, propagation scopes, shortest-path selection, and bonded paths.",
+      "output": "Please provide the patent abstract you’d like summarized.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a concise technical description of a system that resolves single and multiple constraint violations caused by runtime configuration changes.",
+      "output": "The system validates runtime configuration changes against a set of declarative constraints before committing them. For a single violation, it applies a predefined corrective action, such as adjusting the proposed value, updating a dependent setting, or rejecting the change. For multiple violations, it builds a dependency graph, groups related conflicts, and uses constraint priorities and optimization rules to compute a consistent configuration with minimal deviation from the requested state. Changes are applied transactionally, revalidated after resolution, and committed atomically; if no valid solution exists, the system rolls back to the last known valid configuration and returns structured diagnostics identifying the conflicting constraints and attempted remedies.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Explain how runtime configuration changes can be repaired by identifying infringing entities, determining affected scopes, and using shortest or bonded paths.",
+      "output": "Runtime configuration repair can be treated as a graph-based impact and remediation problem.\n\n1. **Identify infringing entities**\n   - Compare the current runtime state with the intended configuration or policy.\n   - Mark entities that violate constraints, such as services, devices, processes, configuration objects, or links.\n   - Record the violated rule and relevant dependencies—for example, “service A uses an unauthorized endpoint” or “router R has a mismatched ACL.”\n\n2. **Determine affected scopes**\n   - Traverse dependency and containment relationships from each infringing entity.\n   - Establish the smallest scope in which the violation can be corrected, such as a process, host, cluster, network segment, tenant, or entire deployment.\n   - Include indirectly affected entities whose behavior depends on the violating object, while excluding unrelated areas. This limits disruption and prevents unnecessary rollback.\n\n3. **Find repair paths**\n   Model runtime entities and their relationships as a graph:\n   - **Shortest paths** find the least-cost sequence of changes from the current state to a compliant state. Edge weights can represent downtime, risk, number of edits, or operational cost.\n   - **Bonded paths**—paths constrained to entities that must be changed or validated together—preserve relationships such as replicas, redundant links, transaction groups, or tightly coupled configuration objects. A bonded repair is applied atomically or in a coordinated order.\n\n4. **Generate and validate the repair**\n   - Convert the selected path into an ordered change plan.\n   - Check prerequisites, invariants, rollback points, and whether the repair creates new violations.\n   - Apply the plan to the narrowest affected scope, verify compliance, and expand the scope only if local repair fails.\n\nFor example, if a service points to an invalid database endpoint, the service is the immediate infringing entity. Dependency analysis may show that only one deployment and its replicas are affected. A shortest-path repair might update the endpoint and restart one process; a bonded-path repair would update all replicas together—or roll them sequentially under a consistency constraint—to avoid mixed configuration states.\n\nThe overall goal is to repair the smallest necessary portion of the runtime system with the lowest-risk valid sequence of changes.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Draft a patent-style abstract for an invention that uses entity leadership relationships to propagate and resolve constraint violations in a configuration model.",
+      "output": "A computer-implemented method, system, and non-transitory computer-readable medium are disclosed for managing constraint violations in a configuration model. The configuration model includes entities associated by leadership relationships that designate one entity as a leader relative to one or more follower entities. In response to a configuration change, a constraint engine detects a violation involving at least one entity and traverses the leadership relationships to identify entities authorized to influence resolution of the violation. Configuration values, requirements, or corrective actions are propagated from selected leader entities to corresponding follower entities according to relationship direction, priority, scope, and constraint type. Where propagated actions conflict, the system resolves the conflict using leadership rank, constraint precedence, policy, or a calculated resolution cost. The configuration model is iteratively updated and reevaluated until the violation is resolved or an exception condition is generated. The disclosed approach enables coordinated and deterministic remediation of interdependent configuration constraints while preserving designated control relationships among modeled entities.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Describe an algorithm for handling change requests in a constrained configuration model, including how it treats one violation versus overlapping multiple violations.",
+      "output": "An effective change-handling algorithm treats the configuration as a constraint-satisfaction problem:\n\n1. **Apply the request tentatively** to a copy of the current configuration.\n2. **Determine the impact set**: the changed elements and all constraints that depend on them.\n3. **Re-evaluate only that set** and collect the violated constraints.\n4. **Generate repair candidates**, such as:\n   - changing dependent values,\n   - selecting alternatives,\n   - adding or removing components,\n   - or rejecting/relaxing part of the request.\n5. **Filter candidates** against all relevant constraints.\n6. **Rank valid repairs** by minimal disruption, cost, preference, or priority.\n7. **Commit the best repair** or return alternatives to the requester.\n\n### One violation\n\nFor a single violated constraint, the algorithm isolates its conflict set—the requested change and existing decisions that jointly cause the violation. It searches for a local, minimal repair, usually preserving the request while changing as few other configuration elements as possible. If no repair exists, it reports the conflicting constraint and proposes modifying or rejecting the request.\n\n### Multiple overlapping violations\n\nViolations must not be repaired independently when they share variables or components. A fix for one may worsen another or undo a previous fix. The algorithm therefore:\n\n- groups violations into connected conflict clusters based on shared elements;\n- computes candidate repairs for the cluster as a whole;\n- checks every candidate against all constraints in that cluster and, finally, the complete model;\n- chooses a globally compatible minimal repair.\n\nIndependent violation clusters may be solved separately and their repairs combined. Overlapping clusters require joint solving, often using backtracking, SAT/SMT, or constraint-optimization techniques. If no complete repair exists, the algorithm returns a minimal unsatisfiable conflict set so the requester can see which parts of the change cannot coexist.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6135488837567359,
+      "excess_ratio": 0.4054400314346851,
+      "baseline_mean": 0.20810885232205076,
+      "baseline_n_valid": 5,
+      "output_chars": 946,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.601010101010101,
+          "baseline_mean": 0.15291311144215602,
+          "excess_ratio": 0.44809698956794497
+        },
+        "bz2": {
+          "actual_ratio": 0.550351288056206,
+          "baseline_mean": 0.20434495999435942,
+          "excess_ratio": 0.3460063280618466
+        },
+        "lzma": {
+          "actual_ratio": 0.680672268907563,
+          "baseline_mean": 0.2542006968076487,
+          "excess_ratio": 0.4264715720999144
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3831269349845201,
+      "excess_ratio": 0.17501808266246935,
+      "baseline_mean": 0.20810885232205076,
+      "baseline_n_valid": 5,
+      "output_chars": 818,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.33587786259541985,
+          "baseline_mean": 0.15291311144215602,
+          "excess_ratio": 0.18296475115326383
+        },
+        "bz2": {
+          "actual_ratio": 0.35697399527186763,
+          "baseline_mean": 0.20434495999435942,
+          "excess_ratio": 0.1526290352775082
+        },
+        "lzma": {
+          "actual_ratio": 0.44537815126050423,
+          "baseline_mean": 0.2542006968076487,
+          "excess_ratio": 0.19117745445285556
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.33948518698397284,
+      "excess_ratio": 0.13137633466192208,
+      "baseline_mean": 0.20810885232205076,
+      "baseline_n_valid": 5,
+      "output_chars": 1478,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.30401234567901236,
+          "baseline_mean": 0.15291311144215602,
+          "excess_ratio": 0.15109923423685634
+        },
+        "bz2": {
+          "actual_ratio": 0.31070889894419307,
+          "baseline_mean": 0.20434495999435942,
+          "excess_ratio": 0.10636393894983365
+        },
+        "lzma": {
+          "actual_ratio": 0.39572192513368987,
+          "baseline_mean": 0.2542006968076487,
+          "excess_ratio": 0.1415212283260412
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.17157534246575343,
+      "excess_ratio": -0.03653350985629733,
+      "baseline_mean": 0.20810885232205076,
+      "baseline_n_valid": 5,
+      "output_chars": 2162,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.14361140443505807,
+          "baseline_mean": 0.15291311144215602,
+          "excess_ratio": -0.009301707007097954
+        },
+        "bz2": {
+          "actual_ratio": 0.1619047619047619,
+          "baseline_mean": 0.20434495999435942,
+          "excess_ratio": -0.04244019808959751
+        },
+        "lzma": {
+          "actual_ratio": 0.20622568093385213,
+          "baseline_mean": 0.2542006968076487,
+          "excess_ratio": -0.047975015873796545
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.2041587901701323,
+      "excess_ratio": -0.003950062151918454,
+      "baseline_mean": 0.20810885232205076,
+      "baseline_n_valid": 5,
+      "output_chars": 207,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.11643835616438356,
+          "baseline_mean": 0.15291311144215602,
+          "excess_ratio": -0.03647475527777247
+        },
+        "bz2": {
+          "actual_ratio": 0.2,
+          "baseline_mean": 0.20434495999435942,
+          "excess_ratio": -0.00434495999435941
+        },
+        "lzma": {
+          "actual_ratio": 0.2692307692307692,
+          "baseline_mean": 0.2542006968076487,
+          "excess_ratio": 0.015030072423120544
+        }
+      }
+    }
+  }
+}

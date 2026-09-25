@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15737019",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nProvided is an image processing device including a changing unit that changes a threshold value of intensity of each of points within an image, a first display control unit that controls displaying of points including an intensity value equal to or greater than the threshold value every time the threshold value is changed by the changing unit, a receiving unit that receives designation of one or a plurality of predetermined regions within a displayed image based on an operation of a user, a fixing unit that fixes the threshold value of each of the points within the designated predetermined region as a threshold value by the changing unit at a time of designation of the predetermined region, a second display control unit that controls displaying of points including an intensity value equal to or greater than the threshold value fixed by the fixing unit among the points within the predetermined region, and points including an intensity value equal to or greater than the threshold value to be changed by the changing unit among the points outside the predetermined region, in a case where there is one or the plurality of predetermined regions within the image.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nProvided is an image processing device including a changing unit that changes a threshold value of intensity of each of points within an image, a first display control unit that controls displaying of points including an intensity value equal to or greater than the threshold value every time the threshold value is changed by the changing unit, a receiving unit that receives designation of one or a plurality of predetermined regions within a displayed image based on an operation of a user, a fixing unit that fixes the threshold value of each of the points within the designated predetermined region as a threshold value by the changing unit at a time of designation of the predetermined region, a second display control unit that controls displaying of points including an intensity value equal to or greater than the threshold value fixed by the fixing unit among the points within the predetermined region, and points including an intensity value equal to or greater than the threshold value to be changed by the changing unit among the points outside the predetermined region, in a case where there is one or the plurality of predetermined regions within the image.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The image processing device includes a changing unit that adjusts the intensity threshold value for points within an image.\n- A first display control unit displays points whose intensity values are equal to or greater than the threshold whenever the threshold is changed.\n- A receiving unit accepts user designation of one or more predetermined regions within the displayed image.\n- A fixing unit locks the threshold value for points within a designated region at the value used when the region was designated.\n- A second display control unit displays points inside designated regions based on the fixed threshold and points outside those regions based on the dynamically changing threshold.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nAn image processing device is described for interactively thresholding image intensities by changing threshold values, displaying points that meet them, and allowing a user to designate one or more regions in the displayed image. When a region is designated, its threshold is fixed while thresholds outside the region remain adjustable, enabling stable region-specific visualization alongside continued global image adjustment.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Provided"
+  },
+  "outputs": {
+    "L1": "Provided is an image processing device comprising: a changing unit configured to change a threshold value of intensity for each point within an image; a first display control unit configured to control display of points having an intensity value equal to or greater than the threshold value each time the threshold value is changed by the changing unit; a receiving unit configured to receive designation of one or a plurality of predetermined regions within a displayed image based on a user operation; a fixing unit configured to fix the threshold value of each point within the designated predetermined region at the threshold value set by the changing unit at the time the predetermined region is designated; and a second display control unit configured, when one or a plurality of predetermined regions are present within the image, to control display of points within the predetermined region that have an intensity value equal to or greater than the threshold value fixed by the fixing unit, and points outside the predetermined region that have an intensity value equal to or greater than the threshold value changed by the changing unit.",
+    "L2": "An image processing apparatus is provided. The apparatus includes: a threshold changing unit configured to vary an intensity threshold for points in an image; a first display control unit configured to display, whenever the threshold is changed, points whose intensity values are equal to or higher than the changed threshold; a receiving unit configured to accept, based on a user operation, designation of one or more predetermined regions in the displayed image; a fixing unit configured to lock, for each point in a designated predetermined region, the threshold value set by the changing unit at the moment that region is designated; and a second display control unit configured, when one or more predetermined regions exist in the image, to control display of both points inside the predetermined region whose intensity values are equal to or higher than the fixed threshold and points outside the predetermined region whose intensity values are equal to or higher than the threshold being changed by the changing unit.",
+    "L3": "The image processing device includes a changing unit configured to adjust an intensity threshold value for points within an image. The threshold value may be changed, for example, in response to a user operation or according to a predetermined processing condition.\n\nA first display control unit displays, in the image, points having intensity values equal to or greater than the current threshold value whenever the threshold value is changed. In this way, the displayed image is updated dynamically in accordance with changes to the threshold value, allowing the user to visually confirm which points satisfy the current threshold condition.\n\nThe device further includes a receiving unit that accepts a user designation of one or more predetermined regions within the displayed image. The predetermined regions may be selected by the user from among areas displayed on the screen, such as by drawing, clicking, or otherwise specifying a region of interest.\n\nA fixing unit is provided to fix, or lock, the threshold value for points within each designated region. Specifically, when a region is designated by the user, the fixing unit stores the threshold value being used at the time of designation and applies that fixed threshold value to points located within the designated region.\n\nA second display control unit then controls display of the image such that points inside the designated regions are displayed based on the corresponding fixed threshold value, while points outside the designated regions are displayed based on the threshold value that continues to be dynamically changed by the changing unit. Accordingly, even if the threshold value is subsequently adjusted, the display condition within the designated regions remains based on the threshold value fixed at the time of designation, whereas the display condition outside those regions continues to change in accordance with the updated threshold value.",
+    "L4": "An image processing device is provided for interactively processing and displaying an image by applying threshold values to image intensity information. The device is configured to receive image data, such as grayscale image data, medical image data, or other intensity-based image data, and to display, on a display screen, image points or pixels that satisfy a selected threshold condition. The threshold condition may include, for example, an upper threshold, a lower threshold, or a range between two threshold values. By changing the threshold value or values, a user can cause different portions of the image to appear or disappear, thereby enabling visual extraction of structures, objects, or regions having particular intensity characteristics.\n\nThe device includes an input unit that allows the user to adjust the threshold values while observing the displayed image. As the threshold values are changed, the image processing device updates the displayed image in real time or near real time so that only the pixels, points, or image components meeting the current threshold condition are displayed or emphasized. This interactive thresholding operation allows the user to search for an appropriate threshold setting while visually confirming the effect of the adjustment on the image.\n\nThe device further includes a region designation function. Using a pointing device, touch panel, cursor, stylus, or other input means, the user may designate one or more regions within the displayed image. A designated region may be defined by drawing a closed boundary, selecting a rectangular or polygonal area, selecting a region grown from a seed point, or using any other suitable region selection method. The designated region may correspond to an anatomical structure, a defect, an object of interest, or any other area that the user wishes to preserve under a particular threshold condition.\n\nWhen a region is designated, the threshold value or threshold range currently applied to that region is fixed for the designated region. In other words, the image processing device stores the threshold condition associated with the designated region at the time of designation and continues to apply that stored threshold condition to image points inside the region. As a result, the visual representation of the selected region remains stable, even if the user subsequently changes the threshold values for the rest of the image.\n\nAt the same time, the threshold values applied to portions of the image outside the designated region remain adjustable. The user may therefore continue to change the threshold values for the non-designated region while the designated region is maintained under its fixed threshold condition. This makes it possible to compare a stable, region-specific visualization with changing threshold displays in surrounding or remaining image areas. The user can thus preserve an area of interest once an appropriate threshold has been found, while continuing to explore and adjust the threshold settings for other parts of the image.\n\nThe device may allow multiple regions to be designated. Each designated region may have its own fixed threshold value or threshold range, corresponding to the threshold condition in effect when that region was selected. Accordingly, different regions in the same image may be displayed according to different threshold conditions. The thresholds for regions not yet designated may remain under global control, while the thresholds for previously designated regions remain locked unless the user deliberately releases or modifies them.\n\nThe image processing device may also provide controls for canceling a designated region, changing the fixed threshold assigned to a designated region, adding new regions, merging regions, or returning all regions to a common threshold setting. The display may visually distinguish fixed-threshold regions from adjustable regions by using different colors, outlines, shading, transparency, or other display attributes. This enables the user to recognize which parts of the image are locked to previously selected threshold values and which parts remain responsive to current threshold adjustment.\n\nBy fixing the threshold condition for a designated region while permitting continued adjustment outside that region, the device improves interactive image analysis. It prevents an already optimized region from being lost or altered during subsequent threshold operations, and it allows the user to examine other image portions without disturbing the visual state of the selected region. This is particularly useful in applications where different areas of an image have different intensity distributions or where a single global threshold is insufficient to display all desired structures clearly.\n\nThus, the described image processing device supports both global threshold adjustment and region-specific threshold fixation. It enables a user to interactively determine suitable threshold values, designate regions of interest, preserve the display of those regions under their selected threshold conditions, and continue adjusting threshold values elsewhere in the image. This provides stable and flexible visualization of complex image data while maintaining intuitive user control.",
+    "L5": "Please provide the actual keywords or topic you’d like the text to be about, and I’ll write it for you."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a patent-style \"Provided is...\" summary for an image processing device that lets a user change intensity thresholds, select regions, and freeze thresholds inside selected regions while continuing to adjust thresholds outside them.",
+      "output": "Provided is an image processing device including: a display unit configured to display an image; an operation unit configured to receive a threshold-changing operation by a user; a region selection unit configured to receive selection of at least one region in the displayed image; and a control unit configured to process the image based on an intensity threshold. The control unit changes the intensity threshold in accordance with the threshold-changing operation and updates display of the image based on the changed intensity threshold. When the at least one region is selected, the control unit stores, for the selected region, the intensity threshold applied at a time of selection or at a time of a freeze instruction, and thereafter maintains the stored intensity threshold for pixels or image data within the selected region while permitting the intensity threshold for image data outside the selected region to be further changed in accordance with subsequent threshold-changing operations. Thus, threshold conditions inside a user-selected region can be fixed while threshold adjustment is continued for other portions of the image.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Draft a single-sentence abstract for an image processing apparatus invention involving dynamic threshold adjustment, display control, user-designated regions, and fixed threshold values within those regions.",
+      "output": "An image processing apparatus dynamically adjusts an image processing threshold for displayed image data while enabling a user to designate one or more regions on the image, and controls processing so that a fixed threshold value is applied within each designated region independently of the dynamic threshold adjustment used outside the designated region.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Convert the following concept into Japanese patent claim-style English: an image viewer changes an intensity threshold, displays pixels above the threshold, allows selecting one or more regions, locks the current threshold in selected regions, and continues threshold-based display elsewhere.",
+      "output": "An image display apparatus comprising:\n\na threshold setting unit configured to change an intensity threshold for image data;\n\na display control unit configured to display, among pixels included in the image data, pixels having intensity values exceeding the intensity threshold;\n\na region selection unit configured to receive selection of one or more regions in an image being displayed; and\n\na threshold fixing unit configured to fix, for the selected one or more regions, the intensity threshold being set at a time of the selection,\n\nwherein the display control unit is configured to display pixels in the selected one or more regions based on the fixed intensity threshold, and to continue display of pixels in regions other than the selected one or more regions based on a currently changed intensity threshold.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate a formal patent description sentence beginning with \"Provided is an image processing device including...\" for software that displays image points above variable thresholds and preserves selected regions at the threshold used when they were selected.",
+      "output": "Provided is an image processing device including a processor configured to display, from image data, image points having pixel values exceeding a variable threshold value, receive selection of a region from among the displayed image points at a first threshold value, store information identifying the selected region in association with the first threshold value, and, when the variable threshold value is subsequently changed, preserve display of the selected region based on the first threshold value while displaying other image points based on the changed threshold value.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Describe an image processing device in legal/patent language with units for changing an intensity threshold, displaying points meeting it, receiving user region designations, fixing thresholds for those regions, and separately controlling display inside and outside the regions.",
+      "output": "An image processing device comprising:\n\nan image acquisition unit configured to acquire image data representing an image;\n\na threshold changing unit configured to change an intensity threshold used for extracting pixels or points from the image data;\n\na display control unit configured to cause a display unit to display, in the image, points or pixels having intensity values satisfying the intensity threshold changed by the threshold changing unit;\n\na region designation receiving unit configured to receive, from a user, designation of one or more regions in the image displayed by the display unit;\n\na threshold fixing unit configured to fix, for each of the one or more regions designated by the user, an intensity threshold corresponding to the region; and\n\na display-condition control unit configured to separately control a display condition for points or pixels located inside the one or more designated regions and a display condition for points or pixels located outside the one or more designated regions,\n\nwherein the display control unit is configured to display the points or pixels satisfying the fixed intensity threshold within each corresponding designated region independently from points or pixels outside the designated region.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.5850973751058425,
+      "excess_ratio": 0.2913179541389339,
+      "baseline_mean": 0.29377942096690857,
+      "baseline_n_valid": 5,
+      "output_chars": 1146,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5685714285714286,
+          "baseline_mean": 0.23994802773238252,
+          "excess_ratio": 0.32862340083904606
+        },
+        "bz2": {
+          "actual_ratio": 0.5405405405405406,
+          "baseline_mean": 0.2853453591486936,
+          "excess_ratio": 0.255195181391847
+        },
+        "lzma": {
+          "actual_ratio": 0.6415094339622641,
+          "baseline_mean": 0.3447444485040393,
+          "excess_ratio": 0.29676498545822483
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4323432343234323,
+      "excess_ratio": 0.13856381335652374,
+      "baseline_mean": 0.29377942096690857,
+      "baseline_n_valid": 5,
+      "output_chars": 1025,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3701657458563536,
+          "baseline_mean": 0.23994802773238252,
+          "excess_ratio": 0.13021771812397107
+        },
+        "bz2": {
+          "actual_ratio": 0.4396135265700483,
+          "baseline_mean": 0.2853453591486936,
+          "excess_ratio": 0.15426816742135474
+        },
+        "lzma": {
+          "actual_ratio": 0.47706422018348627,
+          "baseline_mean": 0.3447444485040393,
+          "excess_ratio": 0.13231977167944697
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.313412408759124,
+      "excess_ratio": 0.01963298779221545,
+      "baseline_mean": 0.29377942096690857,
+      "baseline_n_valid": 5,
+      "output_chars": 1924,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2706222865412446,
+          "baseline_mean": 0.23994802773238252,
+          "excess_ratio": 0.03067425880886207
+        },
+        "bz2": {
+          "actual_ratio": 0.32,
+          "baseline_mean": 0.2853453591486936,
+          "excess_ratio": 0.03465464085130643
+        },
+        "lzma": {
+          "actual_ratio": 0.34536082474226804,
+          "baseline_mean": 0.3447444485040393,
+          "excess_ratio": 0.0006163762382287441
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.09779065555957986,
+      "excess_ratio": -0.1959887654073287,
+      "baseline_mean": 0.29377942096690857,
+      "baseline_n_valid": 5,
+      "output_chars": 5274,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.07365591397849462,
+          "baseline_mean": 0.23994802773238252,
+          "excess_ratio": -0.16629211375388792
+        },
+        "bz2": {
+          "actual_ratio": 0.10275545350172216,
+          "baseline_mean": 0.2853453591486936,
+          "excess_ratio": -0.18258990564697142
+        },
+        "lzma": {
+          "actual_ratio": 0.11666666666666667,
+          "baseline_mean": 0.3447444485040393,
+          "excess_ratio": -0.22807778183737262
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.4072948328267477,
+      "excess_ratio": 0.11351541185983915,
+      "baseline_mean": 0.29377942096690857,
+      "baseline_n_valid": 5,
+      "output_chars": 103,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3146067415730337,
+          "baseline_mean": 0.23994802773238252,
+          "excess_ratio": 0.07465871384065118
+        },
+        "bz2": {
+          "actual_ratio": 0.4107142857142857,
+          "baseline_mean": 0.2853453591486936,
+          "excess_ratio": 0.12536892656559212
+        },
+        "lzma": {
+          "actual_ratio": 0.46875,
+          "baseline_mean": 0.3447444485040393,
+          "excess_ratio": 0.12400555149596071
+        }
+      }
+    }
+  }
+}

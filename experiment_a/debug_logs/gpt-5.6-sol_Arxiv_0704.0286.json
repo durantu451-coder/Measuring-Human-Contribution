@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0286",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThe paper presents a survey of mathematical problems, techniques, and challenges arising in the Thermoacoustic and Photoacoustic Tomography.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThe paper presents a survey of mathematical problems, techniques, and challenges arising in the Thermoacoustic and Photoacoustic Tomography.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper surveys mathematical problems in Thermoacoustic and Photoacoustic Tomography.\n- It reviews techniques used in these imaging modalities.\n- It discusses key challenges arising in the field.\n- The survey focuses on the mathematical foundations of both tomography methods.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe paper surveys mathematical problems, techniques, and challenges in thermoacoustic and photoacoustic tomography. It identifies the field’s key analytical and computational issues, providing a framework for understanding current progress and future research needs.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, Thermoacoustic, Photoacoustic"
+  },
+  "outputs": {
+    "L1": "The paper surveys the mathematical problems, techniques, and challenges that arise in thermoacoustic and photoacoustic tomography.",
+    "L2": "The article reviews the mathematical questions, methods, and obstacles associated with Thermoacoustic and Photoacoustic Tomography.",
+    "L3": "This paper presents a comprehensive survey of the mathematical problems underlying Thermoacoustic Tomography (TAT) and Photoacoustic Tomography (PAT). It reviews the principal techniques used in these imaging modalities, with particular attention to the mathematical models and reconstruction methods involved. The paper also discusses key theoretical and practical challenges in the field, including issues related to data acquisition, image reconstruction, stability, and resolution. Overall, the survey emphasizes the mathematical foundations of TAT and PAT, providing a structured overview of the concepts, methods, and open problems that shape their development.",
+    "L4": "Thermoacoustic tomography (TAT) and photoacoustic tomography (PAT) are hybrid imaging modalities that combine the high contrast of electromagnetic absorption with the spatial resolution of ultrasound. In both methods, a short electromagnetic pulse—typically a radio-frequency pulse in TAT or a laser pulse in PAT—is absorbed by tissue. The resulting rapid heating produces a localized pressure increase that propagates outward as an acoustic wave. Measurements of this wave at detectors surrounding the object are then used to reconstruct the initial pressure distribution, which contains information about the tissue’s electromagnetic absorption properties.\n\nThe mathematical foundation of these modalities is an inverse problem for the acoustic wave equation. Given pressure data recorded on a measurement surface over time, one seeks to recover the source that generated the waves. Fundamental analytical questions include uniqueness, stability, and explicit reconstruction. When the sound speed is constant and measurements are available on a closed surface, several inversion formulas and reconstruction techniques can be derived. These include filtered backprojection, spherical-mean inversion, eigenfunction expansions, time-reversal methods, and formulations based on Fourier or integral geometry. Each approach offers different advantages in terms of theoretical transparency, computational cost, and robustness.\n\nPractical imaging configurations, however, introduce substantial complications. Detectors may cover only part of the boundary, producing limited-view data and making some features of the object difficult or impossible to recover stably. Measurements are also finite in duration, spatially discrete, noisy, and affected by the bandwidth and directivity of the sensors. Microlocal analysis helps explain which singularities, such as edges and interfaces, are visible from a given acquisition geometry and which are likely to be blurred or lost. This perspective provides a precise way to understand artifacts and instability in incomplete-data reconstructions.\n\nAnother major challenge is acoustic heterogeneity. Biological tissue generally has a spatially varying sound speed, so algorithms based on a constant-speed model can produce geometric distortions and loss of resolution. If the sound speed is known, reconstruction can be approached through time reversal, numerical solution of the wave equation, or spectral methods. If it is unknown, the problem becomes significantly more difficult because both the initial pressure and the acoustic parameters may need to be determined from the same data. Questions of identifiability, nonuniqueness, and stable joint reconstruction remain important areas of research.\n\nAdditional physical effects must also be incorporated into realistic models. Acoustic attenuation and dispersion can alter the measured signals, while imperfect thermal and stress confinement may invalidate the assumption of instantaneous energy deposition. Recovering optical absorption from the reconstructed pressure is itself a further inverse problem because the initial pressure depends not only on absorption but also on the spatial distribution of optical fluence. Quantitative photoacoustic tomography therefore requires coupling acoustic inversion with models of light transport and, in some cases, estimating several spatially varying tissue parameters simultaneously.\n\nThe computational side of the field is equally important. Accurate reconstructions may require repeated simulations of wave propagation in large, heterogeneous three-dimensional domains. Efficient discretizations, fast time-reversal algorithms, iterative optimization methods, regularization strategies, and parallel computing are therefore essential. Numerical methods must balance speed, memory use, physical fidelity, and resistance to noise and modeling error. Careful treatment of detector response, boundary conditions, interpolation, and discretization is necessary to ensure that theoretically sound methods remain reliable in practice.\n\nOverall, the mathematical study of thermoacoustic and photoacoustic tomography brings together partial differential equations, integral geometry, harmonic and microlocal analysis, inverse-problem theory, numerical analysis, and scientific computing. Considerable progress has been made in establishing reconstruction formulas and understanding idealized acquisition settings. Nevertheless, incomplete measurements, heterogeneous media, attenuation, quantitative parameter recovery, uncertainty, and computational scalability continue to pose difficult problems. By organizing these analytical and computational issues within a common framework, the survey clarifies the current state of the field and highlights the directions in which further mathematical and algorithmic advances are most needed.",
+    "L5": "# The Thermoacoustic and Photoacoustic Effect\n\nThe thermoacoustic and photoacoustic effects describe the conversion of energy into sound through changes in temperature. In thermoacoustic systems, rapid heating and cooling create pressure variations within a material or fluid. These variations generate acoustic waves and can also be used in reverse, allowing sound waves to produce temperature differences for cooling applications.\n\nThe photoacoustic effect is a related phenomenon in which a material absorbs modulated or pulsed light. The absorbed optical energy is converted into heat, causing brief thermal expansion and producing sound waves. By detecting these waves, researchers can obtain information about the material’s composition and structure.\n\nPhotoacoustic technology is widely used in medical imaging, gas sensing, environmental monitoring, and materials analysis. It combines the high contrast of optical methods with the deeper penetration of ultrasound. Thermoacoustic techniques are similarly valuable in energy conversion, refrigeration, and non-invasive imaging. Together, these effects provide powerful tools for studying matter, detecting substances, and developing advanced diagnostic systems."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize the main focus of the paper in one sentence.",
+      "output": "Please provide the paper or paste its abstract/text so I can summarize its main focus in one sentence.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "What does this paper survey regarding thermoacoustic and photoacoustic tomography?",
+      "output": "Please share the paper’s title, abstract, DOI, or link. I need to identify the specific paper before summarizing what it surveys about thermoacoustic and photoacoustic tomography.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Provide a brief description of the paper’s subject matter.",
+      "output": "Please share the paper, abstract, title, or a link so I can briefly describe its subject matter.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Write a concise overview of the mathematical topics covered in this article.",
+      "output": "Please provide the article text, link, or upload the document, and I’ll give a concise overview of the mathematical topics it covers.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "In a single sentence, explain the paper’s contribution to the study of Thermoacoustic and Photoacoustic Tomography.",
+      "output": "Please provide the paper’s title, abstract, or text so I can summarize its contribution to Thermoacoustic and Photoacoustic Tomography in one sentence.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7420289855072464,
+      "excess_ratio": 0.3118265020686657,
+      "baseline_mean": 0.4302024834385807,
+      "baseline_n_valid": 5,
+      "output_chars": 130,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7368421052631579,
+          "baseline_mean": 0.36504600341412835,
+          "excess_ratio": 0.3717961018490295
+        },
+        "bz2": {
+          "actual_ratio": 0.6491228070175439,
+          "baseline_mean": 0.36309848320763205,
+          "excess_ratio": 0.28602432380991183
+        },
+        "lzma": {
+          "actual_ratio": 0.8235294117647058,
+          "baseline_mean": 0.5309033453198213,
+          "excess_ratio": 0.29262606644488454
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.5864022662889519,
+      "excess_ratio": 0.15619978285037117,
+      "baseline_mean": 0.4302024834385807,
+      "baseline_n_valid": 5,
+      "output_chars": 131,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5257731958762887,
+          "baseline_mean": 0.36504600341412835,
+          "excess_ratio": 0.16072719246216033
+        },
+        "bz2": {
+          "actual_ratio": 0.5517241379310345,
+          "baseline_mean": 0.36309848320763205,
+          "excess_ratio": 0.18862565472340243
+        },
+        "lzma": {
+          "actual_ratio": 0.6571428571428571,
+          "baseline_mean": 0.5309033453198213,
+          "excess_ratio": 0.12623951182303583
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3425229741019215,
+      "excess_ratio": -0.08767950933665919,
+      "baseline_mean": 0.4302024834385807,
+      "baseline_n_valid": 5,
+      "output_chars": 667,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3,
+          "baseline_mean": 0.36504600341412835,
+          "excess_ratio": -0.06504600341412836
+        },
+        "bz2": {
+          "actual_ratio": 0.32061068702290074,
+          "baseline_mean": 0.36309848320763205,
+          "excess_ratio": -0.04248779618473131
+        },
+        "lzma": {
+          "actual_ratio": 0.3963963963963964,
+          "baseline_mean": 0.5309033453198213,
+          "excess_ratio": -0.1345069489234249
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.06372934697088917,
+      "excess_ratio": -0.36647313646769153,
+      "baseline_mean": 0.4302024834385807,
+      "baseline_n_valid": 5,
+      "output_chars": 4864,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04372355430183357,
+          "baseline_mean": 0.36504600341412835,
+          "excess_ratio": -0.3213224491122948
+        },
+        "bz2": {
+          "actual_ratio": 0.07045009784735812,
+          "baseline_mean": 0.36309848320763205,
+          "excess_ratio": -0.29264838536027393
+        },
+        "lzma": {
+          "actual_ratio": 0.07692307692307693,
+          "baseline_mean": 0.5309033453198213,
+          "excess_ratio": -0.4539802683967444
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.07346723044397452,
+      "excess_ratio": -0.3567352529946062,
+      "baseline_mean": 0.4302024834385807,
+      "baseline_n_valid": 5,
+      "output_chars": 1219,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04060913705583756,
+          "baseline_mean": 0.36504600341412835,
+          "excess_ratio": -0.3244368663582908
+        },
+        "bz2": {
+          "actual_ratio": 0.07568438003220612,
+          "baseline_mean": 0.36309848320763205,
+          "excess_ratio": -0.28741410317542593
+        },
+        "lzma": {
+          "actual_ratio": 0.1,
+          "baseline_mean": 0.5309033453198213,
+          "excess_ratio": -0.43090334531982133
+        }
+      }
+    }
+  }
+}

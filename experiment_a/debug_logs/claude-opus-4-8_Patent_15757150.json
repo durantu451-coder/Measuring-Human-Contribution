@@ -1,0 +1,169 @@
+{
+  "model": "claude-opus-4-8",
+  "domain": "Patent",
+  "id": "15757150",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA network node determines a system load of the network node for the UE. When the UE is capable of receiving control information on EPDCCH, the system load is determined based on a first and a second system load metrics on a physical resource shared by PDSCH and EPDCCH, which first load metrics comprises a load due to EPDCCH and a load due to multiplexed PDSCH and which second load metrics comprises a load due to multiplexed EPDCCH and a load due to PDSCH. When the UE is not capable of receiving control information on EPDCCH, the system load is determined based on the first system load metrics on the physical resource shared by the PDSCH and EPDCCH and a third system load metrics on a physical resource for carrying PDCCH. The network node further determines whether or not to allocate resources to the UE based on the determined system load metrics.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA network node determines a system load of the network node for the UE. When the UE is capable of receiving control information on EPDCCH, the system load is determined based on a first and a second system load metrics on a physical resource shared by PDSCH and EPDCCH, which first load metrics comprises a load due to EPDCCH and a load due to multiplexed PDSCH and which second load metrics comprises a load due to multiplexed EPDCCH and a load due to PDSCH. When the UE is not capable of receiving control information on EPDCCH, the system load is determined based on the first system load metrics on the physical resource shared by the PDSCH and EPDCCH and a third system load metrics on a physical resource for carrying PDCCH. The network node further determines whether or not to allocate resources to the UE based on the determined system load metrics.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A network node determines the system load for a UE based on the UE's capability to receive control information on EPDCCH.\n- When the UE is capable of receiving control information on EPDCCH, the system load is determined using first and second load metrics on the physical resource shared by PDSCH and EPDCCH.\n- The first load metric captures the load from EPDCCH and multiplexed PDSCH, while the second load metric captures the load from multiplexed EPDCCH and PDSCH.\n- When the UE is not capable of receiving control information on EPDCCH, the system load is determined using the first load metric on the shared PDSCH/EPDCCH resource and a third load metric on the physical resource carrying PDCCH.\n- The network node decides whether to allocate resources to the UE based on the determined system load metrics.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA network node determines the system load for a UE by evaluating different system load metrics on physical resources shared by PDSCH, EPDCCH, and PDCCH, depending on whether the UE is capable of receiving control information on EPDCCH. Based on these determined load metrics, the network node decides whether to allocate resources to the UE, enabling more efficient load-aware resource management tailored to each UE's capabilities.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: When, EPDCCH, PDSCH"
+  },
+  "outputs": {
+    "L1": "Here is a polished version:\n\n---\n\nA network node determines a system load of the network node with respect to the UE. When the UE is capable of receiving control information on the EPDCCH, the system load is determined based on a first system load metric and a second system load metric evaluated on a physical resource shared by the PDSCH and the EPDCCH. The first load metric comprises a load attributable to the EPDCCH and a load attributable to the multiplexed PDSCH, whereas the second load metric comprises a load attributable to the multiplexed EPDCCH and a load attributable to the PDSCH. When the UE is not capable of receiving control information on the EPDCCH, the system load is determined based on the first system load metric evaluated on the physical resource shared by the PDSCH and the EPDCCH, together with a third system load metric evaluated on a physical resource for carrying the PDCCH. The network node further determines whether to allocate resources to the UE based on the determined system load metrics.\n\n---\n\nKey refinements made:\n- Standardized \"load metrics\" to the singular \"metric\" when referring to individual metrics for grammatical consistency\n- Replaced \"a load due to\" with the more formal \"a load attributable to\"\n- Used \"whereas\" to more clearly contrast the first and second metrics\n- Added definite articles (\"the EPDCCH,\" \"the PDSCH,\" etc.) for consistency with technical drafting conventions\n- Replaced \"based on\" repetition with \"evaluated on\" where appropriate to improve flow\n- Simplified \"whether or not to allocate\" to \"whether to allocate\"\n\nPlease let me know if you would prefer a version that adheres more strictly to particular patent claim formatting conventions.",
+    "L2": "A network node calculates the system load associated with a UE. In cases where the UE has the capability to receive control information via EPDCCH, this system load calculation relies on two distinct load metrics measured on the physical resource that PDSCH and EPDCCH share. The first of these metrics accounts for both the load generated by EPDCCH and the load from multiplexed PDSCH, whereas the second metric captures the load from multiplexed EPDCCH together with the load from PDSCH. Conversely, if the UE cannot receive control information through EPDCCH, the system load is instead computed using the first metric on the shared PDSCH-and-EPDCCH physical resource along with a third metric taken from the physical resource that carries PDCCH. Following this, the network node uses the resulting system load metrics as the basis for deciding whether resources should be assigned to the UE.",
+    "L3": "# System Load Determination Based on UE Capability for EPDCCH Reception\n\n## Overview\n\nA network node in a wireless communication system determines the system load applicable to a User Equipment (UE) based on that UE's capability to receive control information on the Enhanced Physical Downlink Control Channel (EPDCCH). By taking this capability into account, the network node can accurately assess the load conditions relevant to the specific UE and make informed decisions regarding resource allocation.\n\n## Load Determination for EPDCCH-Capable UEs\n\nWhen the UE is capable of receiving control information on the EPDCCH, the network node determines the system load using two distinct load metrics that are evaluated on the physical resource shared between the Physical Downlink Shared Channel (PDSCH) and the EPDCCH.\n\n- The **first load metric** captures the load contributed by the EPDCCH together with any PDSCH that is multiplexed onto the same shared physical resource. This metric reflects the combined demand placed on the resource when control information is carried on the EPDCCH alongside multiplexed data transmissions.\n\n- The **second load metric** captures the load contributed by the EPDCCH and the PDSCH when these channels are multiplexed together. This metric provides an additional perspective on how the shared resource is being utilized by the interleaved control and data channels.\n\nTogether, these two metrics allow the network node to fully characterize the load on the shared PDSCH/EPDCCH resource for a UE that supports EPDCCH-based control signaling.\n\n## Load Determination for UEs Not Capable of EPDCCH Reception\n\nWhen the UE is not capable of receiving control information on the EPDCCH, the network node determines the system load using a different combination of metrics:\n\n- The **first load metric**, as described above, is applied to the shared PDSCH/EPDCCH physical resource to account for the load on that resource.\n\n- A **third load metric** is applied to the physical resource that carries the legacy Physical Downlink Control Channel (PDCCH). Since a UE lacking EPDCCH capability must instead rely on the PDCCH to receive its control information, this metric captures the corresponding load on the PDCCH-carrying resource.\n\nThis combination ensures that the load assessment properly reflects the resources that are actually available to, and used by, a UE that depends on the conventional PDCCH for control signaling.\n\n## Resource Allocation Decision\n\nBased on the determined system load metrics—whether derived from the EPDCCH-capable configuration or the non-EPDCCH-capable configuration—the network node decides whether to allocate resources to the UE. By tailoring the load evaluation to the UE's specific control-channel capabilities, the network node can make more accurate and efficient scheduling and resource allocation decisions, thereby optimizing overall system performance and resource utilization.",
+    "L4": "# Load-Aware Resource Management for User Equipment in Wireless Networks\n\n## Overview\n\nIn modern wireless communication systems, efficient management of physical resources is essential to maximize network performance and ensure a high quality of service for connected devices. This document describes a method by which a network node performs load-aware resource allocation for a user equipment (UE) by evaluating system load metrics across shared physical resources. The approach accounts for the specific capabilities of each UE, particularly with respect to how the UE receives control information.\n\n## Determining System Load\n\nA network node determines the system load for a given UE by evaluating one or more system load metrics on the physical resources that are shared among the Physical Downlink Shared Channel (PDSCH), the Enhanced Physical Downlink Control Channel (EPDCCH), and the Physical Downlink Control Channel (PDCCH). Because these channels may occupy overlapping or shared physical resources, the load on any one channel can directly influence the availability of resources for the others.\n\nThe specific load metrics that the network node evaluates depend on whether the UE is capable of receiving control information on the EPDCCH. Some UEs support receiving downlink control information exclusively through the legacy PDCCH, while others are additionally capable of decoding control information carried on the EPDCCH. This distinction is significant because EPDCCH transmissions are multiplexed within the same physical resource blocks used for PDSCH data, whereas PDCCH occupies a dedicated control region. As a result, the relevant load conditions differ depending on the UE's capabilities.\n\nFor a UE that is capable of receiving control information on the EPDCCH, the network node evaluates load metrics that reflect the combined utilization of resources shared by PDSCH and EPDCCH. For a UE that is not capable of receiving control information on the EPDCCH, the network node instead evaluates load metrics associated with the PDCCH control region and the PDSCH resources. By tailoring the evaluation to the UE's capabilities, the network node obtains a more accurate representation of the actual load conditions relevant to serving that particular UE.\n\n## Resource Allocation Decision\n\nBased on the determined load metrics, the network node decides whether to allocate resources to the UE. If the evaluated load metrics indicate that sufficient capacity is available on the relevant shared physical resources, the network node may proceed to schedule the UE and allocate the necessary resources for data and control transmission. Conversely, if the load metrics indicate congestion or insufficient available capacity, the network node may defer allocation, reduce the amount of allocated resources, or direct the UE toward alternative resources.\n\n## Advantages\n\nThis method enables more efficient, load-aware resource management that is specifically tailored to each UE's capabilities. By distinguishing between UEs that can and cannot receive control information on the EPDCCH, and by evaluating load metrics appropriate to each case, the network node can make more informed scheduling decisions. This improves overall resource utilization, reduces the likelihood of scheduling conflicts on shared physical resources, and helps ensure that both control and data channels are provisioned in a manner consistent with prevailing network conditions and individual device capabilities.",
+    "L5": "# Understanding EPDCCH and PDSCH in LTE Networks\n\n## Overview\n\nIn LTE (Long-Term Evolution) and LTE-Advanced networks, efficient communication between the base station (eNodeB) and user equipment (UE) relies on a set of specialized downlink channels. Two important channels in this framework are the **EPDCCH** (Enhanced Physical Downlink Control Channel) and the **PDSCH** (Physical Downlink Shared Channel). Understanding *when* each is used is essential for grasping how modern cellular networks deliver both control information and user data.\n\n## What Is the PDSCH?\n\nThe **PDSCH** is the primary channel responsible for carrying actual user data in the downlink direction. Whenever a network needs to transmit information such as web content, video streams, files, or application data to a device, this data travels over the PDSCH. It functions as the main \"payload\" pipeline, shared dynamically among multiple users based on scheduling decisions.\n\n## What Is the EPDCCH?\n\nThe **EPDCCH** was introduced in **3GPP Release 11** as an enhancement to the traditional PDCCH (Physical Downlink Control Channel). It carries **downlink control information (DCI)**, which tells the UE how and where to find its assigned data. This includes details such as resource allocation, modulation scheme, and transport format.\n\n## When Is the EPDCCH Used?\n\nThe EPDCCH is used in several key scenarios:\n\n- **When the legacy PDCCH capacity is insufficient**, particularly in heavily loaded cells where many users must be scheduled simultaneously.\n- **When improved frequency-domain scheduling** is needed, since the EPDCCH allows control channels to be placed more flexibly across the frequency spectrum.\n- **When operating in heterogeneous networks (HetNets)**, where interference coordination between macro and small cells benefits from the EPDCCH's enhanced design.\n- **When using advanced techniques** like beamforming and carrier aggregation, which the EPDCCH supports more effectively.\n\n## The Relationship Between the Two Channels\n\nThe connection between these channels follows a clear sequence. First, the EPDCCH delivers control information that instructs the UE **when** and **where** to look for its data. Then, guided by that information, the device decodes the corresponding data on the PDSCH. In essence, the EPDCCH acts as the \"map,\" while the PDSCH is the \"destination\" containing the actual content.\n\n## Conclusion\n\nThe EPDCCH and PDSCH work together to ensure reliable and efficient downlink communication. The PDSCH handles the transmission of user data, while the EPDCCH—used *when* enhanced control channel capacity and flexibility are required—provides the scheduling instructions that make data delivery possible. Together, they represent a crucial part of the evolution toward faster and more robust mobile networks."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a patent abstract describing a method where a network node determines system load for a UE based on EPDCCH capability and decides whether to allocate resources.",
+      "output": "# Patent Abstract\n\n**METHOD AND APPARATUS FOR RESOURCE ALLOCATION BASED ON ENHANCED CONTROL CHANNEL CAPABILITY**\n\n## Abstract\n\nA method performed by a network node for managing resource allocation in a wireless communication network is disclosed. The method comprises receiving, from a user equipment (UE), capability information indicating whether the UE supports an Enhanced Physical Downlink Control Channel (EPDCCH). The network node determines a system load associated with serving the UE based at least in part on the received EPDCCH capability information, wherein the system load reflects an estimated resource consumption for control channel signaling to the UE. Responsive to the determined system load, the network node decides whether to allocate radio resources to the UE for control channel transmission. In one aspect, when the UE indicates support for EPDCCH, the network node evaluates the system load associated with EPDCCH-based resource allocation relative to a load threshold and selectively allocates EPDCCH resources or Physical Downlink Control Channel (PDCCH) resources accordingly. The method enables efficient utilization of control channel resources by balancing system load conditions against the reporting capabilities of served UEs, thereby improving overall network capacity and reducing control channel congestion. Corresponding network nodes, computer programs, and computer program products are also disclosed.\n\n---\n\n*Note: This abstract is a sample drafted for illustrative purposes. Actual patent filings should be prepared or reviewed by a qualified patent attorney to ensure compliance with jurisdictional requirements and proper claim support.*",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Draft an abstract for a 3GPP LTE invention about load-based resource allocation involving PDCCH, PDSCH, and EPDCCH multiplexing.",
+      "output": "# Abstract\n\nA method and apparatus for load-based resource allocation in a Long Term Evolution (LTE) wireless communication system are disclosed. The present invention provides a mechanism for dynamically multiplexing control and data channels—specifically the Physical Downlink Control Channel (PDCCH), the Physical Downlink Shared Channel (PDSCH), and the Enhanced Physical Downlink Control Channel (EPDCCH)—based on real-time network load conditions. In one embodiment, a base station (eNodeB) monitors traffic load metrics, including control channel utilization, user equipment (UE) density, and scheduling demand, and adaptively determines a distribution of resource elements between the legacy control region and the enhanced control region. When control channel congestion exceeds a configurable threshold, the eNodeB offloads a portion of downlink control signaling from the PDCCH to the EPDCCH, which is multiplexed with PDSCH resources in the frequency domain within one or more Physical Resource Block (PRB) pairs. The allocation scheme dynamically adjusts the number of Orthogonal Frequency Division Multiplexing (OFDM) symbols assigned to the PDCCH region and the set of PRB pairs allocated to the EPDCCH, thereby balancing control capacity against data throughput. The base station signals the resulting resource configuration to the UE via higher-layer signaling and/or dynamic indication, enabling the UE to correctly decode control and data information. The disclosed approach improves spectral efficiency, mitigates control channel blocking, and enhances overall system capacity under varying load conditions while maintaining backward compatibility with legacy UEs.\n\n---\n\n*Would you like me to adjust the technical depth, add specific claim language, include a drawings reference, or tailor the abstract to emphasize a particular novel feature (e.g., the load-threshold algorithm or the multiplexing pattern)?*",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Summarize a technical invention in which a network node uses multiple system load metrics on shared physical resources to make UE resource allocation decisions.",
+      "output": "# Technical Invention Summary: Load-Aware UE Resource Allocation\n\n## Overview\n\nThis invention describes a network node (such as a base station, gNB, or scheduler) that intelligently allocates radio and computing resources to User Equipment (UE) by evaluating **multiple system load metrics** across **shared physical resources**.\n\n## Key Components\n\n**1. Multi-Metric Load Monitoring**\nThe network node continuously collects several distinct load indicators from shared physical resources, such as:\n- **Radio resource utilization** (PRB usage, spectral efficiency)\n- **Processing/compute load** (CPU/DSP baseband utilization)\n- **Memory and buffer occupancy**\n- **Backhaul/transport capacity** consumption\n- **Hardware accelerator or thermal load**\n\n**2. Shared Resource Pool**\nPhysical resources are shared among multiple UEs and/or network functions, meaning allocation to one UE affects available capacity for others.\n\n**3. Decision Logic**\nThe node combines these metrics—potentially using weighting, thresholds, or a composite scoring function—to determine:\n- Whether to admit or defer a UE's resource request\n- How much resource to grant per UE\n- Prioritization among competing UEs\n- Whether to trigger load balancing or offloading\n\n## Technical Advantage\n\nBy considering **multiple correlated load dimensions simultaneously** rather than a single metric (e.g., only radio load), the node avoids bottlenecks in any one shared resource, improves overall system efficiency, and prevents resource starvation or overload.\n\n---\n\n**Note:** If you're drafting a patent claim, disclosure, or technical specification, I'd be happy to refine this into a more formal format. Could you share:\n- The specific technology domain (e.g., 5G NR, O-RAN, cloud RAN)?\n- Which load metrics are central to your invention?\n- The novel decision mechanism you want emphasized?\n\nThis would help me tailor the summary to your exact needs.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate a patent-style summary explaining how system load is computed differently depending on whether a UE can receive control information on EPDCCH.",
+      "output": "# Patent-Style Summary: Adaptive System Load Computation Based on UE EPDCCH Reception Capability\n\n## Field of the Invention\n\nThe present invention relates to wireless communication systems, and more particularly to methods and apparatus for computing system load in a manner that accounts for whether a User Equipment (UE) is capable of receiving control information on an Enhanced Physical Downlink Control Channel (EPDCCH).\n\n## Background\n\nIn conventional wireless networks, system load is typically computed based on physical resource utilization without regard to the particular control channel through which a given UE receives its scheduling assignments. Control information may be conveyed either via the legacy Physical Downlink Control Channel (PDCCH), which occupies the initial OFDM symbols of a subframe within the control region, or via the EPDCCH, which is mapped to resource elements within the data region of the subframe. Because these two channels consume network resources in fundamentally different ways, a load metric that fails to distinguish between them may inaccurately represent the true resource occupancy of the cell, leading to suboptimal scheduling and admission control decisions.\n\n## Summary of the Invention\n\nThe present invention provides a system and method wherein a network node (e.g., an eNodeB) computes a system load metric using a computation that is **selected based upon whether a served UE is capable of, or configured for, receiving control information on the EPDCCH.**\n\nIn accordance with one aspect, the network node performs the following operations:\n\n1. **Determination Step** — The network node determines, for a given UE, whether that UE is able to receive control information on the EPDCCH. This determination may be based on UE capability signaling, a configured transmission mode, higher-layer configuration parameters, or the presence of an EPDCCH set configured for the UE.\n\n2. **Conditional Load Computation** — Based on the outcome of the determination step, the network node applies one of at least two distinct load computation methodologies:\n\n   - **First Computation (UE not EPDCCH-capable):** Where the UE receives control information only on the legacy PDCCH, the system load is computed by accounting for resources consumed within the **control region** (the initial OFDM symbols of the subframe). In this case, the load contribution attributable to control signaling is derived from the number of control channel elements (CCEs) occupied in the PDCCH region relative to the total available control region resources.\n\n   - **Second Computation (UE EPDCCH-capable):** Where the UE receives control information on the EPDCCH, the system load is computed by accounting for resources consumed within the **data region** of the subframe, since EPDCCH resources are mapped to physical resource blocks that would otherwise be available for data transmission. In this case, the load contribution reflects the physical resource blocks (or enhanced control channel elements, ECCEs) allocated to EPDCCH within the data region, and the resources consumed by the EPDCCH are excluded from, or offset against, the pool of data-region resources deemed available for user-plane traffic.\n\n3. **Aggregation Step** — The network node aggregates the per-UE load contributions computed according to the applicable methodology to produce an overall system load metric for the cell or carrier.\n\n## Advantages\n\nBy selecting the load computation methodology in dependence upon the UE's EPDCCH reception capability, the invention yields a more accurate representation of actual resource occupancy. Specifically, the invention:\n\n- Correctly attributes control signaling overhead to the appropriate region (control region versus data region) of the subframe;\n- Avoids double-counting or under-counting of resources when EPDCCH displaces data-region resources;\n- Enables more informed scheduling, load balancing, and admission control decisions; and\n- Improves overall spectral efficiency by reflecting the true availability of data-region resources.\n\n## Representative Claim Language\n\n*A method in a network node, comprising: determining whether a user equipment is capable of receiving control information on an enhanced physical downlink control channel (EPDCCH); computing a system load using a first computation when the user equipment is not capable of receiving control information on the EPDCCH, wherein the first computation accounts for resources in a control region of a subframe; computing the system load using a second computation when the user equipment is capable of receiving control information on the EPDCCH, wherein the second computation accounts for resources in a data region of the subframe; and performing a radio resource management action based on the computed system load.*",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Create an abstract for a telecommunications patent about determining network node load using first, second, and third load metrics for scheduling UEs.",
+      "output": "# Abstract\n\n**Method and Apparatus for Determining Network Node Load Using Multiple Load Metrics for Scheduling User Equipment**\n\nA method and apparatus for determining a load condition of a network node and scheduling user equipment (UEs) based on the determined load are disclosed. The network node obtains a first load metric, a second load metric, and a third load metric, each representing a distinct dimension of resource utilization within the node. In one embodiment, the first load metric corresponds to a computational or processing resource utilization, the second load metric corresponds to a radio resource utilization, such as physical resource block usage, and the third load metric corresponds to a transport or buffer resource utilization associated with data transmission. The network node combines the first, second, and third load metrics to determine an aggregate load condition representative of the node's overall capacity to serve additional traffic. Based on the determined load condition, the network node performs scheduling of one or more UEs, including selectively admitting, prioritizing, deferring, or offloading UEs to balance resource consumption across the node. By evaluating multiple independent load metrics rather than a single indicator, the disclosed techniques enable more accurate load assessment, improved scheduling decisions, enhanced resource utilization efficiency, and reduced congestion within the telecommunications network.\n\n---\n\n*Would you like me to adjust the technical focus (e.g., toward 5G/NR, RAN architecture, or specific metric definitions), shorten it to meet a particular word count, or draft accompanying independent claims?*",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.36415362731152207,
+      "excess_ratio": 0.27216421703978044,
+      "baseline_mean": 0.09198941027174165,
+      "baseline_n_valid": 5,
+      "output_chars": 1715,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3266871165644172,
+          "baseline_mean": 0.06938540631652251,
+          "excess_ratio": 0.25730171024789467
+        },
+        "bz2": {
+          "actual_ratio": 0.3682758620689655,
+          "baseline_mean": 0.08850000823124972,
+          "excess_ratio": 0.2797758538377158
+        },
+        "lzma": {
+          "actual_ratio": 0.39344262295081966,
+          "baseline_mean": 0.11615245305148951,
+          "excess_ratio": 0.27729016989933014
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3593170007423905,
+      "excess_ratio": 0.2673275904706488,
+      "baseline_mean": 0.09198941027174165,
+      "baseline_n_valid": 5,
+      "output_chars": 895,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2912621359223301,
+          "baseline_mean": 0.06938540631652251,
+          "excess_ratio": 0.22187672960580757
+        },
+        "bz2": {
+          "actual_ratio": 0.37583892617449666,
+          "baseline_mean": 0.08850000823124972,
+          "excess_ratio": 0.28733891794324695
+        },
+        "lzma": {
+          "actual_ratio": 0.4016393442622951,
+          "baseline_mean": 0.11615245305148951,
+          "excess_ratio": 0.28548689121080556
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.20368744512730466,
+      "excess_ratio": 0.11169803485556301,
+      "baseline_mean": 0.09198941027174165,
+      "baseline_n_valid": 5,
+      "output_chars": 2950,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1693840579710145,
+          "baseline_mean": 0.06938540631652251,
+          "excess_ratio": 0.09999865165449198
+        },
+        "bz2": {
+          "actual_ratio": 0.2119613016710642,
+          "baseline_mean": 0.08850000823124972,
+          "excess_ratio": 0.12346129343981448
+        },
+        "lzma": {
+          "actual_ratio": 0.22789115646258504,
+          "baseline_mean": 0.11615245305148951,
+          "excess_ratio": 0.11173870341109553
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.16268292682926838,
+      "excess_ratio": 0.07069351655752673,
+      "baseline_mean": 0.09198941027174165,
+      "baseline_n_valid": 5,
+      "output_chars": 3507,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.14147431124348472,
+          "baseline_mean": 0.06938540631652251,
+          "excess_ratio": 0.07208890492696221
+        },
+        "bz2": {
+          "actual_ratio": 0.158364312267658,
+          "baseline_mean": 0.08850000823124972,
+          "excess_ratio": 0.06986430403640827
+        },
+        "lzma": {
+          "actual_ratio": 0.18696883852691218,
+          "baseline_mean": 0.11615245305148951,
+          "excess_ratio": 0.07081638547542267
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.03181257706535141,
+      "excess_ratio": -0.06017683320639024,
+      "baseline_mean": 0.09198941027174165,
+      "baseline_n_valid": 5,
+      "output_chars": 2824,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.015825169555388093,
+          "baseline_mean": 0.06938540631652251,
+          "excess_ratio": -0.05356023676113442
+        },
+        "bz2": {
+          "actual_ratio": 0.030303030303030304,
+          "baseline_mean": 0.08850000823124972,
+          "excess_ratio": -0.058196977928219415
+        },
+        "lzma": {
+          "actual_ratio": 0.048295454545454544,
+          "baseline_mean": 0.11615245305148951,
+          "excess_ratio": -0.06785699850603497
+        }
+      }
+    }
+  }
+}

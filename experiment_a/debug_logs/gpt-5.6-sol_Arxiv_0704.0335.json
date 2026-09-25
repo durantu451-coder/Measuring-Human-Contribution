@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0335",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe build a sequence of empirical measures on the space D(R_+,R^d) of R^d-valued c\\`adl\\`ag functions on R_+ in order to approximate the law of a stationary R^d-valued Markov and Feller process (X_t). We obtain some general results of convergence of this sequence. Then, we apply them to Brownian diffusions and solutions to L\\'evy driven SDE's under some Lyapunov-type stability assumptions. As a numerical application of this work, we show that this procedure gives an efficient way of option pricing in stochastic volatility models.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe build a sequence of empirical measures on the space D(R_+,R^d) of R^d-valued c\\`adl\\`ag functions on R_+ in order to approximate the law of a stationary R^d-valued Markov and Feller process (X_t). We obtain some general results of convergence of this sequence. Then, we apply them to Brownian diffusions and solutions to L\\'evy driven SDE's under some Lyapunov-type stability assumptions. As a numerical application of this work, we show that this procedure gives an efficient way of option pricing in stochastic volatility models.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A sequence of empirical measures is constructed on the space of càdlàg functions \\(D(\\mathbb{R}_+,\\mathbb{R}^d)\\).\n- The sequence is designed to approximate the law of a stationary \\(\\mathbb{R}^d\\)-valued Markov and Feller process.\n- General convergence results are established for this sequence of empirical measures.\n- The results are applied to Brownian diffusions and Lévy-driven stochastic differential equations under Lyapunov-type stability assumptions.\n- The procedure provides an efficient numerical method for option pricing in stochastic volatility models.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA sequence of empirical measures on càdlàg path space is constructed to approximate the law of a stationary Markov–Feller process, with applications to Brownian diffusions and Lévy-driven SDEs under Lyapunov stability conditions. General convergence results show that the method provides an efficient numerical approach to option pricing in stochastic volatility models.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Markov, Feller, Then"
+  },
+  "outputs": {
+    "L1": "We construct a sequence of empirical measures on the space \\(D(\\mathbb{R}_+,\\mathbb{R}^d)\\) of \\(\\mathbb{R}^d\\)-valued càdlàg functions on \\(\\mathbb{R}_+\\) to approximate the law of a stationary \\(\\mathbb{R}^d\\)-valued Feller–Markov process \\((X_t)\\). We establish general convergence results for this sequence and then apply them to Brownian diffusions and solutions of Lévy-driven stochastic differential equations under Lyapunov-type stability assumptions. As a numerical application, we demonstrate that this procedure provides an efficient method for pricing options in stochastic volatility models.",
+    "L2": "We construct empirical probability measures on \\(D(\\mathbb{R}_+,\\mathbb{R}^d)\\), the space of \\(\\mathbb{R}^d\\)-valued càdlàg paths on \\(\\mathbb{R}_+\\), to approximate the distribution of a stationary \\(\\mathbb{R}^d\\)-valued Markov Feller process \\((X_t)\\). After establishing general convergence results for these measures, we specialize the framework to Brownian diffusions and to solutions of Lévy-driven stochastic differential equations satisfying Lyapunov-type stability conditions. As a computational application, we demonstrate that the resulting method provides an efficient approach to pricing options in stochastic volatility models.",
+    "L3": "A sequence of empirical probability measures is constructed on the Skorokhod space \\(D(\\mathbb{R}_+,\\mathbb{R}^d)\\) of càdlàg functions. These measures are based on simulated trajectories and are designed to approximate the path-space law of a stationary, \\(\\mathbb{R}^d\\)-valued Markov process satisfying the Feller property. In this way, the procedure captures not only stationary marginal distributions but also the temporal dynamics of the process.\n\nGeneral convergence results are established for the resulting sequence of empirical measures. Under suitable assumptions, the measures converge to the stationary law of the process on path space, thereby providing a rigorous foundation for the approximation method. The framework is then applied to important classes of stochastic systems, including Brownian diffusion processes and stochastic differential equations driven by Lévy processes. In these settings, Lyapunov-type stability conditions are used to ensure long-term stability, tightness, and convergence.\n\nBeyond its theoretical significance, the approach leads to an efficient numerical procedure for applications in mathematical finance. In particular, it can be used to approximate stationary stochastic volatility dynamics and to evaluate path-dependent expectations, making it a practical method for option pricing in stochastic volatility models.",
+    "L4": "We develop a constructive method for approximating the law of a stationary Markov–Feller process on the Skorokhod space of càdlàg trajectories. The approximation is based on empirical path measures obtained from a time-discretized simulation of the process. Rather than estimating only the invariant distribution at a fixed time, the procedure records shifted segments of a single simulated trajectory and averages them—possibly with suitable weights—to produce probability measures on the entire path space. This makes it possible to approximate stationary expectations of general path-dependent functionals.\n\nUnder standard tightness, consistency, and stability assumptions, we prove that the resulting sequence of empirical measures is relatively compact and that every weak limit is the law of a stationary solution of the underlying Markov dynamics. When the invariant distribution is unique, the full sequence converges to the stationary path law. The analysis applies to Feller processes and accommodates càdlàg trajectories, so it covers models with both continuous and jump-driven dynamics. Lyapunov functions provide practical criteria ensuring recurrence, moment control, and tightness of the empirical measures.\n\nThe general results are then specialized to Brownian diffusion models and to stochastic differential equations driven by Lévy processes. For Euler-type schemes with decreasing time steps, appropriate Lyapunov drift conditions guarantee stability of the numerical trajectories and convergence of the associated occupation measures. Additional regularity and moment assumptions allow the method to handle functionals with controlled growth, extending the convergence beyond bounded continuous observables.\n\nAn important application concerns option pricing in stationary stochastic volatility models. Many derivative payoffs depend on an entire future trajectory rather than on a single marginal distribution. Once the stationary path law has been approximated, prices of European, Asian, barrier, and other path-dependent claims can be estimated by integrating their discounted payoffs against the empirical path measure. Numerical experiments indicate that the approach is stable and computationally efficient, particularly when many contracts or maturities must be evaluated from the same simulated trajectory. The method therefore offers a unified framework for long-run simulation, invariant-law approximation, and pricing in diffusion and jump-based financial models.",
+    "L5": "A **Markov** process models a system whose future evolution depends only on its current state, not on its past. When its transition operator maps continuous functions to continuous functions, the process is said to have the **Feller** property. This condition provides useful regularity and supports the study of semigroups, generators, and invariant measures. **Then**, under suitable compactness and continuity assumptions, one can often prove the existence—and sometimes the uniqueness—of a stationary distribution."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a concise abstract for a research paper on empirical path-space measures approximating stationary Markov Feller processes, with applications to Brownian diffusions, Lévy-driven SDEs, and option pricing under stochastic volatility.",
+      "output": "We study empirical measures on path space for the approximation of stationary Markov Feller processes. Under suitable tightness, consistency, and ergodicity assumptions, we establish convergence of time-averaged trajectory laws to stationary path-space distributions, yielding approximations of both invariant marginals and finite-horizon observables. The framework applies to Brownian diffusions and Lévy-driven stochastic differential equations, including models with discontinuous paths. As a financial application, we use the resulting empirical path measures to approximate option prices under stochastic-volatility dynamics and justify convergence for a broad class of path-dependent payoffs.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize a mathematical article that constructs empirical measures on \\(D(\\mathbb{R}_+,\\mathbb{R}^d)\\), proves their convergence to the law of a stationary càdlàg Markov process, and presents financial applications.",
+      "output": "The article develops a path-space version of empirical-measure methods for approximating stationary Markov processes. Rather than recording only simulated states, it constructs weighted empirical measures on the Skorokhod space  \n\\[\nD(\\mathbb{R}_+,\\mathbb{R}^d),\n\\]\nwhose atoms are time-shifted trajectories of a numerical approximation, typically an Euler-type scheme with decreasing time steps. These measures therefore retain the full future evolution of the process and can approximate expectations of path-dependent functionals.\n\nThe main result proves that, under stability, moment, tightness, and consistency assumptions, the empirical path measures are relatively compact and every weak limit is the law of a stationary càdlàg Markov process associated with the target generator. When the invariant distribution or stationary law is unique, the whole sequence converges almost surely. The proof combines Lyapunov estimates, tightness criteria for càdlàg paths, control of discretization errors, and identification of limit points through the martingale problem or generator characterization.\n\nThis framework extends invariant-measure approximation from state space to trajectory space. Consequently, it yields consistent Monte Carlo estimators not only for stationary marginal expectations but also for functionals depending on an interval of the path—such as running averages, extrema, hitting events, and discounted cash flows.\n\nIn its financial applications, the method is used to evaluate quantities arising in stationary or long-run models, especially path-dependent derivatives and models with Markovian factors such as stochastic volatility or jump dynamics. The approach provides a single recursively generated trajectory from which stationary prices and risk measures can be estimated, avoiding the need to know the invariant law explicitly or to initialize simulations exactly in stationarity.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a short academic abstract describing a method for approximating the stationary distribution of an \\(\\mathbb{R}^d\\)-valued Feller process at the level of entire trajectories, assuming Lyapunov stability.",
+      "output": "We propose a path-space approximation of the stationary distribution of an \\(\\mathbb{R}^{d}\\)-valued Feller process satisfying a Foster–Lyapunov stability condition. From a single simulated trajectory, we construct empirical measures on the Skorokhod space by averaging its time shifts, thereby retaining the full temporal structure rather than only one-time marginals. The Lyapunov condition yields moment bounds and tightness of these empirical path measures. Using the Feller property and the martingale characterization of the dynamics, we show that every weak limit is the law of a stationary version of the process; consequently, its time-zero marginal is an invariant distribution. When the invariant distribution is unique, the path-space empirical measures converge to the corresponding stationary trajectory law, providing a consistent trajectory-level approximation method.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Explain briefly how empirical occupation measures on Skorokhod path space can be used for stationary simulation of Brownian and Lévy-driven stochastic differential equations and for pricing options in stochastic volatility models.",
+      "output": "For a simulated càdlàg trajectory \\(X\\) of an SDE, define the empirical occupation measure on Skorokhod space \\(D([0,\\infty),\\mathbb R^d)\\) by  \n\\[\n\\mu_T=\\frac1T\\int_0^T \\delta_{\\theta_t X}\\,dt,\n\\qquad (\\theta_tX)(s)=X(t+s),\n\\]\nor by an analogous weighted sum for an Euler scheme. Thus \\(\\mu_T\\) records the distribution of all time-shifted path segments, not only of the current state.\n\nUnder stability and tightness assumptions, weak limits of \\(\\mu_T\\) are invariant under time shifts and are supported on stationary weak solutions of the SDE. Their time-zero marginals give invariant state distributions. This provides a practical stationary simulation method: run one long Brownian- or Lévy-driven Euler trajectory, discard burn-in, and average over shifted windows. Skorokhod space is especially appropriate for Lévy SDEs because it accommodates càdlàg paths and jumps.\n\nIn a risk-neutral stochastic-volatility model, apply the construction to the joint price/volatility process. For a payoff functional \\(F\\) over a horizon \\(\\tau\\), estimate\n\\[\ne^{-r\\tau}\\,\\mathbb E_{\\mu}[F]\n\\approx\n\\frac{e^{-r\\tau}}{T}\\int_0^T\nF\\!\\left((S_{t+s},V_{t+s})_{0\\le s\\le\\tau}\\right)\\,dt.\n\\]\nThis prices European and path-dependent options while initializing volatility in its stationary regime and preserving volatility clustering, leverage, and jump dependence. Accuracy depends on ergodic averaging, discretization error, and—when jumps are present—the chosen Skorokhod topology and jump approximation.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a one-paragraph overview of results on convergence of empirical path measures for stationary Markov processes, including applications to diffusions, Lévy SDEs, and numerical finance.",
+      "output": "For a stationary Markov process \\(X\\), the empirical path measure \\(R_T=T^{-1}\\int_0^T\\delta_{\\theta_tX}\\,dt\\), where \\(\\theta_t\\) shifts trajectories, converges almost surely to the stationary path law when the process is ergodic, with convergence often strengthened from weak topology to Wasserstein metrics under Lyapunov, moment, mixing, or contractivity assumptions. Quantitative results include central-limit-type fluctuation bounds, nonasymptotic concentration estimates, and level-2 or level-3 Donsker–Varadhan large-deviation principles, whose rate functions are typically expressed through relative entropy or the Markov generator. For elliptic and hypoelliptic diffusions, dissipativity and regularization yield uniqueness of the invariant law and strong convergence rates; analogous conclusions for Lévy-driven SDEs require control of jumps, suitable moment conditions, and irreducibility or coupling arguments. These results also justify numerical approximations—such as Euler and jump-adapted schemes—by proving convergence of their empirical path measures and controlling discretization bias. In numerical finance, they support long-run Monte Carlo estimation, pricing and hedging of path-dependent claims, estimation of risk measures and invariant expectations in stochastic-volatility or jump models, and rigorous error analysis combining finite-time sampling, ergodic, and time-discretization errors.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.536770921386306,
+      "excess_ratio": 0.3608256024901465,
+      "baseline_mean": 0.17594531889615947,
+      "baseline_n_valid": 5,
+      "output_chars": 604,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5247252747252747,
+          "baseline_mean": 0.14669543418999795,
+          "excess_ratio": 0.3780298405352768
+        },
+        "bz2": {
+          "actual_ratio": 0.45012787723785164,
+          "baseline_mean": 0.16629145586087105,
+          "excess_ratio": 0.2838364213769806
+        },
+        "lzma": {
+          "actual_ratio": 0.6261682242990654,
+          "baseline_mean": 0.21041695838471766,
+          "excess_ratio": 0.41575126591434775
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.43467543138866066,
+      "excess_ratio": 0.2587301124925012,
+      "baseline_mean": 0.17594531889615947,
+      "baseline_n_valid": 5,
+      "output_chars": 643,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.39466666666666667,
+          "baseline_mean": 0.14669543418999795,
+          "excess_ratio": 0.24797123247666872
+        },
+        "bz2": {
+          "actual_ratio": 0.41044776119402987,
+          "baseline_mean": 0.16629145586087105,
+          "excess_ratio": 0.24415630533315882
+        },
+        "lzma": {
+          "actual_ratio": 0.4909090909090909,
+          "baseline_mean": 0.21041695838471766,
+          "excess_ratio": 0.2804921325243732
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3662551440329218,
+      "excess_ratio": 0.19030982513676234,
+      "baseline_mean": 0.17594531889615947,
+      "baseline_n_valid": 5,
+      "output_chars": 1366,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3537117903930131,
+          "baseline_mean": 0.14669543418999795,
+          "excess_ratio": 0.20701635620301514
+        },
+        "bz2": {
+          "actual_ratio": 0.3342541436464088,
+          "baseline_mean": 0.16629145586087105,
+          "excess_ratio": 0.16796268778553777
+        },
+        "lzma": {
+          "actual_ratio": 0.4072164948453608,
+          "baseline_mean": 0.21041695838471766,
+          "excess_ratio": 0.19679953646064316
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.16142499304202618,
+      "excess_ratio": -0.014520325854133292,
+      "baseline_mean": 0.17594531889615947,
+      "baseline_n_valid": 5,
+      "output_chars": 2495,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.13793103448275862,
+          "baseline_mean": 0.14669543418999795,
+          "excess_ratio": -0.008764399707239329
+        },
+        "bz2": {
+          "actual_ratio": 0.15580016934801016,
+          "baseline_mean": 0.16629145586087105,
+          "excess_ratio": -0.010491286512860881
+        },
+        "lzma": {
+          "actual_ratio": 0.18849840255591055,
+          "baseline_mean": 0.21041695838471766,
+          "excess_ratio": -0.021918555828807113
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.11122047244094493,
+      "excess_ratio": -0.06472484645521454,
+      "baseline_mean": 0.17594531889615947,
+      "baseline_n_valid": 5,
+      "output_chars": 518,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.05592105263157895,
+          "baseline_mean": 0.14669543418999795,
+          "excess_ratio": -0.09077438155841899
+        },
+        "bz2": {
+          "actual_ratio": 0.10714285714285714,
+          "baseline_mean": 0.16629145586087105,
+          "excess_ratio": -0.05914859871801391
+        },
+        "lzma": {
+          "actual_ratio": 0.1595744680851064,
+          "baseline_mean": 0.21041695838471766,
+          "excess_ratio": -0.05084249029961127
+        }
+      }
+    }
+  }
+}

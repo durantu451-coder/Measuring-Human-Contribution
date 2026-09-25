@@ -1,0 +1,169 @@
+{
+  "model": "claude-opus-4-8",
+  "domain": "Arxiv",
+  "id": "0704.0286",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThe paper presents a survey of mathematical problems, techniques, and challenges arising in the Thermoacoustic and Photoacoustic Tomography.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThe paper presents a survey of mathematical problems, techniques, and challenges arising in the Thermoacoustic and Photoacoustic Tomography.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper is a survey focused on Thermoacoustic and Photoacoustic Tomography.\n- It examines the mathematical problems that arise within these tomographic imaging fields.\n- The survey reviews the various techniques used to address these problems.\n- It also discusses the challenges encountered in Thermoacoustic and Photoacoustic Tomography.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis paper surveys the mathematical problems, techniques, and challenges arising in Thermoacoustic and Photoacoustic Tomography. It provides a comprehensive overview of the field's key methods, offering valuable insight into the mathematical foundations and open questions that guide research in these imaging modalities.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, Thermoacoustic, Photoacoustic"
+  },
+  "outputs": {
+    "L1": "Here are a few polished versions for you to consider:\n\n**Option 1 (Concise):**\nThis paper presents a survey of the mathematical problems, techniques, and challenges arising in Thermoacoustic and Photoacoustic Tomography.\n\n**Option 2 (More formal):**\nThis paper offers a comprehensive survey of the mathematical problems, techniques, and challenges that arise in the fields of Thermoacoustic and Photoacoustic Tomography.\n\n**Option 3 (Elegant):**\nThis paper provides a survey of the mathematical problems, methodologies, and challenges emerging in Thermoacoustic and Photoacoustic Tomography.\n\n**Key refinements made:**\n- Added the article \"This\" at the beginning for a more complete and professional sentence structure.\n- Inserted \"the\" before \"mathematical problems\" for improved grammatical flow.\n- Offered variations in verb choice (\"presents,\" \"offers,\" \"provides\") and phrasing to suit different tones.\n\nLet me know if you would like any further adjustments to match a specific journal style or tone.",
+    "L2": "Here is a reworded version of the text:\n\nThis paper offers an overview of the mathematical questions, methods, and difficulties that emerge in the fields of Thermoacoustic and Photoacoustic Tomography.",
+    "L3": "# Thermoacoustic and Photoacoustic Tomography: A Survey\n\nThis paper presents a comprehensive survey focused on Thermoacoustic and Photoacoustic Tomography, two closely related imaging modalities that have gained significant attention in the field of biomedical imaging. These techniques combine the advantages of optical or radiofrequency contrast with the high resolution of ultrasound, making them valuable tools for a wide range of diagnostic applications.\n\nThe primary aim of this survey is to examine the mathematical problems that arise within these tomographic imaging fields. As these imaging methods rely on the reconstruction of internal properties from measured acoustic signals, they give rise to a variety of intricate mathematical formulations. These include inverse problems related to wave propagation, image reconstruction, and the recovery of physical parameters from boundary measurements.\n\nIn addition to identifying these mathematical challenges, the survey reviews the various techniques that have been developed to address them. It covers a range of analytical and numerical approaches, highlighting the methods used to solve the underlying inverse problems and to achieve accurate and stable reconstructions. By bringing together these diverse strategies, the paper offers a structured overview of the current state of the art.\n\nFinally, the survey discusses the challenges encountered in Thermoacoustic and Photoacoustic Tomography. These challenges encompass both theoretical difficulties, such as questions of uniqueness and stability, and practical limitations related to data acquisition and computational implementation. By outlining these open problems, the paper not only consolidates existing knowledge but also identifies promising directions for future research in the field.",
+    "L4": "# Mathematical Problems, Techniques, and Challenges in Thermoacoustic and Photoacoustic Tomography\n\n## Introduction\n\nThermoacoustic Tomography (TAT) and Photoacoustic Tomography (PAT) have emerged as promising hybrid imaging modalities that combine the high contrast of electromagnetic absorption with the excellent spatial resolution of ultrasound. These techniques exploit the thermoacoustic effect: when biological tissue is illuminated by a short pulse of electromagnetic energy—radiofrequency waves in TAT or near-infrared light in PAT—it undergoes rapid thermal expansion. This expansion generates acoustic pressure waves that propagate outward through the tissue and are subsequently detected by transducers placed around the object of interest. The central task is to reconstruct the internal distribution of absorbed energy, which carries valuable diagnostic information about the tissue's composition and structure.\n\nThis paper surveys the rich landscape of mathematical problems, techniques, and challenges that arise in the study of these imaging modalities. Our aim is to provide a comprehensive overview of the field's key methods while illuminating the mathematical foundations and open questions that continue to guide active research.\n\n## The Mathematical Framework\n\nAt the heart of TAT and PAT lies the inverse problem of recovering the initial pressure distribution from measurements of the acoustic field on an observation surface. In the idealized setting of a constant sound speed, this reduces to the classical problem of inverting the spherical mean transform, which integrates a function over spheres centered at the detector locations. This connection places the subject firmly within the broader theory of integral geometry and the Radon transform, linking it to a wealth of established mathematical results.\n\nThe forward problem is naturally modeled by the wave equation, with the initial pressure distribution serving as the source term. The associated inverse problem asks whether, and how stably, this initial condition can be reconstructed from boundary measurements. Questions of uniqueness, stability, and the completeness of measurement data become paramount, and their answers depend sensitively on the geometry of the acquisition surface and the physical properties of the medium.\n\n## Reconstruction Techniques\n\nA variety of reconstruction methods have been developed, each with its own strengths and limitations. **Explicit inversion formulas** provide closed-form solutions in certain geometries, such as spherical, cylindrical, and planar detection surfaces, offering computational efficiency and theoretical insight. These formulas, often derived using techniques from harmonic analysis and the theory of special functions, represent some of the most elegant results in the field.\n\n**Time-reversal methods** exploit the time-invariance of the wave equation, numerically propagating the measured signals backward in time to recover the initial state. This approach is particularly attractive because it accommodates variable sound speeds and complex geometries where explicit formulas are unavailable.\n\n**Series expansion techniques** and **eigenfunction methods** offer alternative reconstruction strategies, while **iterative and variational approaches** frame the problem as an optimization task, allowing the incorporation of prior knowledge and regularization to combat noise and incomplete data.\n\n## Central Challenges\n\nDespite substantial progress, several significant challenges remain at the forefront of research. **Variable sound speed** introduces considerable complexity, as acoustic waves travel through heterogeneous tissue at differing velocities. The presence of trapped rays, where acoustic energy fails to reach the detectors, can lead to instabilities and information loss, raising delicate questions about the observability of the initial source.\n\n**Partial and limited-view data** present another persistent difficulty. In practical settings, detectors cannot always surround the object completely, resulting in incomplete measurements. The mathematical analysis of which features can be stably reconstructed from limited data—closely tied to microlocal analysis and the study of visible and invisible singularities—remains an area of intense investigation.\n\nAdditional challenges include **attenuation** of acoustic waves as they traverse tissue, the **quantitative problem** of recovering physical parameters such as absorption and scattering coefficients from the reconstructed energy map, and the treatment of **discrete and noisy measurements** that depart from idealized continuous models.\n\n## Conclusion and Open Directions\n\nThe mathematics of thermoacoustic and photoacoustic tomography draws upon a remarkable diversity of tools, spanning partial differential equations, integral geometry, microlocal analysis, harmonic analysis, and numerical analysis. This survey brings together these threads to offer a coherent picture of the field's foundations and its most pressing open problems. Among the questions that continue to motivate research are the complete characterization of stability under variable sound speeds, the development of robust reconstruction algorithms for limited-view and attenuated data, and the rigorous treatment of the quantitative inverse problem. By clarifying both what is known and what remains uncertain, we hope to provide valuable insight and a useful roadmap for researchers working at the intersection of mathematics and biomedical imaging.",
+    "L5": "# Thermoacoustic and Photoacoustic Phenomena\n\n## Introduction\n\nThe fields of thermoacoustics and photoacoustics represent fascinating intersections of thermal, optical, and acoustic physics. Both phenomena involve the conversion of energy into sound waves, yet they operate through distinct mechanisms and serve different scientific and technological purposes. Understanding these processes has led to significant advances in medical imaging, energy conversion, and materials science.\n\n## The Thermoacoustic Effect\n\nThe thermoacoustic effect describes the relationship between heat and sound in oscillating gas systems. When a temperature gradient is applied across a medium, it can generate acoustic oscillations, and conversely, sound waves can produce temperature differences. This bidirectional relationship forms the foundation of thermoacoustic technology.\n\nThermoacoustic engines and refrigerators exploit this principle to convert thermal energy into mechanical work or to achieve cooling without traditional refrigerants. These devices typically contain no moving parts other than the working gas itself, making them remarkably reliable and environmentally friendly. Applications range from waste heat recovery systems to cryogenic cooling for scientific instruments.\n\n## The Photoacoustic Effect\n\nThe photoacoustic effect, first discovered by Alexander Graham Bell in 1880, occurs when materials absorb modulated or pulsed light and convert it into acoustic waves. When light energy is absorbed by a sample, it causes localized heating, which leads to thermal expansion and the generation of pressure waves that can be detected as sound.\n\nThis phenomenon has become particularly valuable in biomedical imaging. Photoacoustic imaging combines the high contrast of optical methods with the deep penetration and spatial resolution of ultrasound. By analyzing the acoustic signals produced when tissue absorbs laser light, researchers can create detailed images of blood vessels, oxygen levels, and even detect early signs of cancer.\n\n## Comparing the Two Phenomena\n\nWhile both effects link thermal energy to acoustic waves, they differ fundamentally in their initiation. The thermoacoustic effect relies on sustained temperature gradients and gas dynamics, whereas the photoacoustic effect depends on light absorption as the primary energy source. Despite these differences, both share the underlying principle that thermal fluctuations can produce mechanical pressure waves.\n\n## Conclusion\n\nThe study of thermoacoustic and photoacoustic phenomena continues to inspire innovation across multiple disciplines. From clean energy solutions to non-invasive medical diagnostics, these effects demonstrate how fundamental physics can be harnessed for practical benefit. As research advances, we can expect these technologies to play increasingly important roles in addressing modern scientific and engineering challenges."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a one-sentence abstract for a survey paper on thermoacoustic and photoacoustic tomography.",
+      "output": "Thermoacoustic and photoacoustic tomography are emerging hybrid imaging modalities that combine the high contrast of electromagnetic or optical absorption with the high spatial resolution of ultrasound by reconstructing internal tissue properties from acoustic waves generated via thermoelastic expansion following pulsed electromagnetic excitation, and this survey reviews the underlying physical principles, mathematical models, image reconstruction algorithms, and biomedical applications that have driven their rapid development.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize what this mathematics paper is about in a single sentence.",
+      "output": "I'm happy to help summarize a mathematics paper! However, I don't see the paper in your message. It looks like the paper itself wasn't included.\n\nCould you please share the paper you'd like me to summarize? You can:\n\n- Paste the text of the paper (or its abstract)\n- Share the title and key sections\n- Provide the relevant content directly\n\nOnce you share it, I'll provide you with a concise one-sentence summary.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Give me a brief description of a review article covering the math behind thermoacoustic and photoacoustic imaging.",
+      "output": "# Mathematics of Thermoacoustic and Photoacoustic Tomography\n\nA prominent review article in this area is **\"Mathematics of thermoacoustic tomography\"** by **Peter Kuchment and Leonid Kunyansky**, published in the *European Journal of Applied Mathematics* (2008). This is one of the most cited surveys on the mathematical foundations of these imaging modalities.\n\n## Core Topics Typically Covered\n\n**Physical/Mathematical Setup**\n- The imaging principle: electromagnetic (microwave or laser) energy is absorbed by tissue, causing thermal expansion that generates acoustic (ultrasound) waves\n- The measured pressure data is related to the initial acoustic pressure distribution, which reflects absorbed energy density\n\n**The Forward Problem**\n- Modeling wave propagation via the **wave equation**\n- Formulating measurements as a **spherical mean transform** (integrals of the source over spheres centered on detector positions)\n\n**The Inverse Problem**\n- Reconstructing the initial pressure from boundary measurements\n- **Uniqueness** and **stability** of the reconstruction\n- **Inversion formulas**, particularly explicit closed-form solutions for special detector geometries (spheres, planes, cylinders)\n- **Range conditions** characterizing valid data\n\n**Reconstruction Methods**\n- Filtered backprojection-type formulas\n- Series expansion approaches (eigenfunction methods)\n- Time-reversal techniques\n\n**Open Problems and Complications**\n- Variable/unknown sound speed\n- Partial (limited-view) data and the \"visibility\" condition\n- Attenuation effects\n\n## Related Reviews\n\nOther valuable surveys include work by **Mark Agranovsky, David Finch, Rakesh, Gunther Uhlmann**, and reviews focused on the more general mathematics of **hybrid imaging** (which couples multiple physical modalities).\n\nWould you like me to go deeper into any specific aspect, such as the inversion formulas or the spherical mean transform?",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "What is this paper about? Provide a concise summary line.",
+      "output": "I don't see a paper attached to your message. Could you please share the paper—by pasting the text, uploading the file, or providing the title and abstract—and I'll give you a concise summary line?",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Draft an opening statement describing the scope of a survey on mathematical challenges in photoacoustic and thermoacoustic tomography.",
+      "output": "# Opening Statement: Survey on Mathematical Challenges in Photoacoustic and Thermoacoustic Tomography\n\n## Scope of the Survey\n\nPhotoacoustic tomography (PAT) and thermoacoustic tomography (TAT) represent a class of hybrid imaging modalities that couple the high contrast of optical or radiofrequency electromagnetic absorption with the high spatial resolution of ultrasound propagation. This survey aims to provide a comprehensive account of the mathematical foundations, open problems, and analytical techniques underlying these emerging technologies, with particular emphasis on the inverse problems that govern image reconstruction.\n\nAt the core of both modalities lies a shared physical principle: the absorption of an electromagnetic pulse induces localized thermoelastic expansion, generating acoustic pressure waves that propagate to detectors positioned outside the object of interest. The central mathematical task is the reconstruction of the initial pressure distribution—and, ultimately, the underlying tissue parameters—from measurements of these waves. This gives rise to a rich landscape of problems spanning several branches of applied mathematics.\n\n## Topics Addressed\n\nThis survey will examine the following principal themes:\n\n- **Inversion of spherical mean and wave-based transforms**, including explicit reconstruction formulas for canonical detector geometries (spherical, planar, and cylindrical acquisition surfaces).\n\n- **Uniqueness, stability, and range conditions** associated with the forward operators, and the influence of measurement geometry on the well-posedness of reconstruction.\n\n- **The problem of variable and unknown sound speed**, addressing time-reversal methods, the role of non-trapping conditions, and the failure of standard techniques in the presence of trapped geometric rays.\n\n- **Partial and limited-view data**, characterizing which regions of an object can be stably recovered and clarifying the microlocal nature of visible and invisible singularities.\n\n- **Quantitative PAT (QPAT)**, concerning the second-stage inverse problem of recovering optical coefficients from the reconstructed absorbed energy map, and its inherent nonlinearity and non-uniqueness.\n\n- **Attenuation, discretization, and numerical implementation**, including the effects of acoustic dissipation and the design of stable, efficient reconstruction algorithms.\n\n## Intended Audience and Objectives\n\nThis survey is directed toward mathematicians, physicists, and engineers seeking a unified perspective on the analytical challenges these modalities present. Rather than cataloguing experimental developments, our aim is to isolate the essential mathematical structures, to delineate what is rigorously understood from what remains conjectural, and to highlight directions where further theoretical progress is most needed.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.2547603414313855,
+      "excess_ratio": 0.1225894024877047,
+      "baseline_mean": 0.1321709389436808,
+      "baseline_n_valid": 5,
+      "output_chars": 1005,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.23809523809523808,
+          "baseline_mean": 0.09910901835363971,
+          "excess_ratio": 0.13898621974159836
+        },
+        "bz2": {
+          "actual_ratio": 0.22476190476190477,
+          "baseline_mean": 0.10936115746442514,
+          "excess_ratio": 0.11540074729747964
+        },
+        "lzma": {
+          "actual_ratio": 0.29850746268656714,
+          "baseline_mean": 0.1787043282940779,
+          "excess_ratio": 0.11980313439248924
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.5010183299389002,
+      "excess_ratio": 0.36884739099521935,
+      "baseline_mean": 0.1321709389436808,
+      "baseline_n_valid": 5,
+      "output_chars": 201,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.44285714285714284,
+          "baseline_mean": 0.09910901835363971,
+          "excess_ratio": 0.3437481245035031
+        },
+        "bz2": {
+          "actual_ratio": 0.5153374233128835,
+          "baseline_mean": 0.10936115746442514,
+          "excess_ratio": 0.4059762658484583
+        },
+        "lzma": {
+          "actual_ratio": 0.5319148936170213,
+          "baseline_mean": 0.1787043282940779,
+          "excess_ratio": 0.35321056532294337
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.1976923076923076,
+      "excess_ratio": 0.06552136874862682,
+      "baseline_mean": 0.1321709389436808,
+      "baseline_n_valid": 5,
+      "output_chars": 1810,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.17233009708737865,
+          "baseline_mean": 0.09910901835363971,
+          "excess_ratio": 0.07322107873373894
+        },
+        "bz2": {
+          "actual_ratio": 0.18396226415094338,
+          "baseline_mean": 0.10936115746442514,
+          "excess_ratio": 0.07460110668651825
+        },
+        "lzma": {
+          "actual_ratio": 0.23275862068965517,
+          "baseline_mean": 0.1787043282940779,
+          "excess_ratio": 0.05405429239557727
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.08081527936145953,
+      "excess_ratio": -0.051355659582221255,
+      "baseline_mean": 0.1321709389436808,
+      "baseline_n_valid": 5,
+      "output_chars": 5544,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.06765327695560254,
+          "baseline_mean": 0.09910901835363971,
+          "excess_ratio": -0.03145574139803717
+        },
+        "bz2": {
+          "actual_ratio": 0.07746790615316512,
+          "baseline_mean": 0.10936115746442514,
+          "excess_ratio": -0.031893251311260015
+        },
+        "lzma": {
+          "actual_ratio": 0.09698996655518395,
+          "baseline_mean": 0.1787043282940779,
+          "excess_ratio": -0.08171436173889395
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.030907278165503434,
+      "excess_ratio": -0.10126366077817736,
+      "baseline_mean": 0.1321709389436808,
+      "baseline_n_valid": 5,
+      "output_chars": 2922,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.016832440703902066,
+          "baseline_mean": 0.09910901835363971,
+          "excess_ratio": -0.08227657764973764
+        },
+        "bz2": {
+          "actual_ratio": 0.020046260601387818,
+          "baseline_mean": 0.10936115746442514,
+          "excess_ratio": -0.08931489686303731
+        },
+        "lzma": {
+          "actual_ratio": 0.05397727272727273,
+          "baseline_mean": 0.1787043282940779,
+          "excess_ratio": -0.12472705556680516
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15745512",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nDisclosed are a communication technique for merging, with IoT technology, a 5G communication system for supporting a data transmission rate higher than that of a 4G system, and a system therefor. The disclosed technique and system can be applied to intelligent services (for example, smart home, smart building, smart city, smart car or connected car, health care, digital education, retailing, security and safety related services, and the like) on the basis of 5G communication technology and IoT related technology. A method for controlling uplink transmission power of a terminal in a wireless communication system comprises the steps of: initializing a power control adjustment value when a repetition level for a coverage enhancement mode is changed; updating the power control adjustment value according to a transmission power control (TPC) command received from a base station; calculating uplink transmission power on the basis of the updated power control adjustment value and the repetition level; and transmitting uplink data or control information by the calculated uplink transmission power.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nDisclosed are a communication technique for merging, with IoT technology, a 5G communication system for supporting a data transmission rate higher than that of a 4G system, and a system therefor. The disclosed technique and system can be applied to intelligent services (for example, smart home, smart building, smart city, smart car or connected car, health care, digital education, retailing, security and safety related services, and the like) on the basis of 5G communication technology and IoT related technology. A method for controlling uplink transmission power of a terminal in a wireless communication system comprises the steps of: initializing a power control adjustment value when a repetition level for a coverage enhancement mode is changed; updating the power control adjustment value according to a transmission power control (TPC) command received from a base station; calculating uplink transmission power on the basis of the updated power control adjustment value and the repetition level; and transmitting uplink data or control information by the calculated uplink transmission power.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The disclosed technique integrates IoT technology with a 5G communication system that supports higher data rates than 4G systems.\n- The technique can support intelligent services such as smart homes, smart cities, connected cars, healthcare, digital education, retail, security, and safety applications.\n- The terminal initializes a power-control adjustment value when the repetition level for a coverage-enhancement mode changes.\n- The terminal updates the power-control adjustment value based on a transmission power control command received from a base station.\n- The terminal calculates uplink transmission power using the updated adjustment value and repetition level, then transmits uplink data or control information at that power.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe disclosure addresses uplink power control in a 5G–IoT wireless system by resetting a power-control adjustment when the coverage-enhancement repetition level changes, updating it using a base-station TPC command, and calculating transmission power accordingly. This approach enables reliable, efficient uplink transmission of data or control information in coverage-enhanced intelligent services.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Disclosed, IoT, The"
+  },
+  "outputs": {
+    "L1": "Disclosed are a communication technology that integrates a 5G communication system, which supports a higher data transmission rate than a 4G system, with Internet of Things (IoT) technology, and a system implementing the same. The disclosed technology and system may be applied to intelligent services—including smart homes, smart buildings, smart cities, smart cars or connected cars, healthcare, digital education, retail, and security- and safety-related services—based on 5G communication technology and IoT-related technology. A method for controlling uplink transmission power of a terminal in a wireless communication system comprises the steps of: initializing a power-control adjustment value when a repetition level for a coverage-enhancement mode is changed; updating the power-control adjustment value according to a transmission power control (TPC) command received from a base station; calculating uplink transmission power based on the updated power-control adjustment value and the repetition level; and transmitting uplink data or control information using the calculated uplink transmission power.",
+    "L2": "A communication method and corresponding system are provided that integrate Internet of Things (IoT) technology with a 5G communication system capable of data transmission rates exceeding those of 4G systems. Using 5G and IoT technologies, the method and system may support intelligent services such as smart homes, smart buildings, smart cities, smart or connected vehicles, healthcare, digital education, retail, security, safety, and similar applications.\n\nA method for managing a terminal’s uplink transmission power in a wireless communication system includes: resetting a power-control adjustment value when the repetition level associated with a coverage-enhancement mode changes; modifying the adjustment value based on a transmission power control (TPC) command received from a base station; determining the uplink transmission power using the modified adjustment value and the repetition level; and transmitting uplink data or control information at the determined power level.",
+    "L3": "The disclosed technique integrates Internet of Things (IoT) technology with a fifth-generation (5G) communication system capable of supporting higher data rates than fourth-generation (4G) systems. By combining IoT connectivity with advanced 5G communication capabilities, the technique may support a wide range of intelligent services and applications, including smart homes, smart cities, connected vehicles, healthcare, digital education, retail, security, and public-safety services.\n\nIn operation, a terminal communicates with a base station while using a coverage-enhancement mode in which uplink transmissions may be repeated according to a specified repetition level. When the repetition level changes, the terminal initializes a power-control adjustment value associated with uplink transmission. The terminal subsequently updates this adjustment value based on a transmission power control command received from the base station.\n\nUsing the updated power-control adjustment value together with the applicable repetition level, the terminal calculates an uplink transmission power. The terminal then transmits uplink data or control information to the base station at the calculated power. In this manner, the technique enables transmission power to be appropriately controlled as repetition conditions change, thereby supporting reliable and efficient uplink communication in coverage-enhanced IoT environments.",
+    "L4": "The disclosure relates to uplink power control in a fifth-generation wireless communication system supporting Internet-of-Things devices and other coverage-enhanced intelligent services. In such systems, a terminal may transmit uplink data or control information multiple times to improve reception when radio conditions are poor. The number of repetitions, or the corresponding coverage-enhancement repetition level, may change as channel conditions, service requirements, or network configurations change. Because each repetition level can have different power requirements, retaining a power-control adjustment derived for a previous level may result in excessive transmission power or insufficient received signal strength.\n\nTo address this issue, a user equipment determines whether the coverage-enhancement repetition level associated with an uplink transmission has changed. The level may be indicated by a base station, derived from a repetition configuration, or otherwise determined from parameters governing the uplink transmission. When the user equipment detects a change from a first repetition level to a second repetition level, it resets an accumulated or previously stored power-control adjustment. The reset value may be zero, a predefined value, or another value configured or signaled by the base station. Resetting the adjustment prevents power-control history associated with the former repetition level from being improperly applied to the new level.\n\nAfter the reset, the user equipment receives or identifies a transmit-power-control command from the base station. The command may instruct the user equipment to increase, decrease, or maintain its uplink transmission power. The user equipment updates the power-control adjustment based on the command. In an accumulative implementation, the command value is added to the reset adjustment and may subsequently be combined with additional commands. In another implementation, the command may directly specify an absolute adjustment. Limits may be applied so that the resulting value remains within an allowable power range.\n\nThe user equipment then calculates the transmission power for an uplink channel or signal using the updated power-control adjustment together with one or more applicable power-control parameters. Such parameters may include a nominal power value, path-loss compensation, allocated bandwidth, modulation and coding information, repetition-related settings, and a maximum transmit-power limitation of the user equipment. The calculated power may be used for transmitting uplink user data, scheduling requests, acknowledgments, channel-state information, random-access information, or other control signaling. The procedure may be performed for physical uplink shared channels, physical uplink control channels, or other uplink resources configured for repeated transmission.\n\nA corresponding base station may determine or configure the coverage-enhancement repetition level, detect or anticipate a change in that level, and transmit the applicable power-control command. The base station can therefore coordinate repetition configuration and uplink power adjustment so that the received signal remains sufficiently reliable without requiring the terminal to transmit at unnecessarily high power.\n\nBy resetting the power-control adjustment when the repetition level changes, the disclosed technique avoids carrying over an unsuitable adjustment from a prior transmission configuration. It improves uplink reliability at cell edges and in deep-coverage environments while reducing interference and conserving terminal battery power. The approach is particularly useful for low-power IoT devices, sensors, meters, and other intelligent-service terminals that rely on coverage-enhanced repeated uplink transmissions.",
+    "L5": "## The Future of IoT: Risks and Opportunities Disclosed\n\nThe Internet of Things (IoT) is transforming how people interact with technology. From smart home devices and connected vehicles to industrial sensors, IoT systems collect and exchange data to improve efficiency, convenience, and automation.\n\nHowever, the rapid adoption of connected devices also creates security and privacy concerns. Recently disclosed vulnerabilities have shown that weak passwords, outdated software, and poor encryption can expose entire networks to cyberattacks. Manufacturers must therefore build security into every stage of product development and provide regular updates.\n\nThe future of IoT will depend on trust. Clear data policies, stronger cybersecurity standards, and greater transparency can help organizations unlock the benefits of connected technology while protecting users and their information."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent abstract for a 5G/IoT wireless communication method that controls terminal uplink transmission power when the repetition level of a coverage enhancement mode changes.",
+      "output": "A wireless communication method includes operating a terminal in a coverage enhancement mode using a first repetition level for uplink transmission. The terminal determines a change from the first repetition level to a second repetition level and controls uplink transmission power based on the change. Controlling the uplink transmission power may include determining a power adjustment value associated with the second repetition level, a difference between the repetition levels, a path-loss estimate, a target received power, or a combination thereof, and applying the power adjustment value to one or more uplink transmissions. The terminal transmits an uplink signal using the second repetition level and the adjusted transmission power. The power adjustment may be configured by a network device, derived from stored mapping information, or dynamically determined to maintain uplink reliability while limiting interference and terminal power consumption. Corresponding terminal, network device, apparatus, and computer-readable medium implementations are also provided.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a technical summary describing how a UE initializes and updates a power control adjustment value using TPC commands, calculates uplink power based on repetition level, and transmits uplink data or control information.",
+      "output": "A user equipment (UE) maintains a closed-loop power-control adjustment value for an uplink physical channel. The UE initializes or resets this value to a predefined value, typically zero, when power control is first configured, after a relevant reconfiguration or reset event, or when beginning a new applicable transmission procedure.\n\nUpon receiving a transmit-power-control (TPC) command from the serving cell, the UE maps the command to a power adjustment, usually expressed in dB. In accumulated operation, the UE updates the adjustment according to\n\n\\[\nf(i)=\\operatorname{clip}\\!\\left(f(i-1)+\\Delta_{\\mathrm{TPC}}(i)\\right),\n\\]\n\nwhere \\(f(i)\\) is the adjustment applied to transmission occasion \\(i\\), \\(\\Delta_{\\mathrm{TPC}}(i)\\) is the command-dependent increment or decrement, and clipping limits the accumulated value to the supported range. In absolute operation, the command directly determines the adjustment:\n\n\\[\nf(i)=\\Delta_{\\mathrm{TPC}}(i).\n\\]\n\nThe update may account for the command’s reception-to-application delay, discontinuous reception, transmission gaps, or conditions under which accumulation is frozen or reset.\n\nFor an uplink transmission, the UE determines the applicable repetition level or repetition count. The repetition level can be configured by higher-layer signaling, indicated by downlink control information, or selected from coverage-enhancement parameters. The UE then calculates the transmit power using an open-loop power-control component and the TPC-derived adjustment. A representative calculation is\n\n\\[\nP_{\\mathrm{UL}}(i)=\n\\min\\!\\left\\{\nP_{\\mathrm{CMAX}},\nP_{0}\n+\\alpha PL\n+10\\log_{10}(M)\n+\\Delta_{\\mathrm{TF}}\n+\\Delta_{\\mathrm{rep}}(R)\n+f(i)\n\\right\\},\n\\]\n\nwhere:\n\n- \\(P_{\\mathrm{CMAX}}\\) is the UE’s maximum permitted transmit power;\n- \\(P_{0}\\) is a cell-specific and/or UE-specific nominal power parameter;\n- \\(PL\\) is the estimated downlink path loss;\n- \\(\\alpha\\) is a path-loss compensation factor;\n- \\(M\\) represents the allocated uplink bandwidth or number of resource units;\n- \\(\\Delta_{\\mathrm{TF}}\\) accounts for the selected transport format;\n- \\(\\Delta_{\\mathrm{rep}}(R)\\) is an offset or scaling term associated with repetition level \\(R\\); and\n- \\(f(i)\\) is the current power-control adjustment.\n\nDepending on the radio-access procedure, repetition level may affect power through an explicit offset, through a repetition-specific set of power-control parameters, or indirectly through the resource allocation and transport format. The calculated value is constrained by the UE’s configured maximum power and any applicable minimum or spectral-density limits.\n\nThe UE applies the resulting power to the assigned uplink resources and transmits the scheduled data or control information. If repetition is configured, the same encoded uplink information is transmitted over the prescribed number of occasions, generally using the power associated with that repetition level unless a later valid TPC command changes the adjustment for subsequent repetitions. The receiver combines the repeated transmissions to improve decoding reliability and coverage. The procedure can be applied to uplink shared-channel data and, with channel-specific parameters, to uplink control information such as acknowledgments, scheduling requests, or channel-state reports.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate a Samsung-style telecommunications patent abstract for an invention involving 5G, IoT applications, coverage enhancement repetitions, and uplink transmission power control.",
+      "output": "A method and apparatus for uplink transmission in a wireless communication system are provided. A user equipment (UE) may receive, from a base station, configuration information indicating a coverage enhancement level, a number of repetitions for an uplink transmission associated with an Internet of Things (IoT) application, and one or more uplink power-control parameters. The UE may determine a transmission power for each repetition based on at least one of a path-loss estimate, the coverage enhancement level, the number of repetitions, a repetition position, and a maximum UE transmission power. The UE may transmit an uplink signal over a plurality of transmission occasions according to the determined transmission power. The transmission power may be maintained, increased, or decreased across the plurality of transmission occasions based on accumulated energy, channel conditions, or feedback received from the base station. Accordingly, uplink coverage and reliability for 5G IoT communications may be enhanced while reducing power consumption and interference.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Describe a method and system for controlling uplink transmission power in a wireless network, including resetting the adjustment value after a repetition-level change and updating it in response to a base-station command.",
+      "output": "### Method\n\nA wireless device controls uplink transmit power using a power-adjustment value associated with an uplink channel or transmission process.\n\n1. **Determine a repetition level**  \n   The device determines the repetition level currently configured for an uplink transmission, such as the number of times a transport block or physical-channel signal is repeated.\n\n2. **Detect a repetition-level change**  \n   The device compares the current repetition level with the repetition level used for a previous transmission.\n\n3. **Reset the adjustment value**  \n   When the repetition level changes, the device resets an accumulated power-adjustment value to an initial value, such as zero or a configured baseline. This prevents power-control corrections derived under the previous repetition level from being carried into the new repetition regime.\n\n4. **Receive a power-control command**  \n   The device receives a transmit-power-control command from a base station, for example in downlink control information.\n\n5. **Update the adjustment value**  \n   The device updates the reset or previously stored adjustment value according to the command. In an accumulated implementation:\n\n   \\[\n   f(i)=f(i-1)+\\Delta_{\\mathrm{TPC}}(i),\n   \\]\n\n   except that, following a repetition-level change:\n\n   \\[\n   f(i)=f_{\\mathrm{init}}+\\Delta_{\\mathrm{TPC}}(i).\n   \\]\n\n   Alternatively, the command may specify an absolute adjustment value.\n\n6. **Set uplink transmission power**  \n   The device calculates transmit power using the updated adjustment value together with one or more of a nominal-power parameter, path-loss estimate, allocated bandwidth, modulation/coding parameters, and repetition-level-dependent parameters. For example:\n\n   \\[\n   P_{\\mathrm{UL}}(i)=\n   \\min\\!\\left(P_{\\max},\n   P_0+\\alpha PL+10\\log_{10}M+f(i)+\\Delta_{\\mathrm{rep}}\\right).\n   \\]\n\n7. **Transmit**  \n   The uplink signal is transmitted, including its configured repetitions, at the calculated power, subject to maximum and minimum device-power limits.\n\n### System\n\nThe system includes:\n\n- **A base station** configured to:\n  - assign or modify an uplink repetition level;\n  - estimate uplink reception quality;\n  - generate and transmit a power-control command; and\n  - receive the power-controlled uplink transmission.\n\n- **A wireless device** having:\n  - a receiver for repetition-level configuration and power-control commands;\n  - memory storing the current repetition level and power-adjustment value;\n  - change-detection logic that identifies a repetition-level change;\n  - reset logic that initializes the adjustment value after the change;\n  - update logic that applies the base-station command;\n  - a power calculator; and\n  - a transmitter and power amplifier configured to send the repeated uplink signal at the calculated power.\n\nThis arrangement avoids inappropriate accumulation of power corrections across different repetition levels while allowing the base station to resume closed-loop power control immediately after the reset.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Create an abstract for a wireless communication patent that combines 5G and IoT technology and improves uplink power control for terminals operating in coverage enhancement mode.",
+      "output": "**Abstract**\n\nA method, apparatus, and wireless communication system are disclosed for uplink power control of Internet of Things (IoT) terminals operating in a coverage enhancement mode of a fifth-generation (5G) network. A network node configures a terminal with a coverage enhancement level associated with uplink repetitions, transmission duration, bandwidth allocation, or a target reliability. The terminal determines an uplink transmit power based on path-loss information, a coverage-enhancement-specific power offset, a repetition-aware power adjustment, and one or more transmit power control commands received from the network node. The transmit power may be distributed across repeated transmissions while satisfying a maximum terminal power, energy-consumption limit, and interference constraint. The network node may dynamically update the coverage enhancement level and power-control parameters using measurements of received signal quality, repetition combining gain, terminal battery status, mobility, or network loading. Different power-control rules may be applied to random access, scheduled uplink, configured-grant, and control-channel transmissions. The disclosed techniques improve uplink reliability and coverage for low-power IoT terminals while reducing unnecessary repetitions, battery consumption, and inter-cell interference in 5G networks.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6609963547995139,
+      "excess_ratio": 0.5256539548413501,
+      "baseline_mean": 0.1353423999581638,
+      "baseline_n_valid": 5,
+      "output_chars": 1115,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6567460317460317,
+          "baseline_mean": 0.10704620474209,
+          "excess_ratio": 0.5496998270039417
+        },
+        "bz2": {
+          "actual_ratio": 0.5854092526690391,
+          "baseline_mean": 0.13134695759214793,
+          "excess_ratio": 0.45406229507689116
+        },
+        "lzma": {
+          "actual_ratio": 0.7379310344827587,
+          "baseline_mean": 0.16366437752715107,
+          "excess_ratio": 0.5742666569556076
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.475801382778127,
+      "excess_ratio": 0.34045898281996323,
+      "baseline_mean": 0.1353423999581638,
+      "baseline_n_valid": 5,
+      "output_chars": 987,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.43243243243243246,
+          "baseline_mean": 0.10704620474209,
+          "excess_ratio": 0.3253862276903424
+        },
+        "bz2": {
+          "actual_ratio": 0.4413919413919414,
+          "baseline_mean": 0.13134695759214793,
+          "excess_ratio": 0.31004498379979345
+        },
+        "lzma": {
+          "actual_ratio": 0.5460992907801419,
+          "baseline_mean": 0.16366437752715107,
+          "excess_ratio": 0.3824349132529908
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.41887905604719766,
+      "excess_ratio": 0.2835366560890339,
+      "baseline_mean": 0.1353423999581638,
+      "baseline_n_valid": 5,
+      "output_chars": 1421,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4009508716323296,
+          "baseline_mean": 0.10704620474209,
+          "excess_ratio": 0.29390466689023964
+        },
+        "bz2": {
+          "actual_ratio": 0.37777777777777777,
+          "baseline_mean": 0.13134695759214793,
+          "excess_ratio": 0.24643082018562984
+        },
+        "lzma": {
+          "actual_ratio": 0.4725274725274725,
+          "baseline_mean": 0.16366437752715107,
+          "excess_ratio": 0.30886309500032144
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.11865942028985513,
+      "excess_ratio": -0.016682979668308673,
+      "baseline_mean": 0.1353423999581638,
+      "baseline_n_valid": 5,
+      "output_chars": 3810,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.09514031485284052,
+          "baseline_mean": 0.10704620474209,
+          "excess_ratio": -0.011905889889249482
+        },
+        "bz2": {
+          "actual_ratio": 0.11346018322762509,
+          "baseline_mean": 0.13134695759214793,
+          "excess_ratio": -0.017886774364522837
+        },
+        "lzma": {
+          "actual_ratio": 0.14583333333333334,
+          "baseline_mean": 0.16366437752715107,
+          "excess_ratio": -0.01783104419381773
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.08650937689050216,
+      "excess_ratio": -0.04883302306766164,
+      "baseline_mean": 0.1353423999581638,
+      "baseline_n_valid": 5,
+      "output_chars": 889,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.047524752475247525,
+          "baseline_mean": 0.10704620474209,
+          "excess_ratio": -0.05952145226684248
+        },
+        "bz2": {
+          "actual_ratio": 0.09306569343065693,
+          "baseline_mean": 0.13134695759214793,
+          "excess_ratio": -0.038281264161491
+        },
+        "lzma": {
+          "actual_ratio": 0.11333333333333333,
+          "baseline_mean": 0.16366437752715107,
+          "excess_ratio": -0.050331044193817745
+        }
+      }
+    }
+  }
+}

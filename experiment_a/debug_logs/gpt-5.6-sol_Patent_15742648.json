@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15742648",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA method, apparatus and computer program wherein the method includes: obtaining at least three ambient audio signals wherein at least one of the ambient audio signals is to be processed with a first directional transfer function pair and at least one other of the ambient audio signals is to be processed with a second directional transfer function pair wherein the directional transfer function pairs to be used are based on target directions of the ambient audio signals; determining a change of the target direction for the at least one ambient audio signal to an updated target direction; selecting an updated directional transfer function pair associated with the updated target direction wherein the updated directional transfer function pair is selected from a plurality of directional transfer functions and the updated directional transfer function pair is more closely associated with the updated target direction than the first directional transfer function pair; and processing the at least one ambient audio signal with the selected updated directional transfer function pair and processing the at least one other ambient audio signal with the second directional transfer function pair.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA method, apparatus and computer program wherein the method includes: obtaining at least three ambient audio signals wherein at least one of the ambient audio signals is to be processed with a first directional transfer function pair and at least one other of the ambient audio signals is to be processed with a second directional transfer function pair wherein the directional transfer function pairs to be used are based on target directions of the ambient audio signals; determining a change of the target direction for the at least one ambient audio signal to an updated target direction; selecting an updated directional transfer function pair associated with the updated target direction wherein the updated directional transfer function pair is selected from a plurality of directional transfer functions and the updated directional transfer function pair is more closely associated with the updated target direction than the first directional transfer function pair; and processing the at least one ambient audio signal with the selected updated directional transfer function pair and processing the at least one other ambient audio signal with the second directional transfer function pair.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The method obtains at least three ambient audio signals for directional processing.\n- Different ambient audio signals are processed using directional transfer function pairs based on their target directions.\n- A change in the target direction of at least one ambient audio signal is detected.\n- An updated directional transfer function pair is selected because it more closely matches the updated target direction.\n- The affected signal is processed with the updated pair, while another signal continues to use its original directional transfer function pair.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe method processes at least three ambient audio signals using directional transfer-function pairs based on their target directions, detects a target-direction change, and selects a closer matching pair for the updated direction. It dynamically reprocesses the changed signal while retaining the existing processing for other signals, enabling more accurate and consistent spatial audio rendering.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: A method, apparatus"
+  },
+  "outputs": {
+    "L1": "A method, apparatus, and computer program, wherein the method comprises: obtaining at least three ambient audio signals, wherein at least one ambient audio signal is to be processed using a first directional transfer function pair, and at least one other ambient audio signal is to be processed using a second directional transfer function pair, the directional transfer function pairs being selected based on target directions of the ambient audio signals; determining that the target direction of the at least one ambient audio signal has changed to an updated target direction; selecting an updated directional transfer function pair associated with the updated target direction from a plurality of directional transfer functions, wherein the updated directional transfer function pair is more closely associated with the updated target direction than the first directional transfer function pair; and processing the at least one ambient audio signal using the selected updated directional transfer function pair while processing the at least one other ambient audio signal using the second directional transfer function pair.",
+    "L2": "A method, device, and computer program are disclosed. The method comprises receiving no fewer than three ambient audio signals. Based on the signals’ intended directions, at least one signal is processed using a first pair of directional transfer functions, while at least one different signal is processed using a second pair. When the target direction of the signal associated with the first pair changes to a revised target direction, a replacement pair is chosen from multiple available directional transfer functions. The replacement pair corresponds more closely to the revised target direction than the first pair does. The signal whose direction changed is then processed with the selected replacement pair, while the other signal continues to be processed with the second pair.",
+    "L3": "The method obtains at least three ambient audio signals for directional audio processing. Each ambient audio signal is associated with a respective target direction and is processed using a corresponding pair of directional transfer functions selected for that target direction.\n\nDuring processing, the method detects a change in the target direction of at least one of the ambient audio signals. In response, it selects an updated pair of directional transfer functions that more closely matches the signal’s updated target direction. The affected ambient audio signal is then processed using the updated pair. Meanwhile, at least one other ambient audio signal continues to be processed using its original pair of directional transfer functions, thereby allowing individual directional adjustments without altering the processing of unaffected signals.",
+    "L4": "A spatial-audio processing method receives at least three ambient audio signals, each associated with a respective target direction in a rendered sound field. For every signal, the method selects a pair of directional transfer functions corresponding to, or most closely approximating, that signal’s target direction. The selected transfer functions may represent, for example, left- and right-ear responses used to generate binaural output. Each ambient audio signal is processed with its selected transfer-function pair, and the resulting components are combined to produce a spatially rendered audio output.\n\nDuring operation, the method monitors the target directions associated with the ambient audio signals. When the target direction of one of the signals changes, the new direction is compared with the directions represented by available transfer-function pairs. A replacement pair having a closer directional match to the updated target direction is then selected for the affected signal. The signal is reprocessed using the replacement pair, optionally with interpolation or crossfading between the previous and replacement processing to avoid audible discontinuities.\n\nProcessing applied to the remaining ambient audio signals is retained when their target directions have not changed. Thus, only the signal associated with the detected direction change needs to be updated, while the existing directional processing for the other signals continues without interruption. This selective and dynamic reprocessing reduces unnecessary computation, preserves spatial stability, and improves the accuracy and consistency with which moving or repositioned ambient sounds are rendered.",
+    "L5": "### A Method and Apparatus\n\nA method and apparatus are provided for efficiently processing data within a digital system. The method includes receiving input data, analyzing the data according to predefined criteria, generating a corresponding result, and transmitting or storing the result for subsequent use.\n\nThe apparatus includes an input interface, one or more processors, a memory, and an output interface. The memory stores instructions that, when executed by the processors, cause the apparatus to perform the method. In some implementations, the system may dynamically adjust processing parameters based on operating conditions, user preferences, or characteristics of the received data.\n\nThis approach can improve processing speed, reduce resource consumption, and increase reliability. The method and apparatus may be implemented in hardware, software, firmware, or any suitable combination thereof."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent abstract for a method, apparatus, and computer program that spatially processes at least three ambient audio signals using directional transfer function pairs and updates one pair when a signal’s target direction changes.",
+      "output": "A method, apparatus, and computer program product are provided for spatially processing audio signals. At least three ambient audio signals are received, and a respective pair of directional transfer functions is assigned to each ambient audio signal based on a target direction associated with the signal. Each ambient audio signal is filtered using the assigned pair of directional transfer functions to generate spatialized output components for first and second audio channels, and the spatialized output components are combined to produce a spatial audio output. In response to a change in the target direction of one of the ambient audio signals, the pair of directional transfer functions assigned to that audio signal is updated according to the changed target direction while the pairs assigned to the other ambient audio signals are maintained. The apparatus includes processing circuitry configured to perform the method, and the computer program product includes instructions that cause one or more processors to perform the method.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a single patent-style claim describing binaural rendering of multiple ambient audio signals, including selection of a more closely matched directional transfer function after an updated target direction is determined.",
+      "output": "1. A method for binaural rendering of a plurality of ambient audio signals, the method comprising: receiving the plurality of ambient audio signals, each ambient audio signal being associated with a respective target direction relative to a listener; selecting, for each ambient audio signal, a directional transfer function from a set of directional transfer functions based on a match between the respective target direction and a direction associated with the directional transfer function; filtering each ambient audio signal using the respectively selected directional transfer function to generate left-ear and right-ear signal components; combining the left-ear signal components and combining the right-ear signal components to produce a binaural output; determining, for at least one of the ambient audio signals, an updated target direction relative to the listener; in response to determining the updated target direction, selecting from the set a replacement directional transfer function having an associated direction that more closely matches the updated target direction than does the direction associated with the directional transfer function previously selected for the at least one ambient audio signal; and filtering the at least one ambient audio signal using the replacement directional transfer function to update the binaural output.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Convert the following invention concept into formal patent language: several ambient audio channels are assigned directional transfer functions; when one channel’s intended direction moves, choose a better matching transfer function from a stored set while leaving another channel’s processing unchanged.",
+      "output": "## Title  \n**Adaptive Directional Transfer Function Selection for Multichannel Ambient Audio Rendering**\n\n## Abstract  \nA method and system are provided for rendering a plurality of ambient audio channels using directional transfer functions. Each ambient audio channel is associated with an intended spatial direction and is processed using a respective directional transfer function selected from a stored set of directional transfer functions. In response to detecting a change in the intended spatial direction of a first ambient audio channel, the system selects, from the stored set, a replacement directional transfer function having a directional characteristic that more closely corresponds to the changed intended spatial direction. Processing of the first ambient audio channel is updated using the replacement directional transfer function, while processing of at least a second ambient audio channel continues using its previously assigned directional transfer function. The disclosed approach permits selective updating of spatial audio processing without requiring reassignment or recalculation of transfer functions for unaffected channels.\n\n## Exemplary Independent Method Claim  \n1. **A computer-implemented method for spatially rendering audio, the method comprising:**  \n   obtaining a plurality of ambient audio channels, including a first ambient audio channel and a second ambient audio channel;  \n   associating the first ambient audio channel with a first intended direction and the second ambient audio channel with a second intended direction;  \n   assigning, from a stored set of directional transfer functions, a first directional transfer function to the first ambient audio channel and a second directional transfer function to the second ambient audio channel;  \n   processing the first ambient audio channel according to the first directional transfer function and processing the second ambient audio channel according to the second directional transfer function;  \n   detecting a change in the first intended direction to a changed intended direction;  \n   selecting, from the stored set of directional transfer functions, a replacement directional transfer function having a directional characteristic that provides a closer match to the changed intended direction than the first directional transfer function; and  \n   in response to detecting the change, processing the first ambient audio channel according to the replacement directional transfer function while continuing to process the second ambient audio channel according to the second directional transfer function.\n\n## Exemplary Dependent Claims  \n2. The method of claim 1, wherein the directional transfer functions comprise head-related transfer functions.\n\n3. The method of claim 1, wherein selecting the replacement directional transfer function comprises comparing the changed intended direction with direction metadata associated with respective directional transfer functions in the stored set.\n\n4. The method of claim 3, wherein the replacement directional transfer function is selected based on an angular distance between the changed intended direction and a direction represented by the replacement directional transfer function.\n\n5. The method of claim 1, wherein the second directional transfer function remains unchanged in response to the change in the first intended direction.\n\n6. The method of claim 1, further comprising transitioning from the first directional transfer function to the replacement directional transfer function by crossfading respective processed audio signals.\n\n7. The method of claim 1, wherein the stored set comprises directional transfer functions corresponding to discrete azimuth and elevation combinations.\n\n8. The method of claim 1, wherein the first and second ambient audio channels represent respective components of an ambient sound field.\n\n9. The method of claim 1, wherein processing an ambient audio channel according to a directional transfer function comprises convolving the ambient audio channel with at least one filter corresponding to the directional transfer function.\n\n10. The method of claim 1, wherein the change in the first intended direction is determined from object-position metadata, listener-orientation data, or both.\n\n## Exemplary System Claim  \n11. **An audio rendering system comprising:**  \n   a memory storing a set of directional transfer functions; and  \n   one or more processors configured to:  \n   assign respective directional transfer functions from the set to a plurality of ambient audio channels based on respective intended directions of the ambient audio channels;  \n   process a first ambient audio channel using a first assigned directional transfer function and a second ambient audio channel using a second assigned directional transfer function;  \n   determine that an intended direction of the first ambient audio channel has changed;  \n   select, from the set, a replacement directional transfer function that more closely corresponds to the changed intended direction than the first assigned directional transfer function; and  \n   update processing of the first ambient audio channel to use the replacement directional transfer function without changing the second assigned directional transfer function used to process the second ambient audio channel.\n\n## Exemplary Computer-Readable Medium Claim  \n12. **A non-transitory computer-readable medium** storing instructions that, when executed by one or more processors, cause the one or more processors to perform the method of any one of claims 1–10.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate a concise method claim for dynamically updating HRTF or directional transfer function pairs in a multichannel spatial audio system with at least three ambient signals.",
+      "output": "1. A method for spatial audio rendering, comprising: receiving at least three ambient audio signals associated with respective spatial directions; determining a listener pose; dynamically selecting or updating, based on the listener pose, a respective pair of head-related transfer functions or directional transfer functions for each ambient audio signal; filtering each ambient audio signal using the respective pair to generate binaural signal components; and combining the binaural signal components to produce left and right output signals.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Describe, in patent-abstract form, an apparatus and computer program for tracking changes in the target direction of an ambient audio signal and reprocessing it with the closest available directional transfer function pair.",
+      "output": "An apparatus and computer program are provided for spatially rendering an ambient audio signal. A target-direction tracker determines a current target direction associated with the ambient audio signal and detects changes relative to a previously determined target direction. A transfer-function selector accesses a set of directional transfer-function pairs, each pair corresponding to an available rendering direction, and selects the pair associated with a direction closest to the current target direction according to a directional-distance criterion. In response to a change in the selected pair, an audio processor reprocesses the ambient audio signal using the selected directional transfer-function pair to produce output channels providing a spatialized representation of the signal. Transitions between transfer-function pairs may be smoothed by interpolation, crossfading, or state-preserving filter updates to reduce audible artifacts. The computer program includes instructions that, when executed by one or more processors, cause performance of the direction tracking, nearest-pair selection, and reprocessing operations.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6966292134831461,
+      "excess_ratio": 0.48650711217472514,
+      "baseline_mean": 0.21012210130842096,
+      "baseline_n_valid": 5,
+      "output_chars": 1129,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6903225806451613,
+          "baseline_mean": 0.16825186483986054,
+          "excess_ratio": 0.5220707158053007
+        },
+        "bz2": {
+          "actual_ratio": 0.6470588235294118,
+          "baseline_mean": 0.19740542146673545,
+          "excess_ratio": 0.44965340206267634
+        },
+        "lzma": {
+          "actual_ratio": 0.75,
+          "baseline_mean": 0.25683360265391453,
+          "excess_ratio": 0.49316639734608547
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.40176211453744487,
+      "excess_ratio": 0.1916400132290239,
+      "baseline_mean": 0.21012210130842096,
+      "baseline_n_valid": 5,
+      "output_chars": 786,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3225806451612903,
+          "baseline_mean": 0.16825186483986054,
+          "excess_ratio": 0.15432878032142977
+        },
+        "bz2": {
+          "actual_ratio": 0.4074074074074074,
+          "baseline_mean": 0.19740542146673545,
+          "excess_ratio": 0.21000198594067193
+        },
+        "lzma": {
+          "actual_ratio": 0.46153846153846156,
+          "baseline_mean": 0.25683360265391453,
+          "excess_ratio": 0.20470485888454704
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.4366319444444444,
+      "excess_ratio": 0.22650984313602346,
+      "baseline_mean": 0.21012210130842096,
+      "baseline_n_valid": 5,
+      "output_chars": 854,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3826086956521739,
+          "baseline_mean": 0.16825186483986054,
+          "excess_ratio": 0.21435683081231338
+        },
+        "bz2": {
+          "actual_ratio": 0.4108527131782946,
+          "baseline_mean": 0.19740542146673545,
+          "excess_ratio": 0.21344729171155913
+        },
+        "lzma": {
+          "actual_ratio": 0.5047619047619047,
+          "baseline_mean": 0.25683360265391453,
+          "excess_ratio": 0.24792830210799022
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.19439579684763572,
+      "excess_ratio": -0.01572630446078524,
+      "baseline_mean": 0.21012210130842096,
+      "baseline_n_valid": 5,
+      "output_chars": 1689,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.14384508990318118,
+          "baseline_mean": 0.16825186483986054,
+          "excess_ratio": -0.024406774936679365
+        },
+        "bz2": {
+          "actual_ratio": 0.19865771812080538,
+          "baseline_mean": 0.19740542146673545,
+          "excess_ratio": 0.0012522966540699232
+        },
+        "lzma": {
+          "actual_ratio": 0.23529411764705882,
+          "baseline_mean": 0.25683360265391453,
+          "excess_ratio": -0.021539485006855708
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.07486631016042788,
+      "excess_ratio": -0.13525579114799308,
+      "baseline_mean": 0.21012210130842096,
+      "baseline_n_valid": 5,
+      "output_chars": 910,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.0392156862745098,
+          "baseline_mean": 0.16825186483986054,
+          "excess_ratio": -0.12903617856535074
+        },
+        "bz2": {
+          "actual_ratio": 0.061855670103092786,
+          "baseline_mean": 0.19740542146673545,
+          "excess_ratio": -0.13554975136364267
+        },
+        "lzma": {
+          "actual_ratio": 0.11594202898550725,
+          "baseline_mean": 0.25683360265391453,
+          "excess_ratio": -0.14089157366840727
+        }
+      }
+    }
+  }
+}

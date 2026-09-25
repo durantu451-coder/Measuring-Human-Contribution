@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15859716",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA RAID decoding system which performs a Built in Self-Test (BIST) includes: a RAID decoder, including: a storage, for storing a syndrome of a first Reed-Solomon (RS) codeword, a syndrome of a second RS codeword, and parity data of the first RS codeword and the second RS codeword; and an RS decoder which performs decoding on the first RS codeword and the second RS codeword according to the parity data to generate an updated syndrome of the first RS codeword and an updated syndrome of the second RS codeword. A MUX inputs the first and the second RS codeword to the RS decoder in a first iteration, and inputs the parity data to the RS decoder in following iterations for updating the syndromes of the first and the second RS codeword. The updated syndromes are used to perform error correction on the first RS codeword and the second RS codeword.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA RAID decoding system which performs a Built in Self-Test (BIST) includes: a RAID decoder, including: a storage, for storing a syndrome of a first Reed-Solomon (RS) codeword, a syndrome of a second RS codeword, and parity data of the first RS codeword and the second RS codeword; and an RS decoder which performs decoding on the first RS codeword and the second RS codeword according to the parity data to generate an updated syndrome of the first RS codeword and an updated syndrome of the second RS codeword. A MUX inputs the first and the second RS codeword to the RS decoder in a first iteration, and inputs the parity data to the RS decoder in following iterations for updating the syndromes of the first and the second RS codeword. The updated syndromes are used to perform error correction on the first RS codeword and the second RS codeword.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The RAID decoding system includes a built-in self-test (BIST) capability.\n- The RAID decoder stores syndromes and parity data for first and second Reed-Solomon (RS) codewords.\n- The RS decoder processes both codewords using the parity data to generate updated syndromes.\n- A multiplexer sends the two RS codewords to the decoder in the first iteration and sends parity data in subsequent iterations.\n- The updated syndromes are used to correct errors in both RS codewords.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA RAID decoding system performs built-in self-testing by storing syndromes and parity data for two Reed-Solomon codewords, then using a multiplexer and RS decoder to process the codewords initially and parity data in subsequent iterations. The resulting updated syndromes enable error correction for both codewords, improving RAID data integrity and reliability.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: RAID, Built, Self"
+  },
+  "outputs": {
+    "L1": "A RAID decoding system that performs a built-in self-test (BIST) includes a RAID decoder and a multiplexer (MUX). The RAID decoder includes storage configured to store a syndrome of a first Reed–Solomon (RS) codeword, a syndrome of a second RS codeword, and parity data of the first and second RS codewords. The RAID decoder further includes an RS decoder configured to decode the first and second RS codewords according to the parity data, thereby generating updated syndromes of the first and second RS codewords. During a first iteration, the MUX inputs the first and second RS codewords to the RS decoder. During subsequent iterations, the MUX inputs the parity data to the RS decoder to update the syndromes of the first and second RS codewords. The updated syndromes are used to perform error correction on the first and second RS codewords.",
+    "L2": "A RAID decoding system configured to execute a built-in self-test (BIST) comprises a RAID decoder and a multiplexer (MUX). The RAID decoder includes storage that retains syndromes for first and second Reed-Solomon (RS) codewords, along with parity data associated with both codewords. It also includes an RS decoder that decodes the first and second RS codewords using the parity data, thereby producing updated syndromes for each codeword. During an initial iteration, the MUX supplies the first and second RS codewords to the RS decoder. In subsequent iterations, the MUX instead provides the parity data to the RS decoder so that the syndromes of both codewords can be updated. The resulting updated syndromes are then applied to correct errors in the first and second RS codewords.",
+    "L3": "The RAID decoding system incorporates a built-in self-test (BIST) capability to verify that the decoding circuitry operates correctly. During decoding, the system stores the syndromes and parity data associated with the first and second Reed–Solomon (RS) codewords. The RS decoder then processes both codewords and uses the stored parity data to generate updated syndrome values.\n\nData flow to the decoder is controlled by a multiplexer. During the first decoding iteration, the multiplexer supplies the two RS codewords to the decoder. In subsequent iterations, it supplies the corresponding parity data, allowing the decoder to refine or update the syndromes. These updated syndromes are then used to identify and correct errors in both RS codewords, thereby improving the reliability and integrity of the recovered RAID data.",
+    "L4": "A RAID decoding system can incorporate built-in self-test functionality to verify the operation of its error-detection and error-correction circuitry without requiring separate external test equipment. The system uses Reed-Solomon (RS) coding to protect data distributed across the RAID storage devices. For two protected RS codewords, the decoder stores corresponding syndrome values and parity information in dedicated registers or memory. Because a syndrome represents the relationship between a received codeword and the applicable RS parity-check equations, it provides the information needed to determine whether errors are present and, when possible, to locate and correct them.\n\nA multiplexer controls the information supplied to a shared RS decoder. During an initial decoding cycle, the multiplexer selects the received codewords, allowing the decoder to calculate or load the syndromes associated with each codeword. In subsequent cycles, the multiplexer selects the stored parity data instead of the original codeword data. The decoder processes this parity information iteratively and uses the results to modify or supplement the previously stored syndromes.\n\nThe updated syndromes are then evaluated to identify error locations and calculate the corresponding correction values. By maintaining separate syndrome and parity information for the two codewords, the system can apply the appropriate corrections to each one, even though the same decoding hardware may be reused across multiple processing cycles. The built-in self-test process can also introduce known test conditions or compare decoder outputs with expected syndrome and parity results, thereby confirming that the multiplexer, registers, syndrome-generation logic, and RS decoder are functioning correctly.\n\nAfter the necessary corrections have been determined, the system applies them to the affected RAID data or reconstructs the correct data from the available codeword and parity information. This architecture reduces the need for duplicated decoding hardware while providing a practical way to test the error-correction path during operation, startup, or maintenance. As a result, the RAID system can detect latent decoder faults, correct recoverable data errors in both codewords, and improve the overall integrity, availability, and reliability of stored data.",
+    "L5": "### Building Your Own RAID System\n\nA self-built RAID system can improve storage performance, protect data, or provide a balance of both. RAID—short for *Redundant Array of Independent Disks*—combines multiple drives into a single storage array.\n\nThe ideal configuration depends on your needs. RAID 0 increases speed but offers no redundancy, while RAID 1 mirrors data across two drives for greater protection. RAID 5 and RAID 6 provide larger capacities with parity-based fault tolerance, whereas RAID 10 combines mirroring and striping for strong performance and reliability.\n\nWhen building a RAID system yourself, use compatible drives, select a suitable hardware controller or software RAID platform, and plan for drive failures. Remember that RAID is not a backup: accidental deletion, malware, or hardware damage can affect the entire array. A well-built RAID setup should therefore be combined with regular, separate backups."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a patent-style abstract describing a RAID decoding system that performs built-in self-test using Reed-Solomon codewords, stored syndromes, parity data, an RS decoder, and a multiplexer.",
+      "output": "A redundant array of independent disks (RAID) decoding system includes a Reed-Solomon (RS) decoder and built-in self-test circuitry. The self-test circuitry stores one or more RS codewords, corresponding syndromes, and parity data representing predetermined error conditions and expected decoding results. A multiplexer selectively couples either RAID data received during normal operation or the stored RS codewords, syndromes, and parity data to the RS decoder. In a self-test mode, the RS decoder processes the selected test information to detect and correct errors, and the resulting decoded data, error locations, error values, or status indications are compared with expected results to determine whether the RS decoder is operating correctly. In a normal mode, the multiplexer couples data and parity information obtained from the RAID to the RS decoder for recovery of unavailable or corrupted data. The system thereby verifies RS decoding functionality without requiring external test equipment or disrupting stored user data.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize an invention for RAID error correction in which two RS codewords are decoded iteratively, with the first iteration processing the codewords and later iterations processing parity data to update their syndromes.",
+      "output": "The invention provides iterative RAID error correction using two Reed–Solomon (RS) codewords. In the first iteration, both codewords are decoded from the stored data and initial syndromes are generated. If errors remain, subsequent iterations process associated parity data rather than reprocessing the full codewords. The parity results update the codewords’ syndromes, enabling further error identification and correction with reduced computation and data access.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a concise technical description of a BIST-enabled RAID decoder that stores syndromes and parity information and uses updated syndromes to correct errors in first and second Reed-Solomon codewords.",
+      "output": "A BIST-enabled RAID decoder includes syndrome and parity memories, a Reed–Solomon decoding engine, and self-test pattern generation and response-compaction logic. During normal operation, syndromes and RAID parity information are stored for first and second Reed–Solomon codewords. The decoder corrects errors in the first codeword, updates the stored syndromes and parity to account for the corrected symbols, and applies the updated syndromes to decode and correct the second codeword. In BIST mode, internally generated test vectors exercise the syndrome, parity, update, and correction paths, and the resulting signatures are compared with expected values to detect decoder faults.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Explain how a multiplexer and Reed-Solomon decoder can be used in a RAID decoding architecture to process two codewords initially, feed parity data in subsequent iterations, and generate updated syndromes for error correction.",
+      "output": "A RAID decoder can reuse one Reed–Solomon (RS) decoding datapath across several stripes or codewords by placing a multiplexer in front of the decoder and retaining decoder state between passes.\n\n### 1. Initial codeword processing\n\nAssume two RAID stripes form received RS codewords \\(C_0\\) and \\(C_1\\). On the first two cycles or processing intervals, the multiplexer selects:\n\n1. \\(C_0\\) and sends its available symbols to the RS decoder.\n2. \\(C_1\\) and sends its available symbols to the same decoder.\n\nFor each codeword, the decoder computes and stores the initial syndromes\n\n\\[\nS_j=\\sum_{i=0}^{n-1} r_i\\alpha^{ij}, \\qquad j=1,\\ldots,2t,\n\\]\n\nwhere \\(r_i\\) is a received data or parity symbol and \\(t\\) is the correction capability. Missing RAID-drive symbols can be marked as erasures, since their locations are known.\n\n### 2. Feeding parity in later iterations\n\nAfter the two initial codewords have been loaded, the multiplexer changes source. Instead of selecting a new codeword, it selects parity symbols read from the RAID parity drives, reconstructed intermediate symbols, or feedback from the previous decoder pass.\n\nAs each additional symbol \\(p_i\\) is supplied, the syndrome state is incrementally updated. For syndrome \\(j\\),\n\n\\[\nS_j^{\\text{new}}\n   = S_j^{\\text{old}} + p_i\\alpha^{ij},\n\\]\n\nwith addition and multiplication performed in the RS Galois field. If a previously assumed symbol is being replaced, the update includes the difference between the old and new values:\n\n\\[\nS_j^{\\text{new}}\n = S_j^{\\text{old}}\n + (p_i^{\\text{new}}-p_i^{\\text{old}})\\alpha^{ij}.\n\\]\n\nThus, the complete codeword does not need to be reread or reprocessed on every iteration.\n\n### 3. Error and erasure correction\n\nOnce enough parity information has been accumulated, the decoder uses the updated syndromes to:\n\n- form the erasure/error locator polynomial,\n- determine error locations,\n- calculate missing or erroneous symbol values,\n- write the corrected data back to the RAID reconstruction path.\n\nThe corrected symbols can also be routed through the multiplexer for another syndrome update. A final all-zero syndrome indicates that the reconstructed codeword satisfies the RS parity constraints.\n\n### Architectural benefit\n\nThe multiplexer acts as a scheduler among:\n\n- the first codeword,\n- the second codeword,\n- newly available RAID parity,\n- reconstructed-symbol feedback.\n\nSeparate syndrome registers preserve the state for \\(C_0\\) and \\(C_1\\), allowing the RS arithmetic hardware to alternate between them. This iterative design reduces decoder hardware and input bandwidth while still allowing parity to be incorporated progressively and the syndromes to reflect the latest reconstruction state.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate a patent abstract for a RAID decoding apparatus comprising syndrome storage, an RS decoder, and a MUX that switches between two RS codewords and their parity data during iterative built-in self-testing.",
+      "output": "A redundant array of independent disks (RAID) decoding apparatus includes a syndrome storage circuit, a Reed-Solomon (RS) decoder, and a multiplexer coupled to the RS decoder. The syndrome storage circuit stores syndromes generated from first and second RS codewords and corresponding parity data. During iterative built-in self-testing, the multiplexer selectively supplies the first RS codeword and its parity data or the second RS codeword and its parity data to the RS decoder. A test controller controls the multiplexer over successive test iterations, causes the RS decoder to decode the selected codeword using the associated stored syndromes, and evaluates decoded results to detect faults in the decoding path. Alternating the codewords and parity data enables repeated verification of syndrome handling, error-location, and error-correction operations without requiring an external test source.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.5561797752808989,
+      "excess_ratio": 0.33237575545313175,
+      "baseline_mean": 0.22380401982776715,
+      "baseline_n_valid": 5,
+      "output_chars": 847,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5171339563862928,
+          "baseline_mean": 0.1754188630668668,
+          "excess_ratio": 0.34171509331942596
+        },
+        "bz2": {
+          "actual_ratio": 0.5283018867924528,
+          "baseline_mean": 0.2266684339917851,
+          "excess_ratio": 0.3016334528006677
+        },
+        "lzma": {
+          "actual_ratio": 0.6170212765957447,
+          "baseline_mean": 0.2617580480189715,
+          "excess_ratio": 0.35526322857677317
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.38371116708648195,
+      "excess_ratio": 0.1599071472587148,
+      "baseline_mean": 0.22380401982776715,
+      "baseline_n_valid": 5,
+      "output_chars": 785,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3203342618384401,
+          "baseline_mean": 0.1754188630668668,
+          "excess_ratio": 0.1449153987715733
+        },
+        "bz2": {
+          "actual_ratio": 0.385,
+          "baseline_mean": 0.2266684339917851,
+          "excess_ratio": 0.1583315660082149
+        },
+        "lzma": {
+          "actual_ratio": 0.4351851851851852,
+          "baseline_mean": 0.2617580480189715,
+          "excess_ratio": 0.17342713716621366
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.43125469571750563,
+      "excess_ratio": 0.20745067588973848,
+      "baseline_mean": 0.22380401982776715,
+      "baseline_n_valid": 5,
+      "output_chars": 828,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.40294840294840295,
+          "baseline_mean": 0.1754188630668668,
+          "excess_ratio": 0.22752953988153615
+        },
+        "bz2": {
+          "actual_ratio": 0.4009009009009009,
+          "baseline_mean": 0.2266684339917851,
+          "excess_ratio": 0.1742324669091158
+        },
+        "lzma": {
+          "actual_ratio": 0.48333333333333334,
+          "baseline_mean": 0.2617580480189715,
+          "excess_ratio": 0.22157528531436183
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1554354736172919,
+      "excess_ratio": -0.06836854621047525,
+      "baseline_mean": 0.22380401982776715,
+      "baseline_n_valid": 5,
+      "output_chars": 2346,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.11799410029498525,
+          "baseline_mean": 0.1754188630668668,
+          "excess_ratio": -0.05742476277188155
+        },
+        "bz2": {
+          "actual_ratio": 0.16224188790560473,
+          "baseline_mean": 0.2266684339917851,
+          "excess_ratio": -0.06442654608618037
+        },
+        "lzma": {
+          "actual_ratio": 0.18345323741007194,
+          "baseline_mean": 0.2617580480189715,
+          "excess_ratio": -0.07830481060889957
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.07458233890214791,
+      "excess_ratio": -0.14922168092561924,
+      "baseline_mean": 0.22380401982776715,
+      "baseline_n_valid": 5,
+      "output_chars": 931,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04038461538461539,
+          "baseline_mean": 0.1754188630668668,
+          "excess_ratio": -0.13503424768225142
+        },
+        "bz2": {
+          "actual_ratio": 0.07971014492753623,
+          "baseline_mean": 0.2266684339917851,
+          "excess_ratio": -0.14695828906424888
+        },
+        "lzma": {
+          "actual_ratio": 0.09933774834437085,
+          "baseline_mean": 0.2617580480189715,
+          "excess_ratio": -0.16242029967460064
+        }
+      }
+    }
+  }
+}

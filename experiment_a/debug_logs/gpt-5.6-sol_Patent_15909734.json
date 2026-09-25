@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15909734",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nSystems and methods for mitigation of resistor nonlinearity errors in a power converter are provided. In at least one embodiment, the power converter comprises at least one power switch coupled to an input voltage, a pulse width modulation (PWM) circuit for generating control pulses for the at least one power switch, at least one output inductor coupled to a respective one of the at least one power switches, a current sensor coupled in parallel with the at least one output inductor, and at least one circuit element. The current sensor comprises at least one capacitor, at least one resistor for each of the at least one output inductors, and is coupled to the PWM circuit at a current bleed node. The at least one circuit element is coupled to the current bleed node and bleeds a bleed current from the current bleed node when a power switch is turned on.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nSystems and methods for mitigation of resistor nonlinearity errors in a power converter are provided. In at least one embodiment, the power converter comprises at least one power switch coupled to an input voltage, a pulse width modulation (PWM) circuit for generating control pulses for the at least one power switch, at least one output inductor coupled to a respective one of the at least one power switches, a current sensor coupled in parallel with the at least one output inductor, and at least one circuit element. The current sensor comprises at least one capacitor, at least one resistor for each of the at least one output inductors, and is coupled to the PWM circuit at a current bleed node. The at least one circuit element is coupled to the current bleed node and bleeds a bleed current from the current bleed node when a power switch is turned on.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The disclosed systems and methods mitigate resistor nonlinearity errors in a power converter.\n- The power converter includes at least one power switch connected to an input voltage and controlled by pulses from a pulse width modulation circuit.\n- At least one output inductor is coupled to a corresponding power switch.\n- A current sensor connected in parallel with the output inductor includes at least one capacitor and at least one resistor for each output inductor.\n- A circuit element coupled to the current bleed node draws bleed current when a power switch is turned on.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA power converter mitigates resistor nonlinearity errors using a PWM-controlled switch, output inductor, parallel RC current sensor, and a circuit element connected to the sensor’s current bleed node. By bleeding current from this node when the power switch turns on, the design improves current-sensing accuracy and converter performance.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Systems, PWM, The"
+  },
+  "outputs": {
+    "L1": "Systems and methods are provided for mitigating resistor nonlinearity errors in a power converter. In at least one embodiment, the power converter comprises at least one power switch coupled to an input voltage; a pulse-width modulation (PWM) circuit configured to generate control pulses for the at least one power switch; at least one output inductor, each coupled to a respective power switch; a current sensor coupled in parallel with the at least one output inductor; and at least one circuit element. The current sensor comprises at least one capacitor and at least one resistor for each output inductor and is coupled to the PWM circuit at a current bleed node. The at least one circuit element is coupled to the current bleed node and configured to draw a bleed current from the current bleed node when a power switch is turned on.",
+    "L2": "Techniques and systems are disclosed for reducing errors caused by resistor nonlinearity in a power converter. In at least one implementation, the converter includes one or more power switches connected to an input voltage and a pulse-width-modulation (PWM) circuit configured to produce control pulses for those switches. Each power switch is coupled to a corresponding output inductor. A current sensor is connected in parallel with the one or more output inductors and includes at least one capacitor and at least one resistor for each output inductor. The current sensor also connects to the PWM circuit through a current-bleed node. One or more circuit elements are coupled to that node and draw a bleed current from it whenever a power switch is activated.",
+    "L3": "The disclosed systems and methods mitigate errors caused by resistor nonlinearity in a power converter. The power converter includes at least one power switch coupled to an input-voltage source. A pulse-width-modulation (PWM) circuit generates control pulses that selectively turn each power switch on and off to regulate power conversion.\n\nAt least one output inductor is coupled to a corresponding power switch. For each output inductor, a current sensor is connected in parallel with the output inductor and includes at least one capacitor and at least one resistor. The current sensor further includes a current-bleed node. A circuit element coupled to the current-bleed node draws a bleed current when the corresponding power switch is turned on. By selectively drawing the bleed current during the power switch’s on-state, the circuit element compensates for or reduces current-sensing errors associated with resistor nonlinearity, thereby improving the accuracy and performance of the power converter.",
+    "L4": "A power converter includes a power switch driven by a pulse-width-modulated control signal, an output inductor, and a parallel resistor-capacitor network configured to sense current flowing through the inductor. The sensing network produces a current-sense signal representative of the inductor current by reproducing, or approximating, the voltage associated with the inductor’s winding resistance. In practical implementations, however, the resistance of the sensing components may vary with voltage, temperature, process, or operating conditions. This nonlinearity can distort the sensed waveform and introduce errors in current regulation, current limiting, and other control functions.\n\nTo compensate for these errors, the converter further includes a circuit element coupled to a current-bleed node of the parallel RC sensing network. The circuit element may be implemented as a transistor, controlled current source, or another selectively conductive device responsive to the power-switch control signal. When the power switch is turned on, the circuit element draws, or bleeds, a controlled amount of current from the current-bleed node. The magnitude and timing of the bleed current are selected to offset the error caused by resistor nonlinearity and to shape the sensor output so that it more accurately tracks the actual inductor current. When the power switch is turned off, the bleed path may be disabled or adjusted to preserve the desired response during the off interval.\n\nBy synchronizing the corrective bleed current with operation of the power switch, the converter reduces current-sensing error without requiring a large, high-loss series sensing resistor. The improved current information enables more accurate feedback control, overcurrent protection, current balancing, and transient response. The arrangement can therefore improve regulation, efficiency, stability, and overall converter performance across a range of loads and operating conditions.",
+    "L5": "Modern control **systems** often use **PWM** (Pulse Width Modulation) to regulate power efficiently. The technique works by rapidly switching a signal on and off while changing the proportion of time it remains active. This proportion, known as the duty cycle, determines the average voltage or power delivered to a device.\n\nPWM is widely used in motor controllers, LED dimmers, power supplies, and embedded systems. For example, increasing the duty cycle can make a motor run faster or an LED shine more brightly. Because the switching components are usually either fully on or fully off, PWM reduces energy loss and heat generation compared with traditional analog control methods.\n\nThe effectiveness, simplicity, and precision of PWM make it an essential technology in modern electronic systems."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent abstract for systems and methods that mitigate resistor nonlinearity errors in a power converter using a current-sensing network and a bleed-current circuit.",
+      "output": "Systems and methods are disclosed for mitigating resistor nonlinearity errors in a power converter. A current-sensing network generates a sense signal representative of current conducted by a power stage of the converter. The current-sensing network includes at least one sense resistor having a resistance that varies with applied voltage, current, temperature, or another operating condition. A bleed-current circuit coupled to the current-sensing network selectively conducts a bleed current to modify an electrical operating point of the sense resistor. A controller controls the bleed-current circuit based on one or more converter operating parameters such that a nonlinearity-induced error in the sense signal is reduced or compensated. The bleed current may be continuously variable, discretely selectable, or selectively enabled during designated converter operating states. The compensated sense signal may be used for current regulation, current limiting, protection, telemetry, or power-stage control, thereby improving current-sensing accuracy and converter performance across a range of load and input conditions.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Describe an embodiment of a PWM power converter having a power switch, output inductor, parallel current sensor, current bleed node, and a circuit element that draws bleed current when the switch turns on.",
+      "output": "An embodiment is a synchronous buck PWM converter in which a high-side MOSFET couples an input supply to a switching node. An output inductor is connected between the switching node and an output capacitor/load, and a low-side MOSFET or diode provides the freewheel path.\n\nA current sensor is connected in parallel with the output inductor. For example, the sensor includes a series-connected sense resistor and sense capacitor having an intermediate node that forms a current-sense or current-bleed node. The resistor and capacitor values may be selected so that the sensor voltage tracks the inductor current, including current represented by the inductor’s winding resistance.\n\nA bleed element, such as a small MOSFET or controlled current sink, is coupled between the current-bleed node and ground or another reference node. The bleed element is driven by the PWM control signal, or by a short pulse derived from the rising edge of that signal, so that it draws a predetermined bleed current when the high-side power switch turns on. The bleed current removes or offsets transient charge injected into the parallel sensor by the switching-node voltage transition. After a fixed interval, or after the sensed transient has decayed, the bleed element turns off.\n\nConsequently, the voltage at the sensor node more accurately represents output-inductor current and is less affected by turn-on spikes. A controller can use this voltage for peak-current control, current limiting, current balancing, or overcurrent protection.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write a concise, patent-style summary of an invention for compensating resistor nonlinearity in inductor current sensing within a switched-mode power converter.",
+      "output": "A switched-mode power converter includes an inductor-current sensing circuit configured to compensate for nonlinearity of a current-sense resistor. The circuit determines a correction value based on an operating condition associated with the resistor, such as sensed current, voltage, temperature, or converter duty cycle, and applies the correction value to a measured resistor voltage. The corrected signal provides an estimate of inductor current having reduced error caused by resistance variation, self-heating, and other nonlinear resistor characteristics. The corrected current estimate may be used for current-mode control, overcurrent protection, current balancing, or telemetry, thereby improving converter accuracy and stability over a range of operating conditions.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate a technical abstract for a power converter in which an RC current sensor is connected across each output inductor and coupled to a PWM controller through a bleed node that is selectively discharged during switch on-time.",
+      "output": "A power converter includes a plurality of switching phases, each having an output inductor coupled to a common output. An RC current-sense network is connected across each output inductor and generates a sense signal representative of inductor current. Each sense network is coupled to a PWM controller through a corresponding bleed node. A discharge circuit selectively discharges the bleed node during the on-time of an associated power switch, thereby compensating the sense signal for switching-related offsets, accumulated charge, or current-sense error. The PWM controller uses the conditioned sense signals to regulate output voltage, control peak or average inductor current, and balance current among the phases. Selective on-time discharge enables accurate current reconstruction without a series sense resistor, reducing conduction loss while improving transient response and phase-current sharing.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Explain, using formal patent language, a system that reduces current-sense errors caused by nonlinear resistors by bleeding current from a PWM circuit’s current bleed node whenever a corresponding power switch is activated.",
+      "output": "A current-control system comprises a pulse-width-modulation (PWM) circuit configured to generate a control signal for selectively activating a power switch coupled to a load. A current-sense circuit is configured to produce a sense signal representative of current conducted through the power switch, the current-sense circuit including one or more resistive elements having a nonlinear voltage-current characteristic.\n\nA bleed circuit is coupled to a current-bleed node of the PWM circuit and is responsive to activation of the power switch. During each interval in which the power switch is activated, the bleed circuit draws a predetermined bleed current from the current-bleed node. During each interval in which the power switch is deactivated, the bleed circuit substantially ceases drawing the bleed current.\n\nThe bleed current establishes or maintains a selected operating condition across the one or more nonlinear resistive elements, thereby reducing changes in effective resistance attributable to switching-dependent voltage or current variations. Consequently, the sense signal more accurately represents the current conducted through the power switch, and errors in PWM current regulation caused by the nonlinear voltage-current characteristic are reduced.\n\nIn certain embodiments, the bleed circuit comprises a controllable current sink having a control terminal coupled to the control signal of the power switch. The magnitude of the bleed current may be fixed, programmable, or dependent upon an operating parameter of the system. The bleed circuit may be implemented separately for each of a plurality of power switches such that current is bled from a respective current-bleed node whenever the corresponding power switch is activated.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7515364354697104,
+      "excess_ratio": 0.5638723574808664,
+      "baseline_mean": 0.18766407798884405,
+      "baseline_n_valid": 5,
+      "output_chars": 839,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7692307692307693,
+          "baseline_mean": 0.1452698763519354,
+          "excess_ratio": 0.6239608928788338
+        },
+        "bz2": {
+          "actual_ratio": 0.6478149100257069,
+          "baseline_mean": 0.18625772136157068,
+          "excess_ratio": 0.4615571886641362
+        },
+        "lzma": {
+          "actual_ratio": 0.8349514563106796,
+          "baseline_mean": 0.22495087769377725,
+          "excess_ratio": 0.6100005786169023
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.48504446240905413,
+      "excess_ratio": 0.2973803844202101,
+      "baseline_mean": 0.18766407798884405,
+      "baseline_n_valid": 5,
+      "output_chars": 762,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.44919786096256686,
+          "baseline_mean": 0.1452698763519354,
+          "excess_ratio": 0.3039279846106315
+        },
+        "bz2": {
+          "actual_ratio": 0.4530120481927711,
+          "baseline_mean": 0.18625772136157068,
+          "excess_ratio": 0.2667543268312004
+        },
+        "lzma": {
+          "actual_ratio": 0.5446428571428571,
+          "baseline_mean": 0.22495087769377725,
+          "excess_ratio": 0.31969197944907984
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.45027247956403266,
+      "excess_ratio": 0.2626084015751886,
+      "baseline_mean": 0.18766407798884405,
+      "baseline_n_valid": 5,
+      "output_chars": 1008,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.42376681614349776,
+          "baseline_mean": 0.1452698763519354,
+          "excess_ratio": 0.27849693979156237
+        },
+        "bz2": {
+          "actual_ratio": 0.398406374501992,
+          "baseline_mean": 0.18625772136157068,
+          "excess_ratio": 0.21214865314042133
+        },
+        "lzma": {
+          "actual_ratio": 0.5230769230769231,
+          "baseline_mean": 0.22495087769377725,
+          "excess_ratio": 0.29812604538314585
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.16547842401500937,
+      "excess_ratio": -0.02218565397383468,
+      "baseline_mean": 0.18766407798884405,
+      "baseline_n_valid": 5,
+      "output_chars": 1974,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.13145539906103287,
+          "baseline_mean": 0.1452698763519354,
+          "excess_ratio": -0.013814477290902516
+        },
+        "bz2": {
+          "actual_ratio": 0.1706758304696449,
+          "baseline_mean": 0.18625772136157068,
+          "excess_ratio": -0.01558189089192577
+        },
+        "lzma": {
+          "actual_ratio": 0.19148936170212766,
+          "baseline_mean": 0.22495087769377725,
+          "excess_ratio": -0.03346151599164959
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.08477970627503334,
+      "excess_ratio": -0.10288437171381071,
+      "baseline_mean": 0.18766407798884405,
+      "baseline_n_valid": 5,
+      "output_chars": 798,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04185022026431718,
+          "baseline_mean": 0.1452698763519354,
+          "excess_ratio": -0.10341965608761822
+        },
+        "bz2": {
+          "actual_ratio": 0.08870967741935484,
+          "baseline_mean": 0.18625772136157068,
+          "excess_ratio": -0.09754804394221583
+        },
+        "lzma": {
+          "actual_ratio": 0.11678832116788321,
+          "baseline_mean": 0.22495087769377725,
+          "excess_ratio": -0.10816255652589404
+        }
+      }
+    }
+  }
+}

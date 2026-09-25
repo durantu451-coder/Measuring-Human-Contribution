@@ -1,0 +1,175 @@
+{
+  "model": "claude-sonnet-5",
+  "domain": "Arxiv",
+  "id": "0704.0124",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe prove the existence of global Bishop discs in a strictly pseudoconvex Stein domain in an almost complex manifold of complex dimension 2.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe prove the existence of global Bishop discs in a strictly pseudoconvex Stein domain in an almost complex manifold of complex dimension 2.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper establishes the existence of global Bishop discs within a strictly pseudoconvex Stein domain.\n- The setting for this result is an almost complex manifold of complex dimension 2.\n- The domain under consideration satisfies both strict pseudoconvexity and the Stein property.\n- The proof demonstrates that these Bishop discs can be constructed globally, rather than only locally, within the specified domain.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis paper addresses the problem of establishing global Bishop discs within a strictly pseudoconvex Stein domain situated in an almost complex manifold of complex dimension 2, employing techniques from almost complex geometry to construct these discs. The key finding demonstrates that such global Bishop discs indeed exist under these conditions, extending classical results from complex analysis to the almost complex setting and providing a foundational tool for further study of pseudoconvexity and analytic structures in this context.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Bishop, Stein"
+  },
+  "outputs": {
+    "L1": "We establish the existence of global Bishop discs in a strictly pseudoconvex Stein domain within an almost complex manifold of complex dimension two.",
+    "L2": "We establish that global Bishop discs exist within a strictly pseudoconvex Stein domain situated in an almost complex manifold having complex dimension two.",
+    "L3": "# Global Bishop Discs in Strictly Pseudoconvex Stein Domains\n\n## Introduction and Main Result\n\nThis paper establishes a significant existence result concerning global Bishop discs within a strictly pseudoconvex Stein domain. The central contribution of this work lies in extending the classical theory of Bishop discs—analytic discs attached to totally real submanifolds or characteristic foliations of pseudoconvex domains—from a purely local phenomenon to a global one, under an appropriate geometric and analytic framework.\n\n## The Setting: Almost Complex Manifolds of Complex Dimension 2\n\nThe ambient space in which this result is proved is an almost complex manifold of complex dimension 2. This choice of setting is deliberate and significant: almost complex manifolds generalize genuine complex manifolds by relaxing the integrability condition on the complex structure $J$. In this more flexible category, the manifold is equipped with an almost complex structure $J$ satisfying $J^2 = -\\mathrm{Id}$, but $J$ need not arise from local holomorphic coordinate charts in the traditional sense (i.e., the Nijenhuis tensor associated to $J$ may be nonvanishing).\n\nWorking in complex dimension 2 places the problem in a setting rich enough to exhibit genuinely three-dimensional real hypersurface phenomena—since the boundary of a domain in a 4-real-dimensional manifold is a 3-real-dimensional CR manifold—while still being tractable enough to allow for explicit analytic and geometric techniques, such as those arising from the theory of pseudoholomorphic curves initiated by Gromov. This dimensional choice is the natural minimal setting in which the interplay between almost complex structures, pseudoconvexity, and CR geometry can be studied in full generality.\n\n## The Domain: Strict Pseudoconvexity and the Stein Property\n\nThe domain under investigation is required to satisfy two fundamental geometric and analytic conditions:\n\n**Strict pseudoconvexity** ensures that the boundary of the domain exhibits a strong form of convexity from the perspective of the almost complex structure. This condition is typically formulated via the positivity of the Levi form associated to a defining function of the domain's boundary, and it guarantees the existence of a rich family of pseudoholomorphic discs attached to or contained within the domain, as well as strong barrier-type estimates near the boundary.\n\n**The Stein property**, in the almost complex category, serves as an analogue of the classical notion of Stein manifolds in complex analysis, typically characterized by the existence of a strictly plurisubharmonic exhaustion function. This condition guarantees a well-behaved global structure for the domain, ruling out pathological or compact obstructions and ensuring that the domain admits enough global pseudoconvex geometry to support the construction of families of discs that persist throughout the entire domain rather than merely near a point or in a coordinate patch.\n\nTogether, strict pseudoconvexity and the Stein property provide the necessary local and global control over the geometry of the domain that is essential for the disc-filling and continuation arguments used in the proof.\n\n## The Key Contribution: Globality of the Bishop Discs\n\nThe principal achievement of the paper, and the feature that distinguishes it from earlier work in this area, is the demonstration that Bishop discs can be constructed **globally** throughout the specified domain, rather than being confined to a local construction near a single point or a small neighborhood.\n\nClassically, the construction of Bishop discs—stemming from the foundational work of Bishop on the existence of analytic discs attached to totally real manifolds—is inherently a local phenomenon: one constructs a disc through a fixed point using an implicit function theorem argument or a fixed-point argument in a suitable Banach space, valid only in a small neighborhood of that point. The technical heart of the paper lies in overcoming the obstructions to extending this local construction across the entire domain.\n\nThis is achieved by carefully tracking the family of discs as they are continued from the local existence result, using continuity and compactness arguments enabled by the strict pseudoconvexity and Stein hypotheses to prevent the degeneration or bubbling of the discs as parameters vary. The uniform estimates furnished by strict pseudoconvexity prevent the discs from escaping to the boundary or losing regularity, while the Stein property ensures that no topological or analytic obstruction arises that would prevent the family of discs from being continued indefinitely across the entire domain.\n\n## Conclusion\n\nIn summary, the paper's main theorem shows that, under the hypotheses of strict pseudoconvexity and the Stein property, in the setting of an almost complex 4-manifold (complex dimension 2), the local Bishop disc construction can be globalized: analytic discs attached to appropriate totally real or CR data can be found filling out the entire domain, rather than existing only in a small neighborhood of a point. This result significantly strengthens the toolbox available for studying the almost complex geometry of pseudoconvex domains and provides a foundation for further global analytic and geometric investigations, such as the study of the filling of CR manifolds by discs, envelopes of holomorphy, and polynomial or rational convexity in the almost complex category.",
+    "L4": "# Global Bishop Discs in Strictly Pseudoconvex Domains of Almost Complex Manifolds\n\n## 1. Introduction\n\nThe theory of Bishop discs has played a fundamental role in complex analysis since Bishop's original work on the boundaries of analytic varieties and the local structure of totally real submanifolds. Given a totally real submanifold $M$ of a complex manifold, a Bishop disc attached to $M$ is a holomorphic disc $u: \\overline{\\mathbb{D}} \\to X$ (where $\\mathbb{D}$ denotes the unit disc in $\\mathbb{C}$) whose boundary $u(\\partial \\mathbb{D})$ lies in $M$. These discs provide a powerful analytic tool for probing the local and global geometry of totally real and Levi-flat submanifolds, and they underlie many classical results concerning polynomial hulls, removable singularities, and the propagation of holomorphic extension.\n\nWhile the existence of *local* Bishop discs is by now well understood — both in the classical complex-analytic setting and, more recently, in the almost complex category following the foundational work of Nijenhuis-Woolf, Sikorav, and Ivashkovich-Rosay on pseudoholomorphic curves — the problem of establishing *global* existence results, particularly within domains that are only strictly pseudoconvex rather than globally convex or Stein in the strongest sense, presents substantially greater difficulties. The obstruction lies in controlling the geometry of the almost complex structure as one attempts to continue discs across the entire domain, since in the almost complex setting one no longer has recourse to the full machinery of holomorphic coordinate charts and sheaf-theoretic methods available in the integrable case.\n\nThis paper is devoted to resolving this problem in the setting of almost complex manifolds of complex dimension two. Specifically, we consider a strictly pseudoconvex Stein domain $\\Omega$ contained in an almost complex manifold $(X, J)$ with $\\dim_{\\mathbb{C}} X = 2$, and we address the question of constructing global Bishop discs attached to appropriate totally real tori or Levi-flat hypersurfaces contained in the boundary or interior of $\\Omega$.\n\n## 2. Setting and Statement of the Problem\n\nLet $(X,J)$ be an almost complex manifold of complex dimension $2$, and let $\\Omega \\subset X$ be a relatively compact domain with smooth strictly pseudoconvex boundary, admitting a global strictly plurisubharmonic exhaustion function — that is, $\\Omega$ is Stein in the sense appropriate to the almost complex category (following the definitions of Harz, Shcherbina-Tomassini, and others adapting classical Stein theory to non-integrable structures).\n\nThe central technical challenge is the following: given a totally real torus $T \\subset \\partial \\Omega$ (or more generally a totally real submanifold satisfying suitable non-degeneracy conditions), does there exist a family of $J$-holomorphic discs $u_t : \\overline{\\mathbb{D}} \\to \\overline{\\Omega}$, depending continuously on a parameter $t$, such that:\n\n- each disc $u_t$ has boundary $u_t(\\partial \\mathbb{D}) \\subset T$;\n- the discs foliate (or fill) a neighborhood of $T$, or more ambitiously, extend so as to fill the entire domain $\\Omega$;\n- the family varies smoothly and the discs remain embedded, avoiding bubbling or degeneration as $t$ ranges over the parameter space?\n\nIn the integrable case, such global filling results are classically obtained via continuity or degree-theoretic arguments combined with elliptic estimates for the Cauchy-Riemann operator, together with monotonicity formulas controlling the geometry of the boundary values. The almost complex setting requires a reworking of each of these ingredients, since the linearization of the $\\bar\\partial_J$-operator now involves the Nijenhuis tensor of $J$, and standard holomorphic techniques (such as the Bishop equation approach via power series) must be replaced by methods from pseudoholomorphic curve theory, in the spirit of Gromov's original compactness and regularity theorems.\n\n## 3. Techniques\n\nOur approach combines several strands of almost complex geometry:\n\n**(a) Local existence and regularity.** We begin from the local existence theory for pseudoholomorphic discs with totally real boundary conditions, following the elliptic bootstrapping methods of Nijenhuis-Woolf and the boundary regularity estimates due to Ivashkovich-Rosay. These provide local families of Bishop discs near any point of the totally real submanifold under consideration, together with the requisite $C^{k,\\alpha}$ estimates near the boundary.\n\n**(b) Strict plurisubharmonicity and the Stein hypothesis.** The global strictly plurisubharmonic exhaustion function on $\\Omega$ furnishes the key a priori estimates preventing the discs from escaping to the boundary or degenerating as one continues the family. In particular, the maximum principle applied to the pullback of the exhaustion function under $u_t$ yields uniform bounds controlling the image of the discs within $\\overline{\\Omega}$, mirroring the classical role of plurisubharmonic functions in confining Bishop discs within pseudoconvex domains.\n\n**(c) Continuity method and moduli space analysis.** We construct the global family of discs via a continuity argument on the moduli space of pseudoholomorphic discs with boundary on the totally real submanifold $T$. Openness follows from an implicit function theorem argument based on the surjectivity of the linearized $\\bar\\partial_J$-operator (a Fredholm operator of appropriate index, computed via the Maslov index of the totally real boundary condition), while closedness is established using Gromov-type compactness, ruling out bubbling phenomena through the strict pseudoconvexity of the ambient domain, which precludes the formation of non-constant $J$-holomorphic spheres or discs escaping to the boundary.\n\n**(d) Dimension-two specificity.** The restriction to complex dimension two is essential to our method: it allows us to exploit intersection-theoretic techniques for pseudoholomorphic curves (positivity of intersections, adjunction-type formulas) that are unavailable in higher dimensions, and it ensures that the relevant moduli spaces of discs are of the expected low dimension, facilitating the transversality and compactness arguments central to the continuity method.\n\n## 4. Main Result\n\nThe principal result of this paper may be stated as follows.\n\n**Theorem.** Let $(X, J)$ be an almost complex manifold of complex dimension two, and let $\\Omega \\subset X$ be a relatively compact strictly pseudoconvex Stein domain. Let $T \\subset \\partial\\Omega$ be a totally real torus satisfying [appropriate non-degeneracy/index conditions]. Then there exists a global family of embedded $J$-holomorphic Bishop discs $\\{u_t\\}_{t \\in [0,1]}$ attached to $T$, varying continuously in $t$, such that the images $u_t(\\overline{\\mathbb{D}})$ foliate $\\Omega$ (or a specified sub-domain thereof), thereby establishing the existence of a global filling by Bishop discs analogous to the classical complex-analytic case.\n\nThis result extends to the almost complex category the classical filling theorems of Bishop, Alexander, and others, which have proved indispensable in the study of polynomially convex hulls, removable singularities for CR functions, and the structure of Levi-flat hypersurfaces in the integrable setting.\n\n## 5. Applications and Further Directions\n\nThe construction of global Bishop discs in this almost complex setting provides a foundational analytic tool with several anticipated applications:\n\n- **Polynomial and rational hulls in the almost complex category.** Just as Bishop discs are used classically to compute or bound polynomially convex hulls of totally real tori, our global discs should permit analogous computations of $J$-holomorphic hulls, contributing to the emerging theory of hulls and envelopes in almost complex manifolds.\n\n- **Levi-flat hypersurfaces and foliations.** The existence of global foliations by Bishop discs bears directly on the study of Levi-flat hypersurfaces in almost complex four-manifolds, an area of active interest given the failure of many integrable-case techniques (such as Barrett's or Siu's methods) in the non-integrable setting.\n\n- **Boundary regularity and CR extension phenomena.** The techniques developed here, particularly the uniform estimates near strictly pseudoconvex boundaries, are expected to yield new extension results for CR functions on totally real or CR submanifolds of almost complex manifolds.\n\n- **Higher-dimensional generalizations.** While our methods rely crucially on the complex dimension two hypothesis, we anticipate that suitably modified intersection-theoretic and compactness arguments may extend at least partial results to higher-dimensional almost complex Stein domains, a direction we intend to pursue in future work.\n\n## 6. Structure of the Paper\n\nThe remainder of the paper is organized as follows. Section 2 reviews the necessary background on almost complex manifolds, pseudoholomorphic discs, and the notion of strict pseudoconvexity and Steinness in the non-integrable category. Section 3 establishes the local existence and regularity theory for Bishop discs attached to totally real submanifolds of $(X,J)$. Section 4 develops the moduli space framework and proves the requisite transversality and index computations. Section 5 contains the compactness arguments ruling out bubbling, exploiting the strict pseudoconvexity of $\\Omega$. Section 6 completes the proof of the main theorem via the continuity method. We conclude in Section 7 with a discussion of applications and open problems arising from this work.",
+    "L5": "# The Bishop-Stein Correspondence: A Mathematical Legacy\n\nIn the landscape of complex analysis and several complex variables, the names Bishop and Stein represent foundational contributions that continue to influence mathematical research today. Errett Bishop and Karl Stein, though working in different eras and contexts, each left indelible marks on the field of complex geometry and analytic function theory.\n\n**Errett Bishop's Contributions**\n\nErrett Bishop (1928-1983) was an American mathematician renowned for his work in functional analysis and constructive mathematics. His research on analytic sets and the structure of complex manifolds proved instrumental in advancing the understanding of several complex variables. Bishop's theorem on the extension of analytic sets and his work on minimal surfaces demonstrated a rare combination of geometric intuition and analytical rigor. Perhaps most significantly, Bishop became a champion of constructive mathematics later in his career, challenging the mathematical community to reconsider the foundations of analysis through a constructivist lens, famously arguing that many classical results could and should be reformulated to avoid non-constructive proofs.\n\n**Karl Stein's Legacy**\n\nKarl Stein (1913-2000), a German mathematician, is best remembered for introducing what are now called \"Stein manifolds\" — a class of complex manifolds that generalize the notion of domains of holomorphy in several complex variables. This concept, developed in the 1950s, became a cornerstone of modern complex geometry. Stein manifolds possess rich function-theoretic properties, admitting many holomorphic functions and enabling powerful embedding theorems. The Stein theory provided a unifying framework that connected algebraic geometry, complex analysis, and topology in ways that continue to generate research directions today.\n\n**Intersecting Legacies**\n\nWhile Bishop and Stein approached mathematics from different angles, their combined influence shaped the trajectory of complex analysis in the twentieth century. The concept of Stein spaces, building on Stein's original manifold theory, incorporates ideas that intersect with Bishop's work on analytic sets and their boundaries. Together, their contributions illustrate how individual mathematical insights can converge to create robust theoretical frameworks that support ongoing exploration in complex geometry, deformation theory, and related fields.\n\nThe enduring relevance of both mathematicians' work speaks to the depth of their original insights and the fundamental nature of the problems they addressed — problems that remain central to contemporary research in complex analytic geometry."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a math paper about the existence of global Bishop discs in strictly pseudoconvex Stein domains within almost complex manifolds of complex dimension 2.",
+      "output": "# Abstract\n\nWe study the existence of global Bishop discs attached to strictly pseudoconvex boundaries in almost complex manifolds of complex dimension two. Let $(X,J)$ be an almost complex manifold of complex dimension 2, and let $D \\Subset X$ be a relatively compact, strictly pseudoconvex domain with smooth boundary $M = \\partial D$. We establish the existence of a global family of $J$-holomorphic Bishop discs attached to $M$, foliating a one-sided neighborhood of $M$ inside $D$, under suitable geometric hypotheses on the totally real distribution induced by the CR structure of $M$.\n\nThe main difficulty in the almost complex setting, as opposed to the integrable (classical Stein) case, lies in the absence of local holomorphic coordinates and the resulting obstruction to patching together local families of discs constructed via perturbation of the standard linear model. We overcome this by developing a priori estimates for the linearized $\\bar\\partial_J$-operator that are uniform with respect to the almost complex structure and the boundary data, together with a continuity method that propagates the local solvability of the Bishop-type Riemann-Hilbert problem along the totally real submanifold $M$.\n\nAs an application, we show that the constructed family of Bishop discs provides a canonical filling of $M$ by $J$-complex discs, yielding new results on the local and semi-global polynomial hull of strictly pseudoconvex hypersurfaces in almost complex manifolds, and giving an almost complex analogue of the classical Bishop-Kohn-Rossi type theorems on the removability of CR singularities. Furthermore, we discuss consequences of this construction for the boundary regularity of $J$-holomorphic discs and for the characterization of the envelope of holomorphy in the almost complex category, extending previously known local results to a genuinely global setting.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Give me a one-sentence summary of a research result concerning Bishop discs in almost complex manifolds.",
+      "output": "Bishop discs in an almost complex manifold near a point of a totally real submanifold form a smooth (or appropriately regular) family filling out a one-sided neighborhood, thereby providing a local foliation that can be used to establish fundamental analytic properties—such as polynomial hulls and the removability of singularities—for these manifolds, generalizing the classical results known in the integrable (complex analytic) case.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "I need a concise abstract stating a theorem on global Bishop discs for strictly pseudoconvex domains in almost complex 4-manifolds.",
+      "output": "# Abstract\n\nLet $(M, J)$ be an almost complex manifold of real dimension four, and let $D \\subset M$ be a relatively compact domain with smooth strictly pseudoconvex boundary. We establish the existence of a global foliation of a one-sided neighborhood of $\\partial D$ by small Bishop discs attached to $\\partial D$. Specifically, we prove that through each point of $\\partial D$ there passes a unique holomorphic disc, depending smoothly on the base point, whose boundary lies on $\\partial D$ and which is contained in $D$ except for its boundary; these discs are pairwise disjoint and sweep out a full neighborhood of $\\partial D$ in $D$. The proof combines local analytic constructions of Bishop discs, based on the strict pseudoconvexity of $\\partial D$ and elliptic estimates for the Cauchy-Riemann operator adapted to the almost complex structure, with a global continuity argument controlling the geometry of the discs uniformly over $\\partial D$. As a consequence, we obtain a Levi-flat foliation structure near $\\partial D$ analogous to the integrable case, yielding filling properties by holomorphic discs and applications to the study of polynomial and rational convexity, as well as to boundary regularity questions for pseudoholomorphic discs in almost complex four-manifolds.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Draft a short mathematical abstract announcing an existence result for Bishop discs in a Stein domain, in the setting of almost complex manifolds.",
+      "output": "# Existence of Bishop Discs in Stein Domains: An Almost Complex Approach\n\n**Abstract.** We establish an existence result for Bishop discs attached to a totally real submanifold $M$ contained in a Stein domain $(X, J)$ equipped with an almost complex structure $J$. Given a totally real submanifold $M \\subset X$ of maximal dimension satisfying suitable convexity conditions inherited from the Stein structure, we prove that through each point of $M$ there passes a non-trivial family of $J$-holomorphic discs with boundary attached to $M$. The proof combines an adaptation of the Gromov filling technique to the almost complex setting with a priori elliptic estimates for the nonlinear Cauchy-Riemann operator associated to $J$, allowing us to circumvent the absence of integrability. Local coordinates are constructed via an approximate straightening of $J$ along $M$, reducing the problem to a perturbation of the standard integrable model. As a consequence, we derive a local wedge extension theorem for continuous CR functions on $M$, extending classical polynomial hull constructions to the almost complex category. This provides a fundamental analytic tool for the study of pseudoholomorphic curves attached to totally real manifolds in the non-integrable setting, with applications to problems of local extendability and hull formation in almost complex manifolds.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Compose a formal, single-sentence abstract for a paper proving existence of global Bishop discs in strictly pseudoconvex Stein domains, complex dimension two, almost complex structure.",
+      "output": "This paper establishes, in a strictly pseudoconvex domain of complex dimension two equipped with an almost complex structure sufficiently close to the standard one, the existence of a global foliation by Bishop discs attached to a totally real perturbation of the boundary, obtained by solving a Riemann–Hilbert-type boundary value problem via a uniform application of the implicit function theorem together with a priori elliptic estimates for J-holomorphic discs, thereby extending classical results on filling by analytic discs from the integrable to the almost complex setting and providing a key analytic tool for the study of polynomial hulls and boundary regularity of pseudoholomorphic discs in such domains.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7744360902255639,
+      "excess_ratio": 0.6233664257072666,
+      "baseline_mean": 0.15106966451829734,
+      "baseline_n_valid": 5,
+      "output_chars": 149,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.8,
+          "baseline_mean": 0.11874354022779596,
+          "excess_ratio": 0.6812564597722041
+        },
+        "bz2": {
+          "actual_ratio": 0.6390977443609023,
+          "baseline_mean": 0.13739775138629606,
+          "excess_ratio": 0.5016999929746062
+        },
+        "lzma": {
+          "actual_ratio": 0.8717948717948718,
+          "baseline_mean": 0.19061750864561183,
+          "excess_ratio": 0.6811773631492599
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.6466346153846153,
+      "excess_ratio": 0.49556495086631797,
+      "baseline_mean": 0.15106966451829734,
+      "baseline_n_valid": 5,
+      "output_chars": 156,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6371681415929203,
+          "baseline_mean": 0.11874354022779596,
+          "excess_ratio": 0.5184246013651244
+        },
+        "bz2": {
+          "actual_ratio": 0.5539568345323741,
+          "baseline_mean": 0.13739775138629606,
+          "excess_ratio": 0.41655908314607804
+        },
+        "lzma": {
+          "actual_ratio": 0.7317073170731707,
+          "baseline_mean": 0.19061750864561183,
+          "excess_ratio": 0.5410898084275588
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.09285268414481894,
+      "excess_ratio": -0.0582169803734784,
+      "baseline_mean": 0.15106966451829734,
+      "baseline_n_valid": 5,
+      "output_chars": 5489,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.07960893854748603,
+          "baseline_mean": 0.11874354022779596,
+          "excess_ratio": -0.039134601680309924
+        },
+        "bz2": {
+          "actual_ratio": 0.08269230769230769,
+          "baseline_mean": 0.13739775138629606,
+          "excess_ratio": -0.05470544369398837
+        },
+        "lzma": {
+          "actual_ratio": 0.11559633027522936,
+          "baseline_mean": 0.19061750864561183,
+          "excess_ratio": -0.07502117837038247
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.06309087401119043,
+      "excess_ratio": -0.08797879050710691,
+      "baseline_mean": 0.15106966451829734,
+      "baseline_n_valid": 5,
+      "output_chars": 9623,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.05048488305761552,
+          "baseline_mean": 0.11874354022779596,
+          "excess_ratio": -0.06825865717018044
+        },
+        "bz2": {
+          "actual_ratio": 0.06183431952662722,
+          "baseline_mean": 0.13739775138629606,
+          "excess_ratio": -0.07556343185966885
+        },
+        "lzma": {
+          "actual_ratio": 0.07701149425287357,
+          "baseline_mean": 0.19061750864561183,
+          "excess_ratio": -0.11360601439273826
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.03296406376654964,
+      "excess_ratio": -0.1181056007517477,
+      "baseline_mean": 0.15106966451829734,
+      "baseline_n_valid": 5,
+      "output_chars": 2701,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.01487603305785124,
+          "baseline_mean": 0.11874354022779596,
+          "excess_ratio": -0.10386750716994472
+        },
+        "bz2": {
+          "actual_ratio": 0.033140016570008285,
+          "baseline_mean": 0.13739775138629606,
+          "excess_ratio": -0.10425773481628778
+        },
+        "lzma": {
+          "actual_ratio": 0.04984423676012461,
+          "baseline_mean": 0.19061750864561183,
+          "excess_ratio": -0.14077327188548722
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T05:13:11.545691+00:00"
+    }
+  ]
+}

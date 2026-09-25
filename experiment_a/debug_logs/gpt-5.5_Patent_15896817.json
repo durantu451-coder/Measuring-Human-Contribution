@@ -1,0 +1,524 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15896817",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA built-in self-test (BIST) parallel memory test architecture for an integrated circuit, such as a system-on-a-chip (SoC), is disclosed. A BIST controller generates a test data pattern for memories of a common memory type, with this test data pattern forwarded to the memories, with pipeline delay stages inserted in the data path according to the operational speed of the memory in its normal operation. The expected data response of these memories, when read, and corresponding to this test data pattern is delayed for a group of memories by a local delay response generator shared by those memories. For example, the memories in the group of memories may be physically near one another. The local delay response generator delays the expected data response by a delay corresponding to the memory latency of those memories in the group, before applying the expected data response to local comparators associated with the memories in the group.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA built-in self-test (BIST) parallel memory test architecture for an integrated circuit, such as a system-on-a-chip (SoC), is disclosed. A BIST controller generates a test data pattern for memories of a common memory type, with this test data pattern forwarded to the memories, with pipeline delay stages inserted in the data path according to the operational speed of the memory in its normal operation. The expected data response of these memories, when read, and corresponding to this test data pattern is delayed for a group of memories by a local delay response generator shared by those memories. For example, the memories in the group of memories may be physically near one another. The local delay response generator delays the expected data response by a delay corresponding to the memory latency of those memories in the group, before applying the expected data response to local comparators associated with the memories in the group.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A built-in self-test (BIST) parallel memory test architecture is disclosed for integrated circuits such as systems-on-a-chip (SoCs).\n- A BIST controller generates a test data pattern for memories of a common memory type and forwards it to those memories.\n- Pipeline delay stages are inserted in the data path based on the normal operational speed of each memory.\n- A local delay response generator shared by a group of nearby memories delays the expected data response according to the memories’ latency.\n- The delayed expected data response is applied to local comparators associated with the memories in the group.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA BIST parallel memory test architecture for SoCs tests groups of same-type memories by generating shared test patterns and inserting pipeline delays based on each memory’s normal operating speed. Local shared delay response generators align expected responses with memory latency before comparison, reducing duplicated circuitry while enabling accurate high-speed parallel memory testing.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: BIST, SoC, The"
+  },
+  "outputs": {
+    "L1": "A built-in self-test (BIST) parallel memory test architecture for an integrated circuit, such as a system-on-a-chip (SoC), is disclosed. A BIST controller generates a test data pattern for memories of a common memory type and forwards the pattern to the memories, with pipeline delay stages inserted in the data path according to the operational speed of each memory during normal operation. The expected data response of these memories, when read and corresponding to the test data pattern, is delayed for a group of memories by a local delay response generator shared by those memories. For example, the memories within the group may be physically proximate to one another. The local delay response generator delays the expected data response by an amount corresponding to the memory latency of the memories in the group before applying the expected data response to local comparators associated with the memories in that group.",
+    "L2": "A parallel memory testing architecture using built-in self-test (BIST) for an integrated circuit, for example a system-on-a-chip (SoC), is described. In this architecture, a BIST controller creates a test data sequence for memories that share the same memory type and sends that sequence to the memories. Pipeline delay stages are placed in the data path based on the speed at which each memory operates during normal use.  \n\nWhen the memories are read, the expected output data corresponding to the test pattern is delayed for a set of memories by a local response-delay generator that is shared among that set. In one implementation, the memories in the set may be located close to each other physically. The local response-delay generator postpones the expected data response by an amount that matches the memory latency of the memories in that set, and then provides the delayed expected response to local comparators assigned to the respective memories.",
+    "L3": "A built-in self-test (BIST) parallel memory test architecture is disclosed for integrated circuits, including complex devices such as systems-on-a-chip (SoCs). The architecture is designed to test multiple embedded memories efficiently and in parallel, particularly where the memories are of a common memory type but may have different timing characteristics or operating speeds.\n\nIn this architecture, a BIST controller generates a test data pattern intended for a set of memories having the same memory type. The generated test data pattern is distributed to the relevant memories so that the memories can be exercised during a test operation. By using a common BIST controller to provide test patterns to multiple memories, the architecture reduces redundant test circuitry and supports efficient parallel testing across the integrated circuit.\n\nTo accommodate differences in the normal operating speeds of the individual memories, pipeline delay stages are inserted in the data path between the BIST controller and the memories. The number or arrangement of these pipeline delay stages is selected based on the normal operational speed of each memory. Faster or more distant memories may require different delay staging than slower or closer memories, allowing the test data pattern to arrive at each memory in a properly timed manner during the BIST operation.\n\nThe architecture also includes a local delay response generator that is shared by a group of nearby memories. Rather than providing a separate expected-response delay circuit for each memory, the local delay response generator serves the group and delays the expected data response according to the latency characteristics of the memories in that group. This localized sharing reduces circuit overhead while still allowing the expected response to be aligned with the actual response produced by the memories under test.\n\nThe delayed expected data response generated by the local delay response generator is then supplied to local comparators associated with the memories in the group. Each local comparator compares the expected data response with the actual data output from its corresponding memory. If the actual data does not match the delayed expected data response, the comparator can indicate a test failure for that memory.\n\nBy combining centralized test pattern generation, memory-specific pipeline delay stages, shared local delay response generation, and local comparison circuitry, the disclosed BIST architecture enables scalable and timing-aware parallel memory testing. This approach is particularly useful in SoCs containing many embedded memories, where efficient test execution, reduced routing complexity, and minimized test logic overhead are important design considerations.",
+    "L4": "A built-in self-test (BIST) parallel memory test architecture for system-on-chip (SoC) designs provides an efficient way to test multiple embedded memories at high speed while reducing the amount of dedicated test circuitry required. Modern SoCs often contain many memories of different sizes, configurations, and performance characteristics. Testing each memory with a completely independent BIST controller can consume significant silicon area and increase design complexity. To address this, the architecture groups memories of the same type and tests them in parallel using shared test resources.\n\nIn this approach, a common test pattern generator produces address, data, and control sequences that are distributed to a group of compatible memories. Since the memories in a group share similar functional characteristics, they can be exercised using the same test algorithm and pattern set. However, even memories of the same general type may operate with different timing requirements or may be placed at different points in the chip, resulting in different access latencies. To support accurate parallel testing under these conditions, the architecture inserts pipeline delay stages according to each memory’s normal operating speed and timing behavior.\n\nThese pipeline delays ensure that the test stimuli arrive at each memory in a manner consistent with its intended operating conditions. Faster memories may require fewer delay stages, while slower memories may require additional delay elements so that all memories can be tested correctly without forcing the entire test process to run at the speed of the slowest memory. This allows the BIST system to preserve high-speed operation while still respecting the timing constraints of individual memory instances.\n\nA key feature of the architecture is the use of local shared delay response generators. During memory testing, the BIST circuitry must compare the actual data read from each memory against the expected response. Because different memories may return data after different numbers of cycles, the expected data must be delayed to match each memory’s read latency. The local shared delay response generators perform this alignment by delaying the expected response before it reaches the comparison logic. As a result, the comparator receives the actual memory output and the corresponding expected value at the same time, enabling accurate pass/fail detection.\n\nBy sharing test pattern generation across groups of same-type memories and localizing only the delay and response-alignment logic where needed, the architecture avoids unnecessary duplication of BIST circuitry. This reduces area overhead, routing complexity, and power consumption compared with designs that provide a separate full BIST engine for every memory. At the same time, the use of pipeline delays and response-alignment generators allows the system to maintain precise timing relationships, making it suitable for high-speed parallel memory testing.\n\nOverall, this BIST parallel memory test architecture improves the efficiency of embedded memory testing in SoCs. It enables multiple memories to be tested simultaneously, supports memories with different latency and speed characteristics, and reduces redundant hardware by sharing common test resources. The result is a scalable and area-efficient memory test solution that can deliver accurate results while meeting the performance demands of complex SoC designs.",
+    "L5": "**The Role of BIST in SoC Design**\n\nThe increasing complexity of modern **SoC** designs has made efficient testing more important than ever. An SoC, or System-on-Chip, integrates multiple components such as processors, memory, interfaces, and specialized accelerators onto a single chip. While this integration improves performance and reduces power consumption, it also creates challenges in verifying that every part of the chip works correctly.\n\n**BIST**, or Built-In Self-Test, is a key solution for addressing these challenges. BIST allows a chip to test itself using internal test circuitry, reducing the need for expensive external testing equipment. In an SoC, BIST can be used to test memory blocks, logic circuits, and other critical modules. This helps detect manufacturing defects, improve reliability, and reduce overall testing time.\n\nThe main advantage of BIST in SoC development is that it supports faster and more automated testing. Since many SoC devices are used in critical applications such as automotive systems, telecommunications, consumer electronics, and industrial control, reliable testing is essential. BIST also enables in-field testing, allowing devices to check their own health even after deployment.\n\nThe use of BIST in SoC design continues to grow as chips become more advanced. By integrating self-test features directly into the hardware, designers can improve quality, lower costs, and ensure better long-term performance. In modern semiconductor development, BIST is no longer just an optional feature; it is an important part of building dependable SoC solutions."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a patent-style abstract for a BIST parallel memory testing architecture in an SoC using shared local expected-response delay generators for nearby memories with different latencies.",
+      "output": "A built-in self-test (BIST) architecture for parallel testing of memories in a system-on-chip is disclosed. The architecture includes a BIST controller configured to generate test commands, addresses, and write data for a plurality of embedded memories tested concurrently. Memories having different read latencies are organized into proximity-based groups, each group being associated with a shared local expected-response delay generator. The shared local expected-response delay generator receives expected response information from the BIST controller and selectively delays the expected response by one or more programmable delay amounts corresponding to the read latencies of the nearby memories in the group. The delayed expected responses are provided to respective comparators associated with the memories for comparison with memory read data. By distributing expected-response delay generation locally and sharing delay circuitry among physically proximate memories, the architecture reduces routing congestion, timing load, and area overhead relative to per-memory delay circuits or centralized delay distribution, while enabling concurrent BIST operation across memories with differing access latencies.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize an invention involving a built-in self-test controller that sends test patterns to multiple memories and uses pipeline delay stages and local comparators to account for memory operational speeds.",
+      "output": "The invention is a built-in self-test (BIST) system for testing multiple embedded memories that may operate at different speeds or have different access latencies.\n\nA central BIST controller generates and sends test patterns, addresses, and control signals to the memories under test. Because different memories may return data after different delays, the system includes pipeline delay stages that align the expected test data with the actual data returned from each memory. Each memory or memory group can have its own local comparison logic, which compares the delayed expected data against the memory output at the correct time.\n\nBy distributing comparators locally and using adjustable or staged pipeline delays, the BIST architecture can accurately test multiple memories without requiring all memories to have the same timing characteristics. This improves test flexibility, supports memories with different operational speeds, reduces timing problems in the test circuitry, and allows efficient on-chip testing of complex integrated circuits containing many memory blocks.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a concise technical disclosure paragraph for an integrated circuit memory BIST system where expected read data is delayed locally for groups of memories before comparison.",
+      "output": "An integrated circuit includes a memory built-in self-test (BIST) controller configured to generate test addresses, write data, and expected read data for a plurality of embedded memories. The memories are arranged in groups, and each group includes local delay logic that receives the expected read data from the BIST controller and delays the expected read data by a group-specific latency corresponding to the read pipeline latency of the memories in that group. Local comparison logic associated with each group compares read data output from the corresponding memories with the locally delayed expected read data and generates pass/fail or error indication signals. By distributing the expected-data delay function to memory groups rather than implementing all delay stages centrally in the BIST controller, the system reduces long expected-data routing, eases timing closure, supports different memory latencies across groups, and improves scalability for integrated circuits having many embedded memories.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Describe, in patent language, a system-on-chip parallel memory test architecture that groups physically proximate memories and shares a delay response generator based on memory latency.",
+      "output": "A system-on-chip memory test architecture is disclosed for testing a plurality of embedded memories disposed at different physical locations on an integrated circuit. In one embodiment, the architecture comprises a plurality of memory test groups, each memory test group including a set of physically proximate embedded memories and a local test interface coupled to the set of embedded memories. The embedded memories within a given memory test group are selected based at least in part on physical placement proximity, routing distance, clock-domain relationship, memory type, or a combination thereof, thereby reducing test interconnect length and timing variation within the group.\n\nEach memory test group is coupled to a shared test controller configured to provide memory test commands, address information, write data, and control signals to the embedded memories of the group. The memory test architecture further comprises a delay response generator associated with each memory test group. The delay response generator is shared by two or more embedded memories within the memory test group and is configured to generate expected response timing for the embedded memories based on a latency characteristic of the memories under test.\n\nIn an embodiment, the delay response generator receives latency information corresponding to one or more memories in the group and generates one or more delayed compare-enable signals, capture-enable signals, expected-data-valid signals, or response-window signals. The latency information may include a read latency, pipeline latency, access latency, clock-cycle delay, or configurable memory response delay. The delay response generator may include programmable delay elements, counters, shift registers, latency registers, multiplexers, or timing-control logic that are selectively configured according to the latency of a selected memory or class of memories within the group.\n\nDuring parallel memory test operation, a test pattern generator issues test stimuli to multiple memories in one or more memory test groups. For a given group, the shared delay response generator aligns expected response timing with actual memory output timing so that memory responses from the physically proximate memories can be captured and compared at the proper cycle. A response comparator associated with the group compares captured memory output data with expected data generated by the test controller or by local expected-data generation circuitry. The comparison results may be compressed, accumulated, or forwarded to a central test access mechanism.\n\nIn one embodiment, memories having substantially similar latency are assigned to a common memory test group such that a single delay response generator can be shared among the memories of that group. In another embodiment, memories having different latencies are included in the same physical group, and the shared delay response generator is programmable to select a latency value corresponding to the memory currently being accessed or to generate multiple delayed response timing signals for concurrently tested memories. The grouping of memories based on physical proximity reduces routing congestion and area overhead, while the sharing of the delay response generator reduces duplication of latency-alignment circuitry.\n\nThe architecture may further include group-level arbitration or scheduling logic configured to coordinate test access to memories within the group. The scheduling logic may cause memories with matching latency values to be tested in parallel using a common delayed response signal, or may sequence memories with different latency values while reconfiguring the delay response generator between test phases. The architecture may also support broadcast test commands to a plurality of memories, selective masking of memory outputs, per-memory fail capture, and group-level fail indication.\n\nIn a representative implementation, the system-on-chip comprises a central built-in self-test controller coupled to a plurality of distributed memory test clusters. Each distributed memory test cluster is placed adjacent to a corresponding cluster of embedded memory instances. Each cluster includes local address and data distribution logic, local response capture logic, and a shared latency-based delay response generator. The delay response generator is programmed using latency configuration data stored in configuration registers, scan-accessible registers, fuses, firmware-visible registers, or test-mode control fields. The programmed latency value determines the number of clock cycles between application of a read command and activation of a response compare event.\n\nBy locating the memory test logic near the memories under test and sharing latency-dependent response timing circuitry among physically proximate memories, the disclosed architecture enables scalable parallel testing of embedded memories in a system-on-chip. The architecture reduces test logic area, minimizes long-distance test routing, improves timing closure, and permits efficient testing of memories having different access latencies.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate an abstract for a semiconductor patent about BIST testing of common-type memories, including test pattern generation, data path pipeline delays, expected response delay, and local comparison.",
+      "output": "**Abstract**\n\nA built-in self-test (BIST) architecture and method are provided for testing common-type memory instances in a semiconductor device. The BIST system includes a test pattern generator configured to generate address, control, and data patterns for a plurality of memories having a shared memory type or interface protocol. A data path between the test pattern generator and each memory under test includes one or more pipeline stages, producing a write-data and/or control-signal delay. An expected-response path includes a corresponding delay element or delay adjustment circuit configured to align expected read data with actual read data returned from the memory after accounting for memory latency and data path pipeline delays. Local comparator circuitry associated with each memory instance compares the delayed expected response with the actual memory output and generates a pass/fail indication or error information. By performing comparison locally near the memory and compensating for data path and expected response delays, the disclosed BIST architecture enables scalable testing of multiple common-type memories, reduces routing congestion, supports high-speed operation, and improves test accuracy in integrated circuits.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7655913978494624,
+      "excess_ratio": 0.6123801814979795,
+      "baseline_mean": 0.1532112163514829,
+      "baseline_n_valid": 5,
+      "output_chars": 930,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.8113207547169812,
+          "baseline_mean": 0.11932217539234384,
+          "excess_ratio": 0.6919985793246374
+        },
+        "bz2": {
+          "actual_ratio": 0.6133909287257019,
+          "baseline_mean": 0.14275561315956045,
+          "excess_ratio": 0.47063531556614147
+        },
+        "lzma": {
+          "actual_ratio": 0.8661417322834646,
+          "baseline_mean": 0.19219904554021908,
+          "excess_ratio": 0.6739426867432455
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4721311475409836,
+      "excess_ratio": 0.3189199311895007,
+      "baseline_mean": 0.1532112163514829,
+      "baseline_n_valid": 5,
+      "output_chars": 958,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4337606837606838,
+          "baseline_mean": 0.11932217539234384,
+          "excess_ratio": 0.3144385083683399
+        },
+        "bz2": {
+          "actual_ratio": 0.43661971830985913,
+          "baseline_mean": 0.14275561315956045,
+          "excess_ratio": 0.2938641051502987
+        },
+        "lzma": {
+          "actual_ratio": 0.5357142857142857,
+          "baseline_mean": 0.19219904554021908,
+          "excess_ratio": 0.34351524017406665
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.25157232704402516,
+      "excess_ratio": 0.09836111069254225,
+      "baseline_mean": 0.1532112163514829,
+      "baseline_n_valid": 5,
+      "output_chars": 2763,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2295539033457249,
+          "baseline_mean": 0.11932217539234384,
+          "excess_ratio": 0.11023172795338106
+        },
+        "bz2": {
+          "actual_ratio": 0.2310502283105023,
+          "baseline_mean": 0.14275561315956045,
+          "excess_ratio": 0.08829461515094184
+        },
+        "lzma": {
+          "actual_ratio": 0.2910958904109589,
+          "baseline_mean": 0.19219904554021908,
+          "excess_ratio": 0.09889684487073983
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.13223699031313363,
+      "excess_ratio": -0.02097422603834928,
+      "baseline_mean": 0.1532112163514829,
+      "baseline_n_valid": 5,
+      "output_chars": 3456,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.10677618069815195,
+          "baseline_mean": 0.11932217539234384,
+          "excess_ratio": -0.01254599469419189
+        },
+        "bz2": {
+          "actual_ratio": 0.13319386331938632,
+          "baseline_mean": 0.14275561315956045,
+          "excess_ratio": -0.009561749840174133
+        },
+        "lzma": {
+          "actual_ratio": 0.15544041450777202,
+          "baseline_mean": 0.19219904554021908,
+          "excess_ratio": -0.03675863103244706
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.0447819314641745,
+      "excess_ratio": -0.10842928488730841,
+      "baseline_mean": 0.1532112163514829,
+      "baseline_n_valid": 5,
+      "output_chars": 1603,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.02096177558569667,
+          "baseline_mean": 0.11932217539234384,
+          "excess_ratio": -0.09836039980664717
+        },
+        "bz2": {
+          "actual_ratio": 0.04042806183115339,
+          "baseline_mean": 0.14275561315956045,
+          "excess_ratio": -0.10232755132840707
+        },
+        "lzma": {
+          "actual_ratio": 0.06986899563318777,
+          "baseline_mean": 0.19219904554021908,
+          "excess_ratio": -0.12233004990703131
+        }
+      }
+    }
+  },
+  "api_provenance": {
+    "config": {
+      "gpt_gateway": 1,
+      "max_output_tokens": 4096,
+      "require_status": "completed"
+    },
+    "main_calls": {
+      "L1_polish": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 1,
+        "requested_model": "gpt-5.5",
+        "returned_model": "gpt-5.5",
+        "response_id": "resp_0aa320a6b15f9ea8006a88b7c6216081959f5703109cb807e5",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 203,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 176,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 379
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T20:40:40.774220+00:00"
+      },
+      "L2_rewrite": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 1,
+        "requested_model": "gpt-5.5",
+        "returned_model": "gpt-5.5",
+        "response_id": "resp_0e3e9d970a682f23006a88b7cae3148193be1b668ad2a47d96",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 206,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 199,
+          "output_tokens_details": {
+            "reasoning_tokens": 12
+          },
+          "total_tokens": 405
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T20:40:47.062022+00:00"
+      },
+      "L3_bullets": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 1,
+        "requested_model": "gpt-5.5",
+        "returned_model": "gpt-5.5",
+        "response_id": "resp_03e6461973ad66c0006a88b7d141d08193b913bc53b9b6a743",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 216,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 122,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 338
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T20:40:56.952026+00:00"
+      },
+      "L3_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 1,
+        "requested_model": "gpt-5.5",
+        "returned_model": "gpt-5.5",
+        "response_id": "resp_0d3a8eaa15c9c415006a88b7db08548193a2b13694b9c99d6b",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 139,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 461,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 600
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T20:41:07.525110+00:00"
+      },
+      "L4_2sent": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 1,
+        "requested_model": "gpt-5.5",
+        "returned_model": "gpt-5.5",
+        "response_id": "resp_04d6068df0a1ec46006a88b7e5a768819681b82081a0de0924",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 228,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 64,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 292
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T20:41:11.838202+00:00"
+      },
+      "L4_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 1,
+        "requested_model": "gpt-5.5",
+        "returned_model": "gpt-5.5",
+        "response_id": "resp_0e5ffe9d648b0957006a88b7e9f2108196acaae0520fae0858",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 79,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 609,
+          "output_tokens_details": {
+            "reasoning_tokens": 21
+          },
+          "total_tokens": 688
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T20:41:29.404677+00:00"
+      },
+      "L5_keywords": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 1,
+        "requested_model": "gpt-5.5",
+        "returned_model": "gpt-5.5",
+        "response_id": "resp_06515e44a031924a006a88b7fb8290819490289a2a69ca1505",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 24,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 365,
+          "output_tokens_details": {
+            "reasoning_tokens": 57
+          },
+          "total_tokens": 389
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T20:41:39.352474+00:00"
+      }
+    },
+    "counterfactuals": {
+      "reconstruct": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 1,
+        "requested_model": "gpt-5.5",
+        "returned_model": "gpt-5.5",
+        "response_id": "resp_091a0d4d76d4bd85006a88b80577908196a25237cc2cd3eff7",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 279,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 174,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 453
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T20:41:45.974418+00:00"
+      },
+      "outputs": [
+        {
+          "label": "cf_1",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 1,
+              "requested_model": "gpt-5.5",
+              "returned_model": "gpt-5.5",
+              "response_id": "resp_0b57a736b75722fa006a88b80cd9e8819681031c1d18490751",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 38,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 198,
+                "output_tokens_details": {
+                  "reasoning_tokens": 0
+                },
+                "total_tokens": 236
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T20:41:53.591614+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_2",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 1,
+              "requested_model": "gpt-5.5",
+              "returned_model": "gpt-5.5",
+              "response_id": "resp_072e54bf110d6ef2006a88b813a8e881948b3f0431a6ab40cd",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 41,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 184,
+                "output_tokens_details": {
+                  "reasoning_tokens": 0
+                },
+                "total_tokens": 225
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T20:42:00.158961+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_3",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 1,
+              "requested_model": "gpt-5.5",
+              "returned_model": "gpt-5.5",
+              "response_id": "resp_086d24c668033eed006a88b81a528881979ef9a53d79e19d97",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 34,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 175,
+                "output_tokens_details": {
+                  "reasoning_tokens": 0
+                },
+                "total_tokens": 209
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T20:42:06.704674+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_4",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 1,
+              "requested_model": "gpt-5.5",
+              "returned_model": "gpt-5.5",
+              "response_id": "resp_03a22d64b2b4b9b3006a88b820dc988190aa67971d02e9f529",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 37,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 875,
+                "output_tokens_details": {
+                  "reasoning_tokens": 35
+                },
+                "total_tokens": 912
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T20:42:28.385485+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_5",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 1,
+              "requested_model": "gpt-5.5",
+              "returned_model": "gpt-5.5",
+              "response_id": "resp_07d174ea779b82a3006a88b836706c8190bba3646f05f60ac4",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 40,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 212,
+                "output_tokens_details": {
+                  "reasoning_tokens": 0
+                },
+                "total_tokens": 252
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T20:42:36.547084+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

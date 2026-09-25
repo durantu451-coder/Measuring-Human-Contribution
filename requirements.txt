@@ -1,0 +1,21 @@
+# Core scientific stack.
+# The black-box metric and all reliability statistics need only these:
+numpy
+scipy
+pandas
+scikit-learn
+
+# White-box reference (phi) and the embedding path in human_contribution/.
+# Install the CUDA build matching your driver; the CPU wheel also works.
+torch
+transformers
+sentence-transformers
+
+# Optional: dependency tracking the code uses when available.
+psutil
+
+# Note: the API-backed adapters (human_contribution/deepseek_adapter.py,
+# human_contribution/reconstruct.py) talk to an OpenAI-compatible endpoint over
+# the standard library only — no client SDK is required. Provide the credential
+# through the ANTHROPIC_AUTH_TOKEN environment variable at call time; no key is
+# stored in this repository.

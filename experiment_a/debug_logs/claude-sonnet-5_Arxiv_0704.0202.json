@@ -1,0 +1,175 @@
+{
+  "model": "claude-sonnet-5",
+  "domain": "Arxiv",
+  "id": "0704.0202",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe improve the upper bound on the minimal resources required for measurement-based quantum computation. Minimizing the resources required for this model is a key issue for experimental realization of a quantum computer based on projective measurements. This new upper bound allows also to reply in the negative to the open question about the existence of a trade-off between observable and ancillary qubits in measurement-based quantum computation.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe improve the upper bound on the minimal resources required for measurement-based quantum computation. Minimizing the resources required for this model is a key issue for experimental realization of a quantum computer based on projective measurements. This new upper bound allows also to reply in the negative to the open question about the existence of a trade-off between observable and ancillary qubits in measurement-based quantum computation.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper presents an improved upper bound on the minimal resources required for measurement-based quantum computation.\n- Minimizing these required resources is identified as a critical issue for the experimental realization of a quantum computer based on projective measurements.\n- The new upper bound provides a definitive answer to a previously open question in the field.\n- This answer resolves the question in the negative, showing that no trade-off exists between observable and ancillary qubits in this computational model.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis work addresses the challenge of minimizing the resources required for measurement-based quantum computation, a critical issue for the experimental realization of quantum computers based on projective measurements, by establishing an improved upper bound on these minimal resources. This new bound not only advances resource efficiency but also resolves an open question by demonstrating that no trade-off exists between observable and ancillary qubits in this computational model.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Minimizing, This"
+  },
+  "outputs": {
+    "L1": "Here is a polished version of your text:\n\nWe present an improved upper bound on the minimal resources required for measurement-based quantum computation. Minimizing these resource requirements constitutes a central challenge in the experimental realization of quantum computers based on projective measurements. Moreover, this new upper bound enables us to resolve, in the negative, the open question concerning the existence of a trade-off between observable and ancillary qubits in measurement-based quantum computation.\n\n**Key changes made:**\n- \"We improve\" → \"We present an improved\" (more formal academic phrasing)\n- \"a key issue for\" → \"constitutes a central challenge in\" (elevated register)\n- \"allows also to reply\" → \"enables us to resolve\" (more precise and idiomatic)\n- Added \"Moreover\" as a transition to improve flow between sentences\n- \"reply in the negative to\" → \"resolve, in the negative,\" (clearer syntactic structure)\n\nLet me know if you'd like a version with a different tone (e.g., more concise, or tailored for a specific journal's style).",
+    "L2": "# Rewritten Text\n\nWe present a tightened upper limit concerning the minimum resources needed for quantum computation based on measurements. Reducing the resource requirements for this computational approach represents a critical challenge in the pursuit of building an actual quantum computer that operates through projective measurement techniques. Furthermore, this refined bound provides a negative resolution to a previously unsettled question: whether a necessary trade-off exists between the number of observable qubits and ancillary qubits within measurement-based quantum computation.",
+    "L3": "# Improved Upper Bound on Resource Requirements for Measurement-Based Quantum Computation\n\nThis paper presents an improved upper bound on the minimal resources required for measurement-based quantum computation, a computational paradigm in which quantum information processing is achieved through a sequence of projective measurements rather than unitary gate operations. By establishing a tighter bound on the number of qubits necessary to implement arbitrary quantum computations within this framework, the work advances our theoretical understanding of the fundamental resource constraints inherent to this model.\n\nThe question of minimizing these required resources is not merely of theoretical interest—it constitutes a critical issue for the practical, experimental realization of a quantum computer based on projective measurements. Since physical qubits are costly and difficult to maintain in coherent states, any reduction in the number of qubits needed to perform universal quantum computation directly translates into more feasible experimental architectures. Understanding precisely how many observable qubits (those directly involved in encoding and processing the computation) and ancillary qubits (auxiliary qubits used to facilitate the measurement-based protocol) are necessary is therefore essential for guiding the design of scalable measurement-based quantum computing systems.\n\nPrior to this work, it remained an open question within the field whether a fundamental trade-off might exist between these two resource types—specifically, whether a reduction in the number of observable qubits could necessitate a corresponding increase in ancillary qubits, or vice versa. This paper's new upper bound provides a definitive answer to this previously open question, settling the matter through rigorous analysis.\n\nNotably, the answer resolves the question in the negative: the results demonstrate that no such trade-off exists between observable and ancillary qubits in this computational model. This finding is significant because it establishes that the two resource types can, in principle, be optimized independently rather than being subject to a zero-sum constraint. Consequently, this result simplifies the resource analysis for measurement-based quantum computation and removes a potential obstacle that researchers might otherwise have needed to navigate when designing experimental implementations, thereby clarifying the theoretical landscape for future work in this area.",
+    "L4": "# Optimizing Resource Requirements in Measurement-Based Quantum Computation\n\n## Introduction\n\nMeasurement-based quantum computation (MBQC) represents a paradigm shift from the traditional circuit model of quantum computing, offering a fundamentally different approach to implementing quantum algorithms. Rather than relying on sequences of unitary gates applied to qubits, MBQC achieves universal quantum computation through a carefully orchestrated series of single-qubit projective measurements performed on a pre-entangled resource state, typically a cluster state or graph state. This measurement-driven approach has attracted significant attention due to its potential advantages for certain physical implementations, particularly in photonic quantum computing architectures where generating entanglement is often more experimentally accessible than performing controlled multi-qubit gates.\n\nDespite its theoretical elegance and practical appeal, MBQC faces a significant challenge that has direct implications for experimental feasibility: the resource overhead required to implement quantum computations. Specifically, the number of qubits needed—both those directly involved in encoding the computational output (observable qubits) and additional ancillary qubits required to facilitate the measurement process—can be substantial. As quantum algorithms grow in complexity, the resource requirements for their MBQC implementation must scale efficiently, or the practical realization of large-scale quantum computers based on this paradigm will remain out of reach.\n\n## The Resource Minimization Problem\n\nAt the heart of this work lies a fundamental question: what is the minimal number of qubits required to perform a given quantum computation within the MBQC framework? This question naturally decomposes into two related but distinct considerations. First, there is the question of observable qubits—the qubits whose measurement outcomes directly encode the desired computational output. Second, there is the matter of ancillary qubits—additional qubits that must be incorporated into the resource state to enable the necessary entanglement structure and measurement patterns that drive the computation forward.\n\nPrior work in this area had left open an important question regarding the relationship between these two resource types. Specifically, it was unclear whether there existed an inherent trade-off between the number of observable qubits and the number of ancillary qubits required for a given computation. Such a trade-off, if it existed, would have significant implications for how quantum algorithms should be compiled into MBQC patterns, potentially requiring careful balancing between these two resource categories depending on which type of qubit was more costly or difficult to implement in a given physical platform.\n\n## Establishing an Improved Upper Bound\n\nThe central contribution of this work is the establishment of an improved upper bound on the total resource requirements for MBQC implementations of arbitrary quantum computations. This bound represents a significant advance over previously known results, providing tighter constraints on how many qubits—both observable and ancillary—are necessary to faithfully implement a given quantum algorithm using the measurement-based paradigm.\n\nThe derivation of this improved bound required careful analysis of the structure of measurement patterns and the entanglement resources they demand. By developing new techniques for constructing efficient MBQC implementations, we were able to demonstrate that computations can be realized with substantially fewer total qubits than previous constructions required. This improvement is not merely of theoretical interest; it has direct practical implications for experimental implementations, where each additional qubit represents additional physical resources, increased susceptibility to decoherence, and greater overall system complexity.\n\n## Resolving the Trade-off Question\n\nPerhaps the most significant theoretical contribution of this work is the resolution of the open question concerning the relationship between observable and ancillary qubit requirements. Through rigorous analysis, we demonstrate conclusively that no fundamental trade-off exists between these two resource types. This finding is somewhat surprising, as one might naively expect that reducing the number of ancillary qubits would necessarily require increasing the number of observable qubits, or vice versa, to maintain the same computational power.\n\nOur results show instead that it is possible to simultaneously achieve near-optimal bounds on both resource types without sacrificing one for the other. This has important implications for the design of MBQC protocols, as it suggests that resource optimization efforts can focus on minimizing total qubit count without needing to navigate a complex trade-off landscape between different qubit types. This simplification substantially clarifies the theoretical landscape for resource-efficient MBQC design and removes a layer of complexity that had previously complicated efforts to optimize measurement-based quantum computing protocols.\n\n## Implications and Significance\n\nThe results presented in this work carry substantial implications for both the theoretical understanding of measurement-based quantum computation and its practical implementation. From a theoretical perspective, resolving the trade-off question provides crucial insight into the fundamental resource structure of MBQC, contributing to a more complete understanding of how this computational model relates to other paradigms of quantum computation, including the standard circuit model.\n\nFrom a practical standpoint, the improved upper bound on total resource requirements directly addresses one of the primary obstacles to scaling up MBQC-based quantum computers. As experimental groups continue to develop platforms—particularly photonic systems—capable of generating and manipulating the large entangled resource states required for MBQC, having tighter theoretical bounds on the necessary qubit counts provides valuable guidance for hardware development priorities and algorithm compilation strategies.\n\n## Conclusion\n\nThis work makes significant progress on the fundamental challenge of resource optimization in measurement-based quantum computation. By establishing an improved upper bound on the total qubit requirements—encompassing both observable and ancillary qubits—we advance the practical feasibility of implementing quantum algorithms within this computational paradigm. Furthermore, by resolving the open question of whether a trade-off exists between these two resource categories, and demonstrating that no such trade-off is necessary, we provide important theoretical clarity that will inform future efforts to optimize MBQC protocols. These contributions represent meaningful steps toward bridging the gap between the theoretical elegance of measurement-based quantum computation and its practical realization in physical quantum computing systems.",
+    "L5": "# The Art of Minimizing: Finding Power in This Moment\n\nIn a world saturated with noise, information, and endless options, the practice of minimizing has emerged as both a philosophy and a necessity. Minimizing isn't about deprivation—it's about clarity. It's the deliberate act of stripping away the unnecessary to reveal what truly matters.\n\nConsider **this**: the present moment, right now, as you read these words. This is often overlooked because our minds are cluttered with past regrets and future anxieties. Minimizing mental clutter means learning to anchor ourselves in this—this breath, this task, this conversation—rather than scattering our attention across a thousand competing demands.\n\nThe principle applies broadly. In design, minimizing excess creates space for function and beauty to coexist. In our schedules, minimizing commitments allows room for depth over breadth. In our possessions, minimizing accumulation frees us from the burden of maintenance and the illusion that more equals better.\n\nBut minimizing requires intention. It's not passive neglect; it's active curation. We must ask: What does *this* moment need? What does *this* project require? What does *this* relationship deserve? By focusing on the specific \"this\" in front of us, we naturally begin to minimize the irrelevant.\n\nThere's a paradox worth noting—minimizing doesn't mean thinking small. Often, it means thinking more precisely. When we minimize distraction, we amplify focus. When we minimize excess, we highlight essence. When we minimize noise, we hear the signal.\n\nThis is the quiet power of minimizing: not doing less for its own sake, but doing what matters more fully. This moment, this choice, this breath—when we minimize everything else, these become not smaller, but infinitely larger in significance.\n\nUltimately, minimizing is an invitation to presence. It asks us to trust that less truly can be more, and that within the boundaries we create, freedom often flourishes. This is not a limitation—it's liberation."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a paper about reducing resource requirements in measurement-based quantum computation.",
+      "output": "# Abstract\n\nMeasurement-based quantum computation (MBQC) offers a compelling alternative to circuit-based quantum computing by relying on pre-shared entangled resource states and adaptive single-qubit measurements to drive computation. However, the practical realization of MBQC is hindered by the substantial resource overhead required to construct and maintain large-scale cluster states, particularly under realistic noise conditions. In this paper, we present a set of techniques aimed at significantly reducing the resource requirements—both in terms of qubit count and entangling operations—necessary for fault-tolerant MBQC.\n\nWe introduce an optimized graph state construction strategy that exploits structural redundancies in standard cluster state architectures, enabling substantial reductions in the number of physical qubits needed per logical operation without compromising computational universality. Furthermore, we propose an adaptive measurement scheduling scheme that minimizes the depth of entangling operations required to prepare the resource state, thereby reducing exposure to decoherence during state preparation.\n\nWe analyze the fault-tolerance properties of our approach within the framework of foliated quantum error-correcting codes, demonstrating that the proposed resource-reduction techniques preserve threshold error rates comparable to those of conventional MBQC schemes. Numerical simulations on both surface code and more general topological code architectures show reductions in qubit overhead of up to [X]% and gate count reductions of up to [Y]%, depending on the target logical error rate and code distance.\n\nOur results suggest that substantial resource savings are achievable in MBQC architectures without sacrificing fault tolerance, offering a promising pathway toward more near-term feasible implementations of measurement-based quantum computing on both photonic and matter-based quantum hardware platforms.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize a research result that improves upper bounds on qubit resources needed for cluster-state quantum computing, and addresses the trade-off question between observable and ancillary qubits.",
+      "output": "# Improved Upper Bounds on Qubit Resources for Cluster-State Quantum Computing\n\n## Summary\n\nRecent research has established improved upper bounds on the number of qubits required to implement cluster-state (measurement-based) quantum computing, addressing a fundamental resource trade-off in this computational model.\n\n## Background: The Trade-off Problem\n\nIn cluster-state quantum computing, computation proceeds via single-qubit measurements on a highly entangled resource state (the cluster state), rather than through unitary gates. This raises a key resource question:\n\n- **Observable qubits**: Qubits directly involved in encoding/processing the logical information of the computation\n- **Ancillary qubits**: Additional qubits needed to mediate entanglement, enable measurement-based gate teleportation, and support the graph-state structure required for universal computation\n\nThere is an inherent tension: minimizing ancillary overhead can increase the complexity or size of the required cluster (and vice versa), and prior bounds tended to be loose, overestimating the total qubit footprint needed for a given circuit or algorithm.\n\n## Key Result\n\nThe improved bounds show that the **total qubit overhead can be reduced** relative to previous constructions, tightening the relationship between:\n1. The number of logical/observable qubits needed to represent the computation, and\n2. The number of ancillary qubits needed to build the cluster-state graph that implements the corresponding measurement pattern.\n\nThis is typically achieved through:\n- **More efficient graph-state constructions** that reduce the number of ancilla qubits per logical gate or per unit of circuit depth\n- **Tighter mappings** from the gate-based circuit model to the measurement-based (MBQC) model, reducing redundant entanglement structure\n- **Improved compilation techniques** that better exploit the parallelism and structure of cluster states, avoiding unnecessary duplication of resource qubits\n\n## Significance\n\n- **Practical implications**: Lower qubit-count bounds make cluster-state approaches more competitive/resource-feasible for near-term and scalable quantum hardware, particularly photonic and other platforms where cluster-state generation is a natural primitive.\n- **Theoretical implications**: Establishes tighter complexity-theoretic bounds on the *qubit complexity* of MBQC, helping to formally characterize how much \"space\" overhead is fundamentally required to trade for the measurement-only computational model.\n- **Trade-off resolution**: The result clarifies that the observable/ancillary qubit trade-off is not as costly as previously assumed — near-optimal constructions can keep ancillary overhead scaling favorably (e.g., linearly or with better constants) relative to the observable-qubit count, rather than requiring larger polynomial blow-ups.\n\n---\n\n**Note**: If you have a specific paper or arXiv reference in mind for this result, let me know — I can provide a more precise and accurate summary tailored to that exact work (author names, specific bounds, and construction details).",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a concise scientific abstract discussing a new upper bound for measurement-based quantum computation resources and its implications for experimental realization.",
+      "output": "# Abstract\n\nWe present a novel upper bound on the resource overhead required for measurement-based quantum computation (MBQC), significantly improving upon previously established scaling limits for cluster-state preparation. By exploiting a refined graph-state decomposition technique that minimizes redundant entangling operations, we demonstrate that the number of physical qubits and measurement rounds required to implement an arbitrary quantum circuit of depth *d* on *n* logical qubits scales as O(*n* log *d*), rather than the previously conjectured O(*n·d*) bound. This result is achieved through a combination of adaptive measurement scheduling and a compressed lattice-surgery encoding that reduces the entanglement resource footprint while preserving fault-tolerance thresholds.\n\nWe rigorously establish the tightness of this bound via an information-theoretic argument based on the entanglement entropy required to simulate universal quantum computation, showing that our construction saturates the bound up to constant factors. Numerical simulations using a stabilizer formalism confirm the reduced resource requirements across circuit families including QAOA, variational quantum eigensolvers, and quantum Fourier transform circuits, with observed overhead reductions of 40–65% relative to standard cluster-state constructions.\n\nThe implications for experimental realization are substantial: current photonic and superconducting platforms face qubit-count and coherence-time constraints that have historically limited MBQC to small-scale demonstrations. Our bound suggests that near-term devices with 10³–10⁴ physical qubits may support MBQC implementations of circuits previously thought to require an order of magnitude more resources. We discuss practical considerations for realizing this bound on photonic cluster-state architectures, including constraints imposed by finite squeezing and detector efficiency, and propose a benchmark protocol for verifying the reduced-overhead construction on near-term hardware. These results narrow the gap between theoretical MBQC resource estimates and the capabilities of existing quantum hardware, offering a concrete pathway toward scalable, measurement-based fault-tolerant quantum computation.\n\n*Keywords: measurement-based quantum computation, cluster states, resource theory, quantum computational complexity, fault tolerance*\n\n---\n\n**Note:** This abstract describes a hypothetical/illustrative result rather than an actual published finding. If you're drafting an abstract for real research, I'd be happy to help refine it based on your actual methods, results, and data—just share the specifics and I can help structure and tighten the scientific writing.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "I need an abstract for my quantum computing paper: it shows a better upper bound on resources for MBQC and resolves an open question about ancilla vs observable qubit trade-offs. Can you write it?",
+      "output": "# Abstract\n\nMeasurement-based quantum computation (MBQC) offers a compelling alternative to the circuit model, yet the resource overhead required to implement arbitrary quantum computations—particularly the trade-off between ancilla qubits and the complexity of local observables—has remained incompletely characterized. In this work, we establish a improved upper bound on the resource requirements for universal MBQC, demonstrating that a substantially smaller number of ancilla qubits suffices to achieve universal computation when paired with a modest increase in the complexity of the measurement observables employed. Specifically, we construct an explicit protocol achieving [bound/scaling — e.g., \"O(n log n) ancilla qubits\"] while relying only on observables drawn from a fixed, constant-size set, improving upon previous constructions that required [prior bound]. This result directly resolves an open question posed in [prior work] concerning whether the ancilla-observable trade-off admits a favorable scaling, by showing that reductions in ancilla overhead need not come at the cost of unbounded observable complexity. Our approach combines [technique, e.g., graph-state compression techniques / adaptive measurement patterns / stabilizer formalism arguments] with a refined analysis of measurement pattern depth, yielding a construction that is both resource-efficient and experimentally motivated, as it reduces the physical qubit overhead in near-term photonic and matter-based MBQC architectures. We further show that our bound is tight up to [factor], by exhibiting a matching lower bound based on [technique, e.g., information-theoretic arguments / entanglement entropy constraints]. These results sharpen our understanding of the fundamental resource costs of measurement-based quantum computation and provide concrete guidance for optimizing cluster-state architectures in scalable quantum computing implementations.\n\n---\n\n**Note:** I've included placeholders in brackets `[...]` for the specific technical details of your result (exact bounds, technique names, prior work citations, tightness factors). Please replace these with your actual findings—could you share the specific numbers/methods so I can tighten this into a fully concrete abstract?",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate a short academic abstract summarizing findings that disprove the existence of a trade-off between observable and ancillary qubits in one-way quantum computing.",
+      "output": "# Abstract\n\nIn the framework of measurement-based quantum computation (MBQC), it has been widely assumed that a fundamental trade-off exists between the number of observable (output) qubits and ancillary (resource) qubits required to implement a given quantum computation—that is, reducing ancilla overhead necessarily comes at the cost of reduced measurement flexibility or output accessibility, and vice versa. This work presents theoretical and numerical evidence that disproves the existence of such a trade-off in one-way quantum computing architectures.\n\nBy analyzing the structure of cluster states and their associated entanglement graphs, we demonstrate that the resource requirements for ancillary qubits and the accessibility of observable qubits are governed by largely independent parameters: graph connectivity and stabilizer structure on one hand, and measurement pattern flow (gflow) on the other. We construct explicit families of cluster-state graphs in which ancilla count can be minimized without any corresponding restriction on the set of qubits available for direct observation, and conversely, show that expanding observable qubit sets does not necessitate additional ancillary resources beyond those dictated by the underlying computational graph's treewidth.\n\nUsing both analytical graph-state constructions and simulation of representative quantum circuits compiled into one-way computation patterns, we show that optimized entanglement structures can simultaneously achieve near-minimal ancilla overhead and full flexibility in output qubit selection. These results indicate that the previously assumed trade-off arises from suboptimal graph constructions rather than a fundamental physical constraint, and they suggest that resource-efficient one-way quantum computing architectures can be designed without sacrificing measurement outcome accessibility. This finding has significant implications for the scalable design of measurement-based quantum computers, as it decouples two previously conflated resource costs and opens new avenues for optimizing hardware layouts in photonic and solid-state MBQC platforms.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.3623853211009174,
+      "excess_ratio": 0.27642675500851993,
+      "baseline_mean": 0.08595856609239748,
+      "baseline_n_valid": 5,
+      "output_chars": 1061,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.352165725047081,
+          "baseline_mean": 0.06020513250161812,
+          "excess_ratio": 0.29196059254546286
+        },
+        "bz2": {
+          "actual_ratio": 0.30522765598650925,
+          "baseline_mean": 0.08595917564735353,
+          "excess_ratio": 0.21926848033915572
+        },
+        "lzma": {
+          "actual_ratio": 0.4258064516129032,
+          "baseline_mean": 0.10979845352591074,
+          "excess_ratio": 0.3160079980869925
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3713235294117647,
+      "excess_ratio": 0.2853649633193672,
+      "baseline_mean": 0.08595856609239748,
+      "baseline_n_valid": 5,
+      "output_chars": 592,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3119266055045872,
+          "baseline_mean": 0.06020513250161812,
+          "excess_ratio": 0.25172147300296904
+        },
+        "bz2": {
+          "actual_ratio": 0.3641456582633053,
+          "baseline_mean": 0.08595917564735353,
+          "excess_ratio": 0.2781864826159518
+        },
+        "lzma": {
+          "actual_ratio": 0.42574257425742573,
+          "baseline_mean": 0.10979845352591074,
+          "excess_ratio": 0.315944120731515
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.21931115690314978,
+      "excess_ratio": 0.1333525908107523,
+      "baseline_mean": 0.08595856609239748,
+      "baseline_n_valid": 5,
+      "output_chars": 2500,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1981651376146789,
+          "baseline_mean": 0.06020513250161812,
+          "excess_ratio": 0.13796000511306078
+        },
+        "bz2": {
+          "actual_ratio": 0.1960958296362023,
+          "baseline_mean": 0.08595917564735353,
+          "excess_ratio": 0.11013665398884878
+        },
+        "lzma": {
+          "actual_ratio": 0.26101694915254237,
+          "baseline_mean": 0.10979845352591074,
+          "excess_ratio": 0.15121849562663164
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.08360463602031515,
+      "excess_ratio": -0.0023539300720823303,
+      "baseline_mean": 0.08595856609239748,
+      "baseline_n_valid": 5,
+      "output_chars": 7094,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.06733358984224702,
+          "baseline_mean": 0.06020513250161812,
+          "excess_ratio": 0.007128457340628905
+        },
+        "bz2": {
+          "actual_ratio": 0.08089430894308942,
+          "baseline_mean": 0.08595917564735353,
+          "excess_ratio": -0.005064866704264107
+        },
+        "lzma": {
+          "actual_ratio": 0.10229007633587786,
+          "baseline_mean": 0.10979845352591074,
+          "excess_ratio": -0.007508377190032875
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.0426615727475326,
+      "excess_ratio": -0.04329699334486488,
+      "baseline_mean": 0.08595856609239748,
+      "baseline_n_valid": 5,
+      "output_chars": 2021,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.02848722986247544,
+          "baseline_mean": 0.06020513250161812,
+          "excess_ratio": -0.031717902639142675
+        },
+        "bz2": {
+          "actual_ratio": 0.036597428288822946,
+          "baseline_mean": 0.08595917564735353,
+          "excess_ratio": -0.049361747358530585
+        },
+        "lzma": {
+          "actual_ratio": 0.06115107913669065,
+          "baseline_mean": 0.10979845352591074,
+          "excess_ratio": -0.04864737438922009
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T05:13:11.545691+00:00"
+    }
+  ]
+}

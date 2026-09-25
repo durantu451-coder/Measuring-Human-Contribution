@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15895421",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA device and method process graphics to be overlayed over video for three-dimensional display. The video includes a series of video frames updated at a video rate, including main video frames and additional video frames. A first buffer buffers a first part of the overlay information to be overlayed over the main video frames. A second buffer buffers a second part of the overlay information to be overlayed over the additional video frames. For each video frame, the first part of the overlay information or the second part of the overlay information is copied to a frame-accurate area copier. The first part of the overlay information or the second part of the overlay information is output according to whether a current video frame is a main video frame or an additional video frame. The first part of the overlay information and the second part of the overlay information are updated at an overlay rate. The overlay rate is different than the video rate.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA device and method process graphics to be overlayed over video for three-dimensional display. The video includes a series of video frames updated at a video rate, including main video frames and additional video frames. A first buffer buffers a first part of the overlay information to be overlayed over the main video frames. A second buffer buffers a second part of the overlay information to be overlayed over the additional video frames. For each video frame, the first part of the overlay information or the second part of the overlay information is copied to a frame-accurate area copier. The first part of the overlay information or the second part of the overlay information is output according to whether a current video frame is a main video frame or an additional video frame. The first part of the overlay information and the second part of the overlay information are updated at an overlay rate. The overlay rate is different than the video rate.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The device and method process graphics overlays for three-dimensional video displays.\n- The video stream contains main and additional video frames that are updated at a video rate.\n- A first buffer stores overlay information for main video frames, while a second buffer stores overlay information for additional video frames.\n- For each frame, the appropriate overlay information is copied to a frame-accurate area copier and output based on the frame type.\n- The overlay information is updated at an overlay rate that differs from the video rate.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA graphics-processing device and method use separate buffers and a frame-accurate copier to overlay distinct information on main and additional frames in a 3D video sequence. The system selects the appropriate overlay for each frame while allowing overlays to update at a rate different from the video rate, enabling accurate synchronization and flexible graphics updates.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, For"
+  },
+  "outputs": {
+    "L1": "A device and method process graphics for overlay on video in a three-dimensional display. The video comprises a series of video frames updated at a video rate, including main video frames and additional video frames. A first buffer stores a first portion of the overlay information for overlay on the main video frames, while a second buffer stores a second portion of the overlay information for overlay on the additional video frames. For each video frame, either the first or second portion of the overlay information is copied to a frame-accurate area copier and output depending on whether the current video frame is a main video frame or an additional video frame. The first and second portions of the overlay information are updated at an overlay rate that differs from the video rate.",
+    "L2": "A system and technique handle graphics that are superimposed on video for three-dimensional presentation. The video consists of a sequence of frames refreshed at a video frequency, with the sequence containing both primary and supplementary frames. One buffer stores a first portion of the overlay data intended for the primary frames, while another buffer holds a second portion designated for the supplementary frames. For every frame, the appropriate overlay portion is transferred to a frame-precise region copier. Depending on whether the current frame is primary or supplementary, the corresponding first or second overlay portion is produced. Both overlay portions are refreshed at an overlay frequency that differs from the video frequency.",
+    "L3": "The device and method process graphics overlays for use with three-dimensional video displays. The video stream includes both main video frames and additional video frames, which are updated at a defined video rate. Overlay information associated with the main video frames is stored in a first buffer, while overlay information associated with the additional video frames is stored in a second buffer.\n\nFor each video frame, the system determines the frame type and copies the corresponding overlay information from the appropriate buffer to a frame-accurate area copier. The selected overlay is then output in synchronization with that frame. Although the video frames are updated at the video rate, the overlay information is updated independently at an overlay rate that differs from the video rate. This arrangement enables accurate synchronization of graphics overlays with the respective frame types in a three-dimensional video sequence.",
+    "L4": "A graphics-processing device is configured to superimpose different graphical information on the main frames and additional frames of a three-dimensional video sequence. The video sequence may contain, for example, a main image intended for one eye and an additional image intended for the other eye, with the frames arranged alternately or according to another stereoscopic transmission format. Because the information to be displayed over the respective images may differ, the device maintains the corresponding overlay data in separate buffers.\n\nA first buffer stores graphical information associated with the main frames, while a second buffer stores graphical information associated with the additional frames. The stored information may include subtitles, menus, icons, status indicators, pointers, or other on-screen graphics. Keeping the overlays separate allows each graphic to be positioned, rendered, or otherwise adapted independently for the frame on which it is to appear. This is particularly useful in a stereoscopic presentation, where an overlay may need different horizontal positions or other characteristics in the two eye views to produce the desired apparent depth.\n\nA frame-accurate copying unit transfers the appropriate overlay information from the buffers to an output or display buffer in synchronization with the video sequence. For each incoming or generated frame, the device determines whether the frame is a main frame or an additional frame. It then selects the corresponding overlay buffer and copies, blends, or otherwise applies that buffer’s contents to the frame. The selection may be controlled by a frame identifier, timing signal, synchronization marker, frame counter, or metadata associated with the video stream.\n\nThe copier operates at frame-level accuracy so that information intended for a main frame is not inadvertently applied to an additional frame, and vice versa. The resulting composite frames can therefore preserve the intended relationship between the left-eye and right-eye images and their associated graphics. If identical information is to be displayed in both views, corresponding overlay versions may still be stored separately so that their positions or rendering parameters can be adjusted to maintain comfortable stereoscopic depth.\n\nThe overlay information does not need to be regenerated at the same rate as the video. Instead, each buffer can retain its current contents until new graphical information becomes available. For example, a video sequence may be presented at a relatively high frame rate while a subtitle, menu, or status display changes only occasionally. The copying unit can continue to apply the retained overlay to each appropriate frame, even though the overlay data itself is updated at a lower or otherwise independent rate.\n\nWhen an overlay update is received, the system writes the new information to the relevant buffer. Buffer switching, locking, or another update-control mechanism may be used to prevent partially written graphics from being displayed. Updates to the main-frame and additional-frame overlays may occur together or independently, depending on the application. The device may also use multiple buffer sets so that one set can be displayed while another is being prepared.\n\nIn operation, the device receives or generates a sequence of main and additional video frames, identifies the type of each frame, retrieves the associated graphical information, and combines that information with the selected frame. The composite frame is then supplied to a display, encoder, transmitter, or subsequent processing stage. This process is repeated for the video sequence, with the proper overlay selected for every frame.\n\nBy separating the overlay data for the different frame types and applying it through a frame-synchronized copier, the system provides accurate alignment between graphics and stereoscopic images. At the same time, decoupling the overlay-update rate from the video-frame rate reduces unnecessary graphics processing and permits menus, subtitles, and other visual elements to be changed whenever required without disrupting video playback.",
+    "L5": "**The Power of Simple Words**\n\nThe words “the” and “for” may seem ordinary, but they are essential to English. “The” identifies something specific, while “for” often expresses purpose, benefit, or duration. Together, these small words bring clarity and structure to countless sentences. They remind us that even the simplest parts of language can play an important role in communication."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize a patent describing how graphics overlays are synchronized with main and additional video frames in a 3D display system.",
+      "output": "The patent describes a 3D video-display system that keeps graphics—such as menus, captions, or other on-screen information—properly aligned with stereoscopic video.\n\nThe system receives a main video frame and one or more additional frames representing different views, typically for the viewer’s left and right eyes. A graphics overlay is generated for the main frame, then corresponding overlay information is produced or adjusted for each additional frame. Timing, position, and horizontal disparity are coordinated so the graphics appear at the intended depth and do not cause visual mismatch between views.\n\nThe synchronized video and graphics layers are then combined and displayed in the appropriate frame sequence. This allows overlays to remain stable, readable, and correctly positioned in 3D while reducing artifacts such as double images, incorrect depth, or overlays appearing in only one eye.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Explain a device and method for buffering separate overlay information for different frame types when the overlay update rate differs from the video frame rate.",
+      "output": "A device can handle mismatched video and overlay update rates by maintaining a separate overlay buffer for each video frame type, such as left/right stereoscopic frames, odd/even fields, or other alternating frame classes.\n\n### Device\n\nThe device includes:\n\n- **Video-frame detector** that identifies the type of each video frame.\n- **Overlay input processor** that receives overlay data together with a frame-type identifier or timing information.\n- **Multiple overlay buffers**, each assigned to a different frame type.\n- **Buffer controller** that writes new overlay information only into the buffer associated with its intended frame type.\n- **Overlay selector/compositor** that, for each displayed video frame, reads the corresponding overlay buffer and combines that overlay with the video.\n\nThe buffers may be double-buffered so that one overlay image can be displayed while the next is being written.\n\n### Method\n\n1. Determine the type of an incoming or output video frame.\n2. Receive an overlay update and determine the frame type to which it applies.\n3. Store the update in the overlay buffer assigned to that frame type.\n4. When a video frame is displayed, select the buffer associated with that frame’s type.\n5. Composite the selected overlay with the video frame.\n6. If no new overlay update is available, continue reusing the previously stored overlay for that frame type.\n\nFor example, if video alternates between frame types A and B at 60 frames per second while overlays update at 30 updates per second, buffer A retains the latest A overlay and buffer B retains the latest B overlay. Each video frame therefore receives the correct overlay even though overlays are not refreshed for every frame.\n\nThis arrangement prevents an overlay intended for one frame type from appearing on another and decouples overlay generation timing from the video display rate.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a patent-style abstract for a graphics processing system that overlays different graphics on main and supplemental frames of stereoscopic video.",
+      "output": "A graphics processing system overlays different graphical content on main and supplemental frames of stereoscopic video. The system receives a stereoscopic video stream comprising temporally associated main and supplemental frames representing respective viewing perspectives. A graphics processor identifies each frame type and selects corresponding graphical content based on frame metadata, presentation state, viewer perspective, or display configuration. The selected graphical content is independently transformed and composited with the associated frame so that a first graphic is rendered in the main frame and a different second graphic is rendered in the supplemental frame. Position, scale, disparity, opacity, and depth of each graphic may be controlled to provide a desired stereoscopic appearance or perspective-dependent information. The composited frames are synchronized and output for stereoscopic display. The system thereby supports presentation of distinct graphics, user-interface elements, annotations, advertisements, or visual effects to respective eyes or viewing perspectives while maintaining temporal alignment of the stereoscopic video.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Describe an invention that uses two buffers and a frame-accurate area copier to select overlay data based on whether the current 3D video frame is a main frame or an additional frame.",
+      "output": "The invention is a 3D-video overlay system that keeps two versions of overlay graphics in separate buffers:\n\n- A **main-frame buffer** stores overlay data positioned or formatted for the main 3D image, such as the left-eye frame.\n- An **additional-frame buffer** stores corresponding overlay data for the additional image, such as the right-eye frame.\n\nA frame-synchronized, area-based copier determines whether the video frame currently being displayed is a main frame or an additional frame. For each frame, it copies the required overlay region from the corresponding buffer into the active display or composition area. Because copying is synchronized at frame accuracy, the correct overlay version is composited with every left- or right-eye frame, preserving overlay position, depth, and visual stability during 3D playback.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Write a concise technical summary of a system for applying frame-specific overlays to three-dimensional video when video and overlay content update at different rates.",
+      "output": "The system synchronizes independently updated 3D video and overlay streams using a shared presentation timeline. Each video frame carries timing, camera pose, and projection metadata, while overlay updates include timestamps, spatial coordinates, and validity intervals. At render time, the system selects or interpolates the overlay state appropriate to the current video frame, transforms overlay geometry into the frame’s coordinate system, and composites it with correct depth, occlusion, and stereo-view alignment. Buffered updates, clock-drift correction, and fallback policies—such as retaining the last valid overlay or suppressing stale content—maintain stable output despite differing frame rates, latency, or missing data.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6597428288822947,
+      "excess_ratio": 0.5007768464600915,
+      "baseline_mean": 0.15896598242220328,
+      "baseline_n_valid": 5,
+      "output_chars": 792,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6567656765676567,
+          "baseline_mean": 0.11658489675817049,
+          "excess_ratio": 0.5401807798094862
+        },
+        "bz2": {
+          "actual_ratio": 0.5952380952380952,
+          "baseline_mean": 0.15434482490357365,
+          "excess_ratio": 0.4408932703345216
+        },
+        "lzma": {
+          "actual_ratio": 0.7204301075268817,
+          "baseline_mean": 0.1990319188140237,
+          "excess_ratio": 0.521398188712858
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3188034188034188,
+      "excess_ratio": 0.1598374363812155,
+      "baseline_mean": 0.15896598242220328,
+      "baseline_n_valid": 5,
+      "output_chars": 748,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.23098591549295774,
+          "baseline_mean": 0.11658489675817049,
+          "excess_ratio": 0.11440101873478725
+        },
+        "bz2": {
+          "actual_ratio": 0.34564643799472294,
+          "baseline_mean": 0.15434482490357365,
+          "excess_ratio": 0.1913016130911493
+        },
+        "lzma": {
+          "actual_ratio": 0.3669724770642202,
+          "baseline_mean": 0.1990319188140237,
+          "excess_ratio": 0.1679405582501965
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.43131235610130464,
+      "excess_ratio": 0.27234637367910136,
+      "baseline_mean": 0.15896598242220328,
+      "baseline_n_valid": 5,
+      "output_chars": 945,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4025,
+          "baseline_mean": 0.11658489675817049,
+          "excess_ratio": 0.28591510324182956
+        },
+        "bz2": {
+          "actual_ratio": 0.4013921113689095,
+          "baseline_mean": 0.15434482490357365,
+          "excess_ratio": 0.24704728646533586
+        },
+        "lzma": {
+          "actual_ratio": 0.4830508474576271,
+          "baseline_mean": 0.1990319188140237,
+          "excess_ratio": 0.2840189286436034
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.09375,
+      "excess_ratio": -0.06521598242220328,
+      "baseline_mean": 0.15896598242220328,
+      "baseline_n_valid": 5,
+      "output_chars": 4159,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.06525679758308157,
+          "baseline_mean": 0.11658489675817049,
+          "excess_ratio": -0.05132809917508892
+        },
+        "bz2": {
+          "actual_ratio": 0.0988042794210195,
+          "baseline_mean": 0.15434482490357365,
+          "excess_ratio": -0.055540545482554146
+        },
+        "lzma": {
+          "actual_ratio": 0.11655011655011654,
+          "baseline_mean": 0.1990319188140237,
+          "excess_ratio": -0.08248180226390717
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.11098398169336379,
+      "excess_ratio": -0.047982000728839486,
+      "baseline_mean": 0.15896598242220328,
+      "baseline_n_valid": 5,
+      "output_chars": 387,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.054474708171206226,
+          "baseline_mean": 0.11658489675817049,
+          "excess_ratio": -0.062110188586964266
+        },
+        "bz2": {
+          "actual_ratio": 0.10726643598615918,
+          "baseline_mean": 0.15434482490357365,
+          "excess_ratio": -0.047078388917414477
+        },
+        "lzma": {
+          "actual_ratio": 0.15853658536585366,
+          "baseline_mean": 0.1990319188140237,
+          "excess_ratio": -0.04049533344817005
+        }
+      }
+    }
+  }
+}

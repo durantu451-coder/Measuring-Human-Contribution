@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15757362",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA method for cellular network operation includes establishing communications in a cellular network between a given user equipment (UE) and a base station via a radio transceiver point (R-TP) that is associated with the base station. A virtual machine (VM), running on a virtualization platform (V-TP) that is associated with the cellular network, is assigned to perform at least a part of the Layer 2 processing functions in the communications between the given UE and the base station. A central coordinator makes a decision with regard to a division of the Layer 2 processing functions between the R-TP and the VM that is to be applied to the communications between the given UE and the base station, and conveying the decision to the R-TP and the VM, and the Layer 2 processing functions are performed in one or both of the R-TP and the VM in accordance with the decision.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA method for cellular network operation includes establishing communications in a cellular network between a given user equipment (UE) and a base station via a radio transceiver point (R-TP) that is associated with the base station. A virtual machine (VM), running on a virtualization platform (V-TP) that is associated with the cellular network, is assigned to perform at least a part of the Layer 2 processing functions in the communications between the given UE and the base station. A central coordinator makes a decision with regard to a division of the Layer 2 processing functions between the R-TP and the VM that is to be applied to the communications between the given UE and the base station, and conveying the decision to the R-TP and the VM, and the Layer 2 processing functions are performed in one or both of the R-TP and the VM in accordance with the decision.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- Communications are established in a cellular network between a user equipment and a base station through an associated radio transceiver point.\n- A virtual machine on a virtualization platform is assigned to perform at least part of the Layer 2 processing for the communications.\n- A central coordinator decides how to divide the Layer 2 processing functions between the radio transceiver point and the virtual machine.\n- The coordinator conveys the Layer 2 processing division decision to both the radio transceiver point and the virtual machine.\n- The Layer 2 processing functions are performed by the radio transceiver point, the virtual machine, or both according to the coordinator’s decision.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA cellular network method assigns a virtual machine on an associated virtualization platform to perform at least part of the Layer 2 processing for communications between a user equipment and a base station via a radio transceiver point. A central coordinator determines and communicates how Layer 2 functions are divided between the radio transceiver point and the virtual machine, enabling flexible distributed processing in the network.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Layer"
+  },
+  "outputs": {
+    "L1": "A method for cellular network operation includes establishing communications in a cellular network between a given user equipment (UE) and a base station via a radio transceiver point (R-TP) associated with the base station. A virtual machine (VM), running on a virtualization platform (V-TP) associated with the cellular network, is assigned to perform at least a portion of the Layer 2 processing functions in the communications between the given UE and the base station. A central coordinator determines a division of the Layer 2 processing functions between the R-TP and the VM to be applied to the communications between the given UE and the base station, conveys the decision to the R-TP and the VM, and the Layer 2 processing functions are performed in one or both of the R-TP and the VM in accordance with the decision.",
+    "L2": "A cellular network operating technique involves setting up communication between a particular user equipment (UE) and a base station in the cellular network through a radio transceiver point (R-TP) linked to that base station. A virtual machine (VM), which runs on a virtualization platform (V-TP) associated with the cellular network, is allocated to carry out at least some of the Layer 2 processing for the communication between the particular UE and the base station. A central coordinator determines how the Layer 2 processing tasks should be split between the R-TP and the VM for that UE-to-base-station communication, sends this determination to both the R-TP and the VM, and the Layer 2 processing is then executed by the R-TP, the VM, or both, according to the coordinator’s decision.",
+    "L3": "Communications in a cellular network are established between a user equipment and a base station through an associated radio transceiver point. The radio transceiver point provides the radio interface used to support the connection between the user equipment and the network.\n\nA virtual machine operating on a virtualization platform is assigned to perform at least a portion of the Layer 2 processing associated with these communications. Layer 2 processing may include functions related to data link control, scheduling support, retransmission handling, packet segmentation or reassembly, and other processing functions used to manage the transfer of data over the radio interface.\n\nA central coordinator determines how the Layer 2 processing functions are to be divided between the radio transceiver point and the virtual machine. This decision may be based on factors such as network load, available processing capacity, latency requirements, radio conditions, service requirements, or the current configuration of the cellular network.\n\nAfter making the decision, the coordinator communicates the Layer 2 processing division to both the radio transceiver point and the virtual machine. This enables each entity to understand which Layer 2 functions it is responsible for performing and how those functions should interact with the corresponding functions performed by the other entity.\n\nThe Layer 2 processing functions are then carried out in accordance with the coordinator’s decision. Depending on the selected division, the radio transceiver point may perform all, part, or none of the relevant Layer 2 processing, while the virtual machine may perform the remaining functions or share certain functions with the radio transceiver point. In this way, Layer 2 processing for the communication between the user equipment and the base station can be flexibly distributed between physical radio infrastructure and virtualized network resources.",
+    "L4": "A method is provided for operating a cellular communications network in which radio access processing is distributed between network entities. In the network, a user equipment communicates with a base station through a radio transceiver point, such as a remote radio unit, remote radio head, or other access point that provides radio transmission and reception. At least a portion of the Layer 2 processing associated with the communication between the user equipment and the base station is not performed entirely at the radio transceiver point or entirely at the base station. Instead, a virtual machine running on an associated virtualization platform is assigned to perform one or more Layer 2 functions for the communication.\n\nThe virtualization platform may be located at a centralized processing site, an edge cloud, a data center, or another computing environment connected to the cellular network. The virtual machine may execute software configured to implement selected Layer 2 protocol functions, including, for example, medium access control processing, radio link control processing, packet data convergence processing, scheduling-related functions, buffering, retransmission handling, or other protocol operations used in the radio access network. By assigning such functions to a virtual machine, the network can dynamically allocate processing resources according to traffic demand, service requirements, latency constraints, or available computational capacity.\n\nA central coordinator is used to control the distribution of Layer 2 processing. The central coordinator determines which Layer 2 functions are to be performed at the radio transceiver point and which Layer 2 functions are to be performed by the assigned virtual machine. This determination may be based on one or more factors, such as the capabilities of the radio transceiver point, the processing load of the virtualization platform, radio conditions, the number of connected user equipments, quality-of-service requirements, fronthaul or backhaul capacity, latency requirements, or operator policy.\n\nAfter determining the division of processing responsibilities, the central coordinator communicates configuration information to the radio transceiver point and to the virtual machine. The configuration information identifies the Layer 2 functions to be performed by each entity and may also define interfaces, timing requirements, data formats, control signaling, and forwarding rules for transferring user-plane and control-plane information between the radio transceiver point and the virtual machine. In response, the radio transceiver point and the virtual machine process the communication in accordance with the assigned division of functions.\n\nThis arrangement enables flexible and scalable Layer 2 processing in a cellular network. Processing can be shifted between the radio transceiver point and the virtualized computing environment as network conditions change. For example, more processing may be performed locally at the radio transceiver point when low latency is required or when transport resources are limited, while more processing may be centralized in the virtual machine when coordination, resource pooling, or computational efficiency is desired. As a result, the cellular network can support distributed radio access functionality while making efficient use of both physical radio equipment and virtualized processing resources.",
+    "L5": "## Layer\n\nA layer is a level, surface, or part of something that lies above or below another part. Layers can be found everywhere in nature, technology, art, and everyday life. They help create structure, protection, depth, and organization.\n\nIn nature, the Earth is made of several layers, including the crust, mantle, outer core, and inner core. Each layer has a different composition and function. The atmosphere also has layers, such as the troposphere and stratosphere, which protect life and influence weather and climate.\n\nLayers are also important in clothing. People wear layers to stay warm, especially in cold weather. A base layer keeps the body dry, a middle layer provides insulation, and an outer layer protects against wind and rain.\n\nIn technology, layers are used to organize complex systems. For example, computer networks are often described in layers, where each layer has a specific role in sending and receiving data. In graphic design and photo editing, layers allow artists to edit images without changing the entire picture. This makes it easier to add effects, move objects, and create detailed designs.\n\nLayers can also have a symbolic meaning. A person’s personality may have many layers, with thoughts, feelings, and experiences hidden beneath the surface. Stories and films often contain layers of meaning, allowing audiences to discover deeper messages over time.\n\nOverall, a layer is more than just a simple covering. It is a useful concept that helps explain how things are built, protected, organized, and understood. Whether in the natural world, digital tools, clothing, or human behavior, layers play an important role in shaping how we see and experience the world."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a patent-style abstract for a cellular network method where Layer 2 processing for a UE can be split between a radio transceiver point and a virtual machine on a virtualization platform, with a central coordinator deciding the split.",
+      "output": "A method for operating a cellular network is provided in which Layer 2 processing for a user equipment is selectively distributed between a radio transceiver point and a virtualized processing instance. A central coordinator obtains network, radio, transport, and compute resource information associated with the user equipment, the radio transceiver point, and a virtualization platform hosting one or more virtual machines. Based on the obtained information, the central coordinator determines a functional split for Layer 2 protocol processing, including allocation of one or more Layer 2 functions between the radio transceiver point and a virtual machine. The radio transceiver point performs a first portion of the Layer 2 processing for the user equipment, and the virtual machine performs a second portion of the Layer 2 processing according to the determined split. The central coordinator may dynamically modify the split in response to changes in radio conditions, latency, load, mobility, or computing resources. The method enables flexible placement of cellular protocol functions to improve resource utilization, service continuity, and network performance.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Draft a concise patent claim describing operation of a virtualized RAN in which communications between user equipment and a base station use an R-TP, and a VM performs some Layer 2 functions based on coordinator instructions.",
+      "output": "1. A method of operating a virtualized radio access network (vRAN), the method comprising: establishing communications between user equipment and a base station using a radio transport protocol (R-TP); receiving, by a virtual machine executing in the vRAN, instructions from a coordinator; and performing, by the virtual machine in response to the instructions, one or more Layer 2 processing functions for the communications between the user equipment and the base station.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate a formal technical description of a method for assigning Layer 2 cellular processing tasks between a radio transceiver point and a virtual machine in a cloud/virtualized telecom network.",
+      "output": "A method is provided for assigning Layer 2 cellular processing tasks between a radio transceiver point and a virtual machine in a cloud or virtualized telecommunications network. The method supports dynamic functional placement of protocol processing in a radio access network in which at least a portion of baseband processing is executed by virtualized compute resources.\n\nThe method comprises receiving, at a control entity, configuration and operating information associated with a radio transceiver point and one or more virtual machines. The radio transceiver point may include radio frequency circuitry, antenna interfaces, and local processing resources configured to perform one or more cellular protocol functions. The virtual machine may be hosted on a cloud computing platform, an edge computing platform, or a centralized radio access network processing platform.\n\nThe configuration and operating information may include one or more of:\n\n- available compute capacity at the radio transceiver point;\n- available compute capacity at the virtual machine;\n- fronthaul or midhaul transport latency;\n- fronthaul or midhaul bandwidth;\n- jitter and packet loss conditions;\n- radio cell bandwidth;\n- number of active user equipments;\n- scheduling load;\n- hybrid automatic repeat request timing constraints;\n- modulation and coding requirements;\n- quality-of-service requirements;\n- power consumption constraints;\n- fault status of processing elements;\n- virtualization resource availability; and\n- operator-defined placement policies.\n\nBased on the received information, the control entity determines an assignment of Layer 2 cellular processing tasks between the radio transceiver point and the virtual machine. The Layer 2 cellular processing tasks may include one or more of medium access control processing, radio link control processing, packet data convergence protocol processing, segmentation and reassembly, scheduling assistance, buffer management, ciphering or integrity-related packet handling, header compression, retransmission control, logical channel prioritization, and control-channel related processing.\n\nThe determination may include evaluating a set of placement criteria. For example, time-critical Layer 2 functions may be assigned to the radio transceiver point when the transport latency between the radio transceiver point and the virtual machine exceeds a threshold. Conversely, computationally intensive or less latency-sensitive Layer 2 functions may be assigned to the virtual machine when adequate transport bandwidth and latency are available. The control entity may further consider whether the radio transceiver point has sufficient local processing capacity to meet radio scheduling deadlines and whether the virtual machine has sufficient compute resources to process Layer 2 traffic for one or more cells.\n\nIn one implementation, the method includes classifying each Layer 2 processing task according to at least one execution constraint. The execution constraint may include a maximum processing delay, a required processing throughput, a required memory capacity, an affinity to another processing function, or a dependency on radio timing information. The method then compares the execution constraint with current resource and transport conditions and selects an execution location for the task.\n\nThe method may further comprise generating an assignment instruction identifying, for each Layer 2 processing task or group of tasks, whether the task is to be executed at the radio transceiver point or at the virtual machine. The assignment instruction may include task identifiers, cell identifiers, bearer identifiers, user equipment identifiers, processing priority, timing parameters, and data forwarding rules. The assignment instruction may be transmitted to the radio transceiver point, the virtual machine, or both.\n\nAfter assignment, user-plane and/or control-plane data associated with the assigned Layer 2 tasks is routed according to the selected functional split. Where a task is assigned to the radio transceiver point, corresponding protocol data units may be processed locally at the radio transceiver point. Where a task is assigned to the virtual machine, corresponding data may be transported over a fronthaul or midhaul interface to the virtual machine for processing, and processed data may be returned or forwarded according to the applicable radio access network architecture.\n\nThe method may also include monitoring performance after the assignment has been applied. The monitoring may include measuring processing latency, queue occupancy, packet delay variation, retransmission rate, throughput, processor utilization, and radio link performance. If a monitored parameter crosses a predetermined threshold, the control entity may modify the assignment of one or more Layer 2 tasks. Such modification may include migrating a task from the virtual machine to the radio transceiver point, migrating a task from the radio transceiver point to the virtual machine, duplicating processing for redundancy, or splitting processing among multiple virtual machines.\n\nIn some embodiments, reassignment is performed without interrupting an active radio connection. The method may include synchronizing protocol state between the current execution location and a target execution location prior to migration. The protocol state may include sequence numbers, retransmission buffers, scheduling context, bearer configuration, ciphering state, radio link control state, packet data convergence protocol state, and quality-of-service flow mapping. Upon completion of state synchronization, processing of selected Layer 2 tasks is switched to the target execution location.\n\nThe method may be implemented by a network controller, radio access network intelligent controller, orchestration system, baseband control function, or other management entity. The method may operate in conjunction with virtual network function management, container orchestration, network slicing, and service-level policy enforcement. The virtual machine may execute a virtualized Layer 2 processing function, and the radio transceiver point may execute a local Layer 2 processing function or accelerator-assisted processing function.\n\nAccordingly, the method enables adaptive allocation of Layer 2 cellular processing between distributed radio equipment and virtualized cloud resources, thereby balancing latency, compute utilization, bandwidth consumption, reliability, and service quality in a virtualized radio access network.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "In patent language, describe how a central coordinator controls division of Layer 2 processing between an R-TP associated with a base station and a VM associated with a cellular network for a given UE connection.",
+      "output": "In one embodiment, a central coordinator is configured to control, on a per-user-equipment (UE) connection basis, a distribution of Layer 2 processing functions between a radio-side transport processor (R-TP) associated with a base station and a virtual machine (VM) instantiated in, or otherwise associated with, a cellular network.\n\nThe central coordinator may maintain state information for a UE connection, including one or more of radio conditions, traffic type, quality-of-service requirements, latency requirements, mobility state, base-station loading, R-TP processing capacity, VM processing capacity, fronthaul or backhaul transport conditions, and network policy information. Based at least in part on the state information, the central coordinator determines a Layer 2 processing split for the UE connection. The Layer 2 processing split identifies which Layer 2 protocol functions are to be performed by the R-TP and which Layer 2 protocol functions are to be performed by the VM.\n\nFor example, the central coordinator may assign time-critical or radio-proximate functions, such as selected MAC scheduling, HARQ-related processing, segmentation, reassembly, or buffering operations, to the R-TP, while assigning other Layer 2 functions, such as PDCP processing, ciphering, header compression, packet ordering, or higher-layer radio bearer management, to the VM. In another example, the central coordinator may cause substantially all Layer 2 processing for the UE connection to be performed by the R-TP when low latency or degraded transport conditions are detected. Conversely, the central coordinator may cause a greater portion of Layer 2 processing to be performed by the VM when centralized coordination, processing efficiency, or load balancing is preferred.\n\nThe central coordinator transmits control information to the R-TP and to the VM indicating the determined Layer 2 processing split. The control information may include bearer identifiers, UE connection identifiers, protocol-layer assignments, buffer ownership information, sequence-number state, security context information, scheduling constraints, quality-of-service parameters, and routing or forwarding instructions for packets associated with the UE connection. In response to the control information, the R-TP and the VM process uplink and downlink packets for the UE connection according to the assigned Layer 2 functions.\n\nThe central coordinator may further monitor operating conditions after establishment of the UE connection and dynamically modify the Layer 2 processing split. Upon determining that a change in processing distribution is desirable, the central coordinator may issue updated configuration commands to the R-TP and the VM. The updated configuration commands may transfer one or more Layer 2 functions from the R-TP to the VM, or from the VM to the R-TP, while preserving continuity of the UE connection by coordinating transfer of protocol state, packet buffers, sequence numbers, timers, and security parameters.\n\nIn this manner, the central coordinator provides centralized control over the division of Layer 2 processing for a particular UE connection, enabling processing responsibility to be selectively and dynamically allocated between base-station-associated resources and cellular-network-associated virtualized resources.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Create a single-paragraph invention summary for dynamic Layer 2 function allocation in a cellular network using user equipment, a base station, a radio transceiver point, a virtualization platform, and a central coordinator.",
+      "output": "An invention is provided for dynamic Layer 2 function allocation in a cellular network comprising user equipment, a base station, a radio transceiver point, a virtualization platform, and a central coordinator. The central coordinator monitors radio conditions, traffic load, latency requirements, mobility state, compute availability, fronthaul/backhaul capacity, and service quality targets, and determines where Layer 2 protocol functions, including medium access control, radio link control, packet data convergence, scheduling, buffering, retransmission handling, segmentation, aggregation, ciphering support, and header processing, should be executed. Based on the determination, the coordinator dynamically assigns or migrates selected Layer 2 functions among the base station, the radio transceiver point, the virtualization platform, and, where supported, the user equipment, while maintaining session continuity and protocol state synchronization. The system may split or consolidate Layer 2 processing in real time to reduce latency, improve spectral efficiency, balance processing load, support edge computing, and adapt to changing radio or network conditions. The virtualization platform hosts software instances of Layer 2 functions that can be instantiated, scaled, relocated, or terminated under control of the central coordinator, and the radio transceiver point provides radio access execution close to the antenna when low-latency operation is required. The invention thereby enables flexible and adaptive deployment of Layer 2 processing across distributed and centralized network elements, improving resource utilization and service performance in cellular communication systems.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.8433530906011854,
+      "excess_ratio": 0.6645345975962262,
+      "baseline_mean": 0.17881849300495917,
+      "baseline_n_valid": 5,
+      "output_chars": 827,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.8942857142857142,
+          "baseline_mean": 0.15075596926543822,
+          "excess_ratio": 0.743529745020276
+        },
+        "bz2": {
+          "actual_ratio": 0.7274939172749392,
+          "baseline_mean": 0.16563170871620983,
+          "excess_ratio": 0.5618622085587294
+        },
+        "lzma": {
+          "actual_ratio": 0.9142857142857143,
+          "baseline_mean": 0.21544071202985932,
+          "excess_ratio": 0.698845002255855
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.5046511627906977,
+      "excess_ratio": 0.3258326697857385,
+      "baseline_mean": 0.17881849300495917,
+      "baseline_n_valid": 5,
+      "output_chars": 793,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4755784061696658,
+          "baseline_mean": 0.15075596926543822,
+          "excess_ratio": 0.3248224369042276
+        },
+        "bz2": {
+          "actual_ratio": 0.47619047619047616,
+          "baseline_mean": 0.16563170871620983,
+          "excess_ratio": 0.31055876747426636
+        },
+        "lzma": {
+          "actual_ratio": 0.5565217391304348,
+          "baseline_mean": 0.21544071202985932,
+          "excess_ratio": 0.3410810271005755
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3139250814332248,
+      "excess_ratio": 0.13510658842826562,
+      "baseline_mean": 0.17881849300495917,
+      "baseline_n_valid": 5,
+      "output_chars": 1949,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.28165374677002586,
+          "baseline_mean": 0.15075596926543822,
+          "excess_ratio": 0.13089777750458764
+        },
+        "bz2": {
+          "actual_ratio": 0.31907090464547677,
+          "baseline_mean": 0.16563170871620983,
+          "excess_ratio": 0.15343919592926694
+        },
+        "lzma": {
+          "actual_ratio": 0.33796296296296297,
+          "baseline_mean": 0.21544071202985932,
+          "excess_ratio": 0.12252225093310365
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.16098484848484843,
+      "excess_ratio": -0.017833644520110742,
+      "baseline_mean": 0.17881849300495917,
+      "baseline_n_valid": 5,
+      "output_chars": 3438,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.12769485903814262,
+          "baseline_mean": 0.15075596926543822,
+          "excess_ratio": -0.023061110227295595
+        },
+        "bz2": {
+          "actual_ratio": 0.17111853088480802,
+          "baseline_mean": 0.16563170871620983,
+          "excess_ratio": 0.005486822168598193
+        },
+        "lzma": {
+          "actual_ratio": 0.1826625386996904,
+          "baseline_mean": 0.21544071202985932,
+          "excess_ratio": -0.032778173330168914
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.035941594908274054,
+      "excess_ratio": -0.1428768980966851,
+      "baseline_mean": 0.17881849300495917,
+      "baseline_n_valid": 5,
+      "output_chars": 1704,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.017584994138335287,
+          "baseline_mean": 0.15075596926543822,
+          "excess_ratio": -0.13317097512710294
+        },
+        "bz2": {
+          "actual_ratio": 0.03333333333333333,
+          "baseline_mean": 0.16563170871620983,
+          "excess_ratio": -0.1322983753828765
+        },
+        "lzma": {
+          "actual_ratio": 0.05485232067510549,
+          "baseline_mean": 0.21544071202985932,
+          "excess_ratio": -0.16058839135475383
+        }
+      }
+    }
+  }
+}

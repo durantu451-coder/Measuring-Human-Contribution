@@ -1,0 +1,524 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0524",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIn this paper we investigate the optimal control problem for a class of stochastic Cauchy evolution problem with non standard boundary dynamic and control. The model is composed by an infinite dimensional dynamical system coupled with a finite dimensional dynamics, which describes the boundary conditions of the internal system. In other terms, we are concerned with non standard boundary conditions, as the value at the boundary is governed by a different stochastic differential equation.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIn this paper we investigate the optimal control problem for a class of stochastic Cauchy evolution problem with non standard boundary dynamic and control. The model is composed by an infinite dimensional dynamical system coupled with a finite dimensional dynamics, which describes the boundary conditions of the internal system. In other terms, we are concerned with non standard boundary conditions, as the value at the boundary is governed by a different stochastic differential equation.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper studies an optimal control problem for a class of stochastic Cauchy evolution problems.\n- The problems involve nonstandard boundary dynamics and control.\n- The model couples an infinite-dimensional dynamical system with a finite-dimensional boundary system.\n- The finite-dimensional dynamics describe the boundary conditions of the internal system.\n- Boundary values are governed by a separate stochastic differential equation.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe paper investigates optimal control for stochastic Cauchy evolution equations with nonstandard boundary dynamics by coupling an infinite-dimensional internal system to a finite-dimensional stochastic system governing the boundary values. This formulation captures boundary conditions driven by a separate stochastic differential equation, providing a framework for controlling systems with dynamically evolving boundaries.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Cauchy, The"
+  },
+  "outputs": {
+    "L1": "In this paper, we investigate the optimal control problem for a class of stochastic Cauchy evolution problems with nonstandard boundary dynamics and control. The model consists of an infinite-dimensional dynamical system coupled with finite-dimensional dynamics that describe the boundary conditions of the internal system. In other words, we consider nonstandard boundary conditions in which the boundary value is governed by a distinct stochastic differential equation.",
+    "L2": "This paper examines an optimal control problem for a class of stochastic Cauchy evolution equations featuring unconventional boundary dynamics and controls. The proposed model couples an infinite-dimensional dynamical system with a finite-dimensional process that determines the boundary behavior of the interior system. Thus, rather than imposing standard boundary conditions, the boundary values evolve according to a separate stochastic differential equation.",
+    "L3": "The paper investigates an optimal control problem for a class of stochastic Cauchy evolution equations characterized by nonstandard boundary dynamics and boundary control. The proposed model couples an infinite-dimensional dynamical system, representing the evolution of the internal state, with a finite-dimensional system associated with the boundary. In this framework, the finite-dimensional dynamics determine the boundary conditions imposed on the internal system. Unlike standard formulations, in which boundary values are prescribed directly, the boundary variables evolve dynamically and are governed by a separate stochastic differential equation. This coupled structure provides a unified framework for analyzing and controlling systems whose internal evolution and boundary behavior are both affected by randomness.",
+    "L4": "The paper studies an optimal control problem for stochastic Cauchy evolution equations subject to nonstandard, dynamically evolving boundary conditions. Unlike classical formulations, in which boundary values are prescribed directly or depend instantaneously on the state, the boundary behavior is represented by an independent finite-dimensional stochastic differential equation. This boundary system is coupled to an infinite-dimensional stochastic evolution equation describing the dynamics in the interior of the domain.\n\nBy incorporating the internal state and the boundary variables into a single augmented state space, the coupled model can be reformulated as an abstract stochastic evolution equation. The infinite-dimensional component accounts for the distributed dynamics, while the finite-dimensional component governs the stochastic evolution of the boundary values. The coupling between the two components ensures that changes in the boundary process affect the internal system and, where appropriate, that the internal dynamics also influence the boundary behavior.\n\nWithin this framework, admissible controls may act on the interior dynamics, the boundary system, or both. The objective is to select a control that minimizes a prescribed performance criterion, typically involving the evolution of the state, the behavior of the boundary variables, and the cost of applying the control. The augmented formulation makes it possible to use methods from stochastic control in Hilbert spaces to analyze the problem, including questions of well-posedness, state dependence, and the characterization of optimal control policies.\n\nThe approach is particularly relevant for systems in which boundary conditions cannot realistically be treated as fixed or externally prescribed. Examples include diffusion or transport processes coupled to stochastic actuators, environmental systems with randomly varying interfaces, and physical models whose boundary behavior has its own inertia, uncertainty, or feedback dynamics. By treating the boundary as a genuine dynamical subsystem rather than as a static constraint, the paper provides a flexible framework for modeling and controlling stochastic systems with evolving boundaries.",
+    "L5": "## Augustin-Louis Cauchy\n\nAugustin-Louis Cauchy was a French mathematician who played a central role in making calculus more rigorous. Born in Paris in 1789, he initially trained as an engineer but later devoted himself to mathematics. His research influenced many areas, including mathematical analysis, algebra, geometry, number theory, and mathematical physics.\n\nCauchy is especially known for clarifying fundamental ideas such as limits, continuity, derivatives, and infinite series. The **Cauchy sequence**, for example, describes a sequence whose terms become arbitrarily close to one another. This concept is essential to the modern understanding of complete mathematical spaces. Other important results bearing his name include the Cauchy integral theorem, the Cauchy–Schwarz inequality, and the Cauchy convergence criterion.\n\nA remarkably productive scholar, Cauchy published hundreds of papers and several influential textbooks. Although some of his definitions were later refined, his insistence on careful proofs helped transform calculus from an intuitive method into a systematic and rigorous discipline. He died in 1857, leaving a legacy that remains deeply embedded in modern mathematics."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a brief academic abstract about optimal control for stochastic Cauchy evolution equations with dynamic stochastic boundary conditions.",
+      "output": "This work investigates an optimal control problem for stochastic Cauchy evolution equations subject to dynamic stochastic boundary conditions. Using an abstract Hilbert-space formulation, the coupled interior–boundary dynamics are represented as a stochastic evolution equation generated by an appropriate operator matrix. Under standard assumptions on the coefficients and admissible controls, we establish well-posedness of the controlled system and existence of optimal controls for a class of quadratic cost functionals. First-order necessary optimality conditions are derived through an adjoint backward stochastic evolution equation, yielding a stochastic maximum principle and, in the linear–quadratic setting, a feedback characterization of the optimal control. The framework applies to parabolic stochastic partial differential equations whose boundary values evolve according to independent or correlated noise.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Describe the focus of a paper studying an infinite-dimensional stochastic dynamical system coupled to a finite-dimensional system governing its boundary behavior.",
+      "output": "The paper investigates stochastic partial differential equations with **dynamic boundary conditions**. The evolution in the spatial domain is an infinite-dimensional stochastic system, while the boundary values evolve according to a coupled finite-dimensional stochastic differential system. It develops a unified product-space formulation and studies issues such as well-posedness, stability, and the system’s long-term probabilistic behavior.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft an introductory paragraph for a mathematics paper on stochastic evolution problems with nonstandard boundary dynamics and boundary control.",
+      "output": "Stochastic evolution equations with dynamic boundary conditions arise in systems where the boundary not only constrains the interior state but also exhibits its own random, time-dependent behavior. Such models occur in diffusion processes across reactive interfaces, heat transfer with surface effects, and systems influenced by environmental noise or boundary actuation. Their analysis is complicated by the interaction between interior and boundary dynamics, the presence of stochastic forcing, and the potentially unbounded nature of boundary control operators. In this paper, we develop an abstract framework for stochastic evolution problems with nonstandard boundary dynamics and boundary control, reformulating the coupled system on a suitable product space. This formulation enables us to investigate well-posedness and regularity and to provide a foundation for studying controllability and optimal control.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Explain, in formal research language, a model where the interior system follows an infinite-dimensional stochastic equation while the boundary values are governed by a separate stochastic differential equation.",
+      "output": "A natural framework is a **stochastic evolution equation with dynamic boundary conditions**, in which the bulk state is infinite-dimensional while the boundary state has its own stochastic dynamics.\n\nLet \\(D\\subset\\mathbb{R}^{d}\\) be a bounded domain with boundary \\(\\Gamma=\\partial D\\). Denote by\n\\[\nu(t,\\xi),\\qquad \\xi\\in D,\n\\]\nthe interior field and by\n\\[\ny(t,\\zeta),\\qquad \\zeta\\in\\Gamma,\n\\]\nthe boundary state. A representative coupled model is\n\\[\n\\begin{aligned}\ndu(t)\n   &=\\bigl[\\mathcal A u(t)+F(u(t),y(t))\\bigr]\\,dt\n     +G(u(t),y(t))\\,dW_t,\n     &&\\text{in }D,\\\\\ndy(t)\n   &=\\bigl[\\mathcal B y(t)+H(\\gamma u(t),y(t))\n      +\\mathcal C u(t)\\bigr]\\,dt\n     +K(\\gamma u(t),y(t))\\,dB_t,\n     &&\\text{on }\\Gamma,\\\\\n\\gamma u(t)&=y(t).\n\\end{aligned}\n\\]\nHere:\n\n- \\(\\mathcal A\\) is a differential operator in the interior, such as an elliptic operator \\(\\Delta\\);\n- \\(\\gamma u\\) is the trace of \\(u\\) on \\(\\Gamma\\);\n- \\(\\mathcal B\\) is a boundary operator, for example the Laplace–Beltrami operator \\(\\Delta_\\Gamma\\);\n- \\(\\mathcal C u\\) represents bulk-to-boundary flux, often \\(-\\partial_\\nu u\\), where \\(\\partial_\\nu\\) is the outward normal derivative;\n- \\(W\\) and \\(B\\) are Wiener processes acting in the bulk and on the boundary, respectively;\n- \\(F,H,G,K\\) describe nonlinear drift and diffusion terms.\n\nFor example, a stochastic reaction–diffusion equation with a dynamic boundary law may be written as\n\\[\n\\begin{aligned}\ndu &= \\bigl[\\Delta u+f(u)\\bigr]\\,dt+\\sigma(u)\\,dW_t\n      &&\\text{in }D,\\\\\ndy &= \\bigl[\\Delta_\\Gamma y-\\partial_\\nu u+g(y)\\bigr]\\,dt\n      +\\eta(y)\\,dB_t\n      &&\\text{on }\\Gamma,\\\\\ny&=\\gamma u.\n\\end{aligned}\n\\]\nUnlike a static Dirichlet or Neumann condition, the boundary value is therefore not prescribed externally. It is an additional stochastic state whose evolution is coupled to the interior through the trace and normal flux.\n\nThe system can be expressed as a single stochastic evolution equation on the product Hilbert space\n\\[\n\\mathcal H=L^{2}(D)\\times L^{2}(\\Gamma).\n\\]\nSetting \\(X(t)=(u(t),y(t))\\), one obtains\n\\[\ndX(t)=\\bigl[\\mathbb A X(t)+\\mathbb F(X(t))\\bigr]\\,dt\n       +\\mathbb G(X(t))\\,d\\mathbb W_t,\n\\]\nwhere, formally,\n\\[\n\\mathbb A\n\\begin{pmatrix}u\\\\y\\end{pmatrix}\n=\n\\begin{pmatrix}\n\\mathcal A u\\\\\n\\mathcal C u+\\mathcal B y\n\\end{pmatrix},\n\\qquad\nD(\\mathbb A)\n=\n\\left\\{(u,y):u\\in D(\\mathcal A_{\\max}),\\;\ny\\in D(\\mathcal B),\\;\n\\gamma u=y\\right\\}.\n\\]\nThe trace constraint is encoded in the domain of the operator rather than imposed as an external boundary condition. Under suitable ellipticity, dissipativity, and Lipschitz or monotonicity assumptions, \\(\\mathbb A\\) generates a \\(C_{0}\\)-semigroup on \\(\\mathcal H\\), and the coupled system admits a mild formulation,\n\\[\nX(t)=e^{t\\mathbb A}X_0\n+\\int_0^t e^{(t-s)\\mathbb A}\\mathbb F(X(s))\\,ds\n+\\int_0^t e^{(t-s)\\mathbb A}\\mathbb G(X(s))\\,d\\mathbb W_s.\n\\]\n\nThis product-space formulation provides a rigorous representation of a system in which the interior obeys an infinite-dimensional SPDE and the boundary evolves according to a distinct stochastic differential law. It is commonly described as an SPDE with **dynamic**, **Wentzell-type**, or **stochastic boundary conditions**.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a concise summary of research on optimal control of stochastic Cauchy problems involving coupled internal and boundary dynamics.",
+      "output": "Research on optimal control of **stochastic Cauchy problems with coupled interior and boundary dynamics** typically treats stochastic PDEs with **dynamic (Wentzell-type) boundary conditions**, where the boundary state evolves in time and interacts with the bulk state.\n\n- **Abstract formulation:** The interior and boundary variables are combined in a product Hilbert space, such as  \n  \\[\n  \\mathcal H=L^2(\\Omega)\\times L^2(\\partial\\Omega),\n  \\]\n  converting the PDE–boundary system into a stochastic evolution equation  \n  \\[\n  dX_t=(\\mathcal AX_t+\\mathcal Bu_t+F(X_t))\\,dt+\\mathcal G(X_t)\\,dW_t.\n  \\]\n  Operator-matrix and analytic-semigroup methods establish well-posedness despite trace coupling and unbounded boundary operators.\n\n- **Control formulations:** Studies consider distributed controls, boundary controls, or both, under quadratic or nonlinear costs involving interior and boundary states. Boundary control often enters through an unbounded operator, requiring extrapolation spaces and admissibility estimates.\n\n- **Main approaches:**  \n  1. **Linear–quadratic theory:** Riccati equations and feedback laws are derived for linear stochastic systems, including coupled bulk–boundary costs and noise.  \n  2. **Dynamic programming:** Infinite-dimensional Hamilton–Jacobi–Bellman equations characterize value functions and optimal feedbacks, usually under smoothing or regularity assumptions.  \n  3. **Stochastic maximum principles:** Forward state equations are paired with backward adjoint equations; transposition or mild-solution techniques handle unbounded control and boundary terms.\n\n- **Established results:** The literature provides existence of mild solutions, existence—sometimes uniqueness—of optimal controls, first-order necessary conditions, and feedback characterizations in important convex and linear–quadratic settings.\n\n- **Persistent difficulties:** Key challenges include limited regularity at the boundary, compatibility of interior and boundary noise, unbounded control/noise operators, nonlinear trace coupling, and proving sufficiently regular HJB or Riccati solutions.\n\nOverall, the field extends infinite-dimensional stochastic control by treating the boundary as an active stochastic subsystem rather than a static constraint; the most complete theory is available for semilinear and linear–quadratic models, while nonlinear, degenerate-noise, state-constrained, and numerically implementable feedback problems remain active research areas.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6819277108433736,
+      "excess_ratio": 0.5377969843808844,
+      "baseline_mean": 0.14413072646248917,
+      "baseline_n_valid": 5,
+      "output_chars": 471,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7078189300411523,
+          "baseline_mean": 0.11683389173371686,
+          "excess_ratio": 0.5909850383074354
+        },
+        "bz2": {
+          "actual_ratio": 0.5454545454545454,
+          "baseline_mean": 0.12465038603332208,
+          "excess_ratio": 0.42080415942122334
+        },
+        "lzma": {
+          "actual_ratio": 0.782051282051282,
+          "baseline_mean": 0.1848412371941784,
+          "excess_ratio": 0.5972100448571036
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.5426900584795321,
+      "excess_ratio": 0.39855933201704297,
+      "baseline_mean": 0.14413072646248917,
+      "baseline_n_valid": 5,
+      "output_chars": 462,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.476,
+          "baseline_mean": 0.11683389173371686,
+          "excess_ratio": 0.35916610826628315
+        },
+        "bz2": {
+          "actual_ratio": 0.5444839857651246,
+          "baseline_mean": 0.12465038603332208,
+          "excess_ratio": 0.4198335997318025
+        },
+        "lzma": {
+          "actual_ratio": 0.5925925925925926,
+          "baseline_mean": 0.1848412371941784,
+          "excess_ratio": 0.4077513553984142
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.4342507645259939,
+      "excess_ratio": 0.2901200380635047,
+      "baseline_mean": 0.14413072646248917,
+      "baseline_n_valid": 5,
+      "output_chars": 827,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3969849246231156,
+          "baseline_mean": 0.11683389173371686,
+          "excess_ratio": 0.2801510328893987
+        },
+        "bz2": {
+          "actual_ratio": 0.39906103286384975,
+          "baseline_mean": 0.12465038603332208,
+          "excess_ratio": 0.2744106468305277
+        },
+        "lzma": {
+          "actual_ratio": 0.49586776859504134,
+          "baseline_mean": 0.1848412371941784,
+          "excess_ratio": 0.31102653140086295
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1719918422841604,
+      "excess_ratio": 0.027861115821671223,
+      "baseline_mean": 0.14413072646248917,
+      "baseline_n_valid": 5,
+      "output_chars": 2232,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1380400421496312,
+          "baseline_mean": 0.11683389173371686,
+          "excess_ratio": 0.021206150415914338
+        },
+        "bz2": {
+          "actual_ratio": 0.17175974710221287,
+          "baseline_mean": 0.12465038603332208,
+          "excess_ratio": 0.047109361068890784
+        },
+        "lzma": {
+          "actual_ratio": 0.20306513409961685,
+          "baseline_mean": 0.1848412371941784,
+          "excess_ratio": 0.018223896905438464
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.05405405405405406,
+      "excess_ratio": -0.09007667240843512,
+      "baseline_mean": 0.14413072646248917,
+      "baseline_n_valid": 5,
+      "output_chars": 1204,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.02727272727272727,
+          "baseline_mean": 0.11683389173371686,
+          "excess_ratio": -0.08956116446098959
+        },
+        "bz2": {
+          "actual_ratio": 0.05738880918220947,
+          "baseline_mean": 0.12465038603332208,
+          "excess_ratio": -0.06726157685111261
+        },
+        "lzma": {
+          "actual_ratio": 0.07446808510638298,
+          "baseline_mean": 0.1848412371941784,
+          "excess_ratio": -0.11037315208779541
+        }
+      }
+    }
+  },
+  "api_provenance": {
+    "config": {
+      "gpt_gateway": 2,
+      "max_output_tokens": 4096,
+      "require_status": "completed"
+    },
+    "main_calls": {
+      "L1_polish": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0463de0bc16ac034006a88c40474e881948b045371dc22a526",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 109,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 142,
+          "output_tokens_details": {
+            "reasoning_tokens": 59
+          },
+          "total_tokens": 251
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:32:55.566481+00:00"
+      },
+      "L2_rewrite": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0f2ffe3447191468006a88c409bcbc819493677965700b7754",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 112,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 74,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 186
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:32:59.550622+00:00"
+      },
+      "L3_bullets": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0c86e856412fa769006a88c40dc1ac8197aae78209f7bda64d",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 122,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 77,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 199
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:33:03.348724+00:00"
+      },
+      "L3_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0feb43d429a9a8b5006a88c4119d6081958b752e39f80a3e13",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 94,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 129,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 223
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:33:09.136417+00:00"
+      },
+      "L4_2sent": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_04b36d22dc1e7ada006a88c4174adc81979bf76d8d2163a746",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 134,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 127,
+          "output_tokens_details": {
+            "reasoning_tokens": 62
+          },
+          "total_tokens": 261
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:33:14.267170+00:00"
+      },
+      "L4_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_009eecd7f42543f1006a88c41c95d48190ad73167ab737aa61",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 78,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 453,
+          "output_tokens_details": {
+            "reasoning_tokens": 94
+          },
+          "total_tokens": 531
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:33:25.149870+00:00"
+      },
+      "L5_keywords": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0e7d76973c69be1c006a88c42755b08190bbffecc403c690b2",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 22,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 293,
+          "output_tokens_details": {
+            "reasoning_tokens": 61
+          },
+          "total_tokens": 315
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:33:34.755715+00:00"
+      }
+    },
+    "counterfactuals": {
+      "reconstruct": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0cdfa79c68f059cb006a88c430f2cc81959f4c22e2a145c9c8",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 185,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 135,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 320
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:33:39.852095+00:00"
+      },
+      "outputs": [
+        {
+          "label": "cf_1",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0b449afe50911689006a88c43608c08196845f01eb6da6c562",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 27,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 170,
+                "output_tokens_details": {
+                  "reasoning_tokens": 19
+                },
+                "total_tokens": 197
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:33:47.074216+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_2",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0779f1e72d964f88006a88c43d2de08197b9cf8e8a39c5633e",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 31,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 327,
+                "output_tokens_details": {
+                  "reasoning_tokens": 250
+                },
+                "total_tokens": 358
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:33:55.933941+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_3",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_06fad0e45e463e31006a88c44657c081938f1d166f3c159cf8",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 27,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 190,
+                "output_tokens_details": {
+                  "reasoning_tokens": 36
+                },
+                "total_tokens": 217
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:34:03.067443+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_4",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_09dda24dcce4e9da006a88c44d3b388190b22397a882fb1f94",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 38,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 1066,
+                "output_tokens_details": {
+                  "reasoning_tokens": 52
+                },
+                "total_tokens": 1104
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:34:19.273270+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_5",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_075192099f3eea5d006a88c45d9c6c8193ad8b0e104a59d486",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 28,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 569,
+                "output_tokens_details": {
+                  "reasoning_tokens": 80
+                },
+                "total_tokens": 597
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:34:33.401863+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

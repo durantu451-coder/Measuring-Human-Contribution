@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0309",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThe Hamiltonian cycle problem (HCP) in digraphs D with degree bound two is solved by two mappings in this paper. The first bijection is between an incidence matrix C_{nm} of simple digraph and an incidence matrix F of balanced bipartite undirected graph G; The second mapping is from a perfect matching of G to a cycle of D. It proves that the complexity of HCP in D is polynomial, and finding a second non-isomorphism Hamiltonian cycle from a given Hamiltonian digraph with degree bound two is also polynomial. Lastly it deduces P=NP base on the results.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThe Hamiltonian cycle problem (HCP) in digraphs D with degree bound two is solved by two mappings in this paper. The first bijection is between an incidence matrix C_{nm} of simple digraph and an incidence matrix F of balanced bipartite undirected graph G; The second mapping is from a perfect matching of G to a cycle of D. It proves that the complexity of HCP in D is polynomial, and finding a second non-isomorphism Hamiltonian cycle from a given Hamiltonian digraph with degree bound two is also polynomial. Lastly it deduces P=NP base on the results.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper addresses the Hamiltonian cycle problem in directed graphs with degree bound two using two mappings.\n- The first mapping is a bijection between the incidence matrix of a simple digraph and that of a balanced bipartite undirected graph.\n- The second mapping converts a perfect matching in the bipartite graph into a cycle in the directed graph.\n- The paper claims that both finding a Hamiltonian cycle and finding a second non-isomorphic Hamiltonian cycle in such graphs can be done in polynomial time.\n- Based on these claimed results, the paper concludes that P equals NP.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe paper addresses the Hamiltonian cycle problem in degree-two digraphs using a bijection to balanced bipartite graphs and a mapping from perfect matchings back to directed cycles. It claims polynomial-time algorithms for finding Hamiltonian cycles and second non-isomorphic cycles in this setting, and further asserts that these results imply P=NP.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, Hamiltonian, HCP"
+  },
+  "outputs": {
+    "L1": "This paper solves the Hamiltonian cycle problem (HCP) for digraphs \\(D\\) with degree bounded by two using two mappings. The first is a bijection between the incidence matrix \\(C_{nm}\\) of a simple digraph and the incidence matrix \\(F\\) of a balanced bipartite undirected graph \\(G\\). The second maps a perfect matching of \\(G\\) to a cycle in \\(D\\). These mappings demonstrate that the HCP in \\(D\\) can be solved in polynomial time and that, given a Hamiltonian digraph with degree bounded by two, a second non-isomorphic Hamiltonian cycle can also be found in polynomial time. Finally, the paper deduces that \\(P=NP\\) based on these results.",
+    "L2": "This paper addresses the Hamiltonian cycle problem (HCP) for directed graphs \\(D\\) whose degrees are bounded by two through two transformations. First, it establishes a bijection between the incidence matrix \\(C_{nm}\\) of a simple digraph and the incidence matrix \\(F\\) of a balanced, undirected bipartite graph \\(G\\). Second, it maps a perfect matching in \\(G\\) to a cycle in \\(D\\). Using these mappings, the paper claims that HCP for such digraphs can be solved in polynomial time and that, given a Hamiltonian digraph with degree bound two, a second non-isomorphic Hamiltonian cycle can likewise be found in polynomial time. Finally, it concludes from these results that \\(P=NP\\).",
+    "L3": "The paper investigates the Hamiltonian cycle problem for directed graphs in which each vertex has degree at most two. Its proposed approach relies on two mappings between directed graphs, bipartite graphs, perfect matchings, and cycles.\n\nThe first mapping is presented as a bijection between the incidence matrix of a simple directed graph and the incidence matrix of a balanced bipartite undirected graph. This construction is intended to translate the original directed Hamiltonian cycle problem into a problem involving the structure of the associated bipartite graph.\n\nThe second mapping takes a perfect matching in the resulting bipartite graph and converts it into a cycle in the original directed graph. Using these mappings, the paper claims that a Hamiltonian cycle in a degree-bounded directed graph can be found in polynomial time. It further asserts that, when one Hamiltonian cycle is already known, a second non-isomorphic Hamiltonian cycle can also be identified within polynomial time.\n\nOn the basis of these claimed polynomial-time algorithms, the paper concludes that the relevant NP-complete Hamiltonian cycle problem can be solved efficiently and therefore asserts that \\(P=NP\\). This conclusion depends critically on the correctness and general applicability of both mappings, particularly on whether a perfect matching necessarily corresponds to a single Hamiltonian cycle rather than to a collection of disjoint directed cycles.",
+    "L4": "The paper studies the Hamiltonian cycle problem for directed graphs in which every vertex has degree two, or satisfies an analogous degree restriction. Its main technique is to transform the input digraph into a balanced bipartite graph. Each directed vertex is represented on the two sides of the bipartition, and every directed arc is translated into a bipartite edge. Under this construction, a perfect matching selects one outgoing and one incoming arc for each vertex. The selected arcs can then be mapped back to the original digraph.\n\nThe paper argues that this correspondence can be used to find a directed Hamiltonian cycle in polynomial time. It also proposes a polynomial-time procedure for finding a second cycle that is not isomorphic to the first, when such a cycle exists. Because perfect matchings in bipartite graphs can be found efficiently, the paper treats the resulting matching computations and their inverse mappings as polynomial-time algorithms for the corresponding cycle problems.\n\nA crucial issue, however, is that a perfect matching in the constructed bipartite graph generally corresponds only to a directed cycle cover: a collection of vertex-disjoint directed cycles covering all vertices. It does not necessarily correspond to a single Hamiltonian cycle. Additional arguments are therefore required to prove that the selected edges form one cycle rather than several disjoint cycles. Likewise, finding a second perfect matching does not automatically produce a second non-isomorphic Hamiltonian cycle.\n\nThe paper ultimately claims that its algorithms solve an NP-complete Hamiltonian-cycle problem in polynomial time and therefore establish \\(P=NP\\). That conclusion would be valid only if the reduction, the matching-to-cycle correspondence, and the polynomial-time guarantees were all proved without gaps. In particular, the distinction between a cycle cover and a Hamiltonian cycle must be resolved. Without a rigorous mechanism that enforces connectivity into one spanning cycle, the perfect-matching construction does not by itself yield a polynomial-time algorithm for Hamiltonian cycle, and the claimed implication \\(P=NP\\) is not established.",
+    "L5": "### The Hamiltonian of an HCP Lattice\n\nThe Hamiltonian is a mathematical operator that describes the total energy of a physical system. In a hexagonal close-packed (HCP) crystal, it can include the kinetic energy of electrons, interactions with atomic nuclei, electron–electron repulsion, and coupling between neighboring atoms. Because the HCP structure consists of two interpenetrating hexagonal sublattices arranged in an ABAB stacking pattern, its Hamiltonian must account for interactions both within each atomic layer and between adjacent layers.\n\nIn simplified models, such as a tight-binding description, the HCP Hamiltonian is constructed from atomic orbital energies and hopping terms. Its eigenvalues determine the allowed electronic energy bands of the crystal. By analyzing this Hamiltonian, researchers can predict properties such as electrical conductivity, magnetism, lattice vibrations, and structural stability in HCP materials like magnesium, titanium, and cobalt."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize the main claims and methods of this paper on the Hamiltonian cycle problem in directed graphs with degree bound two.",
+      "output": "Please upload the paper or provide its title, DOI, abstract, or link. I’ll then summarize its main claims, proof techniques/algorithms, complexity results, and key limitations.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a concise abstract describing two mappings from a digraph incidence matrix to a balanced bipartite graph and from a perfect matching back to a cycle, including the paper’s complexity conclusions.",
+      "output": "Please provide the paper, title, or relevant excerpt. The mappings and claimed complexity conclusions are not identifiable from the prompt alone, and a perfect matching generally maps to a directed cycle cover—not necessarily a single cycle—so the paper’s precise construction matters.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "What does the paper claim about solving HCP for degree-two digraphs, finding a second non-isomorphic Hamiltonian cycle, and proving P=NP?",
+      "output": "The paper claims that:\n\n- the Hamiltonian Cycle Problem (HCP) can be solved in polynomial time for directed graphs in which every vertex has in-degree and out-degree at most two;\n- its method can also find a second Hamiltonian cycle that is not isomorphic to a given one, when such a cycle exists; and\n- because HCP remains NP-complete even for these degree-two digraphs, the proposed polynomial-time algorithm would imply \\(P=NP\\).\n\nThus, the \\(P=NP\\) conclusion depends entirely on the correctness and polynomial running time of the proposed algorithm; the claim itself is not an accepted proof that \\(P=NP\\).",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Provide a brief technical overview of an approach that reduces Hamiltonian cycles in simple digraphs to perfect matchings in balanced bipartite undirected graphs.",
+      "output": "A standard starting point is the **vertex-splitting construction**. For a simple digraph \\(D=(V,A)\\), build a balanced bipartite graph\n\n\\[\nB=(V_{\\mathrm{out}}\\cup V_{\\mathrm{in}},E),\n\\]\n\nwith one left copy \\(v_{\\mathrm{out}}\\) and one right copy \\(v_{\\mathrm{in}}\\) of each vertex. Add the undirected edge  \n\\((u_{\\mathrm{out}},v_{\\mathrm{in}})\\) exactly when \\(D\\) contains the arc \\(u\\to v\\).\n\nA perfect matching in \\(B\\) selects exactly one outgoing and one incoming arc at every vertex. Thus it corresponds to a permutation of \\(V\\), or equivalently a **directed cycle cover** of \\(D\\). A Hamiltonian cycle is precisely a perfect matching whose associated permutation consists of one cycle.\n\nThe remaining issue is therefore eliminating **subtours**. Typical approaches augment the construction with exponential-size connectivity constraints, use inclusion–exclusion/dynamic programming over vertex subsets, or enumerate/filter cycle covers represented by perfect matchings. Plain perfect-matching existence alone cannot enforce the single-cycle condition through a polynomial-time many-one reduction unless \\(P=NP\\), since directed Hamiltonian cycle is NP-complete whereas bipartite perfect matching is polynomial-time solvable. Thus the splitting construction is the core correspondence, but an additional non-polynomial or stronger constraint mechanism is required for Hamiltonicity.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "In one paragraph, explain the paper’s proposed bijections, their role in obtaining a polynomial-time algorithm for the Hamiltonian cycle problem, and the final conclusion drawn about P versus NP.",
+      "output": "Please provide the paper’s title, link, or text; without it, I can’t accurately describe the specific bijections, how they allegedly yield a polynomial-time Hamiltonian-cycle algorithm, or the paper’s conclusion about whether \\(P=NP\\).",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.5274822695035462,
+      "excess_ratio": 0.2476391340748264,
+      "baseline_mean": 0.27984313542871975,
+      "baseline_n_valid": 5,
+      "output_chars": 641,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.47953216374269003,
+          "baseline_mean": 0.22853723009011526,
+          "excess_ratio": 0.25099493365257475
+        },
+        "bz2": {
+          "actual_ratio": 0.5320855614973262,
+          "baseline_mean": 0.2663330531392693,
+          "excess_ratio": 0.2657525083580569
+        },
+        "lzma": {
+          "actual_ratio": 0.5631067961165048,
+          "baseline_mean": 0.3320862663906142,
+          "excess_ratio": 0.2310205297258906
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.43779904306220097,
+      "excess_ratio": 0.15795590763348122,
+      "baseline_mean": 0.27984313542871975,
+      "baseline_n_valid": 5,
+      "output_chars": 683,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.39210526315789473,
+          "baseline_mean": 0.22853723009011526,
+          "excess_ratio": 0.16356803306777948
+        },
+        "bz2": {
+          "actual_ratio": 0.44549763033175355,
+          "baseline_mean": 0.2663330531392693,
+          "excess_ratio": 0.17916457719248424
+        },
+        "lzma": {
+          "actual_ratio": 0.4690265486725664,
+          "baseline_mean": 0.3320862663906142,
+          "excess_ratio": 0.13694028228195215
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3099703849950642,
+      "excess_ratio": 0.03012724956634444,
+      "baseline_mean": 0.27984313542871975,
+      "baseline_n_valid": 5,
+      "output_chars": 1451,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.26666666666666666,
+          "baseline_mean": 0.22853723009011526,
+          "excess_ratio": 0.038129436576551407
+        },
+        "bz2": {
+          "actual_ratio": 0.3136094674556213,
+          "baseline_mean": 0.2663330531392693,
+          "excess_ratio": 0.04727641431635199
+        },
+        "lzma": {
+          "actual_ratio": 0.34444444444444444,
+          "baseline_mean": 0.3320862663906142,
+          "excess_ratio": 0.012358178053830216
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.16173503698722264,
+      "excess_ratio": -0.11810809844149711,
+      "baseline_mean": 0.27984313542871975,
+      "baseline_n_valid": 5,
+      "output_chars": 2183,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.12473794549266247,
+          "baseline_mean": 0.22853723009011526,
+          "excess_ratio": -0.10379928459745279
+        },
+        "bz2": {
+          "actual_ratio": 0.16598360655737704,
+          "baseline_mean": 0.2663330531392693,
+          "excess_ratio": -0.10034944658189227
+        },
+        "lzma": {
+          "actual_ratio": 0.19157088122605365,
+          "baseline_mean": 0.3320862663906142,
+          "excess_ratio": -0.14051538516456058
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.08392434988179676,
+      "excess_ratio": -0.195918785546923,
+      "baseline_mean": 0.27984313542871975,
+      "baseline_n_valid": 5,
+      "output_chars": 983,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.05142857142857143,
+          "baseline_mean": 0.22853723009011526,
+          "excess_ratio": -0.17710865866154382
+        },
+        "bz2": {
+          "actual_ratio": 0.08348134991119005,
+          "baseline_mean": 0.2663330531392693,
+          "excess_ratio": -0.18285170322807925
+        },
+        "lzma": {
+          "actual_ratio": 0.11258278145695365,
+          "baseline_mean": 0.3320862663906142,
+          "excess_ratio": -0.21950348493366056
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,524 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15761153",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\n[Object] To provide a mechanism which is capable of suppressing a decrease in the communication efficiency while reducing the power consumption even in communication in which a plurality of wireless communication networks are the destination. [Solution] A communication device includes a communication unit configured to transmit a frame including a physical layer (PHY) header including a wireless communication network identifier. The wireless communication network identifier includes a second level wireless communication network identifier in which a plurality of first level wireless communication network identifiers are specified. A communication device includes a communication unit configured to receive a physical layer (PHY) header including a wireless communication network identifier. The wireless communication network identifier includes a second level wireless communication network identifier in which a plurality of first level wireless communication network identifiers are specified. The communication unit receives a portion subsequent to the PHY header on a basis of the second level wireless communication network identifier.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\n[Object] To provide a mechanism which is capable of suppressing a decrease in the communication efficiency while reducing the power consumption even in communication in which a plurality of wireless communication networks are the destination. [Solution] A communication device includes a communication unit configured to transmit a frame including a physical layer (PHY) header including a wireless communication network identifier. The wireless communication network identifier includes a second level wireless communication network identifier in which a plurality of first level wireless communication network identifiers are specified. A communication device includes a communication unit configured to receive a physical layer (PHY) header including a wireless communication network identifier. The wireless communication network identifier includes a second level wireless communication network identifier in which a plurality of first level wireless communication network identifiers are specified. The communication unit receives a portion subsequent to the PHY header on a basis of the second level wireless communication network identifier.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The mechanism aims to reduce power consumption without decreasing communication efficiency when transmitting to multiple wireless communication networks.\n- A transmitting communication device sends a frame with a physical layer (PHY) header containing a wireless communication network identifier.\n- The network identifier includes a second-level identifier specifying multiple first-level wireless communication network identifiers.\n- A receiving communication device processes the portion following the PHY header based on the second-level wireless communication network identifier.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA communication mechanism reduces power consumption without sacrificing efficiency when targeting multiple wireless networks by embedding a second-level network identifier, representing multiple first-level identifiers, in a frame’s PHY header. Receivers use this identifier to determine whether to receive the remainder of the frame, enabling efficient multi-network communication while avoiding unnecessary power use.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Object, Solution, PHY"
+  },
+  "outputs": {
+    "L1": "[Object] To provide a mechanism capable of reducing power consumption while suppressing a decrease in communication efficiency, even in communications directed to a plurality of wireless communication networks.\n\n[Solution] A communication device includes a communication unit configured to transmit a frame containing a physical layer (PHY) header that includes a wireless communication network identifier. The wireless communication network identifier includes a second-level wireless communication network identifier specifying a plurality of first-level wireless communication network identifiers. Another communication device includes a communication unit configured to receive a PHY header containing a wireless communication network identifier. The wireless communication network identifier includes a second-level wireless communication network identifier specifying a plurality of first-level wireless communication network identifiers. Based on the second-level wireless communication network identifier, the communication unit receives a portion subsequent to the PHY header.",
+    "L2": "[Objective] To provide a system that lowers power consumption without compromising communication efficiency, even when transmissions are directed to multiple wireless communication networks.\n\n[Solution] A communication apparatus includes a communication unit that sends a frame containing a physical-layer (PHY) header with a wireless network identifier. This identifier includes a second-tier wireless network identifier that designates multiple first-tier wireless network identifiers. A receiving communication apparatus includes a communication unit that obtains a PHY header containing such a wireless network identifier. Based on the second-tier identifier, which specifies multiple first-tier identifiers, the communication unit receives the part of the frame following the PHY header.",
+    "L3": "The proposed mechanism reduces power consumption while maintaining communication efficiency when transmitting data to multiple wireless communication networks. A transmitting communication device generates and sends a frame whose physical-layer (PHY) header contains a wireless communication network identifier.\n\nThis network identifier uses a hierarchical structure. In particular, it includes a second-level identifier that represents or specifies multiple first-level wireless communication network identifiers. As a result, a single frame can efficiently address devices associated with multiple wireless communication networks without requiring separate transmissions for each network.\n\nUpon receiving the frame, a receiving communication device examines the network identifier in the PHY header. Based on the second-level wireless communication network identifier, the receiving device determines how to process the portion of the frame that follows the PHY header. This approach enables selective and efficient frame processing, thereby reducing unnecessary power consumption while preserving communication performance across multiple networks.",
+    "L4": "A communication mechanism is provided for reducing power consumption while maintaining efficient communication across multiple wireless networks. In a conventional system, a device may need to decode a substantial portion of each received frame before determining whether the frame is associated with a network of interest. This unnecessary reception and processing can consume significant power, particularly when the device monitors several networks or operates in an environment with frequent wireless traffic.\n\nTo address this issue, a transmitting device includes a second-level network identifier in the physical-layer (PHY) header of a frame. The second-level network identifier corresponds to, or collectively represents, a plurality of first-level network identifiers associated with respective wireless networks. Because the identifier is placed in the PHY header, a receiving device can obtain and evaluate it early in the frame-reception process, before receiving or decoding the remainder of the frame.\n\nUpon detecting a frame, the receiving device processes the PHY header and compares the second-level network identifier with locally stored information identifying one or more networks that the device is configured to monitor. If the identifier indicates that the frame may be associated with at least one relevant first-level network identifier, the receiving device continues receiving and processing the frame. The device may then examine additional header information or payload data to identify the specific target network and determine whether further action is required.\n\nIf the second-level network identifier does not correspond to any network of interest, the receiving device may stop receiving or decoding the frame. It may disable or place selected receiver circuitry into a reduced-power state until the channel becomes available again or another frame is detected. In this manner, the device avoids spending energy on frames that are not intended for any network with which it is associated.\n\nThe second-level identifier can be generated using a mapping, grouping, encoding, hash, bitmap, or other representation that associates a single PHY-layer value with multiple first-level network identifiers. The representation may be configured to balance identifier size, signaling overhead, filtering accuracy, and implementation complexity. Even where the second-level identifier provides only an initial indication of possible relevance, it enables early filtering while allowing later portions of the frame to provide a more precise network designation.\n\nBy using a common second-level identifier to represent multiple wireless networks, the mechanism avoids the need to transmit a separate frame or full identifier for every target network. It therefore supports efficient multicast, broadcast, discovery, paging, or other multi-network operations without requiring receivers to process every transmitted frame in full. The result is efficient communication with multiple networks while reducing unnecessary receiver activity and associated power consumption.",
+    "L5": "### Object, Solution, and PHY\n\nIn communication system design, an **object** represents a component that performs a specific function, such as transmitting data, processing signals, or managing network connections. A well-designed object simplifies complex operations by organizing related data and behavior into a reusable structure.\n\nA complete **solution** combines these objects to address a practical requirement. For example, an embedded networking solution may include software objects for configuration and monitoring alongside hardware components responsible for signal transmission.\n\nThe **PHY**, or physical layer, is a critical part of this architecture. It converts digital data into electrical, optical, or wireless signals and handles their transmission across a physical medium. By integrating the PHY with clearly defined software objects, developers can create reliable, scalable, and maintainable communication solutions."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent abstract describing a wireless communication device that uses a hierarchical network identifier in a PHY header to address multiple wireless networks while reducing power consumption and preserving communication efficiency.",
+      "output": "A wireless communication device and method are disclosed for communicating across multiple wireless networks using a hierarchical network identifier included in a physical-layer (PHY) header of a wireless frame. The hierarchical network identifier includes a first identifier portion representing a network group and a second identifier portion identifying a network within the network group. A receiving device initially decodes the first identifier portion and, when the network group does not correspond to a configured network group, terminates further frame processing and enters or maintains a reduced-power state. When the first identifier portion matches, the receiving device decodes the second identifier portion to determine whether to process the remainder of the frame. The identifier portions may be encoded using different modulation, coding, repetition, or robustness parameters and may support multicast, broadcast, or wildcard addressing. Hierarchical filtering reduces unnecessary header and payload decoding, thereby lowering power consumption while limiting PHY-header overhead and preserving communication efficiency among multiple co-located wireless networks.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "What could be the object and solution of an invention involving a second-level wireless network identifier that specifies multiple first-level network identifiers?",
+      "output": "**Object:** Enable a wireless device to discover, select, or roam among several related wireless networks without separately scanning or authenticating each network.\n\n**Solution:** Introduce a **second-level network identifier** representing a group of **first-level network identifiers**—for example, several SSIDs, BSSIDs, or operator network IDs. An access point or management server broadcasts or provides the second-level identifier and its association with the first-level identifiers. A device can then treat those networks as one logical network group, allowing faster discovery, selection, handover, and reuse of credentials or policy information.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write a Japanese-patent-style English summary for technology that transmits and receives frames whose physical-layer headers identify a plurality of destination wireless communication networks.",
+      "output": "A wireless communication apparatus includes a transmitter configured to generate and transmit a frame including a physical-layer header in which identification information identifying a plurality of destination wireless communication networks is set, and a receiver configured to receive the frame and determine, based on the identification information included in the physical-layer header, whether a wireless communication network to which the receiver belongs is one of the plurality of destination wireless communication networks. When the wireless communication network is identified as a destination, the receiver performs reception processing for a payload of the frame. Accordingly, a single frame can be transmitted to a plurality of wireless communication networks while enabling a receiving apparatus to determine, at the physical layer, whether the frame is directed to its wireless communication network.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate an “[Object]” and “[Solution]” section for a communication system in which a receiver decides whether to receive the portion after a PHY header based on a grouped wireless communication network identifier.",
+      "output": "[Object]  \nTo provide a communication system capable of reducing unnecessary reception processing and power consumption by enabling a receiving apparatus to determine, at an early stage, whether a signal following a physical-layer (PHY) header is intended for a wireless communication network associated with the receiving apparatus.\n\n[Solution]  \nA transmitting apparatus transmits a wireless frame including a PHY header and a subsequent portion. The PHY header includes group identification information corresponding to a group of wireless communication network identifiers. A receiving apparatus receives and decodes the PHY header, determines whether the group identification information corresponds to a group that includes a wireless communication network identifier associated with the receiving apparatus, and, based on the determination, decides whether to receive or decode the subsequent portion. When the group does not correspond, the receiving apparatus may suspend reception or decoding of the subsequent portion, thereby reducing power consumption and processing load.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Summarize a patent invention for power-efficient multi-network wireless communication, including both transmitting and receiving communication devices and a hierarchical WLAN identifier carried in the PHY header.",
+      "output": "The invention improves power efficiency when multiple wireless LANs operate in the same area by placing a **hierarchical WLAN identifier in the physical-layer (PHY) header** of each transmitted frame.\n\n- **Transmitting device:** Determines the WLAN to which the frame belongs, generates an identifier containing multiple hierarchy levels—such as a broad network/group identifier and a more specific subnetwork or basic-service-set identifier—and inserts this information into the PHY header before transmitting the frame.\n\n- **Receiving device:** Reads the hierarchical identifier while initially processing the PHY header and compares one or more identifier levels with its own network information. If the frame is not relevant, the receiver can stop further reception or decoding and return circuitry to a low-power state. If it matches, the device continues processing the remaining PHY fields and payload.\n\nBecause network relevance is established before decoding the MAC header or full frame, devices avoid spending energy on traffic from neighboring or overlapping WLANs. The hierarchy also permits flexible filtering at different network scopes, supporting efficient coexistence and scalable operation in multi-network wireless environments.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6773049645390071,
+      "excess_ratio": 0.4737025076658449,
+      "baseline_mean": 0.20360245687316225,
+      "baseline_n_valid": 5,
+      "output_chars": 1085,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.676829268292683,
+          "baseline_mean": 0.1621581555756863,
+          "excess_ratio": 0.5146711127169967
+        },
+        "bz2": {
+          "actual_ratio": 0.6456310679611651,
+          "baseline_mean": 0.19856775081014116,
+          "excess_ratio": 0.44706331715102393
+        },
+        "lzma": {
+          "actual_ratio": 0.711340206185567,
+          "baseline_mean": 0.24312000741097947,
+          "excess_ratio": 0.46822019877458754
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4709507042253521,
+      "excess_ratio": 0.26734824735218987,
+      "baseline_mean": 0.20360245687316225,
+      "baseline_n_valid": 5,
+      "output_chars": 792,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4107142857142857,
+          "baseline_mean": 0.1621581555756863,
+          "excess_ratio": 0.2485561301385994
+        },
+        "bz2": {
+          "actual_ratio": 0.48737373737373735,
+          "baseline_mean": 0.19856775081014116,
+          "excess_ratio": 0.2888059865635962
+        },
+        "lzma": {
+          "actual_ratio": 0.504950495049505,
+          "baseline_mean": 0.24312000741097947,
+          "excess_ratio": 0.26183048763852546
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.38640654499685334,
+      "excess_ratio": 0.1828040881236911,
+      "baseline_mean": 0.20360245687316225,
+      "baseline_n_valid": 5,
+      "output_chars": 1151,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.35269709543568467,
+          "baseline_mean": 0.1621581555756863,
+          "excess_ratio": 0.19053893985999837
+        },
+        "bz2": {
+          "actual_ratio": 0.36363636363636365,
+          "baseline_mean": 0.19856775081014116,
+          "excess_ratio": 0.16506861282622248
+        },
+        "lzma": {
+          "actual_ratio": 0.43661971830985913,
+          "baseline_mean": 0.24312000741097947,
+          "excess_ratio": 0.19349971089887966
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.13045807661398334,
+      "excess_ratio": -0.07314438025917891,
+      "baseline_mean": 0.20360245687316225,
+      "baseline_n_valid": 5,
+      "output_chars": 3089,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.10220768601798855,
+          "baseline_mean": 0.1621581555756863,
+          "excess_ratio": -0.059950469557697755
+        },
+        "bz2": {
+          "actual_ratio": 0.1314475873544093,
+          "baseline_mean": 0.19856775081014116,
+          "excess_ratio": -0.06712016345573185
+        },
+        "lzma": {
+          "actual_ratio": 0.1559633027522936,
+          "baseline_mean": 0.24312000741097947,
+          "excess_ratio": -0.08715670465868589
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.08714198659354055,
+      "excess_ratio": -0.1164604702796217,
+      "baseline_mean": 0.20360245687316225,
+      "baseline_n_valid": 5,
+      "output_chars": 940,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.049019607843137254,
+          "baseline_mean": 0.1621581555756863,
+          "excess_ratio": -0.11313854773254906
+        },
+        "bz2": {
+          "actual_ratio": 0.08598130841121496,
+          "baseline_mean": 0.19856775081014116,
+          "excess_ratio": -0.1125864423989262
+        },
+        "lzma": {
+          "actual_ratio": 0.12080536912751678,
+          "baseline_mean": 0.24312000741097947,
+          "excess_ratio": -0.12231463828346269
+        }
+      }
+    }
+  },
+  "api_provenance": {
+    "config": {
+      "gpt_gateway": 2,
+      "max_output_tokens": 4096,
+      "require_status": "completed"
+    },
+    "main_calls": {
+      "L1_polish": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0b98087103551c38006a8910cc74f88195882c22d844c836d1",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 196,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 195,
+          "output_tokens_details": {
+            "reasoning_tokens": 35
+          },
+          "total_tokens": 391
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:00:32.570029+00:00"
+      },
+      "L2_rewrite": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0b3e125a49ac63ca006a8910d2db9081948d1f5fca069c58ed",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 199,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 126,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 325
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:00:37.180470+00:00"
+      },
+      "L3_bullets": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_06cdae9ad4f3d4ed006a8910d77e78819797d3feef54d29810",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 209,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 87,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 296
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:00:41.346074+00:00"
+      },
+      "L3_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_05597140374ab740006a8910dba81881968eb35b8b2177c20c",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 104,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 168,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 272
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:00:46.852418+00:00"
+      },
+      "L4_2sent": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0531e9222d51b67e006a8910e112a48190b0141ce2e15b87bb",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 221,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 66,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 287
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:00:51.218166+00:00"
+      },
+      "L4_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_092270d674086519006a8910e5dba4819385ea8f445a383103",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 81,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 578,
+          "output_tokens_details": {
+            "reasoning_tokens": 76
+          },
+          "total_tokens": 659
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:01:04.649629+00:00"
+      },
+      "L5_keywords": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_09dfe25c32db39cd006a8910f2e888819495bb01b14694a3d3",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 22,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 208,
+          "output_tokens_details": {
+            "reasoning_tokens": 48
+          },
+          "total_tokens": 230
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:01:12.550451+00:00"
+      }
+    },
+    "counterfactuals": {
+      "reconstruct": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_046d4a58b23fc34e006a8910fad9408190a165ebf082ee630c",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 272,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 173,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 445
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:01:18.270442+00:00"
+      },
+      "outputs": [
+        {
+          "label": "cf_1",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_06a63a2dcc9e70ae006a891100da088193832d33b6d48bd748",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 39,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 239,
+                "output_tokens_details": {
+                  "reasoning_tokens": 49
+                },
+                "total_tokens": 278
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T03:01:25.020250+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_2",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0db82171a669928c006a891107445c8194b596af33cf2be70f",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 31,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 308,
+                "output_tokens_details": {
+                  "reasoning_tokens": 183
+                },
+                "total_tokens": 339
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T03:01:34.104958+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_3",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0e8ed8f95ee9e6a1006a89111062d88195b8e9a51de2be16bc",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 36,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 217,
+                "output_tokens_details": {
+                  "reasoning_tokens": 71
+                },
+                "total_tokens": 253
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T03:01:40.481390+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_4",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0b15f8a18f50b240006a891116cbbc81909643b5a3bb3449fc",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 45,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 231,
+                "output_tokens_details": {
+                  "reasoning_tokens": 53
+                },
+                "total_tokens": 276
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T03:01:47.865127+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_5",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0a527c52ea6acfa2006a89111e47488190a8b34ba5d40d5dec",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 38,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 343,
+                "output_tokens_details": {
+                  "reasoning_tokens": 128
+                },
+                "total_tokens": 381
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T03:01:58.149625+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

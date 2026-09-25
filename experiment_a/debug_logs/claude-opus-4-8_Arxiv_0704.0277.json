@@ -1,0 +1,169 @@
+{
+  "model": "claude-opus-4-8",
+  "domain": "Arxiv",
+  "id": "0704.0277",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nLet X be a simplicial complex on the vertex set V. The rational Leray number L(X) of X is the minimal d such that the rational reduced homology of any induced subcomplex of X vanishes in dimensions d and above. Let \\pi be a simplicial map from X to a simplex Y, such that the cardinality of the preimage of any point in |Y| is at most r. It is shown that L(\\pi(X)) \\leq r L(X)+r-1. One consequence is a topological extension of a Helly type result of Amenta.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nLet X be a simplicial complex on the vertex set V. The rational Leray number L(X) of X is the minimal d such that the rational reduced homology of any induced subcomplex of X vanishes in dimensions d and above. Let \\pi be a simplicial map from X to a simplex Y, such that the cardinality of the preimage of any point in |Y| is at most r. It is shown that L(\\pi(X)) \\leq r L(X)+r-1. One consequence is a topological extension of a Helly type result of Amenta.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The rational Leray number L(X) of a simplicial complex is defined as the minimal dimension d above which the rational reduced homology of any induced subcomplex vanishes.\n- A simplicial map π maps X to a simplex Y with the constraint that every point in |Y| has a preimage of cardinality at most r.\n- The main result establishes the inequality L(π(X)) ≤ rL(X) + r − 1 relating the Leray numbers of the image and the original complex.\n- One consequence of this result is a topological extension of a Helly type theorem originally due to Amenta.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis paper investigates rational Leray numbers of simplicial complexes under simplicial maps where each point's preimage has bounded cardinality (at most r), establishing a bound on the Leray number of the image complex through the inequality L(π(X)) ≤ rL(X)+r-1. This result provides a topological generalization of Amenta's Helly-type theorem, demonstrating how bounded-multiplicity maps control the homological complexity of image complexes.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Let, The, Leray"
+  },
+  "outputs": {
+    "L1": "Let $X$ be a simplicial complex on the vertex set $V$. The rational Leray number $L(X)$ of $X$ is defined as the minimal $d$ such that the rational reduced homology of every induced subcomplex of $X$ vanishes in all dimensions $d$ and above. Let $\\pi$ be a simplicial map from $X$ to a simplex $Y$ with the property that the cardinality of the preimage of any point in $|Y|$ is at most $r$. We show that $L(\\pi(X)) \\leq r\\,L(X) + r - 1$. As one consequence, we obtain a topological extension of a Helly-type result due to Amenta.",
+    "L2": "Consider a simplicial complex X whose vertices form the set V. We define the rational Leray number L(X) as the smallest value d for which every induced subcomplex of X has trivial rational reduced homology in all dimensions at or beyond d. Suppose that π is a simplicial map taking X into a simplex Y, and assume that no point of |Y| has more than r elements in its preimage under π. We establish the inequality L(π(X)) ≤ r·L(X) + r − 1. As an application, this yields a topological generalization of a Helly-type theorem due to Amenta.",
+    "L3": "# Rational Leray Numbers and Simplicial Maps\n\n## The Rational Leray Number\n\nThe rational Leray number provides a fundamental measure of the homological complexity of a simplicial complex. Given a simplicial complex $X$, its rational Leray number $L(X)$ is defined as the minimal dimension $d$ above which the rational reduced homology of every induced subcomplex vanishes. More precisely, $L(X)$ is the smallest integer $d$ such that for every induced subcomplex $Y \\subseteq X$, the rational reduced homology group $\\tilde{H}_i(Y; \\mathbb{Q})$ vanishes for all $i \\geq d$. This invariant captures not merely the topology of $X$ itself, but the topological behavior across the entire family of its induced subcomplexes, making it a robust and combinatorially meaningful quantity.\n\n## Simplicial Maps with Bounded Fibers\n\nWe now consider a simplicial map $\\pi$ that sends the complex $X$ onto a simplex $Y$. The key structural constraint imposed on this map concerns the size of its fibers: we require that every point in the geometric realization $|Y|$ has a preimage under $\\pi$ of cardinality at most $r$. This bounded-fiber condition ensures that the map $\\pi$ does not collapse too much of the source complex onto any single point of the target, thereby controlling the extent to which topological information can be lost or amplified through the mapping. The parameter $r$ thus serves as a quantitative bound on the local complexity of the fibers.\n\n## The Main Inequality\n\nThe central result of this work establishes a precise relationship between the Leray numbers of the image and the original complex. Specifically, under the conditions described above, one obtains the inequality\n$$\nL(\\pi(X)) \\leq r \\, L(X) + r - 1.\n$$\nThis inequality demonstrates that the Leray number of the image $\\pi(X)$ is controlled by the Leray number of the source complex $X$, scaled by the fiber-bound parameter $r$ and adjusted by an additive correction term. In this way, the topological complexity of the image cannot grow uncontrollably relative to that of the original complex, with the degree of possible increase governed precisely by the size of the fibers.\n\n## A Topological Helly-Type Consequence\n\nAn important consequence of this result is a topological extension of a Helly-type theorem originally due to Amenta. Helly-type theorems, which trace their origins to classical results in convex geometry, describe conditions under which the members of a family of sets must share a common intersection point whenever their sufficiently small subfamilies do. By applying the Leray number inequality established above, one can generalize Amenta's theorem from its original setting to a broader topological framework, replacing geometric hypotheses with homological ones. This illustrates how bounds on Leray numbers translate directly into concrete combinatorial and geometric statements about intersection patterns.",
+    "L4": "# Rational Leray Numbers Under Bounded-Multiplicity Simplicial Maps\n\n## Introduction\n\nThe study of Leray numbers occupies a central position at the intersection of combinatorics, topology, and discrete geometry. The Leray number of a simplicial complex captures essential information about its homological complexity, encoding the dimension above which the homology of the complex and all its induced subcomplexes vanishes. This invariant plays a fundamental role in Helly-type theorems, which broadly concern conditions under which the intersection patterns of families of sets exhibit predictable combinatorial structure.\n\nIn this paper, we investigate how rational Leray numbers behave under a natural class of transformations: simplicial maps in which the preimage of any point has bounded cardinality. Specifically, we consider simplicial maps π where each point in the target has at most r preimages, and we ask how the Leray number of the image complex π(X) relates to that of the original complex X. Our main result establishes the clean and quantitatively precise inequality\n\n$$L(\\pi(X)) \\leq rL(X) + r - 1,$$\n\nwhich shows that bounded-multiplicity maps exercise controlled influence over the homological complexity of the resulting image.\n\n## Background and Motivation\n\nTo situate this result, recall that the rational Leray number L(X) of a simplicial complex X is defined as the smallest integer d such that the reduced rational homology groups $\\tilde{H}_i(Y; \\mathbb{Q})$ vanish for all induced subcomplexes Y ⊆ X and all i ≥ d. This homological definition connects naturally to the classical nerve theorem and to the combinatorial notion of d-collapsibility, providing a topological refinement of purely combinatorial Helly properties.\n\nThe motivation for studying bounded-multiplicity maps arises from Amenta's celebrated Helly-type theorem, which concerns families of convex sets that can be partitioned into a bounded number of clusters, each behaving coherently with respect to intersection. Amenta's theorem demonstrates that when a geometric family satisfies certain boundedness conditions on how points are covered, one obtains sharp Helly numbers governing the intersection structure. Our result recasts and generalizes this geometric phenomenon in purely topological terms, replacing the convexity assumptions with homological conditions expressed through Leray numbers.\n\n## The Main Result\n\nLet X be a simplicial complex and let π be a simplicial map defined on the vertices of X and extended simplicially. We say that π has multiplicity at most r if every point in the image has at most r preimages under π. The image π(X) is the simplicial complex whose simplices are the images of simplices of X.\n\n**Theorem.** *If π is a simplicial map with multiplicity at most r, then the rational Leray numbers satisfy*\n$$L(\\pi(X)) \\leq rL(X) + r - 1.$$\n\nThe proof proceeds by analyzing the homology of induced subcomplexes of π(X) through a careful examination of the fibers of the map. The bounded-multiplicity condition allows one to control the way simplices are identified under π, and by employing spectral sequence or Mayer–Vietoris arguments applied to the fiber structure, one bounds the dimensions in which nontrivial homology can persist. The linear dependence on r reflects the fact that each level of point multiplicity can contribute additively to the homological complexity, while the additive term r − 1 accounts for the boundary effects of the identification.\n\n## Connection to Amenta's Theorem\n\nThe relationship between our result and Amenta's Helly-type theorem becomes apparent when one interprets the simplicial map π as a mechanism for aggregating or clustering the vertices of X. In the geometric setting studied by Amenta, families of convex sets are grouped so that each group contributes a bounded number of representatives, precisely mirroring the bounded-multiplicity condition on the map. Our inequality then yields, as a special case, the Helly numbers obtained by Amenta, but now derived from a topological principle that does not rely on the underlying convex geometry.\n\nThis generalization is significant because it clarifies the essential mechanism at work in Amenta's result: it is not the convexity per se, but rather the controlled homological behavior under bounded-multiplicity aggregation that drives the Helly-type conclusion. By isolating this topological core, our theorem extends the applicability of these ideas to broader combinatorial and topological settings where convexity is absent or unavailable.\n\n## Conclusion\n\nWe have established a sharp bound on the rational Leray number of the image of a simplicial complex under a simplicial map of bounded multiplicity. Beyond its intrinsic interest as a statement about the stability of homological complexity under structured maps, this result provides a unifying topological framework that encompasses Amenta's Helly-type theorem as a particular instance. The inequality L(π(X)) ≤ rL(X) + r − 1 thus contributes to the ongoing program of understanding Helly-type phenomena through the lens of topological combinatorics, and it invites further exploration into how other geometric Helly theorems might likewise be reinterpreted and generalized via the behavior of Leray numbers under natural classes of maps.",
+    "L5": "# The Leray Projection and Weak Solutions\n\nThe work of Jean Leray stands as one of the cornerstones of modern analysis, particularly in the study of partial differential equations arising in fluid mechanics. His contributions provide the foundation upon which much of the contemporary theory of the Navier–Stokes equations is built.\n\nLet us begin by considering an incompressible fluid occupying a domain in three-dimensional space. The velocity field must satisfy the incompressibility condition, meaning that its divergence vanishes everywhere within the region under consideration. The mathematical challenge lies in decomposing an arbitrary vector field into a divergence-free part and a gradient part, a task accomplished elegantly through what is now known as the Leray projection.\n\nThe Leray projection operator maps any square-integrable vector field onto the subspace of divergence-free fields. This operator is central to reformulating the equations of motion, since it allows one to eliminate the pressure term and focus attention entirely on the evolution of the velocity. The resulting formulation is both cleaner and more amenable to rigorous analysis.\n\nLet the space of such divergence-free fields be equipped with the natural inner product inherited from the ambient function space. The orthogonal complement of this subspace consists precisely of gradient fields, reflecting the classical Helmholtz decomposition. The elegance of Leray's approach becomes apparent when this decomposition is applied systematically to the governing equations.\n\nThe concept of a weak solution, another of Leray's enduring legacies, relaxes the notion of a classical solution by requiring the equations to hold only in an integrated sense against smooth test functions. The Leray–Hopf weak solutions guarantee global existence in time, even when the smoothness and uniqueness of solutions remain open questions. The famous problem concerning the regularity of these solutions continues to occupy mathematicians to this day.\n\nLet us appreciate that the depth of these ideas extends far beyond fluid dynamics. The Leray spectral sequence and the Leray–Schauder degree theory demonstrate the remarkable breadth of his mathematical vision. The unifying thread throughout his work is a profound understanding of how abstract structures illuminate concrete problems.\n\nThe influence of Leray endures, shaping how generations of researchers approach the analysis of nonlinear equations and the topology of solution spaces."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a mathematics paper about rational Leray numbers and simplicial maps.",
+      "output": "**Rational Leray Numbers Under Simplicial Maps**\n\n**Abstract.** The Leray number $L(X)$ of a simplicial complex $X$ over a field $\\mathbb{F}$ is the minimal integer $d$ such that the reduced homology $\\tilde{H}_i(Y;\\mathbb{F})$ vanishes for all $i \\geq d$ and every induced subcomplex $Y \\subseteq X$. Leray numbers govern a range of Helly-type phenomena in combinatorial geometry and topological combinatorics, yet their behavior under natural operations on complexes remains only partially understood. In this paper we study how the rational Leray number $L_{\\mathbb{Q}}(X)$ transforms under simplicial maps $\\varphi \\colon X \\to Y$. Our main result establishes a fiber-wise bound: if every induced subcomplex of each point-preimage $\\varphi^{-1}(\\sigma)$ has rational Leray number at most $k$, then\n$$\nL_{\\mathbb{Q}}(Y) \\;\\leq\\; L_{\\mathbb{Q}}(X) + k,\n$$\nsharpening and extending earlier estimates known only for projections and quotients. The proof combines a spectral sequence argument with a controlled Mayer–Vietoris decomposition adapted to the induced-subcomplex condition, allowing us to track the propagation of homology across the map. As applications, we derive new upper bounds on the Leray numbers of nerve complexes arising from set systems closed under simplicial refinement, obtain a topological generalization of the colorful Helly theorem for images of $d$-Leray complexes, and show that $d$-collapsibility is preserved, up to an additive constant, by simplicial maps with collapsible fibers. We further exhibit families of complexes demonstrating that our bound is tight, and discuss obstructions to analogous statements over fields of positive characteristic, where torsion phenomena can cause the rational and modular Leray numbers to diverge.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize the main result of a paper on Leray numbers of simplicial complexes under maps with bounded fibers.",
+      "output": "# Leray Numbers Under Maps with Bounded Fibers\n\nI should be transparent: I don't have a specific paper reliably identified in my memory that I can attribute this summary to with confidence. However, I can describe the type of result that such a paper would establish, based on the mathematical framework involved.\n\n## Background Concepts\n\n**Leray number:** The Leray number $L(X)$ of a simplicial complex $X$ (over a field or ring) is the smallest integer $d$ such that the reduced homology $\\tilde{H}_i(Y) = 0$ vanishes for all $i \\geq d$ and all induced subcomplexes $Y \\subseteq X$. Leray numbers are important because they generalize the notion of \"nerve dimension\" and control topological Helly-type theorems.\n\n**Maps with bounded fibers:** A simplicial map $f: X \\to Y$ has fibers of bounded size when the preimage of each vertex (or simplex) contains at most some fixed number $t$ of elements.\n\n## Typical Main Result\n\nA result of this type would state something like:\n\n> **Theorem.** Let $f: X \\to Y$ be a simplicial map whose fibers have size at most $t$. Then the Leray number of $X$ is bounded in terms of the Leray number of $Y$ and the fiber bound:\n> $$L(X) \\leq t \\cdot L(Y) + (t - 1) \\quad \\text{(or a similar explicit bound)}.$$\n\nThe key point is that **bounded fibers allow topological complexity to be transferred** from the image complex to the domain in a controlled, quantitative way.\n\n## Significance\n\nSuch results are useful for:\n- **Helly-type theorems** in combinatorial geometry (Leray numbers control the Helly number of a family)\n- **Bounding topological invariants** of complexes built via covering or projection constructions\n- Applications to **transversal and piercing problems**\n\n---\n\n**Recommendation:** If you can share the paper's title, author(s), or the exact bound stated, I can give you a precise and accurate summary rather than this general framework. Would you like to provide those details?",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "I'm studying topological combinatorics. Can you give me an example abstract involving Leray numbers, Helly-type theorems, and Amenta's result?",
+      "output": "# Example Abstract: Topological Combinatorics\n\nHere's a sample abstract that weaves together these three concepts:\n\n---\n\n**Title: Leray Numbers and Fractional Helly Properties for Unions of Convex Sets**\n\n**Abstract:** The Leray number $L(K)$ of a simplicial complex $K$ is the minimal $d$ such that all reduced homology groups $\\tilde{H}_i(K'; \\mathbb{Q})$ vanish for $i \\geq d$ and every induced subcomplex $K' \\subseteq K$. This homological invariant provides a powerful bridge between topological methods and combinatorial Helly-type theorems. We study the nerve complexes arising from families of sets each expressible as the union of at most $k$ convex sets in $\\mathbb{R}^d$.\n\nBuilding on Amenta's theorem—which establishes that if $\\mathcal{F}$ is a finite family of compact convex sets in $\\mathbb{R}^d$ and $\\mathcal{G}$ is a family whose members are unions of at most $k$ pairwise disjoint translates from a Helly family, then a Helly-type property is preserved with bounded Helly number—we derive quantitative bounds on the Leray numbers of the associated nerves. Specifically, we show that $L(\\mathcal{N}(\\mathcal{G})) \\leq k(d+1) - 1$, refining previous estimates.\n\nAs a consequence, we obtain a **fractional Helly theorem**: for every $\\alpha \\in (0,1]$ there exists $\\beta = \\beta(\\alpha, k, d) > 0$ such that if at least $\\alpha \\binom{n}{d+1}$ of the $(d+1)$-tuples from $\\mathcal{G}$ have nonempty intersection, then some point lies in at least $\\beta n$ members. Our approach unifies the topological Helly theorem of Helly–Debrunner with the collapsibility techniques of Wegner, and answers a question posed by Kalai and Meshulam concerning the relationship between Leray numbers and $(p,q)$-theorems.\n\n---\n\n## Key Connections Explained\n\n| Concept | Role in the Abstract |\n|---------|---------------------|\n| **Leray number** | The central invariant bounding topological complexity of nerves |\n| **Helly-type theorems** | The combinatorial conclusions (fractional Helly, $(p,q)$-theorems) |\n| **Amenta's result** | The bridge theorem for unions/families of convex sets |\n\n## A Note on Accuracy\n\nI want to be transparent: while the **concepts and their relationships are genuine** (Leray numbers do bound Helly numbers, Kalai–Meshulam's work connects these to fractional Helly, and Amenta did work on Helly properties for unions of convex sets), the **specific theorem statements and bounds above are illustrative** rather than citations of exact published results.\n\nWould you like me to:\n- Point you toward the **actual foundational papers** (Kalai–Meshulam, Amenta 1994)?\n- Explain the **precise statement** of Amenta's original theorem?\n- Go deeper on **how Leray numbers imply Helly numbers** technically?",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate a concise abstract for a paper proving a bound of the form L(π(X)) ≤ rL(X)+r-1 for simplicial complexes.",
+      "output": "# Abstract\n\nWe establish a sharp upper bound relating the Lusternik–Schnirelmann-type invariant $L$ of a simplicial complex to that of its image under a simplicial map. Specifically, for a simplicial complex $X$ and a projection (or quotient) map $\\pi$ of multiplicity $r$, we prove the inequality\n$$L(\\pi(X)) \\leq rL(X) + r - 1.$$\n\nThe proof proceeds by constructing an explicit categorical cover of $\\pi(X)$ from a minimal cover of $X$. Given a cover of $X$ by $L(X)+1$ contractible (or categorical) subcomplexes, we analyze the preimage structure under $\\pi$ and show that each fiber contributes at most $r$ sheets to the covering complexity. A careful combinatorial argument, tracking the overlap of images across the $r$-fold structure, yields the additive correction term $r-1$. We further demonstrate that the bound is tight by exhibiting families of complexes for which equality holds, confirming that neither the multiplicative factor $r$ nor the additive constant can be improved in general.\n\nAs applications, we derive consequences for the topological complexity of covering spaces and quotients by finite group actions, and we discuss connections to sectional category and related numerical invariants in combinatorial topology. Our results extend classical LS-category estimates to the simplicial setting and provide effective computational tools for bounding these invariants in discrete geometric contexts.\n\n---\n\n*Note: I've written this abstract based on standard conventions in LS-category theory. You may wish to adjust the interpretation of $L$, $\\pi$, and $r$ to match your specific definitions and results.*",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a short technical description defining the rational Leray number and stating a theorem about how it behaves under r-to-one simplicial maps.",
+      "output": "# Rational Leray Number\n\n## Definition\n\nLet $X$ be a simplicial complex (or more generally a topological space) and let $\\mathbb{Q}$ denote the field of rationals. The **rational Leray number** $L(X; \\mathbb{Q})$ is the minimal integer $d \\geq 0$ such that for every induced subcomplex $Y \\subseteq X$, the reduced rational homology vanishes in dimensions $\\geq d$:\n\n$$\\tilde{H}_i(Y; \\mathbb{Q}) = 0 \\quad \\text{for all } i \\geq d \\text{ and all induced subcomplexes } Y \\subseteq X.$$\n\nEquivalently, one may define it via the reduced homology of the links of the complex. The Leray number quantifies how \"acyclic\" all induced subcomplexes are — a complex with $L(X;\\mathbb{Q}) \\leq d$ is called *$d$-Leray*. For example, the nerve of a family of convex sets in $\\mathbb{R}^d$ is $d$-Leray (a form of the Helly property).\n\n## Theorem (Leray number under $r$-to-one maps)\n\nA key result concerns how the Leray number transforms under simplicial maps with bounded fibers.\n\n**Theorem (Kalai–Meshulam).** *Let $\\varphi : X \\to Y$ be a simplicial map between finite simplicial complexes that is at most $r$-to-one (i.e., the preimage $\\varphi^{-1}(\\sigma)$ of any simplex $\\sigma \\in Y$ contains at most $r$ vertices, or equivalently each fiber has bounded size). Then the rational Leray numbers satisfy*\n\n$$L(Y; \\mathbb{Q}) \\leq r \\cdot \\big(L(X; \\mathbb{Q}) + 1\\big) - 1.$$\n\n### Remarks\n\n- The bound reflects the way collapsibility and homological connectivity of induced subcomplexes degrade under the identification of at most $r$ vertices.\n- The case $r = 1$ recovers a monotonicity statement for injective-fiber maps.\n- These results are central to topological Helly-type theorems and to bounding Betti numbers of unions and projections of nerves.\n\nWould you like the analogous statement for **collapsibility numbers** or a sketch of the proof via the Mayer–Vietoris / spectral sequence argument?",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.567490494296578,
+      "excess_ratio": 0.49645326932196326,
+      "baseline_mean": 0.07103722497461477,
+      "baseline_n_valid": 5,
+      "output_chars": 529,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5741324921135647,
+          "baseline_mean": 0.05254017620971929,
+          "excess_ratio": 0.5215923159038454
+        },
+        "bz2": {
+          "actual_ratio": 0.4752186588921283,
+          "baseline_mean": 0.06079733912007766,
+          "excess_ratio": 0.4144213197720506
+        },
+        "lzma": {
+          "actual_ratio": 0.6428571428571429,
+          "baseline_mean": 0.09777949985276038,
+          "excess_ratio": 0.5450776430043826
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.33774250440917103,
+      "excess_ratio": 0.26670527943455624,
+      "baseline_mean": 0.07103722497461477,
+      "baseline_n_valid": 5,
+      "output_chars": 536,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3081395348837209,
+          "baseline_mean": 0.05254017620971929,
+          "excess_ratio": 0.25559935867400163
+        },
+        "bz2": {
+          "actual_ratio": 0.2777777777777778,
+          "baseline_mean": 0.06079733912007766,
+          "excess_ratio": 0.21698043865770011
+        },
+        "lzma": {
+          "actual_ratio": 0.4174757281553398,
+          "baseline_mean": 0.09777949985276038,
+          "excess_ratio": 0.3196962283025794
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.16984445559458108,
+      "excess_ratio": 0.09880723061996631,
+      "baseline_mean": 0.07103722497461477,
+      "baseline_n_valid": 5,
+      "output_chars": 2909,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.15646785437645236,
+          "baseline_mean": 0.05254017620971929,
+          "excess_ratio": 0.10392767816673307
+        },
+        "bz2": {
+          "actual_ratio": 0.14569031273836766,
+          "baseline_mean": 0.06079733912007766,
+          "excess_ratio": 0.08489297361829
+        },
+        "lzma": {
+          "actual_ratio": 0.20520231213872833,
+          "baseline_mean": 0.09777949985276038,
+          "excess_ratio": 0.10742281228596795
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.10710466004583645,
+      "excess_ratio": 0.036067435071221676,
+      "baseline_mean": 0.07103722497461477,
+      "baseline_n_valid": 5,
+      "output_chars": 5318,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.09045226130653267,
+          "baseline_mean": 0.05254017620971929,
+          "excess_ratio": 0.037912085096813375
+        },
+        "bz2": {
+          "actual_ratio": 0.10875706214689265,
+          "baseline_mean": 0.06079733912007766,
+          "excess_ratio": 0.04795972302681499
+        },
+        "lzma": {
+          "actual_ratio": 0.12186379928315412,
+          "baseline_mean": 0.09777949985276038,
+          "excess_ratio": 0.024084299430393738
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.02800887409872441,
+      "excess_ratio": -0.04302835087589037,
+      "baseline_mean": 0.07103722497461477,
+      "baseline_n_valid": 5,
+      "output_chars": 2511,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.01020408163265306,
+          "baseline_mean": 0.05254017620971929,
+          "excess_ratio": -0.04233609457706623
+        },
+        "bz2": {
+          "actual_ratio": 0.021367521367521368,
+          "baseline_mean": 0.06079733912007766,
+          "excess_ratio": -0.039429817752556294
+        },
+        "lzma": {
+          "actual_ratio": 0.050793650793650794,
+          "baseline_mean": 0.09777949985276038,
+          "excess_ratio": -0.04698584905910959
+        }
+      }
+    }
+  }
+}

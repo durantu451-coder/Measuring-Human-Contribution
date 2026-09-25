@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15871939",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA decoding method includes that when encoding at a sending terminal, for a m-order primitive polynomial P(x), a primitive field element in galois field GF(2m) is represented by α; a lookup table f(αj) for different power exponents of α is established, where the value of j is selected from all the integers ranging from 0 to 2m−1, with a total number of 2m; a generator polynomial G(x) is expanded to obtain a polynomial with respect to x, with coefficients being an addition or subtraction of the power exponents of α; a remainder polynomial R(x), obtained by dividing code word polynomial Q(x) by the generator polynomial G(x), is a polynomial with respect to x, with coefficients being an addition or subtraction of the power exponents of α; and the coefficients of the generator polynomial G(x) and the remainder polynomial R(x) are both calculated using data found in the lookup table f(αj).",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA decoding method includes that when encoding at a sending terminal, for a m-order primitive polynomial P(x), a primitive field element in galois field GF(2m) is represented by α; a lookup table f(αj) for different power exponents of α is established, where the value of j is selected from all the integers ranging from 0 to 2m−1, with a total number of 2m; a generator polynomial G(x) is expanded to obtain a polynomial with respect to x, with coefficients being an addition or subtraction of the power exponents of α; a remainder polynomial R(x), obtained by dividing code word polynomial Q(x) by the generator polynomial G(x), is a polynomial with respect to x, with coefficients being an addition or subtraction of the power exponents of α; and the coefficients of the generator polynomial G(x) and the remainder polynomial R(x) are both calculated using data found in the lookup table f(αj).",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A decoding method uses an m-order primitive polynomial P(x) and represents a primitive field element in GF(2m) as α during encoding at a sending terminal.\n- A lookup table f(αj) is established for different power exponents of α, where j ranges from 0 to 2m−1.\n- The generator polynomial G(x) is expanded into a polynomial in x whose coefficients are additions or subtractions of power exponents of α.\n- A remainder polynomial R(x) is obtained by dividing the code word polynomial Q(x) by the generator polynomial G(x).\n- The coefficients of both the generator polynomial G(x) and the remainder polynomial R(x) are calculated using values from the lookup table f(αj).",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA decoding method for Galois field GF(2^m) constructs a lookup table for powers of a primitive element α and uses it to expand the generator polynomial and compute the remainder polynomial during code word processing. By calculating both generator and remainder polynomial coefficients through the lookup table, the method simplifies finite-field operations and improves encoding/decoding efficiency.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: A decoding method"
+  },
+  "outputs": {
+    "L1": "A decoding method includes the following: during encoding at a sending terminal, for an m-order primitive polynomial P(x), a primitive field element in the Galois field GF(2m) is represented by α; a lookup table f(αj) is established for different power exponents of α, where j is selected from all integers ranging from 0 to 2m−1, for a total of 2m values; a generator polynomial G(x) is expanded to obtain a polynomial in x, whose coefficients are additions or subtractions of the power exponents of α; a remainder polynomial R(x), obtained by dividing a codeword polynomial Q(x) by the generator polynomial G(x), is a polynomial in x, whose coefficients are additions or subtractions of the power exponents of α; and the coefficients of both the generator polynomial G(x) and the remainder polynomial R(x) are calculated using data found in the lookup table f(αj).",
+    "L2": "A decoding technique is described as follows: during encoding at a transmitting end, given an m-th order primitive polynomial P(x), the primitive element of the Galois field GF(2m) is denoted as α. A lookup table f(αj) is created for the various powers of α, where j takes each integer value from 0 through 2m−1, giving 2m entries in total. A generator polynomial G(x) is then expanded into a polynomial in x, whose coefficients are formed by adding or subtracting exponents of powers of α. A remainder polynomial R(x), produced by dividing the codeword polynomial Q(x) by the generator polynomial G(x), is also expressed as a polynomial in x, with coefficients likewise obtained through addition or subtraction of exponents of α. The coefficients of both the generator polynomial G(x) and the remainder polynomial R(x) are computed using the data stored in the lookup table f(αj).",
+    "L3": "A decoding method is based on the use of an \\(m\\)-order primitive polynomial \\(P(x)\\). During encoding at the sending terminal, a primitive field element in the finite field \\(GF(2^m)\\) is represented as \\(\\alpha\\). The primitive polynomial \\(P(x)\\) defines the arithmetic rules of the finite field, and the element \\(\\alpha\\) serves as a generator of the non-zero elements of \\(GF(2^m)\\).\n\nTo support the decoding operation, a lookup table \\(f(\\alpha^j)\\) is established for different power exponents of \\(\\alpha\\), where \\(j\\) ranges from \\(0\\) to \\(2^m-1\\). This lookup table provides a convenient way to determine the field value corresponding to each power of the primitive element. By using the table, finite-field operations involving powers of \\(\\alpha\\) can be performed efficiently without repeatedly computing the values directly from the primitive polynomial.\n\nThe generator polynomial \\(G(x)\\) is then expanded into a polynomial in \\(x\\). In this expanded form, the coefficients of the polynomial are expressed as additions or subtractions of power exponents of \\(\\alpha\\). Because the calculations are performed over \\(GF(2^m)\\), these coefficient operations follow the arithmetic rules of the finite field. The lookup table \\(f(\\alpha^j)\\) is used to convert the power-form expressions into corresponding field elements.\n\nNext, a remainder polynomial \\(R(x)\\) is obtained by dividing the code word polynomial \\(Q(x)\\) by the generator polynomial \\(G(x)\\). This polynomial division is also carried out over \\(GF(2^m)\\). The resulting remainder polynomial \\(R(x)\\) provides information that can be used in the decoding process, for example, to determine whether an error is present or to support subsequent error-location and error-correction operations.\n\nFinally, the coefficients of both the generator polynomial \\(G(x)\\) and the remainder polynomial \\(R(x)\\) are calculated using values obtained from the lookup table \\(f(\\alpha^j)\\). By relying on the pre-established table, the method simplifies the finite-field coefficient calculations and improves the efficiency of the decoding process.",
+    "L4": "A decoding method for a Galois field GF(2^m) is provided in which arithmetic operations required for encoding or decoding are performed with the aid of a lookup table. The method first selects a primitive element α of the finite field GF(2^m), where the nonzero elements of the field can be represented as powers of α. A lookup table is then constructed to store the correspondence between each exponent of α and its associated binary field element. The table may also include inverse mappings, allowing a field element to be quickly converted into its exponent representation.\n\nAfter the lookup table has been generated, the generator polynomial of the code is expanded using the stored powers of α. Instead of repeatedly performing multiplication and addition directly in the finite field, the coefficients of the generator polynomial are obtained by referring to the lookup table. This allows the generator polynomial to be calculated efficiently and consistently, even when the degree of the polynomial or the field size is large.\n\nDuring code word processing, the input data polynomial is divided by the generator polynomial to obtain a remainder polynomial. The coefficients of the remainder polynomial are also calculated using the lookup table. Field multiplication can be reduced to exponent addition modulo 2^m − 1, while field addition is performed by bitwise exclusive-OR operations on the corresponding binary representations. By using the table for both generator polynomial expansion and remainder polynomial computation, the method avoids complex repeated finite-field calculations.\n\nThe resulting remainder polynomial may be appended to the input data polynomial to form an encoded code word, or it may be used during decoding to detect and correct errors. In a decoding process, syndromes, error-location information, or other correction values can likewise be derived using the same lookup table structure. This unified approach simplifies implementation because the same table-based finite-field arithmetic can be applied throughout the encoding and decoding procedure.\n\nBy calculating both the generator polynomial coefficients and the remainder polynomial coefficients through the lookup table of powers of the primitive element α, the method reduces computational complexity, minimizes processing time, and improves the efficiency of Galois-field-based coding operations. The approach is particularly useful for error-correcting codes such as Reed-Solomon codes, BCH codes, and other block codes that require repeated arithmetic over GF(2^m).",
+    "L5": "## A Decoding Method\n\nA decoding method is a process used to interpret, translate, or recover information from an encoded form. In many fields, data is transformed into a different format for storage, transmission, compression, or security. Decoding is the reverse process that makes the information understandable or usable again.\n\nFor example, in digital communication, a message may be encoded into binary signals before being sent through a network. A decoding method is then applied at the receiving end to reconstruct the original message. This process helps ensure that the data is accurately received, even if noise or errors occur during transmission.\n\nIn computer science, decoding methods are commonly used in file compression, image processing, audio formats, and encryption systems. For instance, when a compressed video file is played, the device uses a decoding method to convert the compressed data into visible images and sound. Similarly, in error-correction systems, decoding can detect and sometimes fix mistakes in transmitted data.\n\nA good decoding method should be accurate, efficient, and reliable. It should recover the original information with minimal loss while using reasonable computing resources. Depending on the application, the method may prioritize speed, security, or error resistance.\n\nOverall, a decoding method is an essential part of modern technology. It allows encoded information to be transformed back into a meaningful form, supporting communication, media playback, data storage, and secure information exchange."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a patent-style abstract describing a Reed-Solomon/Galois field decoding method that uses a lookup table for powers of a primitive element in GF(2^m) to calculate generator and remainder polynomial coefficients.",
+      "output": "A method for decoding Reed-Solomon encoded data over a Galois field GF(2^m) is disclosed. The method includes storing, in a lookup table, representations of successive powers of a primitive element of the Galois field and using the lookup table to perform finite-field arithmetic during decoding. Generator polynomial coefficients are calculated by successively forming polynomial factors associated with selected powers of the primitive element and combining the factors using table-based multiplication and addition operations. A received codeword polynomial is processed by dividing the polynomial by the generator polynomial, or by an equivalent iterative feedback operation, to obtain remainder polynomial coefficients corresponding to syndromes or error-detection values. The remainder coefficients are computed using lookup-table-derived powers of the primitive element, thereby reducing computational complexity and avoiding repeated explicit Galois field multiplication. The resulting coefficients are used to determine whether an error is present and may be provided to an error locator and correction process for identifying and correcting symbol errors in the received Reed-Solomon codeword.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Generate a technical description of an error-correction coding method where an m-order primitive polynomial P(x), primitive element α, generator polynomial G(x), and remainder polynomial R(x) are computed using a lookup table f(α^j).",
+      "output": "An error-correction coding method may be implemented over a Galois field \\(GF(2^m)\\) by using an \\(m\\)-order primitive polynomial \\(P(x)\\) to define the field arithmetic, a primitive element \\(\\alpha\\) to enumerate the nonzero field elements, a generator polynomial \\(G(x)\\) to define the code, and a remainder polynomial \\(R(x)\\) to generate parity symbols. A lookup table \\(f(\\alpha^j)\\) is used to accelerate finite-field multiplication, division, and polynomial evaluation.\n\n## 1. Field Definition Using Primitive Polynomial\n\nLet\n\n\\[\nP(x)=x^m+p_{m-1}x^{m-1}+\\cdots+p_1x+p_0\n\\]\n\nbe a primitive polynomial of degree \\(m\\) over \\(GF(2)\\). The polynomial \\(P(x)\\) defines the extension field\n\n\\[\nGF(2^m)=GF(2)[x]/P(x).\n\\]\n\nA primitive element \\(\\alpha\\) is selected such that\n\n\\[\nP(\\alpha)=0\n\\]\n\nand \\(\\alpha\\) generates all nonzero elements of the field:\n\n\\[\nGF(2^m)^\\*=\\{1,\\alpha,\\alpha^2,\\ldots,\\alpha^{2^m-2}\\}.\n\\]\n\nBecause \\(\\alpha\\) is primitive,\n\n\\[\n\\alpha^{2^m-1}=1.\n\\]\n\nEach nonzero field element can therefore be represented either in polynomial basis form or in exponent form as \\(\\alpha^j\\).\n\n## 2. Lookup Table for Field Elements\n\nA lookup table is constructed to map exponent indices to field elements:\n\n\\[\nf(\\alpha^j), \\qquad j=0,1,\\ldots,2^m-2.\n\\]\n\nThe table stores the polynomial-basis representation of each power of \\(\\alpha\\). For example,\n\n\\[\nf(\\alpha^j)=a_{m-1}x^{m-1}+\\cdots+a_1x+a_0,\n\\]\n\nwhere each coefficient \\(a_i\\in GF(2)\\).\n\nThe table is generated recursively using\n\n\\[\n\\alpha^{j+1}=\\alpha\\cdot \\alpha^j \\bmod P(x).\n\\]\n\nWhen the degree of the intermediate product reaches \\(m\\), reduction is performed using\n\n\\[\n\\alpha^m \\equiv p_{m-1}\\alpha^{m-1}+\\cdots+p_1\\alpha+p_0\n\\pmod{P(\\alpha)}.\n\\]\n\nIn binary fields, subtraction and addition are identical, so coefficient operations are XOR operations.\n\nThe lookup table allows field multiplication to be performed by exponent addition:\n\n\\[\n\\alpha^i \\cdot \\alpha^j = \\alpha^{(i+j)\\bmod(2^m-1)}.\n\\]\n\nSimilarly, division is performed by exponent subtraction:\n\n\\[\n\\frac{\\alpha^i}{\\alpha^j}\n=\n\\alpha^{(i-j)\\bmod(2^m-1)}.\n\\]\n\n## 3. Generator Polynomial Construction\n\nFor a \\(t\\)-symbol-error-correcting code, such as a Reed-Solomon or BCH-type code, the generator polynomial \\(G(x)\\) is constructed so that it has a prescribed set of roots in \\(GF(2^m)\\).\n\nA typical generator polynomial is\n\n\\[\nG(x)=\\prod_{i=b}^{b+2t-1}(x-\\alpha^i),\n\\]\n\nwhere \\(b\\) is the first consecutive root and \\(2t\\) is the number of roots required for correcting up to \\(t\\) symbol errors.\n\nSince the field has characteristic 2,\n\n\\[\nx-\\alpha^i = x+\\alpha^i.\n\\]\n\nThus,\n\n\\[\nG(x)=\\prod_{i=b}^{b+2t-1}(x+\\alpha^i).\n\\]\n\nThe coefficients of \\(G(x)\\) are elements of \\(GF(2^m)\\). During construction, each multiplication step is carried out using the lookup table \\(f(\\alpha^j)\\) to determine products and sums of field elements.\n\nIf\n\n\\[\nG(x)=g_0+g_1x+\\cdots+g_rx^r,\n\\]\n\nthen \\(r=\\deg G(x)\\) is the number of parity symbols appended during systematic encoding.\n\n## 4. Message Polynomial\n\nLet the message to be encoded be represented as a polynomial\n\n\\[\nM(x)=m_{k-1}x^{k-1}+m_{k-2}x^{k-2}+\\cdots+m_1x+m_0,\n\\]\n\nwhere each symbol \\(m_i\\in GF(2^m)\\).\n\nFor an \\((n,k)\\) block code,\n\n\\[\nn = 2^m-1\n\\]\n\nfor a primitive full-length code, and\n\n\\[\nr=n-k\n\\]\n\nis the number of parity symbols.\n\n## 5. Systematic Encoding\n\nTo form a systematic codeword, the message polynomial is shifted by \\(r\\) positions:\n\n\\[\nx^r M(x).\n\\]\n\nThe shifted message is then divided by the generator polynomial \\(G(x)\\). The remainder of this division is\n\n\\[\nR(x)=x^r M(x) \\bmod G(x).\n\\]\n\nThe remainder polynomial has degree less than \\(r\\):\n\n\\[\nR(x)=r_{r-1}x^{r-1}+r_{r-2}x^{r-2}+\\cdots+r_1x+r_0.\n\\]\n\nThe systematic codeword polynomial is then\n\n\\[\nC(x)=x^rM(x)+R(x).\n\\]\n\nBecause addition and subtraction are the same over \\(GF(2^m)\\), this guarantees that \\(C(x)\\) is divisible by \\(G(x)\\):\n\n\\[\nC(x)\\bmod G(x)=0.\n\\]\n\n## 6. Remainder Polynomial Computation\n\nThe remainder polynomial \\(R(x)\\) may be computed using polynomial long division or an equivalent feedback shift-register structure.\n\nAt each division step, a leading coefficient is multiplied by the corresponding coefficient of \\(G(x)\\). If a coefficient is represented as a power of the primitive element, the lookup table is used to evaluate\n\n\\[\nf(\\alpha^i)\\cdot f(\\alpha^j)\n=\nf\\left(\\alpha^{(i+j)\\bmod(2^m-1)}\\right).\n\\]\n\nThe use of \\(f(\\alpha^j)\\) avoids explicit polynomial multiplication modulo \\(P(x)\\) during every operation. Instead, field products are obtained through table indexing and modular exponent arithmetic.\n\n## 7. Encoding Procedure Summary\n\nThe method may be summarized as follows:\n\n1. Select an \\(m\\)-order primitive polynomial \\(P(x)\\).\n2. Define a primitive field element \\(\\alpha\\) satisfying \\(P(\\alpha)=0\\).\n3. Construct a lookup table \\(f(\\alpha^j)\\) for \\(j=0,\\ldots,2^m-2\\).\n4. Select the required error-correction capability \\(t\\).\n5. Generate\n\n   \\[\n   G(x)=\\prod_{i=b}^{b+2t-1}(x+\\alpha^i).\n   \\]\n\n6. Represent the input data as a message polynomial \\(M(x)\\).\n7. Compute\n\n   \\[\n   R(x)=x^rM(x)\\bmod G(x).\n   \\]\n\n8. Form the transmitted codeword\n\n   \\[\n   C(x)=x^rM(x)+R(x).\n   \\]\n\n## 8. Technical Advantages\n\nUsing the lookup table \\(f(\\alpha^j)\\) provides efficient implementation because multiplication and division in \\(GF(2^m)\\) are reduced to exponent addition and subtraction. This is especially advantageous for hardware or embedded implementations of BCH and Reed-Solomon encoders, where repeated finite-field operations are required to compute \\(G(x)\\) and \\(R(x)\\).\n\nThe method therefore provides a structured way to generate an error-correction code by deriving the field from a primitive polynomial, constructing the generator polynomial from powers of a primitive element, and computing the parity remainder using table-assisted Galois-field arithmetic.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft one long sentence in the style of a Chinese patent translation about encoding at a sending terminal in GF(2m), establishing a lookup table for α exponents from 0 to 2m−1, expanding G(x), and calculating R(x).",
+      "output": "At the sending terminal, the information sequence to be transmitted is encoded in the Galois field GF(2^m), wherein a lookup table corresponding to the powers of the primitive element α is firstly established for exponents from 0 to 2^m−1, the generator polynomial G(x) is then expanded according to said lookup table so as to obtain each coefficient thereof in GF(2^m), and thereafter the remainder polynomial R(x) is calculated by dividing the information polynomial multiplied by the corresponding power of x by the expanded generator polynomial G(x), thereby obtaining the encoded check symbols for transmission.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Describe a decoding method for a code word polynomial Q(x) divided by a generator polynomial G(x), where coefficients involving powers of α in GF(2^m) are obtained from a precomputed lookup table.",
+      "output": "A decoding method can be based on computing the remainder obtained when the received code-word polynomial \\(Q(x)\\) is divided by the generator polynomial \\(G(x)\\) over \\(GF(2^m)\\). The arithmetic is performed in the finite field, and products involving powers of the primitive element \\(\\alpha\\) are obtained from a precomputed lookup table.\n\nLet\n\n\\[\nQ(x)=q_{n-1}x^{n-1}+q_{n-2}x^{n-2}+\\cdots+q_1x+q_0\n\\]\n\nbe the received polynomial, and let\n\n\\[\nG(x)=g_r x^r+g_{r-1}x^{r-1}+\\cdots+g_1x+g_0\n\\]\n\nbe the generator polynomial.\n\nThe decoder proceeds as follows:\n\n1. **Receive the code word polynomial**\n\n   The received word is interpreted as a polynomial \\(Q(x)\\) whose coefficients are elements of \\(GF(2^m)\\).\n\n2. **Initialize the division**\n\n   A working copy of \\(Q(x)\\) is made. Polynomial long division is then performed over \\(GF(2^m)\\).\n\n3. **Use finite-field arithmetic**\n\n   Since the coefficients lie in \\(GF(2^m)\\), addition is done by bitwise XOR. Multiplication and division are performed using powers of the primitive element \\(\\alpha\\).\n\n   For example, if\n\n   \\[\n   a=\\alpha^i,\\qquad b=\\alpha^j,\n   \\]\n\n   then\n\n   \\[\n   ab=\\alpha^{i+j}\n   \\]\n\n   with the exponent reduced modulo \\(2^m-1\\). Instead of computing this directly each time, the value of \\(\\alpha^{i+j}\\) is read from a precomputed lookup table.\n\n4. **Perform polynomial division**\n\n   Starting from the highest-degree term of \\(Q(x)\\), cancel it using the leading term of \\(G(x)\\). At each step, the appropriate multiple of \\(G(x)\\) is subtracted from the current polynomial.\n\n   In \\(GF(2^m)\\), subtraction is the same as addition, so this operation is also XOR.\n\n   If the current leading coefficient is \\(c\\), the multiplier is\n\n   \\[\n   \\lambda = \\frac{c}{g_r}.\n   \\]\n\n   The products\n\n   \\[\n   \\lambda g_i\n   \\]\n\n   are obtained using the lookup table for field multiplication.\n\n5. **Obtain the remainder**\n\n   After all terms of degree greater than or equal to \\(\\deg G(x)\\) have been eliminated, the remaining polynomial is\n\n   \\[\n   R(x)=Q(x)\\bmod G(x).\n   \\]\n\n6. **Check for errors**\n\n   If\n\n   \\[\n   R(x)=0,\n   \\]\n\n   then \\(Q(x)\\) is a valid code word and no error is detected.\n\n   If\n\n   \\[\n   R(x)\\neq 0,\n   \\]\n\n   then the received word contains errors. The remainder, often called the syndrome, can then be used for error detection or for subsequent error correction, depending on the code.\n\nIn summary, the decoding consists of dividing the received polynomial \\(Q(x)\\) by the generator polynomial \\(G(x)\\) over \\(GF(2^m)\\). All coefficient multiplications involving powers of \\(\\alpha\\) are accelerated by using a precomputed lookup table, while additions and subtractions are implemented as XOR operations.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Produce a formal patent claim summary for a Galois-field-based decoding/encoding method using a primitive polynomial P(x), primitive field element α, lookup table f(αj), generator polynomial expansion, and remainder polynomial calculation.",
+      "output": "## Formal Patent Claim Summary\n\n### Independent Method Claim — Galois-Field-Based Encoding/Decoding\n\nA computer-implemented method for encoding or decoding digital data using arithmetic over a Galois field, the method comprising:\n\n1. **Defining a finite field**  \n   selecting a primitive polynomial \\(P(x)\\) of degree \\(m\\) over \\(GF(2)\\), thereby defining a finite field \\(GF(2^m)\\);\n\n2. **Selecting a primitive field element**  \n   designating a primitive element \\(\\alpha\\) of \\(GF(2^m)\\), wherein successive powers of \\(\\alpha\\) generate the nonzero elements of the field;\n\n3. **Constructing a field lookup table**  \n   generating and storing a lookup table representing field elements as powers of \\(\\alpha\\), including values of the form  \n   \\[\n   f(\\alpha^j),\n   \\]\n   where \\(j\\) indexes powers of the primitive element and each table entry corresponds to a polynomial or vector representation of a field element reduced modulo \\(P(x)\\);\n\n4. **Forming a generator polynomial**  \n   constructing a generator polynomial \\(g(x)\\) over \\(GF(2^m)\\) using selected roots expressed as powers of \\(\\alpha\\), and expanding the generator polynomial into coefficient form using Galois-field multiplication and addition;\n\n5. **Receiving an input data polynomial**  \n   representing input information symbols as a message polynomial \\(M(x)\\) over \\(GF(2^m)\\);\n\n6. **Calculating a remainder polynomial**  \n   multiplying the message polynomial by a power of \\(x\\) corresponding to a number of parity symbols, dividing the resulting polynomial by the expanded generator polynomial \\(g(x)\\), and calculating a remainder polynomial  \n   \\[\n   R(x) = x^r M(x) \\bmod g(x),\n   \\]\n   where \\(r\\) is the degree of the generator polynomial or the number of parity symbols;\n\n7. **Generating an encoded polynomial**  \n   producing an encoded codeword polynomial  \n   \\[\n   C(x) = x^r M(x) + R(x),\n   \\]\n   such that \\(C(x)\\) is divisible by \\(g(x)\\);\n\n8. **Performing decoding or verification**  \n   optionally evaluating a received polynomial at one or more powers of \\(\\alpha\\), calculating syndrome values, and using the lookup table to perform field arithmetic for detecting, locating, or correcting symbol errors.\n\n---\n\n### Dependent Claim Features\n\nThe method may further include one or more of the following limitations:\n\n1. The primitive polynomial \\(P(x)\\) is used to reduce intermediate polynomial products during multiplication of field elements.\n\n2. The lookup table comprises at least one antilogarithm table mapping an exponent \\(j\\) to \\(\\alpha^j\\), and at least one logarithm table mapping a nonzero field element to its corresponding exponent \\(j\\).\n\n3. Multiplication of nonzero field elements is performed by adding corresponding exponents modulo \\(2^m-1\\).\n\n4. Division of nonzero field elements is performed by subtracting corresponding exponents modulo \\(2^m-1\\).\n\n5. Addition and subtraction over \\(GF(2^m)\\) are performed using bitwise exclusive-OR operations on polynomial-basis representations.\n\n6. The generator polynomial is expressed as  \n   \\[\n   g(x)=\\prod_{i=b}^{b+r-1}(x-\\alpha^i),\n   \\]\n   where \\(b\\) is a starting root index and \\(r\\) is a number of parity symbols.\n\n7. The generator polynomial expansion is performed iteratively by multiplying a current polynomial by a binomial factor \\((x-\\alpha^i)\\) for each selected root.\n\n8. The remainder polynomial calculation is performed by polynomial long division, synthetic division, or a linear feedback shift register implementation over \\(GF(2^m)\\).\n\n9. The encoded polynomial is a Reed-Solomon codeword.\n\n10. The decoding step includes computing syndrome values  \n   \\[\n   S_i = Rcv(\\alpha^i),\n   \\]\n   where \\(Rcv(x)\\) is a received polynomial.\n\n11. Error locations are determined using a key-equation solver, Euclidean algorithm, Berlekamp-Massey algorithm, Chien search, or Forney error-magnitude calculation.\n\n12. The lookup table \\(f(\\alpha^j)\\) is stored in memory and accessed by a processor, hardware logic circuit, FPGA, ASIC, or digital signal processor.\n\n---\n\n### System Claim Summary\n\nA system for performing Galois-field-based encoding or decoding, comprising:\n\n- a memory storing a primitive polynomial \\(P(x)\\), a primitive field element \\(\\alpha\\), and a lookup table \\(f(\\alpha^j)\\);\n- a generator-polynomial construction module configured to expand a generator polynomial from selected roots expressed as powers of \\(\\alpha\\);\n- a Galois-field arithmetic unit configured to perform addition, multiplication, division, and modular reduction over \\(GF(2^m)\\);\n- a remainder-calculation module configured to calculate a remainder polynomial from a shifted message polynomial divided by the generator polynomial; and\n- an encoder or decoder module configured to generate codewords, calculate syndromes, verify received words, or correct errors.\n\n---\n\n### Computer-Readable Medium Claim Summary\n\nA non-transitory computer-readable medium storing instructions which, when executed by one or more processors, cause the processors to:\n\n- define \\(GF(2^m)\\) using a primitive polynomial \\(P(x)\\);\n- generate a lookup table corresponding to powers of a primitive element \\(\\alpha\\);\n- expand a generator polynomial using selected roots \\(\\alpha^i\\);\n- calculate a remainder polynomial by reducing a shifted message polynomial modulo the generator polynomial; and\n- output an encoded codeword or perform decoding operations using Galois-field arithmetic.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7453987730061349,
+      "excess_ratio": 0.6031836764357595,
+      "baseline_mean": 0.14221509657037537,
+      "baseline_n_valid": 5,
+      "output_chars": 866,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7653061224489796,
+          "baseline_mean": 0.11465294965958242,
+          "excess_ratio": 0.6506531727893972
+        },
+        "bz2": {
+          "actual_ratio": 0.6578947368421053,
+          "baseline_mean": 0.14468348623864588,
+          "excess_ratio": 0.5132112506034594
+        },
+        "lzma": {
+          "actual_ratio": 0.8157894736842105,
+          "baseline_mean": 0.1645437859341593,
+          "excess_ratio": 0.6512456877500512
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.48703573931324456,
+      "excess_ratio": 0.34482064274286917,
+      "baseline_mean": 0.14221509657037537,
+      "baseline_n_valid": 5,
+      "output_chars": 881,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4452054794520548,
+          "baseline_mean": 0.11465294965958242,
+          "excess_ratio": 0.3305525297924724
+        },
+        "bz2": {
+          "actual_ratio": 0.47835051546391755,
+          "baseline_mean": 0.14468348623864588,
+          "excess_ratio": 0.3336670292252717
+        },
+        "lzma": {
+          "actual_ratio": 0.5317460317460317,
+          "baseline_mean": 0.1645437859341593,
+          "excess_ratio": 0.36720224581187244
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.25914396887159535,
+      "excess_ratio": 0.11692887230121998,
+      "baseline_mean": 0.14221509657037537,
+      "baseline_n_valid": 5,
+      "output_chars": 2108,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.220462850182704,
+          "baseline_mean": 0.11465294965958242,
+          "excess_ratio": 0.10580990052312159
+        },
+        "bz2": {
+          "actual_ratio": 0.2731535756154748,
+          "baseline_mean": 0.14468348623864588,
+          "excess_ratio": 0.12847008937682894
+        },
+        "lzma": {
+          "actual_ratio": 0.28125,
+          "baseline_mean": 0.1645437859341593,
+          "excess_ratio": 0.1167062140658407
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.17798449612403106,
+      "excess_ratio": 0.035769399553655684,
+      "baseline_mean": 0.14221509657037537,
+      "baseline_n_valid": 5,
+      "output_chars": 2565,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1462715105162524,
+          "baseline_mean": 0.11465294965958242,
+          "excess_ratio": 0.031618560856669975
+        },
+        "bz2": {
+          "actual_ratio": 0.18980169971671387,
+          "baseline_mean": 0.14468348623864588,
+          "excess_ratio": 0.04511821347806799
+        },
+        "lzma": {
+          "actual_ratio": 0.19642857142857142,
+          "baseline_mean": 0.1645437859341593,
+          "excess_ratio": 0.03188478549441212
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.054112554112554064,
+      "excess_ratio": -0.08810254245782131,
+      "baseline_mean": 0.14221509657037537,
+      "baseline_n_valid": 5,
+      "output_chars": 1558,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.028727770177838577,
+          "baseline_mean": 0.11465294965958242,
+          "excess_ratio": -0.08592517948174384
+        },
+        "bz2": {
+          "actual_ratio": 0.04306864064602961,
+          "baseline_mean": 0.14468348623864588,
+          "excess_ratio": -0.10161484559261627
+        },
+        "lzma": {
+          "actual_ratio": 0.0861244019138756,
+          "baseline_mean": 0.1645437859341593,
+          "excess_ratio": -0.0784193840202837
+        }
+      }
+    }
+  }
+}

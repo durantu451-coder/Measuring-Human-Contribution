@@ -1,0 +1,175 @@
+{
+  "model": "claude-sonnet-5",
+  "domain": "Arxiv",
+  "id": "0704.0005",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIn this paper we show how to compute the $\\Lambda_{\\alpha}$ norm, $\\alpha\\ge 0$, using the dyadic grid. This result is a consequence of the description of the Hardy spaces $H^p(R^N)$ in terms of dyadic and special atoms.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIn this paper we show how to compute the $\\Lambda_{\\alpha}$ norm, $\\alpha\\ge 0$, using the dyadic grid. This result is a consequence of the description of the Hardy spaces $H^p(R^N)$ in terms of dyadic and special atoms.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper demonstrates a method for computing the Λ_α norm, where α ≥ 0, by utilizing the dyadic grid structure.\n- This computational approach is derived as a direct consequence of characterizing Hardy spaces H^p(R^N) through dyadic atoms.\n- Special atoms are also employed alongside dyadic atoms in the description of the Hardy spaces H^p(R^N).\n- The connection between atomic decompositions of Hardy spaces and the dyadic grid provides the theoretical foundation for the norm computation.\n- The results establish a link between function space norms (Λ_α) and the atomic structure of Hardy spaces in R^N.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis paper addresses the computation of the Λ_α norm (α≥0) by employing a dyadic grid-based approach, derived from characterizing Hardy spaces H^p(R^N) through dyadic and special atoms. The key finding demonstrates that this atomic decomposition enables an effective dyadic computation of the Λ_α norm, providing a significant simplification for analyzing these function spaces.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: This, Hardy"
+  },
+  "outputs": {
+    "L1": "Here is a polished version of your text:\n\nIn this paper, we demonstrate how to compute the $\\Lambda_{\\alpha}$ norm, for $\\alpha \\geq 0$, using the dyadic grid. This result follows as a consequence of characterizing the Hardy spaces $H^p(\\mathbb{R}^N)$ in terms of dyadic and special atoms.\n\nIf you'd like, I can offer alternative phrasings with slightly different emphasis—for instance, making the connection between the two results more explicit or adjusting the tone to be more formal or more concise. Let me know if you'd like me to tailor it further to match the style of a specific journal or your broader paper.",
+    "L2": "**Rewritten version:**\n\nThis paper demonstrates a method for calculating the $\\Lambda_{\\alpha}$ norm (where $\\alpha\\ge 0$) by employing the dyadic grid structure. This finding emerges as a direct consequence of characterizing the Hardy spaces $H^p(R^N)$ through dyadic and special atomic decompositions.",
+    "L3": "# Computing the Λ_α Norm via Dyadic Grid Structures\n\nThis paper establishes a method for computing the Λ_α norm, where α ≥ 0, through a systematic exploitation of the dyadic grid structure on R^N. The dyadic grid, with its inherent hierarchical organization and self-similar nesting properties, provides a natural combinatorial framework within which the norm can be expressed and evaluated in a tractable manner. Rather than relying on continuous or arbitrary partitions of the underlying space, the approach leverages the discrete, tree-like structure of dyadic cubes to reduce the computation of Λ_α to a more manageable combinatorial or summation problem.\n\nThe central insight motivating this computational technique arises as a direct consequence of the characterization of the Hardy spaces H^p(R^N) in terms of dyadic atoms. Classical atomic decomposition theory for Hardy spaces typically relies on atoms supported on general cubes or balls satisfying moment-vanishing conditions; however, restricting attention to atoms adapted specifically to dyadic cubes yields a decomposition that is both faithful to the structure of H^p(R^N) and computationally advantageous. This dyadic atomic characterization serves as the theoretical bridge connecting the abstract function space H^p(R^N) to the concrete, grid-based framework that underlies the Λ_α norm computation.\n\nIn addition to the standard dyadic atoms, the paper also incorporates special atoms into the decomposition of H^p(R^N). These special atoms are introduced to handle boundary cases, exceptional configurations, or situations where the strict dyadic atomic decomposition alone is insufficient to capture the full range of functions or distributions belonging to the Hardy space. By supplementing the dyadic atoms with these special atoms, the resulting atomic decomposition achieves a more complete and robust representation of H^p(R^N), ensuring that the characterization holds across the full parameter range and various boundary or degenerate cases that may otherwise be excluded from a purely dyadic treatment.\n\nThe theoretical foundation underlying the entire computational scheme rests on the intimate connection between the atomic decomposition of Hardy spaces and the dyadic grid itself. Because dyadic atoms are inherently tied to the combinatorial structure of dyadic cubes—their nesting, scaling, and covering properties—the atomic decomposition of H^p(R^N) naturally inherits a dyadic organization. This inherited structure is precisely what permits the translation of norm estimates and computations from the Hardy space setting into equivalent, dyadic-grid-based computations for the Λ_α norm. In other words, the dyadic atomic decomposition acts as a conduit, transporting the fine structural properties of H^p(R^N) into a form directly applicable to the analysis of Λ_α.\n\nTaken together, these results forge a substantive link between the function space norms Λ_α and the atomic structure of the Hardy spaces H^p(R^N) over R^N. This connection not only offers a new computational tool for evaluating Λ_α norms via dyadic methods but also deepens the understanding of how classical smoothness or Lipschitz-type norms relate to the atomic and dyadic frameworks traditionally associated with Hardy space theory. The interplay between these two seemingly distinct areas—Lipschitz-type norm estimation and Hardy space atomic decomposition—highlights a broader unifying principle in harmonic analysis, wherein dyadic structures serve as a common computational and conceptual thread across different function space norms.",
+    "L4": "# On the Dyadic Computation of the Λ_α Norm via Atomic Decompositions of Hardy Spaces\n\n## 1. Introduction\n\nThe theory of Hardy spaces H^p(ℝ^N) has long occupied a central position in harmonic analysis, serving as a natural substitute for L^p spaces when p ≤ 1, and providing a rich framework for the study of singular integral operators, maximal functions, and function space duality. A parallel and deeply connected theory concerns the Lipschitz-type spaces Λ_α, which arise naturally as the dual spaces of H^p(ℝ^N) for appropriate ranges of p and α, following the foundational work of Fefferman and Stein. Despite the elegance of this duality, direct computation of the Λ_α norm from its classical definition—typically formulated via difference quotients or via smoothness conditions on polynomial approximations—remains computationally cumbersome, particularly in higher dimensions or in settings where one wishes to verify membership of a specific function in Λ_α.\n\nThis paper addresses precisely this computational difficulty. We propose and rigorously justify a dyadic grid-based approach to computing the Λ_α norm for α ≥ 0, exploiting a fundamental structural relationship between Hardy spaces and their pre-dual Lipschitz spaces through atomic decomposition theory. Our central idea is to replace the continuous, and often unwieldy, definition of the Λ_α norm—which typically requires optimization or supremum-taking over all cubes in ℝ^N, all radii, and all admissible polynomial approximations—with an equivalent formulation restricted entirely to a fixed dyadic grid structure. This reduction transforms an inherently continuous variational problem into a discrete, countable, and hence computationally tractable one.\n\n## 2. Background: Atomic Decomposition of Hardy Spaces\n\nThe atomic decomposition theorem, established by Coifman in dimension one and extended to ℝ^N by Latter, asserts that every element f ∈ H^p(ℝ^N) can be written as\n\nf = Σ_j λ_j a_j,\n\nwhere the a_j are (p, q, s)-atoms supported on cubes Q_j, satisfying vanishing moment conditions up to order s = ⌊N(1/p − 1)⌋, and the coefficients satisfy Σ_j |λ_j|^p < ∞. This decomposition, while extraordinarily powerful, presents a subtlety in its original formulation: the supporting cubes Q_j range over all possible cubes in ℝ^N, with arbitrary side lengths and arbitrary positions. This continuum of admissible cubes complicates both the theoretical analysis and any attempt at effective computation.\n\nTo remedy this, we invoke and further develop a refined version of the atomic decomposition based on **dyadic atoms** and **special atoms**, in the spirit of the constructions due to Garsia, and later systematized in the works of Wilson and others on dyadic Hardy space theory. In this refined framework, the supporting cubes Q_j are restricted to lie within a fixed dyadic grid 𝒟 = {2^{-k}(m + [0,1)^N) : k ∈ ℤ, m ∈ ℤ^N}. The special atoms are introduced precisely to compensate for the loss of translation invariance inherent in fixing a single dyadic grid; they absorb the \"boundary defects\" that arise when a function's natural support does not align with dyadic cube boundaries.\n\nWe show that every f ∈ H^p(ℝ^N) admits a decomposition\n\nf = Σ_{Q ∈ 𝒟} λ_Q a_Q + Σ_k μ_k b_k,\n\nwhere the a_Q are dyadic atoms associated to dyadic cubes Q, and the b_k are special atoms of a controlled, explicitly parametrized family, with equivalence of the H^p quasi-norm to the natural atomic quasi-norm Σ|λ_Q|^p + Σ|μ_k|^p.\n\n## 3. Duality and the Λ_α Norm\n\nThe Lipschitz-type space Λ_α(ℝ^N), for α ≥ 0, consists of functions f (or, for α = 0, functions of bounded mean oscillation, recovering BMO) for which there exists, for every cube Q, a polynomial P_Q of degree at most ⌊α⌋ such that\n\n(1/|Q|) ∫_Q |f(x) − P_Q(x)| dx ≤ C |Q|^{α/N},\n\nwith the Λ_α norm defined as the infimum of admissible constants C, taken over all cubes Q ⊂ ℝ^N and all choices of approximating polynomials.\n\nBy the Fefferman–Stein duality theorem, generalized to the full range of Hardy spaces by Taibleson and Weiss, one has\n\n(H^p(ℝ^N))* ≅ Λ_α(ℝ^N), where α = N(1/p − 1), for 0 < p ≤ 1.\n\nThis duality pairing is realized through the natural bilinear form ⟨f, g⟩ = ∫ f g dx, extended by density and continuity from the dense subclass of finite atomic combinations. The atomic decomposition of H^p thus translates, via duality, into a characterization of the Λ_α norm as\n\n‖g‖_{Λ_α} = sup { |⟨f, g⟩| : f ∈ H^p, ‖f‖_{H^p} ≤ 1 },\n\nand by the atomic decomposition, this supremum reduces to a supremum over the action of g on individual atoms, since the atomic norm controls ‖f‖_{H^p} through the coefficients λ_j.\n\n## 4. Main Result: Dyadic Computation of the Λ_α Norm\n\nThe key contribution of this paper is the demonstration that, when the atomic decomposition of H^p(ℝ^N) is carried out using dyadic and special atoms as described above, the resulting characterization of the Λ_α norm can be computed **entirely in terms of dyadic cubes**, with the special atoms contributing only a uniformly bounded, explicitly computable correction term.\n\nPrecisely, we establish the following equivalence: for g ∈ Λ_α(ℝ^N),\n\n‖g‖_{Λ_α} ≍ sup_{Q ∈ 𝒟} |Q|^{-α/N − 1} |∫_Q (g(x) − P_Q(x)) a_Q(x) dx| + C_{sp},\n\nwhere the supremum ranges only over dyadic cubes Q ∈ 𝒟, P_Q is the polynomial projection associated to the dyadic atom a_Q, and C_{sp} is a constant depending only on the special atom family, uniformly bounded independent of g.\n\nThe significance of this result lies in the reduction of the defining supremum from an uncountable family of cubes (all cubes in ℝ^N, at all scales and positions) to a countable family (dyadic cubes), indexed simply by scale k ∈ ℤ and position m ∈ ℤ^N. This is not merely an aesthetic simplification: it renders the computation of the Λ_α norm amenable to algorithmic and numerical implementation, since dyadic cubes form a tree structure under inclusion, allowing the supremum to be computed via a recursive scan over the dyadic tree rather than an optimization over a continuum of parameters.\n\n## 5. Discussion and Consequences\n\nThis dyadic reduction has several important consequences.\n\nFirst, it provides an effective **membership criterion**: to verify that a given function g belongs to Λ_α(ℝ^N), it suffices to check the defining oscillation inequality on dyadic cubes alone, rather than on the full continuum of cubes in ℝ^N. This significantly reduces the verification burden in applications, for instance when checking regularity properties of solutions to elliptic or parabolic PDEs, where Λ_α membership often certifies Hölder-type regularity.\n\nSecond, the result clarifies the precise role of the special atoms in the atomic decomposition: they are not merely technical artifacts of the construction but correspond directly to a bounded correction term in the dual norm computation, whose contribution can be estimated independently of the dyadic supremum.\n\nThird, this framework opens the door to effective numerical schemes for approximating the Λ_α norm of functions given via samples or via wavelet-type expansions naturally adapted to the dyadic grid, since dyadic cubes align precisely with the multiresolution structure underlying wavelet analysis.\n\n## 6. Conclusion\n\nBy characterizing the Hardy space H^p(ℝ^N) through an atomic decomposition built from dyadic and special atoms, we have shown that the dual Λ_α norm, for α ≥ 0, admits an equivalent and computationally effective formulation restricted to a fixed dyadic grid. This result simplifies both the theoretical and practical analysis of Lipschitz-type spaces, replacing a continuum-indexed supremum with a discrete, tree-structured computation, and it underscores the deep and computationally exploitable structural link between Hardy space atomic theory and the classical Campanato–Lipschitz duality framework.",
+    "L5": "# Thomas Hardy: Chronicler of Wessex\n\nThomas Hardy (1840–1928) stands as one of the most significant literary figures of the Victorian era, renowned for his evocative portrayals of rural England and his unflinching examination of fate, class, and human suffering. Born in Dorset, Hardy drew deeply from his native countryside to create the fictional region of \"Wessex,\" a semi-imagined landscape that served as the backdrop for nearly all his major works.\n\nHardy's literary career unfolded in two distinct phases. He first achieved fame as a novelist, producing masterpieces such as *Far from the Madding Crowd* (1874), *The Mayor of Casterbridge* (1886), *Tess of the d'Urbervilles* (1891), and *Jude the Obscure* (1895). These novels are celebrated for their rich characterization, atmospheric descriptions of nature, and tragic sensibility. Hardy's characters often struggle against forces beyond their control—social conventions, class barriers, and what he termed the \"Immanent Will,\" a quasi-fatalistic force governing human destiny.\n\nThe publication of *Jude the Obscure* sparked significant controversy due to its frank treatment of sexuality and its critique of marriage and religious institutions. The harsh public reception, including being famously burned by a bishop, contributed to Hardy's decision to abandon novel-writing altogether. This marked a pivotal turning point in his career.\n\nFollowing this shift, Hardy devoted the remainder of his life to poetry, a form he had actually practiced since his youth. His poetic output was substantial and diverse, ranging from personal elegies to philosophical meditations on time, loss, and mortality. Following the death of his first wife, Emma, in 1912, Hardy composed a remarkable series of poems reflecting on their complicated marriage and his grief—works now considered among the finest elegiac poetry in the English language.\n\nHardy's writing is distinguished by several recurring themes: the indifference of the universe to human suffering, the tension between traditional rural life and encroaching modernity, and a deep, almost geological sense of time's passage. His prose style, often criticized in his own era for its occasional awkwardness, is nonetheless prized for its powerful imagery and emotional depth.\n\nToday, Hardy is regarded as a bridge between Victorian and modern literature. His unflinching realism, psychological complexity, and pessimistic worldview anticipated many concerns of twentieth-century literature, while his devotion to a specific, lovingly rendered geography gave English literature one of its most enduring fictional landscapes."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a short abstract for a math paper that shows how to compute the Λ_α norm using a dyadic grid, based on dyadic and special atom decompositions of Hardy spaces H^p(R^N).",
+      "output": "# Abstract\n\nWe present a constructive approach to computing Lipschitz-type norms Λ_α on ℝ^N via dyadic grid methods, exploiting the duality between Hardy spaces H^p and Lipschitz spaces Λ_α for the critical index p = N/(N+α). Building on the atomic decomposition theory of Coifman, Latter, and their successors, we show that every element of H^p(ℝ^N) admits a decomposition into dyadic special atoms—atoms adapted to dyadic cubes satisfying explicit vanishing moment and support conditions—yielding a discrete, computationally tractable representation of the space.\n\nUsing this dyadic atomic framework, we derive a characterization of the Λ_α norm purely in terms of dyadic differences and averages over dyadic cubes, replacing the classical continuous supremum definition involving arbitrary balls and higher-order differences. The key technical step establishes a two-sided estimate showing that the dyadic Λ_α seminorm is equivalent to the standard Λ_α seminorm, with constants depending only on N, p, and the dyadic grid structure. This equivalence is obtained by controlling the pairing between dyadic special atoms in H^p and Lipschitz functions, reducing the norm computation to a finite, algorithmic evaluation over dyadic scales and translates.\n\nAs applications, we obtain simplified proofs of known embedding and interpolation results for Λ_α, and we indicate how the dyadic characterization facilitates numerical approximation schemes for Lipschitz norms, avoiding the need to search over continuous families of cubes or balls. Our results clarify the interplay between martingale-type dyadic structures and classical harmonic analysis on H^p and Λ_α spaces, and provide a template for extending norm computations to weighted and product settings.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Draft an abstract summarizing a result that characterizes the Lambda-alpha (Lipschitz) norm via dyadic grids, derived from atomic decompositions of H^p spaces on R^N.",
+      "output": "# Abstract\n\nWe establish a characterization of the Lipschitz (Λ_α) spaces on ℝ^N in terms of dyadic grids, obtained as a byproduct of the atomic decomposition theory for the Hardy spaces H^p(ℝ^N). Exploiting the duality between H^p and Λ_α for the appropriate range of indices, together with the discrete structure furnished by atomic decompositions built on dyadic cubes, we show that a locally integrable function f belongs to Λ_α(ℝ^N), 0 < α < 1 (with the natural extension to higher-order smoothness classes for α ≥ 1), if and only if the associated dyadic mean oscillations satisfy a uniform growth condition indexed by the side-length of the dyadic cubes. Precisely, letting {D_k} denote the standard family of dyadic grids in ℝ^N and, for each cube Q ∈ D_k of side length 2^{-k}, m_Q(f) its average (or, in the higher-order case, its best approximating polynomial of the appropriate degree), we prove the equivalence\n\n  f ∈ Λ_α(ℝ^N) ⟺ sup_{Q ∈ ⋃_k D_k} |Q|^{-α/N} \\Big( \\frac{1}{|Q|}\\int_Q |f − m_Q(f)|^p \\, dx \\Big)^{1/p} < ∞,\n\nwith comparable norms, for any 1 ≤ p < ∞. The proof relies on discretizing the atomic decomposition of H^p, transferring the smoothness condition dual to atoms supported on dyadic cubes into an oscillation condition on the dyadic grid, and then using a stopping-time/Calderón–Zygmund type argument to pass between the dyadic and continuous (all-cubes) formulations. This dyadic characterization simplifies several classical proofs involving Λ_α spaces — such as interpolation, pointwise multiplier results, and boundedness criteria for singular integral and paraproduct operators — by reducing continuous suprema over all cubes to suprema over the countable dyadic lattice, and it clarifies the precise duality mechanism linking the discrete atomic structure of H^p to the smoothness scale of Lipschitz spaces.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "I need a concise academic abstract for a functional analysis paper linking Hardy space atomic decompositions to a dyadic computation of the Λ_α norm for α ≥ 0.",
+      "output": "# Abstract\n\nWe establish a quantitative correspondence between atomic decompositions in Hardy spaces $H^p$ and a dyadic characterization of the Lipschitz-type norm $\\Lambda_\\alpha$ for $\\alpha \\geq 0$. Using a Calderón–Zygmund decomposition adapted to dyadic cubes, we construct atomic representations of distributions in $H^p(\\mathbb{R}^n)$ whose coefficients are controlled explicitly by dyadic martingale differences. This allows us to express the $\\Lambda_\\alpha$ norm—classically defined via smoothness moduli or Littlewood–Paley square functions—as an equivalent discrete quantity computed over dyadic averages and oscillations. The main result shows that a function belongs to $\\Lambda_\\alpha$ if and only if its dyadic martingale coefficients satisfy a geometric decay condition indexed by scale, with equivalence of norms holding uniformly in $\\alpha \\geq 0$. As a consequence, we recover a unified treatment of the endpoint cases $\\alpha = 0$ (bounded mean oscillation) and $\\alpha > 0$ (Hölder–Zygmund smoothness) within a single dyadic framework, and we derive sharp embedding and duality results linking $H^p$ and $\\Lambda_\\alpha$ through the discrete atomic structure. The approach avoids reliance on convolution kernels or Fourier multiplier techniques, relying instead on combinatorial estimates over dyadic trees, and extends naturally to spaces of homogeneous type.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Can you generate an abstract for a research paper proving that the Λ_α norm can be computed using dyadic grids, relying on the dyadic/special atom description of H^p(R^N)?",
+      "output": "# Abstract\n\nWe establish that the Lipschitz-type space $\\Lambda_\\alpha(\\mathbb{R}^N)$ admits an equivalent characterization in terms of dyadic grids, thereby providing a purely combinatorial approach to a classically continuous scale of function spaces. Our method exploits the well-known duality between $H^p(\\mathbb{R}^N)$ and $\\Lambda_\\alpha(\\mathbb{R}^N)$ for the appropriate range of parameters, together with the dyadic (special) atomic decomposition of $H^p(\\mathbb{R}^N)$. Specifically, we show that the norm of a function $f \\in \\Lambda_\\alpha(\\mathbb{R}^N)$, traditionally defined via a supremum over all cubes (or balls) in $\\mathbb{R}^N$ of a suitably normalized difference quotient involving polynomial approximation, is comparable to an analogous quantity in which the supremum is restricted to cubes belonging to a fixed dyadic grid, or to a finite collection of shifted dyadic grids.\n\nThe proof proceeds by pairing $\\Lambda_\\alpha$ functions against dyadic $H^p$ atoms, using the fact that dyadic atoms already suffice to reconstruct the full atomic decomposition of $H^p$ up to controlled overlaps, a consequence of the special atom decomposition. This allows us to transfer norm estimates from the continuous to the dyadic setting without loss, yielding two-sided bounds with constants depending only on $N$, $p$, and $\\alpha$. As a consequence, we obtain a discrete, dyadic reformulation of the classical mean oscillation and Hölder-type conditions defining $\\Lambda_\\alpha$, analogous to known dyadic characterizations of BMO.\n\nBeyond its intrinsic interest, this equivalence has several applications: it simplifies the verification of membership in $\\Lambda_\\alpha$ for functions constructed via dyadic or martingale-type methods, it clarifies the relationship between continuous and dyadic harmonic analysis in the endpoint and negative-smoothness regimes corresponding to $H^p$ with $p<1$, and it opens the door to transferring results between dyadic models (such as the dyadic Hilbert transform or Haar-based operators) and their continuous counterparts acting on Lipschitz spaces. We also discuss the necessity of averaging over several dyadic grids to eliminate boundary effects intrinsic to any single grid, and we show that this number of grids can be taken to depend only on the dimension $N$.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a one-paragraph abstract for a paper in harmonic analysis showing how dyadic grid methods yield a computation of the Λ_α norm as a consequence of Hardy space atomic characterizations.",
+      "output": "**Abstract.** We present a self-contained treatment of the Lambda_alpha (Lipschitz/Hölder-type) norms via dyadic grid methods, exploiting the atomic decomposition theory of Hardy spaces $H^p$ for $0<p\\le 1$ and the duality $H^p \\cong (\\Lambda_\\alpha)^*$ with $\\alpha = n(1/p-1)$. By replacing the continuum of cubes and translations underlying the classical Calderón–Zygmund and maximal function constructions with a fixed dyadic grid (or, when necessary, a finite family of shifted dyadic grids to overcome boundary effects), we obtain a discrete atomic decomposition for elements of $H^p$ in which atoms are supported on dyadic cubes and satisfy the usual vanishing-moment and size conditions. This discretization allows the pairing between $H^p$-atoms and Lipschitz functions to be computed explicitly as a finite sum of dyadic differences, from which sharp two-sided estimates for the $\\Lambda_\\alpha$ norm follow directly, with constants depending only on dimension and $\\alpha$. As a consequence, we recover the equivalence of $\\Lambda_\\alpha$ with a discrete Campanato-type dyadic seminorm, streamlining several classical arguments and yielding a transparent, combinatorial proof of the norm computation that avoids delicate covering lemmas and Whitney decompositions, while remaining fully compatible with weighted and product-space extensions of the theory.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.36406250000000007,
+      "excess_ratio": 0.2694786006324014,
+      "baseline_mean": 0.09458389936759863,
+      "baseline_n_valid": 5,
+      "output_chars": 617,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3393316195372751,
+          "baseline_mean": 0.06578879395723966,
+          "excess_ratio": 0.2735428255800354
+        },
+        "bz2": {
+          "actual_ratio": 0.3231850117096019,
+          "baseline_mean": 0.09761585363439086,
+          "excess_ratio": 0.22556915807521105
+        },
+        "lzma": {
+          "actual_ratio": 0.4224137931034483,
+          "baseline_mean": 0.11795938713485847,
+          "excess_ratio": 0.3044544059685898
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.46639231824417016,
+      "excess_ratio": 0.3718084188765715,
+      "baseline_mean": 0.09458389936759863,
+      "baseline_n_valid": 5,
+      "output_chars": 303,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4485981308411215,
+          "baseline_mean": 0.06578879395723966,
+          "excess_ratio": 0.38280933688388186
+        },
+        "bz2": {
+          "actual_ratio": 0.4048582995951417,
+          "baseline_mean": 0.09761585363439086,
+          "excess_ratio": 0.30724244596075084
+        },
+        "lzma": {
+          "actual_ratio": 0.5373134328358209,
+          "baseline_mean": 0.11795938713485847,
+          "excess_ratio": 0.4193540457009624
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.14940282301845814,
+      "excess_ratio": 0.05481892365085951,
+      "baseline_mean": 0.09458389936759863,
+      "baseline_n_valid": 5,
+      "output_chars": 3597,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.12,
+          "baseline_mean": 0.06578879395723966,
+          "excess_ratio": 0.054211206042760335
+        },
+        "bz2": {
+          "actual_ratio": 0.16420911528150134,
+          "baseline_mean": 0.09761585363439086,
+          "excess_ratio": 0.06659326164711048
+        },
+        "lzma": {
+          "actual_ratio": 0.163727959697733,
+          "baseline_mean": 0.11795938713485847,
+          "excess_ratio": 0.04576857256287452
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.058465903333671,
+      "excess_ratio": -0.03611799603392763,
+      "baseline_mean": 0.09458389936759863,
+      "baseline_n_valid": 5,
+      "output_chars": 7851,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04297224709042077,
+          "baseline_mean": 0.06578879395723966,
+          "excess_ratio": -0.022816546866818888
+        },
+        "bz2": {
+          "actual_ratio": 0.06627255756067206,
+          "baseline_mean": 0.09761585363439086,
+          "excess_ratio": -0.0313432960737188
+        },
+        "lzma": {
+          "actual_ratio": 0.06658595641646489,
+          "baseline_mean": 0.11795938713485847,
+          "excess_ratio": -0.05137343071839358
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.028081865778200963,
+      "excess_ratio": -0.06650203358939767,
+      "baseline_mean": 0.09458389936759863,
+      "baseline_n_valid": 5,
+      "output_chars": 2629,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.012399708242159009,
+          "baseline_mean": 0.06578879395723966,
+          "excess_ratio": -0.05338908571508065
+        },
+        "bz2": {
+          "actual_ratio": 0.024,
+          "baseline_mean": 0.09761585363439086,
+          "excess_ratio": -0.07361585363439085
+        },
+        "lzma": {
+          "actual_ratio": 0.046703296703296704,
+          "baseline_mean": 0.11795938713485847,
+          "excess_ratio": -0.07125609043156177
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T05:13:11.545691+00:00"
+    }
+  ]
+}

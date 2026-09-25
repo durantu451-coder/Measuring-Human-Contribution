@@ -1,0 +1,524 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0508",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe consider a sequence of additive functionals {\\phi_n}, set on a sequence of Markov chains {X_n} that weakly converges to a Markov process X. We give sufficient condition for such a sequence to converge in distribution, formulated in terms of the characteristics of the additive functionals, and related to the Dynkin's theorem on the convergence of W-functionals. As an application of the main theorem, the general sufficient condition for convergence of additive functionals in terms of transition probabilities of the chains X_n is proved.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe consider a sequence of additive functionals {\\phi_n}, set on a sequence of Markov chains {X_n} that weakly converges to a Markov process X. We give sufficient condition for such a sequence to converge in distribution, formulated in terms of the characteristics of the additive functionals, and related to the Dynkin's theorem on the convergence of W-functionals. As an application of the main theorem, the general sufficient condition for convergence of additive functionals in terms of transition probabilities of the chains X_n is proved.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The text studies additive functionals defined on a sequence of Markov chains that converges weakly to a Markov process.\n- It provides a sufficient condition for the additive functionals to converge in distribution.\n- The condition is formulated in terms of the characteristics of the additive functionals.\n- The result is connected to Dynkin’s theorem on the convergence of W-functionals.\n- An application establishes a general sufficient condition based on the transition probabilities of the Markov chains.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe work studies additive functionals of Markov chains converging weakly to a Markov process and derives sufficient conditions for distributional convergence using their characteristics and Dynkin’s theorem on W-functionals. It also establishes a general transition-probability-based convergence criterion, providing a practical method for verifying convergence of additive functionals.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Markov, Dynkin"
+  },
+  "outputs": {
+    "L1": "We consider a sequence of additive functionals \\(\\{\\phi_n\\}\\), defined on a sequence of Markov chains \\(\\{X_n\\}\\) that converges weakly to a Markov process \\(X\\). We establish a sufficient condition for the convergence in distribution of \\(\\{\\phi_n\\}\\), formulated in terms of the characteristics of the additive functionals and related to Dynkin’s theorem on the convergence of \\(W\\)-functionals. As an application of the main theorem, we prove a general sufficient condition for the convergence of additive functionals in terms of the transition probabilities of the chains \\(X_n\\).",
+    "L2": "We study additive functionals \\(\\{\\phi_n\\}\\) associated with Markov chains \\(\\{X_n\\}\\) that converge weakly to a Markov process \\(X\\). We establish a sufficient criterion for the distributional convergence of these functionals, expressed through their characteristics and connected to Dynkin’s convergence theorem for \\(W\\)-functionals. As a consequence of the main result, we derive a general sufficient condition for the convergence of additive functionals based on the transition probabilities of the chains \\(X_n\\).",
+    "L3": "The text examines additive functionals associated with a sequence of Markov chains that converges weakly to a limiting Markov process. Its main objective is to identify conditions under which these additive functionals also converge in distribution to a corresponding functional of the limiting process.\n\nA sufficient condition for this convergence is formulated in terms of the characteristics of the additive functionals. These characteristics capture their expected accumulated values and provide a tractable way to analyze convergence without directly studying the functionals themselves. By controlling the behavior of the characteristics along the approximating sequence, one can establish weak convergence of the associated additive functionals.\n\nThe result is closely related to Dynkin’s theorem concerning the convergence of W-functionals, extending its underlying ideas to the setting of weakly convergent Markov chains. As an application, the text derives a general sufficient condition expressed through the transition probabilities of the chains. This criterion offers a practical method for verifying convergence in concrete models, since transition probabilities are often more readily available than direct descriptions of the additive functionals.",
+    "L4": "The work investigates the asymptotic behavior of additive functionals associated with Markov chains whose trajectories converge weakly to those of a limiting Markov process. Such functionals typically accumulate contributions along a path—for example, through sums of state-dependent terms—and arise naturally in probability theory and its applications. Although weak convergence of the underlying processes is an essential starting point, it does not by itself guarantee convergence of the corresponding additive functionals, especially when the summands are unbounded, singular, or depend on a vanishing time scale.\n\nTo address this issue, the study formulates sufficient conditions under which additive functionals of the approximating chains converge in distribution to a continuous additive functional of the limiting process. The analysis is based on the characteristics of the functionals, understood as their expected accumulated values when the process starts from a given state. By controlling the convergence of these characteristics, together with appropriate boundedness and continuity properties, one can identify the limiting functional and establish joint weak convergence of the processes and their additive functionals.\n\nA central role is played by Dynkin’s theory of W-functionals. This theory characterizes suitable nonnegative continuous additive functionals through their characteristics and makes it possible to pass from convergence of expected accumulated contributions to convergence in distribution of the functionals themselves. The resulting conditions account both for the approximation of the limiting characteristic and for the need to exclude excessive contributions over short time intervals.\n\nThe work also derives a more general criterion stated directly in terms of transition probabilities. Rather than requiring an explicit analysis of pathwise sums, this criterion reduces the convergence problem to estimates involving the transition kernels of the approximating Markov chains and the transition function of the limiting process. In particular, the expected value of an additive functional can be represented through the transition probabilities and the weights defining the functional. Uniform convergence of these expressions, combined with suitable small-time estimates, then yields the desired distributional convergence.\n\nThis transition-probability-based formulation provides a practical method for applications. It allows convergence to be verified using quantities that are often explicitly known or can be estimated by local limit theorems, heat-kernel bounds, or other analytic techniques. The results therefore supply a general framework for transferring weak convergence of Markov chains to convergence of associated additive functionals, including functionals generated by regular state-dependent weights as well as more singular objects related to occupation times and local-time-type limits.",
+    "L5": "## Markov Processes and Dynkin’s Formula\n\nA **Markov process** is a stochastic process whose future evolution depends only on its present state, not on the complete history of how that state was reached. This property, known as the **Markov property**, makes such processes fundamental in probability theory and in applications ranging from physics and finance to biology and queueing systems.\n\nLet \\(X=(X_t)_{t\\geq 0}\\) be a time-homogeneous Markov process. Its transition semigroup is defined by\n\n\\[\nP_t f(x)=\\mathbb{E}_x[f(X_t)],\n\\]\n\nwhere \\(\\mathbb{E}_x\\) denotes expectation given that \\(X_0=x\\). The infinitesimal behavior of the process is described by its **generator** \\(L\\):\n\n\\[\nLf(x)=\\lim_{t\\downarrow 0}\\frac{P_t f(x)-f(x)}{t},\n\\]\n\nfor functions \\(f\\) for which this limit exists.\n\nA central result connecting a Markov process with its generator is **Dynkin’s formula**. For a suitable function \\(f\\) and a stopping time \\(\\tau\\), it states that\n\n\\[\n\\mathbb{E}_x[f(X_\\tau)]\n=\nf(x)+\n\\mathbb{E}_x\\left[\\int_0^\\tau Lf(X_s)\\,ds\\right],\n\\]\n\nprovided the required integrability conditions hold. For a fixed time \\(t\\), this becomes\n\n\\[\n\\mathbb{E}_x[f(X_t)]\n=\nf(x)+\n\\mathbb{E}_x\\left[\\int_0^t Lf(X_s)\\,ds\\right].\n\\]\n\nDynkin’s formula may be viewed as a probabilistic analogue of the fundamental theorem of calculus. While ordinary differentiation describes deterministic change, the generator \\(L\\) describes the expected instantaneous change of a function evaluated along a Markov process.\n\nThe formula also implies that\n\n\\[\nM_t\n=\nf(X_t)-f(X_0)-\\int_0^t Lf(X_s)\\,ds\n\\]\n\nis a martingale under appropriate assumptions. This observation is essential in the study of stochastic differential equations, boundary-value problems, and optimal stopping.\n\nFor example, if \\(X_t\\) is a diffusion satisfying\n\n\\[\ndX_t=b(X_t)\\,dt+\\sigma(X_t)\\,dW_t,\n\\]\n\nthen its generator is\n\n\\[\nLf(x)\n=\nb(x)f'(x)\n+\n\\frac{1}{2}\\sigma^2(x)f''(x).\n\\]\n\nDynkin’s formula therefore connects the probabilistic behavior of the diffusion with differential equations involving \\(L\\). In particular, expected exit times, hitting probabilities, and financial option values can often be characterized as solutions of partial differential equations.\n\nThus, Markov processes provide the memoryless stochastic framework, while Dynkin’s formula supplies one of the main tools for translating that framework into analytic and martingale-based statements."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a concise abstract for a paper on convergence in distribution of additive functionals of Markov chains that converge weakly to a Markov process.",
+      "output": "We study the convergence in distribution of additive functionals of Markov chains whose trajectories converge weakly to a limiting Markov process. Under suitable tightness, regularity, and uniform integrability conditions on the transition kernels and integrands, we establish joint convergence of the chains and their additive functionals to the corresponding continuous-time functional of the limit process. The results cover bounded and certain singular or unbounded functionals and provide a unified framework for deriving integral-functional and occupation-time limits in Markov-process approximations.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize a theorem giving sufficient conditions for additive functionals \\(\\{\\phi_n\\}\\) of Markov chains \\(\\{X_n\\}\\) to converge, using their characteristics and Dynkin’s convergence theorem for W-functionals.",
+      "output": "Let \\(X_n\\) be Markov chains converging to a Markov process \\(X\\), and let \\(\\phi_n\\) be nonnegative additive functionals, with increments \\(\\phi_n^{s,t}\\). Define their characteristics by  \n\\[\nf_n^{s,t}(x)\n   =\\mathbf E\\!\\left[\\phi_n^{s,t}\\mid X_n(s)=x\\right].\n\\]\n\nA standard sufficient-condition theorem states that if:\n\n1. \\(X_n\\Rightarrow X\\) (with convergence of the associated transition probabilities);\n2. the characteristics converge, uniformly on the relevant state-time sets,\n   \\[\n   f_n^{s,t}(x)\\longrightarrow f^{s,t}(x);\n   \\]\n3. the characteristics are uniformly small on short intervals,\n   \\[\n   \\lim_{\\delta\\downarrow0}\\,\n   \\limsup_{n\\to\\infty}\n   \\sup_{\\substack{t-s\\le\\delta\\\\x}}\n   f_n^{s,t}(x)=0;\n   \\]\n4. the individual increments of \\(\\phi_n\\) become negligible, ensuring tightness and excluding macroscopic jumps;\n\nthen \\(f^{s,t}\\) is the characteristic of a \\(W\\)-functional \\(\\phi\\) of the limiting process \\(X\\), and\n\\[\n(X_n,\\phi_n)\\Rightarrow (X,\\phi).\n\\]\n\nIn particular, the finite-dimensional distributions of \\(\\phi_n\\) converge to those of \\(\\phi\\); with the tightness condition, convergence holds in the appropriate path space. The key point is that Dynkin’s convergence theorem for \\(W\\)-functionals reduces convergence of the additive functionals to convergence and short-time control of their first-moment characteristics.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a research-paper abstract explaining how weak convergence of Markov chains can imply convergence of their additive functionals, with an application involving transition probabilities.",
+      "output": "**Abstract.** We establish conditions under which weak convergence of Markov chains entails weak convergence of their additive functionals. Let \\(X^{(n)}\\Rightarrow X\\) in an appropriate path space, and consider\n\\[\nA_t^{(n)}=\\sum_{k<nt} a_n\\!\\left(X_k^{(n)},X_{k+1}^{(n)}\\right),\n\\]\nwith normalization incorporated into \\(a_n\\). Under tightness, uniform-integrability, and continuity assumptions on the limiting kernel and integrand, we show that \\((X^{(n)},A^{(n)})\\) converges jointly to \\((X,A)\\), where \\(A\\) is the corresponding integral additive functional of the limiting process. The proof combines martingale decomposition with convergence of predictable compensators, thereby handling functionals that are not continuous under standard path-space topologies. As an application, we consider transition statistics\n\\[\nA_t^{(n)}=\\frac1n\\sum_{k<nt} g\\!\\left(X_k^{(n)},X_{k+1}^{(n)}\\right).\n\\]\nIf the transition kernels \\(P_n\\) converge suitably to \\(P\\), then \\(A^{(n)}\\) converges to the time integral of the conditional transition average\n\\[\n\\int_0^t \\int g(X_s,y)\\,P(X_s,dy)\\,ds.\n\\]\nIn particular, choosing \\(g\\) as an indicator yields convergence of normalized transition counts and related empirical transition probabilities. These results provide a general route from process-level weak convergence to asymptotic statements for occupation measures, rewards, and transition-based observables.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Provide a brief mathematical overview of sufficient conditions for convergence of additive functionals on approximating Markov chains.",
+      "output": "Let \\(X^{(n)}=(X^{(n)}_k)_{k\\ge0}\\) be Markov chains with time step \\(h_n\\downarrow0\\), and suppose their interpolations converge to a Markov process \\(X\\):\n\\[\nX^{(n)}_{\\lfloor t/h_n\\rfloor}\\Rightarrow X_t\n\\quad\\text{in }D([0,T],E).\n\\]\nConsider additive functionals\n\\[\nA_t^{(n)}\n =\\sum_{k< t/h_n} a_n\\!\\left(X_k^{(n)},X_{k+1}^{(n)}\\right),\n\\]\nor, in the state-dependent case,\n\\[\nA_t^{(n)}=h_n\\sum_{k<t/h_n} f_n(X_k^{(n)}).\n\\]\n\nTypical sufficient conditions for joint convergence\n\\[\n(X^{(n)},A^{(n)})\\Rightarrow (X,A)\n\\]\nare the following.\n\n1. **Convergence of the underlying chains.**  \n   Initial laws converge, and the discrete generators\n   \\[\n   L_n f(x)=h_n^{-1}\\mathbb E_x\\!\\left[f(X_1^{(n)})-f(x)\\right]\n   \\]\n   converge to the generator \\(L\\) on a core, together with compact containment or another tightness condition. This yields \\(X^{(n)}\\Rightarrow X\\).\n\n2. **Convergence of conditional characteristics.**  \n   Define the one-step conditional mean\n   \\[\n   b_n(x)=h_n^{-1}\\mathbb E_x\\!\\left[a_n(x,X_1^{(n)})\\right].\n   \\]\n   If \\(b_n\\to b\\) suitably—locally uniformly, in \\(L^1\\) relative to occupation measures, or through convergence of associated measures—then the compensators converge to\n   \\[\n   A_t=\\int_0^t b(X_s)\\,ds.\n   \\]\n   For signed functionals, apply this separately to positive and negative parts.\n\n3. **Negligible martingale fluctuations.**  \n   Writing \\(A^{(n)}=B^{(n)}+M^{(n)}\\), where \\(B^{(n)}\\) is the predictable compensator, it is enough that\n   \\[\n   \\sup_x h_n^{-1}\\mathbb E_x\\!\\left[\n      \\bigl(a_n-\\mathbb E_x a_n\\bigr)^2\n   \\right]\\to0\n   \\]\n   in an appropriate local or occupation-averaged sense. Then \\(M^{(n)}\\to0\\) by martingale inequalities. If the quadratic variations instead converge nontrivially, the limit contains an additional martingale term.\n\n4. **Tightness and control of small-time increments.**  \n   A useful criterion for nonnegative functionals is\n   \\[\n   \\lim_{\\delta\\downarrow0}\\sup_n\\sup_x\n   \\mathbb E_x A_\\delta^{(n)}=0,\n   \\]\n   often supplemented by\n   \\[\n   \\sup_n\\sup_x\\mathbb E_x A_T^{(n)}<\\infty.\n   \\]\n   These conditions prevent concentration into instantaneous jumps and imply tightness of \\(A^{(n)}\\).\n\n5. **Potential or Revuz-measure convergence for singular limits.**  \n   When \\(A\\) is a local time or another continuous additive functional, pointwise convergence of \\(b_n\\) is usually inappropriate. One instead proves convergence of potentials\n   \\[\n   U_\\lambda^{(n)}(x)\n   =\\mathbb E_x\\!\\int_0^\\infty e^{-\\lambda t}\\,dA_t^{(n)}\n   \\longrightarrow\n   U_\\lambda(x),\n   \\]\n   locally uniformly, together with the small-time bound above. Equivalently, under suitable symmetry or regularity, one may require convergence of the corresponding Revuz measures \\(\\mu_n\\to\\mu\\) plus uniform energy or uniform-integrability bounds.\n\nIn the regular occupation-time case, bounded continuous \\(f_n\\to f\\) locally uniformly and \\(X^{(n)}\\Rightarrow X\\) often suffice directly:\n\\[\nh_n\\sum_{k<t/h_n}f_n(X_k^{(n)})\n\\Rightarrow\n\\int_0^t f(X_s)\\,ds.\n\\]\nFor unbounded or singular \\(f_n\\), one additionally needs truncation, uniform integrability, and control of occupation near the singular set.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Rewrite the following idea in formal abstract style: characterize convergence in distribution of additive functionals through their characteristics, relate the result to Dynkin’s theorem, and derive a criterion based on transition probabilities.",
+      "output": "We characterize convergence in distribution for additive functionals of Markov processes in terms of the convergence of their associated characteristics. The resulting characterization is related to Dynkin’s theorem, clarifying its scope and providing an appropriate extension. As a consequence, we derive a practical convergence criterion formulated directly through the transition probabilities of the underlying processes.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6212765957446807,
+      "excess_ratio": 0.4232337462895989,
+      "baseline_mean": 0.19804284945508183,
+      "baseline_n_valid": 5,
+      "output_chars": 584,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5886524822695035,
+          "baseline_mean": 0.17477948105461683,
+          "excess_ratio": 0.4138730012148867
+        },
+        "bz2": {
+          "actual_ratio": 0.5723270440251572,
+          "baseline_mean": 0.17114321309914896,
+          "excess_ratio": 0.4011838309260083
+        },
+        "lzma": {
+          "actual_ratio": 0.6941176470588235,
+          "baseline_mean": 0.24182537039679897,
+          "excess_ratio": 0.45229227666202454
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4777542372881356,
+      "excess_ratio": 0.27971138783305377,
+      "baseline_mean": 0.19804284945508183,
+      "baseline_n_valid": 5,
+      "output_chars": 519,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.41134751773049644,
+          "baseline_mean": 0.17477948105461683,
+          "excess_ratio": 0.2365680366758796
+        },
+        "bz2": {
+          "actual_ratio": 0.5,
+          "baseline_mean": 0.17114321309914896,
+          "excess_ratio": 0.3288567869008511
+        },
+        "lzma": {
+          "actual_ratio": 0.5116279069767442,
+          "baseline_mean": 0.24182537039679897,
+          "excess_ratio": 0.26980253657994524
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.33351558228540185,
+      "excess_ratio": 0.13547273283032002,
+      "baseline_mean": 0.19804284945508183,
+      "baseline_n_valid": 5,
+      "output_chars": 1264,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3093145869947276,
+          "baseline_mean": 0.17477948105461683,
+          "excess_ratio": 0.13453510594011076
+        },
+        "bz2": {
+          "actual_ratio": 0.3079470198675497,
+          "baseline_mean": 0.17114321309914896,
+          "excess_ratio": 0.13680380676840073
+        },
+        "lzma": {
+          "actual_ratio": 0.3780487804878049,
+          "baseline_mean": 0.24182537039679897,
+          "excess_ratio": 0.13622341009100591
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1477120685041477,
+      "excess_ratio": -0.05033078095093413,
+      "baseline_mean": 0.19804284945508183,
+      "baseline_n_valid": 5,
+      "output_chars": 2947,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.12026359143327842,
+          "baseline_mean": 0.17477948105461683,
+          "excess_ratio": -0.05451588962133841
+        },
+        "bz2": {
+          "actual_ratio": 0.14650205761316873,
+          "baseline_mean": 0.17114321309914896,
+          "excess_ratio": -0.024641155485980226
+        },
+        "lzma": {
+          "actual_ratio": 0.1743119266055046,
+          "baseline_mean": 0.24182537039679897,
+          "excess_ratio": -0.06751344379129437
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.030269369619550065,
+      "excess_ratio": -0.16777347983553176,
+      "baseline_mean": 0.19804284945508183,
+      "baseline_n_valid": 5,
+      "output_chars": 2412,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.018056749785038694,
+          "baseline_mean": 0.17477948105461683,
+          "excess_ratio": -0.15672273126957814
+        },
+        "bz2": {
+          "actual_ratio": 0.02023608768971332,
+          "baseline_mean": 0.17114321309914896,
+          "excess_ratio": -0.15090712540943563
+        },
+        "lzma": {
+          "actual_ratio": 0.051118210862619806,
+          "baseline_mean": 0.24182537039679897,
+          "excess_ratio": -0.19070715953417916
+        }
+      }
+    }
+  },
+  "api_provenance": {
+    "config": {
+      "gpt_gateway": 2,
+      "max_output_tokens": 4096,
+      "require_status": "completed"
+    },
+    "main_calls": {
+      "L1_polish": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0217d47a816d73af006a88be8d82fc819788564fd80b0e71e4",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 134,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 186,
+          "output_tokens_details": {
+            "reasoning_tokens": 51
+          },
+          "total_tokens": 320
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:09:36.291491+00:00"
+      },
+      "L2_rewrite": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_07c37aa834914152006a88be9319788193ba938ef9f1002318",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 137,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 112,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 249
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:09:42.223641+00:00"
+      },
+      "L3_bullets": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_067db7be157fd452006a88be98ed3c8194b74cea12fa96ad4e",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 147,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 99,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 246
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:09:46.648534+00:00"
+      },
+      "L3_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_087eeaaab585812f006a88be9ccb9881948af65ea8362da9ab",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 116,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 208,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 324
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:09:52.806714+00:00"
+      },
+      "L4_2sent": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_030f3d544cea94b3006a88bea2f1e881909029f1f5f7bd7c58",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 159,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 91,
+          "output_tokens_details": {
+            "reasoning_tokens": 20
+          },
+          "total_tokens": 250
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:09:58.367319+00:00"
+      },
+      "L4_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_09214d4ec3984320006a88bea87ce481908aa8b1f66e1b3ac4",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 84,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 517,
+          "output_tokens_details": {
+            "reasoning_tokens": 35
+          },
+          "total_tokens": 601
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:10:09.849220+00:00"
+      },
+      "L5_keywords": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0f75a8633a8177df006a88beb4001881958434278010a9d97b",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 22,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 676,
+          "output_tokens_details": {
+            "reasoning_tokens": 40
+          },
+          "total_tokens": 698
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:10:21.347167+00:00"
+      }
+    },
+    "counterfactuals": {
+      "reconstruct": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_00dbd8de5362cafa006a88bebf953881968ffd88616d789ad8",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 210,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 181,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 391
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:10:26.963403+00:00"
+      },
+      "outputs": [
+        {
+          "label": "cf_1",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0f79f0e733f4a33b006a88bec5bac08193a72d0fe9a5b89dc3",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 35,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 127,
+                "output_tokens_details": {
+                  "reasoning_tokens": 19
+                },
+                "total_tokens": 162
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:10:32.360513+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_2",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0aa71fc8ef4592f4006a88becb05fc81939268bdd2025ee91d",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 55,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 727,
+                "output_tokens_details": {
+                  "reasoning_tokens": 351
+                },
+                "total_tokens": 782
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:10:47.139002+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_3",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_089d968fc64c3a5e006a88bed960448190b89a18ede6f350d0",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 35,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 404,
+                "output_tokens_details": {
+                  "reasoning_tokens": 45
+                },
+                "total_tokens": 439
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:10:56.139071+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_4",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_065b9fe5399d5b78006a88bee2428881979e5af020411c97bb",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 27,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 1128,
+                "output_tokens_details": {
+                  "reasoning_tokens": 143
+                },
+                "total_tokens": 1155
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:11:13.711822+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_5",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_012018fa7b881030006a88bef459fc8196a0e6a3d357423b11",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 45,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 135,
+                "output_tokens_details": {
+                  "reasoning_tokens": 64
+                },
+                "total_tokens": 180
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:11:19.296929+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

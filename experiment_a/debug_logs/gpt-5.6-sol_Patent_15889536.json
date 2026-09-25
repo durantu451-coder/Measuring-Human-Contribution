@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15889536",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nAn apparatus comprises a memory and a controller. The memory configured to store data. The memory may comprise a write buffer and a plurality of memory dies. Each memory die may have a size less than a total size of the memory and include a plurality of cells. The memory may perform a program operation to write to and verify one or more of the plurality of cells in response to receiving a program command. The controller may be configured to issue the program command to program the plurality of memory dies and to issue the polling status command after issuing the program command to obtain a number of the cells that failed to be verified during the program operation. In response to the polling status command received from the controller, the memory reports a count of a number of bit-lines not having an inhibited state in the write buffer.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nAn apparatus comprises a memory and a controller. The memory configured to store data. The memory may comprise a write buffer and a plurality of memory dies. Each memory die may have a size less than a total size of the memory and include a plurality of cells. The memory may perform a program operation to write to and verify one or more of the plurality of cells in response to receiving a program command. The controller may be configured to issue the program command to program the plurality of memory dies and to issue the polling status command after issuing the program command to obtain a number of the cells that failed to be verified during the program operation. In response to the polling status command received from the controller, the memory reports a count of a number of bit-lines not having an inhibited state in the write buffer.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The apparatus includes a controller and a memory configured to store data.\n- The memory may include a write buffer and multiple memory dies, each containing a plurality of cells.\n- In response to a program command, the memory writes data to and verifies one or more cells.\n- The controller issues the program command to the memory dies and then polls their status to determine how many cells failed verification.\n- In response to the polling status command, the memory reports the number of bit-lines in the write buffer that do not have an inhibited state.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nAn apparatus uses a controller to program multiple memory dies and poll the memory after programming to determine how many cells failed verification. The memory reports the count of write-buffer bit-lines lacking an inhibited state, enabling the controller to quantify program-operation failures.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, Each"
+  },
+  "outputs": {
+    "L1": "An apparatus comprises a memory and a controller. The memory is configured to store data and may comprise a write buffer and a plurality of memory dies. Each memory die may have a size less than the total size of the memory and may include a plurality of cells. In response to receiving a program command, the memory may perform a program operation to write to and verify one or more of the plurality of cells. The controller may be configured to issue the program command to program the plurality of memory dies and, after issuing the program command, to issue a polling status command to obtain the number of cells that failed verification during the program operation. In response to receiving the polling status command from the controller, the memory reports a count of the bit lines in the write buffer that do not have an inhibited state.",
+    "L2": "An apparatus includes a data-storing memory and a controller. The memory can contain a write buffer and multiple memory dies, each of which may have a capacity smaller than the memory’s overall capacity and may include numerous cells. Upon receiving a program command, the memory may execute a programming process that writes to and verifies one or more of those cells. The controller may send the program command to program the memory dies and, afterward, transmit a polling status command to determine how many cells did not pass verification during the programming process. When the memory receives the polling status command, it returns the number of bit lines in the write buffer that are not in an inhibited state.",
+    "L3": "The apparatus includes a controller and a memory configured to store data. The memory may include a write buffer and a plurality of memory dies, with each memory die containing multiple memory cells.\n\nIn response to receiving a program command, the memory writes data to one or more selected memory cells and performs a verification operation to determine whether those cells have been programmed successfully. The controller issues the program command to the memory dies and subsequently polls the status of the dies to determine the number of cells that failed the verification operation.\n\nIn response to the polling status command, the memory provides status information indicating the number of bit-lines associated with the write buffer that are not in an inhibited state. This number may be used by the controller to identify or quantify the memory cells that did not satisfy the applicable program-verification criteria.",
+    "L4": "An apparatus includes a controller coupled to a memory device containing multiple memory dies. During a programming operation, the controller causes data to be loaded into write buffers associated with the dies and instructs the memory device to program selected memory cells. After programming, the controller polls the memory device to determine whether the programmed cells satisfy one or more verification criteria.\n\nAs part of the verification process, each memory die identifies write-buffer bit-lines that have not entered an inhibited state. A bit-line remains uninhibited when its corresponding memory cell has failed to reach the required programmed condition and therefore has not passed verification. The memory device reports a count of these uninhibited write-buffer bit-lines to the controller, either for each die or as an aggregate value. Using the reported count, the controller can quantify the number of cells that failed the program operation, assess the severity of the failure, and determine whether to retry programming, perform a recovery procedure, mark a memory region as defective, or report an error.",
+    "L5": "### The and Each\n\n**The** and **each** are common English words, but they serve different purposes.\n\n**The** is the definite article. It refers to a specific person, object, place, or idea that is already known or clearly identified.\n\n- *The book on the table is mine.*\n- *Please close the door.*\n\n**Each** refers to every individual member of a group separately. It is usually followed by a singular countable noun and a singular verb.\n\n- *Each student has a notebook.*\n- *Each flower is unique.*\n\nThe two words can also appear together:\n\n- *Each of the students received a certificate.*\n- *The teacher spoke to each child.*\n\nIn short, **the** identifies something specific, while **each** emphasizes the individual members of a group."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style apparatus claim describing a memory system with a controller that programs multiple memory dies and polls for the number of cells that failed verification.",
+      "output": "**What is claimed is:**\n\n1. A memory system, comprising:  \n   \n   a plurality of memory dies, each memory die comprising a plurality of memory cells and verification circuitry configured to determine, for a programming operation, a number of the memory cells that fail to satisfy a program-verify criterion; and  \n   \n   a controller coupled to the plurality of memory dies and configured to:  \n   \n   cause the plurality of memory dies to perform respective programming operations;  \n   \n   poll each of the plurality of memory dies for verification-failure information indicative of the number of memory cells that failed to satisfy the program-verify criterion during the respective programming operation; and  \n   \n   control a subsequent operation of the memory system based at least in part on the verification-failure information received from the plurality of memory dies.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a technical patent abstract for a memory device that reports failed program-verification cells by counting bit-lines in a write buffer that are not inhibited.",
+      "output": "A memory device includes a memory array having memory cells coupled to respective bit-lines, a write buffer configured to store program data and indicate whether each bit-line is inhibited from further programming, and control circuitry configured to perform a program operation followed by a program-verification operation. Based on verification results, the control circuitry updates the write buffer such that bit-lines associated with cells satisfying a target program condition are inhibited, while bit-lines associated with cells failing the target program condition remain uninhibited. A counting circuit determines a number of uninhibited bit-lines represented in the write buffer after one or more program-verification cycles. The memory device generates failure information based on the determined number, including a failed-cell count, a threshold comparison result, or a program-failure indication, and reports the failure information to a host, memory controller, or internal error-management circuit. Counting write-buffer states enables failed program-verification cells to be reported without separately reading or scanning the memory array.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Describe an apparatus comprising memory dies, a write buffer, and a controller configured to issue program and polling status commands.",
+      "output": "An apparatus comprises:\n\n- a plurality of memory dies configured to store data;\n- a write buffer configured to temporarily hold data to be programmed into the memory dies; and\n- a controller coupled to the write buffer and the memory dies.\n\nThe controller is configured to issue a program command to at least one memory die to program data from the write buffer, and to subsequently issue one or more polling status commands to determine whether execution of the program command has completed. The controller may retain the data in the write buffer until successful completion is indicated and may initiate retry or error-handling operations when a failure status is returned.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate patent specification language explaining how a memory controller obtains a program-failure count after programming a plurality of memory dies.",
+      "output": "### Program-Failure Count Determination\n\nIn some embodiments, a memory controller is configured to program data in a plurality of memory dies and, after completion of the programming operation, obtain a program-failure count associated with the plurality of memory dies. The plurality of memory dies may be included in a single memory package or distributed among multiple memory packages coupled to the memory controller through one or more channels.\n\nThe memory controller may issue respective program commands to the plurality of memory dies. The program commands may be issued concurrently, substantially concurrently, or sequentially. Each memory die may perform one or more program-and-verify loops to program a selected page, word line, block, or other memory region. Upon completion of the program-and-verify loops, each memory die may determine whether the programming operation satisfies one or more verification criteria.\n\nEach memory die may generate program-status information indicating whether the programming operation performed by that memory die succeeded or failed. In one implementation, the program-status information includes a program-failure indicator having a first value when the programming operation succeeds and a second value when the programming operation fails. In other implementations, the program-status information includes a count of failed pages, failed programming units, failed memory cells, or failed verification states associated with the programming operation.\n\nAfter programming the plurality of memory dies, the memory controller obtains the program-status information from the respective memory dies. For example, the memory controller may issue a status-read command to each memory die and receive a corresponding status response through a data bus, status bus, or other interface. Alternatively, the memory dies may store their respective program-status information in one or more status registers, and the memory controller may obtain the information by reading the status registers. In some embodiments, status information for multiple memory dies is returned in response to a common or broadcast status-read command.\n\nThe memory controller determines the program-failure count based on the obtained program-status information. For example, the memory controller may initialize a counter and increment the counter for each memory die whose program-status information indicates a program failure. The resulting counter value represents the number of memory dies, among the plurality of memory dies, for which the programming operation failed. Thus, when programming is performed on N memory dies and M of the N memory dies report a failure, the memory controller determines the program-failure count to be M.\n\nIn another embodiment, each memory die provides a local failure count rather than a binary success-or-failure indication. The memory controller determines an aggregate program-failure count by summing the local failure counts received from the plurality of memory dies. The aggregate program-failure count may therefore represent a total number of failed program operations, failed pages, failed programming units, or failed memory cells across the plurality of memory dies.\n\nIn some embodiments, the memory controller stores the program-failure count in a controller register, a memory-resident data structure, firmware-accessible metadata, or persistent health-information storage. The memory controller may compare the program-failure count with a threshold. Responsive to the program-failure count satisfying the threshold, the memory controller may retry the programming operation, perform a recovery programming operation, relocate the data, retire one or more memory regions, update reliability metadata, reduce a programming parallelism level, or report an error to a host device.\n\nThe program-failure count may be associated with an identifier of the programming operation, a logical address, a physical address, a die group, a channel, a memory package, or a programming batch. Accordingly, the memory controller may distinguish failures attributable to a particular set of concurrently or sequentially programmed memory dies from failures attributable to other programming operations.\n\nIn some implementations, the memory controller obtains the program-failure count without separately transferring complete status information from every memory die. For example, intermediate aggregation logic located in a memory package, channel controller, or die-interface circuit may receive the respective program-failure indications, determine a partial failure count, and provide the partial failure count to the memory controller. The memory controller may combine partial failure counts obtained from multiple channels or packages to determine the program-failure count for the plurality of memory dies.\n\nAs used herein, a “program-failure count” may identify a number of memory dies that experienced at least one program failure or, depending on the implementation, an aggregate number of failed programming units across the memory dies. The particular failure granularity may be selected according to the architecture and operating requirements of the memory system.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Create a concise disclosure for a semiconductor memory apparatus in which each die contains multiple cells, the memory performs program-and-verify operations, and a polling command returns the count of non-inhibited write-buffer bit-lines.",
+      "output": "A semiconductor memory apparatus includes one or more memory dies, each die having a plurality of memory cells and write-buffer bit-lines coupled to the memory cells. During a program-and-verify operation, bit-lines associated with cells that satisfy a verify condition are inhibited from further programming, while remaining bit-lines are non-inhibited. In response to a polling command, the memory apparatus determines and returns a count of the non-inhibited write-buffer bit-lines, thereby indicating progress or status of the program-and-verify operation.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7293298520452567,
+      "excess_ratio": 0.5281709151302023,
+      "baseline_mean": 0.20115893691505443,
+      "baseline_n_valid": 5,
+      "output_chars": 845,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.736231884057971,
+          "baseline_mean": 0.16091229884789593,
+          "excess_ratio": 0.5753195852100751
+        },
+        "bz2": {
+          "actual_ratio": 0.6494845360824743,
+          "baseline_mean": 0.18716892456202033,
+          "excess_ratio": 0.4623156115204539
+        },
+        "lzma": {
+          "actual_ratio": 0.7980769230769231,
+          "baseline_mean": 0.24618930090907748,
+          "excess_ratio": 0.5518876221678457
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.41753472222222227,
+      "excess_ratio": 0.21637578530716783,
+      "baseline_mean": 0.20115893691505443,
+      "baseline_n_valid": 5,
+      "output_chars": 720,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.35816618911174786,
+          "baseline_mean": 0.16091229884789593,
+          "excess_ratio": 0.19725389026385193
+        },
+        "bz2": {
+          "actual_ratio": 0.39466666666666667,
+          "baseline_mean": 0.18716892456202033,
+          "excess_ratio": 0.20749774210464633
+        },
+        "lzma": {
+          "actual_ratio": 0.48598130841121495,
+          "baseline_mean": 0.24618930090907748,
+          "excess_ratio": 0.23979200750213747
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.46238130021913804,
+      "excess_ratio": 0.2612223633040836,
+      "baseline_mean": 0.20115893691505443,
+      "baseline_n_valid": 5,
+      "output_chars": 927,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4343675417661098,
+          "baseline_mean": 0.16091229884789593,
+          "excess_ratio": 0.2734552429182139
+        },
+        "bz2": {
+          "actual_ratio": 0.42444444444444446,
+          "baseline_mean": 0.18716892456202033,
+          "excess_ratio": 0.23727551988242412
+        },
+        "lzma": {
+          "actual_ratio": 0.52,
+          "baseline_mean": 0.24618930090907748,
+          "excess_ratio": 0.27381069909092254
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.25015441630636187,
+      "excess_ratio": 0.04899547939130744,
+      "baseline_mean": 0.20115893691505443,
+      "baseline_n_valid": 5,
+      "output_chars": 1129,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.20318725099601595,
+          "baseline_mean": 0.16091229884789593,
+          "excess_ratio": 0.04227495214812002
+        },
+        "bz2": {
+          "actual_ratio": 0.2437619961612284,
+          "baseline_mean": 0.18716892456202033,
+          "excess_ratio": 0.05659307159920807
+        },
+        "lzma": {
+          "actual_ratio": 0.2953020134228188,
+          "baseline_mean": 0.24618930090907748,
+          "excess_ratio": 0.04911271251374133
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.08865514650638626,
+      "excess_ratio": -0.11250379040866818,
+      "baseline_mean": 0.20115893691505443,
+      "baseline_n_valid": 5,
+      "output_chars": 736,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.05925925925925926,
+          "baseline_mean": 0.16091229884789593,
+          "excess_ratio": -0.10165303958863667
+        },
+        "bz2": {
+          "actual_ratio": 0.0776255707762557,
+          "baseline_mean": 0.18716892456202033,
+          "excess_ratio": -0.10954335378576463
+        },
+        "lzma": {
+          "actual_ratio": 0.12295081967213115,
+          "baseline_mean": 0.24618930090907748,
+          "excess_ratio": -0.12323848123694633
+        }
+      }
+    }
+  }
+}

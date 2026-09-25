@@ -1,0 +1,175 @@
+{
+  "model": "gemini-3.6-flash",
+  "domain": "Arxiv",
+  "id": "0704.0014",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIn this article we discuss a relation between the string topology and differential forms based on the theory of Chen's iterated integrals and the cyclic bar complex.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIn this article we discuss a relation between the string topology and differential forms based on the theory of Chen's iterated integrals and the cyclic bar complex.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n* The article examines the underlying relationship between string topology and differential forms.\n* The framework utilizes the theory of Chen's iterated integrals to connect these mathematical areas.\n* The cyclic bar complex serves as a foundational theoretical tool in establishing this relation.\n* The overall discussion bridges topological concepts with differential geometry through algebraic structures.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis paper examines the relationship between string topology and differential forms by employing the theory of Chen's iterated integrals and the cyclic bar complex. By demonstrating this explicit connection, the work provides a concrete algebraic framework that bridges smooth differential geometry with loop space operations.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Chen"
+  },
+  "outputs": {
+    "L1": "Here are a few ways to polish the sentence, depending on your preferred style:\n\n**Option 1: Professional & Natural (Recommended for standard journal abstracts)**\n> \"In this article, we explore the relationship between string topology and differential forms within the framework of Chen's iterated integrals and the cyclic bar complex.\"\n\n**Option 2: Eloquent & Authoritative (Slightly more formal)**\n> \"This paper investigates the interplay between string topology and differential forms, grounded in the theory of Chen's iterated integrals and the cyclic bar complex.\"\n\n**Option 3: Concise & Direct**\n> \"This article examines the connection between string topology and differential forms, drawing upon Chen's iterated integrals and the cyclic bar complex.\"\n\n### Key Improvements Made:\n* Changed *\"a relation between the string topology\"* to *\"the relationship between string topology\"* (removing the unnecessary \"the\" before \"string topology\" improves fluency).\n* Replaced the plain *\"discuss\"* with stronger academic verbs like **\"explore,\" \"investigate,\"** or **\"examine.\"**\n* Enhanced *\"based on the theory of\"* with more precise phrasing such as **\"within the framework of\"** or **\"grounded in.\"**",
+    "L2": "Here are a few ways to rewrite the sentence using different structures and phrasing:\n\n**Option 1 (Focus on the methodology):**\nBy leveraging cyclic bar complexes alongside Chen's framework of iterated integration, this paper explores how differential forms connect to string topology.\n\n**Option 2 (Focus on the relationship):**\nThis study investigates the interplay between differential forms and string topology, grounding its analysis in the concepts of Chen’s iterated integrals and the cyclic bar complex.\n\n**Option 3 (Passive/Objective tone):**\nThe link bridging string topology to differential forms is examined here through the theoretical lenses of the cyclic bar complex and iterated integrals as defined by Chen.\n\n**Option 4 (Action-oriented):**\nDrawing upon the theories of the cyclic bar complex and Chen's iterated integrals, we demonstrate in this paper the connection tying string topology together with differential forms.",
+    "L3": "Here is an expanded, well-structured text based on your bullet points, suitable for an academic article’s abstract, introduction, or thematic overview.\n\n***\n\n### Exploring the Algebraic Bridge Between String Topology and Differential Geometry\n\nIn modern geometry and topology, understanding the interplay between continuous space invariants and smooth geometric structures remains a central objective. This article provides a comprehensive examination of the underlying relationship between string topology—the study of algebraic operations on the homology of free loop spaces—and the classical framework of differential forms. By reinterpreting the operations on loop spaces through smooth differential-geometric data, this work illuminates how local smooth structures govern global loop dynamics.\n\nTo establish a rigorous connection between these domains, the framework utilizes the theory of Kuo-Tsai Chen’s iterated integrals. Iterated integrals serve as the essential analytic engine, mapping the algebra of differential forms on a smooth manifold to the chain-level topology of its path and loop spaces. Within this setting, the cyclic bar complex acts as a foundational theoretical tool. By translating the de Rham complex into a cyclic algebraic structure, the bar complex seamlessly captures both the underlying geometry of the manifold and the intrinsic rotational symmetries of closed loops.\n\nUltimately, this discussion bridges core topological concepts with differential geometry through the unifying power of higher algebraic structures. By showing how string topology operations can be modeled at the level of differential forms via the cyclic bar complex, the article demonstrates a deep, structural synthesis between the smooth geometry of manifolds and the homotopical features of their mapping spaces.",
+    "L4": "# On the Integration of String Topology: Iterated Integrals, the Cyclic Bar Complex, and De Rham Models for Free Loop Spaces\n\n## Abstract\nThis paper examines the relationship between string topology and differential forms by employing the theory of Chen's iterated integrals and the cyclic bar complex. By demonstrating this explicit connection, the work provides a concrete algebraic framework that bridges smooth differential geometry with loop space operations. Specifically, we establish an explicit isomorphism between the algebraic operations on the cyclic Hochschild complex of de Rham differential forms and the geometric Chas–Sullivan string operations on the homology of the free loop space.\n\n---\n\n## 1. Introduction\n\nSince the seminal work of Moira Chas and Dennis Sullivan, *string topology* has emerged as a central paradigm at the intersection of algebraic topology, differential geometry, and mathematical physics. String topology equips the homology of the free loop space $LM = C^\\infty(S^1, M)$ of a smooth, closed, oriented $d$-dimensional manifold $M$ with rich algebraic structures, most notably the **Chas–Sullivan loop product**:\n$$\\mu: H_p(LM) \\otimes H_q(LM) \\longrightarrow H_{p+q-d}(LM)$$\nand an $S^1$-evoked operator $\\Delta: H_p(LM) \\to H_{p+1}(LM)$, which together endow $H_*(LM)$ with the structure of a Batalin–Vilkovisky (BV) algebra.\n\nDespite the geometric intuitive appeal of these operations—which rely on intersecting loops along evaluation maps—their traditional definition depends on finite-dimensional approximations, transversality arguments, or infinite-dimensional tubular neighborhoods. This geometric formulation creates a foundational gap between topological string operations and the smooth, analytic domain of differential forms and de Rham cohomology.\n\nTo bridge this gap, this paper leverages two classical tools:\n1. **Kuo-Tsai Chen's theory of iterated integrals**, which maps combinations of differential forms on $M$ to differential forms on $LM$.\n2. **The Cyclic Bar Complex**, which provides a purely algebraic, chain-level model for the loop space topology using the Hochschild and cyclic homology of the de Rham complex $\\Omega^*(M)$.\n\nBy constructing a chain map linking the algebraic cyclic bar complex to the de Rham complex of the free loop space $\\Omega^*(LM)$, we demonstrate that string topology operations can be entirely expressed in terms of smooth differential forms and algebraic operations on tensors.\n\n---\n\n## 2. Mathematical Foundations\n\n### 2.1 Chen's Iterated Integrals\nLet $M$ be a smooth, connected manifold, and let $LM = \\text{Map}(S^1, M)$ be its free loop space. For a sequence of differential forms $\\omega_1, \\omega_2, \\dots, \\omega_k \\in \\Omega^*(M)$, Chen defined the iterated integral map $\\int \\omega_1 \\dots \\omega_k$ as a differential form on $LM$.\n\nLet $\\Delta^k = \\{ (t_1, \\dots, t_k) \\in \\mathbb{R}^k \\mid 0 \\le t_1 \\le t_2 \\le \\dots \\le t_k \\le 1 \\}$ be the standard $k$-simplex. Define the evaluation map:\n$$\\text{ev}: LM \\times \\Delta^k \\longrightarrow M^k, \\quad (\\gamma, t_1, \\dots, t_k) \\longmapsto (\\gamma(t_1), \\dots, \\gamma(t_k))$$\n\nThe iterated integral map $\\rho: (\\Omega^* M)^{\\otimes k} \\to \\Omega^*(LM)$ is defined by integrating the pullback along the simplex fibers:\n$$\\rho(\\omega_1 \\otimes \\dots \\otimes \\omega_k) = \\int_{\\Delta^k} \\text{ev}^* (\\omega_1 \\times \\dots \\times \\omega_k)$$\n\nChen's fundamental theorem states that if $M$ is simply connected, the map $\\rho$ induces an isomorphism between the homology of the bar complex $B(\\Omega^* M)$ and the de Rham cohomology $H^*(LM, \\mathbb{R})$.\n\n### 2.2 The Cyclic Bar Complex and Hochschild Homology\nLet $A = \\Omega^*(M)$ be the differential graded algebra (DGA) of smooth differential forms on $M$. The Hochschild chain complex of $A$ with coefficients in $A$ is given by:\n$$CH_k(A, A) = A \\otimes A^{\\otimes k}$$\n\nequipped with the standard Hochschild boundary operator $b$. To capture the $S^1$-symmetry of loops ($\\gamma(t) \\mapsto \\gamma(t + \\theta)$), we incorporate cyclic permutations. Define the cyclic generator $t_k: A^{\\otimes k+1} \\to A^{\\otimes k+1}$:\n$$t_k(a_0 \\otimes a_1 \\otimes \\dots \\otimes a_k) = (-1)^{|a_k|(|a_0| + \\dots + |a_{k-1}|)} a_k \\otimes a_0 \\otimes \\dots \\otimes a_{k-1}$$\n\nThe **Cyclic Bar Complex** $CC_*(A)$ is the quotient complex under the action of cyclic permutations, equipped with Connes' boundary operator $B: CH_k(A, A) \\to CH_{k+1}(A, A)$, which satisfies $B^2 = 0$ and $bB + Bb = 0$.\n\n---\n\n## 3. The Algebraic Integration Map\n\nTo connect the cyclic complex directly to $LM$, we extend Chen's integration map to the Hochschild chain complex of differential forms $CH_*(A, A)$. \n\n```\n       CH_*(Ω* M, Ω* M)  ─────── Algebraic Product (•) ───────>  CH_*(Ω* M, Ω* M)\n              │                                                        │\n              │ Chen's Iterated                                        │ Chen's Iterated\n              │ Integral ρ                                             │ Integral ρ\n              ▼                                                        ▼\n         Ω*(LM)         ─────── Geometric Loop Product ───────>     Ω*(LM)\n```\n\n### Theorem 3.1 (The Integration Isomorphism)\n*The map $\\rho: CH_*(A, A) \\to \\Omega^*(LM)$ defined by:*\n$$\\rho(a_0 \\otimes a_1 \\otimes \\dots \\otimes a_k) = (ev_0^* a_0) \\wedge \\int_{\\Delta^k} \\text{ev}^* (a_1 \\times \\dots \\times a_k)$$\n*is a chain map sending the Hochschild differential $b$ to the exterior derivative $d_{LM}$ on forms over $LM$, and Connes' operator $B$ to the vector field derivative along the $S^1$-action on $LM$.*\n\n---\n\n## 4. Constructing String Topology via Differential Forms\n\nThe primary difficulty in capturing string topology through differential forms lies in dualizing the geometric intersection operation. In the topological setting, the loop product relies on the diagonal inclusion $\\Delta: M \\to M \\times M$ and its normal bundle.\n\n### 4.1 The Algebraic Diagonal and Poincaré Duality\nIn the de Rham setting, geometric intersection is modeled by a chain-level representative of the Poincaré dual of the diagonal, $\\eta_M \\in \\Omega^d(M \\times M)$. Using a smooth kernel representation or an algebraic model for Poincaré duality on $A = \\Omega^* M$, we define an algebraic intersection operator:\n$$I: A \\otimes A \\longrightarrow A$$\n\n### 4.2 The Algebraic Loop Product\nUsing Chen's integrals, we define an explicit algebraic string product $\\bullet$ on the Hochschild complex $CH_*(A, A)$.\n\nLet $\\alpha = a_0 \\otimes a_1 \\otimes \\dots \\otimes a_k \\in CH_k(A)$ and $\\beta = b_0 \\otimes b_1 \\otimes \\dots \\otimes b_m \\in CH_m(A)$. The algebraic product $\\alpha \\bullet \\beta$ is computed by:\n1. Inserting the Poincaré dual diagonal form $\\eta_M$ at the evaluation point $t=0$.\n2. Performing a shuffle sum of the tensor factors $(a_1 \\dots a_k)$ and $(b_1 \\dots b_m)$ to respect all possible temporal orderings of points along the merged loop.\n\n$$\\alpha \\bullet \\beta = \\sum_{\\sigma \\in \\text{Shuffles}(k, m)} (-1)^{\\epsilon(\\sigma)} (a_0 \\wedge b_0 \\cdot \\eta_M) \\otimes \\sigma(a_1 \\dots a_k, b_1 \\dots b_m)$$\n\n### Theorem 4.1 (Main Equivalence)\n*Under the algebraic integration map $\\rho$, the algebraic loop product $\\bullet$ on $CH_*(\\Omega^* M)$ corresponds up to homotopy to the Chas–Sullivan loop product $\\mu$ on $H_*(LM)$:*\n$$\\rho(\\alpha \\bullet \\beta) \\simeq \\mu(\\rho(\\alpha), \\rho(\\beta))$$\n\n---\n\n## 5. The BV-Algebra Structure and Connes' Operator\n\nA key milestone of string topology is the Batalin–Vilkovisky (BV) algebra structure on $H_*(LM)$. A BV algebra requires a degree 1 operator $\\Delta$ that satisfies $\\Delta^2 = 0$ and measures the failure of the product $\\bullet$ to be a strict Poisson algebra.\n\nIn our differential form framework:\n* The topological $S^1$-rotation operator on $LM$ translates via Chen's map directly to **Connes' $B$-operator** on the cyclic complex.\n* The BV relation:\n  $$\\Delta(a \\bullet b) - (\\Delta a) \\bullet b - (-1)^{|a|} a \\bullet (\\Delta b) = \\{a, b\\}$$\n  holds at the chain level on $CH_*(\\Omega^* M)$ using the algebraic string bracket derived from cyclic permutations.\n\n### Theorem 5.1\n*(Connes' $B$-operator represents the string topology BV operator.)*  \n*Let $\\rho: CH_*(\\Omega^* M) \\to \\Omega^*(LM)$ be the integration map. Then for any class $\\alpha \\in CH_*(\\Omega^* M)$,*\n$$\\rho(B\\alpha) = \\mathcal{L}_V (\\rho(\\alpha))$$\n*where $\\mathcal{L}_V$ denotes the Lie derivative along the fundamental vector field $V$ generated by the rotation of loops in $LM$.*\n\n---\n\n## 6. Applications and Conceptual Advantages\n\nThis algebraic integration framework provides several immediate computational and theoretical advantages:\n\n1. **Concrete Chain-Level Calculations:** Computations in string topology no longer require difficult geometric transversality arguments or infinite-dimensional Morse theory. Instead, operations can be explicitly computed using finite tensor products of differential forms.\n2. **Explicit Models for Formal Manifolds:** When $M$ is a",
+    "L5": "Here is a text exploring the rich history, cultural significance, and modern resonance of the name and concept of **Chen**.\n\n***\n\n### The Legacy of Chen: History, Harmony, and Modern Echoes\n\nFew names carry a blend of ancient heritage, philosophical depth, and modern global prominence quite like **Chen** (陈 / 陳). Spanning thousands of years of Chinese history, martial arts traditions, and contemporary pop culture, the word \"Chen\" serves as a powerful bridge between the ancient world and the modern day.\n\n#### 1. A Heritage Shared by Millions\nAt its core, Chen is one of the most common and influential surnames in the world, borne by tens of millions of people across Asia and the global diaspora. Originating from an ancient Chinese state during the Zhou Dynasty, the surname literally translates to \"to exhibit,\" \"to state,\" or \"ancient.\" \n\nOver centuries, as families migrated, the name evolved across different dialects and languages. In Cantonese, it is often romanized as *Chan* (famously carried by martial arts legend Jackie Chan); in Hokkien, it becomes *Tan*; and in Vietnamese, it is known as *Trần*. From the short-lived but culturally rich Chen Dynasty (557–589 AD) to the millions of modern individuals shaping business, science, and the arts today, the family name carries a profound sense of lineage and ancestral pride.\n\n#### 2. The Art of Balance: Chen-Style Tai Chi\nIn the realm of physical mastery and philosophy, \"Chen\" is synonymous with the origin of Tai Chi (Taijiquan). Developed in the 17th century by Chen Wangting in the small village of Chenjiagou (Henan Province, China), **Chen-style Tai Chi** is the oldest and parent form from which all other major Tai Chi styles derived.\n\nUnlike the purely gentle, slow movements often associated with modern Tai Chi, the original Chen style is dynamic and explosive. It combines soft, fluid movements (\"silk-reeling\") with sudden bursts of power (*fajin*), jump kicks, and martial applications. Chen-style embodies the core Taoist philosophy of Yin and Yang—the seamless balance of hard and soft, stillness and motion, slow contemplation and decisive action.\n\n#### 3. Modern Iconography: From K-Pop to Gaming\nIn the 21st century, the name Chen has found a vibrant new life in global popular culture:\n\n* **Music and Entertainment:** Kim Jong-dae, known professionally as **Chen**, rose to international fame as a main vocalist of the powerhouse K-pop group **EXO**. Renowned for his extraordinary vocal range, emotional ballads, and soundtrack contributions, his stage name has become synonymous with musical excellence to millions of fans worldwide.\n* **Gaming and Media:** In digital realms, the name invokes legendary figures. In *World of Warcraft*, **Chen Stormstout** is the beloved, travel-loving Pandaren Brewmaster who embodies wisdom and good cheer. In *Dota 2*, **Chen the Holy Knight** represents conversion, faith, and strategic command. \n\n#### Conclusion\nWhether viewed through the lens of ancient imperial history, the graceful power of martial arts, or the energetic spotlight of modern entertainment, **Chen** is far more than a simple syllable. It is a symbol of endurance, harmony, and adaptation—a name that honors its ancient roots while continuously shaping modern culture across the globe."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a single opening sentence for a mathematical paper abstract that links string topology with differential forms through Chen's iterated integrals and the cyclic bar complex.",
+      "output": "We establish an explicit connection between string topology and differential forms on a smooth manifold by realizing the algebraic operations on the free loop space via Chen's iterated integrals on the cyclic bar complex.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize an article connecting string topology and differential forms using Chen's iterated integrals. Keep it to one concise sentence.",
+      "output": "The article uses Chen's iterated integrals to construct a differential form model for string topology, translating geometric operations on free loop spaces—such as the Chas-Sullivan loop product—into algebraic structures on a manifold's de Rham complex.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a one-sentence overview for a paper on string topology, differential forms, Chen's iterated integrals, and the cyclic bar complex.",
+      "output": "This paper utilizes Chen's iterated integrals to bridge the differential forms of a smooth manifold with string topology, realizing the algebraic operations on the free loop space within the framework of the cyclic bar complex.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Write a brief introductory sentence for a research article about the relationship between string topology and differential forms. Make sure to mention Chen's iterated integrals and the cyclic bar complex as the theoretical framework.",
+      "output": "This paper investigates the relationship between string topology and differential forms, employing Chen’s iterated integrals and the cyclic bar complex as the central theoretical framework.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Abstract opening sentence: string topology, differential forms, Chen iterated integrals, cyclic bar complex.",
+      "output": "Here are a few options for an abstract opening sentence, depending on the specific focus of your paper:\n\n**Option 1: Constructive / Chain-Level Focus (Best for papers building explicit operations)**\n> \"By bridging the de Rham algebra of differential forms and free loop space topology via Chen iterated integrals, we construct an explicit realization of string topology operations within the cyclic bar complex.\"\n\n**Option 2: Structural / Conceptual Focus (Best for theoretical framework or survey-style papers)**\n> \"Chen’s theory of iterated integrals provides a natural dictionary between differential forms and loop space geometry, allowing string topology structures to be rigorously modeled through the cyclic bar complex.\"\n\n**Option 3: Result-Oriented / Algebraic Focus (Best for papers proving new equivalences or computations)**\n> \"We utilize Chen iterated integrals on differential forms to translate the operations of string topology into the algebraic setting of the cyclic bar complex at the chain level.\"\n\n**Option 4: Short & Direct**\n> \"This paper integrates differential forms and Chen iterated integrals into the cyclic bar complex to establish a de Rham-theoretic framework for string topology.\"",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.24256035934868045,
+      "excess_ratio": -0.16226972712042445,
+      "baseline_mean": 0.4048300864691049,
+      "baseline_n_valid": 5,
+      "output_chars": 1201,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.21978021978021978,
+          "baseline_mean": 0.3717398118142149,
+          "excess_ratio": -0.15195959203399512
+        },
+        "bz2": {
+          "actual_ratio": 0.22764227642276422,
+          "baseline_mean": 0.3475167725341744,
+          "excess_ratio": -0.11987449611141018
+        },
+        "lzma": {
+          "actual_ratio": 0.27741935483870966,
+          "baseline_mean": 0.47920044415325513,
+          "excess_ratio": -0.20178108931454547
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.2605099931082012,
+      "excess_ratio": -0.14432009336090368,
+      "baseline_mean": 0.4048300864691049,
+      "baseline_n_valid": 5,
+      "output_chars": 938,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.21541950113378686,
+          "baseline_mean": 0.3717398118142149,
+          "excess_ratio": -0.15632031068042804
+        },
+        "bz2": {
+          "actual_ratio": 0.26095617529880477,
+          "baseline_mean": 0.3475167725341744,
+          "excess_ratio": -0.08656059723536963
+        },
+        "lzma": {
+          "actual_ratio": 0.2992125984251969,
+          "baseline_mean": 0.47920044415325513,
+          "excess_ratio": -0.17998784572805826
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.2358630952380953,
+      "excess_ratio": -0.1689669912310096,
+      "baseline_mean": 0.4048300864691049,
+      "baseline_n_valid": 5,
+      "output_chars": 1820,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.20867526377491208,
+          "baseline_mean": 0.3717398118142149,
+          "excess_ratio": -0.16306454803930281
+        },
+        "bz2": {
+          "actual_ratio": 0.20558659217877095,
+          "baseline_mean": 0.3475167725341744,
+          "excess_ratio": -0.14193018035540345
+        },
+        "lzma": {
+          "actual_ratio": 0.28936170212765955,
+          "baseline_mean": 0.47920044415325513,
+          "excess_ratio": -0.18983874202559559
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.06765791837142002,
+      "excess_ratio": -0.3371721680976849,
+      "baseline_mean": 0.4048300864691049,
+      "baseline_n_valid": 5,
+      "output_chars": 9009,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.0594147206621342,
+          "baseline_mean": 0.3717398118142149,
+          "excess_ratio": -0.3123250911520807
+        },
+        "bz2": {
+          "actual_ratio": 0.06253813300793166,
+          "baseline_mean": 0.3475167725341744,
+          "excess_ratio": -0.28497863952624275
+        },
+        "lzma": {
+          "actual_ratio": 0.08095238095238096,
+          "baseline_mean": 0.47920044415325513,
+          "excess_ratio": -0.3982480632008742
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.02308279282716516,
+      "excess_ratio": -0.3817472936419397,
+      "baseline_mean": 0.4048300864691049,
+      "baseline_n_valid": 5,
+      "output_chars": 3285,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.010440835266821345,
+          "baseline_mean": 0.3717398118142149,
+          "excess_ratio": -0.36129897654739357
+        },
+        "bz2": {
+          "actual_ratio": 0.0269804822043628,
+          "baseline_mean": 0.3475167725341744,
+          "excess_ratio": -0.3205362903298116
+        },
+        "lzma": {
+          "actual_ratio": 0.03153153153153153,
+          "baseline_mean": 0.47920044415325513,
+          "excess_ratio": -0.4476689126217236
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T05:13:11.545691+00:00"
+    }
+  ]
+}

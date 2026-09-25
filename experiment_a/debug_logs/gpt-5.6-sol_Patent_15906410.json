@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15906410",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA method of determining reserved tones for reduction of a peak to average power ratio (PAPR) includes: selecting carrier indices for the reserved tones and generating a kernel signal based on the selected carrier indices; calculating a comparison reference average value of the kernel signal, selecting one of the calculated comparison reference average value and a prestored comparison reference average value, and preliminarily determining carrier indices of the reserved tones based on the selection; re-arranging an order of the preliminarily determined carrier indices; calculating a comparison reference average value of a kernel signal generated, whenever each of the re-arranged carrier indices is changed to another carrier index, to generate a plurality of comparison reference average values, and finally determining carrier indices of the reserved tones which generates a kernel signal having the smallest comparison reference average value among the comparison reference average values as the indices of the reserved tones.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA method of determining reserved tones for reduction of a peak to average power ratio (PAPR) includes: selecting carrier indices for the reserved tones and generating a kernel signal based on the selected carrier indices; calculating a comparison reference average value of the kernel signal, selecting one of the calculated comparison reference average value and a prestored comparison reference average value, and preliminarily determining carrier indices of the reserved tones based on the selection; re-arranging an order of the preliminarily determined carrier indices; calculating a comparison reference average value of a kernel signal generated, whenever each of the re-arranged carrier indices is changed to another carrier index, to generate a plurality of comparison reference average values, and finally determining carrier indices of the reserved tones which generates a kernel signal having the smallest comparison reference average value among the comparison reference average values as the indices of the reserved tones.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- Carrier indices are selected for reserved tones, and a kernel signal is generated from the selected indices.\n- A comparison reference average value of the kernel signal is calculated and compared with a prestored reference value.\n- Preliminary reserved-tone carrier indices are determined based on the selected comparison reference average value.\n- The preliminary carrier indices are reordered, and each is replaced in turn to generate multiple kernel signals and corresponding reference average values.\n- The carrier indices producing the kernel signal with the smallest comparison reference average value are selected as the final reserved-tone indices for PAPR reduction.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA method for reducing peak-to-average power ratio (PAPR) selects reserved-tone carrier indices, generates a kernel signal, compares calculated and stored reference averages, preliminarily determines and reorders the indices, and iteratively tests replacements. The final reserved-tone indices are those producing the kernel signal with the smallest comparison-reference average, enabling more effective PAPR reduction.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: PAPR"
+  },
+  "outputs": {
+    "L1": "A method for determining reserved tones to reduce a peak-to-average power ratio (PAPR) includes: selecting carrier indices for the reserved tones and generating a kernel signal based on the selected carrier indices; calculating a comparison reference average value of the kernel signal, selecting either the calculated comparison reference average value or a prestored comparison reference average value, and preliminarily determining the carrier indices of the reserved tones based on the selected value; rearranging the order of the preliminarily determined carrier indices; calculating a comparison reference average value of a kernel signal generated each time one of the rearranged carrier indices is changed to another carrier index, thereby generating a plurality of comparison reference average values; and finally determining, as the carrier indices of the reserved tones, the carrier indices that generate the kernel signal having the smallest comparison reference average value among the plurality of comparison reference average values.",
+    "L2": "A technique for identifying reserved tones to reduce the peak-to-average power ratio (PAPR) comprises selecting carrier indices for the reserved tones and producing a kernel signal from those indices. A comparison-reference mean for the kernel signal is then computed, and either this computed mean or a previously stored comparison-reference mean is chosen to provisionally establish the reserved-tone carrier indices. The provisionally established indices are reordered. Each reordered index is subsequently replaced with a different carrier index, and a kernel signal and corresponding comparison-reference mean are calculated for every replacement, thereby producing multiple comparison-reference means. The reserved-tone carrier indices are ultimately set to the index combination whose kernel signal yields the lowest comparison-reference mean among those calculated.",
+    "L3": "Carrier indices are first selected as candidates for reserved tones, and a kernel signal is generated based on the selected indices. A comparison reference average value is then calculated for the generated kernel signal and compared with a prestored reference value. Based on this comparison, a set of preliminary reserved-tone carrier indices is determined.\n\nThe preliminary carrier indices are subsequently reordered and evaluated through an iterative replacement process. Each preliminary index is replaced in turn, and a new kernel signal is generated for every resulting carrier-index combination. A corresponding comparison reference average value is calculated for each kernel signal. The values obtained from the different combinations are then compared, and the carrier-index combination that produces the kernel signal with the smallest comparison reference average value is selected as the final set of reserved-tone indices. These final indices are used to reduce the peak-to-average power ratio (PAPR) of the transmitted signal.",
+    "L4": "A method is provided for selecting reserved-tone carrier indices to reduce the peak-to-average power ratio (PAPR) of a multicarrier transmission signal, such as an orthogonal frequency-division multiplexing (OFDM) signal. A set of subcarriers is reserved for generating a peak-canceling signal rather than carrying user data. Because the effectiveness of tone reservation depends strongly on the locations of the reserved subcarriers, the method searches for a set of indices that produces a favorable time-domain kernel signal.\n\nInitially, candidate reserved-tone carrier indices are selected from the available subcarriers. A frequency-domain sequence is then formed by assigning predetermined values to the subcarriers corresponding to the selected indices and assigning zero values to the remaining subcarriers. The frequency-domain sequence is transformed into the time domain, for example by an inverse discrete Fourier transform, to generate a kernel signal associated with the selected reserved-tone indices.\n\nA comparison-reference average is calculated from the kernel signal. The comparison-reference average may represent an average of selected signal magnitudes, powers, peak-related values, or other samples that indicate the suitability of the kernel signal for suppressing peaks in the transmitted waveform. The calculated average is compared with a previously stored reference average. When the calculated average indicates improved peak-reduction performance, the selected carrier indices and the corresponding average are stored as the current best result.\n\nThe method may first perform a preliminary evaluation of the candidate indices. Based on the preliminary results, the indices are classified, ranked, or reordered according to their respective contributions to the comparison-reference average. An index that appears to have a relatively unfavorable effect is identified as a replacement candidate, while indices having more favorable effects are retained.\n\nThe method then iteratively replaces one or more of the preliminarily selected indices with other available carrier indices. For each replacement, a new kernel signal is generated and a new comparison-reference average is calculated. The new average is compared with the stored reference average. If the replacement produces a smaller comparison-reference average, the replacement is accepted, the corresponding index set is retained, and the stored reference average is updated. If the replacement does not improve the average, the previous index set remains in use and another candidate replacement is tested.\n\nThis replacement and comparison procedure continues until a termination condition is satisfied, such as testing all eligible carrier indices, reaching a predetermined number of iterations, or determining that further replacements do not produce a meaningful improvement. The reserved-tone carrier indices associated with the smallest comparison-reference average are then selected as the final reserved-tone set.\n\nBy selecting reserved tones according to the characteristics of their resulting kernel signals, rather than selecting them randomly or according to a fixed pattern, the method can generate a more effective peak-canceling signal. Consequently, high-amplitude peaks in the time-domain multicarrier waveform can be suppressed more efficiently, thereby reducing PAPR and improving the operating efficiency of a power amplifier while limiting distortion and preserving data-bearing subcarriers.",
+    "L5": "# PAPR: Peak-to-Average Power Ratio in Communication Systems\n\nPAPR, or **Peak-to-Average Power Ratio**, is an important parameter in wireless and digital communication systems. It describes the relationship between the maximum instantaneous power of a signal and its average power. PAPR is commonly expressed in decibels (dB):\n\n\\[\n\\text{PAPR} = 10\\log_{10}\\left(\\frac{P_{\\text{peak}}}{P_{\\text{average}}}\\right)\n\\]\n\nHigh PAPR is particularly associated with **OFDM (Orthogonal Frequency-Division Multiplexing)**, a modulation technique used in Wi-Fi, LTE, 5G, digital broadcasting, and other broadband systems. Because an OFDM signal combines many subcarriers, their peaks can occasionally align and create a signal level much higher than the average.\n\nA high PAPR can reduce the efficiency of a transmitter’s power amplifier. To avoid signal distortion, the amplifier must operate with sufficient back-off from its saturation point. This increases power consumption and may shorten battery life in mobile devices. If the amplifier is driven too strongly, nonlinear distortion can also cause higher error rates and interference with adjacent channels.\n\nSeveral methods can be used to reduce PAPR, including:\n\n- **Clipping and filtering**\n- **Tone reservation**\n- **Tone injection**\n- **Selected mapping**\n- **Partial transmit sequences**\n- **Companding techniques**\n- **Coding-based approaches**\n\nEach method involves trade-offs among computational complexity, signal distortion, bandwidth efficiency, and system performance. For this reason, PAPR reduction remains an important consideration when designing energy-efficient and reliable wireless communication equipment."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a patent-style abstract describing a method for determining reserved tones to reduce peak-to-average power ratio (PAPR).",
+      "output": "A method and apparatus are disclosed for determining reserved tones for reducing peak-to-average power ratio (PAPR) in a multicarrier communication signal. A set of subcarriers is identified within a transmission bandwidth, and one or more candidate subsets of the subcarriers are evaluated based on a PAPR-reduction criterion. For each candidate subset, correction symbols are determined for transmission on the corresponding reserved tones while data-bearing symbols remain substantially unchanged. A time-domain waveform is generated from the data-bearing symbols and the correction symbols, and a PAPR metric is calculated for the waveform. The reserved-tone subset is selected according to the calculated PAPR metric and, optionally, one or more constraints including spectral location, channel quality, transmit-power allocation, error-vector magnitude, computational complexity, and interference. The evaluation and symbol determination may be performed iteratively until a termination condition is satisfied. Information identifying the selected reserved tones may be stored, signaled to a receiving device, or derived from a predefined rule. The disclosed technique enables adaptive selection of reserved tones to suppress signal peaks while preserving data throughput and spectral compliance.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize an invention that selects and optimizes reserved-tone carrier indices by comparing average values of generated kernel signals.",
+      "output": "The invention reduces peak-to-average power ratio (PAPR) in a multicarrier/OFDM signal by intelligently choosing carriers reserved for peak cancellation. Kernel signals are generated for candidate carrier indices, and their average values—typically representing cancellation effectiveness—are calculated and compared. Carrier indices with more favorable averages are selected or exchanged iteratively to form an optimized reserved-tone set. This improves peak suppression while limiting computational complexity and preserving data-bearing carriers.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a single patent claim for an OFDM PAPR-reduction method involving preliminary carrier-index selection, index rearrangement, substitution, and final selection based on the smallest comparison reference average value.",
+      "output": "1. A method for reducing a peak-to-average power ratio of an orthogonal frequency-division multiplexing (OFDM) signal, the method comprising: preliminarily selecting, from a plurality of carrier indices of an input OFDM symbol, a set of carrier indices satisfying a predetermined selection criterion; generating a plurality of candidate carrier-index arrangements by rearranging the preliminarily selected carrier indices; for each candidate carrier-index arrangement, substituting modulation symbols associated with the preliminarily selected carrier indices into respective carrier positions specified by the candidate carrier-index arrangement while retaining modulation symbols associated with unselected carrier indices; transforming each resulting frequency-domain candidate symbol into a corresponding time-domain candidate signal; determining, for each time-domain candidate signal, a comparison reference average value based on magnitudes of samples of the time-domain candidate signal relative to a predetermined comparison reference; and selecting, for transmission, the time-domain candidate signal having the smallest comparison reference average value among the plurality of time-domain candidate signals.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Explain, in formal technical language, an algorithm for choosing reserved tones using prestored or calculated kernel-signal reference averages and iterative carrier-index changes.",
+      "output": "### Algorithm for Reserved-Tone Selection\n\nConsider an \\(N\\)-subcarrier multicarrier system. Let\n\n\\[\n\\mathcal{K}=\\{0,1,\\ldots,N-1\\}\n\\]\n\ndenote the available carrier indices, and let \\(\\mathcal{R}\\subset\\mathcal{K}\\), with \\(|\\mathcal{R}|=N_R\\), denote the set of reserved tones. The objective is to select \\(\\mathcal{R}\\) such that the associated time-domain cancellation kernels provide favorable peak-reduction properties.\n\n#### 1. Kernel-signal characterization\n\nFor each candidate carrier index \\(k\\), define a kernel signal \\(g_k[n]\\). In an \\(N\\)-point orthogonal system, a basic kernel may be written as\n\n\\[\ng_k[n]=e^{j2\\pi kn/N}, \\qquad 0\\le n<N,\n\\]\n\nor, more generally, as the time-domain response obtained by activating carrier \\(k\\) with unit amplitude and applying the system’s modulation, filtering, and oversampling operations.\n\nAssociate with each kernel a reference statistic\n\n\\[\n\\mu_k = \\frac{1}{|\\Omega|}\\sum_{n\\in\\Omega}\\phi\\!\\left(g_k[n]\\right),\n\\]\n\nwhere \\(\\Omega\\) is the relevant sample set and \\(\\phi(\\cdot)\\) is a prescribed kernel-quality measure. Examples include magnitude, squared magnitude, sidelobe energy, correlation, or contribution to a composite cancellation kernel.\n\nThe values \\(\\mu_k\\) may be:\n\n1. **prestored**, having been computed offline for the applicable system configuration; or  \n2. **calculated at run time**, when the modulation parameters, oversampling factor, spectral mask, or available-carrier set changes.\n\nFor a reserved-tone set \\(\\mathcal{R}\\), define the aggregate kernel and its reference average as\n\n\\[\ng_{\\mathcal{R}}[n]\n=\n\\sum_{k\\in\\mathcal{R}} w_k g_k[n],\n\\]\n\n\\[\n\\bar{\\mu}(\\mathcal{R})\n=\n\\frac{1}{|\\Omega|}\n\\sum_{n\\in\\Omega}\n\\phi\\!\\left(g_{\\mathcal{R}}[n]\\right),\n\\]\n\nwhere \\(w_k\\) are fixed or optimized kernel weights.\n\n#### 2. Initial carrier-index selection\n\nConstruct an initial reserved set\n\n\\[\n\\mathcal{R}^{(0)}\n=\n\\{r_1^{(0)},r_2^{(0)},\\ldots,r_{N_R}^{(0)}\\}.\n\\]\n\nThe initial indices may be uniformly spaced, selected according to the lowest individual reference averages, or obtained from a stored reference pattern. The selected indices must satisfy all system constraints, such as exclusion of pilot tones, null carriers, guard bands, and prohibited spectral regions.\n\nEvaluate an objective function\n\n\\[\nJ\\!\\left(\\mathcal{R}^{(0)}\\right),\n\\]\n\nwhere \\(J\\) quantifies the suitability of the corresponding kernel. A typical objective is\n\n\\[\nJ(\\mathcal{R})\n=\n\\alpha\\,\\bar{\\mu}(\\mathcal{R})\n+\n\\beta\\,C(\\mathcal{R})\n+\n\\gamma\\,P(\\mathcal{R}),\n\\]\n\nwith:\n\n- \\(\\bar{\\mu}(\\mathcal{R})\\): aggregate kernel reference average;\n- \\(C(\\mathcal{R})\\): an autocorrelation, cross-correlation, or sidelobe penalty;\n- \\(P(\\mathcal{R})\\): a constraint or spectral-distribution penalty;\n- \\(\\alpha,\\beta,\\gamma\\ge 0\\): design weights.\n\nThe criterion is ordinarily minimized.\n\n#### 3. Iterative carrier-index modification\n\nAt iteration \\(i\\), generate neighboring reserved-tone sets by changing one or more carrier indices. For a single-index update, select \\(r_p^{(i)}\\in\\mathcal{R}^{(i)}\\) and propose\n\n\\[\nr_p' = r_p^{(i)}+\\Delta,\n\\]\n\nwhere \\(\\Delta\\) is chosen from a finite increment set, for example\n\n\\[\n\\Delta\\in\\{-D,\\ldots,-1,1,\\ldots,D\\}.\n\\]\n\nThe candidate set is\n\n\\[\n\\mathcal{R}'=\n\\left(\\mathcal{R}^{(i)}\\setminus\\{r_p^{(i)}\\}\\right)\n\\cup\\{r_p'\\}.\n\\]\n\nReject the candidate if \\(r_p'\\) is outside the valid index range, duplicates another reserved index, or violates a carrier-allocation constraint.\n\nFor each valid candidate:\n\n1. retrieve or calculate the reference average associated with \\(r_p'\\);\n2. update the aggregate kernel statistic;\n3. evaluate \\(J(\\mathcal{R}')\\).\n\nWhen separable reference statistics are used, the aggregate average can be updated incrementally:\n\n\\[\n\\bar{\\mu}(\\mathcal{R}')\n=\n\\bar{\\mu}(\\mathcal{R}^{(i)})\n-\\frac{\\mu_{r_p^{(i)}}}{N_R}\n+\\frac{\\mu_{r_p'}}{N_R}.\n\\]\n\nFor nonseparable criteria, update the composite kernel directly:\n\n\\[\ng_{\\mathcal{R}'}[n]\n=\ng_{\\mathcal{R}^{(i)}}[n]\n-w_{r_p^{(i)}}g_{r_p^{(i)}}[n]\n+w_{r_p'}g_{r_p'}[n],\n\\]\n\nand recompute the required statistic from \\(g_{\\mathcal{R}'}[n]\\).\n\n#### 4. Acceptance rule\n\nSelect the valid candidate with the lowest objective value:\n\n\\[\n\\mathcal{R}^{*}\n=\n\\arg\\min_{\\mathcal{R}'\\in\\mathcal{N}(\\mathcal{R}^{(i)})}\nJ(\\mathcal{R}'),\n\\]\n\nwhere \\(\\mathcal{N}(\\mathcal{R}^{(i)})\\) is the current neighborhood.\n\nFor deterministic descent, accept the change only if\n\n\\[\nJ(\\mathcal{R}^{*})\n<\nJ(\\mathcal{R}^{(i)})-\\varepsilon,\n\\]\n\nwhere \\(\\varepsilon\\ge 0\\) is a minimum-improvement threshold. Set\n\n\\[\n\\mathcal{R}^{(i+1)}=\\mathcal{R}^{*}.\n\\]\n\nOtherwise, retain the current set or enlarge/change the search neighborhood.\n\n#### 5. Termination\n\nTerminate the iterative process when any of the following conditions holds:\n\n- no admissible carrier-index change improves the objective;\n- the change in objective is below a specified tolerance;\n- a target kernel-reference value is reached;\n- all permitted index modifications have been tested; or\n- a maximum number of iterations is attained.\n\nThe final reserved-tone set is\n\n\\[\n\\mathcal{R}_{\\mathrm{opt}}=\\mathcal{R}^{(i_{\\mathrm{final}})}.\n\\]\n\nThis set may then be stored for subsequent operation or supplied to a tone-reservation optimizer that determines the complex reserved-tone symbols used to reduce the transmitted signal’s peak-to-average power ratio. The prestored-reference implementation reduces online computation, whereas runtime calculation accommodates changes in carrier availability and waveform configuration.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Convert the following tone-reservation optimization procedure into patent language: select carrier indices, generate a kernel signal, preliminarily determine and reorder indices, test replacement indices, and choose the set yielding the minimum average comparison metric.",
+      "output": "**A computer-implemented method for tone-reservation optimization, comprising:**\n\n1. selecting a plurality of carrier indices to form an initial tone-reservation index set;\n\n2. generating a kernel signal based on the selected carrier indices;\n\n3. preliminarily determining a plurality of candidate carrier indices and reordering the candidate carrier indices according to a predetermined ordering criterion;\n\n4. for each candidate carrier index, testing replacement of at least one carrier index in the initial tone-reservation index set with the candidate carrier index;\n\n5. determining, for each resulting tone-reservation index set, an average comparison metric based on a signal generated using the resulting tone-reservation index set; and\n\n6. selecting, as an optimized tone-reservation index set, the resulting tone-reservation index set having a minimum average comparison metric.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7103873239436619,
+      "excess_ratio": 0.5363721033505502,
+      "baseline_mean": 0.17401522059311172,
+      "baseline_n_valid": 5,
+      "output_chars": 1048,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7002967359050445,
+          "baseline_mean": 0.141946243431689,
+          "excess_ratio": 0.5583504924733556
+        },
+        "bz2": {
+          "actual_ratio": 0.6556962025316456,
+          "baseline_mean": 0.15548841453899506,
+          "excess_ratio": 0.5002077879926505
+        },
+        "lzma": {
+          "actual_ratio": 0.7722772277227723,
+          "baseline_mean": 0.21817790733245523,
+          "excess_ratio": 0.5540993203903171
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.33520449077786696,
+      "excess_ratio": 0.16118927018475523,
+      "baseline_mean": 0.17401522059311172,
+      "baseline_n_valid": 5,
+      "output_chars": 873,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2613333333333333,
+          "baseline_mean": 0.141946243431689,
+          "excess_ratio": 0.11938708990164432
+        },
+        "bz2": {
+          "actual_ratio": 0.3490566037735849,
+          "baseline_mean": 0.15548841453899506,
+          "excess_ratio": 0.19356818923458982
+        },
+        "lzma": {
+          "actual_ratio": 0.38392857142857145,
+          "baseline_mean": 0.21817790733245523,
+          "excess_ratio": 0.16575066409611622
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.4397463002114165,
+      "excess_ratio": 0.2657310796183048,
+      "baseline_mean": 0.17401522059311172,
+      "baseline_n_valid": 5,
+      "output_chars": 1042,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.39770114942528734,
+          "baseline_mean": 0.141946243431689,
+          "excess_ratio": 0.25575490599359835
+        },
+        "bz2": {
+          "actual_ratio": 0.43487394957983194,
+          "baseline_mean": 0.15548841453899506,
+          "excess_ratio": 0.27938553504083685
+        },
+        "lzma": {
+          "actual_ratio": 0.48031496062992124,
+          "baseline_mean": 0.21817790733245523,
+          "excess_ratio": 0.262137053297466
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.13456267131821578,
+      "excess_ratio": -0.03945254927489594,
+      "baseline_mean": 0.17401522059311172,
+      "baseline_n_valid": 5,
+      "output_chars": 3500,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.10462471569370735,
+          "baseline_mean": 0.141946243431689,
+          "excess_ratio": -0.03732152773798164
+        },
+        "bz2": {
+          "actual_ratio": 0.13978494623655913,
+          "baseline_mean": 0.15548841453899506,
+          "excess_ratio": -0.015703468302435936
+        },
+        "lzma": {
+          "actual_ratio": 0.15804597701149425,
+          "baseline_mean": 0.21817790733245523,
+          "excess_ratio": -0.06013193032096098
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.039473684210526314,
+      "excess_ratio": -0.13454153638258542,
+      "baseline_mean": 0.17401522059311172,
+      "baseline_n_valid": 5,
+      "output_chars": 1671,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.02242152466367713,
+          "baseline_mean": 0.141946243431689,
+          "excess_ratio": -0.11952471876801186
+        },
+        "bz2": {
+          "actual_ratio": 0.03270042194092827,
+          "baseline_mean": 0.15548841453899506,
+          "excess_ratio": -0.12278799259806679
+        },
+        "lzma": {
+          "actual_ratio": 0.06172839506172839,
+          "baseline_mean": 0.21817790733245523,
+          "excess_ratio": -0.15644951227072684
+        }
+      }
+    }
+  }
+}

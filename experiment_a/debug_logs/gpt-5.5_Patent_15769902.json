@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15769902",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nEmbodiments of the present disclosure provide an information processing method, a mobile terminal, and a computer storage medium. The mobile terminal includes a decoding unit configured to obtain a first multimedia file, decode the first multimedia file, and obtain multiple frames of decoded first pictures and a time parameter of the first multimedia file; a first processing unit configured to obtain a first input operation for any selected frame of the first pictures obtained by the decoding unit; a second processing unit configured to identify an area in each of the other frames of the first pictures except the selected frame of the first pictures corresponding to the first area of the selected frame as a first area of each of the other frames, and perform predetermined processing on areas except the first areas of the multiple frames of first pictures to generate multiple frames of second pictures; and an encoding unit configured to encode the multiple frames of second pictures according to the time parameter to generate a second multimedia file.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nEmbodiments of the present disclosure provide an information processing method, a mobile terminal, and a computer storage medium. The mobile terminal includes a decoding unit configured to obtain a first multimedia file, decode the first multimedia file, and obtain multiple frames of decoded first pictures and a time parameter of the first multimedia file; a first processing unit configured to obtain a first input operation for any selected frame of the first pictures obtained by the decoding unit; a second processing unit configured to identify an area in each of the other frames of the first pictures except the selected frame of the first pictures corresponding to the first area of the selected frame as a first area of each of the other frames, and perform predetermined processing on areas except the first areas of the multiple frames of first pictures to generate multiple frames of second pictures; and an encoding unit configured to encode the multiple frames of second pictures according to the time parameter to generate a second multimedia file.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The disclosure describes an information processing method, a mobile terminal, and a computer storage medium.\n- The mobile terminal decodes a first multimedia file to obtain multiple decoded picture frames and a time parameter.\n- A first input operation is obtained for a selected frame among the decoded picture frames.\n- The system identifies corresponding first areas in the other frames based on the selected frame’s first area.\n- The mobile terminal processes areas outside the identified first areas and encodes the resulting frames using the time parameter to generate a second multimedia file.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA mobile terminal information processing method decodes a multimedia file into frames, receives user selection of an area in one frame, identifies corresponding areas in the remaining frames, and processes the non-selected areas. It then encodes the processed frames using the original timing parameters to generate a new multimedia file, enabling consistent area-based editing across video frames.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Embodiments, The"
+  },
+  "outputs": {
+    "L1": "Embodiments of the present disclosure provide an information processing method, a mobile terminal, and a computer storage medium. The mobile terminal includes: a decoding unit configured to obtain and decode a first multimedia file, thereby obtaining multiple frames of decoded first pictures and a time parameter of the first multimedia file; a first processing unit configured to obtain a first input operation for any selected frame among the first pictures obtained by the decoding unit; a second processing unit configured to identify, in each of the other frames of the first pictures other than the selected frame, an area corresponding to the first area of the selected frame as a first area of each of the other frames, and to perform predetermined processing on areas other than the first areas of the multiple frames of first pictures to generate multiple frames of second pictures; and an encoding unit configured to encode the multiple frames of second pictures according to the time parameter to generate a second multimedia file.",
+    "L2": "The embodiments described in this disclosure relate to an information processing method, a mobile terminal, and a computer-readable storage medium. The mobile terminal comprises several functional units. A decoding unit is arranged to acquire a first multimedia file, decode that file, and produce a plurality of decoded first-image frames together with a time parameter associated with the first multimedia file. A first processing unit is used to receive a first input operation directed to any chosen frame among the first-image frames decoded by the decoding unit. A second processing unit is configured to determine, in each remaining first-image frame other than the chosen frame, a region that corresponds to the first region of the chosen frame, and to designate that corresponding region as the first region of each remaining frame. The second processing unit then carries out preset processing on portions outside the first regions in the plurality of first-image frames, thereby generating a plurality of second-image frames. An encoding unit is further configured to encode the plurality of second-image frames on the basis of the time parameter so as to create a second multimedia file.",
+    "L3": "The disclosure relates to an information processing method, a mobile terminal, and a computer-readable storage medium.\n\nAccording to the disclosed method, the mobile terminal decodes a first multimedia file to obtain a plurality of decoded picture frames and an associated time parameter. The decoded picture frames may correspond to individual frames of a video, while the time parameter may be used to preserve timing information, such as playback sequence, frame rate, or duration information, during subsequent processing and encoding.\n\nAfter the first multimedia file is decoded, the mobile terminal obtains a first input operation directed to one selected frame among the plurality of decoded picture frames. The selected frame includes a first area specified by the user through the first input operation. For example, the user may select or mark a region in the frame that is to be retained, emphasized, protected, or otherwise treated as a reference region for further processing.\n\nBased on the first area in the selected frame, the mobile terminal identifies corresponding first areas in other decoded picture frames. In other words, the system determines regions in the remaining frames that correspond to the user-selected area in the selected frame. This may be achieved by tracking the position, shape, or motion of the selected area across the sequence of frames, thereby identifying the related areas in the other frames of the multimedia file.\n\nOnce the corresponding first areas have been identified, the mobile terminal processes areas outside the identified first areas in the plurality of decoded picture frames. The processing may include, for example, blurring, masking, darkening, removing, replacing, or otherwise modifying image content outside the selected and corresponding areas, while leaving the identified first areas unchanged or subject to different processing.\n\nFinally, the mobile terminal encodes the processed decoded picture frames according to the previously obtained time parameter, thereby generating a second multimedia file. By using the time parameter during encoding, the second multimedia file can maintain appropriate playback timing and continuity corresponding to the original first multimedia file. Thus, the disclosed solution enables a user-selected region in one frame to be extended to corresponding regions in other frames, allowing the mobile terminal to generate a processed multimedia file in which areas outside those regions are modified.",
+    "L4": "A mobile terminal information processing method is provided for performing area-based editing on a multimedia file, such as a video file. The method includes obtaining a multimedia file to be processed and decoding the multimedia file to generate a plurality of image frames. The mobile terminal displays at least one of the decoded frames to a user and receives a user input selecting a target area in the displayed frame. The selected target area may correspond, for example, to a face, object, background region, text region, or any other portion of the image that the user wishes to preserve or treat differently from the rest of the video.\n\nAfter the target area is selected in one frame, the mobile terminal identifies corresponding target areas in the remaining frames of the multimedia file. This identification may be performed by object tracking, image matching, feature point detection, motion estimation, artificial intelligence recognition, or another suitable image analysis technique. In this way, the selected area can be consistently located across multiple frames even when the object moves, changes size, rotates, or is partially obscured.\n\nOnce the corresponding areas have been determined, the mobile terminal processes the areas outside the selected target areas in each frame. The processing may include blurring, mosaicking, dimming, color adjustment, background replacement, filtering, compression, masking, deletion, or any other visual effect. In some implementations, the selected target area is kept unchanged while the non-selected area is modified. In other implementations, the selected target area and the non-selected area may be processed using different processing parameters.\n\nAfter the frame processing is completed, the mobile terminal encodes the processed frames to generate a new multimedia file. During encoding, the mobile terminal uses timing parameters corresponding to the original multimedia file, such as frame rate, frame sequence, presentation timestamps, duration information, synchronization information, and audio-video timing relationships. As a result, the generated multimedia file maintains the playback timing of the original file while incorporating the desired area-based visual processing.\n\nThrough this method, a user can select an area in a single video frame and apply consistent processing across the entire multimedia file without manually editing each frame. The method improves editing efficiency on a mobile terminal and enables convenient video effects such as background blurring, privacy protection, subject highlighting, object tracking effects, and selective visual enhancement.",
+    "L5": "**Embodiments: The Many Forms of an Idea**\n\nEmbodiments are the different ways in which an idea, concept, or invention can be expressed, represented, or put into practice. The term is often used in technical, philosophical, creative, and legal contexts to describe concrete forms of something that may otherwise be abstract.\n\nIn technology and innovation, embodiments refer to specific versions or implementations of an invention. For example, a device may have several embodiments: one designed for industrial use, another for home use, and another adapted for mobile applications. Each embodiment may share the same core concept while differing in structure, materials, features, or methods of operation.\n\nThe value of embodiments lies in their flexibility. A single idea can take many shapes depending on the needs of users, the environment in which it is applied, or the goals of the designer. This allows creators and engineers to explore multiple possibilities without limiting an invention to only one form.\n\nIn a broader sense, embodiments also appear in art, culture, and human experience. A sculpture may be the embodiment of emotion, a leader may be seen as the embodiment of courage, and a tradition may embody the values of a community. In these cases, the embodiment gives visible or tangible form to something meaningful.\n\nThe concept of embodiments reminds us that ideas become powerful when they are expressed in real forms. Whether in design, invention, language, or human action, embodiments help transform imagination into reality."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style abstract for a mobile terminal method that decodes a video, lets the user select a region in one frame, tracks the corresponding region across other frames, processes the non-selected regions, and re-encodes the result.",
+      "output": "A method performed by a mobile terminal includes decoding an input video to obtain a plurality of frames, displaying at least one decoded frame, and receiving a user input designating a selected region within the displayed frame. The mobile terminal determines, based on the selected region, corresponding regions in other frames of the plurality of frames by tracking image features, motion information, object boundaries, or a combination thereof. For each of the plurality of frames, the mobile terminal distinguishes the corresponding selected region from one or more non-selected regions and applies an image processing operation to the non-selected regions while preserving the selected region. The image processing operation may include blurring, masking, filtering, dimming, replacing, or reducing a resolution of the non-selected regions. The processed frames are then encoded to generate an output video in which the user-selected region is maintained across frames and regions outside the tracked selected region are processed.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a technical disclosure paragraph describing an information processing method, mobile terminal, and computer storage medium for generating a processed multimedia file by selecting an area in a decoded video frame.",
+      "output": "Disclosed are an information processing method, a mobile terminal, and a computer-readable storage medium. The method includes: decoding a multimedia file to obtain at least one video frame; displaying the decoded video frame on a display interface of the mobile terminal; receiving a user selection operation for selecting a target area in the decoded video frame; determining, according to the selection operation, position information of the target area in the video frame; processing image data corresponding to the target area, or processing image data outside the target area, according to a preset multimedia processing rule, the processing including at least one of cropping, masking, blurring, enhancing, annotating, replacing, or extracting; and encoding the processed video frame to generate a processed multimedia file. The mobile terminal includes a processor, a display, a memory, and program instructions stored in the memory and executable by the processor, wherein the program instructions cause the processor to perform the foregoing information processing method. The computer-readable storage medium stores computer program instructions which, when executed by a processor of a mobile terminal, cause the mobile terminal to decode a multimedia file, select an area in a decoded video frame based on a user operation, process the selected area or a non-selected area, and generate a processed multimedia file based on the processed video frame.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate patent claim-like language for a video processing apparatus with decoding, user input, region identification across frames, background processing, and encoding units.",
+      "output": "1. A video processing apparatus comprising:\n\na decoding unit configured to decode input video data to generate a plurality of decoded video frames;\n\na user input unit configured to receive a user designation of at least one target region in at least one of the plurality of decoded video frames;\n\na region identification unit configured to identify, based at least in part on the user designation, corresponding target regions in one or more additional decoded video frames among the plurality of decoded video frames;\n\na background processing unit configured to perform background processing on portions of the plurality of decoded video frames other than the target regions identified by the region identification unit; and\n\nan encoding unit configured to encode processed video frames generated by the background processing unit to produce output video data.\n\n2. The video processing apparatus of claim 1, wherein the background processing includes at least one of blurring, masking, pixelation, color conversion, brightness adjustment, contrast adjustment, replacement with a predetermined image, or application of a visual effect.\n\n3. The video processing apparatus of claim 1, wherein the region identification unit is configured to track movement of the target region across the plurality of decoded video frames.\n\n4. The video processing apparatus of claim 3, wherein the region identification unit identifies the corresponding target regions using at least one of motion estimation, feature matching, object detection, optical flow, template matching, or machine-learning-based segmentation.\n\n5. The video processing apparatus of claim 1, wherein the user input unit is configured to receive the user designation as at least one of a bounding box, a contour, a mask, a touch input, a pointer input, a selection of an object, or a text-based instruction.\n\n6. The video processing apparatus of claim 1, wherein the background processing unit is configured to preserve image content within the target regions while modifying image content outside the target regions.\n\n7. The video processing apparatus of claim 1, wherein the background processing unit is further configured to generate, for each of the plurality of decoded video frames, a processing mask defining the target region and a background region.\n\n8. The video processing apparatus of claim 7, wherein the background processing unit applies a first video processing operation to the background region and applies a second video processing operation different from the first video processing operation to the target region.\n\n9. The video processing apparatus of claim 1, wherein the decoding unit is configured to decode compressed video data encoded according to at least one of H.264, H.265/HEVC, AV1, VP9, MPEG-2, or MPEG-4.\n\n10. The video processing apparatus of claim 1, wherein the encoding unit is configured to encode the processed video frames according to at least one of H.264, H.265/HEVC, AV1, VP9, MPEG-2, or MPEG-4.\n\n11. The video processing apparatus of claim 1, further comprising a display unit configured to display at least one decoded video frame and to present an interface through which the user designation is received.\n\n12. The video processing apparatus of claim 1, wherein the region identification unit is configured to update the corresponding target regions over time in response to changes in scale, rotation, orientation, shape, or position of an object represented in the target region.\n\n13. The video processing apparatus of claim 1, wherein the background processing unit is configured to process the portions other than the target regions such that privacy-sensitive information in a background of the video frames is visually obscured.\n\n14. The video processing apparatus of claim 1, wherein the encoding unit is configured to generate metadata indicating location information of the target regions in the processed video frames.\n\n15. A video processing apparatus comprising:\n\none or more processors; and\n\none or more memories storing instructions which, when executed by the one or more processors, cause the video processing apparatus to:\n\ndecode input video data into a sequence of frames;\n\nreceive a user selection indicating a region of interest in at least one frame of the sequence of frames;\n\nidentify the region of interest in subsequent frames of the sequence of frames;\n\napply a background effect to image regions outside the region of interest in the sequence of frames; and\n\nencode the sequence of frames after application of the background effect to generate encoded output video data.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Describe embodiments of a present disclosure involving a mobile terminal that obtains a multimedia file, decodes frames and timing information, receives a user-selected frame area, applies predetermined processing outside corresponding areas in all frames, and outputs a new multimedia file.",
+      "output": "In some embodiments, a mobile terminal is configured to process a multimedia file based on a user-selected area in a frame. The mobile terminal obtains a multimedia file and decodes the multimedia file to acquire a plurality of frames and timing information corresponding to the frames. The terminal displays at least one frame and receives, through a user interface, a user selection of an area in the displayed frame. The selected area may be a rectangular region, a free-form region, an object region, or another designated portion of the frame.\n\nAfter the area is selected, the mobile terminal determines corresponding areas in other frames of the multimedia file. In some embodiments, the corresponding areas have the same coordinates and size as the user-selected area. In other embodiments, the corresponding areas are determined by object tracking, feature matching, motion estimation, or another image analysis technique, so that the selected subject or region may be followed across multiple frames.\n\nThe mobile terminal then applies predetermined processing to portions of the frames outside the corresponding areas. For example, the predetermined processing may include blurring, mosaicking, darkening, desaturation, color filtering, compression, replacement with a background image, or another visual effect. The selected area and its corresponding areas may remain unprocessed, may be processed differently, or may be enhanced relative to the surrounding portions. In this way, attention may be focused on the selected area while other parts of the multimedia content are obscured or visually modified.\n\nThe timing information decoded from the original multimedia file is used to maintain synchronization when generating an output file. The mobile terminal encodes the processed frames according to the timing information and outputs a new multimedia file. The new multimedia file includes the visual processing applied outside the selected area over the relevant frames and may preserve the original playback timing, frame order, audio track, metadata, or encoding format, depending on implementation.\n\nIn one embodiment, the mobile terminal includes a memory storing instructions and a processor configured to execute the instructions to: obtain a multimedia file; decode the multimedia file to obtain frame images and timing information; receive a user-selected area in one of the frame images; identify areas in a plurality of frame images corresponding to the selected area; process regions outside the corresponding areas using a predetermined processing method; and generate and output a new multimedia file from the processed frame images based on the timing information.\n\nIn another embodiment, a method performed by the mobile terminal includes acquiring a video file, extracting frames and presentation timestamps, receiving a touch input defining a region of interest in a displayed frame, applying a blur or mosaic effect to regions outside the region of interest in each frame or in selected frames, and encoding the resulting frames into a processed video file. The processed video file may be stored locally, transmitted to another device, uploaded to a server, or shared through an application.\n\nIn yet another embodiment, a non-transitory computer-readable storage medium stores instructions that, when executed by a processor of a mobile terminal, cause the mobile terminal to perform the above operations.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Produce a formal patent abstract for an invention that preserves a selected object/area in video frames while processing the remaining regions, using decoding and encoding modules in a mobile terminal.",
+      "output": "A mobile terminal and method for selectively processing video frames are disclosed. The mobile terminal includes a decoding module configured to decode video data into a plurality of frames, a selection module configured to identify a selected object or area within at least one decoded frame, an image-processing module configured to apply a predetermined processing operation to regions of the frame other than the selected object or area while preserving the selected object or area in an unprocessed or differently processed state, and an encoding module configured to encode the resulting frames to generate processed video data. The selected object or area may be designated by user input or automatically detected and tracked across successive frames. The processing operation may include blurring, filtering, background modification, resolution adjustment, color conversion, or another visual effect applied to non-selected regions. The invention enables mobile video editing or communication in which a desired subject is maintained while surrounding image regions are modified.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7832393231265108,
+      "excess_ratio": 0.6317008982807367,
+      "baseline_mean": 0.15153842484577407,
+      "baseline_n_valid": 5,
+      "output_chars": 1044,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.8176943699731903,
+          "baseline_mean": 0.1131416316104854,
+          "excess_ratio": 0.7045527383627049
+        },
+        "bz2": {
+          "actual_ratio": 0.6610576923076923,
+          "baseline_mean": 0.14926863925938966,
+          "excess_ratio": 0.5117890530483027
+        },
+        "lzma": {
+          "actual_ratio": 0.8672566371681416,
+          "baseline_mean": 0.18702040444592574,
+          "excess_ratio": 0.6802362327222159
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.35630689206762023,
+      "excess_ratio": 0.20476846722184616,
+      "baseline_mean": 0.15153842484577407,
+      "baseline_n_valid": 5,
+      "output_chars": 1199,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.30736842105263157,
+          "baseline_mean": 0.1131416316104854,
+          "excess_ratio": 0.19422678944214616
+        },
+        "bz2": {
+          "actual_ratio": 0.3379721669980119,
+          "baseline_mean": 0.14926863925938966,
+          "excess_ratio": 0.18870352773862226
+        },
+        "lzma": {
+          "actual_ratio": 0.4142857142857143,
+          "baseline_mean": 0.18702040444592574,
+          "excess_ratio": 0.22726530983978857
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.2300884955752212,
+      "excess_ratio": 0.07855007072944714,
+      "baseline_mean": 0.15153842484577407,
+      "baseline_n_valid": 5,
+      "output_chars": 2499,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1982475355969332,
+          "baseline_mean": 0.1131416316104854,
+          "excess_ratio": 0.0851059039864478
+        },
+        "bz2": {
+          "actual_ratio": 0.22186147186147187,
+          "baseline_mean": 0.14926863925938966,
+          "excess_ratio": 0.07259283260208221
+        },
+        "lzma": {
+          "actual_ratio": 0.26720647773279355,
+          "baseline_mean": 0.18702040444592574,
+          "excess_ratio": 0.0801860732868678
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.160345359235276,
+      "excess_ratio": 0.008806934389501947,
+      "baseline_mean": 0.15153842484577407,
+      "baseline_n_valid": 5,
+      "output_chars": 2653,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1291547958214625,
+          "baseline_mean": 0.1131416316104854,
+          "excess_ratio": 0.016013164210977093
+        },
+        "bz2": {
+          "actual_ratio": 0.15619047619047619,
+          "baseline_mean": 0.14926863925938966,
+          "excess_ratio": 0.006921836931086528
+        },
+        "lzma": {
+          "actual_ratio": 0.19298245614035087,
+          "baseline_mean": 0.18702040444592574,
+          "excess_ratio": 0.0059620516944251245
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.049367088607594936,
+      "excess_ratio": -0.10217133623817913,
+      "baseline_mean": 0.15153842484577407,
+      "baseline_n_valid": 5,
+      "output_chars": 1551,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.022606382978723406,
+          "baseline_mean": 0.1131416316104854,
+          "excess_ratio": -0.090535248631762
+        },
+        "bz2": {
+          "actual_ratio": 0.04699738903394256,
+          "baseline_mean": 0.14926863925938966,
+          "excess_ratio": -0.1022712502254471
+        },
+        "lzma": {
+          "actual_ratio": 0.07511737089201878,
+          "baseline_mean": 0.18702040444592574,
+          "excess_ratio": -0.11190303355390696
+        }
+      }
+    }
+  }
+}

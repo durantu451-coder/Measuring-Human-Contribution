@@ -1,0 +1,169 @@
+{
+  "model": "gemini-3.6-flash",
+  "domain": "Arxiv",
+  "id": "0704.0394",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThis paper deals with discrete-time Markov control processes on a general state space. A long-run risk-sensitive average cost criterion is used as a performance measure. The one-step cost function is nonnegative and possibly unbounded. Using the vanishing discount factor approach, the optimality inequality and an optimal stationary strategy for the decision maker are established.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThis paper deals with discrete-time Markov control processes on a general state space. A long-run risk-sensitive average cost criterion is used as a performance measure. The one-step cost function is nonnegative and possibly unbounded. Using the vanishing discount factor approach, the optimality inequality and an optimal stationary strategy for the decision maker are established.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n* The study focuses on discrete-time Markov control processes operating on a general state space.\n* A long-run risk-sensitive average cost criterion is applied as the primary performance measure.\n* The model incorporates a one-step cost function that is nonnegative and potentially unbounded.\n* The researchers utilize the vanishing discount factor approach to establish the optimality inequality.\n* An optimal stationary strategy for the decision maker is successfully established through this framework.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis paper addresses discrete-time Markov control processes on a general state space under a long-run risk-sensitive average cost criterion with potentially unbounded one-step costs by employing the vanishing discount factor approach. By establishing the optimality inequality and an optimal stationary strategy, the study provides a theoretical framework for achieving long-term optimal decision-making under risk-sensitive conditions.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: This, Markov, The"
+  },
+  "outputs": {
+    "L1": "Here are three ways to polish the text, depending on your preferred style:\n\n**Option 1: Fluent & Modern Academic (Recommended)**\n> \"This paper investigates discrete-time Markov control processes on a general state space, evaluated under a long-run risk-sensitive average cost criterion. We consider a nonnegative and potentially unbounded one-step cost function. By leveraging the vanishing discount factor approach, we establish the optimality inequality and derive an optimal stationary strategy for the decision maker.\"\n\n**Option 2: Formal & Concise**\n> \"This study addresses discrete-time Markov control processes in general state spaces using a long-run risk-sensitive average cost performance metric. Under the assumption of a nonnegative and possibly unbounded one-step cost function, the vanishing discount factor approach is employed to establish both the optimality inequality and an optimal stationary strategy.\"\n\n**Option 3: Elegant & Flowing (Best for an Abstract)**\n> \"Focusing on discrete-time Markov control processes on general state spaces, this paper adopts a long-run risk-sensitive average cost criterion as the performance measure. For nonnegative and potentially unbounded one-step cost functions, we utilize the vanishing discount factor approach to establish the optimality inequality and prove the existence of an optimal stationary strategy.\"\n\n**Key Improvements Made:**\n*   Replaced the weak opening *\"This paper deals with...\"* with stronger academic verbs like *\"investigates,\" \"addresses,\"* or *\"focuses on.\"*\n*   Combined choppy sentences into cohesive statements to improve the narrative flow.\n*   Refined vocabulary (e.g., replacing *\"used as a performance measure\"* with *\"evaluated under...\"* or *\"performance metric\"*).",
+    "L2": "**Rewritten Text:**\n\nFocusing on Markovian control systems operating over discrete time intervals in an arbitrary state space, this study evaluates performance using a risk-averse, long-term average cost metric. The model accommodates single-period costs that are non-negative and potentially unbounded. By leveraging the diminishing discount factor method, the authors successfully derive the optimality inequality and construct a stationary optimal policy for the controller.",
+    "L3": "Here are two ways to expand these bullet points, depending on your intended format. \n\n### Option 1: Academic Abstract / Summary Paragraph\n*Best suited for a research paper summary, thesis section, or journal submission.*\n\nThis study investigates discrete-time Markov control processes operating on a general state space. To capture realistic operational settings where expenses can escalate significantly, the model incorporates a nonnegative, potentially unbounded one-step cost function. The primary performance measure evaluated is the long-run risk-sensitive average cost criterion, which allows decision-makers to account for risk aversion and higher-order cost fluctuations over an infinite planning horizon. To address the analytical challenges introduced by unbounded costs, the researchers employ the vanishing discount factor approach. By analyzing the asymptotic behavior of the discounted-cost model as the discount factor approaches unity, they successfully establish the risk-sensitive average-cost optimality inequality. Ultimately, this framework guarantees the existence of an optimal stationary strategy for the decision-maker, providing a mathematically rigorous foundation for optimal control in complex stochastic systems.\n\n---\n\n### Option 2: Extended Multi-Paragraph Text\n*Best suited for an introduction section, literature review, or detailed presentation.*\n\n**Optimal Control of Risk-Sensitive Markov Decision Processes**\n\n**Model Setup and Cost Structure**\nThis study focuses on discrete-time Markov control processes (DTMCPs) defined on general state spaces. Unlike standard models that rely on simplified finite or countable state assumptions, this framework accommodates highly complex operational environments. Furthermore, the system incorporates a one-step cost function that is nonnegative and potentially unbounded. This relaxation of bounded cost constraints makes the model significantly more realistic, allowing it to represent real-world applications—such as queueing networks, financial portfolio management, and dynamic resource allocation—where single-period costs can grow infinitely large.\n\n**Performance Criterion and Methodology**\nTo evaluate performance over an infinite horizon, the researchers utilize a long-run risk-sensitive average cost criterion as the primary objective. Unlike risk-neutral models that focus solely on minimizing expected costs, the risk-sensitive framework accounts for variance and higher-order moments, offering protection against extreme, high-cost events. \n\nTo overcome the mathematical difficulties associated with combining unbounded costs with a risk-sensitive average criterion, the study adopts the vanishing discount factor approach. By considering a sequence of discounted-cost problems and analyzing their limit as the discount factor approaches one, the authors successfully establish the corresponding optimality inequality.\n\n**Key Findings**\nThe main theoretical contribution of this work is the rigorous proof that an optimal stationary strategy exists for the decision-maker. This guarantees that an optimal policy can be implemented using a time-invariant rule that depends solely on the current state of the system, offering both computational tractability and actionable policy guidance for practical implementations.",
+    "L4": "Here is an expanded, full-length academic paper draft based on your summary. \n\n***\n\n# Long-Run Risk-Sensitive Average Cost Control for Discrete-Time Markov Processes on General State Spaces with Unbounded Costs\n\n**Abstract**  \nThis paper investigates discrete-time Markov control processes (MCPs) defined on general (Borel) state and action spaces under a long-run risk-sensitive average cost criterion. Unlike standard risk-neutral models or risk-sensitive models restricted to bounded cost functions, this work accommodates potentially unbounded one-step costs. By leveraging the vanishing discount factor approach, we bridge the gap between discounted and average cost risk-sensitive control. Under mild dynamic and growth conditions, we establish the existence of solutions to the Average Cost Optimality Inequality (ACOI) and demonstrate the existence of an optimal stationary control strategy. These results provide a robust theoretical framework for risk-averse, long-term decision-making in complex stochastic systems.\n\n---\n\n## 1. Introduction\n\nMarkov Control Processes (MCPs), also known as Markov Decision Processes (MDPs), provide a mathematical framework for modeling sequential decision-making under uncertainty. Traditionally, the objective in infinite-horizon MCPs is to minimize either a expected discounted total cost or a long-run expected average cost. These standard formulations are *risk-neutral*, as they focus purely on the expected value of accumulated costs without accounting for higher-order moments, such as variance or tail risk.\n\nIn many real-world applications—including financial portfolio management, autonomous system navigation, power grid management, and queueing networks—decision-makers are inherently risk-averse. In such settings, severe cost spikes or extreme failures carry disproportionate penalties. *Risk-sensitive control* addresses this issue by replacing the linear expectation of costs with an exponential cost criterion. The exponential structure penalizes cost fluctuations and introduces a parameter $\\gamma > 0$ that explicitly models the agent's degree of risk aversion.\n\nWhile risk-sensitive control on finite state spaces or with bounded one-step cost functions has been extensively studied, extending these models to **general state spaces with unbounded one-step costs** introduces significant technical hurdles:\n1. Exponential performance criteria can easily yield infinite values when costs are unbounded.\n2. Standard compactness and continuity arguments used in classical MDP theory fail to apply directly.\n3. The multiplicative nature of risk-sensitive dynamic programming complicates relative value iteration.\n\nTo address these challenges, this study employs the **vanishing discount factor approach**. By analyzing the asymptotic behavior of a sequence of risk-sensitive $\\alpha$-discounted cost problems as the discount factor $\\alpha$ approaches 1, we derive the foundational limits required to solve the long-run average cost problem.\n\n---\n\n## 2. Model Formulation and Risk-Sensitive Criterion\n\nWe consider a discrete-time Markov control model represented by the tuple:\n$$\\left( \\mathcal{X}, \\mathcal{A}, \\{A(x) \\mid x \\in \\mathcal{X}\\}, Q, c \\right)$$\n\n*   **State Space ($\\mathcal{X}$):** A general non-empty Borel space equipped with its Borel $\\sigma$-algebra.\n*   **Action Space ($\\mathcal{A}$):** A general Borel space. For each $x \\in \\mathcal{X}$, $A(x) \\subset \\mathcal{A}$ represents the set of feasible actions at state $x$.\n*   **Transition Law ($Q$):** A stochastic kernel $Q(dB \\mid x, a)$ giving the probability that the next state lies in $B \\subset \\mathcal{X}$, given the current state $x$ and action $a \\in A(x)$.\n*   **One-Step Cost ($c$):** A non-negative, measurable function $c: \\mathcal{X} \\times \\mathcal{A} \\to [0, \\infty)$, which is permitted to be **unbounded**.\n\nLet $\\gamma > 0$ denote the fixed risk-sensitivity parameter. For a given policy $\\pi$, the $N$-stage risk-sensitive cost starting from state $x$ is defined exponentially as:\n$$J_N(\\pi, x) = \\frac{1}{\\gamma} \\ln \\mathbb{E}_x^\\pi \\left[ \\exp \\left( \\gamma \\sum_{t=0}^{N-1} c(x_t, a_t) \\right) \\right]$$\n\nThe **long-run risk-sensitive average cost** criterion $J(\\pi, x)$ is formulated as the limit superior of the average growth rate:\n$$J(\\pi, x) = \\limsup_{N \\to \\infty} \\frac{1}{N \\gamma} \\ln \\mathbb{E}_x^\\pi \\left[ \\exp \\left( \\gamma \\sum_{t=0}^{N-1} c(x_t, a_t) \\right) \\right]$$\n\nThe objective is to find an optimal policy $\\pi^*$ that minimizes $J(\\pi, x)$ over all admissible policies, achieving the optimal value $\\rho^* = \\inf_{\\pi} J(\\pi, x)$.\n\n---\n\n## 3. The Vanishing Discount Factor Approach\n\nDirectly solving the average cost optimality equation for unbounded costs on general state spaces is often intractable. We therefore employ the **vanishing discount factor methodology**, which proceeds in three steps:\n\n### 3.1 The Discounted Cost Auxiliary Problem\nFor a discount factor $\\alpha \\in (0, 1)$, we define the risk-sensitive $\\alpha$-discounted cost criteria $V_\\alpha(x)$. The corresponding discounted risk-sensitive Optimality Equation satisfies:\n$$e^{\\gamma V_\\alpha(x)} = \\inf_{a \\in A(x)} \\left\\{ e^{\\gamma c(x, a)} \\int_{\\mathcal{X}} e^{\\gamma \\alpha V_\\alpha(y)} Q(dy \\mid x, a) \\right\\}$$\n\n### 3.2 Relative Value Functions and Growth Bounds\nTo control the potential explosion of $V_\\alpha(x)$ as $\\alpha \\uparrow 1$ under unbounded costs, we introduce a Lyapunov-like weight function $W: \\mathcal{X} \\to [1, \\infty)$ and construct a **relative value function**:\n$$h_\\alpha(x) = V_\\alpha(x) - V_\\alpha(x_0)$$\nwhere $x_0 \\in \\mathcal{X}$ is a fixed base state. \n\nUnder appropriate drift conditions (e.g., geometric ergodicity assumptions on the kernel $Q$) and growth conditions on $c(x,a)$ relative to $W(x)$, we establish that $h_\\alpha(x)$ remains bounded by $W(x)$ uniformly with respect to $\\alpha \\in (0, 1)$.\n\n### 3.3 Asymptotic Limits\nBy applying continuous selection theorems and Ascoli-Arzelà-type tightness arguments on general Borel spaces, we analyze the limits as $\\alpha \\uparrow 1$:\n*   $(1 - \\alpha) V_\\alpha(x_0) \\longrightarrow \\rho^* \\quad \\text{(Optimal Average Cost)}$\n*   $h_\\alpha(x) \\longrightarrow h(x) \\quad \\text{(Relative Value Function)}$\n\n---\n\n## 4. Main Theoretical Results\n\nThe primary contributions of this paper are centered on two main theoretical milestones:\n\n### Theorem 1: Average Cost Optimality Inequality (ACOI)\nUnder the structural drift and continuity assumptions, there exists a constant $\\rho^* \\in \\mathbb{R}$ (representing the optimal long-run average cost) and a measurable function $h: \\mathcal{X} \\to \\mathbb{R}$ satisfying the **Average Cost Optimality Inequality (ACOI)**:\n\n$$e^{\\gamma \\rho^* + \\gamma h(x)} \\ge \\inf_{a \\in A(x)} \\left\\{ e^{\\gamma c(x, a)} \\int_{\\mathcal{X}} e^{\\gamma h(y)} Q(dy \\mid x, a) \\right\\} \\quad \\forall x \\in \\mathcal{X}$$\n\n### Theorem 2: Existence of an Optimal Stationary Strategy\nIf the infimum on the right-hand side of the ACOI is attained for every $x \\in \\mathcal{X}$, there exists a selector $f^*: \\mathcal{X} \\to \\mathcal{A}$ such that $f^*(x) \\in A(x)$. The stationary policy $\\pi^* = (f^*, f^*, \\dots)$ satisfies:\n\n$$e^{\\gamma \\rho^* + \\gamma h(x)} = e^{\\gamma c(x, f^*(x))} \\int_{\\mathcal{X}} e^{\\gamma h(y)} Q(dy \\mid x, f^*(x))$$\n\nFurthermore, the deterministic stationary strategy $\\pi^*$ is **long-run average cost optimal**, meaning:\n$$J(\\pi^*, x) = \\rho^* = \\inf_{\\pi} J(\\pi, x) \\quad \\forall x \\in \\mathcal{X}$$\n\n---\n\n## 5. Conclusion and Implications\n\nThis work extends the classical theory of risk-sensitive Markov control processes to continuous/general state spaces with unbounded stage costs—a regime that frequently appears in practical applications but poses significant mathematical challenges. By rigorous application of the vanishing discount factor method alongside Lyapunov weight techniques, we establish:\n1. The mathematical existence of solutions to the ACOI without requiring bounded cost functions.\n2. The sufficiency and existence of optimal deterministic stationary strategies.\n\nThese results provide a rigorous theoretical foundation for constructing numerical approximation schemes (such as value iteration or policy iteration algorithms) in high-dimensional and continuous-state risk-sensitive control applications. Future research directions include extending these results to partially observable Markov decision processes (POMDPs) and non-stationary environment dynamics.",
+    "L5": "**The** world of modern computational science owes a great debt to the study of probability. At the heart of many contemporary algorithms lies the work of Andrey **Markov**, a mathematician whose insights redefined how we model systems changing over time. \n\n**This** breakthrough gave rise to the concept of the **Markov** chain—a random process where the probability of transitioning to a future state depends solely on the current state, completely independent of the past history that led to it. **This** defining characteristic, known as the \"memoryless\" property, radically simplified the way scientists calculate complex statistical outcomes. \n\nToday, from predicting financial market trends and weather patterns to powering modern web search engines and artificial intelligence, **the** legacy of **Markov**'s work continues to serve as an indispensable foundation for navigating uncertainty in a modern world."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a brief abstract for a math paper on discrete-time Markov control processes that uses a vanishing discount factor approach to address risk-sensitive average costs with unbounded cost functions.",
+      "output": "Here is a brief, publication-ready abstract for your paper:\n\n***\n\n**Title:** Risk-Sensitive Average Cost Markov Control Processes with Unbounded Costs: A Vanishing Discount Factor Approach\n\n**Abstract:**\nThis paper considers discrete-time Markov control processes on general Borel spaces evaluated under a long-run risk-sensitive average cost criterion with unbounded one-stage cost functions. To address the analytical challenges associated with unbounded dynamics, we develop a vanishing discount factor approach coupled with suitable Lyapunov-type drift conditions and structural ergodicity assumptions. By analyzing the asymptotic behavior of the risk-sensitive $\\alpha$-discounted optimality equations as the discount factor $\\alpha \\to 1^-$, we establish the existence of solutions to the risk-sensitive average cost optimality equation (ACOE). Furthermore, we prove the existence of optimal stationary control policies that minimize the risk-sensitive average cost. These results extend the classical risk-sensitive control framework to a broader class of stochastic systems with unbounded cost structures.\n\n***\n\n### Key elements included:\n* **Setting:** Discrete-time, general Borel spaces.\n* **Problem:** Risk-sensitive average cost with unbounded costs.\n* **Methodology:** Vanishing discount factor approach ($\\alpha \\to 1^-$) combined with Lyapunov-type drift conditions.\n* **Main Results:** Convergence to the Risk-Sensitive Average Cost Optimality Equation (ACOE) and existence of optimal stationary policies.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Can you give me a four-sentence summary of a research paper studying long-run risk-sensitive average cost criteria in Markov decision processes on a general state space?",
+      "output": "Here is a four-sentence summary of a representative research paper on this topic:\n\nThis paper investigates long-run risk-sensitive average cost criteria for Markov decision processes (MDPs) defined on general, uncountable state spaces. To overcome the technical challenges posed by continuous domains and unbounded costs, the authors introduce suitable Lyapunov drift conditions alongside continuity assumptions on the transition probability kernels. Through this framework, the study establishes the existence of solutions to the risk-sensitive average cost optimality equation and proves the existence of an optimal stationary policy. Ultimately, these results extend classical risk-neutral dynamic programming to risk-sensitive paradigms, offering strong theoretical guarantees for robust, long-term stochastic control in complex systems.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Summarize the main result of a paper establishing an optimal stationary strategy for a discrete-time Markov control process with a nonnegative, unbounded one-step cost function.",
+      "output": "While the exact technical details depend on the specific paper (e.g., discounted vs. long-run average cost criterion), the **main result** of foundational papers establishing an optimal stationary strategy for a discrete-time Markov Control Process (MCP) with nonnegative, unbounded costs typically centers on the following core theorem:\n\n---\n\n### **Main Result Summary**\n\nUnder appropriate regularity, stability, and growth conditions (such as a **Lyapunov drift condition** and **inf-compactness**), there exists a **deterministic, stationary optimal strategy** $\\pi^* = (f^*, f^*, \\dots)$, and the optimal value function $V^*$ is the **unique solution** (within a specific class of weighted functions) to the **Bellman Optimality Equation**.\n\n---\n\n### **Key Components of the Result**\n\n1. **Existence of an Optimal Stationary Policy:**\n   * Despite the cost function $c(x,a)$ being unbounded, the decision-maker does not need to look at history or use randomized actions. \n   * There exists a time-invariant, deterministic selector $f^*: X \\to A$ (where $X$ is the state space and $A$ is the action space) such that applying $f^*(x)$ at every decision epoch minimizes the expected total (or average) cost over all possible historical, randomized policies.\n\n2. **Characterization via the Bellman Equation:**\n   * The optimal value function $V^*(x)$ satisfies the dynamic programming equation:\n     $$V^*(x) = \\min_{a \\in A(x)} \\left\\{ c(x,a) + \\beta \\int_{X} V^*(y) Q(dy \\mid x,a) \\right\\}$$\n     *(where $\\beta \\in (0,1)$ is the discount factor, or $\\beta = 1$ for undiscounted/average cost models, and $Q$ is the transition probability kernel).*\n   * The optimal stationary policy $f^*(x)$ is formed by taking the action $a$ that achieves the minimum in this equation for each state $x$.\n\n3. **Solvability via Weighted Norm Banach Spaces:**\n   * Because costs are unbounded, standard bounded-function spaces fail. The paper establishes that $V^*$ lives in a **weighted-norm space** $B_w(X)$ defined by a bounding/Lyapunov function $w(x) \\ge 1$.\n   * The dynamic programming operator is shown to be a **contraction mapping** (or $w$-norm contractive) in this space, guaranteeing that value iteration converges to $V^*$.\n\n---\n\n### **Necessary Technical Conditions Enabling This Result**\n\nTo handle the unboundedness of $c(x,a)$ without the optimal cost exploding to infinity, the paper relies on three main technical pillars:\n\n* **Weighted Boundedness:** The cost $c(x,a)$ is bounded above by a positive weight function $w(x)$ (i.e., $c(x,a) \\le M w(x)$).\n* **Lyapunov/Drift Condition:** The system's transition kernel $Q$ satisfies a stability condition, ensuring the expected growth of $w(x)$ in the next step is controlled (preventing the process from drifting into infinite-cost regions too quickly).\n* **Inf-Compactness / Continuity:** The action sets $A(x)$ are compact, and the cost function $c(x,a)$ and transition kernel $Q(\\cdot \\mid x,a)$ are lower semi-continuous. This guarantees that the \"minimum\" in the Bellman equation is actually attained rather than just an infimum.\n\n### **Significance**\n\nThis result extends classic Markov Decision Process (MDP) theory (such as Howard's policy iteration and Bellman's equation) from bounded-cost, compact settings to real-world continuous or unbounded settings, such as **queueing networks, inventory control, and financial risk models**, where costs naturally grow quadratically or exponentially with state size.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Draft a short abstract for a stochastic control paper focusing on risk-sensitive optimality inequalities and vanishing discount factors.",
+      "output": "Here are two options for the abstract, depending on the emphasis of your paper:\n\n**Option 1: Standard Academic Style (Comprehensive & Clear)**\n\n> **Abstract**\n> This paper addresses long-run average risk-sensitive stochastic control problems for Markov decision processes on general state spaces. Using the vanishing discount factor approach, we investigate the asymptotic behavior of the discounted value functions as the discount rate approaches zero. Rather than relying on strict equality conditions, which often demand stringent stability assumptions, we establish a framework based on *risk-sensitive optimality inequalities*. Under mild Lyapunov-type drift conditions and local growth constraints on the cost, we prove the existence of solutions to the ergodic risk-sensitive Hamilton-Jacobi-Bellman (HJB) inequality. We further demonstrate that stationary control policies derived from these inequalities are risk-sensitive average-cost optimal. These results broaden the theoretical applicability of risk-sensitive control to systems involving unbounded costs and non-compact state spaces.\n\n---\n\n**Option 2: Concise & Technical (Focus on Methods)**\n\n> **Abstract**\n> We study the connection between discounted and long-run average risk-sensitive criteria in stochastic control via vanishing discount asymptotics. By relaxing the traditional dynamic programming equation, we establish the convergence of discounted value functions to solutions of ergodic risk-sensitive optimality inequalities. Under broad assumptions that accommodate unbounded running costs and non-compact state domains, we prove the existence of optimal stationary policies derived directly from these inequalities. This work provides a flexible verification technique for risk-sensitive control problems where classical HJB equalities fail to hold. \n\n***\n\n**Key elements included in both drafts:**\n* **Context:** Risk-sensitive stochastic control / Markov processes.\n* **Method:** Vanishing discount factor approach ($\\alpha \\to 0$).\n* **Core Technical Novelty:** Optimality *inequalities* (relaxed HJB formulation) rather than strict equalities.\n* **Main Result:** Existence of solutions and construction of optimal stationary policies under weaker conditions (e.g., unbounded costs).",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "TL;DR of a paper on risk-sensitive average cost Markov control processes on general state spaces.",
+      "output": "Since you didn't specify a exact author or title, here is the universal **TL;DR** summarizing foundational papers on **risk-sensitive average cost Markov Control Processes (MCPs) on general state spaces** (e.g., works by Jaquette, Howard & Matheson, Di Masi & Stettner, or Hernandéz-Lerma et al.):\n\n---\n\n### **TL;DR**\nThis paper proves that for continuous/uncountable state spaces, you can find a stable, stationary policy that minimizes long-term cost while penalizing variance (risk). It establishes the **Risk-Sensitive Average Cost Optimality Equation (ACOE)** on general spaces under geometric ergodicity and continuity conditions.\n\n---\n\n### **Key Takeaways**\n\n1. **The Objective:** \n   Instead of minimizing standard long-term average cost $E[\\text{Cost}]$, it minimizes the **exponential growth rate** of cost:\n   $$\\lim_{T \\to \\infty} \\frac{1}{\\theta T} \\ln E\\left[ e^{\\theta \\sum_{t=0}^{T-1} C(X_t, A_t)} \\right]$$\n   * $\\theta > 0$: **Risk-averse** (heavily penalizes high-cost spikes/variability).\n   * $\\theta < 0$: **Risk-seeking**.\n\n2. **The Main Challenge (General State Space):** \n   Because the state space is non-discrete and the horizon is infinite, exponential expectations risk exploding to $+\\infty$. Standard dynamic programming fails without strict stability constraints.\n\n3. **Core Mathematical Results:**\n   * **Existence of ACOE:** Proves the existence of a value function $v(x)$ and optimal cost $\\lambda$ satisfying the nonlinear dynamic programming equation:\n     $$e^{\\lambda + v(x)} = \\inf_{a \\in A} \\left\\{ e^{\\theta C(x,a)} \\int e^{v(y)} P(dy \\mid x,a) \\right\\}$$\n   * **Optimal Policy:** Proves that an **optimal deterministic stationary policy** exists (the best action depends only on the current state, not time).\n\n4. **Necessary Assumptions (The \"Catch\"):**\n   To make this work on general spaces, the paper typically requires:\n   * **Geometric Drift / Lyapunov Conditions:** The system must naturally pull back toward a compact \"safe\" set to prevent unbounded cost growth.\n   * **Continuity/Compactness:** Cost functions and transition kernels must be continuous, and action spaces must be compact.\n\n---\n\n### **Why It Matters**\nStandard MDPs only care about the *average* outcome, which can lead to catastrophic failure in safety-critical systems. This framework provides the rigorous mathematical backing needed to design **safe, risk-averse controllers for complex, real-valued systems** (like autonomous vehicles, finance, and continuous physical processes).",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.29584775086505194,
+      "excess_ratio": 0.1747344541366564,
+      "baseline_mean": 0.12111329672839555,
+      "baseline_n_valid": 5,
+      "output_chars": 1756,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.28085106382978725,
+          "baseline_mean": 0.10336288111551131,
+          "excess_ratio": 0.17748818271427594
+        },
+        "bz2": {
+          "actual_ratio": 0.25400739827373614,
+          "baseline_mean": 0.10711198680927345,
+          "excess_ratio": 0.1468954114644627
+        },
+        "lzma": {
+          "actual_ratio": 0.35175879396984927,
+          "baseline_mean": 0.15049384592963644,
+          "excess_ratio": 0.20126494804021283
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.38500506585612965,
+      "excess_ratio": 0.2638917691277341,
+      "baseline_mean": 0.12111329672839555,
+      "baseline_n_valid": 5,
+      "output_chars": 477,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3242320819112628,
+          "baseline_mean": 0.10336288111551131,
+          "excess_ratio": 0.22086920079575148
+        },
+        "bz2": {
+          "actual_ratio": 0.3553459119496855,
+          "baseline_mean": 0.10711198680927345,
+          "excess_ratio": 0.24823392514041207
+        },
+        "lzma": {
+          "actual_ratio": 0.4574468085106383,
+          "baseline_mean": 0.15049384592963644,
+          "excess_ratio": 0.30695296258100185
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.1852673618815176,
+      "excess_ratio": 0.06415406515312205,
+      "baseline_mean": 0.12111329672839555,
+      "baseline_n_valid": 5,
+      "output_chars": 3309,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1685082872928177,
+          "baseline_mean": 0.10336288111551131,
+          "excess_ratio": 0.06514540617730638
+        },
+        "bz2": {
+          "actual_ratio": 0.1674326986211425,
+          "baseline_mean": 0.10711198680927345,
+          "excess_ratio": 0.06032071181186904
+        },
+        "lzma": {
+          "actual_ratio": 0.21875,
+          "baseline_mean": 0.15049384592963644,
+          "excess_ratio": 0.06825615407036356
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.06938490678895425,
+      "excess_ratio": -0.0517283899394413,
+      "baseline_mean": 0.12111329672839555,
+      "baseline_n_valid": 5,
+      "output_chars": 8480,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.06095747844186738,
+          "baseline_mean": 0.10336288111551131,
+          "excess_ratio": -0.042405402673643934
+        },
+        "bz2": {
+          "actual_ratio": 0.06136638452237001,
+          "baseline_mean": 0.10711198680927345,
+          "excess_ratio": -0.045745602286903435
+        },
+        "lzma": {
+          "actual_ratio": 0.08571428571428572,
+          "baseline_mean": 0.15049384592963644,
+          "excess_ratio": -0.06477956021535072
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.07258548290341918,
+      "excess_ratio": -0.04852781382497637,
+      "baseline_mean": 0.12111329672839555,
+      "baseline_n_valid": 5,
+      "output_chars": 917,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.03488372093023256,
+          "baseline_mean": 0.10336288111551131,
+          "excess_ratio": -0.06847916018527875
+        },
+        "bz2": {
+          "actual_ratio": 0.07235621521335807,
+          "baseline_mean": 0.10711198680927345,
+          "excess_ratio": -0.03475577159591538
+        },
+        "lzma": {
+          "actual_ratio": 0.10457516339869281,
+          "baseline_mean": 0.15049384592963644,
+          "excess_ratio": -0.045918682530943625
+        }
+      }
+    }
+  }
+}

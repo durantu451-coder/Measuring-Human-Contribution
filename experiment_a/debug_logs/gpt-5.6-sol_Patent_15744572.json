@@ -1,0 +1,524 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15744572",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nMethod for reporting latency of packet transmission in a communication network. The method includes receiving by an entity an UL packet from a UE at a first time unit, wherein the UL packet includes a second time unit at which the packet is sent from the UE. Measuring by the entity a latency in transmission of the packet based on a time difference between the first time unit and the second time unit and performing by the entity at least one action based on the latency. Receiving by a UE a DL packet from an entity at a first time unit, wherein the DL packet comprises a second time unit at which the packet is transmitted from the entity. Measuring by the UE a time difference between the first time unit and the second time unit for the DL packet. Reporting by the UE a latency report to the entity.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nMethod for reporting latency of packet transmission in a communication network. The method includes receiving by an entity an UL packet from a UE at a first time unit, wherein the UL packet includes a second time unit at which the packet is sent from the UE. Measuring by the entity a latency in transmission of the packet based on a time difference between the first time unit and the second time unit and performing by the entity at least one action based on the latency. Receiving by a UE a DL packet from an entity at a first time unit, wherein the DL packet comprises a second time unit at which the packet is transmitted from the entity. Measuring by the UE a time difference between the first time unit and the second time unit for the DL packet. Reporting by the UE a latency report to the entity.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- An entity receives an uplink (UL) packet from user equipment (UE) and records the packet’s arrival time.\n- The UL packet includes the time at which the UE transmitted it.\n- The entity calculates UL transmission latency from the difference between the transmission and arrival times and performs at least one action based on the result.\n- The UE receives a downlink (DL) packet containing the time at which the entity transmitted it.\n- The UE calculates the DL transmission latency and reports it to the entity.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA network latency-reporting method timestamps uplink and downlink packets, enabling a network entity or user equipment (UE) to calculate transmission latency from the difference between send and receive times. The measured latency supports network actions and UE-generated downlink latency reports, improving latency monitoring and management.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Method, The, Measuring"
+  },
+  "outputs": {
+    "L1": "A method for reporting packet transmission latency in a communication network is provided. The method includes an entity receiving an uplink (UL) packet from a user equipment (UE) at a first time unit, wherein the UL packet includes a second time unit indicating when the packet was sent by the UE. The entity measures the packet transmission latency based on the time difference between the first and second time units and performs at least one action based on the measured latency. The method further includes the UE receiving a downlink (DL) packet from the entity at a first time unit, wherein the DL packet includes a second time unit indicating when the packet was transmitted by the entity. The UE measures the time difference between the first and second time units for the DL packet and reports a latency report to the entity.",
+    "L2": "A technique is provided for reporting packet-transmission latency in a communications network. For uplink (UL) transmission, an entity receives a packet from user equipment (UE) at a first time unit. The UL packet specifies a second time unit representing when the UE sent the packet. The entity determines the packet’s transmission latency from the difference between the first and second time units and carries out at least one action according to that latency. For downlink (DL) transmission, the UE receives a packet from an entity at a first time unit. The DL packet identifies a second time unit corresponding to when the entity transmitted the packet. The UE calculates the difference between the two time units for the DL packet and sends a latency report to the entity.",
+    "L3": "An entity receives an uplink (UL) packet from a user equipment (UE) and records the time at which the UL packet arrives. The packet includes a timestamp indicating when it was transmitted by the UE. Using the transmission timestamp and the recorded arrival time, the entity calculates the UL transmission latency as the difference between these two times. The entity then performs at least one action based on the calculated latency, such as adjusting communication parameters, initiating a corrective procedure, or generating a latency report.\n\nFor downlink (DL) latency measurement, the entity transmits a DL packet to the UE. The DL packet includes a timestamp indicating when it was transmitted by the entity. Upon receiving the packet, the UE records its arrival time and calculates the DL transmission latency based on the difference between the packet’s transmission time and arrival time. The UE then reports the calculated DL transmission latency to the entity, enabling the entity to monitor and respond to latency conditions in both transmission directions.",
+    "L4": "A method is provided for measuring and reporting packet transmission latency in a communications network. The method may be implemented by a network entity, such as a base station or another network node, and by user equipment (UE) communicating with the network entity. To support latency measurement, uplink and downlink packets are associated with timing information indicating when the packets are transmitted and when they are received.\n\nFor an uplink transmission, the UE records or provides a timestamp corresponding to the transmission time of an uplink packet. The network entity determines the time at which the packet is received and calculates the uplink latency based on the difference between the transmission timestamp and the reception time. Alternatively, the relevant timing information may be collected and processed by another network function. Clock synchronization, timestamp correction, or round-trip timing techniques may be used where necessary to account for clock offsets between the UE and the network.\n\nFor a downlink transmission, the network entity records or inserts a timestamp representing the time at which a downlink packet is sent. Upon receiving the packet, the UE determines the reception time and calculates the downlink latency by comparing the reception time with the transmission timestamp. The UE may calculate latency for individual packets, a group of packets, a configured measurement interval, or a particular radio bearer, traffic flow, quality-of-service flow, or application session.\n\nThe UE may generate a downlink latency report containing one or more measured values. The report can include an instantaneous latency, an average latency, minimum or maximum latency, a latency distribution, a percentile value, jitter, the number or proportion of packets exceeding a threshold, or identifying information for the measured traffic. The report may be sent periodically, in response to a request from the network, when a configured threshold is crossed, or upon occurrence of another reporting event. To reduce signaling overhead, multiple measurements may be aggregated, compressed, quantized, or reported only when a significant change is detected.\n\nThe network entity may use uplink measurements and UE-generated downlink reports to monitor service performance and determine whether applicable latency requirements are being met. Based on the measured latency, the network may perform one or more management actions, including modifying scheduling priorities, reallocating radio resources, changing a modulation or coding configuration, adjusting retransmission parameters, selecting another route or serving cell, initiating handover, modifying quality-of-service treatment, or generating an alarm. The UE may likewise use the measurements to adapt application behavior, traffic generation, buffering, or power-management operation.\n\nIn this manner, latency can be observed separately for uplink and downlink traffic and at a level appropriate to a device, bearer, flow, service, or application. Timestamp-based measurement and UE-assisted reporting provide the network with timely information about actual packet-delivery performance, thereby improving latency monitoring, troubleshooting, resource control, and end-to-end service management.",
+    "L5": "# The Measuring Method\n\nA measuring method is a systematic way of determining the size, quantity, or value of something. It may be used to measure length, weight, temperature, time, speed, or other characteristics. Choosing the correct method is important because different tasks require different tools and procedures.\n\nThe measuring process usually begins by identifying what needs to be measured and selecting an appropriate unit. For example, length may be expressed in meters, weight in kilograms, and temperature in degrees Celsius. The measuring instrument must also be suitable for the required level of precision. A ruler can measure the length of a small object, while more accurate work may require a caliper or micrometer.\n\nA reliable measuring method should be consistent, repeatable, and accurate. Instruments need to be calibrated, and measurements should often be taken more than once to reduce the effect of human or technical error. Environmental conditions, such as heat or humidity, may also influence the result.\n\nThe quality of a measurement depends not only on the instrument but also on the method used. By following clear procedures and recording results carefully, measurements can provide dependable information for science, engineering, manufacturing, and everyday life."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style abstract for a method of measuring and reporting uplink and downlink packet latency between user equipment and a network entity.",
+      "output": "A method, apparatus, and computer-readable medium are disclosed for measuring and reporting packet latency between a user equipment (UE) and a network entity. The method includes associating uplink and downlink packets with respective packet identifiers and obtaining timestamps corresponding to transmission and reception events at the UE and the network entity. Uplink latency is determined based on a UE uplink-transmission timestamp and a corresponding network-reception timestamp, and downlink latency is determined based on a network downlink-transmission timestamp and a corresponding UE-reception timestamp. The timestamps may be adjusted using clock-offset or synchronization information. Latency measurements may be aggregated according to a time interval, traffic flow, bearer, quality-of-service class, network slice, or packet category, and may include statistical values or indications of packet loss, retransmission, or measurement validity. A latency report containing one or more uplink and downlink latency metrics is generated and transmitted to the network entity or another reporting destination for use in network monitoring, resource allocation, mobility management, or service optimization.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Describe a communication-network latency reporting technique in which packets carry transmission timestamps that receivers compare with arrival times.",
+      "output": "A **timestamp-based one-way latency measurement** technique works as follows:\n\n1. The sender inserts the packet’s transmission time into a header or telemetry field.\n2. The receiver records the packet’s arrival time.\n3. It computes latency as:\n\n\\[\n\\text{one-way latency} = \\text{arrival timestamp} - \\text{transmission timestamp}\n\\]\n\nThe receiver can report individual delays or aggregate statistics such as average, minimum, maximum, percentiles, and jitter. Accurate results generally require synchronized sender and receiver clocks, using mechanisms such as PTP, GPS, or NTP. Without reliable synchronization, the same approach can instead use round-trip timestamps or clock-offset correction.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write a concise technical summary of a 5G method where a base station measures UL latency, takes an action based on it, and a UE measures and reports DL latency.",
+      "output": "A 5G base station determines uplink (UL) latency for UE traffic, for example from packet timestamps, scheduling events, or transmission/reception timing. It compares the measured latency with a configured threshold or QoS target and takes a responsive action, such as changing UL scheduling priority, granting additional resources, adjusting configured grants, or modifying retransmission parameters. The UE independently measures downlink (DL) latency using packet timestamps or protocol-layer timing and reports the measurement to the base station via RRC, MAC control signaling, or an uplink measurement report. The base station can use the combined UL and DL latency information for closed-loop scheduling, QoS enforcement, congestion control, or mobility optimization.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate patent claim-like language covering timestamp-based packet transmission latency measurement for both uplink and downlink communications.",
+      "output": "**What is claimed is:**\n\n1. A method for measuring packet transmission latency in a wireless communication system, the method comprising:  \n   obtaining, by a first communication device, a first timestamp associated with transmission of an uplink packet from the first communication device to a second communication device;  \n   obtaining a second timestamp associated with reception of the uplink packet at the second communication device;  \n   obtaining, by the second communication device, a third timestamp associated with transmission of a downlink packet from the second communication device to the first communication device;  \n   obtaining a fourth timestamp associated with reception of the downlink packet at the first communication device;  \n   determining an uplink latency based at least in part on the first timestamp and the second timestamp; and  \n   determining a downlink latency based at least in part on the third timestamp and the fourth timestamp.\n\n2. The method of claim 1, further comprising synchronizing respective clocks of the first communication device and the second communication device or determining a clock-offset value between the respective clocks.\n\n3. The method of claim 2, wherein determining the uplink latency and the downlink latency comprises compensating at least one of the timestamps based on the clock-offset value.\n\n4. The method of claim 1, wherein at least one of the first, second, third, or fourth timestamps is generated at a physical layer, a medium-access-control layer, a radio-link-control layer, a packet-data-convergence-protocol layer, or an application layer.\n\n5. The method of claim 1, wherein the first timestamp is included in the uplink packet or in control signaling associated with the uplink packet, and wherein the third timestamp is included in the downlink packet or in control signaling associated with the downlink packet.\n\n6. The method of claim 1, further comprising transmitting, between the first communication device and the second communication device, a latency report comprising at least one of the timestamps, the uplink latency, the downlink latency, a packet identifier, a sequence number, or a clock-offset value.\n\n7. The method of claim 1, wherein the downlink packet comprises an acknowledgment responsive to the uplink packet, and the method further comprises determining a round-trip latency based on the first timestamp and the fourth timestamp.\n\n8. The method of claim 7, further comprising excluding, from the round-trip latency, a processing interval between reception of the uplink packet and transmission of the downlink packet.\n\n9. The method of claim 1, wherein obtaining a timestamp comprises capturing the timestamp in response to at least one of:  \n   delivery of a packet to a protocol layer;  \n   scheduling of the packet for transmission;  \n   transfer of the packet to radio-frequency circuitry;  \n   transmission of a first symbol carrying the packet;  \n   reception of a first symbol carrying the packet; or  \n   successful decoding of the packet.\n\n10. The method of claim 1, further comprising associating the first and second timestamps with a common uplink packet identifier and associating the third and fourth timestamps with a common downlink packet identifier.\n\n11. The method of claim 1, further comprising determining, for a plurality of uplink packets and a plurality of downlink packets, at least one latency statistic comprising an average latency, a minimum latency, a maximum latency, a latency variance, a latency percentile, or a jitter value.\n\n12. The method of claim 1, further comprising adjusting, based on the uplink latency or the downlink latency, at least one of a scheduling parameter, a retransmission parameter, a modulation and coding scheme, a routing selection, a quality-of-service parameter, or a packet prioritization parameter.\n\n13. A communication apparatus comprising:  \n   communication circuitry configured to transmit and receive uplink and downlink packets;  \n   timestamping circuitry configured to generate timestamps corresponding to transmission or reception events for the uplink and downlink packets; and  \n   one or more processors configured to:  \n   correlate a transmission timestamp and a reception timestamp for an uplink packet;  \n   correlate a transmission timestamp and a reception timestamp for a downlink packet;  \n   determine an uplink transmission latency based on the correlated timestamps for the uplink packet; and  \n   determine a downlink transmission latency based on the correlated timestamps for the downlink packet.\n\n14. The communication apparatus of claim 13, wherein the one or more processors are further configured to compensate the correlated timestamps for clock offset, clock drift, propagation delay, retransmission delay, buffering delay, scheduling delay, or processing delay.\n\n15. The communication apparatus of claim 13, wherein the communication apparatus comprises a user equipment, a base station, an access point, a relay, a network node, or a server.\n\n16. The communication apparatus of claim 13, wherein the timestamping circuitry comprises a hardware timestamp unit coupled to a radio interface and configured to generate a timestamp at a defined packet-boundary or symbol-boundary event.\n\n17. The communication apparatus of claim 13, wherein the one or more processors are configured to distinguish an over-the-air latency from an end-to-end latency based on timestamps captured at different protocol layers or processing locations.\n\n18. A non-transitory computer-readable medium storing instructions that, when executed by one or more processors of a communication device, cause the communication device to:  \n   record a local transmission timestamp for a packet transmitted in a first link direction;  \n   receive a remote reception timestamp for the packet;  \n   receive a remote transmission timestamp for another packet transmitted in a second link direction opposite the first link direction;  \n   record a local reception timestamp for the other packet; and  \n   determine respective packet transmission latencies for the first link direction and the second link direction using the local and remote timestamps.\n\n19. The non-transitory computer-readable medium of claim 18, wherein the first link direction is an uplink and the second link direction is a downlink, or wherein the first link direction is a downlink and the second link direction is an uplink.\n\n20. The non-transitory computer-readable medium of claim 18, wherein the instructions further cause the communication device to validate a latency measurement based on timestamp accuracy information, clock-synchronization quality, packet correlation information, or a retransmission status.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Explain a method for determining one-way network latency using send and receive time units, including UE latency reporting to a network entity.",
+      "output": "A one-way network latency can be determined by identifying the radio time unit in which a packet is sent and the radio time unit in which it is received.\n\n### Example method\n\n1. **Establish a common time reference**  \n   The UE and network node use synchronized or otherwise correlated time units, such as slots, subframes, radio frames, or absolute timestamps. Each time unit may be represented by a system-frame number and a slot/subframe number.\n\n2. **Record the send time unit**  \n   When a packet is transmitted, the transmitting entity associates it with a send time-unit identifier, for example:\n   \\[\n   T_{\\text{send}}=(\\text{frame number},\\text{slot number})\n   \\]\n   The identifier may be included in the packet or conveyed as related control information.\n\n3. **Record the receive time unit**  \n   The receiving entity records the time unit in which the packet, or its relevant portion, is successfully received:\n   \\[\n   T_{\\text{receive}}=(\\text{frame number},\\text{slot number})\n   \\]\n\n4. **Calculate one-way latency**  \n   The number of elapsed time units is determined, accounting for frame-number rollover:\n   \\[\n   N_{\\text{elapsed}}=(I_{\\text{receive}}-I_{\\text{send}})\\bmod N_{\\text{cycle}}\n   \\]\n   where \\(I\\) is a linearized time-unit index and \\(N_{\\text{cycle}}\\) is the number of units in the numbering cycle. The latency is:\n   \\[\n   L=N_{\\text{elapsed}}\\times D_{\\text{unit}}\n   \\]\n   where \\(D_{\\text{unit}}\\) is the duration of one time unit. Finer-resolution offsets within a unit may also be added.\n\n5. **UE latency reporting**  \n   For downlink traffic, the UE obtains the network’s send time-unit identifier, records its receive time unit, and computes the one-way latency. The UE then reports to a network entity—such as a base station, centralized controller, or core-network function—one or more of:\n   - the calculated latency;\n   - the send and receive time-unit identifiers;\n   - minimum, maximum, average, or percentile latency;\n   - packet or bearer/flow identification;\n   - validity, synchronization accuracy, or measurement confidence.\n\n6. **Network use of the report**  \n   The network entity may use the reported latency for QoS verification, scheduling, route or bearer selection, congestion control, mobility decisions, or detection of latency-limit violations.\n\nFor uplink latency, the roles may be reversed: the UE supplies the send time-unit identifier, the network records the receive time unit, and the network calculates the one-way latency. This approach avoids dividing round-trip time by two, which can be inaccurate when uplink and downlink delays are asymmetric.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.5498602050326189,
+      "excess_ratio": 0.42999807760787223,
+      "baseline_mean": 0.1198621274247467,
+      "baseline_n_valid": 5,
+      "output_chars": 835,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.50625,
+          "baseline_mean": 0.09166138310477101,
+          "excess_ratio": 0.41458861689522897
+        },
+        "bz2": {
+          "actual_ratio": 0.5576407506702413,
+          "baseline_mean": 0.10879024770448356,
+          "excess_ratio": 0.4488505029657578
+        },
+        "lzma": {
+          "actual_ratio": 0.5789473684210527,
+          "baseline_mean": 0.15521539445873928,
+          "excess_ratio": 0.4237319739623134
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.41145374449339206,
+      "excess_ratio": 0.29159161706864534,
+      "baseline_mean": 0.1198621274247467,
+      "baseline_n_valid": 5,
+      "output_chars": 778,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3362573099415205,
+          "baseline_mean": 0.09166138310477101,
+          "excess_ratio": 0.24459592683674947
+        },
+        "bz2": {
+          "actual_ratio": 0.42159383033419023,
+          "baseline_mean": 0.10879024770448356,
+          "excess_ratio": 0.31280358262970664
+        },
+        "lzma": {
+          "actual_ratio": 0.46534653465346537,
+          "baseline_mean": 0.15521539445873928,
+          "excess_ratio": 0.3101311401947261
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3987688098495212,
+      "excess_ratio": 0.27890668242477445,
+      "baseline_mean": 0.1198621274247467,
+      "baseline_n_valid": 5,
+      "output_chars": 1068,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.35555555555555557,
+          "baseline_mean": 0.09166138310477101,
+          "excess_ratio": 0.26389417245078456
+        },
+        "bz2": {
+          "actual_ratio": 0.4012096774193548,
+          "baseline_mean": 0.10879024770448356,
+          "excess_ratio": 0.2924194297148712
+        },
+        "lzma": {
+          "actual_ratio": 0.43410852713178294,
+          "baseline_mean": 0.15521539445873928,
+          "excess_ratio": 0.27889313267304366
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.12226322263222637,
+      "excess_ratio": 0.002401095207479678,
+      "baseline_mean": 0.1198621274247467,
+      "baseline_n_valid": 5,
+      "output_chars": 3296,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.09655688622754491,
+          "baseline_mean": 0.09166138310477101,
+          "excess_ratio": 0.004895503122773898
+        },
+        "bz2": {
+          "actual_ratio": 0.12452543659832954,
+          "baseline_mean": 0.10879024770448356,
+          "excess_ratio": 0.01573518889384598
+        },
+        "lzma": {
+          "actual_ratio": 0.14447592067988668,
+          "baseline_mean": 0.15521539445873928,
+          "excess_ratio": -0.010739473778852593
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.05910390848427079,
+      "excess_ratio": -0.06075821894047591,
+      "baseline_mean": 0.1198621274247467,
+      "baseline_n_valid": 5,
+      "output_chars": 1298,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.03636363636363636,
+          "baseline_mean": 0.09166138310477101,
+          "excess_ratio": -0.05529774674113465
+        },
+        "bz2": {
+          "actual_ratio": 0.04129793510324484,
+          "baseline_mean": 0.10879024770448356,
+          "excess_ratio": -0.06749231260123872
+        },
+        "lzma": {
+          "actual_ratio": 0.09473684210526316,
+          "baseline_mean": 0.15521539445873928,
+          "excess_ratio": -0.060478552353476114
+        }
+      }
+    }
+  },
+  "api_provenance": {
+    "config": {
+      "gpt_gateway": 2,
+      "max_output_tokens": 4096,
+      "require_status": "completed"
+    },
+    "main_calls": {
+      "L1_polish": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_058de2e4c7ec713d006a891209384481909f5cab20623310b4",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 184,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 209,
+          "output_tokens_details": {
+            "reasoning_tokens": 45
+          },
+          "total_tokens": 393
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:05:47.956161+00:00"
+      },
+      "L2_rewrite": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0b6042d6a4a8f9b3006a89120e31248197891d3d7401ed6c92",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 187,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 178,
+          "output_tokens_details": {
+            "reasoning_tokens": 24
+          },
+          "total_tokens": 365
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:05:53.925479+00:00"
+      },
+      "L3_bullets": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_01aae11746f525ac006a891214ca288195b33c04416b485f04",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 197,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 106,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 303
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:05:58.608205+00:00"
+      },
+      "L3_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0a956d7ace83eb09006a891219caec81939af2b61c805a9e37",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 123,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 196,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 319
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:06:09.262244+00:00"
+      },
+      "L4_2sent": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_08e35c8444e17590006a89122396e88194b33dd1eef685e2c4",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 209,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 61,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 270
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:06:14.924755+00:00"
+      },
+      "L4_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0919b8239341d386006a8912293f848194b4ed8f7fb3a0d7b4",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 76,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 619,
+          "output_tokens_details": {
+            "reasoning_tokens": 48
+          },
+          "total_tokens": 695
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:06:26.284886+00:00"
+      },
+      "L5_keywords": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0ee22f46509ba64a006a89123499b48197ad1c83d065e8fb77",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 22,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 275,
+          "output_tokens_details": {
+            "reasoning_tokens": 37
+          },
+          "total_tokens": 297
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:06:34.176464+00:00"
+      }
+    },
+    "counterfactuals": {
+      "reconstruct": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0664ccc7d3a24e9b006a89123c6e6081938e8f4508b293f7c1",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 260,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 142,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 402
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:06:39.706491+00:00"
+      },
+      "outputs": [
+        {
+          "label": "cf_1",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0dd24e3a02ce88c5006a891242135c8197a9e147b03032fb1e",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 33,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 255,
+                "output_tokens_details": {
+                  "reasoning_tokens": 42
+                },
+                "total_tokens": 288
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T03:06:47.136777+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_2",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_07ee064e8e2694d5006a8912496e2c8194b318e3cf5f297cee",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 26,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 177,
+                "output_tokens_details": {
+                  "reasoning_tokens": 32
+                },
+                "total_tokens": 203
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T03:06:53.852822+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_3",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0463cee1dad2595d006a8912501a748190b53381f9a6a3a80d",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 41,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 196,
+                "output_tokens_details": {
+                  "reasoning_tokens": 50
+                },
+                "total_tokens": 237
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T03:07:00.323757+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_4",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_06fa95bbfa0e3e17006a891256ad888196bef86dc1e81a5d1b",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 27,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 1336,
+                "output_tokens_details": {
+                  "reasoning_tokens": 65
+                },
+                "total_tokens": 1363
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T03:07:19.455045+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_5",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0fc93dd8885b3d27006a891269c0f481949cf943a85da06164",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 31,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 662,
+                "output_tokens_details": {
+                  "reasoning_tokens": 65
+                },
+                "total_tokens": 693
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T03:07:32.064063+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

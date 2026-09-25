@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15745057",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nProvided are a network attack detection method and device. The method comprises: carrying out word segmentation to a character string to be detected and obtain words; determining the tuples corresponding to the to-be-detected character string; determining whether, in an attack model database, there are model tuples corresponding to the tuples, and whether there are model words corresponding to the first one of these words, the model tuples, the occurrence probability of each model tuple; if there are, acquiring the corresponding model tuples and the occurrence probability of the corresponding model words, and determining, according to the occurrence probability of the corresponding model tuples and the occurrence probability of the corresponding model words, the attack probability corresponding to the to-be-detected character string; and if the attack probability is larger than or equal to a preset probability threshold, determining that the to-be-detected character string is a character string having an attack behavior.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nProvided are a network attack detection method and device. The method comprises: carrying out word segmentation to a character string to be detected and obtain words; determining the tuples corresponding to the to-be-detected character string; determining whether, in an attack model database, there are model tuples corresponding to the tuples, and whether there are model words corresponding to the first one of these words, the model tuples, the occurrence probability of each model tuple; if there are, acquiring the corresponding model tuples and the occurrence probability of the corresponding model words, and determining, according to the occurrence probability of the corresponding model tuples and the occurrence probability of the corresponding model words, the attack probability corresponding to the to-be-detected character string; and if the attack probability is larger than or equal to a preset probability threshold, determining that the to-be-detected character string is a character string having an attack behavior.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The method segments a character string to be detected into individual words.\n- It determines tuples corresponding to the character string.\n- It searches an attack model database for matching model tuples and model words corresponding to the first segmented word.\n- It calculates the string’s attack probability using the occurrence probabilities of the matching model tuples and model words.\n- It classifies the string as exhibiting attack behavior when the calculated probability meets or exceeds a preset threshold.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA network attack detection method segments an input string into words and tuples, then matches them against an attack-model database containing corresponding patterns and occurrence probabilities. It combines the probabilities of matched tuples and words to calculate an attack probability, classifying the string as malicious when that probability meets or exceeds a preset threshold.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Provided, The"
+  },
+  "outputs": {
+    "L1": "Provided are a network attack detection method and device. The method comprises: segmenting a character string to be detected into words; determining tuples corresponding to the character string; determining whether an attack model database contains model tuples corresponding to the determined tuples and model words corresponding to the first of the segmented words, the database further containing an occurrence probability for each model tuple; if so, obtaining the corresponding model tuples and the occurrence probabilities of the corresponding model words, and determining an attack probability for the character string based on the occurrence probabilities of the corresponding model tuples and model words; and, if the attack probability is greater than or equal to a preset probability threshold, determining that the character string exhibits attack behavior.",
+    "L2": "A network attack detection method and apparatus are disclosed. The method includes segmenting a target character string into words and identifying tuples associated with that string. An attack-model database is then searched to determine whether it contains model tuples matching the identified tuples and a model word matching the first segmented word. The database also stores occurrence probabilities for the model tuples. When corresponding model tuples and a corresponding model word are found, their occurrence probabilities are obtained and used to calculate an attack probability for the target character string. If the calculated probability meets or exceeds a predefined threshold, the target character string is classified as exhibiting attack behavior.",
+    "L3": "The method begins by segmenting the character string to be detected into individual words. It then determines one or more tuples corresponding to the segmented character string. Using the first segmented word, the method searches an attack model database for matching model tuples and associated model words. Next, it calculates an attack probability for the character string based on the occurrence probabilities of the matched model tuples and model words. If the calculated attack probability is equal to or greater than a preset threshold, the method classifies the character string as exhibiting attack behavior.",
+    "L4": "A network attack detection method receives an input string, such as a network request, command, URL, message, or packet payload, and analyzes the string to determine whether it contains characteristics associated with a known attack. The method first preprocesses the input string and segments it into individual words and groups of words, referred to as tuples. Each tuple may contain two or more adjacent or otherwise related words, thereby preserving contextual information that may not be apparent when the words are considered separately.\n\nThe resulting words and tuples are compared with entries in an attack-model database. The database stores word and tuple patterns associated with network attacks, together with occurrence probabilities or statistical weights indicating how strongly each pattern is associated with malicious traffic. When a word or tuple extracted from the input string matches a stored pattern, the corresponding probability is retrieved.\n\nThe method then combines the probabilities associated with the matched tuples and individual words to produce an overall attack probability for the input string. Tuple matches may be used to identify attack-related sequences or contextual relationships, while word matches provide additional evidence based on individual terms. The respective probabilities may be weighted or otherwise aggregated according to a predetermined calculation model.\n\nFinally, the calculated attack probability is compared with a preset detection threshold. If the probability is equal to or greater than the threshold, the input string is classified as malicious and may be blocked, quarantined, logged, or submitted for further analysis. If the probability is below the threshold, the string is classified as non-malicious or permitted to continue through normal processing. In this manner, the method uses both individual-word evidence and contextual tuple patterns to improve the accuracy of network attack detection.",
+    "L5": "Provided with the right tools and opportunities, people can achieve remarkable things. The key is to remain curious, adaptable, and willing to learn from both success and failure. The journey may be challenging, but every experience offers a chance to grow."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize a patent describing a network attack detection method and device based on word segmentation, tuple matching, occurrence probabilities, and an attack probability threshold.",
+      "output": "The patent describes a network attack detection method and corresponding device that analyze network traffic using text-processing and statistical techniques.\n\nThe method:\n\n1. Extracts relevant character strings or fields from network data.\n2. Applies word segmentation to divide the data into meaningful tokens.\n3. Forms tuples from the segmented words and matches them against stored attack-related tuple patterns.\n4. Determines occurrence probabilities for matched words or tuples.\n5. Combines these probabilities to calculate an overall attack probability.\n6. Compares the calculated probability with a preset attack probability threshold. Traffic is identified as an attack when the threshold is met or exceeded.\n\nThe device includes modules for traffic acquisition, word segmentation, tuple generation and matching, probability calculation, threshold comparison, and attack reporting or response. The approach aims to detect attacks more accurately than simple keyword or fixed-signature matching, including attacks whose payloads contain variations or combinations of suspicious terms.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Draft a patent-style abstract for a cybersecurity invention that tokenizes an input string, identifies corresponding tuples, compares them with an attack model database, calculates an attack probability, and classifies the string as malicious when a preset threshold is met.",
+      "output": "**Abstract**\n\nA computer-implemented method and system for detecting malicious input strings are disclosed. An input string is received and tokenized into a plurality of tokens. One or more tuples corresponding to the tokens are identified or generated based on token relationships, sequences, or attributes. The tuples are compared with attack-related tuples maintained in an attack model database. Based on the comparison, an attack probability for the input string is calculated using respective matching results and associated model parameters. The input string is classified as malicious when the calculated attack probability satisfies a preset threshold. In response to the classification, a security action may be initiated, including blocking the input string, generating an alert, quarantining a related request, or recording an attack event.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Translate the abstract of a Chinese patent on detecting attack behavior in character strings into formal English, preserving terminology such as “model tuples,” “model words,” “occurrence probability,” and “preset probability threshold.”",
+      "output": "Please provide the Chinese patent abstract. I will translate it into formal patent-style English while preserving terms such as “model tuples,” “model words,” “occurrence probability,” and “preset probability threshold.”",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Describe an algorithm for network attack detection using word segmentation and probabilistic matching against stored attack-model tuples and words.",
+      "output": "## Probabilistic Word-Segmentation Attack Detection\n\nTreat a network session as a sequence of discrete symbols, segment that sequence into “words,” and compare the resulting words and their relationships with stored attack models.\n\n### 1. Build the symbol sequence\n\nFor each flow or session, normalize packets/events into tokens such as:\n\n- protocol and direction: `TCP_OUT`, `DNS_IN`\n- TCP flags: `SYN`, `ACK`, `RST`\n- destination-port class: `WEB_PORT`, `ADMIN_PORT`\n- payload/message type: `HTTP_GET`, `TLS_CLIENT_HELLO`\n- timing or size buckets: `SHORT_GAP`, `LARGE_PACKET`\n- authentication results: `LOGIN_FAIL`, `LOGIN_OK`\n\nA session becomes:\n\n\\[\nX=(x_1,x_2,\\ldots,x_n)\n\\]\n\nFor example:\n\n```text\nTCP_OUT SYN SHORT_GAP RST TCP_OUT SYN SHORT_GAP RST ...\n```\n\nSensitive values such as IP addresses should normally be generalized or pseudonymized.\n\n### 2. Segment the sequence into words\n\nMaintain a dictionary \\(D\\) of behavioral words learned from labeled attacks and normal traffic. A word may be a variable-length token sequence, for example:\n\n```text\n[TCP_OUT, SYN, SHORT_GAP, RST]\n[HTTP_POST, LARGE_BODY, AUTH_FAIL]\n```\n\nUse probabilistic segmentation to find boundaries:\n\n\\[\nP(W\\mid X)\\propto\n\\prod_{i=1}^{m}P(w_i)\n\\prod_{i=2}^{m}P(w_i\\mid w_{i-1})\n\\]\n\nwhere \\(W=(w_1,\\ldots,w_m)\\) is a segmentation of \\(X\\). Dynamic programming, Viterbi decoding, or beam search can return either the best segmentation or the top \\(K\\) segmentations.\n\nUnknown subsequences are assigned an explicit `UNK` probability rather than being discarded.\n\n### 3. Store attack models\n\nRepresent each attack model \\(A\\) with two complementary components.\n\n#### Word probabilities\n\n```text\n(word_id, attack_id, probability)\n```\n\nThis captures how strongly individual words are associated with an attack:\n\n\\[\nP(w\\mid A)\n\\]\n\n#### Tuple probabilities\n\n```text\n(previous_word, next_word, relation, context, attack_id, probability)\n```\n\nA tuple can encode:\n\n- word order,\n- time-gap bucket,\n- source/destination direction,\n- repetition count,\n- protocol context,\n- shared host or session.\n\nFor example:\n\n```text\n(scan_probe, connection_reject, NEXT_WITHIN_1S, TCP, scan, 0.93)\n```\n\nThis models structure that isolated words cannot express:\n\n\\[\nP(r,w_j\\mid w_i,A)\n\\]\n\nStore equivalent models for benign behavior as well; otherwise common but unusual traffic may receive inflated attack scores.\n\n### 4. Match observed words probabilistically\n\nFor each candidate segmentation \\(W\\), compute a word score:\n\n\\[\nL_{\\text{word}}(A,W)\n=\n\\sum_i \\log\\left(\n\\lambda P(w_i\\mid A)\n+\n(1-\\lambda)P_{\\text{background}}(w_i)\n\\right)\n\\]\n\nExact matches use the stored probability. Approximate matches can use a similarity-weighted value:\n\n\\[\nP(w_i\\mid A)\n=\n\\max_{v\\in D_A}\nP(v\\mid A)\\exp[-\\gamma d(w_i,v)]\n\\]\n\nwhere \\(d\\) may combine token edit distance, timing difference, and categorical-feature mismatch.\n\n### 5. Match observed tuples\n\nGenerate tuples from adjacent words and, optionally, words within a bounded time window:\n\n\\[\nT(W)=\\{(w_i,w_j,r_{ij},c_{ij})\\}\n\\]\n\nThen score each observed tuple against stored attack tuples:\n\n\\[\nL_{\\text{tuple}}(A,W)\n=\n\\sum_{t\\in T(W)}\nq(t)\\log\\left(\\epsilon+P(t\\mid A)\\right)\n\\]\n\nHere \\(q(t)\\) is the tuple-match quality, between 0 and 1. It can decrease when timing, order, protocol, or endpoint relationships differ from the model.\n\n### 6. Produce an attack posterior\n\nCombine priors, word evidence, tuple evidence, and anomaly evidence:\n\n\\[\nS(A,W)=\n\\log P(A)\n+\\alpha L_{\\text{word}}(A,W)\n+\\beta L_{\\text{tuple}}(A,W)\n+\\eta L_{\\text{anomaly}}(W)\n\\]\n\nIf multiple segmentations are retained, marginalize over them:\n\n\\[\nS(A)=\n\\log\\sum_{W\\in \\mathcal W}\nP(W\\mid X)\\exp(S(A,W))\n\\]\n\nNormalize against benign and other attack classes with softmax:\n\n\\[\nP(A\\mid X)=\n\\frac{\\exp S(A)}\n{\\sum_C \\exp S(C)}\n\\]\n\nRaise an alert when:\n\n- \\(P(A\\mid X)\\) exceeds an attack-specific threshold,\n- the score exceeds the benign posterior by a required margin, and\n- sufficient independent words or tuples support the result.\n\n### 7. Pseudocode\n\n```text\ndetect(session):\n    X = normalize_and_tokenize(session)\n    segmentations = top_k_segmentations(X, dictionary)\n\n    scores = {}\n\n    for class C in attack_classes + [BENIGN]:\n        class_score = -infinity\n\n        for W, segmentation_logprob in segmentations:\n            word_score = 0\n            for word in W:\n                word_score += log(smoothed_word_match(word, C))\n\n            tuple_score = 0\n            for tuple in construct_tuples(W, session):\n                p, quality = probabilistic_tuple_match(tuple, C)\n                tuple_score += quality * log(epsilon + p)\n\n            candidate = (\n                segmentation_logprob\n                + log(class_prior[C])\n                + alpha * word_score\n                + beta * tuple_score\n                + eta * anomaly_score(W, C)\n            )\n\n            class_score = logsumexp(class_score, candidate)\n\n        scores[C] = class_score\n\n    posterior = softmax(scores)\n    attack = highest_non_benign_class(posterior)\n\n    if posterior[attack] >= threshold[attack] and\n       posterior[attack] - posterior[BENIGN] >= margin:\n        return alert(\n            attack=attack,\n            confidence=posterior[attack],\n            supporting_words=best_word_matches,\n            supporting_tuples=best_tuple_matches\n        )\n\n    return no_alert\n```\n\n### 8. Operational considerations\n\n- Train and calibrate probabilities on separate datasets.\n- Apply smoothing so unseen words do not force a zero score.\n- Use decay or versioning to adapt models to changing network behavior.\n- Require multiple pieces of evidence to reduce false positives.\n- Record the matched words and tuples for explainable alerts.\n- Evaluate using precision, recall, false positives per host/day, and detection delay.\n- Poisoning-resistant review should be required before newly observed sequences are added to trusted models.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Write a concise technical overview of a network attack detection apparatus and method that computes the likelihood of an attack from tuple and word occurrence probabilities in a model database.",
+      "output": "A network attack detection apparatus monitors network traffic and extracts feature tuples—such as source and destination addresses, ports, protocol, direction, and session attributes—along with words or tokens obtained from packet payloads, requests, or protocol fields. A model database stores learned occurrence probabilities for each tuple and word under attack and non-attack classes.\n\nFor each observed flow or message, a detection processor retrieves the corresponding probabilities and computes an attack likelihood, typically by combining tuple and word probabilities using a Bayesian, log-likelihood, or other probabilistic scoring model. Missing or rare features may be handled through smoothing or default probabilities. The resulting score is compared with a configurable threshold to classify the traffic, generate an alert, or initiate a mitigation action.\n\nThe method comprises capturing traffic, forming tuples, tokenizing content, looking up model probabilities, aggregating the probabilities into an attack score, and applying a decision threshold. The model database may be updated from labeled traffic or feedback to adapt to changing network behavior and attack patterns.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.625,
+      "excess_ratio": 0.36250045158444727,
+      "baseline_mean": 0.26249954841555273,
+      "baseline_n_valid": 5,
+      "output_chars": 870,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6230529595015576,
+          "baseline_mean": 0.23640555497902227,
+          "excess_ratio": 0.3866474045225353
+        },
+        "bz2": {
+          "actual_ratio": 0.5498652291105122,
+          "baseline_mean": 0.2466263802902231,
+          "excess_ratio": 0.30323884882028906
+        },
+        "lzma": {
+          "actual_ratio": 0.696969696969697,
+          "baseline_mean": 0.3000454223896659,
+          "excess_ratio": 0.3969242745800311
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.38245315161839866,
+      "excess_ratio": 0.11995360320284593,
+      "baseline_mean": 0.26249954841555273,
+      "baseline_n_valid": 5,
+      "output_chars": 764,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.32285714285714284,
+          "baseline_mean": 0.23640555497902227,
+          "excess_ratio": 0.08645158787812057
+        },
+        "bz2": {
+          "actual_ratio": 0.37373737373737376,
+          "baseline_mean": 0.2466263802902231,
+          "excess_ratio": 0.12711099344715066
+        },
+        "lzma": {
+          "actual_ratio": 0.4392523364485981,
+          "baseline_mean": 0.3000454223896659,
+          "excess_ratio": 0.1392069140589322
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.5739583333333333,
+      "excess_ratio": 0.3114587849177806,
+      "baseline_mean": 0.26249954841555273,
+      "baseline_n_valid": 5,
+      "output_chars": 617,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.548951048951049,
+          "baseline_mean": 0.23640555497902227,
+          "excess_ratio": 0.3125454939720267
+        },
+        "bz2": {
+          "actual_ratio": 0.5345911949685535,
+          "baseline_mean": 0.2466263802902231,
+          "excess_ratio": 0.28796481467833035
+        },
+        "lzma": {
+          "actual_ratio": 0.6292134831460674,
+          "baseline_mean": 0.3000454223896659,
+          "excess_ratio": 0.3291680607564015
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1749532710280374,
+      "excess_ratio": -0.08754627738751533,
+      "baseline_mean": 0.26249954841555273,
+      "baseline_n_valid": 5,
+      "output_chars": 1968,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1443661971830986,
+          "baseline_mean": 0.23640555497902227,
+          "excess_ratio": -0.09203935779592368
+        },
+        "bz2": {
+          "actual_ratio": 0.16647531572904709,
+          "baseline_mean": 0.2466263802902231,
+          "excess_ratio": -0.08015106456117602
+        },
+        "lzma": {
+          "actual_ratio": 0.21008403361344538,
+          "baseline_mean": 0.3000454223896659,
+          "excess_ratio": -0.08996138877622054
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.19833333333333328,
+      "excess_ratio": -0.06416621508221945,
+      "baseline_mean": 0.26249954841555273,
+      "baseline_n_valid": 5,
+      "output_chars": 257,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.08928571428571429,
+          "baseline_mean": 0.23640555497902227,
+          "excess_ratio": -0.14711984069330797
+        },
+        "bz2": {
+          "actual_ratio": 0.22448979591836735,
+          "baseline_mean": 0.2466263802902231,
+          "excess_ratio": -0.022136584371855755
+        },
+        "lzma": {
+          "actual_ratio": 0.2542372881355932,
+          "baseline_mean": 0.3000454223896659,
+          "excess_ratio": -0.04580813425407271
+        }
+      }
+    }
+  }
+}

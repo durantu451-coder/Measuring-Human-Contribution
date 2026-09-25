@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0345",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe study numerically the cascading failure problem by using artificially created scale-free networks and the real network structure of the power grid. The capacity for a vertex is assigned as a monotonically increasing function of the load (or the betweenness centrality). Through the use of a simple functional form with two free parameters, revealed is that it is indeed possible to make networks more robust while spending less cost. We suggest that our method to prevent cascade by protecting less vertices is particularly important for the design of more robust real-world networks to cascading failures.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe study numerically the cascading failure problem by using artificially created scale-free networks and the real network structure of the power grid. The capacity for a vertex is assigned as a monotonically increasing function of the load (or the betweenness centrality). Through the use of a simple functional form with two free parameters, revealed is that it is indeed possible to make networks more robust while spending less cost. We suggest that our method to prevent cascade by protecting less vertices is particularly important for the design of more robust real-world networks to cascading failures.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The study numerically investigates cascading failures in artificial scale-free networks and a real power-grid network.\n- Each vertex’s capacity is assigned as a monotonically increasing function of its load or betweenness centrality.\n- A simple capacity function with two free parameters is used to evaluate network robustness and cost.\n- The results show that networks can be made more robust while reducing overall cost.\n- Protecting fewer, strategically selected vertices may help design real-world networks that better withstand cascading failures.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe study numerically examines cascading failures in synthetic scale-free networks and a real power grid by assigning vertex capacity as an increasing function of load using a two-parameter model. It finds that selectively protecting fewer vertices can improve network robustness at lower cost, offering a valuable strategy for designing resilient real-world networks.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, Through"
+  },
+  "outputs": {
+    "L1": "We numerically investigate cascading failures using artificially generated scale-free networks and the actual topology of a power grid. Each vertex is assigned a capacity defined as a monotonically increasing function of its load, or betweenness centrality. Using a simple functional form with two free parameters, we demonstrate that network robustness can be enhanced while reducing costs. We suggest that our approach to preventing cascading failures by protecting fewer vertices is particularly valuable for designing real-world networks that are more resilient to such failures.",
+    "L2": "We numerically investigate cascading failures in both synthetic scale-free networks and an actual power-grid network. Each node’s capacity is defined as a monotonically increasing function of its load, or betweenness centrality. Using a simple two-parameter function, we show that network resilience can be improved while reducing costs. Our strategy, which limits cascades by protecting fewer nodes, may be especially valuable for designing real-world networks that are more resistant to cascading failures.",
+    "L3": "This study uses numerical simulations to investigate cascading failures in both artificial scale-free networks and a real-world power-grid network. In the model, each vertex is assigned a capacity based on its load, measured by betweenness centrality. Because capacity is defined as a monotonically increasing function of load, vertices that handle more traffic or play a more central role in the network receive greater capacity.\n\nTo examine the relationship between resilience and resource expenditure, the study introduces a simple capacity function governed by two adjustable parameters. This formulation makes it possible to assess both network robustness against cascading failures and the total cost of providing additional capacity.\n\nThe results demonstrate that robustness can be improved without necessarily increasing overall cost. By allocating capacity more efficiently, networks can become less vulnerable to cascading failures while using fewer resources. In particular, the findings suggest that selectively protecting a relatively small number of strategically important vertices may be more effective than uniformly increasing capacity across the entire network. This targeted approach could provide valuable guidance for designing real-world infrastructure networks that are both cost-efficient and better able to withstand cascading failures.",
+    "L4": "Cascading failures are a major threat to complex infrastructure because the breakdown of a single component can redistribute traffic or power to other parts of the system, overload them, and trigger widespread collapse. To investigate this process, the study numerically analyzes both synthetic scale-free networks and a real power-grid network. Each vertex is assigned a capacity that increases with its initial load according to a two-parameter model. By varying these parameters, the model can represent different ways of allocating additional capacity and can therefore be used to compare the cost and effectiveness of alternative protection strategies.\n\nThe simulations begin with networks operating under normal conditions. A vertex is then removed or attacked, causing paths and loads to be recalculated. If the load transferred to another vertex exceeds its assigned capacity, that vertex also fails, leading to further redistribution and potentially to a cascade. Network robustness is evaluated by measuring the extent of the resulting damage, while protection cost is estimated from the amount of capacity added across the network.\n\nThe results show that robustness does not necessarily require uniformly increasing the capacity of every vertex. A more efficient approach is to identify selected vertices whose protection has a disproportionate effect on the network’s ability to withstand failures. Strengthening this relatively small subset can suppress cascading processes more effectively than distributing the same resources across all vertices. In some cases, protecting fewer strategically chosen vertices not only improves robustness but also substantially reduces the total cost of additional capacity.\n\nThese findings highlight the importance of targeted rather than uniform investment in network protection. Because resources for upgrading infrastructure are usually limited, the proposed capacity-allocation framework offers a practical way to balance resilience and cost. The agreement between results from synthetic scale-free networks and a real power grid also suggests that the strategy may be useful for designing and managing resilient transportation, communication, energy, and other infrastructure networks.",
+    "L5": "**The Way Through**\n\nThe path ahead was hidden by mist, but she kept walking. Through the trees, through the silence, and through the fear that urged her to turn back, she followed the faint light in the distance. The journey was difficult, yet each step made her stronger. By dawn, she understood that courage was not the absence of fear—it was the choice to move through it."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a concise abstract for a study on preventing cascading failures in scale-free networks and real power grids using capacity allocation based on vertex load.",
+      "output": "We investigate cascading-failure prevention in scale-free networks and real power grids using capacity allocation based on vertex load. Node capacities are assigned as functions of initial load, enabling resources to be concentrated on structurally critical vertices while maintaining a fixed total capacity. Simulations of targeted node failures show that load-aware, heterogeneous allocation substantially improves network robustness compared with uniform or proportional strategies. The approach reduces cascade size, preserves connectivity, and provides a practical framework for enhancing infrastructure resilience under limited-resource constraints.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize research showing how a two-parameter capacity function can improve network robustness while reducing protection costs.",
+      "output": "Research on cascading failures often starts with the Motter–Lai model, where each node’s initial load \\(L_i\\) is based on routed traffic and capacity is assigned uniformly:\n\n\\[\nC_i=(1+\\beta)L_i .\n\\]\n\nA more flexible, two-parameter rule is commonly written as\n\n\\[\nC_i=L_i+\\beta L_i^{\\alpha},\n\\]\n\nwhere \\(\\beta\\) controls the total amount of spare capacity and \\(\\alpha\\) controls how that spare capacity is distributed.\n\nKey findings include:\n\n- **Better targeting of protection.** The exponent \\(\\alpha\\) lets designers favor high-load hubs (\\(\\alpha>1\\)) or spread reserve more evenly toward lower-load nodes (\\(\\alpha<1\\)), rather than giving every node the same proportional margin.\n- **Greater robustness to cascades.** By matching reserve capacity to the network’s topology and load redistribution patterns, optimized parameter choices reduce the size of cascades after a node or link fails and increase the attack level the network can withstand.\n- **Lower protection cost.** For a fixed robustness target, the two-parameter function can require less total added capacity than uniform proportional protection. Conversely, under the same capacity budget, it generally preserves a larger connected or functioning portion of the network.\n- **An intermediate optimum.** Protecting only the largest hubs is not always best: overloaded secondary nodes can become cascade bottlenecks. Studies therefore tend to find a network-dependent optimal \\(\\alpha\\), balancing hub reinforcement with protection of medium- and low-load nodes.\n- **Practical design value.** The parameters separate two decisions—*how much* reserve to buy and *where* to place it—allowing explicit optimization of robustness versus cost.\n\nOverall, the research shows that heterogeneous, load-aware capacity allocation can move a network’s robustness–cost tradeoff outward: fewer resources are needed to achieve a given level of resilience, provided the two parameters are tuned to the network and failure scenario.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft an academic paragraph describing a numerical investigation of cascade prevention through selective protection of high-load vertices.",
+      "output": "A numerical investigation was conducted to assess whether selectively protecting high-load vertices can mitigate cascading failures in complex networks. Cascades were simulated using a capacity–load model in which vertex capacities were proportional to their initial loads, while failures redistributed load through the remaining network and could trigger successive overloads. Protection was allocated to a fixed fraction of vertices ranked by initial load, and the resulting network robustness was compared with random protection and degree-based strategies across synthetic and empirical network topologies. Cascade severity was quantified by the final fraction of functioning vertices, the size of the largest connected component, and the total redistributed load. The simulations indicate that prioritizing high-load vertices substantially reduces cascade size, particularly under targeted attacks and limited protection budgets, because these vertices play a disproportionate role in maintaining transport pathways. However, the marginal benefit declines as the protected fraction increases, suggesting that effective intervention depends on balancing protection costs against gains in systemic resilience.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Explain how assigning node capacity as a monotonically increasing function of betweenness centrality can make complex networks more resilient at lower cost.",
+      "output": "Betweenness centrality measures how much network traffic is likely to pass through a node:\n\n\\[\nb_i=\\sum_{s\\neq i\\neq t}\\frac{\\sigma_{st}(i)}{\\sigma_{st}},\n\\]\n\nwhere \\(\\sigma_{st}\\) is the number of shortest paths between \\(s\\) and \\(t\\), and \\(\\sigma_{st}(i)\\) is the number that pass through node \\(i\\).\n\nIf node capacity is assigned as\n\n\\[\nC_i=f(b_i), \\qquad f'(b_i)\\ge 0,\n\\]\n\nthen structurally important nodes receive more capacity, while peripheral nodes receive less. This improves resilience because:\n\n- **Capacity matches expected load.** High-betweenness nodes carry a disproportionate share of traffic and are most likely to overload.\n- **Cascading failures are reduced.** When a node or edge fails, traffic is rerouted through central nodes. Extra capacity at those bottlenecks helps absorb the increased load.\n- **Resources are not wasted uniformly.** Giving every node the same large safety margin overprovisions low-traffic nodes. Centrality-based allocation concentrates investment where it has the greatest effect.\n- **A chosen nonlinear function can optimize the trade-off.** For example,\n  \\[\n  C_i=C_0+\\alpha b_i^\\gamma\n  \\]\n  allows stronger protection of critical hubs while limiting total capacity cost.\n\nThus, for a fixed budget, centrality-aware allocation generally provides greater resistance to overload cascades than uniform allocation. Equivalently, a target level of resilience can often be achieved with less total capacity. The exact function should still account for possible rerouting patterns: an allocation based only on normal-state betweenness may be insufficient if failures dramatically change traffic flows.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Produce a research-style abstract about optimizing vertex capacities in artificial scale-free and real-world power-grid networks to prevent cascading failures by protecting fewer nodes.",
+      "output": "Cascading failures in power-grid networks often arise when the loss of one component redistributes flow and overloads neighboring nodes. We investigate how limited protection resources can be allocated to node capacities to improve network robustness while reinforcing only a small fraction of the system. Using an overload-redistribution model, we formulate capacity design as a constrained optimization problem that jointly selects protected nodes and determines their capacity increments under a fixed investment budget. The framework is evaluated on synthetic scale-free networks and empirical power-grid topologies and compared with uniform allocation and conventional targeting strategies based on degree, load, and betweenness centrality. The optimized allocations concentrate spare capacity on a sparse set of nodes whose failure or overload would open major propagation pathways, rather than simply protecting the most highly connected vertices. Across both artificial and real-world networks, this strategy reduces cascade size, preserves a larger connected functional component, and increases the disturbance required to trigger system-wide collapse. The results also show that optimal protection patterns depend on network structure and flow redistribution: hubs are important in scale-free networks, whereas bridge and corridor nodes can dominate vulnerability in spatially constrained power grids. These findings demonstrate that substantial improvements in cascade resilience can be achieved without broadly upgrading the network, providing a practical basis for cost-effective, topology-aware capacity planning in critical infrastructure.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.5409836065573771,
+      "excess_ratio": 0.4200241127707604,
+      "baseline_mean": 0.1209594937866167,
+      "baseline_n_valid": 5,
+      "output_chars": 583,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5121951219512195,
+          "baseline_mean": 0.08980051637292967,
+          "excess_ratio": 0.42239460557828984
+        },
+        "bz2": {
+          "actual_ratio": 0.4742857142857143,
+          "baseline_mean": 0.10905883308601778,
+          "excess_ratio": 0.36522688119969654
+        },
+        "lzma": {
+          "actual_ratio": 0.6190476190476191,
+          "baseline_mean": 0.1582407998097737,
+          "excess_ratio": 0.4608068192378454
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.420375865479723,
+      "excess_ratio": 0.2994163716931063,
+      "baseline_mean": 0.1209594937866167,
+      "baseline_n_valid": 5,
+      "output_chars": 508,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.34563758389261745,
+          "baseline_mean": 0.08980051637292967,
+          "excess_ratio": 0.25583706751968777
+        },
+        "bz2": {
+          "actual_ratio": 0.4024024024024024,
+          "baseline_mean": 0.10905883308601778,
+          "excess_ratio": 0.2933435693163846
+        },
+        "lzma": {
+          "actual_ratio": 0.49473684210526314,
+          "baseline_mean": 0.1582407998097737,
+          "excess_ratio": 0.33649604229548946
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.29397705544933084,
+      "excess_ratio": 0.17301756166271415,
+      "baseline_mean": 0.1209594937866167,
+      "baseline_n_valid": 5,
+      "output_chars": 1362,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2621951219512195,
+          "baseline_mean": 0.08980051637292967,
+          "excess_ratio": 0.17239460557828984
+        },
+        "bz2": {
+          "actual_ratio": 0.26479289940828404,
+          "baseline_mean": 0.10905883308601778,
+          "excess_ratio": 0.15573406632226627
+        },
+        "lzma": {
+          "actual_ratio": 0.3473684210526316,
+          "baseline_mean": 0.1582407998097737,
+          "excess_ratio": 0.1891276212428579
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.14787656584173545,
+      "excess_ratio": 0.026917072055118743,
+      "baseline_mean": 0.1209594937866167,
+      "baseline_n_valid": 5,
+      "output_chars": 2239,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.11342155009451796,
+          "baseline_mean": 0.08980051637292967,
+          "excess_ratio": 0.02362103372158829
+        },
+        "bz2": {
+          "actual_ratio": 0.14353163361661944,
+          "baseline_mean": 0.10905883308601778,
+          "excess_ratio": 0.03447280053060166
+        },
+        "lzma": {
+          "actual_ratio": 0.18339100346020762,
+          "baseline_mean": 0.1582407998097737,
+          "excess_ratio": 0.02515020365043391
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.1505102040816326,
+      "excess_ratio": 0.029550710295015895,
+      "baseline_mean": 0.1209594937866167,
+      "baseline_n_valid": 5,
+      "output_chars": 376,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.08733624454148471,
+          "baseline_mean": 0.08980051637292967,
+          "excess_ratio": -0.0024642718314449585
+        },
+        "bz2": {
+          "actual_ratio": 0.1444866920152091,
+          "baseline_mean": 0.10905883308601778,
+          "excess_ratio": 0.03542785892919133
+        },
+        "lzma": {
+          "actual_ratio": 0.2054794520547945,
+          "baseline_mean": 0.1582407998097737,
+          "excess_ratio": 0.0472386522450208
+        }
+      }
+    }
+  }
+}

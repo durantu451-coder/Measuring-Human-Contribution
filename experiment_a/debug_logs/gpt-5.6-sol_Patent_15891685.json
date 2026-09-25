@@ -1,0 +1,524 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15891685",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA noise generator for generating a noise signal over a frequency spectrum has a first noise source and a first digital filter for a first frequency band, a second noise source and a second digital filter for a second frequency band, and an interpolator and a combiner. The first digital filter has a first sample rate and the second digital filter has a second sample rate, wherein the ratio between the second sample rate and the first sample rate, with regard to a sign, corresponds to a ratio between center frequencies of the second frequency band and the first frequency band, wherein an edge of the second digital filters which determines a lower frequency band limit is steeper than an edge of the first digital filter which determines an upper frequency band limit. The interpolator is configured to adjust an output signal of the first digital filter, with regard to its sample rate, to a sample rate of the second digital filter, wherein the combiner is configured to combine the adjusted output signal from the interpolator and the output signal of the second digital filter.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA noise generator for generating a noise signal over a frequency spectrum has a first noise source and a first digital filter for a first frequency band, a second noise source and a second digital filter for a second frequency band, and an interpolator and a combiner. The first digital filter has a first sample rate and the second digital filter has a second sample rate, wherein the ratio between the second sample rate and the first sample rate, with regard to a sign, corresponds to a ratio between center frequencies of the second frequency band and the first frequency band, wherein an edge of the second digital filters which determines a lower frequency band limit is steeper than an edge of the first digital filter which determines an upper frequency band limit. The interpolator is configured to adjust an output signal of the first digital filter, with regard to its sample rate, to a sample rate of the second digital filter, wherein the combiner is configured to combine the adjusted output signal from the interpolator and the output signal of the second digital filter.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The noise generator produces a noise signal across a frequency spectrum using two noise sources and corresponding digital filters.\n- The first and second digital filters operate over separate frequency bands at different sample rates.\n- The ratio of the filters’ sample rates corresponds in sign to the ratio of the center frequencies of their respective frequency bands.\n- The second filter’s lower-frequency edge is steeper than the first filter’s upper-frequency edge.\n- An interpolator adjusts the first filter’s output to the second filter’s sample rate, and a combiner merges the adjusted signal with the second filter’s output.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA noise generator produces broadband noise using separate noise sources and digital filters for two frequency bands, with sample rates scaled to their center frequencies and an interpolator aligning the first filter’s output rate with the second before combination. A steeper lower-band edge in the second filter than the first filter’s upper-band edge enables the aligned outputs to be combined effectively across the target spectrum.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The"
+  },
+  "outputs": {
+    "L1": "A noise generator for generating a noise signal across a frequency spectrum includes a first noise source and a first digital filter for a first frequency band, a second noise source and a second digital filter for a second frequency band, an interpolator, and a combiner. The first digital filter has a first sample rate, and the second digital filter has a second sample rate. With respect to sign, the ratio of the second sample rate to the first sample rate corresponds to the ratio of the center frequency of the second frequency band to the center frequency of the first frequency band. An edge of the second digital filter that defines a lower frequency-band limit is steeper than an edge of the first digital filter that defines an upper frequency-band limit. The interpolator is configured to adjust the sample rate of an output signal from the first digital filter to match the sample rate of the second digital filter. The combiner is configured to combine the adjusted output signal from the interpolator with the output signal from the second digital filter.",
+    "L2": "A broadband noise-signal generator includes two noise sources, two digital filters, an interpolator, and a combiner. The first noise source supplies the first digital filter, which operates at a first sampling rate and covers a first frequency band. The second noise source supplies the second digital filter, which operates at a second sampling rate and covers a second frequency band. Including the sign, the ratio of the second sampling rate to the first sampling rate matches the ratio of the center frequency of the second band to that of the first band. The second filter’s edge defining the lower limit of its frequency band is sharper than the first filter’s edge defining the upper limit of its frequency band. The interpolator converts the first filter’s output to the sampling rate used by the second filter, after which the combiner merges the interpolated signal with the second filter’s output.",
+    "L3": "The noise generator produces a broadband noise signal by processing two noise sources through corresponding digital filters. The first and second digital filters operate in separate frequency bands and use different sample rates. The ratio between their sample rates has the same sign as the ratio between the center frequencies of their respective operating bands, thereby aligning the sampling characteristics with the relative positions of the bands in the frequency spectrum.\n\nThe filters also have different transition characteristics: the lower-frequency edge of the second filter has a steeper roll-off than the upper-frequency edge of the first filter. To combine the two filtered signals, an interpolator converts the output of the first digital filter to the sample rate used by the second digital filter. A combiner then merges the interpolated output of the first filter with the output of the second filter to form the final noise signal across the desired frequency spectrum.",
+    "L4": "A broadband noise generator may be implemented using two independent noise sources, each followed by a digital filter assigned to a different portion of the desired frequency spectrum. A first noise source supplies a first random sample sequence to a first digital filter configured to generate noise in a lower-frequency band. A second noise source supplies a second random sample sequence to a second digital filter configured to generate noise in a higher-frequency band. The noise sources may produce statistically independent sequences so that the filtered signals do not introduce unwanted correlation when they are combined.\n\nEach signal-processing path operates at a sample rate selected according to the center frequency of its associated band. The lower-frequency path therefore may use a lower sample rate, reducing the computational resources required by the first digital filter, while the higher-frequency path operates at a correspondingly higher sample rate. Because the outputs of the two filters initially have different sample rates, the output of the first filter is provided to an interpolator. The interpolator increases that output’s sample rate to match the output rate of the second filter and may include suitable anti-imaging filtering. After interpolation, the two filtered noise signals share a common sampling rate and can be added or otherwise combined to form a single broadband output signal.\n\nThe transition characteristics of the two digital filters are selected to obtain a substantially continuous combined spectrum. In particular, the lower-frequency edge, or high-pass transition, of the second filter is made steeper than the upper-frequency edge, or low-pass transition, of the first filter. The more gradual roll-off of the first filter and the sharper lower-edge response of the second filter provide a controlled overlap between the two bands. Their gains may be chosen so that the summed spectral power remains approximately uniform through the crossover region, thereby limiting gaps, peaks, and other spectral irregularities.\n\nThis multirate arrangement allows each portion of the target spectrum to be generated efficiently at an appropriate sampling frequency while still producing a common-rate broadband noise output. It can reduce filter complexity and processing load relative to generating the entire spectrum in a single high-rate path, while the differing filter-edge slopes support effective reconstruction of the desired broadband noise spectrum.",
+    "L5": "### The Power of “The”\n\n“The” is one of the smallest yet most important words in the English language. Known as the definite article, it points to a particular person, place, object, or idea. We say “the sun” because there is only one sun in our sky, and “the book” when both speaker and listener know which book is being discussed.\n\nAlthough it often goes unnoticed, “the” gives language clarity and precision. Without it, many sentences would sound unnatural or become ambiguous. This simple three-letter word demonstrates how even the smallest parts of language can play an essential role in communication."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style abstract describing a multiband noise generator with separate noise sources and digital filters operating at different sample rates, plus an interpolator and combiner.",
+      "output": "A multiband noise generator includes a plurality of noise-generation paths configured to produce noise in respective frequency bands. Each noise-generation path includes a noise source and a digital filter configured to process noise samples at a sample rate selected for the corresponding frequency band, such that at least two of the digital filters operate at different sample rates. An interpolator coupled to at least one noise-generation path converts filtered noise samples from a lower sample rate to a common output sample rate. A combiner receives the filtered noise samples, including the interpolated noise samples, and combines the samples to generate a composite multiband noise signal. The sample rates, filter characteristics, and noise-source parameters may be independently controlled to establish selected bandwidths, spectral densities, and amplitude levels while reducing processing and power requirements relative to processing all frequency bands at the common output sample rate.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Describe an apparatus for generating a noise signal across a frequency spectrum using two filtered noise paths, where the sample-rate ratio corresponds to the ratio of the bands’ center frequencies.",
+      "output": "An apparatus for generating a broadband noise signal may include:\n\n- a digital noise source that supplies noise samples to first and second signal paths;\n- a first sampling circuit operating at a first sample rate and a first band-pass filter having a first center frequency;\n- a second sampling circuit operating at a second sample rate and a second band-pass filter having a second center frequency;\n- a clock or sample-rate controller configured so that  \n  \\[\n  \\frac{f_{s1}}{f_{s2}}=\\frac{f_{c1}}{f_{c2}},\n  \\]\n  where \\(f_{s1},f_{s2}\\) are the respective sample rates and \\(f_{c1},f_{c2}\\) are the respective filter-band center frequencies; and\n- a combining circuit that sums the filtered outputs to form a composite noise signal spanning the two frequency bands.\n\nThe filters can use the same normalized filter response, with the difference in sample rates scaling that response to the desired center frequencies. Additional gain controls may equalize the noise power in each band before the outputs are combined and converted to an analog signal.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write a single technical paragraph for a patent claim about a noise generator whose second filter has a steeper lower-band edge than the first filter’s upper-band edge.",
+      "output": "A noise generator comprising: a noise source configured to generate a broadband noise signal; a first filter coupled to the noise source and configured to pass a first frequency band having an upper-band edge characterized by a first roll-off slope; a second filter coupled to the noise source and configured to pass a second frequency band having a lower-band edge characterized by a second roll-off slope; and an output circuit configured to combine outputs of the first and second filters, wherein the second roll-off slope is steeper in magnitude than the first roll-off slope.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Explain the architecture of a dual-band digital noise generator that resamples the first filter’s output to match the second filter’s sample rate before combining both signals.",
+      "output": "A dual-band digital noise generator creates noise in two frequency bands, potentially at different sample rates, then converts both signals to a common rate before summing them.\n\n### Signal path\n\n```text\nNoise source 1 → Band filter 1 @ Fs1 → Resampler Fs1→Fs2 → Gain 1 ┐\n                                                                  ├→ Adder → Output @ Fs2\nNoise source 2 → Band filter 2 @ Fs2 ───────────────→ Gain 2 ─────┘\n```\n\n### Main components\n\n1. **Noise sources**\n   - Generate pseudo-random samples, commonly white Gaussian or uniform noise.\n   - The two bands may use independent generators to avoid correlation, or one shared source if correlated behavior is desired.\n\n2. **First-band filter**\n   - Runs at sample rate \\(F_{s1}\\).\n   - Shapes its noise source into the first desired spectral band.\n   - Its output is \\(x_1[n]\\), defined on the \\(F_{s1}\\) time grid.\n\n3. **Second-band filter**\n   - Runs at sample rate \\(F_{s2}\\).\n   - Produces the second noise band, \\(x_2[m]\\).\n   - Because the final output is formed at \\(F_{s2}\\), this branch does not need rate conversion.\n\n4. **Resampler**\n   - Converts the first filter’s output from \\(F_{s1}\\) to \\(F_{s2}\\).\n   - For a rational rate ratio,\n     \\[\n     \\frac{F_{s2}}{F_{s1}}=\\frac{L}{M},\n     \\]\n     the conversion conceptually consists of:\n     - interpolation by \\(L\\),\n     - low-pass filtering,\n     - decimation by \\(M\\).\n   - The low-pass filter removes interpolation images and prevents aliasing during decimation.\n   - A polyphase implementation is normally used for efficiency.\n\n5. **Gain and power control**\n   - Each branch is scaled independently:\n     \\[\n     y[m]=g_1\\,\\tilde{x}_1[m]+g_2\\,x_2[m],\n     \\]\n     where \\(\\tilde{x}_1[m]\\) is the resampled first-band signal.\n   - Gains are chosen according to the desired power spectral density or RMS power in each band.\n\n6. **Timing and latency alignment**\n   - The resampler and filters introduce group delay.\n   - If exact temporal alignment matters, the second branch is delayed by the difference in processing latency before addition.\n   - Both branches must also share a consistent clock or frame-handshake mechanism at \\(F_{s2}\\).\n\n7. **Combiner and output conditioning**\n   - The aligned signals are summed at \\(F_{s2}\\).\n   - Optional saturation, limiting, or normalization prevents fixed-point overflow or excessive peak levels.\n\n### Design constraints\n\n- Both desired noise bands must lie below the final Nyquist frequency, \\(F_{s2}/2\\), unless a different band-mapping scheme is intentionally used.\n- The first branch’s filter and resampler must provide enough stopband attenuation to keep unwanted images or aliases out of either noise band.\n- In fixed-point hardware, accumulator width and scaling should accommodate the sum of both branches.\n- If the bands overlap, their power spectral densities add in the overlap region; independent sources add in power on average, while correlated sources can interfere coherently.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate formal patent language for a frequency-spectrum noise generator comprising first and second noise sources, digital filters for different frequency bands, an interpolator, and a signal combiner.",
+      "output": "### Abstract\n\nA frequency-spectrum noise generator includes a first noise source configured to generate a first digital noise signal and a second noise source configured to generate a second digital noise signal. A first digital filter filters the first digital noise signal within a first frequency band, and a second digital filter filters the second digital noise signal within a second frequency band different from the first frequency band. An interpolator increases a sampling rate of at least one of the filtered noise signals to produce sampling-rate-compatible signals. A signal combiner combines the sampling-rate-compatible signals to generate a composite noise signal having spectral energy distributed across the first and second frequency bands.\n\n### Independent Apparatus Claim\n\n1. **A frequency-spectrum noise generator, comprising:**\n\n   a first noise source configured to generate a first digital noise signal;\n\n   a second noise source configured to generate a second digital noise signal;\n\n   a first digital filter coupled to the first noise source and configured to filter the first digital noise signal according to a first filter response associated with a first frequency band;\n\n   a second digital filter coupled to the second noise source and configured to filter the second digital noise signal according to a second filter response associated with a second frequency band different from the first frequency band;\n\n   an interpolator coupled between at least one of the first and second digital filters and a signal combiner, the interpolator being configured to increase a sampling rate of at least one of a first filtered noise signal output by the first digital filter or a second filtered noise signal output by the second digital filter; and\n\n   the signal combiner configured to combine the first filtered noise signal and the second filtered noise signal at a common sampling rate to produce a composite noise signal having frequency components in the first frequency band and the second frequency band.\n\n### Dependent Claims\n\n2. The frequency-spectrum noise generator of claim 1, wherein the first frequency band is a lower-frequency band and the second frequency band is a higher-frequency band.\n\n3. The frequency-spectrum noise generator of claim 1, wherein the first and second frequency bands are non-overlapping.\n\n4. The frequency-spectrum noise generator of claim 1, wherein the first and second frequency bands at least partially overlap to provide a substantially continuous spectral profile across a transition region between the first and second frequency bands.\n\n5. The frequency-spectrum noise generator of claim 1, wherein the interpolator comprises an upsampler and an interpolation filter.\n\n6. The frequency-spectrum noise generator of claim 1, wherein the interpolator is configured to increase the sampling rate by an integer interpolation factor.\n\n7. The frequency-spectrum noise generator of claim 1, wherein the first digital filter and the second digital filter respectively comprise at least one of a finite impulse response filter or an infinite impulse response filter.\n\n8. The frequency-spectrum noise generator of claim 1, wherein at least one of the first noise source or the second noise source comprises a pseudorandom number generator.\n\n9. The frequency-spectrum noise generator of claim 1, wherein the first noise source is statistically independent of the second noise source.\n\n10. The frequency-spectrum noise generator of claim 1, further comprising a first gain stage and a second gain stage configured to independently control respective amplitudes of the first filtered noise signal and the second filtered noise signal before combination by the signal combiner.\n\n11. The frequency-spectrum noise generator of claim 10, wherein the first and second gain stages are controlled to establish a predetermined spectral power distribution in the composite noise signal.\n\n12. The frequency-spectrum noise generator of claim 1, wherein the signal combiner comprises a digital adder.\n\n13. The frequency-spectrum noise generator of claim 1, further comprising an output filter coupled to the signal combiner and configured to suppress spectral components outside a predetermined output frequency range.\n\n14. The frequency-spectrum noise generator of claim 1, further comprising a digital-to-analog converter configured to convert the composite noise signal into an analog noise signal.\n\n15. The frequency-spectrum noise generator of claim 1, wherein coefficients of at least one of the first digital filter or the second digital filter are programmable to modify a spectral characteristic of the composite noise signal.\n\n### Independent Method Claim\n\n16. **A method of generating a frequency-spectrum noise signal, the method comprising:**\n\n   generating, by a first noise source, a first digital noise signal;\n\n   generating, by a second noise source, a second digital noise signal;\n\n   filtering the first digital noise signal using a first digital filter having a first filter response associated with a first frequency band;\n\n   filtering the second digital noise signal using a second digital filter having a second filter response associated with a second frequency band different from the first frequency band;\n\n   interpolating at least one of the filtered first digital noise signal or the filtered second digital noise signal to establish a common sampling rate; and\n\n   combining the filtered first digital noise signal and the filtered second digital noise signal at the common sampling rate to produce a composite noise signal having spectral content in the first frequency band and the second frequency band.\n\n17. The method of claim 16, further comprising independently scaling the filtered first digital noise signal and the filtered second digital noise signal before combining the signals.\n\n18. The method of claim 16, further comprising adjusting at least one filter coefficient or gain value in response to a target spectral power distribution.\n\n19. The method of claim 16, further comprising converting the composite noise signal into an analog signal.\n\n### Computer-Readable-Medium Claim\n\n20. **A non-transitory computer-readable medium** storing instructions that, when executed by one or more processors, cause the one or more processors to:\n\n   obtain first and second digital noise signals from respective first and second noise sources;\n\n   digitally filter the first and second digital noise signals according to respective first and second filter responses associated with different frequency bands;\n\n   interpolate at least one of the digitally filtered noise signals to provide a common sampling rate; and\n\n   combine the digitally filtered noise signals at the common sampling rate to generate a composite noise signal having a predetermined frequency-spectrum characteristic.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6317204301075269,
+      "excess_ratio": 0.47818537791588667,
+      "baseline_mean": 0.15353505219164018,
+      "baseline_n_valid": 5,
+      "output_chars": 1071,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6035502958579881,
+          "baseline_mean": 0.12313103250668289,
+          "excess_ratio": 0.48041926335130525
+        },
+        "bz2": {
+          "actual_ratio": 0.6016042780748663,
+          "baseline_mean": 0.14043001010412284,
+          "excess_ratio": 0.46117426797074346
+        },
+        "lzma": {
+          "actual_ratio": 0.6831683168316832,
+          "baseline_mean": 0.19237845919134,
+          "excess_ratio": 0.4907898576403432
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.38195077484047407,
+      "excess_ratio": 0.2284157226488339,
+      "baseline_mean": 0.15353505219164018,
+      "baseline_n_valid": 5,
+      "output_chars": 908,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.303951367781155,
+          "baseline_mean": 0.12313103250668289,
+          "excess_ratio": 0.1808203352744721
+        },
+        "bz2": {
+          "actual_ratio": 0.3973684210526316,
+          "baseline_mean": 0.14043001010412284,
+          "excess_ratio": 0.2569384109485088
+        },
+        "lzma": {
+          "actual_ratio": 0.4329896907216495,
+          "baseline_mean": 0.19237845919134,
+          "excess_ratio": 0.2406112315303095
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.4170370370370371,
+      "excess_ratio": 0.2635019848453969,
+      "baseline_mean": 0.15353505219164018,
+      "baseline_n_valid": 5,
+      "output_chars": 989,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.375609756097561,
+          "baseline_mean": 0.12313103250668289,
+          "excess_ratio": 0.2524787235908781
+        },
+        "bz2": {
+          "actual_ratio": 0.4004424778761062,
+          "baseline_mean": 0.14043001010412284,
+          "excess_ratio": 0.2600124677719834
+        },
+        "lzma": {
+          "actual_ratio": 0.4672131147540984,
+          "baseline_mean": 0.19237845919134,
+          "excess_ratio": 0.2748346555627584
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.15155398910605572,
+      "excess_ratio": -0.0019810630855844613,
+      "baseline_mean": 0.15353505219164018,
+      "baseline_n_valid": 5,
+      "output_chars": 2504,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.10667996011964108,
+          "baseline_mean": 0.12313103250668289,
+          "excess_ratio": -0.016451072387041812
+        },
+        "bz2": {
+          "actual_ratio": 0.17348927875243664,
+          "baseline_mean": 0.14043001010412284,
+          "excess_ratio": 0.033059268648313794
+        },
+        "lzma": {
+          "actual_ratio": 0.17216117216117216,
+          "baseline_mean": 0.19237845919134,
+          "excess_ratio": -0.02021728703016784
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.07449392712550612,
+      "excess_ratio": -0.07904112506613406,
+      "baseline_mean": 0.15353505219164018,
+      "baseline_n_valid": 5,
+      "output_chars": 609,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.040214477211796246,
+          "baseline_mean": 0.12313103250668289,
+          "excess_ratio": -0.08291655529488665
+        },
+        "bz2": {
+          "actual_ratio": 0.07073170731707316,
+          "baseline_mean": 0.14043001010412284,
+          "excess_ratio": -0.06969830278704968
+        },
+        "lzma": {
+          "actual_ratio": 0.10619469026548672,
+          "baseline_mean": 0.19237845919134,
+          "excess_ratio": -0.08618376892585328
+        }
+      }
+    }
+  },
+  "api_provenance": {
+    "config": {
+      "gpt_gateway": 2,
+      "max_output_tokens": 4096,
+      "require_status": "completed"
+    },
+    "main_calls": {
+      "L1_polish": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0104c5343deccf9c006a8919435ee4819487cd1b035daabb4a",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 229,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 263,
+          "output_tokens_details": {
+            "reasoning_tokens": 56
+          },
+          "total_tokens": 492
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:36:40.614238+00:00"
+      },
+      "L2_rewrite": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_072fb717dc1924d3006a89194ae78c819689839555c7fe78ca",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 232,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 213,
+          "output_tokens_details": {
+            "reasoning_tokens": 35
+          },
+          "total_tokens": 445
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:36:47.532360+00:00"
+      },
+      "L3_bullets": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0d026798e94ce9e7006a8919526b3c8195bff3b3bbb6b07ee7",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 242,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 120,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 362
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:36:52.298737+00:00"
+      },
+      "L3_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_06b8ab364086468c006a89195693ec8190b0181e997d4257c6",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 137,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 210,
+          "output_tokens_details": {
+            "reasoning_tokens": 36
+          },
+          "total_tokens": 347
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:36:58.273334+00:00"
+      },
+      "L4_2sent": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_085a630e934b593c006a89195cb57c8194b1dc25e379ae1c8f",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 254,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 143,
+          "output_tokens_details": {
+            "reasoning_tokens": 63
+          },
+          "total_tokens": 397
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:37:04.913658+00:00"
+      },
+      "L4_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_03e2323bea706b9e006a891963346081978a37de056faa6466",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 93,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 468,
+          "output_tokens_details": {
+            "reasoning_tokens": 39
+          },
+          "total_tokens": 561
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:37:15.349804+00:00"
+      },
+      "L5_keywords": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0c21da6f027bfc2e006a89196dda7481908996e1fa42fe74c0",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 18,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 180,
+          "output_tokens_details": {
+            "reasoning_tokens": 50
+          },
+          "total_tokens": 198
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:37:21.672514+00:00"
+      }
+    },
+    "counterfactuals": {
+      "reconstruct": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_01feeb959ef3468d006a891973fb9481948749841192f27ddb",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 305,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 178,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 483
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T03:37:29.809400+00:00"
+      },
+      "outputs": [
+        {
+          "label": "cf_1",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_05ff701af204e44f006a89197c2f188195a2b7e424e9ce13fa",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 39,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 216,
+                "output_tokens_details": {
+                  "reasoning_tokens": 42
+                },
+                "total_tokens": 255
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T03:37:36.943798+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_2",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_013644b0f6480778006a89198338788193887d1801f4e3bd5d",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 40,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 321,
+                "output_tokens_details": {
+                  "reasoning_tokens": 84
+                },
+                "total_tokens": 361
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T03:37:44.630846+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_3",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0f028303a9fcf5ee006a89198aea1881938e141b2386c67cc1",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 38,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 167,
+                "output_tokens_details": {
+                  "reasoning_tokens": 54
+                },
+                "total_tokens": 205
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T03:37:50.565767+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_4",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0dca07d4ee3f2541006a891990d4748195970ec6fd7429d5d6",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 37,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 757,
+                "output_tokens_details": {
+                  "reasoning_tokens": 45
+                },
+                "total_tokens": 794
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T03:38:03.677280+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_5",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0826e3228458101c006a89199df32481909b7e7331bd7ca8a1",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 40,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 1249,
+                "output_tokens_details": {
+                  "reasoning_tokens": 36
+                },
+                "total_tokens": 1289
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T03:38:19.418517+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

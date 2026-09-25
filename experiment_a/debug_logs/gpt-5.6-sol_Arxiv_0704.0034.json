@@ -1,0 +1,175 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0034",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThis is a supplement to the paper arXiv:q-bio/0701050, containing the text of correspondence sent to Nature in 1990.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThis is a supplement to the paper arXiv:q-bio/0701050, containing the text of correspondence sent to Nature in 1990.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The document is a supplement to the paper arXiv:q-bio/0701050.\n- It contains the text of correspondence sent to Nature.\n- The correspondence dates from 1990.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis supplement to arXiv:q-bio/0701050 presents correspondence submitted to Nature in 1990. It preserves the original exchange as historical context for the paper’s subject and development.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: This, Nature"
+  },
+  "outputs": {
+    "L1": "This supplement to the paper arXiv:q-bio/0701050 contains the text of correspondence submitted to *Nature* in 1990.",
+    "L2": "This addendum to arXiv:q-bio/0701050 reproduces correspondence submitted to *Nature* in 1990.",
+    "L3": "This document serves as a supplement to the paper available on arXiv under the identifier q-bio/0701050. It reproduces the text of correspondence submitted to the journal *Nature* in 1990.",
+    "L4": "This document supplements arXiv:q-bio/0701050 by presenting correspondence submitted to *Nature* in 1990. The material is included to provide a historical record of the discussions surrounding the ideas examined in the paper and to clarify the context in which those ideas were originally developed and communicated. By preserving the exchange alongside the later work, this supplement allows readers to trace the subject’s intellectual development and to better understand the background, motivations, and circumstances that informed the paper. The correspondence is therefore offered primarily as historical documentation rather than as a revision or extension of the paper’s scientific conclusions.",
+    "L5": "**This Nature**\n\nThis is the quiet strength of nature: forests growing after storms, rivers shaping stone, and flowers turning toward the sun. Nature reminds us that change is constant, yet life continues with patience and resilience. When we pause to listen to birds, feel the wind, or watch clouds drift across the sky, we reconnect with something larger than ourselves. Protecting this natural world means preserving beauty, balance, and hope for future generations."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize what this document is in one sentence: “A supplement to arXiv:q-bio/0701050 reproducing correspondence sent to Nature in 1990.”",
+      "output": "A supplement to arXiv:q-bio/0701050 that reproduces correspondence submitted to *Nature* in 1990.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a brief description for a supplementary file associated with the paper arXiv:q-bio/0701050 that contains correspondence submitted to Nature in 1990.",
+      "output": "Historical correspondence submitted to *Nature* in 1990, provided as supplementary background to arXiv:q-bio/0701050.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "What is the purpose and content of this supplement to arXiv:q-bio/0701050?",
+      "output": "I can summarize it, but I don’t have access to the supplement itself from the arXiv identifier alone in this chat. Please upload the supplement or provide its title/link; then I can explain its purpose, contents, and how it relates to arXiv:q-bio/0701050.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate a concise archival note explaining that the document supplements arXiv:q-bio/0701050 and includes the text of 1990 correspondence sent to Nature.",
+      "output": "Archival note: This document supplements arXiv:q-bio/0701050 and reproduces the text of correspondence submitted to *Nature* in 1990.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a one-sentence abstract for a document containing 1990 Nature correspondence related to the paper arXiv:q-bio/0701050.",
+      "output": "This document compiles 1990 correspondence published in *Nature* that discusses and debates the findings, interpretation, and broader implications of the research later archived as arXiv:q-bio/0701050.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7479224376731303,
+      "excess_ratio": 0.22674500556495436,
+      "baseline_mean": 0.5211774321081759,
+      "baseline_n_valid": 5,
+      "output_chars": 115,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.75,
+          "baseline_mean": 0.4822892673548963,
+          "excess_ratio": 0.2677107326451037
+        },
+        "bz2": {
+          "actual_ratio": 0.6528925619834711,
+          "baseline_mean": 0.45588605260748194,
+          "excess_ratio": 0.19700650937598918
+        },
+        "lzma": {
+          "actual_ratio": 0.8285714285714286,
+          "baseline_mean": 0.6075452171114017,
+          "excess_ratio": 0.22102621146002688
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.6153846153846154,
+      "excess_ratio": 0.09420718327643951,
+      "baseline_mean": 0.5211774321081759,
+      "baseline_n_valid": 5,
+      "output_chars": 93,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5952380952380952,
+          "baseline_mean": 0.4822892673548963,
+          "excess_ratio": 0.11294882788319893
+        },
+        "bz2": {
+          "actual_ratio": 0.5370370370370371,
+          "baseline_mean": 0.45588605260748194,
+          "excess_ratio": 0.08115098442955515
+        },
+        "lzma": {
+          "actual_ratio": 0.7,
+          "baseline_mean": 0.6075452171114017,
+          "excess_ratio": 0.09245478288859821
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.534412955465587,
+      "excess_ratio": 0.013235523357411072,
+      "baseline_mean": 0.5211774321081759,
+      "baseline_n_valid": 5,
+      "output_chars": 188,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5035460992907801,
+          "baseline_mean": 0.4822892673548963,
+          "excess_ratio": 0.02125683193588379
+        },
+        "bz2": {
+          "actual_ratio": 0.4909090909090909,
+          "baseline_mean": 0.45588605260748194,
+          "excess_ratio": 0.035023038301608966
+        },
+        "lzma": {
+          "actual_ratio": 0.5957446808510638,
+          "baseline_mean": 0.6075452171114017,
+          "excess_ratio": -0.011800536260337946
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.3012869038607115,
+      "excess_ratio": -0.2198905282474644,
+      "baseline_mean": 0.5211774321081759,
+      "baseline_n_valid": 5,
+      "output_chars": 701,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.26865671641791045,
+          "baseline_mean": 0.4822892673548963,
+          "excess_ratio": -0.21363255093698585
+        },
+        "bz2": {
+          "actual_ratio": 0.29345372460496616,
+          "baseline_mean": 0.45588605260748194,
+          "excess_ratio": -0.16243232800251578
+        },
+        "lzma": {
+          "actual_ratio": 0.33613445378151263,
+          "baseline_mean": 0.6075452171114017,
+          "excess_ratio": -0.2714107633298891
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.13389121338912138,
+      "excess_ratio": -0.38728621871905455,
+      "baseline_mean": 0.5211774321081759,
+      "baseline_n_valid": 5,
+      "output_chars": 469,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.06666666666666667,
+          "baseline_mean": 0.4822892673548963,
+          "excess_ratio": -0.41562260068822965
+        },
+        "bz2": {
+          "actual_ratio": 0.15755627009646303,
+          "baseline_mean": 0.45588605260748194,
+          "excess_ratio": -0.29832978251101894
+        },
+        "lzma": {
+          "actual_ratio": 0.16666666666666666,
+          "baseline_mean": 0.6075452171114017,
+          "excess_ratio": -0.4408785504447351
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T04:40:01.231373+00:00"
+    }
+  ]
+}

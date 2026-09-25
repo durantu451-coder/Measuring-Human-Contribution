@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15863100",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nSystems and methods for determining priority levels to process vulnerabilities associated with a networked computer system can include a data collection engine receiving a plurality of specification profiles, each defining one or more specification variables of the networked computer system or a respective asset. The data collection engine can receive, from a vulnerability scanner, vulnerability data indicative of a vulnerability associated with the networked computer system. A profiling engine can interrogate a computing device of the networked computer system, and receive one or more respective profiling parameters from that computing device. A ranking engine can compute a priority ranking value of the computing device based on the profile specification variables, the vulnerability data and the profiling parameters. The priority ranking value associated with the computing device can be indicative of a priority level, compared to other computing devices of the computer network, for patching a vulnerability affecting that computing device.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nSystems and methods for determining priority levels to process vulnerabilities associated with a networked computer system can include a data collection engine receiving a plurality of specification profiles, each defining one or more specification variables of the networked computer system or a respective asset. The data collection engine can receive, from a vulnerability scanner, vulnerability data indicative of a vulnerability associated with the networked computer system. A profiling engine can interrogate a computing device of the networked computer system, and receive one or more respective profiling parameters from that computing device. A ranking engine can compute a priority ranking value of the computing device based on the profile specification variables, the vulnerability data and the profiling parameters. The priority ranking value associated with the computing device can be indicative of a priority level, compared to other computing devices of the computer network, for patching a vulnerability affecting that computing device.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A data collection engine receives specification profiles that define variables for a networked computer system or its assets.\n- The data collection engine obtains vulnerability data from a vulnerability scanner about vulnerabilities in the networked system.\n- A profiling engine interrogates computing devices and collects profiling parameters from them.\n- A ranking engine computes a priority ranking value using specification variables, vulnerability data, and profiling parameters.\n- The priority ranking value indicates how urgently a device’s vulnerability should be patched compared with other devices on the network.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe text describes a vulnerability prioritization system that collects specification profiles, scanner vulnerability data, and device-specific profiling parameters to evaluate assets in a networked computer system. By computing a priority ranking value for each device, the system identifies which vulnerabilities should be patched first relative to other network assets, improving remediation efficiency and risk management.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Systems, The"
+  },
+  "outputs": {
+    "L1": "Systems and methods for determining priority levels for processing vulnerabilities associated with a networked computer system may include a data collection engine configured to receive a plurality of specification profiles, each defining one or more specification variables of the networked computer system or of a respective asset. The data collection engine may further receive, from a vulnerability scanner, vulnerability data indicative of a vulnerability associated with the networked computer system. A profiling engine may interrogate a computing device of the networked computer system and receive one or more respective profiling parameters from that computing device. A ranking engine may compute a priority ranking value for the computing device based on the profile specification variables, the vulnerability data, and the profiling parameters. The priority ranking value associated with the computing device may indicate a priority level, relative to other computing devices of the computer network, for patching a vulnerability affecting that computing device.",
+    "L2": "Techniques and systems for assigning priority levels when addressing vulnerabilities in a networked computing environment may involve a data collection component obtaining multiple specification profiles. Each profile may identify one or more specification variables relating to the networked computer system or to a particular asset within that system. The data collection component may also obtain vulnerability information from a vulnerability scanner, where the information identifies a vulnerability connected to the networked computer system.\n\nA profiling component may query a computing device within the networked system and collect one or more profiling parameters from that device. Using the specification variables from the profiles, the vulnerability information, and the collected profiling parameters, a ranking component may calculate a priority ranking score for the computing device. This score may represent the relative urgency, compared with other devices in the computer network, for applying a patch to remediate a vulnerability impacting that device.",
+    "L3": "A data collection engine receives specification profiles that define variables associated with a networked computer system and its assets. These specification profiles may describe characteristics, requirements, or attributes of devices, applications, services, or other resources operating within the networked environment.\n\nThe data collection engine also obtains vulnerability data from a vulnerability scanner. The vulnerability data identifies vulnerabilities detected within the networked computer system, including vulnerabilities associated with particular devices or assets on the network.\n\nA profiling engine interrogates the computing devices in the networked system and collects profiling parameters from those devices. These profiling parameters may include information about device configuration, operational status, network role, installed software, exposure level, usage, or other attributes relevant to assessing the importance or risk of a device.\n\nA ranking engine then processes the specification variables, the vulnerability data, and the profiling parameters to compute a priority ranking value for a vulnerability associated with a device. The ranking engine may weigh these inputs to determine the relative significance of the vulnerability in the context of the device and the broader network environment.\n\nThe resulting priority ranking value indicates the urgency with which the vulnerability on the device should be patched. In particular, the priority ranking value allows the system to compare that device’s vulnerability against vulnerabilities on other devices in the network, thereby helping determine which vulnerabilities should be remediated first.",
+    "L4": "A vulnerability prioritization system is provided for evaluating and ranking security risks associated with assets in a networked computer system. The system receives and processes multiple categories of information, including specification profiles, vulnerability data produced by one or more scanners, and device-specific profiling parameters associated with individual assets. The assets may include servers, workstations, virtual machines, network devices, industrial control devices, cloud resources, applications, databases, or any other computing or communication components connected to or accessible within an enterprise environment.\n\nThe specification profiles may define characteristics, requirements, or classifications relevant to particular devices, software components, operating environments, or business functions. For example, a specification profile may identify the type of asset, installed software, operating system version, hardware configuration, exposed services, network location, compliance requirements, or criticality of the asset to business operations. These profiles provide contextual information that allows the system to interpret vulnerability data in relation to the actual role and importance of each device.\n\nThe vulnerability data may be obtained from one or more vulnerability scanners, endpoint security tools, configuration management systems, threat intelligence feeds, or other security monitoring platforms. Such data may include detected vulnerabilities, severity scores, exploitability information, patch availability, known attack vectors, malware associations, public exploit references, and historical remediation status. Rather than relying only on a generic severity rating, the system correlates this scanner data with the relevant specification profile and the device-specific parameters for each asset.\n\nThe device-specific profiling parameters may include factors such as network exposure, user access level, asset owner, business criticality, data sensitivity, patching constraints, operational dependencies, communication paths, authentication requirements, and whether the device is internet-facing or isolated within a protected network segment. These parameters enable the system to determine how serious a particular vulnerability is in the context of the specific device on which it appears. For instance, a vulnerability on a public-facing authentication server may be assigned a higher priority than the same vulnerability on a non-critical internal test machine.\n\nUsing the collected information, the system computes a priority ranking value for each device, vulnerability, or device-vulnerability combination. The priority ranking value may be based on a weighted scoring model, rules engine, machine learning model, risk formula, or other analytical process. The calculation may consider severity, exploitability, asset importance, likelihood of attack, exposure level, compensating controls, availability of patches, and potential impact if the vulnerability were exploited. The resulting value represents the relative urgency with which the vulnerability should be addressed compared with vulnerabilities affecting other assets in the network.\n\nAfter calculating the priority ranking values, the system generates a prioritized remediation list or ranking. This list identifies which vulnerabilities should be patched, mitigated, or otherwise remediated first. The ranking may be presented through a dashboard, report, ticketing system, security orchestration platform, or patch management workflow. Security teams can use the ranking to allocate resources more effectively, focusing first on vulnerabilities that pose the greatest risk to the organization rather than simply addressing vulnerabilities in the order they are discovered or according to scanner severity alone.\n\nThe system may also update the priority ranking values over time as new scanner results, threat intelligence, asset changes, or remediation actions are received. For example, if an exploit becomes publicly available for a previously low-priority vulnerability, the system may increase the priority ranking value for affected devices. Similarly, if an asset is decommissioned, isolated, patched, or protected by a compensating control, the system may reduce or remove the associated risk priority. This dynamic updating allows the prioritization process to reflect the current state of the network and the evolving threat landscape.\n\nBy combining vulnerability information with asset context and device-specific profiling parameters, the system improves the accuracy and usefulness of remediation prioritization. It helps organizations identify the vulnerabilities that present the highest relative risk, reduce unnecessary remediation effort, and improve overall risk management. The system therefore enables more efficient patching decisions, better use of limited security resources, and a more effective reduction of exposure across the networked computer system.",
+    "L5": "**Systems: The Invisible Structures That Shape Our World**\n\nSystems are all around us, even when we do not notice them. A system is a group of connected parts that work together to create a result. The human body is a system, with organs, muscles, nerves, and cells cooperating to keep us alive. A city is also a system, made up of roads, transportation, businesses, schools, homes, and people. Even nature depends on systems, such as ecosystems, where plants, animals, water, soil, and climate interact in delicate balance.\n\nThe importance of systems lies in their ability to organize complexity. Instead of looking at isolated pieces, systems thinking helps us understand how those pieces influence one another. For example, in a business, sales, marketing, production, customer service, and finance are not separate forces. They are connected. A decision in one area can affect the performance of the entire organization.\n\nThe strength of a system depends on how well its parts communicate and adapt. A strong system can handle change, solve problems, and improve over time. A weak system may break down when one part fails or when conditions shift too quickly. This is why designing effective systems is essential in technology, education, healthcare, government, and the environment.\n\nIn modern life, systems are becoming more complex. Digital networks, artificial intelligence, global supply chains, and social platforms connect people and information across the world. These systems offer great opportunities, but they also create new risks. Understanding how systems work allows us to make better decisions, prevent failures, and build solutions that are sustainable.\n\nThe study of systems teaches us that nothing exists completely alone. Every action can create a reaction somewhere else. By seeing the connections between parts, we can better understand the whole. In this way, systems are not just structures; they are the foundation of how the world operates."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a patent-style abstract for an invention that prioritizes vulnerability patching in a networked computer system using asset profiles, scanner data, profiling parameters, and a ranking engine.",
+      "output": "A computer-implemented method and system prioritize vulnerability patching in a networked computer environment. Asset profiles associated with network assets are generated or maintained, each asset profile including asset attributes such as asset type, ownership, business function, location, criticality, configuration, exposure, and dependency information. Vulnerability scanner data identifying vulnerabilities detected on the assets is received from one or more scanning tools. Profiling parameters are applied to the asset profiles and scanner data to determine contextual risk factors for the detected vulnerabilities. A ranking engine processes the contextual risk factors, vulnerability characteristics, and asset profile information to generate prioritized patching rankings for the vulnerabilities and corresponding assets. The rankings may indicate patch urgency, remediation order, risk score, or recommended patching action. The system outputs the prioritized rankings to a remediation workflow, ticketing system, dashboard, or patch management platform, thereby enabling patching resources to be directed first to vulnerabilities presenting higher contextual risk to the networked computer system.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Draft a concise technical summary describing systems and methods for ranking computing devices by vulnerability remediation priority based on specification profiles and vulnerability scanner input.",
+      "output": "Systems and methods are provided for ranking computing devices by vulnerability remediation priority using device specification profiles and vulnerability scanner input. A vulnerability management system receives scanner data identifying vulnerabilities detected on endpoint devices, servers, virtual machines, containers, network appliances, or other computing assets. The scanner data may include vulnerability identifiers, severity scores, exploitability indicators, affected software versions, configuration findings, scan timestamps, and remediation guidance.\n\nFor each computing device, the system obtains or generates a specification profile describing attributes of the device, such as hardware configuration, operating system, installed applications, exposed services, network location, asset role, business criticality, data sensitivity, ownership, patching constraints, and dependency relationships. The system correlates the vulnerability scanner input with the specification profile to determine contextual risk for each device rather than relying solely on raw vulnerability severity.\n\nA prioritization engine computes a remediation priority score for each device based on weighted factors including vulnerability severity, exploit availability, exposure to untrusted networks, privilege level required for exploitation, device criticality, presence of compensating controls, number and age of vulnerabilities, compliance requirements, and operational impact of remediation. The system may normalize scores across heterogeneous device types and group similar devices by profile to support batch remediation planning.\n\nDevices are ranked according to the computed remediation priority scores, and the ranked output may identify the highest-priority devices, associated vulnerabilities, recommended remediation actions, deadlines, and responsible owners. The ranking may be updated dynamically as new scan results, asset profile changes, threat intelligence, or remediation status information are received. In some implementations, the system generates tickets, dashboards, alerts, or automated remediation workflows based on the ranking.\n\nBy combining vulnerability scanner findings with specification profiles, the disclosed approach enables context-aware prioritization of remediation activities, reducing risk more effectively than prioritization based only on vulnerability severity.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate an invention disclosure abstract for a cybersecurity platform that collects asset specification variables, interrogates network devices, and computes priority values for patching vulnerabilities.",
+      "output": "A cybersecurity platform is disclosed for prioritizing vulnerability remediation across enterprise assets. The platform collects asset specification variables associated with computing resources, including device type, operating system, software inventory, configuration state, ownership, business criticality, network location, exposure level, and dependency information. The platform further interrogates network devices and connected endpoints using active scanning, passive monitoring, authenticated queries, configuration retrieval, and telemetry ingestion to identify deployed assets, open services, installed applications, firmware versions, known vulnerabilities, and security control status.\n\nThe platform correlates the collected asset specification variables with vulnerability intelligence, exploit availability, threat activity, asset criticality, network reachability, compensating controls, and operational constraints. Based on the correlation, the platform computes one or more priority values for patching or otherwise remediating identified vulnerabilities. The priority values may be generated using a rules engine, statistical model, machine-learning model, weighted scoring algorithm, or a combination thereof. The computed priority values are used to rank remediation tasks, generate patching schedules, notify responsible teams, and track remediation progress.\n\nIn some embodiments, the platform dynamically updates priority values as asset characteristics, vulnerability severity, exploit activity, or network conditions change. The platform may also simulate remediation impact, group vulnerabilities by patch package or affected asset class, and adjust prioritization based on service-level objectives, maintenance windows, or business risk tolerance. By combining asset-specific context with real-time interrogation of network devices and external threat intelligence, the disclosed platform improves the accuracy and timeliness of vulnerability patch prioritization while reducing operational burden and exposure to cyber risk.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "In formal patent language, describe a method for determining priority levels to process vulnerabilities across devices in a computer network using a data collection engine, profiling engine, and ranking engine.",
+      "output": "A computer-implemented method for determining priority levels for processing vulnerabilities across a plurality of devices in a computer network, the method comprising:\n\ncollecting, by a data collection engine executing on one or more processors, device data associated with the plurality of devices, the device data including at least one of device identifiers, network addresses, operating system information, installed software information, configuration information, communication activity, user association information, asset ownership information, location information, and vulnerability detection data;\n\ncollecting, by the data collection engine, vulnerability data corresponding to one or more vulnerabilities identified on respective devices of the plurality of devices, the vulnerability data including at least one of a vulnerability identifier, severity score, exploitability indicator, patch availability indicator, vulnerability age, affected software component, remediation status, or threat intelligence indicator;\n\ngenerating, by a profiling engine executing on the one or more processors, a device profile for each of at least a subset of the plurality of devices based at least in part on the collected device data, wherein each device profile characterizes a respective device according to one or more device attributes including device criticality, exposure level, business function, data sensitivity, network accessibility, operational role, user privilege level, and historical security posture;\n\ngenerating, by the profiling engine, a vulnerability profile for each of at least a subset of the one or more vulnerabilities based at least in part on the vulnerability data, wherein each vulnerability profile characterizes a respective vulnerability according to one or more vulnerability attributes including severity, exploitability, likelihood of exploitation, availability of remediation, known active exploitation, and potential impact;\n\ncorrelating, by the profiling engine, each vulnerability profile with a corresponding device profile for a device on which the respective vulnerability is detected, thereby producing a plurality of device-vulnerability records;\n\ndetermining, by a ranking engine executing on the one or more processors, a priority score for each device-vulnerability record by applying a ranking model to the corresponding device profile and vulnerability profile, wherein the ranking model weights at least a portion of the device attributes and vulnerability attributes to determine a relative urgency for processing the respective vulnerability on the respective device;\n\nassigning, by the ranking engine, a priority level to each device-vulnerability record based on the priority score, the priority level being selected from a plurality of predefined priority levels;\n\ngenerating, by the ranking engine, an ordered set of vulnerabilities to be processed across the plurality of devices according to the assigned priority levels; and\n\ncausing one or more remediation operations, notification operations, ticketing operations, reporting operations, or workflow operations to be initiated based at least in part on the ordered set of vulnerabilities.\n\nIn some embodiments, the ranking model further adjusts the priority score based on contextual network information, including whether the respective device is externally accessible, whether the respective device communicates with a high-value asset, whether the respective vulnerability is present on a plurality of related devices, or whether exploitation of the respective vulnerability would enable lateral movement within the computer network.\n\nIn some embodiments, the profiling engine normalizes device data received from heterogeneous data sources prior to generating the device profile, the heterogeneous data sources including one or more of vulnerability scanners, endpoint agents, configuration management databases, identity management systems, network monitoring systems, patch management systems, cloud management platforms, and security information and event management systems.\n\nIn some embodiments, the ranking engine dynamically updates the assigned priority level in response to detecting a change in at least one of the device profile, the vulnerability profile, threat intelligence data, network topology, exploit availability, or remediation status.\n\nIn some embodiments, the priority level comprises at least one of a critical priority level, high priority level, medium priority level, low priority level, or informational priority level, and wherein the ordered set of vulnerabilities is generated such that vulnerabilities having higher priority levels are scheduled for processing before vulnerabilities having lower priority levels.\n\nIn some embodiments, the processing of vulnerabilities includes at least one of applying a software patch, changing a device configuration, isolating a device from the network, disabling a vulnerable service, updating a software component, generating an exception request, assigning a remediation task to an owner, or verifying completion of a remediation action.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Create a patent application abstract about vulnerability management in which device profiling data and vulnerability data are used to calculate patching priority rankings for network assets.",
+      "output": "A system and method for vulnerability management are disclosed. The system receives device profiling data associated with network assets, the device profiling data including one or more of asset type, operating system, installed software, network location, communication behavior, criticality, ownership, exposure level, or observed services. The system further receives vulnerability data associated with vulnerabilities detected or applicable to the network assets, the vulnerability data including one or more of severity scores, exploit availability, exploit activity, affected products, remediation information, or threat intelligence. For each network asset, the system correlates the device profiling data with the vulnerability data to determine a contextual risk score for one or more vulnerabilities. The contextual risk score is used to generate a patching priority ranking for the network assets or for asset-vulnerability pairs. The ranking may account for asset importance, likelihood of exploitation, business impact, compensating controls, network accessibility, and patch availability. The system outputs the patching priority ranking to a remediation workflow, dashboard, ticketing system, or automated patch deployment system, thereby enabling prioritized remediation of vulnerabilities based on both asset context and vulnerability risk.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7609034267912773,
+      "excess_ratio": 0.627990367992664,
+      "baseline_mean": 0.13291305879861343,
+      "baseline_n_valid": 5,
+      "output_chars": 1075,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7871794871794872,
+          "baseline_mean": 0.10256408822352454,
+          "excess_ratio": 0.6846153989559626
+        },
+        "bz2": {
+          "actual_ratio": 0.6492890995260664,
+          "baseline_mean": 0.12997376233442184,
+          "excess_ratio": 0.5193153371916446
+        },
+        "lzma": {
+          "actual_ratio": 0.8389830508474576,
+          "baseline_mean": 0.16249296858375578,
+          "excess_ratio": 0.6764900822637019
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3809187279151944,
+      "excess_ratio": 0.24800566911658095,
+      "baseline_mean": 0.13291305879861343,
+      "baseline_n_valid": 5,
+      "output_chars": 1073,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3218390804597701,
+          "baseline_mean": 0.10256408822352454,
+          "excess_ratio": 0.21927499223624558
+        },
+        "bz2": {
+          "actual_ratio": 0.38247863247863245,
+          "baseline_mean": 0.12997376233442184,
+          "excess_ratio": 0.25250487014421064
+        },
+        "lzma": {
+          "actual_ratio": 0.4296875,
+          "baseline_mean": 0.16249296858375578,
+          "excess_ratio": 0.2671945314162442
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3166904422253923,
+      "excess_ratio": 0.18377738342677885,
+      "baseline_mean": 0.13291305879861343,
+      "baseline_n_valid": 5,
+      "output_chars": 1684,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2678843226788432,
+          "baseline_mean": 0.10256408822352454,
+          "excess_ratio": 0.16532023445531868
+        },
+        "bz2": {
+          "actual_ratio": 0.3237822349570201,
+          "baseline_mean": 0.12997376233442184,
+          "excess_ratio": 0.19380847262259823
+        },
+        "lzma": {
+          "actual_ratio": 0.35294117647058826,
+          "baseline_mean": 0.16249296858375578,
+          "excess_ratio": 0.19044820788683248
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.09776536312849154,
+      "excess_ratio": -0.03514769567012188,
+      "baseline_mean": 0.13291305879861343,
+      "baseline_n_valid": 5,
+      "output_chars": 5013,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.07600208224882873,
+          "baseline_mean": 0.10256408822352454,
+          "excess_ratio": -0.02656200597469581
+        },
+        "bz2": {
+          "actual_ratio": 0.10180623973727422,
+          "baseline_mean": 0.12997376233442184,
+          "excess_ratio": -0.028167522597147623
+        },
+        "lzma": {
+          "actual_ratio": 0.11515151515151516,
+          "baseline_mean": 0.16249296858375578,
+          "excess_ratio": -0.047341453432240624
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.038224813735017855,
+      "excess_ratio": -0.09468824506359558,
+      "baseline_mean": 0.13291305879861343,
+      "baseline_n_valid": 5,
+      "output_chars": 1971,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.02002002002002002,
+          "baseline_mean": 0.10256408822352454,
+          "excess_ratio": -0.08254406820350452
+        },
+        "bz2": {
+          "actual_ratio": 0.03441295546558704,
+          "baseline_mean": 0.12997376233442184,
+          "excess_ratio": -0.09556080686883481
+        },
+        "lzma": {
+          "actual_ratio": 0.05818181818181818,
+          "baseline_mean": 0.16249296858375578,
+          "excess_ratio": -0.1043111504019376
+        }
+      }
+    }
+  }
+}

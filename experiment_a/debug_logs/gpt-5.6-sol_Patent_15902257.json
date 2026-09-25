@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15902257",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIn an inkjet printing apparatus, in response to reception of a copy instruction, a controller causes the scanner to read an image formed on an original, generates image data representing the image on the original, and determines a standby period corresponding to an operation mode. In response to elapse of the standby period since the copy instruction was received, the controller separates a cap and an inkjet head. After the cap and the inkjet head separated each other, the controller causes the inkjet head to eject ink droplets based on the image data. The controller determines the standby period such that the separation of the cap and the inkjet head executed in parallel with reading of the image on the original finishes at the same time or earlier than generation of image data necessary to start to print the read image printing process in reading the image on the original.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIn an inkjet printing apparatus, in response to reception of a copy instruction, a controller causes the scanner to read an image formed on an original, generates image data representing the image on the original, and determines a standby period corresponding to an operation mode. In response to elapse of the standby period since the copy instruction was received, the controller separates a cap and an inkjet head. After the cap and the inkjet head separated each other, the controller causes the inkjet head to eject ink droplets based on the image data. The controller determines the standby period such that the separation of the cap and the inkjet head executed in parallel with reading of the image on the original finishes at the same time or earlier than generation of image data necessary to start to print the read image printing process in reading the image on the original.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- Upon receiving a copy instruction, the controller scans the original and generates image data representing the scanned image.\n- The controller determines a standby period based on the selected operation mode.\n- After the standby period elapses, the controller separates the cap from the inkjet head while image reading continues in parallel.\n- The standby period is set so that cap separation finishes no later than the generation of sufficient image data to begin printing.\n- Once the cap and inkjet head are separated, the inkjet head ejects ink droplets according to the generated image data.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nAn inkjet printer controller coordinates scanning and print-head preparation by selecting an operation-mode-dependent standby period after a copy instruction, then separating the cap from the print head while the original is read. The timing ensures separation finishes no later than the generation of sufficient image data to begin printing, enabling prompt ink ejection and reducing copy-start delays.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: After, The"
+  },
+  "outputs": {
+    "L1": "In an inkjet printing apparatus, upon receiving a copy instruction, a controller causes a scanner to read an image formed on an original, generates image data representing the image, and determines a standby period corresponding to an operation mode. Upon expiration of the standby period following receipt of the copy instruction, the controller separates a cap from an inkjet head. After the cap and the inkjet head have been separated, the controller causes the inkjet head to eject ink droplets based on the image data. The controller determines the standby period such that the separation of the cap from the inkjet head, performed in parallel with the reading of the image on the original, is completed no later than the generation of the image data necessary to begin printing the read image.",
+    "L2": "Upon receiving a copy command, the controller of an inkjet printing device instructs the scanner to scan the image on a document, creates image data corresponding to the scanned image, and sets a waiting time based on the selected operating mode. Once that waiting time has passed from receipt of the copy command, the controller disengages the cap from the inkjet head. Following disengagement, the controller directs the inkjet head to discharge ink droplets in accordance with the generated image data. The waiting time is selected so that the cap-removal operation, performed concurrently with scanning the document, is completed no later than the point at which enough image data has been generated to begin printing the scanned image.",
+    "L3": "Upon receiving a copy instruction, the controller begins scanning the original document and generates image data corresponding to the scanned image. The controller also determines an appropriate standby period based on the selected operation mode.\n\nAfter the standby period has elapsed, the controller initiates separation of the cap from the inkjet head while image reading continues in parallel. The standby period is set so that the cap is fully separated from the inkjet head no later than the point at which sufficient image data has been generated to begin printing.\n\nOnce the cap has been separated, the inkjet head ejects ink droplets in accordance with the generated image data, thereby producing a printed copy of the original document.",
+    "L4": "An inkjet printer controller coordinates the reading of an original document with preparation of the print head so that copying can begin with minimal delay. When a copy instruction is received, the controller identifies the selected operating mode, such as a color, monochrome, high-quality, or other copy mode. Because the time required to generate printable image data can vary according to the selected mode, the controller determines a corresponding standby period before initiating preparation of the print head.\n\nAfter the selected standby period has elapsed, the controller begins separating a protective cap from the inkjet print head while the scanner continues reading the original. The cap normally seals the nozzle surface when the print head is not in use, helping to prevent ink from drying and protecting the nozzles. Removing the cap prepares the print head for ink ejection, but doing so too early may leave the nozzles exposed unnecessarily, while doing so too late can delay the start of printing.\n\nThe standby period is therefore set so that cap separation is completed no later than the point at which the scanner and image-processing system have generated enough image data to start printing. The controller may select different standby periods for different operating modes based on expected scanning speed, image-processing time, resolution, color processing, or other mode-dependent conditions.\n\nBy overlapping print-head preparation with the reading and processing of the original, the printer avoids performing these operations strictly in sequence. As soon as sufficient image data is available, the print head is already uncapped and ready to eject ink. This coordinated timing reduces the interval between receipt of the copy instruction and production of the first printed portion, while also limiting unnecessary exposure of the print-head nozzles.",
+    "L5": "**After the End**\n\nAfter the storm, the world seemed quieter. The streets glistened beneath the returning sun, and broken branches rested along the road like forgotten memories. People stepped outside cautiously, searching for signs that life could continue.\n\nThe old clock in the town square began to ring. Its sound traveled through the damp air, steady and familiar.\n\nAfter the fear came relief. After the silence came laughter. And after the darkness, the morning felt brighter than anyone remembered."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Describe the operation of an inkjet multifunction printer that scans an original while preparing the print head for copying.",
+      "output": "When a copy operation begins, the multifunction printer performs two tasks in parallel:\n\n1. **Scanning the original**\n   - The scanner illuminates the document and moves the scan unit—or feeds the document through an automatic document feeder.\n   - Reflected light is converted into digital image data.\n   - The data is corrected, processed, and temporarily stored in memory.\n\n2. **Preparing the inkjet print head**\n   - At the same time, the print-head carriage moves to its maintenance station.\n   - The printer uncaps the nozzles and may perform purging, suction, preliminary ink ejection, and nozzle wiping to remove dried ink or air.\n   - The carriage then moves to the printing start position, while a sheet of paper is picked up and aligned.\n\nOnce enough image data has been scanned and the print head is ready, printing can start, potentially while the remainder of the original is still being scanned. Performing scan and print-head preparation concurrently reduces the delay before the first copied page is produced.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Draft a patent-style abstract for an inkjet printing apparatus that controls the timing of cap separation based on a selected operation mode and scanner progress.",
+      "output": "An inkjet printing apparatus includes a printhead configured to eject ink, a cap movable between a capping position in contact with or adjacent to an ejection surface of the printhead and a separated position, a scanner configured to scan an original, and a controller. The controller selects an operation mode from among a plurality of modes including at least a mode involving scanning of the original, obtains information indicating progress of a scanning operation, and determines a timing at which the cap is separated from the printhead based on the selected operation mode and the scanning progress. In the mode involving scanning, the controller may initiate cap separation before completion of the scanning operation when the scanning progress satisfies a predetermined condition, thereby preparing the printhead for printing while limiting interference with scanning. In another operation mode, the controller may separate the cap at a different timing. Accordingly, print start latency can be reduced while maintaining scanning quality and printhead protection.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Explain how a controller can reduce copy startup time by performing inkjet head uncapping in parallel with reading an original image.",
+      "output": "A controller can shorten the time from pressing **Copy** to starting printing by overlapping two independent startup operations:\n\n1. **Begin reading the original**\n   - Start the scanner motor and illumination system.\n   - Feed or scan the document.\n   - Convert the scanned data into image data and buffer it in memory.\n\n2. **Uncap and prepare the inkjet head simultaneously**\n   - Move the maintenance mechanism away from the printhead.\n   - Perform any required wiping, pressure equalization, or preliminary ink ejection.\n   - Move the carriage to its printing position.\n\nThe controller manages these as parallel state machines rather than waiting for scanning to finish before uncapping. It monitors completion sensors, motor status, and error conditions for both processes.\n\nPrinting begins when all required conditions are satisfied:\n\n- enough image data has been buffered,\n- the printhead is fully uncapped and ready,\n- paper transport is ready, and\n- no maintenance or scanner error is present.\n\nThus, the uncapping time is hidden within the original-reading time. Instead of total startup time being approximately:\n\n\\[\nT_{\\text{scan}} + T_{\\text{uncap}}\n\\]\n\nit becomes closer to:\n\n\\[\n\\max(T_{\\text{scan}}, T_{\\text{uncap}})\n\\]\n\nplus any final synchronization time. Safety interlocks should prevent carriage movement or ink firing until the controller confirms that uncapping is complete.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Write a technical summary of a copier control method in which a standby period is chosen so that print-head preparation finishes before enough scanned image data is available to begin printing.",
+      "output": "A copier controller coordinates image scanning, data buffering, and print-head preparation by delaying initiation of the preparation sequence for a calculated standby period. After scanning begins, image data accumulates in a memory buffer until a minimum quantity required for continuous printing is available. The controller estimates the time needed to reach that threshold from parameters such as scan speed, image size, resolution, data-processing rate, and buffer requirements.\n\nThe standby period is selected according to:\n\n\\[\nT_{\\text{standby}} + T_{\\text{prep}} \\leq T_{\\text{data-ready}}\n\\]\n\nwhere \\(T_{\\text{prep}}\\) is the print-head preparation time and \\(T_{\\text{data-ready}}\\) is the estimated time at which sufficient image data will be buffered. Preferably, preparation ends shortly before the data-ready point. Preparation may include uncapping, nozzle cleaning, preliminary ejection, heating, positioning, or other operations required to make the print head ready.\n\nOnce the standby period expires, the controller starts head preparation while scanning continues. Printing begins when both conditions are satisfied: head preparation is complete and the required amount of image data is available. This timing reduces unnecessary idle exposure or energy consumption after preparation, while preventing preparation from delaying the start of printing and helping maintain uninterrupted output.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate a patent claim-style paragraph describing an inkjet apparatus with a scanner, a capped inkjet head, and a controller that coordinates scanning, uncapping, and ink ejection after receiving a copy instruction.",
+      "output": "1. An inkjet apparatus comprising: a scanner configured to scan an original document and generate image data; an inkjet head configured to eject ink onto a recording medium; a cap movable between a capping position covering an ink-ejection surface of the inkjet head and an uncapping position exposing the ink-ejection surface; and a controller configured, in response to receiving a copy instruction while the inkjet head is capped, to cause the scanner to scan the original document, cause the cap to move from the capping position to the uncapping position, and cause the inkjet head, after uncapping, to eject ink onto the recording medium based on the generated image data.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6625441696113075,
+      "excess_ratio": 0.5048902396409229,
+      "baseline_mean": 0.1576539299703845,
+      "baseline_n_valid": 5,
+      "output_chars": 799,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6715116279069767,
+          "baseline_mean": 0.11778189637684817,
+          "excess_ratio": 0.5537297315301285
+        },
+        "bz2": {
+          "actual_ratio": 0.5625,
+          "baseline_mean": 0.15031767960804152,
+          "excess_ratio": 0.41218232039195846
+        },
+        "lzma": {
+          "actual_ratio": 0.7428571428571429,
+          "baseline_mean": 0.19810485506504044,
+          "excess_ratio": 0.5447522877921025
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3601398601398601,
+      "excess_ratio": 0.2024859301694756,
+      "baseline_mean": 0.1576539299703845,
+      "baseline_n_valid": 5,
+      "output_chars": 740,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2988505747126437,
+          "baseline_mean": 0.11778189637684817,
+          "excess_ratio": 0.18106867833579554
+        },
+        "bz2": {
+          "actual_ratio": 0.35106382978723405,
+          "baseline_mean": 0.15031767960804152,
+          "excess_ratio": 0.20074615017919253
+        },
+        "lzma": {
+          "actual_ratio": 0.41904761904761906,
+          "baseline_mean": 0.19810485506504044,
+          "excess_ratio": 0.22094276398257862
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.5833333333333334,
+      "excess_ratio": 0.42567940336294885,
+      "baseline_mean": 0.1576539299703845,
+      "baseline_n_valid": 5,
+      "output_chars": 746,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5606936416184971,
+          "baseline_mean": 0.11778189637684817,
+          "excess_ratio": 0.44291174524164895
+        },
+        "bz2": {
+          "actual_ratio": 0.5392670157068062,
+          "baseline_mean": 0.15031767960804152,
+          "excess_ratio": 0.3889493360987647
+        },
+        "lzma": {
+          "actual_ratio": 0.6415094339622641,
+          "baseline_mean": 0.19810485506504044,
+          "excess_ratio": 0.4434045788972237
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.20015637216575446,
+      "excess_ratio": 0.04250244219536997,
+      "baseline_mean": 0.1576539299703845,
+      "baseline_n_valid": 5,
+      "output_chars": 1881,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.16180048661800486,
+          "baseline_mean": 0.11778189637684817,
+          "excess_ratio": 0.04401859024115669
+        },
+        "bz2": {
+          "actual_ratio": 0.1948529411764706,
+          "baseline_mean": 0.15031767960804152,
+          "excess_ratio": 0.044535261568429074
+        },
+        "lzma": {
+          "actual_ratio": 0.2391304347826087,
+          "baseline_mean": 0.19810485506504044,
+          "excess_ratio": 0.04102557971756826
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.10253807106598974,
+      "excess_ratio": -0.05511585890439476,
+      "baseline_mean": 0.1576539299703845,
+      "baseline_n_valid": 5,
+      "output_chars": 505,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.05723905723905724,
+          "baseline_mean": 0.11778189637684817,
+          "excess_ratio": -0.06054283913779093
+        },
+        "bz2": {
+          "actual_ratio": 0.11392405063291139,
+          "baseline_mean": 0.15031767960804152,
+          "excess_ratio": -0.03639362897513013
+        },
+        "lzma": {
+          "actual_ratio": 0.12903225806451613,
+          "baseline_mean": 0.19810485506504044,
+          "excess_ratio": -0.06907259700052432
+        }
+      }
+    }
+  }
+}

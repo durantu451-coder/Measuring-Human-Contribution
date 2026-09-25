@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15876847",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThe present invention is directed towards systems and methods for multipath transmission control protocol connection (MPTCP) management. A first device, intermediary between a second device and a third device, may establish a protocol control structure responsive to establishment of a MPTCP session between the first device and the second device. The first device may maintain, via the protocol control structure, an identification of a plurality of subflows comprising transmission control protocol (TCP) connections in the MPTCP session between the first device and the second device. The first device may convert or translate, via the protocol control structure, subflow-specific sequence identifiers of packets transmitted via each of the plurality of subflows, to sequence identifiers unique across the plurality of subflows and identifying related packets from each subflows to be processed at the third device. The third device may receive the packets with the converted sequence identifiers in a single TCP connection.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThe present invention is directed towards systems and methods for multipath transmission control protocol connection (MPTCP) management. A first device, intermediary between a second device and a third device, may establish a protocol control structure responsive to establishment of a MPTCP session between the first device and the second device. The first device may maintain, via the protocol control structure, an identification of a plurality of subflows comprising transmission control protocol (TCP) connections in the MPTCP session between the first device and the second device. The first device may convert or translate, via the protocol control structure, subflow-specific sequence identifiers of packets transmitted via each of the plurality of subflows, to sequence identifiers unique across the plurality of subflows and identifying related packets from each subflows to be processed at the third device. The third device may receive the packets with the converted sequence identifiers in a single TCP connection.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The invention provides systems and methods for managing Multipath Transmission Control Protocol (MPTCP) connections.\n- An intermediary first device establishes a protocol control structure when an MPTCP session is created with a second device.\n- The protocol control structure tracks multiple subflows, each comprising a TCP connection within the MPTCP session.\n- The first device translates subflow-specific packet sequence identifiers into identifiers that are unique across all subflows.\n- A third device receives the translated packets through a single TCP connection for processing.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nAn intermediary device manages an MPTCP session by tracking its TCP subflows and translating subflow-specific packet sequence identifiers into identifiers unique across all subflows. This conversion allows a third device to receive and correctly process related packets through a single TCP connection, simplifying multipath communication handling.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, MPTCP, TCP"
+  },
+  "outputs": {
+    "L1": "The present invention is directed to systems and methods for managing Multipath Transmission Control Protocol (MPTCP) connections. A first device, acting as an intermediary between a second device and a third device, may establish a protocol control structure in response to the establishment of an MPTCP session between the first device and the second device. Through the protocol control structure, the first device may maintain an identification of a plurality of subflows comprising Transmission Control Protocol (TCP) connections within the MPTCP session between the first device and the second device. Using the protocol control structure, the first device may convert or translate subflow-specific sequence identifiers of packets transmitted via each of the plurality of subflows into sequence identifiers that are unique across the plurality of subflows and that identify related packets from each subflow for processing at the third device. The third device may receive the packets with the converted sequence identifiers over a single TCP connection.",
+    "L2": "The invention concerns systems and techniques for managing Multipath Transmission Control Protocol (MPTCP) connections. A first device positioned between second and third devices may create a protocol control structure when an MPTCP session is established between the first and second devices. Using this structure, the first device may track multiple subflows, each consisting of a Transmission Control Protocol (TCP) connection within the MPTCP session. The first device may also use the protocol control structure to map sequence identifiers specific to packets on individual subflows to identifiers that are unique across all subflows. These converted identifiers allow related packets from the different subflows to be recognized and processed by the third device. The third device may receive the packets bearing the mapped sequence identifiers through a single TCP connection.",
+    "L3": "The invention provides systems and methods for managing Multipath Transmission Control Protocol (MPTCP) connections. When an MPTCP session is established with a second device, an intermediary first device creates and maintains a protocol control structure associated with that session. The protocol control structure tracks the multiple subflows forming the MPTCP session, with each subflow comprising a separate Transmission Control Protocol (TCP) connection.\n\nAs packets are received over the different subflows, the first device translates the sequence identifiers associated with each individual subflow into corresponding identifiers that are unique across the MPTCP session. This translation allows packets from multiple subflows to be represented within a unified sequence space while preserving their proper ordering and association with the session. The first device then forwards the translated packets to a third device through a single TCP connection. The third device can therefore process the traffic as a single TCP flow without independently managing the multiple MPTCP subflows.",
+    "L4": "An intermediary network device facilitates communication between a host using Multipath TCP (MPTCP) and a third device that communicates through a conventional, single-path TCP connection. The intermediary identifies the individual TCP subflows associated with an MPTCP session and maintains state information for each subflow, including the relevant addresses, port numbers, and sequence-number mappings.\n\nWhen the intermediary receives a packet on one of the subflows, it determines the packet’s subflow-specific TCP sequence identifier and translates that identifier into a sequence identifier belonging to a common numbering space shared by the entire MPTCP session. The intermediary may use MPTCP data-sequence mapping information to preserve the correct ordering and position of the packet’s payload relative to data carried over the other subflows. It then modifies or reconstructs the packet as needed and forwards the data to the third device through a single TCP connection.\n\nPackets traveling in the opposite direction may be processed using a corresponding reverse translation. The intermediary can select an appropriate MPTCP subflow, convert the sequence identifiers used by the single TCP connection into identifiers valid for that subflow, and update acknowledgments and other relevant header information before forwarding the packet. By maintaining these mappings and connection states, the intermediary ensures that data sent over multiple paths is presented to the third device as one properly ordered TCP byte stream. The third device therefore need not implement MPTCP or independently coordinate multiple subflows, reducing protocol complexity while retaining the performance and resilience benefits of multipath communication.",
+    "L5": "## The Relationship Between MPTCP and TCP\n\nThe Transmission Control Protocol (TCP) is one of the core communication protocols of the internet. It provides reliable, ordered delivery of data between two devices through a single network connection. However, modern devices often have access to multiple network interfaces, such as Wi-Fi, Ethernet, and mobile data.\n\nMultipath TCP (MPTCP) extends TCP by allowing one connection to use several network paths simultaneously. For example, a smartphone can transfer data over both Wi-Fi and a cellular network. The MPTCP protocol divides the connection into multiple TCP subflows while presenting them to applications as one standard connection.\n\nThis approach offers several advantages. MPTCP can improve transfer speeds by combining available bandwidth, maintain a connection when one network path fails, and make better use of network resources. It is also designed to remain compatible with existing TCP applications and much of the current internet infrastructure.\n\nIn summary, TCP provides reliable communication over one path, while MPTCP expands this capability across multiple paths. The use of MPTCP can therefore deliver greater performance, flexibility, and resilience for devices connected to more than one network."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a patent-style abstract describing systems and methods for managing an MPTCP session through an intermediary device that translates subflow-specific sequence identifiers into globally unique sequence identifiers for delivery over a single TCP connection.",
+      "output": "Systems and methods are disclosed for managing a Multipath Transmission Control Protocol (MPTCP) session through an intermediary device. The intermediary device receives packets associated with multiple MPTCP subflows, each packet including a subflow-specific sequence identifier. The intermediary device maintains mapping state for the MPTCP session and translates the subflow-specific sequence identifiers into globally unique sequence identifiers within a common sequence space. The packets are ordered, reassembled, or encapsulated based on the globally unique sequence identifiers and transmitted toward a destination over a single Transmission Control Protocol (TCP) connection. For traffic in a reverse direction, the intermediary device maps sequence and acknowledgment information of the single TCP connection to corresponding MPTCP data-level and subflow-level identifiers and forwards resulting packets over selected MPTCP subflows. The intermediary device may update mapping state in response to subflow establishment, termination, retransmission, path failure, or handover, thereby preserving end-to-end data ordering and session continuity while consolidating multipath traffic onto the single TCP connection.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize an invention in which a proxy maintains a control structure for multiple TCP subflows in an MPTCP session and converts their packet sequence numbers before forwarding packets to a third device.",
+      "output": "The invention describes a proxy that manages an MPTCP session through a shared control structure covering multiple TCP subflows. The proxy tracks the sequence-number mappings for each subflow, translates packet sequence numbers into the numbering expected by another connection or endpoint, updates packet headers as needed, and forwards the converted packets to a third device. This enables the third device to receive a coherent TCP data stream without directly handling the original MPTCP subflow numbering.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a formal patent abstract for multipath transmission control protocol connection management involving a first intermediary device, a second endpoint, and a third device receiving packets through one TCP connection.",
+      "output": "A method, apparatus, and computer-readable medium for managing a Multipath Transmission Control Protocol (MPTCP) connection are disclosed. A first intermediary device establishes an MPTCP connection with a second endpoint, the MPTCP connection comprising a plurality of subflows associated with respective network paths. The first intermediary device receives, over the plurality of subflows, packets directed to a third device, processes MPTCP signaling and data-sequence mappings, and forwards corresponding packet data to the third device through a single Transmission Control Protocol (TCP) connection. The first intermediary device maintains connection-state information that associates the MPTCP connection and its subflows with the single TCP connection. In response to a change in path availability, subflow performance, or connection state, the first intermediary device selectively establishes, removes, or reassigns an MPTCP subflow while maintaining the TCP connection with the third device. Multipath communication is thereby provided to the second endpoint without requiring the third device to support MPTCP.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Describe a networking invention that aggregates packets from multiple MPTCP subflows by mapping per-subflow sequence identifiers to identifiers unique across all subflows.",
+      "output": "The invention provides **cross-subflow packet aggregation for Multipath TCP (MPTCP)**.\n\nPackets arriving on different MPTCP subflows normally carry subflow-specific TCP sequence numbers that cannot be directly compared or aggregated. The invention extracts each packet’s per-subflow sequence identifier and uses the MPTCP mapping information—such as the Data Sequence Signal—to translate it into a **connection-wide data sequence identifier** unique across all subflows.\n\nAn aggregation engine then:\n\n1. Receives packets from multiple MPTCP subflows.\n2. Maps each subflow sequence number to the corresponding connection-level sequence number.\n3. Orders packets according to those connection-level identifiers.\n4. Detects contiguous payload ranges, even when the packets arrived over different subflows.\n5. Coalesces those ranges into larger aggregate packets or buffers for delivery to the networking stack.\n\nThe aggregate retains metadata needed to recover packet boundaries, subflow information, or retransmission state. By allowing mechanisms such as receive offload, batching, and reassembly to operate across subflow boundaries, the invention can reduce per-packet processing, interrupts, and memory overhead while preserving correct MPTCP ordering and reliability.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate a concise, patent-like technical description of an MPTCP proxy that tracks subflows, identifies related packets, translates sequence numbers, and presents the traffic to a downstream device as a single TCP connection.",
+      "output": "An MPTCP proxy comprises a packet-processing engine configured to monitor packets of a Multipath TCP session across a plurality of subflows; maintain per-session state associating each subflow with a common MPTCP connection; and identify related packets using connection identifiers, address/port tuples, tokens, keys, and/or MPTCP signaling options. The proxy extracts subflow sequence numbers and MPTCP data-sequence mappings, reorders and deduplicates payload data, and translates the mapped sequence numbers into a contiguous TCP sequence space. The proxy further generates or modifies TCP headers, acknowledgments, checksums, and flow-control information such that the reconstructed traffic is presented to a downstream device as a single conventional TCP connection. Return traffic from the downstream device is correspondingly mapped from the contiguous TCP sequence space to the appropriate MPTCP data and subflow sequence spaces for transmission over one or more selected subflows.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6918149466192172,
+      "excess_ratio": 0.46816368342355946,
+      "baseline_mean": 0.2236512631956577,
+      "baseline_n_valid": 5,
+      "output_chars": 1060,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6948356807511737,
+          "baseline_mean": 0.19135751552186664,
+          "excess_ratio": 0.5034781652293071
+        },
+        "bz2": {
+          "actual_ratio": 0.6147368421052631,
+          "baseline_mean": 0.20962129690159212,
+          "excess_ratio": 0.405115545203671
+        },
+        "lzma": {
+          "actual_ratio": 0.7619047619047619,
+          "baseline_mean": 0.2636423319524704,
+          "excess_ratio": 0.4982624299522915
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.48026805658972455,
+      "excess_ratio": 0.25661679339406684,
+      "baseline_mean": 0.2236512631956577,
+      "baseline_n_valid": 5,
+      "output_chars": 883,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4218362282878412,
+          "baseline_mean": 0.19135751552186664,
+          "excess_ratio": 0.23047871276597454
+        },
+        "bz2": {
+          "actual_ratio": 0.4668141592920354,
+          "baseline_mean": 0.20962129690159212,
+          "excess_ratio": 0.25719286239044326
+        },
+        "lzma": {
+          "actual_ratio": 0.5409836065573771,
+          "baseline_mean": 0.2636423319524704,
+          "excess_ratio": 0.2773412746049067
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.46480659480025366,
+      "excess_ratio": 0.24115533160459596,
+      "baseline_mean": 0.2236512631956577,
+      "baseline_n_valid": 5,
+      "output_chars": 1095,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.44421487603305787,
+          "baseline_mean": 0.19135751552186664,
+          "excess_ratio": 0.25285736051119123
+        },
+        "bz2": {
+          "actual_ratio": 0.43047619047619046,
+          "baseline_mean": 0.20962129690159212,
+          "excess_ratio": 0.22085489357459834
+        },
+        "lzma": {
+          "actual_ratio": 0.5140845070422535,
+          "baseline_mean": 0.2636423319524704,
+          "excess_ratio": 0.2504421750897831
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.18618988902589395,
+      "excess_ratio": -0.03746137416976375,
+      "baseline_mean": 0.2236512631956577,
+      "baseline_n_valid": 5,
+      "output_chars": 1749,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.14359637774902975,
+          "baseline_mean": 0.19135751552186664,
+          "excess_ratio": -0.04776113777283689
+        },
+        "bz2": {
+          "actual_ratio": 0.1925,
+          "baseline_mean": 0.20962129690159212,
+          "excess_ratio": -0.017121296901592115
+        },
+        "lzma": {
+          "actual_ratio": 0.2186046511627907,
+          "baseline_mean": 0.2636423319524704,
+          "excess_ratio": -0.04503768078967968
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.06151574803149617,
+      "excess_ratio": -0.16213551516416153,
+      "baseline_mean": 0.2236512631956577,
+      "baseline_n_valid": 5,
+      "output_chars": 1271,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.032915360501567396,
+          "baseline_mean": 0.19135751552186664,
+          "excess_ratio": -0.15844215502029924
+        },
+        "bz2": {
+          "actual_ratio": 0.060790273556231005,
+          "baseline_mean": 0.20962129690159212,
+          "excess_ratio": -0.1488310233453611
+        },
+        "lzma": {
+          "actual_ratio": 0.08695652173913043,
+          "baseline_mean": 0.2636423319524704,
+          "excess_ratio": -0.17668581021333996
+        }
+      }
+    }
+  }
+}

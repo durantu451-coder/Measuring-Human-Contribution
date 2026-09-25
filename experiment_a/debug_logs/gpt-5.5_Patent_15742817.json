@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15742817",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA method of controlling a non-productive movement of a tool from a starting position to an end position in a travel envelope of a machine tool includes the steps of a) providing a collision-free first trajectory for the non-productive movement of the tool, b) determining a second trajectory that is improved over the first trajectory with regard to a selectable target parameter using an algorithm, and c) checking the second trajectory for collisions and, if the second trajectory is free of collisions, providing an instruction corresponding to the second trajectory. The first trajectory in step a) includes plural rectilinear segments and the second trajectory in step b) includes a polynomial segment and, if the second trajectory is not free of collisions in step c), steps b) to c) are repeated so that the algorithm is provided with a modified model of the travel envelope in a repeat of step b).",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA method of controlling a non-productive movement of a tool from a starting position to an end position in a travel envelope of a machine tool includes the steps of a) providing a collision-free first trajectory for the non-productive movement of the tool, b) determining a second trajectory that is improved over the first trajectory with regard to a selectable target parameter using an algorithm, and c) checking the second trajectory for collisions and, if the second trajectory is free of collisions, providing an instruction corresponding to the second trajectory. The first trajectory in step a) includes plural rectilinear segments and the second trajectory in step b) includes a polynomial segment and, if the second trajectory is not free of collisions in step c), steps b) to c) are repeated so that the algorithm is provided with a modified model of the travel envelope in a repeat of step b).",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The method controls non-productive movement of a machine tool from a starting position to an end position within a travel envelope.\n- A collision-free first trajectory is initially provided for the tool movement.\n- An algorithm determines a second trajectory that improves on the first trajectory based on a selectable target parameter.\n- The second trajectory includes a polynomial segment, while the first trajectory includes multiple rectilinear segments.\n- If the second trajectory is not collision-free, the algorithm is repeated using a modified model of the travel envelope.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA method controls non-productive tool movement in a machine tool by starting with a collision-free rectilinear trajectory, optimizing it via an algorithm for a selectable target parameter into a polynomial trajectory, and checking it for collisions. If collision-free, the improved trajectory is used as the movement instruction; if not, the optimization repeats with a modified travel-envelope model, enabling safer and more efficient non-productive movements.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The"
+  },
+  "outputs": {
+    "L1": "A method for controlling a non-productive movement of a tool from a starting position to an end position within a travel envelope of a machine tool includes the steps of: (a) providing a collision-free first trajectory for the non-productive movement of the tool; (b) determining, by means of an algorithm, a second trajectory that is improved relative to the first trajectory with respect to a selectable target parameter; and (c) checking the second trajectory for collisions and, if the second trajectory is collision-free, providing an instruction corresponding to the second trajectory. The first trajectory in step (a) includes a plurality of rectilinear segments, and the second trajectory in step (b) includes a polynomial segment. If the second trajectory is not collision-free in step (c), steps (b) to (c) are repeated, such that, in the repeated performance of step (b), the algorithm is provided with a modified model of the travel envelope.",
+    "L2": "A technique for managing a tool’s non-cutting travel from an initial location to a final location within a machine tool’s movement space involves: (a) supplying a first path for the tool’s non-productive motion that is free of collisions; (b) using an algorithm to calculate a second path that improves on the first path with respect to a chosen target parameter; and (c) evaluating the second path for possible collisions and, when no collision is found, issuing a command associated with that second path. The first path in step (a) is made up of multiple straight-line sections, while the second path calculated in step (b) contains a polynomial section. If the second path is found to involve a collision during step (c), then steps (b) through (c) are carried out again, with the algorithm being given an adjusted model of the machine tool’s travel envelope during the repeated execution of step (b).",
+    "L3": "The method concerns the control of non-productive movement of a machine tool, such as a rapid traverse movement, from a starting position to an end position within a defined travel envelope. The travel envelope represents the spatial region in which the machine tool, or a movable component of the machine tool, is permitted to move.\n\nTo carry out the movement safely, a first trajectory is initially provided. This first trajectory defines a collision-free path from the starting position to the end position. In particular, the first trajectory may be composed of a plurality of rectilinear segments, so that the machine tool reaches the end position by following a sequence of straight-line movements while avoiding obstacles within the travel envelope.\n\nAn algorithm is then used to determine a second trajectory for the same non-productive movement. The second trajectory is generated so as to improve upon the first trajectory with respect to at least one selectable target parameter. The target parameter may be, for example, movement time, path length, energy consumption, smoothness of motion, mechanical loading, or another optimization criterion relevant to operation of the machine tool.\n\nUnlike the first trajectory, which includes multiple rectilinear segments, the second trajectory includes at least one polynomial segment. The use of a polynomial segment allows the movement to be shaped more smoothly and may reduce abrupt changes in direction, acceleration, or jerk. As a result, the second trajectory can provide a more efficient or mechanically favorable movement while still connecting the starting position and the end position.\n\nAfter the second trajectory has been determined, it is checked for collisions within the travel envelope. If the second trajectory is collision-free, it may be used to control the non-productive movement of the machine tool. If, however, the second trajectory is found not to be collision-free, the algorithm is repeated. In that case, the model of the travel envelope used by the algorithm is modified, for example by adding, enlarging, or otherwise adapting restricted regions corresponding to potential collisions. The repeated algorithm then determines a further trajectory on the basis of the modified model, with the aim of obtaining an improved trajectory that is also free of collisions.",
+    "L4": "A method is provided for controlling non-productive tool movement in a machine tool, particularly movement that occurs between machining operations and does not itself remove material from a workpiece. The method begins by determining an initial travel path for the tool or tool carrier. This initial path is a rectilinear trajectory, meaning that it is composed of straight-line movement sections, and is selected so that it is free from collisions with the workpiece, fixtures, machine components, or other obstacles in the working space of the machine tool.\n\nStarting from this collision-free rectilinear trajectory, an optimization process is then carried out. The optimization process uses an algorithm to convert or transform the initial trajectory into an improved polynomial trajectory. The polynomial trajectory may include curved or smoothly blended movement sections rather than only straight-line segments. The optimization is performed with respect to at least one selectable target parameter. This target parameter may be, for example, a reduction in travel time, a reduction in path length, a limitation of acceleration or jerk, an improvement in energy efficiency, smoother axis movement, or a combination of such criteria.\n\nAfter the optimized polynomial trajectory has been generated, it is checked for possible collisions. This collision check may be performed using a model of the machine tool environment, including the tool, tool holder, spindle, workpiece, clamping devices, and any other relevant objects or exclusion zones. If the collision check determines that the polynomial trajectory is collision-free, the optimized trajectory is accepted. It is then used as the movement instruction for the machine tool to carry out the non-productive movement.\n\nIf, however, the collision check identifies a potential collision, the optimized trajectory is not accepted in its current form. Instead, the optimization is repeated. For the repeated optimization, a travel-envelope model used by the algorithm is modified. The travel-envelope model defines the permissible spatial region or movement corridor within which the tool or machine component is allowed to move. By modifying this model, the algorithm is guided away from areas that caused or could cause collisions and is encouraged to produce a new trajectory that remains within safer regions of the workspace.\n\nThis iterative procedure may be repeated until a polynomial trajectory is found that satisfies the selected optimization target while also being free from collisions. In this way, the method combines the reliability of an initially collision-free rectilinear movement path with the efficiency advantages of optimized, smooth polynomial motion. The result is a safer and more efficient control strategy for non-productive movements of a machine tool, reducing unnecessary travel time while maintaining collision protection.",
+    "L5": "**The Power of “The”**\n\n“The” is one of the smallest and most common words in the English language, yet it plays an important role in communication. It is called a definite article, and it helps identify something specific. For example, when we say “a book,” we could mean any book, but when we say “the book,” we are talking about a particular one.\n\nThis simple word adds clarity and precision to sentences. It guides the reader or listener toward a known person, place, object, or idea. Without “the,” many sentences would feel incomplete or unclear.\n\nAlthough “the” may seem ordinary, it is essential in everyday speech and writing. It proves that even the smallest words can have great importance in language."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent claim for a CNC machine tool method that optimizes a collision-free rapid traverse path, starting from a segmented linear trajectory, generating a polynomial trajectory, checking for collisions, and iterating with a modified travel envelope model if needed.",
+      "output": "1. A computer-implemented method for controlling a CNC machine tool to perform a collision-free rapid traverse movement, the method comprising:\n\n   receiving, by a controller of the CNC machine tool, a commanded rapid traverse from a start pose to an end pose of at least one movable machine component;\n\n   generating, based on the commanded rapid traverse, an initial segmented linear trajectory comprising a plurality of linear path segments between the start pose and the end pose;\n\n   generating, from the initial segmented linear trajectory, a polynomial trajectory defining time-dependent position commands for one or more controlled axes of the CNC machine tool, the polynomial trajectory satisfying predetermined kinematic constraints including at least one of velocity, acceleration, or jerk limits;\n\n   determining a travel envelope model corresponding to movement of the at least one movable machine component along the polynomial trajectory;\n\n   performing a collision check between the travel envelope model and a model of at least one obstacle in a workspace of the CNC machine tool;\n\n   in response to determining that the polynomial trajectory is collision-free, executing the polynomial trajectory as the rapid traverse movement of the CNC machine tool; and\n\n   in response to determining that the polynomial trajectory is not collision-free:\n   modifying the travel envelope model to define a modified travel envelope model having an adjusted spatial extent or clearance constraint,\n   regenerating or adjusting at least one of the segmented linear trajectory or the polynomial trajectory based on the modified travel envelope model,\n   repeating the collision check for the regenerated or adjusted polynomial trajectory, and\n   iterating the modifying, regenerating or adjusting, and repeating steps until a collision-free polynomial trajectory is determined.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a single independent patent-style method claim about controlling non-productive movement of a tool between positions in a machine tool, including providing an initial collision-free trajectory, improving it according to a selectable target parameter, and validating collisions.",
+      "output": "1. A method for controlling non-productive movement of a tool between a starting position and a target position in a machine tool, the method comprising: providing, by a control system of the machine tool, an initial trajectory for moving the tool from the starting position to the target position, wherein the initial trajectory is collision-free with respect to at least one component of the machine tool and/or a workpiece; selecting a target parameter for improving the initial trajectory, the target parameter comprising at least one of movement time, movement distance, energy consumption, axis loading, jerk, acceleration, or a clearance distance; generating, by the control system, an improved trajectory by modifying the initial trajectory according to the selected target parameter; validating the improved trajectory by performing a collision check of the improved trajectory relative to the at least one component of the machine tool and/or the workpiece; and, when the improved trajectory is validated as collision-free, controlling the machine tool to move the tool from the starting position to the target position along the improved trajectory during the non-productive movement.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate a formal patent abstract/claim describing an algorithmic method for optimizing tool travel in a machine tool envelope, where the first path has multiple straight-line segments and the improved path has a polynomial segment.",
+      "output": "**Abstract**\n\nA computer-implemented method is provided for optimizing tool travel within a machine tool envelope. The method includes receiving a first tool path for a cutting tool or machining head, the first tool path comprising a plurality of straight-line path segments extending between successive commanded positions within the machine tool envelope. The method further includes identifying at least a portion of the first tool path for smoothing or travel-time reduction, generating an improved tool path by replacing two or more of the straight-line path segments with at least one polynomial path segment, and constraining the polynomial path segment to remain within the machine tool envelope and within predetermined kinematic limits of the machine tool. The polynomial path segment may be generated to satisfy continuity conditions at one or more transition points, including position continuity and at least one of velocity, acceleration, or jerk continuity. The improved tool path is then output to a machine controller for execution, whereby tool travel time, abrupt directional changes, or mechanical loading is reduced relative to the first tool path.\n\n**Claim**\n\n1. A computer-implemented method for optimizing travel of a tool in a machine tool envelope, the method comprising:  \n   receiving, by one or more processors, data defining a first tool path for the tool, the first tool path including a plurality of straight-line segments connecting a plurality of tool positions within the machine tool envelope;  \n   selecting, by the one or more processors, a group of at least two adjacent straight-line segments of the first tool path;  \n   determining, by the one or more processors, at least one polynomial segment to replace the selected group of straight-line segments, the at least one polynomial segment being defined by a polynomial function of a path parameter and having endpoints corresponding to respective tool positions associated with the selected group;  \n   constraining, by the one or more processors, the at least one polynomial segment such that the polynomial segment remains within the machine tool envelope and satisfies at least one machine-tool constraint selected from a velocity limit, an acceleration limit, a jerk limit, and an axis-travel limit;  \n   generating, by the one or more processors, an improved tool path comprising the at least one polynomial segment in place of the selected group of straight-line segments; and  \n   outputting the improved tool path to a machine tool controller for controlling movement of the tool along the improved tool path,  \n   wherein the improved tool path reduces at least one of tool travel distance, tool travel time, directional discontinuity, acceleration discontinuity, or jerk relative to the first tool path.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Convert the following invention idea into patent claim language: a machine tool moves a tool from a start point to an end point during non-cutting motion; begin with a safe rectilinear path, compute a better polynomial path, collision-check it, and repeat with an adjusted envelope model if collisions are found.",
+      "output": "1. **A method of controlling a machine tool during non-cutting motion**, the method comprising:  \n   moving, by a controller of the machine tool, a tool from a start point toward an end point along an initial rectilinear path determined to be collision-safe;  \n   generating, by the controller, a candidate non-rectilinear path between the start point and the end point, the candidate non-rectilinear path being represented by a polynomial function;  \n   evaluating the candidate non-rectilinear path for collision with at least one obstacle within a machine workspace using an envelope model associated with at least one of the tool, a tool holder, a spindle, a workpiece, or a machine component;  \n   when the candidate non-rectilinear path is determined to be collision-free, commanding the machine tool to execute the candidate non-rectilinear path during the non-cutting motion; and  \n   when the candidate non-rectilinear path is determined to collide with the at least one obstacle, adjusting the envelope model and repeating the generating and evaluating steps using the adjusted envelope model until a collision-free polynomial path is obtained.\n\n2. **The method of claim 1**, wherein the initial rectilinear path comprises at least one straight-line segment displaced from the at least one obstacle by a predetermined safety clearance.\n\n3. **The method of claim 1**, wherein the polynomial function comprises a spline, a Bézier curve, a B-spline, or a higher-order polynomial trajectory.\n\n4. **The method of claim 1**, wherein generating the candidate non-rectilinear path comprises optimizing at least one of travel time, path length, acceleration, jerk, axis motion, or clearance from the at least one obstacle.\n\n5. **The method of claim 1**, wherein adjusting the envelope model comprises expanding, shrinking, offsetting, reshaping, or otherwise modifying a swept volume used for collision detection.\n\n6. **The method of claim 1**, wherein the envelope model defines a swept volume of the tool or tool assembly along the candidate non-rectilinear path.\n\n7. **The method of claim 1**, wherein the non-cutting motion comprises rapid traverse motion of the machine tool.\n\n8. **The method of claim 1**, wherein the controller stores the initial rectilinear path as a fallback path and executes the initial rectilinear path if no collision-free polynomial path is obtained within a predetermined number of iterations or computation time.\n\n9. **A machine tool control system**, comprising:  \n   one or more processors; and  \n   memory storing instructions that, when executed by the one or more processors, cause the control system to:  \n   determine a collision-safe rectilinear path for moving a tool from a start point to an end point during non-cutting motion;  \n   compute a candidate polynomial path between the start point and the end point;  \n   perform collision checking of the candidate polynomial path using an envelope model of at least a portion of the machine tool or a workpiece environment;  \n   in response to detecting no collision, output motion commands causing the machine tool to move the tool along the candidate polynomial path; and  \n   in response to detecting a collision, modify the envelope model and iteratively compute and collision-check a further candidate polynomial path until a collision-free polynomial path is identified.\n\n10. **A non-transitory computer-readable medium** storing instructions that, when executed by a controller of a machine tool, cause the controller to perform the method of claim 1.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a concise patent-style description of a method for controlling rapid non-productive tool movement, including trajectory optimization for a target parameter and iterative collision checking with modified travel-envelope modeling.",
+      "output": "A method for controlling rapid non-productive movement of a tool of a machine tool comprises receiving a start position and an end position for the tool, generating a rapid-traverse trajectory between the start position and the end position, and optimizing the trajectory with respect to a target parameter, the target parameter comprising at least one of travel time, energy consumption, axis loading, jerk, vibration, clearance, or a weighted combination thereof. The method further comprises determining a travel envelope associated with the optimized trajectory, performing collision checking between the travel envelope and a model of at least one machine component, workpiece, fixture, or obstacle, and, when a collision is detected, modifying the travel-envelope modeling by altering at least one of an envelope geometry, a clearance allowance, a swept-volume representation, a segmentation resolution, or a permitted tool orientation or intermediate waypoint. The trajectory is then re-optimized or adjusted based on the modified travel-envelope modeling, and collision checking is repeated iteratively until a collision-free rapid movement satisfying the target parameter is obtained. Control commands corresponding to the resulting trajectory are output to a numerical controller to move the tool from the start position to the end position during non-productive operation.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6591075347476226,
+      "excess_ratio": 0.4867957732826187,
+      "baseline_mean": 0.17231176146500396,
+      "baseline_n_valid": 5,
+      "output_chars": 954,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6801909307875895,
+          "baseline_mean": 0.13557558895005703,
+          "excess_ratio": 0.5446153418375325
+        },
+        "bz2": {
+          "actual_ratio": 0.5535714285714286,
+          "baseline_mean": 0.16430293679636904,
+          "excess_ratio": 0.38926849177505957
+        },
+        "lzma": {
+          "actual_ratio": 0.736,
+          "baseline_mean": 0.21224406752936492,
+          "excess_ratio": 0.5237559324706351
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.29726027397260274,
+      "excess_ratio": 0.12494851250759878,
+      "baseline_mean": 0.17231176146500396,
+      "baseline_n_valid": 5,
+      "output_chars": 905,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2383073496659243,
+          "baseline_mean": 0.13557558895005703,
+          "excess_ratio": 0.10273176071586726
+        },
+        "bz2": {
+          "actual_ratio": 0.28778467908902694,
+          "baseline_mean": 0.16430293679636904,
+          "excess_ratio": 0.1234817422926579
+        },
+        "lzma": {
+          "actual_ratio": 0.3560606060606061,
+          "baseline_mean": 0.21224406752936492,
+          "excess_ratio": 0.14381653853124116
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.23866758241758237,
+      "excess_ratio": 0.06635582095257841,
+      "baseline_mean": 0.17231176146500396,
+      "baseline_n_valid": 5,
+      "output_chars": 2348,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1982851018220793,
+          "baseline_mean": 0.13557558895005703,
+          "excess_ratio": 0.06270951287202228
+        },
+        "bz2": {
+          "actual_ratio": 0.24287222808870115,
+          "baseline_mean": 0.16430293679636904,
+          "excess_ratio": 0.07856929129233212
+        },
+        "lzma": {
+          "actual_ratio": 0.2713178294573643,
+          "baseline_mean": 0.21224406752936492,
+          "excess_ratio": 0.0590737619279994
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.15354441019893533,
+      "excess_ratio": -0.018767351266068627,
+      "baseline_mean": 0.17231176146500396,
+      "baseline_n_valid": 5,
+      "output_chars": 2910,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.11982758620689656,
+          "baseline_mean": 0.13557558895005703,
+          "excess_ratio": -0.015748002743160475
+        },
+        "bz2": {
+          "actual_ratio": 0.15643906655142611,
+          "baseline_mean": 0.16430293679636904,
+          "excess_ratio": -0.007863870244942922
+        },
+        "lzma": {
+          "actual_ratio": 0.18210862619808307,
+          "baseline_mean": 0.21224406752936492,
+          "excess_ratio": -0.030135441331281848
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.07596785975164345,
+      "excess_ratio": -0.0963439017133605,
+      "baseline_mean": 0.17231176146500396,
+      "baseline_n_valid": 5,
+      "output_chars": 713,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04066985645933014,
+          "baseline_mean": 0.13557558895005703,
+          "excess_ratio": -0.0949057324907269
+        },
+        "bz2": {
+          "actual_ratio": 0.08647450110864745,
+          "baseline_mean": 0.16430293679636904,
+          "excess_ratio": -0.07782843568772159
+        },
+        "lzma": {
+          "actual_ratio": 0.096,
+          "baseline_mean": 0.21224406752936492,
+          "excess_ratio": -0.11624406752936492
+        }
+      }
+    }
+  }
+}

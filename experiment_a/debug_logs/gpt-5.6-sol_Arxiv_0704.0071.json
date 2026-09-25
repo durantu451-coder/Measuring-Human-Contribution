@@ -1,0 +1,175 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0071",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nNo abstract given; compares pairs of languages from World Atlas of Language Structures.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nNo abstract given; compares pairs of languages from World Atlas of Language Structures.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The text does not provide an abstract.\n- The study compares pairs of languages.\n- The language data come from the World Atlas of Language Structures.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe study investigates cross-linguistic similarities and differences by comparing pairs of languages using data from the World Atlas of Language Structures. No key findings are provided, so the results and their significance cannot be determined.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: World, Atlas, Language"
+  },
+  "outputs": {
+    "L1": "No abstract provided; the study compares pairs of languages from the *World Atlas of Language Structures*.",
+    "L2": "No summary is available; the study examines language pairs drawn from the World Atlas of Language Structures.",
+    "L3": "The text does not include an abstract. The study adopts a pairwise approach, comparing different language pairs. The linguistic data used in these comparisons are drawn from the *World Atlas of Language Structures* (WALS), a comprehensive database of structural features found across the world’s languages.",
+    "L4": "The study examines cross-linguistic similarities and differences through pairwise comparisons of languages represented in the World Atlas of Language Structures (WALS). Drawing on WALS data, it considers typological features such as phonology, morphology, syntax, and word order to assess the extent to which individual languages share structural characteristics or differ from one another. This comparative approach may help identify recurring linguistic patterns and provide insight into the relationships among languages across regions and language families.\n\nHowever, the available summary does not report any specific findings, statistical results, or conclusions. It is therefore unclear which language pairs were analyzed, which features were most important, or whether the observed similarities were associated with genealogy, geographic contact, or broader typological tendencies. Without this information, the significance and implications of the study cannot be evaluated. A fuller account of the methods, results, and limitations would be required to determine the study’s contribution to cross-linguistic research.",
+    "L5": "### The World as an Atlas of Language\n\nThe world is more than a collection of countries, oceans, and borders. It is also an atlas of language—a vast map drawn with words, voices, and stories. Every language offers a different way of seeing reality. Some contain precise words for landscapes, emotions, or relationships that other languages can express only through entire sentences.\n\nAn atlas shows us where people live, but language reveals how they experience those places. The names of rivers preserve ancient histories. City streets carry traces of migration and cultural exchange. Songs, proverbs, and everyday conversations connect communities to their past while allowing them to imagine new futures.\n\nAs people travel across the world, languages meet and transform one another. New expressions emerge, accents change, and borrowed words become familiar. In this sense, the atlas is never complete: its boundaries shift with every conversation.\n\nTo explore language is therefore to explore the world—not only as it appears on a map, but as it is remembered, understood, and continuously reinvented."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize the abstract of this linguistics paper in one sentence.",
+      "output": "Please provide the paper’s abstract, and I’ll summarize it in one sentence.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Briefly describe the study’s abstract and methodology, noting if no abstract is available.",
+      "output": "Please provide the study’s title, citation, DOI, link, or full text. I’ll briefly summarize its abstract and methodology and explicitly note if no abstract is available.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "What is this paper about? Mention the dataset and comparison approach.",
+      "output": "Please share the paper, title, abstract, or link. I’ll summarize its main topic, the dataset used, and the comparison/evaluation approach.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Provide a concise annotation for an article that has no abstract but compares language pairs using the World Atlas of Language Structures.",
+      "output": "The article uses data from the World Atlas of Language Structures (WALS) to compare selected language pairs, highlighting typological similarities and differences in their phonological, grammatical, and syntactic features.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "In under 15 words, summarize the available information about this research paper.",
+      "output": "No research paper or related information was provided for summarization.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7044025157232705,
+      "excess_ratio": 0.26566880956359856,
+      "baseline_mean": 0.43873370615967194,
+      "baseline_n_valid": 5,
+      "output_chars": 106,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6666666666666666,
+          "baseline_mean": 0.38166683025687514,
+          "excess_ratio": 0.2849998364097915
+        },
+        "bz2": {
+          "actual_ratio": 0.6306306306306306,
+          "baseline_mean": 0.37418364700884144,
+          "excess_ratio": 0.2564469836217892
+        },
+        "lzma": {
+          "actual_ratio": 0.8,
+          "baseline_mean": 0.5348717948717948,
+          "excess_ratio": 0.26512820512820523
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.5838509316770186,
+      "excess_ratio": 0.14511722551734668,
+      "baseline_mean": 0.43873370615967194,
+      "baseline_n_valid": 5,
+      "output_chars": 109,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5111111111111111,
+          "baseline_mean": 0.38166683025687514,
+          "excess_ratio": 0.12944428085423593
+        },
+        "bz2": {
+          "actual_ratio": 0.5740740740740741,
+          "baseline_mean": 0.37418364700884144,
+          "excess_ratio": 0.19989042706523263
+        },
+        "lzma": {
+          "actual_ratio": 0.6451612903225806,
+          "baseline_mean": 0.5348717948717948,
+          "excess_ratio": 0.11028949545078581
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.4224137931034483,
+      "excess_ratio": -0.016319913056223656,
+      "baseline_mean": 0.43873370615967194,
+      "baseline_n_valid": 5,
+      "output_chars": 306,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.33668341708542715,
+          "baseline_mean": 0.38166683025687514,
+          "excess_ratio": -0.044983413171447995
+        },
+        "bz2": {
+          "actual_ratio": 0.4177215189873418,
+          "baseline_mean": 0.37418364700884144,
+          "excess_ratio": 0.04353787197850034
+        },
+        "lzma": {
+          "actual_ratio": 0.49230769230769234,
+          "baseline_mean": 0.5348717948717948,
+          "excess_ratio": -0.04256410256410248
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1986754966887417,
+      "excess_ratio": -0.24005820947093023,
+      "baseline_mean": 0.43873370615967194,
+      "baseline_n_valid": 5,
+      "output_chars": 1127,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.17263843648208468,
+          "baseline_mean": 0.38166683025687514,
+          "excess_ratio": -0.20902839377479046
+        },
+        "bz2": {
+          "actual_ratio": 0.1747269890795632,
+          "baseline_mean": 0.37418364700884144,
+          "excess_ratio": -0.19945665792927825
+        },
+        "lzma": {
+          "actual_ratio": 0.24293785310734464,
+          "baseline_mean": 0.5348717948717948,
+          "excess_ratio": -0.2919339417644502
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.0723649711588883,
+      "excess_ratio": -0.36636873500078365,
+      "baseline_mean": 0.43873370615967194,
+      "baseline_n_valid": 5,
+      "output_chars": 1105,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.045531197301854974,
+          "baseline_mean": 0.38166683025687514,
+          "excess_ratio": -0.3361356329550202
+        },
+        "bz2": {
+          "actual_ratio": 0.07507987220447285,
+          "baseline_mean": 0.37418364700884144,
+          "excess_ratio": -0.29910377480436856
+        },
+        "lzma": {
+          "actual_ratio": 0.09302325581395349,
+          "baseline_mean": 0.5348717948717948,
+          "excess_ratio": -0.4418485390578413
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T04:40:01.231373+00:00"
+    }
+  ]
+}

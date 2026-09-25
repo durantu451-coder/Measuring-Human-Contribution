@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15910211",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA system for pipelining signal flow graphs by a plurality of shared memory processors organized in a 3D physical arrangement with the memory overlaid on the processor nodes that reduces storage of temporary variables. A group function formed by two or more instructions to specify two or more parts of the group function. A first instruction specifies a first part and specifies control information for a second instruction adjacent to the first instruction or at a pre-specified location relative to the first instruction. The first instruction when executed transfers the control information to a pending register and produces a result which is transferred to an operand input associated with the second instruction. The second instruction specifies a second part of the group function and when executed transfers the control information from the pending register to a second execution unit to adjust the second execution unit's operation on the received operand.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA system for pipelining signal flow graphs by a plurality of shared memory processors organized in a 3D physical arrangement with the memory overlaid on the processor nodes that reduces storage of temporary variables. A group function formed by two or more instructions to specify two or more parts of the group function. A first instruction specifies a first part and specifies control information for a second instruction adjacent to the first instruction or at a pre-specified location relative to the first instruction. The first instruction when executed transfers the control information to a pending register and produces a result which is transferred to an operand input associated with the second instruction. The second instruction specifies a second part of the group function and when executed transfers the control information from the pending register to a second execution unit to adjust the second execution unit's operation on the received operand.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The system pipelines signal flow graphs using multiple shared memory processors arranged in a 3D physical layout.\n- Memory is overlaid on processor nodes to reduce the storage needed for temporary variables.\n- A group function is formed from two or more instructions that specify different parts of the function.\n- The first instruction provides control information for a second instruction located adjacent to it or at a predefined relative location.\n- The second instruction uses the transferred control information to adjust how its execution unit operates on the received operand.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA pipelining system for signal flow graphs uses shared-memory processors arranged in a 3D structure with memory overlaid on processor nodes, executing group functions split across adjacent or relatively located instructions that pass control information and operands between execution units. This approach reduces temporary variable storage by transferring intermediate results directly to subsequent instruction operands while using pending-register control information to configure later execution, improving pipeline efficiency.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The"
+  },
+  "outputs": {
+    "L1": "A system for pipelining signal flow graphs using a plurality of shared-memory processors organized in a three-dimensional physical arrangement, with memory overlaid on the processor nodes, thereby reducing the storage required for temporary variables. A group function is formed by two or more instructions that specify two or more parts of the group function. A first instruction specifies a first part and provides control information for a second instruction located adjacent to the first instruction or at a pre-specified location relative to the first instruction. When executed, the first instruction transfers the control information to a pending register and produces a result, which is transferred to an operand input associated with the second instruction. The second instruction specifies a second part of the group function and, when executed, transfers the control information from the pending register to a second execution unit to adjust the operation of the second execution unit on the received operand.",
+    "L2": "A method is provided for pipelining signal-flow graphs using multiple shared-memory processors arranged in a three-dimensional physical configuration, with memory positioned over the processor nodes, thereby decreasing the need to store temporary variables. A group function is made up of at least two instructions that define two or more portions of that function. One instruction identifies a first portion and also includes control data for a second instruction that is either next to the first instruction or located at a predetermined position relative to it. When the first instruction runs, it places the control data into a pending register and generates an output, which is sent to an operand input linked to the second instruction. The second instruction defines another portion of the group function, and upon execution, it moves the control data from the pending register to a second execution unit so that the operation of that execution unit is modified for the operand it has received.",
+    "L3": "The system pipelines signal flow graphs by using multiple shared-memory processors arranged in a three-dimensional physical layout. This organization allows different portions of a signal flow graph to be processed in parallel while maintaining efficient communication between processors. By distributing the computation across processors that share memory resources, the system can improve throughput and reduce delays associated with moving data between separate processing elements.\n\nTo further improve efficiency, memory is overlaid on processor nodes. This means that storage associated with intermediate or temporary variables is mapped onto memory locations that are closely tied to the processors performing the computation. As a result, the system reduces the total amount of storage required for temporary data, since values can be reused or overwritten when they are no longer needed. This approach is especially useful in pipelined signal-processing applications, where intermediate results often have short lifetimes.\n\nThe system also supports the creation of a group function from two or more instructions. In this arrangement, separate instructions define different aspects of a larger operation. Rather than treating each instruction as a completely independent operation, the system combines their effects so that they collectively implement a more complex function.\n\nIn such a group function, the first instruction supplies control information for a second instruction. The second instruction may be located immediately adjacent to the first instruction or at a predefined relative position within the instruction stream or processing layout. This positional relationship allows the system to associate the instructions without requiring extensive additional addressing or control overhead.\n\nThe second instruction then uses the control information transferred from the first instruction to modify the behavior of its execution unit. Based on that control information, the execution unit adjusts how it operates on the operand it receives. For example, the control information may determine the type of operation performed, the mode of execution, or how the operand is interpreted. In this way, multiple instructions can cooperate to form a flexible and efficient computational function within the pipelined processing system.",
+    "L4": "A pipelining system for signal flow graphs may be implemented using a plurality of shared-memory processors arranged in a three-dimensional processing structure. In this structure, processor nodes are distributed throughout the system, and memory resources are overlaid on, or closely associated with, the processor nodes. This arrangement allows processing elements and memory locations to be positioned in a manner that supports efficient communication between related operations in a signal flow graph.\n\nThe system executes signal-processing operations as group functions. A group function may be divided into multiple instructions, with those instructions assigned to adjacent execution units or to execution units located at predetermined relative positions within the three-dimensional processor arrangement. Instead of treating each instruction as an isolated operation that must store its output into general temporary memory before another instruction can use it, the system permits instructions to pass information directly to one another. This information may include operands, intermediate results, and control information needed by later stages of execution.\n\nDuring execution, a first instruction or execution unit may generate an intermediate value that is required by a subsequent instruction. Rather than writing that value to a temporary variable storage location and later reading it back, the system transfers the intermediate result directly into an operand field or operand input of the next instruction. In this way, the output of one stage becomes the input of a following stage with minimal delay and reduced memory traffic. This direct transfer is particularly useful in signal flow graphs, where many operations are naturally connected in chains or pipelines and where intermediate values are frequently consumed immediately by downstream operations.\n\nThe system may also use pending-register control information to manage later execution stages. Pending registers can hold information indicating that a future instruction is waiting for particular data, configuration settings, or execution conditions. When the necessary result or control signal becomes available, the pending-register information can be used to configure the corresponding execution unit or instruction. This allows later instructions to be prepared in advance and activated efficiently when their required operands arrive.\n\nBy combining direct operand transfer with pending-register control, the pipelining system reduces the need for temporary variable storage and decreases the number of memory read and write operations required during execution. Intermediate results can move through the pipeline from one instruction to the next, while control information ensures that subsequent execution units are properly configured at the correct time. As a result, the processor arrangement can execute signal flow graph operations with improved throughput, better pipeline utilization, and reduced overhead associated with temporary data handling.\n\nThis approach is especially advantageous for applications involving repeated or streaming signal-processing computations, such as filtering, transforms, modulation, encoding, decoding, and other graph-based numerical operations. Because the execution structure reflects the data dependencies of the signal flow graph, the system can exploit locality between related instructions and reduce communication delays. The three-dimensional shared-memory organization further supports compact placement of related processing nodes and memory resources, enabling efficient movement of operands and control information across the pipeline.",
+    "L5": "**The Power of “The”**\n\n“The” may be one of the shortest words in the English language, but it plays an important role in communication. As the definite article, “the” helps identify a specific person, place, object, or idea. For example, when we say “the book,” we are not talking about any book—we mean a particular book that the speaker and listener already know about.\n\nThis small word gives clarity and precision to sentences. It can turn a general idea into something specific: “a house” means any house, while “the house” refers to one particular house. Because of this, “the” helps readers and listeners understand exactly what is being discussed.\n\n“The” is also one of the most commonly used words in English. It appears in everyday conversation, literature, news, education, and business communication. Although it is simple, it is essential for creating natural and accurate English sentences.\n\nIn many ways, “the” shows how even the smallest words can have great meaning. Without it, English would be less clear, less specific, and harder to understand."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a single patent-style abstract describing an invention involving pipelining signal flow graphs on shared-memory processors in a 3D physical arrangement, with grouped instructions, pending registers, and control information passed between adjacent instructions.",
+      "output": "An apparatus and method are provided for executing a signal flow graph on a shared-memory processor array arranged in a three-dimensional physical configuration. Nodes of the signal flow graph are mapped to processing elements and scheduled as grouped instructions, each group representing one or more operations to be performed in a pipeline stage. Each instruction includes or is associated with control information identifying operand sources, destination locations, timing, and routing data, and such control information is passed directly between adjacent instructions or adjacent processing elements to coordinate execution without centralized sequencing. Pending registers coupled to the processing elements temporarily store intermediate results, status indicators, or unresolved operands until dependent grouped instructions become ready for execution. By propagating data, control information, and readiness state through physically adjacent stages in the three-dimensional arrangement, the system pipelines execution of the signal flow graph while sharing memory resources among processors, reducing communication latency, improving locality, and increasing throughput for streaming, recursive, or data-dependent computations.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Generate a concise technical summary of a computer architecture patent where processor nodes have overlaid memory, temporary variable storage is reduced, and multi-instruction group functions pass operands and control data through pending registers.",
+      "output": "The patent describes a parallel processor architecture built from multiple processor nodes, each with associated overlaid memory to support localized execution and efficient data access. The design reduces the need for temporary variable storage by allowing intermediate values to be passed directly between instruction operations rather than repeatedly written to and read from general memory or registers.\n\nA key feature is execution of multi-instruction group functions, in which related instructions are treated as a coordinated unit. Operands, intermediate results, and control information are transferred through “pending” registers that hold values awaiting consumption by subsequent instructions in the group. This enables tighter instruction coupling, lowers register and memory traffic, reduces temporary storage requirements, and improves execution efficiency in node-based processing systems.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft an abstract for an invention about executing signal flow graph computations using a plurality of shared memory processors arranged in 3D, including details about first and second instructions coordinating execution units via control information.",
+      "output": "An apparatus and method are provided for executing signal flow graph computations using a plurality of shared memory processors arranged in a three-dimensional configuration. The processors include execution units coupled to shared memory resources and configured to perform operations corresponding to nodes and edges of a signal flow graph. A first instruction is issued to a first execution unit and includes control information identifying at least one dependent operation, data location, synchronization condition, or destination execution unit associated with the signal flow graph computation. A second instruction is issued to a second execution unit and includes corresponding control information for coordinating execution with the first execution unit. Based on the control information, the execution units access shared memory, exchange intermediate results, determine readiness of dependent computations, and perform the signal flow graph operations in a coordinated manner. The three-dimensional arrangement reduces communication latency and improves parallel execution efficiency for signal processing, machine learning, and other data-flow-oriented workloads.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "In patent language, describe a system that pipelines signal flow graphs across shared-memory processors and uses paired instructions where the first instruction sends a result and control information to a second instruction that modifies a second execution unit.",
+      "output": "A computing system is provided for executing a signal flow graph across a plurality of shared-memory processors. The system includes a shared memory accessible by the plurality of processors, a graph partitioning module configured to divide a signal flow graph into a plurality of executable graph portions, and a scheduling module configured to pipeline execution of the graph portions among the processors such that different portions of the signal flow graph are concurrently processed at different pipeline stages.\n\nEach processor includes at least one execution unit and an instruction control mechanism configured to execute paired instructions. A paired instruction set includes a first instruction associated with a first execution unit and a second instruction associated with a second execution unit. The first instruction is configured, upon execution, to generate a computational result and associated control information. The computational result and the control information are communicated to the second instruction without requiring an intervening global memory synchronization. The second instruction is configured to receive the computational result and the control information and, in response thereto, modify an operating state of the second execution unit.\n\nIn one embodiment, the control information includes at least one of an execution enable signal, a routing indication, a pipeline-stage identifier, a graph-node identifier, a memory-address indication, a predicate value, or a configuration parameter for the second execution unit. The second instruction may alter the second execution unit by changing an operand selection, enabling or disabling execution, selecting a functional mode, modifying a destination location, updating a local register, or configuring an arithmetic or logical operation.\n\nThe scheduling module coordinates execution of the paired instructions so that data dependencies in the signal flow graph are preserved while allowing independent graph portions to proceed in parallel. Intermediate results produced by one processor may be stored in the shared memory or communicated through processor-local forwarding paths, and control information associated with the intermediate results may be used to dynamically configure downstream execution units. In this manner, the system pipelines signal flow graph execution across shared-memory processors while reducing synchronization overhead and improving utilization of execution resources.\n\nIn an exemplary operation, a first processor executes a first graph node using a first execution unit. A first instruction produces an output value corresponding to the graph node and generates control information identifying a downstream operation. The output value and the control information are provided to a paired second instruction associated with a second execution unit, which may be located on the same processor or on another processor coupled to the shared memory. The second instruction modifies the second execution unit in accordance with the control information and causes the second execution unit to process a subsequent graph node using the received output value. Thus, graph-node execution is advanced through a processor pipeline in accordance with both data and control dependencies encoded by the paired instructions.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Produce a dense patent-claim-like paragraph combining a 3D shared-memory processor architecture with an instruction grouping mechanism that transfers operands and pending control information between execution units.",
+      "output": "A three-dimensional shared-memory processor apparatus comprising a plurality of vertically stacked semiconductor tiers interconnected by through-layer vias, hybrid-bonded interconnects, or other low-latency vertical signal paths, the plurality of tiers including at least one memory tier providing a physically shared addressable memory space and at least one logic tier including a plurality of execution units, wherein the execution units are coupled to the shared memory space through a common coherence, arbitration, or bank-access fabric and are further coupled to one another by an operand-and-control transfer network configured to convey, responsive to execution of a grouped instruction sequence, one or more source operands, intermediate result operands, destination identifiers, predicate values, exception indicators, branch-resolution state, dependency tokens, and pending control information between selected execution units without requiring intervening storage to architected memory; wherein an instruction grouping mechanism associates a plurality of instructions into an execution group having group metadata specifying operand forwarding relationships, execution-unit assignments, synchronization conditions, and control-continuation information, and wherein a first execution unit executing a first instruction of the execution group is configured to transmit to a second execution unit, over the operand-and-control transfer network, at least one produced operand together with pending control information indicating whether subsequent instructions of the execution group are enabled, annulled, redirected, replayed, or conditionally committed; wherein the second execution unit is configured to consume the transmitted operand and pending control information to execute a second instruction of the execution group while preserving a group-level dependency ordering relative to accesses to the shared memory space; and wherein the vertically integrated arrangement reduces communication distance between the shared memory tier and the logic tier while the instruction grouping mechanism reduces register-file, cache, and memory traffic by transferring operands and unresolved control state directly among execution units within the three-dimensional shared-memory processor apparatus.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7160839160839161,
+      "excess_ratio": 0.5444124364256537,
+      "baseline_mean": 0.1716714796582623,
+      "baseline_n_valid": 5,
+      "output_chars": 1020,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7297921478060047,
+          "baseline_mean": 0.13594401891599314,
+          "excess_ratio": 0.5938481288900115
+        },
+        "bz2": {
+          "actual_ratio": 0.6205450733752621,
+          "baseline_mean": 0.16192601232210993,
+          "excess_ratio": 0.4586190610531522
+        },
+        "lzma": {
+          "actual_ratio": 0.7923076923076923,
+          "baseline_mean": 0.21132081014057064,
+          "excess_ratio": 0.5809868821671216
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.40104849279161203,
+      "excess_ratio": 0.22937701313334974,
+      "baseline_mean": 0.1716714796582623,
+      "baseline_n_valid": 5,
+      "output_chars": 1000,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.34754797441364604,
+          "baseline_mean": 0.13594401891599314,
+          "excess_ratio": 0.2116039554976529
+        },
+        "bz2": {
+          "actual_ratio": 0.3752535496957404,
+          "baseline_mean": 0.16192601232210993,
+          "excess_ratio": 0.21332753737363044
+        },
+        "lzma": {
+          "actual_ratio": 0.46808510638297873,
+          "baseline_mean": 0.21132081014057064,
+          "excess_ratio": 0.2567642962424081
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.23086816720257236,
+      "excess_ratio": 0.05919668754431007,
+      "baseline_mean": 0.1716714796582623,
+      "baseline_n_valid": 5,
+      "output_chars": 2344,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.19860279441117765,
+          "baseline_mean": 0.13594401891599314,
+          "excess_ratio": 0.0626587754951845
+        },
+        "bz2": {
+          "actual_ratio": 0.2300796812749004,
+          "baseline_mean": 0.16192601232210993,
+          "excess_ratio": 0.06815366895279046
+        },
+        "lzma": {
+          "actual_ratio": 0.2608695652173913,
+          "baseline_mean": 0.21132081014057064,
+          "excess_ratio": 0.04954875507682066
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.16166974169741688,
+      "excess_ratio": -0.010001737960845414,
+      "baseline_mean": 0.1716714796582623,
+      "baseline_n_valid": 5,
+      "output_chars": 3672,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.12849162011173185,
+          "baseline_mean": 0.13594401891599314,
+          "excess_ratio": -0.007452398804261295
+        },
+        "bz2": {
+          "actual_ratio": 0.16977077363896848,
+          "baseline_mean": 0.16192601232210993,
+          "excess_ratio": 0.007844761316858545
+        },
+        "lzma": {
+          "actual_ratio": 0.1856763925729443,
+          "baseline_mean": 0.21132081014057064,
+          "excess_ratio": -0.025644417567626338
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.0578065910318746,
+      "excess_ratio": -0.11386488862638769,
+      "baseline_mean": 0.1716714796582623,
+      "baseline_n_valid": 5,
+      "output_chars": 1065,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.02782608695652174,
+          "baseline_mean": 0.13594401891599314,
+          "excess_ratio": -0.1081179319594714
+        },
+        "bz2": {
+          "actual_ratio": 0.06414473684210527,
+          "baseline_mean": 0.16192601232210993,
+          "excess_ratio": -0.09778127548000466
+        },
+        "lzma": {
+          "actual_ratio": 0.07784431137724551,
+          "baseline_mean": 0.21132081014057064,
+          "excess_ratio": -0.13347649876332512
+        }
+      }
+    }
+  }
+}

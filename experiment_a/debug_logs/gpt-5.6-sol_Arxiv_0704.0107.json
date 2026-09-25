@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0107",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA physical law is represented by the probability distribution of a measured variable. The probability density is described by measured data using an estimator whose kernel is the instrument scattering function. The experimental information and data redundancy are defined in terms of information entropy. The model cost function, comprised of data redundancy and estimation error, is minimized by the creation-annihilation process.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA physical law is represented by the probability distribution of a measured variable. The probability density is described by measured data using an estimator whose kernel is the instrument scattering function. The experimental information and data redundancy are defined in terms of information entropy. The model cost function, comprised of data redundancy and estimation error, is minimized by the creation-annihilation process.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A physical law is represented by the probability distribution of a measured variable.\n- The probability density is estimated from measured data using the instrument scattering function as the estimator kernel.\n- Experimental information and data redundancy are defined in terms of information entropy.\n- The model cost function combines data redundancy with estimation error.\n- The creation-annihilation process minimizes the model cost function.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA physical law is modeled as the probability distribution of a measured variable, estimated from data using the instrument’s scattering function as a kernel and quantified through information entropy. Minimizing a cost function that combines data redundancy and estimation error via a creation-annihilation process yields an efficient, information-based representation of the law.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The"
+  },
+  "outputs": {
+    "L1": "A physical law is represented by the probability distribution of a measured variable. The corresponding probability density is inferred from the measured data using an estimator whose kernel is the instrument’s scattering function. Experimental information and data redundancy are defined in terms of information entropy. The model’s cost function, comprising data redundancy and estimation error, is minimized through the creation–annihilation process.",
+    "L2": "A measured quantity’s probability distribution expresses a physical law. Its probability density is inferred from observations through an estimator that uses the instrument’s scattering function as its kernel. Information entropy quantifies both the experimental information and the redundancy within the data. A creation–annihilation procedure then minimizes the model’s cost function, which combines estimation error with data redundancy.",
+    "L3": "A physical law can be represented statistically by the probability distribution of an experimentally measured variable. Rather than assuming an exact deterministic relationship, this approach characterizes the law through the relative likelihood of all possible measurement outcomes.\n\nThe underlying probability density is estimated directly from the measured data. Each observation contributes to the estimate through a kernel defined by the instrument’s scattering function, which describes how the measuring device spreads or distorts an ideal signal. Using this function as the estimator kernel incorporates the instrument’s finite resolution and uncertainty into the inferred distribution.\n\nThe information contained in the experiment, as well as the redundancy present in the data, is quantified in terms of information entropy. Entropy provides a systematic measure of how much uncertainty is resolved by the observations and how much of the dataset repeats information already represented by other measurements.\n\nModel selection is then formulated as an optimization problem. The model cost function combines two competing contributions: data redundancy and estimation error. Reducing redundancy favors a simpler, more compact representation, whereas reducing estimation error favors a model that reproduces the observed probability distribution accurately. The optimal model therefore balances descriptive economy against fidelity to the experimental evidence.\n\nThis balance is achieved through a creation-annihilation process in which model elements are introduced or removed iteratively. Elements are created when they provide sufficient new information to improve the estimate and are annihilated when their contribution is redundant or does not justify the additional complexity. By repeatedly applying these operations, the process minimizes the model cost function and yields an efficient statistical representation of the physical law.",
+    "L4": "A physical law can be represented empirically by the probability distribution of an observable quantity. Rather than assuming a predetermined analytical equation, repeated measurements are used to estimate the range of possible values and the frequency with which they occur. Because every measuring device has finite resolution, each observation should not be treated as an exact point. It is instead described by the instrument’s scattering function—the probability distribution of readings produced for a fixed true value. This function acts as a kernel centered on each measurement, and the superposition of all such kernels provides a continuous estimate of the observable’s probability density.\n\nThe information contained in this estimated distribution can be quantified through entropy. Entropy measures the uncertainty or effective complexity of the observed behavior: a sharply concentrated distribution has relatively low entropy, whereas a broad or highly structured distribution generally carries greater uncertainty. In this framework, the empirical probability density and its entropy together provide an information-based description of the physical law, including both the variability of the phenomenon and the limitations imposed by measurement.\n\nA direct representation based on every recorded data point may, however, contain substantial redundancy. Many observations can contribute nearly identical information, while an excessively compressed model may fail to reproduce important features of the data. An efficient representation must therefore balance two competing objectives: reducing redundant information and limiting estimation error. This balance is expressed by a cost function with one term penalizing unnecessary model complexity and another measuring the discrepancy between the reduced representation and the full density estimate.\n\nThe cost function can be minimized through an iterative creation-annihilation process. During creation, new representative components are introduced where the current model does not describe the data accurately enough. During annihilation, components that contribute little unique information, or that duplicate nearby components, are removed. The probability distribution and its entropy are recalculated after each modification, and changes are retained only when they improve the chosen trade-off between compactness and fidelity.\n\nThe final set of components is therefore neither a simple list of measurements nor an arbitrarily fitted formula. It is a reduced statistical representation shaped by the instrument’s response, the observed data, and an explicit information criterion. By preserving significant structure while eliminating redundancy, the procedure yields an efficient empirical model of the physical law and provides a principled way to compare alternative representations in terms of both accuracy and information content.",
+    "L5": "### The Power of “The”\n\n“The” is one of the most common words in the English language. Although it is only three letters long, it plays an important role in communication. It is a definite article, used to refer to a specific person, place, object, or idea. For example, “a book” can mean any book, while “the book” points to a particular one.\n\nThe word also helps create shared understanding. When someone says “the sun,” no further explanation is usually necessary because both the speaker and listener know what is meant. In this way, “the” adds precision and context to everyday language.\n\nSmall words are easy to overlook, but “the” demonstrates that even the simplest elements can have significant influence. Without it, English would sound less natural and often be less clear."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Explain how a physical law can be inferred from measured data using kernel density estimation, information entropy, and a creation-annihilation optimization process.",
+      "output": "A physical law can be inferred by treating the unknown law as the simplest mathematical constraint that makes measured behavior maximally organized and predictable.\n\nSuppose measurements provide states \\(x_i\\), inputs \\(u_i\\), and estimated time derivatives \\(\\dot x_i\\).\n\n### 1. Estimate empirical distributions with kernel density estimation\n\nBecause the data are finite and noisy, their probability density is approximated using kernel density estimation (KDE):\n\n\\[\n\\hat p(z)=\\frac{1}{Nh^d}\\sum_{i=1}^N\nK\\!\\left(\\frac{z-z_i}{h}\\right),\n\\]\n\nwhere \\(z_i\\) may contain \\(x_i,\\dot x_i,u_i\\), \\(K\\) is a kernel—often Gaussian—and \\(h\\) is the bandwidth.\n\nKDE provides a smooth, nonparametric estimate of distributions such as\n\n\\[\np(\\dot x,x,u), \\qquad p(\\dot x\\mid x,u),\n\\]\n\nwithout assuming a particular law in advance.\n\n### 2. Measure uncertainty using information entropy\n\nFor a proposed law\n\n\\[\n\\dot x=f_\\theta(x,u),\n\\]\n\ndefine residuals\n\n\\[\nr_i=\\dot x_i-f_\\theta(x_i,u_i).\n\\]\n\nKDE is applied to the residuals to estimate \\(\\hat p_\\theta(r)\\). Their differential entropy is\n\n\\[\nH_\\theta(r)=-\\int \\hat p_\\theta(r)\\log \\hat p_\\theta(r)\\,dr.\n\\]\n\nA good law makes the residual distribution narrow and unstructured, so its entropy is low. Equivalently, one may maximize the information that the proposed law provides about the observations:\n\n\\[\nI(\\dot x;f_\\theta(x,u))\n   =H(\\dot x)-H(\\dot x\\mid f_\\theta(x,u)).\n\\]\n\nThus, the search favors equations that strongly reduce uncertainty about the system’s evolution.\n\n### 3. Create and annihilate candidate law components\n\nRepresent the possible law as a combination of candidate terms:\n\n\\[\nf_\\theta(x,u)=\\sum_{j=1}^{M} a_j\\phi_j(x,u),\n\\]\n\nwhere the \\(\\phi_j\\) could include \\(1,x,x^2,\\sin x,u,xu\\), derivatives, or dimensionally valid combinations.\n\nAn iterative creation–annihilation process then operates as follows:\n\n1. **Create:** Add new terms, interactions, operators, or equation structures.\n2. **Optimize:** Fit their coefficients to minimize an information-based objective.\n3. **Evaluate:** Measure residual entropy, prediction error, stability across data subsets, and physical consistency.\n4. **Annihilate:** Remove terms that contribute little information, are redundant, or merely fit noise.\n5. **Repeat:** Continue until no creation or deletion substantially improves the objective.\n\nA typical objective is\n\n\\[\nJ(\\theta,\\mathcal S)\n=\nH\\!\\left(\\dot x-f_{\\theta,\\mathcal S}(x,u)\\right)\n+\\lambda\\,C(\\mathcal S),\n\\]\n\nwhere \\(\\mathcal S\\) is the set of active terms and \\(C(\\mathcal S)\\) penalizes complexity. The penalty prevents a large equation from achieving artificially low entropy by overfitting.\n\n### Example\n\nFor data from a damped oscillator, the algorithm might initially consider\n\n\\[\n\\ddot x =\na_0+a_1x+a_2\\dot x+a_3x^2+a_4x\\dot x+a_5\\sin x+\\cdots .\n\\]\n\nAfter fitting, entropy minimization may show that \\(x\\) and \\(\\dot x\\) explain nearly all predictable variation. The other terms are annihilated, leaving\n\n\\[\n\\ddot x=-\\frac{k}{m}x-\\frac{c}{m}\\dot x,\n\\]\n\nor equivalently\n\n\\[\nm\\ddot x+c\\dot x+kx=0.\n\\]\n\n### Interpretation\n\nKDE describes what the measurements statistically support; entropy quantifies how much uncertainty a candidate law removes; and creation–annihilation optimization searches for a compact equation by adding useful structures and deleting unnecessary ones. The result is an empirical candidate law, not a proof of a fundamental law. It must still be validated on independent data, under new experimental conditions, and against dimensional, symmetry, and conservation constraints.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize a method in which an instrument’s scattering function serves as the kernel for estimating the probability distribution of a measured physical variable.",
+      "output": "Use the instrument’s normalized scattering—or response—function as a physically motivated kernel in kernel density estimation. For measurements \\(x_i\\),\n\n\\[\n\\hat p(x)=\\frac{1}{N}\\sum_{i=1}^{N} S_i(x\\mid x_i),\n\\]\n\nwhere \\(S_i(x\\mid x_i)\\) is the probability that the instrument reports \\(x\\) for an event centered at \\(x_i\\), normalized so its integral is one. Summing these response functions replaces histogram bins with smooth contributions whose widths and shapes reflect the instrument’s actual resolution; measurement-dependent scattering functions can accommodate varying uncertainties.\n\nThe resulting estimate describes the instrument-broadened distribution of the measured variable. Recovering the underlying true distribution requires an additional deconvolution or forward-modeling step.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Describe the relationship between probability density, experimental information, data redundancy, estimation error, and model cost in a data-driven formulation of physical laws.",
+      "output": "In a data-driven view, a physical law is a compact probabilistic model \\(p(x\\mid \\theta,M)\\) that assigns likelihoods to observed data.\n\n- **Probability density:** \\(p(x\\mid\\theta,M)\\) describes which observations the model regards as typical. Its negative logarithm,\n  \\[\n  I(x)=-\\log p(x\\mid\\theta,M),\n  \\]\n  is the observation’s **surprisal** or information content. Likely events carry little new information; unlikely events carry more.\n\n- **Experimental information:** The ability of data to determine model parameters is quantified by quantities such as the **Fisher information**\n  \\[\n  \\mathcal I(\\theta)\n  =\\mathbb E\\!\\left[\\left(\\partial_\\theta\\log p(X\\mid\\theta)\\right)^2\\right].\n  \\]\n  More informative experiments produce likelihoods that vary sharply with the parameters and therefore constrain them more strongly.\n\n- **Data redundancy:** Repeated or correlated observations contain overlapping information. Thus \\(N\\) measurements need not provide \\(N\\) independent pieces of evidence. Redundancy lowers the effective sample size \\(N_{\\rm eff}\\), even though it can make the raw data set large. In information-theoretic terms, redundant data are more compressible.\n\n- **Estimation error:** Parameter uncertainty is inversely related to independent information. For an unbiased estimator,\n  \\[\n  \\operatorname{Cov}(\\hat\\theta)\\succeq \\mathcal I_{\\rm total}^{-1},\n  \\]\n  by the Cramér–Rao bound. Independent measurements generally add Fisher information, while redundancy makes it grow more slowly. Consequently, estimation error often scales as \\(1/\\sqrt{N_{\\rm eff}}\\), not \\(1/\\sqrt N\\).\n\n- **Model cost:** A more flexible law can fit the observed density better, but it requires more parameters or a longer description and is more vulnerable to fitting noise. Data-driven law discovery therefore balances goodness of fit against complexity, for example through\n  \\[\n  \\underbrace{-\\log p(D\\mid M,\\hat\\theta)}_{\\text{data misfit or residual information}}\n  +\n  \\underbrace{C(M,\\hat\\theta)}_{\\text{model cost}}.\n  \\]\n  This is the basic form behind minimum-description-length methods, Bayesian evidence, AIC/BIC, and regularized inference.\n\nHence, the preferred physical law is not simply the model with the highest raw fit. It is the model that captures the **nonredundant information** in the experimental probability distribution with sufficiently small estimation error while paying the lowest justified complexity cost. In compression language, a good law replaces recurring structure in the data with a short model, leaving only incompressible residuals or noise.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Write a concise abstract about reconstructing physical laws from experimental measurements by minimizing an entropy-based cost function through creation and annihilation of estimator components.",
+      "output": "We present a framework for reconstructing physical laws directly from experimental measurements by representing candidate laws as ensembles of estimator components. Model discovery is formulated as minimization of an entropy-based cost function balancing data fidelity, complexity, and uncertainty. Components are iteratively created, adapted, or annihilated according to their contribution to the global cost, enabling the estimator to explore structures of varying dimensionality without prescribing a fixed model architecture. The resulting dynamics identify compact, interpretable relations consistent with noisy observations and provide a principled route from experimental data to governing equations.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "How can a creation-annihilation process optimize a density estimator whose cost function combines data redundancy with estimation error?",
+      "output": "A creation–annihilation process can optimize a density estimator by treating each kernel or prototype as a particle that may be created, moved, or removed.\n\nLet the estimator be\n\n\\[\n\\hat p_\\Theta(x)=\\sum_{j=1}^{M} w_j K_{h_j}(x-c_j),\n\\]\n\nwhere \\(c_j\\), \\(h_j\\), and \\(w_j\\) are the center, bandwidth, and weight of particle \\(j\\). Define an objective\n\n\\[\nJ(\\Theta)\n=\nE_{\\text{fit}}(\\hat p_\\Theta,\\mathcal D)\n+\\lambda R(\\Theta),\n\\]\n\nwhere:\n\n- \\(E_{\\text{fit}}\\) measures estimation error, such as negative log-likelihood, integrated squared error, or cross-validation loss;\n- \\(R\\) penalizes redundancy, for example the number of kernels or overlap between similar kernels;\n- \\(\\lambda\\) controls the accuracy–compression tradeoff.\n\nA typical redundancy penalty is\n\n\\[\nR(\\Theta)=\\alpha M+\n\\beta\\sum_{i<j}\n\\exp\\!\\left[-\\frac{\\|c_i-c_j\\|^2}{2\\sigma^2}\\right],\n\\]\n\nwhich discourages both excessive component count and strongly overlapping components.\n\n### Creation\n\nPropose a new kernel in a region where the current estimator underfits the data—for example, by sampling a data point with probability proportional to its residual or low estimated likelihood. If adding it changes the cost by\n\n\\[\n\\Delta J_{\\mathrm{create}}=J(\\Theta\\cup\\{\\theta_{\\mathrm{new}}\\})-J(\\Theta),\n\\]\n\naccept it when the reduction in estimation error outweighs its redundancy cost. A simulated-annealing rule is\n\n\\[\nP_{\\mathrm{create}}\n=\n\\min\\left(1,\\,\nC_{\\mathrm{MH}}e^{-\\Delta J_{\\mathrm{create}}/T}\n\\right),\n\\]\n\nwhere \\(C_{\\mathrm{MH}}\\) accounts for proposal probabilities and dimensionality changes.\n\n### Annihilation\n\nRemove a kernel that contributes little unique information, or annihilate one of two highly overlapping kernels. For removing component \\(j\\),\n\n\\[\n\\Delta J_{\\mathrm{delete},j}\n=\nJ(\\Theta\\setminus\\{\\theta_j\\})-J(\\Theta).\n\\]\n\nDeletion is favored if it greatly reduces redundancy while causing little increase in estimation error:\n\n\\[\nP_{\\mathrm{delete}}\n=\n\\min\\left(1,\\,\nC'_{\\mathrm{MH}}e^{-\\Delta J_{\\mathrm{delete},j}/T}\n\\right).\n\\]\n\nBetween birth and death events, centers, weights, and bandwidths can be optimized by gradient descent, EM, or local stochastic moves.\n\nAt high temperature \\(T\\), the process explores different model sizes and configurations. As \\(T\\) decreases, unfavorable moves become rare, and the population settles near a minimum of \\(J\\). The resulting estimator automatically allocates more kernels to complex or poorly fitted regions and removes kernels that duplicate information, jointly selecting model structure and fitting the density. In practice, reversible-jump MCMC or birth–death particle algorithms provide a principled implementation of this idea.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7082860385925085,
+      "excess_ratio": 0.5818329841883951,
+      "baseline_mean": 0.1264530544041133,
+      "baseline_n_valid": 5,
+      "output_chars": 453,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7442748091603053,
+          "baseline_mean": 0.10208231924639992,
+          "excess_ratio": 0.6421924899139054
+        },
+        "bz2": {
+          "actual_ratio": 0.5532646048109966,
+          "baseline_mean": 0.11818988695339032,
+          "excess_ratio": 0.43507471785760626
+        },
+        "lzma": {
+          "actual_ratio": 0.8170731707317073,
+          "baseline_mean": 0.15531225503480944,
+          "excess_ratio": 0.6617609156968978
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.46943483275663206,
+      "excess_ratio": 0.34298177835251875,
+      "baseline_mean": 0.1264530544041133,
+      "baseline_n_valid": 5,
+      "output_chars": 440,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.42745098039215684,
+          "baseline_mean": 0.10208231924639992,
+          "excess_ratio": 0.3253686611457569
+        },
+        "bz2": {
+          "actual_ratio": 0.4236111111111111,
+          "baseline_mean": 0.11818988695339032,
+          "excess_ratio": 0.30542122415772077
+        },
+        "lzma": {
+          "actual_ratio": 0.5432098765432098,
+          "baseline_mean": 0.15531225503480944,
+          "excess_ratio": 0.3878976215084004
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.21017942145734167,
+      "excess_ratio": 0.08372636705322836,
+      "baseline_mean": 0.1264530544041133,
+      "baseline_n_valid": 5,
+      "output_chars": 1951,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.18317972350230416,
+          "baseline_mean": 0.10208231924639992,
+          "excess_ratio": 0.08109740425590424
+        },
+        "bz2": {
+          "actual_ratio": 0.1937984496124031,
+          "baseline_mean": 0.11818988695339032,
+          "excess_ratio": 0.07560856265901279
+        },
+        "lzma": {
+          "actual_ratio": 0.25,
+          "baseline_mean": 0.15531225503480944,
+          "excess_ratio": 0.09468774496519056
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.14226910213532298,
+      "excess_ratio": 0.015816047731209676,
+      "baseline_mean": 0.1264530544041133,
+      "baseline_n_valid": 5,
+      "output_chars": 2909,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.11662726556343578,
+          "baseline_mean": 0.10208231924639992,
+          "excess_ratio": 0.014544946317035859
+        },
+        "bz2": {
+          "actual_ratio": 0.14069952305246422,
+          "baseline_mean": 0.11818988695339032,
+          "excess_ratio": 0.0225096360990739
+        },
+        "lzma": {
+          "actual_ratio": 0.1676470588235294,
+          "baseline_mean": 0.15531225503480944,
+          "excess_ratio": 0.012334803788719956
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.05943827563683863,
+      "excess_ratio": -0.06701477876727469,
+      "baseline_mean": 0.1264530544041133,
+      "baseline_n_valid": 5,
+      "output_chars": 784,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.03389830508474576,
+          "baseline_mean": 0.10208231924639992,
+          "excess_ratio": -0.06818401416165415
+        },
+        "bz2": {
+          "actual_ratio": 0.05410821643286573,
+          "baseline_mean": 0.11818988695339032,
+          "excess_ratio": -0.06408167052052459
+        },
+        "lzma": {
+          "actual_ratio": 0.08571428571428572,
+          "baseline_mean": 0.15531225503480944,
+          "excess_ratio": -0.06959796932052373
+        }
+      }
+    }
+  }
+}

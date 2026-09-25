@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15763539",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nAn electric power control method comprising: a current measuring step; a command value calculating step; an operating step; a determining step of determining whether to change an operation period within which the operating step is performed so as to be longer than one cycle of the carrier wave or not; a first reducing step of reducing the switching operation of the switching elements in a first half cycle of the carrier wave starting from a start timing of the operation period after the change during which the carrier wave monotonously changes; a comparing step of changing a slope of the carrier wave in an intermediate period between the first half cycle of the carrier wave and a last half cycle of the carrier wave in the operation period after the change to compare the carrier wave with the duty command value in the magnitude, the comparing step performing the switching operation of the switching elements according to a result of the comparison; and a second reducing step of reducing the switching operation of the switching elements in the last half cycle of the carrier wave.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nAn electric power control method comprising: a current measuring step; a command value calculating step; an operating step; a determining step of determining whether to change an operation period within which the operating step is performed so as to be longer than one cycle of the carrier wave or not; a first reducing step of reducing the switching operation of the switching elements in a first half cycle of the carrier wave starting from a start timing of the operation period after the change during which the carrier wave monotonously changes; a comparing step of changing a slope of the carrier wave in an intermediate period between the first half cycle of the carrier wave and a last half cycle of the carrier wave in the operation period after the change to compare the carrier wave with the duty command value in the magnitude, the comparing step performing the switching operation of the switching elements according to a result of the comparison; and a second reducing step of reducing the switching operation of the switching elements in the last half cycle of the carrier wave.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The method includes measuring current, calculating a command value, and operating switching elements in an electric power control process.\n- The method determines whether to extend the operation period beyond one cycle of the carrier wave.\n- Switching operation is reduced during the first half cycle of the carrier wave after the operation period is changed.\n- In an intermediate period, the slope of the carrier wave is changed and compared with the duty command value to control switching.\n- Switching operation is also reduced during the last half cycle of the carrier wave.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nAn electric power control method adjusts inverter switching by measuring current, calculating duty commands, deciding whether to extend the operation period beyond one carrier-wave cycle, and modifying carrier-wave comparison behavior during the extended period. It reduces switching in the first and last half-cycles while changing the carrier-wave slope in the intermediate period to maintain control, thereby lowering switching losses or noise while preserving power-control performance.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: An electric power"
+  },
+  "outputs": {
+    "L1": "An electric power control method comprising: a current measuring step; a command value calculating step; an operating step; a determining step of determining whether to change an operation period during which the operating step is performed so that the operation period is longer than one cycle of a carrier wave; a first reducing step of reducing switching operation of switching elements in a first half cycle of the carrier wave, starting from a start timing of the changed operation period, during which the carrier wave changes monotonically; a comparing step of changing a slope of the carrier wave in an intermediate period between the first half cycle of the carrier wave and a last half cycle of the carrier wave in the changed operation period, and comparing a magnitude of the carrier wave with a magnitude of the duty command value, the comparing step performing the switching operation of the switching elements according to a result of the comparison; and a second reducing step of reducing the switching operation of the switching elements in the last half cycle of the carrier wave.",
+    "L2": "An electric power control method includes: measuring current; calculating a command value; performing an operation; deciding whether an operation period during which the operation is carried out should be extended to exceed one cycle of a carrier wave; suppressing switching of switching elements during a first half-cycle of the carrier wave that begins at the start timing of the changed operation period and in which the carrier wave varies monotonically; comparing, during an intermediate interval between the first half-cycle and a final half-cycle of the carrier wave in the changed operation period, the carrier wave with a duty command value by altering the slope of the carrier wave, and carrying out switching of the switching elements based on the comparison result; and suppressing switching of the switching elements during the final half-cycle of the carrier wave.",
+    "L3": "The method relates to an electric power control process in which switching elements are controlled on the basis of a carrier wave and a duty command value. In this method, an electric current is first measured, and a command value is calculated based on the measured current. The calculated command value is then used to operate the switching elements so that electric power is controlled in accordance with a desired output.\n\nThe method further includes determining whether an operation period of the switching elements should be extended beyond one cycle of the carrier wave. When it is determined that the operation period is to be changed, the control process adjusts the switching operation so as to reduce unnecessary switching.\n\nIn particular, during the first half cycle of the carrier wave after the operation period has been changed, the number of switching operations is reduced. This helps suppress switching losses and improves the efficiency of the electric power control process.\n\nDuring an intermediate period following the first half cycle, the slope of the carrier wave is changed. The modified carrier wave is then compared with the duty command value, and the switching elements are controlled according to the result of this comparison. By changing the slope of the carrier wave in this intermediate period, the method enables smooth control while maintaining consistency with the calculated duty command value.\n\nThe method also reduces switching operation during the last half cycle of the carrier wave. As a result, switching losses can be further decreased, and stable power control can be maintained even when the operation period is extended beyond a single carrier-wave cycle.",
+    "L4": "An electric power control method is provided for controlling an inverter that converts electric power by switching a plurality of switching elements in accordance with pulse-width modulation. In this method, a current flowing through the inverter, a load, or an electric motor connected to the inverter is measured, and a control device calculates duty commands on the basis of the measured current and a target power, voltage, torque, or current value. The duty commands represent switching instructions to be used in comparison with a carrier wave, such as a triangular wave or sawtooth wave, for generating gate signals for the switching elements of the inverter.\n\nThe control device determines, for each control period, whether inverter operation should be performed within a normal operation period corresponding to one cycle of the carrier wave or whether the operation period should be extended beyond one carrier-wave cycle. When the operation period is not extended, the inverter is controlled in a normal pulse-width modulation manner by comparing the duty commands with the carrier wave and switching the inverter elements according to the comparison result.\n\nWhen the control device determines that the operation period should be extended, the operation period is divided into a first half-cycle period, an intermediate period, and a last half-cycle period. During the first half-cycle period and the last half-cycle period, the comparison behavior between the carrier wave and the duty commands is modified so that unnecessary switching is suppressed or reduced. For example, switching states may be held for a longer time, or a comparison threshold may be adjusted so that fewer transitions occur. As a result, the number of turn-on and turn-off operations of the switching elements is decreased in portions of the extended period where switching reduction is most effective.\n\nDuring the intermediate period between the first and last half-cycles, the slope of the carrier wave is changed so that the desired duty relationship is maintained despite the extension of the operation period. By modifying the inclination of the carrier wave, the control device can continue to generate appropriate switching commands while compensating for the time extension. This allows the inverter output voltage or current to remain close to the commanded value, even though the number or timing of switching events has been altered.\n\nAccordingly, the method reduces switching losses and electromagnetic noise caused by frequent switching of the inverter elements. At the same time, because the duty commands are still calculated from measured current values and the carrier-wave comparison is adjusted during the extended period, the inverter can maintain stable power control. The method is therefore useful for applications such as motor drives, power converters, electric vehicles, and other systems in which it is desirable to improve efficiency, reduce heat generation, and suppress noise without significantly degrading control performance.",
+    "L5": "**An Electric Power**\n\nAn electric power system is an essential part of modern life. It provides the energy needed to run homes, schools, hospitals, factories, and transportation systems. Without electric power, many daily activities would become difficult or impossible, such as lighting rooms, charging phones, using computers, and operating machines.\n\nElectric power is produced in different ways. It can come from power plants that use coal, natural gas, nuclear energy, water, wind, or sunlight. Renewable sources like solar and wind power are becoming more popular because they are cleaner and help reduce pollution. After electricity is generated, it travels through power lines to reach cities, towns, and villages.\n\nAn electric power supply must be reliable and safe. If there is a power outage, it can affect businesses, communication, and emergency services. For this reason, engineers work hard to improve electrical grids and make them stronger and more efficient.\n\nIn the future, electric power will become even more important. As electric cars, smart homes, and new technologies continue to grow, the demand for electricity will increase. Using energy wisely and supporting clean power sources can help create a better and more sustainable world."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent claim for an electric power control method using carrier-wave comparison and reduced switching in the first and last half cycles after extending an operation period.",
+      "output": "1. **An electric power control method** for controlling power supplied from an AC power source to a load by a switching device, the method comprising:\n\n   generating a control signal corresponding to a desired power amount to be supplied to the load;\n\n   comparing the control signal with a carrier wave to determine switching timings of the switching device within an operation period including a plurality of half cycles of the AC power source;\n\n   extending the operation period from a reference operation period to an extended operation period including a greater number of half cycles than the reference operation period;\n\n   driving the switching device during the extended operation period in accordance with a result of the comparison between the control signal and the carrier wave; and\n\n   reducing switching of the switching device in a first half cycle and a last half cycle of the extended operation period relative to switching performed in one or more intermediate half cycles of the extended operation period,\n\n   wherein the reducing of switching suppresses a change in power supplied to the load at a beginning and an end of the extended operation period while maintaining, over the extended operation period, an average supplied power corresponding to the desired power amount.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write one independent method claim for inverter control where switching operations are reduced at the beginning and end of an extended carrier-wave operation period, with current measurement, duty command calculation, and slope adjustment.",
+      "output": "1. A method for controlling an inverter, the method comprising:\n\nmeasuring a current output from the inverter;\n\ncalculating, based at least on the measured current, a duty command for controlling switching elements of the inverter;\n\ngenerating a carrier wave having an extended carrier-wave operation period that is longer than a normal carrier-wave period;\n\nadjusting a slope of the carrier wave within the extended carrier-wave operation period such that a change rate of the carrier wave is reduced at a beginning portion and an end portion of the extended carrier-wave operation period; and\n\ncontrolling switching operations of the switching elements by comparing the duty command with the carrier wave having the adjusted slope,\n\nwherein the adjusted slope reduces a number of switching operations of the switching elements at the beginning portion and the end portion of the extended carrier-wave operation period.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate a Japanese-style patent claim in English for an electric power control method comprising steps of measuring current, calculating a command value, determining whether to lengthen an operation period beyond one carrier cycle, and controlling switching elements accordingly.",
+      "output": "1. An electric power control method for controlling switching elements of a power converter, the electric power control method comprising:\n\nmeasuring a current flowing in the power converter;\n\ncalculating, based on the measured current, a command value for controlling an output of the power converter;\n\ndetermining, based on the command value, whether an operation period of the switching elements is to be lengthened to a period longer than one carrier cycle; and\n\ncontrolling the switching elements in accordance with the command value,\n\nwherein, when it is determined that the operation period is to be lengthened, the switching elements are controlled so that a switching state corresponding to the command value is maintained over a plurality of carrier cycles.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Compose a single “method comprising” claim for a PWM power converter control technique that changes the carrier wave slope during an intermediate period and suppresses switching in the first and last half-cycles.",
+      "output": "1. A method comprising:  \n\ngenerating, by a controller of a pulse-width modulated power converter, a modulation signal corresponding to a desired converter output;  \n\ngenerating a carrier wave for comparison with the modulation signal over a control interval comprising a first half-cycle, an intermediate period, and a last half-cycle;  \n\nsuppressing switching of at least one power switching device of the power converter during the first half-cycle and during the last half-cycle;  \n\nduring the intermediate period, changing a slope of the carrier wave relative to a slope used outside the intermediate period;  \n\ncomparing the modulation signal with the carrier wave having the changed slope during the intermediate period to produce pulse-width modulation control signals; and  \n\napplying the pulse-width modulation control signals to the at least one power switching device during the intermediate period to control power conversion by the power converter.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Please create patent-claim language describing an electric power control method that compares a carrier wave with a duty command value, operates switching elements based on the comparison, and reduces switching when the operation period is changed to be longer than one carrier-wave cycle.",
+      "output": "1. **An electric power control method** for controlling electric power supplied through a power conversion circuit including a switching element, the method comprising:  \n   generating a carrier wave having a carrier-wave cycle;  \n   acquiring a duty command value corresponding to a desired output of the power conversion circuit;  \n   comparing the carrier wave with the duty command value;  \n   operating the switching element in accordance with a result of the comparison;  \n   setting an operation period during which switching operation of the switching element is determined; and  \n   when the operation period is changed from a first operation period corresponding to one cycle of the carrier wave to a second operation period longer than the one cycle of the carrier wave, reducing a number of switching operations of the switching element within the second operation period.\n\n2. The electric power control method according to claim 1, wherein reducing the number of switching operations comprises maintaining an on-state or an off-state of the switching element over a plurality of cycles of the carrier wave.\n\n3. The electric power control method according to claim 1, wherein the switching element is operated based on the comparison between the carrier wave and the duty command value during the first operation period, and switching of the switching element is inhibited for at least one carrier-wave cycle during the second operation period.\n\n4. The electric power control method according to claim 1, wherein the second operation period is an integer multiple of the carrier-wave cycle.\n\n5. The electric power control method according to claim 1, wherein the number of switching operations is reduced by updating a switching command for the switching element once per the second operation period instead of once per the carrier-wave cycle.\n\n6. The electric power control method according to claim 1, wherein the duty command value is held constant during the second operation period.\n\n7. The electric power control method according to claim 1, wherein changing the operation period to the second operation period is performed in response to an operating condition of the power conversion circuit.\n\n8. The electric power control method according to claim 7, wherein the operating condition includes at least one of an output power, an output current, an output voltage, a temperature of the switching element, a switching loss, or a required control response.\n\n9. The electric power control method according to claim 1, wherein the power conversion circuit is an inverter, and the switching element is one of a plurality of switching elements operated to generate an alternating-current output.\n\n10. The electric power control method according to claim 1, wherein reducing the number of switching operations reduces switching loss of the switching element while controlling the output of the power conversion circuit in accordance with the duty command value.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7538966365873667,
+      "excess_ratio": 0.507252788570938,
+      "baseline_mean": 0.24664384801642872,
+      "baseline_n_valid": 5,
+      "output_chars": 1098,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7771739130434783,
+          "baseline_mean": 0.1972150099081785,
+          "excess_ratio": 0.5799589031352997
+        },
+        "bz2": {
+          "actual_ratio": 0.6511056511056511,
+          "baseline_mean": 0.24158694107598908,
+          "excess_ratio": 0.409518710029662
+        },
+        "lzma": {
+          "actual_ratio": 0.8288288288288288,
+          "baseline_mean": 0.2928221321405874,
+          "excess_ratio": 0.5360066966882414
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.45585738539898135,
+      "excess_ratio": 0.20921353738255263,
+      "baseline_mean": 0.24664384801642872,
+      "baseline_n_valid": 5,
+      "output_chars": 878,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3937677053824363,
+          "baseline_mean": 0.1972150099081785,
+          "excess_ratio": 0.19655269547425777
+        },
+        "bz2": {
+          "actual_ratio": 0.4631043256997455,
+          "baseline_mean": 0.24158694107598908,
+          "excess_ratio": 0.22151738462375645
+        },
+        "lzma": {
+          "actual_ratio": 0.5,
+          "baseline_mean": 0.2928221321405874,
+          "excess_ratio": 0.2071778678594126
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.30292513634110063,
+      "excess_ratio": 0.05628128832467191,
+      "baseline_mean": 0.24664384801642872,
+      "baseline_n_valid": 5,
+      "output_chars": 1703,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2610759493670886,
+          "baseline_mean": 0.1972150099081785,
+          "excess_ratio": 0.06386093945891011
+        },
+        "bz2": {
+          "actual_ratio": 0.29774436090225564,
+          "baseline_mean": 0.24158694107598908,
+          "excess_ratio": 0.05615741982626657
+        },
+        "lzma": {
+          "actual_ratio": 0.34444444444444444,
+          "baseline_mean": 0.2928221321405874,
+          "excess_ratio": 0.051622312303857054
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.15253764640267703,
+      "excess_ratio": -0.09410620161375169,
+      "baseline_mean": 0.24664384801642872,
+      "baseline_n_valid": 5,
+      "output_chars": 3045,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.11774744027303755,
+          "baseline_mean": 0.1972150099081785,
+          "excess_ratio": -0.07946756963514096
+        },
+        "bz2": {
+          "actual_ratio": 0.15630397236614854,
+          "baseline_mean": 0.24158694107598908,
+          "excess_ratio": -0.08528296870984053
+        },
+        "lzma": {
+          "actual_ratio": 0.18152866242038215,
+          "baseline_mean": 0.2928221321405874,
+          "excess_ratio": -0.11129346972020523
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.05722599418040742,
+      "excess_ratio": -0.1894178538360213,
+      "baseline_mean": 0.24664384801642872,
+      "baseline_n_valid": 5,
+      "output_chars": 1261,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.026153846153846153,
+          "baseline_mean": 0.1972150099081785,
+          "excess_ratio": -0.17106116375433233
+        },
+        "bz2": {
+          "actual_ratio": 0.056402439024390245,
+          "baseline_mean": 0.24158694107598908,
+          "excess_ratio": -0.18518450205159884
+        },
+        "lzma": {
+          "actual_ratio": 0.08465608465608465,
+          "baseline_mean": 0.2928221321405874,
+          "excess_ratio": -0.20816604748450274
+        }
+      }
+    }
+  }
+}

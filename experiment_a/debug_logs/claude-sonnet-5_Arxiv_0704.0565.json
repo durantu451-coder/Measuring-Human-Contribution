@@ -1,0 +1,169 @@
+{
+  "model": "claude-sonnet-5",
+  "domain": "Arxiv",
+  "id": "0704.0565",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe rigorously derive a weak form of the Lifshitz-Slyozov-Wagner equation as the homogenization limit of a Stefan-type problem describing reaction-controlled coarsening of a large number of small spherical particles. Moreover, we deduce that the effective mean-field description holds true in the particular limit of vanishing surface-area density of particles.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe rigorously derive a weak form of the Lifshitz-Slyozov-Wagner equation as the homogenization limit of a Stefan-type problem describing reaction-controlled coarsening of a large number of small spherical particles. Moreover, we deduce that the effective mean-field description holds true in the particular limit of vanishing surface-area density of particles.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The study provides a rigorous mathematical derivation of a weak form of the Lifshitz-Slyozov-Wagner equation, establishing it as a homogenization limit of a more complex underlying model.\n- The underlying model is a Stefan-type problem, which is used to describe the physical process of reaction-controlled coarsening.\n- The physical system under consideration involves the dynamics of a large number of small spherical particles undergoing this coarsening process.\n- A key finding is that the effective mean-field description, represented by the LSW equation, is shown to hold true specifically in the limit of vanishing surface-area density of particles.\n- This work connects a microscopic, particle-based model (Stefan-type problem) to a macroscopic, statistical mean-field theory (LSW equation) through a specific limiting procedure.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis study derives a weak form of the Lifshitz-Slyozov-Wagner equation by taking the homogenization limit of a Stefan-type problem that models reaction-controlled coarsening in systems of numerous small spherical particles. The analysis reveals that this effective mean-field description is rigorously valid specifically in the limit of vanishing surface-area density of particles, thereby clarifying the precise conditions under which the mean-field approximation holds.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Lifshitz, Slyozov, Wagner"
+  },
+  "outputs": {
+    "L1": "Here is a polished version of your text:\n\nWe rigorously derive a weak formulation of the Lifshitz–Slyozov–Wagner equation as the homogenization limit of a Stefan-type problem governing the reaction-controlled coarsening of a large ensemble of small spherical particles. Furthermore, we show that this effective mean-field description emerges precisely in the limit of vanishing surface-area density of particles.",
+    "L2": "We provide a rigorous mathematical derivation showing that a weak formulation of the Lifshitz-Slyozov-Wagner equation emerges naturally when taking the homogenization limit of a Stefan-type problem, which models the reaction-controlled coarsening process occurring in systems containing a large ensemble of small spherical particles. In addition, we establish that this effective mean-field description becomes valid precisely in the limiting case where the surface-area density of the particles tends to zero.",
+    "L3": "# Rigorous Derivation of the Lifshitz-Slyozov-Wagner Equation as a Homogenization Limit\n\n## Overview\n\nThis study establishes a rigorous mathematical connection between two fundamental descriptions of coarsening phenomena in materials science: a microscopic free boundary problem and its macroscopic mean-field counterpart. Specifically, we provide a complete derivation showing that a weak formulation of the Lifshitz-Slyozov-Wagner (LSW) equation emerges naturally as a homogenization limit of a more detailed and physically explicit underlying model.\n\n## The Underlying Physical Model\n\nThe foundation of our analysis rests on a Stefan-type problem, a well-established mathematical framework for describing free boundary problems involving phase transitions and moving interfaces. In the present context, this model is employed to capture the physics of **reaction-controlled coarsening**—a regime in which the kinetics of particle growth and dissolution are governed primarily by interfacial reaction rates rather than by diffusive transport processes alone. This distinguishes the present analysis from diffusion-controlled coarsening scenarios, which have historically received more attention in the mathematical literature.\n\nThe physical system of interest consists of a large ensemble of small spherical particles embedded within a surrounding matrix. These particles undergo the characteristic dynamics of Ostwald ripening: larger particles grow at the expense of smaller ones, which shrink and eventually vanish, driven by differences in local chemical potential arising from the Gibbs-Thomson effect. The Stefan-type formulation explicitly tracks the individual particle boundaries, incorporating the detailed geometry and reaction kinetics at each particle interface. This microscopic model thus provides a physically detailed and mathematically precise description of the coarsening process at the level of individual particles.\n\n## The Homogenization Procedure and Main Result\n\nThe central mathematical contribution of this work is to demonstrate that, under an appropriate scaling limit, the collective behavior of this large particle ensemble can be effectively described by the classical LSW mean-field equation. The LSW theory, originally developed by Lifshitz and Slyozov and independently by Wagner, provides a statistical description of coarsening dynamics through a continuity equation governing the evolution of the particle size distribution function, coupled with a mean-field growth law.\n\nThe key finding of this study is that this effective, statistical mean-field description becomes rigorously valid precisely in the limit as the **surface-area density of particles vanishes**. This scaling condition is physically significant: it corresponds to a regime in which particles are sufficiently dilute (in terms of their collective interfacial area) that the mean-field approximation—wherein each particle interacts with the ensemble only through an averaged background concentration field—becomes asymptotically exact. As this density parameter tends to zero, the detailed microscopic interactions encoded in the Stefan problem homogenize into the simpler, statistically averaged LSW dynamics.\n\n## Significance and Contribution\n\nThe broader significance of this work lies in its rigorous bridging of scales: it connects a microscopic, geometrically explicit, particle-based model to a macroscopic, statistical theory through a well-defined and mathematically justified limiting procedure. This homogenization result not only lends theoretical support to the widespread use of the LSW equation in describing coarsening phenomena but also clarifies the precise physical and mathematical conditions—namely, the vanishing surface-area density regime—under which this mean-field approximation is justified. In doing so, the study contributes to a deeper understanding of the passage from individual particle dynamics to emergent collective behavior in phase-transformation processes, situating the LSW equation firmly within the broader mathematical framework of homogenization theory for free boundary problems.",
+    "L4": "# Homogenization of a Stefan-Type Model for Reaction-Controlled Coarsening: Deriving the LSW Equation\n\n## Background and Motivation\n\nOstwald ripening, or coarsening, is a fundamental phenomenon observed in a wide variety of physical systems, including alloys, emulsions, and polymer blends, where a population of dispersed particles evolves over time through the exchange of material via a surrounding matrix. Larger particles grow at the expense of smaller ones, driven by differences in surface energy (Gibbs-Thomson effect), leading to a coarsening of the microstructure and a reduction in the total interfacial area. Understanding the statistical evolution of the particle size distribution during this process is of significant theoretical and practical importance, as it governs material properties in many technological applications.\n\nThe classical mean-field theory describing this phenomenon is the Lifshitz-Slyozov-Wagner (LSW) equation, originally derived through formal asymptotic arguments under the assumption that particles are sparsely and randomly distributed, so that their mutual interactions can be captured through a single, spatially-averaged mean-field quantity (typically the far-field concentration of the diffusing species). While the LSW theory has proven remarkably successful in predicting qualitative and quantitative features of coarsening dynamics, its rigorous derivation from more fundamental, particle-resolved models has remained a subject of ongoing mathematical investigation, particularly regarding the precise conditions under which the mean-field approximation is valid.\n\n## Approach and Methodology\n\nThis study addresses this gap by considering a microscopic model of reaction-controlled coarsening, in which the kinetics of mass transfer at each particle-matrix interface are governed by an interfacial reaction rate, in contrast to diffusion-controlled coarsening, where growth is limited by the diffusive transport of solute through the matrix. The microscopic system is modeled as a Stefan-type free boundary problem, in which a large number of small, spherical particles are embedded in a continuous matrix, and the evolution of the interface between each particle and the matrix is coupled to a bulk concentration field satisfying a diffusion equation, subject to Gibbs-Thomson boundary conditions at each particle surface.\n\nTo derive the effective, macroscopic description valid for a large ensemble of particles, we perform a rigorous homogenization analysis of this Stefan-type problem in the limit as the number of particles tends to infinity while their individual sizes tend to zero. This asymptotic procedure allows us to systematically pass from the fully resolved, particle-level dynamics to a reduced, statistical description of the particle size distribution, expressed as a weak (measure-valued or distributional) formulation of the LSW-type evolution equation.\n\n## Main Results\n\nThe central result of this analysis is the identification of the precise scaling regime under which this homogenization limit yields the classical LSW mean-field equation as a rigorous consequence of the microscopic model, rather than as a purely formal approximation. Specifically, we demonstrate that the mean-field description emerges exactly in the limit where the surface-area density of the particles-that is, the total interfacial area per unit volume of the matrix-vanishes. This scaling condition ensures that the individual particles' local perturbations to the bulk concentration field become asymptotically negligible in aggregate, allowing the diffusive exchange between particles to be effectively replaced by interaction with a spatially homogeneous mean field.\n\n## Significance\n\nThese findings provide a rigorous mathematical foundation for the LSW theory in the reaction-controlled coarsening regime, clarifying the specific geometric and statistical conditions-namely, vanishing surface-area density-under which the mean-field approximation faithfully captures the collective behavior of the underlying particle system. This result not only validates the classical theory in a precise asymptotic sense but also delineates the boundary of its applicability, offering insight into scenarios where corrections to the mean-field description may become necessary, such as in systems with higher particle densities or significant spatial correlations between particles.",
+    "L5": "# The Lifshitz-Slyozov-Wagner Theory of Ostwald Ripening\n\nThe Lifshitz-Slyozov-Wagner (LSW) theory represents a cornerstone achievement in the physics of phase transformations, providing a rigorous mathematical framework for understanding Ostwald ripening—the process by which larger particles grow at the expense of smaller ones within a system of dispersed phases. This theory was developed independently in 1961 by Ilya Lifshitz and Vitaly Slyozov in the Soviet Union, and by Carl Wagner in Germany, whose parallel derivations converged on remarkably similar conclusions despite their separate approaches.\n\n## Physical Foundation\n\nThe phenomenon of Ostwald ripening, first described qualitatively by Wilhelm Ostwald in the late 19th century, occurs because smaller particles possess higher surface curvature and consequently higher chemical potential compared to larger particles. This curvature-dependent solubility, described by the Gibbs-Thomson relation, creates a concentration gradient in the surrounding matrix that drives atoms or molecules to diffuse away from small particles and toward larger ones. Over time, this process leads to a coarsening of the microstructure: small particles shrink and eventually disappear, while large particles continue to grow.\n\n## Key Theoretical Predictions\n\nThe LSW theory makes several remarkable predictions that have been extensively validated experimentally:\n\n1. **Cube-root growth law**: The average particle radius grows proportionally to the cube root of time, expressed as r³ ∝ t, for diffusion-controlled coarsening.\n\n2. **Universal size distribution**: The theory predicts a specific, asymptotic particle size distribution function that becomes independent of the initial distribution at long times. This self-similar distribution has a characteristic sharp cutoff at a maximum particle size equal to 1.5 times the average radius.\n\n3. **Scaling behavior**: The particle size distribution, when properly normalized, exhibits universal scaling behavior regardless of the specific material system under consideration.\n\n## Assumptions and Limitations\n\nThe original LSW formulation assumes an infinitely dilute system of particles, meaning that the volume fraction of the precipitating phase approaches zero. This assumption simplifies the diffusion problem by allowing each particle to be treated independently, without interference from neighboring particles. However, real systems typically involve finite volume fractions, which necessitated subsequent extensions to the theory.\n\n## Extensions and Modifications\n\nSince the original publication, numerous researchers have extended the LSW framework to account for:\n\n- **Finite volume fractions**: Modifications by Ardell, Marqusee, and others have incorporated the effects of particle interactions at higher volume fractions, leading to broader size distributions and modified growth kinetics.\n- **Elastic effects**: In solid-state systems, elastic stress fields around particles can significantly alter the coarsening behavior.\n- **Interface-controlled kinetics**: When interface attachment kinetics rather than long-range diffusion becomes rate-limiting, different scaling laws emerge.\n- **Multi-component systems**: Extensions to ternary and multicomponent alloys have been developed to address more complex, technologically relevant materials.\n\n## Applications and Significance\n\nThe LSW theory has found broad application across materials science and related fields, including:\n\n- **Metallurgy**: Understanding precipitate coarsening in age-hardened alloys, which directly impacts mechanical properties such as strength and ductility.\n- **Emulsions and colloids**: Predicting the stability and shelf-life of emulsified products in food science and pharmaceuticals.\n- **Thin film growth**: Analyzing grain growth and island coarsening during vapor deposition processes.\n- **Geological systems**: Explaining mineral grain coarsening in rocks over geological timescales.\n\n## Conclusion\n\nThe Lifshitz-Slyozov-Wagner theory stands as one of the most successful applications of statistical mechanics to a practical materials phenomenon. Its ability to predict universal scaling laws and characteristic distribution functions from fundamental diffusion principles has made it an indispensable tool for materials scientists studying microstructural evolution. While subsequent refinements have addressed various limitations of the original theory, the core insights of Lifshitz, Slyozov, and Wagner remain foundational to our understanding of coarsening phenomena in condensed matter systems."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a math paper proving that the LSW equation arises as a homogenization limit of a Stefan-type free boundary problem for coarsening particles.",
+      "output": "# Abstract\n\nWe study the homogenization limit of a many-particle Stefan-type free boundary problem modeling diffusion-driven coarsening of a large ensemble of spherical particles embedded in a supersaturated matrix. Each particle exchanges mass with the surrounding diffusion field according to a Gibbs–Thomson boundary condition at its interface, coupling the particle radii to solute concentration through capillarity, while the bulk field obeys a quasi-static diffusion equation away from the particles. As the number of particles $N \\to \\infty$ and their typical size and mean spacing tend to zero at comparable rates, we show that the discrete system converges, in an appropriate statistical sense, to the mean-field Lifshitz–Slyozov–Wagner (LSW) equation, a nonlinear transport equation describing the evolution of the particle size distribution coupled to a single scalar constraint expressing conservation of total mass.\n\nThe proof proceeds via a rigorous homogenization argument treating the particle ensemble as a random, dilute medium and controlling the fluctuations of the local diffusion field around its spatial average. We introduce a two-scale expansion adapted to the free boundary structure, and establish quantitative estimates on the screening length and on particle-particle interactions using tools from stochastic homogenization and potential theory for many-particle systems. A key technical step is showing that the empirical measure of particle radii, suitably normalized, converges to a solution of the LSW equation in the sense of weak-$*$ convergence of measures, with the mean-field diffusive flux emerging as the homogenized limit of the discrete Gibbs–Thomson fluxes. We further show that the rate of convergence can be quantified in terms of the particle volume fraction and the correlation length of the initial particle configuration, under suitable assumptions of statistical homogeneity and finite initial energy.\n\nThis work provides the first rigorous derivation of the LSW equation directly from the Stefan-type free boundary problem in the many-particle regime, without invoking phenomenological mean-field closures, thereby placing the classical Lifshitz–Slyozov–Wagner theory of Ostwald ripening on a firm mathematical foundation.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "I need a concise academic abstract describing a rigorous derivation of a weak Lifshitz-Slyozov-Wagner equation from reaction-controlled particle coarsening dynamics.",
+      "output": "# Abstract\n\nWe present a rigorous derivation of the Lifshitz-Slyozov-Wagner (LSW) equation as a mean-field limit of a stochastic many-particle system governed by reaction-controlled (as opposed to diffusion-controlled) coarsening kinetics. Starting from a microscopic model in which particle growth and shrinkage rates are dictated by interfacial reaction kinetics rather than bulk diffusion, we establish that the empirical particle size distribution converges, in an appropriate scaling limit, to a weak solution of the LSW-type mean-field equation. The derivation proceeds through a combination of compactness arguments and entropy/energy estimates, allowing us to pass to the limit in the nonlinear and non-local terms arising from the mean-field coupling. Particular attention is paid to handling the singular behavior at zero particle size and to establishing the appropriate notion of weak solution consistent with mass conservation and the depletion of the monomer supersaturation. Our results provide a mathematically rigorous justification of the reaction-controlled analogue of the classical LSW theory, complementing existing derivations in the diffusion-controlled regime, and clarify the precise sense in which the coarsening dynamics can be described by a deterministic evolution equation despite the underlying stochasticity of the particle system.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft an abstract (3-4 sentences) for a PDE paper on homogenization of many-particle Stefan problems yielding a mean-field coarsening model in the dilute limit.",
+      "output": "# Abstract\n\nWe study the homogenization of a many-particle Stefan problem describing the diffusive evolution of a large number of solid particles embedded in a supersaturated matrix, where mass exchange occurs through Gibbs–Thomson-type boundary conditions at each moving solid-liquid interface. In the dilute limit, as the number of particles tends to infinity while their volume fraction vanishes, we rigorously derive the mean-field kinetic equation governing Ostwald ripening, in which individual particle radii evolve according to a nonlocal law coupled through a single scalar mean-field quantity representing the ambient supersaturation. The proof relies on a careful multi-scale analysis combining quasi-static approximations of the diffusion field, screening estimates for the particle interactions, and control of the collective error arising from the superposition of singular solutions. Our result provides a rigorous derivation of the classical Lifshitz–Slyozov–Wagner theory from the underlying free boundary problem, clarifying the mathematical mechanisms responsible for the emergence of mean-field coarsening dynamics.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Summarize in abstract form a result showing that a weak LSW-type equation emerges from a Stefan problem for spherical particles under reaction-limited kinetics, valid when surface-area density vanishes.",
+      "output": "# Abstract\n\nWe establish a rigorous derivation of a weak formulation of the Lifshitz–Slyozov–Wagner (LSW) equation as a singular limit of a Stefan-type free boundary problem describing the coarsening of a dilute system of spherical particles, in the regime governed by reaction-limited (interfacial) attachment kinetics rather than diffusion-limited transport.\n\nStarting from a microscopic model in which each particle evolves according to a Stefan condition coupling the bulk diffusion field to the interface via a kinetic (reaction-rate) law, we pass to a mean-field limit under the assumption that the total surface-area density of the particle ensemble vanishes as the number of particles tends to infinity. This scaling reflects a physically relevant dilute limit in which particles are sparse enough that direct geometric interaction (screening, overlap of diffusion layers) becomes negligible, while the reaction kinetics at each particle boundary remains the dominant rate-limiting mechanism, in contrast to the classical diffusion-controlled LSW setting.\n\nUnder suitable assumptions on the initial particle size distribution and the reaction-rate function, we show that the empirical measure associated with the particle radii converges, in a weak topology, to a solution of a modified LSW-type transport equation for the size distribution function. The limiting equation retains the essential LSW structure—a nonlinear conservation law driven by a mean-field supersaturation coupled through a solvability condition ensuring conservation of total mass (volume)—but with a growth rate determined by the reaction-limited kinetics instead of the classical diffusive growth law $\\dot R \\sim 1/R$.\n\nThe proof combines compactness arguments for the empirical measures, careful control of the coupling between the microscopic Stefan problem and the emergent mean-field supersaturation, and a consistency analysis showing that the surface-area-density vanishing condition is precisely what allows the nonlocal geometric effects present in finite-area ensembles to disappear in the limit, yielding a closed, weak PDE formulation. This result provides a rigorous bridge between microscopic Stefan-problem dynamics and macroscopic coarsening theories in the reaction-limited regime, complementing existing derivations of LSW theory from diffusion-limited Stefan problems.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Compose a formal mathematical abstract on the rigorous mean-field limit of reaction-controlled Ostwald ripening modeled via a Stefan-type system for many small particles.",
+      "output": "# Rigorous Derivation of Reaction-Controlled Ostwald Ripening as a Mean-Field Limit of a Multi-Particle Stefan Problem\n\n## Abstract\n\nWe study the coarsening dynamics of a dilute ensemble of $N$ spherical particles embedded in a supersaturated ambient phase, in the regime where mass exchange between particles and the surrounding matrix is limited by an interfacial reaction rather than by bulk diffusion. The microscopic model is formulated as a free boundary problem of Stefan type: the concentration field $u_N(x,t)$ in the matrix satisfies the quasi-stationary Laplace equation, while each particle radius $R_i(t)$ evolves according to a Robin-type kinetic boundary condition coupling the interfacial flux linearly to the deviation of the local concentration from the Gibbs–Thomson equilibrium value, the latter incorporating capillary undercooling proportional to $1/R_i$. This reaction-limited coupling constant, denoted $\\kappa$, replaces the harmonic (diffusion-limited) transmission condition of the classical Lifshitz–Slyozov–Wagner (LSW) framework and produces a fundamentally different local exchange law between particles and matrix.\n\nWe establish the rigorous passage from this finite-particle Stefan system to a mean-field kinetic equation as $N \\to \\infty$, under a scaling regime in which the particle density and the domain size are simultaneously sent to infinity so that the mean-field volume fraction remains $O(1)$, while individual particle radii remain asymptotically small relative to interparticle distances. The analysis proceeds in three steps. First, we derive uniform-in-$N$ energy and regularity estimates for the coupled elliptic–ODE system, controlling the total particle number, the total surface area, and a suitable dissipation functional associated with the quasi-static approximation, which together preclude particle coalescence and radius blow-up on the relevant time scales. Second, we prove compactness of the empirical particle-size measure $\\mu_N(t) = \\frac{1}{N}\\sum_i \\delta_{R_i(t)}$ in a weak topology, using a combination of moment estimates and a modulus-of-continuity argument adapted to the discontinuous vanishing of particles at $R_i = 0$. Third, we identify the limit points of $\\mu_N$ as weak measure-valued solutions of a nonlinear transport equation of Fokker–Planck/continuity type,\n$$\n\\partial_t \\mu(t,R) + \\partial_R\\big( v[\\mu](t,R)\\,\\mu(t,R)\\big) = 0, \\qquad v[\\mu](t,R) = \\kappa\\left(\\bar u(t) - \\frac{1}{R}\\right),\n$$\nwhere the mean-field growth velocity $v[\\mu]$ depends linearly, rather than through the classical $1/R$-weighted harmonic average, on the supersaturation $\\bar u(t)$ determined self-consistently by a global mass conservation constraint. This linear-in-$\\bar u$ structure is the hallmark of reaction-limited kinetics and distinguishes the resulting evolution from the diffusion-limited LSW equation both in its velocity field and in the associated long-time self-similar size distribution.\n\nWe further show that the constructed mean-field solution is unique in the class of measures with finite first moment and continuous dependence on initial data, and that it satisfies the expected asymptotic self-similar behavior with an explicit rate of coarsening $\\bar R(t)^3 \\sim t$, consistent with formal predictions for reaction-controlled Ostwald ripening. The proof technique combines discrete free-boundary energy methods with a stability estimate in a Wasserstein-type metric adapted to the size-dependent vector field, yielding a quantitative convergence rate $N^{-\\alpha}$ for the empirical measure toward the mean-field limit, for an explicit exponent $\\alpha > 0$ depending on the assumed initial regularity and the excluded-volume constraints of the microscopic system.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6026785714285714,
+      "excess_ratio": 0.5015496390381449,
+      "baseline_mean": 0.10112893239042656,
+      "baseline_n_valid": 5,
+      "output_chars": 412,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6121673003802282,
+          "baseline_mean": 0.07652153513442404,
+          "excess_ratio": 0.5356457652458041
+        },
+        "bz2": {
+          "actual_ratio": 0.4819672131147541,
+          "baseline_mean": 0.09562666538049612,
+          "excess_ratio": 0.38634054773425797
+        },
+        "lzma": {
+          "actual_ratio": 0.7073170731707317,
+          "baseline_mean": 0.12829983012879972,
+          "excess_ratio": 0.5790172430419319
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4664070107108082,
+      "excess_ratio": 0.3652780783203816,
+      "baseline_mean": 0.10112893239042656,
+      "baseline_n_valid": 5,
+      "output_chars": 510,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4491803278688525,
+          "baseline_mean": 0.07652153513442404,
+          "excess_ratio": 0.3726587927344284
+        },
+        "bz2": {
+          "actual_ratio": 0.38922155688622756,
+          "baseline_mean": 0.09562666538049612,
+          "excess_ratio": 0.2935948915057314
+        },
+        "lzma": {
+          "actual_ratio": 0.5463917525773195,
+          "baseline_mean": 0.12829983012879972,
+          "excess_ratio": 0.4180919224485198
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.18032159264931089,
+      "excess_ratio": 0.07919266025888433,
+      "baseline_mean": 0.10112893239042656,
+      "baseline_n_valid": 5,
+      "output_chars": 4131,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.15969802555168408,
+          "baseline_mean": 0.07652153513442404,
+          "excess_ratio": 0.08317649041726004
+        },
+        "bz2": {
+          "actual_ratio": 0.17363530778164923,
+          "baseline_mean": 0.09562666538049612,
+          "excess_ratio": 0.07800864240115311
+        },
+        "lzma": {
+          "actual_ratio": 0.20674157303370785,
+          "baseline_mean": 0.12829983012879972,
+          "excess_ratio": 0.07844174290490813
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1201281366791244,
+      "excess_ratio": 0.01899920428869785,
+      "baseline_mean": 0.10112893239042656,
+      "baseline_n_valid": 5,
+      "output_chars": 4421,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.09919571045576407,
+          "baseline_mean": 0.07652153513442404,
+          "excess_ratio": 0.02267417532134003
+        },
+        "bz2": {
+          "actual_ratio": 0.11745334796926454,
+          "baseline_mean": 0.09562666538049612,
+          "excess_ratio": 0.021826682588768423
+        },
+        "lzma": {
+          "actual_ratio": 0.14285714285714285,
+          "baseline_mean": 0.12829983012879972,
+          "excess_ratio": 0.014557312728343125
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.022118178882789725,
+      "excess_ratio": -0.07901075350763684,
+      "baseline_mean": 0.10112893239042656,
+      "baseline_n_valid": 5,
+      "output_chars": 4592,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.014091350826044704,
+          "baseline_mean": 0.07652153513442404,
+          "excess_ratio": -0.062430184308379336
+        },
+        "bz2": {
+          "actual_ratio": 0.015873015873015872,
+          "baseline_mean": 0.09562666538049612,
+          "excess_ratio": -0.07975364950748025
+        },
+        "lzma": {
+          "actual_ratio": 0.035849056603773584,
+          "baseline_mean": 0.12829983012879972,
+          "excess_ratio": -0.09245077352502615
+        }
+      }
+    }
+  }
+}

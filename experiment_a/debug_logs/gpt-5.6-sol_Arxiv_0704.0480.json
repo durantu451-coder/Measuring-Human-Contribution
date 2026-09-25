@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0480",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\npaper withdrawn due to the possible error in numerical eigenfunction calculation",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\npaper withdrawn due to the possible error in numerical eigenfunction calculation",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper was withdrawn because of a possible error in the numerical eigenfunction calculation.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe paper used numerical eigenfunction calculations to investigate its topic, but a possible computational error was identified. As a result, the paper was withdrawn because the reliability of its findings could not be assured.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: paper withdrawn due"
+  },
+  "outputs": {
+    "L1": "The paper was withdrawn due to a potential error in the numerical calculation of the eigenfunction.",
+    "L2": "The paper was withdrawn because of a potential mistake in the numerical computation of eigenfunctions.",
+    "L3": "The paper was withdrawn due to a potential error identified in the numerical calculation of the eigenfunctions. Because this issue may affect the validity of the results and conclusions, the authors decided to withdraw the paper pending further review and verification.",
+    "L4": "The paper investigated its central research question using numerical calculations of eigenfunctions. After publication, however, a potential error was identified in the computational procedure. Because this issue may have affected the numerical results and the conclusions derived from them, the authors could no longer verify the accuracy or reliability of the findings. The paper was therefore withdrawn to prevent potentially incorrect results from remaining in the scientific literature.",
+    "L5": "## Why a Research Paper May Be Withdrawn\n\nA research paper may be withdrawn due to serious errors, ethical concerns, authorship disputes, or problems with the publication process. Withdrawal generally occurs before formal publication, while retraction usually applies to an article that has already been published.\n\nA paper can be withdrawn due to inaccurate data, flawed analysis, duplicated content, plagiarism, or the discovery that key conclusions are unsupported. Authors may also request withdrawal if they identify honest mistakes that substantially affect the reliability of their work. In other cases, a journal may remove a manuscript because it was submitted to multiple publications simultaneously, lacked required ethical approval, or included fabricated or manipulated results.\n\nWithdrawal does not always indicate deliberate misconduct. Scientific research is complex, and recognizing an important error can demonstrate responsibility and transparency. Journals typically issue a withdrawal notice explaining the reason while protecting confidential or legally sensitive information.\n\nClear withdrawal policies help preserve trust in academic publishing. By correcting the scientific record and preventing unreliable findings from being cited, authors and journals support the integrity of research."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a brief withdrawal notice explaining that a paper may contain an error in its numerical eigenfunction calculation.",
+      "output": "**Withdrawal Notice:** This paper has been withdrawn because the authors identified a potential error in the numerical calculation of eigenfunctions. The issue may affect the reported results and conclusions. The authors are reviewing the methodology and will issue a corrected version if appropriate.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Why was the paper withdrawn?",
+      "output": "Which paper do you mean? Please share its title, authors, DOI, or a link, and I’ll explain why it was withdrawn.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Summarize the reason for the article’s withdrawal in one sentence.",
+      "output": "Please provide the article or its withdrawal notice so I can summarize the reason in one sentence.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Complete this statement: “The paper was withdrawn due to…”",
+      "output": "“The paper was withdrawn due to concerns about the validity of its data and conclusions.”",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a concise note stating that the authors withdrew their paper because of a possible computational error involving numerical eigenfunctions.",
+      "output": "The authors withdrew their paper due to a possible computational error involving numerical eigenfunctions.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6503496503496503,
+      "excess_ratio": 0.18949679018569077,
+      "baseline_mean": 0.46085286016395954,
+      "baseline_n_valid": 5,
+      "output_chars": 99,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5526315789473685,
+          "baseline_mean": 0.4147621572018735,
+          "excess_ratio": 0.137869421745495
+        },
+        "bz2": {
+          "actual_ratio": 0.6382978723404256,
+          "baseline_mean": 0.41513912601307046,
+          "excess_ratio": 0.2231587463273551
+        },
+        "lzma": {
+          "actual_ratio": 0.7241379310344828,
+          "baseline_mean": 0.5314935466214665,
+          "excess_ratio": 0.19264438441301623
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.5150501672240803,
+      "excess_ratio": 0.054197307060120714,
+      "baseline_mean": 0.46085286016395954,
+      "baseline_n_valid": 5,
+      "output_chars": 102,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.43037974683544306,
+          "baseline_mean": 0.4147621572018735,
+          "excess_ratio": 0.015617589633569573
+        },
+        "bz2": {
+          "actual_ratio": 0.52,
+          "baseline_mean": 0.41513912601307046,
+          "excess_ratio": 0.10486087398692956
+        },
+        "lzma": {
+          "actual_ratio": 0.5666666666666667,
+          "baseline_mean": 0.5314935466214665,
+          "excess_ratio": 0.035173120045200124
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3796610169491525,
+      "excess_ratio": -0.08119184321480705,
+      "baseline_mean": 0.46085286016395954,
+      "baseline_n_valid": 5,
+      "output_chars": 269,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2857142857142857,
+          "baseline_mean": 0.4147621572018735,
+          "excess_ratio": -0.12904787148758778
+        },
+        "bz2": {
+          "actual_ratio": 0.3711340206185567,
+          "baseline_mean": 0.41513912601307046,
+          "excess_ratio": -0.044005105394513744
+        },
+        "lzma": {
+          "actual_ratio": 0.45614035087719296,
+          "baseline_mean": 0.5314935466214665,
+          "excess_ratio": -0.07535319574427357
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.3287526427061311,
+      "excess_ratio": -0.13210021745782846,
+      "baseline_mean": 0.46085286016395954,
+      "baseline_n_valid": 5,
+      "output_chars": 491,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2714285714285714,
+          "baseline_mean": 0.4147621572018735,
+          "excess_ratio": -0.14333358577330207
+        },
+        "bz2": {
+          "actual_ratio": 0.2973856209150327,
+          "baseline_mean": 0.41513912601307046,
+          "excess_ratio": -0.11775350509803778
+        },
+        "lzma": {
+          "actual_ratio": 0.4,
+          "baseline_mean": 0.5314935466214665,
+          "excess_ratio": -0.1314935466214665
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.053016453382084196,
+      "excess_ratio": -0.4078364067818753,
+      "baseline_mean": 0.46085286016395954,
+      "baseline_n_valid": 5,
+      "output_chars": 1314,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.023323615160349854,
+          "baseline_mean": 0.4147621572018735,
+          "excess_ratio": -0.3914385420415236
+        },
+        "bz2": {
+          "actual_ratio": 0.04507042253521127,
+          "baseline_mean": 0.41513912601307046,
+          "excess_ratio": -0.3700687034778592
+        },
+        "lzma": {
+          "actual_ratio": 0.08585858585858586,
+          "baseline_mean": 0.5314935466214665,
+          "excess_ratio": -0.44563496076288067
+        }
+      }
+    }
+  }
+}

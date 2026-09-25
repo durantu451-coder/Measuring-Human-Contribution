@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0002",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe describe a new algorithm, the $(k,\\ell)$-pebble game with colors, and use it obtain a characterization of the family of $(k,\\ell)$-sparse graphs and algorithmic solutions to a family of problems concerning tree decompositions of graphs. Special instances of sparse graphs appear in rigidity theory and have received increased attention in recent years. In particular, our colored pebbles generalize and strengthen the previous results of Lee and Streinu and give a new proof of the Tutte-Nash-Williams characterization of arboricity. We also present a new decomposition that certifies sparsity based on the $(k,\\ell)$-pebble game with colors. Our work also exposes connections between pebble game algorithms and previous sparse graph algorithms by Gabow, Gabow and Westermann and Hendrickson.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe describe a new algorithm, the $(k,\\ell)$-pebble game with colors, and use it obtain a characterization of the family of $(k,\\ell)$-sparse graphs and algorithmic solutions to a family of problems concerning tree decompositions of graphs. Special instances of sparse graphs appear in rigidity theory and have received increased attention in recent years. In particular, our colored pebbles generalize and strengthen the previous results of Lee and Streinu and give a new proof of the Tutte-Nash-Williams characterization of arboricity. We also present a new decomposition that certifies sparsity based on the $(k,\\ell)$-pebble game with colors. Our work also exposes connections between pebble game algorithms and previous sparse graph algorithms by Gabow, Gabow and Westermann and Hendrickson.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The authors introduce the \\((k,\\ell)\\)-pebble game with colors to characterize \\((k,\\ell)\\)-sparse graphs.\n- The algorithm provides solutions to a family of problems involving tree decompositions of graphs.\n- Colored pebbles generalize and strengthen earlier results by Lee and Streinu.\n- The approach yields a new proof of the Tutte–Nash-Williams characterization of arboricity and a new decomposition that certifies sparsity.\n- The work reveals connections between pebble game algorithms and earlier sparse graph algorithms by Gabow, Gabow and Westermann, and Hendrickson.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe paper introduces the colored \\((k,\\ell)\\)-pebble game to characterize \\((k,\\ell)\\)-sparse graphs and solve graph tree-decomposition problems, with applications to rigidity theory. The algorithm strengthens prior results, yields a new proof of the Tutte–Nash-Williams arboricity characterization, provides a sparsity-certifying decomposition, and connects pebble games to earlier sparse-graph algorithms.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Special, Lee, Streinu"
+  },
+  "outputs": {
+    "L1": "We introduce a new algorithm, the \\((k,\\ell)\\)-pebble game with colors, and use it to characterize the family of \\((k,\\ell)\\)-sparse graphs and to provide algorithmic solutions to a range of problems concerning tree decompositions of graphs. Special classes of sparse graphs arise in rigidity theory and have attracted increasing attention in recent years. In particular, our colored-pebble framework generalizes and strengthens earlier results by Lee and Streinu and yields a new proof of the Tutte–Nash-Williams characterization of arboricity. We also present a new decomposition, based on the \\((k,\\ell)\\)-pebble game with colors, that certifies sparsity. Finally, our work reveals connections between pebble-game algorithms and earlier sparse-graph algorithms developed by Gabow, Gabow and Westermann, and Hendrickson.",
+    "L2": "We introduce a novel algorithm called the colored \\((k,\\ell)\\)-pebble game. Using this method, we characterize the class of \\((k,\\ell)\\)-sparse graphs and develop algorithmic solutions for several graph tree-decomposition problems. Certain subclasses of sparse graphs arise in rigidity theory and have attracted growing interest in recent years. The colored-pebble framework both extends and improves earlier results by Lee and Streinu, while also yielding a new proof of the Tutte–Nash-Williams arboricity characterization. In addition, we propose a new decomposition, derived from the colored \\((k,\\ell)\\)-pebble game, that serves as a certificate of sparsity. Finally, our results reveal links between pebble-game methods and earlier sparse-graph algorithms due to Gabow, Gabow and Westermann, and Hendrickson.",
+    "L3": "The authors introduce the **\\((k,\\ell)\\)-pebble game with colors**, an algorithmic framework for characterizing \\((k,\\ell)\\)-sparse graphs. A graph is \\((k,\\ell)\\)-sparse if every subgraph with \\(n'\\) vertices has at most \\(kn' - \\ell\\) edges. By assigning colors to pebbles and tracking them throughout the game, the method captures additional structural information beyond that provided by the standard pebble game.\n\nThis colored-pebble framework solves a family of problems related to decomposing sparse graphs into trees and related substructures. In particular, the colors encode decomposition information directly during the algorithm, allowing both sparsity testing and the construction of certificates that explain why a graph satisfies the relevant sparsity conditions.\n\nThe use of colored pebbles generalizes and strengthens earlier results of Lee and Streinu. Whereas previous pebble-game methods primarily recognized sparse graphs and constructed maximal sparse subgraphs, the colored version also reveals finer combinatorial structure and produces explicit decompositions.\n\nThe approach has several important theoretical consequences. It gives a new proof of the Tutte–Nash-Williams characterization of graph arboricity, which relates the minimum number of forests needed to cover a graph’s edges to density conditions on its subgraphs. It also yields a new type of decomposition that serves as a direct certificate of \\((k,\\ell)\\)-sparsity.\n\nFinally, the work clarifies connections between pebble-game algorithms and earlier algorithms for sparse graphs developed by Gabow, Gabow and Westermann, and Hendrickson. By placing these methods within a common framework, the colored pebble game highlights how different algorithmic approaches exploit closely related structural properties of sparse graphs.",
+    "L4": "The paper develops the colored \\((k,\\ell)\\)-pebble game as an algorithmic characterization of \\((k,\\ell)\\)-sparse graphs. A graph is \\((k,\\ell)\\)-sparse when every subgraph on \\(n'\\) vertices has at most \\(kn'-\\ell\\) edges; it is tight when the whole graph has exactly \\(kn-\\ell\\) edges. In the game, each vertex begins with \\(k\\) distinguishable, or colored, pebbles. Edges are considered one at a time and may be inserted only after \\(\\ell+1\\) free pebbles have been collected at their endpoints. An inserted edge is oriented and covered by one of these pebbles. Pebbles can subsequently be moved by reversing directed paths, while preserving the game’s invariants.\n\nThe main theorem proves that the edges accepted by the game are exactly the edges of a \\((k,\\ell)\\)-sparse graph. Thus the game provides both a recognition algorithm and a constructive certificate of sparsity. If an edge cannot be inserted, the pebble search identifies a subgraph that is already tight and therefore certifies why accepting the edge would violate the sparsity inequalities. The same mechanism can detect maximal sparse subgraphs, tight components, and redundant edges.\n\nGiving the pebbles colors adds substantial structural information. Because each accepted edge retains the color of the pebble that covers it, the final orientation partitions the edge set into color classes. The invariants maintained by the game control the cycles and components within these classes, allowing them to be interpreted as forests, trees, or pseudoforests, depending on the parameters. Consequently, the algorithm does more than answer whether a graph is sparse: it constructs an edge decomposition that certifies the answer.\n\nThis decomposition viewpoint strengthens earlier pebble-game results and supplies algorithmic solutions to several graph decomposition problems. In the relevant parameter ranges, tight graphs receive decompositions into prescribed collections of spanning trees and map-like pseudoforests. In the arboricity case, the construction yields a new proof of the Tutte–Nash-Williams theorem, which characterizes graphs that can be decomposed into a fixed number of forests or, in the tight case, edge-disjoint spanning trees. Unlike a purely existential proof, the colored pebble game produces the decomposition directly.\n\nThe framework also clarifies the relationship between pebble games and earlier algorithms for sparse graphs, including augmenting-path, matroid-partition, and forest-decomposition methods. Pebble searches play the role of exchange operations: reversing directed edges moves resources through the graph until an edge can be accepted or a tight obstruction is exposed. This interpretation places several previously separate sparse-graph algorithms within a common combinatorial framework.\n\nThese results are especially useful in rigidity theory, where many generic rigidity models are governed by \\((k,\\ell)\\)-sparsity conditions. The familiar planar bar-and-joint case, for example, is associated with \\((2,3)\\)-sparsity. The colored pebble game therefore provides efficient tools for recognizing independent and rigid structures, locating rigid components, detecting dependencies, and constructing decomposition certificates. Overall, the paper turns sparsity from a family of exponentially many subgraph inequalities into a concrete, constructive process that simultaneously recognizes sparse graphs, explains failures, and reveals their underlying tree and pseudoforest structure.",
+    "L5": "### A Special Collaboration: Lee and Streinu\n\nThe names Lee and Streinu evoke the value of collaboration, creativity, and different perspectives. What makes their connection special is not simply individual talent, but the way distinct ideas can complement one another. Lee may represent clarity and practical insight, while Streinu brings analytical depth and an innovative approach to complex questions.\n\nA special partnership emerges when people are willing to challenge assumptions, exchange knowledge, and work toward a shared objective. Through cooperation, Lee and Streinu demonstrate how thoughtful dialogue can turn difficult problems into opportunities for discovery. Their example highlights an important lesson: meaningful progress often begins when different minds come together."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an academic abstract for a paper introducing the $(k,\\ell)$-pebble game with colors and its applications to sparse graphs and tree decompositions.",
+      "output": "We introduce the \\((k,\\ell)\\)-pebble game with colors, a refinement of the classical pebble-game framework for recognizing sparse graphs. Assigning distinct colors to pebbles records the combinatorial dependencies created during edge insertions and yields explicit certificates of \\((k,\\ell)\\)-sparsity, where every vertex subset \\(V'\\) spans at most \\(k|V'|-\\ell\\) edges. We establish invariants governing colored pebble motion and prove that the game accepts precisely the \\((k,\\ell)\\)-sparse graphs in the relevant parameter range. Beyond recognition, the color structure exposes decompositions of sparse graphs into edge-disjoint tree-like components, thereby providing constructive versions of classical sparsity and arboricity results. We further show how terminal game configurations encode tree decompositions and related maps-and-trees representations, with the parameter \\(\\ell\\) controlling the interaction among the component forests. These results lead to efficient algorithms for testing sparsity, extracting maximal sparse subgraphs, and constructing decomposition certificates. The colored game thus supplies a unified combinatorial and algorithmic framework connecting sparsity matroids, graph orientations, and tree-based decompositions.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize a graph theory paper whose main contribution is a colored pebble-game characterization of $(k,\\ell)$-sparse graphs, mentioning rigidity theory, arboricity, and related prior algorithms.",
+      "output": "The paper studies **\\((k,\\ell)\\)-sparse graphs**: graphs in which every vertex set \\(V'\\) spans at most  \n\\[\nk|V'|-\\ell\n\\]\nedges. A graph is **\\((k,\\ell)\\)-tight** when it is sparse and has exactly \\(k|V|-\\ell\\) edges. These counting conditions unify several familiar classes, including forests, bounded-arboricity graphs, and the **Laman graphs** that describe generic bar-and-joint rigidity in the plane.\n\nIts main contribution is a **colored pebble game** for the full nontrivial range \\(0\\le \\ell<2k\\). Initially, each vertex receives \\(k\\) distinctly colored pebbles. Edges are inserted only after enough free pebbles have been gathered at their endpoints; pebble moves reverse directed edges while preserving invariants. The ordinary pebble count certifies that no vertex subset violates the sparsity inequality, while the colors retain additional structural information. Thus a successful run produces not only a recognition algorithm but also a certificate and a decomposition of the accepted graph.\n\nThe colored invariants yield decomposition characterizations of sparse and tight graphs. In the range \\(0\\le\\ell\\le k\\), a \\((k,\\ell)\\)-tight graph can be decomposed into\n\\[\n\\ell\\ \\text{spanning trees}\\quad\\text{and}\\quad k-\\ell\\ \\text{spanning maps},\n\\]\nwhere a map is a pseudoforest whose components each contain one cycle. This interpolates between map decompositions and the classical **Nash-Williams/Tutte arboricity theorem**: when \\(\\ell=k\\), tight graphs are precisely unions of \\(k\\) edge-disjoint spanning trees. For \\(k<\\ell<2k\\), the paper gives an analogous tree-based, color-compatible decomposition suited to the larger sparsity offset.\n\nThe work is motivated strongly by **rigidity theory**. The case \\((k,\\ell)=(2,3)\\) is Laman’s characterization of generically minimally rigid planar frameworks, and related sparsity matroids arise in body-bar, direction-network, and other rigidity models. The colored game makes the combinatorial structure behind these rigidity counts explicit, although in dimensions above two Maxwell-type counts alone generally do not characterize rigidity.\n\nAlgorithmically, the paper builds on earlier pebble games for planar rigidity—especially the Jacobs–Hendrickson and generalized Lee–Streinu algorithms—and connects them with older matroid-partition, forest-decomposition, and arboricity algorithms. Its advance is to combine recognition, extraction of maximal sparse subgraphs, and an explicit decomposition certificate in one comparatively simple framework, with standard implementations running in roughly quadratic time.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a concise research-paper abstract explaining how colored pebbles strengthen Lee and Streinu’s results, yield a new proof of the Tutte–Nash–Williams theorem, and certify graph sparsity.",
+      "output": "We introduce a colored-pebble refinement of Lee and Streinu’s pebble-game framework for \\((k,\\ell)\\)-sparse graphs. Assigning colors to pebbles preserves the original recognition guarantees while additionally tracking the structural components of the evolving graph, thereby strengthening the method from a decision algorithm to a constructive decomposition and certification procedure. In the \\((k,k)\\)-tight case, the color classes form \\(k\\) edge-disjoint spanning trees; the pebble-game invariants and failure certificates then give a direct algorithmic proof of the Tutte–Nash–Williams tree-packing theorem. More generally, successful executions certify sparsity through explicit colored decompositions, while rejected edges identify vertex sets violating the relevant sparsity count. Thus colored pebbles unify recognition, decomposition, and verifiable certificates of graph sparsity.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Can you describe a new algorithm for $(k,\\ell)$-sparse graph recognition based on a pebble game with colors, including its decomposition results and connections to work by Gabow, Westermann, and Hendrickson?",
+      "output": "A **colored pebble game** gives a constructive recognition algorithm for \\((k,\\ell)\\)-sparsity and, at the same time, records useful decompositions and dependence certificates.\n\nA graph \\(G=(V,E)\\) is \\((k,\\ell)\\)-sparse if every nonempty vertex set \\(X\\subseteq V\\) satisfies\n\n\\[\n|E(X)|\\le k|X|-\\ell,\n\\]\n\nand it is \\((k,\\ell)\\)-tight when, in addition, \\(|E|=k|V|-\\ell\\). The usual range is \\(0\\le \\ell<2k\\), with the precise treatment of loops and parallel edges depending on the graph model.\n\n## Colored pebble game\n\nInitially, each vertex receives \\(k\\) free pebbles, one of each of \\(k\\) colors. Accepted edges are oriented and covered by a pebble at their tail. The edge inherits the color of its covering pebble.\n\nTo process a candidate edge \\(uv\\):\n\n1. Try to collect \\(\\ell+1\\) free pebbles on \\(u\\) and \\(v\\) together.\n2. A free pebble can be moved toward an endpoint by following a directed path to a vertex with a free pebble, reversing that path, and transferring the covering pebbles along it.\n3. If \\(\\ell+1\\) pebbles can be collected, use one to cover \\(uv\\), orienting the new edge away from the endpoint supplying that pebble.\n4. If this is impossible, reject the edge.\n\nThe central counting invariant is that, for every vertex set \\(X\\),\n\n\\[\n|E(X)|+\\text{free pebbles on }X+\\text{pebbles covering edges leaving }X\n   =k|X|.\n\\]\n\nConsequently, accepting an edge only when \\(\\ell+1\\) pebbles are available ensures that no induced subgraph acquires more than \\(k|X|-\\ell\\) edges. Conversely, if an edge cannot be inserted, the search exposes a vertex set already containing \\(k|X|-\\ell\\) accepted edges. Thus the rejected edge would violate sparsity.\n\nHence:\n\n- all edges are accepted exactly when the input graph is \\((k,\\ell)\\)-sparse;\n- if the accepted graph has \\(k|V|-\\ell\\) edges, it is tight;\n- a failed insertion gives a direct certificate of dependence.\n\nSince a sparse graph has only \\(O(n)\\) accepted edges and each pebble search can be implemented in \\(O(n)\\) time, the straightforward version runs in \\(O(n^2)\\) time and linear space, apart from storage or scanning of the input.\n\n## What the colors add\n\nIgnoring colors gives recognition, but colors retain a decomposition. For each color, every vertex has at most one outgoing edge covered by a pebble of that color. The edges of one color therefore form a directed pseudoforest: every connected component has at most one cycle. A connected unicyclic pseudoforest is often called a **map**, because it admits an orientation with out-degree one at every vertex.\n\nThus the game constructs a partition into \\(k\\) map-like layers. For \\(0\\le \\ell\\le k\\), this leads to the maps-and-trees characterization:\n\n\\[\nG\\text{ is }(k,\\ell)\\text{-tight}\n\\quad\\Longleftrightarrow\\quad\nE(G)\\text{ can be partitioned into }\n\\ell\\text{ spanning trees and }k-\\ell\\text{ spanning maps}.\n\\]\n\nThe edge count is exactly\n\n\\[\n\\ell(n-1)+(k-\\ell)n=kn-\\ell.\n\\]\n\nSpecial cases include:\n\n- \\((k,0)\\)-tight graphs: a union of \\(k\\) maps;\n- \\((k,k)\\)-tight graphs: a union of \\(k\\) spanning trees, recovering the Nash-Williams–Tutte type decomposition;\n- \\((2,3)\\)-sparsity: the Laman count used in planar rigidity, though here \\(\\ell>k\\), so the decomposition is described through the more general pebble-game structures rather than simply “trees plus maps.”\n\nColor exchanges during path reversals are important: they let the algorithm normalize the monochromatic subgraphs and extract an actual decomposition rather than merely prove that one exists.\n\n## Components and circuits\n\nThe same searches produce matroidal structure.\n\n- A **component** is a maximal tight subgraph. Tight components can be detected when only \\(\\ell\\) free pebbles remain available over a searched region.\n- If an attempted edge \\(uv\\) is rejected, the vertices reached by the unsuccessful pebble searches contain the unique minimal dependent set associated with adding \\(uv\\): the **fundamental circuit** of that edge relative to the accepted sparse graph.\n- Tight components can therefore be maintained or extracted during the game, and rejected edges come with explicit witnesses rather than a simple yes/no answer.\n\nThis also supplies a rank/dependence oracle for the \\((k,\\ell)\\)-sparsity matroid.\n\n## Relation to Gabow and Westermann\n\nGabow and Westermann developed more general algorithms based on matroid partition, graph orientations, and augmenting paths for sparse-subgraph and decomposition problems. The pebble search is a specialized augmenting-path procedure:\n\n- free pebbles play the role of unused matroid capacity;\n- reversing a directed path is an exchange operation;\n- failure of augmentation identifies a tight set or circuit.\n\nThe colored game recovers many of the same decomposition consequences in a more graphical, local form. In particular, the color classes explicitly realize the map/forest factors that general matroid-partition algorithms would obtain less transparently.\n\n## Relation to Hendrickson\n\nHendrickson used pebble-moving and edge-orientation ideas in algorithms motivated by rigidity and molecular-framework problems. The uncolored version of the game is close in spirit to that procedure: gather enough local freedom before accepting a constraint, and use directed searches to relocate freedom.\n\nThe colored formulation strengthens this viewpoint. It not only performs the Maxwell-style count used in rigidity but also preserves the individual \\(k\\) degrees of freedom as separate color classes. As a result, it provides:\n\n- a proof of the sparsity characterization;\n- an explicit decomposition;\n- tight-component detection;\n- fundamental-circuit certificates.\n\nSo the colored pebble game can be viewed both as a combinatorial refinement of Hendrickson’s rigidity-oriented pebble algorithms and as a concrete specialization of the augmenting-path/matroid-partition framework associated with Gabow and Westermann.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Produce a formal abstract for a theoretical computer science article on colored pebble-game algorithms, sparse graph decompositions, and algorithmic solutions to graph tree-decomposition problems.",
+      "output": "We develop a unified algorithmic framework for sparse graph decomposition based on colored pebble games. Extending classical pebble-game characterizations of graph sparsity, the colored formulation encodes multiple sparsity constraints and maintains, under incremental edge insertion, certificates of independence together with an explicit decomposition into sparse subgraphs. We establish the correctness of the resulting algorithms through exchange properties of the associated sparsity systems and show how failed pebble searches yield canonical dense obstructions. These certificates are then used to construct tree-like decompositions in which bags and adhesion sets are controlled by the relevant sparsity parameters. As applications, we obtain algorithms for recognizing decomposable sparse graphs, extracting maximal sparse subgraphs, identifying obstruction components, and constructing tree decompositions of bounded width whenever the prescribed structural conditions hold. The framework also supports dynamic-programming procedures for optimization and decision problems on the resulting decompositions. Our results clarify the relationship between pebble-game invariants, sparse graph matroids, and tree-decomposition methods, and provide a general route from local sparsity certificates to global algorithmic structure.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6130828114126652,
+      "excess_ratio": 0.4956594687952213,
+      "baseline_mean": 0.11742334261744385,
+      "baseline_n_valid": 5,
+      "output_chars": 822,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6229885057471264,
+          "baseline_mean": 0.08637075400672892,
+          "excess_ratio": 0.5366177517403975
+        },
+        "bz2": {
+          "actual_ratio": 0.5102040816326531,
+          "baseline_mean": 0.11743413022505304,
+          "excess_ratio": 0.3927699514076
+        },
+        "lzma": {
+          "actual_ratio": 0.703125,
+          "baseline_mean": 0.14472314844409848,
+          "excess_ratio": 0.5584018515559015
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.42015078821110347,
+      "excess_ratio": 0.3027274455936596,
+      "baseline_mean": 0.11742334261744385,
+      "baseline_n_valid": 5,
+      "output_chars": 813,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3747178329571106,
+          "baseline_mean": 0.08637075400672892,
+          "excess_ratio": 0.2883470789503817
+        },
+        "bz2": {
+          "actual_ratio": 0.39314516129032256,
+          "baseline_mean": 0.11743413022505304,
+          "excess_ratio": 0.2757110310652695
+        },
+        "lzma": {
+          "actual_ratio": 0.4846153846153846,
+          "baseline_mean": 0.14472314844409848,
+          "excess_ratio": 0.33989223617128617
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.2824567855829349,
+      "excess_ratio": 0.16503344296549105,
+      "baseline_mean": 0.11742334261744385,
+      "baseline_n_valid": 5,
+      "output_chars": 1814,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.24595842956120093,
+          "baseline_mean": 0.08637075400672892,
+          "excess_ratio": 0.159587675554472
+        },
+        "bz2": {
+          "actual_ratio": 0.2861878453038674,
+          "baseline_mean": 0.11743413022505304,
+          "excess_ratio": 0.16875371507881437
+        },
+        "lzma": {
+          "actual_ratio": 0.31223628691983124,
+          "baseline_mean": 0.14472314844409848,
+          "excess_ratio": 0.16751313847573276
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.123103227185296,
+      "excess_ratio": 0.00567988456785215,
+      "baseline_mean": 0.11742334261744385,
+      "baseline_n_valid": 5,
+      "output_chars": 3495,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.09576547231270359,
+          "baseline_mean": 0.08637075400672892,
+          "excess_ratio": 0.009394718305974673
+        },
+        "bz2": {
+          "actual_ratio": 0.1331168831168831,
+          "baseline_mean": 0.11743413022505304,
+          "excess_ratio": 0.015682752891830062
+        },
+        "lzma": {
+          "actual_ratio": 0.1396508728179551,
+          "baseline_mean": 0.14472314844409848,
+          "excess_ratio": -0.005072275626143374
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.0886162235855487,
+      "excess_ratio": -0.028807119031895145,
+      "baseline_mean": 0.11742334261744385,
+      "baseline_n_valid": 5,
+      "output_chars": 792,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.05393258426966292,
+          "baseline_mean": 0.08637075400672892,
+          "excess_ratio": -0.032438169737065994
+        },
+        "bz2": {
+          "actual_ratio": 0.07883817427385892,
+          "baseline_mean": 0.11743413022505304,
+          "excess_ratio": -0.038595955951194125
+        },
+        "lzma": {
+          "actual_ratio": 0.1259259259259259,
+          "baseline_mean": 0.14472314844409848,
+          "excess_ratio": -0.018797222518172563
+        }
+      }
+    }
+  }
+}

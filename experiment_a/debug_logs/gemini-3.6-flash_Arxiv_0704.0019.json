@@ -1,0 +1,175 @@
+{
+  "model": "gemini-3.6-flash",
+  "domain": "Arxiv",
+  "id": "0704.0019",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIn this note we give a new method for getting a series of approximations for the extinction probability of the one-dimensional contact process by using the Gr\\\"obner basis.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIn this note we give a new method for getting a series of approximations for the extinction probability of the one-dimensional contact process by using the Gr\\\"obner basis.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n* The note introduces a new method for mathematical estimation.\n* The proposed method yields a series of successive approximations.\n* These approximations target the extinction probability of a specific system.\n* The system being analyzed is the one-dimensional contact process.\n* The approach achieves these approximations by utilizing the Gröbner basis.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nTo address the estimation of the extinction probability in the one-dimensional contact process, a novel method is introduced that uses Gröbner bases to generate a series of approximations. This approach successfully produces a systematic sequence of approximations, offering a valuable algebraic framework for evaluating critical behavior in stochastic particle systems.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: In this note"
+  },
+  "outputs": {
+    "L1": "Here are a few ways to polish the sentence, depending on your preferred style:\n\n**Option 1: Standard Academic & Elegant (Recommended)**\n> \"In this note, we present a novel method for obtaining a sequence of approximations for the extinction probability of the one-dimensional contact process using Gröbner bases.\"\n\n**Option 2: Highly Formal & Professional**\n> \"In this note, we introduce an innovative approach to deriving successive approximations of the extinction probability for the one-dimensional contact process via Gröbner basis techniques.\"\n\n**Option 3: Concise & Direct**\n> \"This note proposes a new Gröbner basis-based method to construct a series of approximations for the extinction probability of the one-dimensional contact process.\"\n\n### Key Improvements Made:\n* Replaced informal verbs like **\"give\"** and **\"getting\"** with precise academic verbs (**\"present,\" \"obtain,\" \"introduce,\" \"derive\"**).\n* Replaced **\"a series of\"** with **\"a sequence of\"** or **\"successive,\"** which are mathematically precise and sound more professional.\n* Adjusted **\"the Gr\\\"obner basis\"** to **\"Gröbner bases\"** or **\"Gröbner basis techniques,\"** which is standard terminology in mathematical literature.",
+    "L2": "By applying Gröbner bases, this short paper presents a novel approach for calculating a sequence of estimates for the likelihood of extinction in a one-dimensional contact process.",
+    "L3": "Here are a few ways to expand your bullet points, depending on the desired tone and format:\n\n### Option 1: Academic Abstract / Executive Summary (Recommended)\n> **Abstract**  \n> This note introduces a novel mathematical estimation technique designed to analyze the one-dimensional contact process. Specifically targeting the system's extinction probability, the proposed approach leverages the algebraic properties of Gröbner bases to construct a rigorous framework. Through this algebraic methodology, the technique generates a sequence of successive approximations, offering a systematic way to evaluate and refine estimates of the critical parameters governing the system's long-term behavior.\n\n---\n\n### Option 2: Formal Introduction Paragraph\n> In this note, we present a new method for mathematical estimation applied to interacting particle systems, focusing specifically on the one-dimensional contact process. A central challenge in understanding this process is accurately determining its extinction probability. To address this, our proposed approach strategically utilizes Gröbner bases to reformulate the underlying algebraic systems. This allows for the derivation of a series of successive approximations, providing increasingly precise bounds on the extinction probability and establishing a robust computational framework for further theoretical analysis.\n\n---\n\n### Option 3: Short Paragraph (Concise & Direct)\n> This note introduces a new mathematical estimation method aimed at evaluating the extinction probability of the one-dimensional contact process. By employing Gröbner bases, the approach effectively reduces complex algebraic relations to yield a series of successive approximations. This provides a structured and efficient path toward closely estimating the critical behavior of the system.\n\n---\n\n### Key Improvements Made:\n* **Logical Flow:** Connected the system (one-dimensional contact process) with the target metric (extinction probability) and the tool (Gröbner basis).\n* **Academic Vocabulary:** Replaced simple verbs with precise mathematical terminology (*\"leveraging the algebraic properties,\" \"sequence of successive approximations,\" \"critical parameters\"*).\n* **Cohesion:** Transitioned from cause (Gröbner basis) to effect (successive approximations) seamlessly.",
+    "L4": "Here is an expanded, comprehensive academic paper framework based on your summary.\n\n---\n\n# Algebraic Approximations of Extinction Probabilities in the One-Dimensional Contact Process via Gröbner Bases\n\n## Abstract\nDetermining the exact extinction probability and critical thresholds of non-equilibrium phase transitions remains a fundamental challenge in the study of stochastic particle systems. In this work, we introduce a novel computational framework that utilizes Gröbner bases from commutative algebra to systematically calculate the extinction probability of the one-dimensional contact process. By mapping the stationary master equations of finite spatial truncations into systems of non-linear polynomial equations, our approach generates an exact, hierarchically ordered sequence of approximations. This framework bridges computational algebraic geometry and non-equilibrium statistical mechanics, offering a rigorous, deterministic alternative to traditional numerical simulations for evaluating critical behavior.\n\n---\n\n## 1. Introduction\nThe one-dimensional (1D) contact process, introduced by Harris in 1974, serves as a canonical model for spatial epidemic dynamics, population growth, and absorbing-state phase transitions. Defined on a one-dimensional lattice $\\mathbb{Z}$, each site can be either occupied (infected) or vacant (healthy). Occupied sites recover independently at a constant rate (typically normalized to 1) and infect neighboring vacant sites at a rate proportional to a control parameter $\\lambda$. \n\nA central question in the study of the contact process concerns the **extinction probability** $P_{\\text{ext}}(\\lambda)$, defined as the probability that a system initialized with a finite number of particles eventually reaches the unique absorbing state (the empty configuration). The system exhibits a continuous phase transition at a critical value $\\lambda_c$:\n* For $\\lambda \\le \\lambda_c$, extinction occurs with probability 1 ($P_{\\text{ext}} = 1$).\n* For $\\lambda > \\lambda_c$, there is a non-zero probability of infinite survival ($P_{\\text{ext}} < 1$).\n\nDespite the conceptual simplicity of the model, deriving an exact closed-form expression for $P_{\\text{ext}}(\\lambda)$ or the exact critical exponent near $\\lambda_c$ is notoriously difficult due to infinite-dimensional spatial correlations. Standard analytical tools, such as basic mean-field theories, ignore spatial correlations and yield inaccurate critical parameters. Conversely, Monte Carlo simulations, while precise, suffer from finite-size scaling limitations and stochastic fluctuations near the critical point.\n\nTo bridge this gap, this paper introduces a rigorous algebraic approach using **Gröbner bases** to formulate a systematic sequence of analytical approximations for $P_{\\text{ext}}(\\lambda)$.\n\n---\n\n## 2. Methodological Framework: Algebraic Formulation and Gröbner Bases\n\n### 2.1 Spatial Truncation and Polynomial Systems\nThe dynamics of the contact process are governed by an infinite hierarchy of linear master equations linking $k$-site correlation functions to $(k+1)$-site correlation functions (similar to the BBGKY hierarchy in kinetic theory). To make the system tractable, we apply a spatial truncation scheme (or cluster approximation) up to a maximum cluster size $N$.\n\nUnder a steady-state condition within a cluster of size $N$, the master equations reduce to a system of non-linear algebraic equations. Because the transition rates depend linearly on site occupancies, the correlation functions satisfy a system of coupled multivariate **polynomial equations**:\n\n$$f_1(x_1, x_2, \\dots, x_m; \\lambda) = 0$$\n$$f_2(x_1, x_2, \\dots, x_m; \\lambda) = 0$$\n$$\\vdots$$\n$$f_k(x_1, x_2, \\dots, x_m; \\lambda) = 0$$\n\nwhere $x_i$ represent local densities, pair correlations, and higher-order spatial moments within the cluster.\n\n### 2.2 Application of Gröbner Bases\nA major barrier in cluster mean-field theory for larger $N$ is the explosive growth in the number of coupled non-linear polynomial equations, making symbolic elimination extremely complex. We overcome this by utilizing **Gröbner bases**—a fundamental tool in computational commutative algebra that generalizes Gaussian elimination and the Euclidean algorithm to multivariate polynomial systems.\n\nGiven the ideal $I = \\langle f_1, f_2, \\dots, f_k \\rangle \\subset \\mathbb{R}[x_1, \\dots, x_m]$, computing its Gröbner basis $G$ with respect to a lexicographic term ordering allows us to eliminate intermediate correlation variables systematically. This transforms the complex system into a triangular form:\n\n$$g_1(x_1; \\lambda) = 0$$\n$$g_2(x_1, x_2; \\lambda) = 0$$\n$$\\vdots$$\n$$g_m(x_1, \\dots, x_m; \\lambda) = 0$$\n\nThe univariate polynomial $g_1(x_1; \\lambda)$ yields explicit, highly accurate algebraic solutions for the order parameter (the stationary density of active sites) and, by extension, the extinction probability $P_{\\text{ext}}^{(N)}(\\lambda)$ for a given truncation level $N$.\n\n---\n\n## 3. Systematic Sequence of Approximations\n\nBy progressively increasing the cluster size $N = 1, 2, 3, \\dots$, the Gröbner basis routine generates a deterministic sequence of approximating functions:\n\n$$\\Big\\{ P_{\\text{ext}}^{(1)}(\\lambda), P_{\\text{ext}}^{(2)}(\\lambda), \\dots, P_{\\text{ext}}^{(N)}(\\lambda) \\Big\\}$$\n\n### Key Properties of the Approximations:\n1. **Monotonic Convergence:** As the spatial scale $N$ increases, short- and medium-range spatial correlations are accounted for exactly. The sequence $P_{\\text{ext}}^{(N)}(\\lambda)$ converges monotonically toward the true physical extinction probability $P_{\\text{ext}}(\\lambda)$.\n2. **Systematic Upper/Lower Bounds:** Depending on the closure condition selected for cluster boundaries, the algebraic solutions provide rigorous upper and lower bounds for the survival probability $S(\\lambda) = 1 - P_{\\text{ext}}(\\lambda)$.\n3. **Critical Point Extrapolation:** The sequence of estimated critical values $\\lambda_c^{(N)}$—defined as the bifurcating roots where non-trivial stationary solutions vanish—can be extrapolated using sequence transformation methods (e.g., Neville's algorithm or Padé approximants) to determine $\\lambda_c$ with high numerical accuracy.\n\n---\n\n## 4. Significance and Implications for Stochastic Particle Systems\n\nThe introduction of Gröbner bases to non-equilibrium statistical mechanics offers several major advantages over traditional methods:\n\n* **Elimination of Stochastic Noise:** Unlike Monte Carlo methodologies, this approach is purely symbolic and deterministic, eliminating sampling errors near critical absorbing boundaries.\n* **Exact Algebraic Characterization:** Critical behaviors are encoded directly into the singularity structures of the resulting algebraic curves, enabling formal analytical studying of branch points and critical exponents.\n* **Generalizability:** While demonstrated here on the 1D contact process, the underlying algebraic framework is universally applicable to a broad class of stochastic interacting particle systems, including:\n  * Higher-dimensional contact processes ($d \\ge 2$).\n  * The voter model and asymmetric simple exclusion processes (ASEP).\n  * Epidemiological SIR/SIS models with complex spatial networks.\n\n---\n\n## 5. Conclusion\nWe have presented a novel algebraic methodology for evaluating the extinction probability of the one-dimensional contact process. By mapping steady-state spatial truncations onto multivariate polynomial ideals and solving them via Gröbner bases, we construct a robust, systematic sequence of approximations that capture spatial correlations with arbitrary precision. This algebraic framework opens new avenues for rigorous symbolic analysis of critical behavior in non-equilibrium statistical physics and complex stochastic systems.",
+    "L5": "**In this note**, we explore the vital role that structured thinking plays in an increasingly complex and fast-paced world. Every day, we are inundated with vast streams of information, making the ability to distill key insights more valuable than ever. \n\nDocumenting ideas clearly is not merely an exercise in record-keeping; it is a catalyst for intentional action. When we synthesize complex concepts into concise summaries, we bridge the gap between abstract thought and practical execution. This process allows teams to align on shared goals, enables individuals to master new subjects, and helps thinkers refine their perspectives over time.\n\nUltimately, effective notes serve as a bridge between curiosity and understanding. By taking the time to capture and organize knowledge today, we lay the groundwork for better decision-making, creative problem-solving, and continuous growth tomorrow."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a one-sentence abstract for a mathematics paper introducing a new Gröbner basis method to approximate the extinction probability in the one-dimensional contact process.",
+      "output": "We introduce a novel algebraic method leveraging Gröbner bases to compute high-precision approximations of the extinction probability for the one-dimensional contact process.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Draft a concise opening sentence for a short academic note on approximating the extinction probability of the one-dimensional contact process via Gröbner basis techniques. Use LaTeX for special characters.",
+      "output": "We present a systematic approach to approximating the extinction probability of the one-dimensional contact process by leveraging Gröbner basis techniques to analyze the underlying stationary polynomial systems.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Can you give me a single sentence summarizing the main contribution of a paper that uses Gröbner bases to find a series of approximations for the 1D contact process's extinction probability?",
+      "output": "The paper introduces a systematic algebraic method leveraging Gröbner bases to solve high-order polynomial steady-state equations, providing a sequence of increasingly accurate analytical approximations for the 1D contact process's extinction probability.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Write an abstract sentence using LaTeX formatting: topic = extinction probability of 1D contact process, novel approach = Gröbner basis, result = series of approximations.",
+      "output": "We present a novel algebraic method leveraging Gröbner bases to construct a systematic series of high-precision approximations for the extinction probability $q(\\lambda)$ of the $1$-dimensional contact process as a function of the infection rate $\\lambda$.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "I need an opening line for my math paper's summary. It should state that we present a new method using Gröbner bases to calculate approximations for the extinction probability of a one-dimensional contact process.",
+      "output": "Here are a few options, depending on the tone of your paper:\n\n**Direct & Standard (Recommended for most abstracts)**\n> \"In this paper, we present a new method using Gröbner bases to calculate approximations for the extinction probability of the one-dimensional contact process.\"\n\n**Emphasis on the algebraic technique**\n> \"By leveraging the algebraic framework of Gröbner bases, we introduce a novel approach to approximating the extinction probability of the one-dimensional contact process.\"\n\n**Formal & Passive (Focus on the work itself)**\n> \"A new method utilizing Gröbner bases is presented for computing approximations of the extinction probability in the one-dimensional contact process.\"\n\n**Concise & High-Impact**\n> \"We propose a novel, Gröbner-basis-based method for approximating the extinction probability of a one-dimensional contact process.\"",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.2267984623833059,
+      "excess_ratio": -0.21910444771761475,
+      "baseline_mean": 0.44590291010092065,
+      "baseline_n_valid": 5,
+      "output_chars": 1204,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.19642857142857142,
+          "baseline_mean": 0.40355374250645715,
+          "excess_ratio": -0.20712517107788572
+        },
+        "bz2": {
+          "actual_ratio": 0.20190779014308427,
+          "baseline_mean": 0.39947083183601745,
+          "excess_ratio": -0.19756304169293318
+        },
+        "lzma": {
+          "actual_ratio": 0.27848101265822783,
+          "baseline_mean": 0.5196765920918505,
+          "excess_ratio": -0.24119557943362263
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4733475479744137,
+      "excess_ratio": 0.02744463787349305,
+      "baseline_mean": 0.44590291010092065,
+      "baseline_n_valid": 5,
+      "output_chars": 180,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3769230769230769,
+          "baseline_mean": 0.40355374250645715,
+          "excess_ratio": -0.02663066558338023
+        },
+        "bz2": {
+          "actual_ratio": 0.44516129032258067,
+          "baseline_mean": 0.39947083183601745,
+          "excess_ratio": 0.045690458486563224
+        },
+        "lzma": {
+          "actual_ratio": 0.5652173913043478,
+          "baseline_mean": 0.5196765920918505,
+          "excess_ratio": 0.04554079921249732
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.17032094057832853,
+      "excess_ratio": -0.2755819695225921,
+      "baseline_mean": 0.44590291010092065,
+      "baseline_n_valid": 5,
+      "output_chars": 2305,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.14512922465208747,
+          "baseline_mean": 0.40355374250645715,
+          "excess_ratio": -0.2584245178543697
+        },
+        "bz2": {
+          "actual_ratio": 0.16524216524216523,
+          "baseline_mean": 0.39947083183601745,
+          "excess_ratio": -0.23422866659385222
+        },
+        "lzma": {
+          "actual_ratio": 0.19852941176470587,
+          "baseline_mean": 0.5196765920918505,
+          "excess_ratio": -0.3211471803271446
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.06732844195079844,
+      "excess_ratio": -0.3785744681501222,
+      "baseline_mean": 0.44590291010092065,
+      "baseline_n_valid": 5,
+      "output_chars": 7782,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.05657344905175185,
+          "baseline_mean": 0.40355374250645715,
+          "excess_ratio": -0.34698029345470527
+        },
+        "bz2": {
+          "actual_ratio": 0.06419914837864396,
+          "baseline_mean": 0.39947083183601745,
+          "excess_ratio": -0.33527168345737346
+        },
+        "lzma": {
+          "actual_ratio": 0.08118556701030928,
+          "baseline_mean": 0.5196765920918505,
+          "excess_ratio": -0.4384910250815412
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.06979542719614915,
+      "excess_ratio": -0.3761074829047715,
+      "baseline_mean": 0.44590291010092065,
+      "baseline_n_valid": 5,
+      "output_chars": 899,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.03339882121807466,
+          "baseline_mean": 0.40355374250645715,
+          "excess_ratio": -0.3701549212883825
+        },
+        "bz2": {
+          "actual_ratio": 0.07208872458410351,
+          "baseline_mean": 0.39947083183601745,
+          "excess_ratio": -0.32738210725191397
+        },
+        "lzma": {
+          "actual_ratio": 0.09803921568627451,
+          "baseline_mean": 0.5196765920918505,
+          "excess_ratio": -0.42163737640557597
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T05:13:11.545691+00:00"
+    }
+  ]
+}

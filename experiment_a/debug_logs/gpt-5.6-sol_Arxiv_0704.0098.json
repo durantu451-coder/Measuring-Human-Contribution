@@ -1,0 +1,175 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0098",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nSparse Code Division Multiple Access (CDMA), a variation on the standard CDMA method in which the spreading (signature) matrix contains only a relatively small number of non-zero elements, is presented and analysed using methods of statistical physics. The analysis provides results on the performance of maximum likelihood decoding for sparse spreading codes in the large system limit. We present results for both cases of regular and irregular spreading matrices for the binary additive white Gaussian noise channel (BIAWGN) with a comparison to the canonical (dense) random spreading code.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nSparse Code Division Multiple Access (CDMA), a variation on the standard CDMA method in which the spreading (signature) matrix contains only a relatively small number of non-zero elements, is presented and analysed using methods of statistical physics. The analysis provides results on the performance of maximum likelihood decoding for sparse spreading codes in the large system limit. We present results for both cases of regular and irregular spreading matrices for the binary additive white Gaussian noise channel (BIAWGN) with a comparison to the canonical (dense) random spreading code.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- Sparse CDMA uses spreading matrices containing relatively few non-zero elements.\n- The method is analyzed using techniques from statistical physics.\n- The analysis evaluates maximum likelihood decoding performance in the large-system limit.\n- Both regular and irregular spreading matrices are considered for the binary additive white Gaussian noise channel.\n- Sparse spreading codes are compared with canonical dense random spreading codes.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nSparse CDMA, which uses spreading matrices with few nonzero elements, is analyzed using statistical-physics methods to assess maximum-likelihood decoding in the large-system limit. Results for regular and irregular spreading matrices over the binary additive white Gaussian noise channel are compared with dense random spreading codes, clarifying how sparse designs perform relative to conventional CDMA.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Sparse, Code, Division"
+  },
+  "outputs": {
+    "L1": "Sparse Code Division Multiple Access (CDMA)—a variant of standard CDMA in which the spreading (signature) matrix contains relatively few nonzero elements—is presented and analyzed using methods from statistical physics. The analysis yields results on the performance of maximum-likelihood decoding for sparse spreading codes in the large-system limit. Results are presented for both regular and irregular spreading matrices over the binary-input additive white Gaussian noise (BIAWGN) channel and are compared with those of the canonical (dense) random spreading code.",
+    "L2": "We introduce and examine Sparse Code Division Multiple Access (CDMA) through statistical-physics techniques. Unlike conventional CDMA, this scheme employs a spreading, or signature, matrix with comparatively few nonzero entries. In the large-system limit, we evaluate the performance of maximum-likelihood decoding for sparse spreading codes. For the binary-input additive white Gaussian noise (BIAWGN) channel, we report findings for both regular and irregular spreading matrices and compare them with the standard dense random spreading code.",
+    "L3": "Sparse code-division multiple access (CDMA) employs spreading matrices in which only a small fraction of the entries are non-zero. This sparsity can reduce implementation complexity while preserving the ability to separate multiple users. The performance of such systems is studied using analytical techniques from statistical physics, which are well suited to characterizing large, randomly structured communication systems.\n\nThe analysis focuses on the performance of maximum-likelihood decoding in the large-system limit, where both the number of users and the spreading length grow while their ratio remains fixed. For transmission over the binary-input additive white Gaussian noise channel, both regular sparse spreading matrices—where users and signal dimensions have fixed connectivity—and irregular matrices, with variable connectivity patterns, are considered. Their decoding performance is then compared with that of canonical dense random spreading codes, providing a benchmark for assessing the benefits and limitations of sparse CDMA.",
+    "L4": "Sparse code-division multiple access (CDMA) systems employ spreading matrices in which each user occupies only a small subset of the available chips. This sparse structure can reduce implementation complexity and enable efficient message-passing detection, but it also changes the interference patterns that determine decoding performance. The system is analyzed in the large-system limit, where both the number of users and the spreading length grow while their ratio—the system load—remains fixed. Statistical-physics techniques are used to characterize maximum-likelihood decoding and to evaluate macroscopic quantities such as the bit-error rate, multiuser efficiency, and the existence of competing decoding states.\n\nBoth regular and irregular sparse spreading ensembles are considered over the binary-input additive white Gaussian noise channel. In regular ensembles, users and chips have fixed connection degrees, whereas irregular ensembles allow these degrees to vary according to prescribed distributions. This distinction makes it possible to examine how graph connectivity, local interference, and degree fluctuations affect the reliability of optimal detection. The resulting asymptotic behavior is then compared with that of conventional dense random spreading, in which each user contributes to essentially every chip.\n\nThe comparison identifies the regimes in which sparse CDMA approaches the performance of dense random codes and those in which sparsity introduces a measurable penalty. It also highlights the different behavior of regular and irregular constructions, particularly near decoding thresholds and at high system loads. Overall, the analysis clarifies the trade-off between performance and structural simplicity: dense spreading provides a useful benchmark for optimal large-system behavior, while carefully designed sparse ensembles can retain competitive decoding performance with substantially lower connectivity and the prospect of less complex practical receivers.",
+    "L5": "### Sparse Code Division\n\nSparse Code Division is a communication technique in which each user’s data is represented by a sparse codeword. Unlike conventional spreading methods, a sparse codeword occupies only a limited number of available transmission resources, such as time slots, frequencies, or subcarriers.\n\nBecause different users can share the same resources, Sparse Code Division supports efficient spectrum use and high connection density. The sparse structure also reduces the complexity of separating overlapping signals at the receiver. Advanced detection algorithms can identify each user’s code and recover the transmitted information, even when multiple transmissions occur simultaneously.\n\nThis approach is especially useful in modern wireless networks, including massive machine-type communications and Internet of Things applications. Its main benefits include improved spectral efficiency, flexible resource allocation, and support for many connected devices. However, careful code design and reliable decoding are essential to limit interference and maintain performance."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a concise abstract for a paper analyzing sparse CDMA with statistical-physics methods.",
+      "output": "We analyze sparse code-division multiple access (CDMA) using methods from statistical physics. Representing the multiuser detection problem as inference on a sparse factor graph, we apply replica and cavity techniques to characterize typical performance in the large-system limit. We derive fixed-point equations for key order parameters, identify regimes of efficient and inefficient detection, and relate phase transitions to the convergence of belief-propagation algorithms. The results clarify how system load, noise, and signature sparsity affect bit-error rates and reveal conditions under which sparse CDMA approaches optimal detection with reduced computational complexity.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize research on maximum-likelihood decoding performance for regular and irregular sparse spreading matrices over the binary-input AWGN channel, including comparison with dense random spreading codes.",
+      "output": "Research on sparse spreading over the binary-input AWGN channel studies the model\n\n\\[\n\\mathbf y=\\sqrt{\\rho}\\,\\mathbf S\\mathbf x+\\mathbf z,\\qquad\nx_k\\in\\{\\pm1\\},\n\\]\n\nwhere \\(K\\) users transmit over \\(N\\) chips, the system load is \\(\\beta=K/N\\), and each column of \\(\\mathbf S\\) contains only a few nonzero chips. Maximum-likelihood (ML) decoding chooses the binary vector minimizing \\(\\|\\mathbf y-\\sqrt{\\rho}\\mathbf S\\mathbf x\\|^2\\).\n\n### Main research findings\n\n- **Sparse spreading can be close to dense random spreading under optimal decoding.**  \n  Statistical-mechanics, cavity/replica, enumerator, and numerical studies find that regular low-density signatures often attain mutual information and ML error rates surprisingly close to dense i.i.d. random signatures, especially at low or moderate load and SNR. As the column degree grows, properly normalized sparse ensembles converge toward the dense random-spreading benchmark.\n\n- **Regular sparse ensembles are usually better than unoptimized irregular ones at the same average density.**  \n  Fixing every user’s degree avoids users with zero or very small degree, large energy variation, and especially vulnerable local graph structures. Poisson or otherwise broadly irregular ensembles typically have a worse ML distance spectrum and larger finite-length error rates. The distinction is much stronger for iterative decoding, but it remains visible under ML because irregularity can create intrinsically weak or ambiguous user subsets.\n\n- **Irregularity is not inherently harmful if it is optimized.**  \n  Degree distributions designed for a particular load, SNR, or receiver can approach—or occasionally improve a selected metric over—a simple regular ensemble. Most dramatic gains reported for irregular designs, however, concern belief-propagation or successive interference cancellation rather than true ML decoding. Under ML and equal-power constraints, degree concentration is often favorable.\n\n- **Finite-degree sparse systems have graph-induced failure mechanisms absent, or much rarer, in dense systems.**  \n  Duplicate or nearly duplicate signatures, short cycles, small stopping/trapping-like subgraphs, and poorly connected user subsets generate low-distance codeword pairs. Pairwise ML error behaves as\n\n  \\[\n  P(\\mathbf x\\to\\mathbf x')=\n  Q\\!\\left(\\sqrt{\\frac{\\rho}{2}\\,\n  \\|\\mathbf S(\\mathbf x-\\mathbf x')\\|^2}\\right),\n  \\]\n\n  so the low-weight distance spectrum largely controls the high-SNR performance. These structures can produce finite-length error floors and, for fixed degree in large systems, possible asymptotic losses unless the ensemble is designed to suppress them.\n\n### Comparison with dense random spreading\n\nDense random spreading—using normalized i.i.d. Gaussian or random \\(\\pm1/\\sqrt N\\) signatures—is the standard benchmark. Its large-system optimum-decoding performance has been characterized through multiuser efficiency, mutual information, and the decoupling principle, notably in work by Tanaka and by Guo and Verdú.\n\nThe broad comparison is:\n\n| Property | Regular sparse | Irregular sparse | Dense random |\n|---|---|---|---|\n| ML performance at modest load | Often near dense | Distribution-dependent | Strong benchmark |\n| High-load/high-SNR robustness | Sensitive to small graph structures | Often most sensitive unless optimized | Generally smoothest distance behavior |\n| Complexity of exact ML | Still exponential in worst case, but factorization helps | Same, with uneven graph complexity | Little exploitable sparsity |\n| Compatibility with BP/message passing | Very good | Potentially excellent when optimized | Less direct |\n| Large-degree limit | Approaches dense behavior | Approaches dense if low-degree mass vanishes | Benchmark limit |\n\nThere is **no universal ordering** between sparse and dense ensembles. Some replica/cavity calculations report small regions where a carefully chosen regular sparse ensemble has higher spectral efficiency than a particular dense ensemble at the same nominal load and SNR. Such comparisons depend strongly on normalization, degree, signature alphabet, and whether the metric is constrained mutual information, BER, or algorithmic performance. Dense spreading generally remains more robust at high load and high SNR, while sparse spreading offers most of its practical advantage through lower storage, simpler front ends, and efficient graph-based approximate decoding.\n\n### Methodological caveat\n\nMuch of the classic large-system literature relies on replica-symmetric or cavity calculations. These predictions agree well with simulations in many regimes but may become unreliable near phase transitions or regions with multiple detector fixed points. Rigorous information-theoretic and interpolation-based results support several dense-system limits and some sparse-to-dense convergence statements, but finite-degree ML error exponents and general optimized irregular ensembles are less completely characterized.\n\nRepresentative foundations include Tanaka’s statistical-mechanics analysis of optimum CDMA detection, Guo and Verdú’s random-spreading/decoupling results, and subsequent sparse-CDMA studies by Montanari, Tse, Saad, Raymond, and collaborators. Overall, the literature concludes that **regular sparse spreading provides the most reliable finite-degree ML performance; optimized irregularity is mainly valuable for practical iterative receivers; and increasing sparse degree recovers dense-random optimum-decoding behavior while retaining some graph-based implementation advantages.**",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate an academic paragraph introducing Sparse Code Division Multiple Access and its large-system analysis.",
+      "output": "Sparse Code Division Multiple Access (SCMA) is a non-orthogonal multiple-access technique in which users map information bits directly to multidimensional sparse codewords selected from user-specific codebooks. By allowing multiple users to share the same time–frequency resources while maintaining sparse resource occupancy, SCMA improves spectral efficiency and supports massive connectivity. Its sparse factor-graph representation also enables practical multiuser detection through message-passing algorithms, whose complexity depends primarily on the limited number of users colliding on each resource. Large-system analysis—typically considering the numbers of users and resource elements growing with a fixed system load—provides a tractable framework for characterizing SCMA performance. Methods such as density evolution, state evolution, random-matrix theory, and replica analysis can be used to derive asymptotic detection thresholds, error rates, achievable rates, and convergence behavior. These results offer both theoretical performance benchmarks and design guidance for codebooks, system loading, and iterative receivers in finite-dimensional SCMA systems.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Draft a technical abstract about sparse spreading codes in CDMA, focusing on BIAWGN channels and maximum-likelihood decoding.",
+      "output": "**Abstract—** Sparse spreading codes provide a low-complexity alternative to conventional dense code-division multiple-access (CDMA) signaling by assigning each user a signature sequence with only a small number of nonzero chips. This work considers the performance of sparse CDMA over the binary-input additive white Gaussian noise (BIAWGN) channel under joint maximum-likelihood (ML) multiuser decoding. The system is represented by a sparse user–chip bipartite graph, in which graph degree distributions determine the level of multiuser interference, minimum-distance behavior, and decoding ambiguity. We formulate ML detection as a constrained Euclidean-distance minimization problem and characterize the pairwise error probability between transmitted user vectors through the spectrum of superimposed sparse signatures. Analytical union bounds and finite-length simulations are used to quantify bit- and block-error rates as functions of signal-to-noise ratio, system load, spreading length, and signature sparsity. The results highlight the trade-off between reduced spreading and processing complexity and the distance loss caused by signature collisions and short graph cycles. Properly designed sparse ensembles can preserve much of the reliability of dense spreading while enabling factor-graph-based implementations and substantially lower per-chip connectivity. These findings provide design criteria for sparse CDMA systems operating near the performance limits of optimal multiuser detection on BIAWGN channels.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Explain, in the style of a research-paper abstract, how statistical physics can be used to compare sparse regular and irregular CDMA schemes with canonical dense CDMA.",
+      "output": "We investigate sparse code-division multiple-access (CDMA) systems using statistical-mechanical methods and compare their performance with canonical dense random-spreading CDMA. In the large-system limit, multiuser detection is formulated as inference in a disordered spin system, with users represented by binary variables, chips by interaction factors, and the posterior distribution mapped to a Gibbs measure. Replica and cavity methods yield the disorder-averaged free energy, spectral efficiency, multiuser efficiency, and bit-error rate. For sparse regular ensembles, fixed user and chip degrees produce locally tree-like factor graphs, enabling density-evolution or population-dynamics solutions of the associated cavity-field equations. Irregular ensembles are treated through optimized degree distributions, which modify the distribution of local interference and can improve iterative-detection thresholds, although low-degree nodes may create vulnerable subpopulations and metastable states. Dense CDMA is recovered as the spreading degrees diverge with appropriate normalization, reducing the functional order-parameter description to scalar self-consistency equations governed by an effective Gaussian channel. The comparison shows that sparse schemes can approach dense-system optimal performance while requiring substantially lower detection complexity; regularity generally improves uniformity and robustness, whereas carefully designed irregularity can provide superior algorithmic convergence and threshold behavior. Statistical physics thereby supplies a unified framework for separating information-theoretic limits from detector-dependent effects and for identifying phase transitions, coexistence regions, and ensemble-design principles across sparse and dense CDMA architectures.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6733102253032929,
+      "excess_ratio": 0.5834643014230927,
+      "baseline_mean": 0.08984592388020023,
+      "baseline_n_valid": 5,
+      "output_chars": 568,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6887608069164265,
+          "baseline_mean": 0.060486672395140904,
+          "excess_ratio": 0.6282741345212856
+        },
+        "bz2": {
+          "actual_ratio": 0.5529715762273901,
+          "baseline_mean": 0.08855639658882865,
+          "excess_ratio": 0.4644151796385615
+        },
+        "lzma": {
+          "actual_ratio": 0.7714285714285715,
+          "baseline_mean": 0.11644979357759459,
+          "excess_ratio": 0.6549787778509769
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.5192825112107624,
+      "excess_ratio": 0.42943658733056217,
+      "baseline_mean": 0.08984592388020023,
+      "baseline_n_valid": 5,
+      "output_chars": 544,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5029940119760479,
+          "baseline_mean": 0.060486672395140904,
+          "excess_ratio": 0.442507339580907
+        },
+        "bz2": {
+          "actual_ratio": 0.45257452574525747,
+          "baseline_mean": 0.08855639658882865,
+          "excess_ratio": 0.36401812915642884
+        },
+        "lzma": {
+          "actual_ratio": 0.5922330097087378,
+          "baseline_mean": 0.11644979357759459,
+          "excess_ratio": 0.4757832161311432
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3084988962472406,
+      "excess_ratio": 0.21865297236704034,
+      "baseline_mean": 0.08984592388020023,
+      "baseline_n_valid": 5,
+      "output_chars": 1048,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.27807486631016043,
+          "baseline_mean": 0.060486672395140904,
+          "excess_ratio": 0.21758819391501952
+        },
+        "bz2": {
+          "actual_ratio": 0.2739495798319328,
+          "baseline_mean": 0.08855639658882865,
+          "excess_ratio": 0.18539318324310416
+        },
+        "lzma": {
+          "actual_ratio": 0.36585365853658536,
+          "baseline_mean": 0.11644979357759459,
+          "excess_ratio": 0.24940386495899075
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.17539267015706803,
+      "excess_ratio": 0.0855467462768678,
+      "baseline_mean": 0.08984592388020023,
+      "baseline_n_valid": 5,
+      "output_chars": 1999,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.14534288638689866,
+          "baseline_mean": 0.060486672395140904,
+          "excess_ratio": 0.08485621399175775
+        },
+        "bz2": {
+          "actual_ratio": 0.1694915254237288,
+          "baseline_mean": 0.08855639658882865,
+          "excess_ratio": 0.08093512883490016
+        },
+        "lzma": {
+          "actual_ratio": 0.20817843866171004,
+          "baseline_mean": 0.11644979357759459,
+          "excess_ratio": 0.09172864508411545
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.06863270777479887,
+      "excess_ratio": -0.02121321610540136,
+      "baseline_mean": 0.08984592388020023,
+      "baseline_n_valid": 5,
+      "output_chars": 1092,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.03298611111111111,
+          "baseline_mean": 0.060486672395140904,
+          "excess_ratio": -0.027500561284029792
+        },
+        "bz2": {
+          "actual_ratio": 0.06645056726094004,
+          "baseline_mean": 0.08855639658882865,
+          "excess_ratio": -0.022105829327888613
+        },
+        "lzma": {
+          "actual_ratio": 0.10119047619047619,
+          "baseline_mean": 0.11644979357759459,
+          "excess_ratio": -0.015259317387118401
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T04:40:01.231373+00:00"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "model": "claude-sonnet-5",
+  "domain": "Arxiv",
+  "id": "0704.0315",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe lead the algorithm of expansion of sojourn probability of many-dimensional diffusion processes in small domain. The principal member of this expansion defines normalizing coefficient for special limit theorems.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe lead the algorithm of expansion of sojourn probability of many-dimensional diffusion processes in small domain. The principal member of this expansion defines normalizing coefficient for special limit theorems.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper presents an algorithm for expanding the sojourn probability of many-dimensional diffusion processes within a small domain.\n- The expansion is developed specifically for cases involving small domains in a multi-dimensional context.\n- The principal (leading) term of this expansion serves to define a normalizing coefficient.\n- This normalizing coefficient is essential for establishing special limit theorems related to the diffusion processes.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nWe present an algorithm for expanding the sojourn probability of multi-dimensional diffusion processes within a small domain. The leading term of this expansion yields the normalizing coefficient required for special limit theorems, providing a key tool for their formulation.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The"
+  },
+  "outputs": {
+    "L1": "Here is a polished version of your text:\n\nWe present an algorithm for the expansion of the sojourn probability of multidimensional diffusion processes within a small domain. The leading term of this expansion determines the normalizing coefficient for the corresponding limit theorems.\n\n---\n\nA few notes on the changes:\n- \"We lead\" → \"We present\" (more natural academic phrasing)\n- \"many-dimensional\" → \"multidimensional\" (standard terminology)\n- \"The principal member\" → \"The leading term\" (standard mathematical usage)\n- \"special limit theorems\" → \"the corresponding limit theorems\" (clarifies the relationship without introducing ambiguity)\n\nIf \"special\" was meant to convey something more specific (e.g., a particular class of limit theorems named elsewhere in your work), let me know and I can adjust the phrasing accordingly.",
+    "L2": "Here's a rewritten version of the text:\n\nWe present a methodology for deriving the asymptotic expansion of the probability that a multi-dimensional diffusion process remains within a small region. The leading term in this expansion serves as the normalizing constant used in specialized limit theorems.",
+    "L3": "# Expansion of Sojourn Probability for Multi-Dimensional Diffusion Processes\n\n## Overview of the Algorithm\n\nThis paper introduces a systematic algorithm designed to derive an asymptotic expansion for the sojourn probability associated with many-dimensional diffusion processes, specifically when these processes are confined to or evaluated within a small domain. The sojourn probability—which characterizes the likelihood that a diffusion process remains within a specified region over a given time interval—presents significant analytical challenges in higher dimensions due to the complex interplay between the geometry of the domain and the stochastic dynamics of the process. The algorithm developed here addresses these challenges by providing a structured, computationally tractable method for approximating this probability through a series expansion.\n\n## Focus on Small Domains in Multi-Dimensional Settings\n\nA central feature of this work is its explicit focus on the small-domain regime within a multi-dimensional framework. This is a critical distinction, as many existing techniques for analyzing diffusion processes are either restricted to one-dimensional settings or fail to adequately capture the behavior of the process when the domain of interest shrinks. The expansion presented in this paper is specifically tailored to handle the intricacies that arise when the spatial region under consideration becomes small relative to the natural scale of the diffusion. This requires careful treatment of the boundary effects, the curvature of the domain, and the correlations between different dimensions of the process, all of which become increasingly significant as the domain size decreases.\n\n## The Leading Term and Its Role as a Normalizing Coefficient\n\nWithin this asymptotic expansion, the principal—or leading-order—term plays a particularly important role beyond simply providing the dominant contribution to the sojourn probability. This leading term is identified and utilized as a normalizing coefficient. In practical terms, this means that the leading term serves as a natural scaling factor that captures the essential order-of-magnitude behavior of the sojourn probability as the domain shrinks. By isolating this term, the paper establishes a foundation upon which subsequent, higher-order corrections in the expansion can be meaningfully interpreted and controlled.\n\n## Significance for Limit Theorems\n\nThe identification of this normalizing coefficient is not merely a technical convenience; it is fundamentally necessary for the derivation of special limit theorems pertaining to diffusion processes. Limit theorems of this nature typically require a precise understanding of how relevant probabilistic quantities behave asymptotically as certain parameters—such as domain size or time—approach limiting values. Without an appropriately defined normalizing coefficient, it would be difficult to establish convergence results or to characterize the limiting distributions that emerge under such asymptotic regimes. By grounding the normalizing coefficient in the leading term of the sojourn probability expansion, this paper provides the necessary analytical infrastructure to rigorously formulate and prove these limit theorems, thereby contributing a valuable tool to the broader theory of stochastic processes and their asymptotic properties.",
+    "L4": "# Asymptotic Expansion of Sojourn Probabilities for Multi-Dimensional Diffusion Processes\n\n## Introduction\n\nThe study of diffusion processes confined to small domains has long been a subject of interest in probability theory, with applications ranging from statistical physics to mathematical finance and reliability theory. A fundamental quantity of interest in this context is the *sojourn probability* — the probability that a diffusion process remains within a specified small domain over a given time interval. Understanding the precise asymptotic behavior of this probability, particularly as the domain shrinks or as time parameters are scaled appropriately, is essential for a wide range of theoretical and applied problems.\n\nIn this work, we present an algorithm for constructing an asymptotic expansion of the sojourn probability for multi-dimensional diffusion processes confined within a small domain. Our approach systematically develops the expansion in terms of a natural small parameter associated with the size of the domain, yielding a hierarchy of terms that capture increasingly fine corrections to the leading-order behavior.\n\n## Motivation and Significance\n\nThe primary motivation for this study stems from the need to establish precise normalizing coefficients that arise in special limit theorems for diffusion processes. Many classical limit theorems — such as those describing the behavior of a diffusion process near a boundary, or its long-time behavior within a bounded region — require careful normalization in order to obtain non-degenerate limiting distributions. Without an accurate expansion of the sojourn probability, the correct normalizing constants cannot be determined, and the corresponding limit theorems cannot be rigorously formulated.\n\nThe leading term in our expansion provides exactly this missing piece: it yields the precise normalizing coefficient necessary for the formulation of such limit theorems. This makes our result not merely a technical refinement of existing estimates, but a foundational tool that enables the rigorous statement and proof of a broad class of limiting results for multi-dimensional diffusions.\n\n## Structure of the Algorithm\n\nThe algorithm we propose proceeds through the following key steps:\n\n1. **Reduction to a Local Problem**: We begin by localizing the problem to the small domain of interest, exploiting the local structure of the diffusion generator (drift and diffusion coefficients) within this region.\n\n2. **Construction of an Auxiliary Boundary Value Problem**: The sojourn probability is related to the solution of an associated parabolic (or elliptic, in the stationary case) boundary value problem. We construct a sequence of auxiliary problems whose solutions approximate the true sojourn probability with increasing accuracy.\n\n3. **Small Parameter Expansion**: Introducing a small parameter that characterizes the scale of the domain, we expand the solution of the boundary value problem in a formal power series (or asymptotic series) with respect to this parameter. Each term in the expansion is obtained by solving a sequence of simpler, explicitly solvable problems derived from the original one.\n\n4. **Matching and Uniform Estimates**: To ensure the validity of the expansion, we perform a matching procedure between the local expansion (valid within the small domain) and any relevant outer behavior, followed by rigorous error estimates that establish the uniform accuracy of the truncated expansion.\n\n## The Leading-Order Term and Its Role\n\nA central result of our analysis is the explicit computation of the **leading-order term** in the sojourn probability expansion. This term captures the dominant asymptotic behavior of the probability as the domain size tends to zero (or as the relevant scaling parameter becomes extreme), and it depends explicitly on the diffusion coefficients, the geometry of the domain, and the time scale under consideration.\n\nCrucially, this leading term serves as the **normalizing coefficient** required to state special limit theorems for the diffusion process. In many classical settings, a naive scaling of the sojourn probability leads either to a trivial (zero or infinite) limit, or to a limit that fails to capture the correct fluctuation behavior. By identifying the precise leading-order asymptotics, our result furnishes the correct normalization under which nontrivial, informative limiting distributions can be obtained.\n\n## Applications and Outlook\n\nThe results developed here are directly applicable to the derivation of limit theorems describing:\n\n- The asymptotic distribution of the time a diffusion process spends within a shrinking neighborhood of a point or curve;\n- Local time asymptotics and their fluctuation theory;\n- Extreme value and boundary crossing problems for multi-dimensional diffusions;\n- Refined estimates in the theory of small deviations for stochastic processes.\n\nBeyond these immediate applications, the algorithmic framework developed in this paper is flexible enough to be extended to more general classes of Markov processes, including those with jumps or with more complex boundary interactions. Future work will explore these extensions, as well as the higher-order terms in the expansion, which may provide additional refinements relevant to rate-of-convergence problems in the associated limit theorems.\n\n## Conclusion\n\nIn summary, we have developed a systematic algorithm for expanding the sojourn probability of multi-dimensional diffusion processes within small domains. The leading term of this expansion provides the essential normalizing coefficient for the formulation of special limit theorems, thereby serving as a key analytical tool bridging local probabilistic behavior and global limiting distributions. This work lays the groundwork for a deeper and more precise understanding of diffusion processes in confined and shrinking domains, with broad implications for both theoretical and applied probability.",
+    "L5": "# The Word \"The\": A Small Giant of Language\n\n\"The\" is perhaps the most unassuming yet powerful word in the English language. Consisting of just three letters, it holds the distinction of being the most frequently used word in written and spoken English, appearing far more often than any other word in the language.\n\n## A Humble Origin\n\nThe word traces its roots back to Old English, where it evolved from words like \"þē\" and \"sē,\" which were used as demonstrative pronouns meaning \"that\" or \"this.\" Over centuries, through the natural evolution of language, these forms consolidated into the definite article we recognize today. The letter \"þ\" (thorn), which represented the \"th\" sound, eventually gave way to the modern spelling, though its influence lingers in quirky historical artifacts like \"Ye Olde Shoppe,\" where \"Ye\" was actually just an old way of writing \"The.\"\n\n## Grammatical Function\n\nLinguistically, \"the\" serves as the definite article in English, used to indicate that a noun refers to something specific, known, or previously mentioned. This contrasts with the indefinite articles \"a\" and \"an,\" which introduce something new or unspecified. For example, saying \"I saw a dog\" suggests any dog, while \"I saw the dog\" implies a particular dog already understood by both speaker and listener.\n\n## A Universal Workhorse\n\nWhat makes \"the\" fascinating is its sheer ubiquity. Despite carrying no concrete meaning of its own—it doesn't name an object, action, or quality—it plays an essential structural role. Sentences would feel incomplete or awkward without it. Try removing \"the\" from a paragraph, and the text suddenly reads like a telegram or a language learner's rough draft.\n\nInterestingly, not all languages have an equivalent word. Russian, for instance, lacks definite and indefinite articles entirely, relying instead on context and word order to convey specificity. This makes \"the\" a distinctly Germanic and Romance language feature, posing a notable challenge for learners whose native tongues don't include such articles.\n\n## Cultural and Symbolic Weight\n\nBeyond grammar, \"the\" often appears in titles and phrases to convey importance or uniqueness. Calling something \"the\" best, rather than simply \"a\" best, elevates it to a singular, unrivaled status. Bands, films, and brands frequently use \"The\" as a prefix to suggest definitiveness and authority—think of \"The Beatles\" or \"The New York Times.\"\n\n## Conclusion\n\nThough invisible in its impact and often overlooked in casual conversation, \"the\" is a linguistic cornerstone. It shapes clarity, specificity, and meaning in ways few other words can. Its simplicity belies its importance, proving that even the smallest words can carry the greatest structural weight."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a mathematics paper about the expansion of sojourn probability for multi-dimensional diffusion processes in a small domain.",
+      "output": "# Abstract\n\nWe consider a multi-dimensional diffusion process governed by a stochastic differential equation and investigate the asymptotic behavior of its sojourn probability in a small domain shrinking around a fixed point over a finite time interval. Using techniques from stochastic analysis, including Itô's formula, Malliavin calculus, and asymptotic expansion methods, we derive a precise higher-order expansion for the probability that the diffusion process remains within a small neighborhood of a given point throughout the time interval, as the size of the domain tends to zero.\n\nThe leading-order term of the expansion is shown to be governed by the local behavior of the diffusion coefficient and drift near the point in question, while subsequent correction terms capture finer geometric and probabilistic information, including curvature effects of the domain boundary and the influence of the drift term on the sojourn behavior. We establish rigorous error estimates for the truncated expansion, demonstrating that the remainder terms are of smaller order in the domain-shrinking parameter, uniformly over compact time intervals.\n\nOur approach combines partial differential equation techniques applied to the associated Kolmogorov backward equation with probabilistic estimates based on large deviation principles and short-time asymptotics for transition densities. As an application, we illustrate how these expansions can be used to approximate the exit-time distribution and to derive refined estimates for the joint distribution of the diffusion process and its running extrema. Numerical examples are provided to validate the theoretical results and to demonstrate the accuracy of the asymptotic approximation in several concrete multi-dimensional diffusion models, including geometric Brownian motion systems and correlated Ornstein-Uhlenbeck processes.\n\nThese results extend previous work on one-dimensional diffusions and small-domain asymptotics to the multi-dimensional setting, providing new tools for the analysis of rare-event probabilities and boundary-crossing problems in stochastic modeling, with potential applications in mathematical finance, queueing theory, and statistical physics.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Can you draft a short technical abstract discussing the asymptotic expansion of sojourn probabilities for diffusion processes and its role in normalizing limit theorems?",
+      "output": "# Technical Abstract\n\n**On the Asymptotic Expansion of Sojourn Probabilities for Diffusion Processes and Applications to Normalized Limit Theorems**\n\nWe investigate the asymptotic behavior of sojourn probabilities for one-dimensional diffusion processes, with particular emphasis on their role in constructing normalizing sequences for weak convergence results. Let $X_t$ be a regular diffusion process on an interval $I \\subseteq \\mathbb{R}$, characterized by its scale function $s(x)$ and speed measure $m(dx)$. We study the asymptotic expansion, as $t \\to \\infty$, of the sojourn probability\n$$\nP_x(t) = \\mathbb{P}_x\\left(X_u \\in A \\text{ for } u \\in [0,t]\\right)\n$$\nfor suitable subsets $A \\subset I$, deriving higher-order correction terms beyond the leading exponential or polynomial decay rate governed by the principal eigenvalue of the associated generator restricted to $A$.\n\nUsing spectral representations and Tauberian-type arguments applied to the resolvent of the generator, we obtain expansions of the form\n$$\nP_x(t) \\sim C(x) \\, t^{-\\gamma} e^{-\\lambda_0 t}\\left(1 + \\frac{c_1}{t} + O(t^{-2})\\right),\n$$\nwhere $\\lambda_0$ denotes the principal eigenvalue (possibly zero in the recurrent/critical case) and $\\gamma$ reflects the local behavior of the spectral measure near $\\lambda_0$. Particular attention is given to boundary behavior at the endpoints of $A$ and its influence on the exponent $\\gamma$ and the constant $C(x)$.\n\nWe then demonstrate how these refined asymptotics yield precise normalizing constants $a_t, b_t$ such that\n$$\n\\frac{\\tau_A - b_t}{a_t} \\xrightarrow{d} \\Xi\n$$\nfor the sojourn time $\\tau_A$ or related occupation functionals, identifying the limiting law $\\Xi$ in both stable and non-stable domains of attraction depending on the tail behavior of $P_x(t)$. This provides a unified framework connecting spectral theory of diffusion generators with extreme value theory and functional limit theorems, extending classical results for Brownian motion and Ornstein–Uhlenbeck-type processes to general diffusions with polynomially or exponentially decaying sojourn tails.\n\n**Keywords:** diffusion processes, sojourn time, spectral expansion, Tauberian theorems, normalizing constants, weak convergence, occupation time asymptotics",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "I need a concise academic summary explaining an algorithm for expanding sojourn probability of many-dimensional diffusion processes and its principal term's significance.",
+      "output": "# Sojourn Probability Expansion for Multi-Dimensional Diffusion Processes\n\n## Overview\n\nThe algorithm addresses the asymptotic expansion of sojourn probabilities—the probability that a multi-dimensional diffusion process remains within a specified region (or exceeds/stays below a threshold surface) over a given time interval. This problem is fundamental in extreme value theory, reliability analysis, and the study of boundary crossing problems for stochastic processes.\n\n## Core Methodology\n\nThe algorithm typically proceeds through the following stages:\n\n**1. Localization and Reduction**\nThe multi-dimensional problem is localized around the most probable point(s) of exit or exceedance, often via a large deviation or Laplace-type approximation. This reduces the global problem to a local analysis near critical points of an associated variational (rate) functional.\n\n**2. Change of Measure / Girsanov Transformation**\nA tilted measure is introduced (via Cameron-Martin-Girsanov theorem) to shift the process toward the region of interest, transforming the small-probability event into a moderate-probability event under the new measure, facilitating asymptotic analysis.\n\n**3. Quadratic Approximation and Gaussian Reduction**\nThe nonlinear diffusion is locally approximated by its linearization (an Ornstein-Uhlenbeck-type or Gaussian process) around the dominant trajectory. The sojourn probability is then expressed via a functional integral (Wiener-type) over this Gaussian field.\n\n**4. Expansion in Powers of a Small Parameter**\nThe result is expressed as an asymptotic series:\n\n$$P \\sim C \\cdot \\varepsilon^{\\alpha} \\exp\\left(-\\frac{S_0}{\\varepsilon^2}\\right)\\left[A_0 + A_1 \\varepsilon + A_2 \\varepsilon^2 + \\cdots\\right]$$\n\nwhere $\\varepsilon$ is a small parameter (e.g., noise intensity or inverse time), $S_0$ is the large deviation rate (action functional evaluated at the optimal path), and $A_i$ are correction coefficients computed from higher-order terms in the Taylor expansion of the drift/diffusion coefficients and the Hessian of the action functional.\n\n## Significance of the Principal Term\n\nThe **principal (leading) term** $A_0 \\exp(-S_0/\\varepsilon^2)$ carries the essential asymptotic behavior and has the following significance:\n\n- **Exponential Rate**: $S_0$, determined by the minimal \"cost\" (in the Cameron-Martin/Freidlin-Wentzell sense) of the diffusion reaching the boundary of the sojourn region, dictates the *exponential decay rate* of the probability—this is the large-deviations principle contribution.\n\n- **Prefactor $A_0$**: Arises from the Gaussian fluctuation determinant (via the second variation/Hessian of the action functional) around the optimal path. It encodes the \"width\" of the tube of near-optimal paths and is analogous to the normalizing constant in Laplace's method for infinite-dimensional integrals.\n\n- **Practical Approximation**: In many applications (queueing theory, statistical mechanics, chemical kinetics), only the principal term is retained, since it captures the dominant asymptotic behavior; higher-order terms $A_1, A_2, \\ldots$ provide refined corrections but are often numerically negligible for small $\\varepsilon$.\n\n- **Geometric Interpretation**: The principal term connects to the **curvature of the boundary** of the sojourn region at the optimal exit point—flatter or more curved boundaries modify $A_0$ through Gaussian curvature-like corrections, linking the analytic expansion to the differential geometry of the constraint surface.\n\n## Conclusion\n\nThis expansion algorithm generalizes classical one-dimensional exit-time asymptotics (e.g., Kramers' problem) to multi-dimensional settings by combining large deviation theory, Gaussian process theory, and differential geometry of the boundary. The principal term serves as the leading-order approximation crucial for practical risk and reliability computations, while the full expansion offers a systematic refinement framework.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate a formal abstract (2-3 sentences) for a probability theory research paper on small domain sojourn probability expansions for diffusion processes.",
+      "output": "**Abstract**\n\nWe derive precise asymptotic expansions for the sojourn probability of a diffusion process within small domains shrinking around a fixed point, extending classical local time and occupation density results to higher-order accuracy. Using stochastic Taylor expansions and refined estimates on the transition density, we establish rates of convergence that explicitly capture the dependence on the domain's geometry, the diffusion coefficient, and the drift term, under mild regularity assumptions on the coefficients. These results yield sharp approximations applicable to statistical inference for diffusion models, including nonparametric estimation of the diffusion coefficient and hypothesis testing based on high-frequency sojourn-time observations.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide an English abstract, possibly translated from Russian mathematical literature, describing a method for computing sojourn probability expansions and normalizing coefficients in limit theorems.",
+      "output": "# Abstract\n\nAn asymptotic method is developed for computing the sojourn probabilities of random processes in a bounded domain, together with the associated normalizing coefficients arising in the corresponding limit theorems. The approach is based on constructing an asymptotic expansion of the sojourn probability in powers of a small parameter, with coefficients determined recursively through the solution of a sequence of auxiliary boundary value problems related to the generating (diffusion or Markov) operator of the process under consideration.\n\nThe leading term of the expansion reproduces the classical limiting distribution (typically of exponential or Weibull type), while subsequent terms provide correction factors that account for the influence of the boundary geometry, the drift and diffusion coefficients, and the initial distribution of the process. Explicit formulas are derived for the first few coefficients of the expansion, and it is shown how these coefficients can be expressed in terms of the principal eigenvalue and eigenfunction of the associated elliptic (or parabolic) boundary value problem, as well as their derivatives with respect to the perturbation parameter.\n\nParticular attention is given to the derivation of the normalizing constants that guarantee convergence of the properly scaled sojourn time to a nondegenerate limiting law. A recursive algorithm is proposed for their computation, reducing the problem to a chain of linear equations solvable in closed form for many classes of diffusion processes, including one-dimensional diffusions with smooth coefficients and processes governed by Sturm–Liouville-type operators.\n\nThe results obtained extend and refine earlier limit theorems on the exit time (first passage time) of diffusion processes from a bounded region, providing not only the limiting distribution but also quantitative estimates of the rate of convergence. Several examples illustrate the application of the method to specific diffusion models, including the Ornstein–Uhlenbeck process and processes with periodic or polynomial drift, for which the expansion coefficients and normalizing constants are computed explicitly. The proposed technique can be applied in reliability theory, queueing theory, and other areas where the asymptotic behavior of exit (sojourn) times plays a central role.\n\n**Keywords:** sojourn time, limit theorem, asymptotic expansion, normalizing coefficient, diffusion process, first passage time, eigenvalue problem, small parameter method.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.2897068847989094,
+      "excess_ratio": 0.19651970567276053,
+      "baseline_mean": 0.09318717912614885,
+      "baseline_n_valid": 5,
+      "output_chars": 831,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.26339285714285715,
+          "baseline_mean": 0.0702139890686936,
+          "excess_ratio": 0.19317886807416357
+        },
+        "bz2": {
+          "actual_ratio": 0.26464646464646463,
+          "baseline_mean": 0.08623744880059077,
+          "excess_ratio": 0.17840901584587388
+        },
+        "lzma": {
+          "actual_ratio": 0.33587786259541985,
+          "baseline_mean": 0.120256278312363,
+          "excess_ratio": 0.21562158428305683
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.43609022556390975,
+      "excess_ratio": 0.3429030464377609,
+      "baseline_mean": 0.09318717912614885,
+      "baseline_n_valid": 5,
+      "output_chars": 302,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3526315789473684,
+          "baseline_mean": 0.0702139890686936,
+          "excess_ratio": 0.2824175898786748
+        },
+        "bz2": {
+          "actual_ratio": 0.4260089686098655,
+          "baseline_mean": 0.08623744880059077,
+          "excess_ratio": 0.3397715198092747
+        },
+        "lzma": {
+          "actual_ratio": 0.5079365079365079,
+          "baseline_mean": 0.120256278312363,
+          "excess_ratio": 0.3876802296241449
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.11782065834279229,
+      "excess_ratio": 0.02463347921664344,
+      "baseline_mean": 0.09318717912614885,
+      "baseline_n_valid": 5,
+      "output_chars": 3377,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.0896551724137931,
+          "baseline_mean": 0.0702139890686936,
+          "excess_ratio": 0.019441183345099505
+        },
+        "bz2": {
+          "actual_ratio": 0.11530398322851153,
+          "baseline_mean": 0.08623744880059077,
+          "excess_ratio": 0.02906653442792076
+        },
+        "lzma": {
+          "actual_ratio": 0.14698162729658792,
+          "baseline_mean": 0.120256278312363,
+          "excess_ratio": 0.02672534898422492
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.07534246575342465,
+      "excess_ratio": -0.017844713372724197,
+      "baseline_mean": 0.09318717912614885,
+      "baseline_n_valid": 5,
+      "output_chars": 5998,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.060644614079728584,
+          "baseline_mean": 0.0702139890686936,
+          "excess_ratio": -0.009569374988965013
+        },
+        "bz2": {
+          "actual_ratio": 0.07320319432120674,
+          "baseline_mean": 0.08623744880059077,
+          "excess_ratio": -0.013034254479384028
+        },
+        "lzma": {
+          "actual_ratio": 0.09181969949916527,
+          "baseline_mean": 0.120256278312363,
+          "excess_ratio": -0.028436578813197735
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.018702378203648118,
+      "excess_ratio": -0.07448480092250073,
+      "baseline_mean": 0.09318717912614885,
+      "baseline_n_valid": 5,
+      "output_chars": 2741,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.011259676284306826,
+          "baseline_mean": 0.0702139890686936,
+          "excess_ratio": -0.05895431278438677
+        },
+        "bz2": {
+          "actual_ratio": 0.009298998569384835,
+          "baseline_mean": 0.08623744880059077,
+          "excess_ratio": -0.07693845023120593
+        },
+        "lzma": {
+          "actual_ratio": 0.03439153439153439,
+          "baseline_mean": 0.120256278312363,
+          "excess_ratio": -0.08586474392082862
+        }
+      }
+    }
+  }
+}

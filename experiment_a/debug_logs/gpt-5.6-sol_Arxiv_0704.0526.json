@@ -1,0 +1,524 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0526",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWentzel, Kramers, Brillouin (WKB) approximation for fractional systems is investigated in this paper using the fractional calculus. In the fractional case the wave function is constructed such that the phase factor is the same as the Hamilton's principle function \"S\". To demonstrate our proposed approach two examples are investigated in details.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWentzel, Kramers, Brillouin (WKB) approximation for fractional systems is investigated in this paper using the fractional calculus. In the fractional case the wave function is constructed such that the phase factor is the same as the Hamilton's principle function \"S\". To demonstrate our proposed approach two examples are investigated in details.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper investigates the Wentzel–Kramers–Brillouin (WKB) approximation for fractional systems using fractional calculus.\n- In the fractional formulation, the wave function is constructed so that its phase factor matches Hamilton’s principal function, “S.”\n- The proposed fractional WKB approach is demonstrated through two detailed examples.\n- The work extends the conventional WKB framework to systems described by fractional dynamics.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe paper develops a fractional-calculus-based WKB approximation for fractional systems, constructing the wave function so its phase factor matches Hamilton’s principal function \\(S\\) and applying the method to two examples. The examples demonstrate the proposed approach’s applicability to semiclassical analysis of fractional systems.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Wentzel, Kramers, Brillouin"
+  },
+  "outputs": {
+    "L1": "This paper investigates the Wentzel–Kramers–Brillouin (WKB) approximation for fractional systems using fractional calculus. In the fractional case, the wave function is constructed so that its phase factor coincides with Hamilton’s principal function, \\(S\\). To demonstrate the proposed approach, two examples are examined in detail.",
+    "L2": "This paper applies fractional calculus to examine the Wentzel–Kramers–Brillouin (WKB) approximation in fractional systems. For the fractional formulation, the wave function is defined so that its phase coincides with Hamilton’s principal function, \\(S\\). The proposed method is illustrated through two detailed examples.",
+    "L3": "This paper investigates an extension of the Wentzel–Kramers–Brillouin (WKB) approximation to systems governed by fractional dynamics. Using the tools of fractional calculus, the authors develop a generalized semiclassical framework that adapts the conventional WKB method to fractional differential equations. A key feature of this formulation is the construction of the wave function such that its phase factor is directly associated with Hamilton’s principal function, \\(S\\), preserving the fundamental connection between semiclassical wave mechanics and Hamilton–Jacobi theory.\n\nThe proposed fractional WKB approach is illustrated through two detailed examples, which demonstrate how the method can be applied in practice and clarify the effects of fractional dynamics on the resulting approximations. Overall, the work broadens the scope of the traditional WKB framework, providing a systematic method for analyzing systems whose behavior is more accurately described by fractional calculus.",
+    "L4": "The paper presents a systematic extension of the Wentzel–Kramers–Brillouin (WKB) approximation to systems governed by fractional calculus. A semiclassical wave function is constructed in which the rapidly varying phase is identified with Hamilton’s principal function \\(S\\). By substituting this ansatz into the relevant fractional wave equation and organizing the resulting terms according to their semiclassical order, the authors obtain the fractional analogue of the Hamilton–Jacobi relation, together with the corresponding conditions that determine the wave-function amplitude. This construction preserves the familiar connection between classical dynamics and quantum phase while adapting it to the nonlocal structure introduced by fractional derivatives.\n\nThe method is then applied to two representative fractional systems. In each case, the associated fractional Hamilton–Jacobi problem is analyzed, Hamilton’s principal function is determined, and the resulting expression is used to construct the semiclassical wave function. These examples illustrate how the proposed fractional WKB framework can be implemented in practice and show that it provides a consistent way to approximate solutions in the semiclassical regime. The results therefore support the applicability of the approach to the study of fractional dynamical and quantum systems, particularly where nonlocality or anomalous behavior makes conventional WKB analysis insufficient.",
+    "L5": "## Wentzel, Kramers, and Brillouin: The WKB Approximation\n\nThe names **Gregor Wentzel**, **Hendrik Anthony Kramers**, and **Léon Brillouin** are associated with the **WKB approximation**, a powerful semiclassical method used in quantum mechanics. Developed in the 1920s, the technique connects classical mechanics with the wave-like behavior described by the Schrödinger equation. It is also sometimes called the **WKBJ approximation**, recognizing the earlier work of mathematician Harold Jeffreys.\n\nFor a particle moving in a slowly varying potential \\(V(x)\\), the time-independent Schrödinger equation is\n\n\\[\n-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi}{dx^2}+V(x)\\psi=E\\psi.\n\\]\n\nThe WKB method assumes that the potential changes gradually compared with the wavelength of the particle. In a classically allowed region, where \\(E>V(x)\\), the approximate wavefunction takes the form\n\n\\[\n\\psi(x)\\approx \\frac{1}{\\sqrt{p(x)}}\n\\left[\nA e^{\\frac{i}{\\hbar}\\int p(x)\\,dx}\n+\nB e^{-\\frac{i}{\\hbar}\\int p(x)\\,dx}\n\\right],\n\\]\n\nwhere\n\n\\[\np(x)=\\sqrt{2m[E-V(x)]}\n\\]\n\nis the classical momentum. This expression describes an oscillating quantum wave whose wavelength and amplitude vary with position.\n\nIn a classically forbidden region, where \\(E<V(x)\\), the momentum becomes imaginary. The WKB solution then changes into exponentially increasing or decreasing functions. This feature makes the approximation especially useful for describing **quantum tunneling**, in which a particle crosses a potential barrier that it could not overcome according to classical physics. The tunneling probability is approximately governed by\n\n\\[\nT\\sim \\exp\\left[-\\frac{2}{\\hbar}\n\\int_{x_1}^{x_2}\\sqrt{2m[V(x)-E]}\\,dx\\right],\n\\]\n\nwith \\(x_1\\) and \\(x_2\\) representing the classical turning points.\n\nThe WKB approximation also provides a semiclassical quantization rule for bound systems:\n\n\\[\n\\int_{x_1}^{x_2}p(x)\\,dx\n=\n\\left(n+\\frac{1}{2}\\right)\\pi\\hbar.\n\\]\n\nThis condition reproduces exact or nearly exact energy levels for many quantum systems and illustrates how discrete quantum states emerge from classical motion.\n\nThe method becomes unreliable near turning points, where \\(E=V(x)\\), because the approximate amplitude diverges. Special connection formulas, often based on Airy functions, are required to match solutions across these regions. Despite this limitation, the work associated with Wentzel, Kramers, and Brillouin remains fundamental in quantum mechanics and is widely applied in atomic physics, nuclear decay, optics, acoustics, and wave propagation."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a concise abstract for a paper investigating the Wentzel–Kramers–Brillouin (WKB) approximation in fractional systems using fractional calculus.",
+      "output": "We develop a Wentzel–Kramers–Brillouin (WKB) framework for differential equations governed by fractional derivatives. By combining asymptotic analysis with fractional calculus, we derive generalized phase and amplitude equations that capture nonlocal and memory effects absent in classical WKB theory. The resulting approximation is examined for representative fractional wave and quantum-mechanical models, with attention to its validity, limiting behavior, and recovery of the standard WKB solution as the fractional order approaches an integer. This work provides a systematic tool for analyzing slowly varying fractional systems and clarifies how fractional dynamics modify semiclassical propagation, attenuation, and phase evolution.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize a study that extends the WKB approximation to fractional quantum systems, relates the wave-function phase to Hamilton’s principal function \\(S\\), and includes two examples.",
+      "output": "The study generalizes the Wentzel–Kramers–Brillouin (WKB) approximation to fractional quantum mechanics, where the usual kinetic term \\(p^{2}/2m\\) is replaced by a nonlocal fractional form,\n\\[\nH_\\alpha=D_\\alpha |p|^\\alpha+V(x),\\qquad 1<\\alpha\\le 2.\n\\]\n\nUsing a semiclassical ansatz\n\\[\n\\psi(x,t)=A(x,t)\\exp\\!\\left[\\frac{i}{\\hbar}S(x,t)\\right],\n\\]\nthe leading-order fractional Schrödinger equation becomes\n\\[\n\\frac{\\partial S}{\\partial t}\n+D_\\alpha\\left|\\frac{\\partial S}{\\partial x}\\right|^\\alpha+V(x)=0.\n\\]\nThus, the phase of the wave function is identified with Hamilton’s principal function \\(S\\) for the corresponding fractional classical Hamiltonian. The next semiclassical order determines the amplitude through probability-current conservation; in a stationary classically allowed region,\n\\[\np(x)=\\left[\\frac{E-V(x)}{D_\\alpha}\\right]^{1/\\alpha},\n\\qquad\nA(x)\\propto p(x)^{-(\\alpha-1)/2}.\n\\]\n\nMatching solutions near turning points gives a generalized Bohr–Sommerfeld rule,\n\\[\n\\int_{x_1}^{x_2}p(x)\\,dx\n=\\pi\\hbar\\left(n+\\tfrac12\\right),\n\\]\nwhich reduces to ordinary WKB when \\(\\alpha=2\\).\n\nThe method is illustrated with two standard bound-state examples—an infinite potential well and a fractional harmonic/power-law oscillator. In the well, it reproduces the characteristic fractional spectrum \\(E_n\\propto n^\\alpha\\). For the oscillator, it yields semiclassical levels whose dependence on \\(n\\) changes with the fractional order and approaches the conventional harmonic-oscillator result as \\(\\alpha\\to2\\). Overall, the study shows that fractional WKB preserves the classical-action interpretation of quantum phase while modifying local momentum, amplitude, and spectral scaling.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate a brief research-paper abstract titled “WKB Approximation for Fractional Systems.”",
+      "output": "# WKB Approximation for Fractional Systems\n\nWe develop a Wentzel–Kramers–Brillouin (WKB) framework for differential systems governed by fractional-order operators. By introducing a rapidly varying phase and a slowly varying amplitude, we derive leading-order eikonal and transport equations that incorporate the nonlocal effects of fractional derivatives. The resulting approximation recovers the classical WKB limit as the fractional order approaches an integer and reveals modified dispersion, attenuation, and phase propagation for noninteger orders. Representative examples illustrate the method’s accuracy and identify regimes in which fractional WKB solutions provide reliable asymptotic descriptions of multiscale dynamics.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "In three sentences, describe a proposed fractional-calculus approach to the WKB approximation and mention how it is demonstrated.",
+      "output": "The approach generalizes the WKB ansatz by replacing ordinary derivatives with fractional derivatives and expanding the phase in powers of \\(\\hbar\\), producing fractional analogues of the eikonal and transport equations. This yields semiclassical wavefunctions and a modified quantization condition for fractional Schrödinger-type equations. The method is demonstrated on simple model potentials, notably the fractional harmonic oscillator, by comparing approximate energy levels and wavefunctions with known or numerical results.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Draft an academic overview explaining that, in the fractional case, the wave function is constructed so its phase factor coincides with Hamilton’s principle function \\(S\\), with two detailed applications.",
+      "output": "# Hamilton’s Principal Function as the Phase of a Fractional Wave Function\n\n## 1. General framework\n\nA convenient formulation of spatially fractional quantum mechanics replaces the quadratic kinetic energy by a fractional power of momentum. In one dimension, the fractional Schrödinger equation may be written as\n\n\\[\ni\\hbar \\frac{\\partial \\psi}{\\partial t}\n=\n\\left[\nD_{\\alpha}\\bigl(-\\hbar^2\\partial_x^2\\bigr)^{\\alpha/2}\n+V(x,t)\n\\right]\\psi,\n\\qquad 1<\\alpha\\leq 2,\n\\]\n\nwhere \\(D_\\alpha\\) is a dimensional constant and the fractional Laplacian is defined through its Fourier symbol,\n\n\\[\n\\bigl(-\\hbar^2\\partial_x^2\\bigr)^{\\alpha/2}\ne^{ipx/\\hbar}\n=\n|p|^\\alpha e^{ipx/\\hbar}.\n\\]\n\nThe corresponding classical Hamiltonian is therefore\n\n\\[\nH_\\alpha(x,p,t)=D_\\alpha |p|^\\alpha+V(x,t).\n\\]\n\nFor \\(\\alpha=2\\) and \\(D_2=1/(2m)\\), the standard nonrelativistic Hamiltonian is recovered.\n\nThe semiclassical wave function is constructed in polar or eikonal form,\n\n\\[\n\\psi(x,t)=A(x,t)\\exp\\!\\left[\\frac{i}{\\hbar}S(x,t)\\right].\n\\]\n\nStrictly speaking, the dimensionless phase is \\(S/\\hbar\\), while the quantity appearing in the exponent before division by \\(\\hbar\\) is Hamilton’s principal function \\(S\\). Thus the statement that “the phase coincides with \\(S\\)” means that the oscillatory factor of the wave function is chosen to be\n\n\\[\n\\boxed{\\exp(iS/\\hbar)}.\n\\]\n\nAt leading semiclassical order, application of the fractional kinetic operator gives\n\n\\[\n\\bigl(-\\hbar^2\\partial_x^2\\bigr)^{\\alpha/2}\n\\left(Ae^{iS/\\hbar}\\right)\n=\n|\\partial_xS|^\\alpha A e^{iS/\\hbar}\n+O(\\hbar).\n\\]\n\nSubstitution into the fractional Schrödinger equation then yields\n\n\\[\n\\frac{\\partial S}{\\partial t}\n+\nD_\\alpha\\left|\\frac{\\partial S}{\\partial x}\\right|^\\alpha\n+V(x,t)=0.\n\\]\n\nThis is precisely the Hamilton–Jacobi equation for \\(H_\\alpha\\). Consequently,\n\n\\[\np=\\partial_xS,\n\\qquad\nE=-\\partial_tS,\n\\]\n\nand \\(S\\) is Hamilton’s principal function for the fractional classical dynamics. The amplitude obeys a transport equation determined by the fractional group velocity\n\n\\[\nv(p)=\\frac{\\partial H_\\alpha}{\\partial p}\n=\n\\alpha D_\\alpha |p|^{\\alpha-1}\\operatorname{sgn}(p).\n\\]\n\nIn higher dimensions the same construction becomes\n\n\\[\n\\psi(\\mathbf x,t)=A(\\mathbf x,t)e^{iS(\\mathbf x,t)/\\hbar},\n\\qquad\n\\partial_tS+D_\\alpha |\\nabla S|^\\alpha+V=0.\n\\]\n\n## 2. Application I: Fractional free particle\n\nConsider \\(V=0\\). The Hamilton–Jacobi equation is\n\n\\[\n\\partial_tS+D_\\alpha |\\partial_xS|^\\alpha=0.\n\\]\n\nA complete separated solution labeled by the conserved momentum \\(p\\) is\n\n\\[\nS_p(x,t)=px-D_\\alpha |p|^\\alpha t.\n\\]\n\nIndeed,\n\n\\[\n\\partial_xS_p=p,\n\\qquad\n\\partial_tS_p=-D_\\alpha|p|^\\alpha,\n\\]\n\nso the Hamilton–Jacobi equation is satisfied exactly. The corresponding wave function is\n\n\\[\n\\psi_p(x,t)\n=\nA_p\n\\exp\\!\\left[\n\\frac{i}{\\hbar}\n\\left(px-D_\\alpha|p|^\\alpha t\\right)\n\\right].\n\\]\n\nBecause a plane wave is an eigenfunction of the fractional Laplacian, this is not merely a WKB approximation: it is an exact eigenmode of the free fractional Schrödinger equation. Its energy is\n\n\\[\nE_\\alpha(p)=D_\\alpha |p|^\\alpha.\n\\]\n\nThus the quantum phase is exactly the classical principal function divided by \\(\\hbar\\):\n\n\\[\n\\frac{S_p}{\\hbar}\n=\n\\frac{px-E_\\alpha(p)t}{\\hbar}.\n\\]\n\n### Wave-packet propagation\n\nA localized state is formed by superposition,\n\n\\[\n\\psi(x,t)\n=\n\\frac{1}{\\sqrt{2\\pi\\hbar}}\n\\int_{-\\infty}^{\\infty}\na(p)\n\\exp\\!\\left[\n\\frac{i}{\\hbar}\n\\left(px-D_\\alpha |p|^\\alpha t\\right)\n\\right]dp.\n\\]\n\nEach momentum component carries the phase determined by the corresponding principal function. In the semiclassical limit, the dominant contribution follows from stationary phase:\n\n\\[\n\\frac{\\partial S_p}{\\partial p}=0.\n\\]\n\nFor \\(p\\neq 0\\), this gives\n\n\\[\nx\n=\n\\alpha D_\\alpha |p|^{\\alpha-1}\n\\operatorname{sgn}(p)\\,t.\n\\]\n\nHence the packet propagates with group velocity\n\n\\[\nv_g(p)\n=\n\\frac{\\partial E_\\alpha}{\\partial p}\n=\n\\alpha D_\\alpha |p|^{\\alpha-1}\\operatorname{sgn}(p),\n\\]\n\nwhich is exactly Hamilton’s equation\n\n\\[\n\\dot x=\\frac{\\partial H_\\alpha}{\\partial p}.\n\\]\n\nThe phase therefore performs two related functions: it solves the fractional Hamilton–Jacobi equation, and its stationary points select the fractional classical trajectories.\n\nThe ordinary result follows at \\(\\alpha=2\\):\n\n\\[\nS_p=px-\\frac{p^2}{2m}t,\n\\qquad\nv_g=\\frac{p}{m}.\n\\]\n\nFor \\(1<\\alpha<2\\), the nonlinear dispersion \\(E\\propto |p|^\\alpha\\) changes both packet spreading and the momentum dependence of the ray velocity, while the identification of the phase with \\(S/\\hbar\\) remains unchanged.\n\n## 3. Application II: Particle in a uniform force field\n\nConsider the linear potential\n\n\\[\nV(x)=Fx,\n\\]\n\nso that the fractional Hamiltonian is\n\n\\[\nH_\\alpha(x,p)=D_\\alpha |p|^\\alpha+Fx.\n\\]\n\nThe Hamilton–Jacobi equation becomes\n\n\\[\n\\partial_tS\n+\nD_\\alpha|\\partial_xS|^\\alpha\n+Fx=0.\n\\]\n\nA complete integral labeled by the initial momentum \\(p_0\\) can be constructed as\n\n\\[\nS(x,t;p_0)\n=\n\\bigl(p_0-Ft\\bigr)x\n-\nD_\\alpha\n\\int_0^t |p_0-F\\tau|^\\alpha\\,d\\tau.\n\\]\n\nIts derivatives are\n\n\\[\n\\partial_xS=p_0-Ft\n\\]\n\nand\n\n\\[\n\\partial_tS\n=\n-Fx-D_\\alpha|p_0-Ft|^\\alpha.\n\\]\n\nConsequently,\n\n\\[\n\\partial_tS\n+\nD_\\alpha|\\partial_xS|^\\alpha\n+Fx=0,\n\\]\n\nconfirming that \\(S\\) is a Hamilton principal function. The associated wave function is\n\n\\[\n\\psi_{p_0}(x,t)\n=\nC\n\\exp\\!\\left\\{\n\\frac{i}{\\hbar}\n\\left[\n(p_0-Ft)x\n-\nD_\\alpha\\int_0^t|p_0-F\\tau|^\\alpha d\\tau\n\\right]\n\\right\\}.\n\\]\n\nIts instantaneous momentum is\n\n\\[\np(t)=\\partial_xS=p_0-Ft,\n\\]\n\nwhich agrees with Hamilton’s equation\n\n\\[\n\\dot p=-\\frac{\\partial H_\\alpha}{\\partial x}=-F.\n\\]\n\nThe corresponding trajectory satisfies\n\n\\[\n\\dot x\n=\n\\frac{\\partial H_\\alpha}{\\partial p}\n=\n\\alpha D_\\alpha |p(t)|^{\\alpha-1}\n\\operatorname{sgn}[p(t)].\n\\]\n\nTherefore,\n\n\\[\nx(t)-x_0\n=\n\\alpha D_\\alpha\n\\int_0^t\n|p_0-F\\tau|^{\\alpha-1}\n\\operatorname{sgn}(p_0-F\\tau)\\,d\\tau.\n\\]\n\nAs long as the momentum does not change sign, for example \\(p_0-Ft>0\\), this reduces to\n\n\\[\nx(t)\n=\nx_0+\n\\frac{\\alpha D_\\alpha}{F(\\alpha)}\n\\left[p_0^\\alpha-(p_0-Ft)^\\alpha\\right],\n\\]\n\nor\n\n\\[\n\\boxed{\nx(t)\n=\nx_0+\\frac{D_\\alpha}{F}\n\\left[p_0^\\alpha-(p_0-Ft)^\\alpha\\right]\n}.\n\\]\n\nThe time integral in the action can likewise be evaluated explicitly:\n\n\\[\n\\int_0^t(p_0-F\\tau)^\\alpha d\\tau\n=\n\\frac{p_0^{\\alpha+1}-(p_0-Ft)^{\\alpha+1}}\n{F(\\alpha+1)},\n\\]\n\ngiving\n\n\\[\nS(x,t;p_0)\n=\n(p_0-Ft)x\n-\n\\frac{D_\\alpha}{F(\\alpha+1)}\n\\left[\np_0^{\\alpha+1}-(p_0-Ft)^{\\alpha+1}\n\\right].\n\\]\n\nThe wave-function phase thus records both the momentum shift caused by the force and the accumulated fractional kinetic action. When \\(\\alpha=2\\) and \\(D_2=1/(2m)\\), the usual uniformly accelerated trajectory and quadratic action are recovered.\n\nThis example also illustrates why the Hamilton–Jacobi formulation is particularly useful in fractional quantum mechanics. Although the kinetic operator is nonlocal in position space, its symbol is simply \\(D_\\alpha|p|^\\alpha\\). The phase \\(S\\) converts that symbol into the classical fractional Hamiltonian through \\(p=\\partial_xS\\).\n\n## 4. Interpretation and scope\n\nThe construction can be summarized as\n\n\\[\n\\boxed{\n\\psi=Ae^{iS/\\hbar},\n\\qquad\n\\partial_tS+H_\\alpha(x,\\partial_xS,t)=0.\n}\n\\]\n\nIt preserves the standard correspondence between quantum phase and classical action while replacing the conventional quadratic dispersion by a fractional one. Classical trajectories arise as rays of the wave field, and interference between different trajectories is governed by their action difference,\n\n\\[\n\\Delta\\phi=\\frac{\\Delta S}{\\hbar}.\n\\]\n\nThis statement applies most directly to **space-fractional** quantum mechanics with an ordinary first-order time derivative. In genuinely time-fractional models, time evolution is generally expressed through Mittag–Leffler functions rather than a pure unitary factor \\(e^{-iEt/\\hbar}\\). In that setting, identifying the entire temporal factor with \\(e^{iS/\\hbar}\\) requires additional qualifications. For the spatially fractional theory considered here, however, Hamilton’s principal function remains the natural and direct generator of the wave-function phase.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6066225165562914,
+      "excess_ratio": 0.47927435822197095,
+      "baseline_mean": 0.12734815833432048,
+      "baseline_n_valid": 5,
+      "output_chars": 333,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5919282511210763,
+          "baseline_mean": 0.09764883813305233,
+          "excess_ratio": 0.4942794129880239
+        },
+        "bz2": {
+          "actual_ratio": 0.5,
+          "baseline_mean": 0.1208565452891555,
+          "excess_ratio": 0.3791434547108445
+        },
+        "lzma": {
+          "actual_ratio": 0.7142857142857143,
+          "baseline_mean": 0.15834298713581305,
+          "excess_ratio": 0.5559427271499012
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.46216216216216216,
+      "excess_ratio": 0.33481400382784166,
+      "baseline_mean": 0.12734815833432048,
+      "baseline_n_valid": 5,
+      "output_chars": 320,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.40454545454545454,
+          "baseline_mean": 0.09764883813305233,
+          "excess_ratio": 0.3068966164124022
+        },
+        "bz2": {
+          "actual_ratio": 0.40725806451612906,
+          "baseline_mean": 0.1208565452891555,
+          "excess_ratio": 0.28640151922697354
+        },
+        "lzma": {
+          "actual_ratio": 0.5588235294117647,
+          "baseline_mean": 0.15834298713581305,
+          "excess_ratio": 0.40048054227595165
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3610465116279071,
+      "excess_ratio": 0.2336983532935866,
+      "baseline_mean": 0.12734815833432048,
+      "baseline_n_valid": 5,
+      "output_chars": 995,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.34823091247672255,
+          "baseline_mean": 0.09764883813305233,
+          "excess_ratio": 0.2505820743436702
+        },
+        "bz2": {
+          "actual_ratio": 0.3257443082311734,
+          "baseline_mean": 0.1208565452891555,
+          "excess_ratio": 0.20488776294201788
+        },
+        "lzma": {
+          "actual_ratio": 0.40522875816993464,
+          "baseline_mean": 0.15834298713581305,
+          "excess_ratio": 0.2468857710341216
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.20660419455600185,
+      "excess_ratio": 0.07925603622168137,
+      "baseline_mean": 0.12734815833432048,
+      "baseline_n_valid": 5,
+      "output_chars": 1454,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.16028368794326242,
+          "baseline_mean": 0.09764883813305233,
+          "excess_ratio": 0.06263484981021009
+        },
+        "bz2": {
+          "actual_ratio": 0.21236559139784947,
+          "baseline_mean": 0.1208565452891555,
+          "excess_ratio": 0.09150904610869397
+        },
+        "lzma": {
+          "actual_ratio": 0.24242424242424243,
+          "baseline_mean": 0.15834298713581305,
+          "excess_ratio": 0.08408125528842939
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.04203013481363997,
+      "excess_ratio": -0.0853180235206805,
+      "baseline_mean": 0.12734815833432048,
+      "baseline_n_valid": 5,
+      "output_chars": 2526,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.029459901800327332,
+          "baseline_mean": 0.09764883813305233,
+          "excess_ratio": -0.068188936332725
+        },
+        "bz2": {
+          "actual_ratio": 0.03727200634417129,
+          "baseline_mean": 0.1208565452891555,
+          "excess_ratio": -0.08358453894498422
+        },
+        "lzma": {
+          "actual_ratio": 0.05846153846153846,
+          "baseline_mean": 0.15834298713581305,
+          "excess_ratio": -0.09988144867427459
+        }
+      }
+    }
+  },
+  "api_provenance": {
+    "config": {
+      "gpt_gateway": 2,
+      "max_output_tokens": 4096,
+      "require_status": "completed"
+    },
+    "main_calls": {
+      "L1_polish": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_09debd149014f99c006a88c4cd0d488195bd5e5d8b540170bc",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 93,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 142,
+          "output_tokens_details": {
+            "reasoning_tokens": 69
+          },
+          "total_tokens": 235
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:36:15.702168+00:00"
+      },
+      "L2_rewrite": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0ee2a051b1e9de5f006a88c4d1e5e88197afb3a4e745299ae4",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 96,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 85,
+          "output_tokens_details": {
+            "reasoning_tokens": 15
+          },
+          "total_tokens": 181
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:36:19.729795+00:00"
+      },
+      "L3_bullets": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0271abc040aa661d006a88c4d5e8848195a1fd0f2d6c63a4c9",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 106,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 87,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 193
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:36:25.186603+00:00"
+      },
+      "L3_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0a9309b0cd1f09c4006a88c4db571c8194af3f126d82b109ad",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 104,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 177,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 281
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:36:30.556022+00:00"
+      },
+      "L4_2sent": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0f82410301180f3c006a88c4e0b4288196a379c527fc7a5bd4",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 118,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 86,
+          "output_tokens_details": {
+            "reasoning_tokens": 24
+          },
+          "total_tokens": 204
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:36:36.280791+00:00"
+      },
+      "L4_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0f76b83a940f2673006a88c4e671c8819594852936181bd0c7",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 75,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 331,
+          "output_tokens_details": {
+            "reasoning_tokens": 80
+          },
+          "total_tokens": 406
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:36:45.864023+00:00"
+      },
+      "L5_keywords": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_03f265849ac389ff006a88c4f09eb081938b50bc5f5e6516c3",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 28,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 689,
+          "output_tokens_details": {
+            "reasoning_tokens": 55
+          },
+          "total_tokens": 717
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:36:59.080098+00:00"
+      }
+    },
+    "counterfactuals": {
+      "reconstruct": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_07952d9ccbf20c3b006a88c4fda62c819689e301fd9168c70e",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 169,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 158,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 327
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:37:05.642454+00:00"
+      },
+      "outputs": [
+        {
+          "label": "cf_1",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_056354a3f53ae746006a88c504562c81958942e0149a05fdf0",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 38,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 172,
+                "output_tokens_details": {
+                  "reasoning_tokens": 39
+                },
+                "total_tokens": 210
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:37:12.228907+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_2",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0b56075859a34f99006a88c50a63248195b08085c748d92ff3",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 41,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 1300,
+                "output_tokens_details": {
+                  "reasoning_tokens": 850
+                },
+                "total_tokens": 1341
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:37:34.223114+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_3",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_062a98d89a0ea8d7006a88c520fef08196abfb53e3929015f3",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 23,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 148,
+                "output_tokens_details": {
+                  "reasoning_tokens": 12
+                },
+                "total_tokens": 171
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:37:40.972972+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_4",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0eedaff0d1c3211d006a88c52726288195ae1130ddcaa6721d",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 29,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 333,
+                "output_tokens_details": {
+                  "reasoning_tokens": 236
+                },
+                "total_tokens": 362
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:37:50.415459+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_5",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0a5e76bc4816b372006a88c5313a048194b86471bc406b466f",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 43,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 3075,
+                "output_tokens_details": {
+                  "reasoning_tokens": 615
+                },
+                "total_tokens": 3118
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:38:35.328631+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "model": "claude-opus-4-8",
+  "domain": "Arxiv",
+  "id": "0704.0107",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA physical law is represented by the probability distribution of a measured variable. The probability density is described by measured data using an estimator whose kernel is the instrument scattering function. The experimental information and data redundancy are defined in terms of information entropy. The model cost function, comprised of data redundancy and estimation error, is minimized by the creation-annihilation process.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA physical law is represented by the probability distribution of a measured variable. The probability density is described by measured data using an estimator whose kernel is the instrument scattering function. The experimental information and data redundancy are defined in terms of information entropy. The model cost function, comprised of data redundancy and estimation error, is minimized by the creation-annihilation process.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A physical law is represented by the probability distribution of a measured variable, expressing the relationship through statistical terms.\n- The probability density is described from measured data using an estimator whose kernel is the instrument scattering function.\n- Both the experimental information and data redundancy are defined in terms of information entropy.\n- The model cost function combines data redundancy and estimation error into a single measure to be optimized.\n- This cost function is minimized through the creation-annihilation process.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA physical law is modeled through the probability distribution of a measured variable, using an estimator whose kernel is the instrument scattering function while defining experimental information and data redundancy via information entropy. The model's cost function, combining data redundancy and estimation error, is minimized through a creation-annihilation process, enabling optimal representation of the underlying physical law.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The"
+  },
+  "outputs": {
+    "L1": "Here is a polished version of your text:\n\nA physical law is represented by the probability distribution of a measured variable. The probability density is characterized from measured data by means of an estimator whose kernel is defined by the instrument scattering function. Both the experimental information and the data redundancy are formulated in terms of information entropy. The model cost function, which comprises the data redundancy and the estimation error, is minimized through a creation-annihilation process.",
+    "L2": "A physical law can be expressed through the probability distribution associated with a variable that has been measured. To characterize the probability density from observed data, one employs an estimator whose kernel corresponds to the scattering function of the instrument. Both the experimental information and the redundancy within the data are formulated using the concept of information entropy. Through a creation-annihilation process, the model's cost function—which combines data redundancy with estimation error—is brought to its minimum value.",
+    "L3": "# A Statistical Framework for Representing Physical Laws\n\n## Physical Laws as Probability Distributions\n\nIn this framework, a physical law is not expressed as a deterministic relationship between variables, but rather as the probability distribution of a measured variable. By adopting a statistical formulation, the law captures the inherent variability and uncertainty of empirical observation, expressing the underlying relationship in terms of the likelihood of observing particular values. This approach acknowledges that measurement is intrinsically probabilistic and that the connection between quantities is most faithfully described through the statistical structure of the data rather than through idealized functional forms.\n\n## Estimating the Probability Density from Data\n\nThe probability density that represents the law is reconstructed directly from measured data using an estimator. Crucially, the kernel of this estimator is chosen to be the instrument scattering function—that is, the response characteristic of the measuring apparatus itself. By embedding the instrument's scattering function into the estimation procedure, the reconstructed density naturally accounts for the way in which the measurement process spreads or distorts observed values. This ensures that the estimated distribution reflects both the true underlying phenomenon and the physical limitations of the instrument used to observe it.\n\n## Quantifying Information and Redundancy\n\nTo evaluate the quality and content of the data, two complementary quantities are defined using the concept of information entropy. The first, the experimental information, measures the useful content contributed by the observations. The second, the data redundancy, quantifies the degree of overlap or repetition within the dataset—information that adds volume without adding genuine content. Framing both quantities in terms of information entropy provides a unified, rigorous basis for assessing how much a set of measurements actually contributes to knowledge of the underlying law.\n\n## Formulating the Cost Function\n\nThese two entropy-based measures are then combined into a single objective, known as the model cost function. This function balances the competing considerations of data redundancy and estimation error: minimizing redundancy discourages unnecessary duplication of information, while controlling the estimation error preserves fidelity to the observed data. By integrating both aspects into one quantity to be optimized, the cost function provides a principled criterion for selecting the most efficient and accurate representation of the physical law.\n\n## Optimization via the Creation–Annihilation Process\n\nFinally, the cost function is minimized through a creation–annihilation process. In this procedure, elements of the model are dynamically introduced (creation) or removed (annihilation) as needed, allowing the representation to adapt until an optimal configuration is reached. This iterative mechanism drives the system toward the minimum of the cost function, yielding a model that maximizes informational efficiency while minimizing estimation error, and thereby producing a compact and faithful statistical representation of the physical law.",
+    "L4": "# Modeling Physical Laws Through Probability Distributions and Information Entropy\n\n## Introduction\n\nPhysical laws describe regularities in nature, yet every attempt to observe them is mediated by instruments that impose limitations on measurement. This text develops a framework in which a physical law is not treated as a deterministic relationship but is instead modeled through the probability distribution of a measured variable. By adopting a statistical viewpoint, we can systematically account for the imperfections of measurement and, importantly, quantify the informational content of experimental data.\n\n## Estimating the Physical Law\n\nAt the heart of this approach lies the concept of an **estimator**, a mathematical construction that reconstructs the underlying physical law from measured data. The estimator is defined through a kernel, and here the kernel is chosen to be the **instrument scattering function**. This choice is physically meaningful: the scattering function characterizes precisely how the measuring apparatus responds to and disperses the true signal. Any real instrument does not record the exact value of a variable but rather a blurred version of it, spread out according to the scattering function. By embedding this function directly into the estimator, the model incorporates the instrument's response into the reconstruction of the physical law itself.\n\nConsequently, the measured probability distribution can be understood as a convolution between the true distribution representing the physical law and the scattering function of the instrument. Estimating the underlying law therefore becomes a problem of inference—recovering the genuine distribution from observations that have been smeared by the measurement process.\n\n## Information and Redundancy\n\nTo assess the quality and content of the experimental data, the framework turns to **information entropy**. Entropy provides a natural measure of uncertainty and information: it quantifies how much can be learned from a given set of measurements. Within this model, two related quantities are defined in terms of information entropy.\n\nThe first is the **experimental information**, which captures the genuine, useful content extracted from the measurements—the degree to which the data constrains and specifies the physical law. The second is the **data redundancy**, which reflects the extent to which the measured data contains superfluous or repeated information that does not contribute new knowledge about the underlying law. Redundancy arises naturally because the scattering function correlates neighboring measurements, so that adjacent data points often carry overlapping information.\n\nDistinguishing between genuine information and redundancy is essential. An efficient representation of the physical law should maximize meaningful information while minimizing redundant content, thereby achieving a compact and faithful description.\n\n## The Cost Function\n\nTo formalize the trade-off between fidelity and efficiency, the model defines a **cost function**. This cost function combines two competing contributions:\n\n1. **Data redundancy**, which penalizes representations that carry excessive, non-informative content, and\n2. **Estimation error**, which penalizes representations that deviate from the observed measurements and thus fail to reproduce the data accurately.\n\nBy combining these two terms, the cost function expresses a balance. On one side, one must remain faithful to the experimental data, keeping the estimation error small. On the other side, one must avoid over-representation, keeping the redundancy low. The optimal model is the one that reconciles these demands.\n\n## Minimization via a Creation–Annihilation Process\n\nThe final step is to minimize the cost function, thereby identifying the optimal representation of the physical law. This minimization is carried out through a **creation–annihilation process**. In this dynamical scheme, elements of the representation—such as sampling points, basis components, or degrees of freedom—are iteratively added (creation) or removed (annihilation) according to whether they reduce or increase the total cost.\n\nThe creation step introduces new elements where additional information is needed to reduce the estimation error, improving the fit to the data. The annihilation step eliminates elements that contribute mainly redundancy without meaningfully improving accuracy. Through the alternation of these two operations, the process converges toward a configuration in which the cost function attains its minimum.\n\n## Conclusion\n\nThe result of this procedure is an **optimal representation of the underlying physical law**—one that faithfully reproduces the measured data while avoiding unnecessary redundancy. By grounding the estimator in the instrument scattering function, quantifying information through entropy, and optimizing a cost function via a creation–annihilation process, the framework provides a principled and self-consistent method for extracting physical laws from imperfect measurements. This approach unites statistical estimation, information theory, and instrument physics into a single coherent methodology.",
+    "L5": "It looks like your topic got cut off—the only keyword I can see is **\"The\"**, which isn't quite enough for me to write a meaningful text.\n\nCould you please share more details? For example:\n\n- **The full topic or subject** you'd like me to write about (e.g., \"The French Revolution,\" \"The benefits of exercise,\" \"The future of AI\")\n- **The type of text** you want (essay, article, story, blog post, summary, etc.)\n- **The length** (a paragraph, 500 words, a full page, etc.)\n- **The tone or audience** (formal, casual, academic, for children, etc.)\n\nOnce you provide those details, I'll be happy to write it for you! 😊"
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract-style paragraph describing how physical laws can be modeled using probability distributions, kernel density estimation, and information entropy.",
+      "output": "# Abstract\n\nPhysical systems, traditionally described through deterministic differential equations, admit a complementary probabilistic formulation in which the states, observables, and governing constraints of a system emerge from underlying probability distributions. In this framework, the microstates accessible to a system are represented as samples drawn from an unknown density, and kernel density estimation (KDE) provides a nonparametric means of reconstructing the continuous probability landscape directly from empirical or simulated data, without imposing restrictive assumptions on the functional form of the distribution. By convolving observed states with smoothing kernels of appropriate bandwidth, KDE yields differentiable approximations of phase-space densities from which macroscopic quantities—such as expectation values, fluctuations, and response functions—can be recovered. Information entropy, in turn, quantifies the uncertainty and dispersion inherent in these reconstructed distributions, linking the estimated densities to thermodynamic and statistical measures of order, equilibrium, and irreversibility. We argue that the interplay between these three components—probability distributions as the fundamental descriptors of physical state, KDE as the estimator that bridges discrete observation and continuous law, and entropy as the organizing principle governing evolution toward maximally noncommittal configurations—offers a unified, data-driven perspective on physical modeling. This approach recasts conventional physical laws as emergent consequences of entropy extremization over empirically inferred densities, suggesting a pathway toward inferring governing dynamics directly from observational data while preserving consistency with established variational and thermodynamic principles.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize the key concepts of a paper that treats measurement as probability density estimation with the instrument scattering function as a kernel.",
+      "output": "# Measurement as Probability Density Estimation\n\nI should note upfront that I don't have a specific paper definitively identified by this description in my training data, so I can't reliably summarize a particular publication. However, I can explain the **conceptual framework** this description points to, which draws on well-established ideas in statistics and metrology.\n\n## Core Conceptual Framework\n\n**The central analogy**\nThe framework reframes physical measurement as a statistical estimation problem. Instead of viewing a measurement as returning a \"true value,\" it treats the collection of measurement outcomes as samples from an underlying probability distribution that we're trying to estimate.\n\n**The instrument response as a kernel**\n- Every real instrument has a *scattering function* (or point-spread function, resolution function, transfer function) that describes how it responds to an idealized point-like input.\n- This response function is mathematically identified with the **smoothing kernel** used in kernel density estimation (KDE).\n- The measured signal becomes a **convolution** of the true underlying distribution with the instrument's kernel.\n\n## Key Concepts You'd Expect\n\n| Concept | Role in the framework |\n|---------|----------------------|\n| **True distribution** | The physical quantity's actual probability density we wish to recover |\n| **Kernel (scattering function)** | Instrument resolution that \"blurs\" the true signal |\n| **Convolution** | The forward model linking truth to observation |\n| **Bandwidth** | Corresponds to instrument resolution/broadening |\n| **Deconvolution/inference** | The inverse problem of recovering the true density |\n\n## Practical Implications\n\n- **Resolution as bandwidth:** Finite instrument resolution is exactly analogous to the smoothing bandwidth in KDE—both trade bias against variance.\n- **Bias–variance tradeoff:** Sharper resolution reduces bias but may increase noise sensitivity, mirroring statistical estimation theory.\n- **Unified uncertainty treatment:** Statistical (sampling) and instrumental (resolution) uncertainties can be handled within one probabilistic formalism.\n\n---\n\n**If you have a specific paper in mind**, I'd be glad to help if you can share:\n- The title or authors\n- The field (e.g., neutron/X-ray scattering, particle physics, spectroscopy)\n- An abstract or excerpt\n\nThis would let me give you an accurate, faithful summary rather than a reconstruction of the general concept.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Explain in a few technical sentences how information entropy and data redundancy relate to minimizing a model cost function in measurement theory.",
+      "output": "# Information Entropy, Redundancy, and Model Cost Minimization\n\n**Information entropy** H(X) = −Σ p(xᵢ) log p(xᵢ) quantifies the average uncertainty (or information content) in a measurement distribution. In measurement theory, it represents the theoretical lower bound on the bits required to encode observations without loss.\n\n**Data redundancy** is the difference between the actual encoding length and this entropy bound: R = L_actual − H(X). Redundancy reflects statistical correlations and predictable structure that a model can exploit.\n\n## The Connection to Cost Minimization\n\nMinimizing a model's cost function is fundamentally equivalent to **reducing coding redundancy**:\n\n1. **Cost as description length**: Under the *Minimum Description Length (MDL)* principle, the cost function J(θ) can be expressed as:\n\n$$J(\\theta) = \\underbrace{L(D \\mid \\theta)}_{\\text{data given model}} + \\underbrace{L(\\theta)}_{\\text{model complexity}}$$\n\nMinimizing this jointly minimizes the total bits to encode both the model and the residual data.\n\n2. **Cross-entropy loss**: A typical cost function (e.g., negative log-likelihood) equals the **cross-entropy** H(p, q) between the true distribution p and model distribution q. Since:\n\n$$H(p, q) = H(p) + D_{KL}(p \\,\\|\\, q)$$\n\nthe irreducible term H(p) is the true entropy, and minimizing cost drives the **KL divergence** (a measure of *residual redundancy* between model and reality) toward zero.\n\n3. **Optimal model behavior**: When the cost is minimized, the model has captured all exploitable structure, leaving residuals that approach maximum entropy (white, uncorrelated) — a signature that no further redundancy remains to compress.\n\n## Summary\n\n> A well-fit model **converts redundancy into predictive structure**: cost minimization pushes the model's encoding efficiency toward the entropy limit, where remaining error is purely stochastic and incompressible.\n\nWould you like me to expand on the MDL formalism or the connection to Fisher information and measurement precision?",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Describe a statistical framework where a measured variable's probability distribution represents a physical law and estimation error is minimized by a creation-annihilation process.",
+      "output": "# A Statistical Framework: Physical Laws as Distributions with Creation-Annihilation Error Correction\n\nLet me construct this framework carefully, being clear about what's established physics/statistics versus what's a more speculative synthesis.\n\n## Core Setup\n\nConsider a measured variable $X$ whose probability distribution $p(x)$ is claimed to *encode a physical law* rather than merely describe measurement scatter. This is a real feature in several established contexts:\n\n**Where distributions genuinely represent physical laws:**\n- **Maxwell-Boltzmann distribution**: $p(v) \\propto v^2 e^{-mv^2/2k_BT}$ — the velocity distribution *is* the statistical mechanical law of thermal equilibrium.\n- **Born rule**: $p(x) = |\\psi(x)|^2$ — the probability density *is* the physical state (quantum mechanics).\n- **Maximum entropy distributions**: constraints (conservation laws) determine the distribution's functional form.\n\n## The Estimation Problem\n\nYou observe samples and want to estimate parameters $\\theta$ (temperature, a coupling constant, etc.) that define $p(x \\mid \\theta)$. The **Cramér-Rao bound** sets the error floor:\n\n$$\n\\text{Var}(\\hat\\theta) \\geq \\frac{1}{I(\\theta)}, \\qquad \nI(\\theta) = \\mathbb{E}\\!\\left[\\left(\\frac{\\partial \\ln p(x\\mid\\theta)}{\\partial \\theta}\\right)^2\\right]\n$$\n\nHere $I(\\theta)$ is the **Fisher information**. Minimizing estimation error means *maximizing* Fisher information.\n\n## Enter the Creation-Annihilation Process\n\nThe interesting synthesis: use a **second-quantized (Fock space) representation** where the distribution is built from creation ($\\hat a^\\dagger$) and annihilation ($\\hat a$) operators, and error minimization is realized dynamically.\n\n### Construction\n\nRepresent the probability distribution as a quantum state or as a **Doi-Peliti field theory** for a stochastic process. In the Doi-Peliti formalism, a classical master equation for a birth-death (creation-annihilation) process maps onto:\n\n$$\n\\frac{\\partial |\\psi\\rangle}{\\partial t} = -\\hat H \\, |\\psi\\rangle, \\qquad\n\\hat H = \\hat H(\\hat a^\\dagger, \\hat a)\n$$\n\nThe stationary distribution $p(x)$ emerges as the ground state of $\\hat H$. The physical law is encoded in the *structure* of $\\hat H$ (its symmetries and conservation laws).\n\n### Error minimization mechanism\n\nThe creation-annihilation dynamics act as an **error-correcting relaxation**:\n\n1. **Fluctuations** push the empirical distribution away from $p(x\\mid\\theta)$.\n2. **Annihilation** ($\\hat a$) removes probability weight from improbable (high-error) configurations at rate $\\propto$ deviation.\n3. **Creation** ($\\hat a^\\dagger$) restores weight toward the law-consistent manifold.\n4. **Detailed balance** at the fixed point guarantees the relaxed state saturates the information bound.\n\nThe steady state minimizes a **relative entropy (KL divergence)** functional:\n\n$$\n\\mathcal{F}[q] = D_{\\text{KL}}(q \\,\\|\\, p_\\theta) = \\int q(x)\\ln\\frac{q(x)}{p(x\\mid\\theta)}\\,dx\n$$\n\nThe Fokker-Planck / master equation generated by $\\hat H$ performs gradient descent on $\\mathcal F$, and the annihilation of misfit modes is exactly what drives $q \\to p_\\theta$.\n\n## The Quantum Estimation Version\n\nFor the sharpest statement, use **quantum estimation theory**. Replace Fisher information with the **quantum Fisher information (QFI)**:\n\n$$\n\\text{Var}(\\hat\\theta) \\geq \\frac{1}{F_Q(\\theta)}, \\qquad \nF_Q = 2\\sum_{j,k}\\frac{|\\langle j|\\partial_\\theta \\rho|k\\rangle|^2}{\\lambda_j + \\lambda_k}\n$$\n\nFor states generated by creation-annihilation dynamics (e.g., **squeezed states**), the QFI is enhanced:\n\n- A coherent state gives shot-noise-limited error, $\\Delta\\theta \\sim 1/\\sqrt{N}$.\n- Applying the squeezing operator $\\hat S = \\exp\\!\\left[\\tfrac{1}{2}(\\xi^* \\hat a^2 - \\xi \\hat a^{\\dagger 2})\\right]$ — built from *pairs* of annihilation/creation operators — redistributes uncertainty, achieving the **Heisenberg limit** $\\Delta\\theta \\sim 1/N$.\n\nHere the creation-annihilation process literally **reshapes the distribution to minimize estimation error** along the parameter of interest, at the cost of increased variance in the conjugate direction (respecting $\\Delta x \\, \\Delta p \\geq \\hbar/2$).\n\n## Summary Table\n\n| Element | Realization |\n|---|---|\n| Physical law | Functional form of $p(x\\mid\\theta)$ (Boltzmann, Born rule, max-entropy) |\n| Estimation error | Cramér-Rao / QFI bound |\n| Creation-annihilation | Doi-Peliti operators or squeezing operators $\\hat a, \\hat a^\\dagger$ |\n| Error minimization | Relaxation to $\\hat H$ ground state / saturation of information bound |\n| Optimal state | Squeezed/detailed-balance stationary distribution |\n\n## Honest Caveats\n\n- The Maxwell-Boltzmann/Born rule \"law-as-distribution\" idea is standard; the *Doi-Peliti error-correction reading* is a legitimate but specialized reframing.\n- Calling relaxation dynamics \"error minimization\" is exact for KL divergence but is an interpretation, not a unique theorem.\n- The Heisenberg-limit result is rigorous and is genuinely a creation-annihilation (squeezing) phenomenon.\n\nWould you like me to make one branch concrete — e.g., a worked Doi-Peliti birth-death example, or the full squeezed-state QFI calculation?",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a concise theoretical overview linking probability density estimators, instrument scattering functions, and entropy-based cost minimization.",
+      "output": "# Theoretical Overview: Density Estimation, Instrument Response, and Entropy-Based Optimization\n\n## 1. Probability Density Estimators\n\nThe foundational goal is to reconstruct an underlying probability density function **p(x)** from finite observations. Common approaches include:\n\n- **Parametric estimators**: Assume a functional form p(x|θ) and optimize parameters θ.\n- **Nonparametric estimators**: Kernel density estimation (KDE), where\n$$\\hat{p}(x) = \\frac{1}{Nh}\\sum_{i=1}^{N} K\\left(\\frac{x - x_i}{h}\\right)$$\nwith kernel K and bandwidth h.\n\nThe central tension is the **bias–variance tradeoff**, controlled by smoothing (bandwidth or model complexity).\n\n## 2. Instrument Scattering Functions (Resolution/Response)\n\nReal measurements are **convolutions** of the true signal with an instrument response function (the scattering or point-spread function **R**):\n\n$$m(x) = \\int R(x - x')\\, p(x')\\, dx' = (R * p)(x)$$\n\nThe scattering function encodes finite resolution, broadening, and instrumental blur. Consequently, **estimating p from m is a deconvolution (inverse) problem**, which is generally **ill-posed**—small data fluctuations produce large reconstruction errors.\n\n**Key link:** The estimator must simultaneously (a) infer a density and (b) account for R. This couples statistical estimation with the physics of measurement.\n\n## 3. Entropy-Based Cost Minimization\n\nTo regularize the ill-posed inversion, one minimizes a **cost functional** balancing data fidelity against a smoothness/regularization prior. The **Maximum Entropy (MaxEnt)** framework is natural here:\n\n$$\\mathcal{C}[p] = \\underbrace{\\chi^2[m, R*p]}_{\\text{data fidelity}} - \\alpha \\underbrace{S[p]}_{\\text{entropy}}$$\n\nwhere the Shannon–Jaynes entropy is\n$$S[p] = -\\int p(x)\\ln\\frac{p(x)}{q(x)}\\, dx$$\n\nrelative to a prior model q(x), and α is a Lagrange multiplier / regularization weight.\n\n**Why entropy?**\n- It enforces **positivity** and normalization naturally (p ≥ 0).\n- It selects the **least-committal** solution consistent with the data (Jaynes' principle).\n- It provides a principled, information-theoretic regularizer rather than an ad hoc penalty.\n\n## 4. Unified Picture\n\n| Component | Role | Mathematical object |\n|-----------|------|--------------------|\n| Density estimator | What we infer | p(x) |\n| Scattering function | How measurement distorts truth | R(x), convolution |\n| Entropy cost | How we regularize the inversion | S[p], minimization |\n\nThe workflow is:\n\n1. **Forward model:** predict data as m = R * p.\n2. **Compare:** measure misfit χ² between prediction and observation.\n3. **Regularize:** add entropy term to stabilize the inverse problem.\n4. **Optimize:** minimize the combined cost to obtain the estimated density.\n\n## 5. Connecting Threads\n\n- **Bayesian interpretation:** Minimizing the cost is equivalent to *maximum a posteriori* estimation, where entropy is the log-prior and χ² is the log-likelihood.\n- **Regularization = smoothing:** The role of α parallels the bandwidth h in KDE—both control the bias–variance balance.\n- **Information geometry:** Both density estimation and entropy minimization can be cast as projections (in KL-divergence) onto manifolds of admissible distributions.\n\n---\n\n**In essence:** density estimation provides the *target*, the instrument scattering function defines the *forward operator* that makes the problem ill-posed, and entropy-based cost minimization supplies the *regularizing principle* that yields a stable, physically admissible, and information-theoretically optimal reconstruction.\n\nWould you like me to expand any section—e.g., the MaxEnt–Bayesian equivalence, or numerical solution schemes (Cambridge algorithm, Bryan's method)?",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6462018730489074,
+      "excess_ratio": 0.5745266326797609,
+      "baseline_mean": 0.07167524036914648,
+      "baseline_n_valid": 5,
+      "output_chars": 522,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6526315789473685,
+          "baseline_mean": 0.05277169772508047,
+          "excess_ratio": 0.599859881222288
+        },
+        "bz2": {
+          "actual_ratio": 0.5537974683544303,
+          "baseline_mean": 0.06707985513288901,
+          "excess_ratio": 0.48671761322154133
+        },
+        "lzma": {
+          "actual_ratio": 0.7222222222222222,
+          "baseline_mean": 0.09381621989693745,
+          "excess_ratio": 0.6284060023252848
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4296577946768061,
+      "excess_ratio": 0.35798255430765963,
+      "baseline_mean": 0.07167524036914648,
+      "baseline_n_valid": 5,
+      "output_chars": 554,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3993610223642173,
+          "baseline_mean": 0.05277169772508047,
+          "excess_ratio": 0.34658932463913683
+        },
+        "bz2": {
+          "actual_ratio": 0.37752161383285304,
+          "baseline_mean": 0.06707985513288901,
+          "excess_ratio": 0.31044175869996404
+        },
+        "lzma": {
+          "actual_ratio": 0.5,
+          "baseline_mean": 0.09381621989693745,
+          "excess_ratio": 0.40618378010306255
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.16852071005917155,
+      "excess_ratio": 0.09684546969002507,
+      "baseline_mean": 0.07167524036914648,
+      "baseline_n_valid": 5,
+      "output_chars": 3246,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.13965267727930536,
+          "baseline_mean": 0.05277169772508047,
+          "excess_ratio": 0.08688097955422489
+        },
+        "bz2": {
+          "actual_ratio": 0.16702819956616052,
+          "baseline_mean": 0.06707985513288901,
+          "excess_ratio": 0.09994834443327151
+        },
+        "lzma": {
+          "actual_ratio": 0.19726027397260273,
+          "baseline_mean": 0.09381621989693745,
+          "excess_ratio": 0.10344405407566529
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.0931095691463611,
+      "excess_ratio": 0.02143432877721463,
+      "baseline_mean": 0.07167524036914648,
+      "baseline_n_valid": 5,
+      "output_chars": 5200,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.07304180682364247,
+          "baseline_mean": 0.05277169772508047,
+          "excess_ratio": 0.020270109098562007
+        },
+        "bz2": {
+          "actual_ratio": 0.09468937875751503,
+          "baseline_mean": 0.06707985513288901,
+          "excess_ratio": 0.027609523624626015
+        },
+        "lzma": {
+          "actual_ratio": 0.11132075471698114,
+          "baseline_mean": 0.09381621989693745,
+          "excess_ratio": 0.017504534820043688
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.09404388714733543,
+      "excess_ratio": 0.02236864677818895,
+      "baseline_mean": 0.07167524036914648,
+      "baseline_n_valid": 5,
+      "output_chars": 617,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.07969151670951156,
+          "baseline_mean": 0.05277169772508047,
+          "excess_ratio": 0.026919818984431097
+        },
+        "bz2": {
+          "actual_ratio": 0.07586206896551724,
+          "baseline_mean": 0.06707985513288901,
+          "excess_ratio": 0.008782213832628227
+        },
+        "lzma": {
+          "actual_ratio": 0.12389380530973451,
+          "baseline_mean": 0.09381621989693745,
+          "excess_ratio": 0.030077585412797064
+        }
+      }
+    }
+  }
+}

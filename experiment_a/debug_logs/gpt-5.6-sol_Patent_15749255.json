@@ -1,0 +1,175 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15749255",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nVarious embodiments of the present invention relate to a display processing method and apparatus for an electronic device having a display divided into a first area and a second area. According to various embodiments of the present invention, the electronic device comprises: a housing; the display including the first area, which is exposed to one surface of the housing and is flat, and the second area, which extends from the first area and of which at least a portion is curved; a second processor operatively connected to the display; a first processor operatively connected to the second processor; and at least one memory operatively connected to the first processor and/or the second processor, wherein the at least one memory can be configured to store: first instructions, to be executed, for allowing the first processor to process data to be displayed on the first area of the display so as to provide the processed data to the second processor; and second instructions, to be executed, for allowing the second processor to process the data provided from the first processor so as to generate data to be displayed on the second area of the display. Various embodiments are possible.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nVarious embodiments of the present invention relate to a display processing method and apparatus for an electronic device having a display divided into a first area and a second area. According to various embodiments of the present invention, the electronic device comprises: a housing; the display including the first area, which is exposed to one surface of the housing and is flat, and the second area, which extends from the first area and of which at least a portion is curved; a second processor operatively connected to the display; a first processor operatively connected to the second processor; and at least one memory operatively connected to the first processor and/or the second processor, wherein the at least one memory can be configured to store: first instructions, to be executed, for allowing the first processor to process data to be displayed on the first area of the display so as to provide the processed data to the second processor; and second instructions, to be executed, for allowing the second processor to process the data provided from the first processor so as to generate data to be displayed on the second area of the display. Various embodiments are possible.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The invention relates to display processing methods and apparatuses for electronic devices with displays divided into first and second areas.\n- The first display area is flat and exposed on one surface of the device housing.\n- The second display area extends from the first area and is at least partially curved.\n- A first processor processes data for display on the first area and sends the processed data to a second processor.\n- The second processor further processes the received data to generate content for display on the second area.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe invention addresses display processing for an electronic device with a flat first display area and an adjoining at least partially curved second area, using two processors with separate instructions to divide rendering tasks. The first processor prepares data for the flat area, while the second further processes that data for the curved area, enabling coordinated and efficient output across both display regions.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Various, According"
+  },
+  "outputs": {
+    "L1": "Various embodiments of the present invention relate to a display processing method and apparatus for an electronic device having a display divided into a first area and a second area. According to various embodiments, the electronic device comprises: a housing; a display including the first area, which is flat and exposed through one surface of the housing, and the second area, which extends from the first area and is at least partially curved; a second processor operatively connected to the display; a first processor operatively connected to the second processor; and at least one memory operatively connected to the first processor and/or the second processor. The at least one memory may be configured to store: first instructions that, when executed, cause the first processor to process data to be displayed in the first area of the display and provide the processed data to the second processor; and second instructions that, when executed, cause the second processor to process the data provided by the first processor and generate data to be displayed in the second area of the display. Various embodiments are possible.",
+    "L2": "Various implementations of the invention provide methods and apparatuses for processing content on an electronic device whose display is partitioned into first and second regions. In some implementations, the device includes a housing and a display having a planar first region exposed through one surface of the housing, along with a second region that continues from the first region and is curved over at least part of its extent. The device further includes a second processor coupled for operation with the display, a first processor operatively coupled to the second processor, and at least one memory operatively coupled to either or both processors. The memory may store first executable instructions that cause the first processor to process information intended for presentation in the display’s first region and transmit the resulting information to the second processor. The memory may also store second executable instructions that cause the second processor to further process the information received from the first processor and produce information for presentation in the display’s second region. Additional implementations are also contemplated.",
+    "L3": "The invention relates to display-processing methods and apparatuses for electronic devices having displays divided into first and second display areas. The first display area is substantially flat and exposed on a surface of the device housing. The second display area extends from the first display area and includes at least one curved portion.\n\nA first processor processes display data intended for presentation on the first display area and transmits the processed data to a second processor. The second processor further processes the received data to generate content suitable for presentation on the second display area. In this manner, the processors cooperatively control the presentation of content across the flat and curved portions of the display.",
+    "L4": "The invention relates to display processing for an electronic device having a display surface that includes a substantially flat first display area and an adjoining second display area that is at least partially curved. The curved area may extend from an edge of the flat area and may form, for example, a rounded side, corner, or peripheral portion of the display. Because the two areas have different geometries, image data intended for the flat area may require additional transformation before it can be displayed correctly in the curved area.\n\nTo address this requirement, the electronic device includes a first processor and a second processor that execute separate sets of instructions and divide the display-rendering workload. The first processor generates or prepares first display data for presentation in the flat first display area. This processing may include rendering graphical content, composing image layers, determining pixel values, applying color adjustments, or producing a frame or portion of a frame in a coordinate system associated with the flat area.\n\nThe second processor receives at least a portion of the display data prepared by the first processor and performs further processing appropriate for the curved second display area. Such processing may include geometric transformation, coordinate remapping, scaling, warping, interpolation, clipping, distortion compensation, edge correction, brightness adjustment, or other operations that account for the curvature and physical arrangement of the second area. The second processor thereby generates second display data suitable for output through pixels located in the curved area.\n\nThe respective instructions executed by the processors may define which portions of a graphical object, image, user-interface element, or video frame are assigned to each display area. They may also coordinate content that extends continuously from the flat area into the curved area. Timing information, boundary coordinates, shared image buffers, or synchronization signals may be used so that the outputs of the two processors are presented as a visually coherent frame without an apparent discontinuity at the junction between the display regions.\n\nIn some implementations, the first processor may be a general-purpose processor, graphics processor, or display-composition processor, while the second processor may be a dedicated display controller, geometric-processing circuit, or auxiliary graphics processor. The processors may operate sequentially, in parallel, or through a pipeline. Intermediate display data can be exchanged through shared memory, one or more frame buffers, a direct communication interface, or another suitable data path.\n\nBy assigning primary rendering for the flat area to the first processor and curvature-specific processing to the second processor, the invention avoids requiring a single processor to perform every operation for the entire display. This division of tasks can reduce processing latency, memory bandwidth, and power consumption while improving rendering efficiency. It can also permit specialized processing for the curved region without substantially changing the applications or rendering systems used to generate content for the flat region.\n\nThe resulting arrangement enables coordinated display output across both the flat and curved areas. Content may be shown only in one area or may extend seamlessly across both areas, with the second processor adapting the relevant data to the geometry of the curved portion. The invention therefore supports efficient and visually consistent operation of electronic devices having displays with different surface profiles, including smartphones, tablets, wearable devices, vehicle displays, and other devices incorporating flat and curved display regions.",
+    "L5": "Various communities approach environmental protection in different ways. According to recent studies, local initiatives such as recycling programs, tree planting, and clean-energy projects can significantly improve environmental quality. Various factors—including funding, public awareness, and government support—determine the success of these efforts. According to experts, cooperation between citizens, businesses, and authorities is essential for creating lasting change."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent abstract for an electronic device with a display having a flat first area and a curved second area, where separate processors handle display data for each area.",
+      "output": "An electronic device includes a display having a first display area with a substantially flat surface and a second display area with a curved surface. A first processor is configured to generate or process first display data for presentation in the first display area, and a second processor is configured to generate or process second display data for presentation in the second display area. A display controller may coordinate output of the first and second display data based on display geometry, operating state, or content continuity between the first and second display areas. The electronic device may independently control rendering parameters for each display area, including resolution, refresh rate, luminance, color, and image correction, to accommodate differences in the respective surface shapes. The separate processing of display data can reduce processing load, improve display performance, and facilitate presentation of continuous or distinct visual content across the flat and curved display areas.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a formal patent-style summary describing a display processing method and apparatus that uses a first processor to process content for a flat screen region and a second processor to generate content for an adjoining curved region.",
+      "output": "A display processing method and apparatus are disclosed for presenting image content on a display having a substantially flat screen region adjoining a curved screen region. The apparatus includes a first processor configured to process source content for presentation within the flat screen region and a second processor configured to generate corresponding content for presentation within the curved screen region. The second processor may generate the curved-region content based on the source content, output of the first processor, display geometry, or a combination thereof.\n\nThe first processor performs one or more operations including composition, scaling, cropping, color processing, frame generation, and assignment of image coordinates to the flat screen region. The second processor applies a geometric transformation corresponding to a curvature of the curved screen region and may further perform resampling, perspective correction, luminance compensation, color compensation, edge blending, or occlusion handling. Processing by the first and second processors is synchronized such that respective image portions are displayed as a spatially and temporally continuous image across a boundary between the flat and curved screen regions.\n\nIn certain embodiments, a controller determines a division of content between the screen regions and supplies processing parameters to the processors based on display configuration information. Boundary pixels may be shared, blended, or adjusted to reduce visible discontinuities at the adjoining regions. The processors may be implemented as separate integrated circuits, separate processing cores, hardware accelerators, programmable logic, or functional modules of a common processing system. The disclosed arrangement enables efficient rendering of content across a display having different surface geometries while permitting region-specific image processing.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Convert the following invention concept into patent language: a device housing supports a display divided into flat and curved portions, with two operatively connected processors and memory storing instructions that allocate rendering tasks between them.",
+      "output": "**Example Patent Claim**\n\n1. An electronic device comprising:  \n   a housing;  \n   a display supported by the housing, the display comprising a substantially planar display portion and a curved display portion;  \n   a first processor;  \n   a second processor operatively coupled to the first processor; and  \n   memory storing instructions that, when executed by at least one of the first processor or the second processor, cause rendering operations for the display to be allocated between the first processor and the second processor.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate a broad apparatus claim-style description for an electronic device featuring a flat main display area, an extended curved edge area, first and second processors, and executable instructions for independently processing data shown in those areas.",
+      "output": "**An electronic device comprising:**\n\na display including:  \na substantially flat main display area; and  \nan extended display area contiguous with and curved relative to an edge of the substantially flat main display area;\n\na first processor configured to process first data for presentation in the substantially flat main display area;\n\na second processor configured to process second data for presentation in the extended display area; and\n\nmemory storing executable instructions that, when executed by the first processor and the second processor, cause the first data and the second data to be processed independently such that content presented in the extended display area is controllable independently of content presented in the substantially flat main display area.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Compose an abstract in the style of an international patent publication for a dual-processor display architecture in which one processor supplies processed data for a flat display section and another processor adapts that data for a curved display section.",
+      "output": "A display apparatus includes a flat display section, a curved display section extending from the flat display section, a first processor, and a second processor. The first processor processes image data and supplies first display data for presentation on the flat display section. The second processor receives at least a portion of the processed image data from the first processor and generates second display data adapted to a geometry of the curved display section. The adaptation may include coordinate transformation, scaling, distortion compensation, luminance correction, color correction, or pixel remapping based on curvature information associated with the curved display section. The first and second processors control the respective display sections in synchronization such that content is presented continuously across a boundary between the flat display section and the curved display section. Corresponding methods and computer-readable media are also disclosed.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.75054704595186,
+      "excess_ratio": 0.5310670724297715,
+      "baseline_mean": 0.21947997352208842,
+      "baseline_n_valid": 5,
+      "output_chars": 1134,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7708830548926014,
+          "baseline_mean": 0.17012470212348083,
+          "excess_ratio": 0.6007583527691206
+        },
+        "bz2": {
+          "actual_ratio": 0.6535087719298246,
+          "baseline_mean": 0.21200498806911142,
+          "excess_ratio": 0.4415037838607132
+        },
+        "lzma": {
+          "actual_ratio": 0.8225806451612904,
+          "baseline_mean": 0.2673600768220567,
+          "excess_ratio": 0.5552205683392337
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3435623749166111,
+      "excess_ratio": 0.1240824013945227,
+      "baseline_mean": 0.21947997352208842,
+      "baseline_n_valid": 5,
+      "output_chars": 1163,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.29004329004329005,
+          "baseline_mean": 0.17012470212348083,
+          "excess_ratio": 0.11991858791980922
+        },
+        "bz2": {
+          "actual_ratio": 0.3319919517102616,
+          "baseline_mean": 0.21200498806911142,
+          "excess_ratio": 0.11998696364115016
+        },
+        "lzma": {
+          "actual_ratio": 0.4,
+          "baseline_mean": 0.2673600768220567,
+          "excess_ratio": 0.13263992317794332
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.5313653136531364,
+      "excess_ratio": 0.311885340131048,
+      "baseline_mean": 0.21947997352208842,
+      "baseline_n_valid": 5,
+      "output_chars": 760,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5319148936170213,
+          "baseline_mean": 0.17012470212348083,
+          "excess_ratio": 0.3617901914935404
+        },
+        "bz2": {
+          "actual_ratio": 0.4472934472934473,
+          "baseline_mean": 0.21200498806911142,
+          "excess_ratio": 0.23528845922433586
+        },
+        "lzma": {
+          "actual_ratio": 0.6039603960396039,
+          "baseline_mean": 0.2673600768220567,
+          "excess_ratio": 0.33660031921754724
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.11728120835184362,
+      "excess_ratio": -0.1021987651702448,
+      "baseline_mean": 0.21947997352208842,
+      "baseline_n_valid": 5,
+      "output_chars": 3814,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.09261744966442953,
+          "baseline_mean": 0.17012470212348083,
+          "excess_ratio": -0.0775072524590513
+        },
+        "bz2": {
+          "actual_ratio": 0.1125,
+          "baseline_mean": 0.21200498806911142,
+          "excess_ratio": -0.09950498806911141
+        },
+        "lzma": {
+          "actual_ratio": 0.1450381679389313,
+          "baseline_mean": 0.2673600768220567,
+          "excess_ratio": -0.12232190888312541
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.11146161934805462,
+      "excess_ratio": -0.1080183541740338,
+      "baseline_mean": 0.21947997352208842,
+      "baseline_n_valid": 5,
+      "output_chars": 475,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.05,
+          "baseline_mean": 0.17012470212348083,
+          "excess_ratio": -0.12012470212348082
+        },
+        "bz2": {
+          "actual_ratio": 0.10158730158730159,
+          "baseline_mean": 0.21200498806911142,
+          "excess_ratio": -0.11041768648180983
+        },
+        "lzma": {
+          "actual_ratio": 0.16853932584269662,
+          "baseline_mean": 0.2673600768220567,
+          "excess_ratio": -0.09882075097936008
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T04:40:01.231373+00:00"
+    }
+  ]
+}

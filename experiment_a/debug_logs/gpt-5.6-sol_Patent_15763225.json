@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15763225",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nAn elevator arrangement has a car displaceable within an elevator shaft between building floors, an elevator control and a fixture located at each floors and connected to the elevator control for an exchange of information. Each fixture includes a sound detector detecting sound propagating within the shaft. The arrangement performs a fixture position learning procedure by determining position information for each fixture based on sound characteristics detected by the sound detector and storing the determined position information for subsequent identification of each of the fixtures. Changes in sound characteristics are detected while the car is displaced through the shaft. Time-dependent occurrences of sound pressure peaks or frequency shifts due to Doppler effects are measured at the fixtures and fixture position information is derived from a sequence order of such occurrences or, alternatively, by correlating the occurrence of sound characteristic changes with current car position information provided by the elevator control.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nAn elevator arrangement has a car displaceable within an elevator shaft between building floors, an elevator control and a fixture located at each floors and connected to the elevator control for an exchange of information. Each fixture includes a sound detector detecting sound propagating within the shaft. The arrangement performs a fixture position learning procedure by determining position information for each fixture based on sound characteristics detected by the sound detector and storing the determined position information for subsequent identification of each of the fixtures. Changes in sound characteristics are detected while the car is displaced through the shaft. Time-dependent occurrences of sound pressure peaks or frequency shifts due to Doppler effects are measured at the fixtures and fixture position information is derived from a sequence order of such occurrences or, alternatively, by correlating the occurrence of sound characteristic changes with current car position information provided by the elevator control.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The elevator arrangement includes a car moving between floors, an elevator control, and a fixture at each floor connected to the control.\n- Each floor fixture has a sound detector that detects sound propagating within the elevator shaft.\n- The system learns fixture positions by analyzing sound characteristics detected while the elevator car moves through the shaft.\n- It measures time-dependent sound pressure peaks or Doppler-related frequency shifts at the fixtures.\n- Fixture positions are determined from the sequence of detected sound changes or by correlating those changes with the car’s current position.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nAn elevator system learns the floor position of each shaft-connected fixture by detecting sound changes as the car moves, using sound-pressure peaks or Doppler frequency shifts and correlating their timing or sequence with car-position data. The resulting position information is stored to identify each fixture reliably, enabling automatic fixture mapping without manual configuration.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Each, The, Changes"
+  },
+  "outputs": {
+    "L1": "An elevator arrangement includes a car displaceable within an elevator shaft between building floors, an elevator control, and a fixture located at each floor and connected to the elevator control for exchanging information. Each fixture includes a sound detector configured to detect sound propagating within the shaft. The arrangement performs a fixture-position learning procedure by determining position information for each fixture based on sound characteristics detected by the sound detector and storing the determined position information for subsequent identification of the fixtures. Changes in sound characteristics are detected as the car moves through the shaft. Time-dependent occurrences of sound-pressure peaks or frequency shifts resulting from Doppler effects are measured at the fixtures. Fixture-position information is then derived from the sequential order of such occurrences or, alternatively, by correlating the occurrence of changes in sound characteristics with current car-position information provided by the elevator control.",
+    "L2": "An elevator system comprises a car that travels through a shaft between the floors of a building, a controller, and a fixture installed on every floor. Each fixture communicates with the controller and contains an acoustic sensor that monitors sound traveling through the shaft. To learn the locations of the fixtures, the system analyzes the acoustic properties recorded by their sensors, assigns position data to each fixture, and saves that data for later fixture identification. During movement of the car through the shaft, the fixtures detect variations in the sound. They measure the timing of sound-pressure peaks or Doppler-induced frequency changes. Fixture locations are then established either from the order in which these events occur or by matching the detected acoustic changes with contemporaneous car-position data supplied by the elevator controller.",
+    "L3": "The elevator arrangement comprises an elevator car configured to move between multiple floors, an elevator control system, and a fixture installed at each floor and connected to the control system. Each floor fixture includes a sound detector capable of detecting sound propagating through the elevator shaft.\n\nAs the elevator car moves through the shaft, the system analyzes changes in the detected sound to learn the location of each fixture. In particular, the sound detectors may measure time-dependent sound-pressure peaks generated as the car passes a fixture or identify Doppler-related frequency shifts caused by the car’s movement.\n\nThe elevator control determines the fixture positions based on the order in which these sound changes are detected. Alternatively, or additionally, it may correlate the timing and characteristics of the detected changes with the elevator car’s known current position. In this way, the system can automatically identify and store the position of each floor fixture without requiring manual configuration.",
+    "L4": "An elevator system can automatically determine the floor position of each fixture connected within an elevator shaft, eliminating the need to assign fixture locations manually during installation or commissioning. Each fixture is associated with an acoustic source, or otherwise produces or influences a detectable sound signal. During a learning run, the elevator car travels through the shaft while one or more microphones or sound-pressure sensors mounted on the car monitor the acoustic environment. At the same time, the elevator controller records car-position information obtained from the positioning system, such as encoder data, floor-level signals, or measured travel distance.\n\nAs the car approaches and passes a fixture, the detected sound changes in a characteristic manner. In one implementation, the system identifies a peak in sound pressure when the car is closest to the fixture. The time at which the peak occurs is correlated with the car’s position at that time, allowing the controller to estimate the fixture’s vertical location and assign it to the corresponding floor. Signal filtering, thresholding, and comparison with background-noise levels may be used to distinguish a valid fixture response from normal elevator and shaft noise.\n\nIn another implementation, the fixture emits a tone having a known or identifiable frequency. Movement of the car relative to the fixture causes a Doppler shift in the received tone. The detected frequency is higher while the car is approaching the fixture and lower after the car has passed it, or vice versa depending on the direction of travel. The transition between these frequency conditions, particularly the point at which the Doppler shift changes sign or reaches the nominal transmission frequency, indicates the location at which the car is adjacent to the fixture. The controller correlates that event with the contemporaneous car-position data to determine the fixture’s floor position.\n\nThe system may activate fixtures individually, assign each fixture a distinct acoustic signature, or use the order in which acoustic events are detected to distinguish multiple fixtures. For example, during an upward or downward learning run, the controller can compare the detected sequence of fixture signals with the known sequence of floors. Repeated passes in one or both travel directions may be used to improve accuracy, reject transient noise, and verify the calculated positions.\n\nOnce the learning procedure is complete, the controller stores an association between each fixture’s identifier and its determined shaft or floor position. The stored mapping can then be used for normal elevator operation, diagnostics, maintenance, replacement verification, or network configuration. In this way, shaft-connected fixtures can be located and identified reliably through acoustic measurements and car-position correlation, providing automatic fixture mapping without requiring installers to configure each fixture manually.",
+    "L5": "### Each Change Matters\n\nEach morning, the world appears familiar, yet never exactly the same. The light falls differently, new thoughts emerge, and yesterday’s worries begin to fade. Some changes arrive suddenly, while others unfold so quietly that we notice them only after time has passed.\n\nThe smallest choices can shape who we become. A kind word may restore someone’s hope; a single decision may open an unexpected path. Although changes can feel uncertain, they also create room for growth.\n\nEach step forward reminds us that life is not fixed. The changes we face are not merely endings—they are invitations to begin again."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize a patent describing how an elevator system automatically determines the floor locations of shaft fixtures using sound detected as the car moves.",
+      "output": "The patent describes an elevator self-learning system that maps the vertical locations of fixtures installed in the hoistway—such as landing switches, magnets, brackets, or other shaft equipment—without requiring manual measurement.\n\nAs the elevator car travels through the shaft, one or more microphones or acoustic sensors on the car detect characteristic sounds produced when it passes each fixture. The controller combines these sound events with car-position, speed, direction, or timing data to estimate the fixture’s floor-relative location. Signal processing can filter background noise and compare detected sounds with stored acoustic patterns to identify the type of fixture and improve accuracy over multiple runs.\n\nThe resulting location map can be stored by the elevator controller and used for commissioning, floor-position calibration, maintenance, and fault detection. The approach reduces installation labor and can reveal missing, displaced, or abnormal shaft components without requiring technicians to inspect the entire hoistway manually.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a concise patent-style abstract for an elevator arrangement that learns fixture positions from sound-pressure peaks or Doppler frequency shifts produced by a moving elevator car.",
+      "output": "An elevator arrangement comprises an elevator car movable within a hoistway, an acoustic sensor, and a controller configured to determine positions of hoistway fixtures. During car movement, the sensor detects acoustic signals emitted or reflected by the fixtures. The controller identifies fixture encounters from sound-pressure peaks and/or Doppler frequency shifts in the detected signals, associates the encounters with car position data, and stores learned fixture positions for use in elevator control, monitoring, or maintenance.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Explain a method for identifying and mapping elevator fixtures by correlating acoustic changes in the shaft with the elevator car’s current position.",
+      "output": "A practical approach is **position-referenced acoustic mapping**: record shaft acoustics while the car moves, tag every acoustic feature with the car’s measured vertical position, and combine repeated runs into a shaft map.\n\n1. **Instrument the car**\n   - Use one or more microphones, ideally with a controlled ultrasonic or audible chirp source.\n   - Obtain car position from the elevator controller/encoder, floor-zone sensors, or an independent inertial/range sensor.\n   - Synchronize audio and position data with accurate timestamps.\n\n2. **Calibrate**\n   - Establish known height references at several landings.\n   - Measure acoustic delay, microphone/source geometry, and the local speed of sound.\n   - Record baseline sounds such as motor noise, guide-rail vibration, airflow, and door operation.\n\n3. **Collect data**\n   - Run the car through the shaft at a steady, known speed in both directions.\n   - Emit repeated chirps and record their echoes, or passively record changes in ambient noise.\n   - Log position \\(z_\\text{car}(t)\\), velocity, travel direction, and audio simultaneously.\n\n4. **Extract fixture signatures**\n   - Compute spectrograms, echo impulse responses, or cross-correlation between transmitted and received chirps.\n   - Detect persistent changes such as:\n     - strong reflections from landing doors or beams,\n     - periodic signatures from rail brackets,\n     - changes in reverberation near recesses or openings,\n     - localized vibration or airflow changes.\n   - Remove components correlated only with car speed or machinery.\n\n5. **Convert detections to shaft coordinates**\n   - For a direct echo with round-trip delay \\(\\tau\\), the approximate range is\n     \\[\n     r \\approx \\frac{c\\tau}{2},\n     \\]\n     where \\(c\\) is the speed of sound.\n   - Combine that range and the sensor orientation with the car position at the emission/reception time to estimate the fixture’s fixed shaft coordinate.\n   - At normal elevator speeds, compensate for car motion during the echo interval and, if needed, Doppler shift.\n\n6. **Fuse repeated passes**\n   - Cluster detections occurring at the same shaft height on multiple runs.\n   - Compare upward and downward runs to reject transient noises.\n   - With multiple microphones, use time-difference-of-arrival or beamforming to estimate which wall or side contains the reflector.\n   - Assign confidence based on repeatability, echo strength, and agreement with known floor elevations.\n\n7. **Build and validate the map**\n   - Store each feature as height, lateral side/range, acoustic signature, probable fixture type, and confidence.\n   - Validate selected detections against drawings or inspection records; use confirmed points to correct position drift.\n\nControlled chirps generally provide more reliable geometry than passive listening, while passive signatures can help classify fixtures. Temperature, humidity, car loading, fan noise, and shaft reverberation should be included in the uncertainty model. Any shaft or car-top installation should be performed only by authorized elevator personnel under lockout/tagout and applicable elevator-safety rules.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Draft a technical paragraph describing an elevator control system in which sound detectors at each floor determine fixture order and position during car travel.",
+      "output": "The elevator control system includes sound detectors positioned at each floor to monitor acoustic signatures generated as the elevator car travels through the hoistway. A controller receives time-stamped detector signals and correlates their detection sequence, amplitude, and timing with car position and direction data to determine the relative order and physical location of landing fixtures along the travel path. The resulting fixture map is compared with stored floor and hoistway configuration data to verify installation order, identify displaced or incorrectly assigned fixtures, and update position references used for stopping, leveling, and fixture activation. Signal filtering and multi-detector correlation suppress ambient noise and prevent false position determinations.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Describe an invention that performs fixture position learning in an elevator shaft by measuring time-dependent acoustic characteristics and storing the resulting location information.",
+      "output": "The invention is an elevator-shaft mapping system that automatically learns the positions of shaft fixtures, such as landing doors, guide-rail joints, brackets, or terminal devices.\n\nDuring a learning run, an acoustic sensor carried by the elevator car measures how sound in the shaft changes over time as the car moves. A controller analyzes the time-dependent acoustic signal—such as its level, frequency spectrum, echoes, or other characteristic patterns—to detect when the car passes a particular fixture. The detected acoustic event is correlated with the car’s position, travel time, speed, or displacement. The controller then stores the calculated fixture location and, optionally, an identifying acoustic signature in memory.\n\nThe stored location map can later be used for car-position verification, floor or fixture recognition, maintenance diagnostics, and detection of moved, damaged, or missing shaft components, reducing the need for manual surveying or dedicated position markers.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.735655737704918,
+      "excess_ratio": 0.5760264114164143,
+      "baseline_mean": 0.15962932628850368,
+      "baseline_n_valid": 5,
+      "output_chars": 1055,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7611607142857143,
+          "baseline_mean": 0.12057533994491336,
+          "excess_ratio": 0.640585374340801
+        },
+        "bz2": {
+          "actual_ratio": 0.6147540983606558,
+          "baseline_mean": 0.15019732233676736,
+          "excess_ratio": 0.4645567760238884
+        },
+        "lzma": {
+          "actual_ratio": 0.8257575757575758,
+          "baseline_mean": 0.2004032393962863,
+          "excess_ratio": 0.6253543363612895
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.33071988595866003,
+      "excess_ratio": 0.17109055967015635,
+      "baseline_mean": 0.15962932628850368,
+      "baseline_n_valid": 5,
+      "output_chars": 869,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.24941176470588236,
+          "baseline_mean": 0.12057533994491336,
+          "excess_ratio": 0.12883642476096901
+        },
+        "bz2": {
+          "actual_ratio": 0.34497816593886466,
+          "baseline_mean": 0.15019732233676736,
+          "excess_ratio": 0.1947808436020973
+        },
+        "lzma": {
+          "actual_ratio": 0.38461538461538464,
+          "baseline_mean": 0.2004032393962863,
+          "excess_ratio": 0.18421214521909834
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3986189579409919,
+      "excess_ratio": 0.2389896316524882,
+      "baseline_mean": 0.15962932628850368,
+      "baseline_n_valid": 5,
+      "output_chars": 1045,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.35699797160243407,
+          "baseline_mean": 0.12057533994491336,
+          "excess_ratio": 0.2364226316575207
+        },
+        "bz2": {
+          "actual_ratio": 0.39204545454545453,
+          "baseline_mean": 0.15019732233676736,
+          "excess_ratio": 0.24184813220868717
+        },
+        "lzma": {
+          "actual_ratio": 0.4405594405594406,
+          "baseline_mean": 0.2004032393962863,
+          "excess_ratio": 0.24015620116315428
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.12829204693611473,
+      "excess_ratio": -0.03133727935238895,
+      "baseline_mean": 0.15962932628850368,
+      "baseline_n_valid": 5,
+      "output_chars": 2991,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.09387430389817025,
+          "baseline_mean": 0.12057533994491336,
+          "excess_ratio": -0.026701036046743107
+        },
+        "bz2": {
+          "actual_ratio": 0.1308562197092084,
+          "baseline_mean": 0.15019732233676736,
+          "excess_ratio": -0.019341102627558948
+        },
+        "lzma": {
+          "actual_ratio": 0.1582089552238806,
+          "baseline_mean": 0.2004032393962863,
+          "excess_ratio": -0.0421942841724057
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.10046728971962617,
+      "excess_ratio": -0.059162036568877516,
+      "baseline_mean": 0.15962932628850368,
+      "baseline_n_valid": 5,
+      "output_chars": 631,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.05958549222797927,
+          "baseline_mean": 0.12057533994491336,
+          "excess_ratio": -0.06098984771693409
+        },
+        "bz2": {
+          "actual_ratio": 0.09859154929577464,
+          "baseline_mean": 0.15019732233676736,
+          "excess_ratio": -0.05160577304099272
+        },
+        "lzma": {
+          "actual_ratio": 0.13559322033898305,
+          "baseline_mean": 0.2004032393962863,
+          "excess_ratio": -0.06481001905730324
+        }
+      }
+    }
+  }
+}

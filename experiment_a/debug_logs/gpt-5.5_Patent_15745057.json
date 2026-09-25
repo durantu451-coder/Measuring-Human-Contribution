@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15745057",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nProvided are a network attack detection method and device. The method comprises: carrying out word segmentation to a character string to be detected and obtain words; determining the tuples corresponding to the to-be-detected character string; determining whether, in an attack model database, there are model tuples corresponding to the tuples, and whether there are model words corresponding to the first one of these words, the model tuples, the occurrence probability of each model tuple; if there are, acquiring the corresponding model tuples and the occurrence probability of the corresponding model words, and determining, according to the occurrence probability of the corresponding model tuples and the occurrence probability of the corresponding model words, the attack probability corresponding to the to-be-detected character string; and if the attack probability is larger than or equal to a preset probability threshold, determining that the to-be-detected character string is a character string having an attack behavior.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nProvided are a network attack detection method and device. The method comprises: carrying out word segmentation to a character string to be detected and obtain words; determining the tuples corresponding to the to-be-detected character string; determining whether, in an attack model database, there are model tuples corresponding to the tuples, and whether there are model words corresponding to the first one of these words, the model tuples, the occurrence probability of each model tuple; if there are, acquiring the corresponding model tuples and the occurrence probability of the corresponding model words, and determining, according to the occurrence probability of the corresponding model tuples and the occurrence probability of the corresponding model words, the attack probability corresponding to the to-be-detected character string; and if the attack probability is larger than or equal to a preset probability threshold, determining that the to-be-detected character string is a character string having an attack behavior.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The method performs word segmentation on a character string to be detected to obtain individual words.\n- The method determines tuples corresponding to the character string being analyzed.\n- The method checks an attack model database for matching model tuples, matching model words, and their occurrence probabilities.\n- The method calculates an attack probability based on the occurrence probabilities of the matching model tuples and model words.\n- The character string is classified as having attack behavior if its attack probability is greater than or equal to a preset threshold.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA network attack detection method and device segment a target character string into words, derive corresponding tuples, and compare them with model tuples and word probabilities in an attack model database to calculate an attack probability. If the calculated attack probability meets or exceeds a preset threshold, the string is identified as exhibiting attack behavior, enabling probabilistic detection of network attacks.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Provided, The"
+  },
+  "outputs": {
+    "L1": "Provided are a network attack detection method and device. The method comprises: performing word segmentation on a character string to be detected to obtain words; determining tuples corresponding to the character string to be detected; determining whether, in an attack model database, there are model tuples corresponding to the tuples, and model words corresponding to the first word among the obtained words, the model tuples being associated with an occurrence probability for each model tuple; if such model tuples and model words exist, acquiring the corresponding model tuples and the occurrence probabilities of the corresponding model words, and determining, according to the occurrence probabilities of the corresponding model tuples and the occurrence probabilities of the corresponding model words, an attack probability corresponding to the character string to be detected; and, if the attack probability is greater than or equal to a preset probability threshold, determining that the character string to be detected is a character string exhibiting attack behavior.",
+    "L2": "A network attack detection method and apparatus are disclosed. The method includes segmenting a character string to be examined into words; identifying the tuples associated with the character string under detection; checking an attack model database to determine whether model tuples matching those tuples exist, whether model words matching the first of the segmented words exist, and the occurrence probability of each model tuple. When such matches are found, the corresponding model tuples and the occurrence probabilities of the corresponding model words are obtained. Based on the occurrence probabilities of the matched model tuples and model words, an attack probability for the character string being examined is calculated. If this attack probability is greater than or equal to a predefined probability threshold, the character string is classified as one exhibiting attack behavior.",
+    "L3": "The method begins by performing word segmentation on the character string to be detected. Through this process, the character string is divided into a plurality of individual words or meaningful word units, so that the subsequent analysis can be carried out at the word level.\n\nAfter the word segmentation is completed, the method determines one or more tuples corresponding to the character string being analyzed. These tuples may be generated based on the segmented words and may represent specific word combinations, word sequences, or contextual relationships within the character string.\n\nThe method then queries an attack model database. The attack model database stores known model tuples, model words, and corresponding occurrence probabilities associated with attack behavior. The generated tuples and segmented words of the character string are compared with the data stored in the attack model database to identify matching model tuples and matching model words. For each match, the corresponding occurrence probability is obtained from the attack model database.\n\nBased on the occurrence probabilities of the matching model tuples and the matching model words, the method calculates an attack probability for the character string. The attack probability reflects the likelihood that the character string contains or represents attack behavior.\n\nFinally, the calculated attack probability is compared with a preset threshold. If the attack probability is greater than or equal to the preset threshold, the character string is classified as having attack behavior. If the attack probability is lower than the preset threshold, the character string is classified as not having attack behavior.",
+    "L4": "A network attack detection method and corresponding device are provided for identifying whether a target character string contains network attack behavior. The method includes obtaining a target character string to be detected, segmenting the target character string into a plurality of words, and generating tuples corresponding to the segmented words. The generated tuples are then compared with model tuples stored in an attack model database. The attack model database may further store probability information associated with words, tuples, or known attack patterns.\n\nBased on the comparison result, the device calculates an attack probability for the target character string. The calculation may take into account whether the tuples derived from the target character string match the model tuples in the attack model database, as well as the probabilities of the corresponding words appearing in attack-related character strings. When the calculated attack probability is greater than or equal to a preset probability threshold, the target character string is determined to exhibit attack behavior. When the calculated attack probability is lower than the preset threshold, the target character string may be determined to be normal or non-attack traffic.\n\nBy using word segmentation, tuple generation, model matching, and probability-based evaluation, the method can detect network attacks in a flexible and adaptive manner. Compared with detection techniques that rely only on fixed rules or exact signature matching, the disclosed approach can identify suspicious strings based on statistical likelihood, thereby improving the ability to detect variant, obfuscated, or previously unseen attack patterns. The device implementing the method may be applied to network security systems, intrusion detection systems, web application firewalls, gateway devices, servers, or other computing environments requiring detection of malicious network behavior.",
+    "L5": "Provided the right conditions, even the simplest idea can grow into something meaningful. The key is to recognize opportunities, use available resources wisely, and remain open to learning along the way. When support is provided, people often feel more confident, motivated, and prepared to face challenges. The result can be progress, creativity, and a stronger sense of purpose."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a patent-style abstract for a network attack detection method that uses word segmentation, tuple matching against an attack model database, occurrence probabilities, and a probability threshold to identify malicious character strings.",
+      "output": "A network attack detection method is disclosed. The method includes receiving a character string associated with network traffic, performing word segmentation on the character string to obtain a plurality of segmented words, and forming one or more tuples from the segmented words. The tuples are matched against an attack model database storing known attack-related tuple patterns and corresponding occurrence probability information. For each matched tuple, an occurrence probability is determined, and a maliciousness probability of the character string is calculated based on the occurrence probabilities of the matched tuples. The calculated maliciousness probability is compared with a preset probability threshold. When the maliciousness probability satisfies the preset probability threshold, the character string is identified as a malicious character string associated with a network attack. The method improves detection of obfuscated or variant attack strings by combining word segmentation, tuple-based attack model matching, and probability-based decision processing.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize an invention for detecting network attacks from input strings by segmenting the string into words, generating tuples, comparing them with stored model tuples and word probabilities, and calculating an attack probability.",
+      "output": "The invention describes a method for detecting network attacks by analyzing input strings, such as URLs, commands, or network payload data. The input string is segmented into words or tokens, and combinations of these words are used to generate tuples. These tuples are compared against tuples stored in a trained attack-detection model, along with stored probability information for individual words or word combinations.\n\nBased on the degree of match between the generated tuples and the model tuples, and using the associated word probabilities, the system calculates an attack probability for the input string. If the calculated probability exceeds a threshold, the input is classified as a potential network attack. This approach allows the system to identify malicious patterns in network data by statistically evaluating word sequences rather than relying only on fixed signatures.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate a Chinese-patent-like English description beginning with “Provided are…” for a method and device for detecting attack behavior in character strings using tuple probability models.",
+      "output": "Provided are a method and a device for detecting attack behavior in character strings using tuple probability models. The method comprises: acquiring a character string to be detected; performing preprocessing on the character string to obtain a normalized character sequence; extracting, from the normalized character sequence, a plurality of character tuples having a preset tuple length; determining, according to a pre-trained tuple probability model, probability information corresponding to the plurality of character tuples; calculating an attack feature value of the character string based on the probability information; and determining whether the character string contains attack behavior according to the attack feature value and a preset detection threshold.\n\nIn the method, the tuple probability model is obtained by training on a normal character string sample set. The training process comprises: collecting a plurality of normal character strings; performing normalization processing on the normal character strings; dividing each normal character string into character tuples according to the preset tuple length; counting occurrence frequencies of the character tuples; and generating probability distribution information of the character tuples. The probability distribution information is used for representing the occurrence probability of each character tuple in normal character strings.\n\nPreferably, the preprocessing comprises one or more of case conversion, URL decoding, escape character conversion, removal of redundant blank characters, character set conversion, and replacement of continuous repeated characters. The character tuple may be an n-gram tuple formed by consecutive characters, wherein n is a positive integer greater than or equal to 2.\n\nPreferably, the probability information comprises one or more of an occurrence probability, a log probability, an average log probability, a minimum tuple probability, and a probability deviation value of the character tuples. The attack feature value is calculated according to a statistical result of the probability information. When the attack feature value indicates that the character string significantly deviates from the probability distribution of normal character strings, the character string is determined as an attack character string.\n\nPreferably, the attack behavior comprises at least one of SQL injection behavior, cross-site scripting behavior, command injection behavior, path traversal behavior, malicious code insertion behavior, abnormal parameter tampering behavior, and protocol anomaly behavior.\n\nThe device comprises: an acquisition module, configured to acquire a character string to be detected; a preprocessing module, configured to normalize the character string to obtain a normalized character sequence; a tuple extraction module, configured to extract a plurality of character tuples from the normalized character sequence; a probability determining module, configured to determine probability information of the plurality of character tuples according to a tuple probability model; a feature calculation module, configured to calculate an attack feature value of the character string according to the probability information; and a detection module, configured to determine whether the character string contains attack behavior according to the attack feature value and a preset detection threshold.\n\nFurther provided is a model training module, configured to train the tuple probability model according to a normal character string sample set. The model training module comprises: a sample acquisition unit, configured to acquire normal character string samples; a sample preprocessing unit, configured to normalize the normal character string samples; a tuple counting unit, configured to count occurrence frequencies of character tuples in the normal character string samples; and a probability generation unit, configured to generate the tuple probability model according to the occurrence frequencies.\n\nBy adopting the method and the device, attack behavior in character strings can be detected without relying completely on manually configured rules or fixed attack signatures. Since the detection is performed based on probability distribution characteristics of character tuples, unknown attack strings and variant attack strings can be effectively identified, thereby improving detection accuracy, adaptability, and robustness.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Describe the steps of a network attack detection method where a to-be-detected character string is segmented, tuples are determined, matched to an attack model database, and classified as an attack if its computed probability exceeds a preset threshold.",
+      "output": "A network attack detection method of this type can be described as follows:\n\n1. **Acquire the to-be-detected character string**  \n   Obtain a character string from network traffic, such as a URL, request payload, command string, header field, or other data that may contain attack features.\n\n2. **Segment the character string**  \n   Divide the to-be-detected character string into multiple segments or tokens according to a preset segmentation rule.  \n   For example, segmentation may be based on delimiters, character types, keywords, fixed length, or statistical text-processing rules.\n\n3. **Determine tuples from the segmented string**  \n   Generate one or more tuples from the segmented result.  \n   Each tuple may include feature information such as:\n   - a token or substring,\n   - its position,\n   - adjacent tokens,\n   - character type,\n   - frequency,\n   - semantic category, or\n   - other attack-related features.\n\n4. **Match tuples against an attack model database**  \n   Compare the determined tuples with entries stored in an attack model database.  \n   The attack model database may contain known attack patterns, tuple combinations, feature weights, probability values, or statistical models associated with different attack types.\n\n5. **Compute an attack probability**  \n   Based on the matching result, calculate a probability that the to-be-detected character string corresponds to a network attack.  \n   The computation may use tuple match counts, weights, conditional probabilities, similarity scores, or a machine-learning/statistical model.\n\n6. **Compare with a preset threshold**  \n   Compare the computed attack probability with a predefined probability threshold.\n\n7. **Classify the character string**  \n   - If the computed probability is greater than the preset threshold, classify the character string as a network attack.\n   - If the computed probability is not greater than the threshold, classify it as non-attack or allow it to pass to further detection.\n\n8. **Output the detection result**  \n   Provide the classification result, such as “attack” or “normal,” and optionally output the attack type, confidence score, matched tuple information, or recommended handling action.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Draft a technical patent claim summary for a network security device that determines whether a character string has attack behavior based on model tuples, model words, occurrence probabilities, and an attack probability threshold.",
+      "output": "## Technical Patent Claim Summary\n\nA network security device is configured to determine whether an input character string exhibits attack behavior by evaluating the string against statistical attack-detection models generated from model tuples, model words, and occurrence probabilities.\n\nIn one aspect, the device receives or extracts a character string from network traffic, such as an HTTP request, URL, header field, payload, command parameter, or other application-layer data. The device segments or parses the character string into one or more character-based or token-based units and generates a plurality of tuples from the character string. Each tuple may include a sequence of adjacent characters, symbols, tokens, words, substrings, or other string features.\n\nThe device stores or accesses a model database comprising a plurality of model words and corresponding occurrence probabilities. Each model word may represent a tuple, substring, token, or normalized string feature previously derived from attack samples, benign samples, or both. The occurrence probability associated with a model word indicates a likelihood, frequency, or statistical weight of the model word appearing in character strings associated with attack behavior.\n\nFor each tuple generated from the input character string, the device determines whether the tuple corresponds to one or more model words in the model database. When a correspondence is identified, the device obtains the occurrence probability associated with the corresponding model word. The device then computes an attack probability for the input character string based at least in part on the occurrence probabilities of the matched model words. The attack probability may be calculated by combining the occurrence probabilities using a statistical model, weighted aggregation, Bayesian computation, logarithmic probability sum, machine-learning scoring function, or other probabilistic evaluation technique.\n\nThe device compares the computed attack probability with a predetermined or dynamically adjusted attack probability threshold. When the computed attack probability satisfies the threshold, the device determines that the character string has attack behavior. In response, the device may generate an alert, block or drop a network packet, terminate a session, quarantine traffic, record an event, update a security policy, or forward the character string for further analysis. When the computed attack probability does not satisfy the threshold, the device may permit the traffic, continue monitoring, or assign a lower risk classification.\n\nIn another aspect, the network security device includes one or more processors and memory storing executable instructions that, when executed, cause the device to perform the above operations. The memory may further store the model tuples, model words, occurrence probabilities, and attack probability threshold. The model database may be updated based on newly observed attack strings, confirmed benign strings, administrator feedback, or external threat intelligence.\n\nIn yet another aspect, a non-transitory computer-readable medium stores instructions that cause a network security device to obtain a character string from network traffic, generate tuples from the character string, match the tuples with model words, determine occurrence probabilities associated with the matched model words, calculate an attack probability for the character string, compare the attack probability with an attack probability threshold, and classify the character string as exhibiting attack behavior when the attack probability meets or exceeds the threshold.\n\n### Example Claim-Oriented Summary\n\n1. A method performed by a network security device, comprising:  \n   receiving a character string from network traffic;  \n   generating a plurality of tuples from the character string;  \n   comparing the plurality of tuples with a plurality of model words stored in a security model;  \n   obtaining occurrence probabilities corresponding to model words that match one or more of the plurality of tuples;  \n   determining an attack probability of the character string based on the occurrence probabilities;  \n   comparing the attack probability with an attack probability threshold; and  \n   determining that the character string has attack behavior when the attack probability satisfies the attack probability threshold.\n\n2. The method may further comprise performing a security action when the character string is determined to have attack behavior, the security action including at least one of blocking traffic, generating an alarm, logging an event, modifying an access policy, or transmitting attack information to a management system.\n\n3. The model words may include tuples extracted from known attack character strings, and each occurrence probability may indicate a probability that a corresponding model word occurs in an attack string.\n\n4. The attack probability may be determined by aggregating occurrence probabilities corresponding to matched model words generated from the character string.\n\n5. The attack probability threshold may be preset, learned, or dynamically adjusted based on network conditions, detection history, administrator configuration, or model training data.\n\n6. A network security device may comprise a processor and memory storing instructions that cause the processor to perform the method.\n\n7. A non-transitory computer-readable storage medium may store instructions that, when executed by a processor of a network security device, cause the processor to perform the method.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6511627906976744,
+      "excess_ratio": 0.4931664629955935,
+      "baseline_mean": 0.1579963277020808,
+      "baseline_n_valid": 5,
+      "output_chars": 1081,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6555555555555556,
+          "baseline_mean": 0.12674974109612597,
+          "excess_ratio": 0.5288058144594296
+        },
+        "bz2": {
+          "actual_ratio": 0.5728155339805825,
+          "baseline_mean": 0.15573323926426144,
+          "excess_ratio": 0.4170822947163211
+        },
+        "lzma": {
+          "actual_ratio": 0.7222222222222222,
+          "baseline_mean": 0.1878533321444134,
+          "excess_ratio": 0.5343688900778087
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.42697525937749403,
+      "excess_ratio": 0.2689789316754132,
+      "baseline_mean": 0.1579963277020808,
+      "baseline_n_valid": 5,
+      "output_chars": 895,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.37566137566137564,
+          "baseline_mean": 0.12674974109612597,
+          "excess_ratio": 0.24891163456524967
+        },
+        "bz2": {
+          "actual_ratio": 0.4128878281622912,
+          "baseline_mean": 0.15573323926426144,
+          "excess_ratio": 0.2571545888980298
+        },
+        "lzma": {
+          "actual_ratio": 0.4824561403508772,
+          "baseline_mean": 0.1878533321444134,
+          "excess_ratio": 0.2946028082064638
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.33452502553626146,
+      "excess_ratio": 0.17652869783418065,
+      "baseline_mean": 0.1579963277020808,
+      "baseline_n_valid": 5,
+      "output_chars": 1702,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3047001620745543,
+          "baseline_mean": 0.12674974109612597,
+          "excess_ratio": 0.17795042097842834
+        },
+        "bz2": {
+          "actual_ratio": 0.3209302325581395,
+          "baseline_mean": 0.15573323926426144,
+          "excess_ratio": 0.16519699329387807
+        },
+        "lzma": {
+          "actual_ratio": 0.3735632183908046,
+          "baseline_mean": 0.1878533321444134,
+          "excess_ratio": 0.18570988624639118
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.19845150774246134,
+      "excess_ratio": 0.04045518004038054,
+      "baseline_mean": 0.1579963277020808,
+      "baseline_n_valid": 5,
+      "output_chars": 1956,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.15708812260536398,
+          "baseline_mean": 0.12674974109612597,
+          "excess_ratio": 0.03033838150923801
+        },
+        "bz2": {
+          "actual_ratio": 0.20525657071339173,
+          "baseline_mean": 0.15573323926426144,
+          "excess_ratio": 0.04952333144913029
+        },
+        "lzma": {
+          "actual_ratio": 0.22935779816513763,
+          "baseline_mean": 0.1878533321444134,
+          "excess_ratio": 0.04150446602072422
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.13853904282115875,
+      "excess_ratio": -0.01945728488092205,
+      "baseline_mean": 0.1579963277020808,
+      "baseline_n_valid": 5,
+      "output_chars": 380,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.06866952789699571,
+          "baseline_mean": 0.12674974109612597,
+          "excess_ratio": -0.05808021319913026
+        },
+        "bz2": {
+          "actual_ratio": 0.13438735177865613,
+          "baseline_mean": 0.15573323926426144,
+          "excess_ratio": -0.021345887485605314
+        },
+        "lzma": {
+          "actual_ratio": 0.19480519480519481,
+          "baseline_mean": 0.1878533321444134,
+          "excess_ratio": 0.006951862660781405
+        }
+      }
+    }
+  }
+}

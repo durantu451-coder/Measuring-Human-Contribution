@@ -1,0 +1,175 @@
+{
+  "model": "claude-sonnet-5",
+  "domain": "Arxiv",
+  "id": "0704.0185",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe present a program called potfit which generates an effective atomic interaction potential by matching it to a set of reference data computed in first-principles calculations. It thus allows to perform large-scale atomistic simulations of materials with physically justified potentials. We describe the fundamental principles behind the program, emphasizing its flexibility in adapting to different systems and potential models, while also discussing its limitations. The program has been used successfully in creating effective potentials for a number of complex intermetallic alloys, notably quasicrystals.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe present a program called potfit which generates an effective atomic interaction potential by matching it to a set of reference data computed in first-principles calculations. It thus allows to perform large-scale atomistic simulations of materials with physically justified potentials. We describe the fundamental principles behind the program, emphasizing its flexibility in adapting to different systems and potential models, while also discussing its limitations. The program has been used successfully in creating effective potentials for a number of complex intermetallic alloys, notably quasicrystals.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The program potfit generates effective atomic interaction potentials by fitting them to reference data obtained from first-principles calculations.\n- This approach enables large-scale atomistic simulations of materials using potentials that are physically justified rather than arbitrarily constructed.\n- The paper describes the fundamental principles underlying potfit, highlighting its flexibility in adapting to different material systems and potential models.\n- The program's limitations are also discussed alongside its capabilities.\n- Potfit has been successfully applied to create effective potentials for various complex intermetallic alloys, particularly quasicrystals.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nPotfit is a program that generates effective atomic interaction potentials by fitting them to reference data from first-principles calculations, enabling large-scale atomistic simulations with physically justified potentials while offering flexibility across different systems and potential models. The program has been successfully applied to create effective potentials for complex intermetallic alloys, including quasicrystals, demonstrating its practical utility despite certain inherent limitations.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The"
+  },
+  "outputs": {
+    "L1": "We present a program called *potfit*, which generates effective atomic interaction potentials by fitting them to a set of reference data derived from first-principles calculations. This capability enables large-scale atomistic simulations of materials using physically justified potentials. We describe the fundamental principles underlying the program, highlighting its flexibility in adapting to diverse systems and potential models, while also addressing its limitations. The program has been successfully employed to develop effective potentials for numerous complex intermetallic alloys, notably quasicrystals.",
+    "L2": "# Rewritten Text\n\nWe introduce a software tool named potfit that constructs effective interatomic potentials by fitting them against benchmark data derived from ab initio calculations. This approach enables researchers to conduct extensive atomic-scale simulations of materials using potentials grounded in sound physical principles. In this work, we outline the core methodology underlying the program, with particular attention to its versatility across various material systems and potential formulations, while also addressing its constraints. This tool has proven effective in developing interatomic potentials for several complicated intermetallic compounds, including quasicrystalline structures in particular.",
+    "L3": "# potfit: A Force-Matching Approach for Generating Effective Interatomic Potentials\n\n## Overview\n\nThe program potfit represents a systematic methodology for constructing effective atomic interaction potentials by fitting them directly to reference data derived from first-principles (ab initio) calculations. Rather than relying on empirically constructed or heuristically parameterized functional forms, potfit employs a force-matching philosophy in which the parameters of a chosen potential model are optimized to reproduce forces, energies, and stresses obtained from higher-level quantum mechanical calculations, typically density functional theory (DFT).\n\n## Motivation and Significance\n\nThe central motivation behind this approach lies in bridging the gap between the high accuracy but severe computational limitations of first-principles methods and the computational efficiency required for large-scale atomistic simulations. Ab initio calculations, while providing a physically rigorous description of interatomic bonding and electronic structure effects, are computationally prohibitive for systems containing more than a few hundred atoms or for simulations extending over long timescales. Classical interatomic potentials, by contrast, enable simulations of systems containing millions of atoms over nanosecond to microsecond timescales, but their predictive power depends critically on the quality and physical justification of the underlying potential.\n\nBy generating potentials that are fitted to reproduce first-principles reference data, potfit ensures that the resulting interaction models retain a strong connection to the underlying quantum mechanical physics of the system, rather than being constructed through arbitrary functional choices or fitted solely to reproduce a limited set of experimental observables. This distinction is crucial: potentials derived through force-matching to ab initio data tend to exhibit superior transferability, meaning they remain reliable when applied to atomic configurations and environments that differ from those used in the original fitting process—a common requirement in simulations of defects, interfaces, and complex structural motifs.\n\n## Methodology and Flexibility\n\nThe paper elaborates on the fundamental principles underlying the potfit methodology, with particular emphasis on the program's adaptability across diverse material systems and potential models. This flexibility manifests in several ways:\n\n- **Multiple potential formalisms**: potfit supports various interaction models, including pair potentials, embedded-atom method (EAM) potentials, and more sophisticated formulations suited to capturing directional bonding or electronic density effects.\n- **Diverse material classes**: The methodology is not restricted to simple metallic systems but can be extended to complex, multi-component materials.\n- **Customizable fitting procedures**: The optimization algorithms and constraints can be tailored to the specific requirements of the material system under investigation, including the incorporation of multiple reference structures and thermodynamic conditions simultaneously.\n\n## Capabilities and Limitations\n\nAlongside a thorough discussion of potfit's capabilities, the paper also addresses the inherent limitations of the approach. These limitations may include challenges related to the transferability of fitted potentials beyond the range of reference configurations, the computational cost associated with generating sufficiently diverse and representative first-principles training data, and the intrinsic limitations of the chosen functional forms in capturing certain types of bonding character (such as strongly directional covalent bonds or complex charge transfer effects). A balanced treatment of both strengths and weaknesses provides users with realistic expectations regarding the applicability and accuracy of potentials generated through this methodology.\n\n## Applications\n\nThe practical utility of potfit is demonstrated through its successful application to a range of complex intermetallic alloy systems. Of particular note is its use in generating effective potentials for quasicrystalline materials—systems characterized by long-range aperiodic order that pose significant challenges for traditional potential development approaches due to their complex local atomic environments and the absence of conventional translational symmetry. The successful generation of reliable potentials for such structurally intricate systems underscores the robustness and versatility of the force-matching methodology implemented in potfit, establishing it as a valuable tool for the broader computational materials science community engaged in the study of complex alloy systems.",
+    "L4": "# Potfit: A Force-Matching Approach to Atomistic Potential Generation\n\n## Overview\n\nPotfit is a computational tool designed to bridge the gap between highly accurate but computationally expensive first-principles (ab initio) calculations and the large-scale atomistic simulations required to study materials science phenomena at experimentally relevant length and time scales. The program addresses a fundamental challenge in computational materials science: how to perform simulations involving thousands or millions of atoms—necessary for studying defects, interfaces, mechanical properties, and phase transformations—while retaining physical accuracy that would normally require quantum mechanical treatment.\n\n## Methodology\n\nThe core methodology employed by Potfit is known as **force-matching**. Rather than fitting potentials to a limited set of experimental properties (such as lattice constants, elastic moduli, or cohesive energies), Potfit uses forces, energies, and stresses obtained from density functional theory (DFT) calculations on relatively small reference configurations. These reference configurations typically include:\n\n- Perfect crystal structures at various volumes\n- Structures with point defects (vacancies, interstitials)\n- Surface configurations\n- Molecular dynamics snapshots at finite temperature\n- Configurations sampling various local atomic environments\n\nBy fitting to this rich dataset of atomic forces rather than just equilibrium properties, Potfit generates potentials that capture the potential energy surface more comprehensively, including behavior away from equilibrium—which is crucial for simulating defects, dislocations, and other non-equilibrium phenomena.\n\n## Flexibility in Potential Models\n\nA key strength of Potfit lies in its flexibility regarding the functional form of the interatomic potential. The program supports multiple potential models, including:\n\n- **Pair potentials**: Simple two-body interactions\n- **Embedded Atom Method (EAM) potentials**: Incorporating many-body effects through an embedding function dependent on local electron density\n- **EAM with angular-dependent terms**: For systems where directional bonding matters\n- **Tersoff-type potentials**: For covalently bonded systems\n- **Other many-body formulations**\n\nThis flexibility allows researchers to select the potential form best suited to the physics of their particular material system, rather than being constrained to a single functional form that may not adequately capture the relevant bonding characteristics.\n\n## Application to Complex Intermetallic Systems\n\nOne of the most notable achievements of Potfit has been its successful application to **complex intermetallic alloys**, including **quasicrystals**—materials with long-range order but no translational periodicity. These systems present exceptional challenges for potential development because:\n\n1. They often contain large unit cells with many inequivalent atomic sites\n2. Bonding character can vary significantly between different atomic environments\n3. Traditional potential fitting to bulk properties alone is insufficient to capture the subtle energy landscape differences between competing structures\n4. Quasicrystalline order requires potentials that can distinguish energetically similar but structurally distinct local environments\n\nThe successful generation of effective potentials for these complex systems demonstrates that Potfit's force-matching approach can capture subtle structural and energetic distinctions that simpler fitting procedures might miss, enabling large-scale simulations of phenomena such as quasicrystal growth, phason dynamics, and structural stability that would otherwise be inaccessible.\n\n## Limitations\n\nDespite its successes, Potfit-generated potentials are subject to certain inherent limitations common to all empirical/semi-empirical potential approaches:\n\n- **Transferability constraints**: Potentials fitted to a specific set of reference configurations may not accurately describe atomic environments significantly different from those in the training set\n- **Functional form limitations**: Even flexible potential forms cannot perfectly replicate all quantum mechanical effects, particularly electronic structure phenomena like charge transfer or magnetic interactions\n- **Fitting quality dependence**: The accuracy of resulting potentials depends heavily on the quality, diversity, and representativeness of the reference DFT dataset\n- **Loss of quantum effects**: Classical potentials cannot capture purely quantum mechanical phenomena such as electron delocalization effects in certain bonding situations\n\n## Conclusion\n\nDespite these limitations, Potfit represents a valuable and practical tool in the computational materials scientist's toolkit. By providing a systematic, physically-motivated approach to potential generation that leverages the accuracy of first-principles data while enabling the computational efficiency needed for large-scale simulations, Potfit has proven particularly valuable for studying complex materials systems—such as intermetallic compounds and quasicrystals—where simpler potential fitting approaches often fail to capture essential physics. Its continued use and development reflect its practical utility in advancing our understanding of complex materials behavior at scales inaccessible to purely first-principles methods.",
+    "L5": "It looks like the topic or keywords didn't come through completely — I only see \"The\" listed as a keyword, which isn't enough to write a meaningful text.\n\nCould you please provide more details, such as:\n\n- The specific subject or topic you'd like me to write about\n- Any additional keywords or themes you want included\n- The type of text you want (essay, article, story, etc.)\n- The desired length or tone\n\nOnce I have this information, I'd be happy to write the text for you!"
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a scientific paper describing \"potfit,\" a software tool for generating interatomic potentials from first-principles data.",
+      "output": "# Abstract\n\nInteratomic potentials are essential for large-scale atomistic simulations that are otherwise inaccessible to first-principles methods. Constructing accurate and transferable potentials remains a challenging task, requiring both careful selection of functional forms and robust parameter optimization against reliable reference data. We present **potfit**, an open-source software package for generating classical interatomic potentials by fitting to first-principles reference data via force-matching.\n\nThe force-matching method fits potential parameters to reproduce energies, forces, and stresses computed from ab initio or other first-principles calculations on a set of representative reference configurations, without relying on experimental data or empirical assumptions about bulk properties. This approach yields potentials that are systematically improvable and applicable to a wide range of material properties and environments, including defects, surfaces, and non-equilibrium configurations not accessible to traditional fitting schemes.\n\npotfit supports a variety of interaction models, including pair potentials, embedded-atom method (EAM) and EAM-based potentials for metallic systems, as well as analytic and tabulated functional forms for more complex bonding environments. The optimization is performed using a combination of global (evolutionary/simulated annealing) and local optimization algorithms to efficiently search the parameter space and avoid poor local minima. The code is written in C for computational efficiency and is designed to handle large reference databases and complex potential forms with modest computational cost.\n\nWe describe the underlying methodology, the code architecture, and the practical aspects of using potfit for potential generation, including construction of reference databases, choice of functional forms, and convergence and validation strategies. Representative applications to metallic and alloy systems demonstrate the capability of potfit to produce potentials with high fidelity to first-principles data and good transferability to properties beyond the fitting database. potfit is distributed as free, open-source software, providing the community with a flexible and extensible tool for developing reliable interatomic potentials for molecular dynamics and other atomistic simulation techniques.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Can you summarize the purpose and capabilities of the potfit program used in computational materials science, including its application to quasicrystals?",
+      "output": "# potfit: Force-Matching for Interatomic Potential Development\n\n**potfit** is a computational tool used to generate effective interatomic potentials for atomistic simulations (molecular dynamics, Monte Carlo) through a technique called **force-matching**.\n\n## Core Purpose\n\nThe program automates the process of fitting interatomic potential parameters by optimizing them against reference data—typically forces, energies, and stresses—computed from more accurate but computationally expensive methods, usually **ab initio (density functional theory) calculations**. This allows researchers to create computationally cheap classical potentials that reproduce the essential physics captured by quantum mechanical calculations.\n\n## Key Capabilities\n\n- **Multiple potential formats**: Supports various functional forms, including pair potentials, embedded-atom method (EAM) potentials, and more complex formulations suited to different bonding types (metallic, covalent, etc.)\n\n- **Tabulated potentials**: Rather than restricting fits to predefined analytic functions, potfit can generate tabulated potentials represented by splines, offering greater flexibility to capture complex bonding behavior that simple analytic forms might miss\n\n- **Force-matching methodology**: Uses reference configurations (atomic positions, forces, energies from DFT snapshots, often from ab initio molecular dynamics) and minimizes the deviation between potential-predicted and reference quantities\n\n- **Optimization algorithms**: Employs robust numerical minimization techniques (often combining simulated annealing/genetic algorithms with local optimization) to navigate the complex, high-dimensional parameter space and avoid local minima\n\n## Application to Quasicrystals\n\nQuasicrystals present unique challenges for interatomic potential development because they lack conventional periodic symmetry while requiring accurate description of complex local atomic environments (often involving icosahedral clusters and specific coordination geometries).\n\npotfit has been particularly valuable here because:\n\n1. **Complex local environments**: Quasicrystalline structures (e.g., in Al-based systems like Al-Ni-Co, or other complex intermetallics) feature diverse coordination environments that simple pair potentials struggle to capture accurately\n\n2. **Tabulated flexibility**: The ability to use non-parametric, tabulated functions is especially useful for quasicrystals, since the bonding character can be subtle and not well-described by standard analytic forms optimized for simple crystals\n\n3. **EAM extensions**: Many-body EAM-type potentials fitted via potfit help capture the metallic bonding and electron density effects relevant to these intermetallic phases\n\n4. **Structural stability studies**: Potentials developed via potfit have been used to study the relative stability of quasicrystalline versus competing periodic (approximant) phases, and to explore phason dynamics and defect structures\n\nThis approach essentially bridges the gap between expensive quantum-accurate calculations (limited to small systems/short timescales) and the large-scale, long-time simulations needed to study complex quasicrystalline structures and their properties.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a concise research abstract explaining how potfit fits effective atomic potentials to ab initio reference data for large-scale atomistic simulations.",
+      "output": "# Abstract\n\nLarge-scale atomistic simulations rely on interatomic potentials that accurately reproduce the underlying quantum-mechanical energy landscape while remaining computationally tractable for systems containing millions of atoms. **potfit** is a force-matching software package that addresses this challenge by systematically optimizing the parameters of effective (classical) potentials against a reference database of ab initio calculations.\n\nThe methodology proceeds as follows: a set of representative atomic configurations—including bulk structures, surfaces, defects, and deformed cells—is first evaluated using density functional theory (DFT) or other first-principles methods to generate reference forces, energies, and stresses. potfit then employs a force-matching scheme in which the parameters of a chosen analytic or tabulated potential form (e.g., pair potentials, embedded-atom method (EAM), angular-dependent potentials, or tabulated functions represented via cubic splines) are adjusted to minimize the weighted least-squares deviation between potential-predicted and ab initio reference quantities. Optimization is performed using a combination of global search algorithms, such as simulated annealing or differential evolution, and local refinement via conjugate gradient or Levenberg-Marquardt methods, allowing the fitting procedure to escape local minima in the high-dimensional parameter space.\n\nA key strength of potfit lies in its flexibility: it supports multiple potential formalisms and allows simultaneous fitting to diverse physical properties (cohesive energies, elastic constants, vacancy formation energies) alongside force-matching, improving transferability beyond the training set. The resulting potentials retain the computational efficiency of empirical models—enabling molecular dynamics and Monte Carlo simulations on length and time scales inaccessible to direct ab initio methods—while inheriting the accuracy of the underlying electronic structure data. This makes potfit-derived potentials suitable for studying complex phenomena such as plasticity, phase transformations, and radiation damage in metals and alloys.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "I need a short paragraph introducing a software package called potfit, highlighting its flexibility across different potential models and its use in studying intermetallic alloys.",
+      "output": "potfit is a versatile software package designed for generating effective interatomic potentials through force-matching methods, enabling researchers to derive accurate potentials directly from reference data such as density functional theory calculations. Its architecture supports a wide range of potential models, including pair potentials, embedded-atom method (EAM) potentials, angular-dependent potentials, and even more complex analytical forms, making it adaptable to diverse material systems and bonding characteristics. This flexibility has made potfit particularly valuable in the study of intermetallic alloys, where capturing the subtle interplay between different atomic species and their varied bonding environments is essential for reliable simulations. By allowing researchers to tailor the potential form to the specific physics of the system under investigation, potfit has become a widely used tool for developing high-quality interatomic potentials that support large-scale molecular dynamics simulations of complex alloy systems.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide an academic-style overview of a computational tool that derives interatomic potentials by matching first-principles calculations, mentioning its success with complex alloy systems like quasicrystals.",
+      "output": "# Force-Matching Methods for Deriving Interatomic Potentials: Applications to Complex Alloy Systems\n\n## Introduction\n\nThe derivation of accurate interatomic potentials remains a fundamental challenge in computational materials science, particularly for systems exhibiting complex structural motifs such as quasicrystals, intermetallic compounds, and metallic alloys with large unit cells. Traditional empirical potential development, relying on fitting to bulk properties (lattice constants, elastic moduli, cohesive energies), often fails to capture the subtle energetics governing atomic arrangements in these systems. The **force-matching method**, pioneered by Ercolessi and Adams, represents a significant methodological advance by directly exploiting the rich information content of first-principles atomic forces to construct effective interatomic potentials.\n\n## Methodological Framework\n\nThe force-matching approach operates on a conceptually straightforward but computationally powerful premise: rather than fitting potentials to equilibrium properties alone, the method optimizes potential parameters to reproduce atomic forces computed via density functional theory (DFT) across an ensemble of representative atomic configurations. These configurations typically include:\n\n- Distorted crystal structures away from equilibrium\n- Liquid-state configurations sampled via ab initio molecular dynamics\n- Surface and defect structures\n- Configurations spanning relevant thermodynamic conditions\n\nThe optimization proceeds by minimizing a merit function comparing forces predicted by a parameterized potential form (commonly embedded-atom method, EAM, or Finnis-Sinclair type functionals) against the first-principles reference forces:\n\n$$Z = \\sum_{i} \\frac{1}{3N_i \\sigma_i^2} \\sum_{\\alpha=1}^{N_i} |\\mathbf{F}_\\alpha^{DFT} - \\mathbf{F}_\\alpha^{pot}|^2$$\n\nwhere the sum extends over configurations *i*, atoms α within each configuration, and σᵢ represents configuration-specific weighting factors.\n\n## Advantages Over Conventional Fitting\n\nThe methodology offers several distinct advantages:\n\n1. **Information density**: Each atomic configuration provides 3N force components as fitting data, dramatically increasing the information-to-computation ratio compared to fitting single energy values per configuration.\n\n2. **Transferability**: By sampling diverse local atomic environments—including non-equilibrium configurations inaccessible to simple structural fitting—the resulting potentials exhibit superior transferability across different structural motifs.\n\n3. **Physical fidelity**: Forces are sensitive to the local electronic structure and bonding environment, allowing the fitted potential to implicitly capture many-body effects and directional bonding characteristics that scalar energy fitting may average out.\n\n## Application to Quasicrystalline and Complex Alloy Systems\n\nThe force-matching methodology has proven particularly valuable for aluminum-based quasicrystalline alloys (Al-Mn, Al-Cu-Fe, Al-Pd-Mn) and related complex intermetallics, where:\n\n- **Icosahedral local order** creates atomic environments dramatically different from simple crystalline references, demanding potentials validated across genuinely quasiperiodic or approximant structures\n- **Chemical complexity** (typically ternary compositions) requires simultaneous treatment of multiple atomic species with strongly composition-dependent bonding\n- **Large unit cells** in periodic approximants (containing hundreds of atoms) necessitate computationally efficient potentials capable of molecular dynamics simulations over experimentally relevant length and time scales\n\nFor these systems, force-matched EAM-type potentials have successfully reproduced:\n- Stability of specific atomic decorations within quasicrystalline approximants\n- Phason-related atomic dynamics\n- Formation energies of competing crystalline approximant phases\n- Diffusion mechanisms relevant to quasicrystal growth kinetics\n\nThe capacity to generate potentials validated against genuinely disordered and quasiperiodic reference structures—rather than extrapolating from simple crystal fits—has been essential for meaningful atomistic simulation in this materials class, where structural complexity had previously placed accurate large-scale simulation beyond reach of both purely empirical and fully ab initio approaches.\n\n## Conclusion\n\nForce-matching methodologies bridge the accuracy of first-principles methods with the computational efficiency required for large-scale atomistic simulation. Their demonstrated success in quasicrystalline and complex intermetallic alloy systems—historically resistant to reliable empirical potential development—underscores the value of exploiting complete force information rather than restricted energetic data alone, establishing this approach as a standard tool for potential development in structurally complex materials.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6469026548672566,
+      "excess_ratio": 0.5687360714795118,
+      "baseline_mean": 0.07816658338774489,
+      "baseline_n_valid": 5,
+      "output_chars": 615,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6547619047619048,
+          "baseline_mean": 0.0571209110576242,
+          "excess_ratio": 0.5976409937042806
+        },
+        "bz2": {
+          "actual_ratio": 0.527027027027027,
+          "baseline_mean": 0.07245956629281879,
+          "excess_ratio": 0.4545674607342082
+        },
+        "lzma": {
+          "actual_ratio": 0.7452830188679245,
+          "baseline_mean": 0.10248277432879552,
+          "excess_ratio": 0.642800244539129
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3169608595548733,
+      "excess_ratio": 0.2387942761671284,
+      "baseline_mean": 0.07816658338774489,
+      "baseline_n_valid": 5,
+      "output_chars": 717,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.25255102040816324,
+          "baseline_mean": 0.0571209110576242,
+          "excess_ratio": 0.19543010935053903
+        },
+        "bz2": {
+          "actual_ratio": 0.3044496487119438,
+          "baseline_mean": 0.07245956629281879,
+          "excess_ratio": 0.231990082419125
+        },
+        "lzma": {
+          "actual_ratio": 0.38016528925619836,
+          "baseline_mean": 0.10248277432879552,
+          "excess_ratio": 0.2776825149274028
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.1323920265780731,
+      "excess_ratio": 0.054225443190328224,
+      "baseline_mean": 0.07816658338774489,
+      "baseline_n_valid": 5,
+      "output_chars": 4771,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.10539460539460539,
+          "baseline_mean": 0.0571209110576242,
+          "excess_ratio": 0.04827369433698119
+        },
+        "bz2": {
+          "actual_ratio": 0.13613101330603888,
+          "baseline_mean": 0.07245956629281879,
+          "excess_ratio": 0.0636714470132201
+        },
+        "lzma": {
+          "actual_ratio": 0.15503875968992248,
+          "baseline_mean": 0.10248277432879552,
+          "excess_ratio": 0.05255598536112696
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.09488084730803177,
+      "excess_ratio": 0.01671426392028688,
+      "baseline_mean": 0.07816658338774489,
+      "baseline_n_valid": 5,
+      "output_chars": 5400,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.07382847038019452,
+          "baseline_mean": 0.0571209110576242,
+          "excess_ratio": 0.01670755932257032
+        },
+        "bz2": {
+          "actual_ratio": 0.09296028880866426,
+          "baseline_mean": 0.07245956629281879,
+          "excess_ratio": 0.020500722515845476
+        },
+        "lzma": {
+          "actual_ratio": 0.11724137931034483,
+          "baseline_mean": 0.10248277432879552,
+          "excess_ratio": 0.014758604981549309
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.1317907444668007,
+      "excess_ratio": 0.05362416107905581,
+      "baseline_mean": 0.07816658338774489,
+      "baseline_n_valid": 5,
+      "output_chars": 476,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.08135593220338982,
+          "baseline_mean": 0.0571209110576242,
+          "excess_ratio": 0.024235021145765624
+        },
+        "bz2": {
+          "actual_ratio": 0.15223880597014924,
+          "baseline_mean": 0.07245956629281879,
+          "excess_ratio": 0.07977923967733046
+        },
+        "lzma": {
+          "actual_ratio": 0.15384615384615385,
+          "baseline_mean": 0.10248277432879552,
+          "excess_ratio": 0.05136337951735834
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T05:13:11.545691+00:00"
+    }
+  ]
+}

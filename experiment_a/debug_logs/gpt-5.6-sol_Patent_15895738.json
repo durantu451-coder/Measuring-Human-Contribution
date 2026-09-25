@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15895738",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA bearer management device that performs control to reliably receive an incoming packet call that is made while a mobile terminal device is moving is provided. A bearer management device (10) includes an incoming call control unit (11) that, in the case where a mobility management device (30) manages a location of a mobile terminal device (40) as a result of movement of the mobile terminal device (40) whose location has been managed by a mobility management device (20), suspends processing of an incoming call to the mobile terminal device (40) made during movement of the mobile terminal device (40) until receiving a notification about completion of movement of the mobile terminal device (40) from the mobility management device (30), and resumes incoming call processing to the mobile terminal device (40) after receiving a notification about completion of movement of the mobile terminal device (40) from the mobility management device (30).",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA bearer management device that performs control to reliably receive an incoming packet call that is made while a mobile terminal device is moving is provided. A bearer management device (10) includes an incoming call control unit (11) that, in the case where a mobility management device (30) manages a location of a mobile terminal device (40) as a result of movement of the mobile terminal device (40) whose location has been managed by a mobility management device (20), suspends processing of an incoming call to the mobile terminal device (40) made during movement of the mobile terminal device (40) until receiving a notification about completion of movement of the mobile terminal device (40) from the mobility management device (30), and resumes incoming call processing to the mobile terminal device (40) after receiving a notification about completion of movement of the mobile terminal device (40) from the mobility management device (30).",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A bearer management device ensures reliable reception of incoming packet calls while a mobile terminal is moving.\n- A new mobility management device assumes responsibility for managing the mobile terminal’s location after movement.\n- The bearer management device suspends incoming call processing during the terminal’s movement.\n- Incoming call processing remains suspended until the new mobility management device confirms that the movement is complete.\n- The bearer management device resumes processing the incoming call after receiving the completion notification.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA bearer management device improves packet-call reception during mobile-terminal movement by suspending incoming-call processing until the new mobility management device confirms movement completion. It then resumes processing, enabling incoming calls made during handover to be received reliably.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: A bearer management"
+  },
+  "outputs": {
+    "L1": "Provided is a bearer management device that performs control to ensure reliable reception of an incoming packet call made while a mobile terminal device is moving. The bearer management device (10) includes an incoming call control unit (11). When, as a result of movement of a mobile terminal device (40) whose location has been managed by a mobility management device (20), a mobility management device (30) manages the location of the mobile terminal device (40), the incoming call control unit (11) suspends processing of an incoming call made to the mobile terminal device (40) during its movement until the incoming call control unit (11) receives, from the mobility management device (30), a notification indicating completion of the movement. Upon receiving the notification, the incoming call control unit (11) resumes processing of the incoming call to the mobile terminal device (40).",
+    "L2": "A bearer management apparatus is provided that controls packet-call handling to ensure reliable reception of a call arriving while a mobile terminal is in transit. The bearer management apparatus (10) comprises an incoming-call controller (11). When movement of a mobile terminal apparatus (40) causes its location management to be transferred from a mobility management apparatus (20) to another mobility management apparatus (30), the controller (11) places any incoming-call processing initiated during that movement on hold. The processing remains suspended until the bearer management apparatus receives, from mobility management apparatus (30), a notice indicating that the terminal’s movement has been completed. Upon receipt of that notice, the controller resumes processing the incoming call for the mobile terminal apparatus (40).",
+    "L3": "A bearer management device ensures the reliable reception of incoming packet calls while a mobile terminal is moving between locations. When the terminal moves, a new mobility management device assumes responsibility for managing its location. During this transition, the bearer management device temporarily suspends processing of the incoming call to prevent errors or interruptions. Processing remains suspended until the new mobility management device confirms that the terminal’s movement and location update have been completed. Upon receiving this completion notification, the bearer management device resumes processing the incoming call, enabling it to be delivered reliably to the mobile terminal.",
+    "L4": "A bearer management device is provided to improve the reception of packet-switched incoming calls while a mobile terminal is moving between areas managed by different mobility management devices. During such movement, an incoming-call request may arrive before the mobility-management procedure has been completed. If the request is processed immediately, routing or bearer information may still refer to the previous mobility management device, causing call setup to fail.\n\nTo prevent this problem, the bearer management device detects that the mobile terminal is undergoing a movement or handover procedure and temporarily suspends processing of the incoming-call request. The request is retained rather than rejected or discarded while the new mobility management device completes the required registration, location update, or context-transfer operations.\n\nWhen the bearer management device receives confirmation from the new mobility management device that the movement procedure has been completed, it releases the suspended request and resumes incoming-call processing. The call can then be established using the updated mobility and routing information associated with the mobile terminal’s new location.\n\nBy coordinating bearer control with completion of the mobility procedure, the device reduces call failures caused by timing conflicts between mobility management and incoming-call setup. As a result, packet calls received during handover can be delivered reliably without requiring the calling party to initiate another call.",
+    "L5": "## Bearer Management\n\nBearer management is a key function in mobile communication networks. A bearer is a logical connection that transports user data between a mobile device and the network. It defines how traffic is handled, including the required quality of service, priority, data rate, and reliability.\n\nIn LTE and 5G networks, bearer management involves establishing, modifying, and releasing bearers according to user and application requirements. For example, a voice call may need low latency and high priority, while an email download can tolerate delays. The network assigns suitable resources to each bearer to maintain service quality and use available capacity efficiently.\n\nA bearer management system also supports mobility. When a user moves between cells or network areas, the relevant bearer context must be transferred without interrupting the service. Effective bearer management therefore contributes to seamless handovers, stable connections, efficient resource allocation, and a consistent user experience.\n\nAs mobile networks support increasingly diverse services—from video streaming to industrial automation—bearer management remains essential for balancing performance, reliability, and network efficiency."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style abstract for a bearer management device that prevents packet calls from being lost while a mobile terminal moves between mobility management devices.",
+      "output": "A bearer management device and method are disclosed for maintaining a packet-switched call when a mobile terminal moves from a first mobility management device to a second mobility management device. The bearer management device detects or receives an indication of the movement and obtains bearer context associated with the packet call, including bearer identifiers and routing information. Before a bearer path controlled through the first mobility management device is released, the bearer management device coordinates transfer of the bearer context and establishment of a replacement bearer path through the second mobility management device. Packet routing is switched to the replacement bearer path after confirmation that the path is available. Packets received during the transition may be buffered, forwarded, or duplicated to reduce packet loss. The original bearer path is released after completion of the routing switch. Accordingly, continuity of the packet call is preserved during relocation of mobility management control, without requiring the mobile terminal to reestablish the packet call.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Describe a telecommunications system in which incoming-call processing is suspended during terminal mobility and resumed after the new mobility management device reports movement completion.",
+      "output": "A telecommunications system includes:\n\n- A **mobile terminal**\n- An **old mobility management device** currently serving the terminal\n- A **new mobility management device** selected when the terminal moves\n- A **call-control device** that processes incoming calls for the terminal\n\nWhen terminal movement or relocation begins, the call-control device is notified that mobility processing is in progress. If an incoming call arrives during this interval, normal call delivery is **suspended** rather than routed using potentially obsolete location information. The call-control device retains the call state, queues the paging or setup operation, and optionally prevents timeout or rejection.\n\nThe terminal registers with the new mobility management device, which obtains the terminal’s context and completes the required location-update, handover, or relocation procedures. After completion, the new mobility management device sends a **movement-completion report** to the call-control device, identifying the terminal and its new serving location.\n\nUpon receiving that report, the call-control device:\n\n1. Updates the terminal’s routing information;\n2. Releases the suspension on the pending incoming call;\n3. Sends the paging or call-setup request through the new mobility management device; and\n4. Continues ordinary call establishment.\n\nThis arrangement prevents calls from being lost or misrouted while mobility information is temporarily inconsistent and allows incoming-call processing to continue immediately after movement is confirmed complete.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write a concise technical summary of an invention involving bearer management device 10, incoming call control unit 11, mobility management devices 20 and 30, and mobile terminal device 40.",
+      "output": "The invention provides coordinated bearer and mobility management for a mobile terminal device 40. A bearer management device 10 includes an incoming call control unit 11 that receives an incoming-session request, identifies the mobility management device currently serving the terminal, and controls bearer establishment. Mobility management devices 20 and 30 exchange or update location and registration information as mobile terminal device 40 moves between their service areas. Using this information, incoming call control unit 11 routes the request through the appropriate mobility management device and establishes or transfers the bearer, enabling incoming communications to reach the terminal while reducing signaling failures and maintaining service continuity during mobility events.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "How can a bearer management device reliably handle an incoming packet call made while a mobile terminal is changing location-management nodes? Answer in formal patent language.",
+      "output": "A bearer management device may reliably process an incoming packet-switched call during relocation of a mobile terminal between location-management nodes by temporarily retaining the call request until the relocation is completed and thereafter directing the request to the serving location-management node.\n\nIn particular, a method performed by the bearer management device may comprise:\n\n1. receiving an incoming packet-call establishment request addressed to a mobile terminal;\n2. determining, from mobility-management signaling or subscriber-location information, that relocation of the mobile terminal from a first location-management node to a second location-management node is in progress;\n3. storing the call-establishment request and associating the request with a transaction identifier of the mobile terminal;\n4. inhibiting final routing or rejection of the incoming packet call while the relocation remains pending;\n5. obtaining an indication that the relocation has been completed and identifying the second location-management node as the serving node;\n6. forwarding, or re-originating, the stored call-establishment request toward the second location-management node; and\n7. removing the stored request upon receipt of an acknowledgement, call-establishment response, or terminal failure indication.\n\nThe bearer management device may further start a timer upon detecting the relocation condition. If completion of the relocation is not indicated before expiration of the timer, the device may query a subscriber-location register, route the request toward the most recently confirmed serving node, or release the call with a prescribed cause value. Duplicate requests may be suppressed by comparing transaction identifiers, sequence information, or terminal identifiers.\n\nAccordingly, the bearer management device comprises processing circuitry, memory, and communication interfaces configured to detect an ongoing location-management-node change, buffer an incoming packet-call request during the change, resolve the serving location-management node following the change, and deliver the buffered request to the resolved node, thereby preventing loss, misrouting, or duplicate establishment of the incoming packet call.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate an abstract for a mobile-network call-control invention where the original mobility manager hands location management to another device, and calls arriving during the transition are held until mobility completion is confirmed.",
+      "output": "A method and system for call control in a mobile communications network are disclosed. A first mobility-management device initiates transfer of location-management responsibility for a mobile terminal to a second mobility-management device. During the transfer interval, an incoming call directed to the mobile terminal is detected and temporarily held rather than routed or released. Upon receiving confirmation that the terminal’s mobility procedure and transfer of location-management responsibility have been completed, the network releases the held call for routing using updated location information. The technique reduces call failures and misrouting during mobility-management transitions.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6424528301886793,
+      "excess_ratio": 0.46267618908018704,
+      "baseline_mean": 0.17977664110849223,
+      "baseline_n_valid": 5,
+      "output_chars": 895,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5956112852664577,
+          "baseline_mean": 0.13912007945794758,
+          "excess_ratio": 0.4564912058085101
+        },
+        "bz2": {
+          "actual_ratio": 0.6470588235294118,
+          "baseline_mean": 0.17859026914777928,
+          "excess_ratio": 0.4684685543816325
+        },
+        "lzma": {
+          "actual_ratio": 0.6770833333333334,
+          "baseline_mean": 0.21538856849426175,
+          "excess_ratio": 0.4616947648390716
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.37077702702702703,
+      "excess_ratio": 0.1910003859185348,
+      "baseline_mean": 0.17977664110849223,
+      "baseline_n_valid": 5,
+      "output_chars": 840,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2905027932960894,
+          "baseline_mean": 0.13912007945794758,
+          "excess_ratio": 0.15138271383814184
+        },
+        "bz2": {
+          "actual_ratio": 0.3817733990147783,
+          "baseline_mean": 0.17859026914777928,
+          "excess_ratio": 0.20318312986699902
+        },
+        "lzma": {
+          "actual_ratio": 0.42857142857142855,
+          "baseline_mean": 0.21538856849426175,
+          "excess_ratio": 0.2131828600771668
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.5182072829131653,
+      "excess_ratio": 0.3384306418046731,
+      "baseline_mean": 0.17977664110849223,
+      "baseline_n_valid": 5,
+      "output_chars": 707,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5076923076923077,
+          "baseline_mean": 0.13912007945794758,
+          "excess_ratio": 0.3685722282343601
+        },
+        "bz2": {
+          "actual_ratio": 0.4576271186440678,
+          "baseline_mean": 0.17859026914777928,
+          "excess_ratio": 0.2790368494962885
+        },
+        "lzma": {
+          "actual_ratio": 0.5816326530612245,
+          "baseline_mean": 0.21538856849426175,
+          "excess_ratio": 0.3662440845669627
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.19280078895463518,
+      "excess_ratio": 0.013024147846142947,
+      "baseline_mean": 0.17977664110849223,
+      "baseline_n_valid": 5,
+      "output_chars": 1539,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.15756630265210608,
+          "baseline_mean": 0.13912007945794758,
+          "excess_ratio": 0.018446223194158506
+        },
+        "bz2": {
+          "actual_ratio": 0.19119878603945373,
+          "baseline_mean": 0.17859026914777928,
+          "excess_ratio": 0.012608516891674443
+        },
+        "lzma": {
+          "actual_ratio": 0.22527472527472528,
+          "baseline_mean": 0.21538856849426175,
+          "excess_ratio": 0.009886156780463534
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.06842372022301065,
+      "excess_ratio": -0.11135292088548158,
+      "baseline_mean": 0.17977664110849223,
+      "baseline_n_valid": 5,
+      "output_chars": 1233,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.03577235772357724,
+          "baseline_mean": 0.13912007945794758,
+          "excess_ratio": -0.10334772173437035
+        },
+        "bz2": {
+          "actual_ratio": 0.06923076923076923,
+          "baseline_mean": 0.17859026914777928,
+          "excess_ratio": -0.10935949991701005
+        },
+        "lzma": {
+          "actual_ratio": 0.096045197740113,
+          "baseline_mean": 0.21538856849426175,
+          "excess_ratio": -0.11934337075414875
+        }
+      }
+    }
+  }
+}

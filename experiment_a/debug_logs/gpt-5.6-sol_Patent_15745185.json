@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15745185",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nProvided for a device and a method for controlling a gas turbine, a gas turbine control program, and the gas turbine are: a first opening setting unit that sets a first IGV opening command value for an inlet guide vane based on factors excluding a surge limit of a compressor; a second opening setting unit that sets a second IGV opening command value for the inlet guide vane based on the surge limit of the compressor, and corrects the second IGV opening command value based on a pressure in the compressor; an opening selecting unit that selects a maximum opening as an IGV opening command value for the inlet guide vane among the first IGV opening command value and the second IGV opening command value; and an opening control unit that adjusts the opening of the inlet guide vane based on the IGV opening command value S selected by the opening selecting unit.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nProvided for a device and a method for controlling a gas turbine, a gas turbine control program, and the gas turbine are: a first opening setting unit that sets a first IGV opening command value for an inlet guide vane based on factors excluding a surge limit of a compressor; a second opening setting unit that sets a second IGV opening command value for the inlet guide vane based on the surge limit of the compressor, and corrects the second IGV opening command value based on a pressure in the compressor; an opening selecting unit that selects a maximum opening as an IGV opening command value for the inlet guide vane among the first IGV opening command value and the second IGV opening command value; and an opening control unit that adjusts the opening of the inlet guide vane based on the IGV opening command value S selected by the opening selecting unit.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The technology provides a device, method, and control program for controlling a gas turbine.\n- A first setting unit determines an inlet guide vane opening command based on factors other than the compressor’s surge limit.\n- A second setting unit determines an inlet guide vane opening command based on the compressor’s surge limit and corrects it using compressor pressure.\n- A selection unit chooses the larger of the first and second opening command values.\n- A control unit adjusts the inlet guide vane opening according to the selected command value.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA gas turbine control device and method determine inlet guide vane (IGV) opening using one command based on non-surge factors and a second, compressor-pressure-corrected command based on the compressor surge limit, then select the larger value. This approach adjusts the IGV opening to satisfy operating requirements while helping prevent compressor surge and improve turbine control reliability.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Provided, IGV"
+  },
+  "outputs": {
+    "L1": "Provided are a gas turbine control device and method, a gas turbine control program, and a gas turbine. The device includes: a first opening setting unit configured to set a first IGV opening command value for an inlet guide vane based on factors other than a surge limit of a compressor; a second opening setting unit configured to set a second IGV opening command value for the inlet guide vane based on the surge limit of the compressor and to correct the second IGV opening command value based on pressure within the compressor; an opening selection unit configured to select, as an IGV opening command value for the inlet guide vane, the greater of the first and second IGV opening command values; and an opening control unit configured to adjust the opening of the inlet guide vane based on the IGV opening command value S selected by the opening selection unit.",
+    "L2": "A gas turbine, together with a device, method, and program for controlling the gas turbine, includes: a first opening-setting unit that determines a first IGV opening command for an inlet guide vane using parameters other than the compressor surge limit; a second opening-setting unit that determines a second IGV opening command according to the compressor surge limit and modifies that command based on pressure within the compressor; an opening-selection unit that compares the first and second IGV opening commands and chooses the larger value as the inlet guide vane opening command; and an opening-control unit that regulates the inlet guide vane opening in accordance with the selected IGV opening command value S.",
+    "L3": "The technology provides a device, method, and control program for controlling a gas turbine. Its purpose is to regulate the opening of the compressor’s inlet guide vanes while maintaining stable operation and avoiding the compressor’s surge region.\n\nA first setting unit determines an inlet guide vane opening command based on operating factors other than the compressor’s surge limit. Separately, a second setting unit determines another inlet guide vane opening command based on the compressor’s surge limit. The second setting unit then corrects this command using the compressor pressure to account for actual operating conditions.\n\nA selection unit compares the command values generated by the first and second setting units and selects the larger value. A control unit then adjusts the opening of the inlet guide vanes in accordance with the selected command value. This arrangement enables the gas turbine to meet its normal operating requirements while helping maintain an appropriate margin from compressor surge.",
+    "L4": "A gas turbine control device controls the opening of an inlet guide vane (IGV) arranged at the inlet of a compressor. The device generates a first IGV opening command based on operating requirements other than compressor surge prevention, such as turbine load, output demand, rotational speed, temperature, airflow, efficiency, or other applicable control conditions. This first command represents an IGV opening suitable for meeting the required operating state of the gas turbine.\n\nThe control device also generates a second IGV opening command for maintaining an adequate margin from the compressor surge limit. The second command is determined using a surge-related opening value that is corrected in accordance with compressor pressure, such as compressor inlet pressure, discharge pressure, or a pressure ratio derived from detected pressure values. By applying this pressure correction, the surge-prevention command can reflect changes in compressor operating conditions more accurately than a fixed surge limit.\n\nThe first and second IGV opening commands are then compared, and the larger of the two is selected as the final command supplied to the IGV actuator. Accordingly, when ordinary operating requirements call for a greater opening, the IGV is controlled according to the first command. When the compressor approaches a condition in which surge may occur, the pressure-corrected second command takes priority and prevents the IGV from being closed beyond an acceptable limit.\n\nA corresponding control method includes acquiring gas turbine and compressor operating information, calculating the first IGV opening command from non-surge-related control factors, calculating the pressure-corrected second IGV opening command from the compressor surge limit, comparing the two commands, and controlling the IGV using the larger value. This arrangement allows the gas turbine to satisfy load, performance, and other operational demands while maintaining compressor stability. As a result, the system helps suppress surge, supports smoother operation over a range of ambient and load conditions, and improves the reliability of gas turbine control.",
+    "L5": "The provided genomic data were analyzed using the Integrative Genomics Viewer (IGV), a powerful visualization tool for exploring sequencing results. IGV allows researchers to inspect read alignments, genetic variants, and coverage patterns across specific regions of the genome. By loading the provided files into IGV, users can quickly identify potential mutations and better understand complex genomic information."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize the key components and operation of a patented gas turbine control device that regulates an inlet guide vane while accounting for compressor surge limits.",
+      "output": "The patented control device is designed to position a gas turbine’s compressor inlet guide vane (IGV) while preventing the compressor from approaching surge.\n\n**Key components**\n- **Operating-condition sensors:** Detect variables such as turbine/compressor speed, load or output, inlet conditions, pressure ratio, airflow, and possibly exhaust temperature.\n- **Normal IGV command generator:** Calculates the guide-vane opening needed to meet the requested load, airflow, efficiency, or temperature target.\n- **Surge-limit estimator:** Determines the compressor’s current surge boundary from stored compressor characteristics and measured operating conditions.\n- **Surge-margin controller or limiter:** Calculates the minimum airflow or IGV opening required to maintain a prescribed distance from the surge line.\n- **Command selector/constraint logic:** Compares the normal IGV request with the surge-safe limit and overrides or restricts the request when necessary.\n- **IGV actuator and position feedback:** Moves the vanes to the final command and verifies actual vane position.\n\n**Operation**\nUnder normal conditions, the IGV follows the command associated with load and efficiency requirements. As speed, pressure ratio, ambient conditions, or load changes, the controller continually estimates proximity to compressor surge. If the requested vane movement—typically excessive closing—would reduce compressor flow below the surge-safe value, the limiter prevents that movement or commands the vanes farther open. The resulting constrained command is sent to the IGV actuator.\n\nThus, the device permits normal performance control whenever adequate surge margin exists, but automatically gives compressor stability priority during startup, shutdown, rapid load changes, or off-design operation.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Draft a patent-style abstract for a gas turbine control system that calculates two IGV opening commands—one independent of compressor surge limits and one based on the surge limit and corrected using compressor pressure—then selects the larger command.",
+      "output": "A control system for a gas turbine includes a controller configured to determine a first inlet guide vane (IGV) opening command independently of a compressor surge limit and to determine a second IGV opening command based on the compressor surge limit. The controller corrects the second IGV opening command using a pressure associated with the compressor, such as a measured or calculated compressor inlet, discharge, or pressure-ratio value. A selection module compares the first and second IGV opening commands and outputs the larger command as a commanded IGV opening. An IGV actuator positions one or more inlet guide vanes in accordance with the selected command. Selecting the larger command enables control of compressor airflow while maintaining an operating margin relative to compressor surge conditions.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Describe a device, method, and control program for controlling a gas turbine’s inlet guide vane using first and second opening setting units, an opening selecting unit, and an opening control unit.",
+      "output": "### Device\n\nA gas-turbine inlet-guide-vane control device includes:\n\n1. **First opening setting unit**  \n   Calculates a first target opening for the inlet guide vane from one or more operating parameters, such as turbine load, rotational speed, inlet-air temperature, pressure ratio, or corrected speed. This target may represent a normal or efficiency-oriented vane-opening schedule.\n\n2. **Second opening setting unit**  \n   Calculates a second target opening according to a different control schedule or operating constraint. For example, it may provide an opening that protects compressor surge margin, limits exhaust temperature, stabilizes combustion, or supports startup and load-transition operation.\n\n3. **Opening selecting unit**  \n   Selects one of the first and second target openings based on a predetermined selection rule. The rule may select the larger or smaller opening, or may switch between the two based on operating mode, load, speed, temperature, pressure, or an abnormal-condition signal. Hysteresis or rate limits may be used to prevent repeated switching.\n\n4. **Opening control unit**  \n   Drives an actuator coupled to the inlet guide vane so that the measured vane opening approaches the selected target opening. Feedback control, actuator limits, and opening-rate limits may be applied.\n\nThis arrangement permits normal performance control while ensuring that a separate operating or protection requirement can take priority when necessary.\n\n### Method\n\nThe corresponding control method comprises:\n\n1. acquiring operating-state information for the gas turbine;\n2. determining a first inlet-guide-vane opening using a first opening-setting characteristic;\n3. determining a second inlet-guide-vane opening using a second opening-setting characteristic;\n4. selecting one of the first and second openings according to a defined selection condition; and\n5. controlling the vane actuator so that the actual opening follows the selected opening.\n\nThe calculations and selection may be repeated cyclically during turbine operation.\n\n### Control program\n\nA control program stored in a non-transitory computer-readable medium causes a turbine controller or processor to:\n\n- execute the first and second opening-setting calculations;\n- compare or otherwise evaluate the resulting target openings;\n- select the applicable target opening;\n- generate an actuator command based on the selected opening and vane-position feedback; and\n- apply safety limits, diagnostics, switching hysteresis, and rate limiting as required.\n\nThus, the same concept can be implemented as dedicated hardware, controller logic, or software executed by a gas-turbine control system.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "How can a gas turbine controller determine an IGV opening command by comparing a normal operating command with a pressure-corrected command designed to avoid compressor surge?",
+      "output": "The controller can use a **high-value selector**:\n\n\\[\n\\theta_{\\text{IGV,cmd}}\n=\n\\max\\left(\\theta_{\\text{normal}},\\ \\theta_{\\text{surge}}(P_{\\text{corr}})\\right)\n\\]\n\nwhere:\n\n- \\(\\theta_{\\text{normal}}\\) is the IGV opening requested by the normal speed/load schedule.\n- \\(P_{\\text{corr}}\\) is measured compressor pressure—such as discharge pressure or pressure ratio—corrected for inlet temperature, ambient pressure, and/or shaft speed.\n- \\(\\theta_{\\text{surge}}\\) is the minimum IGV opening required to maintain adequate compressor surge margin.\n\nThe controller compares the two commands each cycle. During normal conditions, the normal command is larger and controls the vanes. If the pressure-based surge-protection command requires more opening, it overrides the normal command. The selected value is then passed through physical limits, rate limits, and preferably hysteresis or filtering to prevent command oscillation.\n\nIf the control signal is defined as **vane closure** rather than opening, the equivalent implementation uses a low-value selector.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Write a concise technical overview of a gas turbine inlet guide vane control architecture in which the maximum of two calculated vane-opening values is selected and applied.",
+      "output": "A gas turbine inlet guide vane (IGV) controller can use a **high-select architecture** in which two independent control functions calculate required vane-opening commands:\n\n- **Performance schedule:** determines IGV opening from corrected shaft speed, load, or airflow demand to achieve desired efficiency and compressor matching.\n- **Protection/constraint schedule:** calculates the minimum opening needed to maintain compressor surge margin, limit temperature, or satisfy acceleration and transient airflow requirements.\n\nThe commands are normalized to a common opening convention and constrained to allowable mechanical limits. A maximum selector then generates the applied demand:\n\n\\[\n\\theta_{\\text{cmd}}=\\max\\left(\\theta_1,\\theta_2\\right)\n\\]\n\nThe selected command passes through rate limits, position limits, and actuator dynamics before driving the hydraulic or electric IGV actuator. Position feedback closes the inner servo loop and supports tracking and fault diagnostics. High selection ensures the vanes are never commanded more closed than either control function permits, provided that increasing \\(\\theta\\) represents increasing vane opening. Bumpless transfer, signal validation, and defined fallback schedules are typically included to prevent transients or unsafe commands following sensor or calculation faults.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6440677966101694,
+      "excess_ratio": 0.5052940809609602,
+      "baseline_mean": 0.13877371564920923,
+      "baseline_n_valid": 5,
+      "output_chars": 868,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6101694915254238,
+          "baseline_mean": 0.11133633261523494,
+          "excess_ratio": 0.4988331589101888
+        },
+        "bz2": {
+          "actual_ratio": 0.6306818181818182,
+          "baseline_mean": 0.1259333150383812,
+          "excess_ratio": 0.504748503143437
+        },
+        "lzma": {
+          "actual_ratio": 0.6853932584269663,
+          "baseline_mean": 0.1749386125326126,
+          "excess_ratio": 0.5104546458943537
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.46391752577319584,
+      "excess_ratio": 0.32514381012398663,
+      "baseline_mean": 0.13877371564920923,
+      "baseline_n_valid": 5,
+      "output_chars": 721,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3944636678200692,
+          "baseline_mean": 0.11133633261523494,
+          "excess_ratio": 0.28312733520483424
+        },
+        "bz2": {
+          "actual_ratio": 0.4553846153846154,
+          "baseline_mean": 0.1259333150383812,
+          "excess_ratio": 0.32945130034623415
+        },
+        "lzma": {
+          "actual_ratio": 0.5280898876404494,
+          "baseline_mean": 0.1749386125326126,
+          "excess_ratio": 0.35315127510783684
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.43275261324041814,
+      "excess_ratio": 0.2939788975912089,
+      "baseline_mean": 0.13877371564920923,
+      "baseline_n_valid": 5,
+      "output_chars": 1022,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.41002277904328016,
+          "baseline_mean": 0.11133633261523494,
+          "excess_ratio": 0.2986864464280452
+        },
+        "bz2": {
+          "actual_ratio": 0.41041666666666665,
+          "baseline_mean": 0.1259333150383812,
+          "excess_ratio": 0.2844833516282854
+        },
+        "lzma": {
+          "actual_ratio": 0.4728682170542636,
+          "baseline_mean": 0.1749386125326126,
+          "excess_ratio": 0.29792960452165096
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.19413092550790068,
+      "excess_ratio": 0.05535720985869144,
+      "baseline_mean": 0.13877371564920923,
+      "baseline_n_valid": 5,
+      "output_chars": 2157,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.14536928487690504,
+          "baseline_mean": 0.11133633261523494,
+          "excess_ratio": 0.034032952261670094
+        },
+        "bz2": {
+          "actual_ratio": 0.21370499419279906,
+          "baseline_mean": 0.1259333150383812,
+          "excess_ratio": 0.08777167915441786
+        },
+        "lzma": {
+          "actual_ratio": 0.22033898305084745,
+          "baseline_mean": 0.1749386125326126,
+          "excess_ratio": 0.04540037051823487
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.13364055299539168,
+      "excess_ratio": -0.005133162653817552,
+      "baseline_mean": 0.13877371564920923,
+      "baseline_n_valid": 5,
+      "output_chars": 416,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.06692913385826772,
+          "baseline_mean": 0.11133633261523494,
+          "excess_ratio": -0.04440719875696722
+        },
+        "bz2": {
+          "actual_ratio": 0.15034965034965034,
+          "baseline_mean": 0.1259333150383812,
+          "excess_ratio": 0.024416335311269133
+        },
+        "lzma": {
+          "actual_ratio": 0.17073170731707318,
+          "baseline_mean": 0.1749386125326126,
+          "excess_ratio": -0.004206905215539403
+        }
+      }
+    }
+  }
+}

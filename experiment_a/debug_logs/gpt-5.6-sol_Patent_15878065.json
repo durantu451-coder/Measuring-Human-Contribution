@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15878065",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nDescribed are computer-based methods and apparatuses, including computer program products, for centralized deployment of advertising code. Advertising code is stored for use by a web page, the advertising code comprising at least one of vendor advertising code or vendor reporting code. An application programming interface is provided for the web page to access the advertising code, the application programming interface allowing the advertising code to be updated such that updated advertising code is automatically provided to the web page without changing source code that the web page uses to accesses the advertising code. A request for advertising code is received from the web page using the application programming interface. The advertising code is determined to be a most recently updated version of advertising code stored by the computing device. A response to the request can be generated using the advertising code. The response can be transmitted to the web page.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nDescribed are computer-based methods and apparatuses, including computer program products, for centralized deployment of advertising code. Advertising code is stored for use by a web page, the advertising code comprising at least one of vendor advertising code or vendor reporting code. An application programming interface is provided for the web page to access the advertising code, the application programming interface allowing the advertising code to be updated such that updated advertising code is automatically provided to the web page without changing source code that the web page uses to accesses the advertising code. A request for advertising code is received from the web page using the application programming interface. The advertising code is determined to be a most recently updated version of advertising code stored by the computing device. A response to the request can be generated using the advertising code. The response can be transmitted to the web page.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- Computer-based methods and apparatuses enable the centralized deployment of advertising code.\n- Stored advertising code may include vendor advertising code, vendor reporting code, or both.\n- An application programming interface allows a web page to access advertising code without embedding it directly in the page’s source code.\n- The advertising code can be updated automatically without requiring changes to the source code used by the web page.\n- When the web page requests advertising code through the API, the system identifies the latest stored version and transmits it in a response.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nCentralized deployment methods store vendor advertising or reporting code and provide an API through which web pages request the most recently updated version. This approach automatically delivers current advertising code without requiring changes to the web page’s source code, simplifying maintenance and updates.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Described, Advertising, The"
+  },
+  "outputs": {
+    "L1": "Described herein are computer-implemented methods and apparatuses, including computer program products, for the centralized deployment of advertising code. Advertising code is stored for use by a web page and comprises at least one of vendor advertising code or vendor reporting code. An application programming interface is provided to enable the web page to access the advertising code. The application programming interface allows the advertising code to be updated such that the updated advertising code is automatically provided to the web page without requiring changes to the source code used by the web page to access the advertising code. A request for advertising code is received from the web page through the application programming interface. The advertising code is determined to be the most recently updated version stored by the computing device. A response to the request can be generated using the advertising code and transmitted to the web page.",
+    "L2": "Computer-implemented techniques, systems, and software products are disclosed for centrally distributing advertising code. Code intended for use by a webpage is maintained in storage and includes vendor-supplied advertising code, vendor-supplied reporting code, or both. The webpage accesses this code through an application programming interface (API). The API enables revised advertising code to be delivered automatically to the webpage without requiring changes to the webpage’s source code used to retrieve it. When the webpage submits an API request for advertising code, the computing device identifies the latest stored version. It may then create a response containing that version and send the response to the webpage.",
+    "L3": "Computer-based methods and apparatuses enable the centralized deployment and management of advertising code. The stored code may include vendor advertising code, vendor reporting code, or a combination of both. An application programming interface (API) allows a web page to request and access this advertising code without embedding it directly in the page’s source code.\n\nBecause the advertising code is maintained separately from the web page, it can be updated automatically without requiring changes to the source code used by the page. When the web page requests advertising code through the API, the system identifies the most recent stored version and transmits that version in its response. This approach simplifies code maintenance, supports centralized updates, and helps ensure that web pages use current advertising and reporting functionality.",
+    "L4": "Centralized deployment methods provide an efficient way to manage vendor advertising, analytics, or reporting code across multiple web pages and websites. Instead of embedding a fixed copy of the code directly into each page, the vendor or site administrator stores the code in a centralized repository. An application programming interface (API) allows participating web pages to request and retrieve the most recent approved version whenever the page loads or at another designated time.\n\nThis arrangement separates the vendor code from the web page’s underlying source code. When the advertising or reporting code must be corrected, enhanced, or replaced, the administrator updates the centralized version rather than editing every page on which it appears. Subsequent API requests automatically deliver the updated code, helping ensure that participating pages use a consistent and current implementation.\n\nBy reducing the need for repeated source-code changes, centralized deployment simplifies maintenance and lowers the risk of outdated or inconsistent integrations. It can also accelerate the rollout of new features, tracking requirements, security fixes, and vendor-specific updates. Appropriate controls—such as versioning, authentication, validation, caching, monitoring, and rollback capabilities—may be used to maintain performance, security, and reliability while preserving the convenience of automatic updates.",
+    "L5": "**The Role of Advertising**\n\nAdvertising can be described as a powerful way for businesses to communicate with potential customers. It introduces products, explains their benefits, and helps companies build recognizable brands. The most effective advertising is creative, honest, and designed for a specific audience. Whether it appears online, on television, or in print, advertising can influence purchasing decisions and shape public opinion."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style abstract for a centralized system that stores and deploys advertising code to web pages through an API, allowing automatic updates without modifying page source code.",
+      "output": "A centralized advertising code management system is disclosed. The system includes a repository configured to store advertising code and associated deployment rules, an administrative interface for creating or updating the advertising code, and an application programming interface (API) configured to deliver selected advertising code to requesting web pages. A web page includes a persistent integration component that submits a request identifying the web page, advertising placement, user context, or other deployment parameters. In response, the system selects and returns advertising code based on the deployment rules, enabling the web page to render an advertisement without embedding the advertising code directly in the page source. Changes made to the centrally stored advertising code or deployment rules are automatically applied to subsequent requests without requiring modification or republication of the web page. The system may further provide version control, access control, caching, testing, scheduling, targeting, analytics, and rollback functionality for managing advertising deployments across multiple web pages or domains.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Describe computer-implemented methods, apparatuses, and program products for serving the latest version of vendor advertising or reporting code to a requesting web page.",
+      "output": "Computer-implemented methods, apparatuses, and computer program products are provided for supplying a requesting web page with a current version of vendor advertising or reporting code.\n\nA request is received from a web page, browser, tag manager, or other client. The request may include a vendor identifier, code-module identifier, requested capabilities, execution environment, tenant or publisher identifier, consent state, and an optional version constraint. A code-serving system accesses a version registry containing available code packages and associated metadata, such as release status, compatibility requirements, effective dates, security approvals, geographic restrictions, and rollback designations. Based on the request and the metadata, the system selects the latest eligible version of the vendor code, rather than relying on a version embedded in the web page.\n\nThe selected code may be returned directly, redirected to a content-delivery-network location, or supplied through a version-independent bootstrap script that retrieves or loads the selected package. The response may include executable JavaScript, a module reference, configuration data, integrity information, cache-control data, and a digital signature. The code can implement advertising functions, such as impression or conversion measurement, or reporting functions, such as event collection and transmission.\n\nThe system may cache versions at edge nodes while periodically validating freshness against the registry. It may also enforce consent, security, and compatibility policies; perform staged rollouts or experiments; log which version was served; and automatically fall back to a prior approved version if the latest version is unavailable or defective.\n\nAn apparatus implementing the techniques can include one or more processors, memory, a network interface, a request handler, a version-selection engine, a code repository, and a response generator. A computer program product can include non-transitory computer-readable media storing instructions that cause such an apparatus to receive the request, determine the latest eligible code version, and provide that version or a location from which it can be obtained. This architecture allows vendor code to be updated centrally without requiring corresponding changes to each requesting web page.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write a concise technical summary of an invention in which websites access centrally managed ad code via an API and automatically receive updated code.",
+      "output": "A centralized advertising-code management system enables websites to retrieve ad code through an API rather than embedding static scripts. Publishers place a stable API reference or loader on their sites, while the system stores, validates, and versions ad configurations and executable code in a central repository. On each request—or according to caching and refresh policies—the API delivers the current authorized version based on site, placement, device, geography, or other parameters. Updates made centrally are therefore propagated automatically without requiring website code changes. The system may additionally provide authentication, rollback, compatibility controls, monitoring, and performance analytics.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate patent claim-style prose explaining how a computing device receives a web-page request for advertising code, identifies the most recently updated version, generates a response, and transmits it to the page.",
+      "output": "1. A computer-implemented method comprising:  \nreceiving, by a computing device and from a web page, a request for advertising code;  \nidentifying, from among a plurality of stored versions of the advertising code, a version having a most recent update indication;  \ngenerating a response comprising the identified version of the advertising code; and  \ntransmitting, by the computing device, the response to the web page for execution or incorporation by the web page.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "How can advertising and reporting scripts be centrally stored, updated, and delivered to web pages without requiring changes to the source code of each page?",
+      "output": "Use a **tag management system (TMS)**, such as Google Tag Manager, Adobe Experience Platform Tags, or a self-hosted equivalent.\n\n1. Add a single **container snippet** to each web page once.\n2. Store advertising, analytics, and reporting scripts centrally in the TMS.\n3. Configure rules for when and where each script runs—such as by URL, event, consent status, or user segment.\n4. Publish updates through the TMS; the container loads the current configuration dynamically, often via a CDN.\n5. Use built-in versioning, testing, rollback, permissions, and audit logs to control deployments.\n\nAfter the initial container is installed, most script additions and updates can be made centrally without editing each page’s source code. A Content Security Policy, consent-management integration, and strict access controls should be used to limit security and privacy risks.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7074721780604133,
+      "excess_ratio": 0.5251793919562084,
+      "baseline_mean": 0.18229278610420485,
+      "baseline_n_valid": 5,
+      "output_chars": 965,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7270341207349081,
+          "baseline_mean": 0.1374645099841545,
+          "excess_ratio": 0.5895696107507536
+        },
+        "bz2": {
+          "actual_ratio": 0.5971223021582733,
+          "baseline_mean": 0.179792241203417,
+          "excess_ratio": 0.41733006095485636
+        },
+        "lzma": {
+          "actual_ratio": 0.7913043478260869,
+          "baseline_mean": 0.22178532676442875,
+          "excess_ratio": 0.5695190210616582
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.36787148594377517,
+      "excess_ratio": 0.18557869983957032,
+      "baseline_mean": 0.18229278610420485,
+      "baseline_n_valid": 5,
+      "output_chars": 728,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.29815303430079154,
+          "baseline_mean": 0.1374645099841545,
+          "excess_ratio": 0.16068852431663705
+        },
+        "bz2": {
+          "actual_ratio": 0.35990338164251207,
+          "baseline_mean": 0.179792241203417,
+          "excess_ratio": 0.18011114043909507
+        },
+        "lzma": {
+          "actual_ratio": 0.4336283185840708,
+          "baseline_mean": 0.22178532676442875,
+          "excess_ratio": 0.21184299181964206
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.5867884750527055,
+      "excess_ratio": 0.40449568894850063,
+      "baseline_mean": 0.18229278610420485,
+      "baseline_n_valid": 5,
+      "output_chars": 857,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5848623853211009,
+          "baseline_mean": 0.1374645099841545,
+          "excess_ratio": 0.4473978753369464
+        },
+        "bz2": {
+          "actual_ratio": 0.5389473684210526,
+          "baseline_mean": 0.179792241203417,
+          "excess_ratio": 0.35915512721763565
+        },
+        "lzma": {
+          "actual_ratio": 0.6328125,
+          "baseline_mean": 0.22178532676442875,
+          "excess_ratio": 0.41102717323557125
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.19461337966985234,
+      "excess_ratio": 0.012320593565647492,
+      "baseline_mean": 0.18229278610420485,
+      "baseline_n_valid": 5,
+      "output_chars": 1427,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1634349030470914,
+          "baseline_mean": 0.1374645099841545,
+          "excess_ratio": 0.025970393062936914
+        },
+        "bz2": {
+          "actual_ratio": 0.19210526315789472,
+          "baseline_mean": 0.179792241203417,
+          "excess_ratio": 0.012313021954477726
+        },
+        "lzma": {
+          "actual_ratio": 0.22439024390243903,
+          "baseline_mean": 0.22178532676442875,
+          "excess_ratio": 0.002604917138010282
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.1380065717415115,
+      "excess_ratio": -0.04428621436269334,
+      "baseline_mean": 0.18229278610420485,
+      "baseline_n_valid": 5,
+      "output_chars": 445,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.07116104868913857,
+          "baseline_mean": 0.1374645099841545,
+          "excess_ratio": -0.06630346129501592
+        },
+        "bz2": {
+          "actual_ratio": 0.1423841059602649,
+          "baseline_mean": 0.179792241203417,
+          "excess_ratio": -0.03740813524315209
+        },
+        "lzma": {
+          "actual_ratio": 0.18604651162790697,
+          "baseline_mean": 0.22178532676442875,
+          "excess_ratio": -0.03573881513652177
+        }
+      }
+    }
+  }
+}

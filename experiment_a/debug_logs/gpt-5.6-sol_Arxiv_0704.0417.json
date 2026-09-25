@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0417",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThermodynamic stable interaction pair potentials which are not of the form ``positive function + real continuous function of positive type'' are presented in dimension one. Construction of such a potential in dimension two is sketched. These constructions use only elementary calculations. The mathematical background is discussed separately.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThermodynamic stable interaction pair potentials which are not of the form ``positive function + real continuous function of positive type'' are presented in dimension one. Construction of such a potential in dimension two is sketched. These constructions use only elementary calculations. The mathematical background is discussed separately.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- Thermodynamically stable interaction pair potentials are presented in one dimension.\n- These potentials cannot be expressed as the sum of a positive function and a real continuous function of positive type.\n- A method for constructing a similar potential in two dimensions is outlined.\n- The constructions rely only on elementary calculations.\n- The relevant mathematical background is discussed separately.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe work constructs thermodynamically stable interaction pair potentials in one dimension that cannot be expressed as a positive function plus a real continuous function of positive type, and sketches an analogous construction in two dimensions using elementary calculations. These examples establish that stable potentials exist beyond the stated conventional form, broadening the known mathematical characterization of thermodynamic stability.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Thermodynamic, Construction, These"
+  },
+  "outputs": {
+    "L1": "Thermodynamically stable pair-interaction potentials that cannot be expressed as the sum of a positive function and a real continuous function of positive type are presented in one dimension. The construction of such a potential in two dimensions is also sketched. These constructions rely solely on elementary calculations, while the underlying mathematical background is discussed separately.",
+    "L2": "In one dimension, we exhibit thermodynamically stable pair-interaction potentials that cannot be represented as the sum of a positive function and a real, continuous positive-type function. We also outline how to construct such a potential in two dimensions. The constructions rely solely on elementary computations, while the underlying mathematical framework is addressed separately.",
+    "L3": "We present thermodynamically stable pair-interaction potentials in one dimension that cannot be decomposed into the sum of a positive function and a real, continuous function of positive type. We also outline a method for constructing an analogous potential in two dimensions. Both constructions rely solely on elementary calculations, while the relevant mathematical background is discussed separately.",
+    "L4": "A pair potential \\(v\\) is called thermodynamically stable if there is a constant \\(B\\ge 0\\) such that, for every number of particles \\(N\\) and every configuration \\(x_1,\\ldots,x_N\\),  \n\\[\n\\sum_{1\\le i<j\\le N} v(x_i-x_j)\\ge -BN .\n\\]\nA standard sufficient condition for stability is that \\(v\\) can be decomposed as\n\\[\nv=v_{+}+v_{\\mathrm{pt}},\n\\]\nwhere \\(v_{+}\\) is nonnegative and \\(v_{\\mathrm{pt}}\\) is a real continuous function of positive type. The latter condition means that the matrices\n\\[\n\\bigl(v_{\\mathrm{pt}}(x_i-x_j)\\bigr)_{i,j=1}^{N}\n\\]\nare positive semidefinite for all finite sets of points; equivalently, under the usual hypotheses, its Fourier transform is a nonnegative measure. Such a decomposition gives an immediate lower bound on the total interaction energy and has therefore often served as a convenient conventional description of stable potentials.\n\nThe work shows, however, that this representation is not necessary. In one dimension, it explicitly constructs pair potentials whose interaction energies still satisfy a uniform linear lower bound in the particle number, but which cannot be written as the sum of a positive function and a real continuous function of positive type. Stability is proved directly by estimating the energy of arbitrary finite configurations and showing that the attractive contributions are always controlled by repulsive or otherwise compensating terms. The impossibility of the conventional decomposition is established separately, using consequences that any positive-type component would have to satisfy and demonstrating that the constructed potential violates them.\n\nAn analogous construction is then outlined in two dimensions. Rather than relying on sophisticated harmonic-analysis machinery, the argument uses elementary geometric and algebraic estimates to control the number and strength of potentially negative interactions. These estimates again produce a lower bound proportional to \\(N\\), while the shape and values of the potential rule out a decomposition into a nonnegative part and a continuous positive-type part.\n\nThe examples therefore separate thermodynamic stability from this familiar sufficient criterion. They demonstrate that the class of stable pair interactions is strictly larger than the class generated by nonnegative potentials and continuous positive-type functions. Consequently, any general mathematical characterization of stability must accommodate mechanisms that are not captured by positivity or Fourier-positivity alone.",
+    "L5": "### Thermodynamic Construction\n\nThermodynamic principles play an important role in modern construction. Buildings continuously exchange heat with their surroundings through walls, windows, roofs, and ventilation systems. These processes influence indoor comfort, energy consumption, and environmental impact.\n\nBy understanding heat transfer, architects and engineers can select effective insulation, use energy-efficient materials, and design passive heating or cooling systems. These strategies reduce energy loss and help maintain stable indoor temperatures. As a result, thermodynamic analysis supports the construction of buildings that are comfortable, sustainable, and economical to operate."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a concise abstract for a mathematics paper presenting thermodynamically stable pair potentials that cannot be decomposed into a positive function plus a real continuous function of positive type.",
+      "output": "We construct thermodynamically stable pair potentials that cannot be represented as the sum of a nonnegative function and a real continuous function of positive type. Stability is established through uniform linear lower bounds on the associated \\(N\\)-particle interaction energies, while nondecomposability follows from structural constraints on positive-type functions. These examples show that this commonly used decomposition is sufficient, but not necessary, for thermodynamic stability.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize a paper that constructs counterexamples to a standard representation of stable interaction pair potentials in one dimension and sketches an extension to two dimensions.",
+      "output": "The paper challenges a common sufficient description of stable pair potentials. A potential \\(v\\) is stable if, for every finite configuration of particles,\n\\[\n\\sum_{i<j} v(x_i-x_j)\\ge -BN\n\\]\nfor some constant \\(B\\). A standard way to guarantee stability is to write\n\\[\nv=v_{\\mathrm{pd}}+v_{\\mathrm{nn}},\n\\]\nwhere \\(v_{\\mathrm{pd}}\\) is of positive type—equivalently, under suitable assumptions, has nonnegative Fourier transform—and \\(v_{\\mathrm{nn}}\\ge 0\\). The positive-type part contributes at worst a term linear in \\(N\\), while the nonnegative part cannot lower the energy.\n\nThe paper shows that this representation is not necessary. Its one-dimensional examples are stable even though no such decomposition exists. The construction translates the problem into finite-dimensional matrix theory: stability corresponds roughly to copositivity of an interaction matrix, meaning its quadratic form is nonnegative on vectors with nonnegative entries. The standard decomposition corresponds to expressing that matrix as the sum of a positive-semidefinite matrix and an entrywise nonnegative matrix. Since exceptional copositive matrices exist that admit no such decomposition, the authors encode one of them into a translation-invariant pair potential on the line.\n\nTwo separate issues must then be proved:\n\n- **Stability:** the geometry and combinatorics of arbitrary particle configurations are controlled so that attractive contributions cannot produce a negative term of order \\(N^2\\); only a linear lower bound remains.\n- **Failure of representation:** if the potential had a positive-type-plus-nonnegative decomposition, evaluating it on a carefully selected finite set of separations would induce the forbidden matrix decomposition.\n\nThe paper also sketches how the same idea can be embedded in two dimensions, using a suitable arrangement of sites or displacement vectors to reproduce the finite exceptional interaction pattern. The two-dimensional discussion is less complete, but it indicates that the obstruction is structural rather than peculiar to one-dimensional ordering.\n\nThe main conceptual message is that stability is a broader notion than the usual Fourier-positive/nonnegative ansatz captures. That ansatz remains a useful sufficient criterion, but it does not characterize all stable pair interactions, even in one dimension.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate a brief research abstract about elementary constructions of thermodynamically stable interaction potentials in dimensions one and two, with the mathematical background treated separately.",
+      "output": "### Abstract  \nWe present elementary constructions of thermodynamically stable pair-interaction potentials in one and two spatial dimensions. The central idea is to combine a sufficiently strong short-range repulsion with a controlled attractive tail. By partitioning space into intervals in one dimension and cells or annuli in two dimensions, local particle concentrations and attractive pair contributions can be bounded directly. These geometric estimates yield the stability inequality  \n\\[\n\\sum_{1\\le i<j\\le N} V(x_i-x_j)\\ge -BN,\n\\]\nwith a constant \\(B\\) independent of the particle number and configuration. The approach covers hard-core and soft-core potentials and provides explicit, readily checked sufficient conditions for stability without relying on advanced functional analysis.\n\n### Mathematical background  \nFor a translation-invariant pair potential \\(V:\\mathbb{R}^d\\to\\mathbb{R}\\), thermodynamic stability means that the total potential energy of every finite configuration is bounded below linearly in \\(N\\). Writing \\(V=V_{+}-V_{-}\\), the problem is to ensure that repulsive contributions control the negative part. In one dimension this follows from ordering particles and estimating interactions by neighbor separation. In two dimensions, packing bounds and spatial decompositions control the number of particles contributing within each interaction range. If the attractive tail is integrable and the repulsive core dominates the maximal local attraction permitted by these geometric bounds, then \\(V\\) is stable and admits a well-defined thermodynamic limit under standard regularity assumptions.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Draft an abstract emphasizing that certain stable pair potentials do not have the form “positive function + real continuous function of positive type.”",
+      "output": "We show that stability of a pair potential does not, in general, imply a decomposition into the sum of a nonnegative function and a real-valued continuous function of positive type. By constructing stable potentials that admit no such representation, we identify a genuine gap between stability and the positivity properties encoded by positive-type functions. Our examples demonstrate that this commonly used decomposition describes only a proper subclass of stable interactions. The result clarifies the scope of Fourier-positivity methods in the analysis of classical many-particle systems and shows that stability alone is insufficient to guarantee the corresponding structural representation.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "In three sentences, describe work providing explicit one-dimensional examples of nonstandard thermodynamically stable pair potentials and outlining a two-dimensional construction.",
+      "output": "The work constructs explicit one-dimensional pair potentials that are thermodynamically stable despite violating commonly assumed sufficient conditions for stability. It rigorously demonstrates stability by exploiting the potentials’ special structure rather than relying on positivity or simple repulsive-core arguments. The authors also outline how analogous ideas could be extended to produce nonstandard stable interactions in two dimensions.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.5744125326370758,
+      "excess_ratio": 0.3864898588894451,
+      "baseline_mean": 0.18792267374763072,
+      "baseline_n_valid": 5,
+      "output_chars": 394,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5650224215246636,
+          "baseline_mean": 0.15191580118437856,
+          "excess_ratio": 0.4131066203402851
+        },
+        "bz2": {
+          "actual_ratio": 0.50199203187251,
+          "baseline_mean": 0.15889854689282168,
+          "excess_ratio": 0.3430934849796883
+        },
+        "lzma": {
+          "actual_ratio": 0.6438356164383562,
+          "baseline_mean": 0.24285510743629696,
+          "excess_ratio": 0.4009805090020592
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4221938775510204,
+      "excess_ratio": 0.23427120380338967,
+      "baseline_mean": 0.18792267374763072,
+      "baseline_n_valid": 5,
+      "output_chars": 385,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3700440528634361,
+          "baseline_mean": 0.15191580118437856,
+          "excess_ratio": 0.21812825167905756
+        },
+        "bz2": {
+          "actual_ratio": 0.37549407114624506,
+          "baseline_mean": 0.15889854689282168,
+          "excess_ratio": 0.21659552425342338
+        },
+        "lzma": {
+          "actual_ratio": 0.5,
+          "baseline_mean": 0.24285510743629696,
+          "excess_ratio": 0.25714489256370304
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.635118306351183,
+      "excess_ratio": 0.44719563260355233,
+      "baseline_mean": 0.18792267374763072,
+      "baseline_n_valid": 5,
+      "output_chars": 403,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6437768240343348,
+          "baseline_mean": 0.15191580118437856,
+          "excess_ratio": 0.49186102284995625
+        },
+        "bz2": {
+          "actual_ratio": 0.5190839694656488,
+          "baseline_mean": 0.15889854689282168,
+          "excess_ratio": 0.36018542257282715
+        },
+        "lzma": {
+          "actual_ratio": 0.7272727272727273,
+          "baseline_mean": 0.24285510743629696,
+          "excess_ratio": 0.48441761983643034
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.14226057906458792,
+      "excess_ratio": -0.0456620946830428,
+      "baseline_mean": 0.18792267374763072,
+      "baseline_n_valid": 5,
+      "output_chars": 2516,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1226252158894646,
+          "baseline_mean": 0.15191580118437856,
+          "excess_ratio": -0.029290585294913962
+        },
+        "bz2": {
+          "actual_ratio": 0.12521008403361344,
+          "baseline_mean": 0.15889854689282168,
+          "excess_ratio": -0.033688462859208235
+        },
+        "lzma": {
+          "actual_ratio": 0.17684887459807075,
+          "baseline_mean": 0.24285510743629696,
+          "excess_ratio": -0.06600623283822621
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.10986367281475545,
+      "excess_ratio": -0.07805900093287527,
+      "baseline_mean": 0.18792267374763072,
+      "baseline_n_valid": 5,
+      "output_chars": 697,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.06914893617021277,
+          "baseline_mean": 0.15191580118437856,
+          "excess_ratio": -0.08276686501416579
+        },
+        "bz2": {
+          "actual_ratio": 0.09582309582309582,
+          "baseline_mean": 0.15889854689282168,
+          "excess_ratio": -0.06307545106972585
+        },
+        "lzma": {
+          "actual_ratio": 0.15517241379310345,
+          "baseline_mean": 0.24285510743629696,
+          "excess_ratio": -0.0876826936431935
+        }
+      }
+    }
+  }
+}

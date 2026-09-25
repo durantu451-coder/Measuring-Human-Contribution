@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15882993",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA request is received for determining a task completion rate of each of a first set of tasks associated with a set of task attributes. The first set of tasks are scheduled to be completed within a first timer period. An MAPE score is calculated or obtained for each of the completion rate predictive models, which is determined based on prior predictions performed in a second time period in the past. The duration of the second time period is a multiple of the first time period. One of the predictive models is selected based on the MAPE scores of the predictive models, where the selected model has the lowest MAPE score amongst the predictive models in the set. In another embodiment, a predictive model is selected further based on the volatility scores of the predictive models. A model with a combination of lowest MAPE score and volatility score is selected.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA request is received for determining a task completion rate of each of a first set of tasks associated with a set of task attributes. The first set of tasks are scheduled to be completed within a first timer period. An MAPE score is calculated or obtained for each of the completion rate predictive models, which is determined based on prior predictions performed in a second time period in the past. The duration of the second time period is a multiple of the first time period. One of the predictive models is selected based on the MAPE scores of the predictive models, where the selected model has the lowest MAPE score amongst the predictive models in the set. In another embodiment, a predictive model is selected further based on the volatility scores of the predictive models. A model with a combination of lowest MAPE score and volatility score is selected.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A request is received to determine the task completion rate for each task in a first set of tasks associated with specific task attributes.\n- The first set of tasks is scheduled to be completed within a first time period.\n- A MAPE score is calculated or obtained for each completion rate predictive model based on prior predictions from a past second time period.\n- The second time period has a duration that is a multiple of the first time period.\n- A predictive model is selected based on having the lowest MAPE score, or based on the lowest combination of MAPE score and volatility score.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA system determines task completion rates for tasks with associated attributes scheduled within a time period by evaluating multiple predictive models using MAPE scores from prior predictions over a longer historical period. The model with the lowest MAPE score, or the best combination of low MAPE and low volatility, is selected to improve the accuracy and stability of task completion rate predictions.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, MAPE, One"
+  },
+  "outputs": {
+    "L1": "A request is received to determine a task completion rate for each task in a first set of tasks associated with a set of task attributes. The first set of tasks is scheduled for completion within a first time period. A MAPE score is calculated or obtained for each completion-rate predictive model, based on prior predictions performed during a second time period in the past. The duration of the second time period is a multiple of the first time period. One of the predictive models is selected based on the MAPE scores of the predictive models, with the selected model having the lowest MAPE score among the set of predictive models. In another embodiment, a predictive model is selected further based on the volatility scores of the predictive models. A model having a combination of the lowest MAPE score and volatility score is selected.",
+    "L2": "A request is obtained to determine the completion rate for each task in a first group of tasks associated with a collection of task attributes. The tasks in the first group are planned for completion during a first time interval. For each completion-rate prediction model, a MAPE score is computed or retrieved based on earlier predictions made during a second, earlier time interval. The length of the second time interval is a multiple of the length of the first time interval. One prediction model is chosen according to the MAPE scores of the models, with the chosen model having the lowest MAPE score among the models in the set. In another implementation, the prediction model is selected based additionally on volatility scores for the models. In that case, the model selected is the one having the best combination of the lowest MAPE score and the lowest volatility score.",
+    "L3": "A request is received to determine the task completion rate for each task in a first set of tasks associated with specific task attributes. The first set of tasks includes tasks that are scheduled to be completed within a first time period. The task attributes may include, for example, task type, task priority, assigned resource, geographic region, complexity level, due date, customer category, or any other attribute relevant to predicting whether or when the tasks will be completed.\n\nIn response to the request, a plurality of completion rate predictive models may be evaluated. For each completion rate predictive model, a Mean Absolute Percentage Error (MAPE) score is calculated or obtained. The MAPE score is based on prior predictions generated by the corresponding predictive model for a past second time period and the actual task completion rates observed during that second time period. The second time period has a duration that is a multiple of the first time period, thereby providing a historical evaluation window that is longer than the time period for which the current task completion rate is to be determined.\n\nThe MAPE score provides an indication of the prediction accuracy of each completion rate predictive model. A lower MAPE score indicates that the predictive model produced prior predictions that more closely matched actual completion rates during the second time period. Accordingly, one of the completion rate predictive models may be selected based on having the lowest MAPE score among the evaluated models.\n\nIn some implementations, the predictive model is selected based on both accuracy and stability. For example, a volatility score may also be determined for each completion rate predictive model. The volatility score may represent the variability, fluctuation, or instability of the model’s predictions over time. In such implementations, the selected predictive model is the model having the lowest combined score based on both the MAPE score and the volatility score. The selected predictive model may then be used to determine the task completion rate for each task in the first set of tasks scheduled for completion within the first time period.",
+    "L4": "A system is provided for predicting task completion rates for tasks that are scheduled to occur within a defined time period. Each task may be associated with one or more attributes, such as a task type, location, priority, assigned resource, expected duration, customer category, service level, or other characteristics that may influence whether the task is completed as scheduled. The system collects historical task data and uses that data to generate predictions regarding the rate at which scheduled tasks are expected to be completed during a future or current scheduling period.\n\nTo improve prediction accuracy, the system evaluates multiple predictive models rather than relying on a single model. Each predictive model may use a different forecasting technique, feature set, weighting approach, aggregation level, or statistical method. For example, one model may generate predictions based primarily on recent completion trends, another model may rely on longer-term historical averages, and another may account for task attributes or seasonal patterns. The system compares the performance of these models using prior predictions generated over a historical evaluation period that is longer than the time period for which the current task completion rate is being predicted.\n\nFor each model, the system calculates a mean absolute percentage error, or MAPE, score by comparing the model’s prior predicted task completion rates with actual observed task completion rates during the historical evaluation period. The MAPE score provides a measure of prediction error, with lower MAPE values indicating more accurate historical performance. In some implementations, the system also evaluates the volatility of each model’s prediction errors or output values. Volatility may reflect how much a model’s accuracy or predicted completion rate fluctuates over time. A model with low error but high volatility may produce unstable predictions, while a model with slightly higher error but lower volatility may provide more consistent and reliable results.\n\nBased on this evaluation, the system selects a predictive model for determining the task completion rate for the scheduled tasks in the target time period. In one approach, the selected model is the model having the lowest MAPE score among the evaluated models. In another approach, the system selects a model using both the MAPE score and a volatility measure, favoring a model that provides a desirable combination of low prediction error and stable performance. The selection may be made automatically according to predefined rules, thresholds, rankings, or optimization criteria.\n\nAfter selecting the model, the system applies the selected model to the tasks scheduled within the target time period and their associated attributes. The selected model generates a predicted task completion rate, which may represent the expected percentage or proportion of scheduled tasks that will be completed. This predicted completion rate may then be used for planning, resource allocation, capacity management, scheduling adjustments, performance monitoring, or operational decision-making.\n\nBy evaluating multiple predictive models against historical results and selecting the model with the lowest MAPE score, or the best balance between low MAPE and low volatility, the system improves both the accuracy and stability of task completion rate predictions. This approach allows the system to adapt to changing conditions, reduce reliance on poorly performing models, and provide more dependable forecasts for scheduled task execution.",
+    "L5": "**The MAPE One**\n\nThe MAPE One is a concept that brings together clarity, measurement, and continuous improvement. In many fields, MAPE—often understood as Mean Absolute Percentage Error—is used to evaluate how accurate a forecast or prediction is. It helps teams understand the difference between expected results and actual outcomes in a simple percentage-based format.\n\nThe value of MAPE lies in its ability to make performance easy to compare. Whether used in business forecasting, sales planning, inventory management, or data analysis, MAPE provides one clear way to measure accuracy. A lower MAPE usually means a better prediction, while a higher MAPE suggests that a model or process may need improvement.\n\nThe idea of “One” can represent focus: one goal, one measurement, and one path toward better decisions. By using MAPE as one key indicator, organizations can identify weaknesses, improve forecasting methods, and make smarter choices based on data.\n\nIn today’s data-driven world, The MAPE One stands as a reminder that accurate measurement is essential. When teams understand their errors, they are better prepared to reduce them—and move closer to reliable, confident planning."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a patent-style abstract describing a system that selects among multiple predictive models for forecasting task completion rates using MAPE scores from a prior time period.",
+      "output": "A computer-implemented system is provided for forecasting task completion rates by dynamically selecting among a plurality of predictive models. The system receives historical task performance data associated with one or more prior time periods and generates, for each of the plurality of predictive models, a forecast of task completion rates for a prior evaluation period. The system compares each forecast with observed task completion rates for the prior evaluation period and determines a mean absolute percentage error (MAPE) score for each predictive model. Based at least in part on the determined MAPE scores, the system selects a predictive model having a lowest or otherwise preferred error measure. The selected predictive model is then applied to current task data to generate a forecast of future task completion rates. In some embodiments, the system periodically recalculates MAPE scores using updated historical data and automatically changes the selected predictive model in response to changes in relative forecasting accuracy. The system thereby improves forecasting reliability by adapting model selection to recent observed performance.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Draft a technical summary for an invention where tasks scheduled in a first time period are evaluated by predictive models, and the best model is chosen based on the lowest MAPE and optionally volatility.",
+      "output": "A task scheduling evaluation system is provided for selecting a predictive model for use in forecasting or managing scheduled tasks. The system identifies a set of tasks scheduled during a first time period and obtains actual task-related values associated with those tasks, such as task duration, workload, resource consumption, completion time, delay, throughput, or another scheduling performance metric.\n\nA plurality of predictive models is applied to the tasks scheduled in the first time period. Each predictive model generates predicted values for the task-related metric. The predicted values are compared with the corresponding actual values to determine an error measure for each predictive model. In one implementation, the error measure includes a mean absolute percentage error, MAPE, calculated for each model over the tasks in the first time period.\n\nThe system selects a preferred predictive model from among the plurality of predictive models based on the calculated MAPE values. In particular, the model having the lowest MAPE may be selected as the best-performing model. The selected model may then be used to predict task-related values for tasks scheduled in a second time period, to adjust scheduling decisions, allocate resources, estimate completion times, or improve operational planning.\n\nIn some embodiments, the model selection process further considers volatility associated with each predictive model. The volatility may represent variability, instability, dispersion, or consistency of prediction errors across the evaluated tasks or across sub-periods within the first time period. Where two or more models have similar MAPE values, or where model stability is desired, the system may select the model based on a combination of lowest MAPE and lowest volatility. For example, a model may be selected if it has the lowest MAPE, provided its volatility satisfies a threshold, or if it provides an optimal tradeoff between prediction accuracy and prediction stability.\n\nThe invention thereby enables automatic selection of a predictive model for task scheduling applications using historical task performance from a first time period. By evaluating candidate models according to MAPE and, optionally, volatility, the system improves the reliability of task forecasts and supports more accurate scheduling, resource allocation, and operational control in subsequent time periods.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Convert the following idea into patent claim-style language: selecting a completion-rate prediction model for scheduled tasks by comparing historical MAPE scores over a longer past period.",
+      "output": "1. A method comprising:  \n   obtaining, for each of a plurality of completion-rate prediction models for scheduled tasks, historical prediction error data over a first historical time period;  \n   determining, for each of the plurality of completion-rate prediction models, a mean absolute percentage error (MAPE) score based on the historical prediction error data over the first historical time period, the first historical time period being longer than a second historical time period used for evaluating short-term prediction performance;  \n   comparing the MAPE scores of the plurality of completion-rate prediction models; and  \n   selecting, from the plurality of completion-rate prediction models, a completion-rate prediction model having a lowest MAPE score over the first historical time period for use in predicting completion rates of subsequently scheduled tasks.\n\n2. The method of claim 1, further comprising generating, using the selected completion-rate prediction model, a predicted completion rate for one or more scheduled tasks.\n\n3. The method of claim 1, wherein the scheduled tasks comprise computing jobs, workflow tasks, delivery tasks, service appointments, or operations assigned to one or more resources.\n\n4. The method of claim 1, wherein the first historical time period comprises a plurality of weeks, months, or scheduling cycles preceding a current scheduling period.\n\n5. The method of claim 1, wherein comparing the MAPE scores comprises ranking the plurality of completion-rate prediction models according to their respective MAPE scores.\n\n6. The method of claim 1, further comprising updating the selected completion-rate prediction model periodically based on newly obtained historical prediction error data.\n\n7. The method of claim 1, wherein the plurality of completion-rate prediction models comprise at least two of a statistical model, a machine-learning model, a time-series model, or a rule-based model.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Describe an embodiment of a machine learning model selection process for task completion rate prediction, where prior prediction accuracy and volatility are used to choose the optimal model.",
+      "output": "In one embodiment, a machine learning model selection process is used to select an optimal prediction model for estimating a task completion rate, such as the likelihood that a user, agent, workflow, or automated system will successfully complete a given task.\n\nA plurality of candidate machine learning models may first be trained or otherwise made available. Each candidate model generates task completion rate predictions based on input features associated with a task, a user, historical performance, task context, environmental conditions, or other relevant parameters.\n\nFor each candidate model, the system evaluates historical prediction performance over a prior evaluation period. The evaluation may include determining a prior prediction accuracy value, such as an error rate, mean absolute error, root mean square error, calibration score, classification accuracy, or another measure reflecting how closely the model’s predicted task completion rates matched observed task completion outcomes.\n\nThe system also determines a volatility value for each candidate model. The volatility value may represent the degree to which the model’s prediction accuracy varies over time, across task categories, across user groups, or across different operating conditions. For example, a model whose accuracy fluctuates significantly from one time window to another may be assigned a higher volatility value, while a model with stable prediction accuracy may be assigned a lower volatility value.\n\nThe prior prediction accuracy and volatility are then combined to compute a model selection score for each candidate model. In one implementation, the score rewards higher historical accuracy and penalizes greater volatility. For example, the system may calculate:\n\n\\[\nS_i = A_i - \\lambda V_i\n\\]\n\nwhere \\(S_i\\) is the selection score for model \\(i\\), \\(A_i\\) is the prior prediction accuracy of model \\(i\\), \\(V_i\\) is the volatility of the prior prediction accuracy of model \\(i\\), and \\(\\lambda\\) is a weighting parameter controlling the penalty applied to volatility.\n\nIn another implementation, the system may use a risk-adjusted performance metric, such as:\n\n\\[\nS_i = \\frac{A_i}{1 + V_i}\n\\]\n\nor may select the model having the highest lower-confidence-bound performance estimate, thereby favoring models that are both accurate and stable.\n\nThe candidate model with the highest model selection score is selected as the optimal model for predicting the task completion rate for subsequent tasks. The selected model may then be deployed to generate task completion rate predictions in real time or batch mode. In some embodiments, the model selection process is repeated periodically or when model performance degrades, allowing the system to adapt to changes in data distributions, user behavior, or task characteristics.\n\nFor example, if a first model has slightly higher average historical accuracy but high volatility, and a second model has marginally lower accuracy but substantially lower volatility, the system may select the second model because it is expected to provide more reliable future predictions. Thus, the model selection process accounts not only for how well a model performed in the past, but also for how consistently it performed, improving robustness in task completion rate prediction.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate a patent specification paragraph about receiving a request to determine completion rates for tasks with attributes, calculating MAPE for multiple models, and selecting the model with the best accuracy.",
+      "output": "In some embodiments, a system receives, from a client device or an application service, a request to determine one or more completion rates for a plurality of tasks, each task being associated with one or more task attributes, such as a task type, priority, assignee characteristic, location, scheduled time, historical duration, resource requirement, or contextual parameter. In response to the request, the system obtains historical task data corresponding to previously performed tasks and generates, for each of a plurality of prediction models, predicted completion rates based at least in part on the task attributes. The system further determines, for each prediction model, an accuracy metric by comparing the predicted completion rates with observed completion rates in the historical task data, wherein the accuracy metric comprises a mean absolute percentage error (MAPE). The system compares the respective MAPE values associated with the plurality of prediction models and selects a prediction model having a best accuracy, such as a lowest MAPE value, for determining the requested completion rates. The selected prediction model is then applied to the plurality of tasks to generate completion-rate outputs, which may be transmitted to the requesting device, stored in a data repository, or used to update scheduling, allocation, or task-management operations.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7339857651245552,
+      "excess_ratio": 0.6006828485756293,
+      "baseline_mean": 0.13330291654892584,
+      "baseline_n_valid": 5,
+      "output_chars": 843,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7380952380952381,
+          "baseline_mean": 0.10113898619823643,
+          "excess_ratio": 0.6369562518970017
+        },
+        "bz2": {
+          "actual_ratio": 0.6588541666666666,
+          "baseline_mean": 0.13401876954030986,
+          "excess_ratio": 0.5248353971263567
+        },
+        "lzma": {
+          "actual_ratio": 0.801980198019802,
+          "baseline_mean": 0.16109716930577128,
+          "excess_ratio": 0.6408830287140308
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4477254588986433,
+      "excess_ratio": 0.31442254234971745,
+      "baseline_mean": 0.13330291654892584,
+      "baseline_n_valid": 5,
+      "output_chars": 880,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3877005347593583,
+          "baseline_mean": 0.10113898619823643,
+          "excess_ratio": 0.28656154856112187
+        },
+        "bz2": {
+          "actual_ratio": 0.4496487119437939,
+          "baseline_mean": 0.13401876954030986,
+          "excess_ratio": 0.3156299424034841
+        },
+        "lzma": {
+          "actual_ratio": 0.49557522123893805,
+          "baseline_mean": 0.16109716930577128,
+          "excess_ratio": 0.33447805193316676
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.2896715472892758,
+      "excess_ratio": 0.15636863074034996,
+      "baseline_mean": 0.13330291654892584,
+      "baseline_n_valid": 5,
+      "output_chars": 2193,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.26125,
+          "baseline_mean": 0.10113898619823643,
+          "excess_ratio": 0.16011101380176357
+        },
+        "bz2": {
+          "actual_ratio": 0.27876631079478054,
+          "baseline_mean": 0.13401876954030986,
+          "excess_ratio": 0.14474754125447067
+        },
+        "lzma": {
+          "actual_ratio": 0.3257918552036199,
+          "baseline_mean": 0.16109716930577128,
+          "excess_ratio": 0.16469468589784864
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.13576712001908858,
+      "excess_ratio": 0.0024642034701627402,
+      "baseline_mean": 0.13330291654892584,
+      "baseline_n_valid": 5,
+      "output_chars": 3586,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.10894660894660894,
+          "baseline_mean": 0.10113898619823643,
+          "excess_ratio": 0.007807622748372517
+        },
+        "bz2": {
+          "actual_ratio": 0.13313388182498131,
+          "baseline_mean": 0.13401876954030986,
+          "excess_ratio": -0.0008848877153285473
+        },
+        "lzma": {
+          "actual_ratio": 0.16348773841961853,
+          "baseline_mean": 0.16109716930577128,
+          "excess_ratio": 0.0023905691138472462
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.06298828125,
+      "excess_ratio": -0.07031463529892584,
+      "baseline_mean": 0.13330291654892584,
+      "baseline_n_valid": 5,
+      "output_chars": 1192,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.03271028037383177,
+          "baseline_mean": 0.10113898619823643,
+          "excess_ratio": -0.06842870582440466
+        },
+        "bz2": {
+          "actual_ratio": 0.06567164179104477,
+          "baseline_mean": 0.13401876954030986,
+          "excess_ratio": -0.06834712774926509
+        },
+        "lzma": {
+          "actual_ratio": 0.08695652173913043,
+          "baseline_mean": 0.16109716930577128,
+          "excess_ratio": -0.07414064756664085
+        }
+      }
+    }
+  }
+}

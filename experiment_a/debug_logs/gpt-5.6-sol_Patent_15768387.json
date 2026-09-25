@@ -1,0 +1,175 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15768387",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIn one aspect, there is provided a method comprising: receiving consumption data comprising readings from one or more utility meters associated with a property comprising one or more devices, the one or more devices comprising one or more devices of interest; determining, in the received consumption data, one or more positive consumption variations indicative of switching on of one or more of the devices and/or one or more negative consumption variations indicative of switching off of one or more of the devices; identifying one or more events associated with the one or more devices, based on the determined variations, by matching one or more positive variations with one or more negative variations; grouping the identified one or more events into one or more blocks, each block corresponding to an occurrence of usage of a device of the property; classifying the one or more blocks into one or more predetermined clusters, the one or more predetermined clusters comprising a respective predetermined cluster associated with each device of interest of the property; and determining an occurrence and/or an absence of usage of the one or more devices of interest of the property, based on the classification into the one or more predetermined clusters.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIn one aspect, there is provided a method comprising: receiving consumption data comprising readings from one or more utility meters associated with a property comprising one or more devices, the one or more devices comprising one or more devices of interest; determining, in the received consumption data, one or more positive consumption variations indicative of switching on of one or more of the devices and/or one or more negative consumption variations indicative of switching off of one or more of the devices; identifying one or more events associated with the one or more devices, based on the determined variations, by matching one or more positive variations with one or more negative variations; grouping the identified one or more events into one or more blocks, each block corresponding to an occurrence of usage of a device of the property; classifying the one or more blocks into one or more predetermined clusters, the one or more predetermined clusters comprising a respective predetermined cluster associated with each device of interest of the property; and determining an occurrence and/or an absence of usage of the one or more devices of interest of the property, based on the classification into the one or more predetermined clusters.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- Consumption data is received from one or more utility meters associated with devices at a property.\n- Positive and negative consumption variations are detected to indicate when devices are switched on or off.\n- Device events are identified by matching positive consumption variations with corresponding negative variations.\n- Identified events are grouped into blocks, with each block representing an occurrence of device usage.\n- The blocks are classified into predefined device-specific clusters to determine the occurrence or absence of usage of devices of interest.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA method analyzes utility-meter data by detecting on/off consumption changes, matching them into device events, grouping events into usage blocks, and classifying the blocks into predefined device-specific clusters. This classification determines whether devices of interest were used, enabling device-level usage monitoring from aggregate property consumption data.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: In one aspect,"
+  },
+  "outputs": {
+    "L1": "In one aspect, a method is provided, the method comprising: receiving consumption data comprising readings from one or more utility meters associated with a property comprising one or more devices, including one or more devices of interest; determining, from the received consumption data, one or more positive consumption variations indicative of one or more devices being switched on and/or one or more negative consumption variations indicative of one or more devices being switched off; identifying one or more events associated with the one or more devices, based on the determined variations, by matching one or more positive variations with one or more negative variations; grouping the identified one or more events into one or more blocks, each block corresponding to an occurrence of usage of a device at the property; classifying the one or more blocks into one or more predetermined clusters, the predetermined clusters comprising a respective cluster associated with each device of interest at the property; and determining an occurrence and/or absence of usage of the one or more devices of interest at the property based on the classification into the one or more predetermined clusters.",
+    "L2": "According to one aspect, a method includes obtaining consumption information containing measurements from at least one utility meter linked to a property having one or more devices, including one or more devices of interest. The consumption information is analyzed to detect positive changes representing activation of one or more devices and/or negative changes representing deactivation of one or more devices. Device-related events are then recognized by pairing one or more detected positive changes with one or more detected negative changes. The recognized events are organized into one or more blocks, with each block representing an instance in which a device at the property was used. These blocks are assigned to one or more predefined clusters, including a corresponding predefined cluster for each device of interest at the property. Based on those cluster assignments, the method establishes whether usage of any of the devices of interest occurred and/or did not occur.",
+    "L3": "Consumption data is collected from one or more utility meters associated with devices located at a property. The data is analyzed to detect positive and negative variations in consumption, which may indicate that a device has been switched on or off, respectively.\n\nDevice events are identified by matching each positive consumption variation with a corresponding negative variation. These matched events are then grouped into blocks, with each block representing a distinct occurrence or period of device usage.\n\nFinally, the blocks are classified into predefined, device-specific clusters based on their consumption characteristics. This classification is used to determine whether devices of interest were used during the relevant period and, if so, to identify their occurrences of usage.",
+    "L4": "The method provides a way to identify the use of individual electrical devices from aggregate utility-meter data, without requiring a separate sensor for each device. It begins by analyzing a property’s time-series consumption measurements to detect significant changes in power demand. Positive changes are treated as potential device switch-on events, while corresponding negative changes are treated as potential switch-off events. Noise, background consumption, and minor fluctuations can be filtered out so that only changes likely to represent actual device activity are retained.\n\nThe detected on and off changes are then matched according to characteristics such as their magnitude, timing, duration, and expected device behavior. A compatible pair of changes forms a device event representing a period during which a device was operating. Because a single use of a device may contain multiple events or operating stages, related events are grouped into usage blocks. Each usage block therefore represents a complete or logically connected period of activity rather than an isolated change in consumption.\n\nFeatures are extracted from each usage block. These may include power level, total energy consumed, operating duration, event sequence, variability, and the intervals between changes. The resulting feature set is compared with predefined, device-specific clusters that describe typical usage patterns for known devices. A block is assigned to the cluster that best matches its observed characteristics, subject to any applicable similarity or confidence threshold.\n\nThe classification result indicates whether a device of interest was likely used during the relevant time period. By repeating this process across the meter-data stream, the method can generate device-level information such as usage frequency, operating times, duration, and estimated energy consumption. In this way, aggregate property consumption data can be converted into useful appliance- or device-level monitoring information without direct instrumentation of every device.",
+    "L5": "In one aspect, every challenge offers an opportunity to learn, adapt, and improve. By examining a situation from different perspectives, people can identify practical solutions, anticipate potential risks, and make better-informed decisions. This balanced approach encourages creativity, resilience, and meaningful progress."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style independent method claim for detecting whether specific devices in a property were used based on utility meter consumption data, including variation detection, on/off event matching, event grouping, clustering, and usage determination.",
+      "output": "1. **A computer-implemented method for detecting use of devices at a property, the method comprising:**\n\nreceiving, by one or more processors, utility consumption data generated by a utility meter associated with the property, the utility consumption data comprising a time series of aggregate utility-consumption measurements for a plurality of devices at the property;\n\ndetecting variations in the aggregate utility-consumption measurements based on changes between measurements within respective time intervals;\n\nidentifying, from the detected variations, candidate on-events corresponding to increases in utility consumption and candidate off-events corresponding to decreases in utility consumption;\n\nmatching respective candidate on-events with respective candidate off-events based at least in part on a correspondence between magnitudes of the increases and decreases and a temporal relationship between the candidate on-events and the candidate off-events, thereby generating matched event pairs;\n\ngrouping the matched event pairs into event groups based on at least one of temporal proximity, consumption magnitude, event duration, or a recurring usage pattern;\n\nclustering the event groups, based on respective utility-consumption signatures of the event groups, into a plurality of clusters associated with respective devices or device types at the property; and\n\ndetermining that a specific device at the property was used during a time period based on at least one event group occurring during the time period being assigned to a cluster having a utility-consumption signature corresponding to the specific device.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a single broad patent claim for a non-intrusive load monitoring technique that identifies positive and negative consumption changes, pairs them into device events, groups the events into usage blocks, and classifies those blocks by appliance.",
+      "output": "1. **A computer-implemented method for non-intrusive load monitoring, comprising:** receiving time-series measurements representative of aggregate electrical consumption by a plurality of electrical devices; detecting, from changes in the aggregate electrical consumption, positive consumption changes and negative consumption changes; pairing respective positive and negative consumption changes, based on at least a correspondence between magnitudes of the respective changes, to define device events representative of activation and deactivation of electrical loads; grouping temporally related device events into usage blocks; determining one or more characteristics of each usage block; and classifying each usage block as corresponding to an appliance based on the one or more characteristics, without separately measuring electrical consumption of the appliance.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Convert the following invention concept into formal patent language beginning with “In one aspect, there is provided a method comprising”: analyze smart-meter readings to detect appliance switch-on and switch-off events, match them, create usage blocks, assign the blocks to predetermined device clusters, and determine device usage or non-usage.",
+      "output": "In one aspect, there is provided a method comprising: receiving a plurality of smart-meter readings representative of electrical consumption at a monitored premises; analyzing the plurality of smart-meter readings to detect appliance switch-on events and appliance switch-off events; matching respective appliance switch-on events with corresponding appliance switch-off events; generating, based on the matched events, usage blocks representing intervals of appliance operation; assigning each usage block to one of a plurality of predetermined device clusters; and determining, based at least in part on the assigned usage blocks, usage or non-usage of one or more devices associated with the monitored premises.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Describe, in patent-application style, a computer-implemented method for determining the occurrence or absence of usage of devices of interest at a property using readings from one or more utility meters and cluster-based classification.",
+      "output": "### Computer-Implemented Method for Detecting Device Usage from Utility-Meter Readings\n\nIn one aspect, a computer-implemented method is provided for determining an occurrence or an absence of usage of one or more devices of interest at a property. The method may be performed by one or more processors in communication with one or more utility meters associated with the property.\n\nThe method comprises receiving, from the one or more utility meters, a time-ordered series of utility-consumption readings. The utility-consumption readings may represent consumption of electricity, natural gas, water, thermal energy, or another metered utility. Each reading may include a consumption value, a demand value, a cumulative meter value, a flow rate, or a combination thereof, together with a corresponding timestamp.\n\nThe received readings are normalized to produce an interval-consumption series. Normalization may include validating timestamps, removing duplicate readings, estimating missing readings, converting cumulative meter values into interval-consumption values, resampling the readings to a selected temporal resolution, correcting for meter resets, and adjusting for differences in meter scale or reporting frequency.\n\nA plurality of analysis intervals are defined within the interval-consumption series. For each analysis interval, the one or more processors generate a feature vector characterizing utility consumption during or proximate to that interval. The feature vector may include one or more of:\n\n1. total utility consumption;\n2. average, minimum, or maximum consumption;\n3. peak demand or flow rate;\n4. a change in consumption relative to a preceding interval;\n5. a duration of elevated consumption;\n6. a rate of increase or decrease;\n7. a number or magnitude of detected state transitions;\n8. time-of-day, day-of-week, or season information;\n9. spectral, waveform, or load-shape characteristics;\n10. consumption measured by multiple respective utility meters; and\n11. a difference between measured consumption and an estimated baseline.\n\nThe generated feature vectors are processed using a clustering procedure to form a plurality of clusters. The clustering procedure may comprise, for example, k-means clustering, hierarchical clustering, density-based clustering, Gaussian-mixture modeling, spectral clustering, or another supervised, semi-supervised, or unsupervised clustering technique. Each cluster represents a recurring utility-consumption pattern observed at the property or across a plurality of properties.\n\nAt least one of the clusters is associated with usage of a device of interest. The association may be established using labeled training intervals, a known device signature, commissioning data, user-provided device information, controlled activation or deactivation of the device, correlation with an auxiliary sensor, or statistical comparison with consumption patterns from properties known to include the device. A further cluster may be associated with non-usage of the device, background consumption, or usage of another device.\n\nFor a target analysis interval, the one or more processors determine a membership measure between the feature vector for the target analysis interval and one or more of the clusters. The membership measure may comprise a distance from a cluster centroid, a probability under a cluster distribution, a density estimate, a cluster-assignment score, or a combination thereof.\n\nAn occurrence of usage of the device of interest is determined when the feature vector for the target analysis interval is assigned to, or satisfies a threshold relationship with, a cluster associated with device usage. An absence of usage is determined when the feature vector is assigned to a cluster associated with non-usage or when the membership measure for each device-usage cluster fails to satisfy a usage threshold. In some implementations, an indeterminate classification is generated when the membership measures do not satisfy either a usage threshold or a non-usage threshold.\n\nThe determination may further be based on temporal constraints corresponding to operation of the device of interest. Such constraints may include a minimum operating duration, a maximum operating duration, a required sequence of start and stop transitions, a minimum time between activations, an expected duty cycle, or consistency across multiple consecutive analysis intervals. Cluster assignments for adjacent intervals may accordingly be combined into a device-usage event having a start time, an end time, a duration, and an estimated amount of utility consumed by the device.\n\nA confidence value may be generated for the determined occurrence or absence of usage. The confidence value may be based on distance to a cluster centroid, separation from competing clusters, consistency with the temporal constraints, data completeness, meter resolution, or agreement among readings from multiple utility meters.\n\nThe one or more processors store or output a device-status record indicating at least:\n\n- an identifier of the property;\n- an identifier or type of the device of interest;\n- a time period to which the determination applies;\n- an indication of occurrence, absence, or indeterminate usage; and\n- optionally, the confidence value or estimated device-specific consumption.\n\nThe device-status record may be used to generate a notification, update a property-management interface, identify an anomalous operating condition, verify performance of installed equipment, estimate resource savings, determine compliance with an operating requirement, or control another device at the property.\n\nIn certain embodiments, separate clusters are generated for respective properties, thereby accounting for property-specific background loads. In other embodiments, clusters are generated from readings collected across multiple properties and are subsequently adapted to a particular property. The clusters may be updated periodically or incrementally in response to newly received readings, confirmed classifications, seasonal changes, changes in property occupancy, or changes in the devices installed at the property.\n\n### Exemplary Claim-Style Formulation\n\nA computer-implemented method comprising:\n\n1. receiving, by one or more processors, time-stamped utility-meter readings associated with a property;\n2. deriving, from the utility-meter readings, interval-consumption data for a plurality of time intervals;\n3. generating, for respective time intervals, feature vectors representing utility-consumption characteristics;\n4. applying a clustering procedure to the feature vectors to identify a plurality of clusters representing recurring consumption patterns;\n5. associating at least a first cluster of the plurality of clusters with usage of a device of interest;\n6. comparing a feature vector for a target time interval with the plurality of clusters;\n7. determining, based at least in part on a cluster membership measure resulting from the comparison, whether usage of the device of interest occurred or was absent during the target time interval; and\n8. causing a device-status record representing the determined occurrence or absence of usage to be stored, transmitted, or displayed.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate an independent method claim covering appliance disaggregation from aggregate consumption data, where positive and negative variations are matched as events, grouped into blocks representing device use, and classified against predefined clusters for devices of interest.",
+      "output": "1. **A computer-implemented method for disaggregating appliance consumption from aggregate consumption data, the method comprising:**\n\nreceiving, by one or more processors, a time series of aggregate consumption measurements representing combined consumption by a plurality of devices;\n\ndetecting variations in the aggregate consumption measurements;\n\ndesignating positive variations as activation events and negative variations as deactivation events;\n\nmatching respective activation events with respective deactivation events based on at least one matching criterion;\n\ngrouping one or more matched pairs of activation and deactivation events into respective blocks, each block representing a candidate period of device use;\n\ndetermining, for each block, a feature representation based on the events included in the block and a portion of the aggregate consumption measurements associated with the block;\n\ncomparing the feature representation of each block with predefined clusters corresponding to respective devices of interest;\n\nclassifying a block as use of a particular device of interest based on the feature representation satisfying a similarity criterion for a predefined cluster corresponding to the particular device; and\n\ngenerating disaggregated consumption data for the particular device from the block classified as use of the particular device.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7845559845559845,
+      "excess_ratio": 0.576600279130129,
+      "baseline_mean": 0.20795570542585554,
+      "baseline_n_valid": 5,
+      "output_chars": 1202,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.8056265984654731,
+          "baseline_mean": 0.16632194834573108,
+          "excess_ratio": 0.639304650119742
+        },
+        "bz2": {
+          "actual_ratio": 0.6875,
+          "baseline_mean": 0.1956538551763675,
+          "excess_ratio": 0.49184614482363254
+        },
+        "lzma": {
+          "actual_ratio": 0.8559322033898306,
+          "baseline_mean": 0.2542140919126823,
+          "excess_ratio": 0.6017181114771483
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.343328335832084,
+      "excess_ratio": 0.13537263040622846,
+      "baseline_mean": 0.20795570542585554,
+      "baseline_n_valid": 5,
+      "output_chars": 983,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2781954887218045,
+          "baseline_mean": 0.16632194834573108,
+          "excess_ratio": 0.11187354037607342
+        },
+        "bz2": {
+          "actual_ratio": 0.3436807095343681,
+          "baseline_mean": 0.1956538551763675,
+          "excess_ratio": 0.1480268543580006
+        },
+        "lzma": {
+          "actual_ratio": 0.39669421487603307,
+          "baseline_mean": 0.2542140919126823,
+          "excess_ratio": 0.14248012296335077
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.4950419527078566,
+      "excess_ratio": 0.28708624728200105,
+      "baseline_mean": 0.20795570542585554,
+      "baseline_n_valid": 5,
+      "output_chars": 792,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4625,
+          "baseline_mean": 0.16632194834573108,
+          "excess_ratio": 0.2961780516542689
+        },
+        "bz2": {
+          "actual_ratio": 0.45390070921985815,
+          "baseline_mean": 0.1956538551763675,
+          "excess_ratio": 0.2582468540434907
+        },
+        "lzma": {
+          "actual_ratio": 0.5573770491803278,
+          "baseline_mean": 0.2542140919126823,
+          "excess_ratio": 0.3031629572676455
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.15513283043620865,
+      "excess_ratio": -0.052822874989646884,
+      "baseline_mean": 0.20795570542585554,
+      "baseline_n_valid": 5,
+      "output_chars": 2061,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.12512716174974567,
+          "baseline_mean": 0.16632194834573108,
+          "excess_ratio": -0.04119478659598541
+        },
+        "bz2": {
+          "actual_ratio": 0.15212981744421908,
+          "baseline_mean": 0.1956538551763675,
+          "excess_ratio": -0.04352403773214841
+        },
+        "lzma": {
+          "actual_ratio": 0.18518518518518517,
+          "baseline_mean": 0.2542140919126823,
+          "excess_ratio": -0.06902890672749712
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.13370473537604458,
+      "excess_ratio": -0.07425097004981096,
+      "baseline_mean": 0.20795570542585554,
+      "baseline_n_valid": 5,
+      "output_chars": 324,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.08292682926829269,
+          "baseline_mean": 0.16632194834573108,
+          "excess_ratio": -0.08339511907743839
+        },
+        "bz2": {
+          "actual_ratio": 0.09871244635193133,
+          "baseline_mean": 0.1956538551763675,
+          "excess_ratio": -0.09694140882443616
+        },
+        "lzma": {
+          "actual_ratio": 0.2,
+          "baseline_mean": 0.2542140919126823,
+          "excess_ratio": -0.05421409191268228
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T04:40:01.231373+00:00"
+    }
+  ]
+}

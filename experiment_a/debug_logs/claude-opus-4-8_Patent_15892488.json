@@ -1,0 +1,169 @@
+{
+  "model": "claude-opus-4-8",
+  "domain": "Patent",
+  "id": "15892488",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThe present application discloses, among others, a message protection method performed by user equipment (UE). In one method an authentication and key agreement request message sent by an SGSN is received using a GMM/SM protocol layer of the UE. A first algorithm identifier on the GMM/SM protocol layer of the UE is obtained according to the authentication and key agreement request message, and a first key is generated. A first message authentication code on the GMM/SM protocol layer is verified according to the first key and a first algorithm. If the UE determines that the verification of the first message authentication code succeeds, an authentication and key agreement response message is generated on the GMM/SM protocol layer of the UE according to the first key and the first algorithm. The authentication and key agreement response message is sent to the SGSN by using the GMM/SM protocol layer of the UE.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThe present application discloses, among others, a message protection method performed by user equipment (UE). In one method an authentication and key agreement request message sent by an SGSN is received using a GMM/SM protocol layer of the UE. A first algorithm identifier on the GMM/SM protocol layer of the UE is obtained according to the authentication and key agreement request message, and a first key is generated. A first message authentication code on the GMM/SM protocol layer is verified according to the first key and a first algorithm. If the UE determines that the verification of the first message authentication code succeeds, an authentication and key agreement response message is generated on the GMM/SM protocol layer of the UE according to the first key and the first algorithm. The authentication and key agreement response message is sent to the SGSN by using the GMM/SM protocol layer of the UE.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The user equipment receives an authentication and key agreement request message from the SGSN using its GMM/SM protocol layer.\n- The UE obtains a first algorithm identifier and generates a first key based on the received authentication and key agreement request message.\n- The UE verifies a first message authentication code on the GMM/SM protocol layer using the first key and a first algorithm.\n- Upon successful verification of the first message authentication code, the UE generates an authentication and key agreement response message using the first key and the first algorithm.\n- The UE sends the generated authentication and key agreement response message back to the SGSN through its GMM/SM protocol layer.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis application discloses a message protection method performed by user equipment (UE) that receives an authentication and key agreement request from an SGSN via the GMM/SM protocol layer, obtains a first algorithm identifier, generates a first key, and verifies a first message authentication code accordingly. Upon successful verification, the UE generates and sends an authentication and key agreement response message to the SGSN using the GMM/SM protocol layer, enhancing message security in the authentication process.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, SGSN, GMM"
+  },
+  "outputs": {
+    "L1": "The present application discloses, among other aspects, a message protection method performed by user equipment (UE). In this method, an authentication and key agreement request message transmitted by an SGSN is received via the GMM/SM protocol layer of the UE. Based on the authentication and key agreement request message, a first algorithm identifier is obtained at the GMM/SM protocol layer of the UE, and a first key is generated accordingly. A first message authentication code is subsequently verified at the GMM/SM protocol layer using the first key and a first algorithm. Upon determining that the verification of the first message authentication code is successful, the UE generates, at its GMM/SM protocol layer, an authentication and key agreement response message based on the first key and the first algorithm. This authentication and key agreement response message is then transmitted to the SGSN via the GMM/SM protocol layer of the UE.",
+    "L2": "This application describes, among other things, a technique for securing messages that is carried out by user equipment (UE). According to one such technique, the UE's GMM/SM protocol layer receives a request message for authentication and key agreement transmitted from an SGSN. Based on this request message, the GMM/SM protocol layer of the UE acquires a first algorithm identifier and produces a first key. Using both the first key and a first algorithm, the system then validates a first message authentication code at the GMM/SM protocol layer. Should the UE conclude that this first message authentication code passes validation, the GMM/SM protocol layer of the UE creates a response message for authentication and key agreement, again relying on the first key and the first algorithm. Finally, the UE employs its GMM/SM protocol layer to transmit this authentication and key agreement response message back to the SGSN.",
+    "L3": "# Authentication and Key Agreement Procedure\n\nThe authentication and key agreement procedure between the user equipment (UE) and the Serving GPRS Support Node (SGSN) follows a structured sequence of operations carried out at the GMM/SM (GPRS Mobility Management/Session Management) protocol layer.\n\n## Receiving the Authentication Request\n\nThe procedure begins when the user equipment receives an authentication and key agreement request message from the SGSN. This message is processed at the UE's GMM/SM protocol layer, which serves as the dedicated interface for handling mobility management and session management signaling between the UE and the network.\n\n## Deriving the Algorithm Identifier and Key\n\nUpon receipt of the request message, the UE extracts a first algorithm identifier from the received authentication and key agreement request message. Based on the information contained in this message, the UE then generates a first key. This key serves as a critical security parameter for subsequent verification and response operations.\n\n## Verifying the Message Authentication Code\n\nWith the first key established, the UE proceeds to verify a first message authentication code at the GMM/SM protocol layer. This verification is performed using both the first key and the first algorithm associated with the previously obtained algorithm identifier. The verification step ensures the integrity and authenticity of the received message, confirming that it originated from a legitimate network entity and has not been tampered with during transmission.\n\n## Generating the Authentication Response\n\nIf the verification of the first message authentication code is successful, the UE generates an authentication and key agreement response message. This response message is constructed using the same first key and first algorithm, ensuring cryptographic consistency between the request and response phases of the procedure.\n\n## Transmitting the Response\n\nFinally, the UE sends the generated authentication and key agreement response message back to the SGSN. As with the initial request, this transmission takes place through the UE's GMM/SM protocol layer, thereby completing the authentication and key agreement exchange between the user equipment and the network.",
+    "L4": "# Message Protection Method for User Equipment\n\n## Technical Field\n\nThis application relates to the field of wireless communication technologies, and more particularly, to a message protection method performed by user equipment (UE) during an authentication and key agreement procedure with a Serving GPRS Support Node (SGSN).\n\n## Background\n\nIn wireless communication systems, the authentication and key agreement (AKA) procedure represents a critical security mechanism through which the network and the user equipment mutually authenticate one another and establish shared security keys. Messages exchanged during this procedure, particularly those transmitted through the GPRS Mobility Management/Session Management (GMM/SM) protocol layer, are susceptible to various security threats, including tampering, interception, and unauthorized modification. Ensuring the integrity and authenticity of these messages is therefore essential to maintaining the overall security of the communication network.\n\n## Summary of the Invention\n\nTo address the aforementioned security concerns, this application discloses a message protection method performed by user equipment. The method enhances message security throughout the authentication process by incorporating algorithm-based key generation and message authentication code verification.\n\n## Detailed Description\n\nThe message protection method disclosed herein comprises the following steps performed by the user equipment:\n\n**Receiving the Authentication and Key Agreement Request**\n\nThe user equipment receives an authentication and key agreement request from a Serving GPRS Support Node (SGSN). This request is transmitted to the UE via the GMM/SM protocol layer, which handles mobility management and session management functions within the communication network.\n\n**Obtaining the First Algorithm Identifier**\n\nUpon receiving the authentication and key agreement request, the user equipment obtains a first algorithm identifier. This identifier specifies the particular security algorithm to be employed in the subsequent key generation and message verification operations, ensuring that both the UE and the network utilize a consistent cryptographic approach.\n\n**Generating the First Key**\n\nBased on the obtained first algorithm identifier, the user equipment generates a first key. This key serves as a foundational security parameter for protecting the messages exchanged during the authentication procedure and for verifying the authenticity of received communications.\n\n**Verifying the First Message Authentication Code**\n\nUsing the generated first key, the user equipment verifies a first message authentication code associated with the received request. The message authentication code functions as a cryptographic checksum that enables the UE to confirm both the integrity of the received message and the authenticity of its origin, thereby detecting any potential tampering or unauthorized modification.\n\n**Generating and Sending the Response Message**\n\nUpon successful verification of the first message authentication code, the user equipment generates an authentication and key agreement response message. The UE then transmits this response message to the SGSN using the GMM/SM protocol layer. This response confirms the successful completion of the verification process and enables the network to proceed with the establishment of a secure communication session.\n\n## Advantages\n\nBy incorporating algorithm-based key generation and message authentication code verification into the authentication and key agreement procedure, the disclosed method significantly enhances message security. The verification of the message authentication code ensures that only authenticated and unaltered messages are processed, thereby protecting the integrity of the authentication process. As a result, the method provides robust protection against security threats such as message tampering and impersonation attacks, strengthening the overall security posture of the wireless communication system.",
+    "L5": "# The SGSN and GMM in Mobile Networks\n\n## Introduction\n\nIn mobile telecommunications, particularly within GPRS (General Packet Radio Service) and UMTS networks, the **SGSN** and **GMM** play essential roles in enabling packet-switched data services and managing user mobility. Understanding how these components work together is fundamental to grasping the architecture of 2G and 3G data networks.\n\n## What Is the SGSN?\n\nThe **SGSN (Serving GPRS Support Node)** is a core network element responsible for delivering data packets to and from mobile devices within its geographical service area. It acts as the central hub for packet-switched traffic and performs several critical functions, including:\n\n- **Packet routing and transfer** between the mobile station and external networks\n- **Mobility management**, tracking the location of subscribers\n- **Authentication and security** procedures to verify legitimate users\n- **Session management** for establishing and maintaining data connections\n- **Charging and billing** data collection for network operators\n\nThe SGSN essentially serves as the packet-switched equivalent of the MSC (Mobile Switching Center) used in circuit-switched voice networks.\n\n## Understanding GMM\n\n**GMM (GPRS Mobility Management)** is a protocol layer responsible for handling all aspects of user mobility and connection state within the packet-switched domain. GMM operates between the mobile station and the SGSN, managing procedures such as:\n\n- **Attach and detach** operations, which connect or disconnect a device from the GPRS network\n- **Location and routing area updates**, ensuring the network always knows where the subscriber is located\n- **Authentication and identity management** during connection setup\n- **Security context establishment**, including ciphering of communications\n\n## How the SGSN and GMM Work Together\n\nThe relationship between the SGSN and GMM is tightly integrated. The GMM protocol is implemented within the SGSN to control the mobility-related states of each mobile subscriber. When a device powers on and attempts to access data services, the GMM attach procedure is initiated, allowing the SGSN to register the user, authenticate their identity, and establish a management context.\n\nAs the user moves through the network, GMM procedures keep the SGSN updated on the subscriber's routing area, ensuring seamless service continuity and efficient packet delivery.\n\n## Conclusion\n\nThe SGSN, together with the GMM protocol, forms the backbone of mobility and session management in GPRS and UMTS packet-switched networks. While newer technologies like LTE and 5G have introduced evolved architectures, the foundational principles established by the SGSN and GMM remain influential in understanding modern mobile network design."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a patent abstract for a message protection method performed by user equipment involving authentication and key agreement with an SGSN over the GMM/SM protocol layer.",
+      "output": "# Patent Abstract\n\n## Message Protection Method Performed by User Equipment\n\nA message protection method performed by user equipment (UE) is disclosed, wherein the method enhances the security of signaling and data communications exchanged with a Serving GPRS Support Node (SGSN). The method comprises performing an authentication and key agreement (AKA) procedure between the user equipment and the SGSN, wherein the authentication and key agreement procedure establishes one or more shared security keys between the user equipment and the SGSN. Based on the established shared security keys, the user equipment derives protection parameters used to secure messages transmitted over a GPRS Mobility Management/Session Management (GMM/SM) protocol layer.\n\nThe user equipment applies at least one of integrity protection and ciphering to messages communicated at the GMM/SM protocol layer using the derived protection parameters, thereby protecting the messages against unauthorized interception, modification, or replay. In one aspect, the method includes negotiating a security capability with the SGSN, receiving a security-related parameter from the SGSN, and activating message protection at the GMM/SM layer in response to a control message received from the network. The user equipment thereafter transmits and receives protected messages in accordance with the negotiated security configuration.\n\nThe disclosed method enables robust protection of mobility management and session management signaling directly at the GMM/SM protocol layer, providing improved communication security between the user equipment and the SGSN without requiring dedicated lower-layer security mechanisms.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize the following invention: a UE-side method for verifying message authentication codes during an authentication and key agreement procedure with an SGSN.",
+      "output": "# Summary of the Invention\n\nThis invention describes a **User Equipment (UE)-side method for verifying Message Authentication Codes (MACs)** as part of an **Authentication and Key Agreement (AKA) procedure** conducted with a **Serving GPRS Support Node (SGSN)**.\n\n## Core Concept\n\nThe method enables a UE (such as a mobile device) to authenticate the network by verifying the integrity and authenticity of messages received during the AKA procedure, ensuring secure mutual authentication before establishing a communication session.\n\n## Key Elements\n\n**Context:**\n- Operates within the **AKA security framework** used in mobile networks (e.g., 3G/UMTS or similar architectures)\n- The **SGSN** serves as the network node managing packet-switched services and coordinating authentication\n\n**Verification Process (UE-side):**\n1. The UE **receives an authentication message** from the SGSN, which includes a Message Authentication Code\n2. The UE **independently computes/derives an expected MAC** using shared secret keys and relevant authentication parameters\n3. The UE **compares** the received MAC against the computed value\n4. Based on the comparison, the UE either **accepts or rejects** the authentication challenge\n\n## Purpose and Benefits\n\n- Provides **mutual authentication**, allowing the UE to confirm the network's legitimacy\n- Protects against **security threats** such as replay attacks, man-in-the-middle attacks, and rogue base stations\n- Ensures **message integrity** during the key agreement exchange\n\n---\n\n*Note: This summary is based on the general description provided. For a more precise and complete summary, please share the full patent claims or detailed specification, as specific implementations of MAC verification methods can vary significantly in their technical details.*",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft the abstract section of a telecommunications patent describing how a UE generates keys and verifies a message authentication code using the GMM/SM protocol layer.",
+      "output": "# ABSTRACT\n\nA method and apparatus are disclosed for secure message authentication in a wireless communication system. A user equipment (UE) derives one or more security keys at a mobility management protocol layer (e.g., GMM/5GMM) based on a shared root key and one or more input parameters, including a network-provided nonce, a key set identifier, and an algorithm identifier associated with an integrity protection function. Upon receiving a downlink message at a session management or mobility management protocol layer (e.g., SM/5GSM or GMM/5GMM), the UE extracts a message authentication code (MAC) appended to the message and computes an expected MAC using at least one of the derived security keys, a sequence number, and message content. The UE compares the received MAC with the expected MAC to verify the integrity and authenticity of the message, and selectively processes or discards the message based on a result of the comparison. The disclosed techniques enable layer-specific key generation and verification, thereby mitigating replay and tampering attacks while reducing signaling overhead.\n\n---\n\n**Note:** Patent abstracts are typically limited to 150 words (per USPTO 37 CFR 1.72(b)) and should avoid legal phrasing found in claims. The draft above is approximately 175 words; you may wish to trim it for filing. I'd also recommend having a registered patent attorney or agent review the full application—including claims, detailed description, and drawings—before submission, and conducting a prior art search given the crowded nature of telecommunications security patents.\n\nWould you like me to also draft accompanying sections such as the **Field of the Invention**, **Background**, **Summary**, or independent **claims**?",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Explain, in patent-style language, the steps a UE takes to protect messages exchanged with an SGSN, including algorithm identifier acquisition, key generation, and MAC verification.",
+      "output": "# Method for Protecting Messages Exchanged Between a User Equipment and a Serving GPRS Support Node\n\n## Abstract\n\nA method is disclosed whereby a user equipment (UE) protects signaling and/or data messages exchanged with a Serving GPRS Support Node (SGSN), the method comprising the acquisition of a security algorithm identifier, the derivation of one or more cryptographic keys, and the verification of a message authentication code (MAC), thereby ensuring integrity and/or confidentiality of the exchanged messages.\n\n## Detailed Description of the Preferred Embodiments\n\n**Step 1 — Establishment of a Security Context**\n\nIn accordance with one embodiment, the user equipment (UE) initiates a communication procedure with the network, wherein the UE transmits an attach request or a routing area update request to the SGSN. Responsive thereto, an authentication and key agreement (AKA) procedure is performed between the UE and the network, whereby the UE and the network establish a shared root key, said root key being derived from a subscriber credential stored in a subscriber identity module operatively coupled to the UE.\n\n**Step 2 — Acquisition of a Security Algorithm Identifier**\n\nIn a subsequent step, the UE receives, from the SGSN, a security mode command message, said message including at least one algorithm identifier indicative of a selected integrity protection algorithm and, optionally, a selected ciphering algorithm. The said algorithm identifier is selected by the network from a set of algorithm identifiers previously indicated by the UE to the network in a security capability information element transmitted during an earlier step.\n\nIn a further embodiment, the security mode command message comprises a replayed copy of the UE security capability information element, whereby the UE is enabled to detect a bidding-down attack by comparing the replayed security capability against the security capability originally transmitted by the UE.\n\n**Step 3 — Generation of Cryptographic Keys**\n\nResponsive to receipt of said algorithm identifier, the UE generates one or more derived keys by applying a key derivation function (KDF) to at least the shared root key and the received algorithm identifier. In one embodiment, the UE derives:\n\n(a) an integrity key (IK) configured for use in integrity protection of messages; and\n\n(b) a ciphering key (CK) configured for use in confidentiality protection of messages,\n\nwherein the derivation of at least one of said keys takes as input the algorithm identifier acquired in the preceding step, such that the derived key is cryptographically bound to the selected algorithm.\n\n**Step 4 — Verification of the Message Authentication Code**\n\nIn a further step, the UE computes an expected message authentication code (XMAC) by applying the selected integrity protection algorithm to at least a portion of the received security mode command message using the derived integrity key. The UE thereafter compares the computed expected message authentication code (XMAC) with a message authentication code (MAC) included in the received message.\n\nUpon determining that the computed XMAC matches the received MAC, the UE deems the received message to be authentic and integrity-protected, and proceeds to Step 5. Conversely, upon determining that the computed XMAC does not match the received MAC, the UE discards the received message and/or aborts the procedure.\n\n**Step 5 — Transmission of a Protected Response**\n\nResponsive to successful verification, the UE generates a security mode complete message, applies the selected integrity protection algorithm and the derived integrity key to compute a message authentication code over said message, and optionally applies the selected ciphering algorithm and the derived ciphering key to encrypt said message. The UE thereafter transmits the protected security mode complete message to the SGSN.\n\n**Step 6 — Subsequent Protected Communication**\n\nThereafter, the UE protects subsequent messages exchanged with the SGSN by applying the selected integrity protection algorithm and/or the selected ciphering algorithm, using the respective derived keys, whereby integrity and/or confidentiality of the exchanged messages is maintained for the duration of the established security context.\n\n---\n\n*It will be appreciated by those skilled in the art that various modifications may be made to the foregoing embodiments without departing from the scope of the invention as defined by the appended claims.*",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate a concise technical description of a security method in mobile networks where the UE receives an authentication request from an SGSN and responds after verifying a first message authentication code.",
+      "output": "# Network Authentication Method in Mobile Networks\n\n## Overview\n\nThis security method describes a mutual authentication procedure between a User Equipment (UE) and a Serving GPRS Support Node (SGSN) in a mobile network, ensuring both parties can verify each other's legitimacy before establishing a secure communication session.\n\n## Method Description\n\n### 1. Authentication Request Reception\n\nThe UE receives an **authentication request** from the SGSN. This request contains several key parameters:\n\n- **RAND** – A random challenge value generated by the network\n- **AUTN** – An authentication token that includes the first message authentication code (MAC)\n- **KSI** – A Key Set Identifier for referencing security context\n\n### 2. First Message Authentication Code Verification\n\nUpon receiving the request, the UE performs the following verification steps:\n\n1. **Extracts** the network-generated MAC (embedded within the AUTN token)\n2. **Computes** an expected MAC value (XMAC) using:\n   - The shared secret key (K) stored in the UE's USIM\n   - The received RAND value\n   - A sequence number (SQN)\n   - The authentication algorithm (e.g., MILENAGE)\n3. **Compares** the computed XMAC against the received MAC\n\nThis verification confirms that the authentication request originated from a legitimate network, protecting against **rogue base station** and **replay attacks**.\n\n### 3. Response Generation\n\nIf the first MAC is successfully verified, the UE:\n\n1. Computes a **response value (RES)** using the shared key and RAND\n2. Derives session keys:\n   - **CK** (Cipher Key) for encryption\n   - **IK** (Integrity Key) for integrity protection\n3. Transmits the **authentication response** containing RES back to the SGSN\n\n### 4. Network-Side Verification\n\nThe SGSN compares the received RES against the expected response (XRES). A successful match completes **mutual authentication**, establishing a trusted security context.\n\n## Security Benefits\n\n| Feature | Benefit |\n|---------|---------|\n| Mutual authentication | Both UE and network verify each other |\n| MAC verification | Prevents rogue network attacks |\n| Sequence numbers | Provides replay protection |\n| Session key derivation | Enables confidentiality and integrity |\n\n## Applicable Standards\n\nThis method aligns with **3GPP AKA** (Authentication and Key Agreement) procedures used in **UMTS/GPRS** networks, as specified in 3GPP TS 33.102.\n\n---\n\n*Would you like me to expand on any specific aspect, such as the cryptographic algorithms or the AUTN token structure?*",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6447257383966245,
+      "excess_ratio": 0.5427018451670074,
+      "baseline_mean": 0.10202389322961711,
+      "baseline_n_valid": 5,
+      "output_chars": 952,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6114285714285714,
+          "baseline_mean": 0.0762280974361144,
+          "excess_ratio": 0.5352004739924571
+        },
+        "bz2": {
+          "actual_ratio": 0.6313253012048192,
+          "baseline_mean": 0.09974638293397199,
+          "excess_ratio": 0.5315789182708472
+        },
+        "lzma": {
+          "actual_ratio": 0.6857142857142857,
+          "baseline_mean": 0.12797777380787106,
+          "excess_ratio": 0.5577365119064146
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.43622047244094486,
+      "excess_ratio": 0.3341965792113277,
+      "baseline_mean": 0.10202389322961711,
+      "baseline_n_valid": 5,
+      "output_chars": 928,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3769633507853403,
+          "baseline_mean": 0.0762280974361144,
+          "excess_ratio": 0.3007352533492259
+        },
+        "bz2": {
+          "actual_ratio": 0.44907407407407407,
+          "baseline_mean": 0.09974638293397199,
+          "excess_ratio": 0.3493276911401021
+        },
+        "lzma": {
+          "actual_ratio": 0.47368421052631576,
+          "baseline_mean": 0.12797777380787106,
+          "excess_ratio": 0.3457064367184447
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.24270755422587886,
+      "excess_ratio": 0.14068366099626176,
+      "baseline_mean": 0.10202389322961711,
+      "baseline_n_valid": 5,
+      "output_chars": 2269,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.20422535211267606,
+          "baseline_mean": 0.0762280974361144,
+          "excess_ratio": 0.12799725467656164
+        },
+        "bz2": {
+          "actual_ratio": 0.2494407158836689,
+          "baseline_mean": 0.09974638293397199,
+          "excess_ratio": 0.14969433294969692
+        },
+        "lzma": {
+          "actual_ratio": 0.27155172413793105,
+          "baseline_mean": 0.12797777380787106,
+          "excess_ratio": 0.14357395033005999
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1629646948795886,
+      "excess_ratio": 0.06094080164997148,
+      "baseline_mean": 0.10202389322961711,
+      "baseline_n_valid": 5,
+      "output_chars": 4046,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.14275517487508924,
+          "baseline_mean": 0.0762280974361144,
+          "excess_ratio": 0.06652707743897483
+        },
+        "bz2": {
+          "actual_ratio": 0.1560734463276836,
+          "baseline_mean": 0.09974638293397199,
+          "excess_ratio": 0.056327063393711616
+        },
+        "lzma": {
+          "actual_ratio": 0.18904109589041096,
+          "baseline_mean": 0.12797777380787106,
+          "excess_ratio": 0.061063322082539895
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.03946308724832215,
+      "excess_ratio": -0.06256080598129496,
+      "baseline_mean": 0.10202389322961711,
+      "baseline_n_valid": 5,
+      "output_chars": 2784,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.020491803278688523,
+          "baseline_mean": 0.0762280974361144,
+          "excess_ratio": -0.055736294157425884
+        },
+        "bz2": {
+          "actual_ratio": 0.04451772464962902,
+          "baseline_mean": 0.09974638293397199,
+          "excess_ratio": -0.05522865828434297
+        },
+        "lzma": {
+          "actual_ratio": 0.05263157894736842,
+          "baseline_mean": 0.12797777380787106,
+          "excess_ratio": -0.07534619486050265
+        }
+      }
+    }
+  }
+}

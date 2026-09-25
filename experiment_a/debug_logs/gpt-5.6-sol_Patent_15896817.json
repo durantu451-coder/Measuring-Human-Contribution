@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15896817",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA built-in self-test (BIST) parallel memory test architecture for an integrated circuit, such as a system-on-a-chip (SoC), is disclosed. A BIST controller generates a test data pattern for memories of a common memory type, with this test data pattern forwarded to the memories, with pipeline delay stages inserted in the data path according to the operational speed of the memory in its normal operation. The expected data response of these memories, when read, and corresponding to this test data pattern is delayed for a group of memories by a local delay response generator shared by those memories. For example, the memories in the group of memories may be physically near one another. The local delay response generator delays the expected data response by a delay corresponding to the memory latency of those memories in the group, before applying the expected data response to local comparators associated with the memories in the group.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA built-in self-test (BIST) parallel memory test architecture for an integrated circuit, such as a system-on-a-chip (SoC), is disclosed. A BIST controller generates a test data pattern for memories of a common memory type, with this test data pattern forwarded to the memories, with pipeline delay stages inserted in the data path according to the operational speed of the memory in its normal operation. The expected data response of these memories, when read, and corresponding to this test data pattern is delayed for a group of memories by a local delay response generator shared by those memories. For example, the memories in the group of memories may be physically near one another. The local delay response generator delays the expected data response by a delay corresponding to the memory latency of those memories in the group, before applying the expected data response to local comparators associated with the memories in the group.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A built-in self-test (BIST) architecture enables parallel testing of memories in an integrated circuit such as a system-on-a-chip.\n- A BIST controller generates and distributes a common test data pattern to memories of the same type.\n- Pipeline delay stages are inserted into the test data path based on each memory’s normal operating speed.\n- A shared local delay response generator delays the expected read response for a group of memories, which may be physically near one another.\n- The delayed expected response is aligned with the group’s memory latency and supplied to local comparators associated with those memories.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA built-in self-test architecture tests multiple SoC memories in parallel by distributing controller-generated patterns through speed-dependent pipeline stages and using shared local delay-response generators for nearby memories of the same type. By matching expected-response delays to each group’s memory latency before local comparison, the design enables accurate, efficient parallel memory testing with reduced duplicated delay circuitry.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: BIST, SoC, The"
+  },
+  "outputs": {
+    "L1": "A built-in self-test (BIST) parallel memory-test architecture for an integrated circuit, such as a system-on-a-chip (SoC), is disclosed. A BIST controller generates a test data pattern for memories of a common type and forwards the pattern to the memories through a data path having pipeline delay stages inserted according to each memory’s normal operating speed. When the memories are read, the expected data response corresponding to the test data pattern is delayed for a group of memories by a local delay-response generator shared among those memories. For example, the memories within the group may be physically proximate to one another. The local delay-response generator delays the expected data response by an amount corresponding to the memory latency of the memories in the group before applying the response to local comparators associated with those memories.",
+    "L2": "A parallel built-in self-test (BIST) memory-testing configuration is provided for an integrated circuit, including a system-on-a-chip (SoC). A BIST controller produces a test-data pattern for multiple memories of the same type and distributes the pattern to those memories. Pipeline delay stages are placed in the data path based on each memory’s operating speed during normal use. A shared local response-delay generator delays the expected read response for a selected group of memories, which may, for example, be located physically close to one another. The delay matches the memory latency of the memories in that group. After the expected response has been delayed, it is supplied to local comparators corresponding to the individual memories in the group.",
+    "L3": "A built-in self-test (BIST) architecture enables multiple memories within an integrated circuit, such as a system-on-a-chip (SoC), to be tested in parallel. A central BIST controller generates a common test data pattern and distributes it to memories of the same type, allowing the memories to be exercised simultaneously and efficiently.\n\nTo accommodate differences in normal operating speed, pipeline delay stages are inserted into the test data path for each memory or memory group. The number of delay stages is selected according to the operating characteristics of the relevant memories, ensuring that test commands and data arrive at the appropriate time.\n\nA shared local delay response generator is provided for a group of memories, which may be located near one another on the integrated circuit. This generator delays the expected read response by an amount corresponding to the latency of the memories in the group. The delayed expected response is then supplied to local comparators associated with the individual memories. Each comparator compares the expected response with the actual data read from its memory, enabling the BIST architecture to identify faults while supporting parallel testing across memories with different timing requirements.",
+    "L4": "A built-in self-test (BIST) architecture is provided for testing multiple memories within a system-on-chip (SoC) concurrently. A central test controller generates test patterns, addresses, control signals, and corresponding expected responses. These signals are distributed to the memories through one or more pipeline stages selected according to the operating speed and timing requirements of the test path. The pipeline stages reduce long combinational paths and allow the test infrastructure to operate reliably at higher clock frequencies, even when the memories are physically distributed across the device.\n\nThe memories may be organized into groups based on characteristics such as memory type, access protocol, physical proximity, and read latency. Memories of the same type that are located near one another can share a local delay-response generator. Instead of providing a separate expected-response delay circuit for every memory, the shared generator receives the expected response produced by the BIST controller and delays it by an amount corresponding to the latency of the memories in that group.\n\nAt each memory or local memory group, the delayed expected response is aligned with the actual data returned by the memory under test. A local comparison circuit then compares the two values and produces a pass/fail indication, error signal, or diagnostic result. Because the expected-response path is adjusted to match the memory’s read latency and the delays introduced by the distribution pipeline, the comparison occurs in the correct clock cycle.\n\nDifferent groups may use different delay settings to accommodate memories with different access times or pipeline depths. Thus, fast and slow memories can be tested in parallel without requiring all memories to conform to a single timing model. Local comparison also avoids routing wide response buses back to the central controller, reducing congestion, timing pressure, and power consumption.\n\nBy sharing delay-response generation among nearby memories having compatible timing characteristics, the architecture reduces duplicated circuitry and associated silicon area. At the same time, pipelined pattern distribution improves test speed and scalability. The result is an accurate and efficient parallel memory-test system that supports heterogeneous SoC memories while minimizing hardware overhead and simplifying timing closure.",
+    "L5": "### BIST in Modern SoC Design\n\nBuilt-In Self-Test (BIST) is an important technology used to improve the reliability and testability of a System-on-Chip (SoC). The main purpose of BIST is to enable a chip to test its own internal components without relying entirely on external testing equipment.\n\nAn SoC may contain processors, memory blocks, communication interfaces, and other specialized circuits. Because of this complexity, conventional testing can be expensive and time-consuming. BIST integrates dedicated test hardware and logic directly into the SoC, allowing faults to be detected during manufacturing, system startup, or normal operation.\n\nCommon approaches include Memory BIST, which checks embedded memories, and Logic BIST, which tests digital logic circuits. The use of BIST can reduce testing costs, increase fault coverage, and support in-field diagnostics. However, designers must also consider additional chip area, power consumption, and design complexity.\n\nAs SoC devices continue to become more advanced, BIST remains essential for ensuring product quality, functional safety, and long-term reliability."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize a patent describing a parallel built-in self-test architecture for multiple memories in a system-on-a-chip.",
+      "output": "Please provide the patent number, title, link, or text/PDF. I can then summarize its architecture, parallel test operation, controller logic, fault detection, advantages, and key claims.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a concise technical abstract for an integrated-circuit memory BIST system that uses pipeline delay stages, shared local response-delay generators, and comparators.",
+      "output": "An integrated-circuit memory built-in self-test (BIST) architecture employs pipeline delay stages to align test commands, addresses, and expected data with memory responses. Shared local response-delay generators provide programmable timing compensation across groups of memory instances, reducing replicated delay circuitry and routing overhead. Distributed comparators evaluate delayed memory outputs against expected responses and accumulate pass/fail status. The architecture supports memories with differing access latencies while improving timing closure, area efficiency, and test scalability.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Explain an SoC architecture in which a BIST controller tests groups of same-type memories in parallel while accounting for their different operational speeds and memory latencies.",
+      "output": "A suitable SoC architecture uses a **hierarchical memory BIST (MBIST)** structure: a chip-level controller coordinates several group controllers, and each memory instance has a small timing-aware wrapper.\n\n```text\n                  SoC BIST Controller\n           start / mode / status / diagnostics\n                          |\n          +---------------+----------------+\n          |               |                |\n     SRAM Group       ROM Group       Register-file Group\n      Controller       Controller          Controller\n          |               |                |\n     broadcast MBIST commands and expected data\n          |\n     +----+------+------+\n     |           |      |\n  Wrapper 0   Wrapper 1 ... Wrapper N\n     |           |          |\n   Memory 0    Memory 1    Memory N\n```\n\n### 1. Group memories by type\n\nMemories using the same interface and fault model are placed in one test group—for example:\n\n- single-port SRAMs,\n- dual-port SRAMs,\n- ROMs,\n- register files,\n- cache data or tag arrays.\n\nA group controller runs a common algorithm, such as March C−, across all active memories in the group. It broadcasts logical operations such as:\n\n- write `0`,\n- read and expect `0`,\n- write `1`,\n- increment or decrement the address.\n\nThis avoids duplicating the complete BIST sequencer for every memory.\n\n### 2. Test memories in parallel\n\nAll enabled wrappers in a group receive the same logical MBIST operation. Each wrapper applies it to its local memory, so multiple same-type arrays are exercised concurrently.\n\nWrappers handle instance-specific properties such as:\n\n- address width and depth,\n- data width and byte enables,\n- number of ports,\n- polarity and protocol differences,\n- redundant rows or columns,\n- clock domain,\n- read and write timing.\n\nFor memories with different depths, instances that reach their last address are masked while deeper memories continue.\n\n### 3. Use per-memory timing profiles\n\nThe controller does not assume that every memory completes an operation in the same number of cycles. Each wrapper contains, or references, a timing profile with parameters such as:\n\n- maximum test clock frequency,\n- read latency,\n- write recovery time,\n- setup or hold cycles,\n- turnaround delay between reads and writes,\n- initialization or wake-up delay.\n\nA wrapper can implement these parameters with clock dividers, delay counters, pipeline registers, or a local finite-state machine.\n\nFor example, if one SRAM has a one-cycle read latency and another has a three-cycle latency, both receive the same logical read command. Their wrappers capture the returned data after one and three local cycles, respectively.\n\n### 4. Synchronize by completion, not by a fixed cycle\n\nThe group controller uses a request/completion protocol:\n\n```text\nGroup controller:  issue READ(address, expected_data)\nWrappers:          execute operation using local timing\nEach wrapper:      return done and pass/fail\nGroup controller:  advance when all active wrappers are done\n```\n\nThus, faster memories may finish early and wait at a barrier, while slower memories complete without violating their timing. A timeout detects a memory or clock-domain failure.\n\nIf clocks are asynchronous, request and completion signals pass through synchronizers or asynchronous FIFOs.\n\n### 5. Compare data locally\n\nEach wrapper normally compares read data with the expected pattern locally. It reports:\n\n- `done`,\n- `fail`,\n- failing address,\n- expected and observed data,\n- optional syndrome or port information.\n\nLocal comparison avoids routing wide read buses back to the central controller. Failure information can be sticky so that testing continues after the first error, or testing can stop immediately for diagnosis.\n\n### 6. Execute groups concurrently or under power limits\n\nIndependent group controllers can run in parallel even when their memory types and speeds differ. The chip-level BIST controller only waits for each group’s final `done`.\n\nTo avoid excessive switching current, memories can be divided into power-safe batches. The architecture may permit:\n\n- full parallel mode for short test time,\n- staggered starts,\n- a programmable maximum number of active memories,\n- lower test clocks for high-power groups.\n\n### Example\n\nSuppose an SRAM group contains:\n\n- SRAM A: 500 MHz maximum, one-cycle read latency,\n- SRAM B: 250 MHz maximum, two-cycle read latency,\n- SRAM C: 125 MHz maximum, four-cycle read latency.\n\nThe group controller broadcasts the same March operation. Each wrapper derives an allowed local test clock and waits the correct number of cycles before comparison. The controller advances to the next logical operation only after A, B, and C assert completion. Consequently, all three memories are tested in parallel at the algorithm level, while each operates within its own frequency and latency constraints.\n\nThis architecture combines **shared algorithm control**, **parallel test execution**, and **per-instance timing adaptation**, reducing test time and controller area without assuming uniform memory performance.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Draft patent-style language for a memory-testing design where physically adjacent memories share a local generator that delays expected read responses before comparison.",
+      "output": "## Title\n\n**Shared Local Expected-Response Generation and Delayed Comparison for Adjacent Memory Arrays**\n\n## Abstract\n\nA memory-testing apparatus includes a plurality of memory arrays, a test controller, and one or more local test circuits. Each local test circuit is associated with a group of physically adjacent memory arrays and includes a shared expected-response generator, a delay circuit, and comparison logic. During a test operation, the test controller causes test data to be written to and read from a selected memory array. The shared expected-response generator produces an expected response corresponding to the read operation. The delay circuit delays the expected response by an interval selected to align the expected response with read data received from the selected memory array. The comparison logic compares the delayed expected response with the received read data and generates a result indicative of a memory fault. Sharing the expected-response generator among physically adjacent memory arrays reduces circuit area and routing overhead while permitting timing compensation local to the memory arrays.\n\n## Example Specification Language\n\nA memory device or integrated circuit may include a plurality of memory instances distributed across a semiconductor die. The memory instances may comprise, for example, static random-access memory arrays, dynamic random-access memory arrays, register files, cache memories, nonvolatile memory arrays, or combinations thereof.\n\nIn one embodiment, two or more physically adjacent memory instances are assigned to a common local test region. As used herein, memory instances are “physically adjacent” when the memory instances are neighboring or proximate structures in a physical layout, including memory instances separated by one or more intervening routing channels, logic cells, power structures, or test structures.\n\nA local test circuit is disposed within or proximate to each local test region. The local test circuit includes an expected-response generator shared by the memory instances of the local test region. The expected-response generator may generate an expected data word, expected signature, expected parity value, or other reference value based on a test algorithm, a test address, previously generated test data, a stored state, or a combination thereof.\n\nA selection circuit selectively couples the local test circuit to a memory instance under test. During a read phase, the selected memory instance provides a read response to the local test circuit. The expected-response generator provides a corresponding expected response to a delay circuit. The delay circuit delays the expected response such that the delayed expected response is temporally aligned with the read response at an input of a comparator.\n\nThe delay circuit may provide a fixed delay, a programmable delay, or an adaptively determined delay. In some embodiments, a delay value is selected separately for each memory instance to compensate for differences in memory access latency, physical routing length, clock-tree delay, process variation, voltage, temperature, or other timing characteristics. The selected delay value may be stored in a register, fuse, nonvolatile element, configuration memory, or test-control state.\n\nThe comparator compares the read response with the delayed expected response and produces a comparison result. The comparison result may identify a bit mismatch, generate a pass/fail indication, update a failure counter, capture a failing address, or contribute to a test signature. By delaying the expected response locally, comparison may be performed without requiring read responses from multiple memory instances to be routed to a centralized expected-response generator or comparator.\n\n## Example Independent Apparatus Claim\n\n1. **A memory-testing apparatus comprising:**\n\n   a plurality of memory circuits formed on an integrated circuit, at least first and second memory circuits of the plurality of memory circuits being physically adjacent;\n\n   a local test circuit associated with the first and second memory circuits, the local test circuit comprising:  \n   \n   an expected-response generator shared by the first and second memory circuits and configured to generate an expected response for a read operation directed to a selected one of the first and second memory circuits;  \n   \n   a delay circuit configured to delay the expected response to produce a delayed expected response; and  \n   \n   comparison logic configured to compare read data received from the selected one of the first and second memory circuits with the delayed expected response and to generate a comparison result indicative of whether the read data differs from the delayed expected response; and\n\n   a test controller configured to control the read operation and selection of the selected one of the first and second memory circuits.\n\n## Example Dependent Claims\n\n2. The memory-testing apparatus of claim 1, wherein the delay circuit is programmable to provide a respective delay for each of the first and second memory circuits.\n\n3. The memory-testing apparatus of claim 1, wherein the delay circuit comprises a plurality of serially coupled storage elements clocked by a test clock.\n\n4. The memory-testing apparatus of claim 1, wherein the delay circuit comprises a selectable tapped delay line.\n\n5. The memory-testing apparatus of claim 1, wherein the delay circuit delays the expected response by a number of clock cycles corresponding to a read latency of the selected memory circuit.\n\n6. The memory-testing apparatus of claim 1, further comprising a multiplexer configured to selectively provide read data from the first memory circuit or the second memory circuit to the comparison logic.\n\n7. The memory-testing apparatus of claim 1, wherein the expected-response generator comprises a linear-feedback shift register, a pattern generator, an algorithmic data generator, or a state machine.\n\n8. The memory-testing apparatus of claim 1, wherein the comparison result comprises at least one of a bit-failure indication, a pass/fail value, a failing address, and a compressed failure signature.\n\n9. The memory-testing apparatus of claim 1, wherein the local test circuit is positioned in a layout region between the first and second memory circuits.\n\n10. The memory-testing apparatus of claim 1, wherein the first and second memory circuits share at least one test-data route, test-address route, test-control route, or clock route coupled to the local test circuit.\n\n11. The memory-testing apparatus of claim 1, wherein the delay circuit is configured to select a delay based on an identifier of the selected memory circuit.\n\n12. The memory-testing apparatus of claim 1, wherein the delay is selected to compensate for at least one of memory access latency, interconnect delay, clock skew, process variation, supply-voltage variation, and temperature variation.\n\n13. The memory-testing apparatus of claim 1, wherein the comparison logic is configured to mask one or more bits of the read data from comparison.\n\n14. The memory-testing apparatus of claim 1, wherein the test controller is configured to cause the expected-response generator to generate respective expected responses for interleaved read operations directed to the first and second memory circuits.\n\n## Example Method Claim\n\n15. **A method of testing memories on an integrated circuit, the method comprising:**\n\n   selecting, from a group of physically adjacent memory circuits, a memory circuit to be tested;\n\n   issuing a read operation to the selected memory circuit;\n\n   generating, by an expected-response generator shared by the group of physically adjacent memory circuits, an expected response corresponding to the read operation;\n\n   delaying the expected response by a delay associated with the selected memory circuit;\n\n   receiving read data from the selected memory circuit;\n\n   comparing the read data with the delayed expected response; and\n\n   generating a test result based on the comparing.\n\n16. The method of claim 15, further comprising selecting the delay from a plurality of delay values based on which memory circuit of the group is selected.\n\n17. The method of claim 15, further comprising calibrating the delay during a characterization operation.\n\n18. The method of claim 15, wherein delaying the expected response comprises propagating the expected response through one or more clocked pipeline stages.\n\n19. The method of claim 15, further comprising writing a test pattern generated by the shared expected-response generator to the selected memory circuit before issuing the read operation.\n\n20. The method of claim 15, further comprising accumulating comparison results for multiple memory circuits of the group into a shared test signature.\n\n## Example System Claim\n\n21. **An integrated circuit comprising:**\n\n   a plurality of local memory-test regions, each local memory-test region comprising:  \n   \n   a plurality of physically neighboring memory arrays; and  \n   \n   a local expected-response circuit shared by the physically neighboring memory arrays, the local expected-response circuit being configured to generate an expected read value, delay the expected read value according to a timing characteristic of a selected memory array, and compare the delayed expected read value with a read value output by the selected memory array; and\n\n   a global test controller coupled to the plurality of local memory-test regions and configured to coordinate test operations performed by the local expected-response circuits.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Describe a built-in self-test solution that distributes test patterns to multiple embedded memories and synchronizes expected responses with actual outputs using memory-specific pipeline and latency delays.",
+      "output": "A suitable solution is a **centralized memory built-in self-test (MBIST) controller with per-memory latency adapters**.\n\n### Architecture\n\n- **Pattern generator / MBIST sequencer**\n  - Generates addresses, write data, byte enables, read/write commands, and test algorithms such as March C−.\n  - Broadcasts a common logical test operation to all selected embedded memories.\n\n- **Per-memory interface wrapper**\n  - Converts the common MBIST transaction into each memory’s native signals.\n  - Supports differences in width, depth, banking, polarity, and port configuration.\n  - Optionally masks unused data bits or maps a wide logical pattern across narrower memories.\n\n- **Memory-specific command pipeline**\n  - Delays address, data, and control signals by a programmable or fixed number of cycles to satisfy each memory’s input pipeline requirements.\n  - Separate delays may be provided for read and write paths.\n\n- **Expected-response pipeline**\n  - The expected read value is generated when the logical read command is issued.\n  - A per-memory delay line holds that value, along with a valid bit and optional bit mask, for:\n    \\[\n    D_i = P_i + L_i\n    \\]\n    cycles, where \\(P_i\\) is the wrapper/input pipeline delay and \\(L_i\\) is memory \\(i\\)’s read latency.\n  - This causes the expected value and compare-enable signal to arrive in the same cycle as the actual memory output.\n\n- **Response comparator and signature logic**\n  - Compares each memory’s output against its delayed expected value only when the delayed valid signal is asserted.\n  - Applies masks for ECC bits, unused bits, or intentionally unknown outputs.\n  - Records sticky fail status, failing memory ID, address, expected value, and actual value.\n  - Optionally compacts responses into a MISR for lower hardware cost.\n\n### Synchronization example\n\nIf memory A returns data after one cycle and memory B after three cycles:\n\n- A’s expected-data and valid pipelines are one cycle long.\n- B’s expected-data and valid pipelines are three cycles long.\n- Both memories can receive the same logical read operation simultaneously, while each comparator evaluates its result in the correct return cycle.\n\nThe controller should also delay the associated **address and test-phase metadata** through the same path so that any failure is reported against the transaction that produced it.\n\n### Completion handling\n\nEach wrapper asserts completion after its final outstanding read has passed through the response pipeline. The top-level MBIST controller asserts `done` only when all enabled memories have completed and their pipelines are empty. Overall failure is the OR of the per-memory sticky fail flags.\n\nThis arrangement permits one test-pattern source to exercise heterogeneous embedded memories in parallel while preserving cycle-accurate alignment between expected and actual responses.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6666666666666667,
+      "excess_ratio": 0.53151548842123,
+      "baseline_mean": 0.13515117824543676,
+      "baseline_n_valid": 5,
+      "output_chars": 874,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6816037735849056,
+          "baseline_mean": 0.1024083799002384,
+          "excess_ratio": 0.5791953936846672
+        },
+        "bz2": {
+          "actual_ratio": 0.5479744136460555,
+          "baseline_mean": 0.12305223591286116,
+          "excess_ratio": 0.4249221777331943
+        },
+        "lzma": {
+          "actual_ratio": 0.7637795275590551,
+          "baseline_mean": 0.1720815476228112,
+          "excess_ratio": 0.5916979799362438
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.47723935389133626,
+      "excess_ratio": 0.3420881756458995,
+      "baseline_mean": 0.13515117824543676,
+      "baseline_n_valid": 5,
+      "output_chars": 762,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.42857142857142855,
+          "baseline_mean": 0.1024083799002384,
+          "excess_ratio": 0.32616304867119017
+        },
+        "bz2": {
+          "actual_ratio": 0.44370860927152317,
+          "baseline_mean": 0.12305223591286116,
+          "excess_ratio": 0.32065637335866204
+        },
+        "lzma": {
+          "actual_ratio": 0.5483870967741935,
+          "baseline_mean": 0.1720815476228112,
+          "excess_ratio": 0.3763055491513823
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.40604198668714797,
+      "excess_ratio": 0.2708908084417112,
+      "baseline_mean": 0.13515117824543676,
+      "baseline_n_valid": 5,
+      "output_chars": 1261,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3973727422003284,
+          "baseline_mean": 0.1024083799002384,
+          "excess_ratio": 0.29496436230009004
+        },
+        "bz2": {
+          "actual_ratio": 0.3443396226415094,
+          "baseline_mean": 0.12305223591286116,
+          "excess_ratio": 0.22128738672864826
+        },
+        "lzma": {
+          "actual_ratio": 0.4689265536723164,
+          "baseline_mean": 0.1720815476228112,
+          "excess_ratio": 0.2968450060495052
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1693667157584684,
+      "excess_ratio": 0.034215537513031635,
+      "baseline_mean": 0.13515117824543676,
+      "baseline_n_valid": 5,
+      "output_chars": 2402,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.13296903460837886,
+          "baseline_mean": 0.1024083799002384,
+          "excess_ratio": 0.030560654708140456
+        },
+        "bz2": {
+          "actual_ratio": 0.17104072398190046,
+          "baseline_mean": 0.12305223591286116,
+          "excess_ratio": 0.0479884880690393
+        },
+        "lzma": {
+          "actual_ratio": 0.20134228187919462,
+          "baseline_mean": 0.1720815476228112,
+          "excess_ratio": 0.029260734256383425
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.06548223350253808,
+      "excess_ratio": -0.06966894474289868,
+      "baseline_mean": 0.13515117824543676,
+      "baseline_n_valid": 5,
+      "output_chars": 1125,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.0361247947454844,
+          "baseline_mean": 0.1024083799002384,
+          "excess_ratio": -0.06628358515475401
+        },
+        "bz2": {
+          "actual_ratio": 0.06046511627906977,
+          "baseline_mean": 0.12305223591286116,
+          "excess_ratio": -0.06258711963379139
+        },
+        "lzma": {
+          "actual_ratio": 0.09497206703910614,
+          "baseline_mean": 0.1720815476228112,
+          "excess_ratio": -0.07710948058370505
+        }
+      }
+    }
+  }
+}

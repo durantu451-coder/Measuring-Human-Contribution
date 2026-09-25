@@ -1,0 +1,524 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15742693",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA device for providing moving body information for a vehicle, according to one embodiment, includes an image acquisition unit acquiring a peripheral image of the vehicle, an image extraction unit extracting at least one of a first image of an upper body of at least one moving object or a second image of a lower body of the moving object from the peripheral image of the vehicle, and a moving object information determination unit determining at least one of presence/absence or a position of the moving object using at least one of the extracted first image or second image, wherein the image extraction unit extracts as the first image at least one of a ‘1-1’-st image of an entirety of the upper body or a ‘1-2’-nd image of a part of the upper body, and extracts as the second image at least one of a ‘2-1’-st image of an entirety of the lower body or a ‘2-2’-nd image of a part of the lower body.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA device for providing moving body information for a vehicle, according to one embodiment, includes an image acquisition unit acquiring a peripheral image of the vehicle, an image extraction unit extracting at least one of a first image of an upper body of at least one moving object or a second image of a lower body of the moving object from the peripheral image of the vehicle, and a moving object information determination unit determining at least one of presence/absence or a position of the moving object using at least one of the extracted first image or second image, wherein the image extraction unit extracts as the first image at least one of a ‘1-1’-st image of an entirety of the upper body or a ‘1-2’-nd image of a part of the upper body, and extracts as the second image at least one of a ‘2-1’-st image of an entirety of the lower body or a ‘2-2’-nd image of a part of the lower body.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The device provides information about moving objects around a vehicle.\n- An image acquisition unit captures peripheral images of the vehicle.\n- An image extraction unit identifies upper-body and/or lower-body images of moving objects in the captured images.\n- The upper-body or lower-body image may depict either the entire body section or only part of it.\n- A determination unit uses the extracted images to identify the presence and/or position of a moving object.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA vehicle-mounted device detects moving objects by capturing peripheral images and extracting complete or partial images of their upper bodies, lower bodies, or both. Using these extracted regions, it determines a moving object’s presence and/or position, enabling detection even when only part of the object is visible.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: A device for"
+  },
+  "outputs": {
+    "L1": "According to one embodiment, a device for providing information regarding a moving object for a vehicle includes: an image acquisition unit configured to acquire a peripheral image of the vehicle; an image extraction unit configured to extract, from the peripheral image, at least one of a first image depicting an upper body of at least one moving object or a second image depicting a lower body of the moving object; and a moving object information determination unit configured to determine, using at least one of the extracted first or second images, at least one of the presence or absence of the moving object or its position. The image extraction unit extracts, as the first image, at least one of a 1-1 image depicting the entire upper body or a 1-2 image depicting a portion of the upper body, and extracts, as the second image, at least one of a 2-1 image depicting the entire lower body or a 2-2 image depicting a portion of the lower body.",
+    "L2": "In one embodiment, a vehicle system for supplying information about moving objects comprises an imaging module that captures an image of the area surrounding the vehicle; an extraction module that obtains, from the captured image, an upper-body image, a lower-body image, or both for at least one moving object; and an information determination module that uses one or both extracted images to identify whether the moving object is present, determine its location, or both. The upper-body image may include a 1-1 image showing the complete upper body, a 1-2 image showing only a portion of the upper body, or both. Likewise, the lower-body image may include a 2-1 image depicting the entire lower body, a 2-2 image depicting only part of the lower body, or both.",
+    "L3": "The device provides information about moving objects in the vicinity of a vehicle. It includes an image acquisition unit that captures images of the vehicle’s surroundings and an image extraction unit that analyzes the captured images to identify upper-body and/or lower-body images of moving objects. Each extracted image may depict either the entire upper or lower body of a moving object or only a portion of the relevant body section. Based on the extracted images, a determination unit identifies the presence and/or position of a moving object around the vehicle.",
+    "L4": "A vehicle-mounted moving-object detection device captures images of the area surrounding a vehicle using one or more imaging units. The captured peripheral images are processed to identify regions that may correspond to moving objects, such as pedestrians, cyclists, or other road users. Rather than requiring an image of an entire object, the device extracts a complete or partial image of the object’s upper body, lower body, or both.\n\nThe extracted image regions are analyzed to determine whether a moving object is present and, when possible, to estimate the object’s position relative to the vehicle. Detection may be based on an upper-body region alone, a lower-body region alone, or a combination of the two. Accordingly, the device can continue to recognize and locate a moving object even when part of the object lies outside the camera’s field of view or is hidden by a vehicle, roadside structure, or other obstruction.\n\nBy using visible body regions independently or together, the device improves detection under partial-visibility and occlusion conditions. The resulting presence and position information may be supplied to vehicle safety, driver-assistance, warning, or control systems so that appropriate action can be taken when a moving object is near the vehicle.",
+    "L5": "Could you clarify the topic? The keyword **“A device for”** appears incomplete. Please specify what the device is designed to do, along with any preferred length, tone, or format."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style abstract for a vehicle-mounted device that detects moving objects by extracting images of their upper and/or lower bodies from surrounding imagery.",
+      "output": "A vehicle-mounted moving-object detection device includes an imaging unit configured to acquire images of an area surrounding a vehicle and a processing unit configured to detect a moving object from the acquired images. The processing unit extracts, from each image, at least one candidate region corresponding to an upper-body portion and/or a lower-body portion of an object, and determines whether the candidate region represents a moving object based on image features and temporal changes across a plurality of images. Detection results for upper-body and lower-body portions may be associated to identify a single object and estimate at least one of a position, direction of movement, or speed of the object relative to the vehicle. By detecting an object using a partial-body image even when another body portion is occluded, outside the image, or difficult to distinguish from the background, the device improves detection of pedestrians, cyclists, and other moving objects in the vehicle surroundings.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Describe one embodiment of a vehicle moving-object information system, including an image acquisition unit, an image extraction unit, and a unit that determines the presence or position of a moving object.",
+      "output": "In one embodiment, a vehicle moving-object information system includes:\n\n- **An image acquisition unit**, such as a forward-, rearward-, or side-facing vehicle camera, that periodically captures images of an area surrounding the vehicle and outputs successive image frames.\n- **An image extraction unit** that processes the acquired frames to extract image regions likely to represent moving objects. For example, the unit may compensate for apparent image motion caused by movement of the host vehicle, compare temporally adjacent frames, and extract regions having motion vectors or intensity differences inconsistent with the stationary background.\n- **A moving-object determination unit** that analyzes the extracted regions to determine whether a moving object is present and, when present, estimates its position relative to the vehicle. The position may be determined from image coordinates, camera calibration data, object size, optical flow, stereo disparity, or a combination thereof.\n\nThe determination unit may track an extracted region over multiple frames to reject noise and calculate the object’s direction of movement, relative distance, and relative speed. The resulting moving-object information can be supplied to a driver-warning display or to a vehicle-control system for functions such as collision warning, automatic braking, or lane-change assistance.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write a single patent claim for a vehicle peripheral-image processing device that can use either complete or partial images of a moving object’s upper body and lower body.",
+      "output": "1. A vehicle peripheral-image processing device comprising: an image acquisition unit configured to acquire images of an area surrounding a vehicle; and processing circuitry configured to detect a moving object in the acquired images, identify an upper-body image region and a lower-body image region of the moving object, each of the upper-body image region and the lower-body image region comprising either an entirety or a partial image of a corresponding upper body or lower body, extract respective feature information from at least one available portion of each identified image region, and perform recognition or tracking of the moving object based on the extracted respective feature information.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Convert this invention concept into formal patent language: a vehicle camera captures its surroundings, extracts whole or partial upper- and lower-body regions of pedestrians or other moving objects, and determines whether and where those objects are present.",
+      "output": "### Patent-Style Description\n\nA vehicle-mounted object detection system comprising: an imaging device configured to capture image data representing an environment surrounding a vehicle; and one or more processors configured to process the image data to extract at least one whole or partial upper-body region and at least one whole or partial lower-body region associated with a pedestrian or other movable object, determine, based on the extracted regions, whether the pedestrian or movable object is present within the environment, and determine a location of the pedestrian or movable object relative to the vehicle.\n\n### Example Independent Method Claim\n\n1. A method for detecting an object in an environment surrounding a vehicle, the method comprising:  \n   capturing, by an imaging device mounted on the vehicle, image data representing at least a portion of the environment;  \n   extracting, from the image data, one or more image regions corresponding to at least a whole or partial upper-body portion or a whole or partial lower-body portion of a pedestrian or other movable object;  \n   determining, based at least in part on the one or more extracted image regions, whether the pedestrian or other movable object is present in the environment; and  \n   determining a location of the pedestrian or other movable object relative to the vehicle.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a technical summary of an automotive object-detection apparatus that classifies extracted body imagery into four categories: entire upper body, partial upper body, entire lower body, and partial lower body.",
+      "output": "The automotive object-detection apparatus uses one or more vehicle-mounted cameras to detect people or other relevant bodies in the vehicle’s surroundings, including subjects partly occluded or truncated by the image boundary. An image processor identifies a candidate object region, extracts body imagery, and supplies the extracted region—optionally with normalized scale, position, and feature data—to a trained classifier.\n\nThe classifier assigns the imagery to one of four visibility/configuration categories:\n\n1. **Entire upper body** – the complete upper-body region is visible.  \n2. **Partial upper body** – only part of the upper-body region is visible because of occlusion, cropping, or poor contrast.  \n3. **Entire lower body** – the complete lower-body region is visible.  \n4. **Partial lower body** – only part of the lower-body region is visible.\n\nCategory-specific detection logic or recognition models can then evaluate the imagery using features appropriate to the visible body portion. The apparatus may combine upper- and lower-body results, confidence values, spatial relationships, temporal tracking, and vehicle-sensor data to confirm the object and estimate its position or motion. The resulting detection is supplied to driver-assistance or automated-driving functions, such as collision warning, pedestrian tracking, or emergency braking. Categorizing body imagery by visible extent improves detection reliability when a person is partly hidden by vehicles, roadside structures, or the camera frame.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.5698630136986301,
+      "excess_ratio": 0.3885328077146306,
+      "baseline_mean": 0.1813302059839995,
+      "baseline_n_valid": 5,
+      "output_chars": 951,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5321100917431193,
+          "baseline_mean": 0.13680077811561758,
+          "excess_ratio": 0.3953093136275017
+        },
+        "bz2": {
+          "actual_ratio": 0.5585106382978723,
+          "baseline_mean": 0.1841099984215606,
+          "excess_ratio": 0.37440063987631167
+        },
+        "lzma": {
+          "actual_ratio": 0.6122448979591837,
+          "baseline_mean": 0.21644569812818842,
+          "excess_ratio": 0.39579919983099526
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3425414364640884,
+      "excess_ratio": 0.16121123048008892,
+      "baseline_mean": 0.1813302059839995,
+      "baseline_n_valid": 5,
+      "output_chars": 762,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2606060606060606,
+          "baseline_mean": 0.13680077811561758,
+          "excess_ratio": 0.12380528249044304
+        },
+        "bz2": {
+          "actual_ratio": 0.36813186813186816,
+          "baseline_mean": 0.1841099984215606,
+          "excess_ratio": 0.18402186971030757
+        },
+        "lzma": {
+          "actual_ratio": 0.3877551020408163,
+          "baseline_mean": 0.21644569812818842,
+          "excess_ratio": 0.1713094039126279
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.538543897216274,
+      "excess_ratio": 0.35721369123227453,
+      "baseline_mean": 0.1813302059839995,
+      "baseline_n_valid": 5,
+      "output_chars": 569,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5107913669064749,
+          "baseline_mean": 0.13680077811561758,
+          "excess_ratio": 0.3739905887908573
+        },
+        "bz2": {
+          "actual_ratio": 0.48417721518987344,
+          "baseline_mean": 0.1841099984215606,
+          "excess_ratio": 0.3000672167683128
+        },
+        "lzma": {
+          "actual_ratio": 0.611764705882353,
+          "baseline_mean": 0.21644569812818842,
+          "excess_ratio": 0.39531900775416456
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.20795107033639143,
+      "excess_ratio": 0.026620864352391943,
+      "baseline_mean": 0.1813302059839995,
+      "baseline_n_valid": 5,
+      "output_chars": 1281,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.17045454545454544,
+          "baseline_mean": 0.13680077811561758,
+          "excess_ratio": 0.03365376733892786
+        },
+        "bz2": {
+          "actual_ratio": 0.20532915360501566,
+          "baseline_mean": 0.1841099984215606,
+          "excess_ratio": 0.021219155183455074
+        },
+        "lzma": {
+          "actual_ratio": 0.24293785310734464,
+          "baseline_mean": 0.21644569812818842,
+          "excess_ratio": 0.02649215497915622
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.2530364372469635,
+      "excess_ratio": 0.07170623126296402,
+      "baseline_mean": 0.1813302059839995,
+      "baseline_n_valid": 5,
+      "output_chars": 179,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.176056338028169,
+          "baseline_mean": 0.13680077811561758,
+          "excess_ratio": 0.03925555991255142
+        },
+        "bz2": {
+          "actual_ratio": 0.21951219512195122,
+          "baseline_mean": 0.1841099984215606,
+          "excess_ratio": 0.03540219670039063
+        },
+        "lzma": {
+          "actual_ratio": 0.3404255319148936,
+          "baseline_mean": 0.21644569812818842,
+          "excess_ratio": 0.12397983378670518
+        }
+      }
+    }
+  },
+  "api_provenance": {
+    "config": {
+      "gpt_gateway": 2,
+      "max_output_tokens": 4096,
+      "require_status": "completed"
+    },
+    "main_calls": {
+      "L1_polish": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0aef2e69b0701d7d006a88e127f5b48193a8165033d2f22675",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 220,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 198,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 418
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T23:37:14.877124+00:00"
+      },
+      "L2_rewrite": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0d149f6c1648890b006a88e12d02b88195900688c5bd3b8305",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 223,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 163,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 386
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T23:37:19.695713+00:00"
+      },
+      "L3_bullets": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_044af5c75c747e72006a88e131e9108194828dc8d7638e1a50",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 233,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 90,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 323
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T23:37:24.033202+00:00"
+      },
+      "L3_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_09a49b8d0a0607ac006a88e1363f108197a787a08d1ca98aa1",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 107,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 104,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 211
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T23:37:28.576930+00:00"
+      },
+      "L4_2sent": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0f491a1f36dcea47006a88e13ae7188195a8b1aff2c0ece8f4",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 245,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 99,
+          "output_tokens_details": {
+            "reasoning_tokens": 37
+          },
+          "total_tokens": 344
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T23:37:34.416502+00:00"
+      },
+      "L4_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0c74b361835a4eec006a88e140a07081979d90029598237d4c",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 75,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 301,
+          "output_tokens_details": {
+            "reasoning_tokens": 60
+          },
+          "total_tokens": 376
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T23:37:42.097147+00:00"
+      },
+      "L5_keywords": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0e56ec7c02de8753006a88e1485360819784e2560ed3c3fd04",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 20,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 97,
+          "output_tokens_details": {
+            "reasoning_tokens": 52
+          },
+          "total_tokens": 117
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T23:37:46.954610+00:00"
+      }
+    },
+    "counterfactuals": {
+      "reconstruct": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0e28a01e28cb3c98006a88e14d28048195a9232b39a3c8cd83",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 296,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 190,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 486
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T23:37:52.829800+00:00"
+      },
+      "outputs": [
+        {
+          "label": "cf_1",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_05088a1178009699006a88e153109081948cd21c7f4d74dbd1",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 34,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 206,
+                "output_tokens_details": {
+                  "reasoning_tokens": 23
+                },
+                "total_tokens": 240
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T23:37:59.346747+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_2",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_03e0761b03d13e6e006a88e159cd348193ac8f4aab98e564c0",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 42,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 296,
+                "output_tokens_details": {
+                  "reasoning_tokens": 54
+                },
+                "total_tokens": 338
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T23:38:08.180516+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_3",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0c537845614a98de006a88e1625c988194ae42779b43456edf",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 37,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 313,
+                "output_tokens_details": {
+                  "reasoning_tokens": 188
+                },
+                "total_tokens": 350
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T23:38:16.713840+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_4",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_04e2770f87b6c76c006a88e16af57c8190af3a475b4abd5160",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 49,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 315,
+                "output_tokens_details": {
+                  "reasoning_tokens": 65
+                },
+                "total_tokens": 364
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T23:38:23.806417+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_5",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_097c28fbb5f99419006a88e17206f88193ba1d00564bc73351",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 44,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 359,
+                "output_tokens_details": {
+                  "reasoning_tokens": 75
+                },
+                "total_tokens": 403
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T23:38:34.438120+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

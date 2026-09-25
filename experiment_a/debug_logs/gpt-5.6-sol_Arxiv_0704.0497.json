@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0497",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIn this paper, we describe a new, systematic and explicit way of approximating solutions of mixed hyperbolic systems with constant coefficients satisfying a Uniform Lopatinski Condition via different Penalization approaches.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIn this paper, we describe a new, systematic and explicit way of approximating solutions of mixed hyperbolic systems with constant coefficients satisfying a Uniform Lopatinski Condition via different Penalization approaches.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper introduces a new method for approximating solutions of mixed hyperbolic systems.\n- The proposed method is systematic and explicit.\n- The method applies to systems with constant coefficients.\n- The systems considered satisfy a Uniform Lopatinski Condition.\n- The approximation is achieved through different penalization approaches.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe paper develops systematic, explicit penalization approaches for approximating solutions to constant-coefficient mixed hyperbolic systems satisfying the Uniform Lopatinski Condition. Its key result is a unified approximation framework that clarifies how penalization methods can be applied to this class of systems.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Uniform, Lopatinski, Condition"
+  },
+  "outputs": {
+    "L1": "In this paper, we present a new, systematic, and explicit method for approximating solutions to mixed hyperbolic systems with constant coefficients that satisfy a Uniform Lopatinski Condition, using various penalization approaches.",
+    "L2": "This paper introduces several distinct penalization techniques that provide a novel, systematic, and explicit method for approximating solutions to constant-coefficient mixed hyperbolic systems satisfying the Uniform Lopatinski Condition.",
+    "L3": "The paper presents a new method for approximating solutions to mixed hyperbolic systems with constant coefficients. Designed to be both systematic and explicit, the approach applies to systems that satisfy the Uniform Lopatinski Condition, ensuring the stability and well-posedness of the associated boundary-value problem. The proposed framework constructs accurate approximations through several penalization techniques, offering a structured and flexible way to handle this class of hyperbolic systems.",
+    "L4": "The paper develops a systematic theory of explicit penalization methods for constant-coefficient mixed hyperbolic systems posed on domains with boundaries. The analysis focuses on systems whose boundary conditions satisfy the Uniform Lopatinski Condition, a standard stability criterion ensuring that the associated initial-boundary value problem is well posed. The main objective is to replace the original boundary problem with an approximation posed on a larger, simpler domain, in which the boundary conditions are enforced through singular penalization terms.\n\nWithin this framework, the authors construct penalized systems that distinguish between the physical region and the exterior region by means of an appropriate characteristic function. The penalty term is designed to suppress components that are incompatible with the prescribed boundary conditions while preserving the admissible modes of the hyperbolic system. Because the coefficients are constant, the construction can be expressed explicitly and analyzed using the spectral structure of the normal operator together with the stable subspace associated with the boundary.\n\nThe paper explains how the Uniform Lopatinski Condition provides the algebraic and analytic structure required for a stable penalization. In particular, it makes possible a suitable decomposition of the solution into incoming, outgoing, and constrained components. This decomposition guides the choice of the penalization operator and shows how boundary information can be imposed without directly solving a boundary-value problem at each stage of the approximation.\n\nA central part of the analysis concerns the behavior of the penalized solutions as the penalty parameter tends to zero. The penalization produces a thin transition layer near the boundary, while away from that layer the approximate solution approaches the solution of the original mixed hyperbolic problem. By constructing asymptotic expansions and deriving uniform estimates, the paper identifies the mechanism of convergence and clarifies the role played by boundary-layer corrections. The resulting formulation also indicates how the approximation error depends on the penalization parameter and on the compatibility and regularity of the data.\n\nThe key contribution is a unified approximation framework rather than a collection of problem-specific constructions. It shows that a broad class of constant-coefficient hyperbolic boundary problems satisfying the Uniform Lopatinski Condition can be treated through the same general penalization strategy. In this way, the paper connects boundary stability, spectral decomposition, and singular perturbation methods in a single systematic approach.\n\nBeyond its theoretical significance, the framework provides a foundation for numerical methods on fixed or extended computational domains. By encoding boundary conditions through explicit source terms, penalization can reduce the need for boundary-fitted discretizations and may simplify the treatment of complex interfaces. The paper therefore clarifies both the mathematical validity and the practical potential of penalization methods for stable mixed hyperbolic systems.",
+    "L5": "## The Uniform Lopatinski Condition\n\nThe **uniform Lopatinski condition** is a fundamental stability criterion for initial-boundary value problems involving hyperbolic partial differential equations. It determines whether boundary conditions interact correctly with waves entering a domain and is closely related to the existence of energy estimates and well-posedness.\n\nConsider a linear first-order hyperbolic system on the half-space \\(x_d>0\\),\n\n\\[\n\\partial_t u+\\sum_{j=1}^{d} A_j\\partial_{x_j}u=0,\n\\]\n\ntogether with a boundary condition\n\n\\[\nBu|_{x_d=0}=g.\n\\]\n\nAfter applying the Laplace transform in time and the Fourier transform in the tangential variables \\(x'=(x_1,\\ldots,x_{d-1})\\), the problem reduces to an ordinary differential equation in the normal variable \\(x_d\\). If \\(\\tau\\) is the temporal frequency and \\(\\eta\\) the tangential frequency, the transformed equation has the form\n\n\\[\n\\frac{d\\widehat u}{{dx_d}}\n  =G(\\tau,\\eta)\\widehat u.\n\\]\n\nFor frequencies with \\(\\operatorname{Re}\\tau>0\\), solutions that remain bounded or decay as \\(x_d\\to+\\infty\\) belong to the stable subspace \\(E^s(\\tau,\\eta)\\) of \\(G(\\tau,\\eta)\\). The boundary operator must uniquely determine the amplitudes of all such modes.\n\nThe **Lopatinski condition** requires that\n\n\\[\nE^s(\\tau,\\eta)\\cap \\ker B=\\{0\\}.\n\\]\n\nEquivalently, assuming that the number of boundary conditions equals the dimension of the stable subspace, the restriction\n\n\\[\nB|_{E^s(\\tau,\\eta)}\n\\]\n\nmust be invertible. Choosing a basis \\(r_1,\\ldots,r_k\\) of \\(E^s(\\tau,\\eta)\\), one may define the Lopatinski determinant\n\n\\[\n\\Delta(\\tau,\\eta)\n   =\\det\\bigl(Br_1,\\ldots,Br_k\\bigr).\n\\]\n\nThe ordinary Lopatinski condition states that this determinant does not vanish in the relevant frequency region. The condition is called **uniform** when the determinant remains bounded away from zero after the frequencies have been normalized. Symbolically,\n\n\\[\n|\\Delta(\\tau,\\eta)|\\geq c>0\n\\]\n\nfor all normalized frequencies with \\(\\operatorname{Re}\\tau\\geq0\\), subject to the appropriate exclusion of the zero frequency.\n\nUniformity is crucial. A determinant may be nonzero at every individual frequency but approach zero along a sequence of frequencies. In that case, the boundary problem becomes increasingly ill-conditioned: certain incoming wave combinations can produce arbitrarily small boundary traces. This generally prevents uniform energy estimates and may lead to derivative loss or weak instability.\n\nFor constant-coefficient, noncharacteristic hyperbolic systems, the uniform Lopatinski condition is closely connected with estimates of the form\n\n\\[\n\\|u(t)\\|_{L^2}\n \\leq C\\left(\n \\|u(0)\\|_{L^2}\n +\\|g\\|_{\\text{appropriate boundary space}}\n \\right),\n\\]\n\nwhere the constant \\(C\\) does not depend on high temporal or tangential frequencies. It is therefore often interpreted as a frequency-domain version of boundary stability.\n\nThe condition also has a clear physical meaning. Hyperbolic systems support waves traveling in different directions. At a boundary, conditions should be imposed only on the incoming modes. Too few conditions leave some incoming waves undetermined, while too many conditions overdetermine the system. Even when the number is correct, the boundary operator must distinguish the incoming modes uniformly. The uniform Lopatinski condition expresses precisely this requirement.\n\nA simple example is the transport equation\n\n\\[\nu_t+a u_x=0,\\qquad x>0.\n\\]\n\nIf \\(a>0\\), characteristics enter the domain through \\(x=0\\), so one boundary condition, such as \\(u(t,0)=g(t)\\), is required. If \\(a<0\\), characteristics leave the domain, and prescribing a boundary value is generally unnecessary or incompatible. For systems, the corresponding counting and compatibility problem is encoded by the stable subspace and the Lopatinski determinant.\n\nIn nonlinear hyperbolic problems, including shock-wave stability, a related condition is formulated by linearizing around a background solution or discontinuity. Zeros of the Lopatinski determinant can indicate unstable surface waves or perturbations of a shock front. A uniform lower bound rules out such degeneracies and is frequently a central assumption in nonlinear stability theory.\n\nThus, the uniform Lopatinski condition combines three essential ideas: the correct number of boundary conditions, uniqueness of incoming modes, and stability that is uniform across all relevant frequencies. It is one of the principal links between the algebraic structure of boundary operators and the analytic well-posedness of hyperbolic initial-boundary value problems."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a one-sentence abstract for a paper on penalization methods for approximating solutions to constant-coefficient mixed hyperbolic systems satisfying the Uniform Lopatinski Condition.",
+      "output": "We develop and analyze penalization methods for approximating solutions to constant-coefficient mixed hyperbolic boundary-value problems satisfying the Uniform Lopatinski Condition, establishing stability, convergence, and error estimates for the penalized solutions.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize the main contribution of this mathematical paper in a single sentence.",
+      "output": "Please provide the paper’s title, abstract, or full text so I can summarize its main contribution in one sentence.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft an introductory sentence beginning with “In this paper” that presents a systematic and explicit approximation method using different penalization approaches.",
+      "output": "In this paper, we develop a systematic and explicit approximation method based on a range of penalization approaches.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "How might researchers describe a new method for approximating solutions of mixed hyperbolic systems under a Uniform Lopatinski Condition?",
+      "output": "Researchers might present the method as a **boundary-adapted approximation scheme** combining an interior discretization with a stable boundary solver:\n\n> We introduce a constructive method for approximating solutions of mixed hyperbolic initial–boundary value problems satisfying the Uniform Lopatinski Condition. The scheme evolves the incoming and outgoing characteristic modes separately in the interior and determines the incoming boundary modes through a discrete boundary Riemann solver. Uniform Lopatinski stability guarantees that this boundary correction is uniquely defined and uniformly bounded with respect to the discretization parameters. Using a Kreiss-type symmetrizer, we derive mesh-independent energy estimates, including control of the boundary trace. Consistency and compactness then yield convergence of the approximate solutions to a weak—or, in the smooth regime, classical—solution of the original system. The construction accommodates variable coefficients and mixed characteristic families and may also provide quantitative error bounds when additional regularity is available.\n\nA full description would normally emphasize:\n\n- decomposition into incoming, outgoing, and possibly characteristic modes;\n- an interior finite-volume, front-tracking, or regularized evolution step;\n- enforcement of boundary conditions via the Lopatinski-stable boundary operator;\n- uniform energy or bounded-variation estimates;\n- consistency, compactness, and convergence;\n- preservation of admissibility or entropy conditions for nonlinear systems.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate a concise research-paper statement about penalization techniques for mixed hyperbolic systems with constant coefficients.",
+      "output": "We analyze penalization methods for constant-coefficient mixed hyperbolic systems, replacing boundary or interface constraints by stiff lower-order terms. Uniform energy estimates establish stability and convergence of penalized solutions to the constrained solution as the penalty parameter vanishes, while Fourier–Laplace analysis quantifies convergence rates and identifies boundary-layer effects.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6914893617021277,
+      "excess_ratio": 0.30068839037448064,
+      "baseline_mean": 0.3908009713276471,
+      "baseline_n_valid": 5,
+      "output_chars": 231,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6835443037974683,
+          "baseline_mean": 0.3465039764766246,
+          "excess_ratio": 0.3370403273208437
+        },
+        "bz2": {
+          "actual_ratio": 0.6,
+          "baseline_mean": 0.3308644860349447,
+          "excess_ratio": 0.26913551396505525
+        },
+        "lzma": {
+          "actual_ratio": 0.7777777777777778,
+          "baseline_mean": 0.4737813516211082,
+          "excess_ratio": 0.3039964261566696
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.5301204819277108,
+      "excess_ratio": 0.1393195106000637,
+      "baseline_mean": 0.3908009713276471,
+      "baseline_n_valid": 5,
+      "output_chars": 238,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5061728395061729,
+          "baseline_mean": 0.3465039764766246,
+          "excess_ratio": 0.15966886302954825
+        },
+        "bz2": {
+          "actual_ratio": 0.4205128205128205,
+          "baseline_mean": 0.3308644860349447,
+          "excess_ratio": 0.08964833447787579
+        },
+        "lzma": {
+          "actual_ratio": 0.6428571428571429,
+          "baseline_mean": 0.4737813516211082,
+          "excess_ratio": 0.16907579123603472
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.437941473259334,
+      "excess_ratio": 0.04714050193168695,
+      "baseline_mean": 0.3908009713276471,
+      "baseline_n_valid": 5,
+      "output_chars": 505,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.40476190476190477,
+          "baseline_mean": 0.3465039764766246,
+          "excess_ratio": 0.05825792828528015
+        },
+        "bz2": {
+          "actual_ratio": 0.37846153846153846,
+          "baseline_mean": 0.3308644860349447,
+          "excess_ratio": 0.04759705242659373
+        },
+        "lzma": {
+          "actual_ratio": 0.5161290322580645,
+          "baseline_mean": 0.4737813516211082,
+          "excess_ratio": 0.04234768063695632
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.12166542009473952,
+      "excess_ratio": -0.26913555123290755,
+      "baseline_mean": 0.3908009713276471,
+      "baseline_n_valid": 5,
+      "output_chars": 3183,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.09833585476550681,
+          "baseline_mean": 0.3465039764766246,
+          "excess_ratio": -0.2481681217111178
+        },
+        "bz2": {
+          "actual_ratio": 0.11947245927075252,
+          "baseline_mean": 0.3308644860349447,
+          "excess_ratio": -0.21139202676419222
+        },
+        "lzma": {
+          "actual_ratio": 0.1457142857142857,
+          "baseline_mean": 0.4737813516211082,
+          "excess_ratio": -0.32806706590682244
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.024118738404452614,
+      "excess_ratio": -0.36668223292319446,
+      "baseline_mean": 0.3908009713276471,
+      "baseline_n_valid": 5,
+      "output_chars": 4571,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.013326499231163505,
+          "baseline_mean": 0.3465039764766246,
+          "excess_ratio": -0.3331774772454611
+        },
+        "bz2": {
+          "actual_ratio": 0.021025641025641025,
+          "baseline_mean": 0.3308644860349447,
+          "excess_ratio": -0.3098388450093037
+        },
+        "lzma": {
+          "actual_ratio": 0.03747534516765286,
+          "baseline_mean": 0.4737813516211082,
+          "excess_ratio": -0.4363060064534553
+        }
+      }
+    }
+  }
+}

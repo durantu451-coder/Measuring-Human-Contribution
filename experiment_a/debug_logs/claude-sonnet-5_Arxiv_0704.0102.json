@@ -1,0 +1,175 @@
+{
+  "model": "claude-sonnet-5",
+  "domain": "Arxiv",
+  "id": "0704.0102",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe prove a duality theorem for certain graded algebras and show by various examples different kinds of failure of tameness of local cohomology.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe prove a duality theorem for certain graded algebras and show by various examples different kinds of failure of tameness of local cohomology.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A duality theorem is proven for certain graded algebras, establishing a theoretical foundation for further analysis.\n- Various examples are presented to illustrate failures of tameness in local cohomology.\n- The examples demonstrate multiple distinct types or kinds of tameness failure, rather than a single uniform pattern.\n- The work connects abstract duality results with concrete counterexamples to highlight limitations in the tameness property.\n- The findings suggest that tameness of local cohomology cannot be assumed universally for graded algebras.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe paper establishes a duality theorem for certain graded algebras, employing this framework to systematically investigate the behavior of local cohomology modules. Through various constructed examples, the authors demonstrate different kinds of failure of tameness in local cohomology, revealing that this property does not hold universally and highlighting the complexity of local cohomology's structural behavior.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: We prove a"
+  },
+  "outputs": {
+    "L1": "We establish a duality theorem for certain graded algebras and demonstrate, through a variety of examples, several distinct ways in which the tameness of local cohomology can fail.",
+    "L2": "We establish a duality result applicable to specific classes of graded algebras, and through a range of illustrative examples, we demonstrate several distinct ways in which the tameness property of local cohomology can break down.",
+    "L3": "# Duality and the Failure of Tameness in Local Cohomology of Graded Algebras\n\n## Introduction\n\nThe study of local cohomology modules over graded algebras occupies a central position in commutative algebra, with deep connections to algebraic geometry and representation theory. A particularly important structural property that researchers have sought to establish is *tameness*—the phenomenon whereby the vanishing behavior of graded pieces of local cohomology modules stabilizes eventually, following predictable patterns as the grading degree tends to infinity. This report presents a comprehensive investigation into this property, combining rigorous theoretical development with concrete illustrative examples that reveal the subtlety and limitations of tameness as a general phenomenon.\n\n## Theoretical Foundations: The Duality Theorem\n\nThe investigation begins by establishing a duality theorem applicable to certain classes of graded algebras. This result serves as the theoretical cornerstone for the subsequent analysis, providing a rigorous framework within which the behavior of local cohomology modules can be systematically understood. The duality theorem relates the graded pieces of local cohomology modules to corresponding graded pieces of Ext modules (or similar dual constructions), thereby offering a powerful tool for translating questions about cohomological vanishing into more tractable algebraic computations.\n\nThis duality result is significant not merely as an isolated theoretical statement but as a mechanism that enables deeper insight into the structure of local cohomology. By establishing this correspondence, the groundwork is laid for a careful examination of when—and more importantly, when *not*—tameness can be expected to hold. The theorem thus functions as a bridge between abstract algebraic structure and the concrete cohomological behavior that is subsequently explored.\n\n## Constructing Counterexamples: Multiple Modes of Failure\n\nBuilding upon this theoretical foundation, the work proceeds to construct a diverse collection of examples specifically designed to illustrate failures of the tameness property. Rather than presenting a single counterexample to demonstrate that tameness can fail, the analysis reveals a richer and more nuanced picture: **multiple distinct types of tameness failure** are identified and carefully documented.\n\nThis multiplicity of failure modes is a crucial finding. It indicates that the breakdown of tameness is not governed by a single underlying mechanism or a uniform obstruction. Instead, different graded algebras can exhibit qualitatively different pathological behaviors in their local cohomology modules. Some examples may demonstrate oscillatory behavior that never stabilizes, while others might exhibit eventual behavior that stabilizes but in a manner inconsistent with the expected tame pattern, or display irregular vanishing patterns that resist any simple classification. The diversity of these constructions underscores that tameness failure is a genuinely complex phenomenon requiring case-by-case understanding rather than a single corrective theorem or unifying explanation.\n\n## Bridging Theory and Counterexample\n\nA distinguishing feature of this work lies in its methodological approach: rather than treating the duality theorem and the counterexamples as separate, disconnected contributions, the analysis explicitly connects these two strands. The abstract duality result is employed as an analytical lens through which the counterexamples are constructed and understood. This connection serves a dual purpose—it validates the theoretical machinery by demonstrating its applicability to concrete, explicit algebras, while simultaneously using that same machinery to expose precisely where and how the tameness property breaks down.\n\nThis interplay between abstract theory and concrete example is methodologically significant. It demonstrates that sophisticated duality-theoretic tools, while powerful for establishing structural results, can equally well be harnessed to construct and verify pathological examples. The duality theorem thus serves a dual role: as a tool for potential positive results and as a diagnostic instrument for identifying and confirming failures.\n\n## Implications and Conclusions\n\nThe cumulative effect of these findings carries an important cautionary implication for the broader field: **tameness of local cohomology cannot be assumed to hold universally across graded algebras**. While tameness may represent a natural or expected property in many favorable settings—and indeed holds under various additional hypotheses studied elsewhere in the literature—the examples constructed here demonstrate conclusively that no general theorem can guarantee this behavior without additional restrictive assumptions on the algebra in question.\n\nThis conclusion has significant ramifications for future research in the area. It suggests that any general theory of local cohomology for graded algebras must proceed with careful attention to the specific structural hypotheses under which tameness can be guaranteed, rather than treating it as an automatic or generic feature. The diversity of counterexamples further implies that any positive results establishing tameness will likely need to be tailored to specific classes of algebras, with the boundary cases and exceptions requiring continued careful study.\n\nIn summary, this work makes a twofold contribution: it establishes a nontrivial duality theorem of independent theoretical interest, and it leverages this theorem to construct a rich family of counterexamples that collectively demonstrate the fundamental limitations of tameness as a general property of local cohomology in the graded setting.",
+    "L4": "# Duality Theory and Non-Tameness of Local Cohomology Modules\n\n## Introduction\n\nLocal cohomology modules, introduced by Grothendieck in the 1960s, have become a central tool in commutative algebra and algebraic geometry, with applications ranging from the study of singularities to intersection theory. Given a Noetherian ring $R$ and an ideal $I \\subseteq R$, the local cohomology modules $H^i_I(M)$ of a finitely generated $R$-module $M$ encode subtle information about the depth, dimension, and cohomological properties of $M$ relative to the closed subscheme defined by $I$. Despite their fundamental importance, the structure of these modules—particularly in the graded setting—has remained only partially understood, with several natural questions about their behavior resisting complete resolution for decades.\n\nOne such question concerns the *tameness* property. For a standard graded ring $R = \\bigoplus_{n \\geq 0} R_n$ over a field $R_0 = k$, with irrelevant maximal ideal $\\mathfrak{m} = \\bigoplus_{n>0} R_n$, and a finitely generated graded module $M$, the local cohomology modules $H^i_{\\mathfrak{m}}(M)$ are graded, and their graded pieces $H^i_{\\mathfrak{m}}(M)_n$ are finite-dimensional $k$-vector spaces. A natural and long-studied question, motivated by analogies with the vanishing behavior of sheaf cohomology on projective varieties, asks whether these graded pieces exhibit *eventual vanishing behavior of a uniform type*: specifically, whether $H^i_{\\mathfrak{m}}(M)_n = 0$ for all $n \\gg 0$ or $H^i_{\\mathfrak{m}}(M)_n \\neq 0$ for all $n \\gg 0$—that is, whether the vanishing does not \"oscillate\" indefinitely as $n \\to \\infty$. A module (or the pair $(R,M)$) satisfying this dichotomy for every cohomological degree $i$ is called *tame*.\n\nThe tameness property has significant consequences: it would imply, among other things, control over the asymptotic behavior of Hilbert functions of local cohomology and would clarify the relationship between local cohomology and the geometry of the corresponding projective scheme $\\mathrm{Proj}(R)$. Positive results in this direction were established by Brodmann, Hellus, and others in special cases—for instance, when $R$ is a polynomial ring or in situations where the module $M$ satisfies additional structural hypotheses. However, the question of whether tameness holds in general remained open, and its resolution required the development of new theoretical tools.\n\n## Summary of the Paper\n\nThis paper makes substantial progress in resolving the tameness question by developing a general duality theorem for a class of graded algebras that need not satisfy the classical Cohen–Macaulay or Gorenstein hypotheses typically assumed in such contexts. This duality framework generalizes and extends local duality in a form suitable for graded rings that may fail to be Cohen–Macaulay, allowing the authors to translate questions about the asymptotic vanishing of local cohomology modules into questions about the structure of certain dual graded modules that can be analyzed more directly.\n\nBuilding on this duality, the authors undertake a systematic investigation of when tameness holds and, crucially, when it fails. The paper's central achievement is the construction of a series of carefully designed examples of graded rings and modules for which tameness breaks down in qualitatively different ways. These examples are significant because they show that the failure of tameness is not merely a technical anomaly confined to a single family of counterexamples, but rather represents a genuine and multifaceted phenomenon.\n\nSpecifically, the constructions illustrate:\n\n1. **Non-tame behavior arising from non-Cohen–Macaulay rings**: Examples are given where the base ring itself fails to be Cohen–Macaulay, and this failure propagates into oscillating vanishing behavior of the local cohomology modules.\n\n2. **Dependence on characteristic and combinatorial data**: Some examples exploit specific numerical or combinatorial constructions (such as monomial ideals or simplicial complexes) to engineer local cohomology modules whose graded pieces vanish and reappear according to intricate patterns governed by the combinatorics of the input data.\n\n3. **Failure in higher cohomological degrees**: The authors show that even when tameness might hold in low degrees (such as the top or bottom nonvanishing local cohomology modules, where partial positive results were previously known), it can fail in intermediate degrees, demonstrating that no single cohomological degree can be treated as representative of the whole complex.\n\n## Significance and Implications\n\nThe results of this paper resolve, in the negative, the general tameness conjecture for local cohomology modules over graded rings, definitively showing that the phenomenon does not hold with the universality that had been conjectured. This has several important consequences:\n\n- It clarifies the boundary of validity for prior positive tameness results, showing that hypotheses such as the Cohen–Macaulay property (or related conditions) are not merely technical conveniences but are in some sense necessary for the phenomenon to hold.\n\n- It demonstrates that the asymptotic behavior of local cohomology is genuinely more complicated than naive analogies with coherent sheaf cohomology on projective varieties would suggest, reinforcing the idea that local cohomology, despite superficial similarities, can behave quite differently from its geometric counterpart in the graded setting.\n\n- The duality theorem developed as the primary technical tool is of independent interest, providing a flexible framework that can likely be applied to other questions concerning the asymptotic and structural properties of local cohomology modules, extending well beyond the tameness question itself.\n\n- The variety of counterexamples constructed suggests that a complete classification of exactly when tameness holds (and fails) is likely to be a delicate problem involving fine algebraic and combinatorial invariants of the ring and module in question, rather than being governed by a single clean criterion.\n\n## Conclusion\n\nBy developing a robust duality theorem for graded algebras and applying it to construct explicit counterexamples, this paper settles the tameness question for local cohomology modules in the negative and reveals the rich and complex structure underlying the asymptotic behavior of these fundamental objects. The work not only advances the theoretical understanding of local cohomology but also provides new methodological tools—centered on graded duality—that are likely to prove valuable in further investigations into the subtle interplay between algebra and geometry encoded in local cohomology modules.",
+    "L5": "# On a Generalization of the Banach Fixed Point Theorem\n\n## Abstract\n\nWe prove a generalized version of the Banach fixed point theorem for mappings defined on complete metric spaces, extending the classical contraction principle to a broader class of mappings satisfying a weaker, integral-type contractive condition.\n\n## Introduction\n\nThe Banach fixed point theorem is one of the cornerstones of nonlinear analysis, guaranteeing the existence and uniqueness of fixed points for contraction mappings on complete metric spaces. In this work, we relax the standard contractive inequality and replace it with an integral condition involving a Lebesgue-integrable function, thereby capturing a wider class of operators relevant to differential and integral equations.\n\n## Main Result\n\n**Theorem.** Let $(X, d)$ be a complete metric space, and let $T: X \\to X$ be a mapping such that for all $x, y \\in X$,\n\n$$\n\\int_0^{d(Tx, Ty)} \\varphi(t)\\, dt \\leq k \\int_0^{d(x,y)} \\varphi(t)\\, dt,\n$$\n\nwhere $\\varphi: [0, \\infty) \\to [0, \\infty)$ is a Lebesgue-integrable function satisfying $\\int_0^\\varepsilon \\varphi(t)\\, dt > 0$ for every $\\varepsilon > 0$, and $k \\in [0, 1)$ is a constant. Then $T$ has a unique fixed point $x^* \\in X$, and for any $x_0 \\in X$, the sequence of iterates $\\{T^n x_0\\}$ converges to $x^*$.\n\n## Proof Sketch\n\nWe prove a sequence of lemmas culminating in the main theorem. First, we define $\\Phi(r) = \\int_0^r \\varphi(t)\\, dt$ and observe that $\\Phi$ is strictly increasing due to the positivity assumption on $\\varphi$. The contractive condition becomes\n\n$$\n\\Phi(d(Tx, Ty)) \\leq k\\, \\Phi(d(x,y)).\n$$\n\nFixing $x_0 \\in X$ and defining $x_{n+1} = T x_n$, we show by induction that\n\n$$\n\\Phi(d(x_{n+1}, x_n)) \\leq k^n\\, \\Phi(d(x_1, x_0)).\n$$\n\nSince $\\Phi$ is strictly increasing, this implies $d(x_{n+1}, x_n) \\to 0$ as $n \\to \\infty$. A standard triangle inequality argument, combined with the geometric decay of $\\Phi(d(x_{n+1}, x_n))$, shows that $\\{x_n\\}$ is a Cauchy sequence. By completeness of $X$, the sequence converges to some $x^* \\in X$.\n\nTo verify that $x^*$ is a fixed point, we use the continuity implied by the contractive condition: as $n \\to \\infty$,\n\n$$\n\\Phi(d(Tx^*, x^*)) \\leq \\lim_{n \\to \\infty} \\Phi(d(Tx^*, Tx_n)) + \\Phi(d(x_{n+1}, x^*)) = 0,\n$$\n\nforcing $d(Tx^*, x^*) = 0$, hence $Tx^* = x^*$.\n\nUniqueness follows directly: if $x^*$ and $y^*$ are both fixed points, then\n\n$$\n\\Phi(d(x^*, y^*)) = \\Phi(d(Tx^*, Ty^*)) \\leq k\\, \\Phi(d(x^*, y^*)),\n$$\n\nwhich, since $k < 1$, forces $\\Phi(d(x^*, y^*)) = 0$ and therefore $x^* = y^*$.\n\n## Conclusion\n\nThis result unifies several known fixed point theorems in the literature and provides a flexible framework for proving existence and uniqueness results in analysis, particularly in the study of integral equations where contractive conditions naturally arise in an integral form rather than a pointwise one."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a paper about duality theorems in graded algebras and failures of tameness in local cohomology.",
+      "output": "# Abstract\n\nWe investigate duality phenomena for local cohomology modules over graded Noetherian rings and establish new failures of tameness in this setting. Let $R = \\bigoplus_{n \\geq 0} R_n$ be a Noetherian graded ring with $R_0$ local, and let $M$ be a finitely generated graded $R$-module. For an ideal $\\mathfrak{a} \\subseteq R$, we study the graded local cohomology modules $H^i_{\\mathfrak{a}}(M)$ and their associated Hilbert series, focusing on the asymptotic behavior of the graded components $H^i_{\\mathfrak{a}}(M)_n$ as $n \\to \\pm\\infty$.\n\nWe establish a graded local duality theorem that relates $H^i_{\\mathfrak{a}}(M)$ to Ext modules computed via a dualizing complex, extending classical results beyond the Cohen-Macaulay and Gorenstein settings to general graded rings admitting a graded canonical module. This duality is used to construct explicit examples where the local cohomology modules fail to be *tame*—that is, where the vanishing behavior of $H^i_{\\mathfrak{a}}(M)_n$ for $n \\ll 0$ is not eventually constant, contrary to conjectures originating in the work of Brodmann and Sharp. In particular, we exhibit modules for which the set \n$$\n\\{n \\in \\mathbb{Z} : H^i_{\\mathfrak{a}}(M)_n \\neq 0\\}\n$$\nexhibits infinitely many sign changes in a suitable sense, disproving tameness even under mild hypotheses on the ring such as excellence and normality.\n\nOur approach combines techniques from graded commutative algebra, spectral sequence arguments arising from the duality theorem, and an analysis of Frobenius and Cartier module structures in positive characteristic to produce these pathological examples. We further examine the interaction between our duality results and finiteness properties of local cohomology, showing that non-tameness can coexist with the Artinian property in higher cohomological degrees. These results clarify the boundary between structural finiteness theorems and asymptotic regularity for local cohomology, and provide counterexamples relevant to open questions in the study of graded rings, F-singularities, and cohomological dimension theory.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "I'm submitting a math paper on commutative algebra—can you draft a concise abstract mentioning duality for graded algebras and examples of non-tame local cohomology?",
+      "output": "# Abstract\n\nWe investigate duality phenomena for graded modules over Noetherian graded rings, with particular emphasis on the interaction between local duality and the structure of local cohomology modules. Building on the classical framework of graded local duality, we establish new conditions under which the graded pieces of local cohomology modules exhibit predictable asymptotic behavior, and we clarify the relationship between such duality statements and the vanishing or finiteness properties of Bass and Betti numbers in the graded setting.\n\nA central theme of this paper is the failure of tameness for local cohomology modules in certain non-standard graded and non-Cohen–Macaulay settings. We construct explicit examples of graded rings for which the local cohomology modules $H^i_{\\mathfrak{m}}(M)$ display non-tame behavior—that is, the vanishing of graded components $H^i_{\\mathfrak{m}}(M)_n$ does not stabilize in sign or occurrence as $n \\to \\pm\\infty$. These examples illustrate the subtlety of extending tameness results beyond the standard graded, Cohen–Macaulay case, and they show that duality alone does not suffice to guarantee tame asymptotic behavior. We further discuss how our constructions relate to known conjectures on tameness and finiteness of local cohomology, and we indicate directions in which the duality methods developed here may be adapted to study non-tame behavior more systematically.\n\n---\n\n*Note: I've drafted this as a general template based on common themes in this research area. Since I don't have the specific details of your paper (exact theorems, ring constructions, key techniques, or how tameness fails in your examples), please treat this as a starting point—you'll want to replace the general claims with your paper's precise results, and I'd be happy to refine this further if you share more specifics about your main theorems.*",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Summarize in one sentence a research result that proves a duality theorem for graded algebras and illustrates counterexamples to tameness of local cohomology.",
+      "output": "This paper establishes a duality theorem for graded algebras relating local cohomology modules to Ext functors over a graded ring, while also constructing explicit counterexamples demonstrating that local cohomology modules need not be tame (i.e., their graded components can fail to be eventually zero or eventually nonzero in a predictable pattern) in certain non-standard graded settings.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate a short, formal abstract for an algebraic geometry/commutative algebra paper discussing graded ring duality and various failures of local cohomology tameness.",
+      "output": "# Abstract\n\nLet $R$ be a Noetherian graded ring with irrelevant ideal $\\mathfrak{m}$, and let $M$ be a finitely generated graded $R$-module. We investigate the interplay between graded local duality and the asymptotic behavior of local cohomology modules $H^i_{\\mathfrak{m}}(M)$ under Veronese truncation and twist. While Grothendieck-Serre duality furnishes a functorial pairing between $H^i_{\\mathfrak{m}}(M)_n$ and $\\mathrm{Ext}^{d-i}_R(M, \\omega_R)_{-n}$ for $R$ Cohen-Macaulay with canonical module $\\omega_R$, we show that several natural finiteness and vanishing properties—collectively referred to as *tameness*—fail to persist outside restrictive hypotheses.\n\nSpecifically, we construct examples in which: (i) the local cohomology modules $H^i_{\\mathfrak{m}}(M)_n$ fail to vanish for all $n \\ll 0$ despite $M$ being finitely generated, contradicting naive expectations from the non-graded theory; (ii) the associated primes of $H^i_{\\mathfrak{m}}(M)$ are not eventually stable under further truncation, so that asymptotic stability results of Brodmann-type do not extend verbatim to the graded dual setting; and (iii) tameness of $H^i_{\\mathfrak{m}}(M)$ can hold in a fixed cohomological degree $i$ while failing simultaneously in an adjacent degree $i+1$, showing that tameness is not preserved under the long exact sequences arising from short exact sequences of modules. We further exhibit rings $R$ for which the duality pairing degenerates on the level of Hilbert series, so that the Hilbert function of $H^i_{\\mathfrak{m}}(M)$ cannot be recovered from that of the corresponding Ext module via a simple sign-reversal formula, even though such a formula holds generically.\n\nThese phenomena are traced to the failure of $R$ to be Cohen-Macaulay, to the non-finiteness of certain graded pieces of $\\mathrm{Ext}$ modules over non-standard graded rings, and to subtleties in the completion of $R$ at $\\mathfrak{m}$ when $R_0$ is not local. We give precise numerical criteria, phrased in terms of the $a$-invariants and the depth filtration of $M$, delimiting when tameness and duality-compatible behavior can be guaranteed, and we discuss the extent to which our examples are optimal.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Give me a one-line abstract summary for a mathematics manuscript covering both a duality result for graded algebras and examples showing local cohomology can fail to be tame.",
+      "output": "This paper establishes a duality theorem for local cohomology modules of graded algebras and applies it to construct examples showing that local cohomology modules need not be tame, i.e., their graded components can fail to be eventually all zero or all nonzero.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.5484581497797357,
+      "excess_ratio": 0.3609811709192624,
+      "baseline_mean": 0.18747697886047332,
+      "baseline_n_valid": 5,
+      "output_chars": 180,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.488,
+          "baseline_mean": 0.1522872511031474,
+          "excess_ratio": 0.3357127488968526
+        },
+        "bz2": {
+          "actual_ratio": 0.496551724137931,
+          "baseline_mean": 0.1709198183069343,
+          "excess_ratio": 0.3256319058309967
+        },
+        "lzma": {
+          "actual_ratio": 0.6304347826086957,
+          "baseline_mean": 0.23038357381694424,
+          "excess_ratio": 0.40005120879175143
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3870967741935484,
+      "excess_ratio": 0.19961979533307506,
+      "baseline_mean": 0.18747697886047332,
+      "baseline_n_valid": 5,
+      "output_chars": 230,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2857142857142857,
+          "baseline_mean": 0.1522872511031474,
+          "excess_ratio": 0.1334270346111383
+        },
+        "bz2": {
+          "actual_ratio": 0.37777777777777777,
+          "baseline_mean": 0.1709198183069343,
+          "excess_ratio": 0.20685795947084346
+        },
+        "lzma": {
+          "actual_ratio": 0.4642857142857143,
+          "baseline_mean": 0.23038357381694424,
+          "excess_ratio": 0.23390214046877006
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.09726266744321503,
+      "excess_ratio": -0.09021431141725829,
+      "baseline_mean": 0.18747697886047332,
+      "baseline_n_valid": 5,
+      "output_chars": 5774,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.07421875,
+          "baseline_mean": 0.1522872511031474,
+          "excess_ratio": -0.07806850110314739
+        },
+        "bz2": {
+          "actual_ratio": 0.10135135135135136,
+          "baseline_mean": 0.1709198183069343,
+          "excess_ratio": -0.06956846695558296
+        },
+        "lzma": {
+          "actual_ratio": 0.11604095563139932,
+          "baseline_mean": 0.23038357381694424,
+          "excess_ratio": -0.11434261818554492
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.06328806983511154,
+      "excess_ratio": -0.12418890902536178,
+      "baseline_mean": 0.18747697886047332,
+      "baseline_n_valid": 5,
+      "output_chars": 6751,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04543815362423368,
+          "baseline_mean": 0.1522872511031474,
+          "excess_ratio": -0.10684909747891372
+        },
+        "bz2": {
+          "actual_ratio": 0.06965542793627269,
+          "baseline_mean": 0.1709198183069343,
+          "excess_ratio": -0.10126439037066162
+        },
+        "lzma": {
+          "actual_ratio": 0.07492795389048991,
+          "baseline_mean": 0.23038357381694424,
+          "excess_ratio": -0.15545561992645435
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.029373537821679115,
+      "excess_ratio": -0.1581034410387942,
+      "baseline_mean": 0.18747697886047332,
+      "baseline_n_valid": 5,
+      "output_chars": 2886,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.019401778496362168,
+          "baseline_mean": 0.1522872511031474,
+          "excess_ratio": -0.13288547260678524
+        },
+        "bz2": {
+          "actual_ratio": 0.019561815336463225,
+          "baseline_mean": 0.1709198183069343,
+          "excess_ratio": -0.15135800297047108
+        },
+        "lzma": {
+          "actual_ratio": 0.04804804804804805,
+          "baseline_mean": 0.23038357381694424,
+          "excess_ratio": -0.1823355257688962
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T05:13:11.545691+00:00"
+    }
+  ]
+}

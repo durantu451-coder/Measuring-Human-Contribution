@@ -1,0 +1,175 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0043",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe construct a system of nonequilibrium entropy limiters for the lattice Boltzmann methods (LBM). These limiters erase spurious oscillations without blurring of shocks, and do not affect smooth solutions. In general, they do the same work for LBM as flux limiters do for finite differences, finite volumes and finite elements methods, but for LBM the main idea behind the construction of nonequilibrium entropy limiter schemes is to transform a field of a scalar quantity - nonequilibrium entropy. There are two families of limiters: (i) based on restriction of nonequilibrium entropy (entropy \"trimming\") and (ii) based on filtering of nonequilibrium entropy (entropy filtering). The physical properties of LBM provide some additional benefits: the control of entropy production and accurate estimate of introduced artificial dissipation are possible. The constructed limiters are tested on classical numerical examples: 1D athermal shock tubes with an initial density ratio 1:2 and the 2D lid-driven cavity for Reynolds numbers Re between 2000 and 7500 on a coarse 100*100 grid. All limiter constructions are applicable for both entropic and non-entropic quasiequilibria.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe construct a system of nonequilibrium entropy limiters for the lattice Boltzmann methods (LBM). These limiters erase spurious oscillations without blurring of shocks, and do not affect smooth solutions. In general, they do the same work for LBM as flux limiters do for finite differences, finite volumes and finite elements methods, but for LBM the main idea behind the construction of nonequilibrium entropy limiter schemes is to transform a field of a scalar quantity - nonequilibrium entropy. There are two families of limiters: (i) based on restriction of nonequilibrium entropy (entropy \"trimming\") and (ii) based on filtering of nonequilibrium entropy (entropy filtering). The physical properties of LBM provide some additional benefits: the control of entropy production and accurate estimate of introduced artificial dissipation are possible. The constructed limiters are tested on classical numerical examples: 1D athermal shock tubes with an initial density ratio 1:2 and the 2D lid-driven cavity for Reynolds numbers Re between 2000 and 7500 on a coarse 100*100 grid. All limiter constructions are applicable for both entropic and non-entropic quasiequilibria.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A system of nonequilibrium entropy limiters is developed for lattice Boltzmann methods to suppress spurious oscillations without blurring shocks or affecting smooth solutions.\n- These limiters play a role analogous to flux limiters in other numerical methods by transforming the scalar field of nonequilibrium entropy.\n- The two limiter families are entropy trimming, which restricts nonequilibrium entropy, and entropy filtering, which filters it.\n- The approach enables control of entropy production and accurate estimation of the artificial dissipation introduced.\n- The limiters are tested on 1D athermal shock tubes and a 2D lid-driven cavity and are applicable to both entropic and non-entropic quasiequilibria.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA system of nonequilibrium entropy limiters for lattice Boltzmann methods is developed using entropy trimming or filtering to suppress spurious oscillations while controlling entropy production and artificial dissipation. Tests on 1D shock tubes and a 2D lid-driven cavity show that the limiters preserve shocks and smooth solutions, work with both entropic and non-entropic quasiequilibria, and provide an LBM analogue of flux limiters.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Boltzmann, LBM, These"
+  },
+  "outputs": {
+    "L1": "We construct a system of nonequilibrium entropy limiters for lattice Boltzmann methods (LBM). These limiters eliminate spurious oscillations without blurring shocks or affecting smooth solutions. In general, they serve the same purpose in LBM as flux limiters do in finite-difference, finite-volume, and finite-element methods. In LBM, however, the central idea underlying nonequilibrium entropy limiter schemes is the transformation of a scalar field—the nonequilibrium entropy. Two families of limiters are considered: (i) those based on restricting nonequilibrium entropy (entropy “trimming”) and (ii) those based on filtering nonequilibrium entropy (entropy filtering). The physical properties of LBM provide additional benefits, including control over entropy production and accurate estimation of the artificial dissipation introduced. The proposed limiters are tested on classical numerical examples: one-dimensional athermal shock tubes with an initial density ratio of 1:2, and the two-dimensional lid-driven cavity at Reynolds numbers ranging from 2,000 to 7,500 on a coarse 100 × 100 grid. All limiter constructions are applicable to both entropic and non-entropic quasiequilibria.",
+    "L2": "We develop a set of nonequilibrium-entropy limiters for lattice Boltzmann methods (LBM). These limiters remove nonphysical oscillations while preserving sharp shock profiles and leaving smooth solutions unchanged. Their role in LBM is analogous to that of flux limiters in finite-difference, finite-volume, and finite-element schemes. However, the LBM approach operates by modifying a scalar field representing nonequilibrium entropy.\n\nThe proposed limiters fall into two categories: (i) methods that constrain nonequilibrium entropy, referred to as entropy “trimming,” and (ii) methods that filter the nonequilibrium-entropy field, known as entropy filtering. The physical characteristics of LBM offer further advantages, including control over entropy production and precise estimation of the artificial dissipation introduced by the limiter.\n\nThe limiters are evaluated using standard benchmark problems: one-dimensional athermal shock tubes with an initial density ratio of 1:2, and a two-dimensional lid-driven cavity at Reynolds numbers ranging from 2000 to 7500 on a coarse \\(100 \\times 100\\) grid. Every limiter formulation can be used with both entropic and non-entropic quasiequilibria.",
+    "L3": "A system of nonequilibrium entropy limiters has been developed for lattice Boltzmann methods to suppress spurious oscillations while preserving sharp shock profiles and leaving smooth regions of the solution essentially unaffected. Analogous to flux limiters in conventional numerical schemes, these techniques operate by transforming the scalar field of nonequilibrium entropy, thereby stabilizing the computation without introducing unnecessary numerical diffusion.\n\nTwo principal families of limiters are considered. The first, known as **entropy trimming**, directly restricts the magnitude of nonequilibrium entropy when it exceeds a prescribed threshold. The second, referred to as **entropy filtering**, smooths or filters the nonequilibrium entropy field to reduce localized instabilities. Together, these approaches provide a systematic means of controlling entropy production and allow the artificial dissipation introduced by stabilization to be estimated accurately.\n\nThe limiters have been evaluated using one-dimensional athermal shock-tube problems and a two-dimensional lid-driven cavity flow. The results demonstrate their ability to improve stability and suppress nonphysical oscillations without blurring shocks or degrading smooth solutions. Moreover, the framework is sufficiently general to be applied to lattice Boltzmann models based on both entropic and non-entropic quasiequilibria.",
+    "L4": "A system of nonequilibrium entropy limiters is developed for lattice Boltzmann methods (LBM) to improve the stability of simulations involving shocks, steep gradients, and under-resolved flow structures. The central idea is to monitor the local nonequilibrium entropy—the entropy difference between the current particle distribution and its corresponding quasiequilibrium—and to modify only those states in which this quantity becomes excessively large. In this way, spurious post-shock oscillations and other nonphysical artifacts can be suppressed without applying uniform numerical viscosity throughout the computational domain.\n\nThe proposed limiters operate through entropy trimming or filtering. When the nonequilibrium entropy exceeds a prescribed admissible level, the deviation of the distribution from quasiequilibrium is reduced while the locally conserved moments remain unchanged. Different filtering rules can be used, ranging from smooth rescaling of the nonequilibrium component to more selective corrections applied only at a limited number of the most strongly nonequilibrium lattice sites. The amount of entropy production introduced by the correction can therefore be explicitly monitored and controlled. This is important because excessive filtering may stabilize a calculation at the cost of smearing shocks, damping vortices, or degrading the accuracy of smooth parts of the solution.\n\nThe method is formulated independently of a particular choice of quasiequilibrium. It can be combined with entropy-based equilibria, for which a discrete entropy function is built directly into the kinetic model, as well as with conventional polynomial or otherwise non-entropic quasiequilibria. Consequently, the approach is applicable to a broad class of lattice Boltzmann schemes rather than being restricted to fully entropic formulations.\n\nThe performance of the limiters is examined using standard one-dimensional shock-tube problems and a two-dimensional lid-driven cavity flow. In the shock-tube tests, entropy filtering reduces nonphysical oscillations near discontinuities while retaining sharp shock and contact structures. In smooth regions, the limiter remains weak or inactive, so the underlying accuracy of the lattice Boltzmann scheme is largely preserved. The cavity-flow calculations further demonstrate that the method can stabilize multidimensional simulations without destroying the principal vortical structures or introducing unnecessary dissipation throughout the domain.\n\nThese results show that nonequilibrium entropy provides a useful local indicator of numerical instability in lattice Boltzmann calculations. By selectively constraining anomalously large departures from quasiequilibrium, the proposed system offers a kinetic analogue of flux and slope limiters used in finite-volume methods for hyperbolic conservation laws. It combines shock-capturing capability with explicit control over artificial entropy production, providing a flexible framework for constructing robust lattice Boltzmann schemes for both discontinuous and smooth flows.",
+    "L5": "### Boltzmann and LBM\n\nThe lattice Boltzmann method (LBM) is a numerical approach for simulating fluid flows. It is derived from the Boltzmann equation, which describes the statistical behavior of particles within a gas or fluid. Instead of directly solving traditional macroscopic equations, LBM models how particle distributions move and interact on a discrete lattice.\n\nDuring each simulation step, particles undergo collision and propagation processes. These simple local operations make LBM efficient, highly parallelizable, and well suited to complex geometries. The method is widely applied to multiphase flows, porous media, heat transfer, and microfluidic systems.\n\nAlthough LBM offers flexibility and computational efficiency, its accuracy depends on appropriate lattice models, boundary conditions, and collision operators. These considerations are particularly important when simulating turbulent flows, high velocities, or fluids with complex physical properties."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a research paper on nonequilibrium entropy limiters for lattice Boltzmann methods, including entropy trimming, entropy filtering, and benchmark tests.",
+      "output": "We present a class of nonequilibrium entropy limiters for stabilizing lattice Boltzmann methods while preserving their locality, conservation properties, and computational efficiency. The proposed approach controls excessive departures from local equilibrium by monitoring a discrete nonequilibrium entropy and selectively modifying populations only where a prescribed admissibility criterion is violated. Two complementary strategies are investigated: **entropy trimming**, which constrains the nonequilibrium component through local projection or rescaling, and **entropy filtering**, which suppresses isolated entropy outliers using neighborhood-based information. The limiters are designed to leave well-resolved regions essentially unchanged while regularizing under-resolved gradients and nonphysical population states. Their accuracy, robustness, and dissipation are assessed through benchmark tests spanning smooth flows, shock-dominated problems, and high-Reynolds-number regimes. Comparisons with unregularized lattice Boltzmann schemes and conventional stabilization techniques show that entropy limiting can substantially improve nonlinear stability and reduce spurious oscillations, with only localized numerical dissipation and modest computational overhead. The results clarify the respective roles of trimming and filtering and provide practical criteria for selecting limiter thresholds in challenging nonequilibrium simulations.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize a numerical stabilization approach for LBM that suppresses spurious oscillations without smearing shocks or affecting smooth solutions.",
+      "output": "A suitable LBM stabilization is a **selective entropy-based nonequilibrium filter**:\n\n1. After streaming/collision, write each population as  \n   \\[\n   f_i=f_i^{eq}+f_i^{neq}.\n   \\]\n\n2. Use a local sensor—typically the nonequilibrium entropy defect or a high-order smoothness indicator—to identify cells containing anomalously large kinetic oscillations.\n\n3. Only in flagged cells, rescale the nonequilibrium part:\n   \\[\n   f_i \\leftarrow f_i^{eq}+\\alpha f_i^{neq},\\qquad 0\\le \\alpha\\le1,\n   \\]\n   with \\(\\alpha\\) chosen from the local entropy bound or a neighborhood-median estimate. The correction is constructed to preserve density and momentum.\n\nThis selectively damps nonhydrodynamic modes responsible for ringing while leaving equilibrium and resolved hydrodynamic modes intact. Because the filter is inactive in smooth regions and acts only on outliers near discontinuities, it does not alter the formal accuracy or effective viscosity there. Unlike uniform artificial viscosity, its localized action suppresses pre-/post-shock oscillations without significantly broadening the shock.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Explain how nonequilibrium entropy limiters play a role in lattice Boltzmann methods analogous to flux limiters in finite-difference, finite-volume, and finite-element schemes. Mention the two main limiter families and their physical advantages.",
+      "output": "In lattice Boltzmann methods (LBM), the analogue of a flux limiter is applied not to reconstructed fluxes but to the **nonequilibrium part of the particle populations**. Writing  \n\\[\nf_i=f_i^{\\rm eq}+f_i^{\\rm neq},\n\\]\none measures the local departure from equilibrium by the entropy defect  \n\\[\n\\Delta S=S(f^{\\rm eq})-S(f)\\ge 0.\n\\]\nWhen \\(\\Delta S\\) becomes abnormally large—typically near shocks, under-resolved gradients, or emerging numerical instabilities—the limiter contracts \\(f^{\\rm neq}\\), usually through  \n\\[\nf_i\\leftarrow f_i^{\\rm eq}+\\alpha f_i^{\\rm neq},\\qquad 0\\le\\alpha\\le1.\n\\]\nThus it adds dissipation only where needed, much as flux limiters suppress nonphysical oscillations while retaining high-order accuracy in smooth regions.\n\nTwo main families are:\n\n1. **Sharp or threshold limiters**, including Ehrenfests’ steps and positivity corrections. Sites with excessive entropy defect are strongly relaxed, sometimes all the way to equilibrium. They robustly prevent negative populations, control extreme nonequilibrium states, and stabilize shocks and high-Reynolds-number flows.\n\n2. **Smooth or filtered entropy limiters**, including continuous rescaling and neighborhood/median-based filters. They reduce the nonequilibrium component gradually or only when it is anomalous relative to nearby sites. They introduce less artificial viscosity, better preserve resolved vortices and smooth structures, and avoid abrupt switching artifacts.\n\nBecause the correction moves populations along the line toward the local equilibrium with the same conserved moments, these limiters generally preserve mass and momentum while supplying physically interpretable, localized entropy production.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Draft a concise technical overview of entropy-based limiters for entropic and non-entropic lattice Boltzmann quasiequilibria, with results from 1D shock-tube and 2D lid-driven-cavity tests.",
+      "output": "## Entropy-based limiters for lattice Boltzmann quasiequilibria\n\nQuasiequilibrium lattice Boltzmann methods (QELBM) relax the population vector \\(f=\\{f_i\\}\\) toward a quasiequilibrium \\(f^{\\mathrm{qe}}\\), which preserves the hydrodynamic moments and, when required, selected slow non-hydrodynamic moments. For a convex discrete entropy\n\n\\[\nH(f)=\\sum_i f_i\\ln\\!\\left(\\frac{f_i}{w_i}\\right),\n\\]\n\nan entropic quasiequilibrium is obtained by minimizing \\(H\\) under these moment constraints. Non-entropic quasiequilibria—typically polynomial or otherwise explicit approximations—are cheaper but do not generally satisfy a discrete \\(H\\)-theorem.\n\nA local entropy limiter controls excessive departure from quasiequilibrium. Define the entropy defect\n\n\\[\n\\Delta H = H(f)-H(f^{\\mathrm{qe}})\\ge 0,\n\\]\n\nand replace the nonequilibrium component by\n\n\\[\nf^{\\mathrm{lim}}\n = f^{\\mathrm{qe}}+\\theta\\left(f-f^{\\mathrm{qe}}\\right),\n \\qquad 0\\le \\theta\\le 1 .\n\\]\n\nBecause \\(f\\) and \\(f^{\\mathrm{qe}}\\) share the protected moments, this operation preserves mass, momentum, and any retained slow variables. A typical smooth limiter uses\n\n\\[\n\\theta=\\min\\!\\left(1,\\sqrt{\\frac{\\Delta H_{\\max}}{\\Delta H}}\\right),\n\\]\n\nwith an additional positivity bound ensuring \\(f_i^{\\mathrm{lim}}>0\\). Alternatively, \\(\\theta\\) can be found from a prescribed entropy level. The limiter is inactive in smooth near-equilibrium regions and introduces dissipation only where the entropy defect becomes anomalously large.\n\nFor entropic quasiequilibria, this procedure complements the entropy-preserving collision parameter or entropic involution: it regularizes states for which the entropy root is poorly conditioned, absent because of positivity loss, or associated with strongly under-resolved gradients. For non-entropic quasiequilibria, the same construction acts as an entropy-based nonlinear regularizer rather than as a strict discrete \\(H\\)-theorem; entropy and positivity should therefore be evaluated using the full population state, and the admissible limiter interval must be enforced explicitly.\n\n### Benchmark behavior\n\n**One-dimensional shock tube.**  \nWithout limiting, low-viscosity QELBM solutions commonly develop post-shock oscillations, overshoots near the contact discontinuity, and occasionally negative populations. Entropy limiting suppresses these artifacts while retaining the correct shock speed and macroscopic jump conditions. The limiter is concentrated near the shock and contact wave, leaving rarefaction regions essentially unchanged. Entropic quasiequilibria generally require fewer interventions and permit sharper stable profiles; limited non-entropic quasiequilibria can achieve comparable robustness but usually need stronger limiting. Excessively small entropy thresholds broaden the shock and smear the contact discontinuity.\n\n**Two-dimensional lid-driven cavity.**  \nAt moderate and high Reynolds numbers, entropy limiting prevents instability near the moving-lid corners and in thin wall boundary layers, where the largest entropy defects occur. The resulting steady velocity profiles and primary-vortex location follow standard cavity benchmarks, while secondary corner vortices are retained provided the limiter is not overly aggressive. Entropic QELBM typically shows smoother convergence and a lower fraction of limited nodes. Non-entropic QELBM remains usable at substantially lower viscosities than its unregularized counterpart, although stability is obtained at the cost of somewhat greater localized dissipation.\n\nOverall, entropy-based limiting provides a conservative, positivity-aware stabilization mechanism applicable to both entropic and non-entropic quasiequilibria. Its main design trade-off is the threshold: weak limiting may not suppress under-resolved oscillations, whereas strong limiting sacrifices shock resolution and small-scale cavity structure.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate a paper abstract describing entropy trimming and entropy filtering in LBM, emphasizing entropy-production control, quantification of artificial dissipation, a 1:2 density-ratio shock tube, and cavity-flow simulations at Reynolds numbers 2000–7500 on a 100×100 grid.",
+      "output": "We present entropy trimming and entropy filtering as stabilization strategies for the lattice Boltzmann method (LBM), with emphasis on controlling local entropy production while minimizing artificial dissipation. Entropy trimming constrains strongly nonequilibrium populations by limiting their departure from the local equilibrium state, whereas entropy filtering selectively regularizes sites identified by anomalous entropy production. A local entropy-production measure is used both as a stability indicator and as a quantitative diagnostic of the dissipation introduced by each procedure. The methods are assessed using a one-dimensional shock-tube problem with a 1:2 density ratio, demonstrating suppression of nonphysical oscillations and improved robustness near discontinuities. Their performance in under-resolved incompressible flow is further examined through lid-driven cavity simulations at Reynolds numbers from 2000 to 7500 on a \\(100\\times100\\) lattice. The results show that entropy-based filtering can stabilize high-Reynolds-number calculations while confining additional dissipation to a small set of nonequilibrium regions, whereas more aggressive trimming produces broader damping. These findings indicate that explicit monitoring of entropy production provides a practical framework for balancing nonlinear stability, accuracy, and artificial dissipation in LBM simulations.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.5810879511947127,
+      "excess_ratio": 0.474008907392572,
+      "baseline_mean": 0.10707904380214069,
+      "baseline_n_valid": 5,
+      "output_chars": 1192,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5655737704918032,
+          "baseline_mean": 0.07717451724205811,
+          "excess_ratio": 0.48839925324974515
+        },
+        "bz2": {
+          "actual_ratio": 0.5173978819969742,
+          "baseline_mean": 0.10418522422713694,
+          "excess_ratio": 0.4132126577698373
+        },
+        "lzma": {
+          "actual_ratio": 0.6551724137931034,
+          "baseline_mean": 0.13639949305231563,
+          "excess_ratio": 0.5187729207407878
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3913255360623782,
+      "excess_ratio": 0.2842464922602375,
+      "baseline_mean": 0.10707904380214069,
+      "baseline_n_valid": 5,
+      "output_chars": 1196,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3369734789391576,
+          "baseline_mean": 0.07717451724205811,
+          "excess_ratio": 0.2597989616970995
+        },
+        "bz2": {
+          "actual_ratio": 0.3850658857979502,
+          "baseline_mean": 0.10418522422713694,
+          "excess_ratio": 0.28088066157081326
+        },
+        "lzma": {
+          "actual_ratio": 0.44505494505494503,
+          "baseline_mean": 0.13639949305231563,
+          "excess_ratio": 0.3086554520026294
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.34272930648769573,
+      "excess_ratio": 0.23565026268555506,
+      "baseline_mean": 0.10707904380214069,
+      "baseline_n_valid": 5,
+      "output_chars": 1408,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3151862464183381,
+          "baseline_mean": 0.07717451724205811,
+          "excess_ratio": 0.23801172917628
+        },
+        "bz2": {
+          "actual_ratio": 0.30286493860845837,
+          "baseline_mean": 0.10418522422713694,
+          "excess_ratio": 0.19867971438132143
+        },
+        "lzma": {
+          "actual_ratio": 0.40298507462686567,
+          "baseline_mean": 0.13639949305231563,
+          "excess_ratio": 0.26658558157455003
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.13627684964200487,
+      "excess_ratio": 0.029197805839864185,
+      "baseline_mean": 0.10707904380214069,
+      "baseline_n_valid": 5,
+      "output_chars": 3082,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.10568513119533528,
+          "baseline_mean": 0.07717451724205811,
+          "excess_ratio": 0.02851061395327717
+        },
+        "bz2": {
+          "actual_ratio": 0.1395007342143906,
+          "baseline_mean": 0.10418522422713694,
+          "excess_ratio": 0.03531550998725366
+        },
+        "lzma": {
+          "actual_ratio": 0.1620879120879121,
+          "baseline_mean": 0.13639949305231563,
+          "excess_ratio": 0.02568841903559646
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.08402860548271751,
+      "excess_ratio": -0.023050438319423175,
+      "baseline_mean": 0.10707904380214069,
+      "baseline_n_valid": 5,
+      "output_chars": 976,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04263565891472868,
+          "baseline_mean": 0.07717451724205811,
+          "excess_ratio": -0.034538858327329426
+        },
+        "bz2": {
+          "actual_ratio": 0.09205776173285199,
+          "baseline_mean": 0.10418522422713694,
+          "excess_ratio": -0.012127462494284952
+        },
+        "lzma": {
+          "actual_ratio": 0.1118421052631579,
+          "baseline_mean": 0.13639949305231563,
+          "excess_ratio": -0.02455738778915774
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T04:40:01.231373+00:00"
+    }
+  ]
+}

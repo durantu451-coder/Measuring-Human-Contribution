@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15750335",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA prediction system capable of predicting an unknown value of an attribute with high accuracy is provided. Based on first master data, second master data, and fact data indicating a relation between a first ID which is an ID of a record in the first master data and a second ID which is an ID of a record in the second master data, the co-clustering means 81 co-clusters the first IDs and the second IDs. The prediction model generation means 82 generates a prediction model for each cluster of the first ID output from the co-clustering means 81. When the first ID and the objective variable which is one of the attributes included in the first master data are specified, the prediction means 83 predicts the value of the objective variable corresponding to the first ID based on the prediction model and the belonging probability that the first ID belongs to each cluster.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA prediction system capable of predicting an unknown value of an attribute with high accuracy is provided. Based on first master data, second master data, and fact data indicating a relation between a first ID which is an ID of a record in the first master data and a second ID which is an ID of a record in the second master data, the co-clustering means 81 co-clusters the first IDs and the second IDs. The prediction model generation means 82 generates a prediction model for each cluster of the first ID output from the co-clustering means 81. When the first ID and the objective variable which is one of the attributes included in the first master data are specified, the prediction means 83 predicts the value of the objective variable corresponding to the first ID based on the prediction model and the belonging probability that the first ID belongs to each cluster.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The system predicts an unknown attribute value with high accuracy.\n- It uses first master data, second master data, and fact data linking record IDs from the two master datasets.\n- A co-clustering component jointly clusters the first IDs and second IDs based on their relationships.\n- A prediction model is generated for each cluster of first IDs.\n- The system predicts the specified objective variable using the cluster-specific models and the probabilities that the first ID belongs to each cluster.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA prediction system estimates an unknown attribute value by co-clustering IDs from two master datasets using their relationships in fact data, then generating a prediction model for each first-ID cluster. It predicts the target attribute with high accuracy by combining the cluster-specific models with the probabilities that the specified first ID belongs to each cluster.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Based, IDs, The"
+  },
+  "outputs": {
+    "L1": "A prediction system capable of predicting an unknown attribute value with high accuracy is provided. Based on first master data, second master data, and fact data indicating a relationship between a first ID identifying a record in the first master data and a second ID identifying a record in the second master data, co-clustering means 81 co-clusters the first IDs and the second IDs. Prediction model generation means 82 generates a prediction model for each cluster of first IDs output by the co-clustering means 81. When a first ID and an objective variable, which is one of the attributes included in the first master data, are specified, prediction means 83 predicts the value of the objective variable corresponding to the first ID based on the prediction model and the probability that the first ID belongs to each cluster.",
+    "L2": "A prediction system is provided that can estimate an unknown attribute value with a high degree of accuracy. Co-clustering unit 81 jointly groups first IDs and second IDs using first master data, second master data, and fact data representing relationships between the first IDs, which identify records in the first master data, and the second IDs, which identify records in the second master data. Prediction model generation unit 82 creates a separate prediction model for every first-ID cluster produced by co-clustering unit 81. When a first ID and an objective variable corresponding to an attribute in the first master data are designated, prediction unit 83 estimates the objective-variable value associated with that first ID by using the prediction models together with the probabilities that the first ID belongs to the respective clusters.",
+    "L3": "The system is designed to predict an unknown attribute value with a high degree of accuracy. It uses three types of data: first master data containing records identified by first IDs, second master data containing records identified by second IDs, and fact data that represents relationships between records in the two master datasets by linking their respective IDs.\n\nA co-clustering component analyzes these relationships and jointly groups the first IDs and second IDs into clusters. Based on the resulting cluster structure, the system generates a separate prediction model for each cluster of first IDs. Each model is therefore tailored to the characteristics and relationship patterns associated with its corresponding cluster.\n\nTo predict a specified objective variable for a particular first ID, the system applies the cluster-specific prediction models while also considering the probability that the first ID belongs to each cluster. The outputs of the models are weighted according to these cluster-membership probabilities and combined to produce a final prediction. By incorporating both relational patterns and uncertainty in cluster membership, the system can estimate unknown attribute values more accurately than a method based on a single, uniform prediction model.",
+    "L4": "A prediction system estimates an unknown target attribute by using information contained in two master datasets and the relationship records stored in fact data. The first master dataset contains a plurality of first IDs and attributes associated with those IDs, while the second master dataset contains a plurality of second IDs and their associated attributes. The fact data links first IDs to second IDs through observed events, transactions, interactions, or other relationships. Even when the target attribute is missing or cannot be determined directly from the master data, these relationships can reveal useful patterns.\n\nDuring training, the system co-clusters the first IDs and second IDs based on the structure and frequency of the relationships recorded in the fact data. Co-clustering simultaneously groups similar first IDs and similar second IDs, allowing the system to identify latent relationship patterns that may not be apparent from either master dataset alone. The clustering process may assign an ID to a single cluster or, preferably, calculate a probability indicating the degree to which the ID belongs to each of multiple clusters.\n\nThe system then generates a separate prediction model for each cluster of first IDs. Each cluster-specific model is trained using records associated with that cluster and may use attributes from the first master dataset, attributes from the second master dataset, and features derived from the fact data. Because each model is specialized for a relatively homogeneous group of first IDs, it can capture cluster-dependent relationships between the available information and the target attribute more accurately than a single model trained across the entire population.\n\nWhen a prediction is requested for a specified first ID, the system determines the probability that the specified ID belongs to each first-ID cluster. It applies the corresponding cluster-specific prediction models to the relevant input data and obtains a candidate prediction from each model. The candidate predictions are then combined using the cluster-membership probabilities as weights. For a continuous target attribute, the system may calculate a weighted average of the model outputs. For a categorical target attribute, it may combine the class probabilities produced by the models and select the class having the highest resulting probability.\n\nThis probabilistic combination allows the prediction to reflect uncertainty in cluster membership rather than forcing the specified first ID into only one cluster. It also permits information from several relevant behavioral or relational patterns to contribute to the final result. Consequently, the system can estimate a missing or unknown target attribute with improved accuracy, particularly when the relationships in the fact data contain predictive information that is not explicitly represented in either master dataset.",
+    "L5": "**Based IDs: The Future of Digital Identity**\n\nBased IDs are decentralized digital identities that give individuals greater control over their personal information. Unlike traditional identification systems managed by centralized institutions, these IDs can be secured through blockchain technology and verified without exposing unnecessary data.\n\nThe main advantage of Based IDs is their potential to improve privacy, security, and transparency. Users can decide which details to share, while organizations can confirm that the information is authentic. As digital services continue to grow, Based IDs may become an important part of creating a safer and more user-controlled internet."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a patent-style abstract describing a prediction system that uses co-clustering of IDs from two master datasets, generates a prediction model for each cluster, and predicts an objective variable using cluster-membership probabilities.",
+      "output": "A prediction system includes one or more processors configured to acquire first and second master datasets containing respective identifiers and associated feature information, and to perform co-clustering of the identifiers based on relationships between the first and second master datasets. The system assigns the identifiers to a plurality of clusters and generates, for each cluster, a prediction model trained to estimate an objective variable using training data associated with the cluster. For target data, the system calculates cluster-membership probabilities representing respective likelihoods that an identifier associated with the target data belongs to the plurality of clusters. The system obtains cluster-specific prediction values by applying the prediction models corresponding to the respective clusters and predicts the objective variable based on the cluster-specific prediction values and the cluster-membership probabilities. The disclosed configuration enables prediction that accounts for latent relationships between the master datasets and uncertainty in cluster assignment.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize an invention comprising co-clustering means 81, prediction model generation means 82, and prediction means 83, while preserving the technical terminology and component numbers.",
+      "output": "The invention includes co-clustering means 81 for co-clustering relevant data, prediction model generation means 82 for generating a prediction model based on the co-clustering results, and prediction means 83 for making predictions using the generated prediction model.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Explain how a machine-learning system can predict an unknown attribute value from first master data, second master data, and fact data linking their record IDs.",
+      "output": "A machine-learning system can treat the two master-data tables as **entities** and the fact table as the **relationships or events** connecting them.\n\n### Example structure\n\n- **First master data** — one row per entity A  \n  `A_ID, A_attributes...`\n- **Second master data** — one row per entity B  \n  `B_ID, B_attributes..., target_attribute`\n- **Fact data** — records linking the entities  \n  `A_ID, B_ID, event_attributes...`\n\nSuppose the goal is to predict a missing `target_attribute` for a record in the second master table.\n\n## 1. Build training examples\n\nUse second-master records whose target value is already known. Each such record becomes a labeled example:\n\n- **Label:** its known target attribute\n- **Direct features:** its other second-master attributes\n- **Relational features:** information obtained through the fact table and first master data\n\nFor each second-master record:\n\n1. Find all matching fact rows using `B_ID`.\n2. Follow each fact row’s `A_ID` into the first master table.\n3. Aggregate the connected records into fixed-size features.\n\nPossible features include:\n\n- Number of linked first-master records\n- Counts, sums, averages, minimums, and maximums of fact values\n- Distribution of first-master categories\n- Most frequent linked category\n- Recency and frequency of interactions\n- Trends over time\n- Embeddings learned from linked IDs or interaction sequences\n\nFor example:\n\n```text\nB_ID\ndirect B attributes\nnumber of linked A records\naverage transaction amount\npercentage of linked A records in region X\nmost common A category\ndays since last interaction\n```\n\n## 2. Train a model\n\nTrain a supervised model on records with known target values:\n\n\\[\n\\hat{y}_B = f(\\text{B attributes},\\ \\text{aggregated facts},\\ \\text{linked A attributes})\n\\]\n\nSuitable models include:\n\n- Gradient-boosted decision trees\n- Random forests\n- Logistic or linear regression\n- Neural networks\n- Graph neural networks\n- Matrix-factorization or recommendation models when IDs and interactions dominate\n\nUse **classification** for categorical attributes and **regression** for numeric attributes.\n\n## 3. Predict the missing value\n\nFor the second-master record with the unknown target:\n\n1. Gather its non-target attributes.\n2. Find its linked fact records.\n3. Join those records to the first master data.\n4. Calculate exactly the same features used during training.\n5. Pass the feature vector to the trained model.\n6. Return the predicted value, ideally with a probability or confidence score.\n\n## Simple illustration\n\nAssume:\n\n- First master: customers and their demographics\n- Second master: products, with some missing product segment\n- Fact table: customer-product purchases\n\nThe model can infer a product’s missing segment from:\n\n- The product’s known attributes\n- Which customers bought it\n- Those customers’ demographics\n- Purchase amounts, frequency, and timing\n\nIf products bought mainly by similar customer groups and under similar transaction patterns usually belong to a particular segment, the model can assign that segment to the product with the missing value.\n\n## Important considerations\n\n- Split training and validation data by time or entity to avoid leakage.\n- Do not use facts created after the prediction date.\n- Do not expose the target indirectly through derived fields.\n- Handle entities with no fact records using master-data-only features or default values.\n- Evaluate against simple baselines, such as the most common value.\n- Preserve the original unknown value and store the prediction, confidence, model version, and timestamp separately.\n\nConceptually, this is **relational feature learning**: the system predicts an entity attribute using the entity’s own data plus information propagated through ID-based relationships.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Draft a concise technical description of a high-accuracy prediction apparatus that builds cluster-specific models and combines them according to the probability that a specified first ID belongs to each cluster.",
+      "output": "A high-accuracy prediction apparatus includes a clustering module that partitions training data associated with a plurality of IDs into clusters, and a model-generation module that trains a cluster-specific prediction model for each cluster. For a specified first ID, a probability-estimation module calculates a membership probability indicating the likelihood that the first ID belongs to each cluster. A prediction module applies input data for the first ID to the cluster-specific models and combines their outputs using the corresponding membership probabilities as weights. By using probabilistic model blending rather than selecting a single cluster, the apparatus improves prediction accuracy, particularly for IDs near cluster boundaries or having uncertain cluster membership.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Convert patent claims about linked master datasets, ID co-clustering, per-cluster model generation, and objective-variable prediction into a single abstract paragraph.",
+      "output": "Systems and methods are disclosed for predicting an objective variable using linked master datasets. Records from a plurality of master datasets are linked based on shared or associated identifiers, and the identifiers are co-clustered according to relationships, attributes, or occurrence patterns represented in the linked datasets. For each resulting cluster, a corresponding predictive model is generated using data associated with the identifiers assigned to that cluster. An input record is associated with one or more clusters based on its identifier information, and the corresponding cluster-specific model is applied to generate a predicted value for the objective variable. By generating and selecting models on a per-cluster basis, the disclosed techniques enable prediction across heterogeneous, sparsely connected, or differently distributed data populations.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.766923736075407,
+      "excess_ratio": 0.5274400698300807,
+      "baseline_mean": 0.2394836662453263,
+      "baseline_n_valid": 5,
+      "output_chars": 832,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7982708933717579,
+          "baseline_mean": 0.20018762659427622,
+          "excess_ratio": 0.5980832667774817
+        },
+        "bz2": {
+          "actual_ratio": 0.655,
+          "baseline_mean": 0.22855772144834902,
+          "excess_ratio": 0.426442278551651
+        },
+        "lzma": {
+          "actual_ratio": 0.8476190476190476,
+          "baseline_mean": 0.2814793895372879,
+          "excess_ratio": 0.5661396580817597
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4761904761904762,
+      "excess_ratio": 0.23670680994514992,
+      "baseline_mean": 0.2394836662453263,
+      "baseline_n_valid": 5,
+      "output_chars": 850,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.43041237113402064,
+          "baseline_mean": 0.20018762659427622,
+          "excess_ratio": 0.23022474453974442
+        },
+        "bz2": {
+          "actual_ratio": 0.4780600461893764,
+          "baseline_mean": 0.22855772144834902,
+          "excess_ratio": 0.2495023247410274
+        },
+        "lzma": {
+          "actual_ratio": 0.5130434782608696,
+          "baseline_mean": 0.2814793895372879,
+          "excess_ratio": 0.2315640887235817
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.32644409114997347,
+      "excess_ratio": 0.08696042490464717,
+      "baseline_mean": 0.2394836662453263,
+      "baseline_n_valid": 5,
+      "output_chars": 1283,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2981260647359455,
+          "baseline_mean": 0.20018762659427622,
+          "excess_ratio": 0.09793843814166928
+        },
+        "bz2": {
+          "actual_ratio": 0.29193548387096774,
+          "baseline_mean": 0.22855772144834902,
+          "excess_ratio": 0.06337776242261872
+        },
+        "lzma": {
+          "actual_ratio": 0.38235294117647056,
+          "baseline_mean": 0.2814793895372879,
+          "excess_ratio": 0.10087355163918266
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.14822305691996543,
+      "excess_ratio": -0.09126060932536087,
+      "baseline_mean": 0.2394836662453263,
+      "baseline_n_valid": 5,
+      "output_chars": 2911,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1111111111111111,
+          "baseline_mean": 0.20018762659427622,
+          "excess_ratio": -0.08907651548316511
+        },
+        "bz2": {
+          "actual_ratio": 0.15602836879432624,
+          "baseline_mean": 0.22855772144834902,
+          "excess_ratio": -0.07252935265402277
+        },
+        "lzma": {
+          "actual_ratio": 0.17549668874172186,
+          "baseline_mean": 0.2814793895372879,
+          "excess_ratio": -0.10598270079556604
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.08900928792569668,
+      "excess_ratio": -0.15047437831962962,
+      "baseline_mean": 0.2394836662453263,
+      "baseline_n_valid": 5,
+      "output_chars": 686,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04603580562659847,
+          "baseline_mean": 0.20018762659427622,
+          "excess_ratio": -0.15415182096767777
+        },
+        "bz2": {
+          "actual_ratio": 0.08705882352941176,
+          "baseline_mean": 0.22855772144834902,
+          "excess_ratio": -0.14149889791893727
+        },
+        "lzma": {
+          "actual_ratio": 0.12605042016806722,
+          "baseline_mean": 0.2814793895372879,
+          "excess_ratio": -0.15542896936922068
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "model": "claude-sonnet-5",
+  "domain": "Arxiv",
+  "id": "0704.0417",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThermodynamic stable interaction pair potentials which are not of the form ``positive function + real continuous function of positive type'' are presented in dimension one. Construction of such a potential in dimension two is sketched. These constructions use only elementary calculations. The mathematical background is discussed separately.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThermodynamic stable interaction pair potentials which are not of the form ``positive function + real continuous function of positive type'' are presented in dimension one. Construction of such a potential in dimension two is sketched. These constructions use only elementary calculations. The mathematical background is discussed separately.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- Researchers present thermodynamically stable interaction pair potentials in one dimension that do not conform to the standard form of \"positive function + real continuous function of positive type.\"\n\n- A construction of such a non-conforming stable potential is sketched for the two-dimensional case, extending the result beyond one dimension.\n\n- Both the one-dimensional and two-dimensional constructions rely solely on elementary calculations, avoiding more complex mathematical machinery.\n\n- The underlying mathematical background and theoretical context for these constructions are addressed separately from the main constructive results.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis paper presents thermodynamically stable interaction pair potentials in one dimension that do not conform to the standard decomposition of \"positive function + real continuous function of positive type,\" with an additional sketch of a two-dimensional construction, using only elementary calculations supported by separate mathematical background discussion. These constructions demonstrate that such stable potentials can exist outside the conventional theoretical framework, expanding the known classes of admissible interaction potentials in statistical mechanics.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Thermodynamic, Construction, These"
+  },
+  "outputs": {
+    "L1": "Here is a polished version of your text:\n\n---\n\nWe present, in one dimension, thermodynamically stable pair interaction potentials that cannot be decomposed into the form \"positive function + real continuous function of positive type.\" A construction of such a potential in two dimensions is also sketched. These constructions rely solely on elementary calculations, while the underlying mathematical background is discussed separately.\n\n---\n\nA few notes on the changes made:\n- Rearranged the opening for smoother flow and to clarify what is being presented before specifying the dimension.\n- Changed \"which are not of the form\" to \"that cannot be decomposed into the form\" for greater precision and formality.\n- Replaced \"Construction of such a potential\" with \"A construction of such a potential\" for grammatical correctness (adding the article).\n- Combined the last two sentences with \"while\" to create a more cohesive and professional transition, though I can keep them separate if you prefer a more staccato style typical of abstracts.\n\nLet me know if you'd like a version closer to the original sentence structure, or a more formal/technical register (e.g., for a physics or mathematics journal).",
+    "L2": "# Rewritten Text\n\nThis paper introduces one-dimensional interaction pair potentials that maintain thermodynamic stability while departing from the conventional structure of \"positive function plus real continuous function of positive type.\" A brief outline is also provided for extending this construction to two dimensions. Notably, these constructions rely solely on straightforward, elementary calculations rather than advanced mathematical machinery. The underlying mathematical framework and theoretical context are addressed in a separate discussion.\n\n---\n\n**Alternative version (more concise):**\n\nWe construct examples, in one dimension, of thermodynamically stable pair potentials that do not decompose into a positive function plus a real continuous positive-type function—a departure from the standard form. An analogous two-dimensional construction is outlined briefly. Both constructions rely only on basic, elementary computations, while the associated mathematical theory is treated separately.",
+    "L3": "# Thermodynamically Stable Pair Potentials Beyond the Standard Decomposition\n\n## One-Dimensional Construction\n\nA central result of this work concerns the construction of pair interaction potentials in one spatial dimension that are thermodynamically stable in the classical sense—that is, they satisfy the requisite lower bound ensuring the total interaction energy of any finite configuration of particles remains bounded below by a term linear in the particle number. What distinguishes the potentials presented here from the majority of examples treated in the standard literature is that they do not admit a decomposition into the canonical form typically invoked to *prove* stability, namely the sum of a positive function and a real continuous function of positive type (in the sense of Bochner, i.e., a function whose Fourier transform is a non-negative measure). This standard decomposition, while sufficient for establishing stability, is by no means necessary, and the potentials constructed here serve as explicit witnesses to this fact: they are stable, yet they resist any such representation. This demonstrates that the space of thermodynamically stable potentials is genuinely larger than the class accessible through the usual sufficient criterion.\n\n## Extension to Two Dimensions\n\nBeyond the one-dimensional setting, the paper further sketches how an analogous construction can be carried out in two dimensions, yielding a stable pair potential that likewise fails to decompose into a positive function plus a function of positive type. While the two-dimensional case introduces additional geometric considerations relative to the line, the essential mechanism producing the non-conforming behavior persists, and the construction is outlined to indicate that the phenomenon observed in one dimension is not merely an artifact of the one-dimensional setting but extends, at least in principle, to higher-dimensional configurations.\n\n## Elementary Nature of the Constructions\n\nA notable methodological feature of both the one- and two-dimensional constructions is that they rely exclusively on elementary calculations. No appeal is made to sophisticated tools from harmonic analysis, functional analysis, or other advanced techniques that might otherwise be expected in the study of positive-definiteness and stability of interaction potentials. The verification of stability, as well as the demonstration that the potentials evade the standard decomposition, is achieved through direct, hands-on estimates and explicit computations. This elementary character makes the constructions transparent and self-contained, and it underscores that the existence of such non-conforming stable potentials can be established without recourse to heavier machinery.\n\n## Separation of Mathematical Background\n\nFinally, the presentation is structured so that the broader mathematical background and theoretical context underlying these constructions—including the relevant definitions, historical motivation, and connections to the general theory of stability and positive-definite functions—are treated separately from the constructive arguments themselves. This separation allows the explicit constructions to be presented in a self-contained and computationally direct manner, while the surrounding theoretical framework, which situates the results within the broader landscape of statistical mechanics and the mathematical theory of stable interactions, is developed independently, providing context without encumbering the core constructive proofs.",
+    "L4": "# Thermodynamically Stable Interaction Potentials Beyond the Positive-Type Decomposition\n\n## Introduction and Background\n\nThe stability of interaction pair potentials is a foundational requirement in the rigorous formulation of classical statistical mechanics. A pair potential $\\varphi: \\mathbb{R}^d \\to \\mathbb{R} \\cup \\{+\\infty\\}$ is said to be *thermodynamically stable* if there exists a constant $B \\geq 0$ such that, for every $N \\in \\mathbb{N}$ and every configuration of $N$ particles $x_1, \\dots, x_N \\in \\mathbb{R}^d$,\n$$\n\\sum_{1 \\leq i < j \\leq N} \\varphi(x_i - x_j) \\geq -NB.\n$$\nThis condition, introduced in its modern form by Ruelle, guarantees that the total interaction energy of a system of particles does not diverge to $-\\infty$ faster than linearly in the number of particles, which is essential for the existence of the thermodynamic limit of free energy, pressure, and other bulk quantities.\n\nVerifying stability directly from the definition is often difficult, since it requires controlling sums over arbitrarily large and arbitrarily configured particle systems. Consequently, a great deal of effort in the mathematical physics literature has been devoted to finding *sufficient conditions* for stability that are easier to check in practice. One of the most important and widely used such conditions arises from the theory of functions of positive type (equivalently, functions with non-negative Fourier transform in the sense of Bochner's theorem). If a potential $\\varphi$ can be decomposed as\n$$\n\\varphi = \\varphi_1 + \\varphi_2,\n$$\nwhere $\\varphi_1 \\geq 0$ pointwise and $\\varphi_2$ is a real-valued continuous function of positive type, then $\\varphi$ is automatically stable. This is because the positive-type component contributes a manifestly non-negative quantity to the total energy (by Bochner's theorem and a direct computation with the Fourier transform), while the pointwise-positive component only adds further non-negative contributions.\n\nThis decomposition has become something of a paradigm in the field: many of the classical examples of stable potentials used in statistical mechanics — including hard-core potentials combined with attractive tails, Yukawa-type potentials, and various lattice-gas interactions — admit such a decomposition, or are proven stable by explicitly constructing one. It has therefore been natural to ask whether *every* stable potential can, in principle, be written in this form, or whether the class of stable potentials is genuinely larger than the class of potentials admitting a positive-function/positive-type decomposition.\n\n## Contribution of This Paper\n\nIn this paper, we answer this question in the negative by exhibiting explicit, elementary examples of thermodynamically stable pair potentials on $\\mathbb{R}$ that cannot be decomposed as the sum of a non-negative function and a real continuous function of positive type. The constructions we present rely only on elementary calculus — direct estimates of sums, explicit trigonometric or algebraic manipulations, and basic properties of Fourier transforms — rather than on deep results from harmonic analysis or ergodic theory. This makes the examples fully explicit and their stability verifiable by direct computation, in contrast to many stability proofs in the literature that rely on abstract existence arguments or delicate estimates.\n\nTo keep the presentation self-contained and accessible, we separate the necessary mathematical background — including the precise definitions of stability, positive type functions, and the relevant decomposition theorem — into its own discussion, distinct from the constructive part of the paper. This allows the core constructions to be presented with a minimum of technical overhead, emphasizing their elementary and explicit nature.\n\nBeyond the one-dimensional case, we also provide a sketch of an analogous construction in two dimensions, indicating how the same underlying idea can be adapted, with appropriate modifications, to potentials on $\\mathbb{R}^2$. While this two-dimensional construction is not developed in full rigorous detail, it illustrates that the phenomenon we uncover in one dimension is not merely an artifact of the one-dimensional setting, but persists — at least in outline — in higher dimensions as well.\n\n## Significance\n\nThe existence of such potentials demonstrates that the positive-function/positive-type decomposition, while a powerful and convenient sufficient condition for stability, is not necessary. This broadens the theoretically known landscape of admissible interaction potentials in statistical mechanics: stability is a strictly weaker requirement than admitting this particular decomposition, and there exist genuinely new classes of stable potentials lying outside the traditional framework. We view this as clarifying the logical structure of stability criteria in classical statistical mechanics, and as opening the possibility of further explicit constructions of stable potentials that evade the standard toolkit of positive-type decompositions.",
+    "L5": "# Thermodynamic Principles in Construction\n\nThermodynamic considerations have become fundamental to modern construction practices, fundamentally reshaping how buildings are designed, built, and operated. As energy costs rise and environmental concerns intensify, architects and engineers increasingly rely on thermodynamic principles to create structures that are both comfortable and efficient.\n\n## The Role of Thermodynamics in Building Design\n\nAt its core, thermodynamics governs the transfer of heat between a building's interior and exterior environments. Every construction project must account for how thermal energy moves through walls, roofs, windows, and foundations. These processes—conduction, convection, and radiation—determine how much energy is required to maintain comfortable indoor temperatures throughout changing seasons.\n\nConstruction professionals now integrate thermodynamic modeling early in the design phase. By simulating heat flow before groundbreaking begins, teams can optimize material selection, insulation thickness, and window placement to minimize energy loss.\n\n## Key Applications\n\nSeveral critical elements of construction directly apply thermodynamic concepts:\n\n**Insulation Systems**: Materials with low thermal conductivity slow heat transfer, reducing the energy needed for heating and cooling. These materials—ranging from fiberglass to spray foam to advanced aerogels—form the first line of defense against thermal loss.\n\n**Thermal Mass**: Concrete, brick, and stone possess high thermal mass, meaning they absorb and store heat energy, then release it slowly. This property helps stabilize indoor temperatures, particularly in climates with significant day-night temperature swings.\n\n**HVAC Integration**: Heating, ventilation, and air conditioning systems are engineered using thermodynamic cycles—compression, expansion, and heat exchange—to efficiently regulate indoor climate conditions.\n\n**Building Envelope Design**: The overall thermal performance of a structure depends on how well its envelope (walls, roof, foundation) resists unwanted heat transfer while allowing controlled ventilation.\n\n## Looking Forward\n\nAs sustainable construction practices continue to evolve, the application of thermodynamic principles will only deepen. Passive house standards, net-zero energy buildings, and smart climate control systems all depend on a sophisticated understanding of how thermal energy behaves within built environments.\n\nThese developments represent a broader shift in the construction industry—one where scientific principles are not merely theoretical concerns but practical tools shaping every decision, from material selection to structural orientation. The marriage of thermodynamic science and construction practice promises buildings that are not only more comfortable but significantly more environmentally responsible."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a paper on constructing thermodynamically stable pair potentials that are not decomposable into a positive function plus a positive-type continuous function, in one and two dimensions.",
+      "output": "# Abstract\n\nA classical result in the theory of stability of matter states that a sufficient condition for a pair potential to be thermodynamically stable is that it can be decomposed as the sum of a nonnegative function and a function of positive type (i.e., one whose Fourier transform is nonnegative). This sufficient condition, due to Fourier-analytic arguments going back to Fisher and Ruelle, is widely used in statistical mechanics to establish stability bounds for continuum particle systems, and it has often been implicitly assumed—or conjectured—that such a decomposition is not merely sufficient but essentially necessary, at least for reasonably regular potentials. In this paper we disprove this belief by constructing explicit examples of continuous, compactly supported pair potentials in one and two dimensions that are thermodynamically stable, in the sense that the associated many-body interaction energy is bounded below by a linear function of the particle number, yet cannot be written as the sum of a nonnegative function and a positive-type function. Our constructions exploit oscillatory potentials whose negative parts are compensated only through genuinely many-body geometric cancellations rather than through a pointwise or Fourier-positive splitting, and we verify stability via direct combinatorial and variational estimates on the interaction energy rather than through positive-definiteness arguments. These examples show that the positive-type decomposition, while a convenient and historically central tool, is strictly stronger than stability itself, clarifying the logical landscape of stability criteria in classical statistical mechanics and raising new questions about the classification of stable potentials that resist Fourier-based certification.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Can you draft a short abstract summarizing a mathematical physics paper about counterexamples to the standard decomposition of stable interaction potentials?",
+      "output": "# Abstract\n\nWe investigate the standard decomposition of stable interaction potentials in classical statistical mechanics, which posits that any stable pair potential can be written as the sum of a nonnegative (repulsive) component and a bounded (regular) component. While this decomposition underlies many foundational results in the rigorous theory of classical fluids—including cluster expansions, virial series, and existence proofs for the thermodynamic limit—we demonstrate that it does not hold in general. We construct explicit counterexamples of stable potentials that admit no such decomposition, arising from configurations where stability is achieved through delicate cancellations rather than through a manifestly repulsive core. These examples reveal that the class of stable potentials is strictly larger than previously assumed under the standard framework, and that certain proofs relying implicitly on this decomposition require reexamination or additional hypotheses. We discuss the implications of these findings for the classification of stable potentials and outline sufficient conditions under which the decomposition remains valid, thereby clarifying the boundary between potentials that conform to the classical Ruelle-type stability criteria via explicit repulsive-regular splitting and those that satisfy stability through more subtle mechanisms.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "I need an abstract for a statistical mechanics manuscript showing examples of stable pair potentials in 1D (and sketching one in 2D) that fail to have the usual positive-type decomposition, using elementary methods.",
+      "output": "# Abstract\n\nA classical result in statistical mechanics states that thermodynamic stability of a pair potential is guaranteed if the potential admits a decomposition into functions of positive type, a sufficient condition often invoked via Fourier-analytic arguments (e.g., the Fourier transform of the potential being non-negative). It is generally understood, however, that such positive-definiteness is *sufficient* but not *necessary* for stability. Despite the fundamental nature of this distinction, explicit and elementary examples of stable potentials that provably admit no such decomposition remain scarce in the literature, with existing demonstrations often relying on delicate Fourier analysis or measure-theoretic arguments.\n\nIn this work, we construct explicit families of pair potentials in one dimension that are stable in the thermodynamic sense—satisfying the requisite lower bound on the total interaction energy for arbitrary particle configurations—while failing to be of positive type in the sense of Bochner, and moreover failing to arise as a superposition (positive combination) of positive-type functions. Our approach is elementary, relying on direct combinatorial and algebraic estimates on finite sums rather than Fourier or spectral techniques, making the stability verification self-contained and accessible. We exhibit potentials built from compactly supported piecewise-linear or piecewise-constant profiles, and show by direct computation on periodic and aperiodic configurations that the associated interaction sums remain bounded below, while a suitably chosen finite point configuration produces a negative quadratic form when tested against the candidate potential, ruling out positive type membership and any positive-type decomposition simultaneously via a single unified counterexample.\n\nWe further sketch an extension of the construction to two dimensions, indicating how an anisotropic or radially deformed version of the one-dimensional examples continues to satisfy the stability inequality while again evading a positive-type representation, illustrating that the phenomenon is not an artifact of one-dimensional geometry. These examples clarify the logical gap between stability and positive-definiteness and provide concrete, verifiable counterexamples that can serve as test cases for numerical and theoretical stability criteria beyond the classical positive-type paradigm.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Summarize in abstract form: elementary constructions of thermodynamically stable pair potentials not expressible as positive function plus real continuous positive-type function, dimension one detailed, dimension two sketched, math background separate.",
+      "output": "**Abstract**\n\nWe present elementary constructions of pair interaction potentials that are thermodynamically stable in the usual statistical–mechanical sense (i.e., satisfy a uniform lower bound on the total interaction energy of arbitrary finite particle configurations), yet cannot be written as a sum of a nonnegative function and a real, continuous function of positive type. This shows that the familiar sufficient criterion for stability—decomposability into a positive part plus a positive-definite part—is not necessary, answering in the negative the question of whether such a decomposition always exists for stable potentials.\n\nThe construction is carried out in full detail in one spatial dimension, where an explicit stable potential is built directly from elementary functions and shown, by an explicit argument, to admit no representation of the required form. The extension of the method to two dimensions is sketched, indicating the modifications needed to adapt the one-dimensional argument to higher dimension, while the underlying combinatorial and analytic ideas remain the same.\n\nThe necessary mathematical background—definitions of thermodynamic stability, functions of positive type, and the relevant decomposition criterion, along with the auxiliary lemmas used in the constructions—is collected separately from the main constructive arguments, so that the logical structure of the counterexamples can be followed independently of the supporting technical apparatus.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a concise academic abstract discussing new examples of stable interaction potentials violating the positive-type decomposition property, with elementary proofs in dimension one and an outline for dimension two.",
+      "output": "# Abstract\n\nWe present new examples of stable interaction potentials that fail to admit a decomposition as a sum (or superposition) of positive-type functions, a property often assumed in the analysis of classical statistical mechanics and mean-field limits. Recall that stability is a comparatively weak condition ensuring boundedness of the configurational energy from below, whereas positive-definiteness is a stronger structural property implicated in several existing proofs of thermodynamic limits and correlation inequalities. It is therefore natural to ask whether these notions coincide, or how far stability falls short of guaranteeing a positive-type representation.\n\nIn this work we construct explicit families of stable potentials in dimension one that are provably not of positive type, and we give elementary, self-contained proofs of both stability and the failure of positive-definiteness, relying only on direct energy estimates and Fourier-analytic criteria. These examples clarify the gap between stability and positive-definiteness in the simplest possible setting and show that the latter is a strictly stronger requirement. We then outline an extension of the construction to dimension two, indicating the additional geometric and analytic difficulties that arise—in particular the loss of the ordering structure available on the line and the more delicate control of the Fourier transform's sign—and describe the modifications needed to adapt the one-dimensional argument. Our results suggest that positive-type decompositions, while sufficient for many stability and thermodynamic-limit arguments, are not necessary, and they motivate further investigation into weaker structural substitutes valid for general stable potentials in higher dimensions.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.27995867768595045,
+      "excess_ratio": 0.16557025247722057,
+      "baseline_mean": 0.1143884252087299,
+      "baseline_n_valid": 5,
+      "output_chars": 1201,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.255,
+          "baseline_mean": 0.08512408403561374,
+          "excess_ratio": 0.16987591596438628
+        },
+        "bz2": {
+          "actual_ratio": 0.2453125,
+          "baseline_mean": 0.10663934973082081,
+          "excess_ratio": 0.13867315026917917
+        },
+        "lzma": {
+          "actual_ratio": 0.3333333333333333,
+          "baseline_mean": 0.1476141195396052,
+          "excess_ratio": 0.1857192137937281
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.25286662643331326,
+      "excess_ratio": 0.13847820122458337,
+      "baseline_mean": 0.1143884252087299,
+      "baseline_n_valid": 5,
+      "output_chars": 1008,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.21021611001964635,
+          "baseline_mean": 0.08512408403561374,
+          "excess_ratio": 0.12509202598403263
+        },
+        "bz2": {
+          "actual_ratio": 0.2446043165467626,
+          "baseline_mean": 0.10663934973082081,
+          "excess_ratio": 0.13796496681594178
+        },
+        "lzma": {
+          "actual_ratio": 0.2972972972972973,
+          "baseline_mean": 0.1476141195396052,
+          "excess_ratio": 0.1496831777576921
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.14599010965383785,
+      "excess_ratio": 0.031601684445107955,
+      "baseline_mean": 0.1143884252087299,
+      "baseline_n_valid": 5,
+      "output_chars": 3553,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.11220472440944881,
+          "baseline_mean": 0.08512408403561374,
+          "excess_ratio": 0.027080640373835077
+        },
+        "bz2": {
+          "actual_ratio": 0.15233092580433355,
+          "baseline_mean": 0.10663934973082081,
+          "excess_ratio": 0.045691576073512735
+        },
+        "lzma": {
+          "actual_ratio": 0.17206982543640897,
+          "baseline_mean": 0.1476141195396052,
+          "excess_ratio": 0.024455705896803764
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.09704380126915328,
+      "excess_ratio": -0.017344623939576614,
+      "baseline_mean": 0.1143884252087299,
+      "baseline_n_valid": 5,
+      "output_chars": 5074,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.07988852763585694,
+          "baseline_mean": 0.08512408403561374,
+          "excess_ratio": -0.005235556399756799
+        },
+        "bz2": {
+          "actual_ratio": 0.0940453686200378,
+          "baseline_mean": 0.10663934973082081,
+          "excess_ratio": -0.012593981110783012
+        },
+        "lzma": {
+          "actual_ratio": 0.11678832116788321,
+          "baseline_mean": 0.1476141195396052,
+          "excess_ratio": -0.030825798371722002
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.037355615630375906,
+      "excess_ratio": -0.07703280957835398,
+      "baseline_mean": 0.1143884252087299,
+      "baseline_n_valid": 5,
+      "output_chars": 2878,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.02710843373493976,
+          "baseline_mean": 0.08512408403561374,
+          "excess_ratio": -0.058015650300673974
+        },
+        "bz2": {
+          "actual_ratio": 0.027169811320754716,
+          "baseline_mean": 0.10663934973082081,
+          "excess_ratio": -0.0794695384100661
+        },
+        "lzma": {
+          "actual_ratio": 0.05649717514124294,
+          "baseline_mean": 0.1476141195396052,
+          "excess_ratio": -0.09111694439836227
+        }
+      }
+    }
+  }
+}

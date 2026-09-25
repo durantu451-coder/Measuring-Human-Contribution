@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15892677",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nEmbodiments store transaction metadata in dedicated pools of allocated memory chunks. Portions of the pools of allocated memory chunks are dedicated to the respective apply slave processes that mine and process change records. Also, the pools of allocated memory chunks are anchored within the structure of a transaction log such that buffering and application of metadata for one transaction does not block required buffering and application of metadata for other transactions. The standby database system pre-processes transaction metadata in preparation for application of the metadata to invalidate appropriate portions of MF data. Further, embodiments divide the work of pre-processing invalidation records among the many apply slave processes that record the invalidation records. A garbage collection selects memory chunks for garbage collection in reverse order of how the chunks were allocated. Also, a deduplication algorithm ensures that typically only a single invalidation message per block is applied to invalidate MF data.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nEmbodiments store transaction metadata in dedicated pools of allocated memory chunks. Portions of the pools of allocated memory chunks are dedicated to the respective apply slave processes that mine and process change records. Also, the pools of allocated memory chunks are anchored within the structure of a transaction log such that buffering and application of metadata for one transaction does not block required buffering and application of metadata for other transactions. The standby database system pre-processes transaction metadata in preparation for application of the metadata to invalidate appropriate portions of MF data. Further, embodiments divide the work of pre-processing invalidation records among the many apply slave processes that record the invalidation records. A garbage collection selects memory chunks for garbage collection in reverse order of how the chunks were allocated. Also, a deduplication algorithm ensures that typically only a single invalidation message per block is applied to invalidate MF data.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- Transaction metadata is stored in dedicated pools of allocated memory chunks assigned to apply slave processes that mine and process change records.\n- The memory pools are anchored within the transaction log structure so that processing one transaction does not block metadata buffering and application for other transactions.\n- The standby database pre-processes transaction metadata to invalidate the appropriate portions of MF data, distributing this work across multiple apply slave processes.\n- Garbage collection selects memory chunks in reverse order of their allocation.\n- A deduplication algorithm typically ensures that only one invalidation message per block is applied to MF data.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe approach stores transaction metadata in dedicated memory-chunk pools assigned to apply slave processes and anchored in the transaction log, while parallelizing invalidation preprocessing, using reverse-allocation garbage collection, and deduplicating invalidation records. This enables nonblocking transaction processing and typically limits invalidation to one message per block, improving standby database efficiency and scalability.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Embodiments, Portions, Also"
+  },
+  "outputs": {
+    "L1": "Embodiments store transaction metadata in dedicated pools of allocated memory chunks. Portions of these pools are dedicated to respective apply slave processes that mine and process change records. The pools are also anchored within the structure of a transaction log so that the buffering and application of metadata for one transaction do not block the required buffering and application of metadata for other transactions. The standby database system pre-processes transaction metadata in preparation for applying the metadata to invalidate appropriate portions of MF data. In addition, embodiments distribute the work of pre-processing invalidation records among the multiple apply slave processes that record those invalidation records. A garbage-collection process selects memory chunks in the reverse order of their allocation. A deduplication algorithm also ensures that, typically, only a single invalidation message per block is applied to invalidate MF data.",
+    "L2": "Transaction metadata is maintained in separate pools composed of allocated memory chunks. Specific sections of these pools are assigned to individual apply-slave processes responsible for mining and processing change records. The pools are also linked to the transaction-log structure, allowing metadata for one transaction to be buffered and applied without preventing the necessary buffering and application of metadata for other transactions.\n\nBefore application, the standby database system processes transaction metadata so that the appropriate MF-data regions can be invalidated. The task of preparing invalidation records is distributed across the multiple apply-slave processes that record those entries. Memory chunks are chosen for garbage collection in the opposite sequence from their allocation. In addition, a deduplication mechanism generally limits invalidation to one message per block of MF data.",
+    "L3": "Transaction metadata is stored in dedicated pools composed of allocated memory chunks. These pools are assigned to the apply slave processes responsible for mining change records and applying the resulting changes. By giving each process access to dedicated metadata storage, the system can manage transaction information efficiently during parallel processing.\n\nThe memory pools are anchored within the transaction log structure. This arrangement isolates metadata handling across transactions, ensuring that the processing of one transaction does not block the buffering or application of metadata associated with other transactions. As a result, multiple transactions can progress concurrently with reduced contention.\n\nBefore changes are applied, the standby database pre-processes the transaction metadata to identify and invalidate the appropriate portions of MF data. This invalidation work is distributed across multiple apply slave processes, allowing the standby system to take advantage of parallel execution and reduce processing latency.\n\nWhen allocated memory is no longer needed, garbage collection reclaims memory chunks in the reverse order of their allocation. This approach simplifies memory management and supports efficient cleanup of transaction-specific resources.\n\nA deduplication algorithm is typically used during invalidation processing to prevent redundant work. The algorithm ensures that only one invalidation message for a given block is applied to the MF data, even if the same block is referenced multiple times. This reduces unnecessary processing and helps maintain consistent invalidation behavior.",
+    "L4": "The approach improves standby database performance by redesigning how transaction metadata and invalidation information are managed during log application. Instead of relying on shared structures that can become points of contention, it assigns dedicated memory-chunk pools to individual apply slave processes. These pools are anchored in the transaction log, allowing each process to allocate and access the metadata associated with the transactions it is applying without blocking other workers. This organization reduces synchronization overhead and supports a higher degree of parallel transaction processing.\n\nInvalidation preprocessing is also performed in parallel. Apply slaves can identify and prepare the required cache or block invalidations while transaction-log records are being processed, rather than postponing this work to a serialized phase. Memory is reclaimed through a reverse-allocation garbage-collection scheme: objects are released in the opposite order from which they were allocated, matching the natural lifecycle of transaction metadata and simplifying cleanup. This avoids expensive searches, minimizes fragmentation, and allows memory to be recycled efficiently.\n\nThe design further deduplicates invalidation records before they are propagated. When multiple transaction-log entries affect the same block, their invalidation requests are consolidated instead of generating repeated notifications. Consequently, the system typically needs to send no more than one invalidation message for each affected block.\n\nTogether, these techniques remove several sources of blocking and redundant work from the standby apply path. Dedicated memory pools reduce contention among apply slaves, parallel preprocessing distributes invalidation work across available processors, reverse-order reclamation lowers memory-management costs, and deduplication reduces message traffic. The result is more efficient transaction-log replay, better use of CPU and memory resources, and improved scalability as transaction volume and the number of parallel apply processes increase.",
+    "L5": "Embodiments are the visible or tangible forms of ideas, values, and experiences. A person’s actions, for example, may be embodiments of courage, kindness, or determination. Portions, meanwhile, represent smaller parts of a greater whole. Each memory, decision, or relationship can be seen as a portion of someone’s life story. These portions are also connected: together, they create the many embodiments of identity, culture, and human experience."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize the disclosed database replication technique, focusing on transaction metadata buffering, apply slave processes, invalidation records, garbage collection, and deduplication.",
+      "output": "The technique replicates transactions by separating transaction metadata from the underlying data changes and processing that metadata asynchronously:\n\n- **Transaction metadata buffering:** Information describing committed transactions—such as transaction identifiers, commit order, and affected records—is first placed in a durable buffer or queue. This decouples source-side transaction processing from replication and absorbs temporary delays at the replica.\n\n- **Apply slave processes:** One or more apply slaves consume buffered metadata, retrieve or identify the associated changes, and apply them to the replica. Work can be parallelized while ordering or dependency information in the metadata preserves transactional consistency.\n\n- **Invalidation records:** When metadata or pending work becomes obsolete—for example, because a newer change supersedes it—the system writes an invalidation record rather than immediately deleting or rewriting earlier entries. Apply slaves consult these records to avoid applying stale work.\n\n- **Garbage collection:** A background collector removes transaction metadata, invalidation records, and related buffered state only after they can no longer be needed by any apply slave or recovery operation. Safe-progress markers or watermarks determine when deletion is permitted.\n\n- **Deduplication:** Transaction IDs or equivalent unique keys let the replica recognize repeated metadata or retransmitted changes. Already-applied or superseded transactions are skipped, making retries and recovery effectively idempotent.\n\nOverall, the design supports scalable asynchronous replication, safe retries, and parallel application while preventing stale or duplicate updates and reclaiming metadata storage once replication has advanced safely.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a concise patent-style abstract describing embodiments for processing transaction metadata on a standby database system and invalidating MF data.",
+      "output": "Embodiments are directed to processing transaction metadata at a standby database system and invalidating MF data. The standby database receives transaction metadata associated with operations performed at a primary database, identifies affected database objects or storage regions, and determines whether corresponding MF data maintained at the standby database is valid. In response to detecting an invalidating operation, the standby database marks, removes, or prevents use of the affected MF data. The transaction metadata may be processed independently of, or in coordination with, replay of transaction records, thereby maintaining consistency while reducing unnecessary regeneration or transfer of MF data.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Explain how the system prevents one transaction’s metadata processing from blocking another transaction, and describe how memory chunks and invalidation messages are managed.",
+      "output": "The system isolates metadata work by giving each transaction its own processing context rather than using a single shared metadata-processing path. Metadata requests can therefore be queued and handled independently—typically by separate workers or transaction-scoped state—so a slow transaction does not hold a global lock or prevent another transaction’s metadata from being processed. Synchronization is limited to short operations on shared structures, such as enqueueing work or publishing results.\n\nMemory and cache invalidation are handled as follows:\n\n- **Memory chunks:** Metadata is stored in bounded, reusable chunks owned or referenced by the relevant transaction or worker. Chunks can be linked when more space is needed, passed through queues without copying the contents, and reclaimed or returned to a pool once no consumer still references them.\n- **Invalidation messages:** When metadata changes, the transaction creates an invalidation record identifying the affected object or cache entry. The message is published—normally after the change commits—to the other workers or transactions.\n- **Consumption:** Each recipient processes invalidations independently and discards or refreshes its stale cached metadata. Sequence numbers or queue positions can track which messages have been seen.\n- **Overflow or missed messages:** If a consumer falls behind or the invalidation buffer wraps, it performs a broader cache reset or reload rather than risk using stale metadata.\n- **Abort handling:** Messages generated by an aborted transaction are not published as committed invalidations, and transaction-owned chunks are released.\n\nThis combination of transaction-local processing, brief synchronization, pooled chunk management, and asynchronous invalidation prevents metadata handling in one transaction from becoming a blocking point for others.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Convert the following technical notes into a formal paragraph: dedicated memory chunk pools per apply slave, transaction-log anchoring, parallel preprocessing of invalidation records, reverse-allocation garbage collection, and per-block deduplication.",
+      "output": "The system employs dedicated memory-chunk pools for each apply slave, transaction-log anchoring to maintain recovery consistency, and parallel preprocessing of invalidation records to improve throughput. It also uses reverse-allocation garbage collection to reclaim storage efficiently and per-block deduplication to eliminate redundant data within individual blocks.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide an overview of a database recovery architecture in which apply slaves mine change records, preprocess metadata for MF-data invalidation, reclaim chunks in reverse allocation order, and avoid duplicate invalidation messages.",
+      "output": "## Database recovery architecture overview\n\nThe architecture uses a coordinated set of **apply slaves** to recover a database from redo, WAL, or another change stream while handling **MF-data invalidation** and temporary recovery storage safely.\n\n### 1. Change-record mining\n\nA recovery coordinator divides the change stream into ordered ranges and assigns them to apply slaves. Each slave:\n\n- Mines change records from its assigned range.\n- Identifies the affected objects, blocks, files, or MF-data regions.\n- Extracts transaction and dependency information.\n- Preserves commit, object, and page-ordering constraints needed for correct replay.\n\nMining and analysis can run in parallel, even when the final application of dependent changes must be serialized.\n\n### 2. Metadata preprocessing\n\nBefore changes are applied, slaves preprocess records that may invalidate MF-data. The preprocessing stage builds compact metadata such as:\n\n- MF-data identifiers and affected ranges.\n- Object or generation numbers.\n- Recovery sequence numbers or log positions.\n- Transaction boundaries and dependency information.\n- Whether invalidation is required, already covered by a broader invalidation, or obsolete.\n\nSeparating preprocessing from physical apply allows invalidation decisions to be made once and lets the apply phase operate on normalized work items rather than repeatedly decoding raw change records.\n\n### 3. Invalidation generation and deduplication\n\nPotential invalidations are submitted to a shared invalidation manager. Duplicate messages are prevented through one or more of the following:\n\n- A uniqueness key such as  \n  `(MF object, generation, range, recovery epoch)`.\n- An atomic “not yet emitted → emitted” state transition.\n- Per-object high-water marks.\n- Coalescing overlapping or adjacent ranges.\n- A coordinator that is the sole publisher, even if many slaves discover candidates.\n\nThe deduplication state must survive slave retries or be reconstructable from durable recovery metadata. Consumers should also treat invalidations idempotently so that a replayed message cannot produce incorrect results.\n\n### 4. Apply phase\n\nAfter preprocessing, apply slaves replay eligible changes against recovered database state. A scheduler enforces dependencies using log sequence, transaction commit order, page ownership, or object-level barriers. Once the relevant changes are durable, the coordinator advances a recovery checkpoint and can retire older metadata.\n\n### 5. Chunk allocation and reverse-order reclamation\n\nTemporary mining and preprocessing data is stored in chunks allocated from recovery arenas. Chunks are reclaimed in the **reverse order of allocation**, effectively using stack semantics:\n\n1. Allocate chunk A, then B, then C.\n2. Finish or roll back the associated recovery scope.\n3. Release C, then B, then A.\n\nThis design:\n\n- Makes reclamation inexpensive.\n- Avoids fragmentation.\n- Matches nested mining and apply scopes.\n- Simplifies rollback after an error or slave restart.\n- Prevents earlier chunks from being freed while later chunks still reference them.\n\nA watermark or allocation checkpoint can mark the beginning of each batch; cleanup pops chunks until that watermark is reached.\n\n### 6. Failure handling\n\nIf an apply slave fails, its batch is reassigned from the last durable checkpoint. Correctness relies on:\n\n- Idempotent change application or page/transaction sequence checks.\n- Durable recovery high-water marks.\n- Deduplicated invalidation publication.\n- Reverse-order cleanup of the failed worker’s uncommitted chunks.\n- Recovery epochs or generation numbers to reject stale work.\n\n### Conceptual flow\n\n```text\nChange log\n    |\n    v\nRecovery coordinator\n    |\n    +--> Apply slaves: mine and classify records\n    |         |\n    |         v\n    |    Metadata preprocessing\n    |         |\n    |         +--> Shared invalidation registry --> MF invalidation messages\n    |         |\n    |         v\n    |    Ordered/dependency-aware apply\n    |\n    +--> Checkpoint and progress tracking\n    |\n    +--> Chunk arena: allocate forward, reclaim in reverse order\n```\n\nOverall, the architecture combines parallel log mining with dependency-aware replay, preprocesses MF-data invalidation metadata before apply, uses LIFO chunk reclamation for efficient temporary-memory management, and employs centralized or atomic deduplication to ensure each logical invalidation is emitted at most once per recovery generation.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7122302158273381,
+      "excess_ratio": 0.5168535566279071,
+      "baseline_mean": 0.1953766591994311,
+      "baseline_n_valid": 5,
+      "output_chars": 969,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7364705882352941,
+          "baseline_mean": 0.1664077955417902,
+          "excess_ratio": 0.5700627926935039
+        },
+        "bz2": {
+          "actual_ratio": 0.6043010752688172,
+          "baseline_mean": 0.1795798589218949,
+          "excess_ratio": 0.4247212163469223
+        },
+        "lzma": {
+          "actual_ratio": 0.792,
+          "baseline_mean": 0.23296937535822218,
+          "excess_ratio": 0.5590306246417779
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.41785957736877977,
+      "excess_ratio": 0.22248291816934868,
+      "baseline_mean": 0.1953766591994311,
+      "baseline_n_valid": 5,
+      "output_chars": 914,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.37472283813747226,
+          "baseline_mean": 0.1664077955417902,
+          "excess_ratio": 0.20831504259568207
+        },
+        "bz2": {
+          "actual_ratio": 0.4,
+          "baseline_mean": 0.1795798589218949,
+          "excess_ratio": 0.22042014107810512
+        },
+        "lzma": {
+          "actual_ratio": 0.4701492537313433,
+          "baseline_mean": 0.23296937535822218,
+          "excess_ratio": 0.23717987837312113
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3411053540587219,
+      "excess_ratio": 0.1457286948592908,
+      "baseline_mean": 0.1953766591994311,
+      "baseline_n_valid": 5,
+      "output_chars": 1634,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3087431693989071,
+          "baseline_mean": 0.1664077955417902,
+          "excess_ratio": 0.14233537385711692
+        },
+        "bz2": {
+          "actual_ratio": 0.324468085106383,
+          "baseline_mean": 0.1795798589218949,
+          "excess_ratio": 0.14488822618448807
+        },
+        "lzma": {
+          "actual_ratio": 0.38461538461538464,
+          "baseline_mean": 0.23296937535822218,
+          "excess_ratio": 0.15164600925716246
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.17763810783989414,
+      "excess_ratio": -0.017738551359536947,
+      "baseline_mean": 0.1953766591994311,
+      "baseline_n_valid": 5,
+      "output_chars": 2087,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.15020576131687244,
+          "baseline_mean": 0.1664077955417902,
+          "excess_ratio": -0.016202034224917755
+        },
+        "bz2": {
+          "actual_ratio": 0.16307692307692306,
+          "baseline_mean": 0.1795798589218949,
+          "excess_ratio": -0.01650293584497184
+        },
+        "lzma": {
+          "actual_ratio": 0.21561338289962825,
+          "baseline_mean": 0.23296937535822218,
+          "excess_ratio": -0.017355992458593927
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.14380530973451322,
+      "excess_ratio": -0.05157134946491787,
+      "baseline_mean": 0.1953766591994311,
+      "baseline_n_valid": 5,
+      "output_chars": 448,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.09363295880149813,
+          "baseline_mean": 0.1664077955417902,
+          "excess_ratio": -0.07277483674029206
+        },
+        "bz2": {
+          "actual_ratio": 0.1362126245847176,
+          "baseline_mean": 0.1795798589218949,
+          "excess_ratio": -0.04336723433717729
+        },
+        "lzma": {
+          "actual_ratio": 0.19047619047619047,
+          "baseline_mean": 0.23296937535822218,
+          "excess_ratio": -0.042493184882031715
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "model": "claude-opus-4-8",
+  "domain": "Arxiv",
+  "id": "0704.0347",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe present a simple proof of the resolvent estimates of elliptic Fourier multipliers on the Euclidean space, and apply them to the analysis of time-global and spatially-local smoothing estimates of a class of dispersive equations. For this purpose we study in detail the properties of the restriction of Fourier transform on the unit cotangent sphere associated with the symbols of multipliers.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe present a simple proof of the resolvent estimates of elliptic Fourier multipliers on the Euclidean space, and apply them to the analysis of time-global and spatially-local smoothing estimates of a class of dispersive equations. For this purpose we study in detail the properties of the restriction of Fourier transform on the unit cotangent sphere associated with the symbols of multipliers.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper presents a simple proof of resolvent estimates for elliptic Fourier multipliers on Euclidean space.\n- These resolvent estimates are applied to analyze time-global and spatially-local smoothing estimates for a class of dispersive equations.\n- The authors study in detail the properties of the restriction of the Fourier transform on the unit cotangent sphere.\n- This unit cotangent sphere is associated with the symbols of the Fourier multipliers.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nWe provide a simple proof of resolvent estimates for elliptic Fourier multipliers on Euclidean space by carefully analyzing the restriction of the Fourier transform on the unit cotangent sphere associated with the multiplier symbols. These estimates are then applied to establish time-global and spatially-local smoothing estimates for a class of dispersive equations, advancing the understanding of their regularity properties.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Fourier, Euclidean, For"
+  },
+  "outputs": {
+    "L1": "We present a simple proof of the resolvent estimates for elliptic Fourier multipliers on Euclidean space, and apply these results to the analysis of time-global and spatially-local smoothing estimates for a class of dispersive equations. To this end, we conduct a detailed study of the properties of the restriction of the Fourier transform to the unit cotangent sphere associated with the symbols of the multipliers.",
+    "L2": "Here is a rewritten version:\n\nWe provide a straightforward demonstration of resolvent bounds for elliptic Fourier multipliers defined on Euclidean space. These bounds are then employed to investigate smoothing estimates that are global in time and local in space for a certain family of dispersive equations. To accomplish this, we conduct a thorough examination of how the Fourier transform behaves when restricted to the unit cotangent sphere connected to the symbols of these multipliers.",
+    "L3": "# Resolvent Estimates for Elliptic Fourier Multipliers and Applications to Dispersive Equations\n\nThis paper presents a simple and direct proof of resolvent estimates for elliptic Fourier multipliers on Euclidean space. By focusing on the essential structural features of these operators, we develop an approach that avoids unnecessary technical complications while yielding sharp and broadly applicable results.\n\nThe resolvent estimates established here serve as a foundational tool for our main application: the analysis of time-global and spatially-local smoothing estimates for a class of dispersive equations. Smoothing phenomena of this type describe the gain of regularity exhibited by solutions to dispersive equations, and controlling them uniformly in time while accounting for local spatial behavior is of central importance in the study of such equations. The resolvent framework provides a natural setting in which these estimates can be derived and understood.\n\nA key component of our analysis is a detailed study of the restriction of the Fourier transform to the unit cotangent sphere. This sphere arises naturally from the symbols of the Fourier multipliers under consideration, encoding the geometric and analytic information relevant to the dispersive dynamics. By carefully examining the properties of this restriction—including its mapping behavior and the role it plays in the resolvent estimates—we obtain a clear picture of how the geometry of the symbol influences the smoothing properties of the associated equations.\n\nTaken together, these results demonstrate how a careful treatment of the restriction of the Fourier transform on the unit cotangent sphere, combined with resolvent estimates for elliptic Fourier multipliers, provides a unified and transparent framework for establishing smoothing estimates for dispersive equations.",
+    "L4": "# Resolvent Estimates for Elliptic Fourier Multipliers and Applications to Dispersive Smoothing\n\n## Introduction and Overview\n\nResolvent estimates occupy a central position in the analysis of partial differential operators, serving as a bridge between spectral theory and the quantitative study of solutions to evolution equations. In this work, we present a streamlined approach to obtaining resolvent estimates for a broad class of elliptic Fourier multipliers on Euclidean space $\\mathbb{R}^n$. Our method rests on a careful geometric and harmonic-analytic examination of how the Fourier transform behaves when restricted to the unit cotangent sphere naturally associated with the symbol of the multiplier. As a consequence of these estimates, we derive time-global and spatially-local smoothing estimates for solutions of a wide family of dispersive equations, thereby deepening the current understanding of their regularity behavior.\n\n## The Setting and Main Strategy\n\nConsider a Fourier multiplier operator $a(D)$ defined through its symbol $a(\\xi)$, acting on suitable functions via\n$$\na(D)f(x) = \\frac{1}{(2\\pi)^n} \\int_{\\mathbb{R}^n} e^{i x \\cdot \\xi}\\, a(\\xi)\\, \\hat{f}(\\xi)\\, d\\xi.\n$$\nWhen the symbol $a$ is elliptic—meaning it does not vanish outside a compact set and grows in a controlled manner—one is naturally led to study the resolvent\n$$\nR(z) = \\big(a(D) - z\\big)^{-1}, \\qquad z \\notin \\operatorname{ran}(a),\n$$\nand its boundary behavior as the spectral parameter $z$ approaches the real axis.\n\nThe essential difficulty in bounding the resolvent lies in understanding the singular set\n$$\n\\Sigma_\\lambda = \\{\\xi \\in \\mathbb{R}^n : a(\\xi) = \\lambda\\},\n$$\nwhich, under the ellipticity hypothesis, forms a smooth hypersurface for regular values $\\lambda$. The geometry of these level sets—in particular their nonvanishing Gaussian curvature—governs the decay and smoothing properties available to us. By rescaling, one may frequently reduce the analysis to the model level set, the **unit cotangent sphere** associated with the symbol.\n\n## Restriction of the Fourier Transform\n\nThe heart of our argument is a localized restriction estimate. Rather than invoking the full machinery of the Stein–Tomas restriction theorem in its global form, we exploit the specific geometry of $\\Sigma_\\lambda$. The key observation is that the resolvent kernel can be expressed, via the coarea formula, as an integral over these level surfaces:\n$$\n\\big\\langle R(\\lambda \\pm i0) f, g \\big\\rangle = \\text{(principal value)} \\pm i\\pi \\int_{\\Sigma_\\lambda} \\frac{\\hat{f}(\\xi)\\,\\overline{\\hat{g}(\\xi)}}{|\\nabla a(\\xi)|}\\, d\\sigma_\\lambda(\\xi).\n$$\nThe imaginary part—the jump across the spectrum—is thus controlled precisely by the restriction of the Fourier transforms to $\\Sigma_\\lambda$. By analyzing the surface measure $d\\sigma_\\lambda$ together with the weight $1/|\\nabla a|$, and by tracking how these quantities transform under the natural dilation associated with the symbol, we obtain uniform bounds in the spectral parameter. This careful local analysis of the restriction operator on the unit sphere is what renders the proof both simple and transparent, avoiding heavier abstract functional-analytic constructions.\n\n## Resolvent Estimates\n\nCombining the restriction bound with a limiting absorption argument yields our principal resolvent estimates. Schematically, we establish bounds of the form\n$$\n\\big\\| \\langle x \\rangle^{-s}\\, R(\\lambda \\pm i0)\\, \\langle x \\rangle^{-s} \\big\\|_{L^2 \\to L^2} \\leq C,\n$$\nuniformly for $\\lambda$ in appropriate ranges, where $\\langle x \\rangle = (1 + |x|^2)^{1/2}$ and $s > 1/2$ is a suitable weight exponent. The weighted framework compensates for the lack of integrability at spatial infinity and encodes the *spatially-local* nature of the estimates. The uniformity in $\\lambda$, in turn, is what ultimately produces *time-global* control at the level of the evolution.\n\n## Application to Dispersive Equations\n\nWe now turn to the dispersive evolution equations governed by such multipliers,\n$$\ni\\,\\partial_t u = a(D) u, \\qquad u(0) = u_0,\n$$\nwhose solution is given by $u(t) = e^{-it a(D)} u_0$. This general framework encompasses many equations of physical and mathematical interest, including Schrödinger-type equations (with $a(\\xi) = |\\xi|^2$), fractional and higher-order dispersive equations, and a variety of anisotropic models.\n\nThe link between resolvent bounds and smoothing is furnished by the identity relating the propagator to the resolvent through the spectral measure. Integrating in time and applying Plancherel's theorem in the temporal variable, one converts the uniform resolvent estimate into a **local smoothing estimate** of the form\n$$\n\\big\\| \\langle x \\rangle^{-s}\\, |a'(D)|^{1/2}\\, e^{-it a(D)} u_0 \\big\\|_{L^2(\\mathbb{R}_t \\times \\mathbb{R}^n_x)} \\leq C\\, \\| u_0 \\|_{L^2(\\mathbb{R}^n)}.\n$$\nThis inequality expresses two features simultaneously:\n\n- **Global-in-time integrability**: the estimate holds over the entire time axis $\\mathbb{R}_t$, reflecting the persistent dispersive decay of solutions.\n- **Local-in-space gain of regularity**: the weight $\\langle x \\rangle^{-s}$ confines the estimate to bounded spatial regions, in which the solution gains a fractional derivative of smoothness relative to the initial data.\n\nThe precise gain and the range of admissible weights depend on the order and curvature properties of the symbol $a$, which are transparently encoded in the geometry of its level sets.\n\n## Concluding Remarks\n\nThe value of the present approach is twofold. First, it offers a conceptually clean derivation of resolvent estimates that isolates the essential geometric mechanism—the curvature of the level sets of the symbol—from the technical apparatus often accompanying such results. Second, it unifies the treatment of a broad class of dispersive equations under a single framework, showing that their smoothing properties are direct consequences of a common restriction-theoretic principle. We anticipate that this perspective will facilitate further extensions, for instance to variable-coefficient operators, to settings with lower regularity of the symbol, or to nonlinear problems where such linear smoothing estimates serve as indispensable building blocks.",
+    "L5": "# The Beauty of Mathematical Foundations\n\nFor centuries, mathematics has provided humanity with powerful tools to understand the world around us. Among the most influential concepts are those developed by great thinkers whose ideas continue to shape modern science and engineering.\n\n## Euclidean Geometry: The Bedrock of Space\n\nThe **Euclidean** framework, named after the ancient Greek mathematician Euclid, established the fundamental principles of geometry that we still learn today. For over two thousand years, Euclidean geometry has served as the foundation for understanding shapes, distances, and spatial relationships. Its axioms describe a flat, intuitive space where parallel lines never meet and the angles of a triangle always sum to 180 degrees. For architects, engineers, and physicists, this system remains essential for practical calculations and design.\n\n## Fourier Analysis: Decoding Complex Signals\n\nBuilding upon these classical foundations, **Fourier** analysis introduced a revolutionary way of thinking about functions and waves. Developed by Joseph Fourier in the early 19th century, this technique allows complex signals to be broken down into simpler sinusoidal components. For engineers working with sound, images, and electrical signals, the Fourier transform has become an indispensable tool. It enables us to analyze frequencies, compress data, and filter noise with remarkable precision.\n\n## Bridging Concepts\n\nFor students and researchers alike, understanding how these concepts connect is crucial. The Euclidean space provides the geometric setting in which Fourier analysis often operates, demonstrating how different branches of mathematics work together. This synergy reveals the elegant unity underlying seemingly separate mathematical disciplines.\n\nUltimately, both Euclidean geometry and Fourier analysis remind us that mathematics is not just abstract theory but a living toolkit for solving real-world problems."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a mathematics paper about resolvent estimates of elliptic Fourier multipliers and their application to smoothing estimates for dispersive equations.",
+      "output": "# Abstract\n\nWe study resolvent estimates for a class of elliptic Fourier multipliers and establish their connection to global-in-time smoothing estimates for dispersive equations. Given a real-valued elliptic symbol $a(\\xi)$ of order $m > 0$, we consider the Fourier multiplier operator $a(D)$ and analyze the mapping properties of its resolvent $(a(D) - z)^{-1}$ in weighted $L^2$ spaces, uniformly with respect to the spectral parameter $z$ in the complex plane away from the spectrum. Our main results provide sharp uniform resolvent bounds expressed in terms of the geometry of the level sets of the symbol, with the curvature of these hypersurfaces playing a decisive role in the decay rates obtained.\n\nAs a principal application, we derive a family of Kato-type smoothing estimates for the associated evolution equation $i\\partial_t u = a(D)u$. We show that the local smoothing gain and the admissible weights are governed by the same geometric quantities that control the resolvent, thereby unifying the stationary and time-dependent perspectives. In particular, our framework recovers and extends known smoothing estimates for the Schrödinger, relativistic Schrödinger, and higher-order dispersive equations, while accommodating anisotropic and degenerate symbols not covered by previous methods. The approach is based on a careful analysis of restriction estimates to the level surfaces of $a(\\xi)$ combined with a limiting absorption principle, and it clarifies the precise interplay between ellipticity, curvature, and dispersion.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Can you draft a concise abstract (3-4 sentences) for a research article on time-global and spatially-local smoothing estimates using Fourier multiplier techniques?",
+      "output": "**Abstract**\n\nWe establish time-global, spatially-local smoothing estimates for a class of dispersive equations by exploiting the structure of the associated Fourier multipliers. Our approach reduces the local smoothing phenomenon to sharp bounds on oscillatory integral operators, allowing us to characterize the gain of regularity in terms of the curvature and homogeneity properties of the multiplier symbol. As a consequence, we derive uniform-in-time weighted estimates that hold on compact spatial regions and remain stable under lower-order perturbations. These results extend classical Kato-type smoothing to a broader family of evolution equations and yield new applications to well-posedness and scattering theory.\n\n---\n\nFeel free to let me know the specific equation(s), function spaces, or key results you're targeting, and I can tailor the abstract more precisely to your work.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "I'm writing a paper on resolvent estimates for elliptic Fourier multipliers on Euclidean space. Please help me summarize the main contributions in an abstract, including the role of Fourier restriction on the cotangent sphere.",
+      "output": "# Draft Abstract\n\nHere's a summary framework for your abstract. I've written it to highlight the key contributions typical of this area, but you'll want to adjust the specifics to match your actual results.\n\n---\n\n**Abstract**\n\nWe study resolvent estimates for elliptic Fourier multipliers $p(D)$ on $\\mathbb{R}^n$, where the symbol $p(\\xi)$ is a real-valued elliptic function whose characteristic surface $\\Sigma_\\lambda = \\{p(\\xi) = \\lambda\\}$ is a smooth hypersurface with nonvanishing Gaussian curvature. We establish uniform $L^p \\to L^{p'}$ bounds for the resolvent $(p(D) - z)^{-1}$ that hold uniformly as $z$ approaches the spectrum, extending the classical Kenig–Ruiz–Sogge estimates for the Laplacian to a broad class of multipliers.\n\nThe central mechanism is the connection between resolvent bounds and **Fourier restriction–extension estimates on the characteristic (cotangent) sphere** $\\Sigma_\\lambda$. We show that the curvature of $\\Sigma_\\lambda$ governs the decay of the associated oscillatory integrals, and that the Stein–Tomas restriction theorem on $\\Sigma_\\lambda$ yields the admissible range of exponents $(p, p')$ for which uniform resolvent estimates hold. Conversely, the geometry of the characteristic surface—in particular the vanishing or nondegeneracy of its principal curvatures—determines the sharp constants and the precise dependence on the spectral parameter.\n\nAs applications, we [derive uniform Sobolev inequalities / obtain limiting absorption principles / establish eigenvalue bounds for perturbations $p(D) + V$ with complex potentials]. Our results clarify the role played by the location of $z$ relative to the spectrum and recover known estimates in the constant-coefficient elliptic case.\n\n---\n\n## Notes on customizing this\n\nTo sharpen the abstract, consider specifying:\n\n- **The exponent range.** Is it the full Stein–Tomas range $\\frac{2(n+1)}{n+3} \\le p \\le \\frac{2(n+1)}{n-1}$, or the wider Kenig–Ruiz–Sogge range for the uniform Sobolev inequality?\n\n- **Curvature hypotheses.** Do you require nonvanishing Gaussian curvature everywhere, or do you handle degenerate/vanishing curvature (which changes the decay rate)?\n\n- **Uniformity type.** Are the bounds uniform in $z \\in \\mathbb{C}$, or restricted to specific approaches to the spectrum (real axis, sectors, distance to spectrum)?\n\n- **The precise novelty.** What distinguishes your work — the class of multipliers, anisotropic symbols, non-homogeneous $p$, sharp constants, or the potential-theoretic applications?\n\nWould you like me to tailor this toward a specific application (e.g., eigenvalue estimates for Schrödinger operators with complex potentials), or make it more technical/precise? If you share your main theorem statements, I can align the abstract with your actual results.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Produce an academic abstract for a harmonic analysis / PDE paper dealing with dispersive equations, Fourier multipliers, and restriction of the Fourier transform to the unit cotangent sphere.",
+      "output": "**Abstract**\n\nWe study a class of dispersive evolution equations of the form $i\\partial_t u = P(D)u$, where $P(D)$ is a Fourier multiplier whose symbol $p(\\xi)$ is a smooth, real-valued function with non-degenerate Hessian away from a compact degeneracy set. Our aim is to establish sharp local smoothing and Strichartz estimates by exploiting the fine geometry of the associated characteristic variety and, in particular, the restriction properties of the Fourier transform to the unit cotangent sphere $S^{*}_x M$ over each point of the underlying manifold. \n\nThe central object of our analysis is a family of oscillatory integral operators whose phase functions are governed by the Legendre transform of $p$, and whose kernels concentrate near the wavefront set determined by the Gauss map of the level sets $\\{p(\\xi) = \\tau\\}$. We prove that, whenever the cotangent sphere carries a nonvanishing Gaussian curvature condition, the corresponding restriction–extension estimates in the sense of Stein–Tomas can be upgraded to bilinear and, in the appropriate range, multilinear form. This yields new $L^p_t L^q_x$ bounds for the propagator $e^{-itP(D)}$ that are sharp with respect to both the dispersive decay and the loss of derivatives.\n\nAs applications, we derive well-posedness results in critical and subcritical Sobolev spaces for a family of nonlinear Schrödinger- and wave-type equations with anisotropic dispersion relations, including cases in which the symbol degenerates along lower-dimensional subvarieties of the cotangent sphere. In such degenerate regimes we quantify the precise loss in the smoothing exponent in terms of the order of contact between the characteristic surface and its tangent hyperplanes, recovering known results in the elliptic and hyperbolic cases as endpoints. Our methods combine second-dyadic (Whitney) decompositions of frequency space, a stationary-phase analysis adapted to the curvature of $S^{*}_x M$, and a wave-packet parametrization of the flow that is stable under variable-coefficient perturbations. We conclude with a discussion of the necessity of the curvature hypotheses through explicit counterexamples built from Knapp-type wave packets aligned with the flat directions of the cotangent sphere.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Summarize this research in abstract form: we prove resolvent estimates for elliptic Fourier multipliers and apply them to smoothing estimates of dispersive equations, studying Fourier restriction on the unit cotangent sphere.",
+      "output": "# Abstract\n\nWe establish resolvent estimates for elliptic Fourier multipliers and demonstrate their applications to smoothing estimates for dispersive equations. Our approach centers on the analysis of Fourier restriction to the unit cotangent sphere, which provides a unifying framework connecting spectral properties of multiplier operators with the regularity theory of dispersive flows.\n\nWe prove uniform resolvent estimates for a broad class of elliptic Fourier multipliers, extending classical results to more general symbol classes. The key technical ingredient is a careful study of the Fourier restriction operator on the unit cotangent sphere, whose mapping properties govern the boundedness of the associated resolvents. These estimates are shown to be sharp within the natural scaling of the problem.\n\nAs applications, we derive smoothing estimates for solutions to dispersive partial differential equations. The resolvent framework yields both local and global smoothing bounds, capturing the gain of regularity characteristic of dispersive dynamics. Our results apply to equations governed by elliptic principal symbols and recover, as special cases, known smoothing phenomena while providing new estimates in more general settings.\n\nThe interplay between resolvent analysis, Fourier restriction, and dispersive smoothing highlights the geometric role of the cotangent sphere in determining the fine regularity properties of these equations.\n\n---\n\n*Note: This is a reconstructed abstract based on your description. If you can provide additional details—such as the specific class of multipliers, the function spaces involved (e.g., L², weighted L², Sobolev spaces), or the particular dispersive equations studied—I can refine this to more accurately reflect your work.*",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7006211180124224,
+      "excess_ratio": 0.5855254317119087,
+      "baseline_mean": 0.11509568630051373,
+      "baseline_n_valid": 5,
+      "output_chars": 417,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7264957264957265,
+          "baseline_mean": 0.08835800548461906,
+          "excess_ratio": 0.6381377210111074
+        },
+        "bz2": {
+          "actual_ratio": 0.5551330798479087,
+          "baseline_mean": 0.11090782941907629,
+          "excess_ratio": 0.44422525042883243
+        },
+        "lzma": {
+          "actual_ratio": 0.8051948051948052,
+          "baseline_mean": 0.14291072360768847,
+          "excess_ratio": 0.6622840815871167
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.41981613891726244,
+      "excess_ratio": 0.30472045261674874,
+      "baseline_mean": 0.11509568630051373,
+      "baseline_n_valid": 5,
+      "output_chars": 491,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.36585365853658536,
+          "baseline_mean": 0.08835800548461906,
+          "excess_ratio": 0.27749565305196633
+        },
+        "bz2": {
+          "actual_ratio": 0.4012345679012346,
+          "baseline_mean": 0.11090782941907629,
+          "excess_ratio": 0.2903267384821583
+        },
+        "lzma": {
+          "actual_ratio": 0.4782608695652174,
+          "baseline_mean": 0.14291072360768847,
+          "excess_ratio": 0.33535014595752893
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.24634896233666417,
+      "excess_ratio": 0.13125327603615045,
+      "baseline_mean": 0.11509568630051373,
+      "baseline_n_valid": 5,
+      "output_chars": 1859,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.21480582524271843,
+          "baseline_mean": 0.08835800548461906,
+          "excess_ratio": 0.12644781975809938
+        },
+        "bz2": {
+          "actual_ratio": 0.2273781902552204,
+          "baseline_mean": 0.11090782941907629,
+          "excess_ratio": 0.11647036083614412
+        },
+        "lzma": {
+          "actual_ratio": 0.2925764192139738,
+          "baseline_mean": 0.14291072360768847,
+          "excess_ratio": 0.14966569560628534
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.08103511116510742,
+      "excess_ratio": -0.03406057513540631,
+      "baseline_mean": 0.11509568630051373,
+      "baseline_n_valid": 5,
+      "output_chars": 6255,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.06984357948344852,
+          "baseline_mean": 0.08835800548461906,
+          "excess_ratio": -0.018514426001170536
+        },
+        "bz2": {
+          "actual_ratio": 0.07259865971705137,
+          "baseline_mean": 0.11090782941907629,
+          "excess_ratio": -0.038309169702024914
+        },
+        "lzma": {
+          "actual_ratio": 0.10014306151645208,
+          "baseline_mean": 0.14291072360768847,
+          "excess_ratio": -0.04276766209123639
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.044108177720540855,
+      "excess_ratio": -0.07098750857997288,
+      "baseline_mean": 0.11509568630051373,
+      "baseline_n_valid": 5,
+      "output_chars": 1953,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.028056112224448898,
+          "baseline_mean": 0.08835800548461906,
+          "excess_ratio": -0.06030189326017016
+        },
+        "bz2": {
+          "actual_ratio": 0.036852589641434265,
+          "baseline_mean": 0.11090782941907629,
+          "excess_ratio": -0.07405523977764203
+        },
+        "lzma": {
+          "actual_ratio": 0.06521739130434782,
+          "baseline_mean": 0.14291072360768847,
+          "excess_ratio": -0.07769333230334065
+        }
+      }
+    }
+  }
+}

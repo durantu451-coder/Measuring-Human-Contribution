@@ -1,0 +1,169 @@
+{
+  "model": "claude-opus-4-8",
+  "domain": "Patent",
+  "id": "15750335",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA prediction system capable of predicting an unknown value of an attribute with high accuracy is provided. Based on first master data, second master data, and fact data indicating a relation between a first ID which is an ID of a record in the first master data and a second ID which is an ID of a record in the second master data, the co-clustering means 81 co-clusters the first IDs and the second IDs. The prediction model generation means 82 generates a prediction model for each cluster of the first ID output from the co-clustering means 81. When the first ID and the objective variable which is one of the attributes included in the first master data are specified, the prediction means 83 predicts the value of the objective variable corresponding to the first ID based on the prediction model and the belonging probability that the first ID belongs to each cluster.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA prediction system capable of predicting an unknown value of an attribute with high accuracy is provided. Based on first master data, second master data, and fact data indicating a relation between a first ID which is an ID of a record in the first master data and a second ID which is an ID of a record in the second master data, the co-clustering means 81 co-clusters the first IDs and the second IDs. The prediction model generation means 82 generates a prediction model for each cluster of the first ID output from the co-clustering means 81. When the first ID and the objective variable which is one of the attributes included in the first master data are specified, the prediction means 83 predicts the value of the objective variable corresponding to the first ID based on the prediction model and the belonging probability that the first ID belongs to each cluster.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A prediction system is designed to predict an unknown value of an attribute with high accuracy.\n- The co-clustering means groups first IDs and second IDs together based on first master data, second master data, and fact data indicating the relationship between these IDs.\n- The prediction model generation means creates a separate prediction model for each cluster of first IDs produced by the co-clustering means.\n- When a first ID and an objective variable are specified, the prediction means predicts the objective variable's value using the prediction model and the belonging probability of the first ID for each cluster.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA prediction system predicts an unknown attribute value by co-clustering first and second IDs using master data and fact data indicating their relations, then generating a prediction model for each first-ID cluster. When a first ID and objective variable are specified, the system predicts the attribute value based on the prediction models and the belonging probability of the ID to each cluster, enabling high-accuracy predictions.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Based, IDs, The"
+  },
+  "outputs": {
+    "L1": "A prediction system capable of predicting an unknown attribute value with high accuracy is provided. Based on first master data, second master data, and fact data indicating a relationship between a first ID, which is an ID of a record in the first master data, and a second ID, which is an ID of a record in the second master data, the co-clustering means 81 performs co-clustering of the first IDs and the second IDs. The prediction model generation means 82 generates a prediction model for each cluster of the first IDs output from the co-clustering means 81. When the first ID and the objective variable, which is one of the attributes included in the first master data, are specified, the prediction means 83 predicts the value of the objective variable corresponding to the first ID based on the prediction model and the belonging probability that the first ID belongs to each cluster.",
+    "L2": "A prediction system designed to forecast an attribute's unknown value with a high degree of accuracy is disclosed. The co-clustering means 81 performs co-clustering on the first IDs and the second IDs by relying on three inputs: first master data, second master data, and fact data. This fact data captures how a first ID—which serves as the ID for a record within the first master data—relates to a second ID, which functions as the ID for a record within the second master data. For every cluster of the first ID produced by the co-clustering means 81, the prediction model generation means 82 creates a corresponding prediction model. Once a first ID and an objective variable—one of the attributes contained in the first master data—have been designated, the prediction means 83 estimates the objective variable's value associated with that first ID. This estimation draws on both the prediction model and the belonging probability, which reflects the likelihood that the first ID is a member of each cluster.",
+    "L3": "# Prediction System Overview\n\nA prediction system is designed to predict an unknown value of an attribute with high accuracy. By leveraging structured relationships within the data and employing specialized modeling techniques, the system is able to generate reliable predictions even in complex scenarios where the target attribute value is not directly known.\n\n## Co-Clustering Means\n\nAt the core of the system is the co-clustering means, which groups first IDs and second IDs together based on multiple data sources. Specifically, it utilizes first master data, second master data, and fact data that indicates the relationship between these IDs. By simultaneously clustering both the first IDs and the second IDs according to their interrelationships, the system uncovers meaningful patterns and associations that would not be apparent when analyzing each set of IDs in isolation.\n\n## Prediction Model Generation Means\n\nBuilding upon the results of the co-clustering process, the prediction model generation means creates a separate prediction model for each cluster of first IDs produced by the co-clustering means. This approach ensures that each model is tailored to the specific characteristics of its corresponding cluster. Because the first IDs within a given cluster share similar relationships and attributes, a dedicated prediction model for each cluster can capture these localized patterns more effectively than a single, generalized model applied across all data.\n\n## Prediction Means\n\nOnce the cluster-specific prediction models have been established, the prediction means performs the actual value estimation. When a first ID and an objective variable are specified, the prediction means predicts the objective variable's value using both the prediction model and the belonging probability of the first ID for each cluster. By incorporating the belonging probability—the likelihood that a given first ID belongs to each cluster—the system accounts for the possibility that an ID may be associated with multiple clusters to varying degrees. This probabilistic weighting allows the prediction to reflect a more nuanced and accurate estimation of the objective variable's value.\n\n## Summary\n\nThrough the combined operation of the co-clustering means, the prediction model generation means, and the prediction means, the system delivers highly accurate predictions of unknown attribute values. The integration of relationship-based clustering, cluster-specific modeling, and probability-weighted prediction enables the system to handle complex data structures while maintaining precision and reliability.",
+    "L4": "# Prediction System Using Co-Clustering and Cluster-Based Prediction Models\n\n## Overview\n\nThe present disclosure relates to a prediction system that predicts an unknown attribute value with high accuracy. The system achieves improved prediction performance by combining co-clustering techniques with cluster-specific prediction models, leveraging both master data and fact data to capture meaningful relationships between different entities.\n\n## Data Structure\n\nThe system operates on two primary types of data:\n\n**Master data** contains descriptive attributes associated with individual entities, which are identified by unique identifiers. The system distinguishes between two categories of identifiers: **first IDs** and **second IDs**. Each of these identifiers may correspond to different types of entities within the domain of interest.\n\n**Fact data** indicates the relationships between the first IDs and the second IDs. This relational information records how entities associated with the first IDs interact with, or are otherwise connected to, entities associated with the second IDs.\n\n## Co-Clustering Process\n\nUsing both the master data and the fact data, the system performs **co-clustering** of the first IDs and the second IDs. Co-clustering simultaneously groups the first IDs and the second IDs based on the patterns of their mutual relationships as expressed in the fact data, as well as the attribute information contained in the master data. As a result of this process, the first IDs are partitioned into a plurality of clusters, referred to as **first-ID clusters**, wherein each first-ID cluster contains first IDs that exhibit similar relational and attribute characteristics.\n\n## Generation of Prediction Models\n\nFollowing the co-clustering process, the system **generates a prediction model for each first-ID cluster**. Because the first IDs within a given cluster share similar characteristics, a prediction model trained specifically on the data belonging to that cluster can more precisely capture the relationships relevant to that group. This cluster-based approach allows the system to maintain a collection of specialized prediction models, each tailored to the particular subpopulation represented by its corresponding first-ID cluster.\n\n## Prediction Procedure\n\nWhen a **first ID** and an **objective variable** are specified as inputs, the system predicts the corresponding attribute value. Rather than relying on a single global model, the system takes into account the **belonging probability** of the specified first ID to each of the first-ID clusters. This belonging probability reflects the degree to which the specified first ID is associated with each cluster.\n\nThe system then predicts the attribute value based on a combination of the prediction models and these belonging probabilities. In practice, the outputs of the respective cluster-specific prediction models are weighted according to the belonging probabilities of the specified first ID to the corresponding clusters. By aggregating these weighted contributions, the system produces a final predicted value for the specified objective variable.\n\n## Advantages\n\nBy combining co-clustering with cluster-specific prediction models and incorporating the belonging probabilities of each first ID to the respective clusters, the system enables **high-accuracy predictions**. This approach accounts for the heterogeneity among entities, ensuring that predictions are informed by the most relevant subpopulation characteristics rather than by a single, generalized model. Consequently, the system provides more precise and reliable estimates of unknown attribute values.",
+    "L5": "# The Importance of Digital IDs in Modern Systems\n\nThe world has become increasingly dependent on digital verification, and much of that reliance is **based** on the use of unique identifiers, commonly known as IDs.\n\n## What Are IDs?\n\nIDs, short for identifiers, are unique codes assigned to individuals, objects, or data entries. They allow systems to distinguish one item from another with precision. Whether it is a username, an account number, or a product serial code, IDs ensure that every entry can be tracked and managed effectively.\n\n## Why They Matter\n\nThe value of a well-designed identification system lies in its accuracy. **Based** on the principle that no two IDs should be identical, organizations can prevent errors such as duplicate records or mistaken identities. **The** reliability of these systems directly affects the trust users place in digital platforms.\n\n## Common Applications\n\nThe most familiar uses of IDs include:\n\n- **Banking and finance** – account and transaction IDs keep funds secure.\n- **Healthcare** – patient IDs protect sensitive medical records.\n- **E-commerce** – order IDs help track purchases from checkout to delivery.\n- **Databases** – each record receives a primary key, an ID that guarantees uniqueness.\n\n## Conclusion\n\n**The** modern digital landscape simply could not function without dependable identification. **Based** on their ability to organize, secure, and streamline vast amounts of information, IDs remain one of the quiet yet essential foundations of technology today."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a patent describing a prediction system that uses co-clustering of two master data tables to predict unknown attribute values.",
+      "output": "# Abstract\n\nA prediction system and method for estimating unknown attribute values through co-clustering of two master data tables. The system receives a first master data table comprising a plurality of first entities each associated with a first set of attributes, and a second master data table comprising a plurality of second entities each associated with a second set of attributes. A relationship dataset defines observed associations between entities of the first table and entities of the second table. A co-clustering engine simultaneously partitions the first entities into a plurality of first clusters and the second entities into a plurality of second clusters based on patterns in the relationship dataset, generating a co-cluster structure in which each co-cluster represents an intersection of a first cluster and a second cluster. For a target entity pair having at least one unknown attribute value, the system identifies a corresponding co-cluster and computes a predicted value for the unknown attribute based on aggregated attribute values of entities within the identified co-cluster. In one embodiment, the prediction is refined by weighting contributions of neighboring co-clusters according to a similarity measure. The system enables improved prediction accuracy for sparse datasets by exploiting latent structure shared between the two master data tables, and is applicable to recommendation systems, customer-product analytics, and missing data imputation. A memory stores the co-cluster structure, and a processor executes the prediction to output the estimated attribute values via an interface.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize the following invention in a single paragraph suitable for a patent abstract: a system with co-clustering means, prediction model generation means, and prediction means that predicts an objective variable value based on cluster belonging probabilities.",
+      "output": "A system for predicting an objective variable value comprising co-clustering means configured to perform co-clustering on data to generate clusters, prediction model generation means configured to generate a prediction model based on the co-clustering results, and prediction means configured to predict an objective variable value based on cluster belonging probabilities derived from the co-clustering, wherein the prediction means utilizes the cluster belonging probabilities in conjunction with the generated prediction model to determine the objective variable value.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a patent claim summary for a machine learning prediction apparatus that clusters first IDs and second IDs using fact data and generates per-cluster prediction models.",
+      "output": "# Patent Claim Summary: Machine Learning Prediction Apparatus\n\n## Abstract Summary\n\nA machine learning prediction apparatus that improves prediction accuracy by clustering entities based on relational fact data and generating specialized prediction models for each resulting cluster.\n\n---\n\n## Independent Claim (Apparatus)\n\n**Claim 1.** A machine learning prediction apparatus comprising:\n\n- **a data acquisition unit** configured to obtain fact data, wherein the fact data associates a plurality of first IDs with a plurality of second IDs;\n\n- **a clustering unit** configured to generate a plurality of clusters by clustering the first IDs and the second IDs based on the obtained fact data, such that each cluster includes a subset of the first IDs and a subset of the second IDs;\n\n- **a model generation unit** configured to generate, for each cluster of the plurality of clusters, a corresponding prediction model trained using a portion of the fact data associated with the respective cluster; and\n\n- **a prediction unit** configured to output a prediction result by applying, to input data, the prediction model corresponding to a cluster associated with the input data.\n\n---\n\n## Representative Dependent Claims\n\n**Claim 2.** The apparatus of Claim 1, wherein the first IDs identify users and the second IDs identify items, and the fact data indicates interactions between the users and the items.\n\n**Claim 3.** The apparatus of Claim 1, wherein the clustering unit performs co-clustering that simultaneously partitions the first IDs and the second IDs.\n\n**Claim 4.** The apparatus of Claim 1, wherein the model generation unit generates a distinct set of model parameters for each cluster.\n\n**Claim 5.** The apparatus of Claim 1, wherein the prediction unit selects the corresponding prediction model based on cluster membership of a first ID and a second ID contained in the input data.\n\n**Claim 6.** The apparatus of Claim 1, further comprising a storage unit configured to store an association between each cluster and its corresponding prediction model.\n\n---\n\n## Key Inventive Elements\n\n| Element | Function |\n|---------|----------|\n| **Fact Data** | Links first IDs to second IDs (e.g., user–item relationships) |\n| **Dual-ID Clustering** | Groups both ID types jointly to capture latent structure |\n| **Per-Cluster Models** | Localized models improve accuracy over a single global model |\n| **Cluster-Based Inference** | Routes input to the most relevant specialized model |\n\n---\n\n⚠️ **Note:** This is a drafting template for illustrative purposes. Actual claim language should be prepared or reviewed by a registered patent attorney/agent, tailored to the specific invention, and checked against prior art before filing.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Explain how a prediction system predicts an unknown value of an attribute with high accuracy using first master data, second master data, fact data, and co-clustering.",
+      "output": "# Prediction System Using Co-Clustering with Master and Fact Data\n\n## Understanding the Data Components\n\nBefore explaining the prediction mechanism, let's clarify the three data types:\n\n**First Master Data**\n- Describes one entity type (e.g., customers, users, products)\n- Contains attributes like demographics, categories, or characteristics\n- Example: Customer records with age, region, occupation\n\n**Second Master Data**\n- Describes a *different* entity type\n- Represents the other dimension of a relationship\n- Example: Product records with category, price, brand\n\n**Fact Data**\n- Records **transactions or interactions** between first and second master data entities\n- Contains measured values (the \"facts\")\n- Example: A purchase record linking Customer A to Product X with a rating of 5\n\n---\n\n## The Core Prediction Mechanism\n\n### Step 1: Build a Relationship Matrix\n\nThe system organizes fact data into a matrix:\n\n```\n              Product1  Product2  Product3  Product4\nCustomer1        5         ?         3         1\nCustomer2        4         2         ?         2\nCustomer3        ?         3         4         5\nCustomer4        2         ?         5         3\n```\n\n- **Rows** = first master data entities\n- **Columns** = second master data entities\n- **Cells** = fact values (the attribute to predict)\n- **\"?\"** = the unknown values we want to predict\n\n---\n\n### Step 2: Apply Co-Clustering\n\n**Co-clustering** simultaneously groups *both* rows and columns based on similar patterns:\n\n```\nCo-Cluster A          Co-Cluster B\n┌──────────────┐     ┌──────────────┐\n│ Similar       │     │ Similar       │\n│ customers     │  +  │ products      │\n│ grouped       │     │ grouped       │\n└──────────────┘     └──────────────┘\n```\n\nThis differs from regular clustering because it finds **blocks** where a group of customers behaves consistently toward a group of products.\n\n**Why this matters:** Instead of comparing individual cells, the system identifies coherent sub-matrices with similar values.\n\n---\n\n### Step 3: Predict the Unknown Value\n\nFor an unknown cell (unknown attribute value):\n\n1. **Locate the co-cluster** the row and column belong to\n2. **Aggregate known values** within that co-cluster block\n3. **Estimate the missing value** using the co-cluster's pattern\n\n```\nPrediction = f(co-cluster average, \n               row deviation, \n               column deviation)\n```\n\n---\n\n## Why This Achieves High Accuracy\n\n| Factor | Contribution to Accuracy |\n|--------|--------------------------|\n| **Dual grouping** | Captures patterns in both dimensions simultaneously |\n| **Master data attributes** | Enriches clusters with entity characteristics, not just fact values |\n| **Noise reduction** | Aggregating within blocks smooths out random variation |\n| **Handles sparsity** | Predicts even when few direct data points exist for an entity |\n\n---\n\n## Practical Example\n\n**Scenario:** Predicting whether Customer2 will like Product3 (unknown value)\n\n1. Co-clustering groups Customer2 with similar customers (Cluster A)\n2. Product3 falls into a product group (Cluster B)\n3. The system examines how Cluster A customers rated Cluster B products\n4. **Prediction:** If that block averages a high rating, Customer2 likely rates Product3 high\n\n---\n\n## Key Advantage Summary\n\nThe system achieves high accuracy because it leverages **three sources of information at once**:\n\n- **Behavioral patterns** (fact data)\n- **Entity attributes** (both master data sets)\n- **Structural coherence** (co-clustering blocks)\n\nBy combining *who the entities are* (master data) with *how they interact* (fact data) and *organizing both dimensions together* (co-clustering), the system makes robust predictions even with incomplete information.\n\n---\n\nWould you like me to elaborate on any specific part—such as the **co-clustering algorithm mechanics**, the **mathematical prediction formula**, or a **detailed worked example**?",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Based on the following components—co-clustering means 81, prediction model generation means 82, and prediction means 83—generate a technical description of how the prediction system works.",
+      "output": "# Technical Description of the Prediction System\n\n## System Overview\n\nThe prediction system comprises three functionally interconnected components that operate sequentially to generate accurate predictions from input data. These components are the **co-clustering means (81)**, the **prediction model generation means (82)**, and the **prediction means (83)**.\n\n## Component Functions and Operation\n\n### Co-Clustering Means (81)\n\nThe co-clustering means (81) serves as the foundational data organization component of the system. It performs simultaneous clustering across multiple dimensions of the input data—typically clustering both rows (e.g., samples or objects) and columns (e.g., attributes or features) concurrently.\n\n**Operation:**\n- Receives input data structured as a matrix or multi-dimensional dataset\n- Identifies latent patterns by grouping related data elements across dimensions simultaneously\n- Partitions the data into coherent blocks or co-clusters, where elements within each cluster exhibit similar characteristics\n- Outputs a set of clusters representing structured relationships within the data\n\n### Prediction Model Generation Means (82)\n\nThe prediction model generation means (82) receives the clustered output from the co-clustering means (81) and constructs predictive models based on the identified structure.\n\n**Operation:**\n- Takes the co-clustering results as input\n- Generates a dedicated prediction model for each cluster or block identified in the previous stage\n- Learns the relationships between explanatory variables and target values within each localized cluster\n- Produces a set of specialized prediction models optimized for their respective data segments\n\n### Prediction Means (83)\n\nThe prediction means (83) applies the generated models to produce final predictions for new or target data.\n\n**Operation:**\n- Receives a target input for which a prediction is required\n- Determines the appropriate cluster to which the target input belongs\n- Selects and applies the corresponding prediction model generated by component (82)\n- Outputs the predicted value or classification result\n\n## Integrated Workflow\n\nThe system operates through the following sequential flow:\n\n1. **Input data** is supplied to the co-clustering means (81), which organizes it into meaningful clusters.\n2. The clustered structure is passed to the prediction model generation means (82), which builds tailored models for each cluster.\n3. When a prediction is needed, the prediction means (83) identifies the relevant cluster and applies the appropriate model to generate the output.\n\n## Technical Advantages\n\nThis architecture provides enhanced prediction accuracy by leveraging localized modeling—rather than applying a single global model, the system creates specialized models for structurally similar data segments. This approach effectively captures heterogeneous patterns within the data, improving both accuracy and interpretability of predictions.\n\n---\n\n*Note: The reference numerals (81, 82, 83) suggest this description corresponds to a patent or technical specification. If you can provide additional context about the specific application domain or data type, I can refine this description accordingly.*",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.8107202680067002,
+      "excess_ratio": 0.6593174008723072,
+      "baseline_mean": 0.15140286713439302,
+      "baseline_n_valid": 5,
+      "output_chars": 892,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.8398876404494382,
+          "baseline_mean": 0.13257623364101184,
+          "excess_ratio": 0.7073114068084263
+        },
+        "bz2": {
+          "actual_ratio": 0.7048780487804878,
+          "baseline_mean": 0.13327583947056337,
+          "excess_ratio": 0.5716022093099244
+        },
+        "lzma": {
+          "actual_ratio": 0.8878504672897196,
+          "baseline_mean": 0.1852001235094432,
+          "excess_ratio": 0.7026503437802765
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4240802675585284,
+      "excess_ratio": 0.27267740042413535,
+      "baseline_mean": 0.15140286713439302,
+      "baseline_n_valid": 5,
+      "output_chars": 1013,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.39082969432314413,
+          "baseline_mean": 0.13257623364101184,
+          "excess_ratio": 0.2582534606821323
+        },
+        "bz2": {
+          "actual_ratio": 0.40350877192982454,
+          "baseline_mean": 0.13327583947056337,
+          "excess_ratio": 0.27023293245926117
+        },
+        "lzma": {
+          "actual_ratio": 0.4732824427480916,
+          "baseline_mean": 0.1852001235094432,
+          "excess_ratio": 0.2880823192386484
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.2556162720097146,
+      "excess_ratio": 0.10421340487532157,
+      "baseline_mean": 0.15140286713439302,
+      "baseline_n_valid": 5,
+      "output_chars": 2618,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.23644859813084113,
+          "baseline_mean": 0.13257623364101184,
+          "excess_ratio": 0.10387236448982928
+        },
+        "bz2": {
+          "actual_ratio": 0.24077490774907748,
+          "baseline_mean": 0.13327583947056337,
+          "excess_ratio": 0.1074990682785141
+        },
+        "lzma": {
+          "actual_ratio": 0.28771929824561404,
+          "baseline_mean": 0.1852001235094432,
+          "excess_ratio": 0.10251917473617084
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.14285714285714282,
+      "excess_ratio": -0.0085457242772502,
+      "baseline_mean": 0.15140286713439302,
+      "baseline_n_valid": 5,
+      "output_chars": 3666,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.11430678466076696,
+          "baseline_mean": 0.13257623364101184,
+          "excess_ratio": -0.01826944898024488
+        },
+        "bz2": {
+          "actual_ratio": 0.14996288047512993,
+          "baseline_mean": 0.13327583947056337,
+          "excess_ratio": 0.016687041004566555
+        },
+        "lzma": {
+          "actual_ratio": 0.16338028169014085,
+          "baseline_mean": 0.1852001235094432,
+          "excess_ratio": -0.021819841819302355
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.04258675078864353,
+      "excess_ratio": -0.10881611634574949,
+      "baseline_mean": 0.15140286713439302,
+      "baseline_n_valid": 5,
+      "output_chars": 1528,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.026054590570719603,
+          "baseline_mean": 0.13257623364101184,
+          "excess_ratio": -0.10652164307029224
+        },
+        "bz2": {
+          "actual_ratio": 0.027577937649880094,
+          "baseline_mean": 0.13327583947056337,
+          "excess_ratio": -0.10569790182068328
+        },
+        "lzma": {
+          "actual_ratio": 0.07142857142857142,
+          "baseline_mean": 0.1852001235094432,
+          "excess_ratio": -0.11377155208087178
+        }
+      }
+    }
+  }
+}

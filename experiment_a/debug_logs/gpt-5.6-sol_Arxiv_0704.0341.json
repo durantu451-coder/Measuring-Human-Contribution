@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0341",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIt is a brief review on composing and solving Infrared Evolution Equations. They can be used in order to calculate amplitudes of high-energy reactions in different kinematic regions in the double-logarithmic approximation.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIt is a brief review on composing and solving Infrared Evolution Equations. They can be used in order to calculate amplitudes of high-energy reactions in different kinematic regions in the double-logarithmic approximation.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The text provides a brief review of Infrared Evolution Equations.\n- It discusses how to formulate and solve these equations.\n- Infrared Evolution Equations can be used to calculate amplitudes of high-energy reactions.\n- These calculations apply to different kinematic regions in the double-logarithmic approximation.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis brief review examines how to formulate and solve Infrared Evolution Equations using the double-logarithmic approximation. These equations enable the calculation of high-energy reaction amplitudes across different kinematic regions, providing a useful framework for infrared analyses.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Infrared, Evolution, Equations"
+  },
+  "outputs": {
+    "L1": "This is a brief review of the formulation and solution of infrared evolution equations, which can be used to calculate high-energy reaction amplitudes in various kinematic regions within the double-logarithmic approximation.",
+    "L2": "This concise review discusses how to formulate and solve infrared evolution equations, which enable the calculation of high-energy reaction amplitudes across various kinematic regimes within the double-logarithmic approximation.",
+    "L3": "The text provides a concise review of Infrared Evolution Equations (IREEs), focusing on both their formulation and methods of solution. It explains how these equations offer a systematic framework for calculating scattering amplitudes in high-energy reactions. Particular attention is given to their application across different kinematic regions within the double-logarithmic approximation, where terms containing two large logarithms per perturbative order dominate. This approach makes it possible to analyze and relate reaction amplitudes under a variety of high-energy conditions.",
+    "L4": "### Infrared Evolution Equations in the Double-Logarithmic Approximation\n\nInfrared Evolution Equations (IREEs) provide a systematic method for calculating high-energy scattering amplitudes when radiative corrections contain large infrared logarithms. At sufficiently high energies, perturbative expansions may generate terms of the form  \n\\[\n\\alpha^n \\ln^{2n}\\!\\left(\\frac{Q^2}{\\mu^2}\\right),\n\\]\nwhere \\(Q\\) is a hard kinematic scale, \\(\\mu\\) is an infrared cutoff, and \\(\\alpha\\) denotes the relevant coupling. Even if the coupling is small, these double logarithms can become large enough to invalidate a fixed-order calculation. The double-logarithmic approximation (DLA) isolates the leading contribution at each order and resums the entire series.\n\nDouble logarithms arise from regions in which loop momenta are simultaneously soft and collinear. A typical radiative correction contains integrations of the schematic form  \n\\[\n\\alpha \\int_{\\mu^2}^{Q^2}\\frac{dk_\\perp^2}{k_\\perp^2}\n\\int \\frac{d\\beta}{\\beta},\n\\]\nwith \\(k_\\perp\\) the transverse momentum and \\(\\beta\\) a longitudinal momentum fraction. Each logarithmic integration produces one large logarithm, leading to a contribution proportional to \\(\\alpha \\ln^2(Q^2/\\mu^2)\\). Strong ordering of transverse and longitudinal variables identifies the momentum configurations responsible for the leading double-logarithmic terms.\n\nThe central idea behind the IREE method is to introduce an infrared scale \\(\\mu\\) and study how the amplitude changes when that scale is varied. In a contributing Feynman graph, one identifies the virtual particle with the smallest transverse momentum. Because this particle is the softest element of the graph, its contribution often factorizes from the harder subprocess. Removing or integrating over this softest particle relates the original amplitude to amplitudes evaluated at a higher effective infrared scale. This factorization produces an evolution equation.\n\nFor an amplitude \\(A\\), an IREE may be written schematically as  \n\\[\n\\frac{\\partial A}{\\partial \\ln \\mu^2}\n=K\\otimes A,\n\\]\nwhere \\(K\\) is an evolution kernel and the symbol \\(\\otimes\\) represents the appropriate integration or convolution over momentum fractions and other variables. In many applications the equation is nonlinear or involves a coupled system of amplitudes because the softest particle can connect different parts of a diagram or change the quantum numbers exchanged in a channel. The explicit form of the kernel depends on the process, the gauge theory, and the relevant color, spin, and flavor structures.\n\nA practical derivation begins by identifying all independent hard invariants, such as \\(s\\), \\(t\\), \\(u\\), or a virtuality \\(Q^2\\). An infrared cutoff is then imposed, commonly through a condition such as  \n\\[\nk_\\perp^2>\\mu^2\n\\]\nfor every virtual particle. One next determines the phase-space region that produces two logarithms per loop and factors out the line with the smallest transverse momentum. Summing over every possible location and type of softest particle yields the evolution kernel. The resulting equation is solved subject to a boundary condition specified at a scale where one logarithm vanishes or where the amplitude reduces to a known Born-level or matching expression.\n\nMellin transforms are especially useful in high-energy problems. For example, an amplitude depending on the center-of-mass energy can be represented as  \n\\[\nA(s,Q^2)=\\int\\frac{d\\omega}{2\\pi i}\n\\left(\\frac{s}{\\mu^2}\\right)^\\omega F(\\omega,Q^2),\n\\]\nwhere \\(F\\) is the Mellin amplitude. This transformation converts convolutions in energy variables into algebraic products and frequently reduces the IREE to an ordinary differential or algebraic equation. After solving for \\(F\\), the inverse Mellin transform reconstructs the physical amplitude. Its singularities in the complex \\(\\omega\\)-plane determine the leading high-energy behavior.\n\nDifferent kinematic regions require different realizations of the same general method. In the Sudakov region, where a large momentum transfer is present, the resummation commonly produces an exponential suppression, schematically  \n\\[\nA\\simeq A_{\\text{Born}}\n\\exp\\!\\left[-C\\,\\alpha\\,\n\\ln^2\\!\\left(\\frac{Q^2}{\\mu^2}\\right)\\right],\n\\]\nwith \\(C\\) determined by charges and group-theory factors. In Regge or small-\\(x\\) kinematics, logarithms of the energy can combine with logarithms of virtuality. The corresponding evolution equations resum terms such as  \n\\[\n\\alpha^n\\ln^{\\,n}\\!\\left(\\frac{s}{Q^2}\\right)\n\\ln^{\\,n}\\!\\left(\\frac{Q^2}{\\mu^2}\\right),\n\\]\nand may predict power-like high-energy behavior rather than a simple Sudakov exponential.\n\nAn important feature of IREEs is their ability to connect several kinematic domains. A solution obtained in one region can provide boundary data for another, provided the amplitudes are matched on their common boundary. This makes it possible to construct expressions that remain valid as the hierarchy among \\(s\\), \\(Q^2\\), and \\(\\mu^2\\) changes. It also prevents double counting when contributions associated with different momentum regions overlap.\n\nInfrared evolution may involve both virtual and real radiation. Virtual corrections often generate suppressive form factors, while real emissions can partially cancel infrared singularities in sufficiently inclusive observables. The precise cancellation depends on the observable and its treatment of unresolved radiation. For exclusive amplitudes, explicit dependence on an infrared regulator may remain, whereas inclusive cross sections should become infrared safe after all relevant real and virtual contributions are combined or after nonperturbative quantities are properly factorized.\n\nThe method is applicable in both Abelian and non-Abelian gauge theories, although non-Abelian theories generally require matrix-valued evolution kernels and coupled equations for different exchange channels. Running-coupling effects can also be incorporated by replacing a fixed coupling with \\(\\alpha(k_\\perp^2)\\) inside the ordered momentum integrals. Such improvements modify the detailed asymptotic behavior while preserving the basic logic of evolution with respect to the infrared scale.\n\nThe DLA has clear limitations. It retains only the highest power of the large logarithm at each perturbative order and neglects single logarithms, finite terms, recoil effects, and other subleading contributions. It is therefore most reliable when there is a strong separation of scales and the double logarithms dominate. Precision calculations generally require next-to-leading logarithmic corrections, matching to fixed-order results, and a careful treatment of factorization and the running coupling.\n\nIn summary, Infrared Evolution Equations reorganize perturbation theory around the dependence of an amplitude on an infrared scale. By isolating the softest virtual contribution, deriving an evolution kernel, and solving the resulting equation with suitable boundary conditions, the method resums the leading double logarithms to all orders. It provides a unified and physically transparent framework for studying high-energy amplitudes in Sudakov, Regge, and related kinematic regions, while also clarifying how infrared dynamics, factorization, and asymptotic energy behavior are connected.",
+    "L5": "## Infrared Light, Evolution, and the Equations of Nature\n\nInfrared radiation is a form of electromagnetic energy with wavelengths longer than visible red light, approximately from 700 nanometers to 1 millimeter. Although humans cannot see it, we experience infrared radiation as heat. It is produced by stars, planets, living organisms, and nearly every object with a temperature above absolute zero.\n\nThe relationship between temperature and infrared emission is described by several important equations. The Stefan–Boltzmann law gives the total power radiated by an ideal black body:\n\n\\[\nP = \\sigma A T^4,\n\\]\n\nwhere \\(P\\) is the emitted power, \\(A\\) is the surface area, \\(T\\) is the absolute temperature, and \\(\\sigma\\) is the Stefan–Boltzmann constant. Wien’s displacement law determines the wavelength at which thermal radiation is strongest:\n\n\\[\n\\lambda_{\\max} = \\frac{b}{T}.\n\\]\n\nAs temperature decreases, the peak wavelength shifts toward the infrared. This principle allows infrared cameras to detect warm organisms in darkness and enables astronomers to observe cool stars, planets, and clouds of interstellar dust.\n\nInfrared radiation has also influenced biological evolution. Some snakes, including pit vipers, evolved specialized organs that detect infrared energy emitted by warm prey. This ability helps them hunt even when visible light is limited. Certain insects can sense infrared radiation from forest fires, allowing them to locate recently burned areas suitable for reproduction. Plants and animals also evolved mechanisms for regulating heat absorption and emission, linking infrared physics to survival, behavior, and natural selection.\n\nEvolution itself can be represented using mathematical equations. In population genetics, the change in the frequency of an advantageous allele may be approximated by\n\n\\[\n\\Delta p \\approx sp(1-p),\n\\]\n\nwhere \\(p\\) is the allele frequency and \\(s\\) represents the strength of selection. If infrared sensitivity improves an organism’s reproductive success, genetic variants associated with that ability may become more common over many generations.\n\nInfrared radiation, evolution, and equations therefore describe different aspects of one interconnected world. Infrared reveals energy that our eyes cannot perceive, evolution explains how organisms adapt to that energy, and equations provide a precise language for understanding both processes."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Briefly summarize the paper’s focus and explain what Infrared Evolution Equations are used for.",
+      "output": "Please share the paper’s title, link, or text. “Infrared Evolution Equations” appear in several high-energy physics papers, so I need the specific paper to summarize its focus and explain how the equations are used in that context.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "What is this article about?",
+      "output": "Please share the article’s text, link, or an image/PDF, and I’ll summarize what it’s about.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write a concise review of composing and solving Infrared Evolution Equations in the double-logarithmic approximation.",
+      "output": "## Infrared Evolution Equations in the Double-Logarithmic Approximation\n\nInfrared evolution equations (IREEs) provide a systematic way to resum perturbative contributions of the form  \n\\[\n(\\alpha_s L^2)^n,\n\\]\nwhere \\(L\\) is a large logarithm of an energy, virtuality, or infrared scale. These double logarithms arise when loop momenta are simultaneously soft and collinear.\n\n### Composing an IREE\n\nIntroduce a transverse-momentum cutoff \\(\\mu\\), requiring every virtual line to satisfy\n\\[\nk_\\perp^2>\\mu^2.\n\\]\nThe amplitude \\(A\\) then depends explicitly on \\(\\mu\\). Differentiating with respect to \\(\\ln\\mu^2\\) isolates configurations in which one internal line has the smallest transverse momentum. In the double-logarithmic region, that line factorizes from the harder subgraph, giving schematically\n\\[\n-\\frac{\\partial A}{\\partial\\ln\\mu^2}\n   =K_{\\rm DL}\\otimes A + I_{\\rm Born}.\n\\]\n\nThe main steps are:\n\n1. Identify the soft-collinear region generating two logarithms per loop.\n2. Order transverse momenta or Sudakov variables.\n3. Factorize the particle with minimal \\(k_\\perp\\).\n4. Include ladder and, when required, non-ladder soft exchanges.\n5. Add the Born term and impose matching at the natural infrared boundary.\n\nFor several partonic channels, \\(A\\) and \\(K_{\\rm DL}\\) become vectors and matrices, allowing quark–gluon mixing.\n\n### Mellin-space solution\n\nA Mellin transform converts convolutions in energy into products:\n\\[\nA(s,\\mu^2)=\\int\\frac{d\\omega}{2\\pi i}\n \\left(\\frac{s}{\\mu^2}\\right)^\\omega f(\\omega).\n\\]\nThe IREE then often reduces to an algebraic Riccati equation. In a fixed-coupling nonsinglet channel, a typical normalization gives\n\\[\n\\omega f(\\omega)\n =g^2 C_F+\\frac{f^2(\\omega)}{8\\pi^2},\n\\]\nwith the perturbative solution\n\\[\nf(\\omega)=4\\pi^2\\left[\n\\omega-\\sqrt{\\omega^2-\\frac{g^2C_F}{2\\pi^2}}\n\\right].\n\\]\nThe branch is chosen so that \\(f\\to g^2C_F/\\omega\\) at weak coupling. The rightmost square-root singularity,\n\\[\n\\omega_0=\\sqrt{\\frac{2\\alpha_s C_F}{\\pi}},\n\\]\ncontrols the high-energy behavior, \\(A\\sim(s/\\mu^2)^{\\omega_0}\\), up to prefactors.\n\n### Practical refinements\n\nRunning coupling replaces simple algebraic equations by differential or integral equations in Mellin or transverse-momentum space. Matrix channels require diagonalization or numerical evolution, while changes of kinematic region demand matching across thresholds such as \\(\\mu^2\\sim Q^2\\). Boundary conditions are essential: they preserve the Born limit and prevent double counting with ordinary DGLAP, BFKL, or Sudakov evolution.\n\nIREEs are therefore especially effective when strong infrared ordering makes the softest-particle factorization transparent. Their strengths are all-order resummation and direct access to asymptotic intercepts; their limitations are sensitivity to channel-dependent non-ladder terms, running-coupling prescriptions, and matching beyond double-logarithmic accuracy.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "In one or two sentences, describe how infrared evolution equations help calculate amplitudes of high-energy reactions across different kinematic regions.",
+      "output": "Infrared evolution equations track how scattering amplitudes change with an infrared cutoff, resumming large logarithmic corrections. Solving them in different kinematic limits provides consistent high-energy amplitudes across regions such as Regge, forward, and fixed-angle scattering.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a short academic-style summary of a work on Infrared Evolution Equations and their applications to high-energy reaction amplitudes.",
+      "output": "The work develops the method of **infrared evolution equations** for calculating high-energy reaction amplitudes in gauge theories. By introducing an infrared cutoff and factorizing the contribution of the softest virtual particle, the approach derives evolution equations that systematically resum leading logarithmic corrections, particularly double logarithms of energy and momentum-transfer ratios. Applications to QED, QCD, and electroweak processes demonstrate how infrared dynamics modifies scattering amplitudes, form factors, and asymptotic behavior at very high energies. The framework provides a unified alternative to fixed-order perturbation theory and clarifies the roles of soft, collinear, and non-Abelian radiative effects.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.625,
+      "excess_ratio": 0.3771916530505965,
+      "baseline_mean": 0.2478083469494035,
+      "baseline_n_valid": 5,
+      "output_chars": 224,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6013513513513513,
+          "baseline_mean": 0.18795331384714833,
+          "excess_ratio": 0.413398037504203
+        },
+        "bz2": {
+          "actual_ratio": 0.5511363636363636,
+          "baseline_mean": 0.24726124836147395,
+          "excess_ratio": 0.3038751152748897
+        },
+        "lzma": {
+          "actual_ratio": 0.7058823529411765,
+          "baseline_mean": 0.2934091669454667,
+          "excess_ratio": 0.4124731859957098
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.5428051001821493,
+      "excess_ratio": 0.2949967532327458,
+      "baseline_mean": 0.2478083469494035,
+      "baseline_n_valid": 5,
+      "output_chars": 228,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4868421052631579,
+          "baseline_mean": 0.18795331384714833,
+          "excess_ratio": 0.29888879141600955
+        },
+        "bz2": {
+          "actual_ratio": 0.4861878453038674,
+          "baseline_mean": 0.24726124836147395,
+          "excess_ratio": 0.23892659694239343
+        },
+        "lzma": {
+          "actual_ratio": 0.6296296296296297,
+          "baseline_mean": 0.2934091669454667,
+          "excess_ratio": 0.33622046268416295
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.36533333333333334,
+      "excess_ratio": 0.11752498638392983,
+      "baseline_mean": 0.2478083469494035,
+      "baseline_n_valid": 5,
+      "output_chars": 585,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3323442136498516,
+          "baseline_mean": 0.18795331384714833,
+          "excess_ratio": 0.14439089980270328
+        },
+        "bz2": {
+          "actual_ratio": 0.33064516129032256,
+          "baseline_mean": 0.24726124836147395,
+          "excess_ratio": 0.08338391292884861
+        },
+        "lzma": {
+          "actual_ratio": 0.4230769230769231,
+          "baseline_mean": 0.2934091669454667,
+          "excess_ratio": 0.12966775613145637
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.04914089347079038,
+      "excess_ratio": -0.19866745347861314,
+      "baseline_mean": 0.2478083469494035,
+      "baseline_n_valid": 5,
+      "output_chars": 7291,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.034529451591062965,
+          "baseline_mean": 0.18795331384714833,
+          "excess_ratio": -0.15342386225608537
+        },
+        "bz2": {
+          "actual_ratio": 0.05114449213161659,
+          "baseline_mean": 0.24726124836147395,
+          "excess_ratio": -0.19611675622985736
+        },
+        "lzma": {
+          "actual_ratio": 0.06174496644295302,
+          "baseline_mean": 0.2934091669454667,
+          "excess_ratio": -0.23166420050251368
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.04498644986449858,
+      "excess_ratio": -0.20282189708490495,
+      "baseline_mean": 0.2478083469494035,
+      "baseline_n_valid": 5,
+      "output_chars": 2404,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.028451882845188285,
+          "baseline_mean": 0.18795331384714833,
+          "excess_ratio": -0.15950143100196004
+        },
+        "bz2": {
+          "actual_ratio": 0.03937653814602133,
+          "baseline_mean": 0.24726124836147395,
+          "excess_ratio": -0.20788471021545263
+        },
+        "lzma": {
+          "actual_ratio": 0.06583072100313479,
+          "baseline_mean": 0.2934091669454667,
+          "excess_ratio": -0.2275784459423319
+        }
+      }
+    }
+  }
+}

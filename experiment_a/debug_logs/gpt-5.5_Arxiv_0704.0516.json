@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Arxiv",
+  "id": "0704.0516",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThe effects of imperfect gate operations in implementation of Shor's prime factorization algorithm are investigated. The gate imperfections may be classified into three categories: the systematic error, the random error, and the one with combined errors. It is found that Shor's algorithm is robust against the systematic errors but is vulnerable to the random errors. Error threshold is given to the algorithm for a given number $N$ to be factorized.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThe effects of imperfect gate operations in implementation of Shor's prime factorization algorithm are investigated. The gate imperfections may be classified into three categories: the systematic error, the random error, and the one with combined errors. It is found that Shor's algorithm is robust against the systematic errors but is vulnerable to the random errors. Error threshold is given to the algorithm for a given number $N$ to be factorized.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The text investigates how imperfect gate operations affect implementations of Shor’s prime factorization algorithm.\n- Gate imperfections are classified into systematic errors, random errors, and combined errors.\n- Shor’s algorithm is found to be robust against systematic errors.\n- Shor’s algorithm is found to be vulnerable to random errors.\n- An error threshold is provided for the algorithm for a given number \\(N\\) to be factorized.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe text examines how imperfect quantum gate operations affect implementations of Shor’s prime factorization algorithm by classifying errors as systematic, random, or combined. It finds that Shor’s algorithm is robust to systematic errors but vulnerable to random errors, and provides an error threshold for factoring a given number \\(N\\).",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, Shor, Error"
+  },
+  "outputs": {
+    "L1": "The effects of imperfect gate operations in the implementation of Shor’s prime factorization algorithm are investigated. Gate imperfections are classified into three categories: systematic errors, random errors, and combined errors. It is found that Shor’s algorithm is robust against systematic errors but vulnerable to random errors. An error threshold is established for the algorithm for a given number \\(N\\) to be factorized.",
+    "L2": "This study examines how non-ideal quantum gate operations affect the implementation of Shor’s algorithm for prime factorization. Gate flaws are grouped into three types: systematic errors, random errors, and cases where both kinds of errors occur together. The results show that Shor’s algorithm tolerates systematic errors well, but it is sensitive to random errors. For a specified integer \\(N\\) to be factored, an error threshold for the algorithm is provided.",
+    "L3": "This text investigates the impact of imperfect quantum gate operations on implementations of Shor’s prime factorization algorithm. Since Shor’s algorithm relies on long sequences of quantum gates and delicate quantum interference effects, understanding how deviations from ideal gate behavior influence its performance is essential for assessing the practical feasibility of quantum factorization.\n\nThe gate imperfections considered in the study are classified into three main categories: systematic errors, random errors, and combined errors. Systematic errors refer to consistent, repeatable deviations in gate operations, such as a fixed over-rotation or under-rotation applied each time a gate is used. Random errors, by contrast, fluctuate unpredictably from one gate operation to another and may arise from noise, decoherence, or imperfect control of the quantum system. Combined errors include both systematic and random components, representing a more realistic model of imperfections in physical quantum hardware.\n\nThe analysis shows that Shor’s algorithm is relatively robust against systematic errors. Because these errors are coherent and repeatable, their effects may accumulate in a structured way that does not immediately destroy the interference pattern required to extract the period in the algorithm. As a result, the algorithm can often tolerate a significant degree of systematic imperfection while still producing useful information for factorization.\n\nIn contrast, Shor’s algorithm is found to be much more vulnerable to random errors. Random fluctuations disrupt the coherent evolution of the quantum state and can wash out the interference peaks that are essential for identifying the correct period. As the level of random error increases, the probability of obtaining a successful measurement outcome decreases rapidly, making reliable factorization increasingly difficult.\n\nThe text also provides an error threshold for Shor’s algorithm for a given number \\(N\\) to be factorized. This threshold characterizes the maximum level of gate imperfection that can be tolerated while still allowing the algorithm to factor \\(N\\) with an acceptable probability of success. Such a threshold is important because it offers a practical benchmark for evaluating the precision required of quantum gates in experimental implementations of Shor’s algorithm.",
+    "L4": "This text investigates the influence of imperfect quantum gate operations on practical implementations of Shor’s prime factorization algorithm. Since any real quantum computer will inevitably suffer from inaccuracies in the execution of elementary gates, the study focuses on how such errors affect the reliability of the algorithm and its ability to factor a composite integer \\(N\\).\n\nThe errors are divided into three main categories. The first consists of **systematic errors**, where the same small imperfection is repeated each time a particular gate is applied. Such errors may arise, for example, from a persistent miscalibration of a control pulse or a constant over-rotation in a quantum gate. The second category consists of **random errors**, where the error varies unpredictably from gate to gate or from one application of the algorithm to another. These errors model noise, fluctuations, or uncontrolled interactions with the environment. The third category combines both effects, representing a more realistic situation in which a quantum computer experiences both stable calibration errors and random noise.\n\nThe analysis shows that Shor’s algorithm responds very differently to these types of imperfections. In the case of systematic errors, the algorithm is found to be relatively robust. Even when individual gates are not implemented perfectly, the repeated structure of the algorithm does not necessarily destroy the computation, and the final probability distribution can remain sufficiently peaked around the correct values needed to recover the factors of \\(N\\). Thus, small coherent imperfections do not immediately prevent successful factorization.\n\nRandom errors, however, have a much more damaging effect. Because these errors accumulate incoherently throughout the quantum circuit, they tend to wash out the interference pattern on which Shor’s algorithm depends. As the number of gates increases, random noise reduces the probability of measuring the correct output and can eventually make the algorithm no better than a random guess. This makes random gate errors a serious obstacle to scalable implementations of Shor’s algorithm.\n\nThe text also discusses the case where systematic and random errors are both present. In such a situation, the overall performance is largely determined by the random component once it becomes sufficiently large, although systematic imperfections may still contribute to the degradation of the computation. The combined-error model therefore provides a more realistic estimate of the stability requirements for an experimental quantum computer running Shor’s algorithm.\n\nA central result is the identification of an error threshold for factoring a given number \\(N\\). This threshold specifies how accurate the elementary quantum gates must be in order for Shor’s algorithm to succeed with reasonable probability. Since the size of the quantum circuit grows with \\(N\\), larger numbers require more gates and therefore demand lower error rates. If the error per gate remains below the threshold, the algorithm can still produce useful results; if it exceeds the threshold, the probability of successful factorization rapidly decreases.\n\nOverall, the text concludes that Shor’s algorithm possesses a certain resilience against systematic gate imperfections but is highly sensitive to random errors. This distinction is important for the design of quantum hardware, because it indicates that stable calibration errors may be tolerable or correctable, whereas random noise must be strongly suppressed. The results emphasize the need for precise gate control and error reduction in any realistic attempt to use Shor’s algorithm for factoring large integers.",
+    "L5": "**The Shor Error Correction Code**\n\nThe Shor code is one of the most important ideas in quantum computing because it showed that quantum error correction is possible. In classical computers, error correction is relatively simple because bits are either 0 or 1. However, quantum computers use qubits, which can exist in superpositions of states. This makes errors much harder to detect and fix without destroying the quantum information.\n\nThe Shor error correction code was developed by Peter Shor in 1995. It protects a single logical qubit by encoding it into nine physical qubits. This allows the system to detect and correct different types of quantum errors, including bit-flip errors and phase-flip errors. A bit-flip error changes a qubit from 0 to 1 or from 1 to 0, while a phase-flip error changes the relative phase of a quantum state.\n\nThe importance of the Shor code is that it proved quantum information can be protected from noise and instability. Since quantum systems are extremely sensitive to their environment, error correction is necessary for building reliable quantum computers. Without methods like the Shor error correction code, large-scale quantum computing would not be practical.\n\nIn summary, the Shor code was a major breakthrough in quantum computing. It demonstrated that even though quantum errors are complex, they can be managed with clever encoding techniques. This discovery helped create the foundation for modern quantum error correction and fault-tolerant quantum computation."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a concise abstract for a research paper about how imperfect quantum gates affect the implementation of Shor’s prime factorization algorithm, including systematic and random errors.",
+      "output": "This paper investigates the impact of imperfect quantum gates on the implementation of Shor’s prime factorization algorithm. We analyze how systematic errors, such as coherent over- or under-rotations, and random errors, including stochastic gate noise and decoherence, affect the accuracy of modular exponentiation and the quantum Fourier transform. By modeling error accumulation across the circuit, we identify key failure mechanisms that reduce the probability of extracting the correct period and hence the correct factors. The results show that coherent systematic errors can accumulate constructively and severely distort interference patterns, while random errors generally degrade success probabilities through loss of coherence. Our findings highlight the importance of precise gate calibration, error mitigation, and fault-tolerant architectures for reliable large-scale implementations of Shor’s algorithm.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize the findings of a study investigating gate operation errors in Shor’s algorithm and their impact on factorizing an integer \\(N\\).",
+      "output": "A study of gate-operation errors in Shor’s algorithm found that imperfect quantum gates can strongly affect the probability of successfully factorizing an integer \\(N\\), even when the overall algorithmic structure remains unchanged.\n\nKey findings include:\n\n- **Gate errors accumulate through the circuit.**  \n  Shor’s algorithm uses many elementary quantum gates, especially in modular exponentiation and the quantum Fourier transform. Small errors in individual gates can build up over the full computation.\n\n- **The success probability decreases as gate error increases.**  \n  When gates deviate from their ideal operations, the final measurement distribution becomes less sharply peaked at values that reveal the period needed to factor \\(N\\). As a result, the chance of extracting the correct factors drops.\n\n- **Larger integers are more sensitive.**  \n  Factoring larger \\(N\\) requires more qubits and more gates, so there are more opportunities for errors to accumulate. Thus, the tolerable error per gate becomes smaller as the size of \\(N\\) grows.\n\n- **Errors in controlled operations are particularly damaging.**  \n  Shor’s algorithm depends heavily on controlled modular multiplication and phase-sensitive interference. Inaccuracies in these gates can destroy the periodic structure that the quantum Fourier transform is meant to detect.\n\n- **The quantum Fourier transform is affected, but modular exponentiation dominates the error burden.**  \n  While errors in the Fourier transform can blur the output peaks, the modular exponentiation stage generally involves many more gates and is therefore a major source of accumulated error.\n\n- **There is an effective error threshold.**  \n  Below a certain gate-error level, the algorithm can still return the correct factors with reasonable probability. Above that level, the output becomes close to random and the probability of successful factorization becomes very small.\n\n- **Error correction or fault-tolerant gates are essential for large-scale factoring.**  \n  The study supports the conclusion that practical use of Shor’s algorithm for large \\(N\\) requires very accurate gates, quantum error correction, and fault-tolerant circuit design.\n\nIn short, the study shows that Shor’s algorithm is highly dependent on coherent, accurate gate operations. Small errors may be tolerable for factoring very small integers, but without error correction, gate imperfections rapidly reduce the probability of correctly factorizing larger \\(N\\).",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate a short academic-style paragraph describing the robustness of Shor’s algorithm under systematic gate errors and its vulnerability to random gate errors.",
+      "output": "Shor’s algorithm exhibits a degree of robustness against systematic gate errors, particularly when such errors are coherent, repeatable, and sufficiently small, because their effects may remain structured and can sometimes be absorbed into predictable phase shifts or calibrated away. In contrast, the algorithm is more vulnerable to random gate errors, which introduce stochastic perturbations that accumulate incoherently across the long quantum circuit required for modular exponentiation and the quantum Fourier transform. These random errors degrade interference patterns essential for extracting the period, thereby reducing the probability of obtaining useful measurement outcomes. Consequently, while systematic imperfections may be mitigated through careful calibration and error compensation, random gate noise poses a more severe challenge and typically necessitates quantum error correction or fault-tolerant implementations.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "What are the effects of imperfect gate operations on Shor’s prime factorization algorithm? Mention categories of errors and any threshold results.",
+      "output": "Imperfect gate operations affect Shor’s factoring algorithm mainly by reducing the probability that the final measurement yields a useful period of the modular exponentiation function. Since Shor’s algorithm relies on long coherent sequences of controlled modular multiplications followed by the quantum Fourier transform, accumulated gate errors can wash out the interference pattern whose peaks encode the order \\(r\\).\n\n## Main effects on Shor’s algorithm\n\n1. **Loss of correct period information**\n   - In the ideal algorithm, the Fourier transform produces sharp peaks near multiples of \\(Q/r\\), where \\(Q\\) is the size of the Fourier register.\n   - Gate errors broaden, shift, or suppress these peaks.\n   - The continued-fraction postprocessing may then return the wrong period or no useful period.\n\n2. **Reduced success probability**\n   - Small errors per gate accumulate over the large number of gates needed for modular exponentiation.\n   - Without error correction, the probability of obtaining the right order typically decreases rapidly with circuit size.\n\n3. **Decoherence of superpositions**\n   - Shor’s algorithm depends on maintaining coherent superpositions over many computational paths.\n   - Dephasing or relaxation destroys the phase relationships needed for constructive interference in the Fourier transform.\n\n4. **Propagation of errors through entangling gates**\n   - Two-qubit gates, especially controlled operations in modular exponentiation, can spread local errors into correlated multi-qubit errors.\n   - This makes later correction or interpretation more difficult.\n\n5. **Incorrect arithmetic**\n   - Faulty gates inside modular multiplication or modular exponentiation can compute wrong residues.\n   - Even if the Fourier transform is otherwise accurate, the sampled function may no longer have the correct periodicity.\n\n---\n\n## Categories of errors\n\nCommonly discussed error categories include:\n\n### 1. Systematic coherent errors\nThese are reproducible over- or under-rotations, phase miscalibrations, or imperfect control pulses.\n\nExample:\n\\[\nR_x(\\theta) \\rightarrow R_x(\\theta+\\epsilon)\n\\]\n\nSuch errors can accumulate coherently and may be especially damaging because they do not average out like random noise.\n\n### 2. Random unitary errors\nEach gate is slightly different due to control noise, timing jitter, fluctuating fields, etc.\n\nThese errors may behave more like stochastic noise and can sometimes be modeled by random rotations.\n\n### 3. Decoherence errors\nThese arise from coupling to the environment.\n\nImportant examples:\n\n- **Dephasing**, characterized by \\(T_2\\), destroys relative phases.\n- **Amplitude damping**, characterized by \\(T_1\\), causes relaxation from \\(|1\\rangle\\) to \\(|0\\rangle\\).\n- **Thermal noise** can induce unwanted excitations.\n\n### 4. Depolarizing or stochastic Pauli errors\nOften used in threshold analyses. A gate is followed by a random Pauli error \\(X\\), \\(Y\\), or \\(Z\\) with probability \\(p\\).\n\nThis is a simplified but useful model for fault-tolerance estimates.\n\n### 5. Leakage errors\nA qubit can leave the computational subspace, e.g. in superconducting qubits where a state may occupy \\(|2\\rangle\\) instead of only \\(|0\\rangle, |1\\rangle\\).\n\n### 6. Crosstalk and correlated errors\nOperations on one qubit may unintentionally affect nearby qubits. Correlated errors are more dangerous than independent errors because many fault-tolerance proofs assume locality or weak correlations.\n\n### 7. State-preparation and measurement errors\nAlthough Shor’s algorithm is often described in terms of gate errors, imperfect initialization and readout can also reduce success probability.\n\n---\n\n## Threshold results\n\nThe key theoretical result is the **fault-tolerance threshold theorem**:\n\n> If the physical error rate per gate, memory step, preparation, and measurement is below some threshold value, then arbitrarily long quantum computations, including Shor’s algorithm, can be performed reliably with only polylogarithmic overhead using quantum error correction.\n\nTypical threshold estimates depend strongly on the noise model, architecture, and error-correcting code.\n\nRepresentative values:\n\n- Early rigorous estimates: around\n  \\[\n  10^{-6} \\text{ to } 10^{-4}\n  \\]\n  per operation.\n- More modern surface-code estimates under local stochastic noise:\n  \\[\n  \\sim 10^{-3} \\text{ to } 10^{-2}\n  \\]\n  per physical gate, often quoted near the \\(1\\%\\) level for idealized noise models.\n- For more realistic noise with leakage, crosstalk, non-Markovian effects, or strong correlations, the effective threshold can be lower.\n\nWithout error correction, the required gate accuracy scales very harshly. If a Shor circuit uses \\(G\\) elementary gates and each has independent error probability \\(p\\), then a crude estimate of the probability of no error is\n\n\\[\n(1-p)^G \\approx e^{-pG}.\n\\]\n\nThus one generally needs\n\n\\[\np \\ll \\frac{1}{G}\n\\]\n\nto run the algorithm successfully without fault tolerance. Since practical instances of Shor’s algorithm require very large \\(G\\), uncorrected implementations need extremely accurate gates.\n\n---\n\n## Summary\n\nImperfect gates degrade Shor’s algorithm by corrupting modular exponentiation, destroying phase coherence, and blurring the Fourier peaks used to infer the period. The main error classes are coherent control errors, random unitary errors, decoherence, stochastic Pauli errors, leakage, crosstalk, and measurement/preparation errors. In the absence of error correction, the tolerable error per gate must shrink roughly inversely with the total gate count. With fault-tolerant quantum error correction, Shor’s algorithm can in principle tolerate constant physical error rates below a threshold, with commonly quoted thresholds ranging from about \\(10^{-6}\\) in early conservative analyses to \\(10^{-3}\\)–\\(10^{-2}\\) for modern surface-code-based architectures under favorable noise assumptions.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Produce a brief research abstract on error thresholds in Shor’s algorithm when quantum gates have systematic, random, or combined imperfections.",
+      "output": "**Abstract—** Shor’s algorithm is highly sensitive to imperfections in quantum gates because its modular exponentiation and quantum Fourier transform require long coherent circuits whose errors can accumulate across many operations. We study error thresholds for successful factoring under three representative noise models: systematic coherent gate imperfections, random stochastic errors, and combined error sources. Systematic errors, such as fixed over-rotations or phase offsets, are found to be especially damaging because they accumulate coherently and can produce structured deviations in the final probability distribution, reducing the likelihood of correctly extracting the period. Random errors, by contrast, tend to accumulate incoherently and primarily broaden or suppress the expected peaks in the measurement distribution, allowing higher per-gate error rates for comparable success probability. In the combined-error regime, the threshold is governed by the interplay between coherent bias and stochastic decoherence, with even small systematic components significantly lowering the tolerable error rate. These results emphasize that error thresholds for Shor’s algorithm cannot be characterized solely by average gate fidelity; the nature and temporal correlations of imperfections are crucial. Effective implementation therefore requires not only low physical error rates but also calibration, randomized compiling, or error-correction techniques that convert coherent errors into more benign stochastic noise.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.672289156626506,
+      "excess_ratio": 0.5521990574102731,
+      "baseline_mean": 0.12009009921623293,
+      "baseline_n_valid": 5,
+      "output_chars": 430,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6844262295081968,
+          "baseline_mean": 0.09508127450597138,
+          "excess_ratio": 0.5893449550022254
+        },
+        "bz2": {
+          "actual_ratio": 0.549645390070922,
+          "baseline_mean": 0.11756569324842481,
+          "excess_ratio": 0.43207969682249714
+        },
+        "lzma": {
+          "actual_ratio": 0.7763157894736842,
+          "baseline_mean": 0.14429581361756372,
+          "excess_ratio": 0.6320199758561205
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.37701396348012883,
+      "excess_ratio": 0.2569238642638959,
+      "baseline_mean": 0.12009009921623293,
+      "baseline_n_valid": 5,
+      "output_chars": 463,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3188405797101449,
+          "baseline_mean": 0.09508127450597138,
+          "excess_ratio": 0.22375930520417353
+        },
+        "bz2": {
+          "actual_ratio": 0.34796238244514105,
+          "baseline_mean": 0.11756569324842481,
+          "excess_ratio": 0.23039668919671624
+        },
+        "lzma": {
+          "actual_ratio": 0.4523809523809524,
+          "baseline_mean": 0.14429581361756372,
+          "excess_ratio": 0.30808513876338867
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.19165378670788252,
+      "excess_ratio": 0.0715636874916496,
+      "baseline_mean": 0.12009009921623293,
+      "baseline_n_valid": 5,
+      "output_chars": 2369,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.16203259827420902,
+          "baseline_mean": 0.09508127450597138,
+          "excess_ratio": 0.06695132376823763
+        },
+        "bz2": {
+          "actual_ratio": 0.19602272727272727,
+          "baseline_mean": 0.11756569324842481,
+          "excess_ratio": 0.07845703402430246
+        },
+        "lzma": {
+          "actual_ratio": 0.2147887323943662,
+          "baseline_mean": 0.14429581361756372,
+          "excess_ratio": 0.07049291877680247
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.10720268006700172,
+      "excess_ratio": -0.012887419149231208,
+      "baseline_mean": 0.12009009921623293,
+      "baseline_n_valid": 5,
+      "output_chars": 3715,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.08528111181301326,
+          "baseline_mean": 0.09508127450597138,
+          "excess_ratio": -0.009800162692958123
+        },
+        "bz2": {
+          "actual_ratio": 0.11024135681669928,
+          "baseline_mean": 0.11756569324842481,
+          "excess_ratio": -0.007324336431725531
+        },
+        "lzma": {
+          "actual_ratio": 0.12530120481927712,
+          "baseline_mean": 0.14429581361756372,
+          "excess_ratio": -0.0189946087982866
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.05170821791320412,
+      "excess_ratio": -0.0683818813030288,
+      "baseline_mean": 0.12009009921623293,
+      "baseline_n_valid": 5,
+      "output_chars": 1514,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.02785923753665689,
+          "baseline_mean": 0.09508127450597138,
+          "excess_ratio": -0.06722203696931449
+        },
+        "bz2": {
+          "actual_ratio": 0.04096045197740113,
+          "baseline_mean": 0.11756569324842481,
+          "excess_ratio": -0.07660524127102368
+        },
+        "lzma": {
+          "actual_ratio": 0.08247422680412371,
+          "baseline_mean": 0.14429581361756372,
+          "excess_ratio": -0.06182158681344001
+        }
+      }
+    }
+  }
+}

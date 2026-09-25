@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0394",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThis paper deals with discrete-time Markov control processes on a general state space. A long-run risk-sensitive average cost criterion is used as a performance measure. The one-step cost function is nonnegative and possibly unbounded. Using the vanishing discount factor approach, the optimality inequality and an optimal stationary strategy for the decision maker are established.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThis paper deals with discrete-time Markov control processes on a general state space. A long-run risk-sensitive average cost criterion is used as a performance measure. The one-step cost function is nonnegative and possibly unbounded. Using the vanishing discount factor approach, the optimality inequality and an optimal stationary strategy for the decision maker are established.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper studies discrete-time Markov control processes on a general state space.\n- Performance is evaluated using a long-run risk-sensitive average cost criterion.\n- The one-step cost function is nonnegative and may be unbounded.\n- The vanishing discount factor approach is used to establish the optimality inequality.\n- The paper also proves the existence of an optimal stationary strategy for the decision maker.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe paper studies discrete-time Markov control processes on general state spaces with a nonnegative, potentially unbounded one-step cost under a long-run risk-sensitive average-cost criterion, using a vanishing discount factor approach. It establishes an optimality inequality and proves the existence of an optimal stationary strategy, providing a rigorous basis for long-run risk-sensitive control in this general setting.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: This, Markov, The"
+  },
+  "outputs": {
+    "L1": "This paper investigates discrete-time Markov control processes on a general state space, using a long-run, risk-sensitive average-cost criterion as the performance measure. The one-step cost function is assumed to be nonnegative and may be unbounded. By applying the vanishing-discount-factor approach, we establish the optimality inequality and the existence of an optimal stationary strategy for the decision maker.",
+    "L2": "The study examines discrete-time controlled Markov processes defined on a general state space, with performance evaluated through a long-term, risk-sensitive average-cost criterion. The single-stage cost is assumed to be nonnegative but may be unbounded. By applying the vanishing-discount method, the paper derives an optimality inequality and proves the existence of an optimal stationary policy for the controller.",
+    "L3": "The paper investigates discrete-time Markov control processes defined on a general state space. Performance is assessed through a long-run, risk-sensitive average cost criterion, which accounts not only for expected costs but also for the decision maker’s sensitivity to risk. The model allows the one-step cost function to be nonnegative and potentially unbounded, thereby covering a broad range of applications.\n\nTo analyze the control problem, the paper employs the vanishing discount factor approach. By examining discounted risk-sensitive control problems as the discount factor converges to one, the authors establish an optimality inequality for the average-cost criterion. In addition, the paper proves the existence of an optimal stationary strategy, showing that the decision maker can achieve optimal long-run performance using a policy that depends only on the current state and remains unchanged over time.",
+    "L4": "The paper investigates discrete-time Markov control processes defined on general measurable state and action spaces. The one-step cost is assumed to be nonnegative but may be unbounded, which prevents the direct use of many standard compactness and boundedness arguments. Performance is evaluated through a long-run risk-sensitive average-cost criterion, typically expressed in terms of the asymptotic exponential growth rate of accumulated costs. Unlike the usual risk-neutral average criterion, this formulation accounts not only for expected performance but also for the variability and tail behavior of the total cost.\n\nThe analysis is based on a vanishing-discount approach. The authors first consider the corresponding infinite-horizon risk-sensitive discounted control problem and study its dynamic programming equation. They then examine a sequence of discounted problems as the discount factor tends to one. Under suitable regularity, compactness, continuity, and integrability conditions, appropriate normalizations and limiting arguments are used to obtain a function and a constant satisfying a risk-sensitive average-cost optimality inequality. Special care is required because the costs may be unbounded and the underlying state space is not assumed to be finite or countable.\n\nThe resulting optimality inequality provides a rigorous connection between the discounted and long-run average formulations. It also yields a verification argument: a measurable stationary strategy that selects actions attaining the relevant pointwise minimum is shown to achieve the optimal long-run risk-sensitive average cost. Consequently, optimization over all admissible, possibly history-dependent strategies can be reduced to optimization over stationary Markov strategies.\n\nOverall, the paper extends the theory of risk-sensitive Markov decision processes to a broad setting that allows general state spaces and nonnegative unbounded costs. By establishing the average-cost optimality inequality and proving the existence of an optimal stationary strategy through the vanishing-discount method, it supplies a rigorous foundation for the analysis of long-run control problems in which both average performance and sensitivity to risk are important.",
+    "L5": "**The Markov Model**\n\nThe Markov model describes systems that move between different states based primarily on their current condition. This “memoryless” property means that the probability of the next state does not depend on the full history of previous events. Markov models are widely used in fields such as economics, computer science, biology, and weather forecasting. By analyzing transition probabilities, researchers can estimate how a system may evolve over time."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize this paper’s abstract in a few sentences.",
+      "output": "Please provide the paper’s abstract, and I’ll summarize it in a few sentences.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "What is the main contribution of the paper on risk-sensitive control of discrete-time Markov processes?",
+      "output": "The paper’s main contribution is a rigorous framework for **risk-sensitive optimal control of discrete-time Markov processes**. It characterizes the optimal long-run, exponential-of-accumulated-cost criterion through a **multiplicative dynamic-programming (nonlinear eigenvalue) equation** and establishes conditions under which:\n\n- the optimal risk-sensitive value exists,\n- the optimality equation has a solution, and\n- an optimal stationary Markov policy can be constructed.\n\nThis extends ordinary, risk-neutral Markov decision theory by explicitly accounting for variability and rare high-cost outcomes.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write a concise academic overview of a study involving long-run risk-sensitive average costs, unbounded one-step costs, and the vanishing discount approach.",
+      "output": "This study examines risk-sensitive average-cost control for Markov decision processes with unbounded one-step costs over an infinite horizon. The performance criterion is defined through the long-run exponential growth rate of accumulated costs, thereby capturing sensitivity to both expected outcomes and variability. Since unbounded costs preclude standard compactness and boundedness arguments, the analysis relies on Lyapunov drift conditions, weighted function spaces, and suitable continuity and stability assumptions.\n\nA vanishing-discount method is used to establish the average-cost optimality equation. Discounted risk-sensitive value functions are first characterized by multiplicative dynamic programming equations. After normalization, uniform weighted bounds and compactness arguments permit passage to the limit as the discount factor approaches one. The limiting eigenvalue–eigenfunction pair solves the multiplicative Poisson equation associated with the long-run criterion. This yields existence of an optimal stationary Markov policy, identifies the optimal risk-sensitive average cost, and provides a verification theorem linking discounted and ergodic formulations.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Briefly describe the problem setting, performance criterion, methodology, and results presented in this research paper.",
+      "output": "Please provide the research paper (PDF, link, title, abstract, or pasted text). I’ll briefly summarize:\n\n- **Problem setting**\n- **Performance criterion**\n- **Methodology**\n- **Main results**",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate an abstract-style summary of a paper proving an optimality inequality and the existence of an optimal stationary strategy for a Markov control process on a general state space.",
+      "output": "We consider an infinite-horizon Markov control process with a general measurable state space and a possibly noncompact action structure. Under suitable compactness, semicontinuity, and stability conditions on the transition kernel and one-stage cost, we establish an average-cost optimality inequality. The proof proceeds through discounted-cost approximations, tightness arguments, and measurable selection, avoiding assumptions specific to countable or locally compact state spaces. The optimality inequality yields a measurable stationary selector whose induced policy attains the minimal long-run average cost for every initial state in the relevant communicating class. Consequently, an optimal stationary strategy exists among all admissible, including history-dependent and randomized, strategies. The results extend classical average-cost optimality theory to broad classes of Markov control models on general state spaces.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6513233601841197,
+      "excess_ratio": 0.36586732346617357,
+      "baseline_mean": 0.28545603671794617,
+      "baseline_n_valid": 5,
+      "output_chars": 417,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.65748031496063,
+          "baseline_mean": 0.2453455072196177,
+          "excess_ratio": 0.4121348077410123
+        },
+        "bz2": {
+          "actual_ratio": 0.5125448028673835,
+          "baseline_mean": 0.26599943922731206,
+          "excess_ratio": 0.2465453636400714
+        },
+        "lzma": {
+          "actual_ratio": 0.7619047619047619,
+          "baseline_mean": 0.3350624310886434,
+          "excess_ratio": 0.42684233081611844
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.48165137614678905,
+      "excess_ratio": 0.19619533942884287,
+      "baseline_mean": 0.28545603671794617,
+      "baseline_n_valid": 5,
+      "output_chars": 417,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.45703125,
+          "baseline_mean": 0.2453455072196177,
+          "excess_ratio": 0.2116857427803823
+        },
+        "bz2": {
+          "actual_ratio": 0.40492957746478875,
+          "baseline_mean": 0.26599943922731206,
+          "excess_ratio": 0.13893013823747669
+        },
+        "lzma": {
+          "actual_ratio": 0.5662650602409639,
+          "baseline_mean": 0.3350624310886434,
+          "excess_ratio": 0.23120262915232048
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.38539682539682535,
+      "excess_ratio": 0.09994078867887918,
+      "baseline_mean": 0.28545603671794617,
+      "baseline_n_valid": 5,
+      "output_chars": 919,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3729508196721312,
+          "baseline_mean": 0.2453455072196177,
+          "excess_ratio": 0.12760531245251347
+        },
+        "bz2": {
+          "actual_ratio": 0.32038834951456313,
+          "baseline_mean": 0.26599943922731206,
+          "excess_ratio": 0.05438891028725107
+        },
+        "lzma": {
+          "actual_ratio": 0.45454545454545453,
+          "baseline_mean": 0.3350624310886434,
+          "excess_ratio": 0.11948302345681111
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.185220424992071,
+      "excess_ratio": -0.10023561172587517,
+      "baseline_mean": 0.28545603671794617,
+      "baseline_n_valid": 5,
+      "output_chars": 2248,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1543756145526057,
+          "baseline_mean": 0.2453455072196177,
+          "excess_ratio": -0.090969892667012
+        },
+        "bz2": {
+          "actual_ratio": 0.1826171875,
+          "baseline_mean": 0.26599943922731206,
+          "excess_ratio": -0.08338225172731206
+        },
+        "lzma": {
+          "actual_ratio": 0.2158273381294964,
+          "baseline_mean": 0.3350624310886434,
+          "excess_ratio": -0.11923509295914703
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.11393692777212626,
+      "excess_ratio": -0.1715191089458199,
+      "baseline_mean": 0.28545603671794617,
+      "baseline_n_valid": 5,
+      "output_chars": 473,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.05517241379310345,
+          "baseline_mean": 0.2453455072196177,
+          "excess_ratio": -0.19017309342651426
+        },
+        "bz2": {
+          "actual_ratio": 0.11076923076923077,
+          "baseline_mean": 0.26599943922731206,
+          "excess_ratio": -0.15523020845808128
+        },
+        "lzma": {
+          "actual_ratio": 0.16304347826086957,
+          "baseline_mean": 0.3350624310886434,
+          "excess_ratio": -0.17201895282777385
+        }
+      }
+    }
+  }
+}

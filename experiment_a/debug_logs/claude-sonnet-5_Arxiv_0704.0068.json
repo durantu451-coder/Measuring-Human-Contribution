@@ -1,0 +1,175 @@
+{
+  "model": "claude-sonnet-5",
+  "domain": "Arxiv",
+  "id": "0704.0068",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIn the article [Petojevic 2006], A. Petojevi\\' c verified useful properties of the $K_{i}(z)$ functions which generalize Kurepa's [Kurepa 1971] left factorial function. In this note, we present simplified proofs of two of these results and we answer the open question stated in [Petojevic 2006]. Finally, we discuss the differential transcendency of the $K_{i}(z)$ functions.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIn the article [Petojevic 2006], A. Petojevi\\' c verified useful properties of the $K_{i}(z)$ functions which generalize Kurepa's [Kurepa 1971] left factorial function. In this note, we present simplified proofs of two of these results and we answer the open question stated in [Petojevic 2006]. Finally, we discuss the differential transcendency of the $K_{i}(z)$ functions.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A. Petojević, in [Petojevic 2006], established useful properties of the functions $K_i(z)$, which serve as generalizations of Kurepa's left factorial function introduced in [Kurepa 1971].\n- This note offers simplified proofs for two of the key results originally presented by Petojević regarding the $K_i(z)$ functions.\n- The open question that was left unresolved in [Petojevic 2006] is addressed and answered within this work.\n- The differential transcendency of the $K_i(z)$ functions is examined and discussed as part of the analysis.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis note revisits A. Petojević's generalization of Kurepa's left factorial function, the $K_i(z)$ functions, by simplifying proofs of two previously established properties and resolving an open question posed in the original work. The analysis further extends to establishing the differential transcendency of the $K_i(z)$ functions, contributing new insight into their analytic structure.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Petojevic, Petojevi, Kurepa"
+  },
+  "outputs": {
+    "L1": "In [Petojevic 2006], A. Petojević established several useful properties of the functions $K_i(z)$, which generalize Kurepa's left factorial function [Kurepa 1971]. In this note, we offer simplified proofs of two of these results and resolve the open question posed in [Petojevic 2006]. Finally, we examine the differential transcendence of the functions $K_i(z)$.",
+    "L2": "# Rewritten Text\n\nA. Petojević's paper [Petojevic 2006] established several important characteristics of the functions $K_i(z)$, which serve as extensions of the left factorial function originally introduced by Kurepa [Kurepa 1971]. This note offers streamlined demonstrations for two of those established results, while also resolving the unsolved question that Petojević had left open in his original work. Additionally, we examine whether the $K_i(z)$ functions exhibit differential transcendence.",
+    "L3": "# Introduction\n\nIn [Petojevic 2006], A. Petojević introduced and studied a family of functions $K_i(z)$, which arise as natural generalizations of the left factorial function originally introduced by Kurepa in [Kurepa 1971]. Petojević's work established a number of important structural and analytic properties of these functions, situating them within the broader context of special functions related to factorial-type constructions. These generalizations have proven valuable for extending classical results about the left factorial to a wider analytic framework, and they raise interesting questions about the algebraic and differential properties satisfied by such functions.\n\nThe purpose of this note is twofold. First, we revisit two of the principal results established by Petojević concerning the functions $K_i(z)$ and provide new, simplified proofs of these results. Our approach streamlines the original arguments, offering a more direct and transparent path to the same conclusions, and thereby making these results more accessible for further study and application.\n\nSecond, we turn our attention to a question that was posed but left open in [Petojevic 2006]. Building on the tools and techniques developed for our simplified proofs, we are able to resolve this open problem, providing a complete answer within the present work. This resolution not only closes a gap in the existing literature but also sheds further light on the underlying structure of the $K_i(z)$ functions.\n\nFinally, as a natural extension of this investigation, we examine the question of differential transcendency for the functions $K_i(z)$. Specifically, we discuss whether these functions can satisfy algebraic differential equations with suitable coefficients, or whether they are differentially transcendental in the sense that no such equation exists. This analysis complements the study of $K_i(z)$ by placing it within the broader theory of differential transcendence, connecting the combinatorial and analytic properties of these generalized factorial functions to deeper questions in differential algebra.",
+    "L4": "## 1. Background and Motivation\n\nThe left factorial function, introduced by Đuro Kurepa in the 1970s in connection with his celebrated conjecture on the greatest common divisor $\\gcd(K(n), n!)$, is defined for positive integers by\n$$\nK(n) = 0! + 1! + 2! + \\cdots + (n-1)!.\n$$\nKurepa himself, and later Slavić, showed that this discrete sequence admits a natural analytic continuation to the whole complex plane (with the exception of the negative integers) via the integral representation\n$$\nK(z) = \\int_0^{\\infty} e^{-t}\\,\\frac{t^{z}-1}{t-1}\\,dt ,\n$$\nwhich reduces to the classical partial sums of factorials when $z$ is a positive integer and which links $K(z)$ intimately to the Gamma function through its pole structure and residues. This analytic extension opened the way to studying $K(z)$ as a genuine special function in its own right, with its own functional equation, asymptotic behaviour, and connections to number-theoretic invariants.\n\nA. Petojević extended this circle of ideas by constructing an entire hierarchy of functions $K_i(z)$, $i = 1,2,3,\\dots$, of which Kurepa's original $K(z)$ appears as the base case $K_1(z)$. Each $K_i(z)$ is built from an $i$-fold iteration of the summation/integration process underlying Kurepa's construction, so that $K_i(z)$ inherits an integral representation generalizing the one above, together with a functional equation relating $K_i(z+1)$ to $K_i(z)$ and to the lower-order function $K_{i-1}(z)$. In his original papers, Petojević established several structural properties of this family — among them a recursive functional equation and an explicit relation connecting $K_i(z)$ to sums of Stirling-type numbers — but the proofs he gave relied on fairly intricate combinatorial manipulations and case-by-case induction arguments. He also left open a natural question concerning the family, namely a precise description of the location and multiplicity of the singularities of $K_i(z)$ for $i \\geq 2$, and more generally the behaviour of $K_i(z)$ under iteration of the underlying difference operator.\n\n## 2. Simplification of Known Results and Resolution of the Open Question\n\nIn the present note we revisit Petojević's construction and show that both of the previously established properties can be obtained in a much shorter and more transparent way once one exploits the integral (rather than purely combinatorial) representation of $K_i(z)$ systematically. By expressing $K_i(z)$ as an $i$-fold iterated Laplace-type transform and applying elementary contour-shifting and differentiation-under-the-integral-sign arguments, we recover Petojević's functional equation and his Stirling-number identity as immediate corollaries, bypassing the inductive combinatorial machinery of the original proofs. This reformulation has the additional benefit of making the analytic structure of $K_i(z)$ transparent: the poles of $K_i(z)$, their orders, and the associated residues can be read off directly from the integrand, rather than being deduced indirectly from recursive relations.\n\nThis same approach allows us to settle the open",
+    "L5": "# Kurepa's Function and Petojević's Contributions to Its Study\n\nĐuro Kurepa (1907–1993) was one of the most influential Serbian mathematicians of the twentieth century, whose work spanned set theory, topology, and number theory. Among his many contributions, one of the most enduring is what has come to be known as the **Kurepa function**, sometimes called the \"left factorial,\" denoted !n. This function is defined as:\n\n$$!n = 0! + 1! + 2! + \\cdots + (n-1)!$$\n\nKurepa introduced this function in the 1970s and used it to formulate what is now known as **Kurepa's hypothesis** (or Kurepa's conjecture), which concerns the greatest common divisor of !n and n!. Specifically, the conjecture states that for every integer n ≥ 2, the greatest common divisor of !n and n! is equal to 2. This deceptively simple statement has proven remarkably difficult to prove or disprove, and it remains an open problem in number theory to this day, having been verified computationally for very large values of n without a general proof emerging.\n\nKurepa's broader mathematical legacy also includes significant work in set theory, where his name is attached to concepts such as **Kurepa trees**—structures of great importance in the study of infinite combinatorics and the foundations of set theory, particularly in relation to questions independent of the standard axioms (ZFC).\n\nBuilding on Kurepa's foundational work, the mathematician **Aleksandar Petojević** has made substantial contributions to the further development and generalization of the Kurepa function. Petojević's research has focused on extending the left factorial function into more general mathematical frameworks, exploring its analytic properties, and investigating generalizations that connect it to other special functions in mathematics. His work includes studies on generalized factorial functions and their relationships to gamma functions, Bernoulli numbers, and other classical objects in analysis and number theory.\n\nPetojević has published several papers examining variations of the Kurepa function, proposing new generalized forms (sometimes denoted with additional parameters) that preserve key properties of the original definition while extending its applicability to broader classes of problems. His work has helped keep Kurepa's ideas alive within the contemporary mathematical literature, ensuring that this area of research—rooted in Serbian mathematical tradition—continues to develop and attract interest from researchers working in combinatorics, number theory, and special functions.\n\nTogether, the work of Kurepa and the continuing research by Petojević illustrate how a single elegant mathematical idea can generate decades of inquiry, giving rise to open problems, generalizations, and a lasting legacy within a national mathematical school. The Kurepa function stands today as a modest yet compelling example of how simple definitions can lead to deep and still-unresolved mathematical questions."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a math paper that revisits Petojević's 2006 results on the K_i(z) functions generalizing Kurepa's left factorial, offers simpler proofs, resolves the open problem, and touches on differential transcendency.",
+      "output": "# Abstract\n\nIn 2006, Petojević introduced a family of functions $K_i(z)$, $i \\in \\mathbb{N}$, generalizing Kurepa's left factorial function $K(z) = \\int_0^\\infty t^z e^{-t} \\left(\\sum_{k=0}^\\infty t^k\\right)^{-1}\\, dt$ analytically continued via a functional equation, and established several representations connecting these functions to hypergeometric-type series and to the classical Gamma function. Petojević's original derivations relied on intricate manipulations of divergent series regularization and left open the question of whether the functions $K_i(z)$ satisfy any algebraic or differential relations among themselves or with the Gamma function, as well as whether a certain conjectured closed-form identity holds for all $i$.\n\nIn this paper we revisit the family $K_i(z)$ and provide substantially simplified proofs of Petojević's main representation theorems, replacing the original ad hoc regularization arguments with a unified approach based on Mellin–Barnes integral representations and contour deformation techniques. This streamlined framework not only reproduces all previously known identities but clarifies their analytic origin and extends them to a wider range of parameters. Using this machinery, we resolve the open problem posed by Petojević by establishing the conjectured identity in full generality and showing that it is in fact the unique relation of its type linking the $K_i(z)$ functions across different indices $i$.\n\nFinally, we investigate the differential transcendency of the functions $K_i(z)$. Building on Hölder-type and Ostrowski-type methods adapted to the functional equations satisfied by $K_i(z)$, we prove that each $K_i(z)$ is differentially transcendental over $\\mathbb{C}(z)$, meaning it satisfies no algebraic differential equation with rational function coefficients. This extends the classical differential transcendency results for the Gamma function and Kurepa's original left factorial to the entire Petojević hierarchy, and provides new evidence for the conjectural principle that solutions of natural difference equations of hypergeometric type are generically differentially transcendental.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "I need a short academic abstract summarizing a note that simplifies two proofs from Petojevic (2006) on generalized Kurepa left factorials K_i(z), answers his open question, and discusses whether these functions are differentially transcendental.",
+      "output": "# Abstract\n\nThis note revisits the generalized Kurepa left factorial functions $K_i(z)$ introduced by Petojević (2006), providing simplified and more transparent proofs of two of his principal results. Our approach clarifies the underlying analytic structure of these functions and streamlines the original arguments considerably. We further resolve an open question posed by Petojević concerning the behavior of $K_i(z)$, giving a complete answer within the framework established in the original work. Finally, we address the question of whether the generalized Kurepa functions $K_i(z)$ are differentially transcendental, that is, whether they satisfy no algebraic differential equation with polynomial coefficients. We discuss the difficulties inherent in this problem and present partial results and observations bearing on the differential transcendence of $K_i(z)$, situating them within the broader context of the classical Kurepa left factorial function's known transcendental properties.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft an introductory paragraph for a research note in special functions theory: it should reference Petojevic 2006 and Kurepa 1971, mention simplified proofs of known results, resolution of an open question, and a discussion of differential transcendency of K_i(z).",
+      "output": "# Introduction\n\nThe generalized factorial-type function $K_i(z)$, first systematically investigated in this context by Petojević [Petojevic, 2006], continues to attract attention due to its rich analytic structure and its close ties to the classical Kurepa function studied in [Kurepa, 1971]. In the present note, we revisit several fundamental properties of $K_i(z)$ and offer streamlined proofs of results that were originally established through more computationally intensive methods. Building on these simplified arguments, we resolve an open question left unanswered in the earlier literature concerning the behavior of $K_i(z)$ under certain functional transformations. Finally, we turn to the question of differential transcendency of $K_i(z)$, demonstrating that it satisfies no algebraic differential equation with coefficients in a suitable field of rational or meromorphic functions, thereby situating $K_i(z)$ firmly among the classically transcendental special functions in the sense of Hölder-type theorems. Together, these results not only clarify the analytic landscape surrounding $K_i(z)$ but also provide new tools for further study of its structural and functional properties.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Can you produce a concise mathematical abstract discussing improvements to A. Petojević's work on generalized left factorial functions, including new proofs and a resolution to his stated open problem, ending with remarks on differential transcendence?",
+      "output": "# Abstract\n\nWe revisit A. Petojević's generalized left factorial function $\\mathcal{K}_m(z)$, a multiparameter extension of Kurepa's left factorial, and present streamlined proofs of its fundamental analytic properties—including its integral representation, functional equation, and asymptotic behavior—using contour-integration techniques that simplify Petojević's original combinatorial arguments. We establish a sharper meromorphic continuation of $\\mathcal{K}_m(z)$ to $\\mathbb{C}$, explicitly characterizing its pole structure and associated residues in terms of generalized Bernoulli-type coefficients arising from the $m$-parameter dependence.\n\nCentral to this work is the resolution of an open problem posed by Petojević concerning the precise growth rate and singularity distribution of $\\mathcal{K}_m(z)$ for general $m \\geq 2$; we settle this by deriving explicit recurrence relations satisfied by the residues, thereby confirming the conjectured pattern and extending it to a full asymptotic expansion valid in sectors of the complex plane avoiding the poles.\n\nFinally, we prove that $\\mathcal{K}_m(z)$ is differentially transcendental over $\\mathbb{C}(z)$ for every $m \\geq 1$: no nontrivial algebraic differential equation with rational function coefficients is satisfied by $\\mathcal{K}_m(z)$. This result situates $\\mathcal{K}_m(z)$ alongside the Euler Gamma function within the broader Hölder-type transcendence framework, and we outline how the underlying difference-equation methods generalize to other Kurepa-type and factorial-analogue functions.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate the opening abstract of a paper in number theory/special functions that cites Petojevic (2006) and Kurepa (1971), explains that the authors simplify two proofs, solve an open question, and analyze differential transcendency of the K_i(z) functions.",
+      "output": "# On the Generalized Kurepa Function and Its Differential Transcendency\n\n## Abstract\n\nThe Kurepa function, introduced by Kurepa in his seminal 1971 work, and its subsequent generalizations $K_i(z)$ studied by Petojević (2006), have attracted considerable attention due to their connections with the factorial function, the Gamma function, and various combinatorial identities. In this paper, we revisit the theory of these generalized alpha functions with two principal aims. First, we provide substantially simplified proofs of two key results originally established by Petojević concerning the functional equations and integral representations satisfied by $K_i(z)$; our approach relies on elementary complex-analytic techniques and avoids the more intricate combinatorial machinery of the original arguments. Second, we resolve an open question posed in the aforementioned literature regarding the behavior of $K_i(z)$ under iterated differentiation, by constructing an explicit counterexample that settles the matter in the negative. Building on these results, we undertake a systematic study of the differential transcendency of the functions $K_i(z)$: we show that each $K_i(z)$ satisfies no nontrivial algebraic differential equation with coefficients in $\\mathbb{C}(z)$, thereby placing these functions outside the class of differentially algebraic functions. Our proof combines a Rellich–Wittich-type asymptotic analysis with a careful study of the singularity structure of $K_i(z)$ in the complex plane. These results not only clarify the analytic nature of the Kurepa-type functions but also open the door to further investigation of their arithmetic and transcendence properties.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6547314578005116,
+      "excess_ratio": 0.4992485858960261,
+      "baseline_mean": 0.15548287190448545,
+      "baseline_n_valid": 5,
+      "output_chars": 363,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6739130434782609,
+          "baseline_mean": 0.12451988874267059,
+          "excess_ratio": 0.5493931547355903
+        },
+        "bz2": {
+          "actual_ratio": 0.5477941176470589,
+          "baseline_mean": 0.1554521300606522,
+          "excess_ratio": 0.3923419875864067
+        },
+        "lzma": {
+          "actual_ratio": 0.7428571428571429,
+          "baseline_mean": 0.18304807626448813,
+          "excess_ratio": 0.5598090665926547
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3770491803278689,
+      "excess_ratio": 0.22156630842338343,
+      "baseline_mean": 0.15548287190448545,
+      "baseline_n_valid": 5,
+      "output_chars": 500,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3311897106109325,
+          "baseline_mean": 0.12451988874267059,
+          "excess_ratio": 0.2066698218682619
+        },
+        "bz2": {
+          "actual_ratio": 0.384180790960452,
+          "baseline_mean": 0.1554521300606522,
+          "excess_ratio": 0.2287286608997998
+        },
+        "lzma": {
+          "actual_ratio": 0.40860215053763443,
+          "baseline_mean": 0.18304807626448813,
+          "excess_ratio": 0.2255540742731463
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.21937225784677689,
+      "excess_ratio": 0.06388938594229143,
+      "baseline_mean": 0.15548287190448545,
+      "baseline_n_valid": 5,
+      "output_chars": 2102,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1921858500527983,
+          "baseline_mean": 0.12451988874267059,
+          "excess_ratio": 0.06766596131012773
+        },
+        "bz2": {
+          "actual_ratio": 0.22357723577235772,
+          "baseline_mean": 0.1554521300606522,
+          "excess_ratio": 0.06812510571170552
+        },
+        "lzma": {
+          "actual_ratio": 0.24031007751937986,
+          "baseline_mean": 0.18304807626448813,
+          "excess_ratio": 0.057262001254891726
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.10695305580159434,
+      "excess_ratio": -0.048529816102891116,
+      "baseline_mean": 0.15548287190448545,
+      "baseline_n_valid": 5,
+      "output_chars": 3083,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.07718348002708192,
+          "baseline_mean": 0.12451988874267059,
+          "excess_ratio": -0.04733640871558867
+        },
+        "bz2": {
+          "actual_ratio": 0.11839464882943143,
+          "baseline_mean": 0.1554521300606522,
+          "excess_ratio": -0.03705748123122077
+        },
+        "lzma": {
+          "actual_ratio": 0.12435233160621761,
+          "baseline_mean": 0.18304807626448813,
+          "excess_ratio": -0.058695744658270516
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.024717514124293787,
+      "excess_ratio": -0.13076535778019166,
+      "baseline_mean": 0.15548287190448545,
+      "baseline_n_valid": 5,
+      "output_chars": 2977,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.015736766809728183,
+          "baseline_mean": 0.12451988874267059,
+          "excess_ratio": -0.1087831219329424
+        },
+        "bz2": {
+          "actual_ratio": 0.01079136690647482,
+          "baseline_mean": 0.1554521300606522,
+          "excess_ratio": -0.1446607631541774
+        },
+        "lzma": {
+          "actual_ratio": 0.04657534246575343,
+          "baseline_mean": 0.18304807626448813,
+          "excess_ratio": -0.1364727337987347
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T05:13:11.545691+00:00"
+    }
+  ]
+}

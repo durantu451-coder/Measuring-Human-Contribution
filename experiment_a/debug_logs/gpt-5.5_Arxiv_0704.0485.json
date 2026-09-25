@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Arxiv",
+  "id": "0704.0485",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThis paper is concerned with a shape sensitivity analysis of a viscous incompressible fluid driven by Stokes equations with nonhomogeneous boundary condition. The structure of shape gradient with respect to the shape of the variable domain for a given cost function is established by using the differentiability of a minimax formulation involving a Lagrangian functional combining with function space parametrization technique or function space embedding technique. We apply an gradient type algorithm to our problem. Numerical examples show that our theory is useful for practical purpose and the proposed algorithm is feasible.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThis paper is concerned with a shape sensitivity analysis of a viscous incompressible fluid driven by Stokes equations with nonhomogeneous boundary condition. The structure of shape gradient with respect to the shape of the variable domain for a given cost function is established by using the differentiability of a minimax formulation involving a Lagrangian functional combining with function space parametrization technique or function space embedding technique. We apply an gradient type algorithm to our problem. Numerical examples show that our theory is useful for practical purpose and the proposed algorithm is feasible.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper analyzes shape sensitivity for a viscous incompressible fluid governed by Stokes equations with nonhomogeneous boundary conditions.\n- The authors establish the structure of the shape gradient for a cost function with respect to changes in the domain shape.\n- The analysis uses differentiability of a minimax formulation involving a Lagrangian functional.\n- The paper applies function space parametrization or function space embedding techniques to support the shape sensitivity analysis.\n- Numerical examples demonstrate that the theory is practically useful and that the proposed gradient-type algorithm is feasible.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe paper addresses shape sensitivity analysis for a viscous incompressible Stokes flow with nonhomogeneous boundary conditions, deriving the shape gradient via differentiability of a minimax Lagrangian formulation combined with function space parametrization or embedding techniques. Numerical examples show that the resulting gradient-based algorithm is feasible and practically useful.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: This, Stokes, The"
+  },
+  "outputs": {
+    "L1": "This paper presents a shape sensitivity analysis of a viscous incompressible fluid governed by the Stokes equations with nonhomogeneous boundary conditions. The structure of the shape gradient with respect to the geometry of the variable domain, for a given cost function, is established by using the differentiability of a minimax formulation involving a Lagrangian functional, combined with either the function space parametrization technique or the function space embedding technique. A gradient-type algorithm is then applied to the problem. Numerical examples demonstrate that the proposed theory is useful for practical purposes and that the algorithm is feasible.",
+    "L2": "This paper examines shape sensitivity for a viscous, incompressible fluid governed by the Stokes equations under nonhomogeneous boundary conditions. For a specified cost functional, the form of the shape gradient relative to changes in the variable domain is derived by exploiting the differentiability of a minimax formulation based on a Lagrangian functional, together with either a function space parametrization method or a function space embedding approach. A gradient-based algorithm is then applied to the problem. Numerical experiments demonstrate the practical value of the theoretical results and confirm the feasibility of the proposed algorithm.",
+    "L3": "The paper investigates the problem of shape sensitivity for a viscous incompressible fluid governed by the Stokes equations under nonhomogeneous boundary conditions. In this setting, the flow takes place in a domain whose shape may vary, and the main objective is to understand how a given cost functional changes when the boundary of the domain is perturbed. Such questions are central in shape optimization, where one seeks to improve the geometry of a physical system in order to optimize a prescribed performance criterion.\n\nA central contribution of the paper is the derivation of the structure of the shape gradient associated with the cost function. The shape gradient describes the first-order variation of the objective functional with respect to infinitesimal deformations of the domain. Establishing its structure is essential because it provides the mathematical foundation for designing descent directions and optimization algorithms. In particular, the authors show how the effect of boundary perturbations can be represented in a form suitable for both theoretical analysis and numerical implementation.\n\nThe analysis is based on the differentiability of a minimax formulation involving a Lagrangian functional. Instead of differentiating the state equation and the cost functional separately in a direct manner, the authors introduce an appropriate Lagrangian that incorporates the Stokes equations and the boundary conditions through adjoint variables. The resulting minimax framework allows them to characterize the shape derivative by studying the differentiability properties of this saddle-point formulation. This approach is especially useful for problems with constraints, since it naturally leads to the introduction of an adjoint system and simplifies the final expression of the gradient.\n\nTo justify the shape sensitivity results rigorously, the paper employs function space parametrization or function space embedding techniques. These methods provide a way to compare solutions of partial differential equations posed on different domains by mapping them into a common reference setting or embedding them into a larger fixed space. This is an important technical step in shape calculus, because variations of the domain also change the function spaces in which the velocity and pressure fields are defined. By using these techniques, the authors are able to establish the necessary differentiability properties and give a precise mathematical meaning to the shape derivative.\n\nThe theoretical findings are complemented by numerical examples. These examples illustrate how the derived shape gradient can be used in practice within a gradient-type optimization algorithm. The computations demonstrate that the analytical formulae are not only mathematically sound but also practically useful for improving domain shapes in fluid flow problems. In particular, the numerical results indicate that the proposed method is feasible and effective for implementing shape optimization procedures governed by the Stokes system with nonhomogeneous boundary data.\n\nOverall, the paper provides a rigorous and practically relevant framework for shape sensitivity analysis in incompressible viscous flow. By combining a minimax Lagrangian approach, function space techniques, and numerical validation, it establishes both the theoretical structure of the shape gradient and its applicability to computational shape optimization.",
+    "L4": "This paper studies the problem of shape sensitivity analysis for a viscous incompressible Stokes flow subject to nonhomogeneous boundary conditions. The main objective is to determine how a chosen cost functional changes when the shape of the flow domain is perturbed, and to use this information in the context of shape optimization. Such problems arise naturally in the design and control of fluid systems, where one seeks an optimal geometry that improves a prescribed performance criterion while satisfying the governing equations of fluid motion.\n\nThe flow is modeled by the stationary Stokes equations for an incompressible Newtonian fluid. Since the boundary conditions are nonhomogeneous, the analysis requires particular care in the choice of state and adjoint function spaces. To handle this difficulty, the paper formulates the shape optimization problem through a minimax Lagrangian framework. In this setting, the state equation, the adjoint equation, and the cost functional are incorporated into a single Lagrangian expression. The shape derivative is then obtained by studying the differentiability properties of this Lagrangian with respect to domain perturbations.\n\nA central part of the analysis is the derivation of the shape gradient. The authors use techniques based on function space parametrization, also known as the speed method or material derivative approach, together with embedding arguments that allow quantities defined on variable domains to be compared on a fixed reference domain. This provides a rigorous way to differentiate the weak formulation of the Stokes system with respect to changes in the domain. The resulting expression for the shape derivative is written in terms of the state and adjoint variables, and it can be represented as a boundary integral or as a distributed volume expression suitable for numerical implementation.\n\nThe paper then develops a gradient-based numerical algorithm for shape optimization. At each iteration, the Stokes system is solved on the current domain, followed by the corresponding adjoint problem. The computed shape gradient is used to determine a descent direction, and the domain is updated accordingly. Appropriate regularization or smoothing of the descent direction is employed to maintain the quality of the computational mesh and to ensure stable numerical performance.\n\nSeveral numerical examples are presented to illustrate the theoretical results and to demonstrate the effectiveness of the proposed method. These computations confirm that the derived shape gradient provides meaningful descent directions and that the algorithm can successfully improve the objective functional over successive iterations. The examples also show that the approach is feasible for practical computations involving viscous incompressible flows with nonhomogeneous boundary data.\n\nOverall, the paper provides both a rigorous analytical derivation and a computational validation of shape gradients for Stokes flow problems with nonhomogeneous boundary conditions. By combining a minimax Lagrangian formulation with function space parametrization and embedding techniques, it establishes a solid framework for shape sensitivity analysis and demonstrates its usefulness in gradient-based shape optimization.",
+    "L5": "This is a short text about Stokes.\n\nThe name Stokes is often associated with important ideas in science and mathematics, especially Stokes’ theorem. This theorem connects the behavior of a field along the boundary of a surface with what happens across the surface itself. The idea is powerful because it shows how local changes can be related to a larger, global result.\n\nThe importance of Stokes’ work can be seen in physics, engineering, and advanced mathematics. This connection helps describe fluid motion, electromagnetism, and many other natural processes. The study of Stokes reminds us that simple mathematical principles can reveal deep patterns in the world."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a research paper on shape sensitivity analysis for viscous incompressible Stokes flow with nonhomogeneous boundary conditions, including the use of minimax Lagrangian methods and numerical examples.",
+      "output": "**Abstract**\n\nThis paper presents a shape sensitivity analysis for viscous incompressible Stokes flow subject to nonhomogeneous boundary conditions. The flow is governed by the stationary Stokes equations in a deformable domain, with prescribed velocity and traction-type data imposed on different parts of the boundary. To characterize the dependence of hydrodynamic performance functionals on domain perturbations, we formulate the shape optimization problem using a minimax Lagrangian framework. This approach enables the systematic derivation of Eulerian shape derivatives while incorporating the state equations, incompressibility constraint, and boundary conditions through adjoint variables and Lagrange multipliers. Particular attention is given to the treatment of nonhomogeneous boundary data, whose transformation under domain perturbations contributes additional terms to the shape gradient.\n\nWe establish the material derivative of the state and adjoint variables, derive an explicit boundary representation of the shape derivative, and discuss the associated optimality conditions. The resulting shape gradient is suitable for gradient-based numerical optimization and provides a rigorous basis for sensitivity computations in viscous flow design problems. Numerical examples are presented to validate the theoretical analysis and to illustrate the effectiveness of the proposed method. These examples include benchmark Stokes flow configurations with prescribed inflow profiles and wall boundary conditions, demonstrating the influence of nonhomogeneous data on the computed sensitivities and optimized shapes. The results show that the minimax Lagrangian approach yields accurate and efficient shape derivatives for incompressible viscous flows and can be readily integrated into computational shape optimization algorithms.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize a mathematical paper about shape optimization of domains governed by Stokes equations, focusing on shape gradients, function space parametrization, and a gradient-based numerical algorithm.",
+      "output": "The paper studies a **shape optimization problem for fluid domains governed by the Stokes equations**, with emphasis on deriving computable shape gradients and using them in a gradient-based numerical method.\n\nThe main goal is to optimize the shape of a domain occupied by a viscous incompressible fluid. Typical objectives include minimizing dissipation, matching a desired velocity profile, reducing drag, or controlling boundary behavior, subject to the stationary Stokes system.\n\n## 1. Shape optimization setting\n\nThe state variables are the fluid velocity \\(u\\) and pressure \\(p\\), defined on a variable domain \\(\\Omega \\subset \\mathbb{R}^d\\). They satisfy the Stokes equations\n\n\\[\n-\\nu \\Delta u + \\nabla p = f \\quad \\text{in } \\Omega,\n\\]\n\n\\[\n\\nabla \\cdot u = 0 \\quad \\text{in } \\Omega,\n\\]\n\nwith appropriate boundary conditions such as no-slip, inflow/outflow, or natural stress conditions.\n\nThe optimization problem is of the form\n\n\\[\n\\min_{\\Omega} J(\\Omega,u,p),\n\\]\n\nwhere \\(J\\) is a shape-dependent objective functional. Since the domain itself is the design variable, classical finite-dimensional optimization methods cannot be applied directly. The paper therefore develops a shape calculus framework and then discretizes the resulting shape gradients.\n\n## 2. Shape perturbations and shape derivatives\n\nTo describe variations of the domain, the paper uses a perturbation field \\(V\\), which deforms the domain through mappings such as\n\n\\[\nT_t(x) = x + tV(x),\n\\]\n\nwhere \\(t\\) is small. The deformed domain is\n\n\\[\n\\Omega_t = T_t(\\Omega).\n\\]\n\nThe shape derivative of the objective is defined by\n\n\\[\ndJ(\\Omega)[V]\n=\n\\left.\\frac{d}{dt} J(\\Omega_t)\\right|_{t=0}.\n\\]\n\nA key idea is that the derivative should be expressed as a linear functional of the deformation field \\(V\\). Under suitable regularity assumptions, the Hadamard structure theorem implies that the shape derivative often depends only on the normal component of \\(V\\) on the boundary:\n\n\\[\ndJ(\\Omega)[V]\n=\n\\int_{\\partial \\Omega} g \\, V \\cdot n \\, ds,\n\\]\n\nwhere \\(g\\) is the scalar shape gradient density and \\(n\\) is the outward unit normal.\n\n## 3. Use of the adjoint method\n\nBecause the objective depends on the state variables \\(u,p\\), differentiating \\(J\\) directly would require differentiating the Stokes solution with respect to the domain. This is expensive and inconvenient.\n\nThe paper uses the **adjoint method** to avoid explicitly computing the material derivative of the state. A Lagrangian is introduced:\n\n\\[\n\\mathcal{L}(\\Omega,u,p,v,q)\n=\nJ(\\Omega,u,p)\n+\n\\text{weak Stokes residual tested against }(v,q),\n\\]\n\nwhere \\(v\\) and \\(q\\) are adjoint velocity and pressure variables.\n\nThe adjoint equations are obtained by differentiating the Lagrangian with respect to the state variables and imposing stationarity. Once the state and adjoint equations are solved, the shape derivative can be written explicitly in terms of \\(u,p,v,q\\), boundary data, and geometric quantities.\n\nThis produces a practical formula for the shape gradient.\n\n## 4. Volume and boundary expressions of the gradient\n\nThe paper discusses both **boundary-form** and **volume-form** shape derivatives.\n\nA boundary expression has the form\n\n\\[\ndJ(\\Omega)[V]\n=\n\\int_{\\partial \\Omega} g \\, V \\cdot n \\, ds.\n\\]\n\nThis is theoretically attractive because it makes clear that only normal boundary perturbations change the shape.\n\nHowever, boundary gradients can be numerically sensitive, especially on polygonal or low-regularity meshes. Therefore, the paper also considers a volume representation:\n\n\\[\ndJ(\\Omega)[V]\n=\n\\int_{\\Omega} G : \\nabla V + b \\cdot V \\, dx,\n\\]\n\nor a similar expression over the computational domain.\n\nThe volume formulation is often more robust in finite element implementations because it avoids explicit curvature computations and can naturally define smooth deformation fields in the bulk mesh.\n\n## 5. Function space parametrization of shapes\n\nAn important part of the paper is the choice of function space in which shape deformations are computed.\n\nRather than moving boundary nodes independently, the domain deformation field \\(V\\) is sought in a Hilbert space such as\n\n\\[\nH^1(\\Omega;\\mathbb{R}^d),\n\\]\n\nor a subspace satisfying boundary restrictions. The shape gradient is then defined by a Riesz representation: find the descent direction \\(W\\) such that\n\n\\[\na(W,V) = dJ(\\Omega)[V]\n\\quad \\text{for all } V\n\\]\n\nin the chosen deformation space.\n\nHere \\(a(\\cdot,\\cdot)\\) is an inner product or bilinear form, for example\n\n\\[\na(W,V)\n=\n\\int_{\\Omega} \\alpha \\nabla W : \\nabla V + W \\cdot V \\, dx.\n\\]\n\nThis step converts the shape derivative, which is a linear functional, into an actual deformation vector field \\(W\\).\n\nThe choice of the function space and inner product acts as a **regularization mechanism**. It controls smoothness of the domain update, prevents mesh deterioration, and allows constraints such as fixed boundaries or prescribed motion of certain boundary parts.\n\n## 6. Sobolev gradients and mesh regularity\n\nThe paper emphasizes that using an \\(L^2\\)-type gradient on the boundary may lead to rough or oscillatory updates. Instead, a Sobolev gradient computed in a space such as \\(H^1\\) gives smoother deformations.\n\nThe gradient direction is obtained by solving an auxiliary elliptic problem, for example an elasticity-like or Poisson-type equation. This deformation field is then used to update the mesh.\n\nThis approach has several advantages:\n\n- smoother boundary motion,\n- better mesh quality,\n- natural treatment of fixed boundaries,\n- compatibility with finite element discretization,\n- improved stability of the optimization algorithm.\n\n## 7. Gradient-based numerical algorithm\n\nThe numerical method follows a standard optimize-then-discretize or discretize-then-optimize approach based on shape gradients.\n\nA typical iteration consists of:\n\n1. **Solve the Stokes state problem** on the current domain \\(\\Omega_k\\), obtaining \\(u_k,p_k\\).\n\n2. **Solve the adjoint Stokes problem**, obtaining adjoint variables \\(v_k,q_k\\).\n\n3. **Evaluate the shape derivative** \\(dJ(\\Omega_k)[V]\\) using the state and adjoint solutions.\n\n4. **Compute a descent deformation field** \\(W_k\\) by solving the Riesz representation problem\n\n   \\[\n   a(W_k,V) = -dJ(\\Omega_k)[V]\n   \\quad \\forall V.\n   \\]\n\n5. **Choose a step size** \\(\\alpha_k\\), for example using an Armijo line search.\n\n6. **Update the domain**\n\n   \\[\n   \\Omega_{k+1} = (I + \\alpha_k W_k)(\\Omega_k).\n   \\]\n\n7. **Remesh or repair the mesh** if needed.\n\nThe algorithm stops when the norm of the shape gradient is small, the decrease in the objective stagnates, or a maximum number of iterations is reached.\n\n## 8. Treatment of constraints\n\nThe paper may also consider geometric or physical constraints, such as:\n\n- fixed volume,\n- fixed inlet and outlet boundaries,\n- prescribed obstacle location,\n- perimeter regularization,\n- barycenter constraints,\n- bounds on admissible deformations.\n\nVolume constraints can be handled by Lagrange multipliers, penalty terms, or projection of the gradient onto the constraint tangent space.\n\nFor example, if a volume constraint is imposed,\n\n\\[\n|\\Omega| = V_0,\n\\]\n\nthen the shape derivative of the volume is\n\n\\[\nd|\\Omega|[V] = \\int_{\\partial \\Omega} V \\cdot n \\, ds.\n\\]\n\nThe descent direction is modified so that it does not violate the constraint to first order.\n\n## 9. Numerical results\n\nThe numerical experiments illustrate that the proposed shape-gradient method successfully decreases the objective functional and produces physically meaningful optimized shapes.\n\nThe results typically show:\n\n- convergence of the cost functional,\n- evolution of the domain boundary,\n- velocity and pressure fields before and after optimization,\n- improved flow behavior,\n- robustness of Sobolev-gradient-based updates compared with raw boundary gradients.\n\nThe paper highlights that the function space choice for the deformation field has a major impact on stability and mesh quality.\n\n## Overall contribution\n\nThe paper provides a systematic framework for shape optimization of Stokes flow domains. Its main contributions are:\n\n1. deriving shape gradients for Stokes-governed objectives using adjoint calculus;\n2. expressing the gradients in forms suitable for finite element computation;\n3. emphasizing function space parametrization of admissible shape deformations;\n4. using Sobolev/Riesz gradients to obtain smooth descent directions;\n5. implementing a practical gradient-based algorithm for numerical shape optimization.\n\nIn summary, the paper connects the theoretical shape calculus of Stokes flow problems with a stable computational optimization method. The central idea is that the shape derivative alone is not enough; one must also choose an appropriate deformation space and inner product to obtain a useful numerical gradient.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate a concise academic abstract describing the derivation of a shape gradient for a cost function in a variable-domain incompressible fluid problem with nonhomogeneous boundary data.",
+      "output": "We derive a shape gradient for a cost functional governed by the incompressible Navier–Stokes equations on a variable domain with nonhomogeneous boundary data. The domain dependence is treated through the velocity method and material differentiation, while the constraint is incorporated using an adjoint formulation. Special attention is given to the treatment of prescribed boundary velocities, whose nonhomogeneity prevents a direct application of standard homogeneous boundary perturbation arguments. By introducing suitable extensions and carefully differentiating the state and boundary conditions, we obtain an Eulerian representation of the shape derivative depending only on boundary quantities. The resulting expression yields a Hadamard form of the shape gradient and is suitable for gradient-based shape optimization. The analysis provides a rigorous framework for sensitivity computation in flow-control and design problems involving moving boundaries and prescribed inflow or wall data.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Draft a paper abstract in formal mathematical style for research on shape sensitivity analysis using function space embedding techniques and a Lagrangian minimax formulation for Stokes equations.",
+      "output": "We present a shape sensitivity framework for a class of shape optimization problems governed by the stationary Stokes equations, based on function space embedding techniques and a Lagrangian minimax formulation. The variable physical domains are embedded into a fixed hold-all domain, allowing the state and adjoint variables to be treated in domain-independent function spaces while the geometry dependence is encoded through transformed bilinear and linear forms. For a cost functional depending on the velocity, pressure, and domain geometry, we introduce an associated saddle-point Lagrangian and characterize the shape derivative by differentiating the corresponding minimax problem with respect to admissible domain perturbations.\n\nThe analysis establishes the existence of material derivatives in the embedded setting and derives an Eulerian shape gradient formula expressed in terms of the state and adjoint solutions. The incompressibility constraint and pressure variable are incorporated through the Stokes saddle-point structure, yielding a variational expression that is independent of the material derivative of the state. Under standard regularity assumptions on the boundary perturbation field and the data, the resulting shape derivative is shown to be continuous with respect to the perturbation velocity and to admit both volume and boundary representations. This provides a rigorous basis for gradient-based numerical methods for Stokes-constrained shape optimization, while avoiding the explicit differentiation of solutions on varying domains.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide an abstract for a study of viscous incompressible fluid shape optimization, mentioning Stokes equations, nonhomogeneous boundary conditions, differentiability of a minimax formulation, and feasibility shown by numerical examples.",
+      "output": "We present a study of shape optimization problems for viscous incompressible fluids governed by the Stokes equations. The formulation allows nonhomogeneous boundary conditions and is cast as a minimax problem in order to treat the dependence of the state and adjoint variables on domain perturbations. We analyze the differentiability of the resulting shape functional and derive the corresponding shape derivative, providing a rigorous basis for gradient-based optimization methods. The theoretical framework is complemented by numerical examples that demonstrate the feasibility and effectiveness of the proposed approach for representative fluid-design problems.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6920556920556921,
+      "excess_ratio": 0.5342148256725907,
+      "baseline_mean": 0.1578408663831014,
+      "baseline_n_valid": 5,
+      "output_chars": 670,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7002724795640327,
+          "baseline_mean": 0.12804671933993847,
+          "excess_ratio": 0.5722257602240942
+        },
+        "bz2": {
+          "actual_ratio": 0.6108374384236454,
+          "baseline_mean": 0.14805234799798955,
+          "excess_ratio": 0.4627850904256558
+        },
+        "lzma": {
+          "actual_ratio": 0.7589285714285714,
+          "baseline_mean": 0.19243974298005634,
+          "excess_ratio": 0.566488828448515
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4889830508474576,
+      "excess_ratio": 0.33114218446435617,
+      "baseline_mean": 0.1578408663831014,
+      "baseline_n_valid": 5,
+      "output_chars": 657,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4623955431754875,
+          "baseline_mean": 0.12804671933993847,
+          "excess_ratio": 0.334348823835549
+        },
+        "bz2": {
+          "actual_ratio": 0.43832020997375326,
+          "baseline_mean": 0.14805234799798955,
+          "excess_ratio": 0.2902678619757637
+        },
+        "lzma": {
+          "actual_ratio": 0.5545454545454546,
+          "baseline_mean": 0.19243974298005634,
+          "excess_ratio": 0.3621057115653982
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.19499649286883328,
+      "excess_ratio": 0.03715562648573187,
+      "baseline_mean": 0.1578408663831014,
+      "baseline_n_valid": 5,
+      "output_chars": 3441,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.16963649322879543,
+          "baseline_mean": 0.12804671933993847,
+          "excess_ratio": 0.04158977388885696
+        },
+        "bz2": {
+          "actual_ratio": 0.18992805755395684,
+          "baseline_mean": 0.14805234799798955,
+          "excess_ratio": 0.04187570955596728
+        },
+        "lzma": {
+          "actual_ratio": 0.22371967654986524,
+          "baseline_mean": 0.19243974298005634,
+          "excess_ratio": 0.031279933569808904
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.15250061591525,
+      "excess_ratio": -0.005340250467851415,
+      "baseline_mean": 0.1578408663831014,
+      "baseline_n_valid": 5,
+      "output_chars": 3276,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.13171839515518546,
+          "baseline_mean": 0.12804671933993847,
+          "excess_ratio": 0.003671675815246994
+        },
+        "bz2": {
+          "actual_ratio": 0.1425339366515837,
+          "baseline_mean": 0.14805234799798955,
+          "excess_ratio": -0.005518411346405849
+        },
+        "lzma": {
+          "actual_ratio": 0.1813031161473088,
+          "baseline_mean": 0.19243974298005634,
+          "excess_ratio": -0.011136626832747548
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.09869494290375212,
+      "excess_ratio": -0.059145923479349286,
+      "baseline_mean": 0.1578408663831014,
+      "baseline_n_valid": 5,
+      "output_chars": 668,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04891304347826087,
+          "baseline_mean": 0.12804671933993847,
+          "excess_ratio": -0.0791336758616776
+        },
+        "bz2": {
+          "actual_ratio": 0.08620689655172414,
+          "baseline_mean": 0.14805234799798955,
+          "excess_ratio": -0.06184545144626541
+        },
+        "lzma": {
+          "actual_ratio": 0.1504424778761062,
+          "baseline_mean": 0.19243974298005634,
+          "excess_ratio": -0.04199726510395013
+        }
+      }
+    }
+  }
+}

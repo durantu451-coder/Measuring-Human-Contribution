@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15898172",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nSome embodiments provide a method for configuring unit memories to implement first and second sets of entries, the second set of which references the first set. The method configures a first pool of memories to implement the first set. Each first-set entry is located at a particular location in at least one of the first-pool memories. The method configures a second pool of memories to implement the second set of entries. Each second-set entry includes (i) a first set of bits for indicating a memory page that corresponds to one or more first-pool memories, (ii) a second set of bits for specifying a location in each of the one or more memories from which to retrieve data for the referenced first-set entry, and (iii) a third set of bits for specifying a sub-location within the retrieved data. The number of bits in the third set of bits is fixed for the second-set entries while a number of sub-locations varies for different locations specified by the second set of bits of different second-set entries.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nSome embodiments provide a method for configuring unit memories to implement first and second sets of entries, the second set of which references the first set. The method configures a first pool of memories to implement the first set. Each first-set entry is located at a particular location in at least one of the first-pool memories. The method configures a second pool of memories to implement the second set of entries. Each second-set entry includes (i) a first set of bits for indicating a memory page that corresponds to one or more first-pool memories, (ii) a second set of bits for specifying a location in each of the one or more memories from which to retrieve data for the referenced first-set entry, and (iii) a third set of bits for specifying a sub-location within the retrieved data. The number of bits in the third set of bits is fixed for the second-set entries while a number of sub-locations varies for different locations specified by the second set of bits of different second-set entries.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The method configures unit memories to implement a first set of entries and a second set of entries that reference the first set.\n- A first pool of memories stores the first-set entries, with each entry located at a particular position in at least one memory.\n- A second pool of memories stores the second-set entries.\n- Each second-set entry contains bits identifying a memory page, a location within the corresponding first-pool memories, and a sub-location within the retrieved data.\n- The number of sub-location bits is fixed across second-set entries, even though the number of available sub-locations varies among referenced locations.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA memory-configuration method implements a first set of entries in one memory pool and a second, referencing set in another, using page, location, and sub-location bit fields to address first-set data. A fixed-width sub-location field supports locations with varying numbers of sub-locations, enabling consistent yet flexible cross-memory referencing.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Some, The, Each"
+  },
+  "outputs": {
+    "L1": "Some embodiments provide a method for configuring unit memories to implement first and second sets of entries, with the second set referencing the first set. The method configures a first pool of memories to implement the first set, with each first-set entry located at a particular location in at least one memory of the first pool. The method further configures a second pool of memories to implement the second set of entries. Each second-set entry includes: (i) a first set of bits indicating a memory page corresponding to one or more memories of the first pool; (ii) a second set of bits specifying a location in each of the one or more memories from which data for the referenced first-set entry is retrieved; and (iii) a third set of bits specifying a sub-location within the retrieved data. The number of bits in the third set is fixed for the second-set entries, while the number of sub-locations varies among the different locations specified by the second sets of bits of different second-set entries.",
+    "L2": "In certain embodiments, a method configures memory units to store a first group of entries and a second group of entries that refer to entries in the first group. A first memory pool is arranged to implement the first group, with every entry in that group residing at a designated location in at least one memory within the first pool. A second memory pool is arranged to implement the second group. Each entry in the second group contains: (i) a first bit field identifying a memory page associated with one or more memories in the first pool; (ii) a second bit field identifying, within each associated memory, a location from which data for the referenced first-group entry is obtained; and (iii) a third bit field identifying a sub-location in the obtained data. The third bit field has the same bit width across all second-group entries, even though the number of available sub-locations differs among the locations identified by the second bit fields of different second-group entries.",
+    "L3": "The method configures a collection of unit memories to implement two related sets of entries: a first set of entries and a second set of entries that reference entries in the first set.\n\nA first pool of unit memories stores the first-set entries. Each first-set entry is assigned to a particular position in at least one memory within this first pool. A second pool of unit memories separately stores the second-set entries.\n\nEach entry in the second set includes multiple fields that collectively identify information associated with a referenced first-set entry. These fields include bits identifying a memory page, bits specifying a location within the corresponding memories of the first pool, and bits selecting a sub-location within the data retrieved from that location.\n\nThe number of bits allocated to identify the sub-location remains fixed for all second-set entries. This fixed-width format is used even though different referenced locations may provide different numbers of available sub-locations.",
+    "L4": "A memory-configuration method organizes data across at least two memory pools. A first set of entries is stored in a first memory pool, while a second set of entries is stored in a second memory pool. Each entry in the second set can reference data associated with an entry in the first set. To form such a reference, the method uses an address containing a page field, a location field, and a sub-location field. The page field identifies a page in the first memory pool, the location field identifies a particular location within that page, and the sub-location field identifies specific data within the selected location.\n\nDifferent locations in the first memory pool may contain different numbers of sub-locations. For example, one location may contain a single item, while another may contain several independently addressable items. Despite this variation, the sub-location field has a fixed width in references generated by the second memory pool. A location that supports fewer sub-locations uses only the portion of the field needed to identify its available sub-locations; unused bit values may be reserved, ignored, or treated as invalid. A location supporting a larger number of sub-locations can use more or all of the available values represented by the same field.\n\nThis fixed-width format allows references to retain a consistent structure regardless of the organization of the referenced location. Hardware or software can therefore extract and process the page, location, and sub-location fields without requiring a different reference format for each location type. At the same time, the format permits individual locations to be configured with different capacities or internal arrangements.\n\nWhen a second-set entry is accessed, its reference is decoded to select the corresponding page and location in the first memory pool. The sub-location value is then interpreted according to the configuration of that location to select the desired data. In this manner, the method provides uniform cross-memory addressing while accommodating heterogeneous memory layouts, reducing address-processing complexity and allowing memory resources to be allocated more flexibly.",
+    "L5": "### Some, The, and Each\n\n**Some**, **the**, and **each** are common English determiners, but they have different meanings.\n\n- **Some** refers to an unspecified number or amount:  \n  *Some students stayed after class.*\n\n- **The** refers to a specific person, object, or group already known to the speaker and listener:  \n  *The students in my class are preparing for an exam.*\n\n- **Each** focuses on every individual member of a group separately:  \n  *Each student received a different assignment.*\n\nConsider this example:  \n*Some children entered the room. The children sat down, and each child received a book.*\n\nHere, **some** introduces an unspecified group, **the** refers back to that particular group, and **each** emphasizes its individual members."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style abstract describing a method for configuring two pools of unit memories, where entries in a second set reference entries in a first set using page bits, location bits, and fixed-width sub-location bits despite variable numbers of sub-locations.",
+      "output": "A method for configuring memory resources includes organizing a first plurality of unit memories into a first memory pool and a second plurality of unit memories into a second memory pool. Entries stored in the second memory pool reference entries stored in the first memory pool using respective reference fields comprising page bits identifying a unit memory of the first memory pool, location bits identifying a location within the identified unit memory, and a fixed-width sub-location field identifying a sub-location associated with the identified location. The number of available sub-locations varies among locations or unit memories, while the width of the sub-location field remains fixed and is selected to represent at least a maximum supported number of sub-locations. For a location having fewer than the maximum supported number, a subset of sub-location values is mapped to available sub-locations, and remaining values are designated as unused, reserved, or invalid. The method thereby provides uniform reference formatting in the second memory pool while accommodating variable sub-location configurations in the first memory pool.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a single-paragraph “some embodiments” summary for a memory architecture in which a first table is stored across one memory pool and a second table points into the first using a hierarchical page/location/sub-location address.",
+      "output": "In some embodiments, a memory architecture includes a first table distributed across a memory pool comprising a plurality of memory resources and a second table containing entries that reference data in the first table using respective hierarchical addresses, each hierarchical address including a page identifier, a location identifier within an identified page, and a sub-location identifier within an identified location. The hierarchy may enable efficient translation, access, allocation, and relocation of first-table entries across the memory pool, while allowing the second table to maintain compact references to such entries. In certain embodiments, one or more levels of the hierarchical address are decoded independently or in sequence to select a memory resource, page, location, and sub-location containing a corresponding first-table entry.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Convert the following invention concept into formal patent language: configure first-set entries in a first pool of memories; configure referencing second-set entries in another pool; and encode each reference with a memory-page field, a retrieval-location field, and a fixed-size sub-location field, even though retrieval locations may contain different numbers of sub-locations.",
+      "output": "**1. A method comprising:**\n\nconfiguring a first set of entries in a first memory pool;\n\nconfiguring a second set of entries in a second memory pool, each entry of the second set including a reference to at least one entry of the first set; and\n\nencoding each reference using a reference format comprising:\n\n- a memory-page field identifying a memory page associated with the referenced entry;\n- a retrieval-location field identifying, within the memory page, a retrieval location containing the referenced entry; and\n- a fixed-size sub-location field identifying a sub-location of the referenced entry within the retrieval location,\n\nwherein respective retrieval locations are configured to contain different numbers of sub-locations, and wherein the fixed-size sub-location field has a common bit length irrespective of the number of sub-locations contained in the retrieval location identified by the retrieval-location field.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "How might a patent claim-style description explain an indirect memory lookup system where one set of entries references another set distributed across multiple unit memories?",
+      "output": "**Example patent claim-style description:**\n\n1. **A memory lookup system comprising:**\n\n   a first memory configured to store a plurality of first entries, each first entry including a reference to a corresponding second entry;\n\n   a plurality of unit memories collectively configured to store a plurality of second entries, the second entries being distributed among the plurality of unit memories; and\n\n   lookup circuitry configured to:\n\n   receive a lookup key;\n\n   select and read one of the first entries based on at least a portion of the lookup key;\n\n   derive, from the reference included in the selected first entry, a unit-memory identifier and a local address;\n\n   select one of the plurality of unit memories according to the unit-memory identifier; and\n\n   access, at the local address in the selected unit memory, the second entry corresponding to the selected first entry.\n\n2. **The memory lookup system of claim 1**, wherein the reference comprises an indirect pointer encoded as a combination of a bank-selection field and an intra-bank address field.\n\n3. **The memory lookup system of claim 1**, wherein the lookup circuitry is configured to access the first memory during a first lookup stage and the selected unit memory during a second lookup stage.\n\n4. **The memory lookup system of claim 1**, wherein different first entries reference second entries stored in different respective unit memories.\n\n5. **The memory lookup system of claim 1**, wherein the plurality of unit memories are independently addressable and collectively form a logical second-level memory space.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Produce a concise patent abstract for configurable unit memories implementing two related entry sets, emphasizing that the second set’s pointers identify a memory page, a location within the page’s memories, and a sub-location within retrieved data.",
+      "output": "A memory system includes configurable unit memories storing first and second related sets of entries. Entries of the second set include pointers to corresponding information in the first set. Each pointer identifies a memory page, a location within one of the page’s memories, and a sub-location within data retrieved from that location. The pointer structure enables configurable organization and efficient access to related entries across the unit memories.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.715962441314554,
+      "excess_ratio": 0.4528658718925013,
+      "baseline_mean": 0.2630965694220527,
+      "baseline_n_valid": 5,
+      "output_chars": 1013,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7307692307692307,
+          "baseline_mean": 0.221611499982302,
+          "excess_ratio": 0.5091577307869287
+        },
+        "bz2": {
+          "actual_ratio": 0.6273584905660378,
+          "baseline_mean": 0.25482740533229165,
+          "excess_ratio": 0.3725310852337461
+        },
+        "lzma": {
+          "actual_ratio": 0.7844827586206896,
+          "baseline_mean": 0.3052775130474245,
+          "excess_ratio": 0.4792052455732651
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3940298507462686,
+      "excess_ratio": 0.13093328132421594,
+      "baseline_mean": 0.2630965694220527,
+      "baseline_n_valid": 5,
+      "output_chars": 991,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3236009732360097,
+          "baseline_mean": 0.221611499982302,
+          "excess_ratio": 0.10198947325370772
+        },
+        "bz2": {
+          "actual_ratio": 0.40224719101123596,
+          "baseline_mean": 0.25482740533229165,
+          "excess_ratio": 0.14741978567894432
+        },
+        "lzma": {
+          "actual_ratio": 0.4462809917355372,
+          "baseline_mean": 0.3052775130474245,
+          "excess_ratio": 0.1410034786881127
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.43597122302158275,
+      "excess_ratio": 0.17287465359953008,
+      "baseline_mean": 0.2630965694220527,
+      "baseline_n_valid": 5,
+      "output_chars": 1011,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4,
+          "baseline_mean": 0.221611499982302,
+          "excess_ratio": 0.17838850001769802
+        },
+        "bz2": {
+          "actual_ratio": 0.4113785557986871,
+          "baseline_mean": 0.25482740533229165,
+          "excess_ratio": 0.15655115046639545
+        },
+        "lzma": {
+          "actual_ratio": 0.4881889763779528,
+          "baseline_mean": 0.3052775130474245,
+          "excess_ratio": 0.18291146333052827
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1524809851503079,
+      "excess_ratio": -0.11061558427174478,
+      "baseline_mean": 0.2630965694220527,
+      "baseline_n_valid": 5,
+      "output_chars": 2183,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.10948081264108352,
+          "baseline_mean": 0.221611499982302,
+          "excess_ratio": -0.11213068734121849
+        },
+        "bz2": {
+          "actual_ratio": 0.1646273637374861,
+          "baseline_mean": 0.25482740533229165,
+          "excess_ratio": -0.09020004159480555
+        },
+        "lzma": {
+          "actual_ratio": 0.18032786885245902,
+          "baseline_mean": 0.3052775130474245,
+          "excess_ratio": -0.12494964419496549
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.09244992295839753,
+      "excess_ratio": -0.17064664646365513,
+      "baseline_mean": 0.2630965694220527,
+      "baseline_n_valid": 5,
+      "output_chars": 755,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.06345177664974619,
+          "baseline_mean": 0.221611499982302,
+          "excess_ratio": -0.15815972333255582
+        },
+        "bz2": {
+          "actual_ratio": 0.0625,
+          "baseline_mean": 0.25482740533229165,
+          "excess_ratio": -0.19232740533229165
+        },
+        "lzma": {
+          "actual_ratio": 0.1440677966101695,
+          "baseline_mean": 0.3052775130474245,
+          "excess_ratio": -0.161209716437255
+        }
+      }
+    }
+  }
+}

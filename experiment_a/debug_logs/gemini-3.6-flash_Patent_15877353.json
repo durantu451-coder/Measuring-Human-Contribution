@@ -1,0 +1,169 @@
+{
+  "model": "gemini-3.6-flash",
+  "domain": "Patent",
+  "id": "15877353",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nSystems and methods are disclosed herein for opening files via local applications. A first application on a local device receives a request to open a document specified by a user via a user interface associated with the first application, the document having a document identifier and associated with a first file stored on a server, the request comprising the document identifier and a user identifier. The first application forwards the request to open the document associated with the first file to a second application on the local device, and receives, from the second application, a list comprising one or more document processing applications that are on the local device and are capable of opening a second file that is stored on the local device and has the same document identifier as the document specified by the user, the second file being a local copy of the first file. The first application selects one of the document processing applications from the list, and causes a selected processing application to open the second file.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nSystems and methods are disclosed herein for opening files via local applications. A first application on a local device receives a request to open a document specified by a user via a user interface associated with the first application, the document having a document identifier and associated with a first file stored on a server, the request comprising the document identifier and a user identifier. The first application forwards the request to open the document associated with the first file to a second application on the local device, and receives, from the second application, a list comprising one or more document processing applications that are on the local device and are capable of opening a second file that is stored on the local device and has the same document identifier as the document specified by the user, the second file being a local copy of the first file. The first application selects one of the document processing applications from the list, and causes a selected processing application to open the second file.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n* A first application on a local device receives a user request to open a document stored on a server.\n* The first application forwards the request to a second application located on the local device.\n* The second application returns a list of local document processing applications capable of opening a local copy of the document.\n* The first application selects one document processing application from the returned list.\n* The first application causes the selected application to open the local copy of the document.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nTo address the challenge of opening server-stored documents using software on a user's machine, a first local application receives a document request and coordinates with a second local application to identify compatible document processing applications installed on the device. Ultimately, the first application selects one of the identified processing applications to open a local copy of the file, enabling seamless local access and editing of remotely managed documents.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Systems, The"
+  },
+  "outputs": {
+    "L1": "Here are a few polished versions tailored for clarity, professional flow, and technical precision—ideal for patent specifications, abstracts, or technical documentations.\n\n### Option 1: Professional & Fluent (Recommended)\n> Disclosed herein are systems and methods for opening files via local applications. A first application on a local device receives a user request, via an associated user interface, to open a specified document. The document is associated with a first file stored on a server and possesses a document identifier; the request itself comprises both the document identifier and a user identifier. \n> \n> The first application forwards the request to a second application on the local device. In response, the first application receives from the second application a list of one or more local document-processing applications capable of opening a second file—a locally stored copy of the first file sharing the same document identifier. The first application then selects a document-processing application from the list and prompts the selected application to open the second file.\n\n---\n\n### Option 2: Formal Patent / Legal Style (Strict Structural Flow)\n> Systems and methods are disclosed herein for opening files using local applications. A first application executing on a local device receives a user request, via its user interface, to open a designated document. The document has an associated document identifier and corresponds to a first file stored on a server, with the request including the document identifier and a user identifier. \n> \n> The first application forwards the request to a second application on the local device and receives, from the second application, a list of one or more local document-processing applications. These listed applications are capable of opening a second file, which is stored on the local device as a local copy of the first file and shares the document identifier. Subsequently, the first application selects one of the document-processing applications from the list and causes it to open the second file.\n\n---\n\n### Key Improvements Made:\n* **Enhanced Sentence Structure:** Broken down long, convoluted run-on sentences into digestible, logically ordered clauses.\n* **Eliminated Redundancy:** Streamlined repetitive phrasing (such as repeating *\"on the local device\"* and *\"document processing application\"*) without removing any technical constraints.\n* **Improved Readability:** Used punctuation (em-dashes and semicolons) to clearly separate parameters (IDs, file types, local vs. server locations) for quicker comprehension.",
+    "L2": "Here is a complete rewrite of the passage:\n\nThis technology outlines a process for launching documents using software installed directly on a user’s hardware. \n\nThe procedure begins when a user selects a remote document through the interface of a primary on-device program. This generates a command—containing both the user's credentials and the file's unique identifier—to access the original file hosted on a remote server. \n\nRather than opening the remote file directly, the primary program passes this command to a secondary on-device application. The secondary app then identifies and returns a list of compatible software tools installed on the device that can handle a local duplicate of that file, which shares the identical document identifier. \n\nFinally, the primary program chooses a suitable software tool from the provided list and instructs it to launch the locally saved copy.",
+    "L3": "Here are a few ways to expand these bullet points, depending on the context of your document (e.g., technical documentation, a patent application, or a software architectural overview).\n\n---\n\n### Option 1: Standard Technical Narrative\n*(Best for software documentation, process workflows, or technical summaries)*\n\nThe document retrieval and viewing workflow begins when a user initiates a request within a first application on a local device to open a document that is hosted on a remote server. Rather than attempting to handle the document directly, the first application forwards this request to a second application located locally on the device. \n\nUpon receiving the request, the second application evaluates the file type and system capabilities, generating a list of compatible, locally installed document processing applications that are capable of opening a local copy of the document. This list is then returned to the first application. From this list, the first application selects an appropriate document processing application—either automatically based on system rules or through user preference. Finally, the first application triggers the selected application, causing it to launch and open the local copy of the server-hosted document.\n\n---\n\n### Option 2: Formal / Patent Specification Style\n*(Best for intellectual property documentation or formal engineering specs)*\n\n**Detailed Description of the Process:**\n\n1. **Initiation of Request:** A first application executing on a client device receives an input from a user requesting access to a target document stored on a remote server.\n2. **Inter-Application Forwarding:** In response to the user request, the first application transmits the request to a second application installed on the same client device.\n3. **Capability Query and Discovery:** The second application processes the request by identifying one or more local document processing applications compatible with the format of the target document. The second application then transmits a list of these capable applications back to the first application.\n4. **Application Selection:** The first application evaluates the received list and selects a target document processing application from among the identified candidates.\n5. **Execution:** The first application sends a command to launch the selected document processing application, causing it to open a local instance of the target document.\n\n---\n\n### Option 3: Developer / Architecture Documentation\n*(Best for APIs, SDKs, or developer guides)*\n\n#### Workflow: Opening Server-Hosted Documents via Local Handlers\n\n1. **User Request:** The user selects a remote document within **Application A** (the primary local app). \n2. **Request Delegation:** **Application A** delegates the opening request by passing the document metadata to **Application B** (the local handler service).\n3. **Handler Discovery:** **Application B** scans the host device for installed applications capable of rendering the local file format and returns a list of compatible app identifiers to **Application A**.\n4. **App Selection:** **Application A** processes the list and selects the optimal target application (based on user defaults, system file associations, or active selection).\n5. **Document Launch:** **Application A** invokes the selected application via system intent/URI scheme, passing the local copy of the document to be rendered.",
+    "L4": "Here is a complete, detailed text expanded from your summary:\n\n---\n\n# Bridging Cloud and Desktop: A Framework for Local Processing of Remote Documents\n\n## 1. Introduction and Background\n\nIn modern enterprise and consumer environments, document management has largely shifted to cloud-based servers and remote repositories. While web applications have evolved to offer basic viewing and editing capabilities, native desktop applications—such as specialized CAD software, advanced photo editors, and full-featured office suites—continue to offer superior performance, offline capabilities, and comprehensive feature sets. \n\nHowever, bridging the gap between a server-stored document and a locally installed software application presents a significant technical challenge. Browsers and web portals are traditionally sandboxed from the user’s operating system for security reasons, making it difficult to directly launch native software to edit remote files. To deliver a frictionless user experience, software systems must intelligently orchestrate file transfers, application discovery, and file-association handling.\n\n## 2. System Architecture and Discovery Process\n\nTo seamlessly launch server-hosted files in local desktop software, the system relies on a coordinated workflow between specialized client-side components:\n\n1. **Request Initiation and Intercept (The First Application):**  \n   The process begins when a user selects a remote document within a web interface or cloud management portal. A lightweight, first local application—acting as a background agent or client-side handler—intercepts this request. This agent serves as the primary liaison between the remote server and the user’s local operating system.\n\n2. **System Environment Query (The Second Application):**  \n   Because the first application may operate within a limited context or web browser boundary, it coordinates with a second local application. This secondary application—often a system service, native messaging host, or operating system protocol handler—has direct access to the local machine’s registry and file-system associations. The first application queries the second application to scan the device’s environment.\n\n3. **Compatibility and Capabilities Identification:**  \n   The second application evaluates the MIME type, file extension, and metadata of the requested server document against the device’s installed software inventory. It generates a list of installed applications capable of processing that specific file format (for example, identifying whether Microsoft Word, LibreOffice, or a PDF reader is available on the machine).\n\n## 3. Execution, Synchronization, and Local Editing\n\nOnce the system determines which software applications are available on the user's machine, it proceeds to the execution phase:\n\n* **Application Selection:** The first application evaluates the identified candidates and selects the appropriate processing tool. This selection can be governed by pre-configured user preferences, system default file associations, or administrative policy rules defined by the organization.\n* **Local Copy Fetching:** Concurrently, the first application communicates with the remote server to securely download a cached, temporary local copy of the document to a designated working directory on the user’s device.\n* **Document Hand-Off:** The first application invokes the chosen processing application, passing the local file path as a launch parameter. The target application opens the file immediately, presenting it to the user in a native desktop window.\n* **Background Monitoring (Editing Loop):** While the user edits the document using their local software, the first application monitors the local file for modifications. Upon detecting a save event, the agent automatically synchronizes the updated local copy back to the remote server, maintaining version control and data integrity without requiring manual re-uploading by the user.\n\n## 4. Conclusion\n\nBy delegating file discovery and launching to a pair of coordinated local applications, this framework successfully overcomes the barriers between remote web repositories and native desktop software. Users benefit from the powerful editing capabilities of their locally installed tools, while organizations maintain the centralized management and security of server-stored documents. The result is a unified workflow that combines the security of cloud storage with the performance of native desktop computing.",
+    "L5": "**The Invisible Architecture: Understanding The Systems That Shape Our World**\n\nLook beneath the surface of any functioning reality, and you will inevitably find them: **the systems**. \n\nFrom the silent, rhythmic beating of a human heart to the sprawling, hyper-connected networks of global commerce, systems are the invisible architecture of existence. They are the structures that turn chaos into order, transform raw energy into meaningful action, and allow complex entities to thrive. To understand **the** world is not merely to observe individual events, but to recognize **the systems** that produce them.\n\nIn nature, systems display a breathtaking, delicate equilibrium. **The** biological systems within a single organism—the nervous, circulatory, and respiratory pathways—work in perpetual synergy to sustain life. Zoom out, and that same organism becomes a single node within a larger ecological system. A forest is not just a collection of trees; it is an intricate web of root networks, climate cycles, and species interdependence. In this realm, **the systems** are self-regulating, evolving over millennia to find balance in a changing environment.\n\nWhen humanity entered the equation, we began constructing **the systems** of our own design. We built physical infrastructures—transportation grids, water networks, and communication towers—to overcome natural limitations. Today, in **the** digital age, these mechanical networks have evolved into vast information systems. Millions of lines of code run silently in the background of daily life, processing data, routing signals, and powering **the** algorithms that dictate modern human interaction. \n\nYet, perhaps **the** most influential systems are neither biological nor technological, but abstract. Social, economic, and legal frameworks govern how billions of people coexist. When people speak of \"defying **the** system,\" they are usually referring to these invisible constructs—the cultural norms, market dynamics, and institutional rules that dictate opportunity and behavior. These social systems can offer stability and justice, but when improperly designed, they can also perpetuate inequality and inertia.\n\nWhat makes **the** concept of systems so powerful is the principle of emergence: the idea that a system as a whole possesses properties that its individual parts do not. A single neuron cannot think, but **the** neural system creates consciousness. A single line of code cannot reason, but **the** software system can solve complex problems. \n\nUltimately, human beings occupy a unique position within this framework. We are simultaneously the products of natural systems, the components of social systems, and **the** architects of technological systems. To navigate the future successfully—whether tackling climate change, refining artificial intelligence, or reforming human institutions—we must learn to think in terms of **the systems**. Only by seeing the connections, feedback loops, and underlying structures can we hope to shape **the** world for the better."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a single-paragraph patent abstract for a system and method that allows a local application to open a local copy of a server-hosted document by querying a secondary local app for compatible document processing software.",
+      "output": "A computer-implemented method and system are disclosed for opening server-hosted documents using locally available software applications. In response to a request to open a document stored on a remote server, a primary local application executing on a client device queries a secondary local application on the client device to identify document processing software compatible with the requested document type. The secondary local application evaluates local software capabilities or system file associations and returns an identifier of a compatible document processing application to the primary local application. Based on the returned identifier, the primary local application retrieves a local copy of the server-hosted document from the remote server and automatically passes the local copy to the identified compatible document processing application for opening and display on the client device.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a patent abstract about opening cloud documents with local apps.",
+      "output": "Here is a formal patent abstract based on the technical concept of opening cloud-hosted documents in native, locally installed applications:\n\n**ABSTRACT**\n\nMethods, systems, and computer-readable media are disclosed for opening and editing cloud-stored documents using native local applications. A client device receives, via a web-based user interface, a request to open a document hosted on a remote cloud server using a local application. In response to the request, a protocol handler on the client device invokes a local synchronization agent. The local synchronization agent retrieves the document from the remote cloud server, places the document into a managed local storage location, and acquires an edit lock for the document on the remote cloud server. The local synchronization agent launches the native local application associated with the document's file type, passing the local file path. The local synchronization agent monitors file system events corresponding to the managed local storage location, automatically transmitting updated document data to the remote cloud server upon detecting a save event, and releasing the edit lock upon closure of the native local application.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate a formal patent abstract describing a process where a first application receives a user request for a remote file, requests a list of capable local document processing applications from a second application, selects one, and opens the local cached version of that file.",
+      "output": "**ABSTRACT**\n\nA computer-implemented method, system, and non-transitory computer-readable medium for retrieving and rendering remote files using local applications are disclosed. The method includes receiving, at a first application executing on a client computing device, a user request to access a remote file stored in a network repository. Responsive to the user request, the first application transmits a query to a second application to identify one or more local document processing applications installed on the client computing device capable of handling the remote file format. Upon receiving a list of capable local document processing applications from the second application, the first application selects a target application from the list. The first application then initiates execution of the selected target application to open a locally cached version of the remote file, thereby providing seamless local access to the remotely requested content.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Can you write the \"Abstract\" section for a software patent disclosure? The invention details how a cloud storage user interface interacts with a local daemon to find and launch local applications capable of editing local copies of cloud files using document IDs.",
+      "output": "Here are a few options for the **Abstract** section, formatted according to standard patent application guidelines (single paragraph, under 150 words, clear technical language). \n\n### Option 1: Standard / Broad (Recommended)\n> Systems, methods, and non-transitory computer-readable media are disclosed for invoking local applications from a cloud storage interface using document identifiers. A cloud storage user interface executing on a client device receives a user command to edit a cloud-stored file. The cloud storage interface transmits a request containing a unique document identifier associated with the file to a local daemon running on the client device. The local daemon processes the document identifier to locate a local copy of the file cached or synchronized on the client device. Based on file characteristics or system mappings, the local daemon identifies an installed local application capable of editing the local copy. The local daemon then automatically launches the identified local application and passes the local copy of the file to the local application for editing.\n\n*(138 words)*\n\n---\n\n### Option 2: Method-Focused (Emphasizes the Step-by-Step Technical Process)\n> A method for seamlessly launching local applications from a web-based cloud storage interface is provided. The method includes displaying, via a cloud storage user interface on a local computing device, a representation of a document stored in a cloud environment. Upon detecting an edit request, the cloud user interface passes a document identifier to a background daemon executing locally on the device. The local daemon resolves the document identifier to a specific file path corresponding to a locally stored version of the document. The local daemon further determines a local application compatibility mapping for the locally stored version, launches the corresponding local application, and opens the locally stored version within the application, enabling direct editing of the file while maintaining synchronization with the cloud environment.\n\n*(133 words)*\n\n---\n\n### Key Patent Abstract Tips for This Invention:\n* **Avoid Marketing Jargon:** Notice terms like \"seamlessly\" are used sparingly; focus on technical mechanisms (e.g., *resolves, maps, transmits, executes*).\n* **Statutory Categories:** Starting with *\"Systems, methods, and non-transitory computer-readable media...\"* ensures broad coverage across all typical claim types.\n* **Core Distinction:** The abstract highlights the specific technical link: **Cloud UI $\\rightarrow$ Document ID $\\rightarrow$ Local Daemon $\\rightarrow$ Local App/File Resolution.**",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Write a legalese patent abstract titled \"Systems and methods for opening files via local applications\" involving document identifiers, user identifiers, local/server file synchronization, and application selection.",
+      "output": "**SYSTEMS AND METHODS FOR OPENING FILES VIA LOCAL APPLICATIONS**\n\n**ABSTRACT**\n\nSystems, methods, and computer-readable media are disclosed for facilitating the invocation and rendering of electronic files using locally instantiated software applications. In accordance with one embodiment, a computing system receives an access request comprising a document identifier associated with a target file stored in a server repository and a user identifier associated with a requesting user. In response to validating the user identifier, the system determines whether a local file instance corresponding to the document identifier exists on a client device and performs a file synchronization operation between the server repository and the client device to establish parity between the server file instance and the local file instance. The system further executes an application selection logic to identify, from a plurality of candidate local applications installed on the client device, a target local application compatible with the synchronized local file instance based on metadata associated with the document identifier and execution parameters linked to the user identifier. Upon selection, the system issues an execution command directing the client device to launch the target local application and open the synchronized local file instance therein.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.27663798808735945,
+      "excess_ratio": 0.09681862436930153,
+      "baseline_mean": 0.17981936371805793,
+      "baseline_n_valid": 5,
+      "output_chars": 2595,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2463768115942029,
+          "baseline_mean": 0.13869759150811625,
+          "excess_ratio": 0.10767922008608666
+        },
+        "bz2": {
+          "actual_ratio": 0.263671875,
+          "baseline_mean": 0.1830485707374187,
+          "excess_ratio": 0.0806233042625813
+        },
+        "lzma": {
+          "actual_ratio": 0.3178294573643411,
+          "baseline_mean": 0.21219543095567012,
+          "excess_ratio": 0.10563402640867098
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.25102319236016374,
+      "excess_ratio": 0.07120382864210581,
+      "baseline_mean": 0.17981936371805793,
+      "baseline_n_valid": 5,
+      "output_chars": 891,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.17699115044247787,
+          "baseline_mean": 0.13869759150811625,
+          "excess_ratio": 0.03829355893436162
+        },
+        "bz2": {
+          "actual_ratio": 0.24896265560165975,
+          "baseline_mean": 0.1830485707374187,
+          "excess_ratio": 0.06591408486424105
+        },
+        "lzma": {
+          "actual_ratio": 0.3157894736842105,
+          "baseline_mean": 0.21219543095567012,
+          "excess_ratio": 0.10359404272854039
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.13765903307888036,
+      "excess_ratio": -0.04216033063917757,
+      "baseline_mean": 0.17981936371805793,
+      "baseline_n_valid": 5,
+      "output_chars": 3409,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.11523588553750967,
+          "baseline_mean": 0.13869759150811625,
+          "excess_ratio": -0.02346170597060658
+        },
+        "bz2": {
+          "actual_ratio": 0.13114754098360656,
+          "baseline_mean": 0.1830485707374187,
+          "excess_ratio": -0.05190102975381214
+        },
+        "lzma": {
+          "actual_ratio": 0.16519174041297935,
+          "baseline_mean": 0.21219543095567012,
+          "excess_ratio": -0.04700369054269077
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.08750632271117856,
+      "excess_ratio": -0.09231304100687937,
+      "baseline_mean": 0.17981936371805793,
+      "baseline_n_valid": 5,
+      "output_chars": 4488,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.06592292089249494,
+          "baseline_mean": 0.13869759150811625,
+          "excess_ratio": -0.07277467061562132
+        },
+        "bz2": {
+          "actual_ratio": 0.0859822824387702,
+          "baseline_mean": 0.1830485707374187,
+          "excess_ratio": -0.09706628829864851
+        },
+        "lzma": {
+          "actual_ratio": 0.10980392156862745,
+          "baseline_mean": 0.21219543095567012,
+          "excess_ratio": -0.10239150938704267
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.022907488986784044,
+      "excess_ratio": -0.15691187473127388,
+      "baseline_mean": 0.17981936371805793,
+      "baseline_n_valid": 5,
+      "output_chars": 3052,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.009389671361502348,
+          "baseline_mean": 0.13869759150811625,
+          "excess_ratio": -0.1293079201466139
+        },
+        "bz2": {
+          "actual_ratio": 0.01779603011635866,
+          "baseline_mean": 0.1830485707374187,
+          "excess_ratio": -0.16525254062106004
+        },
+        "lzma": {
+          "actual_ratio": 0.04030226700251889,
+          "baseline_mean": 0.21219543095567012,
+          "excess_ratio": -0.17189316395315124
+        }
+      }
+    }
+  }
+}

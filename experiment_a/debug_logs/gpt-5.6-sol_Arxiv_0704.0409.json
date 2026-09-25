@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0409",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe present an analytic example of two dimensional quantum mechanical system, where the exponential suppression of the probability of over-barrier reflection changes non-monotonically with energy. The suppression is minimal at certain \"optimal\" energies where reflection occurs with exponentially larger probability than at other energies.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe present an analytic example of two dimensional quantum mechanical system, where the exponential suppression of the probability of over-barrier reflection changes non-monotonically with energy. The suppression is minimal at certain \"optimal\" energies where reflection occurs with exponentially larger probability than at other energies.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The work presents an analytic example of a two-dimensional quantum mechanical system.\n- The system exhibits over-barrier reflection with exponentially suppressed probability.\n- The exponential suppression varies non-monotonically with energy.\n- Certain “optimal” energies minimize the suppression.\n- At these optimal energies, reflection is exponentially more probable than at other energies.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nAn analytic two-dimensional quantum mechanical model examines how the exponential suppression of over-barrier reflection varies with energy. The suppression is non-monotonic and reaches minima at optimal energies, where reflection is exponentially more probable than at other energies.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The"
+  },
+  "outputs": {
+    "L1": "We present an analytically tractable example of a two-dimensional quantum-mechanical system in which the exponential suppression of the probability of over-barrier reflection varies nonmonotonically with energy. This suppression reaches a minimum at certain “optimal” energies, where reflection occurs with exponentially greater probability than at other energies.",
+    "L2": "We provide an analytically solvable example of a two-dimensional quantum system in which the exponential damping of above-barrier reflection varies nonmonotonically with energy. At specific “optimal” energy values, this damping reaches a minimum, making reflection exponentially more likely than at other energies.",
+    "L3": "This work presents an analytically solvable example of a two-dimensional quantum-mechanical system that exhibits over-barrier reflection. Although such reflection is classically forbidden, it occurs quantum mechanically with an exponentially suppressed probability. A key feature of the system is that the corresponding suppression exponent depends non-monotonically on the incident energy. Consequently, there are specific “optimal” energies at which the suppression reaches a minimum. At these energies, over-barrier reflection is exponentially more probable than it is at nearby or otherwise non-optimal energies.",
+    "L4": "An analytic two-dimensional quantum-mechanical model is used to study over-barrier reflection in the semiclassical regime. Although a particle has enough energy to pass over the barrier classically, quantum mechanics allows a small reflected component. This process is exponentially suppressed, with a probability of the form \\(R(E)\\sim \\exp[-F(E)/\\hbar]\\), where the suppression exponent \\(F(E)\\) is determined by complex classical trajectories.\n\nThe presence of a second degree of freedom makes the energy dependence qualitatively different from that of ordinary one-dimensional scattering. Energy can be redistributed between longitudinal motion across the barrier and transverse motion, producing several competing semiclassical reflection paths. As the total energy changes, the dominant path may switch from one branch to another, and the associated suppression exponent need not vary monotonically.\n\nThe analysis shows that \\(F(E)\\) develops local minima at particular, optimal energies. At these energies the relevant complex trajectory approaches the classically allowed region most efficiently, reducing the imaginary part of the action responsible for exponential suppression. Consequently, over-barrier reflection remains semiclassically rare but becomes exponentially more probable than at nearby lower or higher energies. Away from the optimal values, the exponent increases again and the reflection probability falls sharply.\n\nThus, increasing the incident energy does not simply make quantum reflection progressively less likely. In multidimensional systems, coupling between different modes of motion can create pronounced energy windows in which an otherwise strongly suppressed process is substantially enhanced. The model provides an explicit analytic illustration of this non-monotonic behavior and identifies optimal energies as a general feature of semiclassical scattering with more than one degree of freedom.",
+    "L5": "### The Power of “The”\n\n“The” is one of the smallest and most frequently used words in the English language. Although it may seem insignificant, it plays an essential role in communication. As a definite article, “the” identifies a particular person, place, object, or idea. For example, “a book” can refer to any book, while “the book” points to a specific one.\n\nThe word also helps create shared understanding. When someone says, “Look at the moon,” the listener knows exactly which moon is meant. In this way, “the” gives language clarity and precision.\n\nDespite containing only three letters, “the” demonstrates how even the simplest words can have great importance. It connects ideas, provides context, and makes everyday communication more effective."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a concise abstract about a two-dimensional quantum mechanical system exhibiting non-monotonic energy dependence in over-barrier reflection.",
+      "output": "We investigate over-barrier reflection in a two-dimensional quantum system, where a particle scatters from a smooth potential barrier with transverse confinement. Unlike the monotonic suppression expected in one-dimensional semiclassical scattering, coupling between longitudinal motion and transverse modes produces pronounced maxima and minima in the reflection probability as the incident energy increases. These features arise from interference among mode-conversion pathways and resonant excitation of quasi-bound transverse states. Our results demonstrate that multidimensional dynamics can qualitatively alter above-barrier scattering and provide a tunable mechanism for controlling quantum transport.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Can you describe an analytic example where the exponential suppression of above-barrier quantum reflection is minimized at certain optimal energies?",
+      "output": "A simple analytic example is a pair of well-separated smooth barriers,\n\\[\nV(x)=V_0\\,\\mathrm{sech}^2\\!\\frac{x-L/2}{a}\n     +V_0\\,\\mathrm{sech}^2\\!\\frac{x+L/2}{a},\n\\qquad L\\gg a .\n\\]\n\nNear the top of either barrier,\n\\[\nV(x)\\simeq V_0-\\frac12m\\omega^2x^2,\n\\qquad\n\\omega=\\sqrt{\\frac{2V_0}{ma^2}}.\n\\]\nFor an inverted parabolic barrier, the exact above-barrier reflection probability is\n\\[\nR_1(E)=\\frac{1}{1+\\exp\\!\\left[2\\pi(E-V_0)/(\\hbar\\omega)\\right]}\n       \\simeq\n       \\exp\\!\\left[-\\frac{2\\pi(E-V_0)}{\\hbar\\omega}\\right],\n\\quad E>V_0.\n\\]\nThus reflection is exponentially small.\n\nFor two barriers, however, there are two reflected amplitudes. In the weak-reflection limit they add as\n\\[\nr(E)\\simeq r_1(E)\\left[1+e^{i(2kL+\\delta)}\\right],\n\\qquad\nk=\\frac{\\sqrt{2mE}}{\\hbar},\n\\]\nwhere \\(\\delta\\) is the smooth-barrier reflection phase. Consequently,\n\\[\nR(E)\\simeq\n4R_1(E)\\cos^2\\!\\left(kL+\\frac{\\delta}{2}\\right).\n\\]\n\nReflection is largest—hence its exponential suppression is least effective—at the constructive-interference energies\n\\[\n2k(E_n)L+\\delta(E_n)=2\\pi n.\n\\]\nIf \\(\\delta\\) varies slowly,\n\\[\nE_n\\simeq\n\\frac{\\hbar^2}{2m}\n\\left(\\frac{\\pi n-\\delta/2}{L}\\right)^2,\n\\qquad E_n>V_0.\n\\]\nAt these energies,\n\\[\nR(E_n)\\simeq\n4\\exp\\!\\left[-\\frac{2\\pi(E_n-V_0)}{\\hbar\\omega}\\right],\n\\]\nwhereas halfway between them destructive interference can drive the leading reflection amplitude nearly to zero.\n\nStrictly speaking, for a single smooth barrier the exponential exponent increases monotonically with \\(E-V_0\\), so the least suppression occurs immediately above the barrier top. Discrete “optimal energies” arise when several complex reflection paths—or, as here, two spatially separated barriers—interfere constructively.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Summarize a theoretical result on resonantly enhanced over-barrier reflection in two-dimensional quantum mechanics.",
+      "output": "A theoretical analysis of two-dimensional quantum scattering shows that **reflection can become anomalously large even when the incident particle’s energy exceeds the classical barrier height**.\n\nNormally, over-barrier reflection from a smooth potential is exponentially small in the semiclassical limit. In two dimensions, however, motion transverse to the incident direction can create a **long-lived quasi-bound state** near the barrier. When the incident energy matches one of these metastable levels, the particle can be temporarily trapped and then decay back into the incoming channel. The corresponding pole of the scattering matrix produces a narrow Breit–Wigner- or Fano-type resonance, schematically\n\n\\[\nR(E)\\sim \\frac{\\Gamma_{\\rm in}^{\\,2}}\n{(E-E_r)^2+(\\Gamma/2)^2},\n\\]\n\nwith modifications when nonresonant background scattering is included.\n\nThus, although reflection remains exponentially weak away from resonance, it can approach order unity at a resonant energy. In the semiclassical regime the resonances are generally extremely narrow, so the enhancement requires precise energy tuning and may become small after averaging over a broad incident wave packet. The key result is that the extra degree of freedom permits transient trapping and resonant channel coupling—mechanisms absent in ordinary one-dimensional scattering from a single smooth barrier.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Draft two sentences explaining how reflection probability in a 2D quantum system can become exponentially larger at specific energies despite being above the barrier.",
+      "output": "In a 2D quantum system, coupling between longitudinal motion and transverse modes can create resonant complex trajectories that interfere constructively at discrete energies, even when the particle’s energy exceeds the barrier. At these energies, the usual semiclassical suppression of above-barrier reflection is strongly reduced, making the reflection probability exponentially larger than at nearby energies.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a brief research-style statement about non-monotonic semiclassical suppression of over-barrier reflection and the existence of optimal reflection energies.",
+      "output": "For above-barrier scattering from smooth potentials, the semiclassical reflection probability typically has the form\n\\[\nR(E)\\sim A(E)\\exp[-2\\mathcal S(E)/\\hbar],\n\\]\nwhere \\(\\mathcal S(E)\\) is the imaginary action associated with complex turning points. Because the relevant turning points and Stokes connections can change with energy, \\(\\mathcal S(E)\\) need not increase monotonically. Consequently, over-barrier reflection may be least suppressed at discrete optimal energies satisfying \\(\\partial_E\\mathcal S(E)=0\\), producing pronounced maxima in \\(R(E)\\) despite the absence of real classical turning points.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6184738955823293,
+      "excess_ratio": 0.45542116714192776,
+      "baseline_mean": 0.16305272844040158,
+      "baseline_n_valid": 5,
+      "output_chars": 364,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5990783410138248,
+          "baseline_mean": 0.12747807771196532,
+          "excess_ratio": 0.47160026330185956
+        },
+        "bz2": {
+          "actual_ratio": 0.496,
+          "baseline_mean": 0.1433052757993482,
+          "excess_ratio": 0.3526947242006518
+        },
+        "lzma": {
+          "actual_ratio": 0.7428571428571429,
+          "baseline_mean": 0.21017292438861065,
+          "excess_ratio": 0.5326842184685322
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4730113636363636,
+      "excess_ratio": 0.309958635195962,
+      "baseline_mean": 0.16305272844040158,
+      "baseline_n_valid": 5,
+      "output_chars": 314,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4117647058823529,
+          "baseline_mean": 0.12747807771196532,
+          "excess_ratio": 0.28428662817038763
+        },
+        "bz2": {
+          "actual_ratio": 0.4375,
+          "baseline_mean": 0.1433052757993482,
+          "excess_ratio": 0.2941947242006518
+        },
+        "lzma": {
+          "actual_ratio": 0.5538461538461539,
+          "baseline_mean": 0.21017292438861065,
+          "excess_ratio": 0.3436732294575432
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.45067873303167416,
+      "excess_ratio": 0.2876260045912726,
+      "baseline_mean": 0.16305272844040158,
+      "baseline_n_valid": 5,
+      "output_chars": 616,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4375,
+          "baseline_mean": 0.12747807771196532,
+          "excess_ratio": 0.3100219222880347
+        },
+        "bz2": {
+          "actual_ratio": 0.3917808219178082,
+          "baseline_mean": 0.1433052757993482,
+          "excess_ratio": 0.24847554611846
+        },
+        "lzma": {
+          "actual_ratio": 0.5148514851485149,
+          "baseline_mean": 0.21017292438861065,
+          "excess_ratio": 0.3046785607599042
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.15236739053043796,
+      "excess_ratio": -0.010685337909963621,
+      "baseline_mean": 0.16305272844040158,
+      "baseline_n_valid": 5,
+      "output_chars": 1934,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.12249443207126949,
+          "baseline_mean": 0.12747807771196532,
+          "excess_ratio": -0.004983645640695825
+        },
+        "bz2": {
+          "actual_ratio": 0.1501632208922742,
+          "baseline_mean": 0.1433052757993482,
+          "excess_ratio": 0.006857945092926004
+        },
+        "lzma": {
+          "actual_ratio": 0.1814516129032258,
+          "baseline_mean": 0.21017292438861065,
+          "excess_ratio": -0.028721311485384843
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.06325706594885595,
+      "excess_ratio": -0.09979566249154563,
+      "baseline_mean": 0.16305272844040158,
+      "baseline_n_valid": 5,
+      "output_chars": 756,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.035164835164835165,
+          "baseline_mean": 0.12747807771196532,
+          "excess_ratio": -0.09231324254713015
+        },
+        "bz2": {
+          "actual_ratio": 0.06109979633401222,
+          "baseline_mean": 0.1433052757993482,
+          "excess_ratio": -0.08220547946533599
+        },
+        "lzma": {
+          "actual_ratio": 0.08888888888888889,
+          "baseline_mean": 0.21017292438861065,
+          "excess_ratio": -0.12128403549972176
+        }
+      }
+    }
+  }
+}

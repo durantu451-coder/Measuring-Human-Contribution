@@ -1,0 +1,524 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0509",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIn this paper we study a class of backward stochastic differential equations (BSDEs) of the form dY(t)= -AY(t)dt -f_0(t,Y(t))dt -f_1(t,Y(t),Z(t))dt + Z(t)dW(t) on the interval [0,T], with given final condition at time T, in an infinite dimensional Hilbert space H. The unbounded operator A is sectorial and dissipative and the nonlinearity f_0(t,y) is dissipative and defined for y only taking values in a subspace of H. A typical example is provided by the so-called polynomial nonlinearities. Applications are given to stochastic partial differential equations and spin systems.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIn this paper we study a class of backward stochastic differential equations (BSDEs) of the form dY(t)= -AY(t)dt -f_0(t,Y(t))dt -f_1(t,Y(t),Z(t))dt + Z(t)dW(t) on the interval [0,T], with given final condition at time T, in an infinite dimensional Hilbert space H. The unbounded operator A is sectorial and dissipative and the nonlinearity f_0(t,y) is dissipative and defined for y only taking values in a subspace of H. A typical example is provided by the so-called polynomial nonlinearities. Applications are given to stochastic partial differential equations and spin systems.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper studies a class of backward stochastic differential equations on a finite interval with a prescribed terminal condition in an infinite-dimensional Hilbert space.\n- The equations involve an unbounded operator \\(A\\) that is both sectorial and dissipative.\n- The nonlinearity \\(f_0(t,y)\\) is dissipative and is defined only when \\(y\\) belongs to a subspace of the Hilbert space.\n- Polynomial nonlinearities are presented as a typical example of the framework.\n- Applications include stochastic partial differential equations and spin systems.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe paper analyzes infinite-dimensional backward stochastic differential equations with a sectorial dissipative operator and a dissipative nonlinearity defined on a subspace, focusing on cases such as polynomial nonlinearities. The framework accommodates these challenging nonlinear equations and demonstrates their relevance to stochastic partial differential equations and spin systems.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: BSDEs, Hilbert, The"
+  },
+  "outputs": {
+    "L1": "In this paper, we study a class of backward stochastic differential equations (BSDEs) of the form\n\\[\ndY(t)=-AY(t)\\,dt-f_0(t,Y(t))\\,dt-f_1(t,Y(t),Z(t))\\,dt+Z(t)\\,dW(t)\n\\]\non the interval \\([0,T]\\), with a prescribed terminal condition at time \\(T\\), in an infinite-dimensional Hilbert space \\(H\\). The unbounded operator \\(A\\) is sectorial and dissipative, while the nonlinearity \\(f_0(t,y)\\) is dissipative and defined only for \\(y\\) taking values in a subspace of \\(H\\). A typical example is furnished by the so-called polynomial nonlinearities. Applications to stochastic partial differential equations and spin systems are also presented.",
+    "L2": "This article investigates backward stochastic differential equations in an infinite-dimensional Hilbert space \\(H\\), posed on \\([0,T]\\) with a prescribed terminal value at time \\(T\\), and expressed as\n\\[\ndY(t)=-AY(t)\\,dt-f_0(t,Y(t))\\,dt-f_1(t,Y(t),Z(t))\\,dt+Z(t)\\,dW(t).\n\\]\nHere, \\(A\\) is an unbounded, sectorial, and dissipative operator. The dissipative nonlinearity \\(f_0(t,y)\\) is defined only when \\(y\\) belongs to a particular subspace of \\(H\\); polynomial nonlinearities constitute a standard example. The resulting framework is applied to stochastic partial differential equations and spin systems.",
+    "L3": "The paper investigates a class of backward stochastic differential equations on a finite time interval, subject to a prescribed terminal condition and formulated in an infinite-dimensional Hilbert space. A central feature of these equations is the presence of an unbounded linear operator \\(A\\), assumed to be both sectorial and dissipative. These properties provide the analytic structure needed to study the associated evolution problem and control the behavior of its solutions.\n\nThe nonlinear term \\(f_0(t,y)\\) is also assumed to satisfy a dissipativity condition. Unlike nonlinearities defined on the entire Hilbert space, however, \\(f_0\\) is defined only when the state variable \\(y\\) belongs to a suitable subspace. This restriction allows the framework to accommodate nonlinear terms with lower regularity or stronger growth. Polynomial nonlinearities constitute a representative example and illustrate the broad applicability of the assumptions.\n\nThe results are relevant to several classes of infinite-dimensional stochastic systems. In particular, the framework can be applied to backward equations associated with stochastic partial differential equations, as well as to models arising in spin systems.",
+    "L4": "The paper studies a class of infinite-dimensional backward stochastic differential equations driven by a cylindrical Wiener process. The equations are governed by a sectorial, dissipative linear operator and contain a nonlinear term that is itself dissipative but may be defined only on a more regular subspace of the underlying state space. This setting is particularly important when the nonlinearity has polynomial growth, since such terms are generally neither globally Lipschitz nor naturally defined on the entire Hilbert space.\n\nTo address these difficulties, the paper develops a functional-analytic framework that combines the smoothing properties of the semigroup generated by the sectorial operator with suitable dissipativity and growth assumptions on the nonlinear mapping. The solutions are formulated in an appropriate mild sense, allowing the singular behavior of the unbounded operator and the restricted domain of the nonlinearity to be handled simultaneously. Approximation and a priori estimate techniques make it possible to treat nonlinearities beyond the standard Lipschitz setting and to establish the fundamental well-posedness properties of the backward equation, including existence, uniqueness, and stability under natural assumptions.\n\nA central feature of the analysis is the use of an intermediate function space that is continuously embedded in the ambient state space and is preserved, in a suitable sense, by the regularizing action of the semigroup. The nonlinear term acts on this subspace, where polynomial and other locally defined dissipative mappings can be meaningfully controlled. Dissipativity provides the estimates needed to prevent excessive growth, while sectoriality supplies the regularity required to interpret the equation and pass to limits in approximating problems.\n\nThe framework is designed to cover backward equations associated with stochastic partial differential equations of reaction–diffusion type and related evolution systems. In these applications, the linear part typically corresponds to an elliptic differential operator, while the nonlinear part is a polynomial reaction term. Such nonlinearities arise naturally in models from mathematical physics and are often excluded by classical theories based on global Lipschitz continuity.\n\nThe results also apply to stochastic spin systems and other spatially distributed models with infinitely many interacting components. These examples illustrate that the abstract assumptions are broad enough to include equations with strong nonlinear interactions while retaining sufficient dissipative structure for rigorous analysis. Overall, the paper extends the theory of infinite-dimensional backward stochastic differential equations to a substantially more singular and nonlinear setting and provides tools that can be used in the probabilistic study of nonlinear stochastic evolution equations.",
+    "L5": "## BSDEs in Hilbert Spaces: The Infinite-Dimensional Perspective\n\nBackward stochastic differential equations (BSDEs) are a fundamental tool in stochastic analysis, mathematical finance, and optimal control. Unlike classical stochastic differential equations, which evolve forward from a prescribed initial condition, BSDEs are specified by a terminal condition and solved backward in time.\n\nIn an infinite-dimensional setting, the unknown processes take values in a Hilbert space. A typical Hilbert-valued BSDE has the form\n\n\\[\nY_t=\\xi+\\int_t^T f(s,Y_s,Z_s)\\,ds-\\int_t^T Z_s\\,dW_s,\n\\]\n\nwhere \\(\\xi\\) is the terminal condition, \\(f\\) is the generator, and \\(W\\) is a cylindrical Wiener process. The process \\(Y\\) takes values in a Hilbert space \\(H\\), while \\(Z\\) belongs to an appropriate space of Hilbert–Schmidt operators.\n\nThe Hilbert-space framework makes it possible to study stochastic systems with infinitely many degrees of freedom, including stochastic partial differential equations, delay equations, and distributed-parameter control problems. Under standard assumptions—such as measurability, Lipschitz continuity of the generator, and square-integrability of the terminal condition—one can establish the existence and uniqueness of a solution.\n\nThe main analytical challenges arise from infinite dimensionality, the structure of cylindrical noise, and the need to work with suitable operator spaces. Nevertheless, Hilbert-space geometry provides powerful tools, including orthogonal projections, energy estimates, and martingale representation results.\n\nBSDEs in Hilbert spaces also connect probabilistic methods with nonlinear partial differential equations. In particular, they can provide stochastic representations of solutions to infinite-dimensional Hamilton–Jacobi–Bellman equations. This relationship is especially important in stochastic control, where the BSDE may characterize both the value function and the optimal control strategy."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a concise abstract for a research paper on infinite-dimensional backward stochastic differential equations with sectorial dissipative operators and polynomial nonlinearities.",
+      "output": "We study infinite-dimensional backward stochastic differential equations driven by sectorial dissipative operators and nonlinearities of polynomial growth. Using analytic semigroup estimates, monotonicity arguments, and suitable a priori bounds, we establish existence and uniqueness of mild solutions in appropriate Hilbert-space settings. We further derive stability and regularity properties under minimal integrability assumptions on the terminal condition and coefficients. The results extend classical Lipschitz frameworks to polynomial nonlinearities and provide a probabilistic foundation for associated semilinear Kolmogorov equations and stochastic control problems in infinite dimensions.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize the scope, assumptions, and applications of a paper studying BSDEs in a Hilbert space.",
+      "output": "Please share the paper’s title, abstract, link, or PDF. “BSDEs in a Hilbert space” covers several works, so I need the specific paper to accurately summarize its:\n\n- **Scope:** the class of backward stochastic differential equations, Hilbert-space framework, and main results.\n- **Assumptions:** conditions on the generator, terminal data, noise, filtration, and operators.\n- **Applications:** such as stochastic control, infinite-dimensional PDEs, or stochastic evolution equations.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft an academic paragraph introducing BSDEs of the form \\(dY(t)=-AY(t)dt-f_0(t,Y(t))dt-f_1(t,Y(t),Z(t))dt+Z(t)dW(t)\\), including the main operator assumptions and examples.",
+      "output": "We consider backward stochastic evolution equations on a separable Hilbert space \\(H\\) of the form\n\\[\ndY(t)=-AY(t)\\,dt-f_{0}(t,Y(t))\\,dt-f_{1}(t,Y(t),Z(t))\\,dt+Z(t)\\,dW(t),\\qquad Y(T)=\\xi,\n\\]\nwhere \\(W\\) is a cylindrical Wiener process on a Hilbert space \\(U\\) and \\(Z(t)\\in L_{2}(U,H)\\). The typically unbounded linear operator \\(A:D(A)\\subset H\\to H\\) is assumed to be densely defined, closed, and to generate a strongly continuous—often analytic—quasi-contractive semigroup \\((e^{tA})_{t\\ge0}\\); equivalently, after a suitable shift, \\(A\\) is dissipative and satisfies an appropriate range condition. In variational formulations one instead assumes a Gelfand triple \\(V\\hookrightarrow H\\hookrightarrow V^{*}\\) and a coercivity estimate such as \\(\\langle Av,v\\rangle_{V^{*},V}\\le -c\\|v\\|_{V}^{2}+C\\|v\\|_{H}^{2}\\). These hypotheses permit mild or variational interpretations of the equation, while \\(f_{0}\\) is commonly monotone with polynomial growth and \\(f_{1}\\) is Lipschitz in \\((y,z)\\). Canonical examples include realizations of the Laplacian or uniformly elliptic operators with Dirichlet, Neumann, or Robin boundary conditions, the Stokes operator in incompressible fluid models, and generators of transition semigroups arising in stochastic control and infinite-dimensional Hamilton–Jacobi–Bellman equations.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Provide a short mathematical abstract about backward stochastic differential equations with unbounded sectorial operators, dissipative nonlinearities defined on a subspace, and applications to SPDEs and spin systems.",
+      "output": "We study backward stochastic differential equations in Hilbert spaces whose drift contains an unbounded sectorial operator and a nonlinear dissipative term defined only on a dense subspace. Using analytic-semigroup estimates, monotonicity methods, and suitable approximation schemes, we establish existence, uniqueness, and stability of mild solutions under polynomial-growth assumptions. The framework accommodates singular terminal data and yields probabilistic representations for associated infinite-dimensional Kolmogorov and Hamilton–Jacobi equations. Applications include semilinear stochastic partial differential equations and infinite systems of interacting spins with dissipative, possibly non-Lipschitz, local dynamics.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "What might the abstract of a paper on infinite-dimensional BSDEs with polynomial nonlinearities and a prescribed terminal condition look like?",
+      "output": "**Abstract.** We study backward stochastic differential equations on a separable Hilbert space with nonlinearities of polynomial growth and a prescribed terminal condition. The equations are driven by a cylindrical Wiener process and are considered under monotonicity, coercivity, and local Lipschitz assumptions that allow the generator to grow superlinearly in the state variable. Using finite-dimensional approximation, truncation, and uniform a priori estimates, we establish existence and uniqueness of adapted mild solutions in suitable \\(L^{p}\\)-spaces. We also prove stability with respect to the terminal datum and the coefficients, together with regularity estimates for the solution and its martingale integrand. When the forward process is Markovian, the resulting BSDE provides a probabilistic representation of the mild solution to an associated infinite-dimensional semilinear Kolmogorov equation with polynomial nonlinearity and prescribed terminal value. The results extend standard Lipschitz BSDE theory to a broad class of dissipative polynomial generators arising in stochastic evolution equations and control problems.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6416600159616919,
+      "excess_ratio": 0.46377608088981503,
+      "baseline_mean": 0.17788393507187683,
+      "baseline_n_valid": 5,
+      "output_chars": 641,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6404199475065617,
+          "baseline_mean": 0.14118490061344965,
+          "excess_ratio": 0.49923504689311204
+        },
+        "bz2": {
+          "actual_ratio": 0.5754716981132075,
+          "baseline_mean": 0.16395872601168782,
+          "excess_ratio": 0.4115129721015197
+        },
+        "lzma": {
+          "actual_ratio": 0.7053571428571429,
+          "baseline_mean": 0.2214900099771465,
+          "excess_ratio": 0.4838671328799964
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4660519698239732,
+      "excess_ratio": 0.28816803475209635,
+      "baseline_mean": 0.17788393507187683,
+      "baseline_n_valid": 5,
+      "output_chars": 606,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.425414364640884,
+          "baseline_mean": 0.14118490061344965,
+          "excess_ratio": 0.2842294640274343
+        },
+        "bz2": {
+          "actual_ratio": 0.45614035087719296,
+          "baseline_mean": 0.16395872601168782,
+          "excess_ratio": 0.29218162486550514
+        },
+        "lzma": {
+          "actual_ratio": 0.5092592592592593,
+          "baseline_mean": 0.2214900099771465,
+          "excess_ratio": 0.2877692492821128
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3582697201017812,
+      "excess_ratio": 0.18038578502990438,
+      "baseline_mean": 0.17788393507187683,
+      "baseline_n_valid": 5,
+      "output_chars": 1214,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.33878887070376434,
+          "baseline_mean": 0.14118490061344965,
+          "excess_ratio": 0.1976039700903147
+        },
+        "bz2": {
+          "actual_ratio": 0.3153846153846154,
+          "baseline_mean": 0.16395872601168782,
+          "excess_ratio": 0.15142588937292756
+        },
+        "lzma": {
+          "actual_ratio": 0.4147727272727273,
+          "baseline_mean": 0.2214900099771465,
+          "excess_ratio": 0.1932827172955808
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.12011316872427989,
+      "excess_ratio": -0.05777076634759694,
+      "baseline_mean": 0.17788393507187683,
+      "baseline_n_valid": 5,
+      "output_chars": 2904,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.09433962264150944,
+          "baseline_mean": 0.14118490061344965,
+          "excess_ratio": -0.046845277971940213
+        },
+        "bz2": {
+          "actual_ratio": 0.11031746031746031,
+          "baseline_mean": 0.16395872601168782,
+          "excess_ratio": -0.0536412656942275
+        },
+        "lzma": {
+          "actual_ratio": 0.15339233038348082,
+          "baseline_mean": 0.2214900099771465,
+          "excess_ratio": -0.06809767959366567
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.04439252336448591,
+      "excess_ratio": -0.13349141170739093,
+      "baseline_mean": 0.17788393507187683,
+      "baseline_n_valid": 5,
+      "output_chars": 1958,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.02931937172774869,
+          "baseline_mean": 0.14118490061344965,
+          "excess_ratio": -0.11186552888570096
+        },
+        "bz2": {
+          "actual_ratio": 0.036669970267591674,
+          "baseline_mean": 0.16395872601168782,
+          "excess_ratio": -0.12728875574409615
+        },
+        "lzma": {
+          "actual_ratio": 0.06589147286821706,
+          "baseline_mean": 0.2214900099771465,
+          "excess_ratio": -0.15559853710892943
+        }
+      }
+    }
+  },
+  "api_provenance": {
+    "config": {
+      "gpt_gateway": 2,
+      "max_output_tokens": 4096,
+      "require_status": "completed"
+    },
+    "main_calls": {
+      "L1_polish": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_03e8a7ebbd51202d006a88befc6c18819690f3ba8d1e6317ab",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 171,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 177,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 348
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:11:28.296044+00:00"
+      },
+      "L2_rewrite": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_04ff8e728683fb11006a88bf02767881958037f1b044b43fe6",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 174,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 163,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 337
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:11:33.067206+00:00"
+      },
+      "L3_bullets": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_01ff23d2e6cf602e006a88bf073b6c81959d77201875aa203c",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 184,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 114,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 298
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:11:37.879676+00:00"
+      },
+      "L3_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_00b9593d4d4ad6b6006a88bf0c048c819492d4319aed0cca27",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 131,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 218,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 349
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:11:44.538815+00:00"
+      },
+      "L4_2sent": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0538f1e7ad768d3b006a88bf12bc1c8195be68a74022363a8d",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 196,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 100,
+          "output_tokens_details": {
+            "reasoning_tokens": 36
+          },
+          "total_tokens": 296
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:11:48.908819+00:00"
+      },
+      "L4_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0ab696176f89ae11006a88bf179d108190b550834dc9c13d47",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 77,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 541,
+          "output_tokens_details": {
+            "reasoning_tokens": 59
+          },
+          "total_tokens": 618
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:12:02.280475+00:00"
+      },
+      "L5_keywords": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0b84796b72111423006a88bf2467e881949221c9b91b88d62f",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 25,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 460,
+          "output_tokens_details": {
+            "reasoning_tokens": 69
+          },
+          "total_tokens": 485
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:12:12.255868+00:00"
+      }
+    },
+    "counterfactuals": {
+      "reconstruct": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_07d79f6a705d13b9006a88bf2eb9048195932ffd4b146f79fe",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 247,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 181,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 428
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:12:19.247486+00:00"
+      },
+      "outputs": [
+        {
+          "label": "cf_1",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0b13aa3f39da2317006a88bf35d98c8193b701f6ba5c2f538a",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 32,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 141,
+                "output_tokens_details": {
+                  "reasoning_tokens": 25
+                },
+                "total_tokens": 173
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:12:25.238729+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_2",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0ce9372edb89c07e006a88bf3bf81c81978ef04708d6e62636",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 29,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 138,
+                "output_tokens_details": {
+                  "reasoning_tokens": 32
+                },
+                "total_tokens": 167
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:12:30.848411+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_3",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_09b255bbbcaca098006a88bf410cac819783ddee3fcc726c8c",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 62,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 497,
+                "output_tokens_details": {
+                  "reasoning_tokens": 123
+                },
+                "total_tokens": 559
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:12:42.186484+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_4",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_078680562c4625eb006a88bf4c4d4c8197acc7663d9c443271",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 43,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 182,
+                "output_tokens_details": {
+                  "reasoning_tokens": 56
+                },
+                "total_tokens": 225
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:12:49.339154+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_5",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0c6078abcc3e005c006a88bf53d6948190869bfda35eead491",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 31,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 285,
+                "output_tokens_details": {
+                  "reasoning_tokens": 75
+                },
+                "total_tokens": 316
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:12:57.728685+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

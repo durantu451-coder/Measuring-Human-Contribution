@@ -1,0 +1,169 @@
+{
+  "model": "claude-sonnet-5",
+  "domain": "Arxiv",
+  "id": "0704.0588",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA new expression as a certain asymptotic limit via \"discrete micro-states\" of permutations is provided to the mutual information of both continuous and discrete random variables.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA new expression as a certain asymptotic limit via \"discrete micro-states\" of permutations is provided to the mutual information of both continuous and discrete random variables.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A new expression is provided for the mutual information of both continuous and discrete random variables.\n- This expression is formulated as a certain asymptotic limit.\n- The asymptotic limit is derived using \"discrete micro-states\" of permutations.\n- The approach applies uniformly across both continuous and discrete random variable types.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA novel expression for the mutual information of continuous and discrete random variables is derived by taking a certain asymptotic limit using \"discrete micro-states\" of permutations. This approach yields a new formulation that connects mutual information to combinatorial permutation structures, offering a fresh perspective on quantifying statistical dependence between variables.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: A new expression"
+  },
+  "outputs": {
+    "L1": "A new expression is provided for the mutual information of both continuous and discrete random variables, formulated as a certain asymptotic limit derived from \"discrete micro-states\" of permutations.",
+    "L2": "A novel formulation is presented that reinterprets mutual information—applicable to both continuous and discrete random variables—as a particular limiting case derived from \"discrete micro-states\" associated with permutations.",
+    "L3": "# A Unified Expression for Mutual Information via Permutation-Based Micro-States\n\n## Introduction\n\nMutual information serves as a fundamental measure of statistical dependence between random variables, finding applications across information theory, statistics, machine learning, and physics. Traditionally, the treatment of mutual information has required somewhat distinct mathematical machinery depending on whether the underlying random variables are continuous or discrete in nature. This distinction, while mathematically necessary in classical formulations, introduces a degree of conceptual fragmentation that can obscure the deeper unity underlying the concept of statistical dependence itself.\n\n## The New Expression\n\nIn this work, we introduce a novel expression for mutual information that is capable of accommodating both continuous and discrete random variables within a single, coherent mathematical framework. Rather than relying on separate definitions—one based on integrals over probability density functions for continuous variables, and another based on sums over probability mass functions for discrete variables—our formulation unifies these two cases through a common underlying construction. This is significant because it removes the need to treat the continuous and discrete settings as fundamentally different objects requiring separate theoretical justifications; instead, both emerge as instances of a single overarching principle.\n\n## Formulation as an Asymptotic Limit\n\nThe key innovation enabling this unification lies in expressing mutual information as the limit of a well-defined asymptotic process. Rather than defining mutual information directly through its classical closed-form expressions, we construct it as the limiting value of a sequence of approximating quantities, each computed at a certain finite scale of resolution. As this resolution parameter is taken to infinity (or, depending on the construction, to an appropriate limiting regime), the sequence converges to a value that recovers the standard mutual information in both the continuous and discrete cases.\n\nThis asymptotic construction is not merely a technical convenience; it provides an operational and constructive pathway toward mutual information, revealing its structure as an emergent quantity arising from more elementary combinatorial or probabilistic considerations, rather than as a definition imposed axiomatically from the outset.\n\n## Discrete Micro-States of Permutations\n\nCentral to this asymptotic derivation is the introduction of what we term \"discrete micro-states\" of permutations. The core idea is to discretize the underlying probability space—regardless of whether the original variables are continuous or discrete—into a finite collection of micro-states that are indexed and organized via permutations. These permutation-based micro-states serve as the elementary combinatorial building blocks from which the asymptotic limit is constructed.\n\nSpecifically, by considering the ways in which finite samples or realizations of the random variables can be arranged, ordered, or matched against one another through permutations, one obtains a combinatorial quantity that captures the essential dependence structure between the variables at a finite, discretized level. As the number of micro-states increases (corresponding to finer partitions or larger sample sizes), the combinatorial quantity derived from these permutations converges to the mutual information of the underlying variables. This permutation-based approach effectively bridges the gap between the discrete combinatorial world of finite arrangements and the continuous or discrete probabilistic world of the original random variables.\n\n## Uniform Applicability Across Variable Types\n\nA particularly compelling feature of this framework is its uniformity: the same underlying construction—built from discrete micro-states of permutations and taken to its asymptotic limit—applies without modification to both continuous and discrete random variables. There is no need to invoke separate combinatorial arguments or distinct limiting procedures depending on the nature of the variables involved. Whether the random variables in question are drawn from a continuous probability distribution, a discrete probability distribution, or even a mixture of the two, the same permutation-based micro-state construction yields the correct expression for mutual information in the appropriate limit.\n\n## Significance\n\nThis unification carries several important implications. First, it offers conceptual clarity by demonstrating that mutual information, despite its differing classical formulations for continuous and discrete variables, is fundamentally rooted in a single combinatorial principle. Second, it opens the door to new computational and estimation techniques for mutual information, particularly in settings involving mixed-type data (i.e., data containing both continuous and discrete components), which have historically posed challenges for classical estimators. Finally, the permutation-based micro-state construction may provide new theoretical tools for analyzing the finite-sample behavior of mutual information estimators, since the asymptotic limit is approached through a well-characterized sequence of finite, discrete approximations.\n\n## Conclusion\n\nBy reformulating mutual information as the asymptotic limit of a permutation-based combinatorial construction involving discrete micro-states, this work provides a unified treatment that transcends the traditional divide between continuous and discrete random variables. This approach not only deepens our theoretical understanding of mutual information as an emergent quantity but also lays the groundwork for more flexible and general-purpose tools for its estimation and analysis in mixed and complex data settings.",
+    "L4": "# Mutual Information via Discrete Permutation Micro-States: A Combinatorial Reformulation\n\n## Introduction and Motivation\n\nMutual information stands as one of the most fundamental quantities in information theory, providing a rigorous measure of statistical dependence between random variables. Traditionally, mutual information between a continuous random variable and a discrete random variable is computed using integral expressions involving probability density functions, marginal distributions, and joint distributions. While this classical formulation is mathematically elegant and widely applicable, it can obscure the underlying combinatorial nature of dependence structures, particularly in contexts where discrete symbolic representations of continuous data are more natural or computationally tractable.\n\nThis work introduces a novel approach to deriving mutual information by constructing a bridge between continuous probability distributions and combinatorial structures through the concept of \"discrete micro-states\" of permutations. The central idea is to discretize the continuous variable into a large number of micro-states, each corresponding to a particular ordering or permutation of underlying discrete symbols, and then to take a carefully constructed asymptotic limit as the number of micro-states grows large. This procedure yields a new, combinatorially motivated expression for mutual information that recovers the classical formula in the appropriate limit while simultaneously revealing a deeper connection between information-theoretic quantities and permutation-based combinatorics.\n\n## Discrete Micro-States and Permutation Structures\n\nThe foundation of this approach lies in representing continuous random variables through discrete micro-states, which can be understood as fine-grained partitions or samples of the underlying continuous state space. Each micro-state is associated with a specific permutation of discrete symbols, effectively encoding local ordering information that is typically lost in standard density-based formulations of continuous variables.\n\nBy constructing an ensemble of permutations that respects both the marginal distribution of the discrete random variable and the local statistical structure of the continuous random variable, one obtains a combinatorial object whose entropy and joint entropy can be computed using standard counting arguments from permutation theory. Specifically, the number of distinct permutation micro-states consistent with a given macroscopic constraint grows combinatorially, and the logarithm of this count—when properly normalized—gives rise to entropy-like quantities analogous to those appearing in statistical mechanics.\n\n## Derivation of the Novel Mutual Information Expression\n\nThe key technical contribution of this work is the derivation of mutual information as the appropriate asymptotic limit of a combinatorial expression built from permutation micro-state counts. As the number of micro-states $N$ tends to infinity, the discrete permutation-based entropy terms converge, after suitable rescaling, to continuous differential entropy and discrete Shannon entropy terms respectively. The joint permutation structure, which captures correlations between the continuous and discrete variables, similarly converges to the joint entropy term appearing in the standard mutual information formula.\n\nHowever, unlike the classical derivation—which proceeds directly from the definition of mutual information as a Kullback-Leibler divergence between joint and product-of-marginal distributions—this permutation-based approach naturally incorporates finite-size correction terms and reveals how discrete combinatorial fluctuations manifest in the continuum limit. The resulting expression can be written as a sum of a classical mutual information term plus correction terms that vanish in the strict asymptotic limit but may be significant in finite-sample or finite-resolution settings.\n\nThis derivation proceeds through several key steps:\n\n1. **Discretization**: The continuous random variable is partitioned into $N$ micro-states of decreasing width, each labeled according to its rank or position within a permutation.\n\n2. **Combinatorial Counting**: The number of joint permutation micro-states consistent with the observed discrete-continuous dependence structure is computed using multinomial coefficients and Stirling-type approximations.\n\n3. **Entropy Extraction**: Taking the logarithm of these combinatorial counts and applying Stirling's approximation yields entropy-like terms that scale appropriately with $N$.\n\n4. **Asymptotic Limit**: Taking $N \\to \\infty$ while maintaining the correspondence between micro-state resolution and continuous probability density yields the novel mutual information formula.\n\n## Connection to Combinatorial Permutation Structures\n\nA particularly compelling aspect of this new formulation is its explicit connection to combinatorial permutation structures. Rather than treating mutual information purely as an information-theoretic quantity derived from probability distributions, this approach reframes it as an emergent property of counting problems involving permutations. This reframing offers several conceptual advantages:\n\n- **Interpretability**: The permutation-based derivation provides an intuitive combinatorial interpretation of mutual information as a measure of \"orderings\" or \"arrangements\" that are consistent with observed statistical dependencies, rather than purely as a measure of divergence between distributions.\n\n- **Connections to Statistical Mechanics**: The use of micro-state counting and asymptotic limits closely parallels the derivation of thermodynamic entropy from statistical mechanical micro-states, suggesting deep structural analogies between information theory and statistical physics that may be exploited for further theoretical development.\n\n- **Discrete-Continuous Bridge**: By explicitly constructing a discrete combinatorial object that converges to a continuous variable in an appropriate limit, this approach offers a rigorous mathematical bridge between fully discrete and fully continuous formulations of mutual information, potentially aiding in the analysis of mixed discrete-continuous systems that arise frequently in applications.\n\n## Implications and Applications\n\nThe novel formulation of mutual information derived through this permutation-based approach has several potential implications for both theoretical and applied information theory:\n\n**Theoretical Implications**: This work suggests that mutual information, traditionally viewed as a purely probabilistic construct, admits a natural combinatorial interpretation rooted in permutation counting. This opens avenues for exploring connections between information theory and other combinatorial disciplines, including algebraic combinatorics, the theory of symmetric functions, and random permutation models.\n\n**Computational Applications**: In practical settings where continuous data must be discretized for computational tractability—such as in machine learning pipelines, signal processing, or statistical estimation from finite samples—this permutation-based framework may offer new algorithmic approaches for estimating mutual information directly from discrete micro-state representations, potentially with favorable finite-sample properties compared to standard density estimation techniques.\n\n**Statistical Estimation**: The explicit finite-$N$ correction terms that arise naturally in this derivation may prove useful for constructing improved estimators of mutual information from finite datasets, where classical plug-in estimators based on density estimation are known to suffer from bias and variance issues, particularly in high-dimensional settings.\n\n## Conclusion\n\nThis work presents a novel derivation of mutual information for continuous and discrete random variables by leveraging the combinatorial structure of discrete permutation micro-states in an appropriate asymptotic limit. This approach not only recovers the classical mutual information formula but also reveals a rich combinatorial structure underlying this fundamental information-theoretic quantity. By connecting mutual information to permutation-based counting arguments, this work offers a fresh perspective that bridges information theory, combinatorics, and statistical mechanics, opening new avenues for both theoretical investigation and practical estimation methodologies. Future work may explore extensions of this framework to multivariate settings, connections to other information-theoretic quantities such as conditional mutual information and transfer entropy, and the development of practical algorithms for mutual information estimation based on these combinatorial principles.",
+    "L5": "# A New Expression\n\nThere is a particular moment when language fails you—when the feeling you carry is too strange, too specific, or too vast for any word that already exists. In that gap between experience and expression, something remarkable can happen: a new phrase is born, a fresh metaphor takes shape, or an old word bends into unfamiliar territory to hold what needs to be held.\n\nEvery language began this way. Someone, at some point, needed to say something that hadn't been said before, and so they said it in a new way. Poets do this deliberately, reaching past cliché toward something that captures a feeling with startling precision. But it happens in ordinary life too—a child invents a word for a feeling adults have forgotten how to name, or a community coins slang that perfectly encodes a shared experience outsiders can't quite access.\n\nA new expression is never just decoration. It's evidence of thought reaching its edge and pushing further. When we say something in a genuinely new way, we're not simply describing the world—we're expanding what can be noticed, what can be shared, what can be understood between people. The phrase \"it is what it is\" once didn't exist. Neither did \"gaslighting\" in its current sense, or \"liminal space,\" or countless other expressions now so embedded in common speech that we forget they were once someone's small act of linguistic courage.\n\nThis is why new expressions matter beyond mere novelty. They are the visible trace of consciousness trying to catch up with itself—proof that experience continues to outpace our existing vocabulary, and that we, as speakers and thinkers, are still capable of closing that gap. To coin a new expression is to insist that something real and specific has been felt, and that it deserves not just any words, but the right ones—even if they have to be invented on the spot."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize the key contribution of a paper that derives mutual information for continuous and discrete random variables using an asymptotic limit based on discrete micro-states of permutations.",
+      "output": "# Key Contribution Summary\n\nThe paper's central contribution is developing a **unified framework for mutual information** that bridges continuous and discrete random variables through a **combinatorial/asymptotic approach** based on counting discrete micro-states.\n\n## Core Methodology\n\nThe key innovation lies in the derivation technique:\n\n1. **Micro-state construction**: Rather than starting from continuous probability densities directly, the approach begins by partitioning the space into discrete micro-states (analogous to statistical mechanics), and counts the number of **permutations** or arrangements consistent with a given macro-state (joint/marginal distribution).\n\n2. **Asymptotic limit**: As the number of micro-states (or the resolution of discretization) grows without bound, the combinatorial expressions—built from multinomial coefficients or permutation counts—are shown to converge to the standard mutual information formula:\n$$I(X;Y) = \\int\\int p(x,y) \\log\\frac{p(x,y)}{p(x)p(y)}\\, dx\\, dy$$\n\n3. **Unification of discrete and continuous cases**: Because the derivation starts from a fundamentally discrete combinatorial object (permutations of micro-states), it naturally recovers the **discrete mutual information** formula when the state space remains finite, and it recovers the **continuous (differential) mutual information** as a well-defined limit when the discretization is refined — avoiding the usual ad hoc or heuristic jump from summation to integration.\n\n## Significance\n\n- **Rigorous justification**: This provides a more rigorous, information-theoretic/statistical-mechanical justification for why the same functional form of mutual information applies across discrete and continuous settings, rather than simply asserting the continuous case as an analogy to the discrete one.\n\n- **Conceptual bridge**: It connects mutual information to entropy-counting arguments (reminiscent of Boltzmann's derivation of thermodynamic entropy from microstate counting), giving an alternative, more physically/combinatorially grounded derivation than the standard measure-theoretic construction via Radon-Nikodym derivatives.\n\n- **Consistency check**: The asymptotic limit approach confirms that mutual information remains a well-behaved, finite, and meaningful quantity even in the continuous limit, despite the divergence of differential entropy alone, since mutual information is expressed as a difference/ratio of densities that cancels the divergent terms.\n\nIf you can share the specific paper or additional details (authors, exact formulas, context), I can refine this summary to more precisely match its actual claims and results.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a concise abstract sentence describing a new formula for mutual information derived via a permutation-based micro-state asymptotic approach.",
+      "output": "**Abstract:** We derive a novel closed-form expression for mutual information by analyzing the asymptotic combinatorics of permutation-based microstate configurations, yielding an information-theoretic measure that captures statistical dependencies through the entropy of microstate rearrangements rather than traditional joint-marginal probability decompositions.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Can you paraphrase this abstract: a novel expression for mutual information of continuous and discrete variables is obtained as an asymptotic limit through discrete micro-states of permutations?",
+      "output": "Here's a paraphrase of that abstract:\n\n\"A new formula for mutual information between continuous and discrete variables is derived by taking the asymptotic limit of discrete permutation-based micro-states.\"\n\nOr, expressed slightly differently:\n\n\"By examining the limiting behavior of discrete micro-states formed through permutations, a new mathematical expression for the mutual information between continuous and discrete variables is derived.\"\n\nIf you can share more context or the full abstract, I can refine this further to better match the tone and terminology of the original work.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Provide a one-sentence summary of a theoretical result connecting permutation micro-states to mutual information in probability theory.",
+      "output": "In the framework of typical sequences and permutation-based coding, the mutual information between two random variables can be characterized as the exponential rate of decay in the number of jointly typical permutation micro-states that are consistent with the empirical joint distribution, relative to the number consistent with the marginals alone.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate an abstract-style sentence explaining how mutual information can be expressed via asymptotic limits of permutation-based discrete micro-states.",
+      "output": "# Abstract-Style Sentence\n\n\"Mutual information between continuous random variables can be recovered as the asymptotic limit of a discretized, permutation-based estimator, wherein the joint state space is partitioned into micro-states indexed by ordinal patterns—derived from the relative rank order of embedded sequence points—such that the Shannon entropy of the resulting symbolic distribution converges to the differential entropy of the underlying continuous process as the embedding dimension grows and the discretization scale vanishes, thereby expressing mutual information as a limit of finite-partition, permutation-induced empirical measures over increasingly refined combinatorial micro-states.\"\n\n---\n\n## Breakdown of Key Conceptual Components:\n\n| Element | Role in the Statement |\n|---|---|\n| **Permutation/ordinal patterns** | Discrete symbolic representation replacing continuous values with rank-order micro-states |\n| **Micro-states** | Combinatorial partitions of phase space indexed by permutations of embedded coordinates |\n| **Asymptotic limit** | Embedding dimension → ∞ and/or partition scale → 0, ensuring convergence to the true continuous-variable entropy |\n| **Mutual information** | Expressed as I(X;Y) = H(X) + H(Y) − H(X,Y), computed via permutation entropies in the limit |\n| **Empirical measure convergence** | Ties the estimator to ergodic theory, invoking convergence of symbolic frequency distributions to invariant measures |\n\nThis type of phrasing is common in **information-theoretic time series analysis**, particularly work connecting **permutation entropy** (Bandt–Pompe methodology) to **mutual information estimation** in nonlinear dynamical systems, where ordinal patterns provide a robust, invariant, and computationally tractable proxy for probability density estimation in high-dimensional or chaotic systems.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7396694214876033,
+      "excess_ratio": 0.5361445225040787,
+      "baseline_mean": 0.20352489898352455,
+      "baseline_n_valid": 5,
+      "output_chars": 200,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.753731343283582,
+          "baseline_mean": 0.1618976984970494,
+          "excess_ratio": 0.5918336447865327
+        },
+        "bz2": {
+          "actual_ratio": 0.6139240506329114,
+          "baseline_mean": 0.18630346472045764,
+          "excess_ratio": 0.4276205859124538
+        },
+        "lzma": {
+          "actual_ratio": 0.8333333333333334,
+          "baseline_mean": 0.2524886450798666,
+          "excess_ratio": 0.5808446882534668
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.48540145985401456,
+      "excess_ratio": 0.28187656087049,
+      "baseline_mean": 0.20352489898352455,
+      "baseline_n_valid": 5,
+      "output_chars": 226,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4144736842105263,
+          "baseline_mean": 0.1618976984970494,
+          "excess_ratio": 0.25257598571347695
+        },
+        "bz2": {
+          "actual_ratio": 0.42934782608695654,
+          "baseline_mean": 0.18630346472045764,
+          "excess_ratio": 0.2430443613664989
+        },
+        "lzma": {
+          "actual_ratio": 0.5849056603773585,
+          "baseline_mean": 0.2524886450798666,
+          "excess_ratio": 0.33241701529749185
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.06743620899149444,
+      "excess_ratio": -0.1360886899920301,
+      "baseline_mean": 0.20352489898352455,
+      "baseline_n_valid": 5,
+      "output_chars": 5873,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04638472032742155,
+          "baseline_mean": 0.1618976984970494,
+          "excess_ratio": -0.11551297816962786
+        },
+        "bz2": {
+          "actual_ratio": 0.07393542349087506,
+          "baseline_mean": 0.18630346472045764,
+          "excess_ratio": -0.11236804122958258
+        },
+        "lzma": {
+          "actual_ratio": 0.08185053380782918,
+          "baseline_mean": 0.2524886450798666,
+          "excess_ratio": -0.17063811127203743
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.062485772820396086,
+      "excess_ratio": -0.14103912616312847,
+      "baseline_mean": 0.20352489898352455,
+      "baseline_n_valid": 5,
+      "output_chars": 8824,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04855994641661085,
+          "baseline_mean": 0.1618976984970494,
+          "excess_ratio": -0.11333775208043856
+        },
+        "bz2": {
+          "actual_ratio": 0.06116642958748222,
+          "baseline_mean": 0.18630346472045764,
+          "excess_ratio": -0.12513703513297542
+        },
+        "lzma": {
+          "actual_ratio": 0.07764390896921017,
+          "baseline_mean": 0.2524886450798666,
+          "excess_ratio": -0.17484473611065646
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.04736667770785036,
+      "excess_ratio": -0.1561582212756742,
+      "baseline_mean": 0.20352489898352455,
+      "baseline_n_valid": 5,
+      "output_chars": 1865,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.023858921161825725,
+          "baseline_mean": 0.1618976984970494,
+          "excess_ratio": -0.13803877733522368
+        },
+        "bz2": {
+          "actual_ratio": 0.048830111902339775,
+          "baseline_mean": 0.18630346472045764,
+          "excess_ratio": -0.13747335281811787
+        },
+        "lzma": {
+          "actual_ratio": 0.06716417910447761,
+          "baseline_mean": 0.2524886450798666,
+          "excess_ratio": -0.185324465975389
+        }
+      }
+    }
+  }
+}

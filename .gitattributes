@@ -1,0 +1,31 @@
+# Keep every checked-out file byte-identical to what is committed.
+#
+# This repository ships SHA-256 manifests that pin the exact bytes of sibling
+# files. Any line-ending translation performed during checkout changes those
+# bytes and makes every recorded hash fail to verify.
+#
+# `-text` alone is not enough: with core.autocrlf=true, git still normalises
+# text files on the way into the object store. `-text -crlf` disables both the
+# checkout conversion and the commit-side CRLF normalisation, so the blob always
+# holds the file's literal bytes.
+#
+# Applied per extension rather than as `*`, because `* -text` does not cover the
+# commit-side normalisation on every git version.
+*.py       -text -crlf
+*.json     -text -crlf
+*.jsonl    -text -crlf
+*.csv      -text -crlf
+*.txt      -text -crlf
+*.md       -text -crlf
+*.log      -text -crlf
+*.cfg      -text -crlf
+*.toml     -text -crlf
+*.bin      -text -crlf
+*.npz      -text -crlf
+*.parquet  -text -crlf
+*.docx     -text -crlf
+# The last rule also covers the extension-less members under large_files/
+# (`sources.jsonl.part/part00`, ...), which are raw byte ranges of JSONL and
+# Parquet files and must be concatenated back verbatim. Their SHA-256 is checked
+# by restore_large_files.py, so a single translated byte would abort the restore.
+*          -text -crlf

@@ -1,0 +1,529 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15754646",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA performance monitoring system and method is based on a Detailed Call Record (DCR). A DCR contains records of events occurring in different network domains (14, 20, 40) that are related to a single, specific VoLTE call. The DCR events for each VoLTE call cover all legs of the call, and for each call leg, the relevant events are ordered by time. A DCR also contains basic information to identify the call: the IMS Charging Identifier (ICID), the International Mobile Subscriber Identity (IMSI) of all involved subscribers, and the start and stop timestamps of the call. A DCR has all the relevant user plane measurement, radio measurement, and control plane data from all the involved domains (14, 20, 40) for all call legs of a VoLTE call, in contrast to prior art systems that focus only on a single subscriber's activities for a given call. The DCR thus provides a complete view of the call, allowing more complete analytics and troubleshooting. Furthermore, the data are collected and assembled automatically, with results available real-time, or with a few seconds delay.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA performance monitoring system and method is based on a Detailed Call Record (DCR). A DCR contains records of events occurring in different network domains (14, 20, 40) that are related to a single, specific VoLTE call. The DCR events for each VoLTE call cover all legs of the call, and for each call leg, the relevant events are ordered by time. A DCR also contains basic information to identify the call: the IMS Charging Identifier (ICID), the International Mobile Subscriber Identity (IMSI) of all involved subscribers, and the start and stop timestamps of the call. A DCR has all the relevant user plane measurement, radio measurement, and control plane data from all the involved domains (14, 20, 40) for all call legs of a VoLTE call, in contrast to prior art systems that focus only on a single subscriber's activities for a given call. The DCR thus provides a complete view of the call, allowing more complete analytics and troubleshooting. Furthermore, the data are collected and assembled automatically, with results available real-time, or with a few seconds delay.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The performance monitoring system uses a Detailed Call Record (DCR) to consolidate events related to a single VoLTE call across multiple network domains.\n- Each DCR covers all call legs and orders the relevant events for each leg chronologically.\n- A DCR identifies the call using the IMS Charging Identifier (ICID), the International Mobile Subscriber Identity (IMSI) of all involved subscribers, and call start and stop timestamps.\n- The DCR includes relevant user-plane, radio, and control-plane data from all involved domains, providing a more complete view than systems focused on one subscriber.\n- Data is collected and assembled automatically, enabling comprehensive analytics and troubleshooting in real time or within a few seconds.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA performance-monitoring system automatically assembles a Detailed Call Record (DCR) containing time-ordered events, identifiers, and user-, radio-, and control-plane data from every domain and leg of a VoLTE call. By providing a complete call-wide view in real time or within seconds, the DCR enables more comprehensive analytics and troubleshooting than prior systems focused on a single subscriber.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Detailed, Call, Record"
+  },
+  "outputs": {
+    "L1": "A performance monitoring system and method are based on a Detailed Call Record (DCR). Each DCR contains records of events occurring across different network domains (14, 20, 40) that relate to a single, specific VoLTE call. The DCR events encompass all legs of the call, with the relevant events for each call leg arranged chronologically. The DCR also includes basic call-identification information: the IMS Charging Identifier (ICID), the International Mobile Subscriber Identity (IMSI) of all subscribers involved, and the call’s start and stop timestamps.\n\nIn contrast to prior art systems that focus solely on the activities of a single subscriber during a given call, a DCR contains all relevant user-plane measurements, radio measurements, and control-plane data from every involved domain (14, 20, 40) for all legs of a VoLTE call. The DCR thus provides a comprehensive view of the call, enabling more complete analytics and troubleshooting. Furthermore, the data are collected and assembled automatically, with results available in real time or after a delay of only a few seconds.",
+    "L2": "A performance-monitoring system and method use a Detailed Call Record (DCR) that consolidates events from multiple network domains (14, 20, 40) associated with one particular VoLTE call. For every call, the DCR includes each call leg and arranges the corresponding events for each leg chronologically. It also stores essential call-identification details, including the IMS Charging Identifier (ICID), the International Mobile Subscriber Identity (IMSI) for every participating subscriber, and the call’s start and end timestamps.\n\nUnlike earlier systems, which track only the activity of one subscriber during a call, the DCR gathers all pertinent user-plane measurements, radio measurements, and control-plane information from every participating domain (14, 20, 40) and across all legs of the VoLTE call. This comprehensive call-level perspective supports more thorough analysis and fault diagnosis. Data collection and record assembly are performed automatically, and the resulting information is available either in real time or after a delay of only a few seconds.",
+    "L3": "The performance monitoring system uses a Detailed Call Record (DCR) to consolidate all events associated with a single Voice over LTE (VoLTE) call across multiple network domains. Each DCR encompasses every call leg and organizes the relevant events for each leg in chronological order, providing a clear, end-to-end representation of the call.\n\nTo uniquely identify and correlate the call, the DCR includes the IMS Charging Identifier (ICID), the International Mobile Subscriber Identity (IMSI) of each subscriber involved, and the call start and stop timestamps. It also incorporates relevant user-plane, radio, and control-plane information gathered from all participating network domains. This multi-domain, multi-subscriber approach provides a more complete view of call performance than monitoring systems that focus on only one subscriber or a single portion of the network.\n\nThe collection, correlation, and assembly of this information are performed automatically. As a result, the system supports comprehensive performance analytics and troubleshooting either in real time or within a few seconds of the relevant network events.",
+    "L4": "A performance-monitoring system automatically creates a Detailed Call Record (DCR) for each Voice over Long-Term Evolution (VoLTE) call. The system collects and correlates information generated throughout the call, including signaling and media events, timestamps, network and subscriber identifiers, and user-plane, radio-plane, and control-plane measurements. Data is gathered from every relevant network domain and from each leg of the call, then normalized and arranged in chronological order to produce a unified record of the call from initiation through termination.\n\nThe DCR provides a complete call-wide view rather than a record limited to one subscriber, interface, device, or network segment. It can include information associated with both calling and called parties, intermediate network elements, radio access conditions, bearer establishment, session-control procedures, media transport, handovers, and release events. Identifiers observed at different points in the network are correlated so that records generated by separate systems can be recognized as belonging to the same end-to-end call.\n\nThe system may assemble and update the DCR in real time while the call is in progress or complete it within seconds after the call ends. Because the relevant events and measurements are presented in a single time-ordered record, analytics applications and operations personnel can more readily identify failures, delays, quality degradation, signaling anomalies, and interactions among network domains. The DCR also supports automated performance monitoring, root-cause analysis, service-quality assessment, alerting, reporting, and historical trend analysis.\n\nUnlike prior monitoring approaches that focus primarily on the experience or signaling of a single subscriber, the DCR captures the relationships among all parties, legs, and domains involved in a VoLTE session. This comprehensive perspective enables faster and more accurate troubleshooting and provides a stronger basis for evaluating end-to-end service performance.",
+    "L5": "### Detailed Call Record\n\nA Detailed Call Record (DCR) is a digital log containing information about telephone activity. It typically includes the caller’s and recipient’s numbers, the date and time of the call, its duration, call type, and completion status. Depending on the telecommunications provider, the record may also identify the network, device, or approximate routing location involved.\n\nOrganizations use detailed call records for billing, customer support, network monitoring, fraud detection, and operational reporting. For example, a company may analyze call duration and frequency to assess customer-service performance or investigate unusual activity.\n\nBecause these records may contain sensitive personal and business information, access should be restricted. Secure storage, encryption, defined retention periods, and compliance with applicable privacy regulations are essential. A detailed call record documents call-related metadata; it does not normally include the content or audio of the conversation."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize the invention described in this patent excerpt, focusing on how Detailed Call Records improve VoLTE performance monitoring and troubleshooting.",
+      "output": "Please provide the patent excerpt. I’ll summarize the invention with emphasis on how Detailed Call Records (DCRs) enhance VoLTE performance monitoring, fault isolation, and troubleshooting.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Explain what a Detailed Call Record (DCR) contains and why it provides a more complete view of a VoLTE call than prior-art monitoring systems.",
+      "output": "A **Detailed Call Record (DCR)** is a consolidated record reconstructed by a monitoring platform for an individual VoLTE call. Unlike a billing-oriented Call Detail Record, it can combine information observed across multiple network interfaces and protocols.\n\nA DCR typically includes:\n\n- **Call identity and parties:** calling/called numbers or URIs, IMS identities, SIP Call-ID, and correlation identifiers.\n- **Timing and disposition:** call attempt, ringing, answer, release times, duration, completion status, and failure or release cause.\n- **IMS signaling:** SIP messages and response codes, call-routing information, session setup and teardown events, and supplementary-service events.\n- **Subscriber and device context:** IMSI, IMEI, device type, serving network, roaming status, and related identifiers when available.\n- **Bearer and policy information:** EPC bearer creation or modification, QoS class, policy/charging decisions, APN, and tunnel or bearer identifiers.\n- **Media details:** negotiated codec, RTP addresses and ports, packet counts, loss, jitter, delay, and other voice-quality measurements.\n- **Mobility and radio context:** serving cell, handovers, tracking-area changes, or radio conditions, if those data sources are monitored.\n- **Correlation and diagnostics:** the linkage between signaling, bearer, media, and mobility events, including where setup delays or failures occurred.\n\nIt provides a more complete view because a VoLTE call is not represented by a single protocol exchange. It spans **IMS call control, EPC bearer and policy procedures, RTP media, and potentially radio mobility**. Earlier monitoring systems often examined only one interface, produced separate protocol-specific records, or relied on billing CDRs containing mainly parties, timestamps, duration, and charging data. That fragmented view could show that a call failed or had poor quality without revealing why.\n\nBy correlating the separate legs and phases into one chronological record, a DCR can show both the **subscriber-visible result** and the **network events that caused it**—for example, whether a failed call resulted from a SIP rejection, bearer-setup failure, policy decision, handover problem, or degraded RTP stream. Thus, it supports end-to-end troubleshooting and quality analysis rather than merely accounting for the call.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write a concise technical overview of a real-time VoLTE call monitoring system that correlates events from multiple network domains and all call legs.",
+      "output": "### Real-Time VoLTE Call Monitoring System\n\nA real-time VoLTE monitoring system ingests and correlates signaling, media, and subscriber events across all network domains and call legs to create a unified end-to-end call record.\n\n**Data sources include:**\n- **LTE/EPC:** S1AP, NAS, GTP-C/U, PCRF/OCS events\n- **IMS:** SIP transactions from P-/I-/S-CSCF, TAS, SBC, BGCF/MGCF\n- **Policy and bearer control:** Diameter Rx, Gx, Gy, and dedicated bearer events\n- **Media:** RTP/RTCP metrics, codec changes, packet loss, jitter, delay, and MOS\n- **Interworking domains:** CS fallback, SRVCC, PSTN, roaming, and emergency-call interfaces\n\nDistributed probes or software sensors stream normalized events to a low-latency processing layer. Correlation combines identifiers such as SIP Call-ID, IMS Charging Identifier, ICID, IMSI/SUPI, MSISDN, GUTI, bearer IDs, Diameter session IDs, IP/port tuples, and timestamps. A stateful correlation engine reconstructs originating and terminating legs, forks, transfers, conference branches, SBC segments, roaming paths, and handovers into one call graph.\n\nThe resulting call model tracks setup, ringing, answer, bearer establishment, media flow, modification, mobility, and release. It calculates KPIs including call setup time, establishment success rate, drop rate, SIP/Diameter failure causes, dedicated-bearer latency, one-way audio, RTP quality, and domain-specific contribution to failures.\n\nOperational outputs include live call traces, topology-aware dashboards, threshold and anomaly alerts, root-cause attribution, and searchable call-detail records. The platform should support event-time ordering, duplicate suppression, late-arriving data, horizontal scaling, and graceful handling of missing probes. Subscriber identifiers and payloads must be protected through access control, encryption, masking, retention policies, and auditable use.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "How does the proposed performance monitoring method use ICID, IMSI, timestamps, user-plane measurements, radio measurements, and control-plane data to analyze VoLTE calls?",
+      "output": "The method builds a unified, end-to-end record for each VoLTE call by correlating information from the IMS core, LTE control plane, radio network, and media plane:\n\n- **ICID (IMS Charging Identifier):** Used as the primary call-level key. The same ICID appears in IMS signaling or charging records, allowing all SIP dialogs and call legs belonging to one VoLTE call to be grouped.\n- **IMSI:** Links the call to the subscriber’s LTE bearer, mobility, and radio records. It is especially useful where the ICID is unavailable outside the IMS domain.\n- **Timestamps:** Align events from different probes and network elements. Time overlap lets the system associate an ICID-bearing IMS call with the corresponding IMSI-based bearer, radio session, handover, and RTP flow.\n- **User-plane measurements:** RTP/RTCP or packet-level data provide media-quality indicators such as packet loss, delay, jitter, throughput, codec use, and potentially estimated MOS. These reveal what the user actually experienced.\n- **Radio measurements:** Metrics such as RSRP, RSRQ, SINR, CQI, retransmissions, and cell or handover information show whether poor media quality was caused by weak coverage, interference, congestion, or mobility.\n- **Control-plane data:** SIP, Diameter, NAS, RRC, and bearer-control messages describe call setup, dedicated bearer creation, QoS parameters, handovers, failures, releases, and error causes.\n\nThe correlation generally proceeds from **ICID → call**, **IMSI → subscriber/bearer/radio session**, and **timestamps → synchronization across domains**. The resulting combined timeline supports analysis of call setup time, setup failures, drops, bearer problems, handover effects, and speech-quality degradation, while helping identify whether the root cause lies in IMS signaling, EPC bearer control, transport/user plane, or the radio network.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Draft a patent-style abstract for a system that automatically assembles cross-domain events into a time-ordered record for each VoLTE call, enabling near-real-time analytics and troubleshooting.",
+      "output": "A system and method are disclosed for automatically assembling cross-domain events associated with Voice over Long-Term Evolution (VoLTE) calls. Event data is received from a plurality of network domains, including radio access, evolved packet core, IP multimedia subsystem, policy, charging, and media-monitoring domains. The event data is normalized and temporally aligned, and call-related events are correlated using one or more identifiers, signaling attributes, subscriber attributes, bearer parameters, and inferred relationships. The correlated events are arranged into a time-ordered per-call record representing signaling, bearer establishment, media transport, mobility, quality, and termination activity across the network domains. The record may be incrementally updated as additional events are received and processed within a near-real-time interval. Analytics applied to the record identify call states, performance metrics, anomalies, failure points, and probable causes, thereby supporting monitoring, troubleshooting, and service-quality analysis without requiring manual reconciliation of domain-specific data.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6365071015255128,
+      "excess_ratio": 0.45019086202235425,
+      "baseline_mean": 0.18631623950315856,
+      "baseline_n_valid": 5,
+      "output_chars": 1090,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6377551020408163,
+          "baseline_mean": 0.16305160377038333,
+          "excess_ratio": 0.474703498270433
+        },
+        "bz2": {
+          "actual_ratio": 0.5447409733124019,
+          "baseline_mean": 0.16346405841782544,
+          "excess_ratio": 0.3812769148945765
+        },
+        "lzma": {
+          "actual_ratio": 0.7218934911242604,
+          "baseline_mean": 0.2275167800833243,
+          "excess_ratio": 0.49437671104093606
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.40880169671261923,
+      "excess_ratio": 0.22248545720946067,
+      "baseline_mean": 0.18631623950315856,
+      "baseline_n_valid": 5,
+      "output_chars": 1070,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3703071672354949,
+          "baseline_mean": 0.16305160377038333,
+          "excess_ratio": 0.20725556346511156
+        },
+        "bz2": {
+          "actual_ratio": 0.37898089171974525,
+          "baseline_mean": 0.16346405841782544,
+          "excess_ratio": 0.2155168333019198
+        },
+        "lzma": {
+          "actual_ratio": 0.47023809523809523,
+          "baseline_mean": 0.2275167800833243,
+          "excess_ratio": 0.24272131515477094
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.4997369805365597,
+      "excess_ratio": 0.3134207410334011,
+      "baseline_mean": 0.18631623950315856,
+      "baseline_n_valid": 5,
+      "output_chars": 1138,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4923599320882852,
+          "baseline_mean": 0.16305160377038333,
+          "excess_ratio": 0.3293083283179019
+        },
+        "bz2": {
+          "actual_ratio": 0.4267515923566879,
+          "baseline_mean": 0.16346405841782544,
+          "excess_ratio": 0.2632875339388625
+        },
+        "lzma": {
+          "actual_ratio": 0.5730994152046783,
+          "baseline_mean": 0.2275167800833243,
+          "excess_ratio": 0.345582635121354
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1904140854254973,
+      "excess_ratio": 0.004097845922338722,
+      "baseline_mean": 0.18631623950315856,
+      "baseline_n_valid": 5,
+      "output_chars": 2042,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.15478615071283094,
+          "baseline_mean": 0.16305160377038333,
+          "excess_ratio": -0.008265453057552385
+        },
+        "bz2": {
+          "actual_ratio": 0.18706467661691542,
+          "baseline_mean": 0.16346405841782544,
+          "excess_ratio": 0.023600618199089984
+        },
+        "lzma": {
+          "actual_ratio": 0.22592592592592592,
+          "baseline_mean": 0.2275167800833243,
+          "excess_ratio": -0.0015908541573983748
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.0847457627118644,
+      "excess_ratio": -0.10157047679129416,
+      "baseline_mean": 0.18631623950315856,
+      "baseline_n_valid": 5,
+      "output_chars": 1025,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04744525547445255,
+          "baseline_mean": 0.16305160377038333,
+          "excess_ratio": -0.11560634829593078
+        },
+        "bz2": {
+          "actual_ratio": 0.08873720136518772,
+          "baseline_mean": 0.16346405841782544,
+          "excess_ratio": -0.07472685705263772
+        },
+        "lzma": {
+          "actual_ratio": 0.11320754716981132,
+          "baseline_mean": 0.2275167800833243,
+          "excess_ratio": -0.11430923291351297
+        }
+      }
+    }
+  },
+  "api_provenance": {
+    "config": {
+      "gpt_gateway": 2,
+      "max_output_tokens": 4096,
+      "require_status": "completed"
+    },
+    "main_calls": {
+      "L1_polish": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_09ae468e69a8f4e1006a89b3e8b9c48195bd4f7f4113ff4a6e",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 254,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 223,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 477
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T14:36:28.631224+00:00"
+      },
+      "L2_rewrite": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_05d5e03489bc2fd5006a89b3ef3b648197b3a75c9d4ac1b46a",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 257,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 207,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 464
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T14:36:34.206498+00:00"
+      },
+      "L3_bullets": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0090da13ff5d6399006a89b3f470a08194b694a5b39b69b1f9",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 267,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 143,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 410
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T14:36:38.794943+00:00"
+      },
+      "L3_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0605f9caaf6feb0e006a89b3f8f6748197a0d186d4d5ef5096",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 160,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 205,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 365
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T14:36:45.287790+00:00"
+      },
+      "L4_2sent": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_03e7f67d3445d090006a89b3ff797881938bd65c1f32537d53",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 279,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 80,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 359
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T14:36:49.143207+00:00"
+      },
+      "L4_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0677c3fa48b761b4006a89b4036ebc81939b5b896fa4999237",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 95,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 405,
+          "output_tokens_details": {
+            "reasoning_tokens": 47
+          },
+          "total_tokens": 500
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T14:36:58.310515+00:00"
+      },
+      "L5_keywords": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_03ff6be046551f37006a89b40c771081979488a6e5a5f08364",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 22,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 216,
+          "output_tokens_details": {
+            "reasoning_tokens": 38
+          },
+          "total_tokens": 238
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T14:37:05.452093+00:00"
+      }
+    },
+    "counterfactuals": {
+      "reconstruct": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_08761b826be55c62006a89b413a3e48196a54de14817e77c6c",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 330,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 164,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 494
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T14:37:10.281674+00:00"
+      },
+      "outputs": [
+        {
+          "label": "cf_1",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_065a3d5623322878006a89b41874388196aad77130fe2f4bee",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 31,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 70,
+                "output_tokens_details": {
+                  "reasoning_tokens": 29
+                },
+                "total_tokens": 101
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T14:37:14.221159+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_2",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0866ec321553079c006a89b41c68c88193815a67e7c3a79439",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 36,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 552,
+                "output_tokens_details": {
+                  "reasoning_tokens": 96
+                },
+                "total_tokens": 588
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T14:37:27.509313+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_3",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_00a2784396a5d457006a89b429a8548193888001af886756b0",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 33,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 447,
+                "output_tokens_details": {
+                  "reasoning_tokens": 36
+                },
+                "total_tokens": 480
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T14:37:39.448467+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_4",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_02671f774ffa5098006a89b435adb4819690016edfc7358436",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 39,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 496,
+                "output_tokens_details": {
+                  "reasoning_tokens": 107
+                },
+                "total_tokens": 535
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T14:37:49.857940+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_5",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_01abcde4f3075299006a89b440c3f88195866c78cbc20f9062",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 41,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 246,
+                "output_tokens_details": {
+                  "reasoning_tokens": 52
+                },
+                "total_tokens": 287
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T14:37:59.590915+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "source": {
+    "source_id": "15754646",
+    "source_index": null,
+    "text_sha256": "5a142e1cc98e30f4758526a47a3795648da01515f87e0e873fa0159d79631541"
+  }
+}

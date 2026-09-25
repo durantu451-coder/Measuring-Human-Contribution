@@ -1,0 +1,524 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15748000",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA device, system, method, and computer program is provided that suppresses the disappearance of personal information in a handover process of personal information. A control unit of an information management device performs a process of receiving approval or disapproval of each user for each information system to use personal information of the user; in response to receiving disapproval of a first user for a first information system, a process of causing personal information of the first user stored in a first information server provided in the first information system to be sent from the first information server to a storage server; and in response to receiving approval of the first user for a second information system, a process of causing the personal information of the first user stored in the storage server to be sent from the storage server to a second information server provided in a second information system.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA device, system, method, and computer program is provided that suppresses the disappearance of personal information in a handover process of personal information. A control unit of an information management device performs a process of receiving approval or disapproval of each user for each information system to use personal information of the user; in response to receiving disapproval of a first user for a first information system, a process of causing personal information of the first user stored in a first information server provided in the first information system to be sent from the first information server to a storage server; and in response to receiving approval of the first user for a second information system, a process of causing the personal information of the first user stored in the storage server to be sent from the storage server to a second information server provided in a second information system.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The invention provides a device, system, method, and computer program for preventing personal information from disappearing during handover processes.\n- An information management device receives each user’s approval or disapproval for individual information systems to use their personal information.\n- If a user disapproves of a first information system, the user’s personal information is transferred from that system’s information server to a storage server.\n- If the user approves a second information system, the stored personal information is transferred from the storage server to the second system’s information server.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe system prevents personal information from disappearing during handovers by recording each user’s approval or disapproval for information systems and transferring data from a disapproved system’s server to a storage server. When the user approves another system, the stored data is transferred to its server, preserving continuity and user-controlled access to personal information.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: A device, system,"
+  },
+  "outputs": {
+    "L1": "Provided are a device, system, method, and computer program for preventing the loss of personal information during a personal-information handover process. A control unit of an information management device performs: a process of receiving, from each user, approval or disapproval of the use of that user’s personal information by each information system; in response to receiving a first user’s disapproval of a first information system, a process of causing the first user’s personal information stored in a first information server of the first information system to be transmitted from the first information server to a storage server; and, in response to receiving the first user’s approval of a second information system, a process of causing the first user’s personal information stored in the storage server to be transmitted from the storage server to a second information server of the second information system.",
+    "L2": "Provided are a device, system, method, and computer program designed to prevent personal information from being lost during its transfer. A controller in an information management device obtains each user’s consent or refusal regarding the use of that user’s personal information by each information system. If a first user refuses authorization for a first information system, the controller directs a first information server within that system to transfer the first user’s stored personal information to a storage server. If the first user subsequently authorizes a second information system, the controller directs the storage server to transmit the stored personal information to a second information server within the second information system.",
+    "L3": "The invention provides an information management device, system, method, and computer program designed to prevent personal information from being lost or becoming unavailable during handover processes between information systems.\n\nThe information management device receives and records each user’s approval or disapproval regarding the use of their personal information by individual information systems. When a user disapproves of a first information system using their personal information, the device causes that information to be transferred from the first system’s information server to a designated storage server. The personal information is thereby preserved even though it is no longer retained or used by the first information system.\n\nIf the user subsequently approves the use of the personal information by a second information system, the device causes the stored information to be transferred from the storage server to the second system’s information server. In this manner, the invention enables personal information to be securely preserved and handed over between information systems in accordance with the user’s consent, thereby reducing the risk that the information will disappear during the transition.",
+    "L4": "The system is designed to prevent personal information from being lost, deleted, or otherwise becoming unavailable when a user moves between information systems or when responsibility for managing the information changes. For each user, the system records whether the user has approved or disapproved the use of their personal information by a particular information system. This approval status may be stored in association with the user’s identity, the relevant information system, and the personal information managed by that system.\n\nWhen a user disapproves an information system, the system identifies the personal information associated with that user on the information system’s server. Rather than allowing the information to disappear during the handover, the system transfers it to a designated storage server. The storage server retains the information securely while the user has not approved another information system. Access to the stored information remains subject to the user’s recorded preferences, thereby preventing a disapproved system from continuing to use the information.\n\nIf the user later approves another information system, the system detects or receives the updated approval status. It then retrieves the user’s personal information from the storage server and transfers the information to the server associated with the newly approved system. The receiving system can therefore continue providing services without requiring the user to recreate or resubmit information that was previously collected.\n\nBy separating temporary data retention from the individual information systems, the system supports continuity during organizational, technical, or service-provider handovers. At the same time, it preserves user control by transferring personal information only to systems that the user has approved. In this way, the system reduces the risk of data loss while ensuring that access to and use of personal information remain consistent with the user’s expressed choices.",
+    "L5": "A device is a physical tool designed to perform a specific function, while a system is a group of connected components that work together toward a common goal. For example, a smart thermostat is a device within a home automation system. It collects temperature data, processes user settings, and communicates with heating or cooling equipment. By combining devices with software, sensors, and networks, modern systems can improve efficiency, reduce manual work, and provide users with greater control."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent abstract for a system that preserves and transfers a user’s personal information when the user revokes consent for one information system and later approves another.",
+      "output": "A system and method preserve and transfer a user’s personal information across information systems in accordance with user consent. Upon receiving an instruction revoking consent for a first information system, a consent-management service disables access by the first information system and transfers or maintains the personal information in a protected repository separate from the first information system. The repository stores the personal information with consent status, provenance, retention, and access-control metadata. Upon receiving subsequent authorization identifying a second information system, the service authenticates the user and the second information system, determines an authorized data scope, and transfers or enables access to corresponding personal information. The service may transform the information into a format compatible with the second information system and record revocation, preservation, authorization, and transfer events in an audit log. Encryption, policy-based retention, selective disclosure, and deletion controls protect the information during the interval between revocation and subsequent authorization.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Describe an invention in formal patent language involving an information management device, control unit, storage server, and multiple information servers that manage personal data based on user approval or disapproval.",
+      "output": "**Title: Information Management System for Controlling Personal Data Based on User Authorization**\n\nAn information management system comprises an information management device, a control unit, a storage server, and a plurality of information servers communicatively coupled through a network. Each information server is configured to retain or process personal data associated with a user and to transmit, to the information management device, a request for authorization to perform a designated operation on the personal data.\n\nThe information management device is configured to present information identifying the requesting information server, the personal data concerned, and the designated operation to the user, and to receive an approval or disapproval input from the user. The control unit is configured to generate authorization information corresponding to the received input and to cause the storage server to store the authorization information in association with a user identifier, an information-server identifier, a personal-data category, and an authorized operation.\n\nUpon receiving a request from one of the plurality of information servers to access, disclose, modify, transfer, retain, or delete the personal data, the control unit obtains the corresponding authorization information from the storage server. When the authorization information indicates approval, the control unit permits execution of the requested operation subject to any stored scope, purpose, or validity period. When the authorization information indicates disapproval, the control unit prevents execution of the requested operation and may transmit a denial notification to the requesting information server.\n\nThe control unit may further be configured to receive a subsequent change in user approval, update the authorization information stored in the storage server, distribute the updated authorization state to affected information servers, and record an audit history indicating authorization requests, user responses, data operations, and authorization changes.\n\n**Exemplary Independent Claim**\n\n1. An information management system comprising:  \n   an information management device configured to receive, from a user, an input indicating approval or disapproval of an operation involving personal data associated with the user;  \n   a storage server configured to store authorization information representing the input;  \n   a plurality of information servers, each configured to manage at least a portion of the personal data; and  \n   a control unit communicatively coupled to the information management device, the storage server, and the plurality of information servers,  \n   wherein the control unit is configured to:  \n   receive, from a requesting information server among the plurality of information servers, a request to perform the operation involving the personal data;  \n   retrieve, from the storage server, authorization information associated with the user, the requesting information server, and the operation;  \n   permit the requesting information server to perform the operation when the authorization information indicates approval; and  \n   restrict the requesting information server from performing the operation when the authorization information indicates disapproval.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write a concise technical summary of a device, system, method, and computer program that prevents personal information from disappearing during a data handover process.",
+      "output": "A data-handover technology prevents loss of personal information when data is transferred between devices, applications, or services. A transmitting device identifies personal-information records, creates a protected transfer package, and retains the original data until completion is confirmed. A receiving device validates the package using identifiers, checksums, and record counts, then stores and maps the records to the destination environment. A coordination system manages authentication, transfer status, retries, duplicate handling, and recovery from interruption. The corresponding method and computer program execute the handover as a transaction: prepare, transmit, verify, commit, and acknowledge; if any step fails, the transfer is resumed or rolled back without deleting the source data. This ensures that personal information remains available and consistent throughout the handover process.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate a patent-style abstract explaining how personal information is moved from a first information system to temporary storage after consent is withdrawn, then transferred to a second system when consent is granted.",
+      "output": "**Abstract**\n\nA computer-implemented method and system are disclosed for consent-controlled movement of personal information between information systems. Upon receiving an indication that a data subject has withdrawn consent for processing personal information maintained by a first information system, the personal information is identified, removed or rendered inaccessible in the first information system, and transferred to temporary storage. The temporary storage may isolate and encrypt the personal information while retaining provenance, consent status, and applicable retention metadata. Processing or disclosure of the stored personal information is restricted while consent remains withdrawn. In response to receiving an indication that the data subject has granted consent for use of the personal information by a second information system, the consent is validated against one or more authorization criteria, and the personal information is securely transferred from the temporary storage to the second information system. Following confirmation of successful transfer, the personal information may be deleted from the temporary storage, and an auditable record of the withdrawal, storage, consent grant, and transfer operations may be generated.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "How can an information management system securely retain and hand over a user’s personal data between service providers according to the user’s consent decisions? Provide the answer as a patent abstract.",
+      "output": "An information management system securely retains and transfers a user’s personal data among service providers in accordance with user-defined consent decisions. The system stores personal data in an encrypted data repository and maintains a consent record specifying authorized data categories, recipient providers, permitted purposes, retention periods, and revocation conditions. Upon receiving a transfer request, a policy engine authenticates the requesting provider, verifies the request against the current consent record, and selectively retrieves and decrypts only authorized data. The authorized data is transmitted through a secure channel or made available using time-limited access credentials, while integrity, provenance, and transaction information are recorded in an audit log. When the user modifies or withdraws consent, the system prevents subsequent unauthorized access and may initiate deletion, return, or access revocation at receiving providers. The system thereby enables controlled retention and provider-to-provider handover of personal data while preserving confidentiality, accountability, and user control.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.61256038647343,
+      "excess_ratio": 0.4530242042405998,
+      "baseline_mean": 0.15953618223283023,
+      "baseline_n_valid": 5,
+      "output_chars": 922,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5588235294117647,
+          "baseline_mean": 0.12236966009239496,
+          "excess_ratio": 0.43645386931936975
+        },
+        "bz2": {
+          "actual_ratio": 0.6066481994459834,
+          "baseline_mean": 0.15066175964053868,
+          "excess_ratio": 0.4559864398054447
+        },
+        "lzma": {
+          "actual_ratio": 0.6630434782608695,
+          "baseline_mean": 0.19927582068823052,
+          "excess_ratio": 0.463767657572639
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.42142142142142147,
+      "excess_ratio": 0.26188523918859125,
+      "baseline_mean": 0.15953618223283023,
+      "baseline_n_valid": 5,
+      "output_chars": 750,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3411371237458194,
+          "baseline_mean": 0.12236966009239496,
+          "excess_ratio": 0.21876746365342442
+        },
+        "bz2": {
+          "actual_ratio": 0.4255952380952381,
+          "baseline_mean": 0.15066175964053868,
+          "excess_ratio": 0.2749334784546994
+        },
+        "lzma": {
+          "actual_ratio": 0.4835164835164835,
+          "baseline_mean": 0.19927582068823052,
+          "excess_ratio": 0.284240662828253
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.40283140283140284,
+      "excess_ratio": 0.24329522059857261,
+      "baseline_mean": 0.15953618223283023,
+      "baseline_n_valid": 5,
+      "output_chars": 1225,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.38284518828451886,
+          "baseline_mean": 0.12236966009239496,
+          "excess_ratio": 0.2604755281921239
+        },
+        "bz2": {
+          "actual_ratio": 0.3701550387596899,
+          "baseline_mean": 0.15066175964053868,
+          "excess_ratio": 0.21949327911915123
+        },
+        "lzma": {
+          "actual_ratio": 0.45,
+          "baseline_mean": 0.19927582068823052,
+          "excess_ratio": 0.2507241793117695
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1756701030927835,
+      "excess_ratio": 0.01613392085995327,
+      "baseline_mean": 0.15953618223283023,
+      "baseline_n_valid": 5,
+      "output_chars": 2002,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.12982005141388175,
+          "baseline_mean": 0.12236966009239496,
+          "excess_ratio": 0.007450391321486796
+        },
+        "bz2": {
+          "actual_ratio": 0.19029374201787994,
+          "baseline_mean": 0.15066175964053868,
+          "excess_ratio": 0.03963198237734125
+        },
+        "lzma": {
+          "actual_ratio": 0.2037037037037037,
+          "baseline_mean": 0.19927582068823052,
+          "excess_ratio": 0.004427883015473172
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.11008230452674903,
+      "excess_ratio": -0.0494538777060812,
+      "baseline_mean": 0.15953618223283023,
+      "baseline_n_valid": 5,
+      "output_chars": 501,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04827586206896552,
+          "baseline_mean": 0.12236966009239496,
+          "excess_ratio": -0.07409379802342944
+        },
+        "bz2": {
+          "actual_ratio": 0.1064516129032258,
+          "baseline_mean": 0.15066175964053868,
+          "excess_ratio": -0.04421014673731288
+        },
+        "lzma": {
+          "actual_ratio": 0.16129032258064516,
+          "baseline_mean": 0.19927582068823052,
+          "excess_ratio": -0.037985498107585364
+        }
+      }
+    }
+  },
+  "api_provenance": {
+    "config": {
+      "gpt_gateway": 2,
+      "max_output_tokens": 4096,
+      "require_status": "completed"
+    },
+    "main_calls": {
+      "L1_polish": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_06ce0752bfa49d43006a88dce84d4c8197b3caeaff37e18f40",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 189,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 210,
+          "output_tokens_details": {
+            "reasoning_tokens": 40
+          },
+          "total_tokens": 399
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T23:19:07.342662+00:00"
+      },
+      "L2_rewrite": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_08136dbf381832c5006a88dcedf5208193b26e73a7edb65077",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 192,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 127,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 319
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T23:19:12.142262+00:00"
+      },
+      "L3_bullets": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0f705e663cc12ebc006a88dcf25690819797b48eabb0c4ebc9",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 202,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 111,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 313
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T23:19:17.172367+00:00"
+      },
+      "L3_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0303d8abaf405943006a88dcf7690081968c62a8474e4d4686",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 128,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 200,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 328
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T23:19:23.260571+00:00"
+      },
+      "L4_2sent": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_056da43e2c84c86e006a88dcfd6d88819799695a41aaab1086",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 214,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 97,
+          "output_tokens_details": {
+            "reasoning_tokens": 28
+          },
+          "total_tokens": 311
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T23:19:27.730858+00:00"
+      },
+      "L4_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_026e906866d98c79006a88dd01f0008197b6bda6ff4f4f06dd",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 82,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 404,
+          "output_tokens_details": {
+            "reasoning_tokens": 69
+          },
+          "total_tokens": 486
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T23:19:36.316216+00:00"
+      },
+      "L5_keywords": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_05bd57129e9c2c00006a88dd0c57108195add13dea269a1f45",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 22,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 124,
+          "output_tokens_details": {
+            "reasoning_tokens": 28
+          },
+          "total_tokens": 146
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T23:19:43.118600+00:00"
+      }
+    },
+    "counterfactuals": {
+      "reconstruct": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0651d74e9946af83006a88dd114bc08194a5cb154fc6f45312",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 265,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 179,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 444
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T23:19:49.721612+00:00"
+      },
+      "outputs": [
+        {
+          "label": "cf_1",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_00edb4bc86e9a8f8006a88dd17fe388195b7aa8d5fcac3bcb8",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 37,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 250,
+                "output_tokens_details": {
+                  "reasoning_tokens": 67
+                },
+                "total_tokens": 287
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T23:19:57.895605+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_2",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0eb1285acfe8de8a006a88dd201a1881909ead442e3eb90f5e",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 41,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 591,
+                "output_tokens_details": {
+                  "reasoning_tokens": 49
+                },
+                "total_tokens": 632
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T23:20:09.624617+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_3",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0c9fb9bc5283b958006a88dd2c2af881938ad407f7b6eaec3b",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 35,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 259,
+                "output_tokens_details": {
+                  "reasoning_tokens": 102
+                },
+                "total_tokens": 294
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T23:20:18.252218+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_4",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_092e1db1c8d3d065006a88dd347a6c8196a379cb2f1140d9e0",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 41,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 251,
+                "output_tokens_details": {
+                  "reasoning_tokens": 50
+                },
+                "total_tokens": 292
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T23:20:28.433077+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_5",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_007bf72c33385c30006a88dd3e99108194bfc473cc8d41430a",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 41,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 216,
+                "output_tokens_details": {
+                  "reasoning_tokens": 29
+                },
+                "total_tokens": 257
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T23:20:35.013325+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

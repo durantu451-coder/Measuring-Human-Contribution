@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0214",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nOne-dimensional scattering problem admitting a complex, PT-symmetric short-range potential V(x) is considered. Using a Runge-Kutta-discretized version of Schroedinger equation we derive the formulae for the reflection and transmission coefficients and emphasize that the only innovation emerges in fact via a complexification of one of the potential-characterizing parameters.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nOne-dimensional scattering problem admitting a complex, PT-symmetric short-range potential V(x) is considered. Using a Runge-Kutta-discretized version of Schroedinger equation we derive the formulae for the reflection and transmission coefficients and emphasize that the only innovation emerges in fact via a complexification of one of the potential-characterizing parameters.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The text considers a one-dimensional scattering problem with a complex, PT-symmetric short-range potential \\(V(x)\\).\n- The Schrödinger equation is discretized using a Runge–Kutta method.\n- The discretized equation is used to derive formulas for the reflection and transmission coefficients.\n- The main innovation is the complexification of one parameter characterizing the potential.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA one-dimensional scattering problem with a complex, PT-symmetric short-range potential is analyzed using a Runge–Kutta discretization of the Schrödinger equation to derive reflection and transmission coefficients. The analysis shows that the sole innovation is the complexification of one potential-defining parameter, highlighting how PT symmetry modifies an otherwise standard scattering framework.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: One, Using, Runge"
+  },
+  "outputs": {
+    "L1": "We consider a one-dimensional scattering problem with a complex, PT-symmetric short-range potential \\(V(x)\\). Using a Runge–Kutta discretization of the Schrödinger equation, we derive formulas for the reflection and transmission coefficients and emphasize that the sole innovation arises from the complexification of one of the parameters characterizing the potential.",
+    "L2": "We examine one-dimensional scattering from a short-range complex potential \\(V(x)\\) that possesses PT symmetry. By discretizing the Schrödinger equation with a Runge–Kutta method, we obtain expressions for the transmission and reflection coefficients. The sole new feature is the replacement of one parameter defining the potential by its complex-valued counterpart.",
+    "L3": "The text examines a one-dimensional quantum-scattering problem involving a complex, short-range potential \\(V(x)\\) that is symmetric under combined parity and time-reversal transformations. Accordingly, the potential satisfies the PT-symmetry condition\n\\[\nV(x)=V^{*}(-x).\n\\]\nBecause the potential vanishes sufficiently rapidly at large distances, the wave function can be expressed asymptotically as a superposition of incoming, reflected, and transmitted plane waves.\n\nTo solve the corresponding stationary Schrödinger equation, the spatial domain is discretized and the resulting system is integrated numerically using a Runge–Kutta method. The numerical solutions are then matched to the asymptotic scattering states on either side of the interaction region. This procedure yields formulas for the reflection and transmission amplitudes, from which the associated reflection and transmission coefficients are obtained.\n\nThe principal innovation of the approach is the complexification of one of the parameters defining the potential. Allowing this parameter to take complex values extends the conventional real-potential model while preserving the required PT symmetry under suitable conditions. This generalization makes it possible to investigate how non-Hermiticity affects the scattering properties, including reflection, transmission, and possible directional asymmetries.",
+    "L4": "A one-dimensional quantum-scattering problem is considered for a short-range complex potential satisfying parity–time (PT) symmetry, \\(V(x)=V^{*}(-x)\\). Because the potential vanishes sufficiently rapidly at large distances, the asymptotic wave function can be written in terms of incoming, reflected, and transmitted plane waves. The stationary Schrödinger equation is then converted into a system of first-order differential equations and integrated numerically using a Runge–Kutta discretization. By matching the numerical solution to the asymptotic forms on both sides of the interaction region, the corresponding reflection and transmission amplitudes—and hence the reflection and transmission coefficients—are obtained.\n\nThe calculation follows the conventional procedure used in one-dimensional potential scattering. The main change is that one parameter defining the potential is allowed to become complex, with its real and imaginary parts arranged so that the resulting interaction remains PT symmetric. This complexification can alter familiar Hermitian-scattering properties, including left–right reflection behavior and the usual relation between reflection and transmission. Nevertheless, the numerical formulation, boundary matching, and extraction of scattering data remain standard. Thus, the work’s principal innovation is not a new computational method or scattering formalism, but the extension of an otherwise familiar potential model into the complex PT-symmetric domain and the examination of the resulting modifications to its scattering characteristics.",
+    "L5": "### Using Runge’s Method\n\nOne effective way to approximate solutions to ordinary differential equations is by using a Runge–Kutta method. Instead of relying on only one slope at each step, the method evaluates several intermediate slopes and combines them to produce a more accurate estimate. The widely used fourth-order Runge–Kutta method offers a practical balance between precision, stability, and computational cost, making it valuable in science, engineering, and numerical simulation."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a concise abstract for a paper on one-dimensional scattering from a complex PT-symmetric short-range potential using a Runge–Kutta discretization of the Schrödinger equation.",
+      "output": "We investigate one-dimensional quantum scattering from a complex, parity–time (PT)-symmetric short-range potential. The stationary Schrödinger equation is integrated numerically using a Runge–Kutta discretization, and the reflection and transmission amplitudes are extracted by matching the numerical solution to asymptotic plane waves. Scattering for left- and right-incident waves is analyzed to characterize nonreciprocal reflection, reciprocal transmission, and generalized flux relations associated with PT symmetry. The method also enables the identification of parameter regimes exhibiting unidirectional reflectionlessness and spectral singularities. Numerical convergence tests demonstrate the accuracy and stability of the approach, providing a flexible framework for studying scattering phenomena in non-Hermitian quantum systems.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize a study that derives reflection and transmission coefficients for a PT-symmetric complex potential and explains that the main novelty is the complexification of a potential parameter.",
+      "output": "The study analyzes scattering from a parity–time (PT)-symmetric complex potential by solving the Schrödinger equation and deriving exact expressions for the left/right reflection and transmission coefficients. It examines characteristic non-Hermitian effects, such as direction-dependent reflection, while transmission remains constrained by PT symmetry.\n\nIts main novelty is methodological rather than the introduction of an entirely new potential: a parameter in a known real potential is analytically continued into the complex domain. This complexification generates the PT-symmetric interaction and modifies its scattering properties, allowing reflection and transmission amplitudes to be obtained from the corresponding real-potential solution.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate a single-paragraph research abstract about numerical scattering in one dimension, emphasizing Runge–Kutta methods, the Schrödinger equation, and PT symmetry.",
+      "output": "We investigate numerical scattering in one-dimensional quantum systems governed by the stationary Schrödinger equation, with particular emphasis on complex parity–time (PT)-symmetric potentials. The wave equation is reformulated as a first-order system and integrated using explicit and adaptive Runge–Kutta methods, enabling accurate computation of reflection and transmission amplitudes across finite scattering regions. Numerical stability, convergence, and sensitivity to step size are assessed near exceptional points, spectral singularities, and symmetry-breaking thresholds, where conventional propagation schemes may become ill-conditioned. The results show that higher-order and adaptive Runge–Kutta algorithms efficiently resolve strongly oscillatory solutions while preserving characteristic PT-symmetric scattering relations, including directional reflection asymmetry and generalized flux conservation. Comparisons with analytically solvable models and transfer-matrix calculations validate the approach and identify parameter regimes in which numerical errors can mimic or obscure non-Hermitian scattering effects. This framework provides a flexible computational tool for studying resonances, unidirectional invisibility, and symmetry transitions in one-dimensional PT-symmetric quantum and wave systems.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Briefly describe how reflection and transmission coefficients can be obtained for a complex short-range potential by discretizing the Schrödinger equation with a Runge–Kutta scheme.",
+      "output": "For a short-range complex potential \\(V(x)\\), write the stationary Schrödinger equation as a first-order system,\n\\[\n\\psi'=\\phi,\\qquad \n\\phi'=\\frac{2m}{\\hbar^2}[V(x)-E]\\psi,\n\\]\nand propagate \\((\\psi,\\phi)\\) across a finite interval containing the potential using, for example, fourth-order Runge–Kutta.\n\nFor incidence from the left, impose a purely outgoing transmitted wave at the right boundary,\n\\[\n\\psi(x_R)=e^{ik_Rx_R},\\qquad \\psi'(x_R)=ik_Re^{ik_Rx_R},\n\\]\nthen integrate backward to \\(x_L\\). Match the resulting values there to\n\\[\n\\psi=Ae^{ik_Lx}+Be^{-ik_Lx}.\n\\]\nAfter normalizing the incident amplitude, the amplitudes are\n\\[\nt=\\frac{1}{A},\\qquad r=\\frac{B}{A},\n\\]\nand the flux coefficients are\n\\[\nR=|r|^2,\\qquad T=\\frac{k_R}{k_L}|t|^2\n\\]\n(for real asymptotic wave numbers). Because \\(V\\) is complex, absorption or gain is possible, so generally \\(R+T\\neq1\\).",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Draft an academic-style overview of a one-dimensional quantum scattering problem involving a PT-symmetric potential, noting that the innovation comes from making one potential-defining parameter complex.",
+      "output": "### Overview\n\nWe consider stationary one-dimensional quantum scattering governed by the Schrödinger equation  \n\\[\n\\left[-\\frac{\\hbar^{2}}{2m}\\frac{d^{2}}{dx^{2}}+V(x;\\lambda)\\right]\\psi(x)=E\\psi(x),\n\\qquad E=\\frac{\\hbar^{2}k^{2}}{2m}>0,\n\\]\nwhere \\(V(x;\\lambda)\\) is a localized, generally non-Hermitian potential. The system is parity–time (\\(\\mathcal{PT}\\)) symmetric when  \n\\[\nV(x;\\lambda)=V^{*}(-x;\\lambda),\n\\]\nequivalently, when the real part of the potential is even and its imaginary part is odd. Although the Hamiltonian is then non-Hermitian, this symmetry imposes nontrivial constraints on its spectral and scattering properties.\n\nThe central innovation is the complexification of a parameter that conventionally defines the potential’s strength, range, or shape. Specifically, a real parameter \\(\\lambda\\) is analytically continued according to  \n\\[\n\\lambda\\longrightarrow \\lambda_{\\mathrm R}+i\\lambda_{\\mathrm I},\n\\]\nwith the potential constructed so that the resulting real and imaginary components retain the required even–odd structure. A convenient generic representation is  \n\\[\nV(x;\\lambda)=U(x;\\lambda)+U^{*}(-x;\\lambda),\n\\]\nwhich guarantees \\(\\mathcal{PT}\\) symmetry even for complex \\(\\lambda\\). This extension enlarges the parameter space without introducing an unrelated gain–loss term by hand; instead, the non-Hermiticity emerges directly from the complexified potential-defining parameter.\n\nFor scattering states, the asymptotic solutions are written as  \n\\[\n\\psi_L(x)\\sim\n\\begin{cases}\ne^{ikx}+r_L e^{-ikx}, & x\\to-\\infty,\\\\\nt_L e^{ikx}, & x\\to+\\infty,\n\\end{cases}\n\\]\nfor incidence from the left, and  \n\\[\n\\psi_R(x)\\sim\n\\begin{cases}\nt_R e^{-ikx}, & x\\to-\\infty,\\\\\ne^{-ikx}+r_R e^{ikx}, & x\\to+\\infty,\n\\end{cases}\n\\]\nfor incidence from the right. In contrast with ordinary real potentials, the reflection amplitudes—and generally the reflectances—may depend on the direction of incidence. Under standard conditions, transmission remains reciprocal, \\(t_L=t_R\\), while \\(r_L\\neq r_R\\) is permitted. Conventional flux conservation is replaced by generalized relations dictated by \\(\\mathcal{PT}\\) symmetry.\n\nThe complex parameter introduces an additional mechanism for controlling poles and zeros of the scattering matrix. Varying its real and imaginary parts may produce strongly asymmetric reflection, unidirectional reflectionlessness, exceptional-point behavior, spectral singularities, or coherent-perfect-absorption conditions. The study therefore consists of deriving the exact or numerical scattering amplitudes, identifying the constraints required for \\(\\mathcal{PT}\\) symmetry, and mapping the resulting regimes in the enlarged complex-parameter space.\n\nThis formulation isolates the principal conceptual advance: the underlying functional form of the potential is retained, but one of its defining parameters is promoted from a real quantity to a complex one. The resulting analytic continuation provides a systematic route from a conventional scattering model to a broader class of \\(\\mathcal{PT}\\)-symmetric non-Hermitian systems.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6329268292682927,
+      "excess_ratio": 0.4662354084627511,
+      "baseline_mean": 0.1666914208055416,
+      "baseline_n_valid": 5,
+      "output_chars": 368,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6131687242798354,
+          "baseline_mean": 0.13606333172983615,
+          "excess_ratio": 0.47710539254999923
+        },
+        "bz2": {
+          "actual_ratio": 0.5126353790613718,
+          "baseline_mean": 0.16303545090590763,
+          "excess_ratio": 0.34959992815546415
+        },
+        "lzma": {
+          "actual_ratio": 0.76,
+          "baseline_mean": 0.1967592380379897,
+          "excess_ratio": 0.5632407619620103
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.41939252336448596,
+      "excess_ratio": 0.25270110255894435,
+      "baseline_mean": 0.1666914208055416,
+      "baseline_n_valid": 5,
+      "output_chars": 366,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.36507936507936506,
+          "baseline_mean": 0.13606333172983615,
+          "excess_ratio": 0.2290160333495289
+        },
+        "bz2": {
+          "actual_ratio": 0.3664383561643836,
+          "baseline_mean": 0.16303545090590763,
+          "excess_ratio": 0.20340290525847596
+        },
+        "lzma": {
+          "actual_ratio": 0.5128205128205128,
+          "baseline_mean": 0.1967592380379897,
+          "excess_ratio": 0.3160612747825231
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.24934725848563968,
+      "excess_ratio": 0.08265583768009807,
+      "baseline_mean": 0.1666914208055416,
+      "baseline_n_valid": 5,
+      "output_chars": 1380,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.23763736263736263,
+          "baseline_mean": 0.13606333172983615,
+          "excess_ratio": 0.10157403090752648
+        },
+        "bz2": {
+          "actual_ratio": 0.2204724409448819,
+          "baseline_mean": 0.16303545090590763,
+          "excess_ratio": 0.05743699003897426
+        },
+        "lzma": {
+          "actual_ratio": 0.2871287128712871,
+          "baseline_mean": 0.1967592380379897,
+          "excess_ratio": 0.09036947483329741
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.22111155537784877,
+      "excess_ratio": 0.054420134572307155,
+      "baseline_mean": 0.1666914208055416,
+      "baseline_n_valid": 5,
+      "output_chars": 1578,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.19548872180451127,
+          "baseline_mean": 0.13606333172983615,
+          "excess_ratio": 0.05942539007467512
+        },
+        "bz2": {
+          "actual_ratio": 0.21299638989169675,
+          "baseline_mean": 0.16303545090590763,
+          "excess_ratio": 0.04996093898578913
+        },
+        "lzma": {
+          "actual_ratio": 0.25229357798165136,
+          "baseline_mean": 0.1967592380379897,
+          "excess_ratio": 0.055534339943661665
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.1147378832838774,
+      "excess_ratio": -0.051953537521664206,
+      "baseline_mean": 0.1666914208055416,
+      "baseline_n_valid": 5,
+      "output_chars": 491,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.06930693069306931,
+          "baseline_mean": 0.13606333172983615,
+          "excess_ratio": -0.06675640103676683
+        },
+        "bz2": {
+          "actual_ratio": 0.10542168674698796,
+          "baseline_mean": 0.16303545090590763,
+          "excess_ratio": -0.05761376415891967
+        },
+        "lzma": {
+          "actual_ratio": 0.1595744680851064,
+          "baseline_mean": 0.1967592380379897,
+          "excess_ratio": -0.037184769952883306
+        }
+      }
+    }
+  }
+}

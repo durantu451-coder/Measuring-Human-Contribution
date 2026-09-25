@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0588",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA new expression as a certain asymptotic limit via \"discrete micro-states\" of permutations is provided to the mutual information of both continuous and discrete random variables.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA new expression as a certain asymptotic limit via \"discrete micro-states\" of permutations is provided to the mutual information of both continuous and discrete random variables.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A new expression for mutual information is introduced.\n- The expression applies to both continuous and discrete random variables.\n- Mutual information is represented through discrete micro-states of permutations.\n- The representation is formulated as a specific asymptotic limit.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe work derives a new expression for mutual information in continuous and discrete random variables using an asymptotic limit of permutation-based “discrete micro-states.” This formulation provides a unified way to characterize mutual information across both variable types.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: A new expression"
+  },
+  "outputs": {
+    "L1": "A new expression for the mutual information of both continuous and discrete random variables is derived as a specific asymptotic limit via the “discrete microstates” of permutations.",
+    "L2": "A novel representation of mutual information for both continuous and discrete random variables is given as a specific asymptotic limit based on permutation “discrete microstates.”",
+    "L3": "A new expression for mutual information is introduced that applies to both continuous and discrete random variables. In this formulation, mutual information is represented in terms of discrete micro-states defined by permutations. The resulting representation is expressed as a specific asymptotic limit, providing a unified framework for describing mutual information across different types of random variables.",
+    "L4": "This work develops a new representation of mutual information that applies to both continuous and discrete random variables. The approach begins by approximating the variables through permutation-based discrete “micro-states,” which encode the relevant dependence structure at a finite level of resolution. Mutual information is then expressed in terms of these finite combinatorial objects and recovered through an appropriate asymptotic limit as the discretization becomes increasingly refined.\n\nThe resulting formulation provides a common framework for settings that are traditionally treated separately. For discrete variables, it is consistent with the standard probability-mass-function definition of mutual information, while for continuous variables it reproduces the corresponding expression based on probability densities. By deriving both cases from the same limiting construction, the framework clarifies the relationship between discrete and continuous information measures and emphasizes that mutual information reflects statistical dependence rather than the particular representation of the underlying variables. This unified perspective may also offer useful conceptual and computational tools for studying mixed data, approximation schemes, and information-theoretic quantities in complex systems.",
+    "L5": "### A New Expression\n\nEvery generation invents new ways to express familiar feelings. Words appear, gestures change, and technology creates forms of communication that did not exist before. A short message, an image, or even a single symbol can now carry an entire story.\n\nYet a new expression is more than a trend. It begins when someone discovers that the old language is no longer enough. An artist chooses an unusual color, a musician combines unexpected sounds, or a young person creates a phrase that perfectly captures a shared experience. At first, the expression may seem strange. Over time, it can become natural and meaningful to many people.\n\nNew expressions help language and culture grow. They give shape to emotions we have felt but could not name. In this way, creating a new expression is an act of courage: it invites others to see, hear, or understand the world differently."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize the main contribution of a paper that derives mutual information for continuous and discrete random variables using asymptotic permutation micro-states.",
+      "output": "The paper gives a unified micro-state characterization of mutual information for both discrete and continuous random variables. It shows that, after fixing typical samples for each marginal distribution, the proportion of permutations that rearrange those samples into a jointly typical configuration decays exponentially, with rate equal to the mutual information:\n\n\\[\n\\Pr\\{\\text{permuted marginal samples reproduce the joint law}\\}\n\\asymp e^{-N I}.\n\\]\n\nThus, mutual information is interpreted as the asymptotic combinatorial cost—or loss of permutation freedom—required to impose the dependence structure of the joint distribution while preserving its marginals. The framework extends classical type-counting arguments beyond finite alphabets to continuous variables and connects Shannon mutual information with permutation/orbital micro-state methods used in entropy theory.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a one-sentence abstract describing a new expression for mutual information based on a limiting construction involving discrete micro-states of permutations.",
+      "output": "We introduce a new expression for mutual information as the limit of normalized counts of discrete permutation micro-states approximating the joint and marginal distributions.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "What novel formulation of mutual information is introduced through asymptotic limits of permutation-based discrete micro-states?",
+      "output": "The formulation is **permutation mutual information (PMI)**, or its rate version. Continuous observations are replaced by their ordinal/permutation patterns—discrete “micro-states”—and mutual information is obtained in the infinite-pattern-length limit:\n\n\\[\nI_{\\rm perm}(X;Y)\n=\\lim_{m\\to\\infty}\n\\left[\nH(\\Pi_m^X)+H(\\Pi_m^Y)-H(\\Pi_m^X,\\Pi_m^Y)\n\\right],\n\\]\n\nwhere \\(\\Pi_m^X\\) and \\(\\Pi_m^Y\\) denote length-\\(m\\) permutation patterns. For time-series rates, this is normalized by \\(m\\):\n\n\\[\n\\mathcal I_{\\rm perm}\n=\\lim_{m\\to\\infty}\\frac{1}{m}\nI(\\Pi_m^X;\\Pi_m^Y).\n\\]\n\nThus dependence is quantified through the asymptotic statistics of ordinal micro-states rather than directly through amplitudes or estimated probability densities.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Paraphrase this research claim in formal academic language: mutual information for both continuous and discrete variables can be represented using permutation microstates in an asymptotic limit.",
+      "output": "In the asymptotic limit, the mutual information of both continuous and discrete variables can be expressed in terms of permutation microstates.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate a concise statement explaining how permutations and discrete micro-states yield a new asymptotic expression for mutual information.",
+      "output": "Counting permutation-equivalent discrete microstates gives multinomial multiplicities; taking their log-ratios and applying Stirling’s approximation yields the asymptotic total mutual information\n\\[\nI_N = N\\!\\sum_{x,y}p_{xy}\\log\\frac{p_{xy}}{p_xp_y}+O(\\log N),\n\\]\nwith the logarithmic term capturing finite-size microstate corrections.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6567164179104479,
+      "excess_ratio": 0.30801636980232383,
+      "baseline_mean": 0.34870004810812405,
+      "baseline_n_valid": 5,
+      "output_chars": 182,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6384615384615384,
+          "baseline_mean": 0.3075550760516539,
+          "excess_ratio": 0.3309064624098845
+        },
+        "bz2": {
+          "actual_ratio": 0.5225806451612903,
+          "baseline_mean": 0.3059444560061043,
+          "excess_ratio": 0.216636189155186
+        },
+        "lzma": {
+          "actual_ratio": 0.782608695652174,
+          "baseline_mean": 0.4166154117336635,
+          "excess_ratio": 0.36599328391851044
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.5620915032679739,
+      "excess_ratio": 0.2133914551598498,
+      "baseline_mean": 0.34870004810812405,
+      "baseline_n_valid": 5,
+      "output_chars": 179,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.49606299212598426,
+          "baseline_mean": 0.3075550760516539,
+          "excess_ratio": 0.18850791607433037
+        },
+        "bz2": {
+          "actual_ratio": 0.46710526315789475,
+          "baseline_mean": 0.3059444560061043,
+          "excess_ratio": 0.16116080715179043
+        },
+        "lzma": {
+          "actual_ratio": 0.6888888888888889,
+          "baseline_mean": 0.4166154117336635,
+          "excess_ratio": 0.2722734771552254
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.5452196382428941,
+      "excess_ratio": 0.19651959013477005,
+      "baseline_mean": 0.34870004810812405,
+      "baseline_n_valid": 5,
+      "output_chars": 412,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.536036036036036,
+          "baseline_mean": 0.3075550760516539,
+          "excess_ratio": 0.22848095998438211
+        },
+        "bz2": {
+          "actual_ratio": 0.4576923076923077,
+          "baseline_mean": 0.3059444560061043,
+          "excess_ratio": 0.15174785168620336
+        },
+        "lzma": {
+          "actual_ratio": 0.6301369863013698,
+          "baseline_mean": 0.4166154117336635,
+          "excess_ratio": 0.21352157456770632
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1889423076923077,
+      "excess_ratio": -0.15975774041581636,
+      "baseline_mean": 0.34870004810812405,
+      "baseline_n_valid": 5,
+      "output_chars": 1315,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.14592933947772657,
+          "baseline_mean": 0.3075550760516539,
+          "excess_ratio": -0.16162573657392731
+        },
+        "bz2": {
+          "actual_ratio": 0.18020679468242246,
+          "baseline_mean": 0.3059444560061043,
+          "excess_ratio": -0.12573766132368186
+        },
+        "lzma": {
+          "actual_ratio": 0.23404255319148937,
+          "baseline_mean": 0.4166154117336635,
+          "excess_ratio": -0.18257285854217414
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.08510638297872343,
+      "excess_ratio": -0.26359366512940063,
+      "baseline_mean": 0.34870004810812405,
+      "baseline_n_valid": 5,
+      "output_chars": 893,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04356435643564356,
+          "baseline_mean": 0.3075550760516539,
+          "excess_ratio": -0.26399071961601034
+        },
+        "bz2": {
+          "actual_ratio": 0.0946969696969697,
+          "baseline_mean": 0.3059444560061043,
+          "excess_ratio": -0.21124748630913462
+        },
+        "lzma": {
+          "actual_ratio": 0.1111111111111111,
+          "baseline_mean": 0.4166154117336635,
+          "excess_ratio": -0.3055043006225524
+        }
+      }
+    }
+  }
+}

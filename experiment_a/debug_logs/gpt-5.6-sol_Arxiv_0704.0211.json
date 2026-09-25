@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0211",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThe minimum semi-degree of a digraph D is the minimum of its minimum outdegree and its minimum indegree. We show that every sufficiently large digraph D with minimum semi-degree at least n/2 +k-1 is k-linked. The bound on the minimum semi-degree is best possible and confirms a conjecture of Manoussakis from 1990. We also determine the smallest minimum semi-degree which ensures that a sufficiently large digraph D is k-ordered, i.e. that for every ordered sequence of k distinct vertices of D there is a directed cycle which encounters these vertices in this order.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThe minimum semi-degree of a digraph D is the minimum of its minimum outdegree and its minimum indegree. We show that every sufficiently large digraph D with minimum semi-degree at least n/2 +k-1 is k-linked. The bound on the minimum semi-degree is best possible and confirms a conjecture of Manoussakis from 1990. We also determine the smallest minimum semi-degree which ensures that a sufficiently large digraph D is k-ordered, i.e. that for every ordered sequence of k distinct vertices of D there is a directed cycle which encounters these vertices in this order.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The minimum semi-degree of a digraph is the smaller of its minimum outdegree and minimum indegree.\n- Every sufficiently large digraph with minimum semi-degree at least \\(n/2 + k - 1\\) is \\(k\\)-linked.\n- This minimum semi-degree bound is best possible.\n- The result confirms a conjecture proposed by Manoussakis in 1990.\n- The smallest minimum semi-degree guaranteeing that a sufficiently large digraph is \\(k\\)-ordered is also determined.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe study investigates degree thresholds for linkage and ordered cycles in sufficiently large digraphs by analyzing their minimum semi-degree. It proves that minimum semi-degree at least \\(n/2+k-1\\) guarantees \\(k\\)-linkedness, with a sharp bound confirming Manoussakis’s 1990 conjecture, and also determines the exact threshold ensuring \\(k\\)-orderedness.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, Manoussakis"
+  },
+  "outputs": {
+    "L1": "The minimum semi-degree of a digraph \\(D\\) is the smaller of its minimum outdegree and minimum indegree. We prove that every sufficiently large digraph \\(D\\) with minimum semi-degree at least \\(n/2+k-1\\) is \\(k\\)-linked. This bound is best possible and confirms a conjecture posed by Manoussakis in 1990. We also determine the smallest minimum semi-degree that guarantees a sufficiently large digraph \\(D\\) is \\(k\\)-ordered; that is, for every ordered sequence of \\(k\\) distinct vertices of \\(D\\), there exists a directed cycle that encounters these vertices in the prescribed order.",
+    "L2": "For a digraph \\(D\\), its minimum semi-degree is the smaller of its minimum indegree and minimum outdegree. We prove that, for all sufficiently large digraphs on \\(n\\) vertices, a minimum semi-degree of at least \\(n/2+k-1\\) guarantees that \\(D\\) is \\(k\\)-linked. This threshold is optimal and resolves a conjecture proposed by Manoussakis in 1990. We further identify the least minimum semi-degree condition under which every sufficiently large digraph is \\(k\\)-ordered: for any ordered list of \\(k\\) distinct vertices, the digraph contains a directed cycle that visits them in the specified order.",
+    "L3": "For a digraph \\(D\\), the minimum semi-degree is defined by\n\\[\n\\delta^{0}(D)=\\min\\{\\delta^{+}(D),\\delta^{-}(D)\\},\n\\]\nwhere \\(\\delta^{+}(D)\\) and \\(\\delta^{-}(D)\\) denote the minimum outdegree and minimum indegree, respectively.\n\nFor every fixed positive integer \\(k\\), every sufficiently large digraph on \\(n\\) vertices with\n\\[\n\\delta^{0}(D)\\ge \\frac{n}{2}+k-1\n\\]\nis \\(k\\)-linked. In other words, for any choice of distinct vertices \\(x_1,\\ldots,x_k,y_1,\\ldots,y_k\\), the digraph contains pairwise vertex-disjoint directed paths joining \\(x_i\\) to \\(y_i\\) for each \\(i\\). The semi-degree condition is sharp: there are arbitrarily large digraphs with a slightly smaller minimum semi-degree that fail to be \\(k\\)-linked. Thus, the bound cannot be improved in general.\n\nThis result confirms a conjecture proposed by Manoussakis in 1990. The same work also determines the exact minimum semi-degree threshold that guarantees a sufficiently large digraph is \\(k\\)-ordered, meaning that every prescribed ordered sequence of \\(k\\) distinct vertices occurs in that order on a directed cycle.",
+    "L4": "The study examines degree conditions that force strong linkage and cycle-ordering properties in sufficiently large digraphs. For a digraph \\(D\\), its minimum semi-degree is defined by  \n\\[\n\\delta^0(D)=\\min\\{\\delta^+(D),\\delta^-(D)\\},\n\\]\nwhere \\(\\delta^+(D)\\) and \\(\\delta^-(D)\\) denote the minimum out-degree and minimum in-degree, respectively. The main objective is to determine how large \\(\\delta^0(D)\\) must be to guarantee the existence of prescribed systems of directed paths or directed cycles.\n\nA digraph is \\(k\\)-linked if, for every choice of \\(2k\\) distinct vertices \\(x_1,\\ldots,x_k,y_1,\\ldots,y_k\\), it contains \\(k\\) pairwise vertex-disjoint directed paths \\(P_1,\\ldots,P_k\\), where \\(P_i\\) runs from \\(x_i\\) to \\(y_i\\). The study proves that, for every fixed \\(k\\) and all sufficiently large \\(n\\), every \\(n\\)-vertex digraph satisfying  \n\\[\n\\delta^0(D)\\ge \\frac n2+k-1\n\\]\nis \\(k\\)-linked. Since degrees are integral, the condition is interpreted with the appropriate ceiling when \\(n\\) is odd. Extremal examples show that the bound cannot be lowered in general. This establishes the sharp threshold and confirms a conjecture proposed by Manoussakis in 1990.\n\nThe paper also considers \\(k\\)-ordered digraphs. A digraph is \\(k\\)-ordered if, for every ordered sequence of distinct vertices \\(s_1,\\ldots,s_k\\), there is a directed cycle containing these vertices in the prescribed cyclic order. For sufficiently large digraphs, the exact minimum semi-degree threshold for this property is shown to be  \n\\[\n\\delta^0(D)\\ge \\left\\lceil\\frac{n+k}{2}\\right\\rceil-1.\n\\]\nAgain, matching constructions demonstrate that this condition is best possible. Together, these results give optimal semi-degree criteria for two fundamental directed connectivity properties and clarify how dense a large digraph must be to support arbitrary disjoint linkages and ordered directed cycles.",
+    "L5": "## The Manoussakis Legacy\n\nThe Manoussakis name reflects a strong connection to heritage, family, and tradition. With roots in Greece—particularly associated with Crete—the surname carries a sense of history shaped by generations of shared experiences.\n\nFor many, the Manoussakis family name represents resilience, hospitality, and respect for cultural identity. These values are often preserved through family stories, celebrations, cuisine, and close community ties. At the same time, each new generation adds its own experiences, allowing the legacy to evolve while remaining connected to its origins.\n\nThe Manoussakis story is therefore more than the history of a surname. It is an example of how family identity can cross borders, adapt to changing times, and continue to bring people together."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a concise abstract for a research paper proving sharp minimum semi-degree conditions for k-linked and k-ordered digraphs.",
+      "output": "We determine sharp minimum semi-degree thresholds for linkedness and ordered cycles in dense digraphs. For every fixed \\(k\\) and all sufficiently large \\(n\\), we prove that an \\(n\\)-vertex digraph \\(D\\) is \\(k\\)-linked if\n\\[\n\\delta^{0}(D)\\ge \\left\\lceil \\frac n2\\right\\rceil+k-1,\n\\]\nand \\(k\\)-ordered if\n\\[\n\\delta^{0}(D)\\ge \\left\\lceil \\frac n2\\right\\rceil+\\left\\lfloor\\frac k2\\right\\rfloor-1.\n\\]\nHere \\(\\delta^{0}(D)\\) denotes the minimum of the minimum in-degree and minimum out-degree. Matching extremal constructions show that both bounds are best possible. The proofs combine structural analysis of near-extremal digraphs with robust expansion and disjoint-path techniques.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize the main results of a paper that confirms Manoussakis’s 1990 conjecture on highly linked directed graphs.",
+      "output": "The paper, by Alexey Pokrovskiy, proves Manoussakis’s 1990 conjecture for tournaments:\n\n- A tournament is **\\(k\\)-linked** if, for any distinct vertices \\(x_1,\\dots,x_k,y_1,\\dots,y_k\\), it contains pairwise vertex-disjoint directed paths from \\(x_i\\) to \\(y_i\\) for every \\(i\\).\n- Pokrovskiy proves that every **strongly \\(452k\\)-connected tournament** is \\(k\\)-linked.\n- This establishes Manoussakis’s conjecture that connectivity linear in \\(k\\) is sufficient for \\(k\\)-linkage.\n- It improves the previous bound of order \\(k\\log k\\), namely \\(10^4k\\log k\\), to the asymptotically optimal order \\(O(k)\\).\n- Since \\(k\\)-linked tournaments necessarily require connectivity linear in \\(k\\), the theorem has the correct dependence on \\(k\\), although the constant \\(452\\) was not claimed to be optimal.\n\nThus, the central result is that sufficiently high **linear strong connectivity** guarantees arbitrary prescribed disjoint directed linkages in a tournament.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Explain, in one short paragraph, what minimum semi-degree guarantees that a sufficiently large digraph is k-linked, and mention the analogous result for k-ordered digraphs.",
+      "output": "For every fixed \\(k\\) and all sufficiently large \\(n\\), an \\(n\\)-vertex digraph is \\(k\\)-linked if its minimum semi-degree satisfies \\(\\delta^0(D)=\\min\\{\\delta^+(D),\\delta^-(D)\\}\\ge \\left\\lceil (n+k)/2\\right\\rceil-1\\); this sharp threshold also guarantees that the digraph is \\(k\\)-ordered, meaning any prescribed sequence of \\(k\\) vertices occurs in that order on a directed cycle.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Draft an academic abstract defining minimum semi-degree and stating a best-possible \\(k\\)-linkedness theorem with threshold \\(n/2+k-1\\).",
+      "output": "We study linkage in finite simple digraphs. For a digraph \\(D\\), the minimum semi-degree is\n\\[\n\\delta^{0}(D)=\\min\\{\\delta^{+}(D),\\delta^{-}(D)\\},\n\\]\nwhere \\(\\delta^{+}(D)\\) and \\(\\delta^{-}(D)\\) denote the minimum out-degree and minimum in-degree, respectively. A digraph is \\(k\\)-linked if, for every choice of \\(2k\\) distinct vertices \\(x_{1},\\ldots,x_{k},y_{1},\\ldots,y_{k}\\), it contains pairwise vertex-disjoint directed paths \\(P_{1},\\ldots,P_{k}\\), with \\(P_i\\) directed from \\(x_i\\) to \\(y_i\\). We prove that, for every fixed \\(k\\) and all sufficiently large \\(n\\), every \\(n\\)-vertex digraph \\(D\\) satisfying\n\\[\n\\delta^{0}(D)\\ge \\frac n2+k-1\n\\]\nis \\(k\\)-linked. Since degrees are integral, this condition is equivalent to \\(\\delta^{0}(D)\\ge \\lceil n/2\\rceil+k-1\\). We also construct digraphs with minimum semi-degree one below this bound that are not \\(k\\)-linked, showing that the threshold is best possible.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a brief research summary about degree conditions in digraphs, including the sharp bound for \\(k\\)-linkedness and the determination of the threshold for \\(k\\)-orderedness.",
+      "output": "Let \\(D\\) be an \\(n\\)-vertex digraph and write  \n\\[\n\\delta^0(D)=\\min\\{\\delta^+(D),\\delta^-(D)\\}\n\\]\nfor its minimum semidegree. For every fixed \\(k\\ge 2\\) and all sufficiently large \\(n\\), the following sharp results hold:\n\n- **\\(k\\)-linkedness:** If  \n  \\[\n  \\delta^0(D)\\ge \\left\\lceil\\frac n2\\right\\rceil+k,\n  \\]\n  then \\(D\\) is \\(k\\)-linked: for any distinct vertices \\(s_1,\\ldots,s_k,t_1,\\ldots,t_k\\), there are pairwise vertex-disjoint directed paths from \\(s_i\\) to \\(t_i\\). Extremal examples show that lowering the bound by one is not sufficient.\n\n- **\\(k\\)-orderedness:** The exact semidegree threshold is  \n  \\[\n  \\delta^0(D)\\ge \\left\\lceil\\frac{n+k}{2}\\right\\rceil-1.\n  \\]\n  Under this condition, every ordered sequence of \\(k\\) distinct vertices occurs in that order on a directed cycle. This threshold is likewise best possible.\n\nThus directed \\(k\\)-linkedness requires roughly \\(n/2+k\\) in- and out-neighbours at every vertex, whereas \\(k\\)-orderedness has the lower threshold of roughly \\(n/2+k/2\\). The results are typically proved using robust expansion, path-cover, and absorption techniques, together with extremal analysis near the half-degree barrier.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6326732673267327,
+      "excess_ratio": 0.4685440364129356,
+      "baseline_mean": 0.16412923091379708,
+      "baseline_n_valid": 5,
+      "output_chars": 583,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5927152317880795,
+          "baseline_mean": 0.1251031497204455,
+          "excess_ratio": 0.467612082067634
+        },
+        "bz2": {
+          "actual_ratio": 0.611764705882353,
+          "baseline_mean": 0.15463626896431046,
+          "excess_ratio": 0.4571284369180425
+        },
+        "lzma": {
+          "actual_ratio": 0.6847826086956522,
+          "baseline_mean": 0.20622016634363569,
+          "excess_ratio": 0.4785624423520165
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4411764705882352,
+      "excess_ratio": 0.2770472396744381,
+      "baseline_mean": 0.16412923091379708,
+      "baseline_n_valid": 5,
+      "output_chars": 597,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3667711598746082,
+          "baseline_mean": 0.1251031497204455,
+          "excess_ratio": 0.24166801015416267
+        },
+        "bz2": {
+          "actual_ratio": 0.47863247863247865,
+          "baseline_mean": 0.15463626896431046,
+          "excess_ratio": 0.3239962096681682
+        },
+        "lzma": {
+          "actual_ratio": 0.46875,
+          "baseline_mean": 0.20622016634363569,
+          "excess_ratio": 0.2625298336563643
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.2684151785714286,
+      "excess_ratio": 0.10428594765763152,
+      "baseline_mean": 0.16412923091379708,
+      "baseline_n_valid": 5,
+      "output_chars": 1081,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.23159784560143626,
+          "baseline_mean": 0.1251031497204455,
+          "excess_ratio": 0.10649469588099075
+        },
+        "bz2": {
+          "actual_ratio": 0.25870646766169153,
+          "baseline_mean": 0.15463626896431046,
+          "excess_ratio": 0.10407019869738107
+        },
+        "lzma": {
+          "actual_ratio": 0.310126582278481,
+          "baseline_mean": 0.20622016634363569,
+          "excess_ratio": 0.10390641593484531
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.16582733812949638,
+      "excess_ratio": 0.001698107215699296,
+      "baseline_mean": 0.16412923091379708,
+      "baseline_n_valid": 5,
+      "output_chars": 1880,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.13979706877113868,
+          "baseline_mean": 0.1251031497204455,
+          "excess_ratio": 0.014693919050693172
+        },
+        "bz2": {
+          "actual_ratio": 0.1603875134553283,
+          "baseline_mean": 0.15463626896431046,
+          "excess_ratio": 0.005751244491017854
+        },
+        "lzma": {
+          "actual_ratio": 0.1950207468879668,
+          "baseline_mean": 0.20622016634363569,
+          "excess_ratio": -0.01119941945566888
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.08963585434173674,
+      "excess_ratio": -0.07449337657206034,
+      "baseline_mean": 0.16412923091379708,
+      "baseline_n_valid": 5,
+      "output_chars": 799,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.046296296296296294,
+          "baseline_mean": 0.1251031497204455,
+          "excess_ratio": -0.07880685342414921
+        },
+        "bz2": {
+          "actual_ratio": 0.09243697478991597,
+          "baseline_mean": 0.15463626896431046,
+          "excess_ratio": -0.06219929417439449
+        },
+        "lzma": {
+          "actual_ratio": 0.12307692307692308,
+          "baseline_mean": 0.20622016634363569,
+          "excess_ratio": -0.0831432432667126
+        }
+      }
+    }
+  }
+}

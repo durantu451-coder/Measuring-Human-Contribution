@@ -1,0 +1,175 @@
+{
+  "model": "claude-sonnet-5",
+  "domain": "Arxiv",
+  "id": "0704.0004",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe show that a determinant of Stirling cycle numbers counts unlabeled acyclic single-source automata. The proof involves a bijection from these automata to certain marked lattice paths and a sign-reversing involution to evaluate the determinant.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe show that a determinant of Stirling cycle numbers counts unlabeled acyclic single-source automata. The proof involves a bijection from these automata to certain marked lattice paths and a sign-reversing involution to evaluate the determinant.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- We show that a determinant of Stirling cycle numbers counts unlabeled acyclic single-source automata.\n- The proof establishes a bijection between these automata and certain marked lattice paths.\n- A sign-reversing involution is used to evaluate the determinant.\n- This combines combinatorial structures (automata) with algebraic objects (determinants of Stirling numbers) through path-based representations.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe study examines a determinant of Stirling cycle numbers in relation to unlabeled acyclic single-source automata, employing a bijection between these automata and marked lattice paths alongside a sign-reversing involution to evaluate the determinant. The key finding demonstrates that this determinant precisely counts the automata, establishing a novel combinatorial identity that bridges enumerative combinatorics with automata theory.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Stirling, The"
+  },
+  "outputs": {
+    "L1": "We show that a determinant of Stirling cycle numbers enumerates unlabeled acyclic single-source automata. The proof proceeds via a bijection between these automata and certain marked lattice paths, together with a sign-reversing involution used to evaluate the determinant.",
+    "L2": "We demonstrate that unlabeled acyclic single-source automata are enumerated by a determinant whose entries are Stirling numbers of the first kind. Our argument proceeds in two steps: first, we establish a bijective correspondence between these automata and a class of marked lattice paths; second, we compute the determinant by constructing a sign-reversing involution.",
+    "L3": "# Determinants of Stirling Cycle Numbers and Unlabeled Acyclic Single-Source Automata\n\n## Overview\n\nIn this work, we establish a striking connection between an algebraic object—a determinant whose entries are Stirling cycle numbers—and a combinatorial family of automata, namely unlabeled acyclic single-source automata. Specifically, we show that the value of this determinant is precisely equal to the number of such automata satisfying certain natural constraints. This result contributes to a broader program of finding combinatorial interpretations for determinants built from classical combinatorial sequences, and it exemplifies how enumerative identities can emerge from careful bijective and involutive arguments.\n\n## Main Result\n\nThe central theorem of this paper states that a certain determinant, constructed from the (unsigned) Stirling numbers of the first kind—also known as Stirling cycle numbers—counts the number of unlabeled acyclic single-source automata of a given size. Stirling cycle numbers, which count permutations of a given number of elements by their number of cycles, are classical objects in enumerative combinatorics, yet their appearance as entries in a determinant with a clean combinatorial interpretation is far from obvious. Our result reveals that beneath this algebraic construction lies a rich combinatorial structure tied to automata theory.\n\n## Bijective Correspondence with Marked Lattice Paths\n\nThe proof of our main theorem proceeds via a two-step strategy. The first step establishes a bijection between the automata under consideration and a family of combinatorial objects that we call *marked lattice paths*. These are lattice paths equipped with additional marking data that encode the transition structure of the automata, including how states are connected to one another and how the acyclic, single-source property manifests itself at the level of the path. \n\nThis bijection allows us to translate the enumeration problem from the language of automata—where notions such as states, transitions, sources, and acyclicity must be tracked carefully—into the more tractable and visual language of lattice paths. Under this correspondence, structural properties of the automata (such as the branching behavior at each state and the absence of cycles) are reflected in local and global properties of the paths and their markings, making the enumeration considerably more amenable to standard combinatorial techniques.\n\n## Evaluating the Determinant via a Sign-Reversing Involution\n\nThe second step of the proof addresses the algebraic side of the correspondence: evaluating the determinant of Stirling cycle numbers. Determinants, by their definition, involve an alternating sum over permutations, which naturally introduces signs that must ultimately cancel except for a small set of surviving contributions. To handle this, we construct a sign-reversing involution on a suitable set of signed combinatorial configurations arising from the Leibniz expansion of the determinant.\n\nThis involution pairs up configurations of opposite sign, causing their contributions to the determinant to cancel. The configurations that survive—those left fixed by the involution, or more precisely those without a partner—correspond exactly to the marked lattice paths described above, and hence to the unlabeled acyclic single-source automata. This use of a sign-reversing involution is a well-established and powerful technique for evaluating determinants and alternating sums combinatorially, and its application here provides the crucial link between the algebraic and combinatorial sides of the identity.\n\n## Significance and Synthesis\n\nTaken together, these two ingredients—the bijection with marked lattice paths and the sign-reversing involution—combine to give a fully combinatorial proof that the determinant of Stirling cycle numbers equals the number of unlabeled acyclic single-source automata. This result is significant for several reasons.\n\nFirst, it provides a new and unexpected combinatorial meaning for a determinant of classical combinatorial numbers, adding to the growing catalogue of such determinant identities that arise throughout enumerative combinatorics. Second, it demonstrates the utility of lattice path representations as an intermediary structure that can encode complex combinatorial objects like automata in a form well-suited to determinant evaluation techniques. Third, it showcases how sign-reversing involutions, though a classical tool, can be adapted to intricate settings involving multiple layers of combinatorial data (paths, markings, and their correspondence to automata) to yield clean and transparent proofs of nontrivial identities.\n\nMore broadly, this work illustrates the fruitful interplay between automata theory, algebraic combinatorics, and lattice path enumeration, and it suggests further avenues of investigation, such as extending the correspondence to other classes of automata or exploring analogous determinant identities involving different families of combinatorial numbers.",
+    "L4": "# Determinants of Stirling Cycle Numbers and Unlabeled Acyclic Single-Source Automata\n\n## Introduction\n\nThe Stirling numbers of the first kind, and their unsigned counterparts known as Stirling cycle numbers, occupy a central position in combinatorics, appearing in contexts ranging from permutation statistics to the theory of symmetric functions. While much attention has been devoted to the individual values and generating functions of these numbers, comparatively less work has explored the behavior of determinants formed from arrays of Stirling cycle numbers. This study addresses that gap by examining a specific determinant construction and demonstrating its surprising connection to a class of combinatorial objects known as unlabeled acyclic single-source automata.\n\n## The Determinant Construction\n\nWe begin by defining a matrix whose entries are given by Stirling cycle numbers indexed according to a systematic scheme related to the structural parameters of automata. The determinant of this matrix, at first glance, appears to be a purely algebraic quantity arising from the recursive and combinatorial properties of Stirling numbers. However, the central contribution of this work is to show that this determinant admits a rich combinatorial interpretation: it exactly enumerates a natural class of automata satisfying acyclicity and single-source conditions, considered up to isomorphism (i.e., unlabeled).\n\n## Automata and Their Combinatorial Structure\n\nAn unlabeled acyclic single-source automaton consists of a directed graph structure with a designated source state, no directed cycles, and transitions governed by a finite alphabet, where the automaton is considered without distinguishing labels on its states. Enumerating such automata is a nontrivial task due to the interplay between the acyclic constraint, the uniqueness of the source, and the combinatorial explosion of possible transition structures as the number of states and alphabet size grow. Classical techniques for counting labeled structures do not directly transfer to the unlabeled setting, necessitating new combinatorial machinery.\n\n## The Bijective and Involutive Method\n\nTo establish the correspondence between the determinant and the automaton count, the study introduces a bijection between unlabeled acyclic single-source automata and a class of combinatorial objects termed marked lattice paths. These lattice paths encode the transition structure of the automaton through a sequence of steps that reflect the branching and merging behavior of automaton states, with markings capturing additional structural data needed to recover the automaton uniquely (up to isomorphism) from the path.\n\nBuilding on this bijection, the paper develops a sign-reversing involution on an extended set of weighted lattice paths that naturally arises from the Leibniz expansion of the determinant. The determinant, expressed as a signed sum over permutations, translates under the bijection into a signed sum over configurations of marked lattice paths. The involution is constructed to pair up and cancel all configurations carrying a negative sign, except for a distinguished set of survivors that correspond exactly to valid marked lattice paths—and hence to automata—each contributing with a positive sign. This cancellation argument is the technical heart of the paper, requiring careful case analysis to verify that the involution is well-defined, sign-reversing, and leaves precisely the desired survivors fixed.\n\n## Main Result\n\nThe principal theorem of the paper states that the determinant of the Stirling cycle number matrix, as constructed, is equal to the number of unlabeled acyclic single-source automata of the corresponding size. This result is notable both for its simplicity of statement and for the depth of combinatorial machinery required to prove it. It establishes a previously unknown identity linking two seemingly disparate areas: the algebraic theory of Stirling numbers and determinants on one hand, and the enumerative theory of automata on the other.\n\n## Discussion and Implications\n\nThe identity uncovered in this study exemplifies a broader phenomenon in combinatorics wherein algebraically defined quantities, such as determinants, encode enumerative information about combinatorial structures through elegant bijective correspondences. Beyond its intrinsic mathematical interest, the result suggests potential applications in the analysis of automata complexity, where determinant-based formulas could offer new computational or asymptotic tools for counting automata with prescribed properties. Furthermore, the techniques developed here—particularly the construction of the sign-reversing involution on marked lattice paths—may be adaptable to other determinant identities involving Stirling-type numbers or related combinatorial sequences.\n\n## Conclusion\n\nBy combining a carefully constructed bijection with a nontrivial sign-reversing involution, this study establishes a new and elegant identity connecting the determinant of Stirling cycle numbers to the enumeration of unlabeled acyclic single-source automata. This finding not only enriches the theory of Stirling numbers but also opens avenues for further exploration at the intersection of enumerative combinatorics and automata theory, inviting future research into generalizations, alternative proofs, and broader applications of the underlying combinatorial framework.",
+    "L5": "# The Historic City of Stirling\n\nStirling is one of Scotland's most historically significant cities, often referred to as the gateway to the Scottish Highlands. Situated on the River Forth, Stirling has played a pivotal role in Scottish history for centuries, earning it the nickname \"the key to Scotland\" due to its strategic location controlling access between the Highlands and the Lowlands.\n\n## Historical Significance\n\nThe city's history is deeply intertwined with Scotland's fight for independence. Two of the most decisive battles in Scottish history took place near Stirling: the Battle of Stirling Bridge in 1297, where William Wallace led Scottish forces to victory against the English, and the Battle of Bannockburn in 1314, where Robert the Bruce achieved a decisive triumph that helped secure Scottish independence.\n\n## Stirling Castle\n\nDominating the city's skyline, Stirling Castle stands as one of the most important castles in Scotland, both historically and architecturally. Perched atop a volcanic crag, the castle served as a royal residence for Scottish monarchs, including Mary, Queen of Scots, who was crowned there as an infant. The castle's Renaissance architecture and Great Hall reflect the wealth and ambition of the Stewart dynasty.\n\n## The William Wallace Monument\n\nOverlooking the city stands the National Wallace Monument, a striking Victorian Gothic tower built to commemorate William Wallace's legacy. Visitors can climb its winding staircase for panoramic views of the surrounding countryside and battlefields that shaped the nation's history.\n\n## Modern Stirling\n\nToday, Stirling combines its rich heritage with modern amenities. The University of Stirling attracts students from around the world, while the city center's cobblestone streets and medieval architecture draw tourists eager to experience Scotland's past. Stirling was officially granted city status in 2002, recognizing its cultural and historical importance.\n\nWith its blend of medieval charm, dramatic landscapes, and pivotal historical sites, Stirling remains an essential destination for anyone seeking to understand the story of Scotland."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a short abstract for a combinatorics paper connecting a determinant of Stirling cycle numbers to counting acyclic single-source automata via a bijective and involutive proof.",
+      "output": "# Abstract\n\nWe study a family of Hankel-type determinants whose entries are unsigned Stirling numbers of the first kind (Stirling cycle numbers), and establish a closed-form evaluation revealing an unexpected connection to the enumeration of acyclic automata possessing a single source state. The determinant's value is shown to coincide, up to explicit elementary factors, with a generating function counting these automata by number of states and transitions.\n\nOur proof is combinatorial rather than algebraic: we interpret each matrix entry as a signed sum over permutations weighted by cycle structure, and construct a sign-reversing involution on a suitable set of combinatorial configurations—pairs of permutations decorated with auxiliary cycle data—that cancels all terms except those corresponding bijectively to acyclic single-source automata. The surviving fixed points of the involution are placed in explicit bijection with such automata, yielding a transparent combinatorial proof of the determinant identity without recourse to Lindström–Gessel–Viennot machinery or generating function manipulations.\n\nBeyond providing a new combinatorial model for Stirling cycle determinants, our approach yields refined identities tracking additional statistics (such as the number of final states or transition labels), and suggests a broader framework in which determinants of Stirling-type numbers correspond to counting problems for constrained automata and related discrete structures. We discuss extensions to signed and q-analogue settings, and pose questions on generalizing the involutive technique to other classical combinatorial determinants.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize in 2-3 sentences a research result showing that a Stirling number determinant enumerates unlabeled acyclic automata with one source, using lattice path bijections.",
+      "output": "This research result establishes that a determinant whose entries involve Stirling numbers (of the second kind) provides an exact enumeration formula for unlabeled acyclic automata possessing a single source state. The proof strategy relies on constructing a bijection between the structural components of these automata and certain families of lattice paths, translating the combinatorial problem of counting automata into a path-counting problem. By analyzing these lattice paths—typically through sign-reversing involutions or direct correspondence with matrix minors—the determinant naturally emerges as the generating count, linking automata theory to classical combinatorial number sequences.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "I'm drafting a paper abstract: it should mention a determinant of unsigned Stirling numbers of the first kind, a bijection to marked lattice paths, and a sign-reversing involution proof technique for counting automata. Can you generate it?",
+      "output": "# Draft Abstract\n\nWe investigate a determinant whose entries are given by the unsigned Stirling numbers of the first kind, establishing a closed-form evaluation via a combinatorial bijection to a class of marked lattice paths. This correspondence translates the algebraic structure of the determinant into a weighted enumeration problem over path configurations, where markings encode the sign and multiplicity data inherited from the permutation-cycle interpretation of the Stirling numbers. To resolve the resulting alternating sum, we construct a sign-reversing involution on the associated combinatorial objects, pairing terms of opposite sign to isolate a canonical set of fixed points that yields the final formula. As an application, we reinterpret this evaluation in the context of counting automata, where the determinant arises naturally as a generating function for state-transition configurations subject to structural constraints. Our results demonstrate how classical determinantal identities for Stirling-type sequences can be systematically derived through path-based bijections and involutive cancellation, offering a unified combinatorial framework connecting algebraic enumeration, lattice path models, and automaton counting problems.\n\n---\n\nWould you like me to tailor this further — e.g., make it more concise for a conference submission, add specific notation/theorem numbering placeholders, or adjust the tone for a specific journal (combinatorics-focused vs. theoretical CS-focused)?",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Give me a concise mathematical abstract describing how Stirling cycle number determinants relate to the enumeration of acyclic single-source automata, including proof methods like bijections and involutions.",
+      "output": "# Stirling Cycle Determinants and Acyclic Single-Source Automata\n\n## Abstract\n\nWe establish a correspondence between determinants of matrices built from unsigned Stirling numbers of the first kind and the enumeration of acyclic automata possessing a unique source state. Let $c(n,k)$ denote the unsigned Stirling cycle number counting permutations of $n$ elements with exactly $k$ cycles. We consider Hankel-type and Toeplitz-type matrices $M_n = [c(i+a, j+b)]_{0 \\le i,j \\le n}$ for fixed shift parameters $a,b$, and show that $\\det M_n$ enumerates certain classes of labeled transition structures on $n$ states satisfying:\n\n- **Single-source condition**: exactly one state has in-degree zero (the initial state),\n- **Acyclicity**: the transition digraph admits no directed cycles,\n- **Structural compatibility**: the automaton's edge-labeling respects a linear order compatible with reachability from the source.\n\n**Method of proof.** The evaluation proceeds via three complementary techniques:\n\n1. **Lindström–Gessel–Viennot (LGV) bijection**: The determinant is expressed as a signed sum over families of non-intersecting lattice paths on a grid whose steps encode cycle-insertion operations (the recursive rule $c(n,k) = c(n-1,k-1) + (n-1)c(n-1,k)$). Non-intersecting path families correspond bijectively to acyclic single-source automata via a growth process that inserts states one at a time as new minimal elements or new leaves.\n\n2. **Sign-reversing involution**: Intersecting path configurations, which contribute to the naive permutation expansion of the determinant but must cancel, are paired via an involution that swaps path segments at the first point of intersection. This isolates the surviving non-intersecting configurations as exactly those satisfying the acyclic, single-source automaton axioms, yielding $\\det M_n = $ (signed) count of such automata, often simplifying to a product formula (e.g., $n!$, $(n-1)!$, or a superfactorial).\n\n3. **Direct bijection with labeled forests/functional digraphs**: Since Stirling cycle numbers naturally enumerate permutations decomposed into cycles, and acyclic single-source automata decompose into a rooted spanning arborescence plus auxiliary \"chord\" transitions, a direct bijection is constructed mapping each permutation cycle to a transition edge in the automaton, respecting the source-uniqueness constraint.\n\n**Conclusion.** The resulting closed-form determinant evaluations provide exact enumeration formulas for acyclic single-source automata of size $n$, expressed in terms of factorials or Stirling-number products, and illustrate a broader principle whereby algebraic identities among Stirling cycle numbers reflect combinatorial bijections between permutation cycle structures and automaton reachability structures.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Compose an academic-style abstract for an enumerative combinatorics result linking automata theory, Stirling numbers, and determinant evaluation via lattice path bijections and sign-reversing involutions.",
+      "output": "# Abstract\n\nWe establish a novel combinatorial framework connecting finite automata, Stirling number identities, and determinant evaluations through a unified theory of weighted lattice paths. Beginning with a family of deterministic finite automata whose transition structures encode restricted growth sequences, we construct a bijection between accepted words and set partitions counted by Stirling numbers of the second kind, $S(n,k)$. This correspondence is realized concretely via lattice paths confined to a staircase region, where path statistics—specifically the number of east steps at each height—correspond to block-size sequences of the associated partitions.\n\nBuilding on this bijection, we express a class of Hankel and Toeplitz-like determinants whose entries are generating functions for $S(n,k)$ as signed sums over families of non-intersecting lattice path tuples, invoking the Lindström–Gessel–Viennot lemma. To evaluate these determinants in closed form, we introduce a sign-reversing involution on the set of path configurations that violate the non-intersection condition, canceling all but a distinguished set of \"fixed\" configurations corresponding to the identity permutation. The surviving configurations are shown to biject with automaton-accepting paths of a reduced transition system, yielding an explicit product formula for the determinant in terms of factorials and Stirling-type coefficients.\n\nAs applications, we recover several known determinant identities involving Stirling and Bell numbers as special cases, and we derive new identities for weighted variants incorporating a parameter that tracks the number of automaton states visited, equivalently the number of distinct block minima in the associated partitions. The involution technique developed here is shown to extend naturally to $q$-analogues, where automaton weights correspond to $q$-Stirling numbers, and non-intersecting path counts yield $q$-deformed determinant evaluations satisfying a functional equation reminiscent of the Jacobi–Trudi identity. Our results demonstrate that automata-theoretic language recognition, when translated into the language of lattice paths, provides a powerful and transparent mechanism for both discovering and proving determinant identities in enumerative combinatorics, situating classical Stirling number determinants within a broader algebraic-combinatorial context linking formal language theory to symmetric function theory.\n\n**Keywords:** finite automata, Stirling numbers, lattice paths, sign-reversing involution, Lindström–Gessel–Viennot lemma, determinant evaluation, $q$-analogues",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6704000000000001,
+      "excess_ratio": 0.5462416216442304,
+      "baseline_mean": 0.12415837835576966,
+      "baseline_n_valid": 5,
+      "output_chars": 273,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7068965517241379,
+          "baseline_mean": 0.09743756096816875,
+          "excess_ratio": 0.6094589907559691
+        },
+        "bz2": {
+          "actual_ratio": 0.5308056872037915,
+          "baseline_mean": 0.11030012987685675,
+          "excess_ratio": 0.42050555732693473
+        },
+        "lzma": {
+          "actual_ratio": 0.7666666666666667,
+          "baseline_mean": 0.1609600838519676,
+          "excess_ratio": 0.6057065828146991
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4389312977099237,
+      "excess_ratio": 0.314772919354154,
+      "baseline_mean": 0.12415837835576966,
+      "baseline_n_valid": 5,
+      "output_chars": 369,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3788546255506608,
+          "baseline_mean": 0.09743756096816875,
+          "excess_ratio": 0.28141706458249205
+        },
+        "bz2": {
+          "actual_ratio": 0.39768339768339767,
+          "baseline_mean": 0.11030012987685675,
+          "excess_ratio": 0.2873832678065409
+        },
+        "lzma": {
+          "actual_ratio": 0.52,
+          "baseline_mean": 0.1609600838519676,
+          "excess_ratio": 0.35903991614803243
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.10006660006660002,
+      "excess_ratio": -0.02409177828916964,
+      "baseline_mean": 0.12415837835576966,
+      "baseline_n_valid": 5,
+      "output_chars": 5070,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.07965931863727455,
+          "baseline_mean": 0.09743756096816875,
+          "excess_ratio": -0.0177782423308942
+        },
+        "bz2": {
+          "actual_ratio": 0.09538461538461539,
+          "baseline_mean": 0.11030012987685675,
+          "excess_ratio": -0.014915514492241363
+        },
+        "lzma": {
+          "actual_ratio": 0.12427184466019417,
+          "baseline_mean": 0.1609600838519676,
+          "excess_ratio": -0.03668823919177344
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.08898897344308132,
+      "excess_ratio": -0.03516940491268834,
+      "baseline_mean": 0.12415837835576966,
+      "baseline_n_valid": 5,
+      "output_chars": 5446,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.07059916395726892,
+          "baseline_mean": 0.09743756096816875,
+          "excess_ratio": -0.026838397010899823
+        },
+        "bz2": {
+          "actual_ratio": 0.08501440922190202,
+          "baseline_mean": 0.11030012987685675,
+          "excess_ratio": -0.025285720654954727
+        },
+        "lzma": {
+          "actual_ratio": 0.11070780399274047,
+          "baseline_mean": 0.1609600838519676,
+          "excess_ratio": -0.050252279859227145
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.03832969772514802,
+      "excess_ratio": -0.08582868063062164,
+      "baseline_mean": 0.12415837835576966,
+      "baseline_n_valid": 5,
+      "output_chars": 2143,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.01832208293153327,
+          "baseline_mean": 0.09743756096816875,
+          "excess_ratio": -0.07911547803663548
+        },
+        "bz2": {
+          "actual_ratio": 0.038314176245210725,
+          "baseline_mean": 0.11030012987685675,
+          "excess_ratio": -0.07198595363164603
+        },
+        "lzma": {
+          "actual_ratio": 0.05673758865248227,
+          "baseline_mean": 0.1609600838519676,
+          "excess_ratio": -0.10422249519948534
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T05:13:11.545691+00:00"
+    }
+  ]
+}

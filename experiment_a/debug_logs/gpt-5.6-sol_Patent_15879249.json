@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15879249",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA device configured to encode video data, the device including a generator configured to generate a prediction block of a current prediction unit using a reference index and a motion vector of the current prediction unit, and a residual block using a difference between the current prediction unit and the prediction block; a transformer configured to transform the residual block to generate a transform block; a quantizer configured to quantize coefficients of the transform block to generate a quantization block using a quantization parameter, wherein the quantizer generates the quantization block by selecting two effective quantization parameters that are available and exist among left, upper, and previous quantization parameters according to an order of priority levels set for the left, upper, and previous quantization parameter and using an average of the two effective quantization parameters; and an entropy-coder configured to entropy-code the quantization block using a scan pattern. Further, the motion vector is encoded using a motion vector predictor which is set equal to one of an effective spatial motion vector candidate and an effective temporal motion vector candidate, and when the quantized coefficients of the quantization block are divided into a plural of subset, a same scan pattern is applied to quantized coefficients of each subset.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA device configured to encode video data, the device including a generator configured to generate a prediction block of a current prediction unit using a reference index and a motion vector of the current prediction unit, and a residual block using a difference between the current prediction unit and the prediction block; a transformer configured to transform the residual block to generate a transform block; a quantizer configured to quantize coefficients of the transform block to generate a quantization block using a quantization parameter, wherein the quantizer generates the quantization block by selecting two effective quantization parameters that are available and exist among left, upper, and previous quantization parameters according to an order of priority levels set for the left, upper, and previous quantization parameter and using an average of the two effective quantization parameters; and an entropy-coder configured to entropy-code the quantization block using a scan pattern. Further, the motion vector is encoded using a motion vector predictor which is set equal to one of an effective spatial motion vector candidate and an effective temporal motion vector candidate, and when the quantized coefficients of the quantization block are divided into a plural of subset, a same scan pattern is applied to quantized coefficients of each subset.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The device generates a prediction block using the current prediction unit’s reference index and motion vector, and creates a residual block from the difference between the current and prediction units.\n- A transformer converts the residual block into a transform block.\n- A quantizer generates a quantization block by averaging two available effective quantization parameters selected from the left, upper, and previous parameters according to a priority order.\n- The motion vector is encoded using a predictor chosen from either an effective spatial candidate or an effective temporal candidate.\n- The quantization block is entropy-coded using a scan pattern, with the same pattern applied to each subset of quantized coefficients.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA video encoder generates motion-compensated prediction and residual blocks, transforms and quantizes the residual using the average of two prioritized effective neighboring quantization parameters, and entropy-codes coefficient subsets with a common scan pattern while predicting motion vectors from spatial or temporal candidates. This approach enables efficient and consistent compression by adaptively deriving quantization and motion-vector parameters and uniformly scanning quantized coefficient subsets.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Further"
+  },
+  "outputs": {
+    "L1": "A device configured to encode video data, the device comprising: a generator configured to generate a prediction block for a current prediction unit using a reference index and a motion vector of the current prediction unit, and to generate a residual block based on a difference between the current prediction unit and the prediction block; a transformer configured to transform the residual block to generate a transform block; a quantizer configured to quantize coefficients of the transform block using a quantization parameter to generate a quantization block, wherein the quantizer generates the quantization block by selecting two available effective quantization parameters from among left, upper, and previous quantization parameters in accordance with an order of priority established for the left, upper, and previous quantization parameters, and by using an average of the two selected effective quantization parameters; and an entropy coder configured to entropy-code the quantization block using a scan pattern. Further, the motion vector is encoded using a motion vector predictor set equal to either an effective spatial motion vector candidate or an effective temporal motion vector candidate. When the quantized coefficients of the quantization block are divided into a plurality of subsets, the same scan pattern is applied to the quantized coefficients of each subset.",
+    "L2": "A video-encoding apparatus comprises a prediction generator, a transform module, a quantization module, and an entropy encoder. The prediction generator forms a prediction block for a current prediction unit based on that unit’s reference index and motion vector, and derives a residual block from the difference between the current prediction unit and the resulting prediction block. The transform module converts the residual block into a transform block. Using a quantization parameter, the quantization module quantizes the transform-block coefficients to produce a quantization block. To determine the quantization parameter, the module selects two valid, available parameters from the left, upper, and previous quantization parameters in accordance with predefined priority rankings assigned to those parameters, and uses the average of the two selected parameters. The entropy encoder then encodes the quantization block according to a scan pattern. The motion vector is encoded with a motion-vector predictor set to either an effective spatial motion-vector candidate or an effective temporal motion-vector candidate. If the quantized coefficients are separated into multiple subsets, the identical scan pattern is used for the coefficients in every subset.",
+    "L3": "The device generates a prediction block based on the reference index and motion vector of the current prediction unit. It then calculates the difference between the current unit and the generated prediction unit to produce a residual block. A transformer subsequently converts the residual block into a transform block.\n\nA quantizer quantizes the transform block to generate a quantization block. The quantization parameter is determined by selecting two available effective parameters from the left, upper, and previous quantization parameters according to a predefined priority order and averaging the selected values.\n\nThe device encodes the motion vector using a predictor selected from either an effective spatial candidate or an effective temporal candidate. It also entropy-codes the quantization block according to a scan pattern, applying the same scan pattern consistently to each subset of quantized coefficients.",
+    "L4": "A video encoder receives a picture and divides it into coding units or blocks. For each block, the encoder forms a prediction using previously reconstructed picture information. In an inter-prediction mode, the prediction is generated by motion compensation: one or more reference blocks are identified in previously decoded pictures, and motion vectors specify the displacement between the current block and those reference blocks. The encoder subtracts the motion-compensated prediction from the original block to produce a residual block.\n\nThe residual block is transformed into a set of transform coefficients and then quantized. To determine the quantization parameter for the current block, the encoder identifies effective quantization parameters associated with neighboring blocks. Neighboring candidates may be evaluated in a defined priority order, so that available and valid parameters are selected consistently even when some neighboring blocks are unavailable, belong to a different region, or do not provide a usable value. Two prioritized effective neighboring quantization parameters are selected, and their average—optionally rounded or clipped to a permitted range—is used to derive a predicted quantization parameter for the current block. The encoder may signal only a difference between the derived parameter and the quantization parameter actually applied to the block. This reduces signaling overhead while allowing the quantization level to adapt to local picture characteristics.\n\nAfter quantization, the coefficient array may be divided into multiple coefficient subsets, such as sub-blocks within a transform block. The subsets and the coefficients within them are processed according to a common scan pattern. For example, the same diagonal, horizontal, vertical, or otherwise predefined scan order may be applied uniformly to each subset. The encoder can signal the location of the last significant coefficient and entropy-code significance information, coefficient levels, signs, and related syntax elements in scan order. Using a common scan pattern for the subsets simplifies coefficient processing and provides consistent statistical behavior for entropy coding.\n\nThe encoder also derives a predictor for each motion vector. A candidate list is formed from spatially neighboring blocks, temporally corresponding blocks, or both. Spatial candidates may include motion information from blocks located to the left, above, or diagonally adjacent to the current block. Temporal candidates may be obtained from a colocated block in a reference picture, with scaling applied when required by differences in picture timing. Invalid, unavailable, or duplicate candidates may be removed, and the remaining candidates may be arranged according to a prescribed priority. The encoder selects a candidate as the motion-vector predictor and entropy-codes an index identifying that candidate together with any motion-vector difference needed to reconstruct the selected motion vector.\n\nA corresponding decoder performs the inverse operations. It entropy-decodes the coefficient and motion information, reconstructs the current quantization parameter from the prioritized neighboring parameters and any signaled difference, inverse-quantizes and inverse-transforms the coefficients, and adds the resulting residual to the motion-compensated prediction. By deriving quantization and motion-vector parameters from already available spatial or temporal information, the system reduces redundant side information. By applying a uniform scan to quantized coefficient subsets, it also promotes predictable and efficient entropy coding. Together, these techniques provide adaptive, consistent, and computationally efficient video compression.",
+    "L5": "## Further\n\nGoing further means refusing to let the present define the limits of what is possible. It may involve learning a new skill, exploring an unfamiliar place, or taking one more step when progress feels difficult. Moving further does not always require dramatic change; small, consistent actions can lead to meaningful results.\n\nThe journey is rarely simple. Challenges can create doubt, but they can also reveal strengths that would otherwise remain undiscovered. Each setback offers a chance to reflect, adapt, and continue with greater understanding.\n\nTo go further is to remain curious and open to growth. The destination matters, but so does the courage, knowledge, and experience gained along the way."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent claim for a video encoding device that performs motion-compensated prediction, residual transformation, quantization using the average of two prioritized neighboring quantization parameters, entropy coding, motion-vector prediction from spatial or temporal candidates, and subset-based coefficient scanning.",
+      "output": "1. **A video encoding device comprising processing circuitry configured to:**\n\n   obtain a prediction block for a current block of a video picture by performing motion-compensated prediction using a motion vector associated with the current block;\n\n   generate a residual block representing differences between the current block and the prediction block;\n\n   transform the residual block to generate transform coefficients;\n\n   identify, according to a predetermined priority order, two available neighboring blocks from among a plurality of blocks neighboring the current block;\n\n   derive a quantization parameter for the current block based on an average of respective quantization parameters of the two available neighboring blocks;\n\n   quantize the transform coefficients using the derived quantization parameter to generate quantized transform coefficients;\n\n   generate a motion-vector candidate list including at least one candidate selected from a spatial motion-vector candidate associated with a spatially neighboring block and a temporal motion-vector candidate associated with a block in a different video picture;\n\n   select, from the motion-vector candidate list, a motion-vector predictor for coding the motion vector associated with the current block;\n\n   scan the quantized transform coefficients by partitioning the quantized transform coefficients into a plurality of coefficient subsets, scanning coefficients within each coefficient subset according to a coefficient scan order, and scanning the coefficient subsets according to a subset scan order; and\n\n   entropy encode information representing the scanned quantized transform coefficients and motion information identifying the motion-vector predictor to generate an encoded video bitstream.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a single independent apparatus claim describing a video encoder with a prediction-block generator, transformer, quantizer, and entropy coder. Specify that two effective QPs are selected from left, upper, and previous QPs according to priority, and that the same scan pattern is used for every coefficient subset.",
+      "output": "1. A video encoder comprising: a prediction-block generator configured to generate a prediction block for a current block of video data; a transformer configured to transform a residual block derived from the current block and the prediction block into transform coefficients; a quantizer configured to quantize the transform coefficients using two effective quantization parameters (QPs), the two effective QPs being selected from a left QP associated with a block to the left of the current block, an upper QP associated with a block above the current block, and a previous QP associated with a previously encoded block, according to a predetermined priority order; and an entropy coder configured to divide the quantized transform coefficients into a plurality of coefficient subsets and entropy-code each coefficient subset by scanning every coefficient subset using a same scan pattern.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Convert the following video-compression concepts into formal patent language: reference-index and motion-vector prediction, residual generation, transform and quantization, averaging two available neighboring quantization parameters, spatial/temporal motion-vector predictor selection, and identical scan patterns across quantized-coefficient subsets.",
+      "output": "**Example Patent-Claim Language**\n\n1. **A method for encoding a video block, the method comprising:**\n\n   obtaining reference-index information and motion-vector information associated with one or more previously processed blocks;\n\n   predicting, based at least in part on the obtained reference-index information and motion-vector information, a reference index and a motion vector for a current block;\n\n   selecting a motion-vector predictor for the current block from a plurality of candidate motion-vector predictors comprising at least one spatial motion-vector predictor and at least one temporal motion-vector predictor;\n\n   generating a prediction block for the current block using the predicted reference index and the selected motion-vector predictor;\n\n   generating a residual block representing differences between samples of the current block and corresponding samples of the prediction block;\n\n   determining a quantization parameter for the current block by averaging respective quantization parameters of two available neighboring blocks;\n\n   applying a transform to the residual block to generate transform coefficients;\n\n   quantizing the transform coefficients according to the determined quantization parameter to generate quantized coefficients;\n\n   partitioning the quantized coefficients into a plurality of quantized-coefficient subsets; and\n\n   scanning each of the plurality of quantized-coefficient subsets according to an identical scan pattern.\n\n2. **The method of claim 1**, wherein predicting the reference index and the motion vector comprises generating a reference-index predictor and a motion-vector predictor based on information associated with at least one neighboring block.\n\n3. **The method of claim 1**, wherein selecting the motion-vector predictor comprises evaluating availability information associated with the at least one spatial motion-vector predictor and the at least one temporal motion-vector predictor and selecting an available predictor according to a predetermined selection criterion.\n\n4. **The method of claim 1**, wherein the two available neighboring blocks comprise two spatially neighboring blocks.\n\n5. **The method of claim 1**, wherein averaging the respective quantization parameters comprises computing an arithmetic mean of the respective quantization parameters and rounding the arithmetic mean to an integer quantization-parameter value.\n\n6. **The method of claim 1**, wherein the identical scan pattern comprises a diagonal scan, a horizontal scan, a vertical scan, or a predetermined permutation of coefficient positions.\n\n7. **A video coding apparatus comprising:**\n\n   one or more processors; and\n\n   a memory storing instructions that, when executed by the one or more processors, cause the video coding apparatus to perform the method of any preceding claim.\n\n8. **A non-transitory computer-readable storage medium** storing instructions that, when executed by one or more processors of a video coding apparatus, cause the video coding apparatus to perform the method of any of claims 1–6.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Describe a device configured to encode video data in the style of a patent claim, including detailed rules for deriving the quantization parameter and motion vector predictor.",
+      "output": "1. **A device configured to encode video data, the device comprising:**\n\n   a memory configured to store video data; and\n\n   one or more processors coupled to the memory and configured to:\n\n   partition a picture of the video data into a plurality of coding units, each coding unit including one or more prediction units and one or more transform units;\n\n   determine, for a current coding unit, a quantization parameter predictor by:\n\n   - identifying an available left neighboring coding unit and an available above neighboring coding unit that belong to a same quantization group as, or precede, the current coding unit;\n   - obtaining a left quantization parameter from the left neighboring coding unit when the left neighboring coding unit is available, and otherwise assigning a predetermined fallback quantization parameter to the left quantization parameter;\n   - obtaining an above quantization parameter from the above neighboring coding unit when the above neighboring coding unit is available, and otherwise assigning the fallback quantization parameter to the above quantization parameter;\n   - when both neighboring coding units are available, deriving the quantization parameter predictor as  \n     \\[\n     QP_{pred}=\\left\\lfloor\\frac{QP_L+QP_A+1}{2}\\right\\rfloor;\n     \\]\n   - when only one of the neighboring coding units is available, setting the quantization parameter predictor equal to the quantization parameter of the available neighboring coding unit;\n   - when neither neighboring coding unit is available, setting the quantization parameter predictor equal to a slice-level, tile-level, or picture-level initial quantization parameter;\n   - decoding or otherwise obtaining a signed quantization-parameter delta associated with the current coding unit or quantization group;\n   - adding the signed quantization-parameter delta to the quantization parameter predictor; and\n   - clipping or modularly mapping the resulting value to a permitted quantization-parameter range to produce a current quantization parameter;\n\n   quantize transform coefficients of the current coding unit according to the current quantization parameter;\n\n   determine, for a current inter-predicted prediction unit, a motion-vector predictor by:\n\n   - identifying spatial candidate blocks at one or more predefined positions adjacent to the current prediction unit, the predefined positions including at least a left-side position and an above-side position;\n   - for each available spatial candidate block, determining whether the spatial candidate block refers to a reference picture identical to a reference picture of the current prediction unit;\n   - when the reference pictures are identical, adding a motion vector of the spatial candidate block to a candidate list without scaling;\n   - when the reference pictures differ, scaling the motion vector of the spatial candidate block according to a ratio between a temporal distance associated with the current reference picture and a temporal distance associated with the candidate reference picture, with the ratio being clipped to a predetermined scaling range;\n   - identifying a temporal candidate from a collocated block in a reference picture, the collocated block being selected at a bottom-right location of the current prediction unit or, when that location is unavailable, at a center location of the current prediction unit;\n   - scaling a motion vector of the temporal candidate based on picture-order-count differences between the current picture, the current reference picture, the collocated picture, and a reference picture used by the collocated block;\n   - inserting the scaled temporal candidate into the candidate list when at least one required spatial candidate is unavailable or when a maximum candidate-list size has not been reached;\n   - removing from the candidate list a candidate having a motion vector, reference-picture identifier, and prediction-list identifier identical to those of an earlier candidate;\n   - adding one or more zero-motion candidates when the candidate list contains fewer than a prescribed number of candidates;\n   - selecting, based on a signaled candidate index, one candidate from the candidate list as the motion-vector predictor;\n   - obtaining a motion-vector difference for the current prediction unit; and\n   - deriving a motion vector for the current prediction unit by component-wise addition of the motion-vector difference to the selected motion-vector predictor, subject to clipping or wraparound within a permitted motion-vector range;\n\n   generate a prediction block using the derived motion vector and the associated reference picture;\n\n   generate a residual block based on a difference between the prediction block and a corresponding block of the picture;\n\n   transform and quantize the residual block using the current quantization parameter; and\n\n   entropy encode syntax elements representing at least the quantized transform coefficients, the signed quantization-parameter delta, the candidate index, the motion-vector difference, and reference-picture information to produce an encoded video bitstream.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate a concise claim for a video coding apparatus where the quantizer chooses two available effective parameters among left, upper, and previous quantization parameters based on priority, averages them, and the entropy coder applies a common scan pattern to each subset of quantized transform coefficients.",
+      "output": "1. A video coding apparatus comprising:  \na quantizer configured to select, according to a predetermined priority, two available effective quantization parameters from a left quantization parameter, an upper quantization parameter, and a previous quantization parameter, and to determine a quantization parameter by averaging the selected two effective quantization parameters; and  \nan entropy coder configured to entropy-code subsets of quantized transform coefficients by applying a common scan pattern to each subset.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7147315855181023,
+      "excess_ratio": 0.4728747328747115,
+      "baseline_mean": 0.24185685264339085,
+      "baseline_n_valid": 5,
+      "output_chars": 1388,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7311608961303462,
+          "baseline_mean": 0.21071094783663705,
+          "excess_ratio": 0.5204499482937092
+        },
+        "bz2": {
+          "actual_ratio": 0.6196660482374768,
+          "baseline_mean": 0.2249365516642242,
+          "excess_ratio": 0.3947294965732526
+        },
+        "lzma": {
+          "actual_ratio": 0.7902097902097902,
+          "baseline_mean": 0.2846857470715019,
+          "excess_ratio": 0.5055240431382884
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3975975975975976,
+      "excess_ratio": 0.15574074495420676,
+      "baseline_mean": 0.24185685264339085,
+      "baseline_n_valid": 5,
+      "output_chars": 1265,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3540856031128405,
+          "baseline_mean": 0.21071094783663705,
+          "excess_ratio": 0.14337465527620344
+        },
+        "bz2": {
+          "actual_ratio": 0.37209302325581395,
+          "baseline_mean": 0.2249365516642242,
+          "excess_ratio": 0.14715647159158976
+        },
+        "lzma": {
+          "actual_ratio": 0.4594594594594595,
+          "baseline_mean": 0.2846857470715019,
+          "excess_ratio": 0.17477371238795758
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.5615327929255711,
+      "excess_ratio": 0.31967594028218027,
+      "baseline_mean": 0.24185685264339085,
+      "baseline_n_valid": 5,
+      "output_chars": 924,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5352798053527981,
+          "baseline_mean": 0.21071094783663705,
+          "excess_ratio": 0.32456885751616105
+        },
+        "bz2": {
+          "actual_ratio": 0.5111111111111111,
+          "baseline_mean": 0.2249365516642242,
+          "excess_ratio": 0.28617455944688686
+        },
+        "lzma": {
+          "actual_ratio": 0.6290322580645161,
+          "baseline_mean": 0.2846857470715019,
+          "excess_ratio": 0.3443465109930142
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.14097222222222222,
+      "excess_ratio": -0.10088463042116863,
+      "baseline_mean": 0.24185685264339085,
+      "baseline_n_valid": 5,
+      "output_chars": 3752,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.11126760563380282,
+          "baseline_mean": 0.21071094783663705,
+          "excess_ratio": -0.09944334220283423
+        },
+        "bz2": {
+          "actual_ratio": 0.14458689458689458,
+          "baseline_mean": 0.2249365516642242,
+          "excess_ratio": -0.0803496570773296
+        },
+        "lzma": {
+          "actual_ratio": 0.1657754010695187,
+          "baseline_mean": 0.2846857470715019,
+          "excess_ratio": -0.11891034600198319
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.07548526240115025,
+      "excess_ratio": -0.1663715902422406,
+      "baseline_mean": 0.24185685264339085,
+      "baseline_n_valid": 5,
+      "output_chars": 715,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.040380047505938245,
+          "baseline_mean": 0.21071094783663705,
+          "excess_ratio": -0.1703309003306988
+        },
+        "bz2": {
+          "actual_ratio": 0.07929515418502203,
+          "baseline_mean": 0.2249365516642242,
+          "excess_ratio": -0.14564139747920216
+        },
+        "lzma": {
+          "actual_ratio": 0.10077519379844961,
+          "baseline_mean": 0.2846857470715019,
+          "excess_ratio": -0.18391055327305228
+        }
+      }
+    }
+  }
+}

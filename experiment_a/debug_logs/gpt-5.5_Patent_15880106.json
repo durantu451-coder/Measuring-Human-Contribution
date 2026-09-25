@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15880106",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA method includes: a first transmission step in which a sensor controller sends a first control signal US_c1 including a repetition, by twice or more times, of a known element (“repetitive element”) c1; a detection step in which a stylus performs a receiving operation over a reception period having a predetermined time length SRP, determines whether one or more repetitive elements c1 are included in a signal received in the reception period, and detects the sensor controller depending on the result of the determination; and a second transmission step in which the sensor controller sends a second control signal US_c2 including a plurality of bit values not shared with the stylus in advance. The method reduces the amount of electric power consumed by a stylus, which is configured to detect a sensor controller by receiving a signal sent by the sensor controller, before the stylus detects the sensor controller, while keeping a maximum waiting time period equal to or smaller than the prior art value.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA method includes: a first transmission step in which a sensor controller sends a first control signal US_c1 including a repetition, by twice or more times, of a known element (“repetitive element”) c1; a detection step in which a stylus performs a receiving operation over a reception period having a predetermined time length SRP, determines whether one or more repetitive elements c1 are included in a signal received in the reception period, and detects the sensor controller depending on the result of the determination; and a second transmission step in which the sensor controller sends a second control signal US_c2 including a plurality of bit values not shared with the stylus in advance. The method reduces the amount of electric power consumed by a stylus, which is configured to detect a sensor controller by receiving a signal sent by the sensor controller, before the stylus detects the sensor controller, while keeping a maximum waiting time period equal to or smaller than the prior art value.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The method includes a first transmission step where a sensor controller sends a first control signal containing a known repetitive element repeated two or more times.\n- The stylus performs a receiving operation over a predetermined reception period and determines whether one or more repetitive elements are included in the received signal.\n- The stylus detects the sensor controller based on whether the repetitive elements are found during the reception period.\n- The sensor controller then sends a second control signal containing multiple bit values that are not shared with the stylus in advance.\n- The method reduces stylus power consumption before detection while keeping the maximum waiting time no greater than in prior art.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA sensor-controller detection method reduces stylus power consumption by transmitting a first control signal with repeated known elements that the stylus checks during a fixed reception period, followed by a second control signal containing previously unshared bit values.  \nThis approach enables the stylus to detect the sensor controller with lower pre-detection power use while keeping the maximum waiting time no greater than in prior art.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: SRP, The"
+  },
+  "outputs": {
+    "L1": "A method includes: a first transmission step in which a sensor controller transmits a first control signal US_c1 that includes a known element (“repetitive element”) c1 repeated twice or more; a detection step in which a stylus performs a receiving operation over a reception period having a predetermined time length SRP, determines whether one or more repetitive elements c1 are included in a signal received during the reception period, and detects the sensor controller based on the determination result; and a second transmission step in which the sensor controller transmits a second control signal US_c2 that includes a plurality of bit values not shared with the stylus in advance. The method reduces the amount of electric power consumed by a stylus configured to detect a sensor controller by receiving a signal transmitted by the sensor controller before the stylus detects the sensor controller, while maintaining a maximum waiting time period equal to or less than that of the prior art.",
+    "L2": "A method comprises the following operations: in a first sending operation, a sensor controller transmits a first control signal US_c1 that contains a known element (“repetitive element”) c1 repeated two or more times; in a detection operation, a stylus carries out reception during a reception interval of a preset duration SRP, judges whether the signal received during that interval contains one or more repetitive elements c1, and detects the sensor controller based on the judgment result; and in a second sending operation, the sensor controller transmits a second control signal US_c2 that contains multiple bit values that have not been shared with the stylus beforehand. This method lowers the electrical power used by a stylus that detects a sensor controller by receiving a signal transmitted from the sensor controller, during the period before the stylus detects the sensor controller, while maintaining a maximum waiting period that is no greater than that of the conventional technique.",
+    "L3": "The method includes an initial transmission step in which a sensor controller transmits a first control signal. This first control signal contains a known repetitive element, and the repetitive element is repeated two or more times within the signal. Because the repetitive element is known in advance, it can be recognized by a stylus when the stylus receives the signal.\n\nThe stylus performs a receiving operation during a predetermined reception period. During this reception period, the stylus monitors the received signal and determines whether the signal includes one or more instances of the known repetitive element. In other words, the stylus checks whether the expected repetitive pattern is present in the signal received from the sensor controller.\n\nBased on this determination, the stylus detects the presence of the sensor controller. If one or more of the repetitive elements are found during the predetermined reception period, the stylus determines that the sensor controller has been detected. If the repetitive elements are not found, the stylus may determine that the sensor controller has not been detected during that reception period.\n\nAfter the sensor controller has been detected, the sensor controller transmits a second control signal. Unlike the first control signal, the second control signal contains multiple bit values that are not shared with the stylus in advance. These bit values may be used to provide information, instructions, synchronization data, or other control-related content to the stylus.\n\nBy using the first control signal with known repeated elements for detection, the stylus can limit its receiving operation before detection to the predetermined reception period. This reduces the amount of time during which the stylus must remain in a power-consuming reception state. As a result, the method reduces power consumption of the stylus before detection of the sensor controller, while keeping the maximum waiting time for detection no greater than that of conventional techniques.",
+    "L4": "A sensor-controller detection method is provided for use in a position detection system including a sensor controller and an active stylus. The method is designed to reduce the amount of power consumed by the stylus before it detects the presence of the sensor controller.\n\nIn this method, the sensor controller first transmits a first control signal. The first control signal includes a plurality of repeated known elements. These known elements are predetermined signal elements that can be recognized by the stylus without requiring the stylus to receive or decode an entire control message. The stylus activates its receiving circuit only during a fixed reception period and determines whether one or more of the known elements are present during that period. Because the stylus only needs to check for the repeated known elements, it can perform the detection operation with a reduced reception time and lower power consumption.\n\nAfter transmitting the first control signal, the sensor controller transmits a second control signal. The second control signal includes bit values that have not previously been shared with the stylus. These bit values may be used for subsequent communication, identification, synchronization, or control between the sensor controller and the stylus. Once the stylus detects the first control signal, it can transition to a state in which it receives and processes the second control signal.\n\nBy arranging the first control signal to include repeated known elements, the stylus does not need to remain continuously active while waiting for the sensor controller. Instead, the stylus can intermittently activate its receiving function for the fixed reception period and still reliably detect the sensor controller. This reduces power consumption before detection, which is especially beneficial for a battery-powered stylus.\n\nAt the same time, the transmission timing of the first control signal is controlled so that the maximum time the stylus must wait before detecting the sensor controller is not increased compared with conventional methods. Thus, the method achieves lower pre-detection power consumption without sacrificing responsiveness. The stylus can detect the sensor controller efficiently, begin receiving further control information, and maintain a user experience comparable to that of prior systems.",
+    "L5": "**SRP: The Single Responsibility Principle**\n\nSRP, or the **Single Responsibility Principle**, is one of the most important concepts in software design. The principle states that a class, module, or function should have **only one reason to change**. In other words, each part of a program should focus on one specific responsibility.\n\nThe main goal of SRP is to make code easier to understand, maintain, and test. When a class does too many things, it becomes harder to modify without causing unexpected problems. By following SRP, developers can separate concerns and create cleaner, more flexible software.\n\nFor example, a class that handles user data should not also be responsible for sending emails or writing logs. These tasks should be placed in separate classes or modules. The result is a system where each component has a clear purpose.\n\nUsing SRP helps teams build better applications because the code becomes more organized and less dependent on unrelated features. The principle is simple, but applying it consistently can greatly improve software quality."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style abstract for a method where a sensor controller transmits a repeated known element c1, a stylus listens during a fixed reception period SRP to detect the controller, and then the controller transmits a second signal US_c2 containing non-pre-shared bit values, emphasizing reduced stylus power consumption without increasing maximum wait time.",
+      "output": "Abstract: A method for communication between a sensor controller and a stylus includes transmitting, by the sensor controller, a first uplink signal including a known element c1 repeatedly arranged in time. The stylus activates a receiver during a fixed reception period SRP and detects the presence of the sensor controller by receiving at least one occurrence of the known element c1 within the fixed reception period. After transmission of the first uplink signal, the sensor controller transmits a second uplink signal US_c2 including bit values that are not pre-shared with the stylus. Because the known element c1 is repeated, the stylus can perform controller detection using a shortened or duty-cycled reception operation within the fixed reception period, thereby reducing power consumption. The fixed reception period is maintained such that a maximum wait time for detecting the sensor controller is not increased.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize the following invention in one concise patent paragraph: a sensor controller sends US_c1 with c1 repeated at least twice; a stylus receives for a predetermined period SRP and determines whether c1 is present to detect the controller; afterward the controller sends US_c2 with multiple unknown-to-stylus bits; the goal is lower pre-detection power consumption while maintaining prior-art maximum waiting time.",
+      "output": "A sensor controller transmits a first uplink signal including a first command repeated at least twice, and a stylus, during a predetermined reception period, monitors for and determines the presence of the first command to detect the sensor controller; after such detection, the sensor controller transmits a second uplink signal including a second command containing a plurality of bits not known in advance to the stylus. By enabling the stylus to detect the controller using repeated known command content before receiving the later unknown-bit command, the stylus reduces power consumption prior to detection while maintaining a maximum waiting time comparable to prior-art systems.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write an abstract in patent claim language for an active stylus/sensor-controller communication method involving a first control signal with repeated known elements, a stylus detection reception window, and a second control signal including bit values not shared beforehand.",
+      "output": "A method for communication between a sensor controller and an active stylus, the method comprising: transmitting, by the sensor controller, a first control signal including a plurality of known elements repeatedly arranged according to a predetermined pattern; opening, by the sensor controller, a stylus detection reception window associated with the first control signal; detecting, during the stylus detection reception window, a response signal transmitted by the active stylus based on reception of at least one of the plurality of known elements; and transmitting, by the sensor controller, a second control signal to the active stylus after detection of the response signal, the second control signal including one or more bit values that are not shared in advance between the sensor controller and the active stylus, wherein the active stylus receives the second control signal and performs communication with the sensor controller based at least in part on the one or more bit values.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Convert this technical disclosure into a patent abstract: The controller transmits a repeated repetitive element c1 in a first signal US_c1; the stylus wakes/listens for SRP, checks for c1, detects the controller if found, then receives a second control signal US_c2 containing non-predetermined bit values. Mention the advantage of reducing stylus battery use before detection.",
+      "output": "A touch input system includes a controller and an active stylus configured for low-power detection. The controller transmits a first control signal including a repeated repetitive element. The stylus periodically wakes from a reduced-power state to listen for a stylus reception period and determines whether the repeated repetitive element is present in the first control signal. Upon detecting the repeated repetitive element, the stylus identifies the presence of the controller and transitions to receive a second control signal including bit values that are not predetermined. By limiting active listening and processing prior to controller detection, the stylus reduces battery consumption before establishing communication with the controller.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate a concise invention summary for a stylus detecting a sensor controller, where the controller repeats a known control element c1 two or more times, the stylus determines during a fixed reception interval whether the element is present, and then the controller transmits further control information not known in advance, with the benefit of reduced power consumption and no longer wait than conventional systems.",
+      "output": "A stylus detection scheme in which a sensor controller repeatedly transmits a known control element (c1) two or more times before sending additional, non-predetermined control information. During a fixed reception interval, the stylus monitors for the presence of the repeated control element and, upon detecting it, proceeds to receive the subsequent control information. Because the stylus need only determine whether the known element is present within the fixed interval, it can limit active reception time, reducing power consumption while avoiding longer waiting periods than conventional systems.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7491337491337491,
+      "excess_ratio": 0.41955851063442495,
+      "baseline_mean": 0.32957523849932413,
+      "baseline_n_valid": 5,
+      "output_chars": 1000,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7704545454545455,
+          "baseline_mean": 0.2816795657845589,
+          "excess_ratio": 0.4887749796699866
+        },
+        "bz2": {
+          "actual_ratio": 0.6476578411405295,
+          "baseline_mean": 0.30942083966688266,
+          "excess_ratio": 0.3382370014736468
+        },
+        "lzma": {
+          "actual_ratio": 0.828125,
+          "baseline_mean": 0.38611008534768493,
+          "excess_ratio": 0.44201491465231507
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4726027397260274,
+      "excess_ratio": 0.14302750122670327,
+      "baseline_mean": 0.32957523849932413,
+      "baseline_n_valid": 5,
+      "output_chars": 1000,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.42152466367713004,
+          "baseline_mean": 0.2816795657845589,
+          "excess_ratio": 0.13984509789257116
+        },
+        "bz2": {
+          "actual_ratio": 0.46987951807228917,
+          "baseline_mean": 0.30942083966688266,
+          "excess_ratio": 0.1604586784054065
+        },
+        "lzma": {
+          "actual_ratio": 0.5193798449612403,
+          "baseline_mean": 0.38611008534768493,
+          "excess_ratio": 0.13326975961355542
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.33186813186813185,
+      "excess_ratio": 0.0022928933688077247,
+      "baseline_mean": 0.32957523849932413,
+      "baseline_n_valid": 5,
+      "output_chars": 2030,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.30013831258644535,
+          "baseline_mean": 0.2816795657845589,
+          "excess_ratio": 0.018458746801886472
+        },
+        "bz2": {
+          "actual_ratio": 0.3235294117647059,
+          "baseline_mean": 0.30942083966688266,
+          "excess_ratio": 0.014108572097823235
+        },
+        "lzma": {
+          "actual_ratio": 0.3681592039800995,
+          "baseline_mean": 0.38611008534768493,
+          "excess_ratio": -0.017950881367585436
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.18161925601750548,
+      "excess_ratio": -0.14795598248181865,
+      "baseline_mean": 0.32957523849932413,
+      "baseline_n_valid": 5,
+      "output_chars": 2351,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1386696730552424,
+          "baseline_mean": 0.2816795657845589,
+          "excess_ratio": -0.1430098927293165
+        },
+        "bz2": {
+          "actual_ratio": 0.19365798414496035,
+          "baseline_mean": 0.30942083966688266,
+          "excess_ratio": -0.11576285552192231
+        },
+        "lzma": {
+          "actual_ratio": 0.20987654320987653,
+          "baseline_mean": 0.38611008534768493,
+          "excess_ratio": -0.1762335421378084
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.07088331515812438,
+      "excess_ratio": -0.2586919233411997,
+      "baseline_mean": 0.32957523849932413,
+      "baseline_n_valid": 5,
+      "output_chars": 1070,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.03873239436619718,
+          "baseline_mean": 0.2816795657845589,
+          "excess_ratio": -0.2429471714183617
+        },
+        "bz2": {
+          "actual_ratio": 0.07357859531772576,
+          "baseline_mean": 0.30942083966688266,
+          "excess_ratio": -0.2358422443491569
+        },
+        "lzma": {
+          "actual_ratio": 0.09580838323353294,
+          "baseline_mean": 0.38611008534768493,
+          "excess_ratio": -0.29030170211415196
+        }
+      }
+    }
+  }
+}

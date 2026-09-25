@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15872670",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA method for providing a video to a viewer terminal through a communication network includes: receiving, by a communication unit, an original video signal including information of an original video; generating, by a controller, a delayed video signal including information of a delayed video in which the original video is delayed by a first time period; transmitting, by the communication unit, the original video signal to a subtitler terminal; receiving, by the communication unit from the subtitler terminal, a subtitle signal including information of subtitles with respect to the original video and a subtitle delay signal including information for delaying a display of the subtitles; generating, by the controller, a display timing signal indicating a timing of displaying the subtitles on the delayed video, based on the subtitle delay signal; transmitting, by the communication unit, the delayed video signal to a viewer terminal; and transmitting, by the communication unit, the display timing signal and the subtitle signal to the viewer terminal.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA method for providing a video to a viewer terminal through a communication network includes: receiving, by a communication unit, an original video signal including information of an original video; generating, by a controller, a delayed video signal including information of a delayed video in which the original video is delayed by a first time period; transmitting, by the communication unit, the original video signal to a subtitler terminal; receiving, by the communication unit from the subtitler terminal, a subtitle signal including information of subtitles with respect to the original video and a subtitle delay signal including information for delaying a display of the subtitles; generating, by the controller, a display timing signal indicating a timing of displaying the subtitles on the delayed video, based on the subtitle delay signal; transmitting, by the communication unit, the delayed video signal to a viewer terminal; and transmitting, by the communication unit, the display timing signal and the subtitle signal to the viewer terminal.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A communication unit receives an original video signal containing information about the original video.\n- A controller generates a delayed video signal by delaying the original video for a first time period.\n- The original video signal is transmitted to a subtitler terminal, which returns subtitle information and a subtitle delay signal.\n- The controller uses the subtitle delay signal to generate a display timing signal for synchronizing the subtitles with the delayed video.\n- The delayed video, subtitle signal, and display timing signal are transmitted to the viewer terminal.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe method delivers network video with synchronized subtitles by delaying the original video, sending the original to a subtitler, and generating subtitle display timing from returned subtitle-delay information. It transmits the delayed video, subtitles, and timing data to the viewer terminal, enabling subtitles to appear in sync with the video.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: A method for"
+  },
+  "outputs": {
+    "L1": "A method for providing video to a viewer terminal via a communication network includes: receiving, by a communication unit, an original video signal containing information representing an original video; generating, by a controller, a delayed video signal containing information representing a delayed video in which the original video is delayed by a first time period; transmitting, by the communication unit, the original video signal to a subtitler terminal; receiving, by the communication unit from the subtitler terminal, a subtitle signal containing information representing subtitles for the original video and a subtitle delay signal containing information for delaying the display of the subtitles; generating, by the controller and based on the subtitle delay signal, a display timing signal indicating a timing for displaying the subtitles on the delayed video; transmitting, by the communication unit, the delayed video signal to the viewer terminal; and transmitting, by the communication unit, the display timing signal and the subtitle signal to the viewer terminal.",
+    "L2": "A technique for delivering video over a communication network to a viewer terminal comprises the following operations: a communication unit obtains an original video signal containing data representing an original video; a controller creates a delayed video signal containing data representing a delayed version of the original video, the delay being a first time interval; the communication unit sends the original video signal to a subtitler terminal; the communication unit then receives from the subtitler terminal both a subtitle signal containing subtitle information associated with the original video and a subtitle-delay signal containing information for postponing presentation of the subtitles; using the subtitle-delay signal, the controller produces a display-timing signal specifying when the subtitles are to appear with the delayed video; the communication unit delivers the delayed video signal to the viewer terminal; and the communication unit also delivers the subtitle signal and the display-timing signal to the viewer terminal.",
+    "L3": "A communication unit receives an original video signal containing information associated with the original video content. A controller then generates a delayed video signal by delaying the original video signal for a first predetermined period.\n\nThe communication unit transmits the original video signal to a subtitler terminal. After processing the original video, the subtitler terminal returns subtitle information together with a subtitle delay signal indicating the timing required to produce the subtitles.\n\nUsing the subtitle delay signal, the controller generates a display timing signal that synchronizes the subtitle information with the delayed video signal. The communication unit then transmits the delayed video signal, the subtitle information, and the display timing signal to a viewer terminal, enabling the subtitles to be displayed in synchronization with the delayed video.",
+    "L4": "A method and system are provided for delivering network video together with synchronized subtitles. When an original video stream is received, the system creates a delayed version of the video by storing or buffering the stream for a predetermined or dynamically selected period. At substantially the same time, the original, non-delayed video is transmitted to a subtitler, such as a human operator or an automated speech-recognition and captioning system.\n\nThe subtitler generates subtitle text corresponding to the audio or other content of the original video. Because subtitle creation requires processing time, the subtitler returns the generated subtitles together with subtitle-delay information indicating when each subtitle was produced or how long after the corresponding portion of the original video it should be displayed. The system uses this information, together with the delay applied to the video, to determine suitable display timing for each subtitle.\n\nThe delayed video stream, the subtitle data, and the associated timing data are then transmitted to a viewer terminal. The viewer terminal may receive these elements as separate synchronized streams or as parts of a combined multimedia stream. Using the timing data, the terminal displays each subtitle when the corresponding scene, speech segment, or other video content is presented.\n\nBy delaying delivery of the video, the system provides sufficient time for subtitles to be created and returned before the relevant video portion reaches the viewer. The calculated subtitle timing compensates for both the video delay and the time required to generate the subtitles. As a result, subtitles can be displayed in substantial synchronization with live or near-live network video, even when subtitle generation occurs after the corresponding content first appears in the original stream.",
+    "L5": "Could you please complete the topic or keyword phrase? “A method for …” appears incomplete. If possible, also specify the desired length, tone, and intended audience."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style method claim for delivering delayed video and synchronized subtitles to a viewer terminal over a communication network.",
+      "output": "1. **A computer-implemented method for delivering delayed video and synchronized subtitles to a viewer terminal over a communication network, the method comprising:**\n\nreceiving, by a media delivery system, a video stream comprising video content and timing information;\n\nstoring at least a portion of the video stream in a video buffer to impose a delivery delay relative to receipt of the video stream;\n\nobtaining subtitle data corresponding to the video content, the subtitle data comprising subtitle text associated with respective presentation timestamps;\n\ndetermining a playback timeline for the buffered video stream based at least in part on the timing information and the delivery delay;\n\nsynchronizing the subtitle data with the buffered video stream by mapping the respective presentation timestamps to the playback timeline;\n\ntransmitting, over the communication network to the viewer terminal, the buffered video stream in accordance with the playback timeline; and\n\ntransmitting, over the communication network to the viewer terminal, the synchronized subtitle data such that each subtitle text is presented by the viewer terminal in temporal alignment with a corresponding portion of the delayed video content.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Describe a method in which an original video is sent to a subtitler, a delayed version is sent to viewers, and subtitle timing is calculated from a subtitle delay signal.",
+      "output": "A live-subtitling method can be implemented as follows:\n\n1. Receive an original video stream and forward it substantially without delay to a subtitler.\n2. Apply a predetermined video delay to a copy of the original stream and transmit the delayed copy to viewers.\n3. Have the subtitler generate subtitle data while viewing the original stream.\n4. Generate a subtitle-delay signal representing the temporal offset between the original stream and the viewer-delayed stream.\n5. Calculate each subtitle’s presentation time from its creation or source-video timestamp and the delay represented by the subtitle-delay signal.\n6. Transmit the subtitle data with the calculated timing information and render each subtitle in synchronization with the corresponding content in the delayed video.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write an independent patent claim covering a communication unit and controller that receive an original video, generate delayed video, obtain subtitles from a subtitler terminal, and transmit synchronized subtitles and video to a viewer terminal.",
+      "output": "1. **A communication apparatus comprising:**\n\na communication unit configured to communicate with a video source, a subtitler terminal, and a viewer terminal; and\n\na controller configured to:\n\nreceive, via the communication unit, original video from the video source;\n\ngenerate delayed video by delaying presentation of the original video by a delay interval;\n\nprovide information representing at least a portion of the original video to the subtitler terminal;\n\nobtain, from the subtitler terminal via the communication unit, subtitles corresponding to the at least a portion of the original video;\n\nsynchronize the subtitles with the delayed video based on the delay interval; and\n\ncause the communication unit to transmit the delayed video and the synchronized subtitles to the viewer terminal for presentation of the subtitles in temporal correspondence with the delayed video.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Formulate a single-paragraph method claim for live video subtitling where the video feed is delayed to allow subtitle generation, with a display timing signal used to align the subtitles at the viewer’s device.",
+      "output": "1. A method for live video subtitling, comprising: receiving a live video feed; delaying presentation of the live video feed by a predetermined delay interval; generating subtitles from audio content of the live video feed during the predetermined delay interval; transmitting the delayed live video feed, the generated subtitles, and a display timing signal to a viewer device, the display timing signal associating respective subtitles with corresponding portions of the delayed live video feed; and, at the viewer device, using the display timing signal to present each respective subtitle in temporal alignment with the corresponding portion of the delayed live video feed.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Convert this concept into formal patent language: receive a video stream, delay it by a first period, send the original stream to a captioning terminal, receive subtitle data and delay information, determine subtitle display timing, and deliver the delayed stream with synchronized captions to an audience terminal.",
+      "output": "**1. A computer-implemented method for synchronizing subtitle data with a video stream, the method comprising:**\n\nreceiving, by a media processing system, an input video stream;\n\napplying, by the media processing system, a first temporal delay to the input video stream to generate a delayed video stream;\n\ntransmitting at least a portion of the input video stream, prior to application of the first temporal delay, to a captioning terminal;\n\nreceiving, from the captioning terminal, subtitle data corresponding to the at least a portion of the input video stream and delay information indicative of a captioning delay;\n\ndetermining, based at least in part on the first temporal delay and the delay information, a display time for the subtitle data relative to the delayed video stream; and\n\ntransmitting, to an audience terminal, the delayed video stream and the subtitle data such that the subtitle data is presented at the determined display time in synchronization with corresponding content of the delayed video stream.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7655813953488372,
+      "excess_ratio": 0.5229351560986873,
+      "baseline_mean": 0.24264623925014983,
+      "baseline_n_valid": 5,
+      "output_chars": 1083,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7445482866043613,
+          "baseline_mean": 0.1925971121845735,
+          "excess_ratio": 0.5519511744197878
+        },
+        "bz2": {
+          "actual_ratio": 0.73224043715847,
+          "baseline_mean": 0.24255091561474978,
+          "excess_ratio": 0.4896895215437202
+        },
+        "lzma": {
+          "actual_ratio": 0.8144329896907216,
+          "baseline_mean": 0.2841723857684667,
+          "excess_ratio": 0.5302606039222549
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4003350083752094,
+      "excess_ratio": 0.15768876912505958,
+      "baseline_mean": 0.24264623925014983,
+      "baseline_n_valid": 5,
+      "output_chars": 1050,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3203342618384401,
+          "baseline_mean": 0.1925971121845735,
+          "excess_ratio": 0.1277371496538666
+        },
+        "bz2": {
+          "actual_ratio": 0.41854636591478694,
+          "baseline_mean": 0.24255091561474978,
+          "excess_ratio": 0.17599545030003716
+        },
+        "lzma": {
+          "actual_ratio": 0.44954128440366975,
+          "baseline_mean": 0.2841723857684667,
+          "excess_ratio": 0.16536889863520304
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.47452830188679246,
+      "excess_ratio": 0.23188206263664263,
+      "baseline_mean": 0.24264623925014983,
+      "baseline_n_valid": 5,
+      "output_chars": 894,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.43174603174603177,
+          "baseline_mean": 0.1925971121845735,
+          "excess_ratio": 0.23914891956145826
+        },
+        "bz2": {
+          "actual_ratio": 0.4565826330532213,
+          "baseline_mean": 0.24255091561474978,
+          "excess_ratio": 0.2140317174384715
+        },
+        "lzma": {
+          "actual_ratio": 0.5257731958762887,
+          "baseline_mean": 0.2841723857684667,
+          "excess_ratio": 0.24160081010782197
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.17295727913728745,
+      "excess_ratio": -0.06968896011286238,
+      "baseline_mean": 0.24264623925014983,
+      "baseline_n_valid": 5,
+      "output_chars": 1858,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.12777053455019557,
+          "baseline_mean": 0.1925971121845735,
+          "excess_ratio": -0.06482657763437794
+        },
+        "bz2": {
+          "actual_ratio": 0.1791237113402062,
+          "baseline_mean": 0.24255091561474978,
+          "excess_ratio": -0.0634272042745436
+        },
+        "lzma": {
+          "actual_ratio": 0.2073732718894009,
+          "baseline_mean": 0.2841723857684667,
+          "excess_ratio": -0.0767991138790658
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.25159914712153525,
+      "excess_ratio": 0.008952907871385418,
+      "baseline_mean": 0.24264623925014983,
+      "baseline_n_valid": 5,
+      "output_chars": 166,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1865671641791045,
+          "baseline_mean": 0.1925971121845735,
+          "excess_ratio": -0.006029948005469021
+        },
+        "bz2": {
+          "actual_ratio": 0.1870967741935484,
+          "baseline_mean": 0.24255091561474978,
+          "excess_ratio": -0.05545414142120139
+        },
+        "lzma": {
+          "actual_ratio": 0.35555555555555557,
+          "baseline_mean": 0.2841723857684667,
+          "excess_ratio": 0.07138316978708886
+        }
+      }
+    }
+  }
+}

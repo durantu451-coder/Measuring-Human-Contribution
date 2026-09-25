@@ -1,0 +1,169 @@
+{
+  "model": "gemini-3.6-flash",
+  "domain": "Arxiv",
+  "id": "0704.0218",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIn some particular cases we give criteria for morphic sequences to be almost periodic (=uniformly recurrent). Namely, we deal with fixed points of non-erasing morphisms and with automatic sequences. In both cases a polynomial-time algorithm solving the problem is found. A result more or less supporting the conjecture of decidability of the general problem is given.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIn some particular cases we give criteria for morphic sequences to be almost periodic (=uniformly recurrent). Namely, we deal with fixed points of non-erasing morphisms and with automatic sequences. In both cases a polynomial-time algorithm solving the problem is found. A result more or less supporting the conjecture of decidability of the general problem is given.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n* Criteria are established for specific morphic sequences to be classified as almost periodic or uniformly recurrent.\n* The analysis focuses specifically on two cases: fixed points of non-erasing morphisms and automatic sequences.\n* A polynomial-time algorithm was developed to solve the identification problem for both examined cases.\n* The findings provide a result that supports the conjecture that the general problem is decidable.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nTo address the problem of identifying almost periodicity in morphic sequences, the authors establish decision criteria specifically for automatic sequences and fixed points of non-erasing morphisms. They successfully derive polynomial-time algorithms for both cases, providing critical support for the conjecture that the general problem is decidable.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Namely"
+  },
+  "outputs": {
+    "L1": "Here are a few ways to polish the text, depending on your preferred style:\n\n**Option 1: Clear, concise, and academic (Recommended)**\n> We establish criteria for morphic sequences to be almost periodic (equivalently, uniformly recurrent) in specific key settings. Namely, we consider the fixed points of non-erasing morphisms as well as automatic sequences, providing a polynomial-time algorithm for both cases. Additionally, we present a result that lends support to the conjecture concerning the decidability of the general problem.\n\n**Option 2: Formal and elegant**\n> In certain specific cases, we provide characterizations for morphic sequences to be almost periodic (also known as uniformly recurrent). Specifically, we examine fixed points of non-erasing morphisms and automatic sequences, establishing a polynomial-time decision algorithm for each. Furthermore, we offer a result that provides evidence in favor of the conjecture that the general problem is decidable.\n\n**Option 3: Direct and punchy**\n> We investigate criteria for morphic sequences to be almost periodic (uniformly recurrent) in particular cases—specifically, for fixed points of non-erasing morphisms and automatic sequences. For both cases, we construct a polynomial-time algorithm to solve the problem. Finally, we establish a result supporting the conjecture that the general problem is decidable.\n\n### Key Improvements Made:\n* **\"more or less supporting\"** was changed to *\"lends support to\"* or *\"provides evidence in favor of\"* to sound more precise and academic.\n* **\"(=uniformly recurrent)\"** was integrated smoothly as *\"equivalently, uniformly recurrent\"* or *\"(also known as uniformly recurrent)\"*.\n* **\"is found\" / \"is given\"** were converted from weak passive voice to active verbs (*\"we establish\"*, *\"providing\"*, *\"we present\"*).\n* **\"we deal with\"** was elevated to more professional phrasing like *\"we consider\"* or *\"we examine\"*.",
+    "L2": "Here are a few ways to rewrite the text while preserving all the original facts:\n\n**Option 1 (Standard Academic Tone)**\nThis study establishes conditions under which morphic sequences exhibit uniform recurrence (also referred to as almost periodicity). The analysis focuses on two specific categories: automatic sequences and the fixed points of non-erasing morphisms. For both scenarios, an algorithm operating in polynomial time was developed to resolve the question. Additionally, the paper presents a finding that provides supporting evidence for the hypothesis that the broader, overall problem is algorithmically solvable.\n\n**Option 2 (Slightly more direct structure)**\nTo determine whether certain morphic sequences are almost periodic (uniformly recurrent), we outline specific criteria for two cases: sequences produced by finite automata and fixed points generated by non-deleting substitutions. We introduce a polynomial-time computational method that addresses both instances. Furthermore, we include a result that strengthens the idea that this problem is decidable in its general form.",
+    "L3": "Here are a few ways to structure the expanded text, depending on the intended context (e.g., a formal research abstract or a broader introductory summary). \n\n### Option 1: Academic Abstract / Executive Summary (Recommended)\n\n> This study addresses the fundamental problem of determining whether specific morphic sequences exhibit almost periodicity, also known as uniform recurrence. To establish precise classification criteria, the analysis focuses on two primary domains: pure morphic sequences generated as fixed points of non-erasing morphisms, and the broader class of automatic sequences. \n> \n> By exploiting the structural properties of these two cases, we established necessary and sufficient conditions for uniform recurrence, leading to the development of a novel polynomial-time algorithm capable of solving the identification problem efficiently. Beyond providing a practical computational tool for these targeted sub-classes, these findings offer crucial theoretical insights, providing strong evidence in support of the overarching conjecture that the general identification problem for arbitrary morphic sequences is decidable.\n\n---\n\n### Option 2: Structured Research Overview (with Headings)\n\n> **Background and Scope**  \n> In theoretical computer science and combinatorics on words, characterizing the recurrence properties of infinite sequences is a key area of study. This work establishes rigorous criteria for determining whether specific morphic sequences are *almost periodic* (or *uniformly recurrent*). The scope of this analysis is focused on two major classes of sequences:\n> 1. Fixed points generated by non-erasing morphisms.\n> 2. Automatic sequences.\n> \n> **Main Results & Algorithmic Contributions**  \n> Based on the newly derived theoretical criteria, a polynomial-time algorithm was successfully developed. This algorithm provides an efficient computational method to solve the identification problem—deciding whether a given sequence within either of the two specified classes is uniformly recurrent.\n> \n> **Theoretical Implications**  \n> While the general decision problem for arbitrary morphic sequences remains open, the efficient resolution of these two prominent cases marks significant progress. Ultimately, these results offer compelling evidence supporting the conjecture that the general identification problem is decidable.",
+    "L4": "Here is a complete, expanded paper summary formatted as an academic overview/technical report based on your summary.\n\n---\n\n# Decidability and Algorithmic Complexity of Almost Periodicity in Morphic Sequences\n\n## Abstract\nDetermining the structural properties of infinite words generated by formal systems is a foundational problem in combinatorics on words and theoretical computer science. Among these properties, **almost periodicity** (or uniform recurrence) plays a central role in dynamical systems and formal language theory. While deciding almost periodicity for general morphic sequences has long remained an open challenge, this work establishes concrete decision criteria for two major classes: **automatic sequences** and **fixed points of non-erasing morphisms**. Furthermore, by deriving polynomial-time algorithms for both cases, this research provides strong evidence supporting the broader conjecture that the property is decidable for all morphic sequences.\n\n---\n\n## 1. Introduction and Background\n\nIn theoretical computer science, an infinite sequence (or word) over a finite alphabet is said to be **almost periodic**—also known as *uniformly recurrent*—if every finite factor (substring) that appears in the sequence reappears infinitely often with a bounded gap between consecutive occurrences. Identifying whether a sequence possesses this property is critical for understanding its symbolic dynamics, entropy, and structural predictability.\n\n**Morphic sequences** are infinite words generated by iterating a substitution rule (a morphism) over an alphabet and subsequently applying a letter-to-letter mapping (a coding). Because of their constructive definition, morphic sequences include many famous deterministic words, such as the Thue-Morse sequence and the Fibonacci word. \n\nDespite their widespread use, a long-standing open question in formal language theory asks: *Is there an effective procedure to decide whether an arbitrary morphic sequence is almost periodic?* \n\nThis paper makes significant progress toward resolving this question by targeting two foundational subclasses of morphic sequences:\n1. **Automatic sequences** (sequences generated by uniform morphisms or finite automata).\n2. **Fixed points of non-erasing morphisms** (sequences $x$ satisfying $\\sigma(x) = x$, where the morphism $\\sigma$ maps no letter to the empty word).\n\n---\n\n## 2. Main Contributions and Decision Criteria\n\nThe authors establish precise, constructive criteria to characterize almost periodicity in both targeted domains.\n\n### 2.1 Criteria for Automatic Sequences\nAutomatic sequences represent a widely studied class of morphic sequences generated by $k$-uniform morphisms (where every letter expands to a word of fixed length $k$). The authors leverage the graph-theoretic representation of the underlying deterministic finite automaton with output (DFAO). \n\nBy analyzing the strongly connected components of the automaton's state transition graph, the authors establish a decision criterion based on:\n* The accessibility of recurring sub-alphabet structures.\n* The absence of \"transient\" factors that appear near the origin but fail to recur within bounded distances across the entire word.\n\n### 2.2 Criteria for Fixed Points of Non-Erasing Morphisms\nWhen dealing with non-erasing morphisms ($\\sigma(a) \\neq \\varepsilon$ for all letters $a$), the growth rates of individual letters under repeated application of $\\sigma$ can vary dramatically (e.g., bounded, polynomial, or exponential growth). \n\nThe authors formulate a criterion based on the **incidence matrix** and the **dependency graph** of the morphism:\n* A fixed point $\\sigma^\\omega(a)$ is almost periodic if and only if every factor produced during the iteration expands into a word containing all other valid factors within a bounded number of substitution steps.\n* The authors isolate the set of *prolific* and *mortal* letters to ensure that no expanding factor can isolate itself without re-injecting every other mandatory factor of the sequence.\n\n---\n\n## 3. Algorithmic Complexity: Polynomial-Time Solutions\n\nA major highlight of this work is not merely proving that these criteria are *decidable*, but demonstrating that they are *efficiently computable*.\n\n* **Polynomial-Time Bound ($\\mathcal{P}$):** Previous theoretical frameworks often yielded decision procedures with exponential or non-deterministic upper bounds. In contrast, the authors construct explicit **polynomial-time algorithms** for both automatic sequences and non-erasing fixed points.\n* **Technique:** The algorithms reduce the validation of almost periodicity to standard graph reachability, matrix power computation, and factor-lookup operations over small, bounded domains derived from the size of the initial alphabet and morphism rules.\n\nConsequently, determining whether a given $k$-automatic sequence or a non-erasing fixed point is almost periodic can be performed in practical runtimes, enabling real-world implementation in mathematical software.\n\n---\n\n## 4. Implications for the General Conjecture\n\nThe general conjecture states that **almost periodicity is decidable for all morphic sequences** (including non-uniform, erasing morphisms with arbitrary codings). \n\nBy successfully solving the problem for automatic sequences and non-erasing fixed points, the authors overcome two of the most significant theoretical hurdles:\n1. **Unbounded structural growth** (addressed via the non-erasing fixed point criteria).\n2. **Deterministic, automata-based regularities** (addressed via the automatic sequence criteria).\n\nThese results narrow the remaining open space primarily to *erasing* non-uniform morphisms and arbitrary post-morphic codings. The structural insights and graph-reduction techniques introduced in this paper provide a viable blueprint for extending the decision procedure to the full class of morphic sequences.\n\n---\n\n## 5. Conclusion\n\nThis paper provides a fundamental contribution to the theory of combinatorics on words. By delivering clear decision criteria alongside efficient, polynomial-time algorithms for both automatic sequences and fixed points of non-erasing morphisms, the authors transform a difficult theoretical problem into an algorithmically tractable one. Furthermore, their findings lend powerful momentum to the conjecture that almost periodicity is universally decidable across all morphic sequences.",
+    "L5": "**The Power of the Specific: Clarifying Life Through Precision**\n\nIn a world overwhelming in its complexity, we often find ourselves lost in generalities. We speak of wanting \"success,\" reaching for \"happiness,\" or seeking \"change.\" Yet, these broad terms often obscure the actionable reality beneath them. True progress only begins when we trade vague ambitions for precise targets—when we introduce the ultimate tool of clarification, namely, specificity.\n\nConsider the difference between an abstract idea and a concrete action. A team might agree that they need to improve their work environment, but real transformation only happens when they identify the exact catalyst—namely, fostering open communication and establishing mutual accountability. Similarly, a person might claim they want a healthier life, but actual well-being arrives only when they define what that requires: namely, consistent rest, nourishing food, and daily movement.\n\nThe word *namely* acts as a linguistic bridge between the abstract and the concrete. It forces us to move past the surface and name the exact components of our desires, difficulties, or goals. It demands honesty in a world that often hides behind ambiguity. By pointing directly to the specifics, it transforms overwhelming ideas into manageable truths.\n\nUltimately, life’s most meaningful moments and pressing challenges do not exist in the general sense; they are grounded in the particulars. When we strip away the noise and ask ourselves what truly drives us, the answer usually narrows down to a vital few—namely, the people we love, the purpose that guides us, and the quiet integrity with which we choose to live each day."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a short, formal abstract for a mathematics paper on criteria for morphic sequences to be almost periodic (uniformly recurrent).",
+      "output": "Here is a formal abstract suitable for a mathematics paper in combinatorics on words or symbolic dynamics:\n\n***\n\n**Abstract.** A sequence over a finite alphabet is morphic if it is the image under a coding (a letter-to-letter morphism) of a fixed point of a substitution. In this paper, we establish necessary and sufficient criteria for an arbitrary morphic sequence to be almost periodic (uniformly recurrent). While uniform recurrence for purely morphic sequences is well-characterized by the primitivity of the underlying morphism, the introduction of a non-injective coding presents structural complications. By analyzing the structural interactions between the language of the underlying pure morphic sequence and the kernel of the coding, we provide effective combinatorial and matrix-theoretic conditions that govern bounded recurrence. As an application, we derive a characterization for the minimality of the subshift generated by a morphic sequence.\n\n***\n\n### Key Keywords (Optional to include):\n*Keywords:* Morphic sequence, substitution, almost periodic, uniformly recurrent, symbolic dynamics, factor complexity. \n*MSC (2020):* 68R15, 37B10, 11B85.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a concise abstract based on these findings: criteria for morphic sequences being uniformly recurrent, focused on non-erasing morphisms and automatic sequences with polynomial-time algorithms, plus a result supporting general decidability.",
+      "output": "This paper establishes criteria for determining whether a morphic sequence is uniformly recurrent. Focusing on non-erasing morphisms and automatic sequences, we provide polynomial-time decision algorithms for these subclasses. Furthermore, we present a result that supports the general decidability of uniform recurrence for arbitrary morphic sequences.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "What are the main computational complexity results regarding almost periodicity in automatic and morphic sequences? Give a short paragraph overview.",
+      "output": "In combinatorics on words, a sequence is **almost periodic** (or **uniformly recurrent**) if every factor that occurs in the sequence recurs infinitely often with bounded gaps. For **$k$-automatic sequences**, deciding almost periodicity is **decidable** and falls into the complexity class **PSPACE-complete** (or EXPTIME depending on the exact automaton representation); this stems from the fact that the property can be formulated as a first-order logic sentence in the logical theory $\\text{FO}(\\mathbb{N}, +, V_k)$, which is algorithmically solvable (and implemented in tools like *Walnut*). For the broader class of **morphic sequences**, the decidability of almost periodicity remained a major open problem for decades until it was proven **decidable** by Fabien Durand (2013). However, unlike the automatic case, Durand's constructive decision procedure—which relies on analyzing the prefix/suffix graphs and dynamical systems generated by the morphism—has a vastly higher computational complexity, scaling **hyper-exponentially** (and potentially non-elementarily in the worst case) due to the combinatorial explosion of factor growth in arbitrary substitutions.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Can you summarize the key contributions of a paper dealing with the decidability of uniform recurrence in fixed points of morphisms?",
+      "output": "While you didn't name a specific author, this problem is famously solved in theoretical computer science and combinatorics on words, most notably by **Fabien Durand** (in his landmark papers around 1998–2003, particularly *\"Decidability of uniform recurrence of morphic sequences\"*). \n\nBelow is a technical summary of the key contributions, theoretical tools, and significance of a paper establishing the decidability of uniform recurrence for fixed points of morphisms.\n\n---\n\n### **Context & Definitions**\n* **Morphism (or Substitution):** A mapping $\\sigma: A^* \\to A^*$ from an alphabet $A$ to words over $A$. If $\\sigma(a) = ax$, iterating $\\sigma$ yields an infinite fixed point $x = \\sigma^\\omega(a)$.\n* **Uniform Recurrence (UR):** An infinite word is uniformly recurrent (or *minimal*) if every factor (substring) that appears in the word appears infinitely often **with bounded gaps**.\n* **The Problem:** Given an arbitrary morphism $\\sigma$ and a starting letter $a$, is it algorithmically decidable whether $\\sigma^\\omega(a)$ is uniformly recurrent?\n\n---\n\n### **Key Contributions of the Paper**\n\n#### 1. **Main Result: Algorithmic Decidability**\nThe primary contribution is proving that **Uniform Recurrence is decidable**. \nThere exists an explicit, effective algorithm that takes a morphism $\\sigma$ and a starting letter $a$ as input and outputs `YES` or `NO` in finite time depending on whether $\\sigma^\\omega(a)$ is uniformly recurrent.\n\n#### 2. **Structural Decomposition of the Morphism**\nTo prove decidability, the paper develops a method to classify the behavior of letters in the alphabet:\n* **Growing vs. Bounded Letters:** Letters are categorized based on whether $|\\sigma^n(b)| \\to \\infty$ as $n \\to \\infty$.\n* **Incidence Matrix Analysis:** The paper utilizes the incidence matrix $M_\\sigma$ (where $M_{i,j}$ counts occurrences of letter $i$ in $\\sigma(j)$) to analyze the strongly connected components of the associated graph.\n* **Reduction to Pure Morphisms:** The paper shows how to systematically eliminate \"dead\" (non-growing) or erased letters, reducing the problem to a simplified canonical form without altering the recurrence properties of the generated sequence.\n\n#### 3. **Characterization via Return Words**\nA pivotal theoretical contribution is linking uniform recurrence to the structure of **return words**:\n* A *return word* to a factor $u$ in $x$ is a word $v$ such that $uv$ starts with $u$ and contains no other occurrences of $u$.\n* **Key Criterion:** An infinite word $x$ is uniformly recurrent if and only if for every factor $u$, the set of return words to $u$ is finite.\n* The paper proves that for morphic sequences, one only needs to check the return words of a **finite, computable set of prefixes**, making the condition algorithmically verifiable.\n\n#### 4. **Handling Non-Eraseable vs. Eraseable Morphisms**\n* **Non-erasing Case:** For non-erasing morphisms (where $\\sigma(b) \\neq \\varepsilon$), the paper shows that UR is equivalent to checking if all letters appearing in the sequence can \"reach\" all other growing letters through iteration.\n* **Erasing Case:** The paper extends this to erasing morphisms (where letters can map to the empty word $\\varepsilon$), which is significantly harder because structural alignment is lost. It constructs a procedure to trace pre-images and handle collapse points.\n\n---\n\n### **Outline of the Decidability Algorithm**\n\nThe core algorithm established in such a paper typically follows these steps:\n\n1. **Alphabet Reduction:** Identify all letters that actually appear in $x = \\sigma^\\omega(a)$. Discard unused letters.\n2. **Matrix Decomposition:** Construct the incidence matrix of $\\sigma$ restricted to the remaining alphabet and find its Perron-Frobenius/strongly connected components.\n3. **Prefix Stability Check:** Check if the infinite word can be written as a sequence of derivative words (using return words).\n4. **Gap Boundedness Test:** Verify if any non-growing or weakly growing subcomponents can create arbitrarily large \"gaps\" between occurrences of any factor.\n5. **Final Logic:** If every letter that appears in $x$ produces every factor of $x$ within a bounded number of iterations, return `TRUE`; otherwise, return `FALSE`.\n\n---\n\n### **Significance and Impact**\n\n* **Symbolic Dynamics:** Uniform recurrence of a sequence is equivalent to the corresponding **subshift being minimal**. Therefore, this result implies that it is decidable whether a morphic subshift is minimal.\n* **Theoretical Completeness:** It resolved a long-standing open question in the theory of automata and combinatorics on words, complementing Pansiot's classification of the growth order of morphisms.\n* **Foundational Tool:** The techniques introduced (especially the algorithmic use of return words and derived sequences) became fundamental tools in proving decidability for other properties of morphic words (e.g., conjugacy, periodicity, and overlap-freeness).",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Summarize my paper's abstract in 4 sentences: we found poly-time algorithms for almost periodicity in non-erasing morphic sequences and automatic sequences, supporting the general decidability conjecture.",
+      "output": "Here is a 4-sentence summary of your abstract:\n\nThis research focuses on the computational analysis of almost periodicity within infinite sequence structures. The authors introduce efficient polynomial-time algorithms designed specifically for non-erasing morphic sequences. Additionally, they demonstrate that determining almost periodicity for automatic sequences can also be accomplished in polynomial time. Ultimately, these algorithmic breakthroughs provide strong theoretical evidence supporting the general decidability conjecture.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.25532754538279395,
+      "excess_ratio": 0.038946072001995846,
+      "baseline_mean": 0.2163814733807981,
+      "baseline_n_valid": 5,
+      "output_chars": 1924,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.22420382165605096,
+          "baseline_mean": 0.18878387955343323,
+          "excess_ratio": 0.03541994210261773
+        },
+        "bz2": {
+          "actual_ratio": 0.24184476940382452,
+          "baseline_mean": 0.19856174234120166,
+          "excess_ratio": 0.04328302706262285
+        },
+        "lzma": {
+          "actual_ratio": 0.29767441860465116,
+          "baseline_mean": 0.2555154296251208,
+          "excess_ratio": 0.042158988979530354
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.24656810982048577,
+      "excess_ratio": 0.030186636439687664,
+      "baseline_mean": 0.2163814733807981,
+      "baseline_n_valid": 5,
+      "output_chars": 1099,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.211864406779661,
+          "baseline_mean": 0.18878387955343323,
+          "excess_ratio": 0.023080527226227776
+        },
+        "bz2": {
+          "actual_ratio": 0.22402597402597402,
+          "baseline_mean": 0.19856174234120166,
+          "excess_ratio": 0.025464231684772354
+        },
+        "lzma": {
+          "actual_ratio": 0.29651162790697677,
+          "baseline_mean": 0.2555154296251208,
+          "excess_ratio": 0.04099619828185597
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.19152798789712566,
+      "excess_ratio": -0.024853485483672444,
+      "baseline_mean": 0.2163814733807981,
+      "baseline_n_valid": 5,
+      "output_chars": 2368,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.16603415559772297,
+          "baseline_mean": 0.18878387955343323,
+          "excess_ratio": -0.02274972395571026
+        },
+        "bz2": {
+          "actual_ratio": 0.18475336322869956,
+          "baseline_mean": 0.19856174234120166,
+          "excess_ratio": -0.0138083791125021
+        },
+        "lzma": {
+          "actual_ratio": 0.22183098591549297,
+          "baseline_mean": 0.2555154296251208,
+          "excess_ratio": -0.03368444370962784
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.07909967845659165,
+      "excess_ratio": -0.13728179492420645,
+      "baseline_mean": 0.2163814733807981,
+      "baseline_n_valid": 5,
+      "output_chars": 6401,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.061224489795918366,
+          "baseline_mean": 0.18878387955343323,
+          "excess_ratio": -0.12755938975751485
+        },
+        "bz2": {
+          "actual_ratio": 0.08,
+          "baseline_mean": 0.19856174234120166,
+          "excess_ratio": -0.11856174234120166
+        },
+        "lzma": {
+          "actual_ratio": 0.0958904109589041,
+          "baseline_mean": 0.2555154296251208,
+          "excess_ratio": -0.1596250186662167
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.031073446327683656,
+      "excess_ratio": -0.18530802705311444,
+      "baseline_mean": 0.2163814733807981,
+      "baseline_n_valid": 5,
+      "output_chars": 1676,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.015521064301552107,
+          "baseline_mean": 0.18878387955343323,
+          "excess_ratio": -0.1732628152518811
+        },
+        "bz2": {
+          "actual_ratio": 0.023965141612200435,
+          "baseline_mean": 0.19856174234120166,
+          "excess_ratio": -0.17459660072900124
+        },
+        "lzma": {
+          "actual_ratio": 0.05138339920948617,
+          "baseline_mean": 0.2555154296251208,
+          "excess_ratio": -0.20413203041563463
+        }
+      }
+    }
+  }
+}

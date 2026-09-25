@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0301",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nMoore introduced a class of real-valued \"recursive\" functions by analogy with Kleene's formulation of the standard recursive functions. While his concise definition inspired a new line of research on analog computation, it contains some technical inaccuracies. Focusing on his \"primitive recursive\" functions, we pin down what is problematic and discuss possible attempts to remove the ambiguity regarding the behavior of the differential recursion operator on partial functions. It turns out that in any case the purported relation to differentially algebraic functions, and hence to Shannon's model of analog computation, fails.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nMoore introduced a class of real-valued \"recursive\" functions by analogy with Kleene's formulation of the standard recursive functions. While his concise definition inspired a new line of research on analog computation, it contains some technical inaccuracies. Focusing on his \"primitive recursive\" functions, we pin down what is problematic and discuss possible attempts to remove the ambiguity regarding the behavior of the differential recursion operator on partial functions. It turns out that in any case the purported relation to differentially algebraic functions, and hence to Shannon's model of analog computation, fails.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- Moore introduced real-valued “recursive” functions modeled on Kleene’s standard recursive functions.\n- His concise definition inspired a new line of research in analog computation.\n- The definition contains technical inaccuracies, particularly concerning his “primitive recursive” functions.\n- The behavior of the differential recursion operator on partial functions is ambiguous and requires clarification.\n- Proposed corrections do not preserve the claimed connection to differentially algebraic functions or Shannon’s analog computation model.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe text examines technical flaws in Moore’s definition of real-valued “primitive recursive” functions and considers ways to clarify the differential recursion operator’s behavior on partial functions. It finds that none of these interpretations preserves the claimed connection to differentially algebraic functions or Shannon’s analog computation model.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Moore, Kleene, While"
+  },
+  "outputs": {
+    "L1": "Moore introduced a class of real-valued “recursive” functions by analogy with Kleene’s formulation of standard recursive functions. Although his concise definition inspired a new line of research on analog computation, it contains several technical inaccuracies. Focusing on his “primitive recursive” functions, we identify the underlying issues and examine possible approaches to resolving the ambiguity surrounding the behavior of the differential recursion operator on partial functions. We show that, in every case, the purported connection to differentially algebraic functions—and hence to Shannon’s model of analog computation—fails.",
+    "L2": "Drawing on Kleene’s characterization of conventional recursive functions, Moore proposed an analogous family of real-valued “recursive” functions. Although this compact framework prompted a new area of research in analog computation, its formulation suffers from technical flaws. By examining Moore’s “primitive recursive” functions, we identify the underlying difficulties and consider ways to clarify how the differential recursion operator acts on partial functions. Regardless of the chosen resolution, however, the claimed connection to differentially algebraic functions—and therefore to Shannon’s analog-computation model—does not hold.",
+    "L3": "Moore introduced a class of real-valued “recursive” functions intended as a continuous analogue of Kleene’s standard recursive functions over the natural numbers. By replacing discrete recursion with operations suited to real analysis—most notably a differential recursion operator—he sought to develop a unified framework for analog computation. The concision and apparent elegance of this definition made it highly influential, inspiring a substantial line of research on computation over the reals and on formal models of analog computing.\n\nHowever, the original formulation contains several technical inaccuracies. These are especially significant in Moore’s treatment of the functions described as “primitive recursive,” where the stated closure principles and operators do not always yield the properties attributed to them. A central difficulty concerns the application of differential recursion to partial functions. If the functions supplying the initial conditions or derivatives are not defined everywhere, the definition does not clearly specify the domain of the resulting solution, how singularities or finite-time failures should be handled, or whether uniqueness and maximality of solutions are required. Consequently, the differential recursion operator is ambiguous unless additional conventions are imposed.\n\nAlthough several corrections or alternative interpretations can make the formalism mathematically precise, they come at a conceptual cost. In particular, the corrected definitions do not automatically preserve Moore’s claimed correspondence with differentially algebraic functions, nor do they straightforwardly recover Shannon’s model of analog computation. Thus, Moore’s work remains important as the starting point for a productive research program, but its foundational claims require careful qualification: repairing the formal definition may alter or eliminate some of the connections that originally motivated it.",
+    "L4": "Moore’s proposed recursion theory over the reals is intended to play a role analogous to classical primitive recursion on the natural numbers. Starting from basic real functions, new functions are generated by composition and by a differential-recursion operator. In its typical form, differential recursion defines a function \\(h\\) through an initial-value problem such as\n\n\\[\nh(\\mathbf{x},0)=f(\\mathbf{x}), \\qquad\n\\frac{\\partial h}{\\partial t}(\\mathbf{x},t)\n   =g(\\mathbf{x},t,h(\\mathbf{x},t)).\n\\]\n\nThe resulting class is then presented as a real-valued counterpart of the primitive recursive functions. It is also claimed to be closely related to differentially algebraic functions and to Shannon’s General Purpose Analog Computer, or GPAC.\n\nThe difficulty is that this definition is not technically complete when partial functions are allowed. If \\(f\\) or \\(g\\) is partial, the differential equation does not by itself determine the domain of \\(h\\). A solution may exist only locally, may cease to exist because it becomes unbounded in finite time, or may reach a point at which the right-hand side is undefined. Even when a solution exists, it need not be unique unless additional regularity conditions—typically a local Lipschitz condition in the dependent variable—are imposed. Thus the differential-recursion clause must specify not only the equation and initial condition, but also which solution is selected and on what domain the resulting function is defined.\n\nSeveral natural interpretations are possible. One can require \\(h\\) to be defined only where a unique local solution exists. One can instead choose the maximal solution through the initial point and take its interval of existence as the domain. Another possibility is to require a globally defined solution, thereby rejecting equations whose solutions blow up or encounter the boundary of the domain of \\(g\\). One might also define the operator relationally, allowing every solution of the initial-value problem, or impose a convention that chooses one solution when uniqueness fails. For partial right-hand sides, further choices arise: the solution may be stopped as soon as it leaves the domain of \\(g\\), or it may be permitted to continue whenever the differential equation admits an extension beyond that point.\n\nThese alternatives are not equivalent. A local-solution interpretation can produce functions on small, parameter-dependent neighborhoods, while a maximal-solution interpretation introduces domains whose boundaries are determined by the global behavior of an ordinary differential equation. A global-solution requirement excludes many otherwise elementary differential equations. Allowing arbitrary solutions destroys the functional character of the operator, whereas choosing a solution requires an additional selection principle not present in Moore’s formal scheme. Moreover, parameterized initial-value problems can have domains that fail to be open or whose dependence on the parameters is irregular, making ordinary composition problematic.\n\nThe issue cannot be dismissed as a minor matter of presentation. Primitive recursion on the natural numbers is unambiguous because the recursive clauses determine exactly one value at every stage. Differential equations lack this automatic determinacy. Existence, uniqueness, continuation, and domain formation are substantive mathematical conditions. Without explicit rules for them, the generated class of real functions is not well defined.\n\nAdding standard existence and uniqueness hypotheses repairs part of the problem but changes the resulting class. Requiring the vector field to be continuous gives local existence but not uniqueness. Requiring local Lipschitz continuity gives uniqueness, but still does not guarantee global existence. Requiring global Lipschitz bounds or comparable growth restrictions gives global solutions, but excludes differential equations used to generate many familiar functions. No single repair is therefore neutral: each interpretation alters which functions can be formed and how their domains behave.\n\nThis ambiguity also undermines the proposed identification with differentially algebraic functions. A function is differentially algebraic when it satisfies a polynomial differential equation involving the independent variable, the function, and finitely many derivatives. That condition is essentially algebraic and local; it does not, by itself, specify a particular branch, an initial condition, a maximal domain, or a rule for continuation across singularities. Moore’s differential recursion, by contrast, is an initial-value construction whose output depends crucially on precisely those choices. Differential algebraicity therefore does not automatically provide a semantics for the recursion operator.\n\nConversely, a function obtained from a system of differential equations need not fall into the intended differentially algebraic class under every interpretation of partiality and domain. Operations on partial solutions, parameterized maximal intervals, and solution-selection conventions can introduce behavior not captured merely by saying that a function satisfies a polynomial differential relation. Even when individual solution components are differentially algebraic on suitable open intervals, the partial function consisting of a chosen maximal branch contains additional domain information. That domain information is not represented by the differential equation alone.\n\nSimilar problems arise in the comparison with Shannon’s GPAC. Shannon’s original analysis connects GPAC-generated functions with solutions of polynomial differential equations, under assumptions about well-defined circuit behavior and suitable intervals of operation. A GPAC describes a dynamical process, not an unrestricted operator that assigns a canonical partial function to every differential equation. The machine model normally presupposes a particular trajectory determined by initial conditions and operates only while that trajectory exists and the circuit remains meaningful. It does not resolve nonuniqueness, select among arbitrary solution branches, or automatically assign maximal domains.\n\nAccordingly, the correspondence between Moore’s function algebra and analog computation cannot be established merely by observing that both use differential equations. To obtain a genuine equivalence, one would need compatible definitions of admissible vector fields, initial conditions, uniqueness, solution domains, continuation, and output functions. Once such restrictions are imposed, however, the function algebra is no longer Moore’s original unrestricted construction, and the claimed equivalence must be proved anew. Different reasonable restrictions lead to different classes.\n\nThe central conclusion is therefore negative but constructive. Moore’s proposal identifies an important idea: differential equations can serve as a real-number analogue of discrete recursion. Nevertheless, the differential-recursion operator requires a much more precise semantics than the published definition provides, especially when partial functions are admitted. Local, maximal, global, and multivalued interpretations each repair some defects, but none preserves all of the advertised properties. In particular, none yields, without further substantial qualifications, the claimed class of differentially algebraic functions or an exact characterization of Shannon’s analog computation model. A satisfactory theory must treat the existence, uniqueness, domain, and continuation of solutions as part of the formal definition rather than as implicit background assumptions.",
+    "L5": "### Moore, Kleene, and While Loops\n\nThe semantics of a `while` loop can be described using fixed-point theory. Consider a loop\n\n```text\nwhile b do C\n```\n\nwhere \\(b\\) is a condition and \\(C\\) is the loop body. Because the body may be executed an arbitrary number of times—or may never terminate—the meaning of the loop cannot generally be defined by simple structural recursion. Instead, it is represented as a fixed point of a semantic function.\n\n**Kleene iteration** constructs the least fixed point from below. Starting with the bottom element \\(\\bot\\), which represents no defined behavior, it repeatedly applies a monotone function \\(F\\):\n\n\\[\n\\bot \\leq F(\\bot) \\leq F^2(\\bot) \\leq \\cdots\n\\]\n\nFor a `while` loop, these approximations correspond to allowing zero, one, two, and progressively more iterations. Under suitable continuity assumptions, the least fixed point is\n\n\\[\n\\operatorname{lfp}(F)=\\bigvee_{n\\geq 0}F^n(\\bot).\n\\]\n\nThis interpretation captures the loop’s terminating computations. If execution continues forever, the result remains undefined.\n\n**Moore iteration** proceeds in the opposite direction. It starts with the top element \\(\\top\\) and forms a descending sequence:\n\n\\[\n\\top \\geq F(\\top) \\geq F^2(\\top) \\geq \\cdots\n\\]\n\nIts limit is the greatest fixed point,\n\n\\[\n\\operatorname{gfp}(F)=\\bigwedge_{n\\geq 0}F^n(\\top),\n\\]\n\nprovided the relevant dual continuity conditions hold. Greatest fixed points are useful when nontermination or infinite behavior is considered meaningful, as in coinductive semantics and reactive systems.\n\nThus, Kleene and Moore approaches provide complementary views of `while` loops. Kleene iteration gives an inductive account centered on finite, terminating executions, while Moore iteration supports a coinductive account that can include infinite executions. Both place the behavior of loops within the general mathematical framework of ordered sets, monotone functions, and fixed points."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize the abstract of a paper critiquing Moore’s definition of real recursive functions and its connection to analog computation.",
+      "output": "Please paste the abstract—or provide the paper’s title or link—and I’ll summarize its critique of Moore’s real recursive functions and their relationship to analog computation.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a concise academic paragraph explaining the technical problems with Moore’s “primitive recursive” functions, especially differential recursion on partial functions.",
+      "output": "Moore’s real “primitive recursive” functions extend ordinary primitive recursion by a differential-recursion operator intended to define functions as solutions of initial-value problems. The difficulty is that the operator is applied to partial functions without sufficient domain and regularity conditions: the vector field may be undefined along a trajectory, its domain need not be open, and it may fail to be continuous or locally Lipschitz. Consequently, a solution may not exist, may not be unique, or may cease to exist after finite time; moreover, the definition does not always specify whether maximal solutions or endpoint values are intended. Differential recursion therefore need not determine a single partial function, so closure, composition, and claims about the resulting function class require additional domain conventions and analytic hypotheses.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "What is wrong with Moore’s formulation of recursive functions over the reals, and does it really correspond to differentially algebraic functions or Shannon’s GPAC model?",
+      "output": "Moore’s “real recursive functions” are best viewed as a suggestive programming formalism, not as a clean characterization theorem.\n\n### Problems with Moore’s definition\n\nThe crucial operator is differential recursion:\n\n\\[\nh(x,0)=f(x),\\qquad \\partial_t h(x,t)=g(x,t,h(x,t)).\n\\]\n\nThis is not automatically a well-defined total function on \\(\\mathbb R^{n+1}\\):\n\n- An IVP may have no solution, several solutions, or only a local solution.\n- Even polynomial ODEs may blow up in finite time; for example,\n  \\[\n  y'=y^2,\\quad y(0)=1\n  \\]\n  has no real-valued solution on all of \\(\\mathbb R\\).\n- With parameters \\(x\\), maximal domains need not have a simple product form.\n- Once minimization/root selection is allowed, the right-hand side need not be locally Lipschitz, so uniqueness becomes especially problematic.\n\nMoore’s minimization operator has further difficulties. Over \\(\\mathbb R\\), a nonempty set of zeros need not have a least element; an infimum need not be a zero; and selecting a root can be discontinuous or ambiguous. Thus one must specify domains, root-selection rules, uniqueness, and regularity conditions. Without those, the class is not formally closed under its own operations.\n\nThese issues can be repaired by working with partial functions on open domains, maximal IVP solutions, and explicitly regular root selection, but the resulting model is more restricted than Moore’s informal presentation suggests.\n\n### Relation to differentially algebraic functions\n\nA unary function is differentially algebraic, or DA, if it satisfies an equation\n\n\\[\nP(t,f,f',\\ldots,f^{(k)})=0\n\\]\n\nfor a nonzero polynomial \\(P\\).\n\nMoore’s composition-plus-differential-recursion fragment is closely related to DA functions only **locally and under regularity assumptions**. At an ordinary point, a DA equation can often be converted into a first-order polynomial system, and conversely components of a finite polynomial ODE are DA. But there is no unconditional global equality:\n\n- singular points may prevent solving for the highest derivative;\n- solutions may blow up;\n- branch choices and domains matter;\n- arbitrary DA functions need not be analytic globally.\n\nFor example, the smooth function\n\n\\[\nf(t)=\n\\begin{cases}\n0,&t\\le 0,\\\\\ne^{-1/t},&t>0\n\\end{cases}\n\\]\n\nis DA—it satisfies \\(t^2f'-f=0\\)—but is not analytic at \\(0\\). A solution of a polynomial ODE is analytic wherever the ODE solution exists, so this function cannot be a single GPAC-generated trajectory across \\(0\\).\n\nAdding unrestricted minimization moves Moore’s class still farther away from the DA class, since root selection can create partial, discontinuous, or nonanalytic functions.\n\n### Relation to Shannon’s GPAC\n\nA modern mathematical GPAC is characterized by polynomial initial-value problems such as\n\n\\[\ny'(t)=p(t,y(t)),\\qquad y(t_0)=y_0,\n\\]\n\nwith the output one component of \\(y\\). Consequently:\n\n- every GPAC-generated unary function is DA on its interval of existence;\n- a DA analytic germ at a nonsingular point can generally be represented locally by a GPAC;\n- unrestricted global DA functions are not exactly the same as GPAC-generated functions.\n\nShannon’s original claim that GPAC-generable functions are precisely the DA functions therefore requires qualifications concerning analyticity, nonsingular points, domains, and constants. It is not a literal global equivalence. Moore’s differential recursion is more general syntactically than a GPAC’s polynomial ODE, though regular DA right-hand sides can often be compiled into polynomial systems locally. Moore’s minimization operator has no counterpart in the ordinary Shannon GPAC.\n\nSo the accurate summary is:\n\n\\[\n\\text{GPAC} \\subseteq \\text{DA locally},\n\\]\n\nwith a converse for suitable analytic, nonsingular DA germs, while Moore’s full real-recursive formalism—especially with minimization—is neither rigorously identical to the DA functions nor to Shannon’s GPAC without substantial repairs and restrictions.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Produce a research-style abstract about ambiguities in Moore’s differential recursion operator and why proposed fixes fail to recover the claimed relationship with Shannon-style analog computation.",
+      "output": "**Abstract—** Moore’s differential recursion operator is commonly presented as a real-function analogue of discrete recursion: from functions \\(f\\) and \\(g\\), it forms a function \\(h\\) satisfying\n\\[\nh(\\mathbf{x},0)=f(\\mathbf{x}),\\qquad\n\\partial_t h(\\mathbf{x},t)=g(\\mathbf{x},t,h(\\mathbf{x},t)).\n\\]\nThis definition is underspecified when the associated initial-value problem lacks a unique global solution. In particular, it does not determine whether differential recursion returns a local solution, a globally defined solution, a maximal solution, or a selected continuation; nor does it adequately specify how parameter-dependent existence intervals, finite-time blow-up, singular boundaries, and partial-function domains are represented. These choices are mathematically substantive because they affect closure under composition and recursion and therefore change the resulting function algebra. We examine standard repairs—requiring global solvability, adopting maximal solutions, restricting to unique analytic solutions, or treating domains implicitly—and show that none preserves both a well-defined compositional calculus and the relationship often claimed with Shannon’s General Purpose Analog Computer (GPAC). Globality restrictions exclude legitimate GPAC trajectories with finite escape or restricted natural domains; maximal-solution conventions produce parameter-sensitive domains that need not support Moore’s syntactic operations; and analyticity or uniqueness assumptions do not resolve domain selection and continuation. More fundamentally, Moore’s operator permits right-hand sides assembled from previously generated functions, whereas Shannon-style GPAC generation is tied to finite polynomial differential systems and a specific evolution parameter. Consequently, identifying the two models requires additional compilation and domain theorems that the proposed fixes do not supply. The claimed equivalence is therefore not a consequence of differential recursion alone, but depends on an explicit—and substantially stronger—semantics for partiality, maximality, and analog generation.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Briefly describe a paper that analyzes Moore’s real-valued recursive functions, identifies inaccuracies in their definition, and challenges their purported connection to differentially algebraic functions.",
+      "output": "The paper critically examines Cristopher Moore’s framework of real-valued recursive functions. It points out ambiguities and technical errors in the differential-recursion scheme—especially concerning domains, existence, uniqueness, and closure of solutions—and shows that Moore’s claimed identification of the resulting function class with the differentially algebraic functions is not justified and, under natural interpretations, is false. More broadly, it cautions against using Moore’s definitions as a direct real-number analogue of classical recursion theory.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.5955518945634267,
+      "excess_ratio": 0.3829568845555866,
+      "baseline_mean": 0.21259501000784015,
+      "baseline_n_valid": 5,
+      "output_chars": 640,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6097560975609756,
+          "baseline_mean": 0.18245553098608336,
+          "excess_ratio": 0.42730056657489224
+        },
+        "bz2": {
+          "actual_ratio": 0.4837905236907731,
+          "baseline_mean": 0.1931669445518689,
+          "excess_ratio": 0.2906235791389042
+        },
+        "lzma": {
+          "actual_ratio": 0.6846846846846847,
+          "baseline_mean": 0.2544308635207778,
+          "excess_ratio": 0.43025382116390687
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3511953833470734,
+      "excess_ratio": 0.13860037333923325,
+      "baseline_mean": 0.21259501000784015,
+      "baseline_n_valid": 5,
+      "output_chars": 643,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3108108108108108,
+          "baseline_mean": 0.18245553098608336,
+          "excess_ratio": 0.12835527982472744
+        },
+        "bz2": {
+          "actual_ratio": 0.2982456140350877,
+          "baseline_mean": 0.1931669445518689,
+          "excess_ratio": 0.10507866948321881
+        },
+        "lzma": {
+          "actual_ratio": 0.43243243243243246,
+          "baseline_mean": 0.2544308635207778,
+          "excess_ratio": 0.17800156891165464
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.21223386279148365,
+      "excess_ratio": -0.0003611472163564944,
+      "baseline_mean": 0.21259501000784015,
+      "baseline_n_valid": 5,
+      "output_chars": 1948,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.17875920084121977,
+          "baseline_mean": 0.18245553098608336,
+          "excess_ratio": -0.003696330144863591
+        },
+        "bz2": {
+          "actual_ratio": 0.21548117154811716,
+          "baseline_mean": 0.1931669445518689,
+          "excess_ratio": 0.02231422699624827
+        },
+        "lzma": {
+          "actual_ratio": 0.23954372623574144,
+          "baseline_mean": 0.2544308635207778,
+          "excess_ratio": -0.014887137285036378
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.05803830528148573,
+      "excess_ratio": -0.1545567047263544,
+      "baseline_mean": 0.21259501000784015,
+      "baseline_n_valid": 5,
+      "output_chars": 7646,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04529972752043597,
+          "baseline_mean": 0.18245553098608336,
+          "excess_ratio": -0.13715580346564737
+        },
+        "bz2": {
+          "actual_ratio": 0.05942398833394094,
+          "baseline_mean": 0.1931669445518689,
+          "excess_ratio": -0.13374295621792795
+        },
+        "lzma": {
+          "actual_ratio": 0.06948228882833787,
+          "baseline_mean": 0.2544308635207778,
+          "excess_ratio": -0.18494857469243994
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.04516346477923825,
+      "excess_ratio": -0.1674315452286019,
+      "baseline_mean": 0.21259501000784015,
+      "baseline_n_valid": 5,
+      "output_chars": 1937,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.029442691903259727,
+          "baseline_mean": 0.18245553098608336,
+          "excess_ratio": -0.15301283908282362
+        },
+        "bz2": {
+          "actual_ratio": 0.030364372469635626,
+          "baseline_mean": 0.1931669445518689,
+          "excess_ratio": -0.16280257208223325
+        },
+        "lzma": {
+          "actual_ratio": 0.07392996108949416,
+          "baseline_mean": 0.2544308635207778,
+          "excess_ratio": -0.18050090243128364
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,524 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0516",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThe effects of imperfect gate operations in implementation of Shor's prime factorization algorithm are investigated. The gate imperfections may be classified into three categories: the systematic error, the random error, and the one with combined errors. It is found that Shor's algorithm is robust against the systematic errors but is vulnerable to the random errors. Error threshold is given to the algorithm for a given number $N$ to be factorized.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThe effects of imperfect gate operations in implementation of Shor's prime factorization algorithm are investigated. The gate imperfections may be classified into three categories: the systematic error, the random error, and the one with combined errors. It is found that Shor's algorithm is robust against the systematic errors but is vulnerable to the random errors. Error threshold is given to the algorithm for a given number $N$ to be factorized.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The study investigates how imperfect gate operations affect the implementation of Shor's prime factorization algorithm.\n- Gate imperfections are classified as systematic errors, random errors, or combined errors.\n- Shor's algorithm is robust against systematic gate errors.\n- The algorithm is vulnerable to random gate errors.\n- An error threshold is provided for the algorithm based on the number \\(N\\) to be factorized.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe study investigates how systematic, random, and combined gate-operation errors affect the implementation of Shor’s prime factorization algorithm. Shor’s algorithm is robust against systematic errors but vulnerable to random errors, with an error threshold identified for each number \\(N\\) to be factorized.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, Shor, Error"
+  },
+  "outputs": {
+    "L1": "The effects of imperfect gate operations on the implementation of Shor’s prime factorization algorithm are investigated. Gate imperfections are classified into three categories: systematic errors, random errors, and combined systematic and random errors. Shor’s algorithm is found to be robust against systematic errors but vulnerable to random errors. An error threshold is established for the algorithm for a given number \\(N\\) to be factorized.",
+    "L2": "This study examines how nonideal quantum gates affect the implementation of Shor’s integer-factorization algorithm. Gate faults are divided into three types: systematic errors, random errors, and combinations of the two. The results indicate that Shor’s algorithm tolerates systematic inaccuracies relatively well but is highly sensitive to random ones. For a specified integer \\(N\\) to be factored, an error threshold for successful operation is also determined.",
+    "L3": "This study investigates the influence of imperfect quantum gate operations on the implementation of Shor’s algorithm for prime factorization. Gate imperfections are classified into three categories: systematic errors, which introduce consistent and repeatable deviations; random errors, which vary unpredictably between gate operations; and combined errors, which include both systematic and random components. The analysis shows that Shor’s algorithm is comparatively robust against systematic gate errors, since their coherent and repeatable nature limits their overall effect on the computation. In contrast, the algorithm is significantly more vulnerable to random gate errors, whose accumulation can disrupt quantum interference and reduce the probability of obtaining the correct factors. Based on these findings, an error threshold is established as a function of the integer \\(N\\) to be factorized. This threshold specifies the maximum tolerable level of gate error required for the algorithm to operate successfully and illustrates how the necessary gate accuracy changes as the size of the factorization problem increases.",
+    "L4": "This study examines the influence of imperfect quantum-gate operations on the performance of Shor’s prime factorization algorithm. Three types of imperfections are considered: systematic errors, which introduce the same coherent deviation each time a gate is applied; random errors, whose magnitude or direction varies from one operation to another; and combined errors, in which both effects are present. By incorporating these errors into simulations of the algorithm, the study evaluates how accurately the quantum computation produces the periodicity information required to recover the factors of a composite integer \\(N\\).\n\nThe results reveal a clear distinction between systematic and random gate errors. Shor’s algorithm is comparatively robust against systematic imperfections because coherent deviations may accumulate in a structured way and do not necessarily destroy the interference pattern used by the quantum Fourier transform. Although systematic errors can reduce the probability of obtaining the correct result, useful peaks in the output distribution may remain identifiable over a relatively broad range of error strengths.\n\nRandom errors have a much more damaging effect. Because they vary from gate to gate, they disrupt quantum coherence and progressively wash out the probability peaks associated with the correct period. As the random-error strength increases, the output distribution becomes increasingly diffuse, making it difficult or impossible to extract the period and determine the factors of \\(N\\). When systematic and random errors occur together, the random component generally dominates the loss of computational reliability.\n\nThe analysis also identifies an error threshold for each integer \\(N\\) being factorized. Below this threshold, the algorithm retains a sufficiently high probability of producing useful measurement outcomes, and successful factorization remains feasible, potentially with repeated runs. Above it, the characteristic period-finding signal deteriorates to the point that the algorithm no longer offers reliable results. Because the required circuit size and number of gate operations depend on \\(N\\), the acceptable error level is likewise problem-dependent and generally becomes more restrictive as the computation grows.\n\nOverall, the study shows that not all gate imperfections affect Shor’s algorithm in the same way. Stable, systematic calibration errors may be tolerated to some extent, whereas fluctuating random errors pose a more serious threat to successful factorization. These findings emphasize the importance of suppressing stochastic noise, improving gate fidelity, and using error-mitigation or quantum-error-correction techniques when implementing Shor’s algorithm on practical quantum hardware.",
+    "L5": "### Shor’s Algorithm and the Challenge of Error\n\nShor’s algorithm is one of the most important discoveries in quantum computing. Developed by mathematician Peter Shor, it enables a sufficiently powerful quantum computer to factor large numbers far more efficiently than known classical methods. Because many encryption systems depend on the difficulty of factoring, the algorithm could eventually transform digital security.\n\nError remains a major obstacle to its practical use. Quantum bits are extremely sensitive to noise, environmental interference, and imperfect operations. Even a small error can spread through a calculation and produce an incorrect result. Running Shor’s algorithm on cryptographically significant numbers would therefore require not only many quantum bits, but also advanced quantum error correction.\n\nThe relationship between Shor’s algorithm and error correction illustrates both the promise and the difficulty of quantum computing. The theory is powerful, but reliable hardware is still developing. Overcoming error will be essential before Shor’s algorithm can achieve its full real-world impact."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a concise abstract for a paper studying how imperfect quantum gates affect Shor’s factoring algorithm.",
+      "output": "We investigate the impact of imperfect quantum gates on the performance of Shor’s factoring algorithm. Using a noise model that captures coherent control errors and stochastic gate faults, we analyze error propagation through modular exponentiation and the quantum Fourier transform. We quantify how gate fidelity, circuit depth, and error correlations affect the probability of recovering the correct factors. Our results identify the algorithm’s most noise-sensitive components and establish practical accuracy requirements for reliable factoring, providing guidance for error mitigation and fault-tolerant implementations of Shor’s algorithm.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize research on the robustness of Shor’s prime factorization algorithm under systematic, random, and combined gate errors.",
+      "output": "Research on noisy implementations of Shor’s algorithm generally reaches a consistent conclusion: **coherent systematic errors are substantially more damaging than comparable zero-mean random errors**, while combined errors are often dominated by any residual coherent component.\n\n### Main findings\n\n- **How errors appear:** Gate errors broaden and suppress the sharp peaks in the measured phase distribution used to infer the order \\(r\\). They also create a roughly uniform background. Factoring fails when continued-fraction post-processing can no longer identify \\(r\\) often enough.\n\n- **Systematic/coherent errors:** A fixed over-rotation, phase offset, or calibration bias is repeated with the same sign. Its amplitudes can add coherently, producing phase errors that grow roughly linearly with the relevant circuit depth. In simple models, maintaining constant success probability may therefore require the per-gate coherent error to decrease approximately as \\(1/L\\), where \\(L\\) is the number of coherently accumulating faulty operations. Periodic error patterns can also produce structured false peaks, making them especially harmful.\n\n- **Random, zero-mean errors:** Independent gate-to-gate fluctuations tend to accumulate diffusively rather than coherently. The total error amplitude typically grows like \\(\\sqrt L\\), suggesting a less stringent scaling, roughly \\(1/\\sqrt L\\), in simplified models. Simulations generally find a gradual reduction in success probability rather than the sharp, structured distortions caused by systematic bias.\n\n- **Combined errors:** When random fluctuations are added to a systematic offset, the coherent component usually controls performance once \\(L\\epsilon_{\\rm sys}\\) becomes appreciable. Random noise may blur the coherent artifacts, but it does not remove the accumulated bias. Thus a small calibration error can matter more than a larger-looking stochastic error rate.\n\n### Which parts of Shor’s algorithm are vulnerable?\n\nStudies separating circuit components find that:\n\n- The **quantum Fourier transform** is relatively tolerant of small-angle-gate omissions and can often be replaced by an approximate QFT.\n- The much larger **controlled modular-exponentiation/arithmetic circuit** is usually the dominant vulnerability because it contains many more gates and propagates errors into the computational state.\n- Static imperfections, crosstalk, and residual couplings can be particularly damaging because they act coherently during idle periods and across many gates.\n\n### Implications\n\n1. **Average gate fidelity alone is insufficient.** Two devices with the same infidelity can perform very differently if one error is coherent and the other stochastic.\n2. **Calibration and coherent-error suppression are crucial.** Composite pulses, echo sequences, randomized compiling, Pauli twirling, and frequent recalibration can convert coherent accumulation into more benign stochastic behavior.\n3. **Circuit-level simulations can be misleading at small sizes.** Demonstrations factoring 15 or 21 often use compiled circuits that omit much of modular exponentiation and do not reproduce the scaling of a general implementation.\n4. **Fault tolerance changes the conclusion.** Without error correction, the tolerable physical error generally shrinks with problem size. With fault-tolerant logical gates below an architecture-dependent threshold, both systematic and random errors can in principle be suppressed, although coherent leakage and correlated noise require special treatment.\n\nOverall, the literature does not give one universal error threshold for Shor’s algorithm: results depend strongly on the gate decomposition, correlation time, error location, and success criterion. The robust qualitative ordering is:\n\n\\[\n\\text{uncorrected systematic/coherent error}\n\\;>\\;\n\\text{correlated or combined error}\n\\;>\\;\n\\text{independent zero-mean random error}\n\\]\n\nin harmfulness at comparable small error amplitudes.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate a short academic paragraph describing the effects of gate-operation imperfections on Shor’s algorithm, including error thresholds for factoring a given number \\(N\\).",
+      "output": "Gate-operation imperfections in Shor’s algorithm introduce phase and bit errors that degrade modular exponentiation and the quantum Fourier transform, thereby reducing the probability of recovering the correct factors. For \\(N\\) with \\(n=\\lceil\\log_2N\\rceil\\) bits and a circuit containing \\(G(N)\\) elementary gates (typically \\(G(N)=O(n^3)\\)), independent stochastic gate errors of rate \\(p\\) produce an aggregate failure probability of approximately \\(G(N)p\\); thus, to keep this below \\(\\varepsilon\\), an uncorrected implementation requires \\(p\\lesssim \\varepsilon/G(N)\\). With fault-tolerant error correction, scalable factoring is possible when the physical error rate lies below the code- and hardware-dependent threshold, commonly estimated at \\(10^{-4}\\!-\\!10^{-2}\\) per operation, although coherent and correlated errors may impose stricter requirements.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "What happens to Shor’s quantum factoring algorithm when its gates suffer from systematic versus random errors?",
+      "output": "Shor’s algorithm is very sensitive to gate errors because modular exponentiation and phase estimation use deep, coherent circuits.\n\n- **Systematic errors**—such as the same over-rotation or phase offset on every gate—accumulate **coherently**. Their amplitudes can add in the same direction, distorting or shifting the peaks in the quantum Fourier transform’s output. In a worst-case circuit, a per-gate coherent error of size \\(\\epsilon\\) can produce an overall error amplitude of order \\(L\\epsilon\\), and failure probability of order \\(L^2\\epsilon^2\\), where \\(L\\) is the effective circuit depth. Thus even small calibration biases can quickly destroy the period estimate or produce consistently wrong candidate periods.\n\n- **Random, independent errors**—such as stochastic Pauli errors or uncorrelated angle fluctuations—tend to accumulate diffusively rather than coherently. For angle noise with standard deviation \\(\\sigma\\), the net angle error is typically \\(O(\\sqrt{L}\\sigma)\\), giving infidelity roughly \\(O(L\\sigma^2)\\). They broaden and flatten the Fourier peaks, reducing the probability of obtaining a useful sample, but often do not introduce the same persistent bias. Repeating the algorithm can help only if some runs remain error-free or sufficiently accurate.\n\nIn practice, both eventually make the output distribution nearly uninformative for large factoring instances. Systematic and correlated errors are often more dangerous because they can evade simple averaging and violate assumptions used in fault-tolerance analyses. Calibration, randomized compiling—which converts coherent errors into more stochastic-looking ones—and full quantum error correction are therefore crucial for scalable implementations of Shor’s algorithm.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Draft a physics-paper abstract stating that Shor’s algorithm tolerates systematic gate errors but is vulnerable to random errors, and that an error threshold is derived for a specified \\(N\\).",
+      "output": "**Abstract—**We investigate the robustness of Shor’s factoring algorithm under imperfect quantum-gate operations for a target integer \\(N\\). By comparing coherent, systematic gate miscalibrations with temporally uncorrelated random errors, we find that the algorithm can tolerate substantial systematic errors because their effects remain structured and may partially cancel during the modular-exponentiation and quantum-Fourier-transform stages. In contrast, random gate errors accumulate incoherently, rapidly suppressing the interference peaks required for successful period extraction. Using the success probability of recovering the correct order as the performance criterion, we derive a critical random-error strength \\(\\epsilon_{\\mathrm{c}}(N)\\) for the specified \\(N\\), above which the factoring probability falls below the chosen operational threshold. These results identify random fluctuations, rather than static calibration offsets, as the dominant limitation on reliable implementations of Shor’s algorithm and provide an \\(N\\)-dependent benchmark for experimental gate fidelity.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6280193236714975,
+      "excess_ratio": 0.5070662531587502,
+      "baseline_mean": 0.12095307051274731,
+      "baseline_n_valid": 5,
+      "output_chars": 447,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6147540983606558,
+          "baseline_mean": 0.09158664942203162,
+          "excess_ratio": 0.5231674489386241
+        },
+        "bz2": {
+          "actual_ratio": 0.528169014084507,
+          "baseline_mean": 0.11700319314032515,
+          "excess_ratio": 0.41116582094418186
+        },
+        "lzma": {
+          "actual_ratio": 0.7333333333333333,
+          "baseline_mean": 0.1500094939470788,
+          "excess_ratio": 0.5833238393862545
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3471933471933472,
+      "excess_ratio": 0.2262402766805999,
+      "baseline_mean": 0.12095307051274731,
+      "baseline_n_valid": 5,
+      "output_chars": 463,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.26595744680851063,
+          "baseline_mean": 0.09158664942203162,
+          "excess_ratio": 0.174370797386479
+        },
+        "bz2": {
+          "actual_ratio": 0.3384146341463415,
+          "baseline_mean": 0.11700319314032515,
+          "excess_ratio": 0.22141144100601634
+        },
+        "lzma": {
+          "actual_ratio": 0.42045454545454547,
+          "baseline_mean": 0.1500094939470788,
+          "excess_ratio": 0.27044505150746667
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.27664273881833235,
+      "excess_ratio": 0.15568966830558503,
+      "baseline_mean": 0.12095307051274731,
+      "baseline_n_valid": 5,
+      "output_chars": 1132,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.24645390070921985,
+          "baseline_mean": 0.09158664942203162,
+          "excess_ratio": 0.15486725128718823
+        },
+        "bz2": {
+          "actual_ratio": 0.25210084033613445,
+          "baseline_mean": 0.11700319314032515,
+          "excess_ratio": 0.1350976471958093
+        },
+        "lzma": {
+          "actual_ratio": 0.32515337423312884,
+          "baseline_mean": 0.1500094939470788,
+          "excess_ratio": 0.17514388028605005
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.12240124740124739,
+      "excess_ratio": 0.0014481768885000745,
+      "baseline_mean": 0.12095307051274731,
+      "baseline_n_valid": 5,
+      "output_chars": 2773,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.10016025641025642,
+          "baseline_mean": 0.09158664942203162,
+          "excess_ratio": 0.008573606988224791
+        },
+        "bz2": {
+          "actual_ratio": 0.11980830670926518,
+          "baseline_mean": 0.11700319314032515,
+          "excess_ratio": 0.002805113568940032
+        },
+        "lzma": {
+          "actual_ratio": 0.14540059347181009,
+          "baseline_mean": 0.1500094939470788,
+          "excess_ratio": -0.004608900475268712
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.06315240083507295,
+      "excess_ratio": -0.05780066967767436,
+      "baseline_mean": 0.12095307051274731,
+      "baseline_n_valid": 5,
+      "output_chars": 1126,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.023728813559322035,
+          "baseline_mean": 0.09158664942203162,
+          "excess_ratio": -0.06785783586270959
+        },
+        "bz2": {
+          "actual_ratio": 0.06782334384858044,
+          "baseline_mean": 0.11700319314032515,
+          "excess_ratio": -0.04917984929174471
+        },
+        "lzma": {
+          "actual_ratio": 0.09248554913294797,
+          "baseline_mean": 0.1500094939470788,
+          "excess_ratio": -0.057523944814130826
+        }
+      }
+    }
+  },
+  "api_provenance": {
+    "config": {
+      "gpt_gateway": 2,
+      "max_output_tokens": 4096,
+      "require_status": "completed"
+    },
+    "main_calls": {
+      "L1_polish": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_065b74e1e18ba5db006a88c281f70c8190b60c10d4fdf5d076",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 111,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 84,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 195
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:26:28.343385+00:00"
+      },
+      "L2_rewrite": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0d96e28f59f79fdb006a88c286aa6481909742871b5867bf6c",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 114,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 89,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 203
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:26:32.966982+00:00"
+      },
+      "L3_bullets": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0687f55b4a3cfb56006a88c28b2ea481949af02a8061b1e9b8",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 124,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 84,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 208
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:26:37.111532+00:00"
+      },
+      "L3_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_07c76a5ed52a7460006a88c28f55cc8195b6346f025c334129",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 101,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 231,
+          "output_tokens_details": {
+            "reasoning_tokens": 38
+          },
+          "total_tokens": 332
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:26:44.007228+00:00"
+      },
+      "L4_2sent": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_04ecc8ecd2d8832e006a88c296d0148196967fbb0144a4543a",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 136,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 89,
+          "output_tokens_details": {
+            "reasoning_tokens": 26
+          },
+          "total_tokens": 225
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:26:49.577046+00:00"
+      },
+      "L4_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_08ef6eebc14dc6b5006a88c29bbf788190855cf6400a2c85a1",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 76,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 499,
+          "output_tokens_details": {
+            "reasoning_tokens": 34
+          },
+          "total_tokens": 575
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:27:01.001387+00:00"
+      },
+      "L5_keywords": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_02e354698f0ffcf3006a88c2a76f188190bf87872a8c1b0ac7",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 23,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 281,
+          "output_tokens_details": {
+            "reasoning_tokens": 85
+          },
+          "total_tokens": 304
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:27:09.159487+00:00"
+      }
+    },
+    "counterfactuals": {
+      "reconstruct": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0d845fd78209f1e9006a88c2af50a08190b0e33401bff69c18",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 187,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 144,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 331
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:27:14.075309+00:00"
+      },
+      "outputs": [
+        {
+          "label": "cf_1",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0ed69dbfa37031d7006a88c2b43914819494db57882594dae0",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 25,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 134,
+                "output_tokens_details": {
+                  "reasoning_tokens": 25
+                },
+                "total_tokens": 159
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:27:19.438827+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_2",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0db58f1a46a30669006a88c2b9a6c88190859b8d006cb0b052",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 31,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 965,
+                "output_tokens_details": {
+                  "reasoning_tokens": 218
+                },
+                "total_tokens": 996
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:27:39.898633+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_3",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_06be87e56d2b18da006a88c2cf26848194a51388e06c3967a3",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 36,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 321,
+                "output_tokens_details": {
+                  "reasoning_tokens": 127
+                },
+                "total_tokens": 357
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:27:49.735868+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_4",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_01ddf52247a83bc7006a88c2d7e7f881908ad884fa4d3c0992",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 25,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 477,
+                "output_tokens_details": {
+                  "reasoning_tokens": 129
+                },
+                "total_tokens": 502
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:28:02.906918+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_5",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_000e37e210f3f373006a88c2e579548195b78a7559bfe1aca4",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 43,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 300,
+                "output_tokens_details": {
+                  "reasoning_tokens": 101
+                },
+                "total_tokens": 343
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:28:11.600628+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

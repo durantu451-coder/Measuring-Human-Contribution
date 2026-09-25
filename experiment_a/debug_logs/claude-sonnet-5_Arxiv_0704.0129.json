@@ -1,0 +1,175 @@
+{
+  "model": "claude-sonnet-5",
+  "domain": "Arxiv",
+  "id": "0704.0129",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIn this paper we show that the quotient Aubry set associated to certain Lagrangians is totally disconnected (i.e., every connected component consists of a single point). Moreover, we discuss the relation between this problem and a Morse-Sard type property for (difference of) critical subsolutions of Hamilton-Jacobi equations.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIn this paper we show that the quotient Aubry set associated to certain Lagrangians is totally disconnected (i.e., every connected component consists of a single point). Moreover, we discuss the relation between this problem and a Morse-Sard type property for (difference of) critical subsolutions of Hamilton-Jacobi equations.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper demonstrates that the quotient Aubry set associated with certain Lagrangians is totally disconnected, meaning every connected component consists of a single point.\n- This result establishes a fundamental structural property of the Aubry set for the class of Lagrangians under consideration.\n- The authors explore the relationship between the total disconnectedness problem and a Morse-Sard type property.\n- This Morse-Sard type property specifically concerns critical subsolutions of Hamilton-Jacobi equations, or differences thereof.\n- The paper connects dynamical systems theory (Aubry-Mather theory) with the analytical framework of Hamilton-Jacobi equations through this Morse-Sard property.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis paper investigates the topological structure of the quotient Aubry set associated with certain Lagrangians, examining this problem in connection with a Morse-Sard type property for critical subsolutions of Hamilton-Jacobi equations. The authors demonstrate that the quotient Aubry set is totally disconnected, meaning each connected component reduces to a single point, thereby establishing a significant structural property that links dynamical systems theory to regularity results for viscosity solutions.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Aubry, Lagrangians, Moreover"
+  },
+  "outputs": {
+    "L1": "Here is a polished version of your text:\n\nIn this paper, we demonstrate that the quotient Aubry set associated with certain Lagrangians is totally disconnected—that is, every connected component consists of a single point. Furthermore, we explore the connection between this problem and a Morse–Sard-type property for (differences of) critical subsolutions to Hamilton–Jacobi equations.\n\nIf you'd like, I can offer alternative phrasings with slightly different emphasis (e.g., more concise or more formal for a specific journal style).",
+    "L2": "Here's a paraphrased version:\n\nThis paper establishes that, for a class of Lagrangians, the associated quotient Aubry set exhibits total disconnectedness—meaning each of its connected components reduces to a singleton. We further explore how this result connects to a Morse-Sard-type property concerning critical subsolutions (and their differences) of Hamilton-Jacobi equations.",
+    "L3": "# Structural Properties of the Quotient Aubry Set: A Morse-Sard Approach\n\n## Main Result\n\nThe paper establishes a significant structural result concerning the quotient Aubry set associated with a certain class of Lagrangians: this set is shown to be **totally disconnected**. In precise terms, this means that every connected component of the quotient Aubry set reduces to a single point. Such a property represents a strong topological constraint on the structure of the Aubry set, ruling out the presence of any nontrivial connected subsets—no arcs, continua, or higher-dimensional pieces can persist within this quotient space. The total disconnectedness thus provides a clear and rigorous characterization of how the Aubry set can be organized, at least for the Lagrangians under consideration.\n\n## Significance for the Theory\n\nThis finding constitutes a fundamental structural property within the broader framework of Aubry-Mather theory. The Aubry set, which plays a central role in the study of minimizing orbits and invariant measures for Lagrangian and Hamiltonian systems, has long been understood to encode essential dynamical information. By proving total disconnectedness of its quotient, the authors sharpen our understanding of the possible geometric and topological configurations that this set can assume, thereby contributing a new piece to the qualitative theory of these dynamical objects.\n\n## Connection to a Morse-Sard Type Property\n\nA central methodological contribution of the paper lies in linking the total disconnectedness problem to a **Morse-Sard type property**. Recall that the classical Morse-Sard theorem asserts that the set of critical values of a sufficiently smooth function has measure zero. The authors adapt and extend this classical paradigm to a new setting: rather than considering an arbitrary smooth function, they focus on **critical subsolutions of Hamilton-Jacobi equations**, or more precisely, on the **differences between such subsolutions**.\n\nThis adaptation is natural yet nontrivial, since critical subsolutions of Hamilton-Jacobi equations typically possess only limited regularity (they are generally Lipschitz rather than smooth), which places the analysis outside the scope of the classical Morse-Sard theorem. The authors thus formulate and investigate an appropriate analogue of this property tailored to the specific regularity and structural features of these subsolutions.\n\n## Bridging Dynamical Systems and PDE Analysis\n\nBy establishing this connection, the paper builds an important bridge between two areas that, while deeply related, involve distinct methodologies: **Aubry-Mather theory**, rooted in dynamical systems and the calculus of variations, and the **analytical theory of Hamilton-Jacobi equations**, which is grounded in the study of viscosity solutions and subsolutions of first-order partial differential equations. The Morse-Sard type property serves as the crucial technical link between these two perspectives: demonstrating that the relevant critical sets (differences of subsolutions) have appropriately small size or structure directly translates into topological information about the Aubry set itself.\n\nThis interplay highlights a broader theme in the field—namely, that fine analytical properties of solutions to Hamilton-Jacobi equations can have direct and powerful consequences for the dynamical and topological structure of associated invariant sets. The paper's approach thus not only resolves the specific question of total disconnectedness but also offers a template for further investigations where analytical regularity results can be leveraged to deduce structural properties in dynamical systems.",
+    "L4": "# Topological Structure of the Quotient Aubry Set and Morse-Sard Properties for Critical Subsolutions\n\n## Introduction and Motivation\n\nThe Aubry set, introduced independently by Aubry and Mather in the context of monotone twist maps and later extended by Mañé and Fathi to the setting of Tonelli Lagrangians on compact manifolds, plays a central role in weak KAM theory. This set encodes essential dynamical information about the Lagrangian system and serves as the fundamental obstruction to the smoothness of critical solutions of the associated Hamilton-Jacobi equation. Understanding its structure—both dynamical and topological—is therefore of paramount importance in the qualitative theory of Hamilton-Jacobi equations and in the broader framework of Aubry-Mather theory.\n\nThis paper is devoted to the study of a related but distinct object: the **quotient Aubry set**, obtained by identifying points in the Aubry set that lie in the same equivalence class with respect to a natural pseudo-metric (the Mañé critical pseudo-distance, symmetrized). This quotient space captures the \"essential\" topological complexity of the Aubry set, stripped of the redundancy introduced by the dynamics along orbits. Our main objective is to establish precise conditions under which this quotient space exhibits a highly rigid topological structure, namely total disconnectedness.\n\nThe motivation for this investigation stems from two interconnected directions in the theory of Hamilton-Jacobi equations:\n\n1. **Regularity theory for viscosity solutions.** It is well known that critical viscosity solutions (and more generally, critical subsolutions) of the Hamilton-Jacobi equation\n$$\nH(x, d_xu) = c[H]\n$$\nare, in general, only Lipschitz continuous, with potential loss of differentiability occurring precisely on the Aubry set. Understanding the fine structure of the Aubry set — and in particular whether it can be \"thickened\" via a quotient procedure without losing key topological features — is essential to sharpening regularity results.\n\n2. **Morse-Sard type properties.** Classical Morse-Sard theory addresses the size of the set of critical values of a sufficiently smooth function. In the present context, we investigate an analogous question: what can be said about the set of critical values of critical subsolutions, restricted to the Aubry set? A Morse-Sard type theorem in this setting would assert that this set of values is topologically or measure-theoretically small, which in turn has strong implications for the structure of the Aubry set itself, and vice versa.\n\n## Main Results and Contributions\n\nThe central contribution of this paper is to establish that, under suitable regularity assumptions on the Lagrangian (or Hamiltonian), the quotient Aubry set $\\widetilde{\\mathcal{A}}$ is **totally disconnected**. Precisely, we prove:\n\n> **Main Theorem.** Let $L: TM \\to \\mathbb{R}$ be a Tonelli Lagrangian on a compact, connected, boundaryless manifold $M$, and let $\\mathcal{A}$ denote its Aubry set. Suppose that [appropriate regularity/genericity hypotheses hold]. Then the quotient Aubry set $\\widetilde{\\mathcal{A}} = \\mathcal{A}/\\sim$, where $\\sim$ identifies points at zero Mañé pseudo-distance in both directions, is totally disconnected: every connected component of $\\widetilde{\\mathcal{A}}$ consists of a single point.\n\nThis result is significant for several reasons:\n\n- **Topological rigidity.** Total disconnectedness is one of the strongest topological constraints one can impose on a compact metric space short of the space being finite or discrete. It implies, in particular, that $\\widetilde{\\mathcal{A}}$ cannot contain any nontrivial continuum, ruling out the presence of arcs, circles, or other connected curves within the quotient structure. This significantly restricts the possible \"shape\" that the Aubry set — and hence the non-differentiability locus of critical subsolutions — can take, up to the identifications imposed by the quotient.\n\n- **Connection to Morse-Sard theory.** The proof strategy exploits a Morse-Sard type property: we show that the image of the Aubry set under any critical subsolution $u$ has empty interior (or is of first category, or has zero measure, depending on the precise regularity assumed), and moreover, that the level sets of $u$ restricted to $\\mathcal{A}$, when further quotiented, cannot support continua. The interplay between the *values* taken by critical subsolutions on the Aubry set and the *connectedness structure* of the quotient Aubry set forms the technical heart of the argument, illustrating a deep and previously underexplored connection between Sard-type regularity and Aubry-Mather-type dynamical structure.\n\n- **Consequences for viscosity solution theory.** As a corollary, we derive refined regularity statements for critical viscosity solutions: since the quotient Aubry set is totally disconnected, one can construct, under appropriate circumstances, \"interpolating\" subsolutions that achieve strict subsolution behavior outside an arbitrarily small neighborhood of a totally disconnected set, strengthening prior approximation results in weak KAM theory.\n\n## Structure of the Paper\n\nThe paper is organized as follows. In Section 2, we recall the basic notions of weak KAM theory: Tonelli Lagrangians and Hamiltonians, the Mañé critical value, critical subsolutions, and the definitions of the Aubry and Mather sets, together with the relevant pseudo-metric structures. Section 3 introduces the quotient Aubry set formally and studies its basic topological properties as a compact metric space. Section 4 develops the Morse-Sard type property for critical subsolutions, establishing the key measure-theoretic and topological smallness results for critical values restricted to the Aubry set. Section 5 contains the proof of the Main Theorem, combining the results of Sections 3 and 4 via a contradiction argument: assuming the existence of a nontrivial connected component in $\\widetilde{\\mathcal{A}}$, we construct a subsolution whose behavior on this component contradicts the Morse-Sard property established earlier. Section 6 discusses applications and examples, including cases where the hypotheses of the Main Theorem are verified explicitly (e.g., mechanical systems, Lagrangians with additional symmetry, or low-dimensional cases where the Aubry set is well understood), and we conclude with a discussion of open problems, including the extension of these results to weaker regularity classes and the relationship with the conjectural finiteness of the number of connected components of the (non-quotiented) Aubry set in specific dynamical settings.\n\n## Significance\n\nBy linking the total disconnectedness of the quotient Aubry set to a Morse-Sard property for critical subsolutions, this work establishes a novel bridge between the topological/dynamical theory of Aubry-Mather sets and the analytic theory of regularity for viscosity solutions of Hamilton-Jacobi equations. This connection not only sheds new light on the fine structure of the non-differentiability locus of weak KAM solutions but also suggests new avenues for extending classical results from singularity theory (such as Sard's theorem) to the genuinely non-smooth, dynamically-generated setting of critical subsolutions. We anticipate that the techniques developed here will find further applications in the study of Mather's quotient Aubry set in higher-dimensional and degenerate settings, as well as in the broader program of understanding the interplay between integrability, KAM phenomena, and the topological complexity of invariant sets in Hamiltonian dynamics.",
+    "L5": "# On Aubry Sets and Lagrangian Systems\n\nThe study of Aubry sets has become a cornerstone in the modern theory of dynamical systems, particularly within the framework of Lagrangian mechanics and weak KAM theory. Named after Serge Aubry, whose foundational work on the theory of ground states in solid-state physics provided crucial insights, these mathematical objects have found rich applications in the qualitative analysis of Hamiltonian and Lagrangian systems.\n\nAn Aubry set, in its essential formulation, consists of those points in phase space that carry orbits which are, in a precise variational sense, calibrated with respect to a given Lagrangian. These sets capture the recurrent, minimizing behavior of trajectories and serve as the natural generalization of invariant tori in integrable systems to the broader, often chaotic, setting of non-integrable dynamics.\n\nLagrangians play a central role in this theory, as they encode the physical or geometric structure from which the dynamics arise. Given a Lagrangian function $L(x, v, t)$ defined on the tangent bundle of a manifold, one studies the associated action functional and seeks minimizers or critical points satisfying the Euler-Lagrange equations. The regularity properties of the Lagrangian—typically convexity in the velocity variable and appropriate growth conditions—ensure that the variational problem is well-posed and that meaningful minimizing orbits exist. These minimizers, when they persist under small perturbations or exhibit recurrence, populate the Aubry set.\n\nMoreover, the connection between Aubry sets and the Hamilton-Jacobi equation cannot be overstated. Weak KAM theory establishes that viscosity solutions to the stationary Hamilton-Jacobi equation are intimately linked to the structure of the Aubry set: the set serves as the locus where these solutions are differentiable and where the associated dynamics exhibit a rigid, almost integrable character despite the potential complexity of the ambient system.\n\nFurthermore, Aubry sets provide essential information about the existence of invariant measures with minimal action, offering a bridge between the variational and dynamical perspectives. Their structure—whether they form smooth submanifolds, Cantor-like sets, or more exotic configurations—reflects deep properties of the underlying Lagrangian system, including its integrability, the presence of resonances, and the mechanism of Arnold diffusion in nearly integrable Hamiltonian systems.\n\nIn summary, the interplay between Aubry sets and Lagrangian dynamics represents a profound synthesis of variational methods and dynamical systems theory, continuing to inspire research in symplectic geometry, partial differential equations, and mathematical physics."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a math paper proving that the quotient Aubry set for certain Lagrangians is totally disconnected, and mention its connection to a Morse-Sard property for critical subsolutions of Hamilton-Jacobi equations.",
+      "output": "# Abstract\n\nWe investigate the topological structure of the quotient Aubry set associated with Tonelli Lagrangians on compact manifolds, in connection with the regularity theory of critical subsolutions to the associated Hamilton–Jacobi equation. Under suitable genericity assumptions on the Lagrangian, we prove that the quotient Aubry set—the projection of the Aubry set under the Mañé critical action potential's equivalence relation—is totally disconnected. This result refines earlier work establishing that the quotient Aubry set has zero Hausdorff dimension, showing instead the stronger topological property of total disconnectedness, which does not follow automatically from dimensional considerations alone.\n\nOur approach exploits the intimate relationship between the fine structure of the Aubry set and the differentiability properties of critical subsolutions. In particular, we establish a Morse–Sard type theorem for these subsolutions: the set of values taken by a critical subsolution on the complement of its differentiability points, restricted to the Aubry set, has empty interior, or more precisely the subsolution separates points in distinct connected components of the quotient Aubry set except on a residual or measure-zero exceptional set. This Morse–Sard property serves as the key analytic tool linking the local behavior of subsolutions near non-differentiability points to the global topological triviality of connected components in the quotient Aubry set.\n\nThe proof combines techniques from weak KAM theory, in particular the use of Mañé potentials and calibrated curves, with a careful analysis of the semiconcavity properties of critical subsolutions and viscosity solutions. We show that any two points lying in the same connected component of the quotient Aubry set must satisfy strong compatibility conditions imposed by every critical subsolution, and that generic critical subsolutions are sufficiently rich to separate points unless they are forced to coincide by the total disconnectedness itself. This creates a bootstrap mechanism from which total disconnectedness emerges as a stable, generic phenomenon.\n\nThese results contribute to the broader program of understanding the relationship between dynamical properties of Tonelli Hamiltonian systems—particularly the structure of the Mather and Aubry sets—and the regularity theory of viscosity solutions and subsolutions to Hamilton–Jacobi equations. We discuss applications to the study of generic properties of Lagrangian systems, the structure of the set of critical subsolutions, and open questions concerning the extension of these results to non-generic settings and to weak KAM theory on non-compact configuration spaces.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Can you draft a concise research abstract on Aubry-Mather theory showing that the quotient Aubry set has trivial connected components, linking this to Morse-Sard type results for differences of critical subsolutions?",
+      "output": "# Abstract\n\nWe investigate the fine structure of the Aubry set in weak KAM theory and Aubry-Mather theory for Tonelli Hamiltonian systems on compact manifolds. Our main result establishes that the **quotient Aubry set**—obtained by identifying points connected by the Peierls barrier pseudo-distance at value zero—has **totally disconnected topology** under generic conditions on the Hamiltonian, or more precisely, we show its connected components are trivial (singletons) whenever a suitable non-degeneracy condition holds for the associated critical subsolutions.\n\nThe proof strategy proceeds via a **Morse-Sard type theorem** applied to differences of critical (viscosity) subsolutions of the Hamilton-Jacobi equation $H(x, d_x u) = c[H]$. Specifically, given two critical subsolutions $u_1, u_2$, we study the regularity and critical set structure of the function $u_1 - u_2$ restricted to the Aubry set $\\mathcal{A}$. We show that although $u_1 - u_2$ need only be Lipschitz in general, its restriction to $\\mathcal{A}$ enjoys enough structure—stemming from the calibration properties of critical subsolutions along orbits of the Euler-Lagrange flow—to ensure that the set of \"critical values\" separating connected components of the sublevel sets has **Lebesgue measure zero**, or is even finite/countable under suitable hypotheses.\n\nThis Sard-type result is then leveraged to rule out the existence of nontrivial connected components in the quotient Aubry set $\\widetilde{\\mathcal{A}} = \\mathcal{A}/\\sim$, where $\\sim$ identifies points at zero Peierls distance. The key mechanism is that a nontrivial connected component would force $u_1 - u_2$ to be **constant on an open subset of a level set** for every pair of critical subsolutions, contradicting the genericity of critical values furnished by the Morse-Sard argument—unless the Hamiltonian exhibits special degeneracies (e.g., integrable or resonant regimes).\n\nWe discuss applications to the **classification of Mather measures**, the structure of **static classes**, and implications for the **integrability vs. chaos dichotomy** in the sense of Mañé's genericity program. In particular, our results provide new obstructions to the existence of large equilibrium/Mather sets with nontrivial topology, refining previous results of Bernard, Contreras, and Fathi on the size and regularity of the Aubry set. We illustrate the theory with examples on the torus $\\mathbb{T}^n$, including mechanical systems and Hamiltonians arising from Arnold diffusion constructions, where the totally disconnected structure of $\\widetilde{\\mathcal{A}}$ is shown to be sharp.\n\n**Keywords:** Aubry-Mather theory, weak KAM theory, Peierls barrier, critical subsolutions, Morse-Sard theorem, Hamilton-Jacobi equations, Mather measures.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "I'm writing a paper on weak KAM theory. Summarize the main result: the quotient Aubry set is totally disconnected, and relate this to a Morse-Sard property for critical subsolutions of Hamilton-Jacobi equations. Give me an abstract.",
+      "output": "# Abstract\n\nWeak KAM theory provides a variational and dynamical framework for studying the Hamilton-Jacobi equation $H(x, d_xu) = c$ on the cotangent bundle of a compact manifold, centering on the distinguished critical value $c[H]$ for which the equation admits global viscosity solutions. Associated to this critical value is the *Aubry set* $\\mathcal{A}$, a compact, flow-invariant subset that captures the essential dynamical and non-degeneracy obstructions to the existence of smooth subsolutions. A fundamental structural question concerns the internal geometry of this set: while $\\mathcal{A}$ may fail to be totally disconnected in general (e.g., it can contain invariant tori), the *quotient Aubry set* — obtained by collapsing the static classes of the Mañé–Peierls semidistance — exhibits a much stronger regularity property.\n\nIn this paper we establish that the quotient Aubry set $\\mathcal{A}/\\!\\sim$ is totally disconnected. The proof proceeds by showing that any critical subsolution $u$ which is *strict* outside the Aubry set can be used, together with a countable family of auxiliary subsolutions separating points of $\\mathcal{A}$, to construct a decomposition of the quotient into arbitrarily small clopen pieces. This yields a Cantor-like structure on $\\mathcal{A}/\\!\\sim$ whenever it is infinite.\n\nWe interpret this result as a *Morse–Sard-type theorem* for critical subsolutions: just as the classical Sard theorem asserts that the set of critical values of a smooth map has measure zero, our result shows that the \"non-strict locus\" of an optimal critical subsolution — the projection of the Aubry set under the quotient map — is topologically negligible in the sense of being totally disconnected, hence of covering dimension zero. This provides a precise sense in which subsolutions of the Hamilton-Jacobi equation can be made strict \"almost everywhere\" in a topological sense, sharpening the classical existence theory of strict subsolutions away from $\\mathcal{A}$ and clarifying the minimal topological complexity that any critical subsolution must exhibit on the Aubry set itself. We discuss consequences for the structure of the Mañé set, the regularity theory of the Peierls barrier, and connections with Ma\\~né's genericity conjecture on the triviality of the Aubry set.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate an academic abstract discussing a proof that under certain conditions on the Lagrangian, the quotient Aubry set consists only of singleton connected components, and how this connects to Sard-type regularity for viscosity subsolutions.",
+      "output": "# Abstract\n\nWe investigate the structure of the Aubry set associated with a Tonelli Hamiltonian system on a closed manifold, under generic or explicit conditions imposed on the underlying Lagrangian. Our main result establishes that, under these conditions, the quotient Aubry set—that is, the Aubry set with its natural equivalence relation identifying points lying on the same static class—decomposes exclusively into singleton connected components. This rigidity phenomenon stands in contrast to the general theory, where the Aubry set may exhibit intricate topological structures, including components homeomorphic to compact manifolds of various dimensions, and represents a strengthening of known results regarding the size and complexity of the projected Aubry set.\n\nThe proof proceeds by analyzing the variational structure of calibrated curves and minimizing measures supported on the Aubry set, exploiting a non-degeneracy condition on the Lagrangian (related to strict convexity properties and the absence of continuous families of minimizing orbits) to preclude the existence of non-trivial connected components. We show that any such component, if it contained more than one point, would necessarily support a one-parameter family of calibrated curves violating the assumed hypotheses on the Hessian of the Lagrangian along the relevant orbits; this yields a contradiction via a comparison argument involving the Peierls barrier and the associated weak KAM solutions.\n\nAs a consequence, we derive a Sard-type regularity theorem for viscosity solutions—and more generally viscosity subsolutions—of the associated Hamilton-Jacobi equation. Specifically, we prove that the set of points at which a critical viscosity subsolution fails to be differentiable, restricted to the Aubry set, has vanishing appropriate measure (in the sense of a Sard property for the singular set), thereby extending classical differentiability results for weak KAM solutions beyond the smooth category. This connects the dynamical rigidity of the Aubry set to the fine regularity theory of solutions to first-order Hamilton-Jacobi equations, and provides new tools for understanding the interplay between the geometry of minimizing orbits and the analytic structure of viscosity solutions in the Aubry-Mather theoretic framework.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a short abstract for a dynamical systems paper establishing total disconnectedness of the quotient Aubry set for specific Lagrangians, along with implications for a Morse-Sard property involving differences of critical subsolutions to Hamilton-Jacobi equations.",
+      "output": "# Abstract\n\nWe consider the Aubry set associated to Tonelli Hamiltonians on the torus and investigate the topological structure of its quotient space under the Mañé projection. For a class of Lagrangians satisfying suitable genericity and geometric conditions, we prove that the quotient Aubry set is totally disconnected, thereby ruling out the presence of continua that could obstruct fine regularity properties of critical solutions.\n\nAs an application, we establish a Morse–Sard-type theorem for differences of critical subsolutions to the associated Hamilton–Jacobi equation: the set of values at which such differences fail to be locally constant near critical points has zero Lebesgue measure, despite the general lack of smoothness of these subsolutions. This extends classical Morse–Sard results to the low-regularity setting intrinsic to weak KAM theory, and clarifies the interplay between the fine structure of the Aubry set and the regularity theory of viscosity solutions.\n\nOur approach combines weak KAM theory, Mather's graph theorem, and a detailed analysis of the dynamics on the Aubry set, exploiting total disconnectedness to control the oscillation of subsolutions along orbits. The results shed light on the extent to which chaotic or non-trivial recurrent dynamics can coexist with regularity properties of the associated calibrated subsolutions, and provide new examples where the Aubry set, while potentially dynamically complex, remains topologically negligible in a precise sense.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.46883230904302026,
+      "excess_ratio": 0.35586428805870124,
+      "baseline_mean": 0.11296802098431902,
+      "baseline_n_valid": 5,
+      "output_chars": 535,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4649122807017544,
+          "baseline_mean": 0.08733474403719163,
+          "excess_ratio": 0.37757753666456273
+        },
+        "bz2": {
+          "actual_ratio": 0.3858267716535433,
+          "baseline_mean": 0.1125153038900248,
+          "excess_ratio": 0.2733114677635185
+        },
+        "lzma": {
+          "actual_ratio": 0.5480769230769231,
+          "baseline_mean": 0.13708802573479362,
+          "excess_ratio": 0.4109888973421295
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.45809414466130877,
+      "excess_ratio": 0.34512612367698975,
+      "baseline_mean": 0.11296802098431902,
+      "baseline_n_valid": 5,
+      "output_chars": 379,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.421259842519685,
+          "baseline_mean": 0.08733474403719163,
+          "excess_ratio": 0.3339250984824934
+        },
+        "bz2": {
+          "actual_ratio": 0.4119601328903654,
+          "baseline_mean": 0.1125153038900248,
+          "excess_ratio": 0.29944482900034064
+        },
+        "lzma": {
+          "actual_ratio": 0.5316455696202531,
+          "baseline_mean": 0.13708802573479362,
+          "excess_ratio": 0.3945575438854595
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.17008919311346188,
+      "excess_ratio": 0.05712117212914286,
+      "baseline_mean": 0.11296802098431902,
+      "baseline_n_valid": 5,
+      "output_chars": 3696,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.14015151515151514,
+          "baseline_mean": 0.08733474403719163,
+          "excess_ratio": 0.05281677111432351
+        },
+        "bz2": {
+          "actual_ratio": 0.17836812144212524,
+          "baseline_mean": 0.1125153038900248,
+          "excess_ratio": 0.06585281755210044
+        },
+        "lzma": {
+          "actual_ratio": 0.19082125603864733,
+          "baseline_mean": 0.13708802573479362,
+          "excess_ratio": 0.05373323030385371
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.0778307238484229,
+      "excess_ratio": -0.03513729713589611,
+      "baseline_mean": 0.11296802098431902,
+      "baseline_n_valid": 5,
+      "output_chars": 7637,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.06493067297937098,
+          "baseline_mean": 0.08733474403719163,
+          "excess_ratio": -0.02240407105782065
+        },
+        "bz2": {
+          "actual_ratio": 0.07407407407407407,
+          "baseline_mean": 0.1125153038900248,
+          "excess_ratio": -0.03844122981595073
+        },
+        "lzma": {
+          "actual_ratio": 0.09433962264150944,
+          "baseline_mean": 0.13708802573479362,
+          "excess_ratio": -0.042748403093284176
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.042081101759755164,
+      "excess_ratio": -0.07088691922456386,
+      "baseline_mean": 0.11296802098431902,
+      "baseline_n_valid": 5,
+      "output_chars": 2758,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.022727272727272728,
+          "baseline_mean": 0.08733474403719163,
+          "excess_ratio": -0.0646074713099189
+        },
+        "bz2": {
+          "actual_ratio": 0.0468384074941452,
+          "baseline_mean": 0.1125153038900248,
+          "excess_ratio": -0.06567689639587959
+        },
+        "lzma": {
+          "actual_ratio": 0.05571847507331378,
+          "baseline_mean": 0.13708802573479362,
+          "excess_ratio": -0.08136955066147983
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T05:13:11.545691+00:00"
+    }
+  ]
+}

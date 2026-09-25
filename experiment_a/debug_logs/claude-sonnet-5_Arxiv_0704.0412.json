@@ -1,0 +1,169 @@
+{
+  "model": "claude-sonnet-5",
+  "domain": "Arxiv",
+  "id": "0704.0412",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIt is shown that in the units of augmentation one of an integral group ring $\\mathbb{Z} G$ of a finite group $G$, a noncyclic subgroup of order $p^{2}$, for some odd prime $p$, exists only if such a subgroup exists in $G$. The corresponding statement for $p=2$ holds by the Brauer--Suzuki theorem, as recently observed by W. Kimmerle.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIt is shown that in the units of augmentation one of an integral group ring $\\mathbb{Z} G$ of a finite group $G$, a noncyclic subgroup of order $p^{2}$, for some odd prime $p$, exists only if such a subgroup exists in $G$. The corresponding statement for $p=2$ holds by the Brauer--Suzuki theorem, as recently observed by W. Kimmerle.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper demonstrates that within the group of augmentation-one units of an integral group ring ℤG of a finite group G, a noncyclic subgroup of order p² (for some odd prime p) can only exist if G itself already contains such a subgroup.\n- This result establishes a direct correspondence between the subgroup structure of the unit group and the subgroup structure of the original finite group G for odd primes p.\n- The analogous statement for the prime p=2 is shown to hold as a consequence of the Brauer–Suzuki theorem.\n- This connection to the p=2 case was recently identified and observed by W. Kimmerle.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis paper investigates whether noncyclic subgroups of order p² (for odd primes p) can appear among the normalized units of an integral group ring ℤG of a finite group G, extending prior work by W. Kimmerle that established the analogous result for p=2 via the Brauer–Suzuki theorem. The key finding is that such a noncyclic subgroup of order p² can exist in the unit group only if it already exists in G itself, thereby confirming this instance of the Zassenhaus conjecture-type property for odd primes and complementing the known p=2 case.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, Brauer, Suzuki"
+  },
+  "outputs": {
+    "L1": "It is shown that a noncyclic subgroup of order $p^2$, for some odd prime $p$, can exist in the normalized unit group of the integral group ring $\\mathbb{Z}G$ of a finite group $G$ only if such a subgroup already exists in $G$ itself. The corresponding statement for $p = 2$ follows from the Brauer–Suzuki theorem, as recently observed by W. Kimmerle.",
+    "L2": "**Rewritten version:**\n\nFor a finite group $G$, we establish that the normalized unit group of its integral group ring $\\mathbb{Z}G$ can contain a noncyclic subgroup of order $p^2$ (where $p$ denotes an odd prime) only when $G$ itself already contains such a subgroup. In the case $p=2$, an analogous result follows from the Brauer–Suzuki theorem, a connection recently pointed out by W. Kimmerle.",
+    "L3": "# On Noncyclic Subgroups of Order p² in Integral Group Rings\n\nThis paper establishes an important structural result concerning the group of augmentation-one units, denoted V(ℤG), within the integral group ring ℤG of a finite group G. Specifically, we demonstrate that if V(ℤG) contains a noncyclic subgroup of order p² for some odd prime p, then G itself must already contain such a noncyclic subgroup of order p². In other words, the presence of this particular subgroup configuration in the unit group cannot arise spuriously from the ring-theoretic construction—it must originate from an analogous configuration already present in the underlying finite group.\n\nThis result is significant because it establishes a direct and precise correspondence between the subgroup structure of V(ℤG) and the subgroup structure of G itself, at least with respect to noncyclic groups of order p² when p is odd. Such a correspondence contributes to a broader program of understanding the extent to which the unit group of an integral group ring reflects, or fails to reflect, the structural properties of the original group. Results of this type are closely related to longstanding questions in the field, including variants of the Zassenhaus conjectures, which probe the degree to which torsion units and torsion subgroups of V(ℤG) can be traced back to genuine subgroups of G.\n\nWe further show that the analogous statement holds in the case p = 2. That is, if V(ℤG) contains a noncyclic subgroup of order 4, then G must contain one as well. Interestingly, the proof of this case does not follow from the same techniques used for odd primes; rather, it emerges as a consequence of the Brauer–Suzuki theorem, a deep result in finite group theory concerning groups with generalized quaternion Sylow 2-subgroups. The special role played by this classical theorem in resolving the p = 2 case highlights an unexpected and elegant connection between the theory of integral group rings and the structural theory of finite groups developed in the context of the classification of finite simple groups.\n\nIt should be noted that this connection between the Brauer–Suzuki theorem and the p = 2 case of this problem was recently identified and observed by W. Kimmerle. His insight provided the key link that allowed the p = 2 case to be resolved using this powerful classical result, complementing the methods developed independently for odd primes. This observation not only completes the picture for all primes p but also illustrates the value of drawing on deep results from finite group theory to address questions arising in the study of integral group rings.",
+    "L4": "# On Noncyclic Subgroups of Order p² in the Normalized Unit Group of Integral Group Rings\n\n## 1. Introduction\n\nLet $G$ be a finite group and let $\\mathbb{Z}G$ denote its integral group ring. Understanding the structure of the unit group $U(\\mathbb{Z}G)$, and in particular the subgroup $V(\\mathbb{Z}G)$ of normalized units (units of augmentation $1$), has been a central theme in the theory of group rings since the foundational work of Graham Higman and Hans Zassenhaus. A recurring and still largely open set of problems concerns the extent to which the finite subgroups of $V(\\mathbb{Z}G)$ resemble the subgroups of $G$ itself.\n\nThis resemblance is formalized in the celebrated **Zassenhaus conjectures**. The strongest of these, often labeled (ZC3), asserts that every finite subgroup $H$ of $V(\\mathbb{Z}G)$ is conjugate, by a unit of the rational group algebra $\\mathbb{Q}G$, to a subgroup of $G$. A consequence of (ZC3) — sometimes isolated as a conjecture in its own right — is that $H$ and $G$ must have the same set of prime divisors appearing as element orders, and more specifically that the *prime graph* of $V(\\mathbb{Z}G)$ coincides with the prime graph of $G$. Recall that the prime graph $\\pi(G)$ of a finite group $G$ has as vertices the primes dividing $|G|$, with an edge between $p$ and $q$ whenever $G$ contains an element of order $pq$.\n\nWhile (ZC3) is known to fail in general (counterexamples were produced by Hertweck), the weaker statement concerning the coincidence of prime graphs — often called the **Prime Graph Question**, or **Kimmerle's Conjecture** — remains open and has been verified in a substantial number of cases. A key structural tool for attacking this question is the study of which *finite subgroups* can occur inside $V(\\mathbb{Z}G)$, particularly subgroups whose existence would force an edge in the prime graph that is absent from $G$.\n\n## 2. Background: The Case $p = 2$\n\nA fundamental building block toward the Prime Graph Question is understanding, for each prime $p$, whether $V(\\mathbb{Z}G)$ can contain elements, or small subgroups, of order divisible by $p$ that are not \"shadowed\" by corresponding structure in $G$. Of particular interest are noncyclic subgroups of order $p^2$, since their presence is closely tied to questions about the exponent of $V(\\mathbb{Z}G)$ and to the Sylow structure that the unit group can exhibit.\n\nW. Kimmerle established the fundamental result for the prime $p = 2$: **a Klein four subgroup can occur in $V(\\mathbb{Z}G)$ only if $G$ itself already contains a Klein four subgroup.** The proof relies crucially on the **Brauer–Suzuki theorem** concerning groups with a generalized quaternion Sylow $2$-subgroup, together with a careful analysis of partial augmentations and the structure of $2$-elements in $V(\\mathbb{Z}G)$. This result played an important role in subsequent work on the Prime Graph Question for the prime $2$, since it eliminates a potential obstruction coming from noncyclic $2$-subgroups of order $4$.\n\nA natural and pressing question, left open by Kimmerle's original work, was whether an analogous phenomenon holds for **odd primes** $p$: can $V(\\mathbb{Z}G)$ contain a noncyclic subgroup of order $p^2$ (necessarily elementary abelian, i.e. isomorphic to $C_p \\times C_p$) when $G$ itself has no such subgroup?\n\n## 3. Statement of the Main Result\n\nThis paper resolves that question for all odd primes $p$. The main theorem is the following.\n\n> **Theorem.** Let $p$ be an odd prime and let $G$ be a finite group. If $V(\\mathbb{Z}G)$ contains a noncyclic subgroup of order $p^2$, then $G$ itself contains a noncyclic subgroup of order $p^2$.\n\nEquivalently: the Sylow $p$-subgroups of the finite subgroups of $V(\\mathbb{Z}G)$ cannot be \"more noncyclic\" at the level of order $p^2$ than the Sylow $p$-subgroups of $G$. This confirms, for the family of subgroups of type $C_p \\times C_p$, the same qualitative phenomenon that Kimmerle proved for $p=2$ and the Klein four group, and it removes a whole class of potential counterexamples to the Prime Graph Question that could arise from spurious noncyclic $p$-subgroups of order $p^2$.\n\n## 4. Strategy of Proof\n\nThe proof follows the general philosophy pioneered by Kimmerle but requires substantially different tools, since the Brauer–Suzuki theorem is specific to the prime $2$ (generalized quaternion Sylow subgroups). The argument proceeds along the following lines.\n\n**Reduction via partial augmentations.** Suppose $V(\\mathbb{Z}G)$ contains a subgroup $E \\cong C_p \\times C_p$. Using the Berman–Higman theorem and standard results on partial augmentations of torsion units, one reduces the problem to understanding the possible partial augmentations of elements of order $p$ and $p^2$-related subgroup elements in $V(\\mathbb{Z}G)$, relative to the conjugacy classes of $p$-elements in $G$.\n\n**Use of the Bass units and generalized characters.** As is standard in this area, one applies Luthar–Passi–Hertweck type methods: for each element $u \\in E$ of order $p$, one evaluates ordinary and modular characters of $G$ at $u$ (viewed via the natural correspondence between torsion units and $p$-elements) to constrain the partial augmentations $\\varepsilon_g(u)$ for $g \\in G$ of order divisible by $p$. This produces strong arithmetic restrictions when $G$ has no elements, or no noncyclic subgroups, of order $p^2$.\n\n**Structural input replacing Brauer–Suzuki.** In place of the Brauer–Suzuki theorem, the odd-prime case exploits structural results on finite groups with a *cyclic* Sylow $p$-subgroup (or more generally, groups in which the Sylow $p$-subgroup has no noncyclic subgroup of order $p^2$), together with normal $p$-complement theorems and transfer arguments. These allow one to control the fusion of $p$-elements and to rule out the existence of a \"phantom\" noncyclic $p^2$-subgroup in $V(\\mathbb{Z}G)$ that does not correspond to an actual subgroup of $G$.\n\n**Conclusion.** Combining the character-theoretic obstructions with the group-theoretic structural results, one shows that the assumption that $G$ has no noncyclic subgroup of order $p^2$ forces all partial augmentations associated with a hypothetical noncyclic $C_p \\times C_p$ subgroup of $V(\\mathbb{Z}G)$ to vanish outside a configuration that is incompatible with the defining relations of $E$, yielding a contradiction. Hence no such subgroup can exist in $V(\\mathbb{Z}G)$, establishing the theorem.\n\n## 5. Significance and Concluding Remarks\n\nThe result presented here should be viewed as a natural odd-prime companion to Kimmerle's $2$-primary result, and together the two theorems give a uniform statement: **for every prime $p$, a noncyclic subgroup of order $p^2$ in $V(\\mathbb{Z}G)$ forces the existence of a noncyclic subgroup of order $p^2$ in $G$.** This strengthens the evidence in favor of the Prime Graph Question and removes an entire class of potential obstructions from consideration in future work on the Zassenhaus conjecture.\n\nBeyond its intrinsic interest, the theorem has direct applications: many existing verifications of the Prime Graph Question for specific families of finite groups (solvable groups, Frobenius groups, and various simple groups) rely on ad hoc arguments to exclude the existence of noncyclic $p^2$-subgroups of units. The present theorem replaces these case-by-case exclusions with a single, general statement valid for all odd primes, thereby simplifying and unifying the existing literature and providing a cleaner foundation for further investigation of the Zassenhaus conjectures.",
+    "L5": "# The Brauer–Suzuki Theorem\n\nThe Brauer–Suzuki theorem is a fundamental result in finite group theory, named after mathematicians Richard Brauer and Michio Suzuki. This theorem plays a significant role in the classification of finite simple groups, one of the most monumental achievements in twentieth-century mathematics.\n\n## Statement of the Theorem\n\nThe Brauer–Suzuki theorem addresses groups whose Sylow 2-subgroups are generalized quaternion groups. Specifically, the theorem states that if a finite group *G* has a generalized quaternion Sylow 2-subgroup, then *G* cannot be a simple group (unless *G* is itself very small, such as having order 1). More precisely, such a group must have a center of even order, meaning it possesses a nontrivial normal subgroup, which precludes simplicity except in trivial cases.\n\n## Historical Context\n\nThis result emerged during a period of intense activity in group theory during the 1950s, when mathematicians were developing tools to understand the structure of finite simple groups through their Sylow subgroups. Brauer and Suzuki proved this theorem in 1959, building on techniques from modular representation theory that Brauer had pioneered.\n\nThe theorem was a crucial step in a broader program aimed at classifying all finite simple groups—a project that would not reach completion until decades later, culminating in the mid-1980s with contributions from hundreds of mathematicians across thousands of pages of proofs.\n\n## Significance and Applications\n\nThe importance of the Brauer–Suzuki theorem lies in its role as a foundational building block for later, more general results. It demonstrated that certain group-theoretic configurations—specifically, quaternion Sylow 2-subgroups—are incompatible with simplicity. This finding helped narrow down the possible structures that simple groups could have, guiding subsequent research toward more general theorems about groups with dihedral, semidihedral, or other special types of Sylow 2-subgroups.\n\nThe proof techniques introduced by Brauer and Suzuki, particularly their use of character theory and modular representations, influenced how later mathematicians approached similar problems. Their methods showed how representation-theoretic invariants could reveal deep structural information about abstract groups, a theme that would recur throughout the classification effort.\n\n## Legacy\n\nToday, the Brauer–Suzuki theorem remains a standard topic in advanced courses on finite group theory. It serves as an excellent illustration of how algebraic and representation-theoretic techniques can be combined to solve purely group-theoretic problems. The theorem also stands as a testament to the collaborative and cumulative nature of mathematical progress, where individual results—however specialized—contribute to solving grand unifying problems like the classification of finite simple groups."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a research abstract about noncyclic subgroups of order p^2 in the normalized unit group of an integral group ring, showing such subgroups can only arise from G itself for odd primes.",
+      "output": "# Abstract\n\nLet $G$ be a finite group and $\\mathbb{Z}G$ its integral group ring. We investigate the structure of noncyclic subgroups of order $p^2$ (i.e., subgroups isomorphic to $C_p \\times C_p$) contained in the normalized unit group $V(\\mathbb{Z}G)$, where $p$ is an odd prime. A fundamental question in the study of group rings concerns the extent to which the unit group $V(\\mathbb{Z}G)$ can contain torsion subgroups not realized inside $G$ itself, particularly in connection with the Zassenhaus conjectures and the (HFC)-property concerning rational conjugacy of finite subgroups.\n\nIn this paper, we prove that for $p$ an odd prime, every noncyclic subgroup of order $p^2$ in $V(\\mathbb{Z}G)$ must in fact be conjugate, in the rational group algebra $\\mathbb{Q}G$, to a subgroup of $G$. Equivalently, no \"new\" elementary abelian subgroups of type $(p,p)$ can arise in $V(\\mathbb{Z}G)$ beyond those coming from $G$ itself, up to the action of $\\mathbb{Q}G$-conjugation. Our approach combines the Berman–Higman theorem, the theory of partial augmentations, and generalized bounds on the exponent of the finite subgroups of $V(\\mathbb{Z}G)$ arising from Hertweck-type arguments, together with careful case analysis of the structure of Wedderburn components of $\\mathbb{Q}G$ that could support such subgroups.\n\nA key technical tool is a refinement of the Luthar–Passi method: we show that any unit $u \\in V(\\mathbb{Z}G)$ of order $p$ contributing to a noncyclic $p^2$-subgroup forces strong congruence conditions on its partial augmentations, which in turn force the subgroup generated by $u$ and its conjugates to already sit inside a rational conjugate of a Sylow $p$-subgroup of $G$. This eliminates the possibility of \"exotic\" $(p,p)$-subgroups for all odd primes $p$, extending earlier partial results that were restricted to specific families of groups (nilpotent groups, groups of order $pq$, or groups with cyclic or dihedral Sylow structure).\n\nAs a consequence, we obtain new evidence toward the Zassenhaus $(ZC_2)$ conjecture and its weaker variants for groups whose Sylow $p$-subgroups are elementary abelian of rank $2$, and we derive corollaries concerning the classification of finite subgroups of $V(\\mathbb{Z}G)$ up to rational conjugacy for several infinite families of groups, including Frobenius groups and groups with a normal Sylow $p$-subgroup. We also discuss why the case $p = 2$ requires fundamentally different techniques, and we indicate why our methods do not directly extend to it, leaving open the analogous question for the Klein four subgroup case.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize a theorem stating that a noncyclic subgroup of order p^2 (p odd) in V(ZG), the units of augmentation one, exists only if G has such a subgroup, and mention the p=2 case via Brauer–Suzuki.",
+      "output": "# Theorem Summary\n\n**Statement:** Let $G$ be a finite group and $p$ an odd prime. If the normalized unit group $V(\\mathbb{Z}G)$ (units of augmentation 1 in the integral group ring $\\mathbb{Z}G$) contains a noncyclic subgroup of order $p^2$ (i.e., isomorphic to $C_p \\times C_p$), then $G$ itself must contain a noncyclic subgroup of order $p^2$.\n\n**Interpretation:** This result is a manifestation of a broader theme in the study of the integral group ring $\\mathbb{Z}G$: many group-theoretic properties of $G$ are faithfully reflected in the unit group $V(\\mathbb{Z}G)$, particularly for odd primes. Specifically, the \"richness\" of $p$-subgroup structure in $V(\\mathbb{Z}G)$ cannot exceed what is already present in $G$ — the integral group ring does not create *new* elementary abelian $p^2$-subgroups when $p$ is odd. This is consistent with (and often proved using) the fact that torsion units in $V(\\mathbb{Z}G)$ have orders dividing $|G|$, combined with rigidity results (such as those following from the HeLP method, character-theoretic torsion unit constraints, or Brauer-tree/block-theoretic arguments) that restrict how commuting $p$-elements of $V(\\mathbb{Z}G)$ can arise.\n\n**The case $p = 2$ — an essential exception:** The odd-prime restriction is not a technicality but a genuine obstruction, illustrated via the **Brauer–Suzuki theorem** on groups with generalized quaternion (or more generally, groups where Sylow 2-subgroups are \"small\" in a specific sense) Sylow 2-subgroups. The Brauer–Suzuki theory shows that the interaction between 2-elements and the modular/ordinary representation theory of $G$ behaves differently than the odd-prime case: it is possible to construct examples where $V(\\mathbb{Z}G)$ contains a Klein four subgroup $C_2 \\times C_2$ **even when $G$ has no such noncyclic subgroup of order 4** (e.g., when the Sylow 2-subgroup of $G$ is cyclic or generalized quaternion, hence has no subgroup isomorphic to $C_2\\times C_2$). Thus the theorem's conclusion genuinely **fails for $p=2$**, and the Brauer–Suzuki analysis of exceptional 2-fusion and the associated exceptional characters is precisely what allows construction of these counterexamples/units of order 2 in $V(\\mathbb{Z}G)$ not mirrored inside $G$.\n\n**Conclusion:** The theorem exhibits a clean dichotomy: for odd $p$, the unit group $V(\\mathbb{Z}G)$ cannot \"invent\" noncyclic $p^2$-subgroups beyond those already in $G$, while for $p=2$ this fails, with the Brauer–Suzuki machinery providing both the theoretical explanation and the source of counterexamples.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft an abstract for a paper on the Zassenhaus conjecture-type result concerning noncyclic subgroups of order p^2 in normalized units of ZG, referencing Kimmerle's observation for p=2.",
+      "output": "# Abstract\n\nLet $G$ be a finite group and let $V(\\mathbb{Z}G)$ denote the group of normalized units in the integral group ring $\\mathbb{Z}G$. The Zassenhaus conjecture (ZC), which predicts that every torsion unit in $V(\\mathbb{Z}G)$ is rationally conjugate to an element of $G$, has been verified in numerous special cases but remains open in general, and indeed is now known to fail for arbitrary finite groups. A weaker, yet still highly informative, question asks whether $V(\\mathbb{Z}G)$ can contain a subgroup of order $p^2$ that is not conjugate (in the rational group algebra $\\mathbb{Q}G$) to a subgroup of $G$, for a given prime $p$ dividing $|G|$.\n\nIn this paper we investigate this question in the case where the subgroup of order $p^2$ is noncyclic, i.e., isomorphic to $C_p \\times C_p$. Building on Kimmerle's observation that for $p=2$ no such noncyclic subgroup of order $4$ can occur in $V(\\mathbb{Z}G)$ unless already present in $G$ up to conjugacy, we extend the analysis to odd primes $p$. We show that under mild arithmetic conditions on $G$—related to the structure of its Sylow $p$-subgroups and the $p$-Brauer character table—the same rigidity phenomenon persists: any noncyclic subgroup of order $p^2$ in $V(\\mathbb{Z}G)$ must be conjugate in $\\mathbb{Q}G$ to a subgroup of $G$. Our approach combines the HeLP method (Hertweck, Luthar, and Passman) with representation-theoretic techniques, including partial augmentations and the analysis of Wedderburn components, to constrain the possible eigenvalues and character values of hypothetical noncyclic torsion units of order $p^2$.\n\nAs a consequence, we obtain new evidence supporting the validity of the Zassenhaus conjecture for group orders divisible by $p^2$ with noncyclic Sylow $p$-structure, and we identify explicit families of groups—including certain metabelian and Frobenius-type groups—for which the result applies unconditionally. Our findings generalize Kimmerle's $p=2$ result to an infinite family of odd primes and provide new structural insight into the arithmetic obstructions governing the Zassenhaus conjecture.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Provide a concise mathematical abstract discussing when noncyclic subgroups of order p^2 can occur among units of augmentation one in integral group rings of finite groups.",
+      "output": "# On Noncyclic Subgroups of Order p² in Normalized Unit Groups of Integral Group Rings\n\n**Abstract.** Let $G$ be a finite group and let $V(\\mathbb{Z}G)$ denote the group of units of augmentation one in the integral group ring $\\mathbb{Z}G$. We investigate the question of when $V(\\mathbb{Z}G)$ can contain a noncyclic subgroup of order $p^2$ for a prime $p$, i.e., a subgroup isomorphic to $C_p \\times C_p$.\n\nBy the Sylow theory developed for $V(\\mathbb{Z}G)$ via the Zassenhaus conjectures and related results (in particular, work stemming from the Prime Graph Question and the Spectrum Problem), it is known that if $p^2 \\mid |G|$, then $V(\\mathbb{Z}G)$ contains an element of order $p^2$ whenever $G$ does, and conversely torsion units of $V(\\mathbb{Z}G)$ have orders dividing $|G|$ (Cohn–Livingstone, Weiss). The finer question of whether *noncyclic* subgroups of order $p^2$ can arise as subgroups of $V(\\mathbb{Z}G)$ — as opposed to merely having elements of order $p$ appearing with multiplicity — is more delicate, since it relates to the structure of the group basis and to Berman–Higman type restrictions on partial augmentations.\n\nWe show that a noncyclic subgroup $C_p \\times C_p \\le V(\\mathbb{Z}G)$ can occur only if $G$ itself contains a noncyclic subgroup of order $p^2$, and we classify the possible partial augmentations of the nontrivial elements of such a subgroup using the Berman–Higman theorem together with the HeLP method (Hertweck, Luthar–Passi). In particular, we prove that if $G$ has a normal Sylow $p$-subgroup that is cyclic or has a cyclic subgroup of index $p$, then $V(\\mathbb{Z}G)$ contains **no** noncyclic subgroup of order $p^2$. Combined with known reductions for solvable and $p$-solvable groups, this yields verification of the Zassenhaus conjecture (ZC3) — asserting that finite subgroups of $V(\\mathbb{Z}G)$ of the same order as subgroups of $G$ are conjugate to them by units of $\\mathbb{Q}G$ — for a broad new class of groups whose Sylow $p$-subgroups have rank at most $2$, and we exhibit explicit examples showing the necessity of the structural hypotheses on $G$.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Compose a short abstract for a group ring theory paper proving a partial Zassenhaus-type property for noncyclic p^2 subgroups, citing the Brauer-Suzuki theorem for the prime 2 case attributed to Kimmerle.",
+      "output": "# Abstract\n\nLet $G$ be a finite group and let $\\mathbb{Z}G$ denote its integral group ring. The Zassenhaus Conjecture, in its various forms, predicts strong rigidity properties for torsion units and finite subgroups of the normalized unit group $V(\\mathbb{Z}G)$, asserting that such units and subgroups are, in an appropriate sense, rationally conjugate to elements and subgroups of $G$ itself. While the general conjecture has been refuted in recent years, the study of partial positive results for restricted classes of subgroups remains an active area of research.\n\nIn this paper we investigate the Zassenhaus-type property for noncyclic subgroups of order $p^2$, where $p$ is a prime, focusing on the question of whether such a subgroup $H \\leq V(\\mathbb{Z}G)$ is conjugate, in the units of $\\mathbb{Q}G$, to a subgroup of $G$. We establish that this property holds for all primes $p$ under a mild additional hypothesis on the structure of $G$, extending previously known partial results that were confined to small primes or to cyclic subgroups. The key technical obstruction arises in the case $p=2$, where the classification of finite groups with a noncyclic Klein four subgroup interacts subtly with the modular representation theory of $G$; here we rely crucially on the Brauer–Suzuki theorem, in the formulation and application due to Kimmerle, to control the relevant $2$-local structure and to rule out configurations that would otherwise obstruct rational conjugacy.\n\nAs a consequence, we obtain new evidence in support of the Prime Graph Question and related weakenings of the Zassenhaus Conjecture for noncyclic $p^2$-subgroups, and we discuss the extent to which our methods may be pushed further to address subgroups of order $p^3$ and mixed-order configurations.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6437346437346436,
+      "excess_ratio": 0.5496050360141221,
+      "baseline_mean": 0.09412960772052148,
+      "baseline_n_valid": 5,
+      "output_chars": 350,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6527196652719666,
+          "baseline_mean": 0.07348471267503254,
+          "excess_ratio": 0.579234952596934
+        },
+        "bz2": {
+          "actual_ratio": 0.5304659498207885,
+          "baseline_mean": 0.0911523035127774,
+          "excess_ratio": 0.4393136463080112
+        },
+        "lzma": {
+          "actual_ratio": 0.7432432432432432,
+          "baseline_mean": 0.11612259053687182,
+          "excess_ratio": 0.6271206527063714
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.42857142857142866,
+      "excess_ratio": 0.3344418208509072,
+      "baseline_mean": 0.09412960772052148,
+      "baseline_n_valid": 5,
+      "output_chars": 397,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.38181818181818183,
+          "baseline_mean": 0.07348471267503254,
+          "excess_ratio": 0.3083334691431493
+        },
+        "bz2": {
+          "actual_ratio": 0.3870967741935484,
+          "baseline_mean": 0.0911523035127774,
+          "excess_ratio": 0.295944470680771
+        },
+        "lzma": {
+          "actual_ratio": 0.5060240963855421,
+          "baseline_mean": 0.11612259053687182,
+          "excess_ratio": 0.38990150584867034
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.220869083863825,
+      "excess_ratio": 0.12673947614330353,
+      "baseline_mean": 0.09412960772052148,
+      "baseline_n_valid": 5,
+      "output_chars": 2640,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.20683760683760682,
+          "baseline_mean": 0.07348471267503254,
+          "excess_ratio": 0.1333528941625743
+        },
+        "bz2": {
+          "actual_ratio": 0.20016680567139283,
+          "baseline_mean": 0.0911523035127774,
+          "excess_ratio": 0.10901450215861544
+        },
+        "lzma": {
+          "actual_ratio": 0.2540192926045016,
+          "baseline_mean": 0.11612259053687182,
+          "excess_ratio": 0.1378967020676298
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.07382013484173243,
+      "excess_ratio": -0.02030947287878905,
+      "baseline_mean": 0.09412960772052148,
+      "baseline_n_valid": 5,
+      "output_chars": 7561,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.06083136194660358,
+          "baseline_mean": 0.07348471267503254,
+          "excess_ratio": -0.012653350728428957
+        },
+        "bz2": {
+          "actual_ratio": 0.07556497175141243,
+          "baseline_mean": 0.0911523035127774,
+          "excess_ratio": -0.015587331761364967
+        },
+        "lzma": {
+          "actual_ratio": 0.08513513513513514,
+          "baseline_mean": 0.11612259053687182,
+          "excess_ratio": -0.030987455401736683
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.03427265803503427,
+      "excess_ratio": -0.05985694968548721,
+      "baseline_mean": 0.09412960772052148,
+      "baseline_n_valid": 5,
+      "output_chars": 2896,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.01567398119122257,
+          "baseline_mean": 0.07348471267503254,
+          "excess_ratio": -0.05781073148380997
+        },
+        "bz2": {
+          "actual_ratio": 0.03585049580472922,
+          "baseline_mean": 0.0911523035127774,
+          "excess_ratio": -0.05530180770804818
+        },
+        "lzma": {
+          "actual_ratio": 0.05029585798816568,
+          "baseline_mean": 0.11612259053687182,
+          "excess_ratio": -0.06582673254870613
+        }
+      }
+    }
+  }
+}

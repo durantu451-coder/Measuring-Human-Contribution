@@ -1,0 +1,169 @@
+{
+  "model": "gemini-3.6-flash",
+  "domain": "Arxiv",
+  "id": "0704.0231",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe provide a description of the interpolating and sampling sequences on a space of holomorphic functions with a uniform growth restriction defined on finite Riemann surfaces.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe provide a description of the interpolating and sampling sequences on a space of holomorphic functions with a uniform growth restriction defined on finite Riemann surfaces.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n* The work provides a description of interpolating sequences within a specialized function space.\n* It offers a characterization of sampling sequences operating in the same space.\n* The target function space consists of holomorphic functions satisfying a uniform growth restriction.\n* The functions under consideration are defined specifically on finite Riemann surfaces.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe study investigates the characterization of interpolating and sampling sequences on finite Riemann surfaces by analyzing spaces of holomorphic functions subject to uniform growth restrictions. The authors successfully establish a complete description of these sequences, providing a foundational framework for understanding discrete sampling and interpolation on non-trivial complex domains.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Riemann"
+  },
+  "outputs": {
+    "L1": "Here are a few ways to polish your sentence, depending on your preferred style:\n\n**Option 1: Standard Academic (Recommended for math papers)**\n> \"We characterize the interpolating and sampling sequences for a space of holomorphic functions subject to a uniform growth restriction on finite Riemann surfaces.\"\n* **Why it works:** Replaces \"provide a description of\" with the stronger mathematical term \"characterize,\" and replaces the repetitive use of \"on\" with \"subject to.\"\n\n**Option 2: Formal & Elegant**\n> \"This paper presents a comprehensive description of the interpolating and sampling sequences within a space of holomorphic functions with a uniform growth restriction on finite Riemann surfaces.\"\n* **Why it works:** Shifts to a third-person perspective (\"This paper presents...\") which sounds highly formal and reads smoothly.\n\n**Option 3: Concise & Direct**\n> \"We describe the interpolating and sampling sequences in a space of holomorphic functions with a uniform growth restriction on finite Riemann surfaces.\"\n* **Why it works:** Trims the wordiness of \"provide a description of\" down to \"describe\" while keeping the exact original phrasing of the technical terms. \n\n**Key improvements made across all options:**\n* Eliminated the awkward repetition of \"on\" (\"*on* a space... defined *on* finite...\").\n* Used stronger verbs common in mathematical literature (*characterize*, *present*, *describe*).",
+    "L2": "Here are a few ways to rewrite the statement while maintaining all original facts:\n\n**Option 1 (Standard Academic style):**\n\"In this study, we characterize the sets of points used for interpolation and sampling within a family of analytic functions on finite Riemann surfaces, specifically those whose growth is governed by a consistent bound.\"\n\n**Option 2 (Restructured with the function class first):**\n\"For complex-differentiable functions that share a single constraint on their rate of growth across finite Riemann surfaces, this paper details the precise criteria defining sampling and interpolating sequences.\"\n\n**Option 3 (Active and concise):**\n\"We outline how sampling and interpolating sequences behave inside a space of complex-analytic functions, where the functions are subject to a uniform limit on their growth and are mapped on finite Riemann surfaces.\"",
+    "L3": "Here are a few ways to expand these bullet points into a well-structured text, depending on your preferred format and academic style.\n\n### Option 1: Academic Abstract / Overview Style (Recommended)\n\n**Abstract**\n\nThis work investigates the geometric and analytic properties of a specialized space of holomorphic functions defined on finite Riemann surfaces. Specifically, the domain of interest comprises functions subject to a uniform growth restriction, providing a natural framework for generalizing classical function theory. \n\nWithin this setting, the paper presents two primary contributions. First, it provides a comprehensive description of interpolating sequences, identifying the exact conditions under which target values can be interpolated by functions satisfying the growth bound. Second, it delivers a precise characterization of sampling sequences in the same space, establishing the criteria under which the global behavior of a function is stably controlled by its values on a discrete subset. Together, these results extend fundamental concepts of discrete analysis and interpolation theory to the geometric setting of finite Riemann surfaces.\n\n---\n\n### Option 2: Structured Article Introduction\n\n**Introduction and Overview of Results**\n\nThe study of discrete sequences in spaces of holomorphic functions plays a central role in complex analysis, with wide-ranging applications in operator theory and signal processing. This paper extends classical interpolation and sampling theories to a broader geometric context by focusing on functions defined specifically on finite Riemann surfaces. \n\nThe target space under consideration consists of all holomorphic functions on these surfaces that satisfy a prescribed uniform growth restriction. Studying functions under such growth constraints requires subtle geometric and measure-theoretic tools due to the underlying topology of the surface.\n\nThe main contributions of this work are twofold:\n\n1. **Interpolating Sequences:** We establish a complete description of interpolating sequences for this restricted space. This result details the necessary and sufficient conditions for a discrete sequence to admit arbitrary, bounded data interpolation by functions within the space.\n2. **Sampling Sequences:** We provide a full characterization of sampling sequences operating within the same function space. This characterization identifies when the global norm of a function can be equivalently recovered from its restricted values on the sequence.\n\nBy addressing both interpolation and sampling in tandem, this work offers a unified perspective on discrete representation theory for growth-restricted holomorphic functions on finite Riemann surfaces.\n\n---\n\n### Key Improvements Made:\n* **Contextual Framing:** Connected the isolated ideas into a logical narrative (Domain $\\rightarrow$ Function Space $\\rightarrow$ Problem Statement $\\rightarrow$ Specific Results).\n* **Technical Precision:** Used standard mathematical terminology (e.g., *discrete sequences*, *measure-theoretic tools*, *norm equivalence*) to elevate the academic tone.\n* **Flow & Cohesion:** Joined the dual concepts of *sampling* and *interpolation* as complementary (\"in tandem\") aspects of complex analysis.",
+    "L4": "# Interpolating and Sampling Sequences on Finite Riemann Surfaces: Characterization and Growth Dynamics\n\n## Abstract\nThis paper expands upon recent breakthroughs in complex analysis regarding the discrete characterization of function spaces on non-trivial complex domains. We investigate interpolating and sampling sequences for spaces of holomorphic functions on finite Riemann surfaces subject to uniform growth restrictions. By combining local geometric estimates with global topological methods—including automorphic forms, Green's functions, and Hörmander’s $\\bar{\\partial}$-estimates—we establish necessary and sufficient conditions for a discrete sequence to be sampling or interpolating. This work yields a unified framework that extends classical results from the unit disk to higher-genus surfaces with boundaries.\n\n---\n\n## 1. Introduction\n\nThe study of interpolating and sampling sequences lies at the intersection of complex analysis, harmonic analysis, and operator theory. Classically, a sequence of points $Z = \\{z_k\\}_{k=1}^\\infty$ in a domain $\\Omega \\subset \\mathbb{C}$ is:\n* **Interpolating** for a given function space $\\mathcal{F}$ if any bounded sequence of values at $Z$ can be matched by a function in $\\mathcal{F}$.\n* **Sampling** if the overall norm of any function $f \\in \\mathcal{F}$ is fully dominated (controlled above and below) by its discrete values on $Z$.\n\nWhile these concepts are well understood in planar domains—such as the complex plane $\\mathbb{C}$ (via the work of Beurling, Lyubarskii, and Seip) and the unit disk $\\mathbb{D}$ (via Carleson’s work)—extending them to arbitrary complex manifolds introduces significant topological and geometric obstacles. \n\nThis study addresses these challenges on **finite Riemann surfaces**—compact surfaces with a finite number of smooth boundaries, or open surfaces admitting a finite hyperbolic cover. By analyzing spaces of holomorphic functions governed by uniform growth restrictions (e.g., weighted Bergman, Hardy, or Fock-type growth conditions), we provide a complete geometric and analytic description of sampling and interpolating sets.\n\n---\n\n## 2. Function Spaces under Uniform Growth Restrictions\n\nLet $X$ be a finite Riemann surface equipped with its canonical hyperbolic (Poincaré) metric $g_{hyp}$ and associated distance function $\\rho(z, w)$. Let $\\phi: X \\to \\mathbb{R}$ be a subharmonic weight function satisfying uniform local growth bounds.\n\nWe consider the space $\\mathcal{H}_\\phi(X)$ of holomorphic functions $f \\in \\mathcal{O}(X)$ governed by the growth condition:\n$$|f(z)| \\le C_f e^{\\phi(z)}, \\quad \\forall z \\in X$$\nor, in the $L^2$-weighted setting, the space $A^2_\\phi(X)$ defined by:\n$$\\|f\\|_{\\phi}^2 = \\int_X |f(z)|^2 e^{-2\\phi(z)} \\, dV(z) < \\infty$$\n\nThe difficulty in working on $X$ stems from the non-trivial fundamental group $\\pi_1(X)$. Functions on the universal cover $\\widetilde{X} \\cong \\mathbb{D}$ must satisfy automorphic properties, which introduces non-trivial topological phase factors when defining canonical interpolating functions or solving standard $\\bar{\\partial}$-equations.\n\n---\n\n## 3. Main Results: Characterization of Sequences\n\nThe main contribution of this study is the complete characterization of interpolating and sampling sequences on $X$ via two fundamental properties: **Separation** and **Density**.\n\n### 3.1. Separation Conditions\nA sequence $Z = \\{z_k\\} \\subset X$ must be uniformly separated in the intrinsic hyperbolic metric. That is, there exists $\\delta > 0$ such that:\n$$\\inf_{j \\neq k} \\rho(z_j, z_k) \\ge \\delta > 0$$\nOn a finite Riemann surface, this guarantees that points do not accumulate internally, preventing local over-sampling and maintaining stable local evaluations.\n\n### 3.2. Beurling-Type Geometric Densities\nTo measure the global distribution of $Z$, we introduce generalized upper and lower Beurling-type densities, $D^+(Z)$ and $D^-(Z)$, defined relative to the Laplacian of the weight $\\Delta \\phi$ and the hyperbolic area of metric balls $B(r, z)$:\n\n$$D^+(Z) = \\limsup_{r \\to \\infty} \\sup_{z \\in X} \\frac{\\#(Z \\cap B(r, z))}{\\int_{B(r, z)} \\Delta \\phi \\, dV}$$\n\n$$D^-(Z) = \\liminf_{r \\to \\infty} \\inf_{z \\in X} \\frac{\\#(Z \\cap B(r, z))}{\\int_{B(r, z)} \\Delta \\phi \\, dV}$$\n\n### 3.3. Complete Characterization Theorems\n\n1. **Theorem A (Interpolation):** *A discrete sequence $Z \\subset X$ is interpolating for $\\mathcal{H}_\\phi(X)$ if and only if $Z$ is uniformly separated and the upper density strictly satisfies:*\n   $$D^+(Z) < 1$$\n2. **Theorem B (Sampling):** *A discrete sequence $Z \\subset X$ is sampling for $\\mathcal{H}_\\phi(X)$ if and only if $Z$ contains a uniformly separated subsequence whose lower density strictly satisfies:*\n   $$D^-(Z) > 1$$\n\n---\n\n## 4. Key Methodological Innovations\n\nThe derivation of these characterizations relies on three core techniques:\n\n1. **Automorphic Kernel Methods and Green's Functions:** To construct functions with prescribed zeros on $X$, standard Blaschke products fail due to topology. Instead, the authors construct generalized divisor functions using the surface's Green function $G_X(z, w)$, carefully controlling boundary growth across cross-cuts of the surface.\n2. **Weighted $\\bar{\\partial}$-Estimates (Hörmander Technique):** Interpolation requires solving $\\bar{\\partial} u = v$ with strict $L^2$-growth bounds. By applying $L^2$-estimates on the universal cover and pushing them down via Poincaré series, the authors circumvent topological obstructions to gain uniform bounds.\n3. **Pluripotential Theory & Asymptotic Density:** To measure sampling capabilities, local frame inequalities are linked to the equilibrium measure of the surface, establishing that the threshold between interpolation and sampling is governed strictly by the total flux of $\\Delta \\phi$.\n\n---\n\n## 5. Conclusion and Impact\n\nThis work successfully solves a fundamental open problem in complex analysis by establishing a complete framework for discrete sampling and interpolation on finite Riemann surfaces. By bridging the gap between local growth dynamics and global topology, the study provides a robust foundation for future extensions to higher-dimensional complex manifolds, vector-valued function spaces, and signal processing models on non-Euclidean geometries.",
+    "L5": "**Bernhard Riemann: The Architect of Modern Space and Numbers**\n\nFew figures in the history of science have altered our understanding of the universe as profoundly, and with such elegant brevity, as the 19th-century German mathematician Bernhard Riemann (1826–1866). Though his life was cut tragically short by tuberculosis at the age of 39, Riemann’s visionary work laid the intellectual foundations for modern physics, geometry, and number theory. \n\n### Reimagining Space: Riemannian Geometry\nBefore Riemann, the world viewed geometry almost exclusively through the lens of Euclid—a flat, two- or three-dimensional system where parallel lines never meet and the angles of a triangle always add up to 180 degrees. In a groundbreaking 1854 lecture, Riemann shattered this paradigm by introducing what is now known as **Riemannian Geometry**. \n\nHe proposed that space could be curved, dynamic, and exist in any number of dimensions. Rather than viewing shapes within a fixed background, Riemann developed the mathematical tools to describe the intrinsic curvature of space itself. Decades later, a young Albert Einstein realized that Riemann’s non-Euclidean geometry was precisely the mathematical language he needed to formulate his General Theory of Relativity. Without Riemann’s abstract concepts of curved spacetime and multidimensional manifolds, our modern understanding of gravity, black holes, and the expanding cosmos would not exist.\n\n### The Holy Grail of Mathematics: The Riemann Hypothesis\nWhile his geometric work reshaped physics, Riemann’s contributions to number theory sparked the greatest unsolved mystery in pure mathematics: the **Riemann Hypothesis**.\n\nIn a concise eight-page paper published in 1859, Riemann turned his attention to prime numbers—the fundamental building blocks of arithmetic. He introduced the **Riemann Zeta Function**, a complex mathematical function that holds the key to how prime numbers are distributed along the number line. Riemann conjectured that all \"non-trivial\" solutions (zeros) of this function lie along a single, precise \"critical line.\" \n\nToday, over 160 years later, the Riemann Hypothesis remains unproven. It is one of the Clay Mathematics Institute’s seven Millennium Prize Problems, carrying a $1 million reward for a valid proof. Unlocking this hypothesis would not only solve a centuries-old puzzle about primes but would also deeply impact modern cryptography and computer science.\n\n### Bedrock of Calculus and Analysis\nBeyond these grand leaps, Riemann’s influence permeates basic mathematics. Anyone who has taken an introductory calculus course has encountered the **Riemann Integral**—the standard method of calculating the area under a curve by dividing it into infinitely thin rectangles. In complex analysis, his concept of **Riemann Surfaces** allowed mathematicians to visualize multi-valued complex functions as geometric landscapes, bridging the gap between analysis and topology.\n\n### An Enduring Legacy\nBernhard Riemann was a timid, deeply modest man, yet his mind possessed an astonishing capacity to look beyond the immediate boundaries of human knowledge. He did not merely solve existing problems; he invented entirely new ways of thinking about space, numbers, and reality. Today, from the vast curvatures of cosmological spacetime to the elusive behavior of prime numbers, the ghost of Riemann guides the vanguard of science and mathematics into the unknown."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a one-sentence abstract overview for a math paper that characterizes interpolating and sampling sequences on finite Riemann surfaces under uniform growth conditions.",
+      "output": "We provide a complete geometric characterization of interpolating and sampling sequences for weighted spaces of holomorphic functions on finite Riemann surfaces subjected to uniform growth conditions.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "How would you summarize the main result of a complex analysis paper studying holomorphic functions on finite Riemann surfaces in a single formal sentence?",
+      "output": "Because the exact contribution depends on the paper's specific focus (e.g., approximation, the Corona problem, proper holomorphic mappings, or function algebras), here is a canonical formal sentence that captures a major foundational result in this area:\n\n> **\"This paper establishes that the algebra $H^\\infty(M)$ of bounded holomorphic functions on a finite bordered Riemann surface $M$ satisfies the Corona property, thereby proving that $M$ is dense in the maximal ideal space of $H^\\infty(M)$ and extending classical inner-outer factorization to domains of arbitrary finite genus.\"**\n\n***\n\n### Template for Customizing to Your Specific Result\nIf your paper focuses on a different core result, you can adapt this sentence structure:\n\n> *\"This paper establishes that **[class of holomorphic functions]** on a **[type of finite Riemann surface]** **[satisfies property/admits explicit representation]**, thereby **[resolving conjecture / generalizing classical theorem / characterizing geometric property]**.\"*",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Rephrase this idea into a formal academic paper statement: \"In this work, we describe sampling and interpolating sequences for holomorphic functions that have a uniform growth limit on finite Riemann surfaces.\"",
+      "output": "Here are a few ways to rephrase the statement depending on the specific focus and style of your paper:\n\n**Option 1: Focused on Characterization (Most common for mathematical analysis)**\n> \"This paper provides a complete characterization of sampling and interpolating sequences for spaces of holomorphic functions possessing uniform growth limits on finite Riemann surfaces.\"\n\n**Option 2: Focus on Investigation/Analysis (Slightly broader)**\n> \"In this study, we investigate the structural properties of sampling and interpolating sequences associated with classes of holomorphic functions subject to uniform growth bounds on finite Riemann surfaces.\"\n\n**Option 3: Direct and Concise (Ideal for an Abstract)**\n> \"We establish necessary and sufficient conditions for sequences of sampling and interpolation within spaces of holomorphic functions with prescribed uniform growth limits on finite Riemann surfaces.\"\n\n**Option 4: Passive / Objective Tone**\n> \"The present work is devoted to the analysis of sampling and interpolating sequences for holomorphic functions exhibiting controlled uniform growth on finite Riemann surfaces.\"\n\n---\n\n### Key improvements made:\n* **\"describe\" $\\rightarrow$ \"characterize\", \"investigate\", or \"establish necessary and sufficient conditions\":** In mathematics, \"describe\" can sound too informal. Precise verbs signal the depth of the result.\n* **\"that have a uniform growth limit\" $\\rightarrow$ \"possessing uniform growth limits\" or \"subject to uniform growth bounds\":** Phrases the growth condition as a formal analytical constraint or space definition.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "State the main thesis of a paper covering: interpolating sequences, sampling sequences, holomorphic function spaces, uniform growth restrictions, finite Riemann surfaces.",
+      "output": "**Main Thesis:**\n\nA sequence of points on a finite Riemann surface is interpolating (or sampling) for a space of holomorphic functions defined by uniform growth restrictions if and only if the sequence satisfies precise, quantitative geometric conditions—specifically regarding hyperbolic/metric separation and Beurling-type upper and lower densities relative to the underlying weight function. \n\n***\n\n### Key Elements Supporting the Thesis:\n\n1. **Geometric Characterization:** The paper proves that the analytic properties of **interpolation** (the ability to solve $f(z_k) = v_k$ within the space) and **sampling** (the ability to recover a function's norm from its values at $\\{z_k\\}$) are completely governed by the spatial distribution of the points.\n2. **Domain Generalization:** It extends classical results (such as those by Seip, Beurling, or Hörmander on the unit disk or complex plane) to the complex geometric setting of **finite Riemann surfaces**, accounting for non-trivial topology and boundary behavior.\n3. **Growth Conditions:** The characterization directly links the density of the sequence to the weight function generating the **uniform growth restrictions** (e.g., weighted Bergman, Hardy, or $A^{-\\infty}$ spaces).",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Draft a concise opening sentence for my research paper's abstract on function spaces over Riemann surfaces.",
+      "output": "Here are a few concise opening options, depending on the specific focus of your paper:\n\n**Option 1: Focus on geometry and analysis (Best general option)**\n> \"This paper investigates the interplay between the conformal geometry of Riemann surfaces and the analytical structure of [insert Space, e.g., Bergman / Hardy] spaces.\"\n\n**Option 2: Focus on characterizing specific properties**\n> \"We establish structural characterizations for [insert Space] defined over arbitrary Riemann surfaces, with a focus on [insert key property, e.g., boundary behavior / duality].\"\n\n**Option 3: Focus on operator theory**\n> \"We examine the boundedness and compactness of [insert Operator, e.g., Hankel / composition] operators acting on function spaces over Riemann surfaces.\"\n\n**Option 4: Ultra-concise & direct**\n> \"This work explores the foundational properties of [insert Space] on non-compact Riemann surfaces.\"\n\n***Tip:*** *Replace the bracketed text `[...]` with your specific space or topic to make it immediate and precise.*",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.20848056537102483,
+      "excess_ratio": -0.012271253985882385,
+      "baseline_mean": 0.22075181935690721,
+      "baseline_n_valid": 5,
+      "output_chars": 1411,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.19218241042345277,
+          "baseline_mean": 0.18926326640474725,
+          "excess_ratio": 0.0029191440187055218
+        },
+        "bz2": {
+          "actual_ratio": 0.17525773195876287,
+          "baseline_mean": 0.1988080903833484,
+          "excess_ratio": -0.023550358424585527
+        },
+        "lzma": {
+          "actual_ratio": 0.2558139534883721,
+          "baseline_mean": 0.2664419216890587,
+          "excess_ratio": -0.010627968200686622
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.24813052345343298,
+      "excess_ratio": 0.027378704096525763,
+      "baseline_mean": 0.22075181935690721,
+      "baseline_n_valid": 5,
+      "output_chars": 870,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1875,
+          "baseline_mean": 0.18926326640474725,
+          "excess_ratio": -0.001763266404747249
+        },
+        "bz2": {
+          "actual_ratio": 0.25252525252525254,
+          "baseline_mean": 0.1988080903833484,
+          "excess_ratio": 0.05371716214190414
+        },
+        "lzma": {
+          "actual_ratio": 0.29545454545454547,
+          "baseline_mean": 0.2664419216890587,
+          "excess_ratio": 0.029012623765486745
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.14697542533081295,
+      "excess_ratio": -0.07377639402609426,
+      "baseline_mean": 0.22075181935690721,
+      "baseline_n_valid": 5,
+      "output_chars": 3243,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.13454545454545455,
+          "baseline_mean": 0.18926326640474725,
+          "excess_ratio": -0.0547178118592927
+        },
+        "bz2": {
+          "actual_ratio": 0.1288256227758007,
+          "baseline_mean": 0.1988080903833484,
+          "excess_ratio": -0.0699824676075477
+        },
+        "lzma": {
+          "actual_ratio": 0.1763085399449036,
+          "baseline_mean": 0.2664419216890587,
+          "excess_ratio": -0.09013338174415514
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.08026084775520446,
+      "excess_ratio": -0.14049097160170276,
+      "baseline_mean": 0.22075181935690721,
+      "baseline_n_valid": 5,
+      "output_chars": 6273,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.06941838649155722,
+          "baseline_mean": 0.18926326640474725,
+          "excess_ratio": -0.11984487991319002
+        },
+        "bz2": {
+          "actual_ratio": 0.07428571428571429,
+          "baseline_mean": 0.1988080903833484,
+          "excess_ratio": -0.12452237609763411
+        },
+        "lzma": {
+          "actual_ratio": 0.09687034277198212,
+          "baseline_mean": 0.2664419216890587,
+          "excess_ratio": -0.1695715789170766
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.020315169925954096,
+      "excess_ratio": -0.20043664943095313,
+      "baseline_mean": 0.22075181935690721,
+      "baseline_n_valid": 5,
+      "output_chars": 3443,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.0103866128101558,
+          "baseline_mean": 0.18926326640474725,
+          "excess_ratio": -0.17887665359459146
+        },
+        "bz2": {
+          "actual_ratio": 0.019119351100811123,
+          "baseline_mean": 0.1988080903833484,
+          "excess_ratio": -0.17968873928253729
+        },
+        "lzma": {
+          "actual_ratio": 0.030973451327433628,
+          "baseline_mean": 0.2664419216890587,
+          "excess_ratio": -0.2354684703616251
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15759759",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nAn electronic control unit includes: inverter circuits of first and second systems driving a multiphase motor with coil sets on a coil set basis; first and second phase potential detecting circuits detecting potentials of at least one phase of current supply paths from the inverter circuits to the coil set; and a diagnosis apparatus detecting a failure based on potentials detected by the first and second phase potential detecting circuits. Under condition that the inverter circuit of the first system turns ON the upper or lower arm switching element corresponding to one phase of the first coil set and turns OFF the other one so that the inverter circuit of the second system has a high-impedance output, when the potential detected by the second phase potential detecting circuit corresponds to an output potential of the inverter circuit of the first system, the diagnosis apparatus determines that a short-circuit failure occurs.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nAn electronic control unit includes: inverter circuits of first and second systems driving a multiphase motor with coil sets on a coil set basis; first and second phase potential detecting circuits detecting potentials of at least one phase of current supply paths from the inverter circuits to the coil set; and a diagnosis apparatus detecting a failure based on potentials detected by the first and second phase potential detecting circuits. Under condition that the inverter circuit of the first system turns ON the upper or lower arm switching element corresponding to one phase of the first coil set and turns OFF the other one so that the inverter circuit of the second system has a high-impedance output, when the potential detected by the second phase potential detecting circuit corresponds to an output potential of the inverter circuit of the first system, the diagnosis apparatus determines that a short-circuit failure occurs.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The electronic control unit includes first- and second-system inverter circuits that independently drive respective coil sets of a multiphase motor.\n- First and second phase potential detecting circuits monitor the potential of at least one phase in the current supply paths from the inverter circuits to the coil sets.\n- A diagnosis apparatus detects failures based on the potentials measured by the two phase potential detecting circuits.\n- During diagnosis, the first-system inverter turns on either the upper- or lower-arm switching element for one phase, turns off the other, and places the second-system inverter output in a high-impedance state.\n- If the potential detected in the second system corresponds to the first-system inverter’s output potential under these conditions, the diagnosis apparatus identifies a short-circuit failure.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nAn electronic control unit diagnoses short circuits in a dual-inverter, multiphase motor by comparing phase potentials while one inverter drives a selected phase and the other remains in a high-impedance state. If the passive system’s detected potential matches the active inverter’s output potential, the apparatus identifies a short-circuit failure, enabling reliable detection of unintended electrical coupling between the systems.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Under, OFF"
+  },
+  "outputs": {
+    "L1": "An electronic control unit includes: first- and second-system inverter circuits configured to drive a multiphase motor on a coil-set basis; first and second phase-potential detection circuits configured to detect the potential of at least one phase of current-supply paths extending from the respective inverter circuits to the corresponding coil sets; and a diagnostic apparatus configured to detect a failure based on the potentials detected by the first and second phase-potential detection circuits. When the first-system inverter circuit turns on either an upper-arm or lower-arm switching element corresponding to one phase of the first coil set and turns off the other switching element, while the second-system inverter circuit provides a high-impedance output, the diagnostic apparatus determines that a short-circuit failure has occurred if the potential detected by the second phase-potential detection circuit corresponds to the output potential of the first-system inverter circuit.",
+    "L2": "An electronic control unit comprises first- and second-system inverter circuits that independently drive respective coil sets of a multiphase motor, first and second phase-potential detection circuits that measure the voltage of at least one phase in the current paths extending from the inverter circuits to the coil sets, and a diagnostic device that identifies faults using the measured voltages. During diagnosis, the first-system inverter switches on either the upper-arm or lower-arm switching element associated with one phase of the first coil set while switching off the other element, and the second-system inverter is placed in a high-impedance output state. If the voltage measured by the second phase-potential detection circuit matches an output voltage of the first-system inverter, the diagnostic device concludes that a short-circuit fault is present.",
+    "L3": "The electronic control unit includes first- and second-system inverter circuits configured to independently drive respective coil sets of a multiphase motor. Each inverter circuit includes upper- and lower-arm switching elements for controlling the supply of current to each motor phase.\n\nFirst and second phase-potential detection circuits are provided to monitor the potential of at least one phase in the current-supply paths extending from the respective inverter circuits to their corresponding coil sets. A diagnosis apparatus receives the potentials measured by these detection circuits and determines whether a failure is present.\n\nDuring a diagnostic operation, the first-system inverter circuit turns on either the upper-arm switching element or the lower-arm switching element associated with a selected phase, while turning off the other switching element. At the same time, the output of the second-system inverter circuit is placed in a high-impedance state so that the second system does not actively drive the corresponding phase.\n\nUnder these conditions, the diagnosis apparatus compares the potential detected by the second-system phase-potential detection circuit with the output potential established by the first-system inverter circuit. If the second-system potential corresponds to the first-system inverter’s output potential, the diagnosis apparatus determines that an unintended electrical connection exists and identifies a short-circuit failure, such as a short circuit between the relevant current-supply paths of the first and second systems.",
+    "L4": "An electronic control apparatus is provided for diagnosing short-circuit failures in a motor drive system that includes a multiphase motor, a first inverter, and a second inverter. The inverters are associated with respective phase systems of the motor and are normally controlled to supply phase currents for driving the motor. The apparatus is particularly configured to detect unintended electrical coupling between the two systems, such as a short circuit between corresponding or noncorresponding phase conductors.\n\nDuring a diagnostic operation, the electronic control unit places one of the inverters in an active state and commands it to apply a predetermined output potential to a selected motor phase. At the same time, the other inverter is placed in a high-impedance state so that its switching elements do not intentionally connect the corresponding phase terminal to either side of the direct-current power supply. Under normal conditions, the electrically isolated phase of the passive system should not be forced to the same potential as the phase driven by the active inverter.\n\nThe control unit detects the phase potential on the passive inverter side and compares it with the known or measured output potential produced by the active inverter. If the detected potential remains independent of the driven potential, the systems are determined to be electrically isolated. If, however, the passive phase potential follows or substantially matches the active inverter’s output potential, the control unit determines that an unintended conductive path exists between the systems. The conductive path may result from damaged insulation, crossed wiring, a failed switching device, or another form of phase-to-phase short circuit.\n\nTo improve diagnostic reliability, the comparison may be performed using one or more predetermined voltage thresholds and may be repeated for different applied potentials, phases, or inverter combinations. For example, the selected phase may first be driven toward a positive supply potential and then toward a negative supply potential while the response of the passive system is monitored. The roles of the first and second inverters may also be reversed, allowing each inverter and each motor phase to be tested.\n\nWhen the detected relationship between the phase potentials satisfies the applicable failure criterion, the electronic control unit records or reports a short-circuit fault. It may additionally inhibit further inverter operation, limit motor torque, disconnect the power supply, or place the motor drive system in another protective state. By actively exciting one phase while maintaining the other system in a high-impedance condition, the apparatus can distinguish unintended electrical coupling from normal switching behavior and thereby provide reliable detection of short circuits in a dual-inverter, multiphase motor system.",
+    "L5": "## Under / OFF\n\nUnder the bridge, the city sounded different—softer, farther away, as though someone had turned the world **OFF**.\n\nMara sat beside the river and watched broken reflections drift across the black water. Above her, headlights passed in brief waves, but down here there were no deadlines, no messages, no expectations. Only the steady current moving **under** the concrete arches.\n\nShe switched her phone **OFF** and slipped it into her pocket.\n\nFor the first time in months, silence did not feel empty. It felt like space: a hidden place beneath the noise, waiting for her to breathe."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize the key components and diagnostic operation of this electronic control unit patent claim in one concise paragraph.",
+      "output": "Please provide the patent claim text (or claim number and patent publication), and I’ll summarize its key components and diagnostic operation in one concise paragraph.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Describe an ECU that detects a short circuit between two inverter systems driving separate coil sets of a multiphase motor.",
+      "output": "An electronic control unit (ECU) can supervise two electrically independent inverter systems that drive separate coil sets of a multiphase motor, such as two three-phase windings.\n\n### Example configuration\n\n- **First inverter system:** Drives a first coil set through phase terminals \\(U_1, V_1, W_1\\).\n- **Second inverter system:** Drives a second coil set through phase terminals \\(U_2, V_2, W_2\\).\n- **Sensors:** Measure phase currents, phase-terminal voltages, and optionally DC-link currents for both systems.\n- **Controller:** Generates PWM gate signals for both inverters and evaluates the sensor signals.\n- **Protection circuit:** Can disable either inverter, open relays/contactors, or isolate a winding set.\n\n### Short-circuit detection\n\nThe ECU detects an unintended electrical connection between the two inverter systems by placing them in distinguishable electrical states and checking whether one system responds to switching performed by the other. For example, the ECU may:\n\n1. Disable or place the second inverter in a high-impedance state.\n2. Apply a diagnostic voltage vector or PWM pulse to the first inverter.\n3. Monitor voltages or currents at the second inverter’s phase terminals.\n4. Determine that an inter-system short circuit exists when:\n   - a voltage transition on a phase of the first system appears on a corresponding or noncorresponding phase of the second system;\n   - current flows in the disabled inverter or its coil set;\n   - the measured voltage difference between terminals of the two systems remains below a threshold when the commanded voltages should differ; or\n   - correlated current or voltage changes persist for a specified confirmation period.\n\nThe test can be repeated with reversed voltage vectors or with the roles of the two inverters exchanged to identify the affected phase pair and reject capacitive coupling, sensor noise, and normal magnetic coupling through the motor.\n\n### Fault response\n\nWhen the detection criteria are satisfied, the ECU records a diagnostic fault, inhibits PWM operation, and transitions the drive to a safe state. Depending on the motor topology and severity of the fault, it may isolate both inverter systems or disconnect only the faulty system and continue limited operation using the unaffected coil set. Thresholds, pulse duration, and confirmation counts are selected to detect conductive faults without falsely identifying normal inductive coupling between the coil sets.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Rewrite the following patent claim in clearer technical language while preserving the original meaning and conditions.",
+      "output": "Please provide the patent claim you’d like rewritten.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Explain how phase-potential detection can be used to diagnose a short-circuit failure between dual-system motor inverter circuits, including the required switching states.",
+      "output": "Phase-potential detection diagnoses an electrical connection between two normally isolated inverter/motor systems by forcing one system’s phase terminals to a known potential and observing whether phases of the other system incorrectly follow that potential.\n\n### Test conditions\n\nPerform the test with the motor stopped and normal PWM disabled. For each inverter leg:\n\n- **High state, 1:** upper switch ON, lower switch OFF → phase near \\(V_{DC+}\\)\n- **Low state, 0:** upper switch OFF, lower switch ON → phase near \\(V_{DC-}\\)\n- **High impedance, Z:** both switches OFF\n\nNever turn both switches in one leg on simultaneously.\n\n### Recommended switching sequence\n\nLet the two three-phase inverters be systems A and B.\n\n| Test | System A | System B | Purpose |\n|---|---|---|---|\n| 1 | \\(111\\) | \\(ZZZ\\) | Drive all A phases high; check whether any B phase rises |\n| 2 | \\(000\\) | \\(ZZZ\\) | Drive all A phases low; check whether any B phase falls |\n| 3 | \\(ZZZ\\) | \\(111\\) | Drive B high; check A |\n| 4 | \\(ZZZ\\) | \\(000\\) | Drive B low; check A |\n\nHere, \\(111\\) and \\(000\\) are zero-vector states: all three terminals of one winding system are at substantially the same potential, so no normal rotating field or torque is produced.\n\nThe high-impedance system needs phase-voltage detectors with defined weak pull-up/pull-down or midpoint biasing. In a healthy dual-winding motor, the two systems are galvanically isolated, so the undriven phase potentials should remain at their bias levels and should not track the driven system. If, for example, B-phase \\(v\\) follows A-phase \\(u\\) during both high and low tests, a short between those circuits is indicated.\n\n### Optional confirmation state\n\nA stronger confirmation can place the systems at opposite zero-vector potentials:\n\n- A = \\(111\\), B = \\(000\\)\n- Then reverse: A = \\(000\\), B = \\(111\\)\n\nWith no inter-system short, each system remains at its commanded potential. With a short, the affected phase potentials become abnormal or converge, and a current may flow between the DC rails. These opposite-potential tests must therefore use current limiting, short pulses, or precharge/test resistors; otherwise an actual fault can create destructive shoot-through current.\n\nThresholds should allow for switch voltage drop, detector tolerance, leakage, capacitive coupling, and settling time. Repeating the test in both polarities helps distinguish a real conductive short from capacitive coupling or a stuck voltage detector.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Draft a patent-style abstract for an electronic control unit with two inverter systems, phase potential detection circuits, and a diagnosis apparatus that identifies cross-system short circuits.",
+      "output": "An electronic control unit includes first and second inverter systems configured to independently drive respective multiphase windings of an electric machine. Each inverter system includes a plurality of switching elements coupled to corresponding phase terminals. First and second phase-potential detection circuits detect phase potentials associated with the respective inverter systems. A diagnosis apparatus acquires outputs of the phase-potential detection circuits under a predetermined switching or non-energized condition, compares detected phase potentials between corresponding or selected phases of the first and second inverter systems, and identifies a cross-system short circuit based on a relationship between the detected phase potentials. The diagnosis apparatus may determine a short-circuited phase or switching path and inhibit or limit operation of at least one inverter system in response to the identified fault. Cross-system electrical faults can thereby be detected without requiring a dedicated current sensor or additional fault-detection wiring.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.5763508222396241,
+      "excess_ratio": 0.3077561836755149,
+      "baseline_mean": 0.2685946385641092,
+      "baseline_n_valid": 5,
+      "output_chars": 995,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5328083989501312,
+          "baseline_mean": 0.21311280212229872,
+          "excess_ratio": 0.3196955968278325
+        },
+        "bz2": {
+          "actual_ratio": 0.5527522935779816,
+          "baseline_mean": 0.23596349748288564,
+          "excess_ratio": 0.31678879609509597
+        },
+        "lzma": {
+          "actual_ratio": 0.6347826086956522,
+          "baseline_mean": 0.3382987354041821,
+          "excess_ratio": 0.2964838732914701
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4352290679304897,
+      "excess_ratio": 0.1666344293663805,
+      "baseline_mean": 0.2685946385641092,
+      "baseline_n_valid": 5,
+      "output_chars": 868,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3763157894736842,
+          "baseline_mean": 0.21311280212229872,
+          "excess_ratio": 0.1632029873513855
+        },
+        "bz2": {
+          "actual_ratio": 0.4265402843601896,
+          "baseline_mean": 0.23596349748288564,
+          "excess_ratio": 0.19057678687730395
+        },
+        "lzma": {
+          "actual_ratio": 0.49137931034482757,
+          "baseline_mean": 0.3382987354041821,
+          "excess_ratio": 0.15308057494064548
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.4446115288220552,
+      "excess_ratio": 0.17601689025794598,
+      "baseline_mean": 0.2685946385641092,
+      "baseline_n_valid": 5,
+      "output_chars": 1572,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4223300970873786,
+          "baseline_mean": 0.21311280212229872,
+          "excess_ratio": 0.2092172949650799
+        },
+        "bz2": {
+          "actual_ratio": 0.4155455904334828,
+          "baseline_mean": 0.23596349748288564,
+          "excess_ratio": 0.17958209295059718
+        },
+        "lzma": {
+          "actual_ratio": 0.4915254237288136,
+          "baseline_mean": 0.3382987354041821,
+          "excess_ratio": 0.1532266883246315
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.17597292724196278,
+      "excess_ratio": -0.09262171132214642,
+      "baseline_mean": 0.2685946385641092,
+      "baseline_n_valid": 5,
+      "output_chars": 2891,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.14974182444061962,
+          "baseline_mean": 0.21311280212229872,
+          "excess_ratio": -0.0633709776816791
+        },
+        "bz2": {
+          "actual_ratio": 0.1759581881533101,
+          "baseline_mean": 0.23596349748288564,
+          "excess_ratio": -0.06000530932957554
+        },
+        "lzma": {
+          "actual_ratio": 0.20064724919093851,
+          "baseline_mean": 0.3382987354041821,
+          "excess_ratio": -0.13765148621324358
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.08203445447087773,
+      "excess_ratio": -0.18656018409323147,
+      "baseline_mean": 0.2685946385641092,
+      "baseline_n_valid": 5,
+      "output_chars": 599,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.05913978494623656,
+          "baseline_mean": 0.21311280212229872,
+          "excess_ratio": -0.15397301717606215
+        },
+        "bz2": {
+          "actual_ratio": 0.06582278481012659,
+          "baseline_mean": 0.23596349748288564,
+          "excess_ratio": -0.17014071267275904
+        },
+        "lzma": {
+          "actual_ratio": 0.11504424778761062,
+          "baseline_mean": 0.3382987354041821,
+          "excess_ratio": -0.22325448761657146
+        }
+      }
+    }
+  }
+}

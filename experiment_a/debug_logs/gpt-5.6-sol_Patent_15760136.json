@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15760136",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA recording means records a value of pressure of fluid on a downstream side of a differential pressure generation means during a time period after a flow control valve open and control of a flow rate is started or after the flow control valve is closed and the control of a flow rate is stopped until a measured flow rate becomes stable, and a diagnostic means contrasts a controlled value acquired based in a value of the pressure of the fluid on the downstream side recorded by the recording means, with a controlled value when abnormality has not occurred, and diagnoses that abnormality has occurred in the flow meter when a difference between the both controlled values exceeds a threshold. Thereby, a mass flow controller and a diagnostic method which can simply diagnose generation of abnormality in a differential pressure type flow meter without requiring time only for performing the diagnosis.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA recording means records a value of pressure of fluid on a downstream side of a differential pressure generation means during a time period after a flow control valve open and control of a flow rate is started or after the flow control valve is closed and the control of a flow rate is stopped until a measured flow rate becomes stable, and a diagnostic means contrasts a controlled value acquired based in a value of the pressure of the fluid on the downstream side recorded by the recording means, with a controlled value when abnormality has not occurred, and diagnoses that abnormality has occurred in the flow meter when a difference between the both controlled values exceeds a threshold. Thereby, a mass flow controller and a diagnostic method which can simply diagnose generation of abnormality in a differential pressure type flow meter without requiring time only for performing the diagnosis.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A recording means captures downstream fluid pressure after the flow control valve is opened or closed until the measured flow rate stabilizes.\n- A diagnostic means derives a controlled value from the recorded downstream pressure.\n- The derived controlled value is compared with a normal-operation controlled value.\n- The flow meter is diagnosed as abnormal when the difference between the controlled values exceeds a threshold.\n- This method enables simple diagnosis of abnormalities in a differential-pressure flow meter without requiring dedicated diagnostic time.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA mass flow controller records downstream fluid pressure while flow stabilizes after valve opening or closing, then compares a pressure-derived control value with a normal reference to diagnose a differential-pressure flow meter. An abnormality is detected when the difference exceeds a threshold, enabling simple diagnosis without requiring dedicated diagnostic time.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Thereby"
+  },
+  "outputs": {
+    "L1": "A recording means records a fluid pressure value on a downstream side of a differential pressure generation means during a period extending from when a flow control valve is opened and flow-rate control is initiated, or from when the flow control valve is closed and flow-rate control is terminated, until a measured flow rate stabilizes. A diagnostic means compares a controlled value acquired based on the downstream fluid pressure value recorded by the recording means with a controlled value obtained when no abnormality has occurred, and diagnoses an abnormality in the flow meter when the difference between the two controlled values exceeds a threshold. Accordingly, a mass flow controller and a diagnostic method are provided that enable an abnormality in a differential-pressure-type flow meter to be easily diagnosed without requiring additional time dedicated solely to performing the diagnosis.",
+    "L2": "A recording unit stores the downstream fluid pressure value of a differential-pressure-generating unit during the interval beginning when the flow control valve is opened and flow-rate control starts, or when the valve is closed and flow-rate control stops, and ending when the measured flow rate stabilizes. A diagnostic unit compares a control value derived from the recorded downstream fluid pressure with a control value obtained under normal conditions. If the difference between these control values exceeds a predetermined threshold, the diagnostic unit determines that the flow meter is abnormal. This enables a mass flow controller and diagnostic method to easily detect an abnormality in a differential-pressure-type flow meter without requiring a separate period dedicated solely to diagnosis.",
+    "L3": "A recording means captures the downstream fluid pressure from the moment the flow control valve is opened or closed until the measured flow rate stabilizes. A diagnostic means then derives a controlled value based on the recorded downstream pressure and compares it with a corresponding controlled value obtained during normal operation. If the difference between the derived controlled value and the normal-operation controlled value exceeds a predetermined threshold, the differential-pressure flow meter is diagnosed as abnormal. This method allows abnormalities in the flow meter to be detected easily during routine valve operation, without requiring dedicated diagnostic time.",
+    "L4": "A mass flow controller includes a differential-pressure flow meter, a flow control valve, a downstream pressure sensor, and a diagnostic unit. When the control valve is opened or closed, the downstream fluid pressure is recorded during the period in which the flow rate transitions toward a stable state. From the recorded pressure data, the diagnostic unit obtains a control value representing the pressure response, such as a pressure change, a response rate, or a value measured at a predetermined point in the stabilization period.\n\nThe obtained control value is compared with a normal reference value previously established for proper operation of the differential-pressure flow meter. If the difference between the control value and the reference value exceeds a predetermined threshold, the diagnostic unit determines that an abnormality may be present in the flow meter or its pressure-sensing system. Because the diagnosis uses pressure behavior observed during ordinary valve-opening or valve-closing operations, it can be performed without interrupting normal flow control or setting aside a dedicated diagnostic period. The system therefore provides a simple and efficient way to detect deterioration, blockage, sensor failure, or other abnormalities affecting differential-pressure-based flow measurement.",
+    "L5": "**Thereby**\n\n“Thereby” is an adverb meaning **“by that means,” “as a result of that,”** or **“in that way.”** It connects an action with its consequence and is commonly used in formal or academic writing.\n\nFor example:\n\n- She completed the training, **thereby** improving her career prospects.\n- The company reduced its energy consumption, **thereby** lowering operating costs.\n- He apologized sincerely, **thereby** resolving the misunderstanding.\n\n“Thereby” helps make cause-and-effect relationships concise and clear. It usually appears after a comma and is followed by a verb ending in **-ing**."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style abstract for a mass flow controller that detects abnormalities in a differential-pressure flow meter by recording downstream pressure during flow stabilization and comparing a derived control value with a normal reference value.",
+      "output": "A mass flow controller includes a differential-pressure flow meter, a flow control valve, a downstream pressure sensor, and a control unit. During a flow stabilization period following initiation or adjustment of fluid flow, the control unit records downstream pressure values detected by the downstream pressure sensor. The control unit derives a control value from the recorded downstream pressure values, the control value representing a pressure response characteristic during flow stabilization. The derived control value is compared with a normal reference value corresponding to normal operation of the differential-pressure flow meter. When a difference between the derived control value and the normal reference value satisfies a predetermined abnormality criterion, the control unit determines that an abnormality is present in the differential-pressure flow meter and outputs an indication of the abnormality. Abnormal meter operation can thereby be detected without interrupting normal flow-control operation.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Describe an invention that can diagnose faults in a differential pressure type flow meter without requiring a separate diagnostic period.",
+      "output": "The invention is an **online diagnostic differential-pressure flowmeter**. During normal flow measurement, it continuously samples the pressures on the upstream and downstream sides of the restriction element, together with the resulting differential pressure.\n\nA processor separates the normal, slowly varying flow component from small pressure fluctuations and calculates diagnostic indicators—such as variance, correlation, or the relationship between the two pressure signals. Abnormal patterns are compared with stored reference values to detect faults such as:\n\n- blockage or leakage of the high- or low-pressure impulse line,\n- sensor drift or failure,\n- abnormal differential-pressure response.\n\nBecause the diagnostic calculations run in parallel with the ordinary flow-rate calculation, the meter does not need to stop measuring, apply a special test pressure, or reserve a separate diagnostic period. It can therefore report both the measured flow rate and any detected fault continuously.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write a single-paragraph patent summary explaining how downstream fluid pressure is recorded after opening or closing a flow control valve, then used to identify flow-meter abnormalities based on a threshold comparison.",
+      "output": "A flow-monitoring system detects abnormalities in a flow meter by recording downstream fluid pressure after a flow control valve is opened or closed and evaluating the resulting pressure response. A controller acquires one or more pressure measurements from a pressure sensor located downstream of the valve at a predetermined time or over a specified interval following the valve operation, and compares the recorded pressure value, pressure change, or pressure-response characteristic with a predefined threshold. When the comparison indicates that the downstream pressure response falls outside an expected range, the controller identifies a potential flow-meter abnormality and may generate a diagnostic indication, alarm, or maintenance request.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Convert the following concept into formal patent language: monitor pressure downstream of a differential-pressure generator while the measured flow rate stabilizes, compare the resulting controlled value against a normal value, and diagnose a fault when the difference exceeds a threshold.",
+      "output": "A diagnostic method for a flow measurement system including a differential-pressure generator, the method comprising:\n\nmonitoring a pressure at a location downstream of the differential-pressure generator during a stabilization period in which a measured flow rate approaches a steady-state condition;\n\ndetermining, based on the monitored pressure during the stabilization period, a controlled pressure value;\n\ncomparing the controlled pressure value with a predetermined normal pressure value;\n\ndetermining a difference between the controlled pressure value and the predetermined normal pressure value; and\n\ndiagnosing a fault in the flow measurement system in response to the difference exceeding a predetermined threshold.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide an English abstract for a Japanese patent concerning a mass flow controller and diagnostic method that uses transient downstream-pressure data to detect abnormalities in a differential-pressure flow meter.",
+      "output": "A mass flow controller includes a differential-pressure flow meter, a flow-control valve, a downstream-pressure sensor, and a diagnostic unit. During a predetermined transient operation, such as opening or closing the flow-control valve or changing a flow-rate setpoint, the diagnostic unit acquires time-series downstream-pressure data. A characteristic value derived from the transient pressure response is compared with a reference value or an expected response calculated from operating conditions. Based on the comparison, the controller detects an abnormality in the differential-pressure flow meter, including deterioration, blockage, leakage, or sensor malfunction. The method enables in-situ diagnosis without removing the mass flow controller or using an external flow-measuring device.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.5400616332819723,
+      "excess_ratio": 0.3021416486300844,
+      "baseline_mean": 0.23791998465188788,
+      "baseline_n_valid": 5,
+      "output_chars": 906,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5115089514066496,
+          "baseline_mean": 0.18492388922094702,
+          "excess_ratio": 0.3265850621857026
+        },
+        "bz2": {
+          "actual_ratio": 0.48491879350348027,
+          "baseline_mean": 0.2344375044222642,
+          "excess_ratio": 0.2504812890812161
+        },
+        "lzma": {
+          "actual_ratio": 0.6134453781512605,
+          "baseline_mean": 0.28474385393989504,
+          "excess_ratio": 0.3287015242113655
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4102564102564103,
+      "excess_ratio": 0.17233642560452242,
+      "baseline_mean": 0.23791998465188788,
+      "baseline_n_valid": 5,
+      "output_chars": 804,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.35911602209944754,
+          "baseline_mean": 0.18492388922094702,
+          "excess_ratio": 0.17419213287850052
+        },
+        "bz2": {
+          "actual_ratio": 0.37220843672456577,
+          "baseline_mean": 0.2344375044222642,
+          "excess_ratio": 0.13777093230230159
+        },
+        "lzma": {
+          "actual_ratio": 0.4864864864864865,
+          "baseline_mean": 0.28474385393989504,
+          "excess_ratio": 0.20174263254659147
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.5899082568807339,
+      "excess_ratio": 0.351988272228846,
+      "baseline_mean": 0.23791998465188788,
+      "baseline_n_valid": 5,
+      "output_chars": 682,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5644171779141104,
+          "baseline_mean": 0.18492388922094702,
+          "excess_ratio": 0.37949328869316334
+        },
+        "bz2": {
+          "actual_ratio": 0.547752808988764,
+          "baseline_mean": 0.2344375044222642,
+          "excess_ratio": 0.3133153045664998
+        },
+        "lzma": {
+          "actual_ratio": 0.6470588235294118,
+          "baseline_mean": 0.28474385393989504,
+          "excess_ratio": 0.36231496958951676
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.22481040086673895,
+      "excess_ratio": -0.013109583785148926,
+      "baseline_mean": 0.23791998465188788,
+      "baseline_n_valid": 5,
+      "output_chars": 1318,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.17850953206239167,
+          "baseline_mean": 0.18492388922094702,
+          "excess_ratio": -0.006414357158555345
+        },
+        "bz2": {
+          "actual_ratio": 0.21818181818181817,
+          "baseline_mean": 0.2344375044222642,
+          "excess_ratio": -0.016255686240446016
+        },
+        "lzma": {
+          "actual_ratio": 0.2710843373493976,
+          "baseline_mean": 0.28474385393989504,
+          "excess_ratio": -0.013659516590497467
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.08534482758620689,
+      "excess_ratio": -0.15257515706568098,
+      "baseline_mean": 0.23791998465188788,
+      "baseline_n_valid": 5,
+      "output_chars": 599,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04519774011299435,
+          "baseline_mean": 0.18492388922094702,
+          "excess_ratio": -0.13972614910795267
+        },
+        "bz2": {
+          "actual_ratio": 0.082010582010582,
+          "baseline_mean": 0.2344375044222642,
+          "excess_ratio": -0.15242692241168218
+        },
+        "lzma": {
+          "actual_ratio": 0.12149532710280374,
+          "baseline_mean": 0.28474385393989504,
+          "excess_ratio": -0.1632485268370913
+        }
+      }
+    }
+  }
+}

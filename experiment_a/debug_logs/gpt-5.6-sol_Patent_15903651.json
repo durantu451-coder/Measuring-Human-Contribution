@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15903651",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA method for dispatching buildings in a demand response program event including generating data sets for each of the buildings, each set having energy consumption values along with corresponding time and outside temperature values, where the energy consumption values within each set are shifted by one of a plurality of lag values relative to the corresponding time and outside temperature values, and where each of the plurality of lag values is different from other ones of the plurality of lag values; performing a non-linear parabolic analysis on each set to yield machine learning model parameters and a residual; determining a least valued residual from all residuals yielded, the least valued residual indicating a corresponding energy lag for the each of the buildings; and using energy lags for all of the buildings to generate a dispatch schedule for the demand response program event according to a prioritization of the energy lags.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA method for dispatching buildings in a demand response program event including generating data sets for each of the buildings, each set having energy consumption values along with corresponding time and outside temperature values, where the energy consumption values within each set are shifted by one of a plurality of lag values relative to the corresponding time and outside temperature values, and where each of the plurality of lag values is different from other ones of the plurality of lag values; performing a non-linear parabolic analysis on each set to yield machine learning model parameters and a residual; determining a least valued residual from all residuals yielded, the least valued residual indicating a corresponding energy lag for the each of the buildings; and using energy lags for all of the buildings to generate a dispatch schedule for the demand response program event according to a prioritization of the energy lags.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- Data sets are generated for each building using energy consumption, time, and outside temperature values.\n- Energy consumption values are shifted relative to time and temperature data using multiple distinct lag values.\n- A non-linear parabolic analysis is performed on each data set to produce machine learning model parameters and a residual.\n- The lowest residual identifies the corresponding energy lag for each building.\n- The buildings’ energy lags are prioritized to generate a dispatch schedule for the demand response event.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe method dispatches buildings during a demand-response event by creating energy-consumption datasets with varying time and temperature lags and applying nonlinear parabolic analysis to generate machine-learning parameters and residuals. The lowest residual identifies each building’s energy lag, enabling a prioritized dispatch schedule that accounts for differences in building response timing.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: A method for"
+  },
+  "outputs": {
+    "L1": "A method for dispatching buildings during a demand response program event includes: generating data sets for each building, each data set comprising energy consumption values and corresponding time and outside temperature values, wherein the energy consumption values in each data set are shifted, relative to the corresponding time and outside temperature values, by one of a plurality of lag values, each of which differs from the others; performing a nonlinear parabolic analysis on each data set to obtain machine-learning model parameters and a residual; identifying the lowest residual among all residuals obtained, the lowest residual indicating a corresponding energy lag for each building; and using the energy lags for all buildings to generate a dispatch schedule for the demand response program event based on a prioritization of the energy lags.",
+    "L2": "A technique for scheduling buildings during a demand-response event comprises creating multiple data sets for every building. Each data set contains energy-use measurements and associated time and outdoor-temperature measurements, with the energy-use measurements offset from the corresponding time and temperature measurements by a distinct lag selected from several different lag values. A nonlinear parabolic analysis is applied to every data set to produce machine-learning model parameters and a residual. For each building, the smallest resulting residual is identified, and its associated lag represents that building’s energy lag. The energy lags determined for all buildings are then prioritized to establish the dispatch schedule for the demand-response event.",
+    "L3": "For each building, a dataset is created using energy consumption, time, and outdoor temperature measurements. Multiple versions of the dataset are then generated by shifting the energy consumption values relative to the corresponding time and temperature data according to a series of distinct lag intervals.\n\nA nonlinear parabolic analysis is performed on each lagged dataset to estimate the machine learning model parameters and calculate the associated residual error. The lag that produces the lowest residual is selected as the building’s energy lag, representing the strongest temporal relationship between energy consumption and the time and temperature variables.\n\nAfter an energy lag has been identified for every building, the buildings are prioritized based on their respective lag values. This prioritization is then used to create a dispatch schedule for the demand response event.",
+    "L4": "The method provides a systematic way to schedule buildings during a demand-response event while accounting for the fact that each building may react to control actions at a different rate. It begins by collecting time-series data for each building, including energy consumption, outdoor temperature, time-related variables, and, when available, prior demand-response commands or equipment operating states. The data are cleaned, synchronized, and divided into datasets representing a range of candidate time and temperature lags. These lagged datasets reflect the possibility that current energy use may depend on conditions or control actions that occurred several minutes or hours earlier.\n\nA nonlinear parabolic analysis is then applied to each candidate dataset. In practice, this analysis fits a quadratic or similarly nonlinear relationship between energy consumption and the relevant explanatory variables. The fitting process produces machine-learning model parameters that characterize the building’s response, along with residuals representing the differences between predicted and observed energy consumption. A smaller residual indicates that the corresponding combination of lagged variables explains the building’s behavior more accurately.\n\nThe candidate models are compared, and the model with the lowest residual is selected for each building. The lag associated with that model is treated as the building’s estimated energy-response lag. Thus, a building whose minimum residual occurs at a short lag is classified as responding relatively quickly, while a building whose minimum occurs at a longer lag is expected to require more time before a measurable change in demand appears.\n\nThese estimated lags are used to create a prioritized dispatch schedule. Buildings with longer response times may be activated earlier so that their demand reductions become available when needed, while faster-responding buildings may be dispatched later or retained for rapid adjustments. The schedule can also be combined with other operational criteria, such as expected load reduction, occupant comfort, equipment constraints, and event duration.\n\nBy basing dispatch timing on measured building behavior rather than applying the same command time to every facility, the method improves coordination across a diverse building portfolio. It helps align individual building responses with the demand-response target, reduces the risk of delayed or poorly timed load reductions, and provides a repeatable, data-driven process for updating dispatch priorities as new operating data become available.",
+    "L5": "Could you clarify the complete topic? “A method for” appears incomplete. Please specify what the method should accomplish, along with any preferred length, style, or audience."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style abstract for a method that prioritizes buildings for dispatch during a demand response event based on estimated energy-consumption lags.",
+      "output": "A computer-implemented method for prioritizing buildings for dispatch during a demand response event includes receiving energy-consumption data and operational data for a plurality of buildings; estimating, for each building, a temporal lag between issuance of a control instruction and a resulting change in energy consumption; and determining a dispatch priority for each building based at least in part on the estimated temporal lag. The method further includes generating a dispatch schedule that sequences control instructions among the buildings according to the dispatch priorities and a target load-reduction profile. Control instructions are transmitted to building energy-management systems in accordance with the dispatch schedule. Measured energy-consumption responses may be compared with predicted responses to update the estimated temporal lags and dynamically modify the dispatch schedule during the demand response event. By accounting for building-specific response delays, the method improves coordination of aggregated load changes and alignment with event timing requirements.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Describe a method for generating a demand response dispatch schedule by shifting building energy data across multiple lag values, fitting nonlinear parabolic models, comparing residuals, and prioritizing the resulting lags.",
+      "output": "A demand-response dispatch schedule can be generated as follows:\n\n1. **Collect and preprocess data**\n   - Obtain time-aligned building energy consumption and relevant explanatory data, such as temperature, occupancy, electricity price, or prior dispatch events.\n   - Remove invalid readings, normalize intervals, and separate training and scheduling periods.\n\n2. **Create lagged datasets**\n   - Select candidate lag values \\(L=\\{\\ell_1,\\ell_2,\\ldots,\\ell_m\\}\\), representing possible delays between a control action and the building’s energy response.\n   - For each lag \\(\\ell\\), shift the building-energy series relative to the explanatory or control data:\n     \\[\n     y_{\\ell}(t)=y(t+\\ell)\n     \\]\n   - Retain only time records for which all required shifted values are available.\n\n3. **Fit a nonlinear parabolic model for each lag**\n   - For each lagged dataset, fit a quadratic model such as:\n     \\[\n     \\hat y_{\\ell}(t)=\\beta_{0,\\ell}+\\beta_{1,\\ell}x(t)+\\beta_{2,\\ell}x(t)^2\n     \\]\n     or, for multiple variables,\n     \\[\n     \\hat y_{\\ell}(t)=\\beta_{0,\\ell}\n       +\\sum_j\\beta_{j,\\ell}x_j(t)\n       +\\sum_j\\gamma_{j,\\ell}x_j(t)^2\n       +\\sum_{j<k}\\delta_{jk,\\ell}x_j(t)x_k(t).\n     \\]\n   - The parabola represents nonlinear building response, including saturation or rebound effects.\n\n4. **Calculate residuals**\n   - For each lag, compute:\n     \\[\n     e_{\\ell}(t)=y_{\\ell}(t)-\\hat y_{\\ell}(t).\n     \\]\n   - Summarize model error using residual sum of squares, RMSE, MAE, cross-validated error, or a weighted metric:\n     \\[\n     RSS_{\\ell}=\\sum_t e_{\\ell}(t)^2.\n     \\]\n   - Optionally penalize models with biased, autocorrelated, or unstable residuals.\n\n5. **Prioritize the lags**\n   - Rank candidate lags from the smallest residual metric to the largest.\n   - Convert the ranking into a priority score, for example:\n     \\[\n     P_{\\ell}=\\frac{1/(RMSE_{\\ell}+\\epsilon)}\n     {\\sum_k 1/(RMSE_k+\\epsilon)}.\n     \\]\n   - The highest-ranked lag represents the delay for which the parabolic model best explains or predicts the building’s response. Several top lags may be retained if their performance is statistically similar.\n\n6. **Translate prioritized lags into dispatch times**\n   - For a desired load reduction or increase at target time \\(T\\), schedule the control command at:\n     \\[\n     T_{\\text{dispatch}}=T-\\ell.\n     \\]\n   - Allocate dispatch capacity first to the highest-priority lag, then to lower-ranked lags as needed to meet the target while respecting comfort, equipment, ramp-rate, and minimum-duration constraints.\n\n7. **Validate and update**\n   - Simulate the proposed schedule using the fitted models.\n   - After each event, compare actual and predicted response, append the new data, refit the parabolic models, recompute residuals, and update the lag priorities.\n\nThe resulting schedule therefore favors dispatch lead times that have historically produced the most consistent nonlinear relationship between control conditions and measured building-energy response.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write one patent claim covering a building dispatch technique that correlates energy consumption with time and outdoor temperature, identifies each building’s lag using minimum model residuals, and schedules dispatch accordingly.",
+      "output": "1. **A computer-implemented method for dispatching a plurality of buildings, the method comprising:** obtaining, for each building of the plurality of buildings, time-series data comprising energy consumption, corresponding times, and outdoor temperatures; generating, for each building, a plurality of candidate energy-consumption models that correlate the energy consumption with time and outdoor temperature, each candidate energy-consumption model associating the outdoor temperature with the energy consumption according to a different candidate temporal lag; determining a residual for each candidate energy-consumption model based on a difference between modeled energy consumption and measured energy consumption; identifying, for each building, a building-specific temporal lag corresponding to the candidate energy-consumption model having a minimum residual; determining a dispatch schedule for the plurality of buildings based on the respective building-specific temporal lags and predicted outdoor temperatures, such that dispatch of at least two of the buildings occurs at different times; and transmitting one or more control signals according to the dispatch schedule to modify energy consumption of the plurality of buildings.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Summarize an invention that applies machine learning to historical building energy-consumption and outside-temperature data to determine thermal response delays and optimize demand response dispatch order.",
+      "output": "The invention uses machine learning to analyze historical building energy-consumption data alongside outdoor-temperature records. It estimates each building’s thermal response delay—how long indoor conditions and energy demand take to react to temperature changes or control actions. These learned response characteristics are then used to rank buildings for demand-response dispatch, prioritizing those that can reduce or shift load most effectively while maintaining occupant comfort. The approach improves dispatch timing, load forecasting, and overall demand-response performance.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "In formal technical language, explain how to estimate energy lags for multiple buildings through lagged datasets and nonlinear parabolic analysis, then use those lags to create a prioritized demand response schedule.",
+      "output": "## 1. Data preparation and lagged dataset construction\n\nFor each building \\(i\\), assemble synchronized time-series data at interval \\(\\Delta t\\):\n\n\\[\n\\mathcal D_i=\n\\left\\{\nP_i(t),\\, T_o(t),\\, T_i(t),\\, u_i(t),\\, q_i(t),\\, o_i(t),\\, c(t)\n\\right\\},\n\\]\n\nwhere:\n\n- \\(P_i(t)\\): electrical demand,\n- \\(T_o(t)\\), \\(T_i(t)\\): outdoor and indoor temperatures,\n- \\(u_i(t)\\): controllable HVAC or equipment command,\n- \\(q_i(t)\\): solar gain or other exogenous thermal input,\n- \\(o_i(t)\\): occupancy or operational state,\n- \\(c(t)\\): calendar and tariff variables.\n\nResample all signals to a common clock, remove physically implausible observations, impute only short gaps, and normalize continuous variables. Calendar, occupancy, and operating-mode indicators should remain explicit because otherwise daily schedules may be mistaken for physical delay.\n\nFor a maximum candidate delay \\(L\\), construct lagged regressors\n\n\\[\n\\mathbf x_{i,t}^{(L)}\n=\n\\left[\nu_i(t),u_i(t-\\Delta t),\\ldots,u_i(t-L),\nP_i(t-\\Delta t),\\ldots,\nT_o(t),T_o(t-\\Delta t),\\ldots\n\\right].\n\\]\n\nThe maximum lag should exceed the expected thermal response time but remain short enough to avoid excessive collinearity. For typical building applications, \\(L\\) may range from several hours to one or two days, depending on sampling frequency and thermal mass.\n\n---\n\n## 2. Baseline and residual-response separation\n\nEstimate a non-intervention baseline\n\n\\[\n\\widehat P_i^{\\,0}(t)\n=\nf_i\\!\\left(\nT_o(t),q_i(t),o_i(t),c(t),P_i(t-\\Delta t),\\ldots\n\\right),\n\\]\n\nusing data that exclude demand-response events where possible. The model \\(f_i\\) may be a generalized additive model, gradient-boosted model, nonlinear autoregression, or a physically informed state-space model.\n\nDefine the demand deviation\n\n\\[\n\\Delta P_i(t)=P_i(t)-\\widehat P_i^{\\,0}(t).\n\\]\n\nEstimating delays from \\(\\Delta P_i(t)\\), rather than raw demand, reduces confounding by weather, occupancy, and recurring schedules.\n\n---\n\n## 3. Nonlinear lag-response model\n\nA practical nonlinear distributed-lag model is\n\n\\[\n\\Delta P_i(t)\n=\n\\alpha_i+\n\\sum_{\\ell=0}^{L}\ng_{i,\\ell}\\!\\left(u_i(t-\\ell)\\right)\n+\nh_i\\!\\left(T_o(t),T_i(t),o_i(t)\\right)\n+\\varepsilon_i(t),\n\\]\n\nwhere \\(g_{i,\\ell}\\) represents the possibly nonlinear effect of a control action applied \\(\\ell\\) intervals earlier. Nonlinearity may be represented by splines, kernels, shallow neural networks, or polynomial basis functions.\n\nAn alternative continuous-delay formulation is\n\n\\[\n\\Delta P_i(t)=\nF_i\\!\\left(u_i(t-\\tau_i),\\mathbf z_i(t);\\theta_i\\right)\n+\\varepsilon_i(t),\n\\]\n\nwhere \\(\\tau_i\\) is the unknown effective lag and \\(\\mathbf z_i(t)\\) contains weather, occupancy, and state variables.\n\nFor every candidate lag \\(\\tau\\), fit the nonlinear model on a training set and compute a blocked validation loss:\n\n\\[\nJ_i(\\tau)\n=\n\\frac{1}{|\\mathcal V|}\n\\sum_{t\\in\\mathcal V}\n\\left[\n\\Delta P_i(t)-\n\\widehat{\\Delta P}_i(t;\\tau)\n\\right]^2.\n\\]\n\nTime-blocked or event-blocked validation is necessary; random cross-validation leaks temporally adjacent information and generally understates lag uncertainty.\n\n---\n\n## 4. Parabolic refinement of the lag estimate\n\nThe discrete lag grid limits resolution to \\(\\Delta t\\). To estimate a sub-interval optimum, approximate the validation-loss surface near its discrete minimum by a parabola.\n\nLet \\(k^\\star\\) be the lag index having the lowest loss, with adjacent values\n\n\\[\nJ_{-}=J_i((k^\\star-1)\\Delta t),\\quad\nJ_0=J_i(k^\\star\\Delta t),\\quad\nJ_{+}=J_i((k^\\star+1)\\Delta t).\n\\]\n\nAssuming local convexity, the parabolically interpolated lag is\n\n\\[\n\\widehat{\\tau}_i\n=\n\\Delta t\n\\left[\nk^\\star+\n\\frac{J_{-}-J_{+}}\n{2(J_{-}-2J_0+J_{+})}\n\\right].\n\\]\n\nEquivalently, fit\n\n\\[\nJ_i(\\tau)\\approx a_i\\tau^2+b_i\\tau+c_i,\n\\qquad a_i>0,\n\\]\n\nand take\n\n\\[\n\\widehat{\\tau}_i=-\\frac{b_i}{2a_i}.\n\\]\n\nThe parabola should be treated as a local interpolation of a nonlinear objective, not as a global physical model. If the estimated curvature satisfies \\(a_i\\leq 0\\), or if multiple comparable minima occur, the lag is not reliably identified. In that case, report a lag interval or multiple response modes rather than a single value.\n\nBootstrap complete days or complete intervention events to obtain uncertainty:\n\n\\[\n\\widehat{\\tau}_i^{(1)},\\ldots,\\widehat{\\tau}_i^{(B)}.\n\\]\n\nFrom these replicates, calculate a confidence interval and a reliability statistic such as\n\n\\[\nr_i=\n\\Pr\\!\\left(\n\\tau_i\\in\n[\\widehat{\\tau}_i-\\delta,\\widehat{\\tau}_i+\\delta]\n\\right).\n\\]\n\n---\n\n## 5. Thermal parabolic-model interpretation\n\nIf “parabolic analysis” refers to a nonlinear parabolic differential equation rather than quadratic interpolation, represent the building thermal field as\n\n\\[\n\\rho_i c_i(T)\\frac{\\partial T}{\\partial t}\n=\n\\nabla\\cdot\\left(k_i(T)\\nabla T\\right)\n+s_i(\\mathbf x,t,u_i),\n\\]\n\nsubject to envelope, HVAC, and ambient boundary conditions. This nonlinear heat equation is parabolic and describes diffusion of thermal disturbances through the structure.\n\nAfter parameter calibration, apply a step or pulse in \\(u_i\\), simulate \\(P_i(t)\\) and zone constraints, and define:\n\n- **onset lag**: first time the predicted response exceeds a noise threshold;\n- **peak lag**:\n  \\[\n  \\tau_i^{\\text{peak}}=\n  \\arg\\max_{\\tau\\ge 0}\n  |\\Delta P_i(t+\\tau)|;\n  \\]\n- **centroid lag**:\n  \\[\n  \\tau_i^{\\text{centroid}}\n  =\n  \\frac{\\int_0^\\infty \\tau |\\Delta P_i(t+\\tau)|\\,d\\tau}\n       {\\int_0^\\infty |\\Delta P_i(t+\\tau)|\\,d\\tau};\n  \\]\n- **recovery time**: time until demand and temperature return to a specified tolerance band.\n\nFor scheduling, peak or centroid lag is generally more useful than onset lag, while recovery time is needed to manage rebound.\n\n---\n\n## 6. Convert lag estimates into dispatch quantities\n\nFor each building \\(i\\), estimate:\n\n- \\(\\widehat{\\tau}_i\\): effective response lag;\n- \\(F_i(t)\\): available curtailable power;\n- \\(E_i(t)\\): sustainable curtailed energy;\n- \\(d_i\\): permissible intervention duration;\n- \\(R_i\\): expected rebound magnitude;\n- \\(\\tau_i^{\\mathrm{rec}}\\): recovery time;\n- \\(C_i(t)\\): discomfort, process, or operational cost;\n- \\(r_i\\): confidence in the estimated response;\n- \\(A_i(t)\\in\\{0,1\\}\\): availability and eligibility.\n\nIf the grid requires reduction during target interval \\(t^\\star\\), issue the command approximately at\n\n\\[\nt_i^{\\mathrm{cmd}}=t^\\star-\\widehat{\\tau}_i.\n\\]\n\nFor a target window \\([t_s,t_e]\\), buildings with long lags are dispatched earlier; buildings with short lags are retained for fast correction and forecast-error management.\n\n---\n\n## 7. Priority score\n\nAt each scheduling step, calculate a normalized score such as\n\n\\[\nS_i(t)=\nw_F\\widetilde F_i(t)\n+w_E\\widetilde E_i(t)\n+w_R r_i\n-w_C\\widetilde C_i(t)\n-w_B\\widetilde R_i\n-w_U\\widetilde \\sigma_{\\tau_i}\n-w_M M_i(t),\n\\]\n\nwhere:\n\n- tildes denote normalized quantities;\n- \\(\\sigma_{\\tau_i}\\) is lag uncertainty;\n- \\(M_i(t)\\) penalizes recent dispatches to promote fairness;\n- \\(w_\\cdot\\) are policy weights.\n\nA building is prioritized only if its predicted response overlaps the required reduction interval:\n\n\\[\nA_i(t)=1\n\\quad\\text{and}\\quad\nt+\\widehat{\\tau}_i\\in[t_s,t_e].\n\\]\n\nA useful distinction is:\n\n1. **Pre-dispatch tier:** long-lag, high-inertia buildings;\n2. **Primary tier:** high-capacity, low-cost buildings whose peak response aligns with the event;\n3. **Regulation tier:** short-lag buildings reserved for real-time correction;\n4. **Recovery tier:** buildings scheduled to prevent coincident rebound.\n\n---\n\n## 8. Optimization-based schedule\n\nRather than ranking alone, define binary or continuous dispatch variables \\(x_{i,t}\\), where \\(x_{i,t}\\in[0,1]\\) is the fraction of available flexibility activated. Let \\(K_i(\\ell)\\) be the estimated impulse-response kernel for building \\(i\\). The expected aggregate reduction is\n\n\\[\n\\widehat D(t)\n=\n\\sum_i\\sum_{\\ell=0}^{L}\nK_i(\\ell)F_i(t-\\ell)x_{i,t-\\ell}.\n\\]\n\nSolve\n\n\\[\n\\min_{x}\n\\sum_t\n\\left[\nD^{\\mathrm{req}}(t)-\\widehat D(t)\n\\right]^2\n+\n\\lambda_C\\sum_{i,t}C_i(t)x_{i,t}\n+\n\\lambda_B\\sum_{i,t}R_i(t)x_{i,t}\n+\n\\lambda_S\\sum_{i,t}|x_{i,t}-x_{i,t-1}|,\n\\]\n\nsubject to\n\n\\[\n0\\le x_{i,t}\\le A_i(t),\n\\]\n\n\\[\nT_i^{\\min}\\le \\widehat T_i(t)\\le T_i^{\\max},\n\\]\n\n\\[\n\\sum_t x_{i,t}\\Delta t\\le d_i^{\\max},\n\\]\n\ntogether with minimum on/off times, ramp limits, equipment constraints, customer opt-outs, recovery periods, and feeder capacity restrictions.\n\nLag uncertainty can be handled by robustly enforcing the target for\n\n\\[\n\\tau_i\\in\n[\\widehat{\\tau}_i-z\\sigma_{\\tau_i},\n \\widehat{\\tau}_i+z\\sigma_{\\tau_i}],\n\\]\n\nor by reducing the credited flexibility:\n\n\\[\nF_i^{\\mathrm{credit}}=r_iF_i.\n\\]\n\n---\n\n## 9. Example schedule logic\n\nFor an event beginning at 17:00:\n\n| Building | Estimated lag | Dispatch role | Nominal command time |\n|---|---:|---|---:|\n| High-mass office | 120 min | Pre-cooling or early load reduction | 15:00 |\n| University building | 60 min | Primary response | 16:00 |\n| Retail building | 20 min | Fast corrective response | 16:40 |\n| Battery-assisted site | 1–5 min | Real-time balancing reserve | Near 17:00 |\n\nRecovery should be staggered after the event. If all buildings return to normal simultaneously, the rebound peak can offset the demand-response benefit.\n\n---\n\n## 10. Operational validation\n\nDuring each event, compare measured and predicted reductions:\n\n\\[\ne_i(t)=\n\\Delta P_i^{\\mathrm{meas}}(t)\n-\n\\Delta P_i^{\\mathrm{pred}}(t).\n\\]\n\nUpdate the nonlinear model, lag estimate, response kernel, and uncertainty using rolling or recursive estimation. Buildings with persistent timing errors, weak excitation, or unstable occupancy effects should receive lower priority until sufficient new data are collected.\n\nThe resulting process is therefore: construct lagged datasets, isolate intervention effects, fit nonlinear response models, refine each lag through local parabolic analysis or a calibrated parabolic heat model, quantify uncertainty, and dispatch buildings in advance of the target interval according to response timing, available flexibility, comfort cost, reliability, and rebound risk.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6458832933653078,
+      "excess_ratio": 0.4943553296627987,
+      "baseline_mean": 0.1515279637025091,
+      "baseline_n_valid": 5,
+      "output_chars": 858,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6283422459893048,
+          "baseline_mean": 0.12270754629490284,
+          "excess_ratio": 0.5056346996944019
+        },
+        "bz2": {
+          "actual_ratio": 0.5914489311163895,
+          "baseline_mean": 0.1344411505608402,
+          "excess_ratio": 0.45700778055554936
+        },
+        "lzma": {
+          "actual_ratio": 0.7105263157894737,
+          "baseline_mean": 0.1913510496086785,
+          "excess_ratio": 0.5191752661807951
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3931088488645263,
+      "excess_ratio": 0.2415808851620172,
+      "baseline_mean": 0.1515279637025091,
+      "baseline_n_valid": 5,
+      "output_chars": 770,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3316062176165803,
+          "baseline_mean": 0.12270754629490284,
+          "excess_ratio": 0.2088986713216775
+        },
+        "bz2": {
+          "actual_ratio": 0.3700234192037471,
+          "baseline_mean": 0.1344411505608402,
+          "excess_ratio": 0.2355822686429069
+        },
+        "lzma": {
+          "actual_ratio": 0.46551724137931033,
+          "baseline_mean": 0.1913510496086785,
+          "excess_ratio": 0.27416619177063184
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.42219215155615697,
+      "excess_ratio": 0.2706641878536479,
+      "baseline_mean": 0.1515279637025091,
+      "baseline_n_valid": 5,
+      "output_chars": 894,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.40350877192982454,
+          "baseline_mean": 0.12270754629490284,
+          "excess_ratio": 0.2808012256349217
+        },
+        "bz2": {
+          "actual_ratio": 0.3651452282157676,
+          "baseline_mean": 0.1344411505608402,
+          "excess_ratio": 0.23070407765492743
+        },
+        "lzma": {
+          "actual_ratio": 0.4888888888888889,
+          "baseline_mean": 0.1913510496086785,
+          "excess_ratio": 0.2975378392802104
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.14762840303115354,
+      "excess_ratio": -0.003899560671355551,
+      "baseline_mean": 0.1515279637025091,
+      "baseline_n_valid": 5,
+      "output_chars": 2598,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.11972437553832903,
+          "baseline_mean": 0.12270754629490284,
+          "excess_ratio": -0.002983170756573811
+        },
+        "bz2": {
+          "actual_ratio": 0.1457242582897033,
+          "baseline_mean": 0.1344411505608402,
+          "excess_ratio": 0.011283107728863123
+        },
+        "lzma": {
+          "actual_ratio": 0.1751592356687898,
+          "baseline_mean": 0.1913510496086785,
+          "excess_ratio": -0.016191813939888694
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.26180257510729615,
+      "excess_ratio": 0.11027461140478706,
+      "baseline_mean": 0.1515279637025091,
+      "baseline_n_valid": 5,
+      "output_chars": 175,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.15503875968992248,
+          "baseline_mean": 0.12270754629490284,
+          "excess_ratio": 0.03233121339501964
+        },
+        "bz2": {
+          "actual_ratio": 0.24203821656050956,
+          "baseline_mean": 0.1344411505608402,
+          "excess_ratio": 0.10759706599966937
+        },
+        "lzma": {
+          "actual_ratio": 0.35555555555555557,
+          "baseline_mean": 0.1913510496086785,
+          "excess_ratio": 0.16420450594687708
+        }
+      }
+    }
+  }
+}

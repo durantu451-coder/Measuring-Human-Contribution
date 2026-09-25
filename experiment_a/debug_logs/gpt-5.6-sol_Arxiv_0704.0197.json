@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0197",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIn this work we consider random Boolean networks that provide a general model for genetic regulatory networks. We extend the analysis of James Lynch who was able to proof Kauffman's conjecture that in the ordered phase of random networks, the number of ineffective and freezing gates is large, where as in the disordered phase their number is small. Lynch proved the conjecture only for networks with connectivity two and non-uniform probabilities for the Boolean functions. We show how to apply the proof to networks with arbitrary connectivity $K$ and to random networks with biased Boolean functions. It turns out that in these cases Lynch's parameter $\\lambda$ is equivalent to the expectation of average sensitivity of the Boolean functions used to construct the network. Hence we can apply a known theorem for the expectation of the average sensitivity. In order to prove the results for networks with biased functions, we deduct the expectation of the average sensitivity when only functions with specific connectivity and specific bias are chosen at random.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIn this work we consider random Boolean networks that provide a general model for genetic regulatory networks. We extend the analysis of James Lynch who was able to proof Kauffman's conjecture that in the ordered phase of random networks, the number of ineffective and freezing gates is large, where as in the disordered phase their number is small. Lynch proved the conjecture only for networks with connectivity two and non-uniform probabilities for the Boolean functions. We show how to apply the proof to networks with arbitrary connectivity $K$ and to random networks with biased Boolean functions. It turns out that in these cases Lynch's parameter $\\lambda$ is equivalent to the expectation of average sensitivity of the Boolean functions used to construct the network. Hence we can apply a known theorem for the expectation of the average sensitivity. In order to prove the results for networks with biased functions, we deduct the expectation of the average sensitivity when only functions with specific connectivity and specific bias are chosen at random.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- Random Boolean networks are considered as a general model for genetic regulatory networks.\n- The work extends James Lynch’s proof of Kauffman’s conjecture from connectivity-two networks to networks with arbitrary connectivity \\(K\\).\n- It also generalizes the analysis to random networks with biased Boolean functions.\n- Lynch’s parameter \\(\\lambda\\) is shown to equal the expected average sensitivity of the Boolean functions used to construct the network.\n- The authors derive the expected average sensitivity for randomly selected functions with specified connectivity and bias, enabling the ordered- and disordered-phase results.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis work extends Lynch’s analysis of ordered and disordered phases in random Boolean models of genetic regulatory networks to arbitrary connectivity \\(K\\) and biased Boolean functions by relating his parameter \\(\\lambda\\) to expected average sensitivity. The equivalence enables existing sensitivity theorems, supplemented by a derived expectation for functions with fixed connectivity and bias, to establish Kauffman’s conjecture beyond connectivity-two networks.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Boolean, James, Lynch"
+  },
+  "outputs": {
+    "L1": "In this work, we consider random Boolean networks as a general model of genetic regulatory networks. We extend the analysis of James Lynch, who proved Kauffman’s conjecture that, in the ordered phase of random networks, the number of ineffective and freezing gates is large, whereas in the disordered phase, their number is small. Lynch established the conjecture only for networks with connectivity two and nonuniform probabilities for the Boolean functions. We show how his proof can be extended to networks with arbitrary connectivity \\(K\\) and to random networks with biased Boolean functions. In these cases, Lynch’s parameter \\(\\lambda\\) is equivalent to the expected average sensitivity of the Boolean functions used to construct the network. We can therefore apply a known theorem concerning the expectation of average sensitivity. To establish the results for networks with biased functions, we derive the expected average sensitivity when only functions with a specified connectivity and bias are selected at random.",
+    "L2": "This study examines random Boolean networks as a general framework for modeling genetic regulatory systems. We build on James Lynch’s analysis, which established Kauffman’s conjecture that ineffective and freezing gates are abundant in the ordered regime of random networks but scarce in the disordered regime. Lynch’s proof was restricted to networks with connectivity two and nonuniform distributions over Boolean functions. We generalize his approach to networks with arbitrary connectivity \\(K\\) and to random networks whose Boolean functions are biased. For these settings, Lynch’s parameter \\(\\lambda\\) is shown to coincide with the expected average sensitivity of the Boolean functions from which the network is formed. This connection allows us to use an existing theorem concerning expected average sensitivity. To establish the results for networks with biased functions, we derive the expected average sensitivity when Boolean functions are selected randomly subject to fixed connectivity and bias.",
+    "L3": "Random Boolean networks are widely used as general models of genetic regulatory systems, in which genes are represented by binary variables and regulatory interactions are encoded by Boolean functions. This work extends James Lynch’s proof of Kauffman’s conjecture, which originally applied to networks in which each node has connectivity two, to random Boolean networks with arbitrary connectivity \\(K\\). The analysis is further generalized to include networks whose Boolean update functions are selected from biased distributions rather than uniformly.\n\nA central result is the identification of Lynch’s parameter \\(\\lambda\\) with the expected average sensitivity of the Boolean functions used to construct the network. Average sensitivity measures the expected number of output changes caused by flipping a single randomly chosen input and therefore quantifies how readily local perturbations propagate through the network. The authors derive the expected average sensitivity of randomly selected Boolean functions for a given connectivity and bias. This expression provides the key criterion for distinguishing ordered and disordered dynamical phases: perturbations tend to die out when the expected average sensitivity is below the critical value and to spread when it is above that value. Thus, the framework establishes ordered- and disordered-phase results for a broad class of random Boolean networks with arbitrary connectivity and function bias.",
+    "L4": "Random Boolean networks are widely used as idealized models of genetic regulation. A central problem is to determine when such networks are ordered—small perturbations typically disappear—and when they are disordered, so that perturbations spread through the system. Lynch gave a rigorous formulation of this transition for random Boolean networks, but the connection between his propagation parameter \\(\\lambda\\) and the sensitivity-based criteria commonly used in the Kauffman-network literature was not explicit. This work identifies that connection and extends the resulting analysis to arbitrary connectivity \\(K\\) and to ensembles of biased Boolean update functions.\n\nThe key observation is that Lynch’s parameter \\(\\lambda\\), which measures the expected number of sites affected by a perturbation at a single site, is precisely the expected average sensitivity of the Boolean functions governing the network. For a function \\(f:\\{0,1\\}^{K}\\to\\{0,1\\}\\), the average sensitivity is the expected number of input coordinates whose reversal changes the value of \\(f\\). Consequently, the phase boundary in Lynch’s framework can be written in the familiar form\n\\[\n\\lambda=\\mathbb{E}[s(f)]=1.\n\\]\nNetworks with \\(\\lambda<1\\) are in the ordered regime, where perturbations contract on average, whereas networks with \\(\\lambda>1\\) are in the disordered regime, where perturbations expand. The equality \\(\\lambda=1\\) marks the critical boundary.\n\nThis equivalence allows general theorems about Boolean-function sensitivity to be applied directly to random genetic regulatory networks. For the standard ensemble in which truth-table outputs are independently equal to one with probability \\(p\\), one obtains\n\\[\n\\mathbb{E}[s(f)]=2Kp(1-p).\n\\]\nThus the critical condition is\n\\[\n2Kp(1-p)=1,\n\\]\nwhich reduces to the usual threshold \\(K=2\\) in the unbiased case \\(p=\\tfrac12\\).\n\nA related calculation is required when both connectivity and bias are fixed exactly. Let \\(N=2^{K}\\), and choose a Boolean function uniformly from those whose truth tables contain exactly \\(m\\) ones, so that \\(p=m/N\\). For any edge of the \\(K\\)-dimensional Boolean cube, the probability that its two endpoints receive different outputs is\n\\[\n\\frac{2m(N-m)}{N(N-1)}.\n\\]\nIt follows that\n\\[\n\\mathbb{E}[s(f)]\n =K\\frac{2m(N-m)}{N(N-1)}\n =2Kp(1-p)\\frac{2^{K}}{2^{K}-1}.\n\\]\nThe corresponding finite-\\(K\\) critical condition is therefore\n\\[\n2Kp(1-p)\\frac{2^{K}}{2^{K}-1}=1.\n\\]\nThe correction factor tends to one as \\(K\\) increases, recovering the independently biased result asymptotically.\n\nBy translating Lynch’s criterion into the language of average sensitivity, the ordered–disordered transition can therefore be analyzed using established sensitivity results together with the fixed-bias expectation derived here. This yields a rigorous sensitivity-based formulation of Kauffman’s conjecture for random Boolean networks with arbitrary connectivity and biased update rules, rather than only for the classical connectivity-two setting.",
+    "L5": "### Boolean Logic and James Lynch\n\nJames Lynch discovered that Boolean logic is one of the most useful tools for organizing information and improving online searches. By using operators such as **AND**, **OR**, and **NOT**, he could combine keywords, exclude irrelevant results, and locate specific sources more efficiently. For example, searching for “James AND Lynch” returns results containing both names, while “James NOT Lynch” removes references to Lynch.\n\nBoolean methods are widely used in search engines, databases, computer programming, and digital research. For James Lynch, understanding Boolean logic offered a simple but powerful way to navigate large amounts of information with greater accuracy."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a research paper extending James Lynch’s proof of Kauffman’s conjecture from random Boolean networks with connectivity two to arbitrary connectivity \\(K\\) and biased Boolean functions.",
+      "output": "We extend James Lynch’s rigorous proof of Kauffman’s conjecture for random Boolean networks of connectivity two to networks with arbitrary fixed connectivity \\(K\\) and biased Boolean functions. In the model, each vertex selects \\(K\\) inputs uniformly at random, and each entry of its Boolean update table is independently assigned the value \\(1\\) with probability \\(p\\). We show that the propagation of a small perturbation is governed by the effective sensitivity\n\\[\n\\lambda = 2Kp(1-p).\n\\]\nUsing exploration-process estimates, branching-process couplings, and concentration arguments that control collisions in finite random networks, we establish a sharp distinction between the ordered and chaotic regimes. When \\(\\lambda<1\\), perturbations remain confined and die out with high probability, so almost all vertices are stable under single-site changes. When \\(\\lambda>1\\), a perturbation has positive probability of generating a macroscopic cascade, yielding an extensive set of unstable vertices. We also characterize the critical case \\(\\lambda=1\\), where perturbation clusters exhibit critical branching behavior. These results recover Lynch’s connectivity-two theorem in the unbiased case and provide a rigorous formulation of the Kauffman phase boundary for arbitrary \\(K\\) and output bias.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize a study showing that Lynch’s parameter \\(\\lambda\\) is equivalent to the expected average sensitivity of the Boolean functions used to construct random genetic regulatory networks.",
+      "output": "The study gives a mathematical interpretation of Lynch’s network parameter \\(\\lambda\\): it is the expected average sensitivity of the Boolean functions assigned to nodes in a random genetic regulatory network.\n\nFor a Boolean function \\(f:\\{0,1\\}^k\\to\\{0,1\\}\\), average sensitivity is\n\n\\[\ns(f)=\\frac{1}{2^k}\\sum_{x\\in\\{0,1\\}^k}\\sum_{i=1}^{k}\n\\mathbf 1\\!\\left[f(x)\\neq f(x^{(i)})\\right],\n\\]\n\nwhere \\(x^{(i)}\\) is obtained by flipping input \\(i\\). Thus, \\(s(f)\\) is the expected number of output changes caused by single-input perturbations, averaged over input states.\n\nBy averaging this quantity over the distribution of Boolean functions used to build the random network, the authors show\n\n\\[\n\\lambda=\\mathbb E_f[s(f)].\n\\]\n\nThis equivalence clarifies that \\(\\lambda\\) is not merely an abstract network statistic: it measures the expected local propagation of a small perturbation. Consequently:\n\n- \\(\\lambda<1\\): perturbations tend to die out, indicating ordered dynamics;\n- \\(\\lambda>1\\): perturbations tend to spread, indicating chaotic dynamics;\n- \\(\\lambda=1\\): the network lies near the critical boundary.\n\nFor standard random Boolean functions with \\(k\\) inputs and output bias \\(p\\), this gives the familiar result\n\n\\[\n\\lambda=2k\\,p(1-p).\n\\]\n\nThe study therefore connects Lynch’s evolutionary-network formulation with Boolean-function sensitivity and the usual order–chaos criterion for random regulatory networks.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a concise academic abstract about ineffective and freezing gates in the ordered and disordered phases of random Boolean networks, including extensions to nonuniform and biased function distributions.",
+      "output": "We study ineffective and freezing gates in random Boolean networks as structural mechanisms underlying the transition between ordered and disordered dynamics. An ineffective gate is one whose output does not depend on a specified input, whereas a freezing gate fixes its output once a particular input is fixed. Using a self-consistent probabilistic framework, we determine the prevalence of these gates and relate their propagation through the network to perturbation growth and dynamical stability. In the ordered phase, freezing effects generate an extensive frozen core and suppress sensitivity, while ineffective inputs further reduce the network’s effective connectivity. In the disordered phase, these mechanisms are insufficient to prevent perturbations from spreading through an active subnetwork. We extend the analysis beyond uniform sampling of Boolean functions to nonuniform ensembles and biased output distributions, showing how function-class weights and truth-table bias modify gate statistics and shift the order–disorder boundary. The results provide a unified local-to-global description of stability in heterogeneous random Boolean networks.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Explain how known theorems on the expectation of average sensitivity can be applied to generalize Lynch’s analysis of Kauffman networks, and mention the derivation for functions with fixed connectivity and bias.",
+      "output": "For a Boolean function \\(f:\\{0,1\\}^k\\to\\{0,1\\}\\), its average sensitivity is\n\n\\[\n\\operatorname{as}(f)\n =2^{-k}\\sum_{x\\in\\{0,1\\}^k}\\sum_{i=1}^{k}\n \\mathbf 1\\{f(x)\\neq f(x^{(i)})\\},\n\\]\n\nwhere \\(x^{(i)}\\) is obtained by flipping input \\(i\\). Thus \\(\\operatorname{as}(f)/k\\) is the probability that a perturbation of a uniformly chosen input changes the output.\n\nIn Lynch’s exploration of a random Kauffman network, a single damaged vertex is followed through its downstream neighborhood. Before collisions become important, that neighborhood is approximately a branching process. If each vertex has \\(k\\) inputs, then a perturbed vertex reaches roughly \\(k\\) downstream input positions, and each position transmits the perturbation with probability equal to its influence. Consequently, the branching mean is\n\n\\[\n\\lambda=\\mathbb E[\\operatorname{as}(f)].\n\\]\n\nThis lets one generalize Lynch’s calculation simply by replacing the special Kauffman factor \\(2kp(1-p)\\) by the expected average sensitivity of whatever distribution of Boolean functions is being used. Subject to the same local tree-likeness and independence assumptions:\n\n- \\(\\lambda<1\\): perturbations are subcritical and usually die out;\n- \\(\\lambda>1\\): perturbations can grow to macroscopic size;\n- \\(\\lambda=1\\): the critical boundary.\n\nFor variable connectivity, the corresponding parameter is\n\n\\[\n\\lambda=\\sum_k \\rho_k\\,\n  \\mathbb E[\\operatorname{as}(f)\\mid k],\n\\]\n\nwith the appropriate edge-weighting if the wiring rule samples target degrees nonuniformly. Canalizing, threshold, symmetric, or other constrained function classes can therefore be treated by inserting the applicable theorem for their expected sensitivity. If network states are not approximately uniform, ordinary average sensitivity should be replaced by sensitivity/influence computed under the actual input distribution.\n\nFor fixed connectivity \\(k\\) and independently biased truth-table entries,\n\n\\[\n\\Pr(f(x)=1)=p,\n\\]\n\nthe outputs at the two ends of any hypercube edge differ with probability\n\n\\[\np(1-p)+(1-p)p=2p(1-p).\n\\]\n\nSince each input has \\(k\\) incident flip directions,\n\n\\[\n\\mathbb E[\\operatorname{as}(f)]=2kp(1-p),\n\\]\n\nrecovering Lynch’s parameter.\n\nIf “fixed bias” means that exactly \\(m=p2^k\\) of the \\(2^k\\) truth-table entries are \\(1\\), rather than choosing entries independently, then for two distinct entries\n\n\\[\n\\Pr(\\text{different})\n =\\frac{2m(2^k-m)}{2^k(2^k-1)},\n\\]\n\nand hence\n\n\\[\n\\mathbb E[\\operatorname{as}(f)]\n =k\\,\\frac{2m(2^k-m)}{2^k(2^k-1)}\n =2kp(1-p)\\frac{2^k}{2^k-1}.\n\\]\n\nThe familiar \\(2kp(1-p)\\) formula is therefore exact for independent bias and is the large-\\(k\\) limit of the exactly fixed-bias ensemble.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate a paper abstract describing a proof of Kauffman’s conjecture for random Boolean networks with arbitrary connectivity and Boolean functions selected according to a specified bias.",
+      "output": "**Abstract—** We establish a rigorous form of Kauffman’s conjecture for random Boolean networks with general sparse connectivity. The network is defined on a directed graph with prescribed degree structure, while each update rule is chosen independently from the biased Boolean ensemble in which every truth-table output equals one with probability \\(p\\). By coupling the propagation of an initial perturbation to a multitype branching process and controlling collisions through local tree-like approximations and concentration bounds, we identify the exact order–chaos transition. The governing parameter is the product of the mean Boolean sensitivity, \\(2p(1-p)\\), and the effective branching factor of the connectivity graph. Equivalently, for networks with adjacency operator \\(A\\), the transition occurs at  \n\\[\n2p(1-p)\\rho(A)=1,\n\\]\nwith the corresponding excess-degree or branching-matrix formulation for prescribed degree distributions. Below this threshold, perturbations die out with high probability and the dynamics is asymptotically stable; above it, a perturbation survives and reaches a macroscopic number of vertices with positive probability. For homogeneous connectivity \\(K\\), the criterion reduces to the classical Kauffman relation \\(2Kp(1-p)=1\\). The proof applies uniformly across arbitrary fixed connectivities and broad heterogeneous degree ensembles, thereby placing the conjectured critical boundary on a precise probabilistic foundation.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6553924696873006,
+      "excess_ratio": 0.5138540541910297,
+      "baseline_mean": 0.14153841549627094,
+      "baseline_n_valid": 5,
+      "output_chars": 1026,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6625258799171843,
+          "baseline_mean": 0.11525852553078475,
+          "excess_ratio": 0.5472673543863995
+        },
+        "bz2": {
+          "actual_ratio": 0.5662878787878788,
+          "baseline_mean": 0.13925648276625474,
+          "excess_ratio": 0.42703139602162404
+        },
+        "lzma": {
+          "actual_ratio": 0.7338129496402878,
+          "baseline_mean": 0.1671702341066876,
+          "excess_ratio": 0.5666427155336001
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4122186495176849,
+      "excess_ratio": 0.27068023402141395,
+      "baseline_mean": 0.14153841549627094,
+      "baseline_n_valid": 5,
+      "output_chars": 1009,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.37214137214137216,
+          "baseline_mean": 0.11525852553078475,
+          "excess_ratio": 0.2568828466105874
+        },
+        "bz2": {
+          "actual_ratio": 0.38996138996138996,
+          "baseline_mean": 0.13925648276625474,
+          "excess_ratio": 0.2507049071951352
+        },
+        "lzma": {
+          "actual_ratio": 0.4676258992805755,
+          "baseline_mean": 0.1671702341066876,
+          "excess_ratio": 0.3004556651738879
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3392857142857143,
+      "excess_ratio": 0.19774729878944336,
+      "baseline_mean": 0.14153841549627094,
+      "baseline_n_valid": 5,
+      "output_chars": 1456,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3152337858220211,
+          "baseline_mean": 0.11525852553078475,
+          "excess_ratio": 0.19997526029123636
+        },
+        "bz2": {
+          "actual_ratio": 0.332398316970547,
+          "baseline_mean": 0.13925648276625474,
+          "excess_ratio": 0.19314183420429226
+        },
+        "lzma": {
+          "actual_ratio": 0.3670212765957447,
+          "baseline_mean": 0.1671702341066876,
+          "excess_ratio": 0.19985104248905708
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1517472474868359,
+      "excess_ratio": 0.010208831990564965,
+      "baseline_mean": 0.14153841549627094,
+      "baseline_n_valid": 5,
+      "output_chars": 2998,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.12555720653789004,
+          "baseline_mean": 0.11525852553078475,
+          "excess_ratio": 0.010298681007105293
+        },
+        "bz2": {
+          "actual_ratio": 0.15544412607449856,
+          "baseline_mean": 0.13925648276625474,
+          "excess_ratio": 0.01618764330824382
+        },
+        "lzma": {
+          "actual_ratio": 0.17270194986072424,
+          "baseline_mean": 0.1671702341066876,
+          "excess_ratio": 0.005531715754036631
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.11086474501108648,
+      "excess_ratio": -0.030673670485184462,
+      "baseline_mean": 0.14153841549627094,
+      "baseline_n_valid": 5,
+      "output_chars": 711,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.06937799043062201,
+          "baseline_mean": 0.11525852553078475,
+          "excess_ratio": -0.04588053510016274
+        },
+        "bz2": {
+          "actual_ratio": 0.10961968680089486,
+          "baseline_mean": 0.13925648276625474,
+          "excess_ratio": -0.029636795965359883
+        },
+        "lzma": {
+          "actual_ratio": 0.14754098360655737,
+          "baseline_mean": 0.1671702341066876,
+          "excess_ratio": -0.01962925050013023
+        }
+      }
+    }
+  }
+}

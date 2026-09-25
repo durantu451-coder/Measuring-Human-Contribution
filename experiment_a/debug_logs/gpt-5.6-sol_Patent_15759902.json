@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15759902",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThe present disclosure relates to a content recommendation method, device and system. The method includes: recommending a content in a content set to a user based on an average recommendation probability; collecting feedback information on the recommended content from the user's client, wherein the feedback information includes display information and click information, the display information including displaying times and displaying timing of the recommended content on the client, and the click information including clicking times and clicking timing of the recommended content on the client; and determining a sequence of preferred contents from the contents in the content set according to the feedback information, so as to recommend a content to the user based on the sequence of preferred contents. Respective aspects of the present disclosure recommend contents based on a user's feedback so that it is possible to perform reasonable and effective content recommendation for random users who have less click behaviors.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThe present disclosure relates to a content recommendation method, device and system. The method includes: recommending a content in a content set to a user based on an average recommendation probability; collecting feedback information on the recommended content from the user's client, wherein the feedback information includes display information and click information, the display information including displaying times and displaying timing of the recommended content on the client, and the click information including clicking times and clicking timing of the recommended content on the client; and determining a sequence of preferred contents from the contents in the content set according to the feedback information, so as to recommend a content to the user based on the sequence of preferred contents. Respective aspects of the present disclosure recommend contents based on a user's feedback so that it is possible to perform reasonable and effective content recommendation for random users who have less click behaviors.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The disclosure describes a content recommendation method, device, and system.\n- Content is initially recommended to a user based on an average recommendation probability.\n- The system collects feedback including the display frequency and timing of recommended content.\n- The system also collects click frequency and timing information from the user’s client.\n- The feedback is used to rank preferred content, enabling effective recommendations for users with limited click history.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA content recommendation method, device, and system initially recommend items using average probabilities, then collect display and click frequency and timing data to rank preferred content. By incorporating user feedback, the approach enables more effective recommendations for users with limited click histories.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, Respective"
+  },
+  "outputs": {
+    "L1": "The present disclosure relates to a content recommendation method, device, and system. The method includes: recommending content from a content set to a user based on an average recommendation probability; collecting feedback information regarding the recommended content from the user’s client, wherein the feedback information includes display information and click information, the display information including the number and timing of displays of the recommended content on the client, and the click information including the number and timing of clicks on the recommended content on the client; and determining a sequence of preferred content from the content set according to the feedback information, so as to recommend content to the user based on the sequence of preferred content. The respective aspects of the present disclosure recommend content based on user feedback, thereby enabling reasonable and effective content recommendations for random users who exhibit fewer click behaviors.",
+    "L2": "The disclosure describes a method, apparatus, and system for recommending content. Initially, an item from a content collection is suggested to a user according to an average recommendation probability. Feedback relating to the suggested item is then obtained from the user’s client. This feedback contains presentation data—such as how many times and when the item was displayed on the client—and interaction data—such as how many times and when the item was clicked. Using this feedback, the contents in the collection are ranked to create an ordered list of preferred items, which is subsequently used to select content for recommendation to the user. In this way, the disclosed approaches use user feedback to provide sensible and effective recommendations even for randomly encountered users with limited click activity.",
+    "L3": "The disclosure describes a method, device, and system for recommending content to users. Initially, content is selected and presented based on an average recommendation probability, allowing the system to generate recommendations even when little or no user-specific behavioral data is available.\n\nAfter the content is presented, the system collects feedback concerning the frequency with which each item is displayed and the timing of those displays. It also obtains information from the user’s client regarding how often and when the user clicks the recommended content.\n\nUsing this display and click data, the system evaluates and ranks content according to the user’s inferred preferences. The resulting ranking supports more targeted and effective recommendations, particularly for users with a limited click history or insufficient interaction data.",
+    "L4": "A content recommendation method, device, and system are provided for improving recommendation accuracy, particularly for users who have little or no historical interaction data. In an initial recommendation stage, candidate content items are assigned average selection or click probabilities derived from aggregate user behavior. The system uses these probabilities to select and display content even when an individual user’s preferences cannot yet be reliably determined.\n\nAfter the content is displayed, the system collects feedback data associated with the user’s interactions. The feedback may include the number of times each content item is displayed, the number of clicks it receives, the frequency of displays and clicks, and the times or intervals at which those events occur. Based on these data, the system calculates or updates preference indicators for the content items. The items can then be ranked according to their estimated relevance or likelihood of being selected by the user.\n\nSubsequent recommendations are generated using the updated ranking, allowing content that better matches the user’s demonstrated interests to receive higher priority. The ranking may be continuously refined as additional display and click information becomes available. Thus, the approach combines aggregate probability information with user-specific feedback, balancing initial exploration with increasingly personalized recommendations.\n\nA corresponding recommendation device may include modules or processors configured to obtain candidate content, determine initial recommendation probabilities, record display and click events, analyze event frequencies and timing, calculate preference rankings, and output recommended content. A recommendation system may implement these functions through one or more servers, user terminals, databases, and communication networks.\n\nBy learning from both positive feedback, such as clicks, and exposure information, such as displays that do not result in clicks, the method can infer preferences without requiring an extensive user profile. It therefore addresses the cold-start problem and enables more effective, responsive, and accurate content recommendations for users with limited click histories.",
+    "L5": "### The Respective Roles of “The” and “Respective”\n\nThe word **“the”** is the definite article in English. It refers to a specific person, object, place, or idea already known to the reader or listener. For example, in the sentence “Please close **the** door,” a particular door is being identified.\n\n**“Respective”** connects two or more people or things with those that belong or relate to each of them individually. For example, “The students returned to their respective classrooms” means that each student returned to the classroom assigned to them.\n\nTogether, these words help make sentences precise: “The managers presented their respective reports” clearly indicates that particular managers each presented their own report."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent abstract for a content recommendation method, device, and system that uses display and click feedback to improve recommendations for users with sparse click histories.",
+      "output": "A content recommendation method, device, and system are disclosed. The method includes obtaining display feedback and click feedback associated with content items presented to a user, wherein the user has a sparse click history. Training samples are generated based on the displayed content items and corresponding click states, such that unclicked displayed items provide implicit feedback in addition to clicked items. User preference information is determined by processing the training samples using a recommendation model that accounts for differences between display behavior and click behavior. Candidate content items are scored according to the user preference information, and one or more candidate content items are selected and presented to the user based on the scores. Updated display and click feedback may be used to iteratively update the recommendation model or a user representation. By incorporating exposure information from displayed but unclicked content, the disclosed techniques increase available feedback for users with limited click records and improve recommendation accuracy and personalization.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a formal “present disclosure” summary describing how content is initially recommended using an average probability and later ranked using impression counts, impression timing, click counts, and click timing.",
+      "output": "The present disclosure provides systems and methods for recommending and ranking content. For each content item, an average probability is determined based on a plurality of probability values associated with the content item. One or more content items are initially selected or recommended based at least in part on their respective average probabilities. After the content items have been presented to users, ranking information is generated using engagement data that includes a number of impressions, timing information associated with the impressions, a number of clicks, and timing information associated with the clicks. The engagement data may be weighted, normalized, or decayed according to recency to account for differences in exposure and user interaction over time. The recommended content items are subsequently ranked or re-ranked based on the engagement data, thereby enabling the ordering of content to reflect both an initial probability-based prediction and observed, time-sensitive user engagement.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate patent-style language for a recommendation system that collects user-client feedback, determines a preferred-content sequence, and provides effective recommendations to random or cold-start users.",
+      "output": "## Title\n\n**Systems and Methods for Sequence-Based Content Recommendation for Cold-Start Users**\n\n## Abstract\n\nA computer-implemented recommendation system receives feedback data from a plurality of user-client devices regarding interactions with content items. The system generates, from the feedback data, one or more preferred-content sequences representing an order in which content items or content categories are predicted to promote user engagement. In response to a recommendation request associated with a target user for whom insufficient historical interaction data is available, the system selects an initial content item without relying on a user-specific profile, such as by random, pseudo-random, or population-based selection. The system then identifies a preferred-content sequence associated with the initial content item and provides one or more subsequent content recommendations according to the identified sequence. Feedback received from the target user's client device may be used to select, modify, or replace the sequence, thereby transitioning from cold-start recommendations to personalized recommendations.\n\n## Exemplary Independent System Claim\n\n1. **A recommendation system comprising:**\n\n   one or more processors; and\n\n   one or more non-transitory computer-readable media storing instructions that, when executed by the one or more processors, cause the recommendation system to:\n\n   receive, from a plurality of user-client devices, feedback data indicative of user interactions with a plurality of content items;\n\n   determine, based at least in part on the feedback data, a preferred-content sequence comprising an ordered association among at least a first content item and a second content item;\n\n   receive, from a target user-client device, a request for recommended content;\n\n   determine that a target user associated with the target user-client device satisfies a cold-start condition based on an amount or quality of historical interaction data associated with the target user being below a threshold;\n\n   select an initial content item for the target user independently of a user-specific preference profile;\n\n   identify, based at least in part on the initial content item, the preferred-content sequence; and\n\n   cause the second content item to be presented by the target user-client device after presentation of the first content item in accordance with the preferred-content sequence.\n\n## Exemplary Independent Method Claim\n\n2. **A computer-implemented method comprising:**\n\n   collecting feedback from a plurality of user-client devices, the feedback representing interactions between users and content items;\n\n   generating, by one or more processors, a sequence model that associates a first content item with one or more subsequently preferred content items;\n\n   detecting a recommendation event associated with a target user having insufficient user-specific interaction history;\n\n   selecting a seed content item for the target user using a random, pseudo-random, context-based, or population-based selection process;\n\n   applying the sequence model to the seed content item to determine a next recommended content item; and\n\n   transmitting the next recommended content item, or an identifier thereof, to a client device associated with the target user.\n\n## Exemplary Independent Computer-Readable-Medium Claim\n\n3. **A non-transitory computer-readable medium** storing instructions that, when executed by one or more processors, cause the one or more processors to perform operations comprising:\n\n   aggregating feedback data received from user-client devices;\n\n   determining, from the aggregated feedback data, transition values for respective ordered pairs of content items;\n\n   constructing a preferred-content sequence based on the transition values;\n\n   assigning a target user to a cold-start recommendation mode;\n\n   selecting an entry point into the preferred-content sequence without requiring historical feedback from the target user; and\n\n   iteratively providing content recommendations to the target user according to the preferred-content sequence.\n\n## Exemplary Dependent Claims\n\n4. The system of claim 1, wherein the feedback data comprises one or more of an impression, selection, dwell time, completion event, skip event, replay event, rating, purchase event, share event, save event, or abandonment event.\n\n5. The system of claim 1, wherein determining the preferred-content sequence comprises calculating a transition score representing a likelihood that presentation of the second content item after the first content item will produce a positive interaction.\n\n6. The system of claim 1, wherein the preferred-content sequence comprises content categories, content attributes, latent content representations, or identifiers of individual content items.\n\n7. The system of claim 1, wherein selecting the initial content item comprises pseudo-randomly selecting the initial content item from a candidate set constrained by contextual information associated with the target user-client device.\n\n8. The system of claim 7, wherein the contextual information comprises at least one of a geographic region, time, device type, application context, referral source, language, or current session event.\n\n9. The system of claim 1, wherein the instructions further cause the recommendation system to receive target-user feedback relating to the second content item and modify a subsequent recommendation based on the target-user feedback.\n\n10. The system of claim 1, wherein the cold-start condition is satisfied when the target user is anonymous, newly registered, associated with a newly installed application, or associated with fewer than a threshold number of qualifying interactions.\n\n11. The system of claim 1, wherein the preferred-content sequence is selected from a plurality of preferred-content sequences corresponding to different user cohorts.\n\n12. The system of claim 1, wherein the preferred-content sequence is generated using at least one of a Markov model, graph model, collaborative-filtering model, recurrent neural network, transformer model, reinforcement-learning model, or probabilistic transition model.\n\n13. The system of claim 1, wherein presentation according to the preferred-content sequence is subject to at least one diversity, novelty, eligibility, availability, safety, or frequency constraint.\n\n14. The method of claim 2, further comprising replacing the sequence model with a personalized recommendation model after the target user accumulates a threshold quantity of interaction data.\n\n15. The method of claim 2, wherein applying the sequence model comprises traversing a directed graph in which nodes represent content items or content classes and weighted edges represent observed or predicted transitions between the nodes.\n\n16. The method of claim 2, further comprising conducting an exploration operation by selecting a content item outside the preferred-content sequence and updating the sequence model based on feedback associated with the selected content item.\n\n## Exemplary Detailed Description\n\nIn some implementations, a recommendation service communicates with multiple user-client devices through one or more networks. Each user-client device may provide explicit feedback, implicit feedback, or both. Explicit feedback may include ratings, preference selections, or survey responses. Implicit feedback may include viewing duration, scrolling behavior, selections, skips, purchases, replays, and other measurable interactions.\n\nThe recommendation service may normalize and aggregate the feedback to determine directional relationships among content items. For example, the service may determine that users who positively interact with a first content item have an increased likelihood of positively interacting with a second content item when the second content item is presented within a specified interval. The service may represent such a relationship as a weighted edge in a content-transition graph. A plurality of weighted edges may define a preferred-content sequence.\n\nWhen a target user lacks a sufficiently developed profile, the service may initialize a recommendation session by selecting a seed item. The seed item may be selected randomly or pseudo-randomly from an eligible set, or may be selected using non-user-specific information such as globally popular content, cohort preferences, session context, or device context. Following the target user's interaction with the seed item, the service may traverse the content-transition graph or otherwise apply the preferred-content sequence to select subsequent content.\n\nThe service may dynamically respond to feedback from the target user. Positive feedback may increase a confidence value associated with the current sequence, while negative or absent feedback may cause the service to branch to another sequence, select a new seed item, or increase exploration. As additional target-user feedback is collected, the service may progressively combine population-derived sequence scores with user-specific preference scores. Upon satisfaction of a personalization threshold, the service may discontinue the cold-start mode or reduce the weighting assigned to population-derived sequences.\n\nIn this manner, the system can provide ordered and empirically supported recommendations even when no meaningful historical information is available for a particular user, while permitting the recommendations to become personalized during or across recommendation sessions.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Summarize an invention for personalized content recommendation in one paragraph, covering initial probabilistic recommendations, feedback collection, preference ranking, and the problem of users with few clicks.",
+      "output": "The invention provides personalized content recommendations by initially selecting and presenting items according to probabilistic estimates of a user’s interests. It collects feedback from interactions, such as clicks, views, skips, or ratings, and uses this data to rank the user’s preferences and refine future recommendations. To address users with few clicks or limited interaction history, the system supplements sparse individual data with contextual signals, content similarities, and behavior from comparable users, enabling useful personalization even during the cold-start stage.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Create an English patent abstract titled “Content Recommendation Method, Device and System,” emphasizing the use of display information and click information to refine content recommendations.",
+      "output": "# Content Recommendation Method, Device and System\n\nA content recommendation method, device, and system are disclosed. The method includes obtaining display information indicating content items presented to a user and click information indicating user interactions with one or more of the presented content items. User preference features are determined based on a relationship between the display information and the click information, wherein clicked content may be identified as positive feedback and displayed but unclicked content may be identified as negative or weak feedback. A recommendation model is trained or updated using the user preference features and candidate content features. Recommendation scores for candidate content items are generated by the recommendation model, and recommended content is selected and output according to the recommendation scores. By jointly using content exposure and click behavior, the disclosed solution more accurately characterizes user interests, reduces bias caused by relying solely on click data, and improves the relevance and efficiency of content recommendations.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.678076609616952,
+      "excess_ratio": 0.5101656684315675,
+      "baseline_mean": 0.16791094118538452,
+      "baseline_n_valid": 5,
+      "output_chars": 1000,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7047872340425532,
+          "baseline_mean": 0.12952310089924574,
+          "excess_ratio": 0.5752641331433075
+        },
+        "bz2": {
+          "actual_ratio": 0.5662650602409639,
+          "baseline_mean": 0.16469448973951095,
+          "excess_ratio": 0.40157057050145295
+        },
+        "lzma": {
+          "actual_ratio": 0.7614678899082569,
+          "baseline_mean": 0.20320262909454967,
+          "excess_ratio": 0.5582652608137072
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3370955605718585,
+      "excess_ratio": 0.169184619386474,
+      "baseline_mean": 0.16791094118538452,
+      "baseline_n_valid": 5,
+      "output_chars": 825,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2762836185819071,
+          "baseline_mean": 0.12952310089924574,
+          "excess_ratio": 0.14676051768266135
+        },
+        "bz2": {
+          "actual_ratio": 0.3431818181818182,
+          "baseline_mean": 0.16469448973951095,
+          "excess_ratio": 0.17848732844230725
+        },
+        "lzma": {
+          "actual_ratio": 0.38333333333333336,
+          "baseline_mean": 0.20320262909454967,
+          "excess_ratio": 0.1801307042387837
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3732590529247911,
+      "excess_ratio": 0.2053481117394066,
+      "baseline_mean": 0.16791094118538452,
+      "baseline_n_valid": 5,
+      "output_chars": 855,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.32494279176201374,
+          "baseline_mean": 0.12952310089924574,
+          "excess_ratio": 0.195419690862768
+        },
+        "bz2": {
+          "actual_ratio": 0.37473684210526315,
+          "baseline_mean": 0.16469448973951095,
+          "excess_ratio": 0.2100423523657522
+        },
+        "lzma": {
+          "actual_ratio": 0.4122137404580153,
+          "baseline_mean": 0.20320262909454967,
+          "excess_ratio": 0.20901111136346562
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1513285806869735,
+      "excess_ratio": -0.016582360498411025,
+      "baseline_mean": 0.16791094118538452,
+      "baseline_n_valid": 5,
+      "output_chars": 2243,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.12060301507537688,
+          "baseline_mean": 0.12952310089924574,
+          "excess_ratio": -0.008920085823868856
+        },
+        "bz2": {
+          "actual_ratio": 0.14314314314314314,
+          "baseline_mean": 0.16469448973951095,
+          "excess_ratio": -0.021551346596367815
+        },
+        "lzma": {
+          "actual_ratio": 0.18681318681318682,
+          "baseline_mean": 0.20320262909454967,
+          "excess_ratio": -0.016389442281362854
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.09541984732824431,
+      "excess_ratio": -0.07249109385714021,
+      "baseline_mean": 0.16791094118538452,
+      "baseline_n_valid": 5,
+      "output_chars": 732,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.05808080808080808,
+          "baseline_mean": 0.12952310089924574,
+          "excess_ratio": -0.07144229281843766
+        },
+        "bz2": {
+          "actual_ratio": 0.08520179372197309,
+          "baseline_mean": 0.16469448973951095,
+          "excess_ratio": -0.07949269601753786
+        },
+        "lzma": {
+          "actual_ratio": 0.13675213675213677,
+          "baseline_mean": 0.20320262909454967,
+          "excess_ratio": -0.0664504923424129
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0062",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIn this paper, we introduce the on-line Viterbi algorithm for decoding hidden Markov models (HMMs) in much smaller than linear space. Our analysis on two-state HMMs suggests that the expected maximum memory used to decode sequence of length $n$ with $m$-state HMM can be as low as $\\Theta(m\\log n)$, without a significant slow-down compared to the classical Viterbi algorithm. Classical Viterbi algorithm requires $O(mn)$ space, which is impractical for analysis of long DNA sequences (such as complete human genome chromosomes) and for continuous data streams. We also experimentally demonstrate the performance of the on-line Viterbi algorithm on a simple HMM for gene finding on both simulated and real DNA sequences.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIn this paper, we introduce the on-line Viterbi algorithm for decoding hidden Markov models (HMMs) in much smaller than linear space. Our analysis on two-state HMMs suggests that the expected maximum memory used to decode sequence of length $n$ with $m$-state HMM can be as low as $\\Theta(m\\log n)$, without a significant slow-down compared to the classical Viterbi algorithm. Classical Viterbi algorithm requires $O(mn)$ space, which is impractical for analysis of long DNA sequences (such as complete human genome chromosomes) and for continuous data streams. We also experimentally demonstrate the performance of the on-line Viterbi algorithm on a simple HMM for gene finding on both simulated and real DNA sequences.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper introduces an online Viterbi algorithm that decodes hidden Markov models using much less than linear space.\n- Analysis of two-state HMMs suggests that decoding a length-\\(n\\) sequence with an \\(m\\)-state HMM may require only \\(\\Theta(m\\log n)\\) expected maximum memory.\n- The online algorithm achieves this memory reduction without a significant slowdown compared with the classical Viterbi algorithm.\n- The classical Viterbi algorithm requires \\(O(mn)\\) space, making it impractical for long DNA sequences and continuous data streams.\n- Experiments demonstrate the online algorithm’s performance on a simple gene-finding HMM using both simulated and real DNA sequences.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe paper introduces an online Viterbi algorithm for decoding hidden Markov models using far less memory than the classical \\(O(mn)\\)-space method, with analysis on two-state HMMs and experiments on gene finding in simulated and real DNA. The algorithm may require only \\(\\Theta(m\\log n)\\) expected maximum memory without significant slowdown, making Viterbi decoding practical for long DNA sequences and continuous data streams.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Viterbi, Markov, HMMs"
+  },
+  "outputs": {
+    "L1": "In this paper, we introduce an online Viterbi algorithm for decoding hidden Markov models (HMMs) using substantially less than linear space. Our analysis of two-state HMMs suggests that the expected maximum memory required to decode a sequence of length $n$ using an $m$-state HMM can be as low as $\\Theta(m\\log n)$, without a significant slowdown relative to the classical Viterbi algorithm. The classical Viterbi algorithm requires $O(mn)$ space, making it impractical for analyzing long DNA sequences, such as complete human genome chromosomes, and continuous data streams. We also experimentally evaluate the performance of the online Viterbi algorithm using a simple HMM for gene finding on both simulated and real DNA sequences.",
+    "L2": "This paper presents an online Viterbi decoding method for hidden Markov models (HMMs) that uses substantially less than linear memory. Analysis of two-state HMMs indicates that, for a sequence of length \\(n\\) and an HMM with \\(m\\) states, the expected peak memory requirement may be as low as \\(\\Theta(m\\log n)\\), while incurring no substantial performance penalty relative to the standard Viterbi algorithm. By contrast, the conventional approach consumes \\(O(mn)\\) space, making it unsuitable for very long DNA sequences—including entire human chromosomes—as well as continuously arriving data. We also evaluate the online algorithm experimentally using a basic gene-detection HMM on both synthetic and real DNA datasets.",
+    "L3": "The paper presents an online version of the Viterbi algorithm for decoding hidden Markov models (HMMs) while using substantially less than linear memory. In contrast, the classical Viterbi algorithm stores information for every state at every position in an input sequence. For an HMM with \\(m\\) states and a sequence of length \\(n\\), this results in \\(O(mn)\\) space complexity. Such memory requirements can make standard Viterbi decoding impractical for very long inputs, including large DNA sequences, as well as for continuous data streams whose total length may not be known in advance.\n\nThe proposed online algorithm reduces memory consumption by identifying and outputting portions of the optimal state path as soon as they are determined, thereby avoiding the need to retain the full dynamic-programming history. An analysis of two-state HMMs indicates that, for a sequence of length \\(n\\), decoding with an \\(m\\)-state model may require only \\(\\Theta(m\\log n)\\) expected maximum memory. This represents a major improvement over the linear growth in sequence length required by the classical approach.\n\nImportantly, the reduction in memory usage does not come at the cost of a substantial loss in speed. The online method retains performance comparable to that of the classical Viterbi algorithm while making decoding more practical for large-scale and streaming applications. The paper evaluates the approach using a simple gene-finding HMM on both simulated data and real DNA sequences. These experiments demonstrate that the online algorithm can achieve significant memory savings while maintaining efficient and accurate decoding in a realistic biological setting.",
+    "L4": "The paper presents an online version of the Viterbi algorithm for decoding hidden Markov models (HMMs). The classical Viterbi algorithm finds the most probable sequence of hidden states for an observation sequence of length \\(n\\) in an HMM with \\(m\\) states. Although its running time is efficient, its standard implementation stores a dynamic-programming table and traceback information for every state at every position, requiring \\(O(mn)\\) memory. This space requirement can become prohibitive when processing very long DNA sequences or data streams whose total length is not known in advance.\n\nThe proposed algorithm reduces memory use by exploiting the fact that competing Viterbi paths often merge. At each step, the decoder maintains the best partial path ending in each state. When all surviving paths share a common prefix, that prefix is guaranteed to belong to the final optimal state sequence and can therefore be emitted immediately. Once the confirmed portion has been output, the corresponding traceback information can be discarded. In this way, the method performs exact Viterbi decoding while retaining only the unresolved suffix of the candidate paths rather than the complete history of the computation.\n\nThe paper analyzes this behavior for two-state HMMs. Under suitable probabilistic assumptions, path coalescence occurs frequently enough that the unresolved traceback region remains small. Although exceptional observation sequences can still force large memory consumption in the worst case, the expected maximum memory requirement can be as low as \\(\\Theta(m\\log n)\\), substantially below the \\(O(mn)\\) space used by the classical implementation. The additional work needed to detect common prefixes and release memory does not introduce a significant slowdown, so the algorithm preserves the practical time efficiency of ordinary Viterbi decoding.\n\nThe approach is evaluated in the context of gene finding, where HMMs are commonly used to label DNA regions and where genomic sequences may be extremely long. Experiments on both simulated data and real DNA show that Viterbi paths tend to merge often in practice. Consequently, the online decoder uses much less memory than a full-table implementation while producing the same optimal annotation. Its execution speed remains comparable to that of the conventional algorithm.\n\nThese results make exact Viterbi decoding more practical for large-scale biological sequence analysis. More generally, the method is well suited to applications involving long inputs or continuous streams, because confirmed portions of the hidden-state sequence can be returned before the entire observation sequence has been received. The work therefore demonstrates that, despite the classical algorithm’s linear dependence on input length in memory, exact decoding can often be carried out online with only logarithmic expected maximum storage and little or no loss in performance.",
+    "L5": "## Viterbi, Markov Models, and HMMs\n\nMarkov models describe systems that move between different states over time. Their defining assumption is the **Markov property**: the probability of the next state depends only on the current state, not on the complete history of previous states. A Markov model can therefore be represented by a set of states and transition probabilities indicating how likely the system is to move from one state to another.\n\nA **Hidden Markov Model (HMM)** extends this idea by distinguishing between hidden states and observable outcomes. The actual state of the system cannot be observed directly, but each hidden state generates observations according to a probability distribution. An HMM is usually defined by:\n\n- A set of hidden states  \n- Initial state probabilities  \n- Transition probabilities between states  \n- Emission probabilities connecting states to observations  \n\nFor example, weather conditions such as sunny, rainy, or cloudy might be hidden states, while observations could be whether a person carries an umbrella. From a sequence of observations, an HMM can estimate the most likely underlying weather pattern.\n\nThe **Viterbi algorithm** is a dynamic programming method used to find the most probable sequence of hidden states for a given sequence of observations. Rather than evaluating every possible state sequence—which becomes computationally impractical as the sequence grows—the algorithm stores the best path leading to each state at every time step. It then uses backtracking to reconstruct the overall most likely path.\n\nViterbi decoding is widely used in speech recognition, natural language processing, bioinformatics, communications, and other forms of sequential data analysis. Together, Markov models, HMMs, and the Viterbi algorithm provide an efficient probabilistic framework for reasoning about systems whose internal states evolve over time but cannot be observed directly."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a research paper introducing an online Viterbi algorithm that decodes HMMs using substantially less than linear memory, with applications to gene finding in long DNA sequences.",
+      "output": "We present an online Viterbi algorithm for decoding hidden Markov models (HMMs) without storing the full dynamic-programming matrix or complete traceback history. The method incrementally identifies coalescence points at which all surviving optimal paths share a common prefix, allowing that prefix to be emitted and discarded. It produces exactly the same maximum a posteriori state sequence as conventional Viterbi decoding while using substantially less than linear memory in typical settings; under standard mixing conditions, the expected memory requirement grows only logarithmically with sequence length. Runtime remains linear in sequence length for fixed-size state spaces. This reduction is especially valuable for gene-finding HMMs applied to chromosomes and whole genomes, where conventional traceback can require prohibitive storage. Experiments on long DNA sequences demonstrate that the proposed algorithm preserves decoding accuracy and computational efficiency while sharply reducing peak memory consumption, enabling exact gene prediction on arbitrarily long genomic inputs in a streaming framework.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize a method that reduces the classical Viterbi algorithm’s $O(mn)$ space requirement to an expected $\\Theta(m\\log n)$ maximum memory usage without significant slowdown.",
+      "output": "Use an **online traceback with a shared backpointer tree**:\n\n1. Run the usual Viterbi dynamic program, keeping the current score for each of the \\(m\\) states.\n2. Instead of storing all \\(mn\\) backpointers, represent the \\(m\\) current survivor paths as leaves of a tree whose common prefixes are shared.\n3. After each time step, remove nodes that are no longer ancestors of any survivor path.\n4. When all survivor paths have coalesced through a common ancestor, that prefix must belong to the final Viterbi path. Output or store it permanently, then delete it from the working tree.\n5. At the end, traceback only through the remaining tree.\n\nWith reference counts or child counts, each tree node is created and deleted only once, so maintenance adds only amortized constant work per Viterbi transition; running time remains essentially \\(O(mn)\\). Under standard random/mixing assumptions, survivor paths coalesce quickly: the expected maximum unresolved traceback depth over a sequence of length \\(n\\) is \\(\\Theta(\\log n)\\). Since there are at most \\(m\\) active survivor branches, expected peak working memory is therefore\n\n\\[\n\\Theta(m\\log n),\n\\]\n\nrather than \\(O(mn)\\). The worst case can still require \\(O(mn)\\) space if paths fail to coalesce, but this is atypical under the assumptions used for the expected bound.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a concise academic abstract comparing an on-line Viterbi decoder with the classical Viterbi algorithm, mentioning theoretical analysis for two-state HMMs and experiments on simulated and real genomic data.",
+      "output": "We compare an on-line Viterbi decoder, which incrementally commits to stable portions of the most likely state sequence, with the classical Viterbi algorithm, which requires access to the full observation sequence and stores global back-pointers. For two-state hidden Markov models, we analyze conditions governing path coalescence, decoding delay, and memory requirements, showing when on-line decoding can recover the classical Viterbi path with reduced storage and latency. Experiments on simulated sequences and real genomic data evaluate decoding accuracy, computational cost, and delay. The results demonstrate that on-line Viterbi decoding closely matches classical inference while offering practical advantages for long or streaming genomic sequences.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "How can hidden Markov models be decoded efficiently for continuous streams or chromosome-length DNA sequences? Describe an online Viterbi approach, its memory complexity, and gene-finding results.",
+      "output": "An HMM can be decoded without storing the full \\(n\\times K\\) Viterbi table.\n\n### Online Viterbi decoding\n\nAt position \\(t\\), keep:\n\n- the best Viterbi score ending in each of the \\(K\\) states;\n- a backpointer from each state into a shared tree of surviving path histories.\n\nAfter processing the next observation, create the new survivor for each state and prune any history that is no longer an ancestor of a current survivor. Whenever all surviving paths share a common prefix, that prefix cannot be changed by future observations. It is emitted immediately and removed from memory. Thus the decoder can process an indefinite stream and produce output with a variable delay.\n\nThe score update is the ordinary Viterbi recurrence, so the method is exact—not a windowed or approximate decoder—and has essentially the same running time, \\(O(nK^2)\\) for a dense transition matrix or \\(O(nE)\\) for \\(E\\) allowed transitions per position.\n\n### Memory\n\nMemory is proportional to the unresolved traceback region:\n\n\\[\nO(KD),\n\\]\n\nwhere \\(D\\) is the distance since the surviving paths last coalesced. The deterministic worst case remains \\(O(Kn)\\), because specially chosen sequences can prevent coalescence. For typical ergodic HMMs, however, paths coalesce regularly. Analyses of simple models give logarithmic expected maximum memory, roughly \\(O(K\\log n)\\), over a sequence of length \\(n\\); memory at an ordinary position can remain essentially constant. Long ambiguous regions or very long genes can cause temporary peaks.\n\n### Gene finding\n\nApplied to gene-finding HMMs, the online decoder produces exactly the same Viterbi gene annotation—and therefore the same exon/gene sensitivity and specificity—as full-table traceback. Experiments on chromosome-length genomic sequences showed that survivor paths usually merge frequently, making memory largely insensitive to chromosome length and dramatically smaller than storing a traceback value for every state at every base. Whole chromosomes can therefore be decoded in one pass with modest memory and only a small runtime overhead. Memory peaks tend to occur in long genes or ambiguous intergenic regions, where competing gene structures remain unresolved for many bases.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate a paper abstract about a memory-efficient Viterbi algorithm for an $m$-state HMM and a sequence of length $n$, including motivation, complexity bounds, and experimental validation.",
+      "output": "We present a memory-efficient Viterbi algorithm for decoding the most probable hidden-state sequence in an \\(m\\)-state hidden Markov model given \\(n\\) observations. The standard Viterbi algorithm requires \\(O(nm)\\) memory to retain backpointers, which can become prohibitive for long sequences or large state spaces. Our method replaces the full backpointer table with a divide-and-conquer reconstruction procedure. Forward and backward max-product passes identify the optimal state at each temporal midpoint, after which the two resulting subproblems are solved recursively. For dense transition models, the algorithm uses \\(O(n+m\\log n)\\) space, including the \\(O(n)\\)-length output path, compared with \\(O(nm)\\) space for conventional decoding; excluding the output, its working memory is \\(O(m\\log n)\\). The resulting running time is \\(O(nm^{2}\\log n)\\), versus \\(O(nm^{2})\\) for standard Viterbi, while preserving exact maximum a posteriori decoding. For sparse HMMs with \\(e\\) permitted transitions, the corresponding time bound is \\(O(ne\\log n)\\). Experiments on synthetic HMMs and representative sequence-decoding tasks confirm that the method returns paths identical to those of the standard algorithm, substantially reduces peak memory consumption, and scales to sequence lengths for which backpointer-based decoding exhausts available memory. These results establish a practical time–space trade-off for exact inference in large-scale and resource-constrained HMM applications.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7188665175242356,
+      "excess_ratio": 0.5836238375106844,
+      "baseline_mean": 0.13524268001355116,
+      "baseline_n_valid": 5,
+      "output_chars": 734,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7481481481481481,
+          "baseline_mean": 0.09860518036828547,
+          "excess_ratio": 0.6495429677798626
+        },
+        "bz2": {
+          "actual_ratio": 0.6004464285714286,
+          "baseline_mean": 0.13229872462548026,
+          "excess_ratio": 0.46814770394594835
+        },
+        "lzma": {
+          "actual_ratio": 0.8032786885245902,
+          "baseline_mean": 0.16975052617681663,
+          "excess_ratio": 0.6335281623477735
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4001396648044693,
+      "excess_ratio": 0.2648969847909181,
+      "baseline_mean": 0.13524268001355116,
+      "baseline_n_valid": 5,
+      "output_chars": 723,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3625866050808314,
+          "baseline_mean": 0.09860518036828547,
+          "excess_ratio": 0.26398142471254593
+        },
+        "bz2": {
+          "actual_ratio": 0.3674321503131524,
+          "baseline_mean": 0.13229872462548026,
+          "excess_ratio": 0.23513342568767215
+        },
+        "lzma": {
+          "actual_ratio": 0.46153846153846156,
+          "baseline_mean": 0.16975052617681663,
+          "excess_ratio": 0.29178793536164493
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.2933385274639657,
+      "excess_ratio": 0.15809584745041455,
+      "baseline_mean": 0.13524268001355116,
+      "baseline_n_valid": 5,
+      "output_chars": 1675,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2588957055214724,
+          "baseline_mean": 0.09860518036828547,
+          "excess_ratio": 0.16029052515318692
+        },
+        "bz2": {
+          "actual_ratio": 0.28199052132701424,
+          "baseline_mean": 0.13229872462548026,
+          "excess_ratio": 0.14969179670153399
+        },
+        "lzma": {
+          "actual_ratio": 0.33480176211453744,
+          "baseline_mean": 0.16975052617681663,
+          "excess_ratio": 0.1650512359377208
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.15406562054208273,
+      "excess_ratio": 0.018822940528531562,
+      "baseline_mean": 0.13524268001355116,
+      "baseline_n_valid": 5,
+      "output_chars": 2936,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.12728602779809803,
+          "baseline_mean": 0.09860518036828547,
+          "excess_ratio": 0.028680847429812556
+        },
+        "bz2": {
+          "actual_ratio": 0.1469090909090909,
+          "baseline_mean": 0.13229872462548026,
+          "excess_ratio": 0.014610366283610648
+        },
+        "lzma": {
+          "actual_ratio": 0.18579234972677597,
+          "baseline_mean": 0.16975052617681663,
+          "excess_ratio": 0.01604182354995934
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.05445026178010471,
+      "excess_ratio": -0.08079241823344646,
+      "baseline_mean": 0.13524268001355116,
+      "baseline_n_valid": 5,
+      "output_chars": 1939,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.0262582056892779,
+          "baseline_mean": 0.09860518036828547,
+          "excess_ratio": -0.07234697467900758
+        },
+        "bz2": {
+          "actual_ratio": 0.05938494167550371,
+          "baseline_mean": 0.13229872462548026,
+          "excess_ratio": -0.07291378294997655
+        },
+        "lzma": {
+          "actual_ratio": 0.07539682539682539,
+          "baseline_mean": 0.16975052617681663,
+          "excess_ratio": -0.09435370077999124
+        }
+      }
+    }
+  }
+}

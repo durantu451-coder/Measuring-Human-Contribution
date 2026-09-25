@@ -1,0 +1,175 @@
+{
+  "model": "claude-sonnet-5",
+  "domain": "Arxiv",
+  "id": "0704.0092",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe study a recently proposed formulation of overlap fermions at finite density. In particular we compute the energy density as a function of the chemical potential and the temperature. It is shown that overlap fermions with chemical potential reproduce the correct continuum behavior.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe study a recently proposed formulation of overlap fermions at finite density. In particular we compute the energy density as a function of the chemical potential and the temperature. It is shown that overlap fermions with chemical potential reproduce the correct continuum behavior.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- Researchers study a recently proposed formulation of overlap fermions at finite density.\n- The energy density is computed as a function of both chemical potential and temperature.\n- Overlap fermions with chemical potential are shown to reproduce the correct continuum behavior.\n- The results validate the finite density formulation as a reliable approach for lattice studies involving overlap fermions.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis study investigates a recently proposed formulation of overlap fermions at finite density, using the energy density as a function of chemical potential and temperature to evaluate the approach. The results demonstrate that overlap fermions with chemical potential correctly reproduce the expected continuum behavior, validating the formulation's physical consistency.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: We study a"
+  },
+  "outputs": {
+    "L1": "Here is a polished version of your text:\n\nWe investigate a recently proposed formulation of overlap fermions at finite density, with particular emphasis on computing the energy density as a function of chemical potential and temperature. Our results demonstrate that overlap fermions with chemical potential correctly reproduce the expected continuum behavior.",
+    "L2": "We investigate a formulation of overlap fermions at nonzero density that has been introduced in recent work. Specifically, our analysis focuses on calculating how the energy density varies with both temperature and chemical potential. Our results demonstrate that this approach to incorporating chemical potential into overlap fermions successfully recovers the expected continuum limit behavior.",
+    "L3": "# Overlap Fermions at Finite Density: Energy Density Analysis\n\n## Introduction and Motivation\n\nResearchers have undertaken a systematic study of a recently proposed formulation of overlap fermions at finite chemical potential, addressing a longstanding challenge in lattice quantum chromodynamics (QCD). The overlap fermion formulation, prized for its exact chiral symmetry on the lattice, has historically posed significant technical difficulties when extended to finite density calculations. This new formulation represents an important step toward reconciling the theoretical advantages of overlap fermions with the practical requirements of studying QCD matter under conditions of nonzero baryon density, which is essential for understanding phenomena ranging from neutron star physics to the QCD phase diagram.\n\n## Methodology: Energy Density Computation\n\nTo rigorously test this formulation, the researchers computed the energy density as a function of two key thermodynamic parameters: the chemical potential (μ) and the temperature (T). This two-dimensional parameter scan allows for a comprehensive characterization of the system's behavior across a range of physically relevant conditions. By systematically varying both parameters, the study captures how the fermionic degrees of freedom respond to changes in both thermal excitation and density effects, providing a thorough test of the formulation's consistency and physical viability across the full parameter space of interest.\n\n## Key Results: Continuum Limit Behavior\n\nA central finding of this work is that overlap fermions equipped with the chemical potential formulation successfully reproduce the correct continuum behavior. This is a critical benchmark, as any viable lattice discretization must recover the known continuum physics in the appropriate limits. The energy density calculations demonstrate that the lattice results converge properly to expected theoretical predictions, confirming that the discretization does not introduce spurious lattice artifacts that would compromise the physical interpretation of the results. This agreement with continuum expectations is particularly significant given the technical complexity involved in implementing chemical potential within the overlap formalism, which requires careful treatment of the Dirac operator's nonlocal structure.\n\n## Implications and Validation\n\nThese results collectively serve to validate the finite density formulation as a reliable and robust approach for lattice studies involving overlap fermions. The successful reproduction of continuum physics, combined with the consistent behavior observed across varying temperature and chemical potential values, provides strong evidence that this formulation can be trusted for future investigations. This validation is particularly significant for the broader lattice QCD community, as it opens the door to exploring the QCD phase diagram at finite density using a fermion discretization that preserves exact chiral symmetry—a feature that has proven invaluable for studying chiral symmetry breaking and restoration, topological effects, and other phenomena sensitive to the chiral properties of the theory.\n\n## Conclusion\n\nThis work establishes a solid foundation for future numerical studies of finite-density QCD using overlap fermions. By confirming that the proposed formulation correctly reproduces continuum physics through careful energy density calculations, the researchers have provided crucial validation that paves the way for more detailed explorations of the QCD phase diagram, including the search for a possible critical point and the study of dense quark matter relevant to extreme astrophysical environments.",
+    "L4": "# Overlap Fermions at Finite Density: Testing the Energy Density Formulation\n\n## Introduction\n\nLattice QCD simulations at finite chemical potential remain one of the most challenging problems in the field, primarily due to the notorious sign problem that emerges when a nonzero baryon chemical potential is introduced. In addition to this well-known numerical obstacle, the choice of lattice fermion discretization introduces its own set of complications, particularly for chiral fermion formulations such as overlap fermions. Overlap fermions are highly valued for their exact chiral symmetry on the lattice, which makes them theoretically attractive for studies of chiral symmetry breaking, topological effects, and related phenomena. However, incorporating a chemical potential into the overlap formalism in a manner that preserves the correct continuum limit and thermodynamic behavior has proven to be a nontrivial task, with several proposals appearing in the literature over the years, each with varying degrees of success and theoretical justification.\n\n## Motivation for This Study\n\nGiven the importance of correctly formulating finite-density lattice fermions, it is essential to rigorously test any new proposal against known physical expectations before applying it to more complex, dynamical simulations. A recently proposed formulation of overlap fermions at finite chemical potential offers a promising avenue for addressing some of the longstanding issues associated with earlier approaches. This formulation modifies the overlap Dirac operator in a specific way to incorporate the chemical potential while attempting to maintain the essential properties of the overlap construction, such as exact chiral symmetry and the Ginsparg-Wilson relation.\n\nBefore this formulation can be trusted for use in full lattice simulations—particularly in the context of exploring the QCD phase diagram or investigating baryon-rich matter—it is crucial to verify that it reproduces correct and physically sensible results in controlled, well-understood limits. One of the most direct and stringent tests of any finite-density fermion formulation is to examine its behavior in the free-field (noninteracting) limit, where the results can be compared analytically or semi-analytically to the known continuum expressions.\n\n## Methodology\n\nIn this study, we investigate the newly proposed overlap fermion formulation at finite density by computing the energy density as a function of both the chemical potential $\\mu$ and the temperature $T$. The energy density serves as an especially useful diagnostic quantity because its behavior under variations of $\\mu$ and $T$ is well established in the continuum theory, particularly in the free-fermion limit, where exact expressions can be derived from the Fermi-Dirac distribution.\n\nWe compute the energy density on the lattice using the modified overlap Dirac operator with the chemical potential included according to the new prescription. This calculation is performed for a range of temperatures and chemical potentials, allowing us to map out the thermodynamic response of the system. The lattice results are then compared against the expected continuum behavior, which includes features such as the correct dependence of the energy density on $\\mu$ at fixed $T$, the appropriate scaling with temperature, and the recovery of the correct zero-temperature and zero-density limits.\n\nParticular attention is paid to potential lattice artifacts that could arise from the discretization scheme, such as unphysical divergences, incorrect scaling of the energy density with the lattice cutoff, or deviations from the expected continuum limit as the lattice spacing is taken to zero. By systematically comparing the numerical results obtained from the overlap formulation against the analytically known continuum results, we can assess whether the new proposal successfully avoids these pitfalls.\n\n## Results\n\nThe numerical results obtained in this study show that the energy density computed using the overlap fermion formulation with the newly proposed chemical potential prescription behaves correctly in the continuum limit. Specifically, the energy density exhibits the expected functional dependence on $\\mu$ and $T$, matching the analytic predictions derived from the free-fermion continuum theory to a high degree of accuracy.\n\nAt zero chemical potential, the energy density reproduces the correct temperature dependence associated with a free fermionic gas, confirming that the formulation behaves appropriately in the absence of a baryon density. As the chemical potential is increased, the energy density grows in a manner consistent with the filling of fermionic states up to the Fermi surface, mirroring the behavior expected from continuum quantum field theory. Importantly, no unphysical divergences or anomalous behavior are observed as $\\mu$ approaches values comparable to the lattice cutoff, suggesting that the formulation remains well-behaved even in regimes where naive discretizations often fail.\n\nFurthermore, we find that the approach to the continuum limit is smooth and systematic as the lattice spacing is decreased, with the discretization errors vanishing in a controlled manner consistent with the expected order of the lattice action. This provides strong evidence that the new formulation does not introduce spurious lattice artifacts that could compromise the physical interpretation of simulation results at finite density.\n\n## Discussion\n\nThese findings are significant because they provide a nontrivial validation of the newly proposed overlap fermion formulation in a regime where analytic control is possible. The successful reproduction of the continuum energy density as a function of both temperature and chemical potential indicates that the formulation correctly incorporates the chemical potential into the overlap Dirac operator without spoiling the essential physical properties required for a sensible finite-density fermion action.\n\nThis result is particularly encouraging given the historical difficulties associated with introducing chemical potential into chiral fermion formulations on the lattice. Earlier attempts to incorporate $\\mu$ into overlap or domain-wall fermions have sometimes encountered problems such as incorrect continuum limits, loss of exact chiral symmetry, or unphysical divergences in thermodynamic quantities. The fact that the present formulation avoids these issues, at least in the free-field limit examined here, represents an important step forward in the development of reliable finite-density lattice fermion actions.\n\n## Conclusion\n\nIn summary, this study provides a detailed test of a recently proposed formulation of overlap fermions at finite chemical potential by examining the energy density as a function of $\\mu$ and $T$. The results demonstrate that this formulation correctly reproduces the expected continuum behavior, both in terms of the functional dependence on temperature and chemical potential and in terms of the absence of unphysical lattice artifacts. These findings validate the physical consistency of the proposed approach and suggest that it represents a promising candidate for future lattice QCD studies at finite baryon density, particularly in contexts where the preservation of chiral symmetry is of paramount importance. Further work will be needed to extend these tests to the interacting theory and to explore the implications of this formulation for the study of the QCD phase diagram at nonzero temperature and density.",
+    "L5": "It looks like your prompt may have been cut off—\"We study a\" reads like the beginning of an academic abstract rather than a complete topic description. I'd be happy to help, but I need a bit more information to write something useful for you.\n\nCould you clarify one of the following?\n\n1. **The specific subject** you want the text to be about (e.g., \"We study a novel algorithm for graph clustering\" or \"We study a phenomenon in quantum mechanics\")\n2. **The field or discipline** (computer science, physics, economics, biology, etc.)\n3. **The type of text** you need (research abstract, blog post, explainer, literature review, etc.)\n4. **The intended audience** (experts, general public, students)\n\nIn the meantime, here's a generic example of how a text starting with \"We study a...\" might look in an academic context, which you can use as a template:\n\n---\n\n**Example:**\n\nWe study a class of optimization problems that arise frequently in machine learning applications, particularly in the training of large-scale neural networks. Our approach focuses on understanding the convergence properties of stochastic gradient-based methods under non-convex loss landscapes. By analyzing the interplay between learning rate schedules and batch size selection, we derive theoretical bounds that characterize the expected convergence rate to local minima. We further validate our theoretical findings through extensive empirical experiments on benchmark datasets, demonstrating that our proposed method achieves competitive performance while requiring fewer computational resources than existing approaches. These results contribute to a growing body of literature aimed at bridging the gap between theoretical guarantees and practical implementation in modern deep learning systems.\n\n---\n\nLet me know the actual topic you'd like, and I'll tailor the text accordingly!"
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a lattice QCD paper studying overlap fermions at finite chemical potential and temperature, focusing on energy density calculations.",
+      "output": "# Abstract\n\nWe present a lattice QCD study of overlap fermions at finite chemical potential and temperature, focusing on the computation of the energy density in the vicinity of the deconfinement transition. Overlap fermions preserve exact chiral symmetry at finite lattice spacing, making them a theoretically appealing discretization for probing the interplay between chiral symmetry restoration and deconfinement, particularly in the context of the QCD phase diagram at nonzero baryon chemical potential $\\mu$.\n\nWorking within the framework of imaginary chemical potential, where the fermion determinant remains positive definite and standard Monte Carlo methods apply, we generate gauge configurations with dynamical overlap fermions across a range of temperatures spanning the crossover region. The energy density is extracted from the trace of the energy-momentum tensor, computed via the derivative of the lattice action with respect to the temporal lattice spacing, employing a fixed-scale approach to control ultraviolet divergences and lattice artifacts associated with the overlap operator's nonlocal structure.\n\nWe analyze the dependence of the energy density on both temperature and imaginary chemical potential, extracting the leading-order Taylor expansion coefficients that characterize the curvature of thermodynamic observables in $\\mu$. These coefficients are compared with results obtained using analytic continuation to real chemical potential, testing the reliability of this method in the presence of exact chiral symmetry. Our results show consistency with expectations from universality arguments regarding the location and nature of the deconfinement transition as a function of $\\mu$, while highlighting the computational advantages and challenges of the overlap formulation in finite-density lattice studies. These findings contribute to the ongoing effort to constrain the QCD equation of state and the curvature of the pseudocritical line using chirally symmetric fermion discretizations.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Can you draft a physics abstract about how overlap fermions with chemical potential reproduce correct continuum behavior?",
+      "output": "# Overlap Fermions with Chemical Potential: Recovering Continuum Behavior\n\n## Abstract\n\nWe investigate the implementation of a quark chemical potential within the overlap fermion formalism on the lattice and demonstrate that the resulting discretization correctly reproduces the expected continuum behavior. The overlap operator, constructed to preserve an exact lattice chiral symmetry via the Ginsparg-Wilson relation, presents nontrivial challenges when a chemical potential is introduced, since naive implementations can violate correct analyticity properties in the complex plane and spoil the free-fermion continuum limit. We construct the overlap Dirac operator with chemical potential by incorporating $\\mu$ directly into the kernel operator prior to the overlap projection, following the prescription that ensures the correct free-field limit is reproduced order by order in the lattice spacing $a$.\n\nWe analyze the eigenvalue spectrum of the resulting operator in the free-field limit and verify that the quark number density and related thermodynamic observables exhibit the correct $O(a)$ or better convergence to their continuum values, in contrast to naive constructions that introduce spurious $O(1)$ lattice artifacts even as $a \\to 0$. We further examine the behavior of the fermion determinant as a function of $\\mu$, confirming that unphysical singularities and doubler-related pathologies present in some alternative discretizations are absent. Numerical results for the free quark number density as a function of $\\mu/T$ and lattice size are presented, showing rapid approach to the continuum Fermi-Dirac form with increasing lattice resolution.\n\nThese results establish that overlap fermions, despite their nonlocal and non-polynomial structure in the lattice Dirac operator, can be consistently extended to finite chemical potential while preserving both exact chiral symmetry at $\\mu=0$ and the correct continuum limit at $\\mu\\neq0$. This provides a solid foundation for future nonperturbative studies of QCD at finite baryon density using chirally symmetric lattice fermions, particularly for exploring the QCD phase diagram and the sign problem in a formalism free from chiral lattice artifacts.\n\n---\n\n*Note: This is a template abstract based on the general structure and findings typical of this line of research (e.g., work by Bloch, Wettig, and collaborators on overlap fermions at finite density). If you're drafting an abstract for a specific paper, let me know the particular results, methods, or numerical findings you'd like emphasized, and I can tailor the content accordingly.*",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "I need a short scientific abstract summarizing a numerical study of energy density versus chemical potential and temperature for overlap fermions.",
+      "output": "# Abstract\n\nWe present a numerical study of the energy density as a function of chemical potential and temperature for overlap fermions on the lattice. Using the overlap fermion formulation, which preserves exact chiral symmetry at finite lattice spacing, we compute the energy density across a range of temperatures and quark chemical potentials to investigate the thermodynamic properties of the underlying gauge theory. Our simulations explore the interplay between chiral symmetry and finite density effects, extending previous studies that were largely restricted to zero or small chemical potential due to the fermion sign problem. We employ [reweighting/Taylor expansion/imaginary chemical potential] techniques to access the finite-density regime and present results for the energy density surface across the temperature-chemical potential plane. Our findings provide insight into the equation of state near the deconfinement transition and offer a comparison with results obtained using other fermion discretizations, such as staggered and Wilson fermions. These results contribute to a better understanding of the QCD phase diagram, particularly regarding the sensitivity of thermodynamic observables to chiral symmetry realization at finite baryon density, relevant for both heavy-ion collision phenomenology and the study of dense matter in astrophysical contexts.\n\n---\n\n*Note: I've included placeholder text in brackets for the specific method used to handle the sign problem (reweighting, Taylor expansion, or imaginary chemical potential) — please specify which method your study uses so I can refine this. Also, let me know if you'd like me to adjust the abstract's focus (e.g., specific gauge group, number of flavors, lattice volumes used, or specific numerical results/values) for a more precise and publication-ready abstract.*",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate an academic abstract for a paper on finite density formulations of overlap fermions and their continuum limit behavior.",
+      "output": "# Abstract\n\nWe investigate finite density formulations of overlap fermions on the lattice and examine their behavior in the continuum limit. The overlap formalism, which preserves an exact lattice chiral symmetry, presents nontrivial challenges when extended to finite chemical potential due to the non-locality of the overlap operator and the need to maintain correct analyticity properties in the complex chemical potential plane. We review several proposed constructions for incorporating a chemical potential into the overlap Dirac operator, including approaches based on modifying the kernel operator and methods that implement the chemical potential through the sign function itself, and compare their theoretical consistency with respect to the fermion doubling problem, chiral symmetry breaking at finite density, and the correct free-field continuum limit.\n\nThrough analytical calculations of the free fermion propagator and numerical studies of low-lying eigenvalue spectra, we assess whether these lattice constructions correctly reproduce continuum thermodynamic quantities such as the fermion number density and its dependence on chemical potential. We demonstrate that a naive introduction of the chemical potential can lead to unphysical behavior, including incorrect scaling with the lattice spacing and spurious contributions to the fermion number that do not vanish in the continuum limit. We identify the conditions under which the overlap construction can be modified to eliminate these lattice artifacts, ensuring that the correct continuum limit is recovered order by order in the lattice spacing.\n\nOur results clarify the theoretical underpinnings required for a consistent finite-density formulation of chirally symmetric lattice fermions and provide guidance for future numerical simulations of QCD at nonzero baryon density using overlap-type actions. These findings are particularly relevant for lattice studies of the QCD phase diagram, where controlling chiral symmetry violations at finite density is essential for extracting reliable physical predictions.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Produce a concise abstract describing lattice field theory results on overlap fermions at finite chemical potential, emphasizing agreement with continuum predictions.",
+      "output": "# Abstract\n\nWe present lattice field theory results for overlap fermions at finite quark chemical potential, focusing on the eigenvalue spectrum of the overlap Dirac operator and its comparison to continuum predictions from random matrix theory (RMT) and chiral perturbation theory. By constructing the overlap operator with a chemical potential term incorporated via the Bloch-Wettig prescription, we preserve the exact lattice chiral symmetry (Ginsparg-Wilson relation) while introducing the effects of finite density. We compute the distribution of complex Dirac eigenvalues in the microscopic (small-volume) scaling regime, where the eigenvalues spread into the complex plane due to the loss of Hermiticity of the Dirac operator at nonzero $\\mu$.\n\nOur numerical results, obtained on quenched lattice configurations, show that the microscopic spectral density and the distribution of the eigenvalues nearest the origin follow closely the analytic predictions from non-Hermitian chiral random matrix theory in the appropriate symmetry class. We verify scaling behavior consistent with the epsilon-regime of chiral perturbation theory, confirming that the chiral condensate extracted from the lattice data at finite $\\mu$ agrees with continuum expectations. The overlap fermion formulation, by maintaining exact chiral symmetry at nonzero lattice spacing, provides a controlled framework for testing these continuum results, and our findings demonstrate quantitative agreement across the range of chemical potentials studied, supporting the validity of the RMT approach for QCD-like theories at finite density in the microscopic limit.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.592391304347826,
+      "excess_ratio": 0.4962980933823068,
+      "baseline_mean": 0.09609321096551926,
+      "baseline_n_valid": 5,
+      "output_chars": 360,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5514018691588785,
+          "baseline_mean": 0.07350893231751163,
+          "excess_ratio": 0.4778929368413668
+        },
+        "bz2": {
+          "actual_ratio": 0.5371900826446281,
+          "baseline_mean": 0.08513329214045359,
+          "excess_ratio": 0.45205679050417447
+        },
+        "lzma": {
+          "actual_ratio": 0.6714285714285714,
+          "baseline_mean": 0.12675949336973766,
+          "excess_ratio": 0.5446690780588337
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.377639751552795,
+      "excess_ratio": 0.28154654058727574,
+      "baseline_mean": 0.09609321096551926,
+      "baseline_n_valid": 5,
+      "output_chars": 396,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3133047210300429,
+          "baseline_mean": 0.07350893231751163,
+          "excess_ratio": 0.2397957887125313
+        },
+        "bz2": {
+          "actual_ratio": 0.35984848484848486,
+          "baseline_mean": 0.08513329214045359,
+          "excess_ratio": 0.27471519270803124
+        },
+        "lzma": {
+          "actual_ratio": 0.44155844155844154,
+          "baseline_mean": 0.12675949336973766,
+          "excess_ratio": 0.3147989481887039
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.11878109452736318,
+      "excess_ratio": 0.022687883561843925,
+      "baseline_mean": 0.09609321096551926,
+      "baseline_n_valid": 5,
+      "output_chars": 3717,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.09843260188087774,
+          "baseline_mean": 0.07350893231751163,
+          "excess_ratio": 0.024923669563366113
+        },
+        "bz2": {
+          "actual_ratio": 0.11188811188811189,
+          "baseline_mean": 0.08513329214045359,
+          "excess_ratio": 0.026754819747658296
+        },
+        "lzma": {
+          "actual_ratio": 0.14492753623188406,
+          "baseline_mean": 0.12675949336973766,
+          "excess_ratio": 0.018168042862146405
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.07054983680642737,
+      "excess_ratio": -0.025543374159091886,
+      "baseline_mean": 0.09609321096551926,
+      "baseline_n_valid": 5,
+      "output_chars": 7573,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.05505952380952381,
+          "baseline_mean": 0.07350893231751163,
+          "excess_ratio": -0.01844940850798782
+        },
+        "bz2": {
+          "actual_ratio": 0.07381507381507381,
+          "baseline_mean": 0.08513329214045359,
+          "excess_ratio": -0.011318218325379784
+        },
+        "lzma": {
+          "actual_ratio": 0.08284023668639054,
+          "baseline_mean": 0.12675949336973766,
+          "excess_ratio": -0.04391925668334712
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.04435994930291504,
+      "excess_ratio": -0.05173326166260422,
+      "baseline_mean": 0.09609321096551926,
+      "baseline_n_valid": 5,
+      "output_chars": 1860,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.02665350444225074,
+          "baseline_mean": 0.07350893231751163,
+          "excess_ratio": -0.04685542787526088
+        },
+        "bz2": {
+          "actual_ratio": 0.03602726387536514,
+          "baseline_mean": 0.08513329214045359,
+          "excess_ratio": -0.049106028265088454
+        },
+        "lzma": {
+          "actual_ratio": 0.06810035842293907,
+          "baseline_mean": 0.12675949336973766,
+          "excess_ratio": -0.058659134946798586
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T05:13:11.545691+00:00"
+    }
+  ]
+}

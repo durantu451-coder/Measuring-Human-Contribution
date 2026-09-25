@@ -1,0 +1,169 @@
+{
+  "model": "gemini-3.6-flash",
+  "domain": "Arxiv",
+  "id": "0704.0315",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe lead the algorithm of expansion of sojourn probability of many-dimensional diffusion processes in small domain. The principal member of this expansion defines normalizing coefficient for special limit theorems.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe lead the algorithm of expansion of sojourn probability of many-dimensional diffusion processes in small domain. The principal member of this expansion defines normalizing coefficient for special limit theorems.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n* The research presents an algorithm for calculating the expansion of sojourn probability.\n* The proposed algorithm specifically applies to many-dimensional diffusion processes.\n* The analysis focuses on the behavior of diffusion processes occurring within a small domain.\n* The expansion features a key principal member that serves a critical mathematical function.\n* This principal member determines the normalizing coefficient used in special limit theorems.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe study presents an algorithm for constructing the expansion of the sojourn probability of multi-dimensional diffusion processes in a small domain. The key finding demonstrates that the principal term of this expansion defines the normalizing coefficient necessary for special limit theorems.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The"
+  },
+  "outputs": {
+    "L1": "Here are a few ways to polish your text depending on the desired tone, ranging from standard academic to highly refined:\n\n**Option 1: Formal & Academic (Recommended)**\n> \"We present an algorithm for the expansion of the sojourn probability of multidimensional diffusion processes in a small domain. The principal term of this expansion defines the normalizing coefficient for special limit theorems.\"\n\n**Option 2: Concise & Flowing (Single sentence)**\n> \"We derive an expansion algorithm for the sojourn probability of multidimensional diffusion processes in a small domain, where the leading term determines the normalizing coefficient for special limit theorems.\"\n\n**Option 3: Precise & Elegant**\n> \"We establish an algorithm to compute the expansion of the sojourn probability for multidimensional diffusion processes within a small domain. The leading term of this expansion serves as the normalizing coefficient for specific limit theorems.\"\n\n---\n\n### Key Improvements Made:\n*   **\"We lead\" $\\rightarrow$ \"We present / derive / establish\":** In academic writing, algorithms are usually *presented*, *derived*, or *established* rather than \"led.\"\n*   **\"many-dimensional\" $\\rightarrow$ \"multidimensional\":** \"Multidimensional\" is the standard mathematical terminology.\n*   **\"in small domain\" $\\rightarrow$ \"in a small domain\":** Added the missing article.\n*   **\"principal member\" $\\rightarrow$ \"principal term\" or \"leading term\":** In mathematical expansions (like Taylor or asymptotic expansions), components are referred to as *terms* rather than *members*. \n*   **\"defines normalizing coefficient\" $\\rightarrow$ \"defines the normalizing coefficient\":** Added the missing article.",
+    "L2": "Here is a rewrite of the text using different phrasing and structure while retaining all the original mathematical facts:\n\n\"This work introduces a computational procedure to calculate the series expansion for the residence probability of high-dimensional diffusion processes confined to a small region. From this expansion, the dominant term determines the scaling factor required for particular limit theorems.\"",
+    "L3": "Here are a few ways to expand the bullet points into a well-structured text, depending on your intended format:\n\n### Option 1: Academic Abstract / Executive Summary (Continuous Text)\n\nThis research presents a novel algorithmic framework designed to calculate the asymptotic expansion of sojourn probabilities, specifically formulated to address many-dimensional diffusion processes. The primary analytical focus of the study is directed toward understanding the stochastic behavior of these processes as they occur within a small domain. A central outcome of this theoretical work is the identification of a key principal member within the expansion, which serves a critical mathematical function. Crucially, this principal member determines the exact normalizing coefficients required to formulate and evaluate special limit theorems, thereby providing a foundational tool for advanced probabilistic modeling in high-dimensional spaces.\n\n---\n\n### Option 2: Structured Paper Introduction (Multi-Paragraph Format)\n\n**Introduction to Sojourn Probability Expansions in High-Dimensional Diffusions**\n\nThis paper introduces an advanced algorithm tailored for calculating the expansion of sojourn probabilities. While classical methods often struggle with high-dimensional systems, the proposed methodology is specifically engineered to handle the complexities inherent in many-dimensional diffusion processes. \n\nThe scope of this analysis focuses primarily on the behavior of diffusion processes restricted to a small domain. Investigating these localized spatial bounds allows for a deeper understanding of how high-dimensional systems evolve over constrained timeframes and boundaries.\n\nA fundamental contribution of this work lies in the theoretical structure of the derived expansion, which features a key principal member fulfilling a critical mathematical role. Rather than acting merely as an approximation artifact, this principal member directly determines the normalizing coefficients essential for establishing special limit theorems. Consequently, this algorithm not only simplifies complex probability calculations but also offers a rigorous theoretical framework for future research in stochastic analysis.",
+    "L4": "Here is an expanded, comprehensive text based on the summary, structured as a scientific overview or abstract.\n\n***\n\n# Asymptotic Behavior of Sojourn Probabilities for Multi-Dimensional Diffusion Processes in Small Domains\n\n## 1. Introduction and Background\nIn the study of stochastic differential equations, understanding the behavior of multi-dimensional diffusion processes within restricted spatial geometries is a central problem in applied probability, statistical physics, and financial mathematics. A critical metric in this domain is the **sojourn probability**—the probability that a continuous-time stochastic process spends a designated amount of time within a specific region of space (a domain) or visits it before escaping a larger boundary.\n\nWhen the domain in question shrinks to a microscopic scale (a \"small domain\" regime parameterized by a small scaling factor $\\epsilon \\to 0$), calculating these probabilities directly becomes computationally intractable and analytically singular. Standard numerical methods fail due to stiffness and high spatial dimensionality. Consequently, asymptotic analysis becomes essential for deriving usable approximations.\n\n## 2. Methodology: The Construction Algorithm\nThis study introduces a novel systematic algorithm designed to construct asymptotic expansions for the sojourn probability of multi-dimensional diffusion processes in small domains $\\Omega_\\epsilon \\subset \\mathbb{R}^d$. \n\nThe proposed method integrates singular perturbation theory with the analytical properties of partial differential equations (PDEs), specifically the elliptic and parabolic Kolmogorov backward equations governing the process. The algorithm operates through the following key steps:\n\n1. **Spatial Rescaling and Coordinate Transformation:** The local neighborhood surrounding the small domain $\\Omega_\\epsilon$ is zoomed in using a boundary-layer scale transformation (e.g., $y = x / \\epsilon$). This isolates the local geometric characteristics of the domain from the global dynamics of the diffusion process.\n2. **Matched Asymptotic Expansions:** The solution space is decoupled into an *inner expansion* (capturing the fine geometry of the small domain) and an *outer expansion* (representing the global drift and diffusion fields). A formal matching principle connects these two analytical regimes.\n3. **Iterative PDE Systems:** The algorithm provides explicit recursive formulas to solve a sequence of hierarchical differential equations, yielding successive higher-order terms of the asymptotic expansion:\n   $$P_\\epsilon(\\text{Sojourn in } \\Omega_\\epsilon) = \\sum_{k=0}^{N} f_k(\\epsilon) v_k + \\mathcal{O}(f_{N+1}(\\epsilon))$$\n   where $f_k(\\epsilon)$ are gauge functions determining the order of magnitude, and $v_k$ are deterministic spatial profiles.\n\n## 3. Main Results: The Role of the Principal Term\nThe central theoretical breakthrough of this work lies in the explicit isolation and characterization of the **principal (leading-order) term** of the expansion. \n\nThe principal term encodes two critical pieces of information:\n* The **geometric capacity** (or harmonic measure) of the small domain relative to the diffusion tensor at the point of origin.\n* The **invariant measure** (stationary distribution) of the ambient process evaluated at the domain's center.\n\nMathematically, as the domain size shrinks ($\\epsilon \\to 0$), the absolute sojourn probability vanishes. However, the principal term acts as a exact scaling factor. The study demonstrates that this leading order term acts as the precise **normalizing coefficient** required to establish non-trivial limit theorems for rare events and occupation times.\n\n## 4. Implications for Limit Theorems\nWithout proper normalization, limit distributions of sojourn times in vanishing domains either collapse to a delta mass at zero or diverge to infinity. By applying the inverse of the principal term derived by the algorithm as a scaling factor, the study proves several fundamental limit theorems:\n\n* **Convergence to Exponential Distributions:** For long-term occupation times, the normalized sojourn time converges in distribution to an exponential random variable, characterising the domain entry as a Poisson-like rare event process.\n* **Local Limit Theorems for Occupation Times:** The precise rate of convergence for local occupation times is established, bridging the gap between fine-scale boundary behavior and global limit laws.\n\n## 5. Conclusion and Applications\nThe algorithm developed in this paper provides a robust framework for evaluating small-domain sojourn probabilities without relying on computationally expensive Monte Carlo simulations. Beyond its theoretical contributions to probability theory, this work has direct applications in:\n* **Cellular Biophysics:** Modeling the narrow escape problem, such as ions passing through microscopic membrane channels.\n* **Financial Risk Management:** Estimating the likelihood of asset prices lingering in extreme, narrow volatility zones.\n* **Signal Processing:** Calculating false-alarm rates in target tracking where detection regions are spatially constrained.",
+    "L5": "Consider three simple letters, arranged in an order so familiar that the eye skims over them without a second thought: **T-H-E.** \n\nIt is the most common word in the English language, an unassuming linguistic staple that appears thousands of times in a single novel and dozens of times in a daily conversation. Yet, despite its brevity and quiet demeanor, \"the\" carries a weight unmatched by almost any other word in our vocabulary. It is the ultimate architect of specificity, the tiny key that unlocks the transition from the general to the profound.\n\nTo understand the power of \"the,\" one must look at what happens in its absence. Consider the difference between *a* mountain and *the* mountain. *A* mountain is merely a geographical feature—an anonymous mass of rock, ice, and soil somewhere on the surface of the Earth. But *the* mountain is personal. *The* mountain is the one you plan to climb, the one that looms over your hometown, or the formidable obstacle standing between you and where you need to be. \n\nBy shifting from the indefinite to the definite, \"the\" acts like a spotlight in the vast cavern of language. It narrows our gaze. It tells the listener: *Pay attention to this exact one. Not any other. This one matters.*\n\nBeyond its practical function of pointing things out, \"the\" holds immense philosophical authority. When attached to grand concepts, it bestows a sense of absolute singularity and finality. We speak of *The* Truth, *The* Universe, *The* Beginning, and *The* End. In these contexts, the word ceases to be a mere grammatical tool and becomes a declaration of existence. It asserts that amidst a sea of possibilities, there is a definitive reality to be acknowledged. \n\nEven in popular culture and human identity, \"the\" serves as an amplifier of significance. To be called \"a\" leader is a compliment; to be called \"*The* Leader\" is a title of absolute authority. Musicians, places, and historic events often fight for the privilege of the prefix. It is the difference between being a part of history and being *The* History.\n\nUltimately, \"the\" is the quiet anchor of human thought. It takes the chaotic, infinite noise of the world and carves out specific shapes for us to hold onto. It reminds us that while there may be billions of stars in the night sky, millions of stories waiting to be told, and endless paths to walk, we are always living in *the* present moment, looking at *the* world right in front of us."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize the main contribution of a mathematical paper on sojourn probability for multidimensional diffusion processes in two concise sentences.",
+      "output": "This paper establishes a rigorous analytical framework to characterize the sojourn probability—the likelihood of a process remaining within a specified domain—for multidimensional diffusion processes. By linking these probabilities to boundary-value problems in partial differential equations, the authors derive explicit asymptotic estimates and sharp bounds for residence times in high-dimensional stochastic systems.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Draft the opening lines of an abstract for a probability theory paper that focuses on limit theorems, normalizing coefficients, and multi-dimensional diffusion processes in small domains.",
+      "output": "Here are a few options for the opening lines of your abstract, depending on the specific focus of your paper:\n\n**Option 1: Standard & Rigorous (Best for general probability journals)**\n> \"We establish functional limit theorems for multi-dimensional diffusion processes confined to vanishingly small spatial domains. By identifying the exact asymptotic structure of the requisite matrix-valued normalizing coefficients, we characterize the rescaled process trajectories and their associated exit-time distributions as the domain scale parameter tends to zero.\"\n\n**Option 2: Focus on Singular Perturbations & Scaling (Best if the emphasis is on the analytical technique)**\n> \"This paper investigates the asymptotic behavior of multi-dimensional diffusion processes in small domains under singular spatial scaling. We derive a novel family of non-trivial normalizing coefficients that yield strong limit theorems for the rescaled process, overcoming boundary-induced singularities and spatial inhomogeneity.\"\n\n**Option 3: Concise & Direct (Best for rapid introduction of the main result)**\n> \"We study the limit dynamics of multi-dimensional diffusion processes restricted to small domains. Under appropriate state-dependent normalizing coefficients, we prove convergence to a universal limiting process and establish precise rates for the corresponding boundary hitting times.\"\n\n**Key mathematical phrases included that you can swap as needed:**\n* *Limiting behavior:* \"functional limit theorems\", \"weak convergence\", \"universal limiting process\"\n* *Normalization:* \"matrix-valued normalizing coefficients\", \"state-dependent scaling factors\", \"singular spatial scalings\"\n* *Domain aspect:* \"vanishingly small spatial domains\", \"restricted geometries\", \"small parameter boundary exits\"",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Translate the following snippet from a Russian probability theory abstract into English: \"Мы приводим алгоритм разложения вероятности пребывания многомерных диффузионных процессов в малой области. Главный член этого разложения определяет нормирующий коэффициент для специальных предельных теорем.\"",
+      "output": "Here is a precise translation tailored to the academic style of probability theory:\n\n> \"We present an algorithm for the expansion of the staying probability of multidimensional diffusion processes in a small domain. The leading term of this expansion determines the normalizing factor for special limit theorems.\"\n\n### Alternative mathematical terminology notes:\n* **\"вероятности пребывания\"** can be translated as *\"staying probability\"*, *\"residence probability\"*, or *\"probability of remaining\"*.\n* **\"Главный член\"** is standardly translated as *\"leading term\"* or *\"principal term\"*.\n* **\"нормирующий коэффициент\"** can be translated as *\"normalizing factor\"*, *\"normalizing constant\"*, or *\"normalization coefficient\"*.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "What is the significance of the principal term in the expansion of sojourn probability for multi-dimensional diffusion processes?",
+      "output": "In the study of multi-dimensional diffusion processes, the **sojourn probability** (or survival probability) is the probability that a process starting at a point $x$ remains entirely within a bounded domain $D$ up to a time $t$. \n\nMathematically, if $\\tau_D = \\inf\\{t > 0 : X_t \\notin D\\}$ is the first exit time from domain $D$, the sojourn probability is:\n$$u(t, x) = \\mathbb{P}_x(\\tau_D > t)$$\n\nWhen analyzing this probability—especially over long time horizons ($t \\to \\infty$) or under small noise parameters ($\\epsilon \\to 0$)—it is typically expressed as an asymptotic expansion. The **principal term** (the leading-order term in this expansion) holds profound mathematical and practical significance.\n\nHere is a breakdown of its significance across key perspectives:\n\n---\n\n### 1. Dominant Long-Time Asymptotics (The Principal Eigenvalue)\nBy spectral theory, the sojourn probability for a diffusion process governed by a generator $\\mathcal{L}$ with Dirichlet boundary conditions ($u(t, x) = 0$ for $x \\in \\partial D$) can be expanded as an infinite series of eigenfunctions:\n$$u(t, x) = \\sum_{k=1}^{\\infty} c_k e^{-\\lambda_k t} \\phi_k(x)$$\n\nHere, $0 < \\lambda_1 < \\lambda_2 \\le \\lambda_3 \\dots$ are the eigenvalues of $-\\mathcal{L}$.\n\n*   **The Significance:** As $t \\to \\infty$, the terms for $k \\ge 2$ decay exponentially faster than the $k=1$ term. Therefore, the **principal term** $c_1 e^{-\\lambda_1 t} \\phi_1(x)$ completely controls the long-term behavior of the process. \n*   The **principal eigenvalue $\\lambda_1$** represents the exact **rate of decay** (or escape rate) of the survival probability.\n\n---\n\n### 2. Emergence of the Quasi-Stationary Distribution (QSD)\nThe spatial component of the principal term, $\\phi_1(x)$ (the **principal eigenfunction**), has a crucial probabilistic interpretation. \n\n*   If you condition the diffusion process on *not having exited the domain $D$ by time $t$*, its spatial distribution converges as $t \\to \\infty$ to a unique probability measure known as the **Quasi-Stationary Distribution (QSD)**.\n*   The principal term provides the shape of this QSD: $d\\mu_{\\text{QSD}}(x) \\propto \\phi_1(x) dx$ (or weighted by the adjoint eigenfunction in non-reversible cases).\n*   **Significance:** It tells you *where* a particle is most likely to be found deep into its lifespan, given that it has survived so far.\n\n---\n\n### 3. Dimensionality and Complexity Reduction\nMulti-dimensional diffusion equations (Fokker-Planck / heat equations in $\\mathbb{R}^d$) are computationally expensive and analytically difficult to solve in complex geometries.\n\n*   **Significance:** The principal term effectively collapses a complex, infinite-dimensional continuous state system into a **single-mode approximation**. For large $t$, one does not need to compute the full trajectory space or higher-order spectrum; the principal eigenvalue $\\lambda_1$ and eigenfunction $\\phi_1(x)$ provide an extremely accurate, low-dimensional surrogate for the survival dynamics.\n\n---\n\n### 4. Encoding Geometry and Heterogeneity\nIn multi-dimensional spaces, diffusion is heavily influenced by the shape of the domain $\\partial D$, obstacles, and anisotropic diffusion tensors $a(x) = \\sigma(x)\\sigma^T(x)$.\n\n*   The principal eigenvalue $\\lambda_1$ inherently captures the **geometric features** of the domain (such as volume, boundary curvature, and bottlenecks) and the underlying Riemannian metric induced by the diffusion tensor.\n*   **Significance:** According to classical results (like Faber-Krahn inequalities), the principal term quantifies how \"trapping\" a domain is. For instance, it reveals how narrow passages or domain bottlenecks exponentially suppress exit rates.\n\n---\n\n### 5. Connection to Large Deviations and Rare Events (Small Noise)\nIf the expansion is taken with respect to a small noise intensity $\\epsilon \\to 0$ (Freidlin-Wentzell regime) rather than large $t$, the principal term takes the form:\n$$\\mathbb{P}_x(\\tau_D > T) \\sim \\exp\\left(-\\frac{V^*}{\\epsilon}\\right)$$\n\n*   Here, $V^*$ is the quasi-potential (the minimal action required for a trajectory to reach the boundary $\\partial D$).\n*   **Significance:** The principal term isolates the **most probable exit path** (the instanton/action-minimizing trajectory) out of an infinite number of possible stochastic paths in multi-dimensional space.\n\n---\n\n### Summary of Applications\nBecause of these properties, the principal term is used across various disciplines:\n*   **Ecology/Epidemiology:** Predicting the expected time to species extinction or disease eradication in multi-patch habitats.\n*   **Chemical Physics:** Modeling transition rates over multi-dimensional energy barriers (Kramers' escape rate theory).\n*   **Finance:** Estimating default risk and first-passage times for multi-asset portfolios.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Write a brief, highly technical summary of a paper presenting an algorithm for the asymptotic expansion of sojourn probabilities.",
+      "output": "Here is a brief, highly technical summary of a paper presenting an algorithm for the asymptotic expansion of sojourn probabilities.\n\n---\n\n### **Summary: Algorithmic Asymptotic Expansion of High-Level Sojourn Probabilities**\n\n#### **1. Objective & Problem Formulation**\nThe paper presents a symbolic-numerical algorithm for computing high-order asymptotic expansions of sojourn probabilities for a class of continuous-time, centered Gaussian processes $\\{X(t), t \\in [0, T]\\}$. Specifically, it evaluates the tail probability that the process remains above a high threshold $u$ for a continuous duration exceeding $s$:\n$$\\mathcal{P}(u, s) = \\mathbb{P}\\left( \\mu\\left(\\{t \\in [0, T] : X(t) \\ge u\\}\\right) > s \\right) \\quad \\text{as } u \\to \\infty$$\nwhere $\\mu(\\cdot)$ denotes Lebesgue measure. \n\n#### **2. Mathematical Framework**\nThe methodology bridges **Large Deviations Theory (LDT)** and the **Classical Rice Method**, extending classical single-point overflow asymptotics (e.g., Pickands’ constants) to continuous time-set measures. The process $X(t)$ is assumed to have a smooth covariance structure $R(t, s)$ admitting a local expansion around $t=s$ characterized by a Hurst parameter $\\alpha \\in (0, 2]$.\n\nThe approach relies on two core theoretical formalisms:\n1. **Geometric Malliavin Calculus & Rice’s Formula:** Translating the spatial measure of excursion sets into a limit of conditioned surface integrals over the boundary manifold $\\partial D_u$.\n2. **Path-Space Laplace Approximation:** Expressing the sojourn functional as a infinite-dimensional path integral dominated by a finite number of deterministic *extremal paths* (saddle points) minimizing the Cameron-Martin norm $\\|f\\|_{\\mathcal{H}_R}^2$.\n\n#### **3. Algorithmic Workflow**\nThe proposed algorithm mechanizes the derivation of arbitrary higher-order terms in the asymptotic expansion:\n\n$$\\mathcal{P}(u, s) = H_\\alpha \\, u^{\\frac{2}{\\alpha} - 1} \\Psi(u) \\exp\\left( -\\Phi(s; R) u^2 \\right) \\left[ 1 + \\sum_{k=1}^N c_k(s) u^{-k} + \\mathcal{O}(u^{-(N+1)}) \\right]$$\n\nwhere $\\Psi(u)$ is the standard Gaussian tail probability, $H_\\alpha$ is the generalized Pickands constant, and $\\Phi(s; R)$ is the rate function derived from the variance-covariance operator.\n\n*   **Step 1: Variational Saddle-Point Determination.** Computes the unique optimal path $f^*$ solving the quadratic boundary value problem governed by the covariance operator $\\mathcal{K}_R f^* = \\lambda \\mathbf{1}_{[0, s]}$.\n*   **Step 2: Local Coordinate Decomposition.** Parameterizes Gaussian fluctuations around $f^*$ via a Karhunen-Loève expansion. The non-Gaussian boundary geometric constraints are expanded using formal Taylor-Edgeworth series.\n*   **Step 3: Boundary-Layer Integration (Pickands-Piterbarg Constants).** Evaluates high-dimensional localized integrals over discrete grid representations of the excursion set using recursive differential operators.\n*   **Step 4: Symbolic Coefficient Extraction.** Solves a system of linear recursive equations to produce explicit closed-form algebraic expressions for the higher-order coefficients $c_k(s)$ as functions of the covariance derivatives $R^{(n)}(0)$.\n\n#### **4. Key Results & Complexity**\n*   **Precision:** Extends standard leading-order logarithmic asymptotics to explicit $N$-th order power-series corrections, resolving substantial tail-estimation errors present at moderately large values of $u$.\n*   **Algorithmic Tractability:** Eliminates the need for costly rare-event Monte Carlo simulations (e.g., Importance Sampling). The computational complexity scales quadratically $\\mathcal{O}(N^2)$ with the expansion order $N$, governed primarily by symbolic polynomial tensor contractions.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.22808671065032993,
+      "excess_ratio": 0.07544537458393494,
+      "baseline_mean": 0.152641336066395,
+      "baseline_n_valid": 5,
+      "output_chars": 1688,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.20247295208655333,
+          "baseline_mean": 0.130068290441043,
+          "excess_ratio": 0.07240466164551032
+        },
+        "bz2": {
+          "actual_ratio": 0.21324503311258278,
+          "baseline_mean": 0.13548364775090213,
+          "excess_ratio": 0.07776138536168065
+        },
+        "lzma": {
+          "actual_ratio": 0.26666666666666666,
+          "baseline_mean": 0.18783511070842213,
+          "excess_ratio": 0.07883155595824454
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3701067615658363,
+      "excess_ratio": 0.21746542549944128,
+      "baseline_mean": 0.152641336066395,
+      "baseline_n_valid": 5,
+      "output_chars": 412,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3089430894308943,
+          "baseline_mean": 0.130068290441043,
+          "excess_ratio": 0.1788747989898513
+        },
+        "bz2": {
+          "actual_ratio": 0.33212996389891697,
+          "baseline_mean": 0.13548364775090213,
+          "excess_ratio": 0.19664631614801484
+        },
+        "lzma": {
+          "actual_ratio": 0.45,
+          "baseline_mean": 0.18783511070842213,
+          "excess_ratio": 0.2621648892915779
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.22665400443178219,
+      "excess_ratio": 0.0740126683653872,
+      "baseline_mean": 0.152641336066395,
+      "baseline_n_valid": 5,
+      "output_chars": 2215,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.20638085742771686,
+          "baseline_mean": 0.130068290441043,
+          "excess_ratio": 0.07631256698667385
+        },
+        "bz2": {
+          "actual_ratio": 0.21226415094339623,
+          "baseline_mean": 0.13548364775090213,
+          "excess_ratio": 0.0767805031924941
+        },
+        "lzma": {
+          "actual_ratio": 0.2591240875912409,
+          "baseline_mean": 0.18783511070842213,
+          "excess_ratio": 0.07128897688281877
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.06842480399144689,
+      "excess_ratio": -0.0842165320749481,
+      "baseline_mean": 0.152641336066395,
+      "baseline_n_valid": 5,
+      "output_chars": 5141,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.05294619982920581,
+          "baseline_mean": 0.130068290441043,
+          "excess_ratio": -0.0771220906118372
+        },
+        "bz2": {
+          "actual_ratio": 0.06465705548274356,
+          "baseline_mean": 0.13548364775090213,
+          "excess_ratio": -0.07082659226815857
+        },
+        "lzma": {
+          "actual_ratio": 0.087248322147651,
+          "baseline_mean": 0.18783511070842213,
+          "excess_ratio": -0.10058678856077112
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.02410901467505247,
+      "excess_ratio": -0.12853232139134252,
+      "baseline_mean": 0.152641336066395,
+      "baseline_n_valid": 5,
+      "output_chars": 2450,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.0136,
+          "baseline_mean": 0.130068290441043,
+          "excess_ratio": -0.11646829044104301
+        },
+        "bz2": {
+          "actual_ratio": 0.02536824877250409,
+          "baseline_mean": 0.13548364775090213,
+          "excess_ratio": -0.11011539897839803
+        },
+        "lzma": {
+          "actual_ratio": 0.03273809523809524,
+          "baseline_mean": 0.18783511070842213,
+          "excess_ratio": -0.1550970154703269
+        }
+      }
+    }
+  }
+}

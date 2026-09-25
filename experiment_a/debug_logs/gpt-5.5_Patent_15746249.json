@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15746249",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nEmbodiments of the invention generally relate to interconnection of overlay networks. The communication device is provided. The device comprises a first VTEP coupled to a first overlay network and a second VTEP coupled to a second overlay network, wherein the first and second overlay networks use a same virtual network identifier. The first VTEP is configured to receive, from the first overlay network, an address resolution request for a destination VM in the second overlay network, wherein the address resolution request contains an IP address of the destination VM. The second VTEP is configured to forward the address resolution request to the second overlay network, receive the address resolution response from the second overlay network and obtain the endpoint information associated with the destination VM from the address resolution response. The first VTEP is further configured to send the endpoint information to the first overlay network. In this way, the endpoint information associated with VMs in different overlay networks using the same virtual network identifier may be forwarded between the overlay networks.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nEmbodiments of the invention generally relate to interconnection of overlay networks. The communication device is provided. The device comprises a first VTEP coupled to a first overlay network and a second VTEP coupled to a second overlay network, wherein the first and second overlay networks use a same virtual network identifier. The first VTEP is configured to receive, from the first overlay network, an address resolution request for a destination VM in the second overlay network, wherein the address resolution request contains an IP address of the destination VM. The second VTEP is configured to forward the address resolution request to the second overlay network, receive the address resolution response from the second overlay network and obtain the endpoint information associated with the destination VM from the address resolution response. The first VTEP is further configured to send the endpoint information to the first overlay network. In this way, the endpoint information associated with VMs in different overlay networks using the same virtual network identifier may be forwarded between the overlay networks.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The invention relates to interconnecting overlay networks that use the same virtual network identifier.\n- A communication device includes a first VTEP connected to a first overlay network and a second VTEP connected to a second overlay network.\n- The first VTEP receives an address resolution request from the first overlay network for a destination VM in the second overlay network.\n- The second VTEP forwards the request to the second overlay network, receives the response, and obtains endpoint information for the destination VM.\n- The first VTEP sends the destination VM’s endpoint information back to the first overlay network, enabling endpoint information to be shared between the overlay networks.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA communication device interconnects two overlay networks sharing the same virtual network identifier by using first and second VTEPs to relay address resolution requests and responses for virtual machines across the networks. This enables endpoint information for VMs in different overlay networks to be exchanged, allowing communication between otherwise separate overlay environments.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Embodiments, The, VTEP"
+  },
+  "outputs": {
+    "L1": "Embodiments of the invention generally relate to the interconnection of overlay networks. A communication device is provided. The device comprises a first VTEP coupled to a first overlay network and a second VTEP coupled to a second overlay network, wherein the first and second overlay networks use the same virtual network identifier. The first VTEP is configured to receive, from the first overlay network, an address resolution request for a destination VM in the second overlay network, wherein the address resolution request contains an IP address of the destination VM. The second VTEP is configured to forward the address resolution request to the second overlay network, receive an address resolution response from the second overlay network, and obtain endpoint information associated with the destination VM from the address resolution response. The first VTEP is further configured to send the endpoint information to the first overlay network. In this manner, endpoint information associated with VMs in different overlay networks using the same virtual network identifier may be forwarded between the overlay networks.",
+    "L2": "The invention’s embodiments generally concern linking overlay networks together. A communication device is disclosed. The device includes a first VTEP connected to a first overlay network and a second VTEP connected to a second overlay network, where both overlay networks use the same virtual network identifier. The first VTEP is arranged to receive, from the first overlay network, an address resolution request for a destination VM located in the second overlay network, with the request including the destination VM’s IP address. The second VTEP is arranged to pass the address resolution request on to the second overlay network, receive an address resolution reply from the second overlay network, and extract from that reply the endpoint information corresponding to the destination VM. The first VTEP is also arranged to transmit the endpoint information back to the first overlay network. As a result, endpoint information for VMs located in separate overlay networks that share the same virtual network identifier can be conveyed between those overlay networks.",
+    "L3": "The invention relates to the interconnection of overlay networks, particularly overlay networks that use the same virtual network identifier. In such environments, it may be necessary to enable communication between virtual machines or other endpoints located in different overlay networks, while still allowing each overlay network to operate using the same identifier.\n\nA communication device is provided to facilitate this interconnection. The communication device includes a first Virtual Tunnel End Point (VTEP) connected to a first overlay network and a second VTEP connected to a second overlay network. The first VTEP is configured to communicate with devices in the first overlay network, while the second VTEP is configured to communicate with devices in the second overlay network.\n\nIn operation, the first VTEP receives an address resolution request from the first overlay network. The address resolution request is directed to resolving endpoint information for a destination virtual machine located in the second overlay network. Because the destination virtual machine is not directly reachable within the first overlay network, the request is handled by the communication device.\n\nThe second VTEP then forwards the address resolution request to the second overlay network. The request is processed in the second overlay network, and a response is returned identifying endpoint information associated with the destination virtual machine. This endpoint information may include, for example, addressing or location information required to reach the destination virtual machine through the overlay network.\n\nAfter receiving the response from the second overlay network, the second VTEP obtains the endpoint information for the destination virtual machine and provides it to the first VTEP. The first VTEP then sends the destination virtual machine’s endpoint information back to the first overlay network in response to the original address resolution request.\n\nAs a result, endpoint information can be shared between the first and second overlay networks, even when the overlay networks use the same virtual network identifier. This enables communication between endpoints located in different overlay networks while maintaining separation between the respective overlay network domains.",
+    "L4": "A communication device is configured to provide interconnection between two overlay networks that use the same virtual network identifier, such as the same virtual network instance or segment identifier. Each overlay network may include one or more virtual machines connected through a virtual tunnel endpoint (VTEP). Although the overlay networks may be independently established and may not normally share endpoint information, the communication device enables information associated with virtual machines in one overlay network to be made available to virtual machines in the other overlay network.\n\nIn one example, the communication device is connected to a first VTEP associated with a first overlay network and to a second VTEP associated with a second overlay network. When a virtual machine in the first overlay network needs to communicate with a virtual machine in the second overlay network, an address resolution request, such as an ARP request or a neighbor discovery request, may be generated in the first overlay network. The first VTEP receives the request and forwards it to the communication device. The communication device determines that the request is associated with the shared virtual network identifier and relays the request toward the second VTEP of the second overlay network.\n\nThe second VTEP then delivers the address resolution request within the second overlay network. If the target virtual machine is present in the second overlay network, a corresponding address resolution response is generated. The response may include endpoint information for the target virtual machine, such as a media access control address, an Internet Protocol address, VTEP address, tunnel information, or other forwarding information used to reach the virtual machine. The second VTEP sends this response back to the communication device, which relays the response to the first VTEP. The first VTEP may then provide the response to the requesting virtual machine and may also store the received endpoint information for later forwarding.\n\nSimilarly, address resolution requests originating from the second overlay network may be forwarded through the communication device to the first overlay network. In this manner, endpoint information for virtual machines located in different overlay networks can be exchanged even though the overlay networks are otherwise separate. Once the appropriate endpoint information has been learned, traffic from a virtual machine in one overlay network can be tunneled, routed, bridged, or otherwise forwarded to a virtual machine in the other overlay network according to the shared virtual network identifier and the learned addressing information.\n\nBy using the first and second VTEPs as relay points and by forwarding address resolution requests and responses between them, the communication device allows virtual machines in separate overlay environments to discover one another and communicate as if they were part of a common overlay segment. This approach can reduce the need for manual configuration of endpoint mappings, support mobility of virtual machines, and enable communication across independently managed overlay networks while preserving the logical separation provided by the overlay architecture.",
+    "L5": "Embodiments of modern network virtualization systems often rely on a component known as the VTEP, or VXLAN Tunnel Endpoint. The VTEP plays a central role in connecting traditional network segments with virtualized overlay networks. It encapsulates Ethernet frames into VXLAN packets and forwards them across an IP network, allowing virtual machines or containers on different physical hosts to communicate as if they were on the same Layer 2 network.\n\nIn some embodiments, the VTEP may be implemented in a physical switch, a hypervisor, a software-defined networking platform, or a dedicated network appliance. The flexibility of this design allows organizations to scale data center networks more efficiently while reducing the limitations associated with traditional VLAN-based architectures.\n\nThe VTEP also helps improve network segmentation and tenant isolation. By using VXLAN Network Identifiers, traffic from different tenants or applications can remain logically separated even when it travels over the same physical infrastructure. This makes the VTEP an essential element in cloud computing environments, large enterprise data centers, and software-defined networking deployments.\n\nOverall, embodiments that include the VTEP provide a practical way to extend network connectivity, support workload mobility, and simplify the management of large-scale virtualized environments."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style abstract for an invention about interconnecting two overlay networks that use the same virtual network identifier, where a communication device has two VTEPs and relays ARP/address resolution information for VMs across the networks.",
+      "output": "An apparatus and method are provided for interconnecting first and second overlay networks that employ a common virtual network identifier. A communication device includes a first virtual tunnel end point (VTEP) coupled to the first overlay network and a second VTEP coupled to the second overlay network. The communication device receives address resolution information, such as Address Resolution Protocol (ARP) or neighbor discovery information, associated with virtual machines in one overlay network and relays or advertises corresponding address resolution information to the other overlay network using the shared virtual network identifier. The communication device may maintain mapping information associating virtual machine addresses, tunnel endpoint addresses, and the common virtual network identifier, and may generate, translate, proxy, or forward address resolution messages between the first and second VTEPs. Accordingly, virtual machines located in different overlay networks can discover and communicate with one another as members of a common virtual network while the overlay networks remain separately terminated at respective VTEPs of the communication device.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a concise technical summary in patent language describing a device with a first VTEP connected to a first overlay network and a second VTEP connected to a second overlay network, enabling endpoint information exchange for destination VMs via address resolution requests.",
+      "output": "A device includes a first virtual tunnel endpoint (VTEP) coupled to a first overlay network and a second VTEP coupled to a second overlay network. The device is configured to facilitate exchange of endpoint information between the first and second overlay networks for destination virtual machines (VMs). In response to receiving an address resolution request associated with a destination VM, the device determines whether endpoint information for the destination VM is available through the other overlay network. The device obtains or forwards the address resolution request via the corresponding VTEP, receives endpoint information for the destination VM, and provides the endpoint information to the requesting overlay network. The endpoint information may include a network address, tunnel endpoint identifier, or other forwarding information usable to establish communication with the destination VM across the overlay networks.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate an “Embodiments of the invention” paragraph for a networking patent involving VXLAN/VTEP overlay network interconnection, same VNI on both overlays, and forwarding address resolution responses between them.",
+      "output": "In embodiments of the invention, a network device is configured to interconnect a first VXLAN overlay network and a second VXLAN overlay network, each overlay network including one or more VXLAN tunnel endpoints (VTEPs) and being associated with a same VXLAN network identifier (VNI). The network device receives, from a first VTEP in the first VXLAN overlay network, an address resolution request for resolving a destination endpoint address within the VNI and forwards the address resolution request, directly or indirectly, toward the second VXLAN overlay network while preserving the VNI context. In response to an address resolution response generated by a second VTEP or endpoint in the second VXLAN overlay network, the network device forwards the address resolution response to the first VTEP in the first VXLAN overlay network, thereby enabling the first VTEP to learn reachability information for the destination endpoint across the interconnected overlays. In some embodiments, the address resolution response comprises an Address Resolution Protocol (ARP) reply, a Neighbor Discovery Protocol (NDP) advertisement, or control-plane reachability information identifying a media access control (MAC) address, Internet Protocol (IP) address, VTEP address, or combination thereof. The network device may maintain mapping information correlating the common VNI with the first and second overlay networks and may selectively forward address resolution messages between the overlays based on policy, tenant association, endpoint learning state, or loop-prevention information, while preventing uncontrolled flooding between the overlays. As a result, endpoints or VTEPs in separate VXLAN overlay domains using the same VNI may resolve forwarding information and communicate across the overlay interconnection without requiring translation of the VNI.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Create a patent abstract for a communication device that bridges address resolution between two virtual overlay networks sharing a virtual network identifier, including receiving a request with a VM IP address, forwarding it, obtaining endpoint information, and returning it.",
+      "output": "A communication device is configured to bridge address resolution between first and second virtual overlay networks associated with a common virtual network identifier. The communication device receives, from the first virtual overlay network, an address resolution request including an Internet Protocol (IP) address of a virtual machine in the second virtual overlay network. Based on the shared virtual network identifier, the communication device forwards the address resolution request toward the second virtual overlay network. In response, the communication device obtains endpoint information corresponding to the virtual machine, the endpoint information including information usable to reach the virtual machine through the second virtual overlay network. The communication device returns the endpoint information to the first virtual overlay network, thereby enabling communication with the virtual machine across the virtual overlay networks while maintaining the common virtual network identifier.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "In formal patent-drafting style, describe an invention where two VTEPs coupled to separate overlay networks allow VM endpoint information to be learned across overlays by relaying address resolution requests and responses.",
+      "output": "An invention is disclosed for facilitating learning of virtual machine endpoint information across distinct overlay networks by relaying address resolution signaling between virtual tunnel endpoints.\n\nIn one embodiment, a system comprises a first virtual tunnel endpoint (VTEP) coupled to a first overlay network and a second VTEP coupled to a second overlay network. The first overlay network may include one or more first virtual machine endpoints associated with a first overlay segment, and the second overlay network may include one or more second virtual machine endpoints associated with a second overlay segment. The first and second VTEPs are communicatively coupled by an inter-overlay communication path, which may comprise a physical network, a tunnel, a gateway connection, or another transport mechanism.\n\nThe first VTEP is configured to receive an address resolution request originating from a virtual machine endpoint in the first overlay network. The address resolution request may comprise, for example, an Address Resolution Protocol (ARP) request, an IPv6 Neighbor Discovery request, or another message for resolving a network-layer address to a link-layer address. The request identifies a target endpoint address that is not locally known to the first VTEP. In response to determining that endpoint information for the target endpoint is absent from a local forwarding or endpoint table, the first VTEP relays, forwards, encapsulates, or otherwise communicates the address resolution request to the second VTEP.\n\nThe second VTEP receives the relayed address resolution request and determines whether the target endpoint is present in, or reachable through, the second overlay network. If the target endpoint is associated with the second overlay network, the second VTEP obtains endpoint information corresponding to the target endpoint. The endpoint information may include one or more of a media access control (MAC) address, an Internet Protocol (IP) address, a virtual network identifier, a tenant identifier, a tunnel endpoint address, a segment identifier, a locator, or other reachability metadata. The second VTEP then generates or forwards an address resolution response containing the endpoint information and transmits the response toward the first VTEP.\n\nUpon receiving the address resolution response, the first VTEP provides the response to the requesting virtual machine endpoint in the first overlay network. The first VTEP also learns and stores the endpoint information associated with the target endpoint in a local endpoint table, forwarding table, cache, or control-plane database. Thereafter, traffic from the first overlay network destined for the target endpoint may be encapsulated and forwarded by the first VTEP toward the second VTEP or toward another indicated tunnel endpoint without requiring a further address resolution broadcast or flooding operation.\n\nIn a further embodiment, the second VTEP similarly learns endpoint information associated with the requesting virtual machine endpoint based on information contained in the relayed address resolution request. For example, the second VTEP may extract a source MAC address, source IP address, overlay segment identifier, VTEP locator, or other source endpoint metadata from the request or from encapsulation headers applied by the first VTEP. The second VTEP may store such information for subsequent forwarding of return traffic from the second overlay network to the first overlay network.\n\nIn some embodiments, the VTEPs implement policy controls to determine whether an address resolution request is to be relayed between overlay networks. Such policy controls may be based on tenant identity, virtual network identifiers, security groups, endpoint attributes, access control lists, administrative configuration, or service-chain requirements. The relayed request or response may be modified to include inter-overlay metadata, translated addressing information, or tunnel encapsulation parameters suitable for communication between the first and second overlay networks.\n\nIn another embodiment, the first and second overlay networks are independently administered overlay domains. The invention enables endpoint discovery across the independently administered domains without requiring continuous synchronization of complete endpoint databases. Instead, endpoint reachability information is learned on demand in response to address resolution traffic. This reduces unnecessary control-plane distribution, limits broadcast flooding, and permits selective inter-overlay connectivity.\n\nAccordingly, the disclosed invention provides a mechanism by which virtual machine endpoint information is dynamically learned across separate overlay networks through cooperation between VTEPs. By relaying address resolution requests and responses between overlay domains, each VTEP may acquire sufficient endpoint reachability information to forward inter-overlay traffic while preserving overlay segmentation and enabling policy-based control of cross-overlay communication.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.847604084838963,
+      "excess_ratio": 0.641259789401318,
+      "baseline_mean": 0.20634429543764496,
+      "baseline_n_valid": 5,
+      "output_chars": 1132,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.8808290155440415,
+          "baseline_mean": 0.1674519062151289,
+          "excess_ratio": 0.7133771093289125
+        },
+        "bz2": {
+          "actual_ratio": 0.740139211136891,
+          "baseline_mean": 0.21098890433123185,
+          "excess_ratio": 0.5291503068056591
+        },
+        "lzma": {
+          "actual_ratio": 0.9210526315789473,
+          "baseline_mean": 0.235538898401017,
+          "excess_ratio": 0.6855137331779304
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4854368932038835,
+      "excess_ratio": 0.2790925977662385,
+      "baseline_mean": 0.20634429543764496,
+      "baseline_n_valid": 5,
+      "output_chars": 1072,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4469135802469136,
+          "baseline_mean": 0.1674519062151289,
+          "excess_ratio": 0.2794616740317847
+        },
+        "bz2": {
+          "actual_ratio": 0.45633187772925765,
+          "baseline_mean": 0.21098890433123185,
+          "excess_ratio": 0.2453429733980258
+        },
+        "lzma": {
+          "actual_ratio": 0.5462184873949579,
+          "baseline_mean": 0.235538898401017,
+          "excess_ratio": 0.31067958899394094
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3157435673789795,
+      "excess_ratio": 0.10939927194133456,
+      "baseline_mean": 0.20634429543764496,
+      "baseline_n_valid": 5,
+      "output_chars": 2301,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.27586206896551724,
+          "baseline_mean": 0.1674519062151289,
+          "excess_ratio": 0.10841016275038834
+        },
+        "bz2": {
+          "actual_ratio": 0.3298429319371728,
+          "baseline_mean": 0.21098890433123185,
+          "excess_ratio": 0.11885402760594094
+        },
+        "lzma": {
+          "actual_ratio": 0.3383084577114428,
+          "baseline_mean": 0.235538898401017,
+          "excess_ratio": 0.1027695593104258
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.17195121951219502,
+      "excess_ratio": -0.034393075925449934,
+      "baseline_mean": 0.20634429543764496,
+      "baseline_n_valid": 5,
+      "output_chars": 3262,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.14124293785310735,
+          "baseline_mean": 0.1674519062151289,
+          "excess_ratio": -0.02620896836202155
+        },
+        "bz2": {
+          "actual_ratio": 0.17929759704251386,
+          "baseline_mean": 0.21098890433123185,
+          "excess_ratio": -0.031691307288717996
+        },
+        "lzma": {
+          "actual_ratio": 0.1936619718309859,
+          "baseline_mean": 0.235538898401017,
+          "excess_ratio": -0.04187692657003109
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.06278026905829606,
+      "excess_ratio": -0.1435640263793489,
+      "baseline_mean": 0.20634429543764496,
+      "baseline_n_valid": 5,
+      "output_chars": 1386,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.03443328550932568,
+          "baseline_mean": 0.1674519062151289,
+          "excess_ratio": -0.13301862070580323
+        },
+        "bz2": {
+          "actual_ratio": 0.06035665294924554,
+          "baseline_mean": 0.21098890433123185,
+          "excess_ratio": -0.15063225138198633
+        },
+        "lzma": {
+          "actual_ratio": 0.08955223880597014,
+          "baseline_mean": 0.235538898401017,
+          "excess_ratio": -0.14598665959504686
+        }
+      }
+    }
+  }
+}

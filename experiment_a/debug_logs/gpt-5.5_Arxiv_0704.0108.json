@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Arxiv",
+  "id": "0704.0108",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nDescription of a polynomial time reduction of SAT to 2-SAT of polynomial size.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nDescription of a polynomial time reduction of SAT to 2-SAT of polynomial size.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The text refers to a proposed polynomial-time reduction from SAT to 2-SAT.\n- The reduction is described as producing a 2-SAT instance of polynomial size.\n- Such a reduction would transform general Boolean satisfiability problems into 2-CNF satisfiability problems.\n- If valid, this would imply that SAT can be solved in polynomial time because 2-SAT is polynomial-time solvable.\n- The claim would have major complexity-theoretic implications, potentially showing that P equals NP.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe text concerns a claimed polynomial-time, polynomial-size reduction from SAT to 2-SAT, an approach that would transform arbitrary Boolean satisfiability instances into equivalent 2-CNF formulas. If valid, the result would imply SAT is solvable in polynomial time via 2-SAT algorithms, making it highly significant because it would prove P = NP.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Description, SAT"
+  },
+  "outputs": {
+    "L1": "A description of a polynomial-time reduction from SAT to 2-SAT that produces an instance of polynomial size.",
+    "L2": "An explanation of how to convert SAT into a polynomial-size 2-SAT instance using a polynomial-time reduction.",
+    "L3": "The text refers to a proposed polynomial-time reduction from SAT to 2-SAT. In such a reduction, an arbitrary instance of the Boolean satisfiability problem would be transformed into an instance of 2-SAT, where every clause has at most two literals. The reduction is described as producing a 2-SAT formula whose size is polynomial in the size of the original SAT formula.\n\nIf this reduction were correct, it would mean that general Boolean satisfiability problems could be efficiently converted into equivalent 2-CNF satisfiability problems. In other words, the original SAT formula would be satisfiable if and only if the resulting 2-SAT formula were satisfiable.\n\nThis would be a highly significant result because 2-SAT is known to be solvable in polynomial time, for example using implication graphs and strongly connected components. Therefore, a valid polynomial-time reduction from SAT to 2-SAT would imply that SAT itself can be solved in polynomial time: one could reduce any SAT instance to 2-SAT and then apply a polynomial-time 2-SAT algorithm.\n\nSince SAT is NP-complete, showing that SAT has a polynomial-time algorithm would imply that every problem in NP can be solved in polynomial time. Consequently, such a reduction would have major complexity-theoretic implications and would potentially prove that P equals NP. For this reason, any claimed polynomial-time reduction from SAT to 2-SAT would require very careful scrutiny, as it would resolve one of the central open problems in theoretical computer science.",
+    "L4": "The text discusses a claimed polynomial-time, polynomial-size reduction from SAT to 2-SAT. In other words, it concerns an alleged method for taking any Boolean satisfiability instance—such as an arbitrary CNF formula with clauses of any length—and transforming it efficiently into an equivalent formula in 2-CNF form, where every clause has at most two literals. The key requirement of such a reduction is that the original formula must be satisfiable if and only if the produced 2-CNF formula is satisfiable, and the transformation must increase the size of the instance by only a polynomial amount.\n\nThis claim is highly significant because SAT is the canonical NP-complete problem, while 2-SAT is known to be solvable in polynomial time. Efficient algorithms for 2-SAT exist, for example using implication graphs and strongly connected components. Therefore, if every SAT instance could truly be converted into an equivalent 2-SAT instance in polynomial time and polynomial size, then one could solve SAT by first applying the reduction and then running a polynomial-time 2-SAT algorithm on the resulting formula.\n\nSuch a result would have major consequences in computational complexity theory. Since SAT is NP-complete, a polynomial-time algorithm for SAT would imply that every problem in NP can be solved in polynomial time. Thus, a valid reduction of this kind would prove that P = NP, resolving one of the most important open problems in computer science and mathematics.\n\nBecause of these consequences, any claimed reduction from SAT to 2-SAT must be examined with great care. It is not enough for the transformation to preserve satisfiability in one direction, or to work only for special cases; it must work for all SAT instances and preserve equivalence exactly. Many attempted constructions fail because they introduce auxiliary variables in a way that changes the meaning of the original formula, allowing the new 2-CNF formula to be satisfiable even when the original formula is not, or vice versa. Others accidentally produce formulas whose size grows exponentially, which would not constitute a polynomial-size reduction.\n\nTherefore, the central issue is whether the proposed construction genuinely provides a polynomial-time, polynomial-size, satisfiability-preserving transformation from arbitrary SAT instances to 2-SAT instances. If it does, it would establish P = NP. If it does not, then the flaw likely lies in the preservation of equivalence, the handling of auxiliary variables, or the claimed polynomial bound on the size of the transformed formula. Given the current state of complexity theory, such a claim would be extraordinary and would require a rigorous proof and careful verification.",
+    "L5": "## Description: SAT\n\nThe SAT is a standardized test widely used for college admissions, especially in the United States. It is designed to measure a student’s readiness for higher education by assessing key academic skills such as reading, writing, and mathematics. Many colleges and universities use SAT scores as one part of the application process, along with grades, essays, recommendation letters, and extracurricular activities.\n\nThe SAT includes sections that test critical reading, grammar, problem-solving, data analysis, and mathematical reasoning. The exam is intended to evaluate how well students can apply knowledge they have gained throughout high school. A strong SAT score can help students improve their college applications and may also qualify them for scholarships or academic programs.\n\nPreparing for the SAT often involves studying test content, practicing with sample questions, learning test-taking strategies, and taking full-length practice exams. Good preparation can help students become familiar with the format of the test and improve their confidence on exam day.\n\nOverall, the SAT is an important academic assessment that provides colleges with a common measure for comparing applicants from different schools and backgrounds."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Describe a polynomial-time reduction from SAT to 2-SAT that results in a polynomial-size formula.",
+      "output": "No such reduction is known, and describing one would prove **P = NP**.\n\nSuppose there were a polynomial-time many-one reduction\n\n\\[\nf:\\text{SAT}\\to \\text{2-SAT}\n\\]\n\nsuch that for every Boolean formula \\(\\varphi\\),\n\n\\[\n\\varphi \\text{ is satisfiable } \\iff f(\\varphi) \\text{ is satisfiable},\n\\]\n\nand \\(f(\\varphi)\\) is a polynomial-size 2-CNF formula.\n\nThen we could decide SAT in polynomial time:\n\n1. Given \\(\\varphi\\), compute \\(f(\\varphi)\\) in polynomial time.\n2. Run a polynomial-time 2-SAT algorithm on \\(f(\\varphi)\\).\n3. Accept iff \\(f(\\varphi)\\) is satisfiable.\n\nSince 2-SAT is solvable in polynomial time, this would put SAT in polynomial time. Because SAT is NP-complete, that would imply\n\n\\[\n\\mathrm{P} = \\mathrm{NP}.\n\\]\n\nTherefore, unless \\(\\mathrm{P}=\\mathrm{NP}\\), there is no polynomial-time reduction from SAT to 2-SAT producing polynomial-size formulas that preserves satisfiability.\n\nIf \\(\\mathrm{P}=\\mathrm{NP}\\), then such a reduction would exist trivially: decide whether \\(\\varphi\\) is satisfiable, and output a fixed satisfiable 2-CNF formula if it is, or a fixed unsatisfiable 2-CNF formula if it is not. But this depends on solving SAT in polynomial time, which is exactly the open problem.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Can you give a brief statement about reducing SAT to 2-SAT in polynomial time with polynomial blowup?",
+      "output": "A polynomial-time reduction from general SAT to 2-SAT with only polynomial blowup, preserving satisfiability, would imply **P = NP**.\n\nReason: SAT is NP-complete, while 2-SAT is solvable in polynomial time. If every SAT instance could be converted in polynomial time into an equisatisfiable 2-SAT instance of polynomial size, then we could solve SAT by reducing it to 2-SAT and running the polynomial-time 2-SAT algorithm. That would give a polynomial-time algorithm for SAT, and hence for all NP problems.\n\nSo, unless **P = NP**, no such general reduction exists. Polynomial reductions to restricted SAT forms like **3-SAT** are possible, but not to **2-SAT** in the satisfiability-preserving sense.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write a one-sentence summary of a polynomial size reduction of SAT to 2-SAT.",
+      "output": "A polynomial-time/size satisfiability-preserving reduction from SAT to 2-SAT would imply \\(P=NP\\), since 2-SAT is solvable in polynomial time while SAT is NP-complete, so no such reduction is known and it is believed not to exist.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "What would be the description of a polynomial-time SAT-to-2-SAT reduction?",
+      "output": "A polynomial-time SAT-to-2-SAT reduction would be a polynomial-time computable function \\(f\\) that takes any SAT formula \\(\\varphi\\) and outputs a 2-CNF formula \\(f(\\varphi)\\) such that\n\n\\[\n\\varphi \\text{ is satisfiable } \\iff f(\\varphi) \\text{ is satisfiable}.\n\\]\n\nSo the reduction would have to transform arbitrary SAT instances into 2-SAT instances while preserving satisfiability.\n\nHowever, such a reduction is not known and is believed not to exist unless\n\n\\[\nP = NP.\n\\]\n\nWhy? Because:\n\n- SAT is NP-complete.\n- 2-SAT is solvable in polynomial time, even linear time.\n- If every SAT instance could be reduced to a 2-SAT instance in polynomial time, then we could solve SAT in polynomial time by:\n  1. Reducing SAT to 2-SAT,\n  2. Solving the 2-SAT instance in polynomial time.\n\nThat would imply SAT \\(\\in P\\), and therefore \\(P = NP\\).\n\nSo the description would be:\n\n> A polynomial-time SAT-to-2-SAT reduction would be an algorithm that converts any SAT formula into an equivalent 2-CNF formula in polynomial time, preserving satisfiability. Such a reduction would imply \\(P = NP\\), so it is not expected to exist.\n\nThe trivial reduction in the other direction, from 2-SAT to SAT, does exist because every 2-SAT formula is already a SAT formula.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a concise title for an algorithmic reduction from SAT to 2-SAT of polynomial size.",
+      "output": "“Polynomial SAT-to-2-SAT Reduction: Impossible Unless P = NP”",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6591639871382637,
+      "excess_ratio": 0.43370337728235525,
+      "baseline_mean": 0.2254606098559085,
+      "baseline_n_valid": 5,
+      "output_chars": 108,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5952380952380952,
+          "baseline_mean": 0.1716299438419881,
+          "excess_ratio": 0.42360815139610714
+        },
+        "bz2": {
+          "actual_ratio": 0.6635514018691588,
+          "baseline_mean": 0.2079589476488238,
+          "excess_ratio": 0.455592454220335
+        },
+        "lzma": {
+          "actual_ratio": 0.7,
+          "baseline_mean": 0.28275305217605096,
+          "excess_ratio": 0.417246947823949
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.5981012658227848,
+      "excess_ratio": 0.3726406559668763,
+      "baseline_mean": 0.2254606098559085,
+      "baseline_n_valid": 5,
+      "output_chars": 109,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5119047619047619,
+          "baseline_mean": 0.1716299438419881,
+          "excess_ratio": 0.34027481806277377
+        },
+        "bz2": {
+          "actual_ratio": 0.625,
+          "baseline_mean": 0.2079589476488238,
+          "excess_ratio": 0.41704105235117617
+        },
+        "lzma": {
+          "actual_ratio": 0.6333333333333333,
+          "baseline_mean": 0.28275305217605096,
+          "excess_ratio": 0.35058028115728235
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.32227032227032226,
+      "excess_ratio": 0.09680971241441377,
+      "baseline_mean": 0.2254606098559085,
+      "baseline_n_valid": 5,
+      "output_chars": 1525,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.30092592592592593,
+          "baseline_mean": 0.1716299438419881,
+          "excess_ratio": 0.12929598208393783
+        },
+        "bz2": {
+          "actual_ratio": 0.2954876273653566,
+          "baseline_mean": 0.2079589476488238,
+          "excess_ratio": 0.0875286797165328
+        },
+        "lzma": {
+          "actual_ratio": 0.3655913978494624,
+          "baseline_mean": 0.28275305217605096,
+          "excess_ratio": 0.08283834567341142
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.16336218933258875,
+      "excess_ratio": -0.062098420523319736,
+      "baseline_mean": 0.2254606098559085,
+      "baseline_n_valid": 5,
+      "output_chars": 2719,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1379605826906598,
+          "baseline_mean": 0.1716299438419881,
+          "excess_ratio": -0.03366936115132829
+        },
+        "bz2": {
+          "actual_ratio": 0.16179001721170397,
+          "baseline_mean": 0.2079589476488238,
+          "excess_ratio": -0.04616893043711984
+        },
+        "lzma": {
+          "actual_ratio": 0.18849840255591055,
+          "baseline_mean": 0.28275305217605096,
+          "excess_ratio": -0.09425464962014041
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.05992329817833184,
+      "excess_ratio": -0.16553731167757665,
+      "baseline_mean": 0.2254606098559085,
+      "baseline_n_valid": 5,
+      "output_chars": 1259,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.03067484662576687,
+          "baseline_mean": 0.1716299438419881,
+          "excess_ratio": -0.14095509721622124
+        },
+        "bz2": {
+          "actual_ratio": 0.0536231884057971,
+          "baseline_mean": 0.2079589476488238,
+          "excess_ratio": -0.1543357592430267
+        },
+        "lzma": {
+          "actual_ratio": 0.0913978494623656,
+          "baseline_mean": 0.28275305217605096,
+          "excess_ratio": -0.19135520271368536
+        }
+      }
+    }
+  }
+}

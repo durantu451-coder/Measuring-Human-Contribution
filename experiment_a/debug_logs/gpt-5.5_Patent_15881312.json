@@ -1,0 +1,175 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15881312",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA data processing system comprising: a host computer system supporting a software entity and a receive queue for the software entity; a network interface device having a controller unit configured to provide a data port for receiving data packets from a network and a data bus interface for connection to a host computer system, the network interface device being connected to the host computer system by means of the data bus interface; and an accelerator module arranged between the controller unit and a network and having a first medium access controller for connection to the network and a second medium access controller coupled to the data port of the controller unit, the accelerator module being configured to: on behalf of the software entity, process incoming data packets received from the network in one or more streams associated with a first set of one or more network endpoints; encapsulate data resulting from said processing in network data packets directed to the software entity; and deliver the network data packets to the data port of the controller unit so as to cause the network data packets to be written to the receive queue of the software entity.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA data processing system comprising: a host computer system supporting a software entity and a receive queue for the software entity; a network interface device having a controller unit configured to provide a data port for receiving data packets from a network and a data bus interface for connection to a host computer system, the network interface device being connected to the host computer system by means of the data bus interface; and an accelerator module arranged between the controller unit and a network and having a first medium access controller for connection to the network and a second medium access controller coupled to the data port of the controller unit, the accelerator module being configured to: on behalf of the software entity, process incoming data packets received from the network in one or more streams associated with a first set of one or more network endpoints; encapsulate data resulting from said processing in network data packets directed to the software entity; and deliver the network data packets to the data port of the controller unit so as to cause the network data packets to be written to the receive queue of the software entity.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The system includes a host computer that supports a software entity and a receive queue for that software entity.\n- A network interface device connects to the host computer via a data bus interface and includes a controller unit with a data port for receiving network packets.\n- An accelerator module is positioned between the controller unit and the network, using two medium access controllers to connect to both sides.\n- The accelerator module processes incoming network packets on behalf of the software entity for streams associated with specified network endpoints.\n- The accelerator module encapsulates processed data into network packets and delivers them through the controller unit so they are written to the software entity’s receive queue.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA data processing system uses an accelerator module positioned between a network and a network interface controller to process incoming packet streams for specified network endpoints on behalf of a host software entity. The processed data is encapsulated into network packets and delivered through the controller to the software entity’s receive queue, improving offload handling while preserving standard host receive-path delivery.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: A data processing"
+  },
+  "outputs": {
+    "L1": "A data processing system comprising:\n\na host computer system supporting a software entity and a receive queue for the software entity;\n\na network interface device having a controller unit configured to provide a data port for receiving data packets from a network and a data bus interface for connection to the host computer system, the network interface device being connected to the host computer system via the data bus interface; and\n\nan accelerator module arranged between the controller unit and the network, the accelerator module having a first medium access controller for connection to the network and a second medium access controller coupled to the data port of the controller unit, the accelerator module being configured to:\n\nprocess, on behalf of the software entity, incoming data packets received from the network in one or more streams associated with a first set of one or more network endpoints;\n\nencapsulate data resulting from said processing in network data packets directed to the software entity; and\n\ndeliver the network data packets to the data port of the controller unit so as to cause the network data packets to be written to the receive queue of the software entity.",
+    "L2": "A data processing arrangement includes a host computer system that runs a software entity and maintains a receive queue for that software entity. It also includes a network interface device with a controller unit arranged to provide both a data port for accepting data packets from a network and a data bus interface for coupling to the host computer system, with the network interface device being linked to the host computer system through that data bus interface.\n\nThe arrangement further includes an accelerator module positioned between the controller unit and the network. The accelerator module has a first medium access controller configured to connect to the network and a second medium access controller coupled to the controller unit’s data port. The accelerator module is configured to act for the software entity by processing inbound data packets received from the network in one or more streams associated with a first group of one or more network endpoints. It then wraps the data produced by that processing into network data packets addressed to the software entity and supplies those network data packets to the controller unit’s data port, causing the packets to be placed in the software entity’s receive queue.",
+    "L3": "The system includes a host computer that supports a software entity, such as an application, service, driver, or other executable component. Associated with this software entity is a receive queue, which is used to store data or packets intended for processing by the software entity.\n\nA network interface device is connected to the host computer through a data bus interface. The network interface device includes a controller unit, and the controller unit has a data port configured to receive network packets from a network. Through the data bus interface, the network interface device can communicate with the host computer and transfer data to host memory, including to the receive queue associated with the software entity.\n\nPositioned between the controller unit and the network is an accelerator module. The accelerator module is arranged in the network data path and includes two medium access controllers. One medium access controller provides connectivity toward the network, while the other medium access controller provides connectivity toward the controller unit of the network interface device. In this way, incoming network traffic passes through the accelerator module before reaching the controller unit.\n\nThe accelerator module is configured to process incoming network packets on behalf of the software entity. In particular, the accelerator module may identify and process packet streams that are associated with specified network endpoints, such as particular source or destination addresses, ports, protocols, or connection identifiers. By handling these streams directly, the accelerator module can perform at least some packet processing functions that might otherwise be performed by the host computer or the software entity.\n\nAfter processing the incoming packets, the accelerator module encapsulates the processed data into network packets suitable for delivery to the controller unit. These encapsulated packets are then passed from the accelerator module to the controller unit through the medium access controller connection. The controller unit receives the packets and transfers the corresponding data across the data bus interface to the host computer, where the data is written into the receive queue of the software entity. As a result, the software entity can receive the processed data through its normal receive queue mechanism, while the accelerator module offloads selected packet-processing tasks from the host computer.",
+    "L4": "A data processing system is configured to support efficient handling of network traffic by using an accelerator module that is positioned in the data path between an external network and a network interface controller of a host computing platform. The accelerator module receives incoming packet streams from the network and determines whether particular packets or flows are associated with one or more specified network endpoints for which accelerated processing has been enabled. These endpoints may correspond, for example, to ports, sessions, connections, services, virtual interfaces, or other identifiers associated with a host software entity.\n\nWhen an incoming packet stream matches an endpoint designated for acceleration, the accelerator module processes the packet stream on behalf of the host software entity. Such processing may include parsing packet headers, reassembling or aggregating data, performing protocol-specific operations, filtering, classification, transformation, encryption or decryption support, checksum handling, or other offload functions that would otherwise be performed by software executing on the host processor. By carrying out these operations before the traffic reaches the host receive path, the accelerator module reduces the computational burden on the host and improves overall throughput and latency.\n\nAfter the accelerator module has processed the relevant data, it encapsulates the processed data into one or more network packets. These packets are then provided to the network interface controller in a form that can be handled using the controller’s normal receive mechanisms. The network interface controller subsequently delivers the packets to the receive queue associated with the appropriate host software entity. As a result, the software entity receives the processed data through its standard receive queue rather than through a separate or proprietary delivery path.\n\nThis arrangement allows the system to combine the benefits of hardware or dedicated acceleration with compatibility for existing host networking infrastructure. The accelerator module can offload selected processing tasks while preserving the conventional receive-path semantics expected by operating systems, drivers, virtual machines, containers, applications, or other software entities. Consequently, the host software entity can continue to receive network data in a familiar manner, while the system obtains improved performance, reduced host processor utilization, and more efficient handling of network endpoint traffic.",
+    "L5": "Data processing is the method of collecting, organizing, transforming, and analyzing data to produce useful information. In today’s digital world, businesses, schools, governments, and individuals rely on data processing to make better decisions and improve efficiency.\n\nThe process usually begins with data collection. This data may come from surveys, online forms, sensors, transactions, or databases. After collection, the data is checked for accuracy and cleaned to remove errors, duplicates, or incomplete information. Once the data is prepared, it can be sorted, calculated, classified, or converted into a more useful format.\n\nThere are different types of data processing. Manual data processing is done by people without the use of advanced machines. Automatic data processing uses computers and software to handle large amounts of data quickly. Real-time data processing happens instantly, such as when a bank transaction is approved or when a navigation app updates traffic information.\n\nData processing is important because raw data alone is often difficult to understand. By processing data, organizations can identify patterns, create reports, predict trends, and solve problems. For example, a company can analyze customer data to understand buying habits, while a hospital can process patient records to improve medical care.\n\nHowever, data processing must be done carefully. Privacy, security, and accuracy are very important. Sensitive information should be protected, and the results should be reliable. When handled responsibly, data processing becomes a powerful tool for innovation, planning, and decision-making."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style independent claim for a data processing system where an accelerator module sits between a network interface controller and the network, processes incoming packet streams for certain endpoints on behalf of a host software entity, encapsulates the results, and delivers them through the NIC to the software entity’s receive queue.",
+      "output": "1. A data processing system comprising:\n\na host computing device comprising a processor and a memory, the memory storing a software entity having an associated receive queue;\n\na network interface controller coupled to the host computing device and configured to transfer packet data to the receive queue of the software entity; and\n\nan accelerator module coupled between the network interface controller and a network, the accelerator module being configured to:\n\nreceive, from the network, an incoming packet stream addressed to one or more endpoints associated with the software entity;\n\ndetermine that at least a portion of the incoming packet stream is to be processed by the accelerator module on behalf of the software entity;\n\nperform packet processing on the at least a portion of the incoming packet stream to generate processed packet data for the one or more endpoints;\n\nencapsulate the processed packet data in one or more packets formatted for delivery through the network interface controller; and\n\ntransmit the one or more encapsulating packets to the network interface controller,\n\nwherein the network interface controller is configured to deliver the processed packet data, based on the one or more encapsulating packets, to the receive queue associated with the software entity.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a single “system comprising” claim describing a host computer with a receive queue, a network interface device with a controller and data bus interface, and an inline accelerator module with two MACs that processes network packets and forwards encapsulated processed data to the host software application.",
+      "output": "1. A system comprising:  \na host computer comprising a processor, a memory, and a receive queue associated with a host software application executable by the processor;  \na network interface device coupled to the host computer, the network interface device comprising a controller and a data bus interface configured to transfer data between the network interface device and the host computer; and  \nan inline accelerator module coupled in a network data path of the network interface device, the inline accelerator module comprising a first media access controller (MAC) configured to receive network packets from a network and a second MAC configured to forward network traffic toward the network interface device,  \nwherein the inline accelerator module is configured to process the received network packets to generate processed data, encapsulate the processed data in one or more packets, and forward the one or more packets via the second MAC to the network interface device, and  \nwherein the controller of the network interface device is configured to receive the one or more packets from the inline accelerator module and, via the data bus interface, place at least a portion of the encapsulated processed data into the receive queue for access by the host software application.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate formal patent claim language for an architecture in which an accelerator module is placed between a network and a NIC controller, receives packets for selected network endpoints, performs processing for a software entity, then sends encapsulated packets to the NIC data port for writing into that entity’s receive queue.",
+      "output": "1. **An apparatus**, comprising:  \n   a network interface controller (NIC) controller comprising a data port and configured to write received packet data into one or more receive queues associated with software entities executing on a host; and  \n   an accelerator module coupled between a network and the NIC controller, the accelerator module configured to:  \n   receive, from the network, packets addressed to selected network endpoints;  \n   determine that at least one received packet is associated with a software entity of the host;  \n   perform accelerator processing on the at least one received packet on behalf of the software entity;  \n   generate an encapsulated packet comprising processed packet data and metadata identifying a receive queue associated with the software entity; and  \n   transmit the encapsulated packet to the data port of the NIC controller,  \n   wherein the NIC controller is configured, in response to receiving the encapsulated packet at the data port, to write at least a portion of the processed packet data into the receive queue associated with the software entity.\n\n2. **The apparatus of claim 1**, wherein the accelerator module is configured to receive only packets for a subset of network endpoints allocated to the accelerator module.\n\n3. **The apparatus of claim 1**, wherein the selected network endpoints comprise one or more of Internet Protocol addresses, transport-layer ports, queue pairs, virtual network interfaces, virtual functions, containers, processes, or application endpoints.\n\n4. **The apparatus of claim 1**, wherein the accelerator processing comprises one or more of cryptographic processing, compression, decompression, packet filtering, packet classification, protocol offload, transport processing, remote direct memory access processing, storage protocol processing, telemetry generation, or application-specific packet processing.\n\n5. **The apparatus of claim 1**, wherein the accelerator module is configured to preserve an addressing format expected by the NIC controller by encapsulating the processed packet data in a packet format accepted by the data port.\n\n6. **The apparatus of claim 1**, wherein the metadata comprises queue-selection information usable by the NIC controller to select the receive queue associated with the software entity.\n\n7. **The apparatus of claim 1**, wherein the encapsulated packet comprises an outer header generated by the accelerator module and an inner payload derived from the at least one received packet.\n\n8. **The apparatus of claim 1**, wherein the NIC controller is unaware that the processed packet data was processed by the accelerator module prior to receipt at the data port.\n\n9. **The apparatus of claim 1**, wherein the accelerator module is configured to emulate a network peer of the NIC controller for purposes of delivering the encapsulated packet to the data port.\n\n10. **The apparatus of claim 1**, wherein the software entity comprises one of an operating-system process, a virtual machine, a container, a user-space application, a kernel module, or a network stack instance.\n\n11. **The apparatus of claim 1**, wherein the receive queue comprises a queue maintained by the NIC controller using descriptors stored in host memory.\n\n12. **The apparatus of claim 1**, wherein the accelerator module is configured to transmit the encapsulated packet to the data port over an internal link distinct from an external network link.\n\n13. **The apparatus of claim 1**, wherein the accelerator module is configured to receive packets from the network before the packets reach the NIC controller.\n\n14. **The apparatus of claim 1**, wherein the accelerator module is configured to forward to the NIC controller, without said accelerator processing, packets not associated with the selected network endpoints.\n\n15. **The apparatus of claim 1**, wherein the accelerator module is configured to terminate a protocol connection associated with the selected network endpoints and to provide processed data to the software entity through the receive queue.\n\n16. **The apparatus of claim 1**, wherein the accelerator module comprises hardware logic configured to perform at least a portion of the accelerator processing.\n\n17. **The apparatus of claim 1**, wherein the accelerator module comprises programmable processing circuitry configured to execute firmware or microcode for performing at least a portion of the accelerator processing.\n\n18. **The apparatus of claim 1**, wherein the encapsulated packet includes an indication causing the NIC controller to perform direct memory access of the processed packet data into host memory buffers corresponding to the receive queue.\n\n19. **The apparatus of claim 1**, wherein the accelerator module is configured to maintain mapping information that maps the selected network endpoints to respective software entities and respective receive queues.\n\n20. **The apparatus of claim 19**, wherein the accelerator module is configured to update the mapping information in response to configuration information received from a host driver, an operating system, a hypervisor, or a management controller.\n\n21. **A method**, comprising:  \n   receiving, by an accelerator module positioned between a network and a network interface controller (NIC) controller, packets from the network for selected network endpoints;  \n   identifying, by the accelerator module, a software entity associated with at least one of the packets;  \n   processing, by the accelerator module, the at least one packet on behalf of the software entity to produce processed packet data;  \n   encapsulating, by the accelerator module, the processed packet data in an encapsulated packet that includes information identifying a receive queue associated with the software entity;  \n   sending, by the accelerator module, the encapsulated packet to a data port of the NIC controller; and  \n   writing, by the NIC controller, at least a portion of the processed packet data into the receive queue associated with the software entity.\n\n22. **The method of claim 21**, further comprising selecting the receive queue based at least in part on queue-selection metadata included in the encapsulated packet.\n\n23. **The method of claim 21**, further comprising maintaining, by the accelerator module, endpoint-to-queue mapping information identifying associations among network endpoints, software entities, and receive queues.\n\n24. **The method of claim 21**, wherein processing the at least one packet comprises modifying packet payload data before the encapsulated packet is sent to the NIC controller.\n\n25. **The method of claim 21**, wherein processing the at least one packet comprises generating application data for the software entity from one or more network packets.\n\n26. **The method of claim 21**, wherein encapsulating the processed packet data comprises adding an outer header recognized by the NIC controller as a packet received at the data port.\n\n27. **The method of claim 21**, further comprising bypassing the accelerator module for packets not corresponding to the selected network endpoints.\n\n28. **The method of claim 21**, further comprising forwarding, by the accelerator module to the NIC controller, packets not selected for accelerator processing.\n\n29. **The method of claim 21**, wherein the writing comprises performing, by the NIC controller, direct memory access into host memory buffers referenced by descriptors of the receive queue.\n\n30. **The method of claim 21**, wherein the software entity receives the processed packet data through a normal NIC receive path without direct communication between the software entity and the accelerator module.\n\n31. **A system**, comprising:  \n   a host comprising host memory and at least one processor configured to execute a software entity;  \n   a network interface controller (NIC) controller configured to access the host memory and to maintain a receive queue for the software entity; and  \n   an accelerator module disposed in a packet path between a network interface and the NIC controller, the accelerator module configured to:  \n   intercept packets from a network that are addressed to selected endpoints;  \n   perform processing of intercepted packets for the software entity;  \n   produce encapsulated packets containing processed data and queue-identification information; and  \n   deliver the encapsulated packets to a data port of the NIC controller,  \n   wherein the NIC controller is configured to use the queue-identification information to write the processed data into the receive queue for delivery to the software entity.\n\n32. **The system of claim 31**, wherein the accelerator module and the NIC controller are integrated on a common device.\n\n33. **The system of claim 31**, wherein the accelerator module is implemented on a device separate from the NIC controller and coupled to the NIC controller through an internal communication interface.\n\n34. **The system of claim 31**, wherein the NIC controller is configured to treat the encapsulated packets as inbound network packets received at the data port.\n\n35. **The system of claim 31**, wherein the accelerator module is configured to perform processing without requiring modification of the software entity.\n\n36. **The system of claim 31**, wherein the software entity comprises a virtualized software entity and the receive queue is associated with a virtual function, virtual NIC, or virtual machine.\n\n37. **The system of claim 31**, wherein the accelerator module is configured to receive configuration information specifying the selected endpoints and the receive queue associated with each selected endpoint.\n\n38. **A non-transitory computer-readable medium** storing instructions that, when executed by processing circuitry of an accelerator module positioned between a network and a NIC controller, cause the accelerator module to perform operations comprising:  \n   receiving packets from the network for selected network endpoints;  \n   identifying a software entity associated with one or more of the packets;  \n   processing the one or more packets on behalf of the software entity;  \n   generating an encapsulated packet comprising processed packet data and information identifying a receive queue of the software entity; and  \n   transmitting the encapsulated packet to a data port of the NIC controller to cause the NIC controller to write the processed packet data into the receive queue.\n\n39. **The non-transitory computer-readable medium of claim 38**, wherein the operations further comprise maintaining mapping information mapping selected network endpoints to receive queues of respective software entities.\n\n40. **The non-transitory computer-readable medium of claim 38**, wherein the operations further comprise encapsulating the processed packet data in a format configured to be received by the NIC controller through an ordinary packet receive path.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Convert this invention description into one broad patent claim: a host system runs software with a receive queue; a NIC connects to the host via a bus and has a packet data port; an accelerator module between the NIC and network includes first and second MACs and processes inbound streams for designated endpoints before delivering encapsulated results to the software receive queue.",
+      "output": "1. A system comprising:  \na host computing system executing software including a receive queue;  \na network interface controller coupled to the host computing system by a bus and including a packet data port; and  \nan accelerator module coupled between the network interface controller and a network, the accelerator module including a first media access controller coupled toward the network and a second media access controller coupled toward the packet data port of the network interface controller,  \nwherein the accelerator module is configured to receive inbound network streams through the first media access controller, identify inbound streams associated with designated endpoints, process the identified inbound streams to generate encapsulated results, and deliver the encapsulated results through the second media access controller and the network interface controller to the receive queue of the software executed by the host computing system.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Compose an independent apparatus claim in patent terminology for a network data processing system using an accelerator module inline with a network interface device, where the accelerator handles incoming streams associated with one or more endpoints on behalf of a host software entity and causes processed data packets to be written to the entity’s receive queue.",
+      "output": "1. **A network data processing system**, comprising:\n\na host computing device comprising at least one processor and a memory storing a host software entity having an associated receive queue;\n\na network interface device configured to receive data packets from a network; and\n\nan accelerator module disposed in a data path between the network interface device and the host computing device,\n\nwherein the accelerator module is configured to:\n\nidentify, from incoming data packets received via the network interface device, one or more incoming streams associated with one or more endpoints;\n\nprocess the one or more incoming streams on behalf of the host software entity without requiring the host software entity to perform at least a portion of said processing; and\n\ncause processed data packets corresponding to the one or more incoming streams to be written to the receive queue associated with the host software entity.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.8211206896551724,
+      "excess_ratio": 0.55411783808672,
+      "baseline_mean": 0.26700285156845244,
+      "baseline_n_valid": 5,
+      "output_chars": 1198,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.8554502369668247,
+          "baseline_mean": 0.22226586996846026,
+          "excess_ratio": 0.6331843669983643
+        },
+        "bz2": {
+          "actual_ratio": 0.7191489361702128,
+          "baseline_mean": 0.2654374501112585,
+          "excess_ratio": 0.4537114860589543
+        },
+        "lzma": {
+          "actual_ratio": 0.888,
+          "baseline_mean": 0.30674251089832,
+          "excess_ratio": 0.58125748910168
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4911937377690802,
+      "excess_ratio": 0.22419088620062777,
+      "baseline_mean": 0.26700285156845244,
+      "baseline_n_valid": 5,
+      "output_chars": 1232,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.44635193133047213,
+          "baseline_mean": 0.22226586996846026,
+          "excess_ratio": 0.22408606136201187
+        },
+        "bz2": {
+          "actual_ratio": 0.47609942638623326,
+          "baseline_mean": 0.2654374501112585,
+          "excess_ratio": 0.21066197627497474
+        },
+        "lzma": {
+          "actual_ratio": 0.5441176470588235,
+          "baseline_mean": 0.30674251089832,
+          "excess_ratio": 0.23737513616050349
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.27344931921331317,
+      "excess_ratio": 0.006446467644860732,
+      "baseline_mean": 0.26700285156845244,
+      "baseline_n_valid": 5,
+      "output_chars": 2462,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.22819593787335724,
+          "baseline_mean": 0.22226586996846026,
+          "excess_ratio": 0.005930067904896974
+        },
+        "bz2": {
+          "actual_ratio": 0.2821387940841866,
+          "baseline_mean": 0.2654374501112585,
+          "excess_ratio": 0.01670134397292805
+        },
+        "lzma": {
+          "actual_ratio": 0.30603448275862066,
+          "baseline_mean": 0.30674251089832,
+          "excess_ratio": -0.0007080281396993349
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.18070818070818073,
+      "excess_ratio": -0.0862946708602717,
+      "baseline_mean": 0.26700285156845244,
+      "baseline_n_valid": 5,
+      "output_chars": 2556,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.14933837429111532,
+          "baseline_mean": 0.22226586996846026,
+          "excess_ratio": -0.07292749567734494
+        },
+        "bz2": {
+          "actual_ratio": 0.18504672897196262,
+          "baseline_mean": 0.2654374501112585,
+          "excess_ratio": -0.0803907211392959
+        },
+        "lzma": {
+          "actual_ratio": 0.20557491289198607,
+          "baseline_mean": 0.30674251089832,
+          "excess_ratio": -0.10116759800633393
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.05174441395531164,
+      "excess_ratio": -0.21525843761314079,
+      "baseline_mean": 0.26700285156845244,
+      "baseline_n_valid": 5,
+      "output_chars": 1634,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.027093596059113302,
+          "baseline_mean": 0.22226586996846026,
+          "excess_ratio": -0.19517227390934697
+        },
+        "bz2": {
+          "actual_ratio": 0.05078597339782346,
+          "baseline_mean": 0.2654374501112585,
+          "excess_ratio": -0.21465147671343507
+        },
+        "lzma": {
+          "actual_ratio": 0.07456140350877193,
+          "baseline_mean": 0.30674251089832,
+          "excess_ratio": -0.23218110738954806
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T04:40:01.231373+00:00"
+    }
+  ]
+}

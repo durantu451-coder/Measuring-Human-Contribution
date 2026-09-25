@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0491",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe present an analysis of the percolation transition for general node removal strategies valid for locally tree-like directed networks. On the basis of heuristic arguments we predict that, if the probability of removing node $i$ is $p_i$, the network disintegrates if $p_i$ is such that the largest eigenvalue of the matrix with entries $A_{ij}(1-p_i)$ is less than 1, where $A$ is the adjacency matrix of the network. The knowledge or applicability of a Markov network model is not required by our theory, thus making it applicable to situations not covered by previous works. We test our predicted percolation criterion against numerical results for different networks and node removal strategies.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe present an analysis of the percolation transition for general node removal strategies valid for locally tree-like directed networks. On the basis of heuristic arguments we predict that, if the probability of removing node $i$ is $p_i$, the network disintegrates if $p_i$ is such that the largest eigenvalue of the matrix with entries $A_{ij}(1-p_i)$ is less than 1, where $A$ is the adjacency matrix of the network. The knowledge or applicability of a Markov network model is not required by our theory, thus making it applicable to situations not covered by previous works. We test our predicted percolation criterion against numerical results for different networks and node removal strategies.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The study analyzes percolation transitions under general node removal strategies in locally tree-like directed networks.\n- It predicts that a network disintegrates when the largest eigenvalue of the matrix with entries \\(A_{ij}(1-p_i)\\) is less than 1.\n- In this criterion, \\(p_i\\) is the probability of removing node \\(i\\), and \\(A\\) is the network’s adjacency matrix.\n- The theory does not require knowledge or applicability of a Markov network model, extending it beyond previous approaches.\n- The predicted criterion is tested numerically across different networks and node removal strategies.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe study analyzes percolation under general node-removal strategies in locally tree-like directed networks using a heuristic spectral criterion based on the largest eigenvalue of the matrix \\(A_{ij}(1-p_i)\\). Numerical tests across multiple networks and removal strategies support the prediction that disintegration occurs when this eigenvalue falls below 1, providing a method applicable without a Markov network model.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, Markov"
+  },
+  "outputs": {
+    "L1": "We present an analysis of the percolation transition under general node-removal strategies in locally tree-like directed networks. Using heuristic arguments, we predict that, when node \\(i\\) is removed with probability \\(p_i\\), the network disintegrates if the largest eigenvalue of the matrix with entries \\(A_{ij}(1-p_i)\\) is less than 1, where \\(A\\) denotes the network’s adjacency matrix. Our theory requires neither knowledge of nor the applicability of a Markov network model, making it suitable for situations beyond the scope of previous work. We test the predicted percolation criterion against numerical results for various networks and node-removal strategies.",
+    "L2": "We study the percolation threshold under arbitrary node-removal schemes in locally tree-like directed networks. Using heuristic reasoning, we propose that when node \\(i\\) is removed with probability \\(p_i\\), the network breaks apart if the leading eigenvalue of the matrix whose elements are \\(A_{ij}(1-p_i)\\) falls below 1, with \\(A\\) denoting the network’s adjacency matrix. Because the framework neither assumes nor requires a Markov network model, it can be used in settings beyond the scope of earlier approaches. We evaluate this criterion numerically across multiple networks and node-removal protocols.",
+    "L3": "The study investigates percolation transitions in locally tree-like directed networks under general node-removal strategies. Each node \\(i\\) is removed independently with probability \\(p_i\\), allowing the framework to represent both random failures and targeted attacks. The resulting structural stability of the network is determined through its adjacency matrix \\(A\\).\n\nThe analysis predicts that the network disintegrates—meaning that it no longer contains a giant connected component—when the largest eigenvalue, or spectral radius, of the matrix with entries\n\\[\nA_{ij}(1-p_i)\n\\]\nfalls below 1. Thus, the percolation threshold is reached when this largest eigenvalue equals 1. The factor \\(1-p_i\\) represents the probability that node \\(i\\) remains in the network, so the modified matrix incorporates the chosen removal strategy directly into the original network structure.\n\nA key advantage of this theory is that it does not require the network to be described by a Markovian network model, nor does it depend on knowledge of such a model. It therefore extends earlier approaches that relied on Markov assumptions or degree-based mixing patterns and can be applied directly to a broader range of locally tree-like directed networks.\n\nThe proposed spectral criterion is tested numerically on several networks using different node-removal strategies. These experiments assess whether the predicted transition accurately identifies the point at which large-scale connectivity is lost and demonstrate the applicability of the framework across varied network structures and attack scenarios.",
+    "L4": "This study investigates percolation in locally tree-like directed networks subject to general node-removal strategies. Each node \\(i\\) is assigned a removal probability \\(p_i\\), allowing the framework to represent random failures, targeted attacks, and heterogeneous interventions based on structural or external information. The central objective is to determine when the removal process destroys the network’s extensive connected structure.\n\nThe analysis uses a heuristic spectral criterion derived from the original adjacency matrix \\(A\\). After accounting for node survival probabilities, the relevant matrix has entries\n\\[\nB_{ij}=A_{ij}(1-p_i).\n\\]\nIts largest eigenvalue measures the effective capacity of the remaining network to sustain branching paths. For a locally tree-like network, the giant component is expected to persist when this eigenvalue exceeds one. Conversely, network disintegration is predicted to occur when\n\\[\n\\lambda_{\\max}(B)<1,\n\\]\nwith the percolation threshold corresponding approximately to \\(\\lambda_{\\max}(B)=1\\).\n\nThis criterion provides a practical way to evaluate a broad range of removal strategies without requiring the network to be represented by a Markovian ensemble or described solely through degree-based transition probabilities. Because it works directly with the adjacency matrix and node-specific removal probabilities, it can incorporate correlations and heterogeneous targeting patterns that are difficult to capture using conventional analytical models.\n\nNumerical experiments on several directed networks and under multiple removal strategies support the spectral prediction. In the tested cases, the disappearance of the giant connected structure occurs near the point at which the leading eigenvalue falls below unity. Although the argument is heuristic and relies on the locally tree-like approximation, the results indicate that the proposed eigenvalue condition is a useful and flexible estimator of percolation thresholds in directed networks, especially when no suitable Markov network model is available.",
+    "L5": "## The Markov Property\n\nThe Markov property describes a system whose future state depends only on its current state, not on the full sequence of events that preceded it. In simple terms, the present contains all the information needed to predict what may happen next.\n\nThis idea forms the basis of Markov chains, which model transitions between different states using probabilities. For example, tomorrow’s weather might be predicted from today’s weather without considering conditions from several weeks ago. Markov models are widely used in economics, computer science, biology, language processing, and artificial intelligence.\n\nAlthough these models simplify complex processes, they are especially useful when recent information is more important than distant history."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a research paper analyzing percolation transitions under general node-removal strategies in locally tree-like directed networks.",
+      "output": "We develop a unified framework for analyzing percolation transitions in locally tree-like directed networks under general node-removal strategies. Removal probabilities may depend on node attributes, including in-degree, out-degree, and degree correlations, thereby encompassing random failures and targeted attacks within a common formulation. Using a message-passing approach, we derive self-consistent equations for the probabilities that directed edges connect to extensive in- and out-components and obtain the resulting sizes of the giant in-component, giant out-component, and giant strongly connected component. Linear stability analysis of the nonpercolating solution yields transition criteria expressed through the leading eigenvalue of a removal-weighted branching operator. The framework clarifies how directionality, joint degree structure, and correlations between vulnerability and connectivity jointly determine network robustness. Numerical solutions and simulations on synthetic directed networks illustrate the predicted critical behavior and show how removal strategies with similar surviving node fractions can produce markedly different transitions. These results provide a general analytical basis for assessing resilience and designing interventions in large sparse directed systems.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize a theoretical study showing that a directed network disintegrates when the largest eigenvalue of the matrix \\(A_{ij}(1-p_i)\\) falls below 1, where \\(p_i\\) is the removal probability of node \\(i\\).",
+      "output": "The study treats node removal in a large, sparse directed network as a site-percolation problem. Each node \\(i\\) is independently removed with probability \\(p_i\\), and the surviving branching process is described by the weighted adjacency matrix\n\n\\[\nB_{ij}=A_{ij}(1-p_i).\n\\]\n\nIts spectral radius \\(\\rho(B)\\) measures whether directed paths can continue to grow. If \\(\\rho(B)>1\\), perturbations or paths can expand and a giant connected structure persists. At the critical point \\(\\rho(B)=1\\), the network undergoes a percolation transition; when\n\n\\[\n\\rho\\!\\left[A_{ij}(1-p_i)\\right]<1,\n\\]\n\nbranching becomes subcritical, long directed paths disappear, and the network disintegrates into small components.\n\nThe result generalizes the usual uniform-removal threshold to heterogeneous, node-specific failure probabilities. It also provides a basis for targeted dismantling or immunization: nodes should be selected for removal according to how strongly changing their survival probability reduces the leading eigenvalue, rather than by degree alone. The theory is most accurate for large, locally tree-like directed networks, while clustering and degree correlations can shift the observed threshold.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a concise physics-paper abstract introducing a percolation criterion for arbitrary node removal in directed networks that does not rely on a Markov network model and is validated numerically.",
+      "output": "We derive a percolation criterion for directed networks under arbitrary, degree-dependent node removal. Unlike approaches based on Markovian degree correlations, our framework uses the full directed network structure and therefore applies to networks with higher-order correlations and nonlocal connectivity patterns. The onset of a giant out-, in-, or strongly connected component is determined by the leading eigenvalue of an appropriate weighted nonbacktracking operator restricted by node-retention probabilities. This formulation yields a unified threshold condition for random failures and targeted attacks without requiring ensemble closure assumptions. Extensive numerical simulations on synthetic and empirical directed networks show that the predicted thresholds accurately identify the loss of macroscopic connectivity across a broad range of removal protocols.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Explain how spectral properties of a modified adjacency matrix can predict network fragmentation under heterogeneous node-removal probabilities, and mention comparisons with simulations.",
+      "output": "Let node \\(i\\) survive independently with probability \\(p_i=1-q_i\\), where \\(q_i\\) is its removal probability. Heterogeneity can be incorporated by weighting the network matrix. A common adjacency-based approximation is\n\n\\[\nM=\\operatorname{diag}(p_1,\\ldots,p_n)A,\n\\]\n\nor the spectrally equivalent symmetric matrix\n\n\\[\n\\widetilde A=\\operatorname{diag}(\\sqrt p)\\,A\\,\\operatorname{diag}(\\sqrt p).\n\\]\n\nThe largest eigenvalue \\(\\rho(M)\\) measures the expected amplification of connectivity through surviving nodes:\n\n- \\(\\rho(M)>1\\): branching paths can grow, so a giant connected component is expected.\n- \\(\\rho(M)<1\\): paths die out, indicating fragmentation into small components.\n- \\(\\rho(M)=1\\): approximate fragmentation or percolation threshold.\n\nThe leading eigenvector also identifies nodes that contribute most strongly to global connectivity; assigning high removal probabilities to those nodes reduces the spectral radius especially efficiently.\n\nFor sparse, locally tree-like networks, a more accurate formulation uses a probability-weighted non-backtracking matrix indexed by directed edges:\n\n\\[\nB^{(p)}_{\\,i\\leftarrow j,\\;j\\leftarrow k}\n   =p_j\\,\\mathbf 1(k\\neq i).\n\\]\n\nIts criterion is likewise \\(\\rho(B^{(p)})=1\\). This avoids counting immediate backtracking walks, which can make ordinary adjacency-based estimates too optimistic, particularly in networks with hubs.\n\nPredictions are typically tested with Monte Carlo simulations: nodes are removed independently according to the \\(q_i\\), and the average largest-component size and susceptibility are measured. The simulated rapid decline of the giant component generally occurs near the spectral crossing of one, with weighted non-backtracking predictions usually matching sparse-network simulations better. Deviations arise in finite, highly clustered, modular, or degree-correlated networks, where independence and locally tree-like assumptions fail.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Generate an academic abstract about a heuristic theory of percolation in locally tree-like directed graphs, emphasizing its applicability beyond previous Markov-based approaches and its testing across multiple networks and attack strategies.",
+      "output": "We develop a heuristic theory of percolation in locally tree-like directed graphs that predicts the emergence and size of giant in-, out-, and strongly connected components under node and edge removal. The framework uses self-consistent message-passing relations defined on the observed network structure, allowing it to incorporate heterogeneous degree distributions, directionality, degree–degree correlations, and targeted damage without assuming that connectivity patterns follow a Markov process. It therefore extends previous Markov-based approaches, which describe networks primarily through low-order mixing statistics and may neglect longer-range structural dependencies. We test the theory on multiple synthetic and empirical directed networks under random failures and several targeted attack strategies, including degree- and centrality-based removal. Across these settings, the predicted percolation thresholds and component sizes show broad agreement with numerical simulations, while discrepancies identify regimes in which finite-size effects, clustering, or strong non-tree-like organization become important. The results provide a flexible and computationally tractable framework for assessing robustness and connectivity in directed systems whose structural complexity lies beyond conventional Markovian network models.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6020328381548083,
+      "excess_ratio": 0.46356878795330225,
+      "baseline_mean": 0.1384640502015061,
+      "baseline_n_valid": 5,
+      "output_chars": 671,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5989717223650386,
+          "baseline_mean": 0.10594695525923656,
+          "excess_ratio": 0.493024767105802
+        },
+        "bz2": {
+          "actual_ratio": 0.513953488372093,
+          "baseline_mean": 0.12964645882671322,
+          "excess_ratio": 0.38430702954537976
+        },
+        "lzma": {
+          "actual_ratio": 0.6869565217391305,
+          "baseline_mean": 0.17447459986475822,
+          "excess_ratio": 0.5124819218743722
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.36065573770491804,
+      "excess_ratio": 0.22219168750341195,
+      "baseline_mean": 0.1384640502015061,
+      "baseline_n_valid": 5,
+      "output_chars": 610,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.32432432432432434,
+          "baseline_mean": 0.10594695525923656,
+          "excess_ratio": 0.21837736906508778
+        },
+        "bz2": {
+          "actual_ratio": 0.30845771144278605,
+          "baseline_mean": 0.12964645882671322,
+          "excess_ratio": 0.17881125261607284
+        },
+        "lzma": {
+          "actual_ratio": 0.4375,
+          "baseline_mean": 0.17447459986475822,
+          "excess_ratio": 0.2630254001352418
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.2943980929678188,
+      "excess_ratio": 0.15593404276631273,
+      "baseline_mean": 0.1384640502015061,
+      "baseline_n_valid": 5,
+      "output_chars": 1592,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2584692597239649,
+          "baseline_mean": 0.10594695525923656,
+          "excess_ratio": 0.15252230446472834
+        },
+        "bz2": {
+          "actual_ratio": 0.28725961538461536,
+          "baseline_mean": 0.12964645882671322,
+          "excess_ratio": 0.15761315655790215
+        },
+        "lzma": {
+          "actual_ratio": 0.3333333333333333,
+          "baseline_mean": 0.17447459986475822,
+          "excess_ratio": 0.1588587334685751
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1910828025477708,
+      "excess_ratio": 0.0526187523462647,
+      "baseline_mean": 0.1384640502015061,
+      "baseline_n_valid": 5,
+      "output_chars": 2064,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.16334661354581673,
+          "baseline_mean": 0.10594695525923656,
+          "excess_ratio": 0.05739965828658017
+        },
+        "bz2": {
+          "actual_ratio": 0.18992248062015504,
+          "baseline_mean": 0.12964645882671322,
+          "excess_ratio": 0.060276021793441825
+        },
+        "lzma": {
+          "actual_ratio": 0.21739130434782608,
+          "baseline_mean": 0.17447459986475822,
+          "excess_ratio": 0.04291670448306786
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.0710801393728223,
+      "excess_ratio": -0.0673839108286838,
+      "baseline_mean": 0.1384640502015061,
+      "baseline_n_valid": 5,
+      "output_chars": 772,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04100227790432802,
+          "baseline_mean": 0.10594695525923656,
+          "excess_ratio": -0.06494467735490854
+        },
+        "bz2": {
+          "actual_ratio": 0.06779661016949153,
+          "baseline_mean": 0.12964645882671322,
+          "excess_ratio": -0.06184984865722169
+        },
+        "lzma": {
+          "actual_ratio": 0.09923664122137404,
+          "baseline_mean": 0.17447459986475822,
+          "excess_ratio": -0.07523795864338417
+        }
+      }
+    }
+  }
+}

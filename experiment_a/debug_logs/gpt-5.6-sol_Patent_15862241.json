@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15862241",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA memory device includes: a plurality of bank groups each comprising one or more banks; a first bus coupled to the plurality of bank groups; a second bus coupled to the plurality of bank groups; a toggle signal generation unit suitable for generating a first signal which toggles in response to a column command signal and a second signal having the opposite logic value of the first signal; a column command transmission unit suitable for transmitting a read command signal or write command signal to the first bus when the first signal is activated, and transmitting the read command signal or write command signal to the second bus when the second signal is activated; and a column address transmission unit suitable for transmitting one or more column address signals corresponding to the read command signal or write command signal to a bus to which the read command signal or write command signal is transmitted, between the first and second buses.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA memory device includes: a plurality of bank groups each comprising one or more banks; a first bus coupled to the plurality of bank groups; a second bus coupled to the plurality of bank groups; a toggle signal generation unit suitable for generating a first signal which toggles in response to a column command signal and a second signal having the opposite logic value of the first signal; a column command transmission unit suitable for transmitting a read command signal or write command signal to the first bus when the first signal is activated, and transmitting the read command signal or write command signal to the second bus when the second signal is activated; and a column address transmission unit suitable for transmitting one or more column address signals corresponding to the read command signal or write command signal to a bus to which the read command signal or write command signal is transmitted, between the first and second buses.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The memory device includes multiple bank groups, each containing one or more banks.\n- First and second buses are coupled to the plurality of bank groups.\n- A toggle signal generation unit produces a first signal that toggles in response to a column command signal and a second signal with the opposite logic value.\n- A column command transmission unit alternately sends read or write command signals to the first or second bus based on which toggle signal is activated.\n- A column address transmission unit sends the corresponding column address signals over the same bus that carries the read or write command signal.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA memory device uses dual buses shared by multiple bank groups and toggle-controlled transmission units to alternate read or write commands, along with corresponding column addresses, between the buses. This approach routes each command and its address over the same selected bus, enabling orderly alternating command distribution across the memory banks.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: A memory device"
+  },
+  "outputs": {
+    "L1": "A memory device includes: a plurality of bank groups, each comprising one or more banks; a first bus coupled to the plurality of bank groups; a second bus coupled to the plurality of bank groups; a toggle signal generation unit configured to generate a first signal that toggles in response to a column command signal and a second signal having a logic value opposite to that of the first signal; a column command transmission unit configured to transmit a read command signal or a write command signal to the first bus when the first signal is activated and to the second bus when the second signal is activated; and a column address transmission unit configured to transmit one or more column address signals corresponding to the read command signal or the write command signal to whichever of the first and second buses carries the read command signal or the write command signal.",
+    "L2": "A memory apparatus comprises:\n\n- multiple bank groups, each containing at least one bank;\n- first and second buses, both connected to the bank groups;\n- a toggle-signal generator configured to produce a first signal that changes state in response to a column-command signal and a second signal whose logic state is complementary to that of the first signal;\n- a column-command transmitter configured to route a read-command signal or a write-command signal through the first bus when the first signal is active and through the second bus when the second signal is active; and\n- a column-address transmitter configured to send one or more column-address signals associated with the read-command signal or write-command signal over whichever of the first and second buses carries that command signal.",
+    "L3": "The memory device includes a plurality of bank groups, with each bank group comprising one or more memory banks. A first bus and a second bus are coupled to the plurality of bank groups to support the transmission of commands and addresses.\n\nThe memory device further includes a toggle-signal generation unit configured to generate a first toggle signal in response to a column command signal. The unit also generates a second toggle signal having a logic value opposite to that of the first toggle signal. Accordingly, when one toggle signal is activated, the other toggle signal is deactivated.\n\nA column-command transmission unit uses the first and second toggle signals to select between the two buses. More specifically, the transmission unit alternately sends a read command signal or a write command signal through either the first bus or the second bus, depending on which toggle signal is activated. A column-address transmission unit similarly transmits the column address associated with the read or write command. The column address is sent through the same bus selected for carrying the corresponding command signal, thereby maintaining alignment between each column command and its associated address.",
+    "L4": "A memory device includes a plurality of memory bank groups that share first and second buses for receiving read or write commands and associated column addresses. A transmission circuit is coupled between a command-and-address input path and the two buses. The transmission circuit includes toggle-controlled transmission units configured to select one of the buses for each incoming command. When a read or write command is received, the corresponding column address is transferred through the same transmission unit and onto the same selected bus as the command.\n\nThe toggle control changes state in response to successive read or write operations. In a first state, a command and its column address are transmitted over the first bus, while the second bus remains available for another transfer. In a second state, the next command and its column address are transmitted over the second bus. The transmission units therefore alternate the command-and-address pairs between the two shared buses.\n\nEach bank group is coupled to the buses and accepts the command and column address carried by the bus selected for that operation. Because a command and its associated address always travel together on one bus, the device preserves their correspondence and avoids routing the command and address through different signal paths. Alternating successive operations between the buses also organizes command distribution, reduces contention on a single bus, and supports efficient access to the multiple memory banks.",
+    "L5": "### A Memory Device\n\nA memory device is a piece of hardware used to store digital information. Computers, smartphones, cameras, and many other electronic devices rely on memory devices to save files, applications, photographs, and system data. Common examples include hard disk drives, solid-state drives, USB flash drives, memory cards, and optical discs.\n\nMemory devices may provide temporary or permanent storage. Random-access memory, or RAM, stores information only while a device is operating, allowing programs to run quickly. By contrast, drives and memory cards keep data even when the power is turned off. The capacity of a memory device is usually measured in gigabytes or terabytes.\n\nModern memory devices have become smaller, faster, and more reliable. However, they can still be damaged or lost, so important information should be backed up regularly. As technology continues to develop, memory devices will remain essential for storing and accessing the growing amount of digital data in everyday life."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style apparatus claim for a memory device that alternates read/write column commands and corresponding column addresses between two buses coupled to multiple bank groups using complementary toggle signals.",
+      "output": "1. **A memory device comprising:**\n\na plurality of bank groups, each bank group comprising at least one memory bank;\n\na first column-command-and-address bus and a second column-command-and-address bus, each coupled to the plurality of bank groups; and\n\ncontrol circuitry configured to:\n\n- generate a first toggle signal and a second toggle signal complementary to the first toggle signal;\n- receive a sequence of column operations, each column operation comprising a read or write column command and a corresponding column address; and\n- alternately provide successive column operations of the sequence on the first and second column-command-and-address buses responsive to the first and second toggle signals, respectively, such that the read or write column command and the corresponding column address of each column operation are provided on a same one of the first and second column-command-and-address buses for access to a selected bank group of the plurality of bank groups.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Describe a dual-bus memory architecture in formal claim language, including bank groups, toggle-signal generation, column-command routing, and matching column-address transmission.",
+      "output": "1. **A memory device comprising:**\n\na memory cell array including a plurality of memory banks partitioned into a first bank group and a second bank group;\n\na first command/address bus associated with the first bank group;\n\na second command/address bus associated with the second bank group;\n\na toggle-signal generation circuit configured to generate a toggle signal that alternates between a first state and a second state in response to receipt of successive column commands;\n\na column-command routing circuit configured to route a received column command to one of the first command/address bus or the second command/address bus based at least in part on the toggle signal; and\n\na column-address transmission circuit configured to transmit a column address corresponding to the received column command over the same one of the first command/address bus or the second command/address bus to which the received column command is routed,\n\nwherein the column-command routing circuit and the column-address transmission circuit are configured to cause successive column commands, together with their corresponding column addresses, to be conveyed alternately via the first command/address bus and the second command/address bus for execution by a selected memory bank of the first bank group or the second bank group.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write one independent patent claim for a semiconductor memory device that load-balances successive column commands across first and second buses.",
+      "output": "1. A semiconductor memory device comprising:  \na memory cell array;  \nfirst and second buses coupled to the memory cell array; and  \na control circuit configured to receive a sequence of column commands directed to the memory cell array and, for each successive column command in the sequence, select between the first bus and the second bus based on which bus was selected for an immediately preceding column command, such that the successive column commands are alternately conveyed over the first bus and the second bus to load-balance the sequence of column commands across the first and second buses.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Convert the following concept into a single patent-style paragraph: multiple memory bank groups share two buses; a toggling signal and its inverse select which bus carries each read or write command; the associated column address must travel on the same selected bus.",
+      "output": "A memory apparatus comprising a plurality of memory bank groups coupled to first and second shared buses, and control circuitry configured to generate a toggling selection signal and an inverse thereof to alternately select one of the first and second shared buses for conveying each read command or write command, wherein a column address associated with the respective read command or write command is conveyed on the same selected shared bus as the respective command.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a concise technical definition of a memory device whose command transmission unit alternates column commands between two bank-group buses and routes each command’s column-address signals accordingly.",
+      "output": "A memory device comprising a command transmission unit configured to alternately transmit successive column commands over first and second bank-group command buses and to route the column-address signals associated with each column command to the corresponding bank-group bus.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7229729729729729,
+      "excess_ratio": 0.4206335094071849,
+      "baseline_mean": 0.302339463565788,
+      "baseline_n_valid": 5,
+      "output_chars": 883,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7296416938110749,
+          "baseline_mean": 0.251245141326042,
+          "excess_ratio": 0.47839655248503293
+        },
+        "bz2": {
+          "actual_ratio": 0.6373937677053825,
+          "baseline_mean": 0.28784669413231134,
+          "excess_ratio": 0.34954707357307113
+        },
+        "lzma": {
+          "actual_ratio": 0.7978723404255319,
+          "baseline_mean": 0.3554657937736498,
+          "excess_ratio": 0.4424065466518821
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4227272727272728,
+      "excess_ratio": 0.12038780916148478,
+      "baseline_mean": 0.302339463565788,
+      "baseline_n_valid": 5,
+      "output_chars": 798,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3556231003039514,
+          "baseline_mean": 0.251245141326042,
+          "excess_ratio": 0.10437795897790941
+        },
+        "bz2": {
+          "actual_ratio": 0.42048517520215634,
+          "baseline_mean": 0.28784669413231134,
+          "excess_ratio": 0.132638481069845
+        },
+        "lzma": {
+          "actual_ratio": 0.48,
+          "baseline_mean": 0.3554657937736498,
+          "excess_ratio": 0.1245342062263502
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.38068535825545174,
+      "excess_ratio": 0.07834589468966374,
+      "baseline_mean": 0.302339463565788,
+      "baseline_n_valid": 5,
+      "output_chars": 1215,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.33669354838709675,
+          "baseline_mean": 0.251245141326042,
+          "excess_ratio": 0.08544840706105478
+        },
+        "bz2": {
+          "actual_ratio": 0.3705103969754253,
+          "baseline_mean": 0.28784669413231134,
+          "excess_ratio": 0.08266370284311397
+        },
+        "lzma": {
+          "actual_ratio": 0.42758620689655175,
+          "baseline_mean": 0.3554657937736498,
+          "excess_ratio": 0.07212041312290196
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.22513881877839476,
+      "excess_ratio": -0.07720064478739325,
+      "baseline_mean": 0.302339463565788,
+      "baseline_n_valid": 5,
+      "output_chars": 1511,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.18518518518518517,
+          "baseline_mean": 0.251245141326042,
+          "excess_ratio": -0.0660599561408568
+        },
+        "bz2": {
+          "actual_ratio": 0.20705521472392638,
+          "baseline_mean": 0.28784669413231134,
+          "excess_ratio": -0.08079147940838496
+        },
+        "lzma": {
+          "actual_ratio": 0.2768361581920904,
+          "baseline_mean": 0.3554657937736498,
+          "excess_ratio": -0.07862963558155939
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.07993099482461172,
+      "excess_ratio": -0.22240846874117629,
+      "baseline_mean": 0.302339463565788,
+      "baseline_n_valid": 5,
+      "output_chars": 1017,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.03925233644859813,
+          "baseline_mean": 0.251245141326042,
+          "excess_ratio": -0.21199280487744385
+        },
+        "bz2": {
+          "actual_ratio": 0.08098591549295775,
+          "baseline_mean": 0.28784669413231134,
+          "excess_ratio": -0.2068607786393536
+        },
+        "lzma": {
+          "actual_ratio": 0.11320754716981132,
+          "baseline_mean": 0.3554657937736498,
+          "excess_ratio": -0.24225824660383846
+        }
+      }
+    }
+  }
+}

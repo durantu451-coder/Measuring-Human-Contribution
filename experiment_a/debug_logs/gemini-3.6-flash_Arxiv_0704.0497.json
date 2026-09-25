@@ -1,0 +1,169 @@
+{
+  "model": "gemini-3.6-flash",
+  "domain": "Arxiv",
+  "id": "0704.0497",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIn this paper, we describe a new, systematic and explicit way of approximating solutions of mixed hyperbolic systems with constant coefficients satisfying a Uniform Lopatinski Condition via different Penalization approaches.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIn this paper, we describe a new, systematic and explicit way of approximating solutions of mixed hyperbolic systems with constant coefficients satisfying a Uniform Lopatinski Condition via different Penalization approaches.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n* The paper introduces a novel, systematic, and explicit method for approximating mathematical solutions.\n* The proposed approximation technique specifically applies to mixed hyperbolic systems.\n* The mathematical systems analyzed in the study feature constant coefficients.\n* The considered hyperbolic systems satisfy a Uniform Lopatinski Condition.\n* The approximation strategy is achieved through the use of different penalization approaches.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis paper addresses the problem of approximating solutions for mixed hyperbolic systems with constant coefficients satisfying a Uniform Lopatinski Condition by applying various penalization techniques. The study yields a novel, systematic, and explicit approximation framework, offering a significant analytical approach for effectively handling these complex hyperbolic systems.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Uniform, Lopatinski, Condition"
+  },
+  "outputs": {
+    "L1": "Here are a few ways to polish your sentence, depending on your preferred style:\n\n**Option 1: Balanced and precise (Recommended)**\n> \"In this paper, we present a novel, systematic, and explicit framework for approximating solutions to mixed hyperbolic systems with constant coefficients satisfying the Uniform Lopatinski Condition, utilizing various penalization approaches.\"\n\n**Option 2: Formal and authoritative**\n> \"This paper introduces a systematic and explicit methodology for approximating solutions of constant-coefficient mixed hyperbolic systems that satisfy the Uniform Lopatinski Condition, implemented through distinct penalization techniques.\"\n\n**Option 3: Direct and impactful**\n> \"We propose a novel, systematic, and explicit scheme for approximating solutions to mixed hyperbolic systems with constant coefficients satisfying the Uniform Lopatinski Condition via diverse penalization strategies.\"\n\n### Key Improvements Made:\n* Replaced \"a new, systematic and explicit way of approximating\" with stronger nouns like **\"framework,\" \"methodology,\"** or **\"scheme.\"**\n* Used **\"novel\"** instead of \"new\" for a more academic tone.\n* Improved prepositional flow (e.g., changing \"via different Penalization approaches\" to \"utilizing various penalization approaches\").\n* Fixed the capitalization of \"penalization\" to conform to standard mathematical styling.",
+    "L2": "Here is a complete rewrite of the text, maintaining all original details while using alternative vocabulary and sentence structure:\n\n\"By applying various penalization techniques, this study presents a novel, structured, and direct framework to estimate solutions for constant-coefficient mixed hyperbolic systems that adhere to the Uniform Lopatinski Condition.\"",
+    "L3": "Here are a few ways to expand these bullet points, depending on the desired format and context. \n\n### Option 1: Academic Abstract / Executive Summary\n*(Best suited for a research paper abstract, summary section, or grant proposal)*\n\nThis paper presents a novel, systematic, and explicit methodology for approximating solutions to complex mathematical problems. Specifically, the proposed theoretical and computational framework targets mixed hyperbolic systems featuring constant coefficients. To ensure structural stability and strong well-posedness, the mathematical systems analyzed throughout this study strictly satisfy a Uniform Lopatinski Condition. \n\nThe core of the proposed approximation strategy relies on the strategic implementation of diverse penalization approaches. By incorporating these penalization terms, the method successfully resolves boundary-value challenges while preserving the underlying hyperbolic dynamics. Ultimately, this work provides a rigorous and constructive pathway for generating explicit solution approximations, offering a valuable tool for both analytical study and numerical implementation in linear hyperbolic problems.\n\n---\n\n### Option 2: Expanded Introduction / Overview\n*(Best suited for the introductory section of a paper or a detailed presentation)*\n\nIn this work, we introduce a novel, systematic, and explicit approximation scheme designed for mathematical solutions within hyperbolic partial differential equations (PDEs). The scope of our investigation centers on mixed hyperbolic systems defined with constant coefficients—a foundational class of equations widely applicable in mathematical physics and wave propagation dynamics.\n\nA fundamental assumption in our analysis is that the considered systems satisfy a **Uniform Lopatinski Condition**. This condition is crucial, as it guarantees the initial-boundary value problem is well-posed and robust against perturbations. \n\nTo approximate the solutions to these well-posed systems, we establish an explicit strategy driven by distinct penalization techniques. Rather than relying on traditional, implicit boundary-fitting methods, our approach utilizes tailored penalization terms to enforce boundary conditions efficiently. This systematic penalization not only simplifies the derivation of approximate solutions but also establishes explicit error bounds, paving the way for more efficient numerical solvers in bounded domains.\n\n---\n\n### Key Improvements Made in the Expansion:\n* **Contextual Flow:** Connected isolated technical terms (like *Uniform Lopatinski Condition*) to their underlying functional purpose (ensuring *well-posedness* and *stability*).\n* **Academic Register:** Used precise terminology (e.g., *framework, boundary-value challenges, computational scheme*) suitable for mathematics, physics, or engineering disciplines.\n* **Cohesion:** Transitioned logically from the general goal (approximation method) $\\rightarrow$ specific problem class (constant-coefficient mixed hyperbolic systems) $\\rightarrow$ boundary condition requirements $\\rightarrow$ the mechanism (penalization).",
+    "L4": "Here is a fully expanded academic text based on your summary, structured as a formal research paper framework.\n\n---\n\n# A Systematic Penalization Framework for Mixed Hyperbolic Systems Under the Uniform Lopatinski Condition\n\n## Abstract\nThis paper addresses the challenge of approximating solutions for initial-boundary value problems (IBVPs) governed by mixed hyperbolic systems with constant coefficients. Assuming the system satisfies the algebraic Uniform Lopatinski Condition, we present a novel, systematic, and explicit approximation framework utilizing various penalization techniques. By relaxing boundary constraints into singular perturbation terms, our methodology establishes strong convergence guarantees and uniform energy estimates. This study provides a robust analytical foundation for analyzing and numerically solving complex hyperbolic boundary value problems.\n\n---\n\n## 1. Introduction\n\nHyperbolic partial differential equations (PDEs) serve as foundational models in physics and engineering, describing phenomena ranging from acoustics and electromagnetism to fluid dynamics and general relativity. While the Cauchy problem (pure initial value problem) for linear hyperbolic systems is well-understood, initial-boundary value problems (IBVPs)—often referred to as mixed problems—introduce substantial analytical difficulties. The presence of physical domain boundaries requires the precise specification of boundary conditions to ensure the system remains well-posed.\n\nThe structural stability and well-posedness of linear mixed hyperbolic systems rely heavily on the **Uniform Lopatinski Condition (ULC)**, established in the seminal works of Heinz-Otto Kreiss. The ULC guarantees that boundary conditions appropriately control incoming wave modes without generating unstable reflections or boundary layers that grow unchecked in time. \n\nDespite theoretical well-posedness, obtaining analytical solutions or designing stable, high-order numerical algorithms for IBVPs with strict boundary constraints remains a significant challenge. Traditional boundary-conforming methods can suffer from geometric complexity and severe stability restrictions. \n\nTo overcome these limitations, **penalization techniques** (such as volume penalization, boundary penalization, and penalty-based immersed boundary techniques) have emerged as powerful alternatives. Penalization converts constrained IBVPs into unconstrained or weakly constrained problems over extended domains by introducing a small penalty parameter $\\varepsilon > 0$. \n\nThis paper introduces a **systematic and explicit approximation framework** for mixed hyperbolic systems with constant coefficients satisfying the ULC. By unifying and extending various penalization formulations, we prove that penalized solutions converge rigorously to the exact solution of the underlying IBVP as $\\varepsilon \\to 0$, providing an explicit analytical blueprint for complex hyperbolic systems.\n\n---\n\n## 2. Problem Formulation and Mathematical Context\n\n### 2.1 The Target Mixed Hyperbolic System\nWe consider a linear first-order hyperbolic system with constant coefficients defined on the half-space domain $\\Omega = \\{ (x_1, \\mathbf{x}') \\in \\mathbb{R} \\times \\mathbb{R}^{d-1} \\mid x_1 > 0 \\}$ for time $t \\in [0, T]$:\n\n$$\\partial_t u + A_1 \\partial_{x_1} u + \\sum_{j=2}^d A_j \\partial_{x_j} u = f(t, x), \\quad x \\in \\Omega, \\ t > 0$$\n\nwhere:\n* $u(t, x) \\in \\mathbb{R}^N$ is the unknown vector-valued function.\n* $A_1, A_2, \\dots, A_d \\in \\mathbb{R}^{N \\times N}$ are constant real matrices.\n* $A_1$ is non-singular, defining the normal direction to the boundary $\\partial\\Omega = \\{x_1 = 0\\}$.\n\nThe system is equipped with the initial condition:\n$$u(0, x) = u_0(x), \\quad x \\in \\Omega$$\n\nand boundary conditions at $x_1 = 0$:\n$$B u(t, 0, \\mathbf{x}') = g(t, \\mathbf{x}'), \\quad \\mathbf{x}' \\in \\mathbb{R}^{d-1}, \\ t > 0$$\n\nwhere $B \\in \\mathbb{R}^{p \\times N}$ is a constant matrix, with $p$ corresponding to the number of strictly positive eigenvalues of $A_1$ (the incoming characteristics).\n\n### 2.2 The Uniform Lopatinski Condition (ULC)\nTo ensure that the IBVP is $L^2$-well-posed, the pair $(A_1, B)$ must satisfy the **Uniform Lopatinski Condition**. \n\nUnder Laplace transformation in time and Fourier transformation in the tangential space $\\mathbf{x}'$, the system reduces to an ordinary differential equation in $x_1$. The ULC requires that no non-trivial stable modes exist in the kernel of the boundary operator $B$ for any complex frequency in the right half-plane. Geometrically, this ensures that boundary data continuously controls the outbound and inbound characteristic information without allowing resonant boundary waves to amplify errors.\n\n---\n\n## 3. The Explicit Penalization Framework\n\nThe core innovation of this work is the replacement of the rigid boundary operator $B u = g$ with a parametrized force term acting near or on the boundary. We analyze a generalized penalized system of the form:\n\n$$\\partial_t u_\\varepsilon + \\sum_{j=1}^d A_j \\partial_{x_j} u_\\varepsilon + \\frac{1}{\\varepsilon} \\mathcal{P}_{\\partial\\Omega} (B u_\\varepsilon - g) = f, \\quad x \\in \\mathbb{R}^d$$\n\nwhere:\n* $\\varepsilon > 0$ is the penalization parameter.\n* $\\mathcal{P}_{\\partial\\Omega}$ represents a penalization operator. Depending on the chosen technique, this may manifest as:\n  1. **Boundary Penalization:** A Dirac-delta-like interface penalty concentrated strictly at $x_1 = 0$.\n  2. **Volume/Brinkman Penalization:** A continuous mask function $M(x)$ that forces $u_\\varepsilon$ to match an extended target state within an auxiliary domain $x_1 < 0$.\n  3. **Characteristic Penalization:** A projection operator acting solely on the incoming characteristic variables associated with the positive spectrum of $A_1$.\n\nOur framework unifies these approaches into an explicit, consolidated formulation, allowing unified mathematical analysis regardless of the chosen physical penalization mechanism.\n\n---\n\n## 4. Main Theoretical Results\n\nThe analytical contributions of this work are summarized in three main theorems:\n\n### 4.1 Uniform Bounds via Kreiss Symmetrizers\nUsing the existence of smooth **Kreiss symmetrizers**—guaranteed by the Uniform Lopatinski Condition—we construct a specialized global energy functional $E_\\varepsilon(t) = \\| u_\\varepsilon(t, \\cdot) \\|_{\\mathcal{H}}^2$. \n\n> **Theorem 1 (Uniform Stability):** *Under the Uniform Lopatinski Condition, there exist constants $C > 0$ and $\\varepsilon_0 > 0$, independent of $\\varepsilon$, such that for all $\\varepsilon \\in (0, \\varepsilon_0]$:*\n> $$\\sup_{t \\in [0, T]} \\| u_\\varepsilon(t) \\|_{L^2(\\Omega)} \\le C \\left( \\| u_0 \\|_{L^2(\\Omega)} + \\| f \\|_{L^2([0,T] \\times \\Omega)} + \\| g \\|_{H^{1/2}([0,T] \\times \\partial\\Omega)} \\right)$$\n\n### 4.2 Explicit Convergence Rates\nBy analyzing the boundary layer profile generated by the singular term $\\frac{1}{\\varepsilon}$, we quantify the asymptotic behavior of the approximation error $e_\\varepsilon = u - u_\\varepsilon$.\n\n> **Theorem 2 (Convergence Rate):** *Let $u$ be the exact solution to the unpenalized IBVP, and let $u_\\varepsilon$ be the solution to the penalized system. Then, the approximation error satisfies:*\n> $$\\| u - u_\\varepsilon \\|_{L^2([0,T] \\times \\Omega)} = \\mathcal{O}(\\varepsilon^\\alpha)$$\n> *where $\\alpha > 0$ depends explicitly on the smoothness of the boundary data $g$ and the specific penalization profile chosen (e.g., $\\alpha = 1/2$ for standard volume penalization and $\\alpha = 1$ for matched boundary penalization).*\n\n### 4.3 Explicit Representation Framework\nWe derive closed-form integral representations for the penalized solutions using localized Green's functions. This provides a direct analytical mechanism to evaluate how boundary errors decay exponentially away from $x_1 = 0$ inside the boundary layer.\n\n---\n\n## 5. Significance and Applications\n\nThe systematic framework developed in this paper bridges abstract hyperbolic PDE theory and practical computational design:\n\n1. **Simplified Numerical Implementations:** Enforcing boundary conditions in complex geometries (e.g., airflow around turbine blades or seismic wave propagation through irregular strata) typically requires unstructured, boundary-fitted meshes. Our penalization framework allows complex geometries to be embedded into simple, regular Cartesian grids, greatly simplifying finite difference and pseudo-spectral implementations.\n2. **Provable Numerical Stability:** Because our energy estimates are uniform in $\\varepsilon$ under the ULC, numerical schemes discretized from this penalized system automatically inherit provable stability, avoiding high-frequency boundary instabilities.\n3. **Generalizability:** The explicit nature of the proofs for constant-coefficient systems establishes a baseline methodology for future extensions to variable-coefficient systems and quasilinear hyperbolic conservation laws.\n\n---\n\n## 6. Conclusion\n\nThis study provides a complete, rigorous, and explicit framework for approximating solutions to mixed hyperbolic systems with constant coefficients under the Uniform Lopatinski Condition via penalization techniques. By proving uniform stability and establishing explicit convergence rates, we demonstrate that penalization is not merely an intuitive computational heuristic, but a mathematically sound analytical tool. This work provides a foundation for developing robust numerical methods for complex, high-dimensional hyperbolic initial-boundary value problems.",
+    "L5": "Here is a comprehensive overview of the **Uniform Lopatinski Condition**, its mathematical background, and its significance in the study of partial differential equations (PDEs).\n\n---\n\n# Understanding the Uniform Lopatinski Condition\n\nIn the study of partial differential equations (PDEs)—particularly initial-boundary value problems (IBVPs) and the stability of shock waves—the **Uniform Lopatinski Condition** (sometimes referred to as the Lopatinski–Shapiro condition) plays a crucial role. It is a mathematical criterion that guarantees the well-posedness of boundary value problems and determines whether small perturbations at a boundary will decay or destabilize an entire system.\n\n---\n\n## 1. Context and Origin\n\nWhen solving differential equations on bounded domains (or half-spaces), interior differential operators must be paired with suitable boundary conditions. \n\n* **The Basic Lopatinski Condition:** Originating in the study of elliptic boundary value problems, the algebraic Lopatinski condition ensures that the boundary operators are compatible with the interior differential equations. It essentially prevents the boundary from generating non-trivial, undesirable \"phantom\" solutions.\n* **The Need for \"Uniformity\":** For dynamic problems—specifically **hyperbolic systems** (which model wave propagation, fluid dynamics, and acoustics)—the standard Lopatinski condition is often too weak. It may allow solutions to amplify infinitely under high-frequency perturbations. The **Uniform Lopatinski Condition** strengthens this criterion, requiring the boundary conditions to remain robustly non-degenerate across all space-time frequencies, including boundary modes.\n\n---\n\n## 2. Mathematical Significance\n\nIn hyperbolic initial-boundary value problems, well-posedness requires that a unique solution exists and depends continuously on the initial and boundary data. \n\nIn a seminal 1970 paper, mathematician Heinz-Otto Kreiss demonstrated that the **Uniform Lopatinski Condition is both a necessary and sufficient condition for maximal $L^2$-well-posedness** of linear hyperbolic IBVPs. \n\nMathematically, the condition is checked by:\n1. Applying a Laplace transform in time and a Fourier transform in the spatial directions parallel to the boundary.\n2. Analyzing the resulting ordinary differential equation (ODE) in the normal direction.\n3. Defining a boundary matrix (or determinant) dependent on the frequency parameters.\n4. **The Condition:** The Lopatinski determinant must remain strictly bounded away from zero for all normalized frequency modes, preventing any resonant amplifications originating from the boundary.\n\n---\n\n## 3. Key Applications\n\n### A. Stability of Shock Waves\nOne of the most notable applications of the Uniform Lopatinski Condition is in fluid dynamics and conservation laws. Andrew Majda used this condition in the 1980s to prove the multi-dimensional stability of shock fronts for the compressible Euler equations. \n\n* **Stable Shocks:** If a shock wave satisfies the Uniform Lopatinski Condition, small perturbations to the shock front will radiate away or damp out, maintaining the structural stability of the shock.\n* **Weak vs. Neutral Stability:** If the condition fails only marginally (the determinant touches zero at certain frequencies), the shock may exhibit neutral stability, giving rise to complex phenomena like surface waves or cellular shock structures.\n\n### B. Boundary Layer Theory\nIn real-world fluid flows, fluid velocity drops to zero at a solid surface, creating a thin boundary layer. The Uniform Lopatinski Condition is used to analyze the stability of these boundary layers, helping engineers and physicists predict the onset of turbulence near surfaces (such as airplane wings or turbine blades).\n\n---\n\n## 4. Summary\n\nThe **Uniform Lopatinski Condition** is a cornerstone of modern PDE theory. By enforcing a uniform algebraic constraint on how boundary data interacts with interior wave modes, it guarantees that initial-boundary value problems do not blow up under high-frequency oscillations. Whether in theoretical analysis of wave propagation or practical applications in aerodynamics and shock wave dynamics, it remains the standard threshold for structural boundary stability."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write the opening sentence of an abstract for a mathematics research paper on penalization methods for mixed hyperbolic systems.",
+      "output": "\"We propose a mathematically rigorous volume penalization framework for mixed hyperbolic systems, establishing the energy stability and well-posedness of the penalized formulation while proving convergence to the exact boundary-value problem as the penalty parameter approaches zero.\"",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Rewrite the following informal summary into formal academic language suitable for a partial differential equations paper: \"We came up with a new explicit method to approximate solutions for mixed hyperbolic systems with constant coefficients when the Uniform Lopatinski Condition holds, using different penalization techniques.\"",
+      "output": "Here are a few ways to rewrite your summary depending on the preferred style (active vs. passive) and context (abstract, introduction, or thesis statement):\n\n**Option 1: Standard Active Voice (Recommended for Modern Mathematics Journals)**\n> \"We propose a novel explicit numerical scheme for the approximation of solutions to constant-coefficient mixed hyperbolic initial-boundary value problems satisfying the Uniform Lopatinski Condition, utilizing various penalization techniques.\"\n\n**Option 2: Formal Passive Voice (Objective, Abstract-style)**\n> \"A novel explicit methodology based on penalization techniques is introduced for the numerical approximation of constant-coefficient mixed hyperbolic systems under the Uniform Lopatinski Condition.\"\n\n**Option 3: Comprehensive / High-Impact Style (Ideal for the Abstract)**\n> \"This work develops an explicit penalization-based approach for the approximation of initial-boundary value problems associated with constant-coefficient mixed hyperbolic systems, assuming the validity of the Uniform Lopatinski Condition.\"\n\n---\n\n### Key Terminology Adjustments Made:\n*   **\"came up with\"** $\\rightarrow$ *propose, introduce, develop* (standard academic verbs).\n*   **\"new explicit method\"** $\\rightarrow$ *novel explicit numerical scheme / explicit methodology* (more precise terminology).\n*   **\"mixed hyperbolic systems\"** $\\rightarrow$ often implies *initial-boundary value problems (IBVPs)* when paired with the Lopatinski condition, so adding \"IBVP\" enhances precision.\n*   **\"when [it] holds\"** $\\rightarrow$ *satisfying / under the assumption of / subject to*.\n*   **\"constant coefficients\"** $\\rightarrow$ hyphenated as a compound modifier (*constant-coefficient*).",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "I am writing a paper proposing a systematic, explicit approximation method for mixed hyperbolic systems with constant coefficients that satisfy a Uniform Lopatinski Condition. Draft a single introductory sentence summarizing our core contribution.",
+      "output": "Here is a draft for your introductory sentence:\n\n> \"In this paper, we establish a systematic and explicit approximation framework for mixed hyperbolic initial-boundary value problems with constant coefficients that satisfy the Uniform Lopatinski Condition.\"\n\n*(Alternative option focusing directly on the method:)*\n> \"We propose a systematic, explicit approximation method designed for mixed hyperbolic systems with constant coefficients governed by the Uniform Lopatinski Condition.\"",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Give me an example of a precise introductory sentence for a math abstract focusing on penalization approaches in hyperbolic PDE systems.",
+      "output": "Here is a precise, high-level introductory sentence for a mathematics abstract in this domain:\n\n> **\"We establish the rigorous stability and convergence of a volume penalization approach for enforcing weak boundary conditions in first-order hyperbolic systems of conservation laws defined on complex domains.\"**\n\n---\n\n### Alternative options depending on the specific focus of your paper:\n\n*   **If the focus is on Numerical Analysis / Discontinuous Galerkin (DG):**\n    > \"In this paper, we present an energy-stable boundary-penalized Discontinuous Galerkin scheme for non-linear hyperbolic PDE systems, proving optimal $L^2$-convergence rates under minimal regularity assumptions.\"\n\n*   **If the focus is on Theoretical Analysis / Stiff Limits (Brinkman Penalization):**\n    > \"We investigate the singular limit of a Brinkman-type penalization method for symmetric hyperbolic systems, proving that the penalized solutions converge strongly in the energy norm to the exact solution of the underlying initial-boundary value problem as the penalty parameter approaches zero.\"\n\n*   **If the focus is on Interface / Multi-domain Problems:**\n    > \"We propose a novel penalty formulation for coupling non-conservative hyperbolic systems across immersed interfaces, guaranteeing strict dissipation of the discrete energy.\"\n\n### What makes these sentences effective for a math abstract:\n1. **Defines the core problem:** Specifies the class of PDE (e.g., *first-order hyperbolic systems of conservation laws* or *symmetric hyperbolic systems*).\n2. **Identifies the exact methodology:** Clearly names the type of penalization (e.g., *volume penalization*, *Brinkman-type penalization*, *boundary-penalized DG*).\n3. **States the rigorous contribution:** Uses precise mathematical goals rather than vague descriptions (e.g., *rigorous stability*, *singular limit*, *optimal $L^2$-convergence*, *strict energy dissipation*).",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Draft the first sentence of the abstract for a paper titled \"Explicit Approximations of Mixed Hyperbolic Systems via Penalization Methods.\"",
+      "output": "Here are a few options for the first sentence, depending on the specific focus of your paper:\n\n**Option 1 (Direct & Action-Oriented — Best for general applied math/computational physics):**\n> \"This paper introduces a novel class of explicit numerical approximations for mixed hyperbolic systems using penalization methods, offering a computationally efficient approach to enforce complex constraints without requiring costly implicit solvers.\"\n\n**Option 2 (Context-First — Best if the paper solves a well-known computational bottleneck):**\n> \"While numerical approximations of mixed hyperbolic systems typically suffer from severe time-step restrictions or expensive matrix inversions, penalization methods provide a powerful alternative for constructing fully explicit schemes.\"\n\n**Option 3 (Concise & Formal — Best for high-impact journal submissions):**\n> \"We present an explicit penalization framework for mixed hyperbolic systems that establishes rigorous convergence rates while significantly reducing computational complexity.\" \n\n*Recommendation:* Use **Option 1** if you want to immediately connect the title's key themes (explicit approximations, mixed hyperbolic systems, penalization) with the primary benefit (computational efficiency).",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.2621009268795057,
+      "excess_ratio": 0.03188937210270579,
+      "baseline_mean": 0.23021155477679991,
+      "baseline_n_valid": 5,
+      "output_chars": 1366,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.23283082077051925,
+          "baseline_mean": 0.19812451863115596,
+          "excess_ratio": 0.03470630213936329
+        },
+        "bz2": {
+          "actual_ratio": 0.23617339312406577,
+          "baseline_mean": 0.20683474237032326,
+          "excess_ratio": 0.029338650753742507
+        },
+        "lzma": {
+          "actual_ratio": 0.3136094674556213,
+          "baseline_mean": 0.2787508719838736,
+          "excess_ratio": 0.03485859547174769
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.43030303030303035,
+      "excess_ratio": 0.20009147552623044,
+      "baseline_mean": 0.23021155477679991,
+      "baseline_n_valid": 5,
+      "output_chars": 362,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.38493723849372385,
+          "baseline_mean": 0.19812451863115596,
+          "excess_ratio": 0.1868127198625679
+        },
+        "bz2": {
+          "actual_ratio": 0.38489208633093525,
+          "baseline_mean": 0.20683474237032326,
+          "excess_ratio": 0.17805734396061199
+        },
+        "lzma": {
+          "actual_ratio": 0.5064935064935064,
+          "baseline_mean": 0.2787508719838736,
+          "excess_ratio": 0.22774263450963284
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.15103675777568337,
+      "excess_ratio": -0.07917479700111654,
+      "baseline_mean": 0.23021155477679991,
+      "baseline_n_valid": 5,
+      "output_chars": 3107,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.12563543936092955,
+          "baseline_mean": 0.19812451863115596,
+          "excess_ratio": -0.07248907927022641
+        },
+        "bz2": {
+          "actual_ratio": 0.14498933901918976,
+          "baseline_mean": 0.20683474237032326,
+          "excess_ratio": -0.061845403351133504
+        },
+        "lzma": {
+          "actual_ratio": 0.18082191780821918,
+          "baseline_mean": 0.2787508719838736,
+          "excess_ratio": -0.09792895417565442
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.05811029279683859,
+      "excess_ratio": -0.17210126197996134,
+      "baseline_mean": 0.23021155477679991,
+      "baseline_n_valid": 5,
+      "output_chars": 9498,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.049720818931135335,
+          "baseline_mean": 0.19812451863115596,
+          "excess_ratio": -0.14840369970002062
+        },
+        "bz2": {
+          "actual_ratio": 0.052907136952328467,
+          "baseline_mean": 0.20683474237032326,
+          "excess_ratio": -0.1539276054179948
+        },
+        "lzma": {
+          "actual_ratio": 0.07158119658119658,
+          "baseline_mean": 0.2787508719838736,
+          "excess_ratio": -0.20716967540267703
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.02757352941176471,
+      "excess_ratio": -0.2026380253650352,
+      "baseline_mean": 0.23021155477679991,
+      "baseline_n_valid": 5,
+      "output_chars": 4254,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.01568627450980392,
+          "baseline_mean": 0.19812451863115596,
+          "excess_ratio": -0.18243824412135204
+        },
+        "bz2": {
+          "actual_ratio": 0.02324294410625346,
+          "baseline_mean": 0.20683474237032326,
+          "excess_ratio": -0.1835917982640698
+        },
+        "lzma": {
+          "actual_ratio": 0.04329004329004329,
+          "baseline_mean": 0.2787508719838736,
+          "excess_ratio": -0.2354608286938303
+        }
+      }
+    }
+  }
+}

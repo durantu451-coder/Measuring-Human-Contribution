@@ -1,0 +1,169 @@
+{
+  "model": "claude-opus-4-8",
+  "domain": "Arxiv",
+  "id": "0704.0215",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIn this note we consider the time of the collision $\\tau$ for $n$ independent Brownian motions $X^1_t,...,X_t^n$ with drifts $a_1,...,a_n$, each starting from $x=(x_1,...,x_n)$, where $x_1<...<x_n$. We show the exact asymptotics of $P_x(\\tau>t) = C h(x)t^{-\\alpha}e^{-\\gamma t}(1 + o(1))$ as $t\\to\\infty$ and identify $C,h(x),\\alpha,\\gamma$ in terms of the drifts.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIn this note we consider the time of the collision $\\tau$ for $n$ independent Brownian motions $X^1_t,...,X_t^n$ with drifts $a_1,...,a_n$, each starting from $x=(x_1,...,x_n)$, where $x_1<...<x_n$. We show the exact asymptotics of $P_x(\\tau>t) = C h(x)t^{-\\alpha}e^{-\\gamma t}(1 + o(1))$ as $t\\to\\infty$ and identify $C,h(x),\\alpha,\\gamma$ in terms of the drifts.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The note studies the collision time $\\tau$ for $n$ independent Brownian motions with drifts $a_1,...,a_n$.\n- Each Brownian motion starts from an ordered initial position where $x_1 < x_2 < ... < x_n$.\n- The main result establishes the exact asymptotics of the survival probability $P_x(\\tau>t)$ as $t\\to\\infty$.\n- This asymptotic behavior takes the form $C h(x) t^{-\\alpha} e^{-\\gamma t}(1 + o(1))$.\n- The constants $C$, $h(x)$, $\\alpha$, and $\\gamma$ are explicitly identified in terms of the drifts.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis note investigates the asymptotic behavior of the collision time $\\tau$ for $n$ independent Brownian motions with distinct drifts starting from ordered positions, deriving the long-time behavior of the survival probability $P_x(\\tau>t)$. The authors establish the exact asymptotics $P_x(\\tau>t) = C h(x)t^{-\\alpha}e^{-\\gamma t}(1 + o(1))$ as $t\\to\\infty$ and explicitly characterize the constants $C$, $h(x)$, $\\alpha$, and $\\gamma$ in terms of the drifts, providing a precise description of collision-free survival for drifted Brownian systems.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Brownian"
+  },
+  "outputs": {
+    "L1": "In this note we investigate the collision time $\\tau$ for $n$ independent Brownian motions $X^1_t,\\ldots,X_t^n$ with drifts $a_1,\\ldots,a_n$, each starting from $x=(x_1,\\ldots,x_n)$, where $x_1<\\cdots<x_n$. We establish the precise asymptotics\n$$P_x(\\tau>t) = C\\,h(x)\\,t^{-\\alpha}e^{-\\gamma t}\\bigl(1 + o(1)\\bigr) \\quad \\text{as } t\\to\\infty,$$\nand we identify the constants $C$, $h(x)$, $\\alpha$, and $\\gamma$ explicitly in terms of the drifts.",
+    "L2": "This note examines the collision time $\\tau$ for a system of $n$ independent Brownian motions $X^1_t,\\ldots,X^n_t$, each subject to a drift $a_1,\\ldots,a_n$ and originating from the point $x=(x_1,\\ldots,x_n)$ with ordered coordinates $x_1<\\cdots<x_n$. Our result establishes the precise asymptotic behavior $P_x(\\tau>t) = C h(x)t^{-\\alpha}e^{-\\gamma t}(1 + o(1))$ in the limit $t\\to\\infty$, and we express each of the quantities $C$, $h(x)$, $\\alpha$, and $\\gamma$ explicitly through the drift parameters.",
+    "L3": "# Collision Time Asymptotics for Brownian Motions with Drift\n\n## Setting and Motivation\n\nThis note studies the collision time $\\tau$ for a system of $n$ independent Brownian motions moving with constant drifts $a_1, a_2, \\ldots, a_n$. The collision time is defined as the first instant at which any two of these particles occupy the same position, that is, the first time the ordering of the particles is violated. Understanding the statistics of $\\tau$ is a natural question in the theory of interacting particle systems and has connections to non-colliding processes, random matrix theory, and queueing networks.\n\n## Initial Configuration\n\nWe assume that the $n$ Brownian motions begin from a strictly ordered initial configuration\n$$\nx_1 < x_2 < \\cdots < x_n,\n$$\nso that at the initial time the particles are arranged in increasing order along the real line. The collision time $\\tau$ is then the first time $t > 0$ at which this strict ordering fails, i.e., at which two adjacent trajectories meet. Because the drifts $a_1, \\ldots, a_n$ may differ, the particles have systematic tendencies to converge or diverge, and the interplay between these deterministic drifts and the random fluctuations governs how long the ordered configuration survives.\n\n## Main Result\n\nThe central contribution of this note is a precise description of the long-time behavior of the **survival probability** $P_x(\\tau > t)$, that is, the probability that no collision has occurred up to time $t$, starting from the initial configuration $x = (x_1, \\ldots, x_n)$. Our main result establishes the exact asymptotics of this quantity as $t \\to \\infty$.\n\nSpecifically, we show that the survival probability decays according to\n$$\nP_x(\\tau > t) = C\\, h(x)\\, t^{-\\alpha}\\, e^{-\\gamma t}\\,\\bigl(1 + o(1)\\bigr), \\qquad t \\to \\infty.\n$$\n\nThis expression captures the full leading-order behavior of the survival probability and separates it into three distinct factors:\n\n- an **exponential factor** $e^{-\\gamma t}$, which controls the dominant rate of decay;\n- a **polynomial correction** $t^{-\\alpha}$, which refines the exponential decay;\n- a **spatial profile** $h(x)$, depending on the initial positions, multiplied by an overall constant $C$.\n\n## Identification of the Constants\n\nA key feature of the result is that all of the quantities appearing in the asymptotic formula are given **explicitly in terms of the drifts** $a_1, \\ldots, a_n$. In particular:\n\n- The **exponential rate** $\\gamma$ is determined by the differences of the drifts and reflects the slowest mode by which collisions are avoided.\n- The **polynomial exponent** $\\alpha$ is likewise expressed through the drift parameters and encodes the algebraic correction to pure exponential decay.\n- The **spatial function** $h(x)$ describes how the survival probability depends on the starting configuration and is written explicitly as a function of the initial positions.\n- The **constant** $C$ provides the correct overall normalization.\n\nBy identifying $C$, $h(x)$, $\\alpha$, and $\\gamma$ explicitly, the result yields not merely the order of magnitude of the survival probability but its exact leading asymptotic constant, giving a complete quantitative picture of how ordered systems of drifting Brownian motions dissolve over time.",
+    "L4": "# Asymptotics of the Collision Time for Drifted Brownian Motions\n\n## Introduction and Setup\n\nConsider a system of $n$ independent one-dimensional Brownian motions\n$$\nX_i(t) = x_i + \\mu_i t + B_i(t), \\qquad i = 1, \\dots, n,\n$$\nwhere $B_1, \\dots, B_n$ are independent standard Brownian motions, the drifts $\\mu_1, \\dots, \\mu_n$ are pairwise distinct real constants, and the starting positions are strictly ordered,\n$$\nx_1 < x_2 < \\dots < x_n.\n$$\nWe are interested in the first time at which two of these particles occupy the same location, namely the **collision time**\n$$\n\\tau = \\inf\\{\\, t > 0 : X_i(t) = X_j(t) \\text{ for some } i \\neq j \\,\\}.\n$$\nEquivalently, $\\tau$ is the exit time of the vector process $X = (X_1, \\dots, X_n)$ from the open Weyl chamber\n$$\nW = \\{\\, y \\in \\mathbb{R}^n : y_1 < y_2 < \\dots < y_n \\,\\},\n$$\nso that survival up to time $t$—the event $\\{\\tau > t\\}$—corresponds to the particles retaining their initial ordering throughout the interval $[0,t]$.\n\nThis note investigates the asymptotic behavior of the survival probability $P_x(\\tau > t)$ as $t \\to \\infty$, where the subscript $x = (x_1, \\dots, x_n)$ records the deterministic initial configuration. The presence of *distinct* drifts is the essential feature distinguishing our analysis from the classical driftless case: while the drifts create a systematic tendency either toward or away from collisions, the ordering of $\\mu_1, \\dots, \\mu_n$ relative to the ordering of $x_1, \\dots, x_n$ dictates whether survival is asymptotically favorable or exponentially costly.\n\n## Main Result\n\nThe central contribution is the following sharp asymptotic expansion. As $t \\to \\infty$,\n$$\nP_x(\\tau > t) = C\\, h(x)\\, t^{-\\alpha}\\, e^{-\\gamma t}\\,\\bigl(1 + o(1)\\bigr),\n$$\nwhere the four quantities appearing on the right-hand side are given explicitly in terms of the drifts and the initial positions:\n\n- **The exponential rate $\\gamma$** governs the leading-order decay and is determined solely by the drift configuration. It reflects the large-deviation cost of preventing the fastest-approaching pairs of particles from colliding; when the drifts are arranged so that faster particles start behind slower ones, $\\gamma > 0$ and the survival probability decays exponentially, whereas a compatible ordering can render $\\gamma = 0$. Concretely, $\\gamma$ is expressed through the squared differences of consecutive ordered drifts.\n\n- **The polynomial exponent $\\alpha$** captures the subexponential correction and depends on the multiplicities and geometry of the drift-difference structure. It arises from the entropic fluctuations of the surviving paths near the boundary of the chamber $W$.\n\n- **The spatial function $h(x)$** encodes the dependence on the starting configuration. It is a harmonic-type function adapted to the drifted generator, positive on the interior of the Weyl chamber $W$ and vanishing on its boundary $\\partial W$, so that survival becomes increasingly unlikely as the initial positions approach a collision. In the classical setting $h$ reduces to a Vandermonde-type determinant, and its drifted analogue plays the same role of a ground-state eigenfunction.\n\n- **The constant $C$** is an absolute normalization independent of the initial data, collecting the numerical factors from the underlying Gaussian and combinatorial computations.\n\n## Discussion\n\nThe expansion above provides a precise, three-term description of collision-free survival for drifted Brownian systems: an exponential factor $e^{-\\gamma t}$ set by the drifts alone, a polynomial factor $t^{-\\alpha}$ recording the fluctuation exponent, and a fully explicit prefactor $C\\,h(x)$ separating the universal constant from the configuration-dependent harmonic profile. The result unifies and refines earlier work in two limiting regimes—the driftless case, where $\\gamma = 0$ and the polynomial decay dominates, and the strongly separated case, where survival is asymptotically certain. Beyond its intrinsic probabilistic interest, the formula is relevant to non-colliding particle systems, the analysis of Dyson-type diffusions, and queueing and last-passage models, where the exponent $\\gamma$ and the harmonic function $h$ admit natural interpretations in terms of the ordered structure of the drifts.\n\nThe proof combines a Karlin–McGregor determinantal representation for the ordered joint density with a careful asymptotic analysis of the resulting Gaussian integral over the Weyl chamber, isolating the dominant contribution from the boundary geometry and thereby identifying $C$, $h(x)$, $\\alpha$, and $\\gamma$ simultaneously.",
+    "L5": "# Brownian Motion\n\n## Introduction\n\nBrownian motion is one of the most fascinating phenomena in physics, describing the random, erratic movement of microscopic particles suspended in a fluid (liquid or gas). This seemingly chaotic dance results from the constant collisions between the suspended particles and the fast-moving molecules of the surrounding medium.\n\n## Historical Background\n\nThe phenomenon takes its name from the Scottish botanist **Robert Brown**, who in 1827 observed pollen grains suspended in water moving in an irregular, jittery fashion under his microscope. Although Brown documented this motion carefully, he could not explain its underlying cause.\n\nIt wasn't until **1905** that **Albert Einstein** provided a comprehensive theoretical explanation. Einstein demonstrated that the movement was caused by the thermal motion of water molecules bombarding the particles. His work provided compelling evidence for the existence of atoms and molecules—a matter still debated at the time.\n\n## Scientific Significance\n\nBrownian motion holds a special place in the history of science for several reasons:\n\n- **Proof of atomic theory**: Einstein's mathematical treatment, later confirmed experimentally by **Jean Perrin**, offered strong support for the molecular nature of matter.\n- **Statistical mechanics**: It became a cornerstone example illustrating the connection between microscopic randomness and observable macroscopic behavior.\n- **Diffusion processes**: The mathematics of Brownian motion describes how particles spread out over time.\n\n## Modern Applications\n\nToday, the concept of Brownian motion extends far beyond physics:\n\n1. **Finance**: The random walk model underlies theories of stock price movements and options pricing (e.g., the Black-Scholes model).\n2. **Biology**: It helps explain molecular transport within cells.\n3. **Mathematics**: The **Wiener process** provides a rigorous mathematical framework for stochastic processes.\n4. **Engineering**: Understanding random noise is essential in signal processing and control systems.\n\n## Conclusion\n\nBrownian motion beautifully illustrates how apparent randomness at the microscopic level follows precise statistical laws. From confirming the existence of atoms to modeling financial markets, this humble observation of dancing pollen grains has left an enduring legacy across science and mathematics."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a short mathematics note about the asymptotic behavior of the collision time for n independent Brownian motions with drifts.",
+      "output": "# Abstract\n\nWe study the asymptotic behavior of the first collision time among $n$ independent one-dimensional Brownian motions with distinct constant drifts $\\mu_1, \\mu_2, \\ldots, \\mu_n$ and initial positions $x_1, x_2, \\ldots, x_n$. Let $T_n = \\inf\\{t > 0 : B_i(t) = B_j(t) \\text{ for some } i \\neq j\\}$ denote the first time at which any two particles occupy the same location. We derive precise asymptotics for the distribution and expected value of $T_n$ as the number of particles $n \\to \\infty$, under suitable scaling assumptions on the drift and initial configuration.\n\nWhen the particles are initially well-separated and the drifts induce mutual approach, we show that the collision time concentrates around a deterministic value $t_n^*$ determined by the closest pair of converging trajectories, with fluctuations of Gaussian type on the appropriate scale. In the diffusive regime, where drift differences are negligible, we establish that $T_n$ decays like $c/n^2$ up to logarithmic corrections, reflecting the increasing likelihood of collision as the system becomes crowded. Our analysis combines reflection-principle estimates for pairwise hitting times with a moment method to control the dependence structure arising from shared trajectories. We conclude with remarks connecting these results to models of ordered particle systems and non-colliding diffusions.\n\n**Keywords:** Brownian motion, drift, first collision time, hitting times, asymptotic analysis, extreme value theory\n\n**MSC 2020:** 60J65, 60G70, 60F05",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "I'm studying non-colliding Brownian motions with drift. Can you help me draft the opening paragraph of a paper where I derive the large-t asymptotics of the probability that no collision has occurred by time t?",
+      "output": "Here's a draft opening paragraph for your paper:\n\n---\n\n**Draft:**\n\nConsider $n$ Brownian motions $B_1(t), \\dots, B_n(t)$ started from distinct ordered points $x_1 < x_2 < \\cdots < x_n$ and endowed with distinct drifts $\\mu_1, \\dots, \\mu_n$. We are interested in the *non-colliding probability*\n$$\np_t = \\mathbb{P}\\left(B_1(s) < B_2(s) < \\cdots < B_n(s) \\text{ for all } 0 \\le s \\le t\\right),\n$$\nthat is, the probability that the trajectories maintain their initial ordering up to time $t$. The asymptotic behavior of $p_t$ as $t \\to \\infty$ depends sensitively on the configuration of drifts: when the drifts are ordered compatibly with the starting positions the walkers tend to separate and $p_t$ converges to a positive constant, whereas in the driftless or degenerate case $p_t$ decays polynomially, reflecting the entropic repulsion that governs the classical Karlin–McGregor and Dyson Brownian motion pictures. In this paper we derive precise large-$t$ asymptotics for $p_t$ across these regimes, making explicit the interplay between the drift vector, the starting configuration, and the polynomial and exponential corrections that arise.\n\n---\n\nA few things you may want to tune depending on your setup:\n\n- **The regime you're targeting.** The paragraph currently gestures at multiple regimes. If your main theorem is specifically about, say, the equal-drift or zero-drift case (polynomial decay) versus the distinct-drift case (convergence to a constant), you'll want to foreground that.\n\n- **Your method.** If you rely on a Karlin–McGregor / Lindström–Gessel–Viennot determinant, a Doob $h$-transform, or a Fredholm determinant / Riemann–Hilbert analysis, one sentence signaling the technique helps orient the reader.\n\n- **Literature hooks.** You might cite Grabiner (1999) for the driftless asymptotics, and work by Schehr, Majumdar, or Katori–Tanemura depending on your community.\n\nWould you like me to tailor it to a specific drift regime, or adjust the tone (more probabilistic vs. more integrable-systems flavored)?",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Summarize the main result of a probability paper concerning the tail asymptotics P_x(τ > t) for the first collision time of n drifted Brownian motions starting from ordered positions.",
+      "output": "# Tail Asymptotics for Collision Times of Drifted Brownian Motions\n\n## Setup\n\nConsider $n$ independent Brownian motions with drifts, started from strictly ordered positions $x_1 < x_2 < \\cdots < x_n$. Let $\\tau$ denote the **first collision time**—the first moment at which any two of these particles occupy the same position. The quantity of interest is the tail probability\n$$\nP_x(\\tau > t)\n$$\nwhich describes the likelihood that all $n$ particles remain ordered (non-colliding) up to time $t$.\n\n## Main Result\n\nThe characteristic result of such papers is a **precise polynomial-times-exponential asymptotic** as $t \\to \\infty$, taking the schematic form\n$$\nP_x(\\tau > t) \\sim C(x)\\, t^{-\\alpha}\\, e^{-\\lambda t}, \\qquad t \\to \\infty.\n$$\n\nThe key features are:\n\n1. **Exponential decay rate $\\lambda$** — When the drifts are distinct, the survival probability decays *exponentially*, with the rate $\\lambda$ determined by the drift configuration (typically related to the sum of squared drift differences, reflecting the \"cost\" of keeping particles apart against their tendency to reorder).\n\n2. **Polynomial correction $t^{-\\alpha}$** — In the **driftless (or equal-drift) case**, the exponential factor disappears and the decay is purely polynomial:\n   $$\n   P_x(\\tau > t) \\sim C(x)\\, t^{-n(n-1)/4}.\n   $$\n   The exponent $\\binom{n}{2}/2 = n(n-1)/4$ arises from the reflection-group / Weyl-chamber structure of the non-collision event.\n\n3. **The prefactor $C(x)$** — This constant depends on the starting configuration and is typically expressed through a **Vandermonde-type determinant** or a harmonic (Schur) function of the initial positions $x_1, \\dots, x_n$, reflecting the algebraic structure of ordered particle systems.\n\n## Methods\n\nThe analysis usually relies on:\n- **The reflection principle / Karlin–McGregor formula**, giving a determinantal expression for the non-collision probability;\n- **Doob $h$-transform** interpretation connecting the process to Dyson Brownian motion conditioned to stay ordered;\n- **Asymptotic analysis** of the resulting determinants or integrals.\n\n---\n\n*Note:* Since you referenced a specific paper without naming it, this summarizes the **canonical form** of results in this area (e.g., work building on Grabiner, Karlin–McGregor, and related literature). If you can provide the title or authors, I can give a summary tailored precisely to that paper's stated theorem, constants, and hypotheses.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Compose a concise introductory paragraph for a research note stating a result of the form P(τ > t) ~ C h(x) t^{-α} e^{-γt} for the collision time of interacting Brownian particles with drifts a_1,...,a_n.",
+      "output": "# Introduction\n\nConsider a system of $n$ interacting Brownian particles on the real line, evolving with constant drifts $a_1, \\dots, a_n$ and subject to reflecting or ordering interactions that constrain their relative positions. A natural object of study is the *collision time* $\\tau$, defined as the first instant at which two adjacent particles occupy the same location. Understanding the distribution of $\\tau$ is central to questions of persistence, survival probabilities, and the long-time behavior of non-colliding diffusions, with connections to random matrix theory, queueing networks, and the Karlin–McGregor formalism for coincidence probabilities. In this note we establish a sharp asymptotic for the tail of the collision time, showing that as $t \\to \\infty$,\n$$\n\\mathbb{P}(\\tau > t) \\sim C\\, h(x)\\, t^{-\\alpha}\\, e^{-\\gamma t},\n$$\nwhere the prefactor $C > 0$ and the exponents $\\alpha, \\gamma > 0$ are determined explicitly by the drift configuration $(a_1, \\dots, a_n)$, and $h(x)$ captures the dependence on the initial spacing $x$ of the particles. This result refines the crude exponential rate $\\gamma$ by identifying the correct polynomial correction $t^{-\\alpha}$ and the spatial profile $h$, thereby giving a complete description of the survival probability up to a multiplicative constant.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Draft the abstract of a mathematical note that shows exact asymptotics of survival probability before collision for n Brownian motions with distinct drifts and identifies all constants in terms of the drifts.",
+      "output": "# Abstract\n\nWe consider $n$ independent one-dimensional Brownian motions $B_1(t), \\dots, B_n(t)$ with distinct constant drifts $\\mu_1 > \\mu_2 > \\cdots > \\mu_n$, started from ordered initial positions $x_1 > x_2 > \\cdots > x_n$, and study the survival probability\n\n$$\nQ(t) := \\mathbb{P}\\left( B_1(s) > B_2(s) > \\cdots > B_n(s) \\ \\text{for all } s \\le t \\right)\n$$\n\nthat no two particles collide up to time $t$. While the driftless case ($\\mu_i \\equiv 0$) is governed by the classical Karlin–McGregor determinant and exhibits polynomial decay $Q(t) \\sim C\\, t^{-n(n-1)/4}$, the presence of distinct drifts changes the picture qualitatively: the ordering compatible with the drifts is asymptotically stable, and $Q(t)$ converges to a strictly positive limit. We establish the *exact rate* of this convergence, proving that\n\n$$\nQ(t) = Q(\\infty) - C\\, t^{-1/2} e^{-\\rho t}\\big(1 + o(1)\\big), \\qquad t \\to \\infty,\n$$\n\nwhere the exponential rate is determined by the smallest gap between consecutive drifts,\n\n$$\n\\rho = \\tfrac{1}{4}\\min_{1 \\le i \\le n-1}(\\mu_i - \\mu_{i+1})^2,\n$$\n\nand we identify the limiting survival probability $Q(\\infty)$ and the prefactor $C$ explicitly in terms of the drift gaps $\\mu_i - \\mu_{i+1}$ and the initial gaps $x_i - x_{i+1}$, via Gaussian and error-function integrals arising from the reflection principle applied to the closest-to-colliding pair. The constant $Q(\\infty)$ factorizes into a product of two-particle non-collision probabilities in a mean-field regime and receives explicit correction terms otherwise. Our method combines a Karlin–McGregor determinantal representation with a Laplace-type asymptotic analysis, isolating the dominant contribution from the pair of adjacent particles with the minimal drift separation.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.56,
+      "excess_ratio": 0.4605220054442821,
+      "baseline_mean": 0.0994779945557179,
+      "baseline_n_valid": 5,
+      "output_chars": 445,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5604026845637584,
+          "baseline_mean": 0.07761597283595625,
+          "excess_ratio": 0.4827867117278022
+        },
+        "bz2": {
+          "actual_ratio": 0.4820359281437126,
+          "baseline_mean": 0.09467524111089631,
+          "excess_ratio": 0.3873606870328163
+        },
+        "lzma": {
+          "actual_ratio": 0.6304347826086957,
+          "baseline_mean": 0.12394216005391707,
+          "excess_ratio": 0.5064926225547786
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.44719926538108357,
+      "excess_ratio": 0.34772127082536564,
+      "baseline_mean": 0.0994779945557179,
+      "baseline_n_valid": 5,
+      "output_chars": 505,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4115853658536585,
+          "baseline_mean": 0.07761597283595625,
+          "excess_ratio": 0.33396939301770223
+        },
+        "bz2": {
+          "actual_ratio": 0.3988919667590028,
+          "baseline_mean": 0.09467524111089631,
+          "excess_ratio": 0.3042167256481065
+        },
+        "lzma": {
+          "actual_ratio": 0.52,
+          "baseline_mean": 0.12394216005391707,
+          "excess_ratio": 0.39605783994608296
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.15886588658865883,
+      "excess_ratio": 0.059387892032940925,
+      "baseline_mean": 0.0994779945557179,
+      "baseline_n_valid": 5,
+      "output_chars": 3275,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.12986111111111112,
+          "baseline_mean": 0.07761597283595625,
+          "excess_ratio": 0.05224513827515487
+        },
+        "bz2": {
+          "actual_ratio": 0.15608108108108107,
+          "baseline_mean": 0.09467524111089631,
+          "excess_ratio": 0.061405839970184756
+        },
+        "lzma": {
+          "actual_ratio": 0.1889763779527559,
+          "baseline_mean": 0.12394216005391707,
+          "excess_ratio": 0.06503421789883883
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.11976240166960991,
+      "excess_ratio": 0.02028440711389201,
+      "baseline_mean": 0.0994779945557179,
+      "baseline_n_valid": 5,
+      "output_chars": 4591,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.09961127308066084,
+          "baseline_mean": 0.07761597283595625,
+          "excess_ratio": 0.021995300244704585
+        },
+        "bz2": {
+          "actual_ratio": 0.11945392491467577,
+          "baseline_mean": 0.09467524111089631,
+          "excess_ratio": 0.024778683803779455
+        },
+        "lzma": {
+          "actual_ratio": 0.13962264150943396,
+          "baseline_mean": 0.12394216005391707,
+          "excess_ratio": 0.015680481455516884
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.033333333333333395,
+      "excess_ratio": -0.06614466122238451,
+      "baseline_mean": 0.0994779945557179,
+      "baseline_n_valid": 5,
+      "output_chars": 2387,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.016060862214708368,
+          "baseline_mean": 0.07761597283595625,
+          "excess_ratio": -0.06155511062124788
+        },
+        "bz2": {
+          "actual_ratio": 0.038746908491343775,
+          "baseline_mean": 0.09467524111089631,
+          "excess_ratio": -0.05592833261955254
+        },
+        "lzma": {
+          "actual_ratio": 0.04430379746835443,
+          "baseline_mean": 0.12394216005391707,
+          "excess_ratio": -0.07963836258556264
+        }
+      }
+    }
+  }
+}

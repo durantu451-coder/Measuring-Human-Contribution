@@ -1,0 +1,524 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15764810",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nExemplary road and engine noise control systems and methods include directly picking up road noise from a structural element of a vehicle to generate a first sense signal representative of the road noise, directly picking up engine noise from an engine of the vehicle to generate a second sense signal representative of the engine noise, and combining the first sense signal and the second sense signal to provide a combination signal representing the combination of the first sense signal and the second sense signal. The systems and methods further include broadband active noise control filtering to generate a filtered combination signal from the combination signal, converting the filtered combination signal provided by the active noise control filtering into anti-noise and radiating the anti-noise to a listening position in an interior of the vehicle. The filtered combination signal is configured so that the anti-noise reduces the noise at the listening position.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nExemplary road and engine noise control systems and methods include directly picking up road noise from a structural element of a vehicle to generate a first sense signal representative of the road noise, directly picking up engine noise from an engine of the vehicle to generate a second sense signal representative of the engine noise, and combining the first sense signal and the second sense signal to provide a combination signal representing the combination of the first sense signal and the second sense signal. The systems and methods further include broadband active noise control filtering to generate a filtered combination signal from the combination signal, converting the filtered combination signal provided by the active noise control filtering into anti-noise and radiating the anti-noise to a listening position in an interior of the vehicle. The filtered combination signal is configured so that the anti-noise reduces the noise at the listening position.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- Road noise is detected directly from a structural element of the vehicle to generate a first sensing signal.\n- Engine noise is detected directly from the vehicle’s engine to generate a second sensing signal.\n- The road-noise and engine-noise signals are combined into a single signal representing both noise sources.\n- Broadband active noise control filtering processes the combined signal to generate a filtered signal.\n- The filtered signal is converted into anti-noise and radiated inside the vehicle to reduce noise at the listening position.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe system controls vehicle road and engine noise by directly sensing vibrations from structural and engine sources, combining the signals, and applying broadband active-noise-control filtering to generate anti-noise. Radiating this anti-noise inside the vehicle reduces unwanted sound at the listening position, improving cabin acoustics.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Exemplary, The"
+  },
+  "outputs": {
+    "L1": "Exemplary road- and engine-noise control systems and methods include directly detecting road noise from a structural element of a vehicle to generate a first sensing signal representative of the road noise; directly detecting engine noise from the vehicle’s engine to generate a second sensing signal representative of the engine noise; and combining the first and second sensing signals to produce a combined signal representing both. The systems and methods further include applying broadband active noise-control filtering to the combined signal to generate a filtered combined signal, converting the filtered combined signal into anti-noise, and radiating the anti-noise toward a listening position within the vehicle’s interior. The filtered combined signal is configured such that the anti-noise reduces noise at the listening position.",
+    "L2": "Illustrative systems and techniques for controlling road and engine noise obtain road-noise input directly from a vehicle structural component, producing a first sensing signal that represents the road noise. Engine-noise input is also captured directly from the vehicle’s engine to produce a second sensing signal corresponding to the engine noise. These two sensing signals are merged into a combined signal that reflects both inputs. Broadband active-noise-control filtering is then applied to the combined signal to create a filtered signal. The filtered signal is converted into anti-noise, which is emitted toward a listening location within the vehicle cabin. The filtered combined signal is configured such that the resulting anti-noise lowers the noise level at that location.",
+    "L3": "Road noise is detected directly from a structural element of the vehicle, producing a first sensing signal representative of vibrations caused by the interaction between the vehicle and the road. Engine noise is separately detected directly from the vehicle’s engine to produce a second sensing signal representative of engine-generated vibrations. The first and second sensing signals are then combined into a single signal that represents both road noise and engine noise.\n\nThe combined signal is processed using broadband active noise-control filtering to generate a filtered signal configured to counteract the detected noise. This filtered signal is converted into an anti-noise acoustic signal and radiated within the vehicle interior. By destructively interfering with the road and engine noise, the anti-noise reduces the overall noise level at a designated listening position.",
+    "L4": "The system reduces road and engine noise within a vehicle by sensing vibrations directly at their sources or along their transmission paths. Structural vibration sensors, such as accelerometers, detect vibrations generated by tire–road interaction and transmitted through the suspension, chassis, or body panels. Additional sensors monitor engine- or powertrain-related vibrations. Because these vibration signals are detected before the resulting acoustic noise reaches the passenger compartment, they provide suitable reference inputs for active noise control.\n\nA controller receives the structural and engine vibration signals and combines or processes them according to their respective frequency content, amplitude, and contribution to cabin noise. Broadband active-noise-control filters model the paths between the vibration sources, the vehicle structure, the loudspeakers, and one or more listening positions. The filters then generate control signals having the amplitude and phase needed to produce sound that opposes the unwanted noise. The filter coefficients may be fixed for a known vehicle configuration or adapt in real time as vehicle speed, engine operating conditions, road surface, passenger loading, and cabin acoustics change.\n\nOne or more loudspeakers or other acoustic transducers radiate the resulting anti-noise into the passenger compartment. At the intended listening position, the anti-noise interferes destructively with the road and engine noise, reducing the perceived sound level across a broad frequency range. Optional microphones positioned near the occupants can measure residual noise and provide feedback for continuous adjustment of the control filters.\n\nBy using direct vibration measurements from both structural and engine sources, the system can respond rapidly and distinguish among multiple noise mechanisms. The combined feedforward and, where provided, feedback control improves attenuation of low-frequency and broadband noise, creating a quieter and more comfortable cabin without relying solely on additional passive insulation.",
+    "L5": "## The Exemplary Leader\n\nThe exemplary leader does more than give instructions—they inspire confidence, demonstrate integrity, and lead through action. Rather than expecting standards they do not follow themselves, they model the behavior, discipline, and respect they wish to see in others.\n\nThe most effective examples are often found in everyday choices: listening carefully, accepting responsibility, treating people fairly, and remaining dependable during difficult moments. These actions may seem simple, but their influence can be lasting.\n\nTo be exemplary is not to be perfect. It is to act with consistency, learn from mistakes, and encourage others to grow. The exemplary person shows that true leadership begins with character."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Describe an exemplary vehicle active noise control system that reduces both road noise and engine noise inside the cabin.",
+      "output": "An exemplary vehicle active noise control (ANC) system combines **road-noise cancellation** and **engine-order cancellation** in a coordinated, multichannel architecture.\n\n### System components\n\n- **Reference sensors**\n  - Accelerometers mounted near each wheel, suspension attachment, or subframe detect structure-borne road vibration before it reaches the cabin.\n  - Engine-speed, crankshaft-angle, motor-torque, and cylinder-firing signals provide deterministic references for engine or powertrain noise.\n  - Optional exterior microphones detect airborne tire or wind-related noise.\n\n- **Cabin error microphones**\n  - Several microphones in the headliner, seat headrests, or pillars measure residual sound near the occupants’ ears.\n  - Seat-occupancy information allows the system to prioritize occupied listening zones.\n\n- **Control unit**\n  - A digital signal processor runs adaptive, multichannel control algorithms.\n  - Stored and adaptively updated “secondary-path” models represent the transfer functions from each loudspeaker to each cabin microphone.\n\n- **Actuators**\n  - Existing door, dashboard, and subwoofer speakers reproduce low-frequency anti-noise.\n  - Headrest speakers may provide localized cancellation at higher frequencies.\n  - Optional structural actuators can counter vibration through seat rails, body panels, or suspension attachment points.\n\n### Road-noise control\n\nWheel and suspension accelerometer signals are filtered to predict the broadband, low-frequency noise that will arrive in the cabin. A multichannel filtered-x least-mean-squares controller generates anti-noise through selected speakers. Feedback from the cabin microphones continuously adjusts filter coefficients to account for changing pavement, vehicle speed, passenger loading, and cabin acoustics.\n\nThe road-noise controller typically targets frequencies such as approximately **30–300 Hz**, where passive insulation is heavy or less effective.\n\n### Engine-noise control\n\nThe engine controller derives sinusoidal references synchronized with crankshaft rotation. It generates cancellation signals for selected engine orders—for example, firing-frequency and harmonic components. Their amplitudes and phases are adjusted using the cabin microphones so that the loudspeaker output destructively interferes with engine, exhaust, transmission, or electric-drive tonal noise.\n\nDuring rapid acceleration, the controller tracks changing rotational speed and smoothly updates each order without audible discontinuities.\n\n### Coordinated operation\n\nA supervisory controller combines the road and engine anti-noise commands while:\n\n- preventing speaker clipping and excessive excursion;\n- allocating loudspeaker capacity among competing noise sources;\n- preserving music, speech, alerts, and emergency sounds;\n- suspending adaptation during door slams, speech, or other transients;\n- monitoring microphones and sensors for faults; and\n- maintaining stability despite changes in seating, windows, temperature, and cabin loading.\n\nThe result is a quieter cabin in which **broadband road rumble** and **tonal powertrain noise** are reduced simultaneously, especially at low frequencies, without requiring substantially more passive insulation.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize a method for sensing road and engine vibrations, combining the resulting signals, filtering them, and generating anti-noise at a passenger listening position.",
+      "output": "A vibration-based active noise-cancellation method can be summarized as follows:\n\n1. **Sense vibration sources:** Use accelerometers or similar sensors to measure road-induced vibrations at the vehicle suspension/body and engine-induced vibrations near the engine or its mounts.\n2. **Condition and combine signals:** Amplify, digitize, time-align, and weight the sensor outputs, then combine them into one or more reference signals representing the vibration-related cabin noise.\n3. **Filter adaptively:** Pass the reference signals through adaptive filters that model the transfer paths from each vibration source to the passenger’s listening position and from the anti-noise loudspeaker to that position.\n4. **Generate anti-noise:** Drive a cabin loudspeaker with a signal having substantially equal amplitude and opposite phase to the predicted noise at the listening position.\n5. **Use feedback for adjustment:** An error microphone near the passenger’s ears measures the remaining sound, and an adaptive algorithm updates the filter coefficients to minimize the residual road and engine noise.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a patent-style abstract for an automotive broadband active noise cancellation system using structural road-noise pickup and direct engine-noise pickup.",
+      "output": "An active noise cancellation system for a vehicle includes a plurality of structural vibration sensors coupled to vehicle components and configured to generate reference signals representative of structure-borne road noise, and an engine-noise sensor configured to generate a reference signal directly representative of noise produced by a vehicle powertrain. A controller processes the reference signals using respective adaptive filters to estimate road-noise and engine-noise components within a vehicle cabin. Based on the estimated components and feedback signals from one or more cabin error microphones, the controller generates broadband cancellation signals having amplitudes and phases selected to reduce acoustic noise at one or more occupant locations. The cancellation signals are reproduced through one or more vehicle loudspeakers. The controller may selectively combine, weight, and update the road-noise and engine-noise cancellation paths according to vehicle operating conditions, sensor coherence, and system stability criteria, thereby providing broadband attenuation of both structure-borne road noise and airborne or structure-borne engine noise.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "How can a vehicle combine separate road-noise and engine-noise sensor signals to produce cabin anti-noise?",
+      "output": "A vehicle can use a **multi-reference active noise control (ANC)** system. Separate controllers estimate the cabin noise caused by road and engine sources, then their anti-noise commands are added and played through the vehicle’s speakers.\n\n### Typical signal path\n\n1. **Measure reference signals**\n   - **Road noise:** accelerometers on the suspension/body, wheel-hub sensors, or microphones near the tires.\n   - **Engine noise:** tachometer/crankshaft position, engine-speed data, and sometimes powertrain accelerometers.\n\n2. **Generate source-specific anti-noise**\n   - Road noise is broadband and partly random, so an adaptive filter maps suspension/body vibration to the expected sound at each seat.\n   - Engine noise is strongly periodic, so the controller can synthesize tones at firing-order harmonics—for example, frequencies proportional to engine RPM—and adjust their amplitude and phase.\n\n3. **Combine the commands**\n   For each speaker, the outputs can be summed:\n   \\[\n   y_s(n)=y_{road,s}(n)+y_{engine,s}(n)\n   \\]\n   More generally, a multichannel controller uses each reference signal:\n   \\[\n   y_s(n)=\\sum_r W_{s,r}(z)x_r(n)\n   \\]\n   where \\(W_{s,r}\\) is an adaptive filter from reference \\(r\\) to speaker \\(s\\).\n\n4. **Play anti-noise through cabin speakers**\n   The command is filtered to account for the amplifier, speaker, cabin acoustics, and propagation delay—the system’s **secondary path**.\n\n5. **Adapt using error microphones**\n   Microphones near occupants measure the residual sound. Algorithms such as multichannel **filtered-x LMS (FxLMS)** adjust the filters to minimize that residual:\n   \\[\n   e(n)=d(n)+S(z)y(n)\n   \\]\n   where \\(d(n)\\) is the unwanted cabin noise and \\(S(z)\\) is the speaker-to-microphone path.\n\n### Practical considerations\n\n- Road and engine controllers may adapt at different rates and in different frequency bands.\n- Engine ANC often uses narrow harmonic filters; road ANC uses broader, lower-frequency adaptive filters.\n- The system needs very low latency and reference signals that arrive before or are strongly correlated with the cabin noise.\n- Output limiting, stability monitoring, and coordination with music/audio playback prevent clipping or audible artifacts.\n- Multiple speakers and error microphones are usually required because cancellation is spatially localized.\n\nThus, the system does not normally combine raw sensor signals directly. It filters each signal according to how that source propagates into the cabin, sums the resulting speaker commands, and continually corrects them using cabin microphones.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Write a technical paragraph explaining systems and methods for directly detecting vehicle road and engine noise, processing the combined signal through broadband active noise control, and radiating sound that reduces noise in the interior.",
+      "output": "A vehicle active noise control system directly detects road-induced and engine-generated noise using reference sensors, such as suspension or body-mounted accelerometers, wheel-hub vibration sensors, engine tachometer inputs, and acoustic microphones positioned within the passenger compartment. The detected signals are conditioned, synchronized, and combined into a broadband reference signal representing both tonal engine orders and stochastic road noise. A digital signal processor applies adaptive feedforward and/or feedback control algorithms, including filtered-x least-mean-squares filtering, to model the acoustic transfer paths and generate phase- and amplitude-adjusted cancellation signals across a selected frequency band. The cancellation signals are supplied to one or more vehicle loudspeakers or dedicated acoustic actuators, which radiate anti-noise that destructively interferes with the road and engine noise at designated interior listening locations. Error microphones monitor residual cabin noise and provide feedback for continuously updating the adaptive filters in response to changes in vehicle speed, engine operating state, road surface, passenger loading, and cabin acoustics.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6253298153034301,
+      "excess_ratio": 0.5211818423072612,
+      "baseline_mean": 0.10414797299616892,
+      "baseline_n_valid": 5,
+      "output_chars": 842,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.599406528189911,
+          "baseline_mean": 0.07628383701459691,
+          "excess_ratio": 0.5231226911753141
+        },
+        "bz2": {
+          "actual_ratio": 0.5739795918367347,
+          "baseline_mean": 0.09512933033498017,
+          "excess_ratio": 0.4788502615017546
+        },
+        "lzma": {
+          "actual_ratio": 0.696078431372549,
+          "baseline_mean": 0.13684266677306062,
+          "excess_ratio": 0.5592357645994883
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.35912052117263843,
+      "excess_ratio": 0.2549725481764695,
+      "baseline_mean": 0.10414797299616892,
+      "baseline_n_valid": 5,
+      "output_chars": 785,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2830188679245283,
+          "baseline_mean": 0.07628383701459691,
+          "excess_ratio": 0.2067350309099314
+        },
+        "bz2": {
+          "actual_ratio": 0.36185819070904646,
+          "baseline_mean": 0.09512933033498017,
+          "excess_ratio": 0.2667288603740663
+        },
+        "lzma": {
+          "actual_ratio": 0.41964285714285715,
+          "baseline_mean": 0.13684266677306062,
+          "excess_ratio": 0.28280019036979653
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.45265588914549654,
+      "excess_ratio": 0.34850791614932763,
+      "baseline_mean": 0.10414797299616892,
+      "baseline_n_valid": 5,
+      "output_chars": 885,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.41309823677581864,
+          "baseline_mean": 0.07628383701459691,
+          "excess_ratio": 0.33681439976122174
+        },
+        "bz2": {
+          "actual_ratio": 0.4372093023255814,
+          "baseline_mean": 0.09512933033498017,
+          "excess_ratio": 0.34207997199060125
+        },
+        "lzma": {
+          "actual_ratio": 0.5,
+          "baseline_mean": 0.13684266677306062,
+          "excess_ratio": 0.3631573332269394
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.15311653116531163,
+      "excess_ratio": 0.04896855816914271,
+      "baseline_mean": 0.10414797299616892,
+      "baseline_n_valid": 5,
+      "output_chars": 2079,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.11558854718981973,
+          "baseline_mean": 0.07628383701459691,
+          "excess_ratio": 0.039304710175222815
+        },
+        "bz2": {
+          "actual_ratio": 0.14880332986472425,
+          "baseline_mean": 0.09512933033498017,
+          "excess_ratio": 0.05367399952974408
+        },
+        "lzma": {
+          "actual_ratio": 0.19083969465648856,
+          "baseline_mean": 0.13684266677306062,
+          "excess_ratio": 0.053997027883427945
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.09440813362381986,
+      "excess_ratio": -0.009739839372349055,
+      "baseline_mean": 0.10414797299616892,
+      "baseline_n_valid": 5,
+      "output_chars": 738,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.05502392344497608,
+          "baseline_mean": 0.07628383701459691,
+          "excess_ratio": -0.021259913569620835
+        },
+        "bz2": {
+          "actual_ratio": 0.08571428571428572,
+          "baseline_mean": 0.09512933033498017,
+          "excess_ratio": -0.009415044620694452
+        },
+        "lzma": {
+          "actual_ratio": 0.1349206349206349,
+          "baseline_mean": 0.13684266677306062,
+          "excess_ratio": -0.001922031852425704
+        }
+      }
+    }
+  },
+  "api_provenance": {
+    "config": {
+      "gpt_gateway": 2,
+      "max_output_tokens": 4096,
+      "require_status": "completed"
+    },
+    "main_calls": {
+      "L1_polish": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_03816ef9312c0f17006a88b0311e3881949af7b72534bd8eae",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 191,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 147,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 338
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T20:08:20.471915+00:00"
+      },
+      "L2_rewrite": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0357ead8b57aabf2006a88b0369b248194847c08f94e1eb7db",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 194,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 154,
+          "output_tokens_details": {
+            "reasoning_tokens": 12
+          },
+          "total_tokens": 348
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T20:08:25.538317+00:00"
+      },
+      "L3_bullets": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0b2f113bbc5cd5a4006a88b03c89a48190a86d768657747132",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 204,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 103,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 307
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T20:08:30.082992+00:00"
+      },
+      "L3_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_03e1b0446fdf540b006a88b04049e88190b1384b876d3c8881",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 120,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 151,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 271
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T20:08:36.765316+00:00"
+      },
+      "L4_2sent": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_005f5d62bc5b5564006a88b046ff48819081aa1f49e2b94615",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 216,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 85,
+          "output_tokens_details": {
+            "reasoning_tokens": 21
+          },
+          "total_tokens": 301
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T20:08:40.944019+00:00"
+      },
+      "L4_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0e83ac9f62abb234006a88b04bbb048197987a27ade610bb0e",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 77,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 404,
+          "output_tokens_details": {
+            "reasoning_tokens": 57
+          },
+          "total_tokens": 481
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T20:09:10.793277+00:00"
+      },
+      "L5_keywords": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_03ab6143a5a34a92006a88b06a4ba481979884006d000feb98",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 21,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 173,
+          "output_tokens_details": {
+            "reasoning_tokens": 37
+          },
+          "total_tokens": 194
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T20:09:19.114079+00:00"
+      }
+    },
+    "counterfactuals": {
+      "reconstruct": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0f428b72df1b5a0b006a88b0715dc081978c763d933f971808",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 267,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 151,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 418
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T20:09:26.201316+00:00"
+      },
+      "outputs": [
+        {
+          "label": "cf_1",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_07bf034cbebba749006a88b0786ac881969b23f04d9a6dcbbe",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 26,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 650,
+                "output_tokens_details": {
+                  "reasoning_tokens": 66
+                },
+                "total_tokens": 676
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T20:09:41.281468+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_2",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_05b3e40c7039e11d006a88b0883b708194b95e0e027cb4f82c",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 37,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 248,
+                "output_tokens_details": {
+                  "reasoning_tokens": 44
+                },
+                "total_tokens": 285
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T20:09:49.165176+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_3",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_08485d2813de33ea006a88b08f4f7881909bd22c79a94e23ff",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 32,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 231,
+                "output_tokens_details": {
+                  "reasoning_tokens": 37
+                },
+                "total_tokens": 263
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T20:09:56.749340+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_4",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0d5e70058dda57c0006a88b096e0b48197a44c42d2d125570f",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 28,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 631,
+                "output_tokens_details": {
+                  "reasoning_tokens": 81
+                },
+                "total_tokens": 659
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T20:10:09.383619+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_5",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_03bad56210786c59006a88b0a383f08197be28cf9ca6fe0b74",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 44,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 256,
+                "output_tokens_details": {
+                  "reasoning_tokens": 52
+                },
+                "total_tokens": 300
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T20:10:17.047855+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

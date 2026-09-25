@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Arxiv",
+  "id": "0704.0274",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe present a new version of TaylUR, a Fortran 95 module to automatically compute the numerical values of a complex-valued function's derivatives with respect to several variables up to an arbitrary order in each variable, but excluding mixed derivatives. The new version fixes a potentially serious bug in the code for exponential-related functions that could corrupt the imaginary parts of derivatives, as well as being compatible with a wider range of compilers.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe present a new version of TaylUR, a Fortran 95 module to automatically compute the numerical values of a complex-valued function's derivatives with respect to several variables up to an arbitrary order in each variable, but excluding mixed derivatives. The new version fixes a potentially serious bug in the code for exponential-related functions that could corrupt the imaginary parts of derivatives, as well as being compatible with a wider range of compilers.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- TaylUR is a Fortran 95 module for automatically computing numerical values of derivatives of complex-valued functions.\n- The module supports derivatives with respect to several variables up to an arbitrary order in each variable.\n- TaylUR excludes the computation of mixed derivatives.\n- The new version fixes a serious potential bug in exponential-related functions that could corrupt imaginary parts of derivatives.\n- The updated version is compatible with a wider range of compilers.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA new version of TaylUR, a Fortran 95 module, automatically computes derivatives of complex-valued functions with respect to several variables up to arbitrary order, excluding mixed derivatives. This version fixes a serious exponential-function bug that could corrupt imaginary derivative components and improves compatibility across compilers.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: TaylUR, Fortran, The"
+  },
+  "outputs": {
+    "L1": "We present a new version of TaylUR, a Fortran 95 module for automatically computing the numerical values of the derivatives of a complex-valued function with respect to several variables, up to an arbitrary order in each variable, while excluding mixed derivatives. This new version fixes a potentially serious bug in the code for exponential-related functions that could corrupt the imaginary parts of derivatives, and is compatible with a wider range of compilers.",
+    "L2": "We introduce an updated release of TaylUR, a Fortran 95 module that automatically evaluates numerical derivatives of complex-valued functions with respect to multiple variables, to any chosen order for each variable, while not calculating mixed derivatives. This version corrects a potentially significant error in the implementation of exponential-related functions, which could damage the imaginary components of derivative values, and it also works with a broader set of compilers.",
+    "L3": "TaylUR is a Fortran 95 module designed to automatically compute numerical values of derivatives of complex-valued functions. It provides a convenient way to evaluate derivatives without requiring users to derive and implement the corresponding differentiation formulas manually.\n\nThe module supports differentiation with respect to several variables and can compute derivatives up to an arbitrary order in each individual variable. This makes it useful in applications where high-order derivative information is required for complex-valued numerical calculations.\n\nHowever, TaylUR does not compute mixed derivatives. In other words, while it can calculate repeated derivatives with respect to each variable separately, it excludes derivatives involving simultaneous differentiation with respect to more than one variable.\n\nThe new version of TaylUR includes an important correction to a serious potential bug affecting exponential-related functions. In previous versions, this issue could corrupt the imaginary parts of computed derivatives, potentially leading to incorrect numerical results. The update resolves this problem and improves the reliability of calculations involving such functions.\n\nIn addition, the updated version has been revised to improve compatibility with a wider range of Fortran compilers. This makes TaylUR easier to build and use across different development environments and platforms.",
+    "L4": "A new version of **TaylUR**, a Fortran 95 module for automatic differentiation, is now available. TaylUR is designed to compute derivatives of functions by using Taylor-series arithmetic, allowing users to obtain derivative information directly while evaluating their functions. The updated version supports the automatic calculation of derivatives of **complex-valued functions** with respect to **several independent variables** and can compute these derivatives to **arbitrary order**. As in previous versions, the module does not compute mixed derivatives; instead, it provides unmixed derivatives with respect to each variable separately.\n\nOne of the most important changes in this release is the correction of a serious bug in the implementation of the exponential function. In earlier versions, this error could lead to incorrect results, particularly by corrupting the imaginary components of derivative values. Since the exponential function is widely used in scientific and numerical applications, this bug had the potential to affect a broad range of calculations involving complex numbers and higher-order derivatives. The new version fixes this problem, making derivative computations involving exponential expressions more reliable.\n\nThe release also includes improvements aimed at making TaylUR more portable across different Fortran compilers. These compatibility updates should make it easier to build and use the module in a wider variety of computing environments, reducing compiler-specific issues and improving the overall robustness of the software. As a result, users who rely on TaylUR for automatic differentiation in numerical, scientific, or engineering applications should benefit from both more accurate complex derivative calculations and better cross-platform usability.",
+    "L5": "**TaylUR and Fortran**\n\nTaylUR is a software package designed for working with Taylor series and automatic differentiation. It is written in **Fortran**, a programming language widely used in scientific computing, numerical analysis, physics, and engineering. The main purpose of TaylUR is to help programmers compute derivatives accurately and efficiently by replacing ordinary real-number calculations with Taylor-series-based arithmetic.\n\nIn traditional numerical programs, derivatives are often calculated using finite differences, which can introduce rounding errors and require careful choice of step sizes. TaylUR offers an alternative approach: it propagates Taylor coefficients through a calculation, allowing derivatives of functions to be obtained automatically. This can be especially useful in simulations, optimization problems, sensitivity analysis, and mathematical modeling.\n\nThe use of **Fortran** makes TaylUR particularly suitable for high-performance scientific applications. Many legacy and modern scientific codes are written in Fortran, so a tool like TaylUR can be integrated into existing computational workflows. By using operator overloading and derived types, TaylUR allows users to write code that looks similar to ordinary Fortran code while internally carrying out Taylor-series operations.\n\nOverall, TaylUR is a valuable tool for scientists and engineers who need reliable derivative calculations in Fortran programs. The combination of automatic differentiation, Taylor series, and Fortran’s numerical performance makes it useful for a wide range of technical and research applications."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a concise abstract for a software update paper about a new version of TaylUR, a Fortran 95 module for automatic differentiation of complex-valued functions.",
+      "output": "We present a new version of TaylUR, a Fortran 95 module for automatic differentiation of complex-valued functions using Taylor-series arithmetic. The update improves portability, numerical robustness, and ease of use while preserving the module’s lightweight design and source-level compatibility with conventional Fortran code. TaylUR enables the automatic computation of derivatives to user-specified order for expressions involving complex variables and intrinsic functions, reducing the need for symbolic manipulation or finite-difference approximations. The new release includes extended functionality, revised documentation, additional test cases, and refinements for current Fortran compilers. These developments make TaylUR a practical tool for scientific applications requiring accurate high-order derivatives of complex functions.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize the main changes in the latest TaylUR release, including its derivative-computation capabilities and bug fixes.",
+      "output": "The latest TaylUR release is mainly a maintenance-and-capability update for the Fortran Taylor-series/automatic-differentiation package.\n\nMain changes:\n\n- **Improved derivative computation**\n  - TaylUR can compute derivatives automatically from Taylor expansions rather than requiring hand-coded derivative formulae.\n  - It supports **higher-order derivatives**, not just first derivatives.\n  - It can handle **mixed partial derivatives** for functions of several variables, making it useful for gradients, Hessians, and higher-order derivative tensors.\n  - The release improves the interface for extracting derivative coefficients from Taylor objects, so derivative evaluation is more direct and less error-prone.\n\n- **Expanded/cleaned mathematical support**\n  - Standard overloaded arithmetic and intrinsic functions continue to work on Taylor variables, allowing ordinary Fortran expressions to produce Taylor coefficients and derivatives.\n  - The release refines behavior for common elementary functions and derivative extraction routines.\n\n- **Bug fixes**\n  - Fixes were made in derivative/coefficient handling, especially in cases involving higher-order or mixed derivatives.\n  - Several edge cases in overloaded operations and intrinsic-function implementations were corrected.\n  - Build/portability issues with supported Fortran compilers were addressed.\n  - Minor documentation and example-code corrections were included to better reflect current behavior.\n\nOverall, the release strengthens TaylUR’s core purpose: automatic computation of Taylor coefficients and derivatives—up to arbitrary order and for multivariable functions—while fixing correctness and portability issues from earlier versions.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a short announcement describing a new version of TaylUR that fixes an exponential-function bug affecting imaginary derivative parts and improves compiler compatibility.",
+      "output": "TaylUR has been updated with a new release that fixes a bug in exponential-function handling where imaginary parts of derivatives could be computed incorrectly. This version also improves compiler compatibility, making TaylUR easier to build and use across a wider range of development environments.\n\nUsers are encouraged to update to the latest version for more reliable derivative calculations and improved portability.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "In one paragraph, explain what TaylUR does and what is new in its updated Fortran 95 implementation.",
+      "output": "TaylUR is an automatic differentiation package that lets Fortran programs compute derivatives to arbitrary order by replacing ordinary real or complex variables with Taylor-series objects and overloading the usual arithmetic operators and intrinsic functions, so that when the original code is run it propagates Taylor coefficients along with function values. In effect, it provides “Taylor arithmetic” for Fortran, making high-order derivative calculations possible without manually deriving or coding the derivatives. The updated Fortran 95 implementation modernizes the package using derived types, modules, generic interfaces and operator overloading, and adds a cleaner, more flexible implementation with improved support for Fortran 95 features, including better handling of arrays and intrinsic functions, run-time configurability of expansion order, and broader usability for scientific codes needing high-order automatic differentiation.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Create a journal-style summary for a revised Fortran 95 automatic differentiation module that computes unmixed higher-order derivatives of complex functions.",
+      "output": "## Journal-Style Summary\n\nThis work presents a revised Fortran 95 automatic differentiation module for the computation of unmixed higher-order derivatives of complex-valued functions. The module is designed for forward-mode automatic differentiation and provides a convenient framework for evaluating a function and its successive derivatives with respect to a single independent variable in a single execution.\n\nThe implementation introduces a derived data type that stores the complex function value together with its higher-order derivative components. Standard arithmetic operations and intrinsic elementary functions are extended through operator and function overloading, allowing users to write differentiable expressions in a form closely resembling ordinary Fortran code. As a result, derivative propagation is performed automatically and transparently during expression evaluation.\n\nThe revised module focuses on unmixed derivatives, meaning derivatives taken repeatedly with respect to one variable rather than mixed partial derivatives involving multiple variables. This specialization simplifies the internal data structure and improves clarity for applications such as Taylor-series methods, sensitivity analysis, perturbation calculations, and the local analysis of analytic or non-analytic complex functions.\n\nKey features of the revised module include support for complex arithmetic, higher-order derivative propagation, overloaded intrinsic functions, user-selectable derivative order, and compatibility with standard Fortran 95. The revision improves modularity, readability, and extensibility while preserving the portability expected of Fortran 95 scientific software.\n\nThe module is particularly useful in numerical analysis and computational science applications where accurate higher-order derivative information is required but symbolic differentiation is impractical and finite-difference approximations may suffer from truncation and round-off errors. By embedding derivative calculations directly into the arithmetic of complex variables, the module provides exact derivative propagation to machine precision within the limits of floating-point arithmetic.\n\nOverall, the revised Fortran 95 automatic differentiation module offers a compact and practical tool for computing unmixed higher-order derivatives of complex functions, combining the reliability of automatic differentiation with the performance and portability of traditional Fortran-based scientific computing.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.783664459161148,
+      "excess_ratio": 0.6154716240432752,
+      "baseline_mean": 0.16819283511787286,
+      "baseline_n_valid": 5,
+      "output_chars": 466,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.8171641791044776,
+          "baseline_mean": 0.13556171929786442,
+          "excess_ratio": 0.6816024598066132
+        },
+        "bz2": {
+          "actual_ratio": 0.6543624161073825,
+          "baseline_mean": 0.15029429129157837,
+          "excess_ratio": 0.5040681248158042
+        },
+        "lzma": {
+          "actual_ratio": 0.8705882352941177,
+          "baseline_mean": 0.21195306095084615,
+          "excess_ratio": 0.6586351743432715
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4885654885654886,
+      "excess_ratio": 0.32037265344761573,
+      "baseline_mean": 0.16819283511787286,
+      "baseline_n_valid": 5,
+      "output_chars": 484,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.44876325088339225,
+          "baseline_mean": 0.13556171929786442,
+          "excess_ratio": 0.3132015315855278
+        },
+        "bz2": {
+          "actual_ratio": 0.42857142857142855,
+          "baseline_mean": 0.15029429129157837,
+          "excess_ratio": 0.27827713727985015
+        },
+        "lzma": {
+          "actual_ratio": 0.5714285714285714,
+          "baseline_mean": 0.21195306095084615,
+          "excess_ratio": 0.35947551047772525
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.28868471953578345,
+      "excess_ratio": 0.12049188441791059,
+      "baseline_mean": 0.16819283511787286,
+      "baseline_n_valid": 5,
+      "output_chars": 1413,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2759146341463415,
+          "baseline_mean": 0.13556171929786442,
+          "excess_ratio": 0.14035291484847706
+        },
+        "bz2": {
+          "actual_ratio": 0.2469879518072289,
+          "baseline_mean": 0.15029429129157837,
+          "excess_ratio": 0.09669366051565054
+        },
+        "lzma": {
+          "actual_ratio": 0.33689839572192515,
+          "baseline_mean": 0.21195306095084615,
+          "excess_ratio": 0.124945334771079
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.19018404907975464,
+      "excess_ratio": 0.021991213961881778,
+      "baseline_mean": 0.16819283511787286,
+      "baseline_n_valid": 5,
+      "output_chars": 1801,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1543134872417983,
+          "baseline_mean": 0.13556171929786442,
+          "excess_ratio": 0.018751767943933878
+        },
+        "bz2": {
+          "actual_ratio": 0.19343493552168817,
+          "baseline_mean": 0.15029429129157837,
+          "excess_ratio": 0.0431406442301098
+        },
+        "lzma": {
+          "actual_ratio": 0.21888412017167383,
+          "baseline_mean": 0.21195306095084615,
+          "excess_ratio": 0.006931059220827679
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.05648792468276709,
+      "excess_ratio": -0.11170491043510578,
+      "baseline_mean": 0.16819283511787286,
+      "baseline_n_valid": 5,
+      "output_chars": 1620,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.025906735751295335,
+          "baseline_mean": 0.13556171929786442,
+          "excess_ratio": -0.1096549835465691
+        },
+        "bz2": {
+          "actual_ratio": 0.057285180572851806,
+          "baseline_mean": 0.15029429129157837,
+          "excess_ratio": -0.09300911071872656
+        },
+        "lzma": {
+          "actual_ratio": 0.08294930875576037,
+          "baseline_mean": 0.21195306095084615,
+          "excess_ratio": -0.12900375219508578
+        }
+      }
+    }
+  }
+}

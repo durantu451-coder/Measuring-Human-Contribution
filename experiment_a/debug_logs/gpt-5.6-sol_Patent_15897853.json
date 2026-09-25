@@ -1,0 +1,524 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15897853",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThere is provided a scheme of communicating reward data from a first application running on a data processing device (100) to a second application on the data processing device (100) for use by the second application. The method comprises the first application obtaining a reward value in response to a user of the first application completing a predetermined task in the first application. In response to a request from the user to claim a reward, the first application generates and transmits: an instruction to place the second application into an interactive state; and reward data, which is generated on the basis of the reward value, for use by the second application in the interactive state. The passing of the reward value from the first application to the second application occurs within the data processing device (100), with no communication between the data processing device (100) and the backend server (200) via the Internet (400) taking place.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThere is provided a scheme of communicating reward data from a first application running on a data processing device (100) to a second application on the data processing device (100) for use by the second application. The method comprises the first application obtaining a reward value in response to a user of the first application completing a predetermined task in the first application. In response to a request from the user to claim a reward, the first application generates and transmits: an instruction to place the second application into an interactive state; and reward data, which is generated on the basis of the reward value, for use by the second application in the interactive state. The passing of the reward value from the first application to the second application occurs within the data processing device (100), with no communication between the data processing device (100) and the backend server (200) via the Internet (400) taking place.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A first application on a data processing device obtains a reward value when a user completes a predetermined task.\n- When the user requests to claim the reward, the first application instructs a second application to enter an interactive state.\n- The first application generates reward data based on the obtained reward value and transmits it to the second application.\n- The second application uses the reward data while operating in the interactive state.\n- The reward value is passed locally between the applications without Internet communication with a backend server.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA method transfers reward data between two applications on the same device by having the first application calculate a reward after task completion, activate the second application, and send it reward data when the user claims it. The reward is passed locally without contacting a backend server over the Internet, enabling the second application to use it immediately in an interactive state.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: There, The, Internet"
+  },
+  "outputs": {
+    "L1": "A scheme is provided for communicating reward data from a first application running on a data processing device (100) to a second application on the same data processing device (100), for use by the second application. The method comprises the first application obtaining a reward value in response to a user completing a predetermined task within the first application. In response to a request from the user to claim a reward, the first application generates and transmits: an instruction to place the second application in an interactive state; and reward data, generated on the basis of the reward value, for use by the second application while in the interactive state. The reward value is passed from the first application to the second application entirely within the data processing device (100), without any communication via the Internet (400) between the data processing device (100) and the backend server (200).",
+    "L2": "A technique is provided for transferring reward information between a first application and a second application operating on the same data processing device (100), so that the second application can use the information. After a user completes a predefined task in the first application, that application obtains a reward value. When the user requests to redeem the reward, the first application creates and sends both an instruction that causes the second application to enter an interactive state and reward data derived from the reward value for use by the second application while in that state. The reward value is transferred locally from the first application to the second application within the data processing device (100), without any Internet-based communication (400) between the device (100) and the backend server (200).",
+    "L3": "A first application running on a data processing device obtains a reward value after a user completes a predetermined task. When the user requests to claim the reward, the first application instructs a second application on the device to enter an interactive state. The first application then generates reward data corresponding to the obtained reward value and transmits the reward data to the second application. While operating in the interactive state, the second application uses the received reward data, for example, to provide or apply the reward within the second application. The reward value is transferred locally between the two applications on the data processing device, without requiring Internet communication with a backend server.",
+    "L4": "A method enables reward data to be transferred between two applications installed on the same device. A user first performs or completes a designated task in a first application. After detecting completion of the task, the first application determines a corresponding reward, such as an amount of virtual currency, an item, a benefit, or another value that can be used by a second application.\n\nThe first application may then present the calculated reward to the user together with an option to claim it. When the user selects the claim option, the first application activates or launches the second application and transmits the reward data directly to it. The reward data may include the type and amount of the reward, task or transaction identifiers, and verification information that allows the second application to confirm that the reward is valid.\n\nThe transfer takes place locally on the device using an inter-application communication mechanism provided by the device’s operating system, such as a deep link, application link, custom uniform resource identifier, intent, shared container, or another local messaging interface. Consequently, the first application does not need to send the reward to a remote backend server over the Internet for subsequent retrieval by the second application.\n\nUpon receiving and, where appropriate, validating the reward data, the second application applies the reward to the user’s account, session, or current activity. Because the second application is activated as part of the claim process, it can enter an interactive state and make the reward available immediately. The user can therefore redeem, spend, equip, display, or otherwise use the reward without waiting for a network request or server-side synchronization. This approach reduces latency, supports operation when Internet connectivity is unavailable or unreliable, and provides a direct transition from task completion in the first application to reward use in the second application.",
+    "L5": "### The Internet\n\nThe Internet has transformed how people communicate, learn, work, and enjoy entertainment. There are countless websites and digital services that provide instant access to information from around the world. The Internet also connects people across great distances, allowing them to share ideas and collaborate in real time. However, users should protect their personal information, evaluate online sources carefully, and use technology responsibly."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a patent-style abstract describing a method for transferring reward data between two applications on the same device without contacting a backend server.",
+      "output": "A computer-implemented method for transferring reward data between first and second applications executing on a common computing device is disclosed. The method includes generating, by the first application, a transfer package identifying a reward value and a transaction identifier; authenticating the second application using an operating-system-provided identity mechanism; and transmitting the transfer package through an inter-application communication channel without contacting a backend server. The transfer package may be cryptographically signed, encrypted, or bound to the computing device and the authenticated second application. The second application validates the transfer package, verifies that the transaction identifier has not previously been redeemed, and updates a locally maintained reward balance. In response to successful validation, the second application provides an acknowledgement to the first application, which correspondingly updates its local reward data. Transaction records may be stored in secure device storage to support atomic completion, replay prevention, expiration, recovery, and optional synchronization with a remote system when network connectivity subsequently becomes available.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize an invention where completing a task in one app earns a reward that can be claimed and used interactively in another app, entirely through on-device communication.",
+      "output": "The invention is a cross-app reward system that operates entirely on a user’s device. When a user completes a defined task in one application, that app generates or unlocks a reward and communicates the reward data directly to another installed application using local inter-app communication. The user can then claim and interactively use the reward—such as a virtual item, feature, character, or in-app benefit—in the second app, without relying on a remote server.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a formal technical description of a cross-application reward scheme involving a data processing device (100), a backend server (200), and the Internet (400), emphasizing that the reward transfer occurs offline.",
+      "output": "### Technical Description\n\nA cross-application reward system comprises a data processing device (100), a backend server (200), and a communication network, such as the Internet (400). The data processing device (100) is configured to execute a first application and a second application and includes a processor, memory, and a secure storage component for maintaining reward information.\n\nDuring an online provisioning phase, the first application communicates with the backend server (200) via the Internet (400) to obtain reward data associated with a user account, device identifier, or completed activity. The reward data may comprise a digitally signed reward token specifying a reward value, validity period, permitted destination applications, unique transaction identifier, and one or more anti-replay parameters. The reward token is stored locally by the data processing device (100).\n\nThe reward is subsequently transferred from the first application to the second application **offline**, without communication with the backend server (200) or the Internet (400) at the time of transfer. The offline transfer may be performed through an operating-system inter-process communication mechanism, shared secure storage, an application programming interface, a local service, or another device-internal communication channel. The second application verifies the authenticity and eligibility of the reward token using locally available verification data, records the transfer in local storage, and applies the corresponding reward to a reward balance or application function.\n\nTo prevent unauthorized duplication or repeated redemption, the data processing device (100) may mark the reward token as transferred or consumed, maintain a local transaction ledger, and enforce atomic update and anti-replay controls. Cryptographic signatures, application credentials, device-bound keys, secure enclaves, or trusted execution environments may be used to protect the transfer.\n\nWhen network connectivity later becomes available, the data processing device (100) may transmit a record of the offline transfer to the backend server (200) through the Internet (400). The backend server (200) may validate, reconcile, and persist the transaction and may distribute an updated reward balance or revocation information. Such subsequent synchronization is not part of the reward-transfer operation itself; the cross-application transfer is completed locally on the data processing device (100) while the device is offline.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Explain how a first application can generate a reward value, launch a second application into an interactive state, and pass reward data to it without any Internet communication.",
+      "output": "A first application can do this entirely through operating-system interprocess communication (IPC), without contacting a server:\n\n1. **Generate the reward**\n   - The first app detects the qualifying event and calculates a reward value, such as points, credits, or an unlocked item.\n   - It creates a reward payload containing fields such as:\n     - reward type and amount\n     - unique transaction ID\n     - issue/expiration time\n     - intended receiving application\n     - optional authenticity signature\n\n2. **Launch the second application**\n   - The first app invokes an OS-supported launch mechanism:\n     - **Android:** explicit `Intent`, app link, or bound service\n     - **iOS:** custom URL scheme, universal link, or App Group-mediated handoff\n     - **Desktop:** registered URI scheme, command-line launch argument, named pipe, or local socket\n   - The launch request identifies a specific activity, view, or route, causing the second app to open in the foreground at an interactive reward-acceptance screen.\n\n3. **Transfer the reward data**\n   The payload can be delivered:\n   - directly as intent extras or URL parameters;\n   - by passing a URI referencing a locally stored file;\n   - through OS-protected shared storage or an app group/container;\n   - through a local IPC channel such as a binder call, named pipe, or loopback socket.\n\n4. **Validate and apply it**\n   - The second app checks the recipient ID, format, expiration, transaction ID, and signature or message-authentication code.\n   - It rejects duplicate transaction IDs to prevent replay.\n   - If valid, it updates its local state and displays the reward interactively.\n\nFor example, the first app could launch:\n\n```text\nsecondapp://claim?payload=<encoded-reward>&signature=<signature>\n```\n\nThe operating system routes that URI directly to the installed second app; no Internet traffic is involved.\n\nFor stronger security, avoid putting valuable reward data directly in a readable URL. Store the payload in OS-protected shared storage and pass only a one-time identifier or content URI. The payload should be cryptographically authenticated—typically signed by the first app with a private key, while the second app contains the corresponding public key. This prevents another application from forging rewards, although fully offline systems must still account for device compromise, clock manipulation, and replay attacks.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Produce patent claim-style prose for an on-device system that transfers earned rewards from one app to another when a user requests to claim them.",
+      "output": "1. **An on-device reward transfer system**, comprising:  \n   one or more processors of a user device; and  \n   memory storing instructions that, when executed by the one or more processors, cause the user device to:  \n   maintain, for a first application installed on the user device, a record of a reward earned by a user through interaction with the first application;  \n   receive, through a user interface, a user request to claim the reward for use in a second application installed on the user device;  \n   authenticate the user and verify that the reward is eligible for transfer;  \n   generate a transfer instruction identifying the reward, the first application, and the second application;  \n   debit a reward balance associated with the first application and credit a corresponding reward balance associated with the second application in accordance with the transfer instruction;  \n   prevent reuse of the reward after the reward balance associated with the second application has been credited; and  \n   cause the second application to present an indication that the reward is available for use.\n\n2. The system of claim 1, wherein the first application and the second application communicate with an on-device reward service through respective application programming interfaces.\n\n3. The system of claim 1, wherein the reward comprises points, credits, tokens, a discount, virtual currency, digital content, or an entitlement.\n\n4. The system of claim 1, wherein verifying that the reward is eligible for transfer comprises verifying at least one of an expiration condition, a transfer restriction, an application identifier, a user identifier, or a minimum earned amount.\n\n5. The system of claim 1, wherein the debit and the credit are performed as an atomic transaction such that neither reward balance is modified unless both the debit and the credit can be completed.\n\n6. The system of claim 1, wherein the instructions further cause the user device to cryptographically sign the transfer instruction using a device-bound credential.\n\n7. The system of claim 1, wherein the instructions further cause the user device to store, in a tamper-resistant ledger, a transaction record identifying the reward and a transfer status.\n\n8. The system of claim 1, wherein receiving the user request comprises receiving a selection of the second application from a plurality of applications eligible to receive the reward.\n\n9. The system of claim 1, wherein at least the receiving, verifying, debiting, and crediting are performed locally on the user device without requiring network connectivity.\n\n10. The system of claim 1, wherein the instructions further cause the user device, upon obtaining network connectivity, to synchronize a record of the transfer with a remote reward platform.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.755794701986755,
+      "excess_ratio": 0.6190554996577244,
+      "baseline_mean": 0.13673920232903053,
+      "baseline_n_valid": 5,
+      "output_chars": 924,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7929155313351499,
+          "baseline_mean": 0.10098428905670691,
+          "excess_ratio": 0.691931242278443
+        },
+        "bz2": {
+          "actual_ratio": 0.6440677966101694,
+          "baseline_mean": 0.13150039841207478,
+          "excess_ratio": 0.5125673981980947
+        },
+        "lzma": {
+          "actual_ratio": 0.8317757009345794,
+          "baseline_mean": 0.17189513429771314,
+          "excess_ratio": 0.6598805666368663
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4886267902274642,
+      "excess_ratio": 0.35188758789843366,
+      "baseline_mean": 0.13673920232903053,
+      "baseline_n_valid": 5,
+      "output_chars": 835,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.44598337950138506,
+          "baseline_mean": 0.10098428905670691,
+          "excess_ratio": 0.34499909044467814
+        },
+        "bz2": {
+          "actual_ratio": 0.4798994974874372,
+          "baseline_mean": 0.13150039841207478,
+          "excess_ratio": 0.34839909907536243
+        },
+        "lzma": {
+          "actual_ratio": 0.5327102803738317,
+          "baseline_mean": 0.17189513429771314,
+          "excess_ratio": 0.3608151460761186
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.5955056179775281,
+      "excess_ratio": 0.45876641564849757,
+      "baseline_mean": 0.13673920232903053,
+      "baseline_n_valid": 5,
+      "output_chars": 749,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.595679012345679,
+          "baseline_mean": 0.10098428905670691,
+          "excess_ratio": 0.49469472328897207
+        },
+        "bz2": {
+          "actual_ratio": 0.5258620689655172,
+          "baseline_mean": 0.13150039841207478,
+          "excess_ratio": 0.39436167055344246
+        },
+        "lzma": {
+          "actual_ratio": 0.6565656565656566,
+          "baseline_mean": 0.17189513429771314,
+          "excess_ratio": 0.48467052226794344
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.173147468818782,
+      "excess_ratio": 0.036408266489751484,
+      "baseline_mean": 0.13673920232903053,
+      "baseline_n_valid": 5,
+      "output_chars": 1994,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.13662456946039037,
+          "baseline_mean": 0.10098428905670691,
+          "excess_ratio": 0.03564028040368346
+        },
+        "bz2": {
+          "actual_ratio": 0.16874292185730463,
+          "baseline_mean": 0.13150039841207478,
+          "excess_ratio": 0.03724252344522985
+        },
+        "lzma": {
+          "actual_ratio": 0.20987654320987653,
+          "baseline_mean": 0.17189513429771314,
+          "excess_ratio": 0.037981408912163395
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.12770562770562766,
+      "excess_ratio": -0.009033574623402874,
+      "baseline_mean": 0.13673920232903053,
+      "baseline_n_valid": 5,
+      "output_chars": 466,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.07326007326007326,
+          "baseline_mean": 0.10098428905670691,
+          "excess_ratio": -0.027724215796633644
+        },
+        "bz2": {
+          "actual_ratio": 0.11371237458193979,
+          "baseline_mean": 0.13150039841207478,
+          "excess_ratio": -0.01778802383013499
+        },
+        "lzma": {
+          "actual_ratio": 0.18181818181818182,
+          "baseline_mean": 0.17189513429771314,
+          "excess_ratio": 0.009923047520468686
+        }
+      }
+    }
+  },
+  "api_provenance": {
+    "config": {
+      "gpt_gateway": 2,
+      "max_output_tokens": 4096,
+      "require_status": "completed"
+    },
+    "main_calls": {
+      "L1_polish": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_01c851a65ed6753d006a88e6a1cb5c81909d135d1f06fa8771",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 204,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 222,
+          "output_tokens_details": {
+            "reasoning_tokens": 47
+          },
+          "total_tokens": 426
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T00:00:38.075306+00:00"
+      },
+      "L2_rewrite": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0658b28984715f27006a88e6a84b64819382acc8fef0c008c2",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 207,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 149,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 356
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T00:00:42.515010+00:00"
+      },
+      "L3_bullets": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0483b4fa9abb0702006a88e6ad243881969d2ff7af7080c327",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 217,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 104,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 321
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T00:00:47.586054+00:00"
+      },
+      "L3_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_00757cdf3566d255006a88e6b1eb2881968a6d2d1dea79105d",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 121,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 160,
+          "output_tokens_details": {
+            "reasoning_tokens": 28
+          },
+          "total_tokens": 281
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T00:00:52.988856+00:00"
+      },
+      "L4_2sent": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0329710e3e94271c006a88e6c6fd5481959c5b5982d0c36d90",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 229,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 71,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 300
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T00:01:12.859200+00:00"
+      },
+      "L4_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_074a2a17ff61f8fd006a88e6cb1f8481939037e91a10049a4a",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 86,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 408,
+          "output_tokens_details": {
+            "reasoning_tokens": 54
+          },
+          "total_tokens": 494
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T00:01:22.083656+00:00"
+      },
+      "L5_keywords": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_09dd7e9f8337b047006a88e6d460c88196b0b7b584b3ece6b4",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 22,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 126,
+          "output_tokens_details": {
+            "reasoning_tokens": 43
+          },
+          "total_tokens": 148
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T00:01:26.978664+00:00"
+      }
+    },
+    "counterfactuals": {
+      "reconstruct": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_08f498f02b0a13d9006a88e6d964cc8193aec816bde1e29414",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 280,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 170,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 450
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T00:01:33.293201+00:00"
+      },
+      "outputs": [
+        {
+          "label": "cf_1",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_052ab0a89b1c4554006a88e6df9a288196a1384299a0723418",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 31,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 232,
+                "output_tokens_details": {
+                  "reasoning_tokens": 38
+                },
+                "total_tokens": 263
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T00:01:40.346920+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_2",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_048cc28734dfe29f006a88e6e68b508190b6dcfa59d6914df0",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 39,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 130,
+                "output_tokens_details": {
+                  "reasoning_tokens": 34
+                },
+                "total_tokens": 169
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T00:01:46.456971+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_3",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0f783c57d1cffe5c006a88e6edc2a481939f1e03feedc94e20",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 46,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 496,
+                "output_tokens_details": {
+                  "reasoning_tokens": 54
+                },
+                "total_tokens": 542
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T00:01:58.334340+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_4",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_09e9a4fdc8db946d006a88e6f88f588194a4d9fd126914a6c7",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 37,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 581,
+                "output_tokens_details": {
+                  "reasoning_tokens": 96
+                },
+                "total_tokens": 618
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T00:02:13.515452+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_5",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_00e7697a22610439006a88e707bac8819682c9f7838da55daa",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 33,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 612,
+                "output_tokens_details": {
+                  "reasoning_tokens": 81
+                },
+                "total_tokens": 645
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T00:02:25.192689+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

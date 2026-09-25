@@ -1,0 +1,169 @@
+{
+  "model": "claude-opus-4-8",
+  "domain": "Arxiv",
+  "id": "0704.0372",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThe constrained-search formulation of Levy and Lieb, which formally defines the exact Hohenberg-Kohn functional for any N-representable electron density, is here shown to be equivalent to the minimization of the correlation functional with respect to the N-1 conditional probability density, where N is number of electrons of the system. The consequences and implications of such a result are here analyzed and discussed via a practical example.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThe constrained-search formulation of Levy and Lieb, which formally defines the exact Hohenberg-Kohn functional for any N-representable electron density, is here shown to be equivalent to the minimization of the correlation functional with respect to the N-1 conditional probability density, where N is number of electrons of the system. The consequences and implications of such a result are here analyzed and discussed via a practical example.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The Levy-Lieb constrained-search formulation formally defines the exact Hohenberg-Kohn functional for any N-representable electron density.\n- This formulation is shown to be equivalent to minimizing the correlation functional with respect to the N-1 conditional probability density.\n- The variable N in this equivalence represents the number of electrons in the system.\n- The consequences and implications of this equivalence are analyzed and discussed in the text.\n- A practical example is used to illustrate and support the theoretical findings.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe Levy-Lieb constrained-search formulation, which defines the exact Hohenberg-Kohn functional for any N-representable electron density, is here shown to be equivalent to minimizing the correlation functional with respect to the N-1 conditional probability density. Through a practical example, the consequences and implications of this equivalence are analyzed and discussed, offering new insight into the mathematical structure of the exact density functional.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, Levy, Lieb"
+  },
+  "outputs": {
+    "L1": "Here is a polished version of your text:\n\n---\n\nThe constrained-search formulation of Levy and Lieb, which formally defines the exact Hohenberg-Kohn functional for any N-representable electron density, is shown herein to be equivalent to the minimization of the correlation functional with respect to the (N−1) conditional probability density, where N denotes the number of electrons in the system. The consequences and implications of this result are subsequently analyzed and discussed through a practical example.\n\n---\n\nKey refinements made:\n- Replaced \"is here shown\" with \"is shown herein\" for a more formal tone\n- Changed \"N is number of electrons of the system\" to \"N denotes the number of electrons in the system\" for grammatical correctness and precision\n- Replaced \"such a result\" with \"this result\" for conciseness\n- Changed \"are here analyzed\" to \"are subsequently analyzed\" to improve flow and avoid repetition of \"here\"\n- Replaced \"via\" with \"through\" for a slightly more formal register\n- Added parentheses around (N−1) for clarity and consistency with standard mathematical notation",
+    "L2": "The Levy-Lieb constrained-search approach provides a rigorous definition of the exact Hohenberg-Kohn functional applicable to any electron density that satisfies N-representability. In this work, we demonstrate that this formulation is equivalent to minimizing the correlation functional over the N−1 conditional probability density, with N representing the total number of electrons in the system. We examine and discuss the resulting consequences and broader implications of this finding through a concrete, worked example.",
+    "L3": "# The Levy-Lieb Constrained-Search Formulation and Its Equivalence to Conditional Probability Minimization\n\n## Introduction\n\nThe Levy-Lieb constrained-search formulation provides a rigorous mathematical foundation for density functional theory by formally defining the exact Hohenberg-Kohn functional for any N-representable electron density. This approach circumvents the limitations of the original Hohenberg-Kohn theorem, which relied on the existence of an external potential, by instead constructing the universal functional through a direct search over all antisymmetric wavefunctions that yield a given density. As a result, the constrained-search method offers a well-defined and general prescription for the energy functional that lies at the heart of modern electronic structure theory.\n\n## Equivalence to Conditional Probability Minimization\n\nA central result of this work is the demonstration that the Levy-Lieb formulation is mathematically equivalent to minimizing the correlation functional with respect to the N-1 conditional probability density. Rather than searching over the full space of wavefunctions constrained to reproduce a target density, the problem can be reformulated in terms of the conditional probability distribution that describes the arrangement of the remaining electrons given the position of a reference electron. This reformulation shifts the focus from the many-body wavefunction to a more physically transparent quantity, thereby providing an alternative but equally valid route to the exact functional.\n\nIn this equivalence, the variable N represents the number of electrons in the system. The conditional probability density is therefore defined over the coordinates of N-1 electrons, capturing the correlated behavior of the electronic ensemble once one particle's position has been fixed. This interpretation makes explicit the connection between the total electron count and the dimensionality of the conditional probability space over which the minimization is performed.\n\n## Consequences and Implications\n\nThe consequences and implications of this equivalence merit careful analysis. By recasting the constrained search as a minimization over conditional probability densities, the formulation offers new conceptual insight into the structure of the exact functional and the role of electron correlation. This perspective may suggest alternative strategies for constructing approximations, as it links the correlation functional directly to a well-defined probabilistic object. Moreover, the equivalence clarifies the interplay between the electron density and the correlated motion of the remaining particles, deepening our theoretical understanding of the many-electron problem.\n\n## Illustrative Example\n\nTo support and clarify these theoretical findings, a practical example is presented. This concrete application serves to illustrate how the abstract equivalence manifests in a specific case, making the formal results more accessible and demonstrating their validity. By working through a tangible system, the example reinforces the general arguments and provides a clear demonstration of how the conditional probability formulation reproduces the expected behavior of the exact functional.\n\n## Conclusion\n\nTaken together, these results establish a meaningful connection between the Levy-Lieb constrained-search formulation and the minimization of the correlation functional over the N-1 conditional probability density. This equivalence not only enriches the theoretical framework of density functional theory but also opens potential avenues for developing new approximations grounded in a probabilistic understanding of electron correlation.",
+    "L4": "# Reformulating the Levy–Lieb Functional in Terms of the Conditional Probability Density\n\n## Background and Motivation\n\nDensity functional theory rests on the Hohenberg–Kohn theorems, which establish that the ground-state properties of a many-electron system are determined uniquely by the one-electron density $\\rho(\\mathbf{r})$. Central to this framework is the universal functional $F[\\rho]$, which encapsulates the kinetic energy and the electron–electron interaction independently of any external potential. While its existence is guaranteed, the original Hohenberg–Kohn construction offers no prescription for evaluating $F[\\rho]$, and its domain is restricted to densities arising from ground-state wavefunctions (so-called *v*-representable densities).\n\nThe constrained-search formulation introduced by Levy and later refined by Lieb resolves both difficulties. It provides an explicit variational definition,\n\n$$\nF[\\rho] \\;=\\; \\min_{\\Psi \\to \\rho}\\; \\big\\langle \\Psi \\,\\big|\\, \\hat{T} + \\hat{V}_{ee} \\,\\big|\\, \\Psi \\big\\rangle,\n$$\n\nwhere the minimization runs over all antisymmetric $N$-electron wavefunctions $\\Psi$ that reproduce the prescribed density $\\rho(\\mathbf{r})$. This construction extends the functional to the broader class of $N$-representable densities—those obtainable from *any* well-behaved antisymmetric wavefunction—and thereby places the exact functional on a rigorous and universally applicable footing.\n\n## The Equivalence with the Conditional Probability Density\n\nThe present work demonstrates that this constrained search admits an exact and physically transparent reformulation. The key observation is that the squared modulus of the wavefunction, interpreted as the joint probability density of the $N$ electrons, can be factored as\n\n$$\n|\\Psi(\\mathbf{r}_1, \\mathbf{r}_2, \\ldots, \\mathbf{r}_N)|^2 \\;=\\; \\frac{\\rho(\\mathbf{r}_1)}{N}\\, f(\\mathbf{r}_2, \\ldots, \\mathbf{r}_N \\,|\\, \\mathbf{r}_1),\n$$\n\nwhere $f$ is the **conditional probability density** describing the arrangement of the remaining $N-1$ electrons given the position of one reference electron. Once the one-electron density $\\rho$ is fixed by the constraint, all the residual variational freedom of $\\Psi$—the freedom that governs electron correlation—resides entirely in this conditional density.\n\nConsequently, the Levy–Lieb minimization over wavefunctions yielding a given $\\rho$ can be recast, without approximation, as a minimization of the correlation functional with respect to the $N-1$ conditional probability density. The density itself plays the role of a fixed weighting factor, while the conditional distribution carries the burden of minimizing the interaction and kinetic contributions that define correlation. This shift in perspective isolates the genuinely difficult part of the problem—the many-body correlations—from the comparatively simple constraint of fixing $\\rho$.\n\n## Analysis Through a Practical Example\n\nTo make the consequences of this equivalence concrete, we examine a representative model system in which both the constrained search and the conditional-density minimization can be carried out and compared explicitly. Working through this example clarifies several points that remain obscure in the abstract formulation:\n\n- **Locality of the optimization.** Because the conditional density is normalized for each position of the reference electron, the minimization acquires a natural pointwise structure, revealing how correlation adjusts locally in response to the fixed density.\n\n- **Separation of roles.** The example illustrates how the one-electron density and the conditional distribution contribute distinctly to the total energy, disentangling the \"geometric\" information encoded in $\\rho$ from the \"correlational\" information encoded in $f$.\n\n- **Behavior of the correlation functional.** By tracking the optimal conditional density, one can observe directly how electron correlation reorganizes as parameters of the model are varied, providing intuition that is difficult to extract from the wavefunction picture alone.\n\n## Implications and New Insight\n\nBeyond its formal appeal, this equivalence sheds light on the intrinsic mathematical structure of the exact density functional. It shows that the exact $F[\\rho]$ is, at its core, a statement about optimal conditional distributions, suggesting that approximations targeting the conditional probability density directly may offer a more natural and systematically improvable route than those framed in terms of the wavefunction or reduced density matrices. The reformulation also connects the constrained-search apparatus to concepts familiar from conditional-probability and information-theoretic descriptions of correlation, opening potential avenues for new functional approximations.\n\nIn summary, by identifying the constrained search with a minimization over the conditional probability density, this analysis offers both a clarified understanding of what the exact functional encodes and a fresh vantage point from which to pursue its practical construction.",
+    "L5": "There appears to be limited context in your keywords (\"The, Levy, Lieb\"). Let me offer the most likely interpretation and write about it—but please clarify if you meant something different.\n\n## The Levy-Lieb Functional\n\nThe **Levy-Lieb functional** is a fundamental concept in Density Functional Theory (DFT), a cornerstone of quantum chemistry and condensed matter physics used to study the electronic structure of many-body systems.\n\n### Background\n\nDensity Functional Theory, pioneered by Hohenberg and Kohn in 1964, established that the ground-state properties of a many-electron system can be determined solely from its electron density, rather than requiring the full many-body wavefunction. However, the original Hohenberg-Kohn theorems were formulated for densities arising from ground-state wavefunctions, which posed certain mathematical limitations.\n\n### The Constrained-Search Formulation\n\nIn the late 1970s and early 1980s, Mel Levy and Elliott Lieb independently developed a more rigorous foundation through what is now called the **constrained-search formulation**. The Levy-Lieb functional is defined as:\n\n$$F_{LL}[\\rho] = \\min_{\\Psi \\to \\rho} \\langle \\Psi | \\hat{T} + \\hat{V}_{ee} | \\Psi \\rangle$$\n\nHere, the minimization is performed over all antisymmetric wavefunctions Ψ that yield a given electron density ρ, where:\n- **T̂** represents the kinetic energy operator\n- **V̂ₑₑ** represents the electron-electron interaction\n\n### Significance\n\nThis formulation offers several advantages:\n\n1. **Universality**: The functional depends only on the density, independent of the external potential.\n2. **Rigor**: It extends DFT to any *N*-representable density, resolving the *v*-representability problem.\n3. **Foundation**: It provides a mathematically sound basis for the exact ground-state energy through variational minimization.\n\nLieb later refined this using tools from convex analysis, introducing the closely related **Lieb functional** based on Legendre transforms.\n\n---\n\nWould you like me to expand on the mathematics, the historical context, or applications instead?"
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a physics paper on the Levy-Lieb constrained-search formulation and its equivalence to minimizing the correlation functional over conditional probability densities.",
+      "output": "**Abstract**\n\nThe Levy–Lieb constrained-search formulation provides a rigorous, wavefunction-based definition of the universal density functional that underlies Hohenberg–Kohn density-functional theory, expressing the internal energy as an infimum of the kinetic-plus-interaction expectation value over all antisymmetric $N$-body states yielding a prescribed one-particle density $\\rho$. In this work we recast this variational principle in terms of the conditional probability density that specifies the distribution of the remaining $N-1$ particles given the position of one, and we establish that the constrained search is exactly equivalent to the minimization of a correlation functional over the manifold of admissible conditional densities. Starting from the marginal and normalization constraints imposed by a fixed single-particle density, we show that the electron–electron interaction and internal kinetic contributions can be organized into a functional whose stationary points characterize the Levy–Lieb minimizer, and we prove that the two optimization problems share the same infimum and the same set of minimizing states. This reformulation clarifies the role of exchange and correlation as intrinsically encoded in the geometry of conditional distributions, offers a transparent decomposition of the universal functional into single-particle and correlation pieces, and yields explicit lower and upper bounds through simple trial conditional densities. We discuss the implications for the construction of approximate functionals, the derivation of exact conditions on the correlation energy, and connections to strictly-correlated-electron and optimal-transport formulations of the strong-coupling limit. The equivalence provides a unifying variational viewpoint that bridges the wavefunction and density-matrix descriptions of many-electron systems.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize the main result of a density functional theory paper connecting the Hohenberg-Kohn functional to conditional probability minimization.",
+      "output": "# Density Functional Theory: Hohenberg-Kohn Functional and Conditional Probability\n\nI should be transparent about an important limitation here: **you haven't provided the specific paper you're asking about.** Without the actual paper, title, authors, or its text, I can't accurately summarize *its* particular main result, and doing so would risk fabricating details.\n\nThat said, I can explain the general theoretical landscape your question points to, which may help you identify or contextualize the work.\n\n## Relevant Background Concepts\n\n**The Hohenberg-Kohn (HK) functional** is central to DFT. It establishes that ground-state properties of a many-electron system are determined by the electron density alone, via a universal functional F[ρ] that captures kinetic energy and electron-electron interactions.\n\n**Connections to conditional probability minimization** typically appear in work related to:\n\n- **Levy-Lieb constrained-search formulation**, where the universal functional is defined by minimizing over wavefunctions (or density matrices) that yield a given density\n- **Optimal transport / strictly correlated electrons (SCE)** approaches, where the strong-interaction limit of DFT is reformulated using conditional probability densities and co-motion functions\n- **Conditional probability arguments** that express how the position of one electron constrains the others, often used to derive or bound exchange-correlation functionals\n\n## How I Can Help Better\n\nTo give you an accurate summary, please share:\n- The **paper title and authors**, or\n- A **DOI/link**, or\n- **Key excerpts** from the abstract or results\n\nIf you'd like, I can also give a more detailed overview of a *specific* known framework (e.g., the Levy-Lieb constrained search or optimal-transport DFT) if that's the direction you're interested in.\n\nWhich would be most useful to you?",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "I'm writing a paper in DFT. Can you help me draft an abstract that explains how the constrained-search definition of the exact functional relates to the N-1 conditional probability density?",
+      "output": "Here's a draft abstract you can adapt. I've aimed for the level of precision typical of a formal DFT methods paper, and I'll flag a few places where you may want to tailor the emphasis.\n\n---\n\n**Draft Abstract**\n\nThe Levy–Lieb constrained-search formulation defines the universal density functional as $F[n] = \\min_{\\Psi \\to n}\\langle\\Psi|\\hat{T}+\\hat{V}_{ee}|\\Psi\\rangle$, a minimization over all antisymmetric $N$-electron wavefunctions that reproduce a prescribed density $n(\\mathbf{r})$. We show that this search acquires a transparent physical interpretation when the trial wavefunction is factorized in terms of the $N-1$ conditional probability amplitude, $\\Psi(\\mathbf{r}_1,\\dots,\\mathbf{r}_N) = \\sqrt{n(\\mathbf{r}_1)/N}\\;\\Phi(\\mathbf{r}_2,\\dots,\\mathbf{r}_N\\,|\\,\\mathbf{r}_1)$, where $|\\Phi|^2$ is the normalized probability density of the remaining $N-1$ electrons conditioned on one electron being fixed at $\\mathbf{r}_1$. Because the density constrains only the marginal single-particle factor, the constrained search reduces to an unconstrained minimization over the conditional amplitude $\\Phi$, which carries all exchange and correlation information. This decomposition separates $F[n]$ into the von Weizsäcker kinetic energy—fixed entirely by $n$—and a conditional (Pauli) contribution together with the electron–electron interaction, both expressed through $\\Phi$. We further identify the conditional density with the coupling-constant–integrated exchange–correlation hole, clarifying how the exact Kohn–Sham potential emerges from the response of the conditional amplitude to the density constraint. This viewpoint provides a rigorous route connecting orbital-free kinetic-energy functionals, the exact effective potential, and the physics of the $N-1$ conditional density.\n\n---\n\nA few notes so you can check the framing against your paper's actual content:\n\n1. **The factorization** $\\Psi = \\sqrt{n/N}\\,\\Phi$ is the Hunter/Levy–Perdew–Sahni conditional-amplitude construction. The key point you're making is that the density fixes $\\sqrt{n(\\mathbf{r}_1)/N}$, so the constrained search \"lives\" entirely in $\\Phi$.\n\n2. **The von Weizsäcker term** falls out naturally because $\\nabla_1$ acting on the marginal factor gives exactly $\\tfrac{1}{8}\\int |\\nabla n|^2/n$; everything else (Pauli kinetic energy + interaction) is expressed through $\\Phi$. Confirm this matches how you actually partition the energy.\n\n3. **The xc-hole/adiabatic-connection connection** in the last sentences is optional—include it only if your paper actually develops the coupling-constant integration. If not, trim it.\n\nWould you like me to produce a shorter, punchier version, or one weighted more toward a specific application (e.g., orbital-free DFT, or exact-exchange/KS inversion)?",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate a concise academic abstract about reformulating the Levy-Lieb functional in terms of correlation functional minimization for N-representable densities.",
+      "output": "# Abstract\n\nThe Levy-Lieb constrained-search formulation of density functional theory defines the universal functional through minimization over all antisymmetric wavefunctions yielding a prescribed one-particle density. While formally exact, this high-dimensional minimization is computationally intractable and obscures the role of electron correlation. Here we present a reformulation of the Levy-Lieb functional in terms of a constrained minimization over correlation functionals defined on the space of N-representable densities. By decomposing the universal functional into a mean-field (Hartree) contribution and a residual correlation functional, we recast the search over wavefunctions as an optimization over admissible pair correlation structures consistent with a given density. We establish that the resulting correlation functional inherits the essential convexity and lower-semicontinuity properties required for a well-posed variational problem, and we characterize the conditions under which the infimum is attained. The N-representability constraints on the density are shown to translate into natural admissibility conditions on the correlation functional, providing a transparent separation between kinematic constraints and dynamical correlation effects. This perspective clarifies the mathematical structure of the exchange-correlation problem and suggests systematic approximation schemes based on hierarchies of correlation functionals. We discuss implications for the construction of approximate functionals and for the numerical treatment of strongly correlated systems, where conventional mean-field approaches fail.\n\n---\n\n*Keywords:* density functional theory, Levy-Lieb functional, constrained search, N-representability, electron correlation, convex analysis",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a formal one-paragraph description of a research result showing the equivalence between the Levy-Lieb constrained search and minimizing the correlation functional with respect to conditional probabilities.",
+      "output": "**Result (Equivalence of the Levy–Lieb Functional and Conditional-Probability Minimization).** Let $\\rho \\in \\mathcal{J}_N$ denote an admissible $N$-electron single-particle density, i.e. $\\rho \\geq 0$, $\\int_{\\mathbb{R}^3}\\rho\\,dx = N$, and $\\sqrt{\\rho}\\in H^1(\\mathbb{R}^3)$, and let the Levy–Lieb universal functional be defined by the constrained search\n$$\nF_{\\mathrm{LL}}[\\rho] \\;=\\; \\inf_{\\Psi \\mapsto \\rho}\\; \\big\\langle \\Psi,\\, (\\hat T + \\hat V_{ee})\\,\\Psi \\big\\rangle,\n$$\nwhere the infimum is taken over normalized antisymmetric wavefunctions $\\Psi \\in H^1(\\mathbb{R}^{3N})$ whose single-particle density equals $\\rho$, and $\\hat T$, $\\hat V_{ee}$ are the kinetic-energy and electron–electron interaction operators, respectively. Writing the joint $N$-point probability density $|\\Psi|^2$ in factored form as $|\\Psi(x_1,\\dots,x_N)|^2 = \\tfrac{1}{N}\\rho(x_1)\\,P(x_2,\\dots,x_N \\mid x_1)$, so that $P(\\,\\cdot \\mid x_1)$ is the conditional probability distribution of the remaining $N-1$ particles given one particle fixed at $x_1$, one may then define a correlation functional $\\mathcal{C}[\\rho; P]$ obtained by re-expressing $F_{\\mathrm{LL}}$ entirely through $\\rho$ and the family of conditional densities $P$. The result asserts that the constrained search is *equivalent* to the variational problem over conditional probabilities,\n$$\nF_{\\mathrm{LL}}[\\rho] \\;=\\; \\min_{P \\in \\mathcal{P}_\\rho} \\; \\mathcal{C}[\\rho; P],\n$$\nwhere $\\mathcal{P}_\\rho$ denotes the set of admissible conditional distributions consistent with the marginal $\\rho$ and with the fermionic (antisymmetry, positivity, and normalization) constraints, and the minimizer $P^\\star$ recovers the conditional structure of the optimal $\\Psi$; the two formulations therefore yield identical values of the universal functional and identical minimizing correlations, establishing that minimizing the correlation functional with respect to conditional probabilities is a faithful reformulation of the Levy–Lieb constrained-search principle.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.44335260115606934,
+      "excess_ratio": 0.3417161827545534,
+      "baseline_mean": 0.10163641840151597,
+      "baseline_n_valid": 5,
+      "output_chars": 1097,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.450281425891182,
+          "baseline_mean": 0.07648958752711635,
+          "excess_ratio": 0.3737918383640656
+        },
+        "bz2": {
+          "actual_ratio": 0.35384615384615387,
+          "baseline_mean": 0.10135571719472614,
+          "excess_ratio": 0.25249043665142773
+        },
+        "lzma": {
+          "actual_ratio": 0.5228758169934641,
+          "baseline_mean": 0.12481870733090013,
+          "excess_ratio": 0.39805710966256397
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4610894941634242,
+      "excess_ratio": 0.3594530757619082,
+      "baseline_mean": 0.10163641840151597,
+      "baseline_n_valid": 5,
+      "output_chars": 525,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.41423948220064727,
+          "baseline_mean": 0.07648958752711635,
+          "excess_ratio": 0.3377498946735309
+        },
+        "bz2": {
+          "actual_ratio": 0.41887905604719766,
+          "baseline_mean": 0.10135571719472614,
+          "excess_ratio": 0.3175233388524715
+        },
+        "lzma": {
+          "actual_ratio": 0.5368421052631579,
+          "baseline_mean": 0.12481870733090013,
+          "excess_ratio": 0.4120233979322578
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.17029068436713207,
+      "excess_ratio": 0.06865426596561611,
+      "baseline_mean": 0.10163641840151597,
+      "baseline_n_valid": 5,
+      "output_chars": 3698,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.15083798882681565,
+          "baseline_mean": 0.07648958752711635,
+          "excess_ratio": 0.0743484012996993
+        },
+        "bz2": {
+          "actual_ratio": 0.15675297410776767,
+          "baseline_mean": 0.10135571719472614,
+          "excess_ratio": 0.05539725691304154
+        },
+        "lzma": {
+          "actual_ratio": 0.20159151193633953,
+          "baseline_mean": 0.12481870733090013,
+          "excess_ratio": 0.07677280460543941
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.09416195856873823,
+      "excess_ratio": -0.007474459832777738,
+      "baseline_mean": 0.10163641840151597,
+      "baseline_n_valid": 5,
+      "output_chars": 5056,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.07294117647058823,
+          "baseline_mean": 0.07648958752711635,
+          "excess_ratio": -0.003548411056528117
+        },
+        "bz2": {
+          "actual_ratio": 0.09649543927028324,
+          "baseline_mean": 0.10135571719472614,
+          "excess_ratio": -0.004860277924442893
+        },
+        "lzma": {
+          "actual_ratio": 0.11275415896487985,
+          "baseline_mean": 0.12481870733090013,
+          "excess_ratio": -0.012064548366020278
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.0455865272938443,
+      "excess_ratio": -0.05604989110767167,
+      "baseline_mean": 0.10163641840151597,
+      "baseline_n_valid": 5,
+      "output_chars": 2087,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.0351985559566787,
+          "baseline_mean": 0.07648958752711635,
+          "excess_ratio": -0.04129103157043765
+        },
+        "bz2": {
+          "actual_ratio": 0.032758620689655175,
+          "baseline_mean": 0.10135571719472614,
+          "excess_ratio": -0.06859709650507095
+        },
+        "lzma": {
+          "actual_ratio": 0.06802721088435375,
+          "baseline_mean": 0.12481870733090013,
+          "excess_ratio": -0.05679149644654638
+        }
+      }
+    }
+  }
+}

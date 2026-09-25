@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15882993",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA request is received for determining a task completion rate of each of a first set of tasks associated with a set of task attributes. The first set of tasks are scheduled to be completed within a first timer period. An MAPE score is calculated or obtained for each of the completion rate predictive models, which is determined based on prior predictions performed in a second time period in the past. The duration of the second time period is a multiple of the first time period. One of the predictive models is selected based on the MAPE scores of the predictive models, where the selected model has the lowest MAPE score amongst the predictive models in the set. In another embodiment, a predictive model is selected further based on the volatility scores of the predictive models. A model with a combination of lowest MAPE score and volatility score is selected.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA request is received for determining a task completion rate of each of a first set of tasks associated with a set of task attributes. The first set of tasks are scheduled to be completed within a first timer period. An MAPE score is calculated or obtained for each of the completion rate predictive models, which is determined based on prior predictions performed in a second time period in the past. The duration of the second time period is a multiple of the first time period. One of the predictive models is selected based on the MAPE scores of the predictive models, where the selected model has the lowest MAPE score amongst the predictive models in the set. In another embodiment, a predictive model is selected further based on the volatility scores of the predictive models. A model with a combination of lowest MAPE score and volatility score is selected.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A request is received to determine the completion rate for a first set of tasks associated with specific task attributes.\n- The first set of tasks is scheduled for completion within a first time period.\n- A MAPE score is calculated or obtained for each predictive model based on prior predictions from a second, historical time period that is a multiple of the first time period.\n- One predictive model is selected because it has the lowest MAPE score among the available models.\n- Alternatively, model selection may consider both MAPE and volatility scores, choosing the model with the best combined scores.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe method predicts completion rates for tasks scheduled within a given period by evaluating predictive models using mean absolute percentage error (MAPE) scores from a longer historical period and, optionally, volatility scores. Selecting the model with the lowest MAPE or best combined MAPE and volatility score improves the reliability and stability of task completion-rate forecasts.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, MAPE, One"
+  },
+  "outputs": {
+    "L1": "A request is received to determine a task completion rate for each task in a first set of tasks associated with a set of task attributes. The first set of tasks is scheduled for completion within a first time period. A mean absolute percentage error (MAPE) score is calculated or obtained for each completion-rate predictive model based on prior predictions made during a second time period in the past. The duration of the second time period is a multiple of the duration of the first time period. One of the predictive models is selected based on the MAPE scores, with the selected model having the lowest MAPE score among the models in the set. In another embodiment, the predictive model is further selected based on the volatility scores of the predictive models. A model having the lowest combined MAPE and volatility scores is selected.",
+    "L2": "A request is submitted to estimate the completion rate for each task in an initial group of tasks having a collection of task attributes. These tasks are scheduled for completion during a first time interval. For every completion-rate prediction model, a mean absolute percentage error (MAPE) score is computed or retrieved using earlier predictions made during a past, second time interval. The second interval has a duration equal to a multiple of the first interval. A prediction model is then chosen by comparing the models’ MAPE scores, with the model having the lowest score in the group being selected. In another implementation, model selection also takes the models’ volatility scores into account, and the model offering the lowest combined MAPE and volatility scores is chosen.",
+    "L3": "A request is received to determine the completion rate for a first set of tasks associated with specified task attributes. The first set of tasks is scheduled for completion within a defined first time period.\n\nTo select an appropriate predictive model, a mean absolute percentage error (MAPE) score is calculated or obtained for each available model. Each MAPE score is based on the model’s prior predictions during a second, historical time period, where the duration of the second time period is a multiple of the first time period. The predictive model having the lowest MAPE score is then selected to estimate the completion rate for the first set of tasks.\n\nAlternatively, model selection may account for both prediction accuracy and variability. In this approach, a MAPE score and a volatility score are evaluated for each predictive model, and the model having the best combined MAPE and volatility scores is selected to determine the completion rate.",
+    "L4": "The method forecasts completion rates for tasks scheduled during a specified period, such as a day, week, or month. A completion rate may be defined as the proportion of scheduled tasks completed within the applicable period or by a designated deadline. To generate the forecast, multiple predictive models are trained or evaluated using task data from a historical period that is longer than the forecast period. The historical data may include scheduled and completed task counts, task types, timing information, workload levels, resource availability, seasonal patterns, and other relevant factors.\n\nEach candidate model produces historical completion-rate predictions, which are compared with the corresponding observed completion rates. Model accuracy is measured using mean absolute percentage error (MAPE), calculated by averaging the absolute percentage differences between predicted and observed values. Appropriate adjustments may be applied when an observed completion rate is zero or close to zero, such as using an error floor, excluding undefined observations, or applying an alternative scaled error measure.\n\nIn a basic implementation, the candidate model with the lowest MAPE score is selected because it has demonstrated the greatest historical predictive accuracy. The selected model is then applied to current task and scheduling data to estimate the completion rate for the target period.\n\nIn some implementations, model selection also accounts for volatility. A volatility score may measure how much a model’s prediction errors, MAPE values, or predicted completion rates vary across historical subperiods. For example, the longer historical period may be divided into days, weeks, or other intervals, and the variability of each model’s performance may be calculated across those intervals. Lower volatility indicates that a model performs more consistently over time and is less dependent on unusual conditions in a particular historical segment.\n\nMAPE and volatility may be normalized and combined into a single model-selection score. The combined score can assign weights to accuracy and stability according to operational priorities. A greater weight on MAPE favors models with the lowest average prediction error, while a greater weight on volatility favors models that produce more stable and consistent results. The model with the best combined score is selected to generate the completion-rate forecast.\n\nBy evaluating models over a sufficiently long historical period, the method captures recurring patterns, seasonal effects, and changes in workload or performance. Selecting a model based on either the lowest MAPE or a combination of MAPE and volatility reduces the risk of relying on a model that performs well only under limited conditions. As a result, the generated forecasts are more accurate, reliable, and stable, enabling improved scheduling, resource allocation, capacity planning, and operational decision-making.",
+    "L5": "### The MAPE: One Useful Measure of Forecast Accuracy\n\nThe Mean Absolute Percentage Error (MAPE) is a common metric used to evaluate forecasting models. It measures the average difference between predicted and actual values as a percentage. One key advantage of MAPE is that its results are easy to interpret: a MAPE of 10% means that predictions differ from actual values by 10% on average. However, the metric may be unreliable when actual values are zero or very small, so it should be used alongside other evaluation methods."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize a patent method for selecting a predictive model to forecast task completion rates using MAPE scores and model volatility.",
+      "output": "The patented method selects a forecasting model for task-completion rates by balancing **accuracy** and **stability**:\n\n1. Train or evaluate multiple candidate predictive models using historical task data.\n2. Generate completion-rate forecasts for each model over validation periods.\n3. Calculate each model’s **Mean Absolute Percentage Error (MAPE)** to measure forecast accuracy.\n4. Measure **model volatility**, reflecting how much a model’s predictions or performance vary across time periods.\n5. Compare or combine the MAPE and volatility measures—typically favoring models with both low error and low variability.\n6. Select the model with the best overall score or ranking and use it to forecast future task-completion rates.\n\nThe key idea is that the method does not simply choose the model with the lowest historical error; it also penalizes unstable models, producing forecasts that are both accurate and consistent.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write a concise patent-style abstract describing how multiple completion-rate prediction models are evaluated over a historical period and the model with the lowest error is selected.",
+      "output": "A system and method evaluate a plurality of completion-rate prediction models using historical data. Each model generates predicted completion rates for one or more intervals within a historical evaluation period. The predicted completion rates are compared with corresponding observed completion rates to determine an error metric for each model. The model having the lowest error metric is selected for generating completion-rate predictions for a subsequent period.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Explain a system that predicts completion rates for scheduled tasks by comparing predictive models based on mean absolute percentage error, with an optional volatility criterion.",
+      "output": "A task-completion prediction system estimates the percentage of scheduled tasks likely to finish within a defined period, such as the next hour, day, or week.\n\n### 1. Collect historical data\nFor each period, record:\n\n- Number of tasks scheduled\n- Number completed\n- Completion rate:  \n  \\[\n  y_t=\\frac{\\text{completed tasks}_t}{\\text{scheduled tasks}_t}\n  \\]\n- Relevant features, such as task type, priority, workload, staffing, day of week, delays, and historical completion rates\n\nPeriods with no scheduled tasks should be excluded or handled separately because their completion rate is undefined.\n\n### 2. Train candidate models\nPossible models include:\n\n- Historical average or moving average\n- Linear or logistic regression\n- Random forest or gradient-boosted trees\n- Time-series models\n- Neural networks\n\nThe data should be split chronologically into training and validation sets to avoid using future information.\n\n### 3. Compare models using MAPE\nFor each model, calculate mean absolute percentage error on unseen data:\n\n\\[\n\\text{MAPE}=\\frac{100}{n}\\sum_{t=1}^{n}\n\\left|\\frac{y_t-\\hat y_t}{y_t}\\right|\n\\]\n\nwhere \\(y_t\\) is the actual completion rate and \\(\\hat y_t\\) is the predicted rate. The model with the lowest MAPE is normally selected.\n\nBecause MAPE is undefined or unstable when the actual completion rate is zero or very small, the system can instead:\n\n- Apply a small denominator floor:\n  \\[\n  \\max(|y_t|,\\epsilon)\n  \\]\n- Exclude zero-rate periods under a documented rule\n- Use weighted MAPE or mean absolute error as a fallback\n\nPredictions should also be constrained to the valid completion-rate range, such as 0–100%.\n\n### 4. Optionally evaluate volatility\nA volatility criterion measures how unstable a model’s predictions or errors are over time. For example:\n\n\\[\nV=\\operatorname{SD}\\left(\n\\left|\\frac{y_t-\\hat y_t}{\\max(|y_t|,\\epsilon)}\\right|\n\\right)\n\\]\n\nA lower value means performance is more consistent. Volatility could instead be defined as the standard deviation of predicted completion rates or the variation in error across validation windows.\n\nThe system can use volatility in several ways:\n\n- **Tie-breaker:** Choose the lower-volatility model when MAPE values are similar.\n- **Threshold:** Select the lowest-MAPE model only if volatility is below an acceptable limit.\n- **Composite score:**\n  \\[\n  \\text{Score}=\\text{MAPE}+\\lambda V\n  \\]\n  where \\(\\lambda\\) controls the importance of stability.\n- **Multi-objective selection:** Retain models that offer the best trade-off between accuracy and stability.\n\n### 5. Produce and monitor predictions\nThe selected model predicts future completion rates, optionally with confidence intervals. After actual outcomes become available, the system recalculates MAPE and volatility, detects performance degradation, and periodically retrains or replaces the model.\n\nThis approach favors models that are accurate on average while optionally avoiding models whose predictions are erratic or unreliable across periods.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Draft a technical description of an embodiment in which tasks have associated attributes, historical predictions are assessed over a time period that is a multiple of the scheduling period, and the best-performing forecasting model is chosen.",
+      "output": "In one embodiment, a task-scheduling system maintains, for each task, a set of associated attributes. The attributes may include, for example, task type, required resource type, estimated duration, priority, location, dependency information, due time, historical completion time, and contextual parameters applicable to performance of the task. The system schedules the tasks during recurring scheduling periods having a duration \\(T_s\\), such as fifteen minutes, one hour, or one day.\n\nA forecasting component generates predictions used by a scheduler to allocate resources or determine task start times. Multiple candidate forecasting models may be maintained, including statistical models, regression models, time-series models, and machine-learning models. Each candidate model receives at least a subset of the task attributes and produces a predicted value, such as task duration, resource demand, probability of completion, or expected start time.\n\nThe system evaluates historical predictions over an assessment period \\(T_a\\) that is an integer multiple of the scheduling period, such that:\n\n\\[\nT_a = N T_s,\n\\]\n\nwhere \\(N\\) is an integer greater than one. For example, when the scheduling period is one hour, predictions may be evaluated over a twenty-four-hour assessment period comprising twenty-four scheduling periods. For each candidate model, predictions recorded during the assessment period are compared with corresponding observed outcomes. The system calculates one or more performance measures, such as mean absolute error, root-mean-square error, classification accuracy, calibration error, or a weighted combination thereof. Performance measures may be weighted according to task attributes, task priority, recency, or the operational cost of a prediction error.\n\nThe forecasting model having the best performance according to a selection criterion is designated as the active forecasting model for a subsequent scheduling period. The scheduler uses predictions generated by the active model, together with the task attributes and applicable resource constraints, to produce a task schedule. Model evaluation and selection may be repeated at the end of each scheduling period using a rolling assessment window of \\(N\\) scheduling periods, thereby allowing the active forecasting model to adapt to changes in task characteristics and operating conditions. In some implementations, model selection is performed separately for different task types, resource classes, locations, or other attribute-defined groups.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Describe an invention for automatically selecting a task completion-rate predictive model using prior prediction accuracy and, in another embodiment, a combined MAPE and volatility score.",
+      "output": "An invention provides a computer-implemented system and method for automatically selecting a predictive model to forecast a task completion rate. The system maintains multiple candidate models, each configured to predict the proportion or number of tasks expected to be completed during a future interval. Candidate models may use different algorithms, parameters, training periods, or input features.\n\nFor each candidate model, the system retrieves historical predictions and corresponding observed task-completion outcomes. In one embodiment, it calculates a prior prediction-accuracy measure for each model, ranks the models according to that measure, and automatically selects the model having the best historical accuracy. The selected model is then used to generate the task completion-rate prediction for a subsequent interval. Selection may be repeated periodically or when new actual completion data becomes available, allowing the deployed model to change as operating conditions evolve.\n\nIn another embodiment, model selection is based on a combined error-and-stability score. For each candidate model, the system calculates:\n\n1. a mean absolute percentage error (MAPE) between prior predicted and observed completion rates; and  \n2. a volatility measure representing variation in the model’s prediction errors, predictions, or accuracy over time.\n\nThe values may be normalized and combined using weights, for example:\n\n\\[\nS_i=w_e\\widehat{\\mathrm{MAPE}}_i+w_v\\widehat{V}_i,\n\\]\n\nwhere \\(S_i\\) is the score for model \\(i\\), \\(\\widehat{\\mathrm{MAPE}}_i\\) is normalized MAPE, \\(\\widehat{V}_i\\) is normalized volatility, and \\(w_e\\) and \\(w_v\\) are configurable weights. The system selects the model with the lowest combined score, thereby favoring a model that is both accurate and consistently reliable rather than one whose average accuracy is good but unstable.\n\nThe invention may further include automatic retraining, minimum-data thresholds, recency weighting, outlier handling, tie-breaking rules, and fallback selection when actual completion rates are zero or unavailable. It can be implemented in a workforce-management, workflow, manufacturing, logistics, service, or computing environment to improve resource allocation, scheduling, capacity planning, and completion-time forecasting.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6548223350253807,
+      "excess_ratio": 0.5002701975646504,
+      "baseline_mean": 0.1545521374607302,
+      "baseline_n_valid": 5,
+      "output_chars": 843,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6402266288951841,
+          "baseline_mean": 0.11431403030903428,
+          "excess_ratio": 0.5259125985861498
+        },
+        "bz2": {
+          "actual_ratio": 0.6024691358024692,
+          "baseline_mean": 0.1591188451227688,
+          "excess_ratio": 0.4433502906797004
+        },
+        "lzma": {
+          "actual_ratio": 0.7169811320754716,
+          "baseline_mean": 0.18455847804469033,
+          "excess_ratio": 0.5324226540307813
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3739398612181958,
+      "excess_ratio": 0.21938772375746557,
+      "baseline_mean": 0.1545521374607302,
+      "baseline_n_valid": 5,
+      "output_chars": 788,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3010204081632653,
+          "baseline_mean": 0.11431403030903428,
+          "excess_ratio": 0.18670637785423103
+        },
+        "bz2": {
+          "actual_ratio": 0.38215102974828374,
+          "baseline_mean": 0.1591188451227688,
+          "excess_ratio": 0.22303218462551494
+        },
+        "lzma": {
+          "actual_ratio": 0.42735042735042733,
+          "baseline_mean": 0.18455847804469033,
+          "excess_ratio": 0.242791949305737
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.49614576033637003,
+      "excess_ratio": 0.3415936228756398,
+      "baseline_mean": 0.1545521374607302,
+      "baseline_n_valid": 5,
+      "output_chars": 959,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.48299319727891155,
+          "baseline_mean": 0.11431403030903428,
+          "excess_ratio": 0.36867916696987724
+        },
+        "bz2": {
+          "actual_ratio": 0.43670886075949367,
+          "baseline_mean": 0.1591188451227688,
+          "excess_ratio": 0.27759001563672486
+        },
+        "lzma": {
+          "actual_ratio": 0.5625,
+          "baseline_mean": 0.18455847804469033,
+          "excess_ratio": 0.37794152195530967
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1385777546236,
+      "excess_ratio": -0.015974382837130208,
+      "baseline_mean": 0.1545521374607302,
+      "baseline_n_valid": 5,
+      "output_chars": 2958,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.11137629276054097,
+          "baseline_mean": 0.11431403030903428,
+          "excess_ratio": -0.002937737548493316
+        },
+        "bz2": {
+          "actual_ratio": 0.14354066985645933,
+          "baseline_mean": 0.1591188451227688,
+          "excess_ratio": -0.015578175266309474
+        },
+        "lzma": {
+          "actual_ratio": 0.15963855421686746,
+          "baseline_mean": 0.18455847804469033,
+          "excess_ratio": -0.024919923827822876
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.12260536398467438,
+      "excess_ratio": -0.03194677347605583,
+      "baseline_mean": 0.1545521374607302,
+      "baseline_n_valid": 5,
+      "output_chars": 529,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.07348242811501597,
+          "baseline_mean": 0.11431403030903428,
+          "excess_ratio": -0.04083160219401831
+        },
+        "bz2": {
+          "actual_ratio": 0.11815561959654179,
+          "baseline_mean": 0.1591188451227688,
+          "excess_ratio": -0.04096322552622701
+        },
+        "lzma": {
+          "actual_ratio": 0.16666666666666666,
+          "baseline_mean": 0.18455847804469033,
+          "excess_ratio": -0.017891811378023675
+        }
+      }
+    }
+  }
+}

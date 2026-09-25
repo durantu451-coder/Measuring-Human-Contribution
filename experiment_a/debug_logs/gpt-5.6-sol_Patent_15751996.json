@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15751996",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA configuration in which usage control that is substantially similar to content usage control in a copy source medium can be performed in a content copy destination is implemented. A data processing unit that performs a copy process of recording data recorded on a first medium on a second medium records encrypted content in the first medium on the second medium, without decrypting the encrypted content. In addition, the data processing unit converts a CPS unit key file recorded on the first medium to generate a converted CPS unit key file and records the converted CPS unit key file on the second medium. Further, the data processing unit acquires an MKB not requiring KCD, which is capable of directly calculating a media key using only a device key, without using key conversion data (KCD) recorded on the first medium, from a server and records the MKB not requiring KCD on the second medium.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA configuration in which usage control that is substantially similar to content usage control in a copy source medium can be performed in a content copy destination is implemented. A data processing unit that performs a copy process of recording data recorded on a first medium on a second medium records encrypted content in the first medium on the second medium, without decrypting the encrypted content. In addition, the data processing unit converts a CPS unit key file recorded on the first medium to generate a converted CPS unit key file and records the converted CPS unit key file on the second medium. Further, the data processing unit acquires an MKB not requiring KCD, which is capable of directly calculating a media key using only a device key, without using key conversion data (KCD) recorded on the first medium, from a server and records the MKB not requiring KCD on the second medium.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The configuration enables usage control at the copy destination that is substantially similar to the content usage control of the source medium.\n- The data processing unit copies encrypted content from the first medium to the second medium without decrypting it.\n- The data processing unit converts the source medium’s CPS unit key file and records the converted file on the second medium.\n- The data processing unit obtains from a server an MKB that can calculate a media key using only a device key, without requiring key conversion data.\n- The MKB that does not require key conversion data is recorded on the second medium.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA media-copying method preserves source-like usage controls by copying encrypted content without decryption, converting the CPS unit key file, and obtaining a server-provided media key block (MKB) that requires no key conversion data (KCD). The destination medium can calculate its media key directly from a device key, enabling content usage control substantially equivalent to that of the source medium.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: CPS, Further, MKB"
+  },
+  "outputs": {
+    "L1": "A configuration is implemented that enables usage control at a content copy destination substantially similar to the content usage control applied to the copy source medium. A data processing unit that copies data recorded on a first medium to a second medium records the encrypted content from the first medium onto the second medium without decrypting it. The data processing unit also converts a CPS unit key file recorded on the first medium to generate a converted CPS unit key file, which it records on the second medium. Furthermore, the data processing unit acquires from a server an MKB that does not require KCD and is capable of directly calculating a media key using only a device key, without relying on the key conversion data (KCD) recorded on the first medium, and records the acquired MKB on the second medium.",
+    "L2": "A system is provided that enables a copy destination medium to apply usage restrictions essentially equivalent to those enforced by the source medium. During copying, a data processing unit transfers encrypted content from a first medium to a second medium while leaving the content encrypted. The unit also transforms the CPS unit key file stored on the first medium into a converted CPS unit key file and writes the converted file to the second medium. Additionally, it obtains from a server an MKB that does not require KCD and that allows a media key to be calculated directly from a device key alone, without relying on the key conversion data (KCD) stored on the first medium. This MKB is then recorded on the second medium.",
+    "L3": "The configuration enables usage control at the copy destination that is substantially equivalent to the content usage control applied to the source medium. To achieve this, the data processing unit copies encrypted content from a first medium to a second medium without decrypting the content during the transfer.\n\nThe data processing unit also converts the CPS unit key file associated with the source medium into a format suitable for the second medium and records the converted CPS unit key file on the second medium. In addition, the data processing unit obtains, from a server, a Media Key Block (MKB) that permits calculation of a media key using only a device key, without requiring separate key conversion data. The obtained MKB is then recorded on the second medium.\n\nTogether, these operations allow the copied content to remain encrypted while enabling the second medium to apply usage controls substantially similar to those enforced by the first medium.",
+    "L4": "A method is provided for copying protected content from a source recording medium to a destination recording medium while preserving substantially the same content-usage restrictions that apply to the source. Rather than decrypting and re-encrypting the content during the copying operation, the method copies the encrypted content directly to the destination medium. This reduces processing requirements and limits exposure of the content in unencrypted form.\n\nThe source medium contains encrypted content and a content protection system (CPS) unit key file used to control access to that content. As part of the copying process, the CPS unit key file is converted into a form suitable for use on the destination medium. The conversion maintains relevant control information, such as restrictions on playback, further copying, or other permitted uses.\n\nA media key block (MKB) appropriate for the destination medium is obtained from a server and recorded on, or otherwise associated with, the destination medium. The server-provided MKB is constructed so that no separate key conversion data (KCD) is required. A compliant destination device can therefore process the MKB using one or more device keys stored in the device and directly derive the media key needed to access the converted CPS unit key file.\n\nAfter deriving the media key, the destination device can obtain the necessary unit key and use it to decrypt the copied content for authorized playback or use. Because the encrypted content itself is copied without decryption, while the key file and MKB are adapted for the destination, the destination medium enforces content-usage controls substantially equivalent to those of the source medium. The method thus supports secure media copying while preserving the protections intended by the content provider and avoiding the additional complexity of generating, distributing, or processing key conversion data.",
+    "L5": "### CPS and the Future of the MKB\n\nCyber-physical systems (CPS) connect physical equipment with software, sensors, and digital networks. For the MKB—small and medium-sized enterprises—these technologies create opportunities to automate processes, monitor production in real time, and make better decisions based on reliable data.\n\nCPS can help MKB companies reduce costs, improve product quality, and respond more quickly to customer needs. Further digital development may also enable predictive maintenance, smarter logistics, and more sustainable use of energy and materials. However, successful implementation requires investment in cybersecurity, employee training, and scalable technology.\n\nBy adopting CPS step by step, the MKB can strengthen its competitiveness and prepare for a more connected, efficient, and innovative future."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize a patent describing how encrypted content and copy-protection data are transferred from a source medium to a destination medium without decrypting the content.",
+      "output": "The patent describes a secure method for copying protected digital content from one storage medium to another while keeping the content encrypted throughout the transfer. The system copies the encrypted content together with associated copy-protection information, such as usage rights, encryption keys, authorization data, or copy-control status.\n\nDuring the transfer, the protection data may be authenticated, updated, or re-encrypted so that it is valid only for the destination medium. The source medium’s rights can also be modified or disabled to enforce “move” rather than unrestricted copying. Because the content itself is never decrypted during the process, it is not exposed in unprotected form, reducing the risk of interception or unauthorized duplication.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Explain a system that preserves substantially equivalent content usage controls when copying protected media, including CPS unit key conversion and acquisition of an MKB that does not require KCD.",
+      "output": "A system for copying protected media while preserving **substantially equivalent content-usage controls** can be organized as follows:\n\n1. **Read and authenticate the source**\n   - A source copy-protection-system unit authenticates the source medium or device.\n   - It obtains the protected content, its content key, and associated usage state—such as copy-never, copy-once, no-more-copies, expiration, or output restrictions.\n\n2. **Translate the usage controls**\n   - A control-mapping component converts the source system’s rules into controls supported by the destination protection system.\n   - The controls need not have identical encoding or terminology; they must impose substantially the same practical restrictions.\n   - For example, after a permitted copy of “copy once” content, the destination copy may be marked “no more copies,” and the source state may be updated accordingly.\n\n3. **Perform CPS-unit key conversion**\n   - A trusted bridge between the source and destination CPS units receives a source-domain content key through an authenticated, protected interface.\n   - It converts, wraps, or re-encrypts that key into a destination-domain key representation.\n   - Ordinarily, the clear content key is not exposed outside the trusted components. The media payload may either be re-encrypted with a new destination key or left encrypted while only the key wrapper is converted.\n\n4. **Acquire the destination MKB independently of KCD**\n   - The destination unit obtains an authenticated **Media Key Block (MKB)** from the destination medium, a trusted host cache, a licensed server, or another authorized distribution channel.\n   - This acquisition or selection does **not require Key Conversion Data (KCD)**. KCD, if the particular system uses it, can remain part of a separate legacy key-translation operation.\n   - The destination unit processes the MKB using its authorized device keys to derive the destination media key. Integrity, version, and revocation checks prevent use of an altered or obsolete MKB.\n\n5. **Bind and record the copy**\n   - The converted content key is bound to the destination media key, media identifier, or destination CPS unit.\n   - The content, wrapped key, and translated usage-control information are written to the destination.\n   - The system commits source and destination state changes transactionally so an interruption cannot create an unrestricted extra copy.\n\nIn short, the system separates three functions: **policy equivalence**, **key-domain conversion**, and **MKB acquisition**. The source and destination may use different protection formats, but the resulting copy remains usable only under restrictions materially equivalent to those governing the source. Obtaining the MKB without KCD means the destination’s media-key and revocation processing is not dependent on the separate key-conversion-data mechanism; it does not imply bypassing authentication or copy protection.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a patent-style abstract for a data processing unit that copies encrypted content between recording media, converts the CPS unit key file, and obtains a device-key-only MKB from a server.",
+      "output": "A data processing unit for copying encrypted content from a first recording medium to a second recording medium includes a medium interface, a communication interface, and processing circuitry. The processing circuitry reads encrypted content and a Content Protection System (CPS) unit key file from the first recording medium, converts the CPS unit key file into a format associated with the second recording medium, and records the encrypted content and the converted CPS unit key file on the second recording medium. The processing circuitry further transmits, via the communication interface, device identification information to a server and obtains from the server a device-key-only Media Key Block (MKB) configured to permit derivation of a media key using a device key assigned to the data processing unit. The processing circuitry processes the converted CPS unit key file using key information derived from the device-key-only MKB, thereby enabling protected copying of the encrypted content without exposing the content in unencrypted form.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "How can encrypted content be copied from one medium to another while retaining usage restrictions if the destination must calculate its media key without the source medium’s key conversion data?",
+      "output": "A raw bit-for-bit copy is insufficient if the encryption is bound to the source medium. A trusted copy process must **re-key** the content for the destination:\n\n1. The source derives its content-encryption key using its own media key and key-conversion data.\n2. The destination independently derives a new media key from its own medium-specific key-conversion data or media-key block—never from the source’s conversion data.\n3. Inside a trusted component, the content key is unwrapped with the source key and rewrapped with the destination media key, or the content is decrypted and immediately re-encrypted under a destination-derived key.\n4. The associated rights object—copy count, expiration, playback limits, and similar restrictions—is copied or transformed, authenticated, and cryptographically bound to the new key and destination medium.\n5. For “move” or “copy once,” the source right is deleted or its counter is updated atomically.\n\nThus, the destination calculates its key solely from destination data, while a secure key-translation/re-encryption step preserves access to the content and carries forward the usage restrictions.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Rewrite the invention’s technical overview in formal language, mentioning the first and second media, encrypted-content copying without decryption, converted CPS unit keys, and a server-supplied MKB not requiring KCD.",
+      "output": "The invention provides a method for copying encrypted content from a first medium to a second medium without decrypting the content. During the copying process, CPS unit keys associated with the encrypted content are converted into a form suitable for use with the second medium. A server supplies a Media Key Block (MKB) that enables the required key conversion without requiring Key Conversion Data (KCD). Accordingly, the encrypted content can be transferred securely between the first and second media while remaining encrypted throughout the operation.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6542904290429044,
+      "excess_ratio": 0.4585124291173779,
+      "baseline_mean": 0.19577799992552644,
+      "baseline_n_valid": 5,
+      "output_chars": 827,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.657608695652174,
+          "baseline_mean": 0.15972729234348998,
+          "excess_ratio": 0.49788140330868397
+        },
+        "bz2": {
+          "actual_ratio": 0.5816831683168316,
+          "baseline_mean": 0.19164261434903934,
+          "excess_ratio": 0.3900405539677923
+        },
+        "lzma": {
+          "actual_ratio": 0.7181818181818181,
+          "baseline_mean": 0.23025755319837105,
+          "excess_ratio": 0.4879242649834471
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4334160463192721,
+      "excess_ratio": 0.23763804639374567,
+      "baseline_mean": 0.19577799992552644,
+      "baseline_n_valid": 5,
+      "output_chars": 730,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3770491803278688,
+          "baseline_mean": 0.15972729234348998,
+          "excess_ratio": 0.21732188798437885
+        },
+        "bz2": {
+          "actual_ratio": 0.4317617866004963,
+          "baseline_mean": 0.19164261434903934,
+          "excess_ratio": 0.24011917225145696
+        },
+        "lzma": {
+          "actual_ratio": 0.4818181818181818,
+          "baseline_mean": 0.23025755319837105,
+          "excess_ratio": 0.25156062861981077
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.4668527564549896,
+      "excess_ratio": 0.2710747565294631,
+      "baseline_mean": 0.19577799992552644,
+      "baseline_n_valid": 5,
+      "output_chars": 966,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4474885844748858,
+          "baseline_mean": 0.15972729234348998,
+          "excess_ratio": 0.28776129213139584
+        },
+        "bz2": {
+          "actual_ratio": 0.4279749478079332,
+          "baseline_mean": 0.19164261434903934,
+          "excess_ratio": 0.23633233345889387
+        },
+        "lzma": {
+          "actual_ratio": 0.5193798449612403,
+          "baseline_mean": 0.23025755319837105,
+          "excess_ratio": 0.2891222917628693
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.218203982121089,
+      "excess_ratio": 0.02242598219556255,
+      "baseline_mean": 0.19577799992552644,
+      "baseline_n_valid": 5,
+      "output_chars": 1921,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1717557251908397,
+          "baseline_mean": 0.15972729234348998,
+          "excess_ratio": 0.012028432847349724
+        },
+        "bz2": {
+          "actual_ratio": 0.23661270236612703,
+          "baseline_mean": 0.19164261434903934,
+          "excess_ratio": 0.044970088017087684
+        },
+        "lzma": {
+          "actual_ratio": 0.24311926605504589,
+          "baseline_mean": 0.23025755319837105,
+          "excess_ratio": 0.01286171285667484
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.0745697896749522,
+      "excess_ratio": -0.12120821025057424,
+      "baseline_mean": 0.19577799992552644,
+      "baseline_n_valid": 5,
+      "output_chars": 836,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.037267080745341616,
+          "baseline_mean": 0.15972729234348998,
+          "excess_ratio": -0.12246021159814836
+        },
+        "bz2": {
+          "actual_ratio": 0.07587548638132295,
+          "baseline_mean": 0.19164261434903934,
+          "excess_ratio": -0.11576712796771639
+        },
+        "lzma": {
+          "actual_ratio": 0.1048951048951049,
+          "baseline_mean": 0.23025755319837105,
+          "excess_ratio": -0.12536244830326615
+        }
+      }
+    }
+  }
+}

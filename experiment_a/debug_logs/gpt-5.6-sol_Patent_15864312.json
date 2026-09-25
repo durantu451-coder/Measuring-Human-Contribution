@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15864312",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nAn internal combustion engine comprises an exhaust purification catalyst and an air-fuel ratio sensor arranged at a downstream side of the exhaust purification catalyst, stops or decreases a feed of fuel as fuel cut control, and controls an air-fuel ratio of exhaust gas to a rich air-fuel ratio after the end of the fuel cut control as post reset rich control. The diagnosis system calculates a first characteristic of change of air-fuel ratio at the time when the output air-fuel ratio first passes a first air-fuel ratio region leaner than a stoichiometric air-fuel ratio and a second characteristic of change of air-fuel ratio at the time when the output air-fuel ratio first passes a second air-fuel ratio region including a stoichiometric air-fuel ratio. The diagnosis system diagnoses the abnormality of the air-fuel ratio sensor based on the first characteristic of change of air-fuel ratio and the second characteristic of change of air-fuel ratio. As a result, it is possible to suppress the effects of the change of state of the exhaust purification catalyst while accurately diagnosing the abnormality of deterioration of response of a downstream side air-fuel ratio sensor.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nAn internal combustion engine comprises an exhaust purification catalyst and an air-fuel ratio sensor arranged at a downstream side of the exhaust purification catalyst, stops or decreases a feed of fuel as fuel cut control, and controls an air-fuel ratio of exhaust gas to a rich air-fuel ratio after the end of the fuel cut control as post reset rich control. The diagnosis system calculates a first characteristic of change of air-fuel ratio at the time when the output air-fuel ratio first passes a first air-fuel ratio region leaner than a stoichiometric air-fuel ratio and a second characteristic of change of air-fuel ratio at the time when the output air-fuel ratio first passes a second air-fuel ratio region including a stoichiometric air-fuel ratio. The diagnosis system diagnoses the abnormality of the air-fuel ratio sensor based on the first characteristic of change of air-fuel ratio and the second characteristic of change of air-fuel ratio. As a result, it is possible to suppress the effects of the change of state of the exhaust purification catalyst while accurately diagnosing the abnormality of deterioration of response of a downstream side air-fuel ratio sensor.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The internal combustion engine includes an exhaust purification catalyst and an air-fuel ratio sensor positioned downstream of the catalyst.\n- The engine performs fuel cut control by stopping or reducing fuel delivery, followed by post-reset rich control that makes the exhaust gas air-fuel ratio rich.\n- The diagnosis system calculates a first air-fuel ratio change characteristic as the sensor output first passes through a region leaner than the stoichiometric ratio.\n- It calculates a second change characteristic as the sensor output first passes through a region that includes the stoichiometric ratio.\n- By comparing both characteristics, the system accurately diagnoses degraded sensor response while minimizing the influence of changes in the catalyst’s state.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA diagnostic system detects response deterioration in an air-fuel ratio sensor downstream of an exhaust purification catalyst by analyzing two air-fuel ratio change characteristics during rich control after fuel-cut operation. Comparing changes in a lean region and a region including the stoichiometric ratio enables accurate sensor-abnormality diagnosis while minimizing the influence of catalyst-state changes.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The"
+  },
+  "outputs": {
+    "L1": "An internal combustion engine includes an exhaust purification catalyst and an air-fuel ratio sensor disposed downstream of the catalyst. The engine stops or reduces the fuel supply during fuel cut control and, after fuel cut control ends, adjusts the exhaust gas to a rich air-fuel ratio through post-reset rich control. The diagnosis system calculates a first characteristic of the air-fuel ratio change when the output air-fuel ratio first passes through a first air-fuel ratio region that is leaner than the stoichiometric air-fuel ratio, and a second characteristic of the air-fuel ratio change when the output air-fuel ratio first passes through a second air-fuel ratio region that includes the stoichiometric air-fuel ratio. Based on these first and second characteristics, the diagnosis system determines whether the air-fuel ratio sensor is abnormal. Consequently, the system can mitigate the effects of changes in the state of the exhaust purification catalyst while accurately diagnosing abnormal response deterioration in the downstream air-fuel ratio sensor.",
+    "L2": "An internal combustion engine includes an exhaust purification catalyst and an air-fuel ratio sensor positioned downstream of the catalyst. During fuel-cut control, the engine either reduces or stops the fuel supply. Once this control ends, post-reset rich control is performed to make the exhaust-gas air-fuel ratio rich.\n\nA diagnostic system determines a first air-fuel-ratio change characteristic when the sensor’s output air-fuel ratio initially moves through a first region that is leaner than the stoichiometric ratio. It also determines a second change characteristic when the output first moves through a second region that includes the stoichiometric ratio. The system then uses both characteristics to identify a malfunction of the air-fuel ratio sensor.\n\nThis approach enables accurate detection of response deterioration in the downstream air-fuel ratio sensor while minimizing the influence of changes in the condition of the exhaust purification catalyst.",
+    "L3": "The internal combustion engine is equipped with an exhaust purification catalyst and an air-fuel ratio sensor located downstream of the catalyst. During operation, the engine performs fuel cut control by temporarily stopping or reducing the fuel supply. After the fuel cut is reset, the engine executes post-reset rich control, causing the exhaust gas air-fuel ratio to become richer than the stoichiometric ratio.\n\nTo evaluate the response of the downstream air-fuel ratio sensor, the diagnosis system calculates two air-fuel ratio change characteristics. The first characteristic is determined when the sensor output initially passes through a region on the lean side of the stoichiometric air-fuel ratio. The second characteristic is determined when the sensor output subsequently passes through a region that includes the stoichiometric air-fuel ratio.\n\nThe system compares these two change characteristics to assess whether the sensor’s response has degraded. Because the diagnosis relies on characteristics obtained from different portions of the sensor-output transition, it can distinguish sensor-response deterioration from variations caused by the condition or oxygen-storage state of the exhaust purification catalyst. As a result, the system diagnoses degraded sensor response with improved accuracy while minimizing the influence of changes in the catalyst’s state.",
+    "L4": "A diagnostic system is provided for detecting deterioration in the response of an air-fuel ratio sensor disposed in an exhaust passage downstream of an exhaust purification catalyst. During normal operation, the catalyst stores and releases oxygen, and changes in its oxygen-storage state can affect the downstream sensor output. Consequently, a diagnosis based only on the time required for the sensor output to change may incorrectly identify the sensor as abnormal when the observed delay is actually caused by a change in the catalyst state.\n\nTo improve diagnostic accuracy, the system performs diagnosis after a fuel-cut operation. During fuel cut, the exhaust gas becomes lean and the catalyst is supplied with oxygen. When fuel injection is resumed, the system temporarily performs rich air-fuel ratio control so that the exhaust gas changes from lean toward rich. The output of the downstream air-fuel ratio sensor is monitored throughout this transition.\n\nThe controller determines two different air-fuel ratio change characteristics from the sensor output. A first characteristic represents the response of the sensor while the detected air-fuel ratio remains within a lean region. A second characteristic represents the response over a range that includes the stoichiometric air-fuel ratio, such as the transition from the lean side through stoichiometry toward the rich side. Each characteristic may be expressed as a response time, a rate of output change, a difference between sensor values measured at selected times, or another parameter indicative of sensor responsiveness.\n\nThe lean-region characteristic is relatively useful for evaluating the intrinsic response of the sensor because it is less strongly affected by changes occurring in the catalyst near stoichiometry. The characteristic that includes the stoichiometric region, on the other hand, reflects both sensor behavior and the influence of oxygen release or consumption by the catalyst. By comparing the two characteristics, or by evaluating a value derived from both, the controller can distinguish a slow sensor response from an output delay caused primarily by variations in the catalyst’s oxygen-storage condition.\n\nFor example, the controller may determine that the sensor has deteriorated when both characteristics indicate an abnormally slow change, or when the relationship between the characteristics satisfies a predetermined abnormality criterion. If only the characteristic extending through the stoichiometric region shows a substantial delay, the controller may attribute the delay to the catalyst state rather than immediately concluding that the sensor is faulty. Thresholds used for this determination may be corrected according to operating conditions such as engine speed, engine load, exhaust temperature, catalyst temperature, and the duration of the preceding fuel-cut period.\n\nWhen the abnormality criterion is satisfied, the diagnostic system records a fault, may illuminate a malfunction indicator, and can store relevant operating data for service purposes. By using two air-fuel ratio change characteristics obtained during rich control following fuel-cut operation, the system accurately detects deterioration of the downstream air-fuel ratio sensor while reducing the possibility of erroneous diagnosis caused by changes in the oxygen-storage or purification state of the exhaust catalyst.",
+    "L5": "## The Power of “The”\n\n“The” is one of the smallest and most frequently used words in the English language. Known as the definite article, it points to a particular person, place, object, or idea. When we say “the book,” we usually mean a specific book that is already known or understood.\n\nDespite its simplicity, “the” plays an important role in communication. It helps make sentences precise, distinguishes the familiar from the general, and connects speakers through shared context. Without it, everyday English would often sound unclear or incomplete.\n\nThe word also shows how powerful language can be. Even a three-letter word can shape meaning, guide attention, and turn something ordinary into something specific. In this way, “the” is a small but essential building block of English."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize a patent describing a diagnostic system for detecting response deterioration in an air-fuel ratio sensor located downstream of an exhaust purification catalyst.",
+      "output": "The patent describes an onboard diagnostic system for identifying slow-response deterioration in an air–fuel ratio sensor installed downstream of an exhaust-gas purification catalyst.\n\nThe engine controller deliberately changes the upstream air–fuel ratio between rich and lean conditions and monitors the downstream sensor’s output. It evaluates how quickly the sensor signal responds—such as the delay before crossing a threshold or the rate of output change—while accounting for the catalyst’s oxygen-storage and purification effects. The measured response is compared with a reference or deterioration threshold under suitable operating conditions.\n\nIf the downstream sensor responds too slowly or fails to exhibit the expected change, the system determines that its response characteristics have degraded, stores a fault, and may activate an onboard-diagnostic warning. The approach distinguishes sensor deterioration from delays caused by the catalyst, improving diagnostic accuracy.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Explain how an internal combustion engine can diagnose an abnormal downstream air-fuel ratio sensor after fuel cut control while minimizing the influence of catalyst-state changes.",
+      "output": "After deceleration fuel cut, oxygen passes through the engine and is stored in the three-way catalyst, so the downstream air-fuel-ratio sensor indicates lean. When injection resumes—often with a controlled rich mixture—the catalyst first consumes/releases its stored oxygen and only afterward does the downstream gas become rich.\n\nA robust diagnosis therefore works as follows:\n\n1. **Detect the end of fuel cut** and establish a controlled post-fuel-cut air-fuel ratio, usually on the rich side.\n2. **Monitor the downstream sensor**, but do not judge it from the elapsed time since fuel injection resumed. That delay depends strongly on catalyst oxygen-storage state, temperature, and deterioration.\n3. **Use the sensor’s own transition as the reference.** Once its output reaches a first threshold, measure:\n   - the time required to reach a second threshold,\n   - the output-change rate or slope, or\n   - the integrated output change over a defined interval.\n4. **Compare that response with calibrated limits.** A transition that is too slow, too small, or absent indicates sensor degradation such as poor responsiveness or a stuck output.\n5. Perform the test only under suitable conditions—stable engine load, adequate catalyst/sensor temperature, and no conflicting fuel corrections—and repeat it before confirming a fault.\n\nCatalyst-state changes mainly alter **when the downstream transition begins**, because they change how much oxygen must be consumed. Measuring the response **between two downstream-sensor thresholds after the transition has started**, rather than from the end of fuel cut, largely removes that variable delay and makes the diagnosis more representative of the sensor itself.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write a patent-style abstract for an engine sensor diagnosis method that compares air-fuel ratio change characteristics in a lean region and a region including the stoichiometric ratio during post-reset rich control.",
+      "output": "An engine sensor diagnosis method is provided for diagnosing an air-fuel ratio sensor disposed in an exhaust passage of an internal combustion engine. After resetting a learned correction value associated with air-fuel ratio control, the engine is operated under rich air-fuel ratio control. During the rich control, a first change characteristic of an output of the air-fuel ratio sensor is acquired in a lean air-fuel ratio region, and a second change characteristic is acquired in a region including a stoichiometric air-fuel ratio. A diagnostic parameter is calculated by comparing the first change characteristic with the second change characteristic. An abnormality of the air-fuel ratio sensor is determined based on the diagnostic parameter, thereby distinguishing sensor response deterioration from variation caused by the learned correction value or an operating condition of the engine.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Describe the operation and technical advantage of a system that diagnoses deterioration in the response of a post-catalyst air-fuel ratio sensor using two air-fuel ratio transition characteristics.",
+      "output": "The system deliberately changes the engine air-fuel ratio so that exhaust leaving the catalyst undergoes transitions in both directions:\n\n1. **Lean-to-rich transition**\n2. **Rich-to-lean transition**\n\nThe output of the post-catalyst air-fuel ratio sensor is monitored during each transition. A controller determines two transition characteristics—such as threshold-crossing time, response delay, transition duration, or output-change rate—and compares them with reference values or with a predefined relationship between the two characteristics. If the combined result indicates that the sensor output changes too slowly or abnormally, the controller diagnoses deterioration of the downstream sensor.\n\nUsing both transition directions provides a more reliable diagnosis than using a single response measurement. It can detect direction-dependent or asymmetric sensor aging and reduce errors caused by catalyst oxygen-storage behavior, exhaust transport delay, sensor offset, and changing engine conditions. The result is earlier and more accurate identification of a degraded post-catalyst sensor, with fewer false diagnoses of catalyst failure.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a concise technical overview of an internal combustion engine diagnosis system involving fuel cut, post-reset rich control, an exhaust purification catalyst, and downstream air-fuel ratio sensor abnormality detection.",
+      "output": "The diagnosis system evaluates a downstream air-fuel ratio sensor located after an exhaust purification catalyst.\n\n- **Fuel cut:** During deceleration, fuel injection is stopped, causing oxygen-rich exhaust to pass through and oxidize the catalyst.\n- **Post-reset rich control:** When fuel injection resumes, the engine is temporarily operated richer than stoichiometric to consume stored oxygen and restore catalyst activity.\n- **Sensor monitoring:** The controller monitors the downstream sensor’s output during this rich-control period.\n- **Abnormality detection:** Based on catalyst oxygen-storage behavior, the downstream signal should transition toward a rich indication within an expected time or integrated fuel-enrichment amount. A delayed, insufficient, fixed, or otherwise implausible response indicates possible sensor deterioration, disconnection, or response failure.\n- **Diagnostic robustness:** Detection thresholds may account for catalyst temperature, airflow, enrichment magnitude, and catalyst oxygen-storage capacity to avoid confusing normal catalyst delay with a sensor fault.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.5452522255192878,
+      "excess_ratio": 0.37284774649932295,
+      "baseline_mean": 0.17240447901996478,
+      "baseline_n_valid": 5,
+      "output_chars": 1071,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5233415233415234,
+          "baseline_mean": 0.1288412925672626,
+          "excess_ratio": 0.3945002307742608
+        },
+        "bz2": {
+          "actual_ratio": 0.5032822757111597,
+          "baseline_mean": 0.16691912935925135,
+          "excess_ratio": 0.33636314635190834
+        },
+        "lzma": {
+          "actual_ratio": 0.6033057851239669,
+          "baseline_mean": 0.21461769894872623,
+          "excess_ratio": 0.3886880861752407
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.39581881533101043,
+      "excess_ratio": 0.22341433631104565,
+      "baseline_mean": 0.17240447901996478,
+      "baseline_n_valid": 5,
+      "output_chars": 969,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3401826484018265,
+          "baseline_mean": 0.1288412925672626,
+          "excess_ratio": 0.2113413558345639
+        },
+        "bz2": {
+          "actual_ratio": 0.3938144329896907,
+          "baseline_mean": 0.16691912935925135,
+          "excess_ratio": 0.22689530363043936
+        },
+        "lzma": {
+          "actual_ratio": 0.4453125,
+          "baseline_mean": 0.21461769894872623,
+          "excess_ratio": 0.23069480105127377
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.4227129337539432,
+      "excess_ratio": 0.25030845473397845,
+      "baseline_mean": 0.17240447901996478,
+      "baseline_n_valid": 5,
+      "output_chars": 1378,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4016949152542373,
+          "baseline_mean": 0.1288412925672626,
+          "excess_ratio": 0.27285362268697466
+        },
+        "bz2": {
+          "actual_ratio": 0.4009433962264151,
+          "baseline_mean": 0.16691912935925135,
+          "excess_ratio": 0.23402426686716377
+        },
+        "lzma": {
+          "actual_ratio": 0.46153846153846156,
+          "baseline_mean": 0.21461769894872623,
+          "excess_ratio": 0.24692076258973533
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.13786263327547726,
+      "excess_ratio": -0.034541845744487515,
+      "baseline_mean": 0.17240447901996478,
+      "baseline_n_valid": 5,
+      "output_chars": 3398,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.10725075528700906,
+          "baseline_mean": 0.1288412925672626,
+          "excess_ratio": -0.021590537280253536
+        },
+        "bz2": {
+          "actual_ratio": 0.13861386138613863,
+          "baseline_mean": 0.16691912935925135,
+          "excess_ratio": -0.028305267973112724
+        },
+        "lzma": {
+          "actual_ratio": 0.166189111747851,
+          "baseline_mean": 0.21461769894872623,
+          "excess_ratio": -0.04842858720087523
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.0630630630630631,
+      "excess_ratio": -0.10934141595690168,
+      "baseline_mean": 0.17240447901996478,
+      "baseline_n_valid": 5,
+      "output_chars": 792,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.035789473684210524,
+          "baseline_mean": 0.1288412925672626,
+          "excess_ratio": -0.09305181888305207
+        },
+        "bz2": {
+          "actual_ratio": 0.06457925636007827,
+          "baseline_mean": 0.16691912935925135,
+          "excess_ratio": -0.10233987299917308
+        },
+        "lzma": {
+          "actual_ratio": 0.08450704225352113,
+          "baseline_mean": 0.21461769894872623,
+          "excess_ratio": -0.1301106566952051
+        }
+      }
+    }
+  }
+}

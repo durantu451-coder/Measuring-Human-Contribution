@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15763914",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nAn action detection system that can alleviate false notifications that occur in unexpected situations is provided. An action detection system (300) includes an acquisition unit (150) acquiring an image, a storage unit storing a state transition table (222) for specifying transition relationship between a plurality of types of actions, notification action information (226) defining a notification target action, and a current action (224) of the care-recipient, an action detection unit (255) for specifying a transitionable action to which transition can be made from the current action (224) on the basis of the state transition table (222), and detecting the transitionable action on the basis of the image, a transition control unit (260) for updating the current action (224) to a new action detected, a notification unit (270) for, in a case where the new action is the notification target action, providing notification of a type of the new action, and an update unit (285) for, in a case where a first condition defined in advance indicating that it is not suitable to determine the type of the action of the care-recipient is satisfied, reducing the type of the notification target action and updating the transition relationship of the state transition table (222).",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nAn action detection system that can alleviate false notifications that occur in unexpected situations is provided. An action detection system (300) includes an acquisition unit (150) acquiring an image, a storage unit storing a state transition table (222) for specifying transition relationship between a plurality of types of actions, notification action information (226) defining a notification target action, and a current action (224) of the care-recipient, an action detection unit (255) for specifying a transitionable action to which transition can be made from the current action (224) on the basis of the state transition table (222), and detecting the transitionable action on the basis of the image, a transition control unit (260) for updating the current action (224) to a new action detected, a notification unit (270) for, in a case where the new action is the notification target action, providing notification of a type of the new action, and an update unit (285) for, in a case where a first condition defined in advance indicating that it is not suitable to determine the type of the action of the care-recipient is satisfied, reducing the type of the notification target action and updating the transition relationship of the state transition table (222).",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The action detection system is designed to reduce false notifications that occur in unexpected situations.\n- The system acquires images and uses a state transition table to determine which actions a care-recipient can transition to from their current action.\n- The action detection unit detects only transitionable actions based on the acquired image and the stored transition relationships.\n- When a newly detected action is a notification target action, the system sends a notification indicating the type of action.\n- If predefined conditions indicate that action type determination is unsuitable, the system reduces the notification target actions and updates the state transition table.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nAn action detection system for care recipients uses captured images, stored state-transition rules, current-action tracking, and notification target definitions to detect only actions that are transitionable from the current state. When predefined conditions indicate action classification is unreliable, the system narrows notification target actions and updates transition relationships, reducing false notifications in unexpected situations.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: An action detection"
+  },
+  "outputs": {
+    "L1": "Provided is an action detection system capable of reducing false notifications that may occur in unexpected situations. The action detection system (300) includes: an acquisition unit (150) configured to acquire an image; a storage unit configured to store a state transition table (222) specifying transition relationships among a plurality of types of actions, notification action information (226) defining a notification target action, and a current action (224) of a care-recipient; an action detection unit (255) configured to identify, based on the state transition table (222), a transitionable action to which a transition can be made from the current action (224), and to detect the transitionable action based on the image; a transition control unit (260) configured to update the current action (224) to a newly detected action; a notification unit (270) configured to provide notification of a type of the newly detected action when the newly detected action is the notification target action; and an update unit (285) configured to reduce the type of the notification target action and update the transition relationship of the state transition table (222) when a predefined first condition indicating that it is not suitable to determine the type of action of the care-recipient is satisfied.",
+    "L2": "An action detection system is introduced that helps reduce false alerts in unforeseen circumstances. The action detection system (300) comprises: an acquisition unit (150) that obtains an image; a storage unit that stores a state transition table (222) indicating transition relationships among multiple action types, notification action information (226) identifying an action subject to notification, and the care recipient’s current action (224); an action detection unit (255) that, based on the state transition table (222), identifies an action that can be transitioned to from the current action (224) and detects that transitionable action from the image; a transition control unit (260) that changes the current action (224) to the newly detected action; a notification unit (270) that issues a notification indicating the type of the new action when the new action corresponds to the notification target action; and an update unit (285) that, when a predetermined first condition showing that determining the care recipient’s action type is unsuitable is met, decreases the type of the notification target action and revises the transition relationships in the state transition table (222).",
+    "L3": "The action detection system is designed to reduce false notifications that may occur when a care-recipient behaves in an unexpected or unusual way. By limiting the range of actions that can be detected and reported according to the care-recipient’s current state, the system improves the reliability of notifications and helps prevent unnecessary alerts.\n\nThe system acquires images of the care-recipient and analyzes them to determine the person’s current action. To support this determination, the system uses a state transition table. This table stores information indicating which actions the care-recipient can transition to from their current action. For example, if the care-recipient is currently lying down, the table may indicate that the next possible actions include sitting up or getting out of bed, while unrelated actions may be excluded.\n\nBased on the acquired image and the transition relationships stored in the state transition table, the action detection unit detects only those actions that are considered transitionable from the current action. In other words, the system does not attempt to detect every possible action at all times. Instead, it narrows the detection candidates to actions that are likely or logically possible given the care-recipient’s present state. This reduces the chance of incorrectly identifying an action and issuing a false notification.\n\nWhen the action detection unit detects a new action, the system determines whether that action is a notification target action. If the newly detected action is included among the notification target actions, the system sends a notification indicating the type of action that has occurred. This allows caregivers or monitoring personnel to be promptly informed of important actions, such as the care-recipient getting out of bed, falling, or performing another action that requires attention.\n\nIn some situations, however, it may be unsuitable to determine the type of action based on the acquired image or the current detection conditions. For example, the image may be unclear, the care-recipient may be partially hidden, or the detected state may not match expected transition patterns. When predefined conditions indicate that action type determination is unsuitable, the system reduces the number of actions treated as notification target actions. The system also updates the state transition table so that future detections are based on more appropriate transition relationships.\n\nThrough this process, the system dynamically adjusts both the actions subject to notification and the state transition relationships used for detection. As a result, it can continue monitoring the care-recipient while reducing false notifications caused by ambiguous images, unexpected postures, or other unsuitable detection conditions.",
+    "L4": "An action detection system for care recipients is configured to monitor the behavior of a person receiving care, such as an elderly person, a patient, or another monitored individual, by analyzing captured images obtained from one or more imaging devices. The system stores, in advance, information defining possible actions of the care recipient and state-transition rules that indicate which actions can validly follow from a current action or state. For example, if the care recipient is currently determined to be lying in bed, the system may determine that actions such as sitting up, getting out of bed, or remaining in bed are transitionable actions, while unrelated actions that cannot reasonably occur from that state are excluded from detection candidates.\n\nThe system maintains information indicating the currently detected action or current state of the care recipient. When a new image or sequence of images is captured, the system does not classify the action from among all possible actions without restriction. Instead, it refers to the stored state-transition rules and identifies only those actions that are transitionable from the current action or state. Action detection processing is then performed using this narrowed set of candidate actions. By limiting the detection targets in this manner, the system can improve detection accuracy and reduce the likelihood that an action unrelated to the care recipient’s actual state will be incorrectly detected.\n\nThe system also stores notification target definitions. These definitions specify which detected actions should cause a notification to be sent to a caregiver, nurse, family member, monitoring center, or other notification destination. For instance, actions such as falling, attempting to leave a bed, wandering, or remaining in an unusual posture may be defined as notification target actions. When an action detected from the captured images corresponds to a notification target, the system generates and transmits an alert or notification to the appropriate destination.\n\nIn addition, the system determines whether predefined conditions indicate that action classification may be unreliable. Such conditions may include, for example, a sudden change in the captured image, occlusion of the care recipient, poor lighting, a low confidence score in image recognition processing, inconsistency between a detected action and the stored transition rules, or another unexpected situation that makes it difficult to classify the care recipient’s action accurately. When one or more of these conditions are satisfied, the system treats the current detection environment as one in which ordinary action classification may produce a false result.\n\nIn response to such a condition, the system narrows the set of actions that are treated as notification targets. That is, instead of sending notifications for all normally defined notification target actions, the system restricts notification processing to a smaller group of actions that are more appropriate or more reliably detectable under the current circumstances. The system may also update the transition relationships between actions so that future action detection is performed according to transition rules better suited to the unexpected situation. For example, the system may temporarily add, remove, or modify transitionable actions based on the newly recognized state or the reduced reliability of the image-based classification.\n\nThrough this control, the system avoids generating notifications based on action classifications that are likely to be incorrect. In ordinary circumstances, the system detects actions by using the current state and the stored transition rules to limit candidate actions, and it issues notifications according to the notification target definitions. In situations where the reliability of action classification decreases, the system further restricts notification target actions and revises transition relationships. As a result, the system can reduce false notifications while still enabling caregivers or other responsible persons to be notified of important actions or events involving the care recipient.",
+    "L5": "**An Action Detection**\n\nAn action detection system is a technology designed to identify and understand specific movements or activities in images, videos, or real-time camera feeds. It is commonly used in fields such as security, sports analysis, healthcare, robotics, and smart surveillance. By analyzing visual data, action detection can recognize activities such as walking, running, jumping, falling, fighting, waving, or carrying an object.\n\nThe main goal of action detection is not only to classify what action is happening but also to determine when and where it occurs. For example, in a surveillance video, the system may detect a person entering a restricted area or identify unusual behavior in a crowded place. In healthcare, action detection can help monitor elderly people and alert caregivers if a fall is detected.\n\nModern action detection often uses artificial intelligence and deep learning. These systems are trained on large datasets containing many examples of human actions. Once trained, they can process new videos and detect actions automatically. Advanced models can also work in real time, making them useful for applications that require quick responses.\n\nDespite its advantages, action detection still faces challenges. Changes in lighting, camera angles, crowded scenes, and similar-looking actions can make detection difficult. Privacy concerns are also important, especially when the technology is used in public spaces.\n\nOverall, action detection is an important area of computer vision that helps machines understand human behavior. As the technology continues to improve, it is expected to become more accurate, reliable, and widely used in everyday life."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a patent-style abstract for an action detection system for monitoring a care-recipient, including image acquisition, state transition table, current action, notification target actions, transition control, notification, and reducing false alerts in unsuitable detection conditions.",
+      "output": "An action detection system for monitoring a care-recipient includes an image acquisition unit configured to acquire image data of a monitoring area including the care-recipient, an action detection unit configured to detect a current action of the care-recipient from the image data, and a state transition table defining permitted transitions among a plurality of action states. A transition control unit determines whether to update a current action state based on the detected current action and the state transition table, and suppresses or modifies state transitions that are inconsistent with permitted transition paths. A notification setting unit designates one or more notification target actions for which an alert is to be issued. A notification unit transmits a notification to a caregiver or external device when the updated current action state corresponds to a notification target action. The system further includes a detection-condition determination unit configured to determine whether image-based action detection is unsuitable due to conditions such as occlusion, poor illumination, abnormal posture, image noise, or absence from a detectable region, and to restrict notification, defer state transition, or require confirmation when such unsuitable conditions are present, thereby reducing false alerts while enabling timely monitoring of the care-recipient.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize the invention in one paragraph using patent claim language: an action detection system (300) with units 150, 255, 260, 270, and 285 that detects care-recipient actions from images and updates notification targets and state transitions to prevent false notifications.",
+      "output": "An action detection system (300) comprising an image acquisition unit (150), an action detection unit (255), a state management unit (260), a notification target updating unit (270), and a notification control unit (285), wherein the image acquisition unit (150) acquires images of a care recipient, the action detection unit (255) detects, from the acquired images, one or more actions of the care recipient, the state management unit (260) determines and updates a state transition of the care recipient based on the detected actions, the notification target updating unit (270) updates a notification target according to the determined state transition and/or a current care-recipient state, and the notification control unit (285) controls issuance of a notification to the updated notification target, such that notifications are generated only when the detected action and corresponding state transition satisfy predetermined notification conditions, thereby suppressing or preventing false notifications caused by transient, erroneous, or non-notifiable detected actions.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate an English patent abstract for a care monitoring AI system that detects only transitionable actions based on a stored state transition table and suppresses notification target actions when a predefined condition makes action determination unsuitable.",
+      "output": "A care monitoring system includes an image acquisition unit, an action estimation unit, a storage unit, and a notification control unit. The storage unit stores a state transition table defining permitted transitions between a plurality of care-recipient action states. The action estimation unit analyzes sensor data, including captured images, to estimate a current action of a care recipient, and determines the current action as a detected action only when transition from a previously detected action to the estimated current action is permitted by the state transition table. The notification control unit determines whether the detected action corresponds to a notification target action. When a predefined condition indicating that action determination is unsuitable is satisfied, the notification control unit suppresses notification even if the estimated or detected action corresponds to the notification target action. Accordingly, erroneous detection and unnecessary notification caused by non-transitionable action estimation or unsuitable determination conditions are reduced, enabling more reliable monitoring of a care recipient.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Describe an action detection system that alleviates false notifications in unexpected situations, mentioning an acquisition unit acquiring images, storage of current action and notification action information, detection of transitionable actions, updating current action, and issuing notifications.",
+      "output": "An action detection system may reduce false notifications in unexpected situations by managing notifications according to whether a detected action is a valid transition from a previously recognized action.\n\nThe system includes:\n\n- **An acquisition unit** configured to acquire images, such as video frames or sequential image data, of a monitored subject or scene.\n- **A storage unit** that stores:\n  - **current action information**, indicating an action currently recognized as being performed, and\n  - **notification action information**, indicating actions for which a notification should be issued.\n- **An action detection unit** configured to analyze the acquired images and detect an action of the subject.\n- **A transition determination unit** configured to determine whether the detected action is a **transitionable action** from the action indicated by the stored current action information. In other words, the system checks whether the newly detected action is a plausible or permitted next action based on the current action state.\n- **An update unit** configured to update the current action information when the detected action is determined to be transitionable.\n- **A notification unit** configured to issue a notification when the updated current action corresponds to an action included in the notification action information.\n\nBy issuing notifications only after confirming that a detected action is transitionable from the current action state, the system can suppress erroneous alerts caused by momentary misrecognition, occlusion, unusual postures, or other unexpected situations. This helps prevent false notifications while still allowing notifications for meaningful action events.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Draft a Japanese-to-English style patent abstract for an action detection apparatus for a care recipient, where an update unit reduces notification target action types and modifies a state transition table when action type determination is inappropriate.",
+      "output": "An action detection apparatus for a care recipient includes an action detection unit configured to detect an action of the care recipient, an action type determination unit configured to determine an action type of the detected action by referring to a state transition table defining transition relationships among a plurality of action types, a notification unit configured to issue a notification when the determined action type corresponds to a notification target action type, and an update unit configured to update determination conditions. When it is determined that determination of the action type is inappropriate, the update unit reduces the number of action types set as notification target action types and modifies the state transition table so as to restrict or change a transition used for the action type determination. Accordingly, unnecessary notifications caused by inappropriate action type determination can be suppressed, and action detection suitable for the condition of the care recipient can be performed.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6173076923076923,
+      "excess_ratio": 0.3926001878565567,
+      "baseline_mean": 0.2247075044511356,
+      "baseline_n_valid": 5,
+      "output_chars": 1307,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6083333333333333,
+          "baseline_mean": 0.1779789952977851,
+          "excess_ratio": 0.4303543380355482
+        },
+        "bz2": {
+          "actual_ratio": 0.5706106870229007,
+          "baseline_mean": 0.2219273619589719,
+          "excess_ratio": 0.34868332506392885
+        },
+        "lzma": {
+          "actual_ratio": 0.6690647482014388,
+          "baseline_mean": 0.2665436755833185,
+          "excess_ratio": 0.4025210726181203
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4378205128205129,
+      "excess_ratio": 0.21311300836937727,
+      "baseline_mean": 0.2247075044511356,
+      "baseline_n_valid": 5,
+      "output_chars": 1200,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3760330578512397,
+          "baseline_mean": 0.1779789952977851,
+          "excess_ratio": 0.1980540625534546
+        },
+        "bz2": {
+          "actual_ratio": 0.43702290076335876,
+          "baseline_mean": 0.2219273619589719,
+          "excess_ratio": 0.21509553880438687
+        },
+        "lzma": {
+          "actual_ratio": 0.4927536231884058,
+          "baseline_mean": 0.2665436755833185,
+          "excess_ratio": 0.22620994760508734
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.23601720958819922,
+      "excess_ratio": 0.011309705137063614,
+      "baseline_mean": 0.2247075044511356,
+      "baseline_n_valid": 5,
+      "output_chars": 2812,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.21354656632173094,
+          "baseline_mean": 0.1779789952977851,
+          "excess_ratio": 0.03556757102394584
+        },
+        "bz2": {
+          "actual_ratio": 0.2195589645254075,
+          "baseline_mean": 0.2219273619589719,
+          "excess_ratio": -0.002368397433564401
+        },
+        "lzma": {
+          "actual_ratio": 0.27177700348432055,
+          "baseline_mean": 0.2665436755833185,
+          "excess_ratio": 0.005233327901002061
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.11568973115910092,
+      "excess_ratio": -0.10901777329203469,
+      "baseline_mean": 0.2247075044511356,
+      "baseline_n_valid": 5,
+      "output_chars": 4172,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.09066843150231635,
+          "baseline_mean": 0.1779789952977851,
+          "excess_ratio": -0.08731056379546875
+        },
+        "bz2": {
+          "actual_ratio": 0.11302549965541006,
+          "baseline_mean": 0.2219273619589719,
+          "excess_ratio": -0.10890186230356183
+        },
+        "lzma": {
+          "actual_ratio": 0.14213197969543148,
+          "baseline_mean": 0.2665436755833185,
+          "excess_ratio": -0.124411695887887
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.04720543806646522,
+      "excess_ratio": -0.1775020663846704,
+      "baseline_mean": 0.2247075044511356,
+      "baseline_n_valid": 5,
+      "output_chars": 1691,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.016786570743405275,
+          "baseline_mean": 0.1779789952977851,
+          "excess_ratio": -0.16119242455437982
+        },
+        "bz2": {
+          "actual_ratio": 0.04988399071925754,
+          "baseline_mean": 0.2219273619589719,
+          "excess_ratio": -0.17204337123971436
+        },
+        "lzma": {
+          "actual_ratio": 0.07142857142857142,
+          "baseline_mean": 0.2665436755833185,
+          "excess_ratio": -0.19511510415474706
+        }
+      }
+    }
+  }
+}

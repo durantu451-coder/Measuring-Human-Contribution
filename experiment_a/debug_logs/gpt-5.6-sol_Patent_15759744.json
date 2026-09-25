@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15759744",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nA method and apparatus are disclosed for recording, at a recording device, a media feed relating to a scene; receiving a series of wireless synchronisation messages at the recording device; recording a time stamp value with respect to each of the received messages indicating a time of receipt, and storing the time stamp values and the media feed. A method and apparatus are also disclosed for receiving, from each of a first and second recording device, a media feed recorded by the respective recording device and a series of time stamp values, wherein each time stamp value indicates a time of receipt of one of a series of wireless synchronisation messages at the respective recording device, and aligning the set of time stamp values received from a first recording device with the set of time stamp values received from a second recording device to synchronise the media feed received from the first recording device with the media feed received from the second recording device.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nA method and apparatus are disclosed for recording, at a recording device, a media feed relating to a scene; receiving a series of wireless synchronisation messages at the recording device; recording a time stamp value with respect to each of the received messages indicating a time of receipt, and storing the time stamp values and the media feed. A method and apparatus are also disclosed for receiving, from each of a first and second recording device, a media feed recorded by the respective recording device and a series of time stamp values, wherein each time stamp value indicates a time of receipt of one of a series of wireless synchronisation messages at the respective recording device, and aligning the set of time stamp values received from a first recording device with the set of time stamp values received from a second recording device to synchronise the media feed received from the first recording device with the media feed received from the second recording device.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A recording device captures a media feed relating to a scene.\n- The recording device receives a series of wireless synchronisation messages.\n- A timestamp indicating the receipt time of each synchronisation message is recorded and stored with the media feed.\n- Media feeds and their associated timestamp series are received from first and second recording devices.\n- The timestamp sets are aligned to synchronise the media feeds from the two recording devices.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe method records media feeds at multiple devices while timestamping received wireless synchronization messages and storing the timestamps with each feed. Aligning the timestamp series across devices synchronizes their media recordings, enabling coordinated playback or processing of the same scene.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: A method and"
+  },
+  "outputs": {
+    "L1": "A method and apparatus are disclosed for recording, at a recording device, a media feed relating to a scene; receiving, at the recording device, a series of wireless synchronisation messages; recording, for each received message, a timestamp value indicating its time of receipt; and storing the timestamp values and the media feed. A method and apparatus are also disclosed for receiving, from each of first and second recording devices, a media feed recorded by the respective recording device and a series of timestamp values, each indicating the time at which one of a series of wireless synchronisation messages was received by the respective recording device; and aligning the set of timestamp values received from the first recording device with the set received from the second recording device to synchronise the respective media feeds.",
+    "L2": "A technique and associated equipment are provided in which a recording unit captures media associated with a scene while also detecting multiple wireless synchronization signals. For every signal detected, the unit logs a timestamp identifying when that signal arrived, then saves both the captured media and the logged timestamps.\n\nAlso provided are a technique and associated equipment for obtaining, from two recording units, their respective captured media and timestamp sequences. Each timestamp represents when the corresponding unit received a particular wireless synchronization signal. The timestamp sequence from the first unit is matched with the sequence from the second unit, thereby temporally synchronizing the media captured by the two units.",
+    "L3": "A recording device captures a media feed associated with a particular scene. While capturing the feed, the device receives a series of wireless synchronisation messages. For each synchronisation message, the device records a timestamp indicating when the message was received and stores the resulting series of timestamps in association with the captured media feed.\n\nMedia feeds and their corresponding timestamp series are subsequently obtained from first and second recording devices. The two sets of timestamps are compared and temporally aligned based on corresponding synchronisation messages. This alignment establishes the relative timing of the recordings, enabling the media feeds captured by the two devices to be synchronised accurately.",
+    "L4": "A synchronization method enables media captured by multiple recording devices to be aligned without requiring the devices to share a direct media connection or a perfectly synchronized internal clock. Each device records a local media feed, such as audio, video, sensor data, or a combination of these. While recording, the devices also receive wireless synchronization messages transmitted within reception range. When a synchronization message is received, each device records a timestamp based on its local clock and stores that timestamp, together with an identifier or sequence value for the message, as metadata associated with the media feed.\n\nBecause the same synchronization messages are detected by multiple devices, the resulting timestamp series provides a set of common reference events. A processing system compares the message identifiers and their corresponding local timestamps to determine the temporal relationship between the recordings. Differences between matching timestamps can be used to calculate an initial offset, while multiple timestamp pairs can be analyzed to compensate for clock drift, transmission variability, missed messages, or other timing errors.\n\nThe determined timing relationship is then applied to the media feeds so that corresponding portions of the recordings are aligned on a common timeline. The synchronized feeds may be played back together, combined into a multi-camera presentation, mixed as multichannel audio, or processed for editing, analysis, reconstruction, or event detection. In this way, recordings made independently at different devices can be coordinated to represent the same scene or event in temporal alignment.",
+    "L5": "Could you please complete the topic or provide the remaining keywords? “A method and” appears to be incomplete."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent abstract for a system that synchronises media feeds from multiple recording devices using timestamps generated when each device receives wireless synchronisation messages.",
+      "output": "A system for synchronising media feeds captured by multiple recording devices is disclosed. A wireless synchronisation source transmits synchronisation messages to the recording devices. Upon receiving a synchronisation message, each recording device generates a local timestamp using a respective device clock and associates the timestamp with media data captured by that device. The timestamps, optionally together with identifiers or sequence information contained in the synchronisation messages, are provided to a synchronisation processor. The processor determines temporal relationships among the device clocks and calculates timing offsets, drift corrections, or both. The processor applies the determined relationships to align corresponding portions of the media feeds on a common timeline. The system may compensate for message transmission or reception delay and may update the alignment using subsequently received synchronisation messages. Synchronous playback, editing, analysis, or storage of audio, video, sensor, or other time-dependent media captured by spatially separated devices is thereby enabled.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Describe a method and apparatus for recording audiovisual media and later aligning recordings from two devices based on timestamped wireless sync signals.",
+      "output": "### Method\n\n1. **Record audiovisual media independently**  \n   A first recording device and a second recording device each capture audiovisual media using a respective local clock. Each device associates captured audio samples and video frames with local media timestamps.\n\n2. **Exchange or receive wireless synchronization signals**  \n   During recording, one device—or a separate synchronization transmitter—periodically transmits wireless sync signals. Each signal contains a sequence identifier and, optionally, a transmitter timestamp. The signals may be sent using Bluetooth, Wi‑Fi, ultra-wideband, radio-frequency, infrared, or another wireless protocol.\n\n3. **Timestamp sync-signal events**  \n   Upon transmitting or receiving a sync signal, each recording device records an event timestamp derived from the same local clock used to timestamp its media. Preferably, timestamping occurs at or near the radio hardware or driver layer to reduce variable communication latency. The event record may be stored as metadata, in a sidecar file, or in a dedicated track within the media file.\n\n4. **Identify corresponding events**  \n   After recording, event records from the two devices are compared. Matching sequence identifiers, signal payloads, or detected signal patterns identify sync events that correspond to one another.\n\n5. **Estimate clock relationship**  \n   Corresponding event timestamps are used to determine a mapping between the devices’ media timelines. With one matched event, a relative time offset can be estimated. With multiple events, both offset and clock-rate difference may be estimated, for example using:\n\n   \\[\n   t_2 = a t_1 + b\n   \\]\n\n   where \\(b\\) represents relative clock offset and \\(a\\) represents clock drift or rate difference. Regression, outlier rejection, and latency compensation may be applied when deriving the mapping.\n\n6. **Align the recordings**  \n   Timestamps for one recording are transformed using the estimated mapping. The recordings are then shifted and, when necessary, time-scaled or resampled so that media captured at the same physical time is presented synchronously. Audio correlation or visual feature matching may optionally refine the alignment.\n\n### Apparatus\n\nAn audiovisual recording apparatus may include:\n\n- one or more cameras and microphones;\n- a media encoder and storage subsystem;\n- a local clock or timestamp counter;\n- a wireless transmitter, receiver, or transceiver;\n- a synchronization-event detector;\n- a timestamping circuit configured to timestamp wireless sync events using the media clock;\n- memory configured to store recorded media and associated sync-event records; and\n- a processor configured to match sync events from another device, estimate clock offset and drift, and generate an aligned playback or editing timeline.\n\nIn one implementation, a designated master device broadcasts numbered sync packets while all recording devices timestamp reception. In another, devices exchange request-and-response packets so that propagation and processing delay can be estimated. Hardware-level timestamps, repeated sync events, and bidirectional timing measurements improve alignment accuracy where wireless packet latency is variable.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write a concise, patent-style summary of an invention for synchronising separate camera recordings without requiring the cameras to share a common internal clock.",
+      "output": "A system and method synchronise recordings from multiple cameras having independent clocks. Each camera captures a common time-varying reference event, such as an optical, acoustic, or scene-based signal, within its recording. Corresponding occurrences of the reference event are detected in the recordings and used to determine relative temporal offsets and, optionally, clock-rate drift. The recordings are then temporally aligned by shifting, resampling, or mapping their respective timelines according to the determined offsets and drift. Synchronisation is thereby achieved without requiring a shared internal clock, wired timing connection, or prior clock calibration.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate an abstract for a patent covering both device-side recording of wireless message receipt times and server-side synchronisation of media feeds using those timestamps.",
+      "output": "A system and method for synchronizing media feeds based on wireless message receipt times are disclosed. A wireless device receives one or more messages associated with media acquisition and records, for each message, a device-side receipt timestamp generated using a local clock. The device captures a media feed and stores or transmits the receipt timestamps together with media timing information and, optionally, message identifiers, transmission timestamps, clock-state data, or network metadata. A server receives media feeds and associated receipt timestamps from multiple devices, determines timing relationships among the devices using corresponding wireless messages, and calculates synchronization offsets that account for differences in local clocks and message delivery. The server temporally aligns, combines, selects, or presents the media feeds according to the calculated offsets. Receipt timestamps may be derived at an application, operating-system, driver, or hardware layer, and synchronization may be refined using multiple messages, statistical filtering, clock-drift estimation, or confidence measures.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Explain in formal intellectual-property language how two independently recorded media feeds can be synchronised by matching sets of timestamps associated with received wireless synchronisation messages.",
+      "output": "A method for synchronising independently recorded media feeds may comprise:\n\n1. **Receiving synchronisation messages.**  \n   A first recording device and a second recording device each receive a plurality of wireless synchronisation messages transmitted by a common source or otherwise identifiable as corresponding messages.\n\n2. **Generating timestamp sets.**  \n   For each received synchronisation message, each recording device records a timestamp generated according to its respective local clock. The first recording device thereby produces a first set of timestamps, and the second recording device produces a second set of timestamps. Each timestamp may be associated with a message identifier, sequence number, payload value, transmission event, or other correspondence indicator.\n\n3. **Establishing timestamp correspondences.**  \n   Timestamps in the first set are matched to timestamps in the second set based on the correspondence indicators, such that each matched timestamp pair represents reception of the same wireless synchronisation message, or of messages having a known temporal relationship.\n\n4. **Determining a temporal mapping.**  \n   The matched timestamp pairs are processed to determine a transformation between the local time bases of the recording devices. The transformation may include a temporal offset and, where the clocks operate at different rates, a clock-drift or scaling term. For example, the relationship may be represented as:\n\n   \\[\n   t_2 = a t_1 + b\n   \\]\n\n   where \\(t_1\\) is a timestamp in the first time base, \\(t_2\\) is a corresponding timestamp in the second time base, \\(a\\) represents relative clock rate, and \\(b\\) represents temporal offset. The parameters may be estimated from multiple matched pairs using regression, interpolation, filtering, outlier rejection, or another fitting technique.\n\n5. **Synchronising the media feeds.**  \n   Media timestamps, sample positions, frame positions, or playback times associated with one or both recorded feeds are converted using the determined temporal mapping. The feeds may then be aligned on a common timeline, notwithstanding that they were captured independently and without a shared recording clock.\n\nIn claim-oriented language, the subject matter may be expressed as:\n\n> A computer-implemented method comprising: obtaining a first media feed recorded according to a first local clock and a second media feed recorded according to a second local clock; obtaining a first plurality of timestamps representing receipt, by a first device, of respective wireless synchronisation messages; obtaining a second plurality of timestamps representing receipt, by a second device, of corresponding wireless synchronisation messages; matching timestamps of the first plurality with timestamps of the second plurality according to identifiers associated with the respective wireless synchronisation messages; determining, from a plurality of matched timestamp pairs, a temporal relationship between the first local clock and the second local clock; and synchronising the first media feed with the second media feed in accordance with the determined temporal relationship.\n\nUsing multiple message-derived timestamp pairs can compensate for clock offset, oscillator drift, reception jitter, missing messages, and anomalous measurements, thereby providing more robust synchronisation than reliance on a single synchronisation event.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7147208121827411,
+      "excess_ratio": 0.5830611469296827,
+      "baseline_mean": 0.13165966525305833,
+      "baseline_n_valid": 5,
+      "output_chars": 845,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6838487972508591,
+          "baseline_mean": 0.09777144625667736,
+          "excess_ratio": 0.5860773509941818
+        },
+        "bz2": {
+          "actual_ratio": 0.6856287425149701,
+          "baseline_mean": 0.12700547410045698,
+          "excess_ratio": 0.5586232684145132
+        },
+        "lzma": {
+          "actual_ratio": 0.7666666666666667,
+          "baseline_mean": 0.1647850492975818,
+          "excess_ratio": 0.6018816173690849
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.28708551483420597,
+      "excess_ratio": 0.15542584958114763,
+      "baseline_mean": 0.13165966525305833,
+      "baseline_n_valid": 5,
+      "output_chars": 758,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2005813953488372,
+          "baseline_mean": 0.09777144625667736,
+          "excess_ratio": 0.10280994909215985
+        },
+        "bz2": {
+          "actual_ratio": 0.3036649214659686,
+          "baseline_mean": 0.12700547410045698,
+          "excess_ratio": 0.1766594473655116
+        },
+        "lzma": {
+          "actual_ratio": 0.34285714285714286,
+          "baseline_mean": 0.1647850492975818,
+          "excess_ratio": 0.17807209355956105
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.4268077601410935,
+      "excess_ratio": 0.2951480948880352,
+      "baseline_mean": 0.13165966525305833,
+      "baseline_n_valid": 5,
+      "output_chars": 749,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3746312684365782,
+          "baseline_mean": 0.09777144625667736,
+          "excess_ratio": 0.2768598221799008
+        },
+        "bz2": {
+          "actual_ratio": 0.42036553524804177,
+          "baseline_mean": 0.12700547410045698,
+          "excess_ratio": 0.2933600611475848
+        },
+        "lzma": {
+          "actual_ratio": 0.47572815533980584,
+          "baseline_mean": 0.1647850492975818,
+          "excess_ratio": 0.310943106042224
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.15889830508474578,
+      "excess_ratio": 0.02723863983168745,
+      "baseline_mean": 0.13165966525305833,
+      "baseline_n_valid": 5,
+      "output_chars": 1679,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1087248322147651,
+          "baseline_mean": 0.09777144625667736,
+          "excess_ratio": 0.010953385958087744
+        },
+        "bz2": {
+          "actual_ratio": 0.16861219195849547,
+          "baseline_mean": 0.12700547410045698,
+          "excess_ratio": 0.04160671785803849
+        },
+        "lzma": {
+          "actual_ratio": 0.1943127962085308,
+          "baseline_mean": 0.1647850492975818,
+          "excess_ratio": 0.029527746910949004
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.34502923976608185,
+      "excess_ratio": 0.21336957451302352,
+      "baseline_mean": 0.13165966525305833,
+      "baseline_n_valid": 5,
+      "output_chars": 111,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2916666666666667,
+          "baseline_mean": 0.09777144625667736,
+          "excess_ratio": 0.19389522040998933
+        },
+        "bz2": {
+          "actual_ratio": 0.288135593220339,
+          "baseline_mean": 0.12700547410045698,
+          "excess_ratio": 0.161130119119882
+        },
+        "lzma": {
+          "actual_ratio": 0.4375,
+          "baseline_mean": 0.1647850492975818,
+          "excess_ratio": 0.2727149507024182
+        }
+      }
+    }
+  }
+}

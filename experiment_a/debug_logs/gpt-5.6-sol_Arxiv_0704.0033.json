@@ -1,0 +1,175 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0033",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe performed a rigorous theoretical convergence analysis of the discrete dipole approximation (DDA). We prove that errors in any measured quantity are bounded by a sum of a linear and quadratic term in the size of a dipole d, when the latter is in the range of DDA applicability. Moreover, the linear term is significantly smaller for cubically than for non-cubically shaped scatterers. Therefore, for small d errors for cubically shaped particles are much smaller than for non-cubically shaped. The relative importance of the linear term decreases with increasing size, hence convergence of DDA for large enough scatterers is quadratic in the common range of d. Extensive numerical simulations were carried out for a wide range of d. Finally we discuss a number of new developments in DDA and their consequences for convergence.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe performed a rigorous theoretical convergence analysis of the discrete dipole approximation (DDA). We prove that errors in any measured quantity are bounded by a sum of a linear and quadratic term in the size of a dipole d, when the latter is in the range of DDA applicability. Moreover, the linear term is significantly smaller for cubically than for non-cubically shaped scatterers. Therefore, for small d errors for cubically shaped particles are much smaller than for non-cubically shaped. The relative importance of the linear term decreases with increasing size, hence convergence of DDA for large enough scatterers is quadratic in the common range of d. Extensive numerical simulations were carried out for a wide range of d. Finally we discuss a number of new developments in DDA and their consequences for convergence.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- A rigorous theoretical convergence analysis of the discrete dipole approximation (DDA) was performed.\n- Errors in measured quantities are bounded by the sum of linear and quadratic terms in the dipole size \\(d\\) within the DDA applicability range.\n- The linear error term is significantly smaller for cubically shaped scatterers, resulting in lower errors at small \\(d\\) than for non-cubic shapes.\n- As scatterer size increases, the linear term becomes less important, and DDA convergence becomes quadratic over the common range of \\(d\\).\n- Extensive numerical simulations across a wide range of \\(d\\) were conducted, and new DDA developments and their effects on convergence were discussed.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA rigorous theoretical convergence analysis of the discrete dipole approximation (DDA), supported by extensive simulations over a wide range of dipole sizes, examines error behavior and recent methodological developments. Errors are bounded by linear and quadratic terms in dipole size, with a much smaller linear term for cubic particles and increasingly quadratic convergence for larger scatterers, explaining why DDA is substantially more accurate for cubic than non-cubic shapes at small dipole sizes.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: DDA, Moreover, Therefore"
+  },
+  "outputs": {
+    "L1": "We performed a rigorous theoretical analysis of the convergence of the discrete dipole approximation (DDA). We prove that, within the range of DDA applicability, errors in any measured quantity are bounded by the sum of terms linear and quadratic in the dipole size, \\(d\\). Moreover, the linear term is significantly smaller for cubically shaped scatterers than for non-cubically shaped ones. Consequently, for small \\(d\\), errors are substantially smaller for cubically shaped particles. As scatterer size increases, the relative importance of the linear term decreases; thus, for sufficiently large scatterers, DDA convergence is quadratic over the commonly used range of \\(d\\). We also carried out extensive numerical simulations spanning a wide range of \\(d\\). Finally, we discuss several recent developments in DDA and their implications for convergence.",
+    "L2": "We conducted a comprehensive theoretical study of convergence in the discrete dipole approximation (DDA). Within the method’s applicable range, we demonstrate that the error in any observable is bounded by the sum of terms proportional to the dipole size \\(d\\) and to \\(d^2\\). The coefficient of the linear contribution is substantially lower for scatterers with cubic geometry than for those with non-cubic shapes. Consequently, at small \\(d\\), cubic particles exhibit considerably smaller errors. As scatterer size increases, the linear term becomes less significant, so sufficiently large particles show quadratic DDA convergence over the usual range of \\(d\\). We also performed extensive numerical calculations spanning a broad range of dipole sizes and conclude by examining several recent DDA advances and their implications for convergence.",
+    "L3": "A rigorous theoretical analysis was carried out to characterize the convergence of the discrete dipole approximation (DDA). Within the range where the DDA is applicable, the error in measured quantities can be bounded by the sum of terms that depend linearly and quadratically on the dipole size \\(d\\). This result provides a clear framework for understanding how discretization affects the accuracy of DDA calculations.\n\nThe analysis shows that the coefficient of the linear error term is significantly smaller for cubically shaped scatterers than for non-cubic geometries. Consequently, cubic scatterers generally exhibit lower errors at small dipole sizes. However, as the overall size of the scatterer increases, the contribution of the linear term becomes progressively less important. Under these conditions, the quadratic term dominates over the commonly used range of \\(d\\), and the observed convergence of the DDA is effectively quadratic.\n\nThese theoretical findings were supported by extensive numerical simulations covering a broad range of dipole sizes. In addition, recent developments in DDA methodology were examined, with particular attention to their influence on accuracy and convergence behavior.",
+    "L4": "The discrete dipole approximation (DDA) is a widely used numerical method for calculating electromagnetic scattering by particles of arbitrary shape and composition. In the DDA, a target is represented by a finite array of polarizable point dipoles, and the resulting system of coupled-dipole equations is solved to determine quantities such as absorption, scattering, and extinction. Although the method becomes exact in the limit of vanishing dipole size, its practical reliability depends on how rapidly numerical errors decrease as the discretization is refined. A rigorous understanding of this convergence is therefore essential for estimating computational accuracy and selecting an appropriate dipole spacing.\n\nA theoretical convergence analysis shows that, under standard assumptions, the error in calculated observables can be bounded by the sum of terms that are linear and quadratic in the dipole size. If \\(d\\) denotes the dipole spacing, or equivalently if the dimensionless discretization parameter is proportional to \\(kd\\), the error has the general form\n\n\\[\n|\\Delta \\phi| \\leq C_1 d + C_2 d^2,\n\\]\n\nwhere \\(\\phi\\) is the quantity of interest and the coefficients depend on the particle’s geometry, size, refractive index, and the particular DDA formulation. The quadratic contribution is associated primarily with the discretization of the electromagnetic interaction and the approximation of the internal field. The linear contribution is closely connected with the representation of the particle boundary by a lattice of cubic dipole cells.\n\nThis distinction explains the markedly different convergence behavior of cubically shaped and non-cubic particles. When a particle is exactly compatible with the cubic lattice, its boundary can be represented without significant shape error. The coefficient of the linear term is then much smaller, and the observed convergence is predominantly quadratic over a broad range of dipole sizes. For curved or otherwise non-cubic particles, however, the lattice necessarily approximates the boundary by a collection of cubic cells. The resulting shape and surface errors produce a stronger linear contribution, which can dominate at fine discretizations. Consequently, at the same dipole size, DDA calculations are generally much more accurate for cubic particles than for particles whose surfaces do not conform to the lattice.\n\nExtensive numerical simulations over a wide range of dipole sizes support these theoretical conclusions. They show that DDA errors do not usually follow a single power law throughout the entire convergence range. Instead, the apparent convergence rate reflects the balance between the linear and quadratic terms. For relatively small scatterers or for shapes with substantial boundary discretization error, linear behavior may be clearly visible. As the particle size increases, the quadratic term becomes progressively more important, and convergence can appear increasingly quadratic over the practically accessible range of discretizations. Error curves may also exhibit oscillations caused by changes in the lattice representation of the particle boundary, but their overall envelopes remain consistent with the derived bounds.\n\nRecent methodological developments seek to reduce both components of the error. Improved dipole polarizabilities and more accurate treatments of the interaction terms primarily decrease bulk discretization errors. Surface-correction and weighted-discretization methods address the incomplete or irregularly intersected cells near a particle boundary, thereby reducing the shape-related linear term. These refinements can substantially improve accuracy, particularly for non-cubic targets, although they do not eliminate the fundamental need to verify convergence through calculations at several resolutions.\n\nOverall, the combined theoretical and numerical analysis provides a coherent explanation of DDA convergence. The error is controlled by linear and quadratic contributions in dipole size, with their relative importance determined by target geometry, particle size, and numerical formulation. Cubic particles exhibit a greatly reduced linear contribution and therefore achieve substantially higher accuracy at small dipole sizes. Non-cubic particles retain a stronger boundary-induced linear error, while larger scatterers tend to display increasingly quadratic convergence. These results provide a foundation for practical error estimation and for the continued development of more accurate DDA formulations.",
+    "L5": "The Delhi Development Authority (DDA) plays a major role in the planning and development of Delhi. It manages housing projects, public spaces, commercial areas, and essential urban infrastructure. Moreover, the DDA works to improve residents’ quality of life by developing parks, sports facilities, and affordable housing. Therefore, its policies and projects are important for ensuring the city’s organized, sustainable, and inclusive growth."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a concise abstract for a paper presenting a theoretical and numerical convergence analysis of the discrete dipole approximation (DDA).",
+      "output": "We present a theoretical and numerical analysis of the convergence of the discrete dipole approximation (DDA) for electromagnetic scattering by finite dielectric objects. Error estimates are derived by separating bulk discretization effects from surface and shape errors, clarifying their dependence on dipole spacing, material contrast, and particle geometry. The analysis predicts asymptotic convergence and identifies regimes in which boundary effects dominate. Numerical simulations for representative scatterers confirm the predicted rates for integral observables and near-field quantities. These results provide a rigorous basis for assessing DDA accuracy and practical guidance for selecting discretization parameters.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize the main findings of a study on how DDA errors depend on dipole size \\(d\\), particle shape, and scatterer size.",
+      "output": "- **Dipole size \\(d\\):** DDA errors decrease as the dipole spacing is refined. The intrinsic discretization error is approximately second order, scaling as \\(d^{2}\\) (more precisely with \\((|m|kd)^2\\), sometimes with a weak logarithmic factor).\n\n- **Particle shape:** For shapes that can be represented exactly by the cubic dipole lattice—especially grid-aligned cubes—the leading error is quadratic. For curved or non-grid-conforming particles, such as spheres, the “staircase” approximation of the boundary introduces a first-order contribution proportional to \\(d\\). Changes in which boundary cells are occupied also cause noticeable, nonmonotonic oscillations with refinement.\n\n- **Scatterer size:** Increasing the particle’s electrical size generally increases the error coefficients, so the usual \\(|m|kd\\) criterion alone does not completely determine accuracy. Larger scatterers often require finer dipoles for comparable accuracy, although the asymptotic linear or quadratic dependence on \\(d\\) remains unchanged. Angle-resolved scattering, especially near intensity minima, is typically more sensitive than integrated quantities such as total cross sections.\n\nOverall, boundary representation is often the dominant limitation for curved particles, whereas exactly lattice-representable shapes show much faster and smoother convergence.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a research-paper abstract explaining why errors in DDA observables contain linear and quadratic terms in \\(d\\), with improved convergence for cubically shaped particles.",
+      "output": "We analyze the convergence of the discrete dipole approximation (DDA) as the dipole spacing \\(d\\) decreases. By comparing the discretized interaction operator with the underlying volume-integral equation, we show that errors in integral observables generally contain both linear and quadratic contributions, \\(E(d)=A d+B d^{2}\\) (with possible weak logarithmic corrections). The quadratic term arises from local quadrature and field-interpolation errors within fully occupied lattice cells, where symmetry cancels first-order contributions. The linear term is primarily a boundary effect: cells intersecting a curved or oblique particle surface imperfectly represent the particle volume and polarization, and the number of such cells scales as the surface area divided by \\(d^{2}\\), yielding a net \\(O(d)\\) contribution. For particles whose boundaries conform to the cubic lattice, these shape and surface-discretization errors are absent or strongly reduced. Consequently, the coefficient of the linear term is much smaller, and quadratic convergence becomes dominant over a broader range of \\(d\\). This analysis explains both the commonly observed mixed-order convergence of DDA observables and the enhanced accuracy obtained for cubically shaped, lattice-aligned particles.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "In one paragraph, describe a rigorous convergence analysis of the discrete dipole approximation, including theoretical error bounds, numerical simulations, and recent methodological developments.",
+      "output": "A rigorous convergence analysis of the discrete dipole approximation (DDA) treats the target as a volume-integral equation for the electric field and studies the error introduced by replacing the continuous susceptibility distribution with dipoles on a grid of spacing \\(d\\): under suitable smoothness, bounded-contrast, and nonresonance assumptions, stability estimates imply that field and observable errors vanish as \\(d\\to0\\), with bounds typically containing a bulk discretization term of order \\(O(d^2)\\) and a boundary or “shape” term of order \\(O(d)\\), multiplied by constants depending on size parameter \\(ka\\), refractive index, geometry, and the resolvent norm; for grid-aligned smooth or cubical targets, the linear term may be reduced or absent. Numerical studies test these predictions by computing extinction, absorption, scattering, and angular fields for successively smaller \\(kd\\), comparing against Mie theory, T-matrix, finite-element, or highly refined DDA solutions, and using convergence plots and Richardson-type extrapolation to separate asymptotic discretization error from iterative-solver and floating-point errors. Recent methodological developments—including lattice-dispersion-relation and radiative-reaction polarizabilities, filtered or integrated Green tensors, weighted-discretization and boundary-cell corrections, higher-order quadrature, adaptive or nonuniform meshes, and FFT-accelerated solvers with improved preconditioning—primarily reduce error constants, shape sensitivity, and computational cost, while preserving the requirement that both the wavelength and material/geometry scales be adequately resolved.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Create an academic abstract about DDA convergence that contrasts cubic and non-cubic scatterers and notes when quadratic convergence dominates.",
+      "output": "The convergence of the discrete dipole approximation (DDA) is examined by expressing errors in optical observables as a function of the dimensionless dipole size \\(y=|m|kd\\), where \\(d\\) is the lattice spacing. For non-cubic scatterers, voxelized boundaries introduce shape-discretization errors, yielding a leading contribution proportional to \\(y\\); consequently, sufficiently fine discretizations generally exhibit asymptotically linear convergence. Cubic scatterers aligned with the dipole lattice are represented without boundary staircasing, strongly suppressing the linear term and producing predominantly quadratic convergence. More generally, if the error is modeled as \\(E(y)\\approx a_1y+a_2y^2\\), quadratic behavior dominates whenever \\(y\\gtrsim |a_1/a_2|\\), including a potentially broad pre-asymptotic regime for non-cubic particles. At finer resolutions, however, the linear boundary term ultimately prevails unless symmetry, exact lattice representation, or an improved surface treatment makes \\(a_1\\) negligible. These results clarify why observed DDA convergence rates depend jointly on particle geometry, lattice alignment, and the accessible discretization range.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.5854004252303331,
+      "excess_ratio": 0.4559994082576305,
+      "baseline_mean": 0.1294010169727026,
+      "baseline_n_valid": 5,
+      "output_chars": 859,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5790697674418605,
+          "baseline_mean": 0.09846804103051089,
+          "excess_ratio": 0.4806017264113496
+        },
+        "bz2": {
+          "actual_ratio": 0.5096774193548387,
+          "baseline_mean": 0.1195458075156405,
+          "excess_ratio": 0.3901316118391982
+        },
+        "lzma": {
+          "actual_ratio": 0.6589147286821705,
+          "baseline_mean": 0.1651889168466283,
+          "excess_ratio": 0.4937258118355422
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.35477582846003897,
+      "excess_ratio": 0.22537481148733637,
+      "baseline_mean": 0.1294010169727026,
+      "baseline_n_valid": 5,
+      "output_chars": 847,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2835820895522388,
+          "baseline_mean": 0.09846804103051089,
+          "excess_ratio": 0.18511404852172791
+        },
+        "bz2": {
+          "actual_ratio": 0.34705882352941175,
+          "baseline_mean": 0.1195458075156405,
+          "excess_ratio": 0.22751301601377125
+        },
+        "lzma": {
+          "actual_ratio": 0.42142857142857143,
+          "baseline_mean": 0.1651889168466283,
+          "excess_ratio": 0.25623965458194314
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3605720122574055,
+      "excess_ratio": 0.2311709952847029,
+      "baseline_mean": 0.1294010169727026,
+      "baseline_n_valid": 5,
+      "output_chars": 1216,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3349673202614379,
+          "baseline_mean": 0.09846804103051089,
+          "excess_ratio": 0.236499279230927
+        },
+        "bz2": {
+          "actual_ratio": 0.31931464174454827,
+          "baseline_mean": 0.1195458075156405,
+          "excess_ratio": 0.19976883422890776
+        },
+        "lzma": {
+          "actual_ratio": 0.42045454545454547,
+          "baseline_mean": 0.1651889168466283,
+          "excess_ratio": 0.2552656286079172
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.1232583065380493,
+      "excess_ratio": -0.006142710434653295,
+      "baseline_mean": 0.1294010169727026,
+      "baseline_n_valid": 5,
+      "output_chars": 4535,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.0998931623931624,
+          "baseline_mean": 0.09846804103051089,
+          "excess_ratio": 0.0014251213626515075
+        },
+        "bz2": {
+          "actual_ratio": 0.1281908990011099,
+          "baseline_mean": 0.1195458075156405,
+          "excess_ratio": 0.00864509148546938
+        },
+        "lzma": {
+          "actual_ratio": 0.14137214137214138,
+          "baseline_mean": 0.1651889168466283,
+          "excess_ratio": -0.023816775474486906
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.1344717182497332,
+      "excess_ratio": 0.005070701277030604,
+      "baseline_mean": 0.1294010169727026,
+      "baseline_n_valid": 5,
+      "output_chars": 443,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.07885304659498207,
+          "baseline_mean": 0.09846804103051089,
+          "excess_ratio": -0.019614994435528818
+        },
+        "bz2": {
+          "actual_ratio": 0.12903225806451613,
+          "baseline_mean": 0.1195458075156405,
+          "excess_ratio": 0.009486450548875619
+        },
+        "lzma": {
+          "actual_ratio": 0.1839080459770115,
+          "baseline_mean": 0.1651889168466283,
+          "excess_ratio": 0.018719129130383205
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T04:40:01.231373+00:00"
+    }
+  ]
+}

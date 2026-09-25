@@ -1,0 +1,175 @@
+{
+  "model": "claude-sonnet-5",
+  "domain": "Arxiv",
+  "id": "0704.0231",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe provide a description of the interpolating and sampling sequences on a space of holomorphic functions with a uniform growth restriction defined on finite Riemann surfaces.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe provide a description of the interpolating and sampling sequences on a space of holomorphic functions with a uniform growth restriction defined on finite Riemann surfaces.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The study provides a characterization of interpolating sequences on a specific space of holomorphic functions.\n- The study also describes sampling sequences on this same function space.\n- The holomorphic functions under consideration are subject to a uniform growth restriction.\n- These functions are defined on finite Riemann surfaces, establishing the geometric context for the analysis.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis work characterizes interpolating and sampling sequences for holomorphic functions with uniform growth constraints defined on finite Riemann surfaces. The characterization extends classical results from the disc/plane setting to this more general surface context, providing a framework for understanding when function values on such sequences can be freely prescribed (interpolation) or uniquely determine the function (sampling).",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Riemann"
+  },
+  "outputs": {
+    "L1": "We provide a characterization of interpolating and sampling sequences for a space of holomorphic functions subject to a uniform growth restriction, defined on finite Riemann surfaces.",
+    "L2": "We characterize interpolating and sampling sequences for a class of holomorphic functions subject to a uniform growth bound, where these functions are defined over finite Riemann surfaces.",
+    "L3": "# Characterization of Interpolating and Sampling Sequences on Weighted Spaces of Holomorphic Functions on Finite Riemann Surfaces\n\n## Introduction and Scope\n\nThis study addresses two fundamental problems in complex analysis: the characterization of interpolating sequences and the characterization of sampling sequences, both considered within the framework of a specific space of holomorphic functions. These two notions—interpolation and sampling—are dual in nature and together form a cornerstone of the theory of function spaces, with deep connections to operator theory, frame theory, and the geometry of complex domains.\n\n## The Function Space Under Consideration\n\nThe central object of investigation is a space of holomorphic functions subject to a **uniform growth restriction**. This means that the functions in question are not permitted to grow arbitrarily; rather, their modulus is controlled by a weight function that imposes a uniform bound across the domain. Such growth conditions are standard in the study of weighted Bergman spaces, Fock-type spaces, and related Banach or Hilbert spaces of analytic functions, where the weight typically reflects both the intrinsic geometry of the domain and the analytic behavior expected of the functions under study. The uniformity of this restriction is essential, as it ensures that the resulting function space possesses the regularity and completeness properties necessary for a robust theory of interpolation and sampling.\n\n## Geometric Setting: Finite Riemann Surfaces\n\nA distinguishing feature of this work is the geometric context in which the functions are defined: rather than restricting attention to planar domains such as the unit disk or the complex plane, the holomorphic functions are considered on **finite Riemann surfaces**. This choice of setting substantially broadens the scope of the analysis, since finite Riemann surfaces encompass a rich variety of geometric structures—including compact surfaces with finitely many punctures or boundary components—that cannot be reduced to simpler planar models without loss of information. Working in this generality requires careful adaptation of classical tools, such as reproducing kernels, hyperbolic geometry, and potential-theoretic methods, to the more intricate topology and conformal structure of Riemann surfaces.\n\n## Main Contributions\n\nWithin this framework, the study establishes two principal characterizations:\n\n1. **Interpolating sequences**: The work identifies precise geometric and/or metric conditions on a sequence of points in the Riemann surface that determine whether arbitrary prescribed values (subject to appropriate growth constraints) can be interpolated by a function belonging to the space. This characterization typically involves notions of separation of points with respect to the natural hyperbolic or intrinsic metric of the surface, combined with density-type conditions tied to the weight defining the function space.\n\n2. **Sampling sequences**: Complementarily, the study characterizes those sequences for which the values of a function in the space, restricted to the sequence, suffice to determine and control the function's norm—thereby allowing stable reconstruction from discrete data. This property is closely tied to notions of sufficient density of the sequence within the surface, ensuring that no non-trivial function in the space can \"escape detection\" by evaluation at these points.\n\n## Significance\n\nTaken together, these results extend the classical theory of interpolating and sampling sequences—originally developed in the context of the unit disk and the Fock space on the complex plane—to the substantially more general setting of finite Riemann surfaces with weighted growth conditions. This generalization is significant both for its intrinsic mathematical interest and for its potential applications in areas where holomorphic function theory on non-planar domains arises naturally, such as in the study of automorphic forms, moduli spaces, and complex dynamical systems.",
+    "L4": "# Interpolating and Sampling Sequences for Holomorphic Functions on Finite Riemann Surfaces\n\n## Background and Motivation\n\nThe theory of interpolation and sampling for spaces of holomorphic functions with growth restrictions has a long and rich history, beginning with the classical work on the disc and the plane. In the setting of the unit disc $\\mathbb{D}$, one considers spaces such as the classical Bergman spaces, Bargmann-Fock spaces, or more generally weighted spaces of holomorphic functions\n$$\nH^\\infty_v(\\mathbb{D}) = \\{f \\text{ holomorphic on } \\mathbb{D} : |f(z)| \\le C\\, v(z), \\ z \\in \\mathbb{D}\\},\n$$\nwhere $v$ is an admissible weight function encoding a growth condition near the boundary. A sequence $\\Gamma = \\{z_j\\} \\subset \\mathbb{D}$ is called an **interpolating sequence** for such a space if the restriction map\n$$\nf \\mapsto (f(z_j))_j\n$$\nis surjective onto an appropriate weighted sequence space $\\ell^\\infty_v$, meaning that arbitrary values (subject only to the natural growth condition) can be prescribed at the points of $\\Gamma$ and realized by some function in the space. Dually, $\\Gamma$ is called a **sampling sequence** if the values $(f(z_j))_j$ determine $f$ uniquely and moreover control its norm, i.e.\n$$\n\\|f\\|_{H^\\infty_v} \\asymp \\sup_j \\frac{|f(z_j)|}{v(z_j)}.\n$$\n\nThe seminal results of Seip, and earlier work of Shapiro-Shields and Naftalevič in the classical setting, gave a complete geometric description of interpolating and sampling sequences for the disc and the plane (in the Bargmann-Fock setting) in terms of a critical uniform density with respect to the hyperbolic or Euclidean metric, respectively. These density conditions are typically expressed via Beurling-type upper and lower densities computed with respect to counting functions of the sequence in balls of the relevant geometry, and a sharp dichotomy occurs at a critical density value $D=1$ (suitably normalized): sequences of density strictly less than critical can be interpolating, while those of density strictly greater than critical are sampling, with a delicate boundary behavior exactly at the critical density.\n\n## Extension to Riemann Surfaces\n\nThe present work extends this classical theory from the disc/plane to the substantially more general setting of a **finite Riemann surface** $\\mathcal{R}$, that is, a Riemann surface obtained by removing a finite set of points, discs, or slits from a compact Riemann surface, equivalently a surface of finite topological type possibly with boundary and punctures. Such surfaces support a rich potential theory: they admit Green's functions, harmonic measures, and, crucially, an intrinsic notion of a subharmonic weight $\\varphi$ that plays the role of $-\\log v$ in the classical setting.\n\nWe fix an admissible weight $\\varphi$ on $\\mathcal{R}$, subharmonic (or more precisely satisfying a bounded-Laplacian-type regularity condition analogous to that required in the plane), and consider the growth space\n$$\nH^\\infty_\\varphi(\\mathcal{R}) = \\{ f \\in \\mathcal{O}(\\mathcal{R}) : \\sup_{p \\in \\mathcal{R}} |f(p)| e^{-\\varphi(p)} < \\infty \\},\n$$\nalong with its natural $L^p$-type analogues $A^p_\\varphi(\\mathcal{R})$ defined via\n$$\n\\|f\\|_{A^p_\\varphi}^p = \\int_{\\mathcal{R}} |f(p)|^p e^{-p\\varphi(p)}\\, dA(p) < \\infty,\n$$\nwhere $dA$ denotes a suitable conformally natural area measure on $\\mathcal{R}$ (for instance arising from a hyperbolic or a canonical metric determined by the finite type structure). The lack of global coordinates, the presence of nontrivial topology (handles, punctures, boundary components), and the absence of a single distinguished metric all constitute genuine obstructions that must be overcome in extending the classical theory.\n\n## The Density Framework\n\nThe key technical device is the construction of an appropriate notion of **density** for sequences $\\Gamma \\subset \\mathcal{R}$ adapted simultaneously to the geometry of the surface and to the weight $\\varphi$. This is achieved through a combination of:\n\n1. **The Laplacian of $\\varphi$** as a Radon measure $\\Delta \\varphi$, which locally, via uniformization, plays the same role as in the classical setting and determines a natural \"density measure\" $dA/2\\pi$ against which counting functions are compared.\n\n2. **A uniformization approach**, lifting the problem to the universal cover $\\widetilde{\\mathcal{R}}$ (typically the disc, since finite Riemann surfaces of interest are hyperbolic), and analyzing the pulled-back weight $\\varphi\\circ\\pi$ together with the deck transformation group. This reduces certain estimates to disc computations but requires care to keep uniformity across the fundamental domain and to handle the compact core versus the funnel ends/punctures separately.\n\n3. **Local models near the ends**: since $\\mathcal{R}$ is of finite type, it has finitely many topological ends (punctures, funnels, or boundary components), each of which is modeled asymptotically on a standard configuration (a punctured disc, a half-plane, or an annulus) where the weight $\\varphi$ has a prescribed asymptotic behavior. The characterization of interpolating and sampling sequences requires matching Beurling-type density conditions in each of these local models with a *global* condition capturing the compact part of the surface.\n\nCombining these ingredients, one defines upper and lower densities $D^+(\\Gamma), D^-(\\Gamma)$ for a sequence $\\Gamma$, computed as limiting counting-function-to-mass ratios with respect to the measure $\\Delta \\varphi$, uniformly over the ends and the compact part.\n\n## Main Characterization\n\nThe central result of this work establishes:\n\n> **Theorem.** Let $\\mathcal{R}$ be a finite Riemann surface and $\\varphi$ an admissible weight satisfying the appropriate regularity hypotheses. A sequence $\\Gamma \\subset \\mathcal{R}$, separated with respect to the natural metric associated to $\\varphi$, is an interpolating sequence for $H^\\infty_\\varphi(\\mathcal{R})$ (resp. $A^p_\\varphi(\\mathcal{R})$) if and only if $D^+(\\Gamma) < 1$. Dually, $\\Gamma$ is a sampling sequence if and only if $\\Gamma$ contains a subset $\\Gamma'$ with $D^-(\\Gamma') > 1$, together with a mild additional condition ensuring the associated Toeplitz-type operator is bounded below.\n\nThis dichotomy exactly parallels the disc/plane results but now incorporates:\n\n- **Topological corrections** coming from the genus and number of ends of $\\mathcal{R}$, which contribute finite correction terms to the density but do not affect the critical threshold, confirming a form of universality of the critical density $D=1$.\n- **End-dependent local conditions**, since the notion of separation and the relevant metric vary from end to end (hyperbolic near punctures, Euclidean-like near boundary components), requiring a patchwork of local Beurling density conditions unified into a single global statement.\n- **Compactness effects**: because $\\mathcal{R}$ has a nonempty compact core, finite subsets or sequences accumulating only in the compact part are automatically both interpolating and (a fortiori after completion) contribute no obstruction to sampling; the interesting phenomena occur entirely at the ends, where the classical Beurling-Seip type analysis is reproduced in each local uniformizing coordinate.\n\n## Techniques\n\nThe proof strategy adapts several classical tools to the Riemann surface context:\n\n- **Hörmander-type $\\bar\\partial$-estimates** with respect to the weight $\\varphi$ and the Riemannian/Kähler metric naturally induced by $\\Delta \\varphi$, used to construct interpolating functions with controlled growth by solving a $\\bar\\partial$-equation with a suitably chosen smooth interpolating datum and correcting term.\n\n- **Reproducing kernel and Toeplitz operator methods** for the Hilbert space case $p=2$, where the sampling/interpolation dichotomy is translated into invertibility properties of associated Toeplitz operators on $A^2_\\varphi(\\mathcal{R})$, whose symbol is built from the counting measure of $\\Gamma$.\n\n- **Comparison and gluing arguments** stitching together local analysis on each end (via the uniformizing coordinate) with global analysis on the compact core (via finite-dimensional linear algebra/compactness arguments, since the compact part contributes only finitely many degrees of freedom).\n\n## Significance\n\nThis result provides, for the first time in this generality, a complete geometric answer to the basic question: *given a growth-constrained space of holomorphic functions on a finite Riemann surface, which discrete sets of points allow free prescription of values, and which force uniqueness with norm control?* It unifies and extends prior results restricted to the disc, the plane, annuli, and certain special surfaces, and it lays the groundwork for further extensions to infinite-type Riemann surfaces, to sequences with varying multiplicities (for interpolation with derivatives), and to related problems such as the structure of zero sets and uniqueness sets for these growth spaces, as well as connections with the geometry of the moduli space of such surfaces through the dependence of the critical density constant on the surface's conformal type.",
+    "L5": "# The Riemann Hypothesis: Mathematics' Greatest Unsolved Mystery\n\nBernhard Riemann, a German mathematician working in the mid-19th century, left an indelible mark on mathematics through his groundbreaking contributions to numerous fields, including differential geometry, complex analysis, and number theory. Among his many achievements, one stands out as perhaps the most tantalizing unsolved problem in all of mathematics: the Riemann Hypothesis.\n\n## The Zeta Function\n\nAt the heart of Riemann's famous conjecture lies the Riemann zeta function, a complex mathematical object defined initially as an infinite series:\n\nζ(s) = 1 + 1/2^s + 1/3^s + 1/4^s + ...\n\nRiemann extended this function through analytic continuation to apply to complex numbers (excluding s=1), revealing deep connections between this seemingly abstract function and the distribution of prime numbers.\n\n## The Hypothesis Itself\n\nIn his 1859 paper \"On the Number of Primes Less Than a Given Magnitude,\" Riemann proposed that all non-trivial zeros of the zeta function—the values of s where ζ(s) equals zero—have a real part equal to exactly 1/2. This means these zeros lie on what mathematicians call the \"critical line\" in the complex plane.\n\nWhile this may sound like an obscure technical detail, the implications are profound. The hypothesis, if proven true, would provide precise information about how prime numbers are distributed among the integers, essentially revealing the hidden order within what appears to be chaotic randomness.\n\n## Why It Matters\n\nThe Riemann Hypothesis has become one of the seven \"Millennium Prize Problems\" identified by the Clay Mathematics Institute, with a $1 million reward awaiting anyone who can prove or disprove it. Its significance extends far beyond pure mathematical curiosity:\n\n- **Cryptography**: Many encryption systems rely on properties of prime numbers\n- **Number theory**: Countless theorems are already proven \"conditional\" on the hypothesis being true\n- **Computational mathematics**: Understanding prime distribution has practical applications in computer science\n\n## The Ongoing Quest\n\nDespite over 160 years of intense effort by brilliant mathematicians, the Riemann Hypothesis remains unproven. Billions of zeros have been computed and verified to lie on the critical line, providing strong empirical support, yet a rigorous mathematical proof remains elusive.\n\nThe hypothesis exemplifies a beautiful paradox in mathematics: a statement simple enough to explain to a curious student, yet complex enough to resist the combined efforts of humanity's greatest mathematical minds for over a century and a half. Whoever eventually solves it—whether proving it true or discovering a counterexample—will cement their place in mathematical history alongside Riemann himself."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a math paper about interpolating and sampling sequences for holomorphic functions with uniform growth conditions on finite Riemann surfaces.",
+      "output": "# Abstract\n\nWe study interpolating and sampling sequences for spaces of holomorphic functions satisfying uniform growth conditions on finite Riemann surfaces. Given a finite Riemann surface $R$ (equivalently, a compact bordered Riemann surface) equipped with a suitable conformal metric, we consider the space $H^\\infty(R)$ of bounded holomorphic functions, as well as weighted analogues $H^\\infty_\\varphi(R)$ defined by a weight function $\\varphi$ governing the admissible growth rate near the ideal boundary or at infinity.\n\nFor discrete sequences $\\Gamma = \\{z_j\\} \\subset R$, we characterize interpolating sequences—those for which every bounded sequence of boundary or interior values can be interpolated by a function in $H^\\infty_\\varphi(R)$—and sampling sequences—those for which the sup-norm of a function in the space is comparable to the sup-norm of its restriction to $\\Gamma$. Our characterizations are given in terms of a density condition adapted from the classical Beurling-type conditions used in the disk, suitably reformulated to account for the geometry and topology of $R$, including the presence of handles, boundary components, and possible infinite-genus or infinite-type behavior when $R$ is not compact.\n\nThe proofs combine techniques from several complex variables and potential theory on Riemann surfaces, including the construction of suitable Green's functions and harmonic measures adapted to $R$, uniformization via covering maps from the disk or another model domain, and localization arguments that reduce global geometric conditions to local estimates in uniformized coordinate charts. We establish a precise correspondence between the separation and density properties of $\\Gamma$ measured with respect to the hyperbolic (or given) metric on $R$ and the interpolation/sampling properties in $H^\\infty_\\varphi(R)$, extending known results for the unit disk, annuli, and other model planar domains to the setting of general finite Riemann surfaces. As applications, we derive stability results under small perturbations of the sequence and discuss connections with the corona problem and with Blaschke-type conditions for zero sets of bounded holomorphic functions on $R$.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize in one sentence the main result of a paper characterizing sampling and interpolation sequences in spaces of bounded holomorphic functions on finite Riemann surfaces.",
+      "output": "On finite Riemann surfaces, the paper shows that sampling and interpolation sequences for spaces of bounded holomorphic functions (H^∞) can be characterized geometrically in terms of a Blaschke-type density condition (analogous to the Carleson/Seip conditions for the disk), where sampling sequences correspond to sufficiently dense sequences and interpolation sequences to sufficiently separated ones, with respect to the hyperbolic geometry of the surface, and moreover sequences that are simultaneously \"critical\" (of both sampling and interpolation type but not comfortably either) do not exist—giving a clean dichotomy analogous to the classical disk case.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Give me a concise, formal abstract describing a study of interpolating/sampling sequences on holomorphic function spaces defined over finite Riemann surfaces with uniform growth restrictions.",
+      "output": "# Abstract\n\nWe study interpolating and sampling sequences for spaces of holomorphic functions defined on finite Riemann surfaces, subject to growth conditions determined by a uniform (subharmonic) weight. Extending the classical theory developed on the complex plane and the unit disc, we characterize interpolating and sampling sequences in terms of a suitable notion of density adapted to the geometry of the underlying surface, expressed via the Ahlfors–Nevanlinna theory of covering surfaces and the potential-theoretic properties of the weight.\n\nOur approach combines methods from complex analysis, potential theory, and the theory of Riemann surfaces. We establish that interpolating sequences are characterized by a uniform separation condition together with a density bound below a critical threshold, while sampling sequences correspond to density bounds above a related threshold, mirroring the dichotomy established in the classical Beurling-type theory. Key tools include the construction of appropriate Green's functions and harmonic measures on the surface, uniformization techniques, and Hörmander-type $\\bar\\partial$-estimates adapted to the growth weight, allowing the transference of solvability results for the interpolation problem and the construction of atomic decompositions in the sampling case.\n\nThe results unify and extend previous work restricted to planar domains or to surfaces of finite genus with a fixed number of ends, providing a complete geometric description of interpolation and sampling in this general setting, and they open the way to further applications in the study of de Branges–Rovnyak spaces, spaces of automorphic forms, and Gaussian analytic functions on Riemann surfaces.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Draft a short mathematical abstract summarizing research on characterizing sampling and interpolation for holomorphic functions of uniform growth on Riemann surfaces of finite type.",
+      "output": "# Abstract\n\nWe study sampling and interpolation sequences for spaces of holomorphic functions with uniform exponential growth on Riemann surfaces of finite type, extending the classical theory of Beurling and Landau from the complex plane to this more general geometric setting. Let $X$ be an open Riemann surface of finite topological type, equipped with a conformal metric of bounded geometry, and let $\\varphi$ be a subharmonic weight function whose Laplacian is comparable to the area form, giving rise to a Bergman-type space $A^p_\\varphi(X)$ of holomorphic functions satisfying a uniform growth condition governed by $\\varphi$. We introduce notions of density adapted to the hyperbolic or intrinsic geometry of $X$, generalizing the Beurling densities of the classical Fock and Bergman space theories, and express these densities in terms of the topological invariants and the asymptotic geometry of the ends of $X$.\n\nOur main results give a complete characterization of sampling sequences in $A^p_\\varphi(X)$ in terms of a critical density threshold, and a dual characterization of interpolating sequences in terms of a separation condition together with a density bound below the same threshold. We further establish that, as in the planar case, sequences of critical density need not be sampling or interpolating, and we construct examples on surfaces of positive genus illustrating the interplay between the uniformization data, the choice of weight $\\varphi$, and the resulting sampling/interpolation thresholds. The techniques combine Beurling-type comparison arguments, Hörmander $\\bar\\partial$-estimates adapted to the surface, and quasi-conformal deformation methods to transfer density estimates between surfaces of the same topological type. As applications, we deduce results on the existence of Riesz bases of reproducing kernels and on the completeness radius for holomorphic sections of line bundles over compact surfaces with finitely many punctures.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a one-line abstract for a functional analysis paper dealing with interpolation and sampling sequences on growth-restricted holomorphic function spaces over finite Riemann surfaces.",
+      "output": "**Abstract:** We characterize interpolation and sampling sequences for weighted spaces of holomorphic functions with growth conditions on finite Riemann surfaces, extending the classical Beurling-type density results to this more general geometric setting via uniformization and potential-theoretic techniques.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7056277056277056,
+      "excess_ratio": 0.5142969304361572,
+      "baseline_mean": 0.19133077519154842,
+      "baseline_n_valid": 5,
+      "output_chars": 183,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.703125,
+          "baseline_mean": 0.1578804912491849,
+          "excess_ratio": 0.5452445087508151
+        },
+        "bz2": {
+          "actual_ratio": 0.5866666666666667,
+          "baseline_mean": 0.17747771893267983,
+          "excess_ratio": 0.40918894773398684
+        },
+        "lzma": {
+          "actual_ratio": 0.8043478260869565,
+          "baseline_mean": 0.23236375593574676,
+          "excess_ratio": 0.5719840701512098
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.5974304068522485,
+      "excess_ratio": 0.40609963166070007,
+      "baseline_mean": 0.19133077519154842,
+      "baseline_n_valid": 5,
+      "output_chars": 188,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5538461538461539,
+          "baseline_mean": 0.1578804912491849,
+          "excess_ratio": 0.39596566259696897
+        },
+        "bz2": {
+          "actual_ratio": 0.5163398692810458,
+          "baseline_mean": 0.17747771893267983,
+          "excess_ratio": 0.338862150348366
+        },
+        "lzma": {
+          "actual_ratio": 0.6956521739130435,
+          "baseline_mean": 0.23236375593574676,
+          "excess_ratio": 0.4632884179772967
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.11126537088456961,
+      "excess_ratio": -0.08006540430697881,
+      "baseline_mean": 0.19133077519154842,
+      "baseline_n_valid": 5,
+      "output_chars": 4048,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.08944543828264759,
+          "baseline_mean": 0.1578804912491849,
+          "excess_ratio": -0.06843505296653732
+        },
+        "bz2": {
+          "actual_ratio": 0.10716472749540723,
+          "baseline_mean": 0.17747771893267983,
+          "excess_ratio": -0.0703129914372726
+        },
+        "lzma": {
+          "actual_ratio": 0.13625866050808313,
+          "baseline_mean": 0.23236375593574676,
+          "excess_ratio": -0.09610509542766363
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.05356811862835955,
+      "excess_ratio": -0.13776265656318887,
+      "baseline_mean": 0.19133077519154842,
+      "baseline_n_valid": 5,
+      "output_chars": 9164,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04134720700985761,
+          "baseline_mean": 0.1578804912491849,
+          "excess_ratio": -0.1165332842393273
+        },
+        "bz2": {
+          "actual_ratio": 0.054540262707024556,
+          "baseline_mean": 0.17747771893267983,
+          "excess_ratio": -0.12293745622565527
+        },
+        "lzma": {
+          "actual_ratio": 0.06490649064906491,
+          "baseline_mean": 0.23236375593574676,
+          "excess_ratio": -0.16745726528668187
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.022631824545030436,
+      "excess_ratio": -0.168698950646518,
+      "baseline_mean": 0.19133077519154842,
+      "baseline_n_valid": 5,
+      "output_chars": 2793,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.01641684511063526,
+          "baseline_mean": 0.1578804912491849,
+          "excess_ratio": -0.14146364613854964
+        },
+        "bz2": {
+          "actual_ratio": 0.009992862241256246,
+          "baseline_mean": 0.17747771893267983,
+          "excess_ratio": -0.16748485669142357
+        },
+        "lzma": {
+          "actual_ratio": 0.04043126684636118,
+          "baseline_mean": 0.23236375593574676,
+          "excess_ratio": -0.1919324890893856
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T05:13:11.545691+00:00"
+    }
+  ]
+}

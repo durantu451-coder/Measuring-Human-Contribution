@@ -1,0 +1,524 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0556",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nDuring a crossover via a switching mechanism from one 2-body potential to another as might be applied in modeling (chemical) reactions in the vicinity of bond formation, energy violations would occur due to finite step size which determines the trajectory of the particles relative to the potential interactions of the unbonded state by numerical (e.g. Verlet) integration. This problem is overcome by an algorithm which preserves the coordinates of the system for each move, but corrects for energy discrepancies by ensuring both energy and momentum conservation in the dynamics. The algorithm is tested for a hysteresis loop reaction model with an without the implementation of the algorithm. The tests involve checking the rate of energy flow out of the MD simulation box; in the equilibrium state, no net rate of flows within experimental error should be observed. The temperature and pressure of the box should also be invariant within the range of fluctuation of these quantities. It is demonstrated that the algorithm satisfies these criteria.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nDuring a crossover via a switching mechanism from one 2-body potential to another as might be applied in modeling (chemical) reactions in the vicinity of bond formation, energy violations would occur due to finite step size which determines the trajectory of the particles relative to the potential interactions of the unbonded state by numerical (e.g. Verlet) integration. This problem is overcome by an algorithm which preserves the coordinates of the system for each move, but corrects for energy discrepancies by ensuring both energy and momentum conservation in the dynamics. The algorithm is tested for a hysteresis loop reaction model with an without the implementation of the algorithm. The tests involve checking the rate of energy flow out of the MD simulation box; in the equilibrium state, no net rate of flows within experimental error should be observed. The temperature and pressure of the box should also be invariant within the range of fluctuation of these quantities. It is demonstrated that the algorithm satisfies these criteria.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- Switching between two-body potentials near bond formation can cause energy violations because finite integration steps affect particle trajectories.\n- The proposed algorithm preserves system coordinates while correcting energy discrepancies to conserve both energy and momentum.\n- The algorithm is tested on a hysteresis-loop reaction model by comparing simulations with and without its implementation.\n- Validation checks include ensuring no net energy flow from the molecular dynamics box at equilibrium and confirming stable temperature and pressure within expected fluctuations.\n- The results demonstrate that the algorithm satisfies the required conservation and equilibrium criteria.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nSwitching between two-body potentials during bond-formation modeling can cause finite-step energy violations, so an algorithm preserves particle coordinates while correcting the dynamics to conserve energy and momentum. Tests on a hysteresis-loop reaction model showed no significant net energy flow and stable temperature and pressure, demonstrating that the algorithm maintains equilibrium and enables physically consistent reactive molecular dynamics.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: During, Verlet, This"
+  },
+  "outputs": {
+    "L1": "During a crossover, implemented via a switching mechanism, from one two-body potential to another—as may be used to model (chemical) reactions near bond formation—energy violations can occur because the finite step size determines the particle trajectories relative to the potential interactions of the unbonded state through numerical integration (e.g., the Verlet method). This issue is addressed by an algorithm that preserves the system coordinates at each move while correcting energy discrepancies to ensure conservation of both energy and momentum throughout the dynamics. The algorithm is tested using a hysteresis-loop reaction model, both with and without its implementation. The tests examine the rate of energy flow out of the molecular dynamics (MD) simulation box; at equilibrium, no net flow rate should be observed within experimental error. The temperature and pressure of the box should likewise remain invariant within their respective ranges of fluctuation. The algorithm is demonstrated to satisfy all of these criteria.",
+    "L2": "When a switching procedure changes one two-body potential into another—for example, when simulating chemical reactions near the point of bond formation—the finite integration time step can cause violations of energy conservation. The step size determines particle trajectories under the potential interactions of the unbonded state through numerical integration methods such as the Verlet scheme. To address this issue, an algorithm is introduced that leaves the system’s coordinates unchanged during each move while correcting energy discrepancies so that both energy and momentum remain conserved throughout the dynamics. The method is evaluated using a hysteresis-loop reaction model, with simulations performed both with and without the algorithm. Validation includes measuring the rate at which energy leaves the molecular-dynamics simulation box. At equilibrium, this rate should show no net flow within experimental uncertainty. In addition, the box temperature and pressure should remain constant within their normal fluctuation ranges. The results demonstrate that the algorithm meets all of these requirements.",
+    "L3": "Switching between two-body interaction potentials near bond formation can introduce violations of energy conservation. Because molecular dynamics simulations use finite integration time steps, particles may move across the switching boundary without following the exact continuous trajectory assumed by the potential model. As a result, the change from one potential to another can produce an artificial discrepancy in the system’s total energy.\n\nThe proposed algorithm addresses this problem by correcting the energy difference generated during potential switching while leaving the system’s coordinates unchanged. It adjusts the relevant particle momenta so that both total energy and total momentum are conserved. In this way, the correction avoids unphysical changes to the molecular configuration while maintaining the fundamental conservation laws required for reliable molecular dynamics simulations.\n\nThe algorithm is evaluated using a reaction model based on a hysteresis loop, in which bond formation and bond dissociation occur at different threshold distances. Simulations performed with the correction algorithm are compared with otherwise equivalent simulations in which no correction is applied. This comparison makes it possible to determine whether the method successfully removes the numerical energy errors associated with switching between interaction potentials.\n\nValidation includes two main checks. First, under equilibrium conditions, there should be no net energy flow into or out of the molecular dynamics box. Any persistent drift would indicate that the switching procedure is artificially adding or removing energy. Second, the temperature and pressure should remain stable over time, apart from the normal statistical fluctuations expected in an equilibrium system.\n\nThe results show that the proposed algorithm meets these requirements. It prevents systematic energy drift, conserves momentum, and preserves the equilibrium behavior of the simulated system. Temperature and pressure remain within their expected fluctuation ranges, and no net energy transfer from the simulation box is observed. These findings demonstrate that the algorithm provides a reliable method for handling potential switching during bond formation and dissociation.",
+    "L4": "In reactive molecular-dynamics simulations, bond formation and bond breaking are often represented by switching between different two-body interaction potentials. Although this approach provides a practical way to model changes in chemical connectivity, it can introduce numerical artifacts. If the potential is changed during a finite integration step, the potential energy may change discontinuously, causing an artificial gain or loss of total energy. Over many reaction events, even small violations can accumulate, leading to unphysical heating or cooling and changes in the system’s pressure or equilibrium behavior.\n\nTo address this problem, an energy-correction algorithm is applied whenever the interaction potential is switched. The method leaves the particle coordinates unchanged, so the geometric configuration at the reaction event is preserved. Instead, it modifies the subsequent dynamics so that the change in potential energy is compensated by a corresponding adjustment of the particles’ kinetic energy. The correction is constructed to conserve both total energy and total linear momentum, preventing the switching procedure from introducing spurious forces or center-of-mass motion.\n\nThe algorithm was evaluated using a reaction model with a hysteresis loop, in which different switching conditions govern bond formation and bond dissociation. Such a model repeatedly drives particles through potential-changing events and therefore provides a sensitive test of whether the correction procedure creates a systematic energy bias. The simulations showed no statistically significant net energy transfer associated with repeated traversal of the hysteresis loop. Temperature and pressure also remained stable, indicating that the switching events did not disturb the system’s thermodynamic equilibrium.\n\nThese results demonstrate that the correction algorithm successfully removes the finite-step energy errors associated with switching between two-body potentials. By preserving particle positions while enforcing conservation of energy and momentum, the method enables bond-making and bond-breaking processes to be incorporated into molecular-dynamics simulations without producing artificial heating, cooling, or mechanical drift. It therefore provides a practical foundation for physically consistent reactive molecular dynamics in systems where chemical reactions are modeled through changes in effective pair interactions.",
+    "L5": "During the simulation, the Verlet integration method was used to calculate the motion of each particle. This efficient algorithm estimates new positions from previous positions and current acceleration, making it especially useful in physics engines and molecular dynamics. By avoiding repeated velocity calculations, Verlet integration provides stable and realistic motion with relatively low computational cost."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize a molecular dynamics algorithm that corrects finite-time-step energy violations when switching between two-body potentials during bond formation, including how it conserves energy and momentum and how it is validated.",
+      "output": "A reactive molecular-dynamics scheme can switch a pair of atoms from a nonbonded two-body potential to a bonded potential using a continuous switching variable. Because the switch occurs over finite integration steps, the discrete work done by the changing potential may not exactly equal the corresponding change in kinetic energy, causing artificial heating or cooling.\n\nThe algorithm corrects this after each switching step:\n\n1. Propagate positions and velocities with the usual integrator and switched forces.\n2. Compute the energy defect—the difference between the desired conserved energy and the actual kinetic-plus-potential energy after the step.\n3. Apply equal-and-opposite impulses to the two reacting atoms, usually along their separation vector.\n4. Choose the impulse magnitude by solving the quadratic condition that its change in relative kinetic energy exactly cancels the energy defect.\n\nEqual-and-opposite impulses leave the pair’s center-of-mass velocity unchanged, so total linear momentum is conserved. Because the correction is central, it also produces no net torque and therefore preserves angular momentum. Total energy is restored to numerical precision while the bond-formation dynamics remain otherwise unchanged.\n\nValidation typically consists of microcanonical simulations of simple association/dissociation systems and larger reactive systems. The corrected method is compared with uncorrected switching and with smaller-time-step or reference trajectories. Reported checks include removal of systematic energy drift, conservation of linear and angular momentum to machine precision, convergence with time step, and preservation of equilibrium structural, thermodynamic, and reaction-rate properties.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write an abstract for a paper describing an energy-conserving correction method for reactive MD simulations using Verlet integration and a hysteresis-loop reaction model.",
+      "output": "Reactive molecular dynamics models based on hysteresis-loop reaction criteria can exhibit artificial changes in total energy when bond formation or dissociation causes discontinuous switching between potential-energy surfaces. We present an energy-conserving correction method compatible with the velocity-Verlet integration scheme. At each reaction event, the change in potential energy associated with the hysteretic state transition is evaluated and compensated by a constrained adjustment of the velocities of the participating atoms. The correction preserves linear momentum and, where required, angular momentum while enforcing conservation of total energy. If the available kinetic energy is insufficient to support a proposed endothermic transition, the event is rejected or deferred, maintaining physically admissible dynamics. By embedding the correction directly within the Verlet update, the method retains the simplicity, time reversibility between reaction events, and computational efficiency of standard molecular dynamics. Numerical tests show that the approach removes systematic energy drift and event-induced energy jumps without altering nonreactive trajectories or the intended hysteresis mechanism. The method provides a practical framework for stable microcanonical simulations with discrete reactive-state changes and is applicable to a broad class of rule-based and hybrid reactive molecular dynamics models.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Explain how energy discrepancies caused by switching from an unbonded to a bonded potential can be corrected without changing particle coordinates, and discuss suitable equilibrium tests involving energy flow, temperature, and pressure.",
+      "output": "At the instant a nonbonded interaction is replaced by a bonded potential, the coordinates \\(q\\) can be left unchanged, but the potential energy generally jumps:\n\n\\[\n\\Delta U = U_{\\mathrm{bonded}}(q)-U_{\\mathrm{unbonded}}(q).\n\\]\n\nTo conserve total energy, compensate through the momenta:\n\n\\[\nK' = K-\\Delta U.\n\\]\n\nAfter removing center-of-mass motion and any imposed flow, velocities may be rescaled as\n\n\\[\n\\mathbf v_i'=\\mathbf V_{\\rm cm}\n+\\lambda(\\mathbf v_i-\\mathbf V_{\\rm cm}), \\qquad\n\\lambda=\\sqrt{\\frac{K-\\Delta U}{K}}.\n\\]\n\nThus, forming a lower-energy bond increases kinetic energy, while forming a higher-energy bond removes kinetic energy. A local correction can instead be applied to the relative velocities of the reacting particles, which preserves total linear momentum and avoids perturbing the entire system. Angular momentum should also be preserved when relevant.\n\nImportant qualifications:\n\n- If \\(K-\\Delta U<0\\), instantaneous velocity rescaling cannot supply the required energy. The interaction should then be switched gradually, coupled temporarily to a heat bath, or handled using a reaction model with an explicit energy reservoir.\n- If the discrepancy is only an arbitrary difference in potential-energy zero, a constant offset can be added to the bonded potential. This changes neither coordinates nor forces and is preferable to altering velocities.\n- The old nonbonded interaction must be removed or modified consistently to avoid double-counting.\n- Correcting the energy jump does not eliminate a force discontinuity. Smooth switching functions are preferable if repeated transformations occur.\n\n### Equilibrium checks\n\nA single temperature or pressure value is not enough. Suitable tests include:\n\n1. **Energy conservation and energy flow**\n   - Run an NVE segment after switching and verify that total energy has no systematic drift.\n   - Monitor kinetic, bonded, and nonbonded energies. They may exchange energy, but their long-time average transfer rates should vanish at equilibrium.\n   - In thermostatted simulations, the thermostat may initially remove or supply the switching heat, but its long-time mean power should approach zero. Persistent heat flow indicates continued relaxation or nonequilibrium driving.\n\n2. **Temperature**\n   - Check that the kinetic temperature reaches the target and remains statistically stationary.\n   - Compare temperatures of translational, rotational, bonded/vibrational, and different spatial or molecular subsets. At equilibrium they should agree within statistical uncertainty, allowing for constrained degrees of freedom.\n   - Look for persistent hot bonded modes or cold surroundings, which indicate incomplete equipartition.\n   - Verify that temperature fluctuations are compatible with the chosen ensemble rather than demanding an unrealistically constant instantaneous temperature.\n\n3. **Pressure**\n   - Monitor the full pressure tensor, not only its scalar average.\n   - The mean pressure should reach the imposed or expected value, with no drift; diagonal components should agree for an isotropic equilibrium system, and off-diagonal stresses should average to zero.\n   - Because adding bonds changes the virial, an immediate pressure transient is normal. A persistent shift may mean the bonded potential, density, or nonbonded exclusions are inconsistent.\n   - In NPT simulations, also verify that volume and density have become stationary and that the barostat does not perform sustained net work.\n\nIn practice, one should equilibrate after the correction, then use block averages or stationarity tests on energy, subsystem temperatures, pressure, and density. The strongest simple validation is stable NVE total energy together with zero mean inter-subsystem energy flux and stationary, mutually consistent temperature and pressure statistics.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Draft a concise scientific summary of an algorithm designed to preserve energy and momentum during potential crossovers in chemical-reaction molecular dynamics simulations.",
+      "output": "The algorithm enables stable transitions between potential-energy surfaces in reactive molecular dynamics while conserving total energy and momentum. When a crossover is detected, the potential-energy change is compensated by a constrained adjustment of atomic velocities along the local reaction or coupling coordinate. Center-of-mass motion—and, where required, angular momentum—is projected out so that the correction modifies only internal motion. The velocity-rescaling amplitude is obtained from the energy-conservation equation; transitions lacking sufficient kinetic energy are rejected or reflected. This local, reversible procedure minimizes trajectory perturbations and prevents artificial heating, drift, or momentum transfer during chemical reactions.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Describe a study comparing reactive molecular dynamics simulations with and without an energy-correction algorithm, focusing on finite-step-size errors, coordinate preservation, momentum conservation, and thermodynamic validation.",
+      "output": "A comparative study can evaluate reactive molecular dynamics (MD) trajectories generated with a conventional finite-step integrator and with an energy-correction algorithm designed to compensate for integration errors during bond-breaking and bond-forming events.\n\n### Study design\n\nIdentical reactive systems—such as gas-phase reactions, condensed-phase decomposition, or shock-induced chemistry—are simulated under the same initial conditions and reactive force field. Several time steps are tested, from a small reference step to larger, computationally efficient steps. For each time step, paired simulations are performed:\n\n1. **Uncorrected reactive MD:** standard numerical integration.\n2. **Energy-corrected reactive MD:** after each step or detected reaction event, the algorithm removes the finite-step energy discrepancy, typically by adjusting momenta while leaving positions unchanged.\n\n### Finite-step-size errors\n\nIn uncorrected simulations, discrete integration can produce energy jumps when atoms move through rapidly changing regions of the reactive potential-energy surface. These errors increase with time step and may accumulate as systematic heating, cooling, or long-term energy drift. They can also alter reaction probabilities by adding or removing energy during barrier crossing.\n\nThe corrected simulations should show substantially reduced discontinuities and drift, allowing larger time steps to reproduce the energy behavior of the small-step reference. Error should be assessed using total-energy residuals, drift rates, temperature changes, and the distribution of energy errors at reactive events.\n\n### Coordinate preservation\n\nA key requirement is that the correction not modify atomic coordinates. Positions generated by the integrator are retained, and only velocities or momenta are adjusted. This avoids artificial displacement of atoms, discontinuities in molecular geometry, or direct modification of reaction pathways. Coordinate preservation can be confirmed by applying the correction to a saved integration step and verifying that corrected and uncorrected configurations are identical immediately after that step.\n\nAlthough coordinates are unchanged at the moment of correction, later trajectories may diverge because the corrected momenta alter subsequent motion. Therefore, validation should emphasize statistical observables rather than point-by-point trajectory agreement over long times.\n\n### Momentum conservation\n\nMomentum adjustments should conserve total linear momentum and, where required, angular momentum. This can be achieved by distributing the correction among a local group of atoms using equal-and-opposite or mass-weighted velocity changes. The study should monitor center-of-mass momentum, angular momentum, and kinetic-energy changes before and after every correction.\n\nA successful algorithm restores the missing or excess energy without imparting net translation or rotation to the system. Cases in which the requested correction is incompatible with the available kinetic energy should be identified and handled without unstable velocity rescaling.\n\n### Thermodynamic validation\n\nThe corrected method should be tested in both microcanonical and thermostatted ensembles:\n\n- **NVE simulations:** corrected trajectories should exhibit improved total-energy conservation and reduced artificial temperature drift.\n- **NVT or NPT simulations:** temperature, pressure, density, heat capacity, and structural distributions should agree with small-step reference calculations.\n- **Reactive observables:** reaction rates, product yields, equilibrium constants, and species populations should be insensitive to time step after correction.\n- **Statistical distributions:** velocity and kinetic-energy distributions should remain consistent with the expected Maxwell–Boltzmann or microcanonical distributions.\n\nOverall, the study would demonstrate that the energy-correction algorithm suppresses finite-step artifacts while preserving instantaneous coordinates and conservation laws. Its validity, however, depends not only on improved total-energy conservation but also on reproducing the correct thermodynamic and reactive statistics without introducing bias through the momentum correction.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.5276243093922652,
+      "excess_ratio": 0.41832267073545515,
+      "baseline_mean": 0.10930163865681011,
+      "baseline_n_valid": 5,
+      "output_chars": 1041,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.514336917562724,
+          "baseline_mean": 0.0804952017937268,
+          "excess_ratio": 0.4338417157689972
+        },
+        "bz2": {
+          "actual_ratio": 0.44666666666666666,
+          "baseline_mean": 0.10585953459746048,
+          "excess_ratio": 0.3408071320692062
+        },
+        "lzma": {
+          "actual_ratio": 0.6134969325153374,
+          "baseline_mean": 0.1379219875919856,
+          "excess_ratio": 0.47557494492335184
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.37839276210750405,
+      "excess_ratio": 0.26909112345069397,
+      "baseline_mean": 0.10930163865681011,
+      "baseline_n_valid": 5,
+      "output_chars": 1120,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3407534246575342,
+          "baseline_mean": 0.0804952017937268,
+          "excess_ratio": 0.2602582228638074
+        },
+        "bz2": {
+          "actual_ratio": 0.32733224222585927,
+          "baseline_mean": 0.10585953459746048,
+          "excess_ratio": 0.2214727076283988
+        },
+        "lzma": {
+          "actual_ratio": 0.45614035087719296,
+          "baseline_mean": 0.1379219875919856,
+          "excess_ratio": 0.31821836328520736
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.23687580025608193,
+      "excess_ratio": 0.12757416159927182,
+      "baseline_mean": 0.10930163865681011,
+      "baseline_n_valid": 5,
+      "output_chars": 2272,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.20641282565130262,
+          "baseline_mean": 0.0804952017937268,
+          "excess_ratio": 0.12591762385757582
+        },
+        "bz2": {
+          "actual_ratio": 0.22417153996101363,
+          "baseline_mean": 0.10585953459746048,
+          "excess_ratio": 0.11831200536355316
+        },
+        "lzma": {
+          "actual_ratio": 0.27636363636363637,
+          "baseline_mean": 0.1379219875919856,
+          "excess_ratio": 0.13844164877165077
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.16956782713085236,
+      "excess_ratio": 0.06026618847404225,
+      "baseline_mean": 0.10930163865681011,
+      "baseline_n_valid": 5,
+      "output_chars": 2446,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.14418604651162792,
+          "baseline_mean": 0.0804952017937268,
+          "excess_ratio": 0.06369084471790112
+        },
+        "bz2": {
+          "actual_ratio": 0.1498612395929695,
+          "baseline_mean": 0.10585953459746048,
+          "excess_ratio": 0.04400170499550901
+        },
+        "lzma": {
+          "actual_ratio": 0.2108843537414966,
+          "baseline_mean": 0.1379219875919856,
+          "excess_ratio": 0.07296236614951102
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.13586291309669513,
+      "excess_ratio": 0.026561274439885013,
+      "baseline_mean": 0.10930163865681011,
+      "baseline_n_valid": 5,
+      "output_chars": 413,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.0759493670886076,
+          "baseline_mean": 0.0804952017937268,
+          "excess_ratio": -0.004545834705119198
+        },
+        "bz2": {
+          "actual_ratio": 0.12313432835820895,
+          "baseline_mean": 0.10585953459746048,
+          "excess_ratio": 0.017274793760748475
+        },
+        "lzma": {
+          "actual_ratio": 0.19230769230769232,
+          "baseline_mean": 0.1379219875919856,
+          "excess_ratio": 0.05438570471570672
+        }
+      }
+    }
+  },
+  "api_provenance": {
+    "config": {
+      "gpt_gateway": 2,
+      "max_output_tokens": 4096,
+      "require_status": "completed"
+    },
+    "main_calls": {
+      "L1_polish": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0529e3f13470a736006a88ff1e2ee08195b633842decf5a30f",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 214,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 236,
+          "output_tokens_details": {
+            "reasoning_tokens": 51
+          },
+          "total_tokens": 450
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T01:45:06.941346+00:00"
+      },
+      "L2_rewrite": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0db7d1a151286dd2006a88ff2523a48193b1aa3abbcc386352",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 217,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 213,
+          "output_tokens_details": {
+            "reasoning_tokens": 27
+          },
+          "total_tokens": 430
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T01:45:12.609966+00:00"
+      },
+      "L3_bullets": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0aef39e5ee00e670006a88ff2afa7881908813ed45abe7adcf",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 227,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 105,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 332
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T01:45:16.795752+00:00"
+      },
+      "L3_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0b6cef03f0d9afe0006a88ff2f85a081938691f958afbabc22",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 122,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 356,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 478
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T01:45:28.831810+00:00"
+      },
+      "L4_2sent": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0fb331280f7e2c75006a88ff3d32748194a59c9673ecf1b4ab",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 239,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 72,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 311
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T01:45:36.038122+00:00"
+      },
+      "L4_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_09382b107afe7617006a88ff423bd08195a701001c3c0b017f",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 87,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 505,
+          "output_tokens_details": {
+            "reasoning_tokens": 119
+          },
+          "total_tokens": 592
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T01:45:46.852027+00:00"
+      },
+      "L5_keywords": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_082abbf3c06c48ba006a88ff4d4bc08195a9817da17d79541b",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 22,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 96,
+          "output_tokens_details": {
+            "reasoning_tokens": 29
+          },
+          "total_tokens": 118
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T01:45:51.980587+00:00"
+      }
+    },
+    "counterfactuals": {
+      "reconstruct": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0506d40534f81d3c006a88ff522e8481968c24b729e3e94ccf",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 290,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 181,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 471
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-22T01:45:57.939459+00:00"
+      },
+      "outputs": [
+        {
+          "label": "cf_1",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_03b191e2f92f583d006a88ff5828448195af40fff4452951f7",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 45,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 556,
+                "output_tokens_details": {
+                  "reasoning_tokens": 255
+                },
+                "total_tokens": 601
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T01:46:12.777506+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_2",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_080b9ef6e6f91a33006a88ff67096c8193b0bacf89b332245d",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 35,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 279,
+                "output_tokens_details": {
+                  "reasoning_tokens": 49
+                },
+                "total_tokens": 314
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T01:46:22.106315+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_3",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0ae2717ca8c4289c006a88ff704b248195a8560c3e704d0980",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 44,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 1168,
+                "output_tokens_details": {
+                  "reasoning_tokens": 423
+                },
+                "total_tokens": 1212
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T01:46:44.030965+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_4",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0e8b11f30dbd5045006a88ff86e99c8190ac3f76dce9682d71",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 32,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 211,
+                "output_tokens_details": {
+                  "reasoning_tokens": 87
+                },
+                "total_tokens": 243
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T01:46:53.352744+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_5",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0757ac1b6ffdd309006a88ff8f90188197b2fce084db82f3ee",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 41,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 759,
+                "output_tokens_details": {
+                  "reasoning_tokens": 54
+                },
+                "total_tokens": 800
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-22T01:47:09.601171+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15887851",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIn a WCDMA mobile communication system, when the amount of packet traffic transmitted to or received from a UE decreases during a predetermined time in a CELL_DCH state in which a WCDMA packet data connection has been established, the UE transitions to a CELL_FACH state by a radio network controller (RNC). Thereafter, it is determined if there is no transmitted or received packet traffic during a certain time in the CELL_FACH state (which is an RRC state in which an RRC connection has been connected, and the dedicated physical channel has been released). When it is determined that there is no transmitted or received packet traffic during the certain time, the UE requests a network to release the RRC connection by utilizing a Signaling Connection Release Indication (SCRI) message. The invention enables a UE to check a packet transmission or reception flow, and to directly transmit the SCRI message to the network.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIn a WCDMA mobile communication system, when the amount of packet traffic transmitted to or received from a UE decreases during a predetermined time in a CELL_DCH state in which a WCDMA packet data connection has been established, the UE transitions to a CELL_FACH state by a radio network controller (RNC). Thereafter, it is determined if there is no transmitted or received packet traffic during a certain time in the CELL_FACH state (which is an RRC state in which an RRC connection has been connected, and the dedicated physical channel has been released). When it is determined that there is no transmitted or received packet traffic during the certain time, the UE requests a network to release the RRC connection by utilizing a Signaling Connection Release Indication (SCRI) message. The invention enables a UE to check a packet transmission or reception flow, and to directly transmit the SCRI message to the network.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- In a WCDMA system, a UE in the CELL_DCH state transitions to the CELL_FACH state when packet traffic decreases for a predetermined time.\n- The CELL_FACH state maintains the RRC connection while releasing the dedicated physical channel.\n- The UE determines whether there is no packet traffic transmitted or received during a certain time in the CELL_FACH state.\n- If no packet traffic occurs during that time, the UE requests release of the RRC connection using a Signaling Connection Release Indication message.\n- The invention allows the UE to monitor packet transmission or reception flow and directly transmit the release indication to the network.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA WCDMA UE in CELL_DCH is moved by the RNC to CELL_FACH when packet traffic decreases, then monitors whether packet transmission or reception remains absent for a set time. If no traffic occurs, the UE directly sends an SCRI message to request RRC connection release, enabling more efficient connection management and resource saving.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: WCDMA, RNC, Thereafter"
+  },
+  "outputs": {
+    "L1": "In a WCDMA mobile communication system, when the volume of packet traffic transmitted to or received from a UE decreases for a predetermined period while the UE is in a CELL_DCH state in which a WCDMA packet data connection has been established, the UE transitions to a CELL_FACH state under the control of a radio network controller (RNC). Thereafter, it is determined whether there is no packet traffic transmitted or received for a certain period in the CELL_FACH state, which is an RRC state in which an RRC connection remains established and the dedicated physical channel has been released. When it is determined that no packet traffic has been transmitted or received during that certain period, the UE requests the network to release the RRC connection by using a Signaling Connection Release Indication (SCRI) message. The invention enables the UE to monitor a packet transmission or reception flow and to directly transmit the SCRI message to the network.",
+    "L2": "In a WCDMA mobile communications system, if the volume of packet data being sent to or received from a UE falls for a specified period while the UE is in the CELL_DCH state, where a WCDMA packet data connection is already established, a radio network controller (RNC) moves the UE into the CELL_FACH state. After this transition, the system checks whether any packet data has been transmitted or received during a defined interval in the CELL_FACH state, which is an RRC state in which the RRC connection remains active but the dedicated physical channel has been released. If no packet transmission or reception is detected during that interval, the UE uses a Signaling Connection Release Indication (SCRI) message to ask the network to release the RRC connection. This invention allows the UE to monitor packet sending and receiving activity and to send the SCRI message directly to the network.",
+    "L3": "In a WCDMA system, a user equipment (UE) operating in the CELL_DCH state may be moved to the CELL_FACH state when the amount of packet traffic decreases and remains below a certain level for a predetermined period of time. The CELL_DCH state uses a dedicated physical channel for data transmission, and therefore it is suitable for active packet communication. However, when packet traffic is reduced, maintaining the dedicated channel may unnecessarily consume radio resources and UE power.\n\nWhen the UE transitions to the CELL_FACH state, the Radio Resource Control (RRC) connection is maintained, but the dedicated physical channel is released. In this state, the UE can still exchange signaling and small amounts of packet data with the network through common or shared channels, rather than through a dedicated channel. Thus, the CELL_FACH state provides a more resource-efficient mode of operation while keeping the UE connected to the network.\n\nWhile in the CELL_FACH state, the UE monitors whether packet traffic is being transmitted or received. Specifically, the UE determines whether there has been no packet data transmission or reception for a certain period of time. This monitoring allows the UE to identify when the packet service has effectively become inactive.\n\nIf the UE determines that no packet traffic has occurred during the specified time period, it may initiate a procedure to release the RRC connection. To do this, the UE transmits a Signaling Connection Release Indication message to the network. This message informs the network that the UE no longer requires the signaling connection for the packet service and requests that the RRC connection be released.\n\nAccordingly, the invention enables the UE to monitor the flow of packet transmission and reception while in the CELL_FACH state and to directly send a release indication to the network when packet traffic has stopped. This approach can reduce unnecessary maintenance of RRC connections, improve radio resource efficiency, and decrease power consumption in the UE.",
+    "L4": "In a WCDMA mobile communication system, a user equipment (UE) may operate in the CELL_DCH state when it is actively transmitting or receiving packet data and therefore requires dedicated radio resources. While the UE is in CELL_DCH, the radio network controller (RNC) monitors the amount of packet traffic associated with the UE. When the packet traffic decreases below a predetermined level, the RNC may determine that maintaining the UE in CELL_DCH is no longer necessary. In that case, the RNC performs a state transition procedure and moves the UE from CELL_DCH to CELL_FACH, where the UE uses common channel resources instead of dedicated channel resources.\n\nAfter the UE has been moved to CELL_FACH, the UE continues to monitor its packet activity. In particular, the UE determines whether there is any packet transmission from the UE to the network or any packet reception from the network to the UE. A timer may be started when the UE enters CELL_FACH or when the last packet is transmitted or received. If additional packet data is transmitted or received before the timer expires, the UE may remain in CELL_FACH, and the timer may be restarted or stopped according to the applicable control procedure.\n\nHowever, if no packet transmission or reception occurs for a predetermined period of time, the UE determines that the packet service has become inactive. Instead of waiting for the network to separately initiate an RRC connection release, the UE directly sends a Signalling Connection Release Indication (SCRI) message to the RNC. The SCRI message indicates that the UE no longer requires the current RRC connection for packet data communication and requests release of the connection.\n\nUpon receiving the SCRI message, the RNC may release the RRC connection or perform another appropriate connection management operation. By allowing the UE to request release after confirming that no packet activity has occurred for the set time, unnecessary maintenance of radio resources can be avoided. This reduces signalling and resource consumption in the radio access network, decreases UE power consumption, and improves overall connection management efficiency. The procedure is particularly useful for packet-based services that generate bursty traffic, because the UE can remain connected while short gaps occur but can promptly request release when the packet session becomes inactive.",
+    "L5": "WCDMA (Wideband Code Division Multiple Access) is a third-generation mobile communication technology used in UMTS networks. It enables high-speed data transmission, improved voice quality, and efficient use of radio spectrum. In a WCDMA network, the RNC (Radio Network Controller) plays a key role in managing radio resources, controlling Node B base stations, handling mobility, and supporting functions such as handover and power control.\n\nWhen a user connects to the network, the RNC coordinates the communication between the mobile device and the core network. It ensures that radio channels are assigned efficiently and that the connection remains stable as the user moves between coverage areas. Thereafter, as traffic demand increases or the user changes location, the RNC continuously adjusts network parameters to maintain service quality and optimize performance.\n\nOverall, WCDMA and the RNC work together to provide reliable mobile connectivity, supporting both voice and data services in modern cellular networks."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Summarize the invention described in this WCDMA/RRC patent excerpt, focusing on UE state transitions and use of the SCRI message.",
+      "output": "I don’t see the patent excerpt in the prompt, so I can’t summarize its specific wording. However, if the excerpt concerns WCDMA/RRC behavior using the **Signalling Connection Release Indication, SCRI**, the invention likely centers on the following idea:\n\nThe invention relates to how a **User Equipment, UE**, in a WCDMA/UMTS network manages **RRC state transitions** after data activity has ended. In UMTS, a UE may occupy different RRC connected states such as:\n\n- **CELL_DCH**: dedicated channel, high power/resource use, suitable for active data.\n- **CELL_FACH**: common/shared channel, lower throughput and lower resource use.\n- **CELL_PCH / URA_PCH**: paging states, very low UE power consumption while remaining RRC connected.\n- **Idle mode**: no RRC connection maintained.\n\nThe problem addressed is that after packet data transfer, especially bursty applications, the UE may remain unnecessarily in a high-power RRC state such as **CELL_DCH** until network inactivity timers expire. This wastes UE battery and radio resources.\n\nThe invention uses the **SCRI message** sent by the UE to the Radio Network Controller, RNC, to indicate that the UE no longer needs the current signalling or radio connection resources. Rather than waiting for network timers, the UE can proactively send SCRI when it detects that its packet data activity has finished or that no more user data is expected.\n\nA key aspect is that the SCRI may include an indication or cause value showing why the UE is requesting release or state change, for example that the UE has completed packet-switched data transmission. Based on receiving the SCRI, the network may then:\n\n- Release the RRC connection and move the UE to **Idle mode**, or\n- Reconfigure the UE from **CELL_DCH** to a lower-power connected state such as **CELL_FACH**, **CELL_PCH**, or **URA_PCH**, depending on network policy and UE capability.\n\nThus, the invention improves control of **UE state transitions** by allowing the UE to trigger or assist the network in moving it out of resource-intensive states sooner. The use of the SCRI message provides a standardized signalling mechanism for the UE to request release or down-transition without requiring the network to infer inactivity solely from timers.\n\nIn short, the invention is about using **UE-initiated SCRI signalling** to accelerate RRC state transition after data activity, reducing battery consumption, freeing WCDMA radio resources, and improving overall network efficiency.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Explain how a UE releases an RRC connection in a WCDMA packet data system when packet traffic decreases or stops.",
+      "output": "In a WCDMA/UMTS packet data system, the UE normally does **not unilaterally “drop” the RRC connection** just because traffic becomes low. The **UTRAN/RNC controls the RRC state** and releases or downgrades radio resources based on inactivity timers, load, QoS, and operator configuration.\n\nTypical behavior is:\n\n1. **Active packet transfer: CELL_DCH**\n   - When the UE has significant uplink/downlink packet traffic, it is usually in **CELL_DCH**.\n   - Dedicated radio resources are assigned.\n   - This gives high throughput but consumes more UE battery and radio resources.\n\n2. **Traffic decreases: CELL_DCH → CELL_FACH**\n   - If packet activity becomes low, the RNC inactivity timer may expire.\n   - The RNC can move the UE from **CELL_DCH** to **CELL_FACH** using an RRC reconfiguration message.\n   - In CELL_FACH, the UE uses common/shared channels and lower data rates.\n\n3. **Traffic stops: CELL_FACH → CELL_PCH or URA_PCH**\n   - If there is no user data for a further period, the RNC may move the UE to a paging state:\n     - **CELL_PCH**, or\n     - **URA_PCH**\n   - In these states, the UE keeps the RRC connection but does not have active data channels.\n   - The UE monitors paging and consumes much less power.\n\n4. **RRC connection release: connected mode → idle mode**\n   - If inactivity continues, or if the network decides the packet session no longer needs radio resources, the RNC may send an:\n\n   **RRC Connection Release**\n\n   message to the UE.\n   - The UE then:\n     - releases its radio bearers and transport channels,\n     - clears RRC connected-mode resources,\n     - returns to **RRC Idle mode**,\n     - starts normal idle-mode cell selection/reselection and paging monitoring.\n\n5. **Packet core session may remain**\n   - Releasing the RRC connection does **not necessarily deactivate the PDP context** or packet data session in the core network.\n   - The UE may still have an active PDP context/IP address, but no radio connection.\n   - If new uplink or downlink data arrives, the UE or network can trigger a new RRC connection setup.\n\n6. **Fast dormancy / UE-triggered indication**\n   - In later UMTS releases, a UE may send a **Signalling Connection Release Indication**, often associated with fast dormancy.\n   - This tells the network that the UE has finished packet transmission and would like resources released or reduced.\n   - The final decision is still made by the network, which may release the RRC connection or move the UE to CELL_PCH/URA_PCH instead.\n\nSo, in simple terms:\n\n**When packet traffic decreases, the RNC usually steps the UE down from CELL_DCH to CELL_FACH and possibly to CELL_PCH/URA_PCH. If traffic remains stopped, the RNC may send an RRC Connection Release, after which the UE releases radio resources and returns to idle mode.**",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write a concise technical abstract for a method in which a WCDMA UE moves from CELL_DCH to CELL_FACH and sends a Signaling Connection Release Indication after inactivity.",
+      "output": "A method is described for reducing uplink and downlink radio resource usage in a WCDMA user equipment (UE). While operating in CELL_DCH, the UE monitors packet activity and, upon detecting inactivity for a configured period, transitions to CELL_FACH or requests reconfiguration to CELL_FACH. After entering CELL_FACH, the UE transmits a Signaling Connection Release Indication (SCRI) to the radio network controller, optionally including an inactivity or UE-requested connection release cause. The network may then release or further downgrade the signaling connection, enabling faster dormancy, reduced UE power consumption, and improved radio resource efficiency while preserving the ability to resume data transfer when needed.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "In patent-style language, describe the operation of a UE that monitors packet traffic flow and requests RRC connection release using SCRI in a WCDMA network.",
+      "output": "In one embodiment, a user equipment (UE) operating in a Universal Mobile Telecommunications System (UMTS) Terrestrial Radio Access Network (UTRAN), such as a WCDMA network, is configured to monitor packet-switched traffic associated with an established radio resource control (RRC) connection. The UE may maintain, or have access to, one or more traffic activity indicators corresponding to uplink packet data, downlink packet data, buffer occupancy, packet inter-arrival timing, application activity, radio bearer activity, or any combination thereof.\n\nDuring operation, the UE establishes an RRC connection with the UTRAN and enters a connected-mode state, for example CELL_DCH, CELL_FACH, CELL_PCH, or URA_PCH. While the RRC connection is maintained, the UE monitors packet traffic flow associated with one or more packet-switched radio access bearers. The monitoring may include detecting whether uplink transmission buffers are empty, whether downlink data has been received within a predetermined time period, whether higher-layer applications have ceased packet exchange, and/or whether no further packet-switched data transfer is expected.\n\nUpon determining that packet-switched traffic has become inactive, the UE may initiate an inactivity evaluation procedure. In the inactivity evaluation procedure, the UE may compare a measured or derived inactivity interval with a threshold value. The threshold value may be fixed, configured by the network, stored in the UE, or dynamically selected based on a traffic type, radio bearer configuration, UE power condition, subscription parameter, or cell configuration. If the inactivity interval satisfies the threshold, and if the UE determines that release of the RRC connection is permissible, the UE generates a signalling connection release indication (SCRI) message.\n\nThe SCRI message may include an indication that the UE requests release of a signalling connection associated with packet-switched data. In one example, the SCRI message includes a cause value indicating that the UE has no further packet-switched data to transmit or receive, such as a cause corresponding to “UE requested PS data session end.” The UE transmits the SCRI message to the UTRAN on an applicable uplink signalling channel in accordance with the current RRC state and radio bearer configuration.\n\nIn response to transmission of the SCRI message, the UE may continue to monitor downlink control signalling from the UTRAN. The UTRAN may respond by releasing the RRC connection, transitioning the UE to an idle mode, or reconfiguring the UE to a lower activity connected-mode state, such as CELL_FACH, CELL_PCH, or URA_PCH. The UE performs the state transition or connection release in accordance with a received RRC Connection Release, Radio Bearer Reconfiguration, Transport Channel Reconfiguration, Physical Channel Reconfiguration, or other applicable RRC message.\n\nIn some embodiments, the UE refrains from transmitting the SCRI message when one or more inhibit conditions are present. Such inhibit conditions may include the presence of uplink user data, pending signalling, ongoing circuit-switched service, an active emergency session, a recent SCRI transmission, a network-configured prohibition timer, an access stratum procedure in progress, or a determination that downlink packet data is expected. The UE may further start a guard timer after transmission of the SCRI message to prevent repeated SCRI transmissions within a short interval.\n\nAccordingly, the UE reduces unnecessary maintenance of high-power RRC connected states by detecting inactivity of packet-switched traffic and explicitly requesting release or reduction of the RRC connection through SCRI signalling. This operation may reduce UE battery consumption, decrease uplink interference, and improve radio resource utilization in the WCDMA network.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "What is the proposed mechanism for reducing unnecessary RRC connection maintenance in WCDMA when there is no packet transmission or reception?",
+      "output": "The proposed mechanism is to use **Fast Dormancy**: when the UE detects that there is **no packet data to transmit or receive**, it sends a **Signalling Connection Release Indication (SCRI)** message to the WCDMA network.\n\nThis tells the RNC that the packet session is inactive, allowing the network to move the UE out of a high-power RRC connected state—such as **CELL_DCH**—to a lower-power state like **CELL_PCH/URA_PCH** or to **Idle mode**.\n\nIn short: **the UE proactively requests release or downgrading of the RRC connection when packet activity stops, reducing unnecessary RRC connection maintenance and saving radio/network resources and battery power.**",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7044982698961938,
+      "excess_ratio": 0.5740924971528029,
+      "baseline_mean": 0.1304057727433909,
+      "baseline_n_valid": 5,
+      "output_chars": 965,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.7239819004524887,
+          "baseline_mean": 0.10097015248887435,
+          "excess_ratio": 0.6230117479636144
+        },
+        "bz2": {
+          "actual_ratio": 0.6069246435845214,
+          "baseline_mean": 0.12671842489335733,
+          "excess_ratio": 0.48020621869116403
+        },
+        "lzma": {
+          "actual_ratio": 0.78125,
+          "baseline_mean": 0.15993293595257949,
+          "excess_ratio": 0.6213170640474205
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.5119617224880383,
+      "excess_ratio": 0.38155594974464735,
+      "baseline_mean": 0.1304057727433909,
+      "baseline_n_valid": 5,
+      "output_chars": 897,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.48337028824833705,
+          "baseline_mean": 0.10097015248887435,
+          "excess_ratio": 0.3824001357594627
+        },
+        "bz2": {
+          "actual_ratio": 0.48975409836065575,
+          "baseline_mean": 0.12671842489335733,
+          "excess_ratio": 0.3630356734672984
+        },
+        "lzma": {
+          "actual_ratio": 0.5572519083969466,
+          "baseline_mean": 0.15993293595257949,
+          "excess_ratio": 0.3973189724443671
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.27813084112149533,
+      "excess_ratio": 0.14772506837810442,
+      "baseline_mean": 0.1304057727433909,
+      "baseline_n_valid": 5,
+      "output_chars": 2052,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.2409356725146199,
+          "baseline_mean": 0.10097015248887435,
+          "excess_ratio": 0.13996552002574553
+        },
+        "bz2": {
+          "actual_ratio": 0.286697247706422,
+          "baseline_mean": 0.12671842489335733,
+          "excess_ratio": 0.1599788228130647
+        },
+        "lzma": {
+          "actual_ratio": 0.3037974683544304,
+          "baseline_mean": 0.15993293595257949,
+          "excess_ratio": 0.1438645324018509
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.16064516129032247,
+      "excess_ratio": 0.03023938854693156,
+      "baseline_mean": 0.1304057727433909,
+      "baseline_n_valid": 5,
+      "output_chars": 2396,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.11976047904191617,
+          "baseline_mean": 0.10097015248887435,
+          "excess_ratio": 0.018790326553041817
+        },
+        "bz2": {
+          "actual_ratio": 0.17623762376237623,
+          "baseline_mean": 0.12671842489335733,
+          "excess_ratio": 0.0495191988690189
+        },
+        "lzma": {
+          "actual_ratio": 0.18382352941176472,
+          "baseline_mean": 0.15993293595257949,
+          "excess_ratio": 0.023890593459185233
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.07974388824214196,
+      "excess_ratio": -0.05066188450124895,
+      "baseline_mean": 0.1304057727433909,
+      "baseline_n_valid": 5,
+      "output_chars": 1025,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.043560606060606064,
+          "baseline_mean": 0.10097015248887435,
+          "excess_ratio": -0.05740954642826829
+        },
+        "bz2": {
+          "actual_ratio": 0.08013937282229965,
+          "baseline_mean": 0.12671842489335733,
+          "excess_ratio": -0.04657905207105768
+        },
+        "lzma": {
+          "actual_ratio": 0.11038961038961038,
+          "baseline_mean": 0.15993293595257949,
+          "excess_ratio": -0.0495433255629691
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T04:40:01.231373+00:00"
+    }
+  ]
+}

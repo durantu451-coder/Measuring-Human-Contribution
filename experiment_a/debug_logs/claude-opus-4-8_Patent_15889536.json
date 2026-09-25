@@ -1,0 +1,169 @@
+{
+  "model": "claude-opus-4-8",
+  "domain": "Patent",
+  "id": "15889536",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nAn apparatus comprises a memory and a controller. The memory configured to store data. The memory may comprise a write buffer and a plurality of memory dies. Each memory die may have a size less than a total size of the memory and include a plurality of cells. The memory may perform a program operation to write to and verify one or more of the plurality of cells in response to receiving a program command. The controller may be configured to issue the program command to program the plurality of memory dies and to issue the polling status command after issuing the program command to obtain a number of the cells that failed to be verified during the program operation. In response to the polling status command received from the controller, the memory reports a count of a number of bit-lines not having an inhibited state in the write buffer.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nAn apparatus comprises a memory and a controller. The memory configured to store data. The memory may comprise a write buffer and a plurality of memory dies. Each memory die may have a size less than a total size of the memory and include a plurality of cells. The memory may perform a program operation to write to and verify one or more of the plurality of cells in response to receiving a program command. The controller may be configured to issue the program command to program the plurality of memory dies and to issue the polling status command after issuing the program command to obtain a number of the cells that failed to be verified during the program operation. In response to the polling status command received from the controller, the memory reports a count of a number of bit-lines not having an inhibited state in the write buffer.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The apparatus consists of a memory configured to store data and a controller that manages memory operations.\n- The memory includes a write buffer and multiple memory dies, each smaller than the total memory size and containing a plurality of cells.\n- The memory performs a program operation to write to and verify one or more cells upon receiving a program command.\n- The controller issues the program command to program the memory dies and then issues a polling status command to determine how many cells failed verification.\n- In response to the polling status command, the memory reports a count of the number of bit-lines that do not have an inhibited state in the write buffer.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nAn apparatus comprising memory with a write buffer and multiple memory dies alongside a controller addresses monitoring program operations, where the controller issues program and polling status commands to determine how many cells failed verification during writing. In response to the polling status command, the memory reports a count of bit-lines lacking an inhibited state in the write buffer, enabling efficient tracking of program failures across the memory dies.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, Each"
+  },
+  "outputs": {
+    "L1": "Here is a polished version of the text:\n\n---\n\nAn apparatus comprises a memory and a controller. The memory is configured to store data and may comprise a write buffer and a plurality of memory dies. Each memory die may have a size smaller than the total size of the memory and may include a plurality of cells. In response to receiving a program command, the memory may perform a program operation to write to and verify one or more of the plurality of cells. The controller may be configured to issue the program command to program the plurality of memory dies and to subsequently issue a polling status command following the program command in order to obtain the number of cells that failed verification during the program operation. In response to the polling status command received from the controller, the memory reports a count of the number of bit-lines that do not have an inhibited state in the write buffer.\n\n---\n\n**Key refinements made:**\n- Corrected the sentence fragment \"The memory configured to store data\" to a complete sentence and combined it naturally with the following clause.\n- Standardized comparative phrasing (\"less than a total size\" → \"smaller than the total size\").\n- Improved logical flow by repositioning the conditional clause (\"In response to receiving a program command...\").\n- Enhanced clarity and formality with word choices such as \"subsequently,\" \"following,\" and \"failed verification.\"\n- Ensured consistent article usage (\"a polling status command,\" \"the number of cells\").\n\nAll original technical information has been preserved unchanged.",
+    "L2": "A device includes both a memory unit and a controller. The memory is designed to hold data and can contain a write buffer along with several memory dies. Each individual die is smaller in size than the memory as a whole and contains numerous cells. When the memory receives a program command, it can carry out a program operation that both writes to and verifies one or more of these cells. The controller's role is to send the program command that programs the multiple memory dies, and afterward to send a polling status command in order to determine how many cells were not successfully verified during the program operation. Upon receiving this polling status command from the controller, the memory responds by reporting the total count of bit-lines within the write buffer that lack an inhibited state.",
+    "L3": "# Memory Apparatus with Program Verification and Status Polling\n\n## System Overview\n\nThe apparatus comprises two principal components: a memory configured to store data, and a controller responsible for managing memory operations. Together, these elements form an integrated system in which the controller directs the flow of commands while the memory executes the underlying storage functions and reports operational results back to the controller.\n\n## Memory Architecture\n\nThe memory is organized to include a write buffer and multiple memory dies. Each of these memory dies is smaller in capacity than the total memory size, allowing the overall storage capacity to be distributed across several discrete units. Within each memory die is a plurality of cells, which serve as the fundamental elements in which individual bits of data are stored. This distributed die architecture supports parallelism and modularity in the way data is written and managed.\n\n## Program Operation\n\nWhen the memory receives a program command, it initiates a program operation. This operation involves two closely related tasks: writing data to one or more cells, and subsequently verifying that the data was correctly written. The verification step confirms whether each targeted cell has reached its intended programmed state, ensuring the integrity and reliability of the stored data.\n\n## Controller Command Sequence\n\nThe controller orchestrates the programming process through a defined sequence of commands. First, it issues the program command to program the memory dies, thereby initiating the write and verify operation described above. After the program command has been issued, the controller follows with a polling status command. The purpose of this polling status command is to determine how many cells failed verification, providing the controller with feedback on the outcome of the program operation.\n\n## Status Reporting\n\nIn response to the polling status command, the memory returns a status report to the controller. Specifically, the memory reports a count of the number of bit-lines that do not have an inhibited state within the write buffer. Because an inhibited state typically indicates that a cell has been successfully programmed and no longer requires further programming, the count of non-inhibited bit-lines effectively represents the number of cells that have not yet passed verification. This reported count enables the controller to assess the progress and success of the program operation and to determine whether any additional action is required.",
+    "L4": "# Apparatus and Method for Monitoring Program Operations in Memory Devices\n\n## Overview\n\nThe present disclosure describes an apparatus and associated methods for efficiently monitoring program operations across memory devices. The apparatus comprises a memory system that includes a write buffer and multiple memory dies, working in coordination with a controller that manages and oversees program operations to ensure data integrity during write processes.\n\n## System Architecture\n\nThe apparatus is built around several key components. At its core, the memory includes a write buffer that temporarily holds data during programming operations. This write buffer plays a critical role in tracking the state of individual bit-lines throughout the write process. The system further incorporates multiple memory dies, allowing for parallel operations and expanded storage capacity across the device.\n\nA controller is communicatively coupled to the memory and serves as the central management unit responsible for directing program operations. The controller is specifically configured to address the monitoring of these program operations, providing a mechanism to assess the success or failure of write attempts across the various memory dies.\n\n## Operational Methodology\n\nDuring operation, the controller issues two distinct types of commands to the memory. First, it issues **program commands** that initiate the writing of data to specified memory cells. Following these program operations, the controller issues **polling status commands** designed to interrogate the memory regarding the outcome of the programming attempt.\n\nThe purpose of these polling status commands is to determine how many memory cells failed verification during the writing process. Verification is a crucial step in memory programming, as it confirms whether the target cells have reached their intended threshold voltage states. Cells that fail to reach these states represent programming failures that must be tracked and managed.\n\n## Failure Reporting Mechanism\n\nIn response to receiving a polling status command, the memory generates and reports a count of bit-lines that lack an inhibited state within the write buffer. When a cell has been successfully programmed to its target state, its corresponding bit-line is placed into an inhibited state, preventing further programming pulses from affecting that cell. Conversely, bit-lines that remain in a non-inhibited state indicate cells that have not yet reached their intended values and therefore represent programming failures.\n\nBy counting the bit-lines that have not achieved an inhibited state, the memory provides the controller with a precise measure of the number of failed cells. This count is derived directly from the write buffer, leveraging existing hardware to efficiently gather failure information without requiring additional dedicated circuitry.\n\n## Advantages\n\nThis approach enables efficient tracking of program failures across the multiple memory dies. By utilizing the write buffer's inhibited-state information and reporting failure counts in response to polling commands, the controller can make informed decisions about the reliability of programmed data. This mechanism allows the system to identify potential problems early, implement corrective measures such as re-programming or error correction, and maintain overall data integrity across the memory device. The result is a streamlined and resource-efficient method for monitoring and managing program operations throughout the memory system.",
+    "L5": "# The Power of Small Words\n\nSome of the most important words in the English language are also the smallest and most easily overlooked. Consider \"the\" and \"each\"—two humble words that quietly shape how we communicate every day.\n\n## The\n\n\"The\" is the most frequently used word in the English language. As the only definite article, it points to something specific and known. When we say \"the house,\" we mean a particular house, not just any house. This small word carries the weight of specificity, guiding listeners and readers toward exactly what we intend. Without it, our sentences would feel vague and incomplete. The next time you read a paragraph, notice how often \"the\" appears—it works tirelessly in the background, giving structure and clarity to our thoughts.\n\n## Each\n\n\"Each\" performs a different but equally vital role. It draws attention to individuals within a group, one at a time. When we say \"each student received a book,\" we emphasize that every single person was included, considered separately rather than lumped together. This word invites care and precision. It reminds us that a crowd is made up of individuals, and each one matters. Whether counting items, distributing resources, or describing responsibilities, \"each\" ensures that no one is forgotten.\n\n## Conclusion\n\nThough \"the\" and \"each\" may seem insignificant, they demonstrate how much meaning can be packed into just a few letters. The richness of language often lies not in grand vocabulary, but in how well we use the smallest words. Each of these tiny tools helps us express ideas with accuracy and grace."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a patent claim describing an apparatus with a memory and controller that uses a polling status command to count failed bit verifications during a program operation.",
+      "output": "# Patent Claim\n\n**1.** An apparatus comprising:\n\na memory array comprising a plurality of memory cells; and\n\na controller coupled to the memory array and configured to:\n\n&nbsp;&nbsp;&nbsp;&nbsp;initiate a program operation to store data in a group of memory cells of the plurality of memory cells;\n\n&nbsp;&nbsp;&nbsp;&nbsp;issue a polling status command to the memory array during the program operation;\n\n&nbsp;&nbsp;&nbsp;&nbsp;receive, in response to the polling status command, status information indicative of a program verification result for the group of memory cells;\n\n&nbsp;&nbsp;&nbsp;&nbsp;determine, based at least in part on the status information, a count of failed bit verifications corresponding to memory cells of the group that failed to reach a target threshold voltage state during the program operation; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;perform an action based at least in part on the count of failed bit verifications.\n\n---\n\n## Suggested Dependent Claims\n\n**2.** The apparatus of claim 1, wherein the controller is configured to issue the polling status command a plurality of times during the program operation to obtain an updated count of failed bit verifications for each of a plurality of program pulses applied to the group of memory cells.\n\n**3.** The apparatus of claim 1, wherein performing the action comprises comparing the count of failed bit verifications to a threshold value and determining whether the program operation passed or failed based on the comparison.\n\n**4.** The apparatus of claim 3, wherein the controller is further configured to indicate that the program operation passed when the count of failed bit verifications is less than or equal to a number of correctable bits associated with an error correction scheme of the apparatus.\n\n**5.** The apparatus of claim 1, wherein the status information comprises a value representing the count of failed bit verifications encoded in one or more status register bits accessible via the polling status command.\n\n**6.** The apparatus of claim 1, wherein the controller is further configured to adjust a parameter of a subsequent program pulse of the program operation based at least in part on the count of failed bit verifications.\n\n**7.** The apparatus of claim 1, wherein the memory array comprises a not-and (NAND) memory array, and wherein the group of memory cells corresponds to a page of the NAND memory array.\n\n---\n\n*Note: This is a sample claim drafted for illustrative purposes. Actual patent claims should be prepared and reviewed by a registered patent attorney or agent, taking into account prior art, the specific invention disclosure, and applicable jurisdictional requirements.*",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Draft an independent claim for a memory device that includes multiple memory dies, a write buffer, and a controller issuing program and polling status commands.",
+      "output": "# Independent Claim Draft\n\n**Claim 1.** A memory device comprising:\n\na plurality of memory dies, each memory die of the plurality of memory dies configured to store data;\n\na write buffer configured to temporarily store write data received from a host prior to programming the write data into one or more of the plurality of memory dies; and\n\na controller coupled to the plurality of memory dies and to the write buffer, the controller configured to:\n\n&nbsp;&nbsp;&nbsp;&nbsp;issue a program command to a first memory die of the plurality of memory dies to program at least a portion of the write data from the write buffer into the first memory die; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;issue a polling status command to the first memory die to determine a status of the program command.\n\n---\n\n## Notes on Drafting\n\n- **Breadth considerations:** This claim is written in relatively broad terms. Depending on your prior art landscape, you may wish to add limitations to distinguish over references (e.g., specifying that the controller polls *while* a program operation is ongoing on another die, enabling parallelism).\n\n- **Suggested dependent claims** to consider:\n  - The controller issuing program commands to multiple dies in an interleaved manner.\n  - Releasing or freeing the write buffer entry in response to a polling status indicating successful completion.\n  - Retrying or relocating data in response to a status indicating a program failure.\n  - Specifying the memory dies as NAND flash dies.\n  - A queue or scheduling logic governing the timing of the polling status commands.\n\nWould you like me to draft a set of dependent claims or tailor Claim 1 toward a specific inventive feature (such as parallel programming, buffer management, or error handling)?",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Describe how a NAND flash memory system reports the number of cells that failed program verification in response to a polling status command from the controller.",
+      "output": "# NAND Flash Program Failure Reporting via Status Commands\n\n## Basic Status Command Mechanism\n\nWhen a NAND flash controller issues a **Status Read command** (typically `70h` or `78h`), the flash device returns a status byte on the I/O bus. This polling mechanism is the primary way the controller determines the outcome of program, erase, and read operations.\n\n## Standard Pass/Fail Reporting\n\nIn basic implementations, the status register provides only a **binary result**:\n\n| Bit | Meaning |\n|-----|---------|\n| Bit 0 (FAIL) | 0 = Pass, 1 = Fail |\n| Bit 6 (RDY) | 1 = Ready, 0 = Busy |\n\nThe controller polls this register after a program operation. If the FAIL bit is set, the program verify operation detected that one or more cells did not reach their target threshold voltage.\n\n## Reporting the *Number* of Failed Cells\n\nMore sophisticated NAND devices extend this to report **failed cell counts**, which is useful for wear monitoring and reliability management:\n\n### Method 1: Encoded Status Bits\nAdditional status register bits encode a **failed bit count range** rather than an exact number. For example:\n- The device internally counts cells that failed program verify\n- Compares against internal thresholds\n- Reports a \"bin\" (e.g., \"fewer than N failures,\" \"N to M failures,\" \"exceeds correctable limit\")\n\n### Method 2: Get Features / Extended Status Commands\nUsing commands like **Get Features (`EEh`)** or vendor-specific status reads, the controller can retrieve a multi-byte value representing the actual failed cell count from an internal counter.\n\n### Internal Counting Process\n1. During programming, the device applies program pulses followed by **verify operations**\n2. A verify comparison checks each cell's threshold voltage against the target\n3. Cells failing verify after the **maximum allowed program loops** are tallied by internal logic\n4. This count is latched into a readable register\n\n## How the Controller Uses This\n\nThe controller uses the failed-cell count to:\n- **Distinguish soft failures from hard failures** (a few failed cells may be correctable via ECC)\n- **Trigger block retirement** decisions when counts exceed reliability thresholds\n- **Guide wear-leveling** and refresh algorithms\n- Decide whether to **re-map data** to a different block\n\n---\n\n**Note:** The exact command opcodes, status bit assignments, and count-reporting formats are **manufacturer- and device-specific**. If you're working with a particular device, I'd recommend consulting its datasheet or the relevant **ONFI** (Open NAND Flash Interface) specification for precise details.\n\nWould you like me to go deeper into any specific aspect—such as the program-verify loop, ONFI status conventions, or how ECC relates to failed-bit reporting?",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate a technical summary for a solid-state storage apparatus that programs multiple dies and polls status to obtain failed bit-line counts based on inhibited states in a write buffer.",
+      "output": "# Technical Summary: Solid-State Storage Apparatus with Multi-Die Programming and Status-Based Failed Bit-Line Detection\n\n## Overview\n\nA solid-state storage apparatus configured to program data across multiple memory dies in parallel while efficiently determining failed bit-line (FBL) counts through a status polling mechanism that leverages inhibited states maintained in a write buffer.\n\n## System Architecture\n\nThe apparatus comprises:\n\n- **A memory array** organized into multiple dies, each containing a plurality of bit lines and word lines defining addressable memory cells\n- **A memory controller** operatively coupled to the dies via one or more channels\n- **A write buffer** (e.g., data latch or page buffer) associated with each die, configured to store program data and maintain per-bit-line state information\n- **Status polling logic** for interrogating die-level program completion and error metrics\n\n## Programming Operation\n\n1. **Parallel Program Issuance**: The controller issues program commands to multiple dies concurrently, distributing data to the respective write buffers of the target dies.\n\n2. **Inhibited State Tracking**: During iterative program-verify cycles, each bit line that reaches its target threshold voltage (i.e., successfully programmed) is transitioned to an **inhibited state** within the write buffer. Bit lines still requiring programming remain in a **program-enabled state**.\n\n3. **Verify Convergence**: As program pulses are applied, the population of inhibited bit lines increases while program-enabled bit lines decrease, reflecting programming progress.\n\n## Failed Bit-Line Detection via Status Polling\n\nRather than performing a dedicated read-back or separate error-detection operation, the apparatus derives FBL counts directly from the write buffer state:\n\n1. **Status Poll Command**: The controller polls the status register of each die upon (or during) program completion.\n\n2. **FBL Derivation from Inhibited States**: The returned status encodes a count of bit lines **not** in the inhibited state at program termination—i.e., bit lines that failed to converge to their target state after the maximum permitted program loops. This residual, non-inhibited count constitutes the **failed bit-line count** for that die.\n\n3. **Per-Die Reporting**: Each polled die independently reports its FBL count, enabling granular, die-level quality assessment without additional read latency.\n\n## Key Advantages\n\n- **Reduced Overhead**: FBL determination reuses existing write-buffer state and standard status polling, eliminating separate diagnostic read operations.\n- **Parallel Efficiency**: Multi-die programming with concurrent status interrogation maximizes throughput and channel utilization.\n- **Reliability Management**: Real-time FBL counts support pass/fail determination, defect screening, error-handling triggers, and wear/health monitoring.\n\n## Illustrative Method Claim Language\n\n> A method comprising: programming a plurality of dies via respective write buffers; transitioning each successfully programmed bit line to an inhibited state within the write buffer; polling a status of each die; and obtaining, from the polled status, a failed bit-line count corresponding to bit lines not in the inhibited state upon program completion.\n\n---\n\n*Note: This summary describes general architectural and operational concepts common to non-volatile memory systems. If you are drafting formal patent or product documentation, specific implementation parameters (loop counts, threshold definitions, status register formats) should be tailored to your particular design.*",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Explain, in patent-style language, an apparatus comprising memory and a controller where the memory reports a count of bit-lines not in an inhibited state during a program-verify operation.",
+      "output": "# APPARATUS FOR MONITORING PROGRAMMING PROGRESS IN A MEMORY DEVICE\n\n## SUMMARY\n\nAn apparatus is disclosed comprising a memory and a controller operatively coupled thereto, wherein the memory is configured to report a count of bit-lines not in an inhibited state during a program-verify operation.\n\n## DETAILED DESCRIPTION\n\nIn one embodiment, an apparatus comprises:\n\na memory comprising a plurality of memory cells arranged in an array, the array being coupled to a plurality of bit-lines and a plurality of word-lines, wherein each bit-line of the plurality of bit-lines is selectively placeable into one of an inhibited state and a non-inhibited state during a programming operation; and\n\na controller operatively coupled to the memory, the controller configured to direct the memory to perform the programming operation upon one or more of the plurality of memory cells.\n\nIn accordance with such an embodiment, the memory is configured to perform a program-verify operation associated with the programming operation, wherein the program-verify operation is operative to determine whether one or more of the plurality of memory cells has attained a target threshold voltage. A bit-line coupled to a memory cell that has attained the target threshold voltage may be placed into the inhibited state, such that said memory cell is inhibited from further programming, whereas a bit-line coupled to a memory cell that has not attained the target threshold voltage may remain in the non-inhibited state.\n\nThe memory is further configured to determine a count representative of a number of bit-lines of the plurality of bit-lines that are not in the inhibited state during the program-verify operation, and to report said count to the controller.\n\nIn a further embodiment, the memory comprises circuitry configured to sense a state of each of the plurality of bit-lines and to accumulate the count based at least in part upon the sensed states thereof. The count may correspond to a number of memory cells that have not yet attained the target threshold voltage, and thereby may be indicative of a degree of completion of the programming operation.\n\nIn yet a further embodiment, the controller is configured to receive the reported count from the memory and to perform one or more actions responsive thereto, said actions including, but not limited to: determining whether to apply an additional programming pulse to the one or more memory cells, adjusting a parameter of a subsequent programming pulse, determining a completion status of the programming operation, and estimating a remaining duration of the programming operation.\n\nIn some embodiments, the memory is configured to compare the count to a threshold value and to report a status signal to the controller when the count is less than, equal to, or greater than said threshold value. In other embodiments, the memory is configured to report the count as a multi-bit value representative of the number of bit-lines not in the inhibited state.\n\n## CLAIMS\n\n**1.** An apparatus, comprising:\n\na memory comprising a plurality of memory cells coupled to a plurality of bit-lines; and\n\na controller operatively coupled to the memory;\n\nwherein the memory is configured to report, to the controller, a count of bit-lines of the plurality of bit-lines that are not in an inhibited state during a program-verify operation.\n\n**2.** The apparatus of claim 1, wherein the inhibited state corresponds to a bit-line coupled to a memory cell that has attained a target threshold voltage.\n\n**3.** The apparatus of claim 1, wherein the controller is configured to determine, based at least in part upon the count, whether to apply an additional programming pulse to one or more of the plurality of memory cells.\n\n**4.** The apparatus of claim 1, wherein the memory is further configured to compare the count to a threshold value and to report a status signal responsive to said comparison.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.43998153277931673,
+      "excess_ratio": 0.34618323530366546,
+      "baseline_mean": 0.09379829747565126,
+      "baseline_n_valid": 5,
+      "output_chars": 1579,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.42920353982300885,
+          "baseline_mean": 0.07073703753668202,
+          "excess_ratio": 0.3584665022863268
+        },
+        "bz2": {
+          "actual_ratio": 0.39285714285714285,
+          "baseline_mean": 0.09404111609072008,
+          "excess_ratio": 0.29881602676642277
+        },
+        "lzma": {
+          "actual_ratio": 0.49473684210526314,
+          "baseline_mean": 0.1150488053013989,
+          "excess_ratio": 0.37968803680386426
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4003103180760279,
+      "excess_ratio": 0.30651202060037663,
+      "baseline_mean": 0.09379829747565126,
+      "baseline_n_valid": 5,
+      "output_chars": 808,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.34438775510204084,
+          "baseline_mean": 0.07073703753668202,
+          "excess_ratio": 0.2736507175653588
+        },
+        "bz2": {
+          "actual_ratio": 0.3824228028503563,
+          "baseline_mean": 0.09404111609072008,
+          "excess_ratio": 0.2883816867596362
+        },
+        "lzma": {
+          "actual_ratio": 0.46218487394957986,
+          "baseline_mean": 0.1150488053013989,
+          "excess_ratio": 0.347136068648181
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.229093050647821,
+      "excess_ratio": 0.13529475317216977,
+      "baseline_mean": 0.09379829747565126,
+      "baseline_n_valid": 5,
+      "output_chars": 2563,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.20271493212669683,
+          "baseline_mean": 0.07073703753668202,
+          "excess_ratio": 0.1319778945900148
+        },
+        "bz2": {
+          "actual_ratio": 0.21081576535288726,
+          "baseline_mean": 0.09404111609072008,
+          "excess_ratio": 0.11677464926216718
+        },
+        "lzma": {
+          "actual_ratio": 0.27,
+          "baseline_mean": 0.1150488053013989,
+          "excess_ratio": 0.15495119469860114
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.13915635029802836,
+      "excess_ratio": 0.04535805282237711,
+      "baseline_mean": 0.09379829747565126,
+      "baseline_n_valid": 5,
+      "output_chars": 3553,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.11498257839721254,
+          "baseline_mean": 0.07073703753668202,
+          "excess_ratio": 0.04424554086053052
+        },
+        "bz2": {
+          "actual_ratio": 0.13953488372093023,
+          "baseline_mean": 0.09404111609072008,
+          "excess_ratio": 0.04549376763021015
+        },
+        "lzma": {
+          "actual_ratio": 0.16180371352785147,
+          "baseline_mean": 0.1150488053013989,
+          "excess_ratio": 0.04675490822645258
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.033682634730538924,
+      "excess_ratio": -0.06011566274511233,
+      "baseline_mean": 0.09379829747565126,
+      "baseline_n_valid": 5,
+      "output_chars": 1591,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.018912529550827423,
+          "baseline_mean": 0.07073703753668202,
+          "excess_ratio": -0.0518245079858546
+        },
+        "bz2": {
+          "actual_ratio": 0.029748283752860413,
+          "baseline_mean": 0.09404111609072008,
+          "excess_ratio": -0.06429283233785967
+        },
+        "lzma": {
+          "actual_ratio": 0.05042016806722689,
+          "baseline_mean": 0.1150488053013989,
+          "excess_ratio": -0.064628637234172
+        }
+      }
+    }
+  }
+}

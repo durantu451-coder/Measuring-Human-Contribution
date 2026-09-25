@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0149",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThis lecture is devoted to the problem of computing initial data for the Cauchy problem of 3+1 general relativity. The main task is to solve the constraint equations. The conformal technique, introduced by Lichnerowicz and enhanced by York, is presented. Two standard methods, the conformal transverse-traceless one and the conformal thin sandwich, are discussed and illustrated by some simple examples. Finally a short review regarding initial data for binary systems (black holes and neutron stars) is given.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThis lecture is devoted to the problem of computing initial data for the Cauchy problem of 3+1 general relativity. The main task is to solve the constraint equations. The conformal technique, introduced by Lichnerowicz and enhanced by York, is presented. Two standard methods, the conformal transverse-traceless one and the conformal thin sandwich, are discussed and illustrated by some simple examples. Finally a short review regarding initial data for binary systems (black holes and neutron stars) is given.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The lecture focuses on computing initial data for the Cauchy problem in 3+1 general relativity.\n- The primary task is to solve the constraint equations.\n- The conformal technique developed by Lichnerowicz and York is presented.\n- The conformal transverse-traceless and conformal thin sandwich methods are discussed with simple examples.\n- The lecture concludes with a brief review of initial data for binary black hole and neutron star systems.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe lecture addresses computing initial data for the Cauchy problem in 3+1 general relativity by solving the constraint equations using the Lichnerowicz–York conformal technique, including the conformal transverse-traceless and conformal thin-sandwich methods. These methods, illustrated with simple examples, provide the standard framework for constructing physically relevant initial data, particularly for binary black-hole and neutron-star systems.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: This, Cauchy, The"
+  },
+  "outputs": {
+    "L1": "This lecture addresses the construction of initial data for the Cauchy problem in 3+1 general relativity, with particular emphasis on solving the constraint equations. It presents the conformal technique introduced by Lichnerowicz and further developed by York. Two standard approaches—the conformal transverse-traceless method and the conformal thin-sandwich method—are discussed and illustrated through simple examples. Finally, a brief review of initial data for binary systems, including black holes and neutron stars, is provided.",
+    "L2": "This lecture examines how to construct initial data for the Cauchy formulation of general relativity in 3+1 dimensions, with particular emphasis on solving the constraint equations. It introduces the conformal approach originated by Lichnerowicz and later developed further by York. Two widely used formulations—the conformal transverse-traceless method and the conformal thin-sandwich method—are explained through several straightforward examples. The lecture concludes with a brief overview of initial-data models for binary black-hole and neutron-star systems.",
+    "L3": "This lecture focuses on constructing initial data for the Cauchy problem in 3+1 general relativity. A central challenge in this formulation is solving the Hamiltonian and momentum constraint equations, which ensure that the chosen data are consistent with Einstein’s field equations.\n\nThe lecture introduces the conformal technique developed by Lichnerowicz and York, a standard framework for decomposing and solving these constraints. Particular attention is given to two widely used approaches: the conformal transverse-traceless method and the conformal thin sandwich method. Both are explained through simple examples that illustrate their main assumptions, procedures, and applications.\n\nThe lecture concludes with a brief review of initial-data construction for compact binary systems, including binary black holes and binary neutron stars. These examples highlight the practical importance of constraint-solving techniques in numerical relativity and in simulations of gravitational-wave sources.",
+    "L4": "In the 3+1 formulation of general relativity, spacetime is foliated by a family of spacelike hypersurfaces. Initial data on one such hypersurface consist of a spatial metric \\(\\gamma_{ij}\\) and an extrinsic curvature \\(K_{ij}\\), together with any matter fields. These quantities cannot be specified arbitrarily. Einstein’s equations imply four constraint equations: the Hamiltonian constraint and the three momentum constraints. For vacuum data they are\n\n\\[\nR + K^2-K_{ij}K^{ij}=0,\n\\]\n\n\\[\nD_j\\left(K^{ij}-\\gamma^{ij}K\\right)=0,\n\\]\n\nwhere \\(R\\) and \\(D_i\\) are the scalar curvature and covariant derivative associated with \\(\\gamma_{ij}\\), and \\(K=\\gamma^{ij}K_{ij}\\) is the trace of the extrinsic curvature. In the presence of matter, the right-hand sides become \\(16\\pi\\rho\\) and \\(8\\pi j^i\\), respectively, with \\(\\rho\\) and \\(j^i\\) denoting the energy and momentum densities measured by observers normal to the hypersurface.\n\nThe initial-value problem therefore requires a systematic way to separate freely specifiable quantities from variables that must be determined by the constraints. The standard approach is the Lichnerowicz–York conformal technique. One introduces a conformal metric \\(\\tilde{\\gamma}_{ij}\\) and a positive conformal factor \\(\\psi\\) through\n\n\\[\n\\gamma_{ij}=\\psi^4\\tilde{\\gamma}_{ij}.\n\\]\n\nThe extrinsic curvature is decomposed into its trace and trace-free parts,\n\n\\[\nK_{ij}=A_{ij}+\\frac{1}{3}\\gamma_{ij}K.\n\\]\n\nWith an appropriate conformal scaling of \\(A^{ij}\\), the constraints become a coupled system of elliptic equations. Elliptic equations are especially suitable for constructing initial data because they can be solved as boundary-value problems once asymptotic, inner-boundary, or symmetry conditions have been supplied.\n\nIn the conformal transverse-traceless, or CTT, method, the conformal trace-free extrinsic curvature is decomposed as\n\n\\[\n\\tilde A^{ij}\n   = \\tilde A_{\\mathrm{TT}}^{ij}\n   +(\\tilde L W)^{ij},\n\\]\n\nwhere \\(\\tilde A_{\\mathrm{TT}}^{ij}\\) is transverse and trace-free with respect to the conformal metric, \\(W^i\\) is a vector potential, and\n\n\\[\n(\\tilde L W)^{ij}\n =\\tilde D^iW^j+\\tilde D^jW^i\n -\\frac{2}{3}\\tilde\\gamma^{ij}\\tilde D_kW^k\n\\]\n\nis the conformal longitudinal operator. The physical trace-free curvature is then\n\n\\[\nA^{ij}=\\psi^{-10}\\tilde A^{ij}.\n\\]\n\nFor vacuum data, the momentum constraint becomes\n\n\\[\n\\tilde D_j(\\tilde L W)^{ij}\n-\\frac{2}{3}\\psi^6\\tilde D^iK\n=-\\tilde D_j\\tilde A_{\\mathrm{TT}}^{ij},\n\\]\n\nwhile the Hamiltonian constraint becomes the Lichnerowicz equation,\n\n\\[\n\\tilde D^2\\psi\n-\\frac{1}{8}\\tilde R\\,\\psi\n+\\frac{1}{8}\\tilde A_{ij}\\tilde A^{ij}\\psi^{-7}\n-\\frac{1}{12}K^2\\psi^5=0.\n\\]\n\nWhen \\(K\\) is constant, the momentum equation decouples from the Hamiltonian equation. One first solves for \\(W^i\\) and then solves the nonlinear elliptic equation for \\(\\psi\\). This constant-mean-curvature case is both mathematically simpler and useful in many applications.\n\nA basic example is time-symmetric vacuum data. Time symmetry implies \\(K_{ij}=0\\), so the momentum constraints are satisfied automatically. If the conformal metric is flat, \\(\\tilde\\gamma_{ij}=\\delta_{ij}\\), the Hamiltonian constraint reduces to\n\n\\[\n\\nabla^2\\psi=0.\n\\]\n\nFor a single asymptotically flat black hole, the solution\n\n\\[\n\\psi=1+\\frac{M}{2r}\n\\]\n\ngives the Schwarzschild spatial geometry in isotropic coordinates. Multiple-puncture solutions can be obtained by superposition,\n\n\\[\n\\psi=1+\\sum_a\\frac{m_a}{2|\\mathbf{x}-\\mathbf{x}_a|},\n\\]\n\nproducing Brill–Lindquist data for several nonspinning black holes momentarily at rest. Although these data solve the constraints exactly, they do not generally represent a system in equilibrium; the evolution may contain both physical gravitational radiation and spurious radiation associated with the chosen initial geometry.\n\nThe Bowen–York construction extends this idea to black holes with prescribed linear and angular momenta. It uses a conformally flat metric, maximal slicing \\(K=0\\), and analytic solutions of the momentum constraint for \\(\\tilde A^{ij}\\). For a puncture carrying linear momentum \\(P^i\\), one may use\n\n\\[\n\\tilde A^{ij}_{P}\n =\\frac{3}{2r^2}\n \\left[\n P^in^j+P^jn^i\n -(\\delta^{ij}-n^in^j)P^kn_k\n \\right],\n\\]\n\nwhere \\(n^i=x^i/r\\). A corresponding analytic expression describes angular momentum. Contributions from several punctures can be added because the momentum constraint is linear under these assumptions. The Hamiltonian constraint must then be solved numerically for the conformal factor. Bowen–York puncture data remain widely used because they are simple and robust, though conformal flatness limits their ability to represent rapidly spinning black holes or astrophysically realistic quasiequilibrium binaries without unwanted radiation.\n\nAn alternative organization of the conformal method is the conformal thin-sandwich, or CTS, decomposition. Instead of freely specifying a transverse-traceless part of the extrinsic curvature, one specifies quantities related to the spatial geometry and its instantaneous time derivative. The freely chosen data commonly include the conformal metric \\(\\tilde\\gamma_{ij}\\), its trace-free time derivative\n\n\\[\n\\tilde u_{ij}\n =\\partial_t\\tilde\\gamma_{ij},\n \\qquad\n \\tilde\\gamma^{ij}\\tilde u_{ij}=0,\n\\]\n\nthe mean curvature \\(K\\), and a lapse-related variable. The trace-free extrinsic curvature is written in terms of the shift vector \\(\\beta^i\\), the conformal lapse \\(\\tilde\\alpha\\), and \\(\\tilde u_{ij}\\):\n\n\\[\n\\tilde A^{ij}\n =\\frac{1}{2\\tilde\\alpha}\n \\left[(\\tilde L\\beta)^{ij}-\\tilde u^{ij}\\right].\n\\]\n\nSubstitution into the constraints yields coupled elliptic equations for the conformal factor and shift. In the extended conformal thin-sandwich formulation, an additional elliptic equation for the lapse is obtained by specifying \\(\\partial_tK\\). The resulting solution provides \\(\\psi\\), \\(\\beta^i\\), and the lapse in a manner adapted to the desired initial time evolution.\n\nThe thin-sandwich viewpoint is especially natural for quasiequilibrium systems. For a binary in an approximately circular orbit, one often chooses coordinates that corotate with the system and imposes\n\n\\[\n\\tilde u_{ij}\\approx 0,\n\\qquad\n\\partial_tK\\approx 0.\n\\]\n\nThese conditions express the assumption that the geometry changes only slowly in the rotating frame. Appropriate boundary conditions are then imposed at spatial infinity and, when excision is used, on inner boundaries representing black-hole horizons. Conditions on those inner boundaries can enforce properties such as vanishing expansion of outgoing null rays and a chosen spin state for each black hole.\n\nMatter sources can be incorporated through the same conformal framework. For neutron-star data, the gravitational constraint equations must be solved together with the relativistic fluid equations. A common assumption is quasiequilibrium circular motion, with the fluid either corotating with the orbit or described by an irrotational velocity potential. Irrotational flow is particularly relevant because the viscosity of neutron-star matter is generally too small to synchronize the stellar spins during inspiral. The matter distribution affects the Hamiltonian and momentum constraints through \\(\\rho\\) and \\(j^i\\), while the resulting geometry determines the fluid’s equilibrium configuration. The coupled elliptic system is solved iteratively.\n\nBoth the CTT and CTS methods require choices that influence the physical content of the initial data. These include the conformal metric, the mean curvature, the transverse-traceless or time-derivative data, and the boundary conditions. Solving the constraints guarantees consistency with Einstein’s equations, but it does not by itself guarantee that the data describe the intended astrophysical state. For example, conformal flatness is computationally convenient but may introduce artificial gravitational radiation. Likewise, the orbital parameters of a binary must be tuned to reduce eccentricity, and the individual masses and spins must be measured from the completed solution rather than identified directly with arbitrary input parameters.\n\nAfter solving the elliptic equations, one verifies the data by evaluating the residuals of the constraints and checking asymptotic and horizon quantities. Important diagnostics include the ADM mass, total linear and angular momentum, black-hole horizon masses and spins, neutron-star baryon masses, and the amount of spurious gravitational radiation. Numerical convergence studies are essential because constraint satisfaction is only approximate on a computational grid.\n\nThe Lichnerowicz–York conformal technique thus transforms the underdetermined constraint system into a practical set of elliptic equations while clearly distinguishing freely specifiable data from constrained variables. The CTT formulation is particularly useful when one wishes to prescribe the transverse and longitudinal parts of the extrinsic curvature, as in Bowen–York puncture data. The CTS formulation is often preferable when the initial geometry is intended to possess approximate time-independence in a chosen frame, as in quasiequilibrium binary calculations. Together, these methods form the standard framework for constructing initial data used in numerical simulations of isolated black holes, binary black holes, neutron stars, and mixed compact-object systems.",
+    "L5": "### Cauchy and the Foundations of Analysis\n\nAugustin-Louis Cauchy was a pioneering French mathematician whose work helped establish the foundations of modern mathematical analysis. **The** Cauchy sequence, Cauchy integral theorem, and Cauchy–Schwarz inequality are among the many concepts bearing his name.\n\nA Cauchy sequence is one whose terms become arbitrarily close to one another as the sequence progresses. **This** idea provides a precise way to describe convergence without first knowing the sequence’s limit. Cauchy’s emphasis on rigor transformed calculus and continues to influence mathematics today."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a concise abstract for a lecture on computing initial data for the Cauchy problem in 3+1 general relativity.",
+      "output": "This lecture reviews the construction of initial data for the Cauchy problem in 3+1 general relativity. We derive the Hamiltonian and momentum constraint equations induced on a spacelike hypersurface and discuss standard solution methods, with emphasis on the conformal decomposition of the spatial metric and extrinsic curvature. Applications to vacuum, matter-coupled, asymptotically flat, and black-hole initial data are outlined, together with the role of gauge choices, boundary conditions, and constraint-preserving numerical techniques.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize a lecture covering the Einstein constraint equations, the Lichnerowicz–York conformal technique, conformal transverse-traceless and conformal thin-sandwich methods, and binary-system initial data.",
+      "output": "The lecture explains how physically admissible initial data for Einstein’s equations are constructed on a spacelike hypersurface. The spatial metric \\(\\gamma_{ij}\\) and extrinsic curvature \\(K_{ij}\\) cannot be chosen freely; they must satisfy the Hamiltonian and momentum constraints,\n\\[\nR+K^2-K_{ij}K^{ij}=16\\pi\\rho,\n\\qquad\nD_j(K^{ij}-\\gamma^{ij}K)=8\\pi j^i.\n\\]\n\n### Lichnerowicz–York conformal technique\nThe conformal method separates freely specifiable data from variables determined by the constraints. One writes\n\\[\n\\gamma_{ij}=\\psi^4\\tilde{\\gamma}_{ij},\n\\qquad\nK_{ij}=A_{ij}+\\tfrac13\\gamma_{ij}K,\n\\]\nand decomposes the trace-free part \\(A_{ij}\\) into transverse-traceless and longitudinal pieces. The constraints then become coupled elliptic equations, including the nonlinear Lichnerowicz equation for the conformal factor \\(\\psi\\). Boundary conditions encode asymptotic flatness, compact topology, or black-hole interiors.\n\n### Conformal transverse-traceless method\nIn the CTT approach, one specifies a conformal metric, mean curvature, and a transverse-traceless tensor. A vector potential supplies the longitudinal part needed to solve the momentum constraint, while the Hamiltonian constraint determines \\(\\psi\\). For constant mean curvature, the equations often decouple. Bowen–York data are a prominent example, providing analytic momentum and spin contributions for black holes, though they generally contain unwanted gravitational radiation and cannot represent exact Kerr geometry at high spin.\n\n### Conformal thin-sandwich method\nThe CTS method parameterizes data through the conformal metric and its time derivative, making the construction more directly connected to the desired evolution. Elliptic equations determine the conformal factor, shift, and—depending on the extended formulation—the lapse. Setting the conformal metric’s time derivative and the time derivative of \\(K\\) approximately to zero supports quasi-equilibrium initial data. The method is especially useful for binary systems because approximate helical symmetry and suitable horizon boundary conditions can model nearly circular orbits.\n\n### Binary-system initial data\nFor black-hole or neutron-star binaries, one must choose orbital parameters, spins, matter fields, and inner and outer boundary conditions while satisfying all constraints. Black-hole interiors may be treated using punctures or excision with apparent-horizon boundary conditions. Quasi-circular sequences are constructed by balancing global quantities or imposing approximate symmetry; residual eccentricity is then reduced iteratively through short evolutions. Neutron-star data additionally require the fluid equations, often with assumptions such as corotation or irrotational flow.\n\nThe lecture emphasizes that solving the constraints does not uniquely determine the physical system: different choices of conformal free data can represent nominally similar binaries but differ in gravitational-wave content, horizon properties, and gauge behavior. Good initial-data schemes therefore aim not only to satisfy the constraints, but also to minimize spurious “junk” radiation and produce stable, astrophysically realistic evolutions.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a brief course description for an advanced relativity lecture about constructing initial data for black holes and neutron stars.",
+      "output": "This advanced lecture explores the construction of physically consistent initial data for numerical simulations of black holes and neutron stars. Topics include the 3+1 decomposition of Einstein’s equations, Hamiltonian and momentum constraints, conformal methods, gauge and boundary conditions, and equilibrium models for isolated and binary compact objects. Emphasis is placed on practical techniques used in numerical relativity and gravitational-wave modeling.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Provide a single-paragraph overview of methods for solving the constraint equations in numerical relativity, including simple examples and applications to binary systems.",
+      "output": "In numerical relativity, initial data must satisfy the Hamiltonian and momentum constraints on a spatial hypersurface, typically by decomposing the spatial metric and extrinsic curvature into freely specified and constrained parts and solving the resulting elliptic equations. In the conformal transverse–traceless approach, one chooses a conformal metric, mean curvature, and transverse–traceless extrinsic curvature, then solves for a conformal factor and vector potential; a simple example is time-symmetric, conformally flat vacuum data, for which the momentum constraint is automatic and the Hamiltonian constraint reduces to a Laplace equation, yielding Brill–Lindquist multiple-black-hole data. Bowen–York solutions add analytic momentum and spin terms and, together with the puncture method, provide inexpensive binary-black-hole initial data, though they contain spurious radiation and cannot accurately represent rapidly spinning holes. The conformal thin-sandwich and extended conformal thin-sandwich formulations instead prescribe quantities related to the time derivatives of the geometry and solve coupled elliptic equations for the conformal factor, lapse, and shift, making them well suited to quasi-equilibrium binary black holes and neutron stars. More realistic black-hole binaries often use excision with apparent-horizon boundary conditions or superposed Kerr–Schild metrics, while neutron-star and mixed binaries additionally solve relativistic hydrostatic or irrotational-flow equations. These elliptic systems are handled with finite-difference, finite-element, multigrid, or spectral solvers, with spectral multidomain methods particularly effective for smooth binary configurations; constraint projection and constrained-evolution schemes may also re-solve or damp the constraints during evolution to control numerical error.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Create an academic lecture abstract introducing general-relativistic initial-data construction, with emphasis on the conformal approach and its two standard formulations.",
+      "output": "**General-Relativistic Initial Data: Conformal Decompositions and Elliptic Constraint Solving**\n\nEinstein’s equations do not permit arbitrary initial values for the spatial geometry and its time derivative: data specified on a spacelike hypersurface must satisfy the Hamiltonian and momentum constraint equations. This lecture introduces the mathematical and physical foundations of general-relativistic initial-data construction, emphasizing the conformal approach that recasts these nonlinear constraints as a coupled elliptic system. After reviewing the \\(3+1\\) decomposition and the roles of the spatial metric, extrinsic curvature, lapse, and shift, we develop the two standard conformal formulations. The **conformal transverse-traceless decomposition** separates the extrinsic curvature into trace, longitudinal, and transverse-traceless components, providing a direct method for prescribing gravitational and matter degrees of freedom. The **conformal thin-sandwich formulation** instead parametrizes the data through the conformal metric and its time derivative, making it especially natural for constructing approximately stationary or quasiequilibrium configurations. We compare the freely specifiable data, gauge choices, elliptic equations, and boundary conditions in the two approaches, including their extended variants and their behavior under maximal and constant-mean-curvature slicing. Applications to isolated compact objects, binary systems, cosmological data, and numerical-relativity simulations will illustrate both the versatility of conformal methods and the conceptual ambiguities involved in identifying physically preferred initial data.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.5652173913043478,
+      "excess_ratio": 0.4240258326901495,
+      "baseline_mean": 0.14119155861419833,
+      "baseline_n_valid": 5,
+      "output_chars": 535,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5329153605015674,
+          "baseline_mean": 0.11256392292972676,
+          "excess_ratio": 0.4203514375718406
+        },
+        "bz2": {
+          "actual_ratio": 0.505464480874317,
+          "baseline_mean": 0.12011761488432975,
+          "excess_ratio": 0.3853468659899872
+        },
+        "lzma": {
+          "actual_ratio": 0.6464646464646465,
+          "baseline_mean": 0.18422063716811182,
+          "excess_ratio": 0.4622440092965347
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.41502683363148485,
+      "excess_ratio": 0.27383527501728655,
+      "baseline_mean": 0.14119155861419833,
+      "baseline_n_valid": 5,
+      "output_chars": 563,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3768545994065282,
+          "baseline_mean": 0.11256392292972676,
+          "excess_ratio": 0.26429067647680143
+        },
+        "bz2": {
+          "actual_ratio": 0.35656836461126007,
+          "baseline_mean": 0.12011761488432975,
+          "excess_ratio": 0.2364507497269303
+        },
+        "lzma": {
+          "actual_ratio": 0.5,
+          "baseline_mean": 0.18422063716811182,
+          "excess_ratio": 0.3157793628318882
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3513513513513513,
+      "excess_ratio": 0.210159792737153,
+      "baseline_mean": 0.14119155861419833,
+      "baseline_n_valid": 5,
+      "output_chars": 1003,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3314814814814815,
+          "baseline_mean": 0.11256392292972676,
+          "excess_ratio": 0.2189175585517547
+        },
+        "bz2": {
+          "actual_ratio": 0.3060869565217391,
+          "baseline_mean": 0.12011761488432975,
+          "excess_ratio": 0.18596934163740936
+        },
+        "lzma": {
+          "actual_ratio": 0.41025641025641024,
+          "baseline_mean": 0.18422063716811182,
+          "excess_ratio": 0.22603577308829842
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.060691734991989404,
+      "excess_ratio": -0.08049982362220892,
+      "baseline_mean": 0.14119155861419833,
+      "baseline_n_valid": 5,
+      "output_chars": 9354,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.04713057942888827,
+          "baseline_mean": 0.11256392292972676,
+          "excess_ratio": -0.06543334350083849
+        },
+        "bz2": {
+          "actual_ratio": 0.06468531468531469,
+          "baseline_mean": 0.12011761488432975,
+          "excess_ratio": -0.05543230019901506
+        },
+        "lzma": {
+          "actual_ratio": 0.07054871220604703,
+          "baseline_mean": 0.18422063716811182,
+          "excess_ratio": -0.1136719249620648
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.10104529616724743,
+      "excess_ratio": -0.040146262446950895,
+      "baseline_mean": 0.14119155861419833,
+      "baseline_n_valid": 5,
+      "output_chars": 611,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.05714285714285714,
+          "baseline_mean": 0.11256392292972676,
+          "excess_ratio": -0.055421065786869624
+        },
+        "bz2": {
+          "actual_ratio": 0.08465608465608465,
+          "baseline_mean": 0.12011761488432975,
+          "excess_ratio": -0.035461530228245094
+        },
+        "lzma": {
+          "actual_ratio": 0.1523809523809524,
+          "baseline_mean": 0.18422063716811182,
+          "excess_ratio": -0.03183968478715943
+        }
+      }
+    }
+  }
+}

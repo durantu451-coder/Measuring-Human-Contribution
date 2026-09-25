@@ -1,0 +1,175 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0035",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe propose an extrapolation technique that allows accuracy improvement of the discrete dipole approximation computations. The performance of this technique was studied empirically based on extensive simulations for 5 test cases using many different discretizations. The quality of the extrapolation improves with refining discretization reaching extraordinary performance especially for cubically shaped particles. A two order of magnitude decrease of error was demonstrated. We also propose estimates of the extrapolation error, which were proven to be reliable. Finally we propose a simple method to directly separate shape and discretization errors and illustrated this for one test case.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe propose an extrapolation technique that allows accuracy improvement of the discrete dipole approximation computations. The performance of this technique was studied empirically based on extensive simulations for 5 test cases using many different discretizations. The quality of the extrapolation improves with refining discretization reaching extraordinary performance especially for cubically shaped particles. A two order of magnitude decrease of error was demonstrated. We also propose estimates of the extrapolation error, which were proven to be reliable. Finally we propose a simple method to directly separate shape and discretization errors and illustrated this for one test case.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- An extrapolation technique is proposed to improve the accuracy of discrete dipole approximation computations.\n- The technique was evaluated empirically through extensive simulations of five test cases using multiple discretizations.\n- Extrapolation quality improves as the discretization is refined, with especially strong performance for cubically shaped particles.\n- The method demonstrated a two-order-of-magnitude reduction in error and provided reliable extrapolation error estimates.\n- A simple method was introduced to separate shape and discretization errors directly and was illustrated in one test case.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nAn extrapolation technique was developed to improve discrete dipole approximation accuracy and evaluated through extensive simulations across five test cases and multiple discretizations. Refining the discretization reduced errors by up to two orders of magnitude, especially for cubic particles, while reliable error estimates and a method for separating shape and discretization errors further strengthened the approach.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, Finally"
+  },
+  "outputs": {
+    "L1": "We propose an extrapolation technique that improves the accuracy of discrete dipole approximation computations. Its performance was evaluated empirically through extensive simulations of five test cases using a wide range of discretizations. The quality of the extrapolation improves as the discretization is refined, achieving exceptional performance, particularly for cubically shaped particles. A two-order-of-magnitude reduction in error was demonstrated. We also propose estimates of the extrapolation error, which were shown to be reliable. Finally, we introduce a simple method for directly separating shape and discretization errors and illustrate its application to one test case.",
+    "L2": "We introduce an extrapolation method designed to enhance the accuracy of discrete dipole approximation calculations. Its effectiveness was evaluated empirically through extensive simulations involving five test cases and numerous discretization levels. The extrapolation becomes increasingly accurate as the discretization is refined, delivering particularly strong results for cube-shaped particles. In some cases, the error was reduced by two orders of magnitude. We also developed dependable estimates for the extrapolation error. Lastly, we present a straightforward approach for directly distinguishing shape-related errors from discretization errors and demonstrate it using one of the test cases.",
+    "L3": "An extrapolation technique is proposed to improve the accuracy of computations performed using the discrete dipole approximation (DDA). The method was evaluated empirically through extensive simulations involving five representative test cases, each analyzed using multiple discretization levels.\n\nThe results show that extrapolation quality improves consistently as the discretization is refined. Particularly strong performance was observed for cubically shaped particles, whose geometry aligns naturally with the underlying discretization grid. Across the test cases, the technique reduced computational errors by as much as two orders of magnitude compared with standard DDA results. It also produced reliable estimates of the remaining extrapolation error, making it possible to assess the accuracy of the corrected results.\n\nIn addition, a simple procedure was introduced for directly separating shape errors, which arise from representing particle geometry on a discrete grid, from discretization errors associated with the numerical approximation itself. The application and usefulness of this error-separation method were demonstrated for one of the test cases.",
+    "L4": "A systematic extrapolation technique was developed to improve the accuracy of the discrete dipole approximation (DDA), a widely used numerical method for calculating electromagnetic scattering by particles of arbitrary shape. In the DDA, a particle is represented by a finite array of polarizable points, and the accuracy of the calculation depends strongly on the fineness of this discretization. Rather than relying on a single, computationally expensive high-resolution calculation, the proposed technique uses results obtained at several discretization levels and extrapolates them toward the limit of vanishing dipole size.\n\nThe method was evaluated through extensive numerical simulations involving five representative test cases and multiple discretizations. These cases were selected to assess its performance for particles with different geometries and scattering properties. For each case, relevant optical quantities were calculated over a range of dipole spacings and then fitted as functions of the discretization parameter. The extrapolated value provided an improved estimate of the corresponding continuum result, while the fitting procedure also supplied an estimate of the remaining numerical uncertainty.\n\nThe results showed that extrapolation can substantially reduce DDA errors. Depending on particle shape, discretization range, and the quantity being calculated, the improvement reached as much as two orders of magnitude compared with results obtained directly at the finest individual discretization. The largest and most consistent gains were observed for cubic particles, whose geometry can be represented exactly by a regular cubic dipole lattice. In such cases, the dependence of the numerical error on dipole spacing is relatively smooth, making extrapolation particularly effective.\n\nFor particles whose boundaries do not conform exactly to the dipole grid, the improvement was less uniform because the total numerical error contains two distinct contributions. The first is the intrinsic discretization error associated with replacing a continuous material by a finite set of dipoles. The second is the shape error introduced when a curved or otherwise non-grid-aligned boundary is approximated by a collection of cubic cells. To clarify the behavior of the method, a procedure was introduced to separate these two error sources. This distinction helps explain variations between discretizations and provides a more meaningful assessment of convergence.\n\nAn additional strength of the approach is that it yields practical error estimates rather than only corrected values. Across the test cases, these estimates generally reflected the actual accuracy of the extrapolated results, allowing users to judge the reliability of a calculation without knowing the exact solution in advance. Overall, the study demonstrates that calculations performed at several moderate resolutions can be combined to achieve accuracy comparable to, or better than, a much more demanding single high-resolution simulation. The extrapolation procedure therefore offers an efficient and reliable way to enhance DDA results, particularly for grid-aligned particles, while the separation of shape and discretization errors extends its usefulness to more general geometries.",
+    "L5": "The journey had been long, filled with setbacks, doubts, and unexpected turns. Finally, the travelers reached the mountain’s summit, where the rising sun illuminated the world below. In that quiet moment, every struggle felt worthwhile."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write a concise abstract for a research paper proposing an extrapolation technique to improve the accuracy of discrete dipole approximation computations.",
+      "output": "We propose an extrapolation technique to improve the accuracy of electromagnetic scattering calculations based on the discrete dipole approximation (DDA). The method evaluates the target at several discretization resolutions and fits the resulting observables to an asymptotic error model, enabling estimation of the zero-grid-spacing limit. By separating leading discretization errors from the extrapolated solution, the approach reduces sensitivity to dipole size without modifying the underlying DDA solver. Tests on benchmark particles with known or independently converged solutions show that the extrapolated results are consistently more accurate than single-resolution calculations at comparable computational cost. The technique is simple to implement, provides a practical error estimate, and extends the reliability of DDA simulations for complex particle geometries and refractive indices.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize a computational study of DDA error reduction using extrapolation across five test cases and multiple discretizations.",
+      "output": "Please provide the study, abstract, or relevant results/tables you want summarized. I’ll condense its findings on DDA error reduction through extrapolation, comparing all five test cases and the discretization levels.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a scientific abstract highlighting two-orders-of-magnitude error reduction, reliable extrapolation-error estimates, and separation of shape and discretization errors.",
+      "output": "We present a numerical framework that separates geometric shape error from discretization error while providing reliable estimates of extrapolation uncertainty. The approach combines a shape-aware error decomposition with systematic refinement and asymptotic extrapolation, enabling each error source to be quantified independently rather than absorbed into a single aggregate metric. Across representative benchmark problems, the corrected predictions reduce total error by approximately two orders of magnitude relative to conventional single-resolution estimates. The extrapolation-error estimates closely track the observed errors over a broad range of resolutions, remaining reliable even when shape and discretization effects are comparable. This separation also reveals distinct convergence behavior for the two error components, clarifying when additional mesh refinement is beneficial and when geometric fidelity is the dominant limitation. The framework therefore improves both numerical accuracy and uncertainty assessment, offering a practical route to high-confidence predictions in simulations where geometry representation and finite discretization jointly control the error.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "In one paragraph, describe the results of an empirical investigation into extrapolation methods for discrete dipole approximation, emphasizing performance for cubically shaped particles.",
+      "output": "An empirical study of extrapolation in the discrete dipole approximation found that fitting results from several progressively finer dipole grids to the expected polynomial dependence on dipole size substantially improves accuracy and also provides useful error estimates. The gains were especially strong for cubically shaped particles aligned with the discretization lattice: because their boundaries are represented exactly, shape-discretization fluctuations are largely absent, convergence is smooth, and extrapolated scattering quantities are often one to two orders of magnitude more accurate than results from the finest individual grid. For curved particles, such as spheres, irregular boundary errors reduce the improvement, although extrapolation generally remains beneficial.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Create a brief journal-style conclusion for a paper on improving DDA accuracy through discretization refinement and extrapolation.",
+      "output": "Discretization refinement combined with extrapolation provides a systematic means of improving discrete dipole approximation (DDA) accuracy. By calculating observables over a sequence of finer dipole spacings and extrapolating toward the continuum limit, leading discretization errors can be substantially reduced while enabling quantitative uncertainty estimates. The approach enhances reliability without requiring prohibitively fine discretizations and is broadly applicable across particle geometries, material properties, and scattering regimes. These results support refinement-based extrapolation as a practical route toward more accurate and verifiable DDA simulations.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.595850622406639,
+      "excess_ratio": 0.392083200122719,
+      "baseline_mean": 0.20376742228391995,
+      "baseline_n_valid": 5,
+      "output_chars": 689,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5906593406593407,
+          "baseline_mean": 0.14994259627764991,
+          "excess_ratio": 0.44071674438169073
+        },
+        "bz2": {
+          "actual_ratio": 0.4961832061068702,
+          "baseline_mean": 0.19387777831800718,
+          "excess_ratio": 0.30230542778886305
+        },
+        "lzma": {
+          "actual_ratio": 0.6875,
+          "baseline_mean": 0.25583355461884866,
+          "excess_ratio": 0.43166644538115134
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.38418079096045193,
+      "excess_ratio": 0.180413368676532,
+      "baseline_mean": 0.20376742228391995,
+      "baseline_n_valid": 5,
+      "output_chars": 703,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.32085561497326204,
+          "baseline_mean": 0.14994259627764991,
+          "excess_ratio": 0.17091301869561212
+        },
+        "bz2": {
+          "actual_ratio": 0.3790523690773067,
+          "baseline_mean": 0.19387777831800718,
+          "excess_ratio": 0.18517459075929954
+        },
+        "lzma": {
+          "actual_ratio": 0.4396551724137931,
+          "baseline_mean": 0.25583355461884866,
+          "excess_ratio": 0.18382161779494444
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.36174863387978146,
+      "excess_ratio": 0.1579812115958615,
+      "baseline_mean": 0.20376742228391995,
+      "baseline_n_valid": 5,
+      "output_chars": 1170,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3274956217162872,
+          "baseline_mean": 0.14994259627764991,
+          "excess_ratio": 0.1775530254386373
+        },
+        "bz2": {
+          "actual_ratio": 0.334453781512605,
+          "baseline_mean": 0.19387777831800718,
+          "excess_ratio": 0.14057600319459784
+        },
+        "lzma": {
+          "actual_ratio": 0.41566265060240964,
+          "baseline_mean": 0.25583355461884866,
+          "excess_ratio": 0.159829095983561
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.13069627573444362,
+      "excess_ratio": -0.07307114654947633,
+      "baseline_mean": 0.20376742228391995,
+      "baseline_n_valid": 5,
+      "output_chars": 3279,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.10415200562983815,
+          "baseline_mean": 0.14994259627764991,
+          "excess_ratio": -0.04579059064781177
+        },
+        "bz2": {
+          "actual_ratio": 0.12446043165467625,
+          "baseline_mean": 0.19387777831800718,
+          "excess_ratio": -0.06941734666333092
+        },
+        "lzma": {
+          "actual_ratio": 0.16137566137566137,
+          "baseline_mean": 0.25583355461884866,
+          "excess_ratio": -0.09445789324318729
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.18274111675126903,
+      "excess_ratio": -0.02102630553265092,
+      "baseline_mean": 0.20376742228391995,
+      "baseline_n_valid": 5,
+      "output_chars": 236,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.10650887573964497,
+          "baseline_mean": 0.14994259627764991,
+          "excess_ratio": -0.04343372053800494
+        },
+        "bz2": {
+          "actual_ratio": 0.1717171717171717,
+          "baseline_mean": 0.19387777831800718,
+          "excess_ratio": -0.022160606600835464
+        },
+        "lzma": {
+          "actual_ratio": 0.25,
+          "baseline_mean": 0.25583355461884866,
+          "excess_ratio": -0.0058335546188486576
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T04:40:01.231373+00:00"
+    }
+  ]
+}

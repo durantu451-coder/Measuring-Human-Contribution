@@ -1,0 +1,169 @@
+{
+  "model": "claude-sonnet-5",
+  "domain": "Arxiv",
+  "id": "0704.0508",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe consider a sequence of additive functionals {\\phi_n}, set on a sequence of Markov chains {X_n} that weakly converges to a Markov process X. We give sufficient condition for such a sequence to converge in distribution, formulated in terms of the characteristics of the additive functionals, and related to the Dynkin's theorem on the convergence of W-functionals. As an application of the main theorem, the general sufficient condition for convergence of additive functionals in terms of transition probabilities of the chains X_n is proved.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe consider a sequence of additive functionals {\\phi_n}, set on a sequence of Markov chains {X_n} that weakly converges to a Markov process X. We give sufficient condition for such a sequence to converge in distribution, formulated in terms of the characteristics of the additive functionals, and related to the Dynkin's theorem on the convergence of W-functionals. As an application of the main theorem, the general sufficient condition for convergence of additive functionals in terms of transition probabilities of the chains X_n is proved.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper studies a sequence of additive functionals {φ_n} defined on a sequence of Markov chains {X_n} that weakly converge to a Markov process X.\n- It establishes sufficient conditions for the convergence in distribution of this sequence of additive functionals.\n- These sufficient conditions are formulated in terms of the characteristics of the additive functionals themselves.\n- The proposed conditions are related to Dynkin's theorem concerning the convergence of W-functionals.\n- As an application, the main theorem is used to prove a general sufficient condition for convergence expressed through the transition probabilities of the Markov chains X_n.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis work addresses the convergence in distribution of a sequence of additive functionals {φ_n} defined on Markov chains {X_n} that weakly converge to a Markov process X, establishing sufficient conditions expressed through the characteristics of these functionals and connected to Dynkin's theorem on W-functionals. The main result yields a general sufficient condition, formulated in terms of the transition probabilities of the chains X_n, ensuring convergence of the additive functionals, thereby providing a practical criterion applicable to broader classes of Markov chain approximations.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Markov, Dynkin"
+  },
+  "outputs": {
+    "L1": "We consider a sequence of additive functionals {φ_n}, defined on a sequence of Markov chains {X_n} that converge weakly to a Markov process X. We establish a sufficient condition for the convergence in distribution of such a sequence, formulated in terms of the characteristics of the additive functionals and related to Dynkin's theorem on the convergence of W-functionals. As an application of the main theorem, we prove a general sufficient condition for the convergence of additive functionals expressed in terms of the transition probabilities of the chains X_n.",
+    "L2": "We study a family of additive functionals {φ_n} defined over a corresponding family of Markov chains {X_n}, where the latter converges weakly to some Markov process X. Our main contribution is establishing sufficient conditions—expressed through the characteristics of these additive functionals—under which such convergence in distribution holds. These conditions draw upon and relate to Dynkin's classical theorem concerning W-functional convergence. Building on this central result, we further derive a general sufficient criterion for the convergence of additive functionals, this time expressed directly in terms of the transition probabilities associated with the chains X_n.",
+    "L3": "# Convergence of Additive Functionals of Markov Chains\n\nThis paper investigates a sequence of additive functionals $\\{\\varphi_n\\}$ associated with a sequence of Markov chains $\\{X_n\\}$, under the standing assumption that the chains $X_n$ converge weakly to a limiting Markov process $X$. The central problem addressed is to determine under what circumstances the weak convergence of the underlying processes $X_n \\Rightarrow X$ can be lifted to a corresponding weak convergence of the associated additive functionals, that is, when one can guarantee that\n$$\n\\varphi_n \\Rightarrow \\varphi\n$$\nfor some limiting additive functional $\\varphi$ of the process $X$.\n\n## Main Contribution\n\nThe principal result of the paper consists in establishing a set of sufficient conditions ensuring the convergence in distribution of the sequence $\\{\\varphi_n\\}$. A distinguishing feature of these conditions is that they are stated entirely in terms of the intrinsic characteristics of the additive functionals $\\varphi_n$ themselves — such as their compensators, predictable characteristics, or associated increasing processes — rather than requiring auxiliary regularity properties of the chains $X_n$ beyond their weak convergence to $X$. This formulation makes the criterion particularly convenient to verify in applications, since it reduces the problem of functional convergence to the analysis of quantities that are naturally attached to the functionals under consideration.\n\n## Relation to Dynkin's Theory of W-Functionals\n\nThe conditions obtained in this work are closely connected to, and may be viewed as a natural extension of, Dynkin's classical theorem on the convergence of W-functionals. Dynkin's theory provides a foundational framework for analyzing functionals of Markov processes through their characteristic operators and associated additive processes, and it establishes convergence criteria within this setting. The present paper builds upon this framework, adapting and extending its conditions to the discrete-to-continuous (or discrete-to-discrete) approximation scheme in which a sequence of Markov chains converges to a limiting Markov process. In this sense, the results here can be regarded as a discrete analogue, and in certain respects a generalization, of Dynkin's original convergence theorem for W-functionals.\n\n## Application: A Criterion via Transition Probabilities\n\nAs a concrete and practically significant application of the main theorem, the paper derives a general sufficient condition for the convergence of additive functionals expressed directly in terms of the transition probabilities of the Markov chains $X_n$. This result is of particular value because transition probabilities are typically the most readily accessible and computable characteristics of a Markov chain, in contrast to more abstract functional characteristics. By translating the abstract sufficient conditions of the main theorem into statements about transition probabilities, the paper provides a practically verifiable criterion that can be applied to a broad class of approximation schemes arising in probability theory, stochastic analysis, and their applications — including, for instance, diffusion approximations of Markov chains and related weak convergence problems.",
+    "L4": "# Convergence of Additive Functionals of Markov Chains Approximating a Markov Process\n\n## 1. Introduction\n\nThe problem of approximating a continuous-time Markov process by a sequence of Markov chains arises naturally in numerical analysis, in the theory of stochastic approximation, and in the construction of discrete-time models for diffusion processes. A classical and well-studied question in this framework is the weak convergence of the chains themselves,\n$$\nX_n \\Longrightarrow X, \\qquad n \\to \\infty,\n$$\nwhere $\\{X_n\\}$ is a sequence of Markov chains (typically obtained via time and space discretization, random walk approximation, or Euler-type schemes) and $X$ is a Markov process with continuous or càdlàg trajectories. However, in many applications — including the analysis of functionals of the trajectories such as occupation times, local times, additive costs, or more general path functionals used in stochastic control and mathematical finance — one requires not merely the convergence of the processes themselves, but the convergence in distribution of associated *additive functionals*\n$$\n\\varphi_n = \\varphi_n(X_n), \\qquad n = 1, 2, \\dots\n$$\nbuilt along the trajectories of the approximating chains. The central difficulty is that weak convergence of $X_n$ to $X$ does not automatically imply convergence of functionals $\\varphi_n(X_n)$ to a corresponding functional $\\varphi(X)$ of the limiting process, since additive functionals are typically defined through sums or integrals accumulated along the trajectory and are therefore sensitive to fine properties of the transition mechanism that are not controlled by weak convergence alone.\n\nThis work is devoted to establishing sufficient conditions under which such joint convergence\n$$\n(X_n, \\varphi_n) \\Longrightarrow (X, \\varphi)\n$$\nholds, where $\\varphi$ is an additive functional of the limiting Markov process $X$. Our approach is based on characterizing the additive functionals $\\varphi_n$ through their *characteristics* — that is, through the local (one-step, or infinitesimal) description of how $\\varphi_n$ accumulates along the trajectory of $X_n$ — and relating these characteristics to the corresponding characteristics of the limiting functional $\\varphi$.\n\n## 2. Background: Dynkin's Theory of W-Functionals\n\nThe theoretical foundation for this study is provided by E. B. Dynkin's theory of $W$-functionals of Markov processes. Recall that a $W$-functional of a Markov process $X$ is, roughly speaking, a multiplicative or additive functional of the process whose evolution is governed by a characteristic operator (or a characteristic measure) compatible with the semigroup of $X$. Dynkin's theorem provides conditions, expressed in terms of these characteristics, under which a given additive functional is well-defined, finite, and possesses regularity properties (such as continuity in $t$ along almost every trajectory).\n\nThe relevance of this theory to the approximation problem is the following: if each chain $X_n$ carries an additive functional $\\varphi_n$ whose characteristics converge, in an appropriate sense, to the characteristics of a $W$-functional $\\varphi$ of the limiting process $X$, then one expects — under suitable regularity and tightness conditions — that the pairs $(X_n, \\varphi_n)$ converge weakly to $(X, \\varphi)$. Making this heuristic rigorous requires:\n\n1. A precise notion of \"characteristics\" for additive functionals defined on discrete-time Markov chains, compatible with the continuous-time characteristics appearing in Dynkin's framework;\n2. Conditions on the convergence of transition probabilities $P_n(x, dy)$ of the chains $X_n$ that guarantee both the weak convergence $X_n \\Rightarrow X$ and the convergence of the associated characteristics;\n3. Tightness criteria for the sequence $\\{\\varphi_n\\}$ ensuring that convergence of finite-dimensional distributions can be upgraded to convergence in the Skorokhod topology (or another suitable functional topology).\n\n## 3. Setting and Main Result\n\nLet $\\{X_n\\}$ be a sequence of Markov chains with state spaces $E_n$ (embedded, via a suitable scaling, into a common metric space $E$) and transition probabilities $P_n(x, \\cdot)$, converging weakly to a Markov process $X$ with transition semigroup $(P_t)_{t \\geq 0}$ on $E$. For each $n$, let $\\varphi_n$ be an additive functional of $X_n$, defined through increments\n$$\n\\Delta \\varphi_n(k) = f_n(X_n(k), X_n(k+1))\n$$\nor, more generally, through a family of local characteristics $(a_n(x), b_n(x), \\nu_n(x, dy))$ describing the drift, diffusion, and jump contributions to $\\varphi_n$ at each state $x$.\n\nThe main result of this work provides a set of sufficient conditions, formulated directly in terms of the transition probabilities $P_n(x, dy)$ of the approximating chains, under which:\n\n- the sequence $\\{\\varphi_n\\}$ is tight in the space of càdlàg functions;\n- the local characteristics of $\\varphi_n$ converge to the characteristics of a well-defined $W$-functional $\\varphi$ of the limit process $X$, in the sense required by Dynkin's theorem;\n- consequently, the pair $(X_n, \\varphi_n)$ converges in distribution to $(X, \\varphi)$.\n\nThe novelty of the result lies in expressing these hypotheses entirely through computable properties of $P_n(x, dy)$ — such as moment conditions on the increments, uniform integrability of the local characteristics, and a compatibility condition linking the rate of convergence of $P_n$ to $P_t$ with the accumulation rate of $\\varphi_n$ — rather than through abstract convergence of characteristics in a functional space. This makes the criterion directly verifiable in concrete approximation schemes.\n\n## 4. Significance and Applications\n\nBecause the sufficient conditions are stated at the level of the transition probabilities, the result applies uniformly to a broad range of standard approximation schemes: random walk approximations to diffusion processes, Markov chain approximations used in numerical schemes for stochastic differential equations, birth-and-death chain approximations to one-dimensional diffusions, and discretizations arising in queueing and branching process theory. In each of these settings, the additive functionals of interest — occupation times, local times at a point or on a set, integral functionals of the form $\\sum_k g(X_n(k))$, or more general reward/cost functionals — fall within the scope of the theorem, and their convergence to the corresponding continuous-time functional (occupation time, local time, or additive functional of $X$) follows as a corollary once the stated conditions on $P_n$ are verified.\n\nIn this sense, the paper both extends Dynkin's theory of $W$-functionals to a discrete-approximation setting and supplies a practically checkable criterion — expressed through elementary properties of transition kernels — that bridges the classical convergence theory for Markov processes with the analysis of functionals defined along their trajectories.",
+    "L5": "# Markov Processes and the Dynkin Formalism\n\nThe theory of stochastic processes owes much of its rigorous mathematical foundation to the combined contributions of Andrei Markov and Eugene Dynkin, whose work—though separated by decades—together shaped modern probability theory.\n\n## Markov's Foundational Insight\n\nAndrei Andreyevich Markov (1856–1922), a Russian mathematician, introduced what would become one of the most influential concepts in probability theory: the idea that a system's future state depends only on its present state, not on the sequence of events that preceded it. This \"memoryless\" property, now known as the **Markov property**, gave rise to Markov chains and, more broadly, Markov processes. Markov originally developed these ideas to analyze the statistical dependencies between letters in text, but the framework quickly proved far more general, becoming essential to fields ranging from physics and biology to economics and computer science.\n\n## Dynkin's Rigorous Extension\n\nEugene Borisovich Dynkin (1924–2014) took Markov's intuitive notion and placed it on a solid measure-theoretic foundation. Working in the mid-20th century, Dynkin developed a comprehensive theory of Markov processes using the tools of modern probability theory, including semigroups of operators and martingale theory. Several key contributions bear his name:\n\n- **Dynkin's formula**, which relates the expected value of a function of a Markov process to its generator, providing a powerful tool for computing expectations and solving related partial differential equations.\n- **Dynkin systems** (or λ-systems), a class of collections of sets used in measure theory, particularly valuable in proving uniqueness results via the **π-λ theorem** (Dynkin's theorem).\n- Contributions to the theory of **Markov processes and their boundary behavior**, connecting probabilistic ideas to potential theory and harmonic analysis.\n\n## A Lasting Legacy\n\nThe synthesis of Markov's original probabilistic intuition with Dynkin's analytical rigor exemplifies how mathematical ideas evolve: an elegant but informal concept becomes, through careful formalization, a robust theory with wide-ranging applications. Today, Markov processes—understood through the Dynkin framework—underpin fields as diverse as statistical mechanics, financial mathematics, queueing theory, and machine learning, particularly in the design of algorithms like Markov Chain Monte Carlo (MCMC) methods.\n\nTogether, the names Markov and Dynkin represent a bridge between intuitive probabilistic reasoning and the abstract mathematical structures required to make that reasoning precise and broadly applicable."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a probability theory paper about convergence of additive functionals defined on weakly converging Markov chains.",
+      "output": "# Abstract\n\nWe study the convergence of additive functionals of Markov chains under weak convergence of the underlying processes. Given a sequence of Markov chains $(X_n^k)_{k\\geq 0}$ indexed by $n$, converging weakly to a limiting Markov process $X$, we investigate conditions under which additive functionals of the form\n$$\nS_n = \\sum_{k=0}^{N_n} f_n(X_n^k, X_n^{k+1})\n$$\nconverge to a corresponding additive functional of the limit process. Such functionals arise naturally in statistics, queueing theory, and mathematical finance as discretized analogues of stochastic integrals and occupation-time functionals.\n\nWeak convergence of the chains alone is generally insufficient to guarantee convergence of the associated additive functionals, since the summation operation is not continuous with respect to the Skorokhod topology. We identify a set of sufficient conditions—formulated in terms of uniform integrability, compatibility between the functions $f_n$ and the transition mechanisms, and a form of asymptotic negligibility of individual increments—under which convergence in distribution of $S_n$ to the limiting functional\n$$\nS = \\int_0^T f(X_s, dX_s)\n$$\nor its discrete analogue holds. Our approach combines martingale approximation techniques with tightness criteria adapted to the two-parameter structure of the functionals, extending classical invariance principles for additive functionals of Markov chains to a triangular-array setting.\n\nAs applications, we recover and generalize known results on convergence of quadratic variation-type functionals, local time approximations, and functionals arising in the analysis of Markov chain Monte Carlo algorithms. We also present examples demonstrating the necessity of our conditions and discuss extensions to functionals of several consecutive states and to non-homogeneous chains.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "I need a short academic abstract discussing sufficient conditions for convergence in distribution of additive functionals of Markov chains, referencing Dynkin's W-functionals theorem.",
+      "output": "# Abstract\n\nWe investigate sufficient conditions ensuring convergence in distribution of additive functionals of Markov chains, with particular emphasis on the theoretical framework established by Dynkin's theorem on W-functionals. Additive functionals, defined as cumulative sums of measurable functions evaluated along the trajectory of a Markov chain, arise naturally in the analysis of empirical processes, occupation times, and stochastic approximation schemes. This work examines the interplay between the ergodic properties of the underlying chain—particularly conditions of geometric ergodicity and Harris recurrence—and the structural assumptions on the functional itself required to guarantee weak convergence of normalized partial sums.\n\nBuilding on Dynkin's characterization of W-functionals, which relates additive functionals to multiplicative functionals and superharmonic transformations of the state space, we derive criteria under which centered and rescaled additive functionals converge in distribution to a Gaussian limit, extending classical central limit theorem results for Markov chains. Special attention is given to the role of the resolvent operator and the solution of the Poisson equation associated with the functional, which together determine the asymptotic variance and the rate of convergence. We further discuss conditions under which spectral gap estimates and drift criteria can be combined with Dynkin's approach to obtain non-asymptotic bounds on the distance to the limiting distribution.\n\nThe results presented unify several strands of the literature on functional limit theorems for Markov processes and provide a pathway toward applications in statistical inference for dependent data, Markov chain Monte Carlo diagnostics, and the analysis of stochastic recursive algorithms. We illustrate the applicability of the derived sufficient conditions through examples involving finite-state chains, random walks on groups, and diffusion approximations, highlighting the practical verifiability of the drift and moment conditions required by the theory.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft an abstract for a mathematical research paper on Markov processes, focusing on additive functionals and their convergence via transition probability conditions.",
+      "output": "# Abstract\n\nWe investigate the asymptotic behavior of additive functionals of Markov processes under conditions imposed directly on the transition probabilities. Let $(X_t)_{t \\geq 0}$ be a Markov process with state space $(E, \\mathcal{E})$ and transition semigroup $(P_t)_{t \\geq 0}$, and consider additive functionals of the form\n$$\nA_t = \\int_0^t f(X_s)\\, ds,\n$$\nwhere $f$ belongs to a suitable class of measurable functions on $E$. Our aim is to establish weak and strong limit theorems—including laws of large numbers, functional central limit theorems, and almost sure convergence results—for $A_t$ as $t \\to \\infty$, under hypotheses formulated in terms of mixing-type and ergodicity conditions on $(P_t)$ rather than on the process paths themselves.\n\nSpecifically, we introduce a family of conditions controlling the rate of convergence of $P_t(x, \\cdot)$ to an invariant (or quasi-stationary) measure $\\pi$, expressed through uniform or $L^p$-type bounds on\n$$\n\\|P_t(x, \\cdot) - \\pi\\|\n$$\nand their integrated versions with respect to time. These conditions are shown to be sufficient—and in several cases necessary—for the validity of a strong law of large numbers\n$$\n\\frac{A_t}{t} \\to \\int_E f\\, d\\pi \\quad \\text{a.s.},\n$$\nas well as for a central limit theorem\n$$\n\\frac{A_t - t \\int_E f\\, d\\pi}{\\sqrt{t}} \\xrightarrow{d} N(0, \\sigma_f^2),\n$$\nwith an explicit characterization of the asymptotic variance $\\sigma_f^2$ in terms of the resolvent of $(P_t)$ and the potential of $f$.\n\nThe approach relies on a combination of semigroup techniques, martingale approximation via the Poisson equation associated with the generator, and spectral-type estimates for the transition operator. We further discuss the interplay between the regularity of $f$ and the minimal decay conditions on $(P_t)$ required for convergence, and we illustrate the sharpness of our assumptions through examples including diffusion processes, Markov chains with general state space, and processes exhibiting polynomial or subexponential ergodicity. Applications to statistical inference for Markov models, in particular to the asymptotic normality of empirical estimators based on continuous or discrete observation of $(X_t)$, are also presented.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Can you produce a concise summary (in the style of a math journal abstract) about a theorem generalizing Dynkin's result on W-functionals to sequences of Markov chains converging weakly to a Markov process?",
+      "output": "# Abstract\n\nWe establish a generalization of Dynkin's theorem on W-functionals of Markov processes to the setting of sequences of Markov chains converging weakly to a limiting Markov process. Given a sequence of Markov chains $(X_n)_{n \\geq 1}$ converging weakly to a Markov process $X$, and associated additive functionals $(A_n)_{n \\geq 1}$ satisfying suitable compatibility and uniform integrability conditions, we show that the corresponding W-functionals $W_n(f) = \\mathbb{E}_x\\left[\\int_0^\\infty f(X_n(t))\\, dA_n(t)\\right]$ converge to the W-functional $W(f)$ of the limiting process $X$, for a sufficiently rich class of test functions $f$. \n\nThe main result extends Dynkin's characterization of W-functionals as solutions to a fundamental integral equation, by establishing that this characterization is stable under weak convergence of the underlying chains, provided the additive functionals satisfy an asymptotic consistency condition analogous to Dynkin's original hypotheses. As a consequence, we obtain convergence of associated characteristics (Lévy measures, killing rates, and continuous additive functional components) under a suitable topology, extending known results on convergence of Markov chains to convergence of their functional-analytic invariants.\n\nApplications include the approximation of continuous-time Markov processes with boundary conditions, discretization schemes for Feynman-Kac functionals, and the passage to the limit in branching process constructions associated with superprocesses. We illustrate the theorem with examples involving random walks converging to diffusions and discrete-time branching mechanisms converging to continuous-state branching processes with immigration.\n\n**Keywords:** W-functionals, Markov chains, weak convergence, additive functionals, Dynkin's theorem, superprocesses\n\n---\n\n*Note: This is a stylized abstract composed to match the conventions of probability theory journals (e.g., Annals of Probability, Stochastic Processes and their Applications). If you have a specific paper or precise theorem statement in mind, I can tailor the abstract more closely to those exact hypotheses and conclusions.*",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Compose an abstract for a paper proving sufficient conditions for the distributional convergence of additive functionals of a sequence of Markov chains converging to a limiting Markov process.",
+      "output": "# Abstract\n\nWe consider a sequence of Markov chains $(X_n^{(k)})_{k \\geq 0}$, indexed by $n \\in \\mathbb{N}$, that converges in an appropriate sense to a limiting Markov process $(X_t)_{t \\geq 0}$. Our main interest lies in the asymptotic behavior of additive functionals of the form\n$$\nS_n(t) = \\sum_{k=0}^{\\lfloor \\gamma_n t \\rfloor} f(X_n^{(k)}),\n$$\nwhere $f$ is a suitable observable and $\\gamma_n$ is a normalizing sequence tied to the time-scaling of the chains. We establish sufficient conditions—formulated in terms of convergence of generators, uniform moment bounds, and a mixing-type control on the chains' transition kernels—under which the suitably centered and rescaled functionals $S_n(t)$ converge in distribution, in the Skorokhod topology, to a limiting additive functional\n$$\n\\int_0^t f(X_s)\\, ds\n$$\nof the limit process, possibly perturbed by an independent Gaussian or more general Lévy-type correction term arising from fluctuations at the level of the discrete chains. The approach combines a martingale decomposition of $S_n(t)$ with tightness criteria based on quantitative estimates of the corrector terms, together with convergence of finite-dimensional distributions obtained via the convergence of the associated resolvent or semigroup operators. We verify that our hypotheses are satisfied by several classes of examples, including random walks in random environments, empirical processes of interacting particle systems, and discretizations of diffusions with locally Lipschitz coefficients, thereby illustrating the scope and applicability of the general theory. As a byproduct, we obtain new invariance principles and central limit theorems for additive functionals in these settings, extending and unifying several results scattered in the literature.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.7031763417305587,
+      "excess_ratio": 0.6049269363393687,
+      "baseline_mean": 0.09824940539119,
+      "baseline_n_valid": 5,
+      "output_chars": 567,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6911764705882353,
+          "baseline_mean": 0.07356217273002055,
+          "excess_ratio": 0.6176142978582148
+        },
+        "bz2": {
+          "actual_ratio": 0.627831715210356,
+          "baseline_mean": 0.10070950174811691,
+          "excess_ratio": 0.5271222134622391
+        },
+        "lzma": {
+          "actual_ratio": 0.7831325301204819,
+          "baseline_mean": 0.11848572777530171,
+          "excess_ratio": 0.6646468023451801
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.420545746388443,
+      "excess_ratio": 0.322296340997253,
+      "baseline_mean": 0.09824940539119,
+      "baseline_n_valid": 5,
+      "output_chars": 681,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.36436170212765956,
+          "baseline_mean": 0.07356217273002055,
+          "excess_ratio": 0.290799529397639
+        },
+        "bz2": {
+          "actual_ratio": 0.43364928909952605,
+          "baseline_mean": 0.10070950174811691,
+          "excess_ratio": 0.33293978735140917
+        },
+        "lzma": {
+          "actual_ratio": 0.45535714285714285,
+          "baseline_mean": 0.11848572777530171,
+          "excess_ratio": 0.33687141508184115
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.15785536159600996,
+      "excess_ratio": 0.05960595620481997,
+      "baseline_mean": 0.09824940539119,
+      "baseline_n_valid": 5,
+      "output_chars": 3279,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.12844036697247707,
+          "baseline_mean": 0.07356217273002055,
+          "excess_ratio": 0.05487819424245652
+        },
+        "bz2": {
+          "actual_ratio": 0.15809379727685324,
+          "baseline_mean": 0.10070950174811691,
+          "excess_ratio": 0.057384295528736334
+        },
+        "lzma": {
+          "actual_ratio": 0.1855072463768116,
+          "baseline_mean": 0.11848572777530171,
+          "excess_ratio": 0.06702151860150989
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.08974358974358969,
+      "excess_ratio": -0.008505815647600307,
+      "baseline_mean": 0.09824940539119,
+      "baseline_n_valid": 5,
+      "output_chars": 6978,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.06962271489692727,
+          "baseline_mean": 0.07356217273002055,
+          "excess_ratio": -0.003939457833093282
+        },
+        "bz2": {
+          "actual_ratio": 0.09648768671780379,
+          "baseline_mean": 0.10070950174811691,
+          "excess_ratio": -0.004221815030313117
+        },
+        "lzma": {
+          "actual_ratio": 0.10323574730354391,
+          "baseline_mean": 0.11848572777530171,
+          "excess_ratio": -0.015249980471757796
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.03419870194707927,
+      "excess_ratio": -0.06405070344411073,
+      "baseline_mean": 0.09824940539119,
+      "baseline_n_valid": 5,
+      "output_chars": 2668,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.019817073170731708,
+          "baseline_mean": 0.07356217273002055,
+          "excess_ratio": -0.05374509955928884
+        },
+        "bz2": {
+          "actual_ratio": 0.029770992366412213,
+          "baseline_mean": 0.10070950174811691,
+          "excess_ratio": -0.07093850938170469
+        },
+        "lzma": {
+          "actual_ratio": 0.05202312138728324,
+          "baseline_mean": 0.11848572777530171,
+          "excess_ratio": -0.06646260638801847
+        }
+      }
+    }
+  }
+}

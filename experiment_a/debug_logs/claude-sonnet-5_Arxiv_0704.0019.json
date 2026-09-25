@@ -1,0 +1,175 @@
+{
+  "model": "claude-sonnet-5",
+  "domain": "Arxiv",
+  "id": "0704.0019",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIn this note we give a new method for getting a series of approximations for the extinction probability of the one-dimensional contact process by using the Gr\\\"obner basis.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIn this note we give a new method for getting a series of approximations for the extinction probability of the one-dimensional contact process by using the Gr\\\"obner basis.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The note introduces a new method for approximating the extinction probability of the one-dimensional contact process.\n- The approach generates a series of successive approximations rather than a single estimate.\n- The method relies on the use of Gröbner basis techniques.\n- This represents a novel application of algebraic tools to a problem in probability theory/stochastic processes.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis note introduces a novel method employing Gröbner basis techniques to derive a series of approximations for the extinction probability of the one-dimensional contact process. This approach offers a new computational pathway for estimating extinction probabilities, contributing a fresh analytical tool to the study of contact process dynamics.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: In this note"
+  },
+  "outputs": {
+    "L1": "In this note, we present a novel method for deriving a series of approximations to the extinction probability of the one-dimensional contact process, employing the Gröbner basis technique.",
+    "L2": "This paper presents a novel approach for deriving a sequence of approximations to the extinction probability associated with the one-dimensional contact process, employing Gröbner basis techniques as the underlying computational tool.",
+    "L3": "# A New Approach to Extinction Probability Approximation in the Contact Process\n\n## Introduction\n\nThis note presents a novel methodological contribution to the study of the one-dimensional contact process, a fundamental interacting particle system used to model the spread of infections, information, or other contact-based phenomena along a linear structure. Specifically, we introduce a new technique for approximating the extinction probability—the probability that the process, started from a given configuration, eventually dies out entirely. This quantity is of central importance in the theory of interacting particle systems, as it governs the qualitative behavior of the process and determines whether the system exhibits a phase transition between extinction and persistent survival.\n\n## The Method: A Sequence of Successive Approximations\n\nUnlike traditional approaches, which typically aim to produce a single numerical estimate or bound for the extinction probability, the method developed here is fundamentally iterative in nature. Rather than converging directly to one approximate value, the technique generates an entire sequence of successive approximations, each one refining the accuracy of the previous. This sequential structure offers several potential advantages: it allows one to track the rate of convergence explicitly, to assess the stability of the approximation scheme, and to obtain increasingly precise estimates by extending the sequence further, depending on the computational resources available. In principle, this framework opens the possibility of establishing rigorous error bounds at each stage of the approximation, providing a level of control that single-shot estimates typically cannot offer.\n\n## Algebraic Foundations: The Role of Gröbner Bases\n\nThe technical machinery underlying this new approach is drawn from computational algebra, specifically the theory of Gröbner bases. Gröbner bases are a foundational tool in polynomial ideal theory, providing algorithmic methods for solving systems of polynomial equations, simplifying algebraic relations, and performing elimination of variables in a systematic and computationally tractable manner. In the context of this work, the recursive equations that govern the evolution of the contact process—expressed in terms of probabilities associated with local configurations—are reformulated as systems of polynomial equations. By applying Gröbner basis techniques to these systems, it becomes possible to systematically derive the successive approximations to the extinction probability, effectively translating a probabilistic problem into a tractable algebraic computation.\n\n## Significance: A Novel Interdisciplinary Application\n\nPerhaps the most noteworthy aspect of this contribution lies in its interdisciplinary character. While Gröbner bases have found extensive application in areas such as algebraic geometry, cryptography, and symbolic computation, their use in the analysis of stochastic processes—and in particular, in the study of interacting particle systems such as the contact process—remains largely unexplored. This note therefore represents a novel bridge between computational algebra and probability theory, demonstrating that algebraic tools traditionally associated with deterministic polynomial systems can be repurposed to shed light on inherently stochastic phenomena. This cross-pollination of methods suggests a promising direction for future research, wherein techniques from computational algebra may be adapted to tackle other difficult problems in the theory of stochastic processes where exact solutions are unavailable but recursive or self-consistent structures can be exploited.\n\n## Conclusion\n\nIn summary, this note lays the groundwork for a new algebraic approach to a classical problem in probability theory. By combining the iterative structure of successive approximations with the computational power of Gröbner basis methods, the proposed technique offers a fresh perspective on estimating the extinction probability of the one-dimensional contact process, while simultaneously illustrating the broader potential for algebraic methods to contribute meaningfully to the study of stochastic systems.",
+    "L4": "# A Gröbner Basis Approach to Extinction Probability Approximations in the One-Dimensional Contact Process\n\n## 1. Introduction\n\nThe contact process, introduced by Harris in 1974, stands as one of the most extensively studied models of interacting particle systems, serving as a fundamental framework for understanding the spread of epidemics, information, and other contagion-like phenomena on lattices. In its one-dimensional formulation, the process describes a collection of sites on the integer lattice $\\mathbb{Z}$, each of which may be in one of two states: infected (occupied) or healthy (vacant). Infected sites recover at rate 1, while healthy sites become infected at a rate proportional to the number of infected neighbors, scaled by an infection parameter $\\lambda$.\n\nA central question in the study of the contact process concerns the long-term survival or extinction of the infection, particularly the critical value $\\lambda_c$ that separates a phase of certain extinction from a phase where indefinite survival with positive probability becomes possible. Beyond the qualitative phase transition, a quantity of substantial theoretical and practical interest is the **extinction probability** itself—the probability that, started from a given initial configuration, the infection eventually dies out. Despite decades of research, exact closed-form expressions for this probability remain elusive except in trivial or degenerate cases, and researchers have instead relied on a variety of approximation techniques, including mean-field approximations, pair approximations, and more sophisticated cluster expansion methods, as well as extensive Monte Carlo simulations.\n\nThis note introduces a novel method employing Gröbner basis techniques to derive a series of approximations for the extinction probability of the one-dimensional contact process. Gröbner bases, a cornerstone of computational algebraic geometry, provide systematic algorithms for manipulating and solving systems of polynomial equations. Their application to interacting particle systems, while conceptually natural given the polynomial structure inherent in many mean-field and correlation approximations, has not been extensively explored in the probabilistic literature.\n\n## 2. Background and Motivation\n\n### 2.1 The Contact Process and Its Approximations\n\nThe one-dimensional contact process can be described via its generator: for a configuration $\\eta \\in \\{0,1\\}^{\\mathbb{Z}}$, the process flips a site $x$ from 1 to 0 at rate 1, and flips a site $x$ from 0 to 1 at rate $\\lambda \\cdot n_x(\\eta)$, where $n_x(\\eta)$ denotes the number of occupied neighbors of $x$.\n\nTo study extinction probabilities, one typically considers the process restricted to a finite interval or studies correlation functions $\\rho_k = \\mathbb{E}[\\eta(x_1)\\eta(x_2)\\cdots\\eta(x_k)]$ that satisfy an infinite hierarchy of differential equations—the so-called BBGKY-type hierarchy for interacting particle systems. Truncating this hierarchy at order $n$ (the $n$-th order mean-field or pair approximation) yields a closed system of polynomial equations in the correlation functions. Solving these systems, especially as the truncation order increases, becomes increasingly intractable using elementary algebraic methods, as the number of variables and the degree of nonlinearity both grow rapidly.\n\n### 2.2 Why Gröbner Bases?\n\nGröbner basis theory, developed by Buchberger in the 1960s, offers a systematic algorithmic framework for solving systems of polynomial equations by transforming them into a canonical form with respect to a fixed monomial ordering. This canonical form—the Gröbner basis—makes explicit properties such as the solvability, dimension, and the number of solutions of the polynomial system, and provides a constructive route to eliminating variables and obtaining explicit polynomial relations among the remaining unknowns.\n\nFor the truncated hierarchies arising from contact process approximations, the equilibrium conditions (setting time derivatives to zero) yield systems of polynomial equations in the correlation functions $\\rho_1, \\rho_2, \\ldots, \\rho_n$. Historically, such systems have been solved via ad hoc substitution methods valid only for small $n$ (typically $n \\le 3$), with higher-order approximations abandoned due to the sheer algebraic complexity. Gröbner basis computation offers a systematic alternative: by computing the Gröbner basis of the ideal generated by the equilibrium polynomial equations, one can automatically extract the elimination ideals corresponding to individual correlation functions, thereby obtaining a hierarchy of polynomial approximations to the extinction probability that can, in principle, be extended to arbitrary truncation order $n$, limited only by computational resources.\n\n## 3. The Method\n\n### 3.1 Setting Up the Polynomial System\n\nWe begin by writing the truncated equilibrium equations for the $n$-th order approximation. Let $\\rho_k$ denote the probability that a randomly chosen set of $k$ consecutive sites are all infected in the (conjectured) equilibrium measure. The mean-field-type hierarchy gives equations of the form:\n\n$$\n\\frac{d\\rho_k}{dt} = F_k(\\rho_1, \\ldots, \\rho_{k+1}) = 0 \\quad \\text{for } k = 1, \\ldots, n-1,\n$$\n\ntogether with a closure relation expressing $\\rho_{n+1}$ (or $\\rho_n$ itself, depending on the closure scheme) as a polynomial function of lower-order correlations. This produces a system of $n$ polynomial equations in $n$ unknowns $\\rho_1, \\ldots, \\rho_n$.\n\nThe extinction probability in the corresponding approximation scheme is then identified with $1 - \\rho_1$ evaluated at the appropriate root of this polynomial system—specifically, the root corresponding to the non-trivial (endemic) equilibrium, whose complement gives the probability mass associated with extinction in the approximating Markov chain.\n\n### 3.2 Gröbner Basis Computation\n\nGiven the polynomial system $F_1 = F_2 = \\cdots = F_{n-1} = 0$ together with the closure relation, we compute a Gröbner basis of the ideal\n$$\nI = \\langle F_1, \\ldots, F_{n-1}, \\text{closure relation} \\rangle \\subset \\mathbb{Q}[\\rho_1, \\ldots, \\rho_n]\n$$\nwith respect to a lexicographic monomial order that prioritizes elimination of $\\rho_2, \\ldots, \\rho_n$ in favor of $\\rho_1$. The resulting Gröbner basis contains, by the Elimination Theorem, a nonzero polynomial $G_n(\\rho_1) \\in I \\cap \\mathbb{Q}[\\rho_1]$ depending on $\\rho_1$ alone. The real roots of $G_n(\\rho_1)$ in the interval $(0,1)$ correspond to candidate equilibrium densities under the $n$-th order approximation, from which the extinction probability approximation $q_n = 1 - \\rho_1^*$ can be extracted by selecting the physically relevant root (typically the largest root corresponding to the stable non-trivial fixed point of the approximating dynamics).\n\n### 3.3 The Resulting Sequence of Approximations\n\nCarrying out this procedure for successive values of $n = 2, 3, 4, \\ldots$ yields a sequence of approximations $q_2, q_3, q_4, \\ldots$ to the true extinction probability of the one-dimensional contact process at a given infection rate $\\lambda$. Because each successive truncation incorporates longer-range correlations, one expects (and numerical evidence supports) that this sequence converges, at least for $\\lambda$ away from the critical point, toward the true extinction probability of the process. The Gröbner basis method allows this sequence to be computed algorithmically and symbolically, without the need for problem-specific algebraic manipulation at each order, since the elimination process is fully automated once the truncated hierarchy equations are specified.\n\n## 4. Discussion\n\n### 4.1 Advantages of the Approach\n\nThis approach offers a new computational pathway for estimating extinction probabilities, contributing a fresh analytical tool to the study of contact process dynamics. Several features distinguish it from existing approximation schemes:\n\n- **Systematicity**: Unlike ad hoc algebraic manipulation, the Gröbner basis algorithm provides a uniform procedure applicable at any truncation order, limited only by computational feasibility rather than by the ingenuity required for manual variable elimination.\n\n- **Exactness within the approximation**: For any fixed truncation order $n$, the Gröbner basis method yields an *exact* polynomial characterization of the approximating equilibrium, in contrast to purely numerical root-finding methods which may suffer from convergence issues or fail to identify all relevant roots.\n\n- **Structural insight**: The Gröbner basis itself, and in particular the degree and coefficient structure of the eliminated polynomial $G_n(\\rho_1)$, may offer insight into the algebraic complexity of the extinction probability as a function of the infection rate $\\lambda$, potentially illuminating the nature of the singularity at the critical point $\\lambda_c$.\n\n- **Extensibility**: The method is not intrinsically limited to the one-dimensional contact process nearest-neighbor model; it can, in principle, be adapted to other interacting particle systems with polynomial mean-field or correlation closures, including long-range contact processes, contact processes on other graphs, and related epidemic models.\n\n### 4.2 Limitations and Computational Considerations\n\nIt should be emphasized that the computational cost of Gröbner basis algorithms, particularly under lexicographic ordering, can grow extremely rapidly with the number of variables and the degree of the polynomials involved—a well-known phenomenon in computational algebra. Consequently, while the method is in principle extensible to arbitrary truncation order, in practice the approach is currently feasible only for moderate values of $n$ (order of magnitude comparable to what has traditionally been achieved via manual methods, though with substantially reduced human effort and error). The use of alternative monomial orderings, followed by conversion to lexicographic order via the FGLM algorithm, or the application of numerical Gröbner basis and homotopy continuation techniques, may help mitigate this computational burden for higher-order truncations.\n\nAdditionally, the identification of the \"physically relevant\" root among the possibly many real and complex roots of $G_n(\\rho_1)$ requires care, particularly as $n$ grows and the degree of $G_n$ increases; continuity arguments as $\\lambda$ varies, combined with known bounds on the extinction probability from probabilistic arguments, are useful in this selection process.\n\n### 4.3 Concluding Remarks\n\nThe application of Gröbner basis methods to the extinction probability problem for the one-dimensional contact process represents an initial exploration into the intersection of computational algebra and interacting particle systems. While the numerical results obtained corroborate known bounds and approximations from the existing literature, the primary contribution of this note lies in establishing the methodological framework itself. Future work may explore the rigorous convergence properties of the sequence $q_n$ as $n \\to \\infty$, extensions to higher-dimensional contact processes, and the application of related computational algebra techniques—such as resultants and elimination ideals for non-lexicographic orderings—to other open problems in the theory of interacting particle systems.",
+    "L5": "It looks like your message may be incomplete—\"In this note\" appears to be the start of a sentence (common in academic or technical writing) rather than a specific topic.\n\nCould you clarify what you'd like the text to be about? For example:\n- What subject or field should it cover? (e.g., mathematics, science, literature, philosophy)\n- Should it be written in the style of an academic note/paper (using phrases like \"In this note, we discuss...\")?\n- Is there a specific research topic, concept, or argument you'd like me to address?\n\nOnce you provide more details, I'll be happy to write a well-structured text for you!"
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a math paper about using Gröbner bases to approximate extinction probabilities in the one-dimensional contact process.",
+      "output": "# Gröbner Bases and Extinction Probability Approximation in the One-Dimensional Contact Process\n\n## Abstract\n\nWe present a computational algebraic approach to estimating extinction probabilities in the one-dimensional contact process, a fundamental interacting particle system modeling the spread of infection on a lattice. The contact process exhibits a phase transition at a critical infection rate $\\lambda_c$, below which the infection almost surely dies out; determining precise extinction probabilities away from this threshold, however, remains analytically intractable in general. We address this challenge by encoding the finite-volume approximations of the process—truncated to periodic or absorbing boundary conditions on segments of length $n$—as systems of polynomial equations arising from the stationary and transient behavior of the associated Markov chain. Using Gröbner basis techniques, we eliminate variables corresponding to non-extinction states and derive explicit polynomial relations satisfied by extinction probabilities, expressed in terms of the infection rate $\\lambda$. This method allows us to obtain rigorous algebraic approximations and bounds for extinction probabilities on finite lattices, which we show converge to the known qualitative behavior of the infinite system as $n$ increases. We implement the Buchberger algorithm and its variants to compute these bases for moderate lattice sizes, analyzing the growth in computational complexity and polynomial degree as a function of $n$. Our results demonstrate that Gröbner basis methods offer a viable symbolic-computational alternative to Monte Carlo simulation and mean-field approximations, yielding exact algebraic characterizations of extinction dynamics for small systems while providing insight into the structure of the critical phenomena in the thermodynamic limit. We discuss the scalability limitations imposed by the doubly-exponential worst-case complexity of Gröbner basis computation and propose hybrid numerical-symbolic strategies to extend the applicability of this framework to larger lattice sizes.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Give me a short abstract describing a new computational method involving Gröbner basis techniques applied to the contact process's extinction probability.",
+      "output": "# Abstract\n\nWe present a novel computational framework for determining exact extinction probabilities in the contact process on finite graphs by leveraging Gröbner basis techniques applied to the algebraic system induced by the model's stationary equations. The contact process, a fundamental interacting particle system used to model epidemic spread, exhibits transition probabilities that satisfy polynomial systems derived from its infinitesimal generator. By encoding the absorbing-state probabilities and transition dynamics as a system of polynomial equations over the state space of graph configurations, we compute Gröbner bases with respect to carefully chosen monomial orderings that exploit the graph's automorphism structure and sparsity pattern. This approach transforms the traditionally intractable problem of solving high-dimensional coupled recurrence relations into a systematic elimination procedure, yielding closed-form or semi-numerical expressions for extinction probabilities on small-to-moderate sized graphs where Monte Carlo methods suffer from slow convergence near critical infection rates. We demonstrate the method on path graphs, cycles, and star graphs, showing exact agreement with known asymptotic results in limiting cases, and provide complexity bounds relating Gröbner basis degree to graph diameter and branching structure. The technique offers a rigorous algebraic alternative to simulation-based approaches, particularly valuable for validating approximation schemes and studying critical phenomena in finite-size systems.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Draft a concise research note summary that introduces a novel approximation approach for extinction probability in the 1D contact process using Gröbner bases.",
+      "output": "# Research Note: Gröbner Basis Approximation of Extinction Probabilities in the 1D Contact Process\n\n## Summary\n\nWe introduce a novel computational framework for approximating extinction probabilities in the one-dimensional contact process by exploiting the algebraic structure of the model's stationary equations via Gröbner basis methods.\n\n## Background\n\nThe contact process, a fundamental interacting particle system modeling epidemic spread, is characterized by a critical infection rate λ_c above which the infection survives indefinitely with positive probability. While exact extinction probabilities are analytically intractable except in trivial cases, existing approaches rely on Monte Carlo simulation or mean-field approximations that either suffer from slow convergence or fail to capture correlations between neighboring sites.\n\n## Approach\n\nWe reformulate the truncated correlation equations—arising from moment closure approximations at various orders—as a system of polynomial equations in the marginal and joint site probabilities. By constructing a Gröbner basis for the ideal generated by these polynomials (with respect to a suitable monomial ordering, typically graded reverse lexicographic), we obtain:\n\n1. **Exact algebraic solutions** to finite-order truncations, eliminating iterative numerical solvers for the closure equations;\n2. **Systematic elimination** of nuisance variables (higher-order correlations) to isolate polynomial expressions directly relating extinction probability to λ;\n3. **A hierarchy of approximations** indexed by truncation order, with the Gröbner basis approach making explicit the algebraic relationships lost in numerical iteration.\n\n## Key Contributions\n\n- We derive closed-form polynomial approximants for the extinction probability as a function of infection rate λ, valid near the critical point.\n- The Gröbner basis structure reveals previously unnoticed algebraic constraints among pair and triplet correlation functions in the stationary regime.\n- Comparison with high-precision Monte Carlo simulations shows the method achieves comparable accuracy to third-order mean-field closures at substantially reduced computational cost, since the algebraic system is solved once symbolically rather than iterated numerically.\n- The framework naturally extends to estimate the critical value λ_c via resultant computations, offering an alternative to simulation-based critical point estimation.\n\n## Significance\n\nThis work bridges symbolic computational algebra and stochastic process theory, demonstrating that Gröbner basis techniques—traditionally used in algebraic geometry and cryptography—provide a viable, exact-arithmetic alternative for analyzing moment-closure hierarchies in interacting particle systems. The method is broadly applicable to other lattice models where stationary equations admit polynomial formulations.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "I need an abstract for a paper: new series approximations for extinction probability of the contact process on Z, derived via Gröbner basis methods.",
+      "output": "# Abstract\n\nWe present new series approximations for the extinction probability of the contact process on the one-dimensional integer lattice $\\mathbb{Z}$. Building on the correspondence between the contact process and its associated finite-dimensional truncations, we employ Gröbner basis techniques to systematically eliminate variables from the polynomial systems that characterize approximate critical points and survival probabilities at successive levels of truncation. This algebraic approach yields explicit recursive formulas for the coefficients of a power series expansion of the extinction probability as a function of the infection rate $\\lambda$, extending previous low-order truncation results to significantly higher orders than were previously computationally accessible.\n\nBy exploiting the structure of the ideal generated by the truncated balance equations, we derive closed-form expressions for successive approximants and analyze their convergence behavior as the truncation level increases. Our results yield refined numerical estimates for the extinction probability near and above the critical value $\\lambda_c$, and we compare these against existing Monte Carlo simulations and mean-field approximations. The Gröbner basis framework further allows us to identify algebraic relations among approximants at different orders, providing insight into the rate of convergence of the truncation scheme and suggesting a conjectural form for the exact generating function governing the series coefficients. These findings offer both improved quantitative estimates and a novel computational-algebraic perspective on the analysis of interacting particle systems.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Compose a brief academic abstract announcing a new technique to compute successive approximations of extinction probability for the one-dimensional contact process using algebraic Gröbner basis tools.",
+      "output": "# Abstract\n\nWe present a novel computational technique for approximating extinction probabilities in the one-dimensional contact process through the application of Gröbner basis methods from computational algebraic geometry. The contact process, a fundamental interacting particle system modeling the spread of infection on a lattice, exhibits a phase transition between extinction and survival regimes characterized by a critical infection rate whose exact value remains analytically elusive. Building on the finite-dimensional truncation schemes traditionally used to construct upper and lower bounds via the mean-field and pair approximation hierarchies, we recast the stationary equations of successive $n$-th order approximations as systems of polynomial equations over the survival probabilities of local configurations. By computing Gröbner bases for the resulting polynomial ideals under a suitable monomial ordering, we obtain closed-form algebraic expressions for the approximate extinction probabilities at each truncation level, circumventing the numerical instabilities and convergence ambiguities inherent in iterative solvers. This algebraic approach yields exact rational or algebraic-number solutions for low-order approximations and provides a systematic, automatable pathway to higher-order approximations previously computed only through ad hoc numerical continuation. We demonstrate the method on approximations up to order $n=5$, recovering known bounds on the critical value $\\lambda_c$ with improved precision and offering explicit symbolic certificates for the qualitative behavior of the extinction probability as a function of the infection parameter. The results suggest that Gröbner basis techniques offer a promising rigorous and reproducible framework for studying critical phenomena in interacting particle systems more broadly.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6299376299376299,
+      "excess_ratio": 0.531193980958811,
+      "baseline_mean": 0.09874364897881896,
+      "baseline_n_valid": 5,
+      "output_chars": 188,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.5970149253731343,
+          "baseline_mean": 0.08019486842402639,
+          "excess_ratio": 0.5168200569491079
+        },
+        "bz2": {
+          "actual_ratio": 0.5220125786163522,
+          "baseline_mean": 0.08833429487450448,
+          "excess_ratio": 0.4336782837418477
+        },
+        "lzma": {
+          "actual_ratio": 0.7446808510638298,
+          "baseline_mean": 0.1255340786209832,
+          "excess_ratio": 0.6191467724428465
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4555160142348755,
+      "excess_ratio": 0.3567723652560565,
+      "baseline_mean": 0.09874364897881896,
+      "baseline_n_valid": 5,
+      "output_chars": 234,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.38461538461538464,
+          "baseline_mean": 0.08019486842402639,
+          "excess_ratio": 0.30442051619135824
+        },
+        "bz2": {
+          "actual_ratio": 0.4,
+          "baseline_mean": 0.08833429487450448,
+          "excess_ratio": 0.3116657051254955
+        },
+        "lzma": {
+          "actual_ratio": 0.5555555555555556,
+          "baseline_mean": 0.1255340786209832,
+          "excess_ratio": 0.4300214769345724
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.10856928558034877,
+      "excess_ratio": 0.00982563660152981,
+      "baseline_mean": 0.09874364897881896,
+      "baseline_n_valid": 5,
+      "output_chars": 4233,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.08607021517553794,
+          "baseline_mean": 0.08019486842402639,
+          "excess_ratio": 0.005875346751511551
+        },
+        "bz2": {
+          "actual_ratio": 0.10803004043905257,
+          "baseline_mean": 0.08833429487450448,
+          "excess_ratio": 0.01969574556454809
+        },
+        "lzma": {
+          "actual_ratio": 0.13071895424836602,
+          "baseline_mean": 0.1255340786209832,
+          "excess_ratio": 0.005184875627382818
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.0559351660575242,
+      "excess_ratio": -0.04280848292129476,
+      "baseline_mean": 0.09874364897881896,
+      "baseline_n_valid": 5,
+      "output_chars": 11392,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.05,
+          "baseline_mean": 0.08019486842402639,
+          "excess_ratio": -0.030194868424026383
+        },
+        "bz2": {
+          "actual_ratio": 0.05041810132808657,
+          "baseline_mean": 0.08833429487450448,
+          "excess_ratio": -0.037916193546417905
+        },
+        "lzma": {
+          "actual_ratio": 0.06729857819905213,
+          "baseline_mean": 0.1255340786209832,
+          "excess_ratio": -0.05823550042193107
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.10032102728731934,
+      "excess_ratio": 0.0015773783085003823,
+      "baseline_mean": 0.09874364897881896,
+      "baseline_n_valid": 5,
+      "output_chars": 619,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.07105263157894737,
+          "baseline_mean": 0.08019486842402639,
+          "excess_ratio": -0.009142236845079019
+        },
+        "bz2": {
+          "actual_ratio": 0.07246376811594203,
+          "baseline_mean": 0.08833429487450448,
+          "excess_ratio": -0.015870526758562445
+        },
+        "lzma": {
+          "actual_ratio": 0.1504424778761062,
+          "baseline_mean": 0.1255340786209832,
+          "excess_ratio": 0.024908399255123004
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T05:13:11.545691+00:00"
+    }
+  ]
+}

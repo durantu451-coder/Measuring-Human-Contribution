@@ -1,0 +1,169 @@
+{
+  "model": "claude-sonnet-5",
+  "domain": "Arxiv",
+  "id": "0704.0282",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThis paper considers the use of punctured convolutional codes to obtain pragmatic space-time trellis codes over block-fading channel. We show that good performance can be achieved even when puncturation is adopted and that we can still employ the same Viterbi decoder of the convolutional mother code by using approximated metrics without increasing the complexity of the decoding operations.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThis paper considers the use of punctured convolutional codes to obtain pragmatic space-time trellis codes over block-fading channel. We show that good performance can be achieved even when puncturation is adopted and that we can still employ the same Viterbi decoder of the convolutional mother code by using approximated metrics without increasing the complexity of the decoding operations.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The paper proposes using punctured convolutional codes to construct pragmatic space-time trellis codes for transmission over block-fading channels.\n- Good performance can still be achieved even when puncturing is applied to the convolutional mother code.\n- The same Viterbi decoder used for the original convolutional mother code can be reused for decoding the punctured space-time trellis codes.\n- Approximated metrics are employed in the decoding process to enable this reuse of the standard Viterbi decoder.\n- This approach maintains decoding performance without increasing the complexity of the decoding operations.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThis paper investigates the use of punctured convolutional codes to construct pragmatic space-time trellis codes for block-fading channels, employing approximated metrics to enable decoding with the same Viterbi decoder as the convolutional mother code. The approach achieves good performance despite puncturation while avoiding any increase in decoding complexity, demonstrating an efficient and practical solution for space-time coding.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: This, Viterbi"
+  },
+  "outputs": {
+    "L1": "Here is a polished version of your text:\n\n---\n\nThis paper investigates the use of punctured convolutional codes to construct pragmatic space-time trellis codes over block-fading channels. We demonstrate that satisfactory performance can be achieved despite the adoption of puncturing, and that the same Viterbi decoder used for the mother convolutional code can still be employed—through the use of approximate metrics—without incurring any increase in decoding complexity.\n\n---\n\nA few alternative phrasings for certain segments, in case you'd like more options:\n\n- \"obtain pragmatic space-time trellis codes\" → \"derive pragmatic space-time trellis codes\" or \"construct pragmatic space-time trellis codes\"\n- \"good performance\" → \"satisfactory performance\" or \"favorable performance\"\n- \"without increasing the complexity of the decoding operations\" → \"without incurring additional decoding complexity\"\n\nLet me know if you'd like a more formal/academic tone or a more concise version for an abstract.",
+    "L2": "This paper investigates how punctured convolutional codes can be employed to derive pragmatic space-time trellis codes suitable for block-fading channels. It is demonstrated that satisfactory performance remains achievable despite the introduction of puncturing, and that the original Viterbi decoder associated with the parent convolutional code can still be utilized, relying on approximate metrics to avoid any additional computational burden during decoding.",
+    "L3": "# Pragmatic Space-Time Trellis Codes via Punctured Convolutional Codes for Block-Fading Channels\n\n## Introduction and Motivation\n\nThis paper presents a novel approach to constructing space-time trellis codes (STTCs) by leveraging the well-established framework of punctured convolutional codes, specifically targeting transmission over block-fading channels. The core proposition is that punctured convolutional codes—derived from a standard convolutional mother code—can serve as an effective basis for designing pragmatic space-time trellis codes, thereby combining the spatial diversity benefits of space-time coding with the practical implementation advantages inherent to punctured coding schemes.\n\n## Performance Preservation Despite Puncturing\n\nA key finding of this work is that the puncturing process, when carefully applied to the convolutional mother code, does not come at the expense of significant performance degradation. Despite the code rate increase and structural simplification introduced by puncturing, the resulting space-time trellis codes continue to exhibit strong performance characteristics over block-fading channels. This is a particularly noteworthy result because puncturing is traditionally associated with reduced error-correcting capability due to the removal of coded bits; however, in the space-time coding context explored here, the spatial diversity gains help compensate for this, allowing the punctured codes to achieve performance levels comparable to more complex, non-punctured alternatives.\n\n## Decoder Reuse and Complexity Considerations\n\nPerhaps the most practically significant contribution of this paper is the demonstration that the same Viterbi decoder architecture originally designed for the convolutional mother code can be directly reused to decode the punctured space-time trellis codes. This is achieved through the use of the \"pragmatic\" approach—a well-known technique in coded modulation where a single, fixed decoder structure is retained across multiple code rates and configurations, avoiding the need to redesign decoding hardware or software for each specific punctured code variant.\n\nTo enable this decoder reuse in the space-time coding context, the paper employs approximated decoding metrics. These approximations are specifically formulated to allow the existing Viterbi decoder—originally tailored to the trellis structure of the mother code—to correctly process the received signals associated with the punctured space-time code, despite the structural differences introduced by puncturing and the additional spatial dimension of the transmission.\n\n## Practical Implications\n\nThe overall significance of this approach lies in its ability to reconcile two often competing objectives: achieving robust error-correction performance suited to space-time transmission over block-fading channels, and minimizing implementation complexity. By demonstrating that a single, unified Viterbi decoder can service multiple punctured space-time trellis code configurations without requiring architectural modifications, the paper shows that performance is maintained without incurring any additional computational or hardware complexity. This makes the proposed pragmatic space-time trellis coding scheme an attractive candidate for practical wireless communication systems, where flexibility in code rate selection and decoder simplicity are both highly valued design goals.",
+    "L4": "# Pragmatic Space-Time Trellis Codes for Block-Fading Channels via Punctured Convolutional Codes\n\n## Introduction\n\nSpace-time trellis codes (STTCs) have emerged as a powerful technique for exploiting spatial diversity in multiple-antenna wireless communication systems. By jointly designing coding, modulation, and transmit diversity, STTCs achieve significant performance gains over single-antenna systems, particularly in fading channels. However, the design of good STTCs is often complex, requiring careful search procedures to identify trellis structures that satisfy diversity and coding gain criteria, especially for block-fading channels where the channel remains static within each transmission block but varies independently from block to block. This paper addresses these design challenges by proposing a pragmatic approach that leverages the well-established theory of punctured convolutional codes.\n\n## Motivation\n\nTraditional STTC design typically involves an exhaustive computer search over possible trellis structures to identify codes with optimal performance for a given number of states and antennas. This procedure can become computationally prohibitive as the number of transmit antennas, states, or modulation levels increases. Moreover, each new configuration of antennas or channel conditions may require a fresh search, limiting the flexibility and reusability of designed codes.\n\nAn alternative and more practical approach is to derive space-time codes from existing, well-studied convolutional codes through puncturing. Punctured convolutional codes are widely used in classical single-antenna systems because they allow variable code rates to be achieved from a single \"mother\" code while reusing the same decoder structure with minimal modifications. Extending this concept to the space-time domain offers the promise of simplifying STTC design while inheriting the excellent distance properties of well-known convolutional codes.\n\n## Proposed Approach\n\nIn this paper, we investigate the construction of pragmatic space-time trellis codes based on punctured convolutional codes, specifically tailored for block-fading channel conditions. The central idea is to take a standard convolutional mother code, known for its good distance spectrum, and generate space-time codes for multiple transmit antennas through an appropriate puncturing pattern. This construction allows the resulting space-time code to inherit the trellis structure of the mother code while distributing coded bits across multiple antennas in a manner that induces spatial diversity.\n\nA key challenge introduced by this puncturing-based approach is that the decoding metrics associated with the original convolutional code do not directly translate to the punctured space-time code without modification. To address this, we introduce approximated branch metrics that allow the receiver to employ the same Viterbi decoder architecture originally designed for the mother convolutional code. This is a crucial practical advantage: rather than designing an entirely new decoder tailored to the specific punctured space-time trellis structure, the receiver can reuse existing, well-optimized Viterbi decoding hardware or software with only minor metric adjustments.\n\n## Performance and Complexity Considerations\n\nThrough analysis and simulation over block-fading channels, we demonstrate that the proposed pragmatic space-time trellis codes achieve good error-rate performance despite the inherent suboptimality introduced by puncturing and metric approximation. While puncturing generally reduces the free distance and diversity properties compared to codes explicitly optimized via computer search, our results show that the performance penalty is modest, and the codes remain competitive with purpose-built STTCs in block-fading scenarios.\n\nCrucially, this performance is achieved without any increase in decoding complexity. Since the receiver structure directly reuses the Viterbi decoder of the mother code, the computational burden remains equivalent to that of standard convolutional decoding, regardless of the number of transmit antennas or the specific puncturing pattern employed. This stands in contrast to many space-time coding schemes where increasing the number of states or antennas leads to a substantial rise in trellis complexity and decoding effort.\n\n## Conclusion\n\nThe pragmatic approach presented in this paper offers an efficient and practical framework for constructing space-time trellis codes over block-fading channels. By building upon punctured convolutional codes and employing approximated decoding metrics, the proposed method achieves several important benefits simultaneously: it eliminates the need for exhaustive code search, it reuses existing Viterbi decoder architectures without modification, and it delivers good error-rate performance with no additional decoding complexity. These characteristics make the proposed scheme particularly attractive for practical implementation in real-world multiple-antenna wireless systems, where flexibility, low complexity, and reliable performance are all essential design considerations.",
+    "L5": "# The Viterbi Algorithm\n\nThis algorithm, known as the Viterbi algorithm, is a dynamic programming method used to find the most likely sequence of hidden states in a Hidden Markov Model (HMM), given a sequence of observed events. Named after Andrew Viterbi, who developed it in 1967 for decoding convolutional codes in digital communication systems, this technique has since found applications far beyond its original purpose.\n\nThis approach works by breaking down a complex problem into simpler subproblems, computing the probability of the most likely path leading to each state at each time step, and storing these results to avoid redundant calculations. The algorithm operates in two main phases: a forward pass, where probabilities are calculated and the best path to each state is recorded, and a backward pass, where the optimal sequence is reconstructed by tracing back through the stored decisions.\n\nThis method is particularly valuable in fields such as speech recognition, where it helps determine the most probable sequence of phonemes or words given an audio signal. This technique is also widely used in bioinformatics, particularly in gene prediction and sequence alignment, where hidden states might represent coding or non-coding regions of DNA. Additionally, this algorithm plays a crucial role in natural language processing tasks like part-of-speech tagging, where the goal is to assign the most likely grammatical category to each word in a sentence.\n\nThis efficiency is one of the algorithm's greatest strengths. Rather than exhaustively searching through all possible state sequences, which would be computationally prohibitive for longer sequences, the Viterbi algorithm reduces the complexity to a manageable polynomial time relative to the number of states and the length of the sequence. This makes it feasible to apply in real-time systems and large-scale data processing tasks.\n\nThis combination of theoretical elegance and practical utility has secured the Viterbi algorithm a lasting place in computer science and engineering. From its origins in telecommunications to its widespread adoption in machine learning and computational biology, this algorithm exemplifies how a well-designed mathematical solution can transcend its original domain and become a foundational tool across multiple disciplines."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a paper on pragmatic space-time trellis codes derived from punctured convolutional codes over block-fading channels.",
+      "output": "# Abstract\n\nThis paper presents a pragmatic approach to the design and analysis of space-time trellis codes (STTCs) constructed from punctured convolutional codes for transmission over block-fading channels with multiple transmit and receive antennas. Rather than designing space-time trellis codes from scratch through exhaustive computer search, we exploit the well-established structure of industry-standard punctured convolutional codes to generate space-time codes with reduced design complexity while maintaining competitive performance.\n\nThe proposed pragmatic framework maps punctured convolutional code trellises onto multiple transmit antennas, preserving the Viterbi decoding structure and enabling reuse of existing decoder hardware. We derive the rank and determinant criteria for the pragmatic STTC construction under block-fading conditions, where the channel remains constant over a block of symbols and varies independently between blocks, and establish design rules that guarantee full spatial diversity order equal to the product of transmit and receive antennas, subject to the block-fading interleaving depth.\n\nPerformance is evaluated in terms of frame error rate over quasi-static and block-fading Rayleigh channels for various numbers of transmit antennas, receive antennas, and fading blocks per frame. Simulation results demonstrate that the proposed pragmatic codes achieve diversity and coding gains comparable to optimized STTCs obtained via exhaustive search, while offering significantly reduced encoder/decoder design complexity and enabling compatibility with legacy convolutional coding standards. The trade-off between the number of fading blocks, diversity order, and decoding complexity is analyzed, providing practical guidelines for code selection in realistic wireless communication scenarios such as those governed by 3GPP and IEEE 802.16 standards. These results confirm that pragmatic space-time trellis codes constitute an attractive low-complexity alternative for achieving near-optimal diversity and coding gains in block-fading MIMO channels.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Can you draft a concise academic abstract discussing how punctured convolutional codes can be applied to space-time trellis coding while reusing the standard Viterbi decoder?",
+      "output": "# Abstract\n\nThis paper investigates the application of punctured convolutional codes to space-time trellis coding (STTC) as a means of achieving flexible rate adaptation while preserving decoder simplicity. Conventional STTC design requires distinct trellis structures for each desired rate and diversity configuration, complicating encoder/decoder implementation across varying channel conditions. We propose a puncturing-based framework wherein a single, low-rate mother space-time convolutional code is systematically punctured to generate a family of higher-rate codes suitable for multiple transmit antenna configurations, without altering the underlying trellis topology. This approach enables the receiver to employ a standard Viterbi decoder—modified only through insertion of erasure symbols at punctured positions—rather than requiring rate-specific decoder architectures. We analyze the rank and determinant criteria governing diversity and coding gain for the punctured codes and demonstrate that carefully chosen puncturing patterns preserve full spatial diversity while incurring only modest coding gain loss relative to optimally designed codes of equivalent rate. Simulation results over quasi-static Rayleigh fading channels confirm that the punctured STTC schemes achieve frame error rate performance close to that of dedicated codes, while substantially reducing decoder complexity and enabling seamless rate adaptation. These findings suggest that puncturing offers a practical and computationally efficient pathway for implementing adaptive, multi-rate space-time coded systems using existing Viterbi decoding hardware.\n\n---\n\n*Note: This abstract is a general academic-style draft based on common themes in this research area. If you're referencing a specific paper or dataset, let me know and I can tailor the details (e.g., specific antenna configurations, puncturing patterns, or simulation parameters) accordingly.*",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "I need an abstract summarizing research on maintaining low decoding complexity in punctured space-time trellis codes using approximated metrics, suitable for a communications journal submission.",
+      "output": "# Abstract\n\nPunctured space-time trellis codes (STTCs) offer an attractive approach for achieving high spectral efficiency in multiple-antenna wireless communication systems by combining error control coding with spatial diversity. However, the decoding complexity of these codes at the receiver often increases substantially due to the expansion of trellis states required to accommodate higher-rate transmission, presenting a significant barrier to practical implementation. This paper addresses the challenge of maintaining low decoding complexity in punctured STTCs through the use of approximated branch metrics within the Viterbi decoding algorithm.\n\nWe propose a computationally efficient metric approximation technique that substantially reduces the arithmetic operations required during the trellis search process, while preserving the error-rate performance characteristics of the original codes. The approximated metric replaces computationally intensive calculations, particularly those involving Euclidean distance computations across multiple receive antennas, with simplified expressions that retain the essential discriminative information needed for accurate path selection. This reduction in complexity is achieved without requiring modifications to the code structure itself, making the approach broadly applicable to existing punctured STTC designs across various code rates and antenna configurations.\n\nSimulation results over quasi-static and time-varying fading channels demonstrate that the proposed approximated-metric decoder achieves frame error rate and bit error rate performance closely matching that of the conventional full-metric Viterbi decoder, with negligible degradation across the signal-to-noise ratio range of practical interest. Concurrently, the computational complexity, measured in terms of the number of multiplication and addition operations per decoded symbol, is significantly reduced compared to standard decoding implementations. Comparative analysis across different numbers of transmit and receive antennas, as well as varying puncturing rates, confirms that the proposed technique consistently delivers favorable complexity-performance trade-offs. These results indicate that approximated-metric decoding provides a practical and scalable solution for deploying punctured space-time trellis codes in bandwidth- and power-constrained wireless systems, including emerging high-throughput multiple-antenna standards, without compromising the reliability gains offered by space-time coding.\n\n---\n\n*Note: This abstract is a general template based on common themes in this research area. If you have the specific paper or additional details (authors, exact numerical results, specific channel models, antenna configurations, or particular approximation techniques used), I can refine this abstract to more precisely reflect your actual research content.*",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Generate a technical abstract for a study exploring performance trade-offs when puncturing convolutional codes for space-time coding applications over block-fading channels.",
+      "output": "# Performance Trade-offs of Punctured Convolutional Codes in Space-Time Coded Systems over Block-Fading Channels\n\n## Abstract\n\nThis study investigates the performance trade-offs associated with employing punctured convolutional codes in space-time coded (STC) transmission schemes operating over block-fading channels, a scenario increasingly relevant to wireless communication systems requiring bandwidth efficiency without sacrificing diversity gains. Puncturing, as a rate-adaptation technique, offers computational and implementation advantages by deriving higher-rate codes from a single low-rate mother code, thereby simplifying encoder/decoder architectures across variable channel conditions. However, the interaction between puncturing patterns, code memory, and the spatial-temporal diversity inherent to multiple-antenna systems introduces non-trivial performance implications that warrant systematic analysis.\n\nWe examine convolutional codes of varying constraint lengths combined with space-time coding structures, evaluating their punctured variants across a range of code rates under quasi-static block-fading conditions, where channel coefficients remain constant over a coding block but vary independently between blocks. Performance is assessed through frame error rate (FER) and bit error rate (BER) metrics obtained via Monte Carlo simulation, alongside analytical bounds derived from the code's distance spectrum and pairwise error probability under fading statistics. Particular attention is given to the diversity order and coding gain achievable by punctured codes relative to their optimal, non-punctured counterparts of equivalent rate, with emphasis on how puncturing pattern selection affects the effective free distance and error coefficient—key determinants of asymptotic performance in fading environments.\n\nResults demonstrate that while puncturing enables flexible rate adaptation with reduced decoder complexity, it incurs a measurable performance penalty relative to optimum distance-spectrum codes, particularly at higher code rates and under limited interleaving depth across fading blocks. The magnitude of this penalty is shown to depend critically on the interplay between the number of transmit/receive antennas, the block-fading interleaving depth, and the chosen puncturing pattern, with certain configurations exhibiting diminished diversity advantage due to correlated error events introduced by puncturing. Trade-off curves relating spectral efficiency, complexity, and error-rate performance are presented, offering practical design guidelines for selecting puncturing patterns that balance implementation simplicity against the diversity and coding gains required for reliable communication over block-fading channels. These findings provide insight for the design of adaptive, bandwidth-efficient space-time coded systems in next-generation wireless networks.\n\n**Keywords:** Space-time codes, punctured convolutional codes, block-fading channels, diversity gain, coding gain, rate adaptation",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a short paper abstract explaining how a pragmatic approach to space-time trellis code design can retain decoder simplicity despite using code puncturing.",
+      "output": "# Abstract\n\nSpace-time trellis codes (STTCs) offer significant diversity and coding gains for wireless communication over fading channels, but their decoding complexity grows exponentially with the number of transmit antennas and constellation size, often limiting practical deployment. This paper presents a pragmatic approach to STTC design that employs code puncturing to achieve flexible rate and diversity trade-offs while preserving low decoder complexity. Rather than designing full-rate trellis codes from scratch for each configuration of antennas and spectral efficiency, we start from a simple, well-understood mother code and generate a family of punctured codes through systematic bit or symbol deletion patterns. This construction allows a single Viterbi-based decoder architecture—with minor modifications to branch metric computation—to support multiple code rates and antenna configurations, avoiding the need for redesigning the decoder trellis structure for each case. We demonstrate that carefully chosen puncturing patterns preserve the essential distance properties of the mother code, ensuring that the resulting punctured STTCs retain near-optimal diversity and coding gain performance compared to codes designed directly at the target rate. Simulation results over quasi-static Rayleigh fading channels show that the punctured codes achieve frame error rates comparable to full-rate optimized STTCs, while decoder complexity remains close to that of the original mother code, growing only linearly rather than exponentially with the number of supported rates. This pragmatic framework thus offers a practical path for implementing adaptive, multi-rate space-time coded systems without incurring prohibitive decoding costs, making it attractive for real-time wireless applications where hardware simplicity and flexibility are equally critical design constraints.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.3619592875318067,
+      "excess_ratio": 0.2716874985826177,
+      "baseline_mean": 0.09027178894918898,
+      "baseline_n_valid": 5,
+      "output_chars": 998,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3487394957983193,
+          "baseline_mean": 0.06663401117121959,
+          "excess_ratio": 0.2821054846270997
+        },
+        "bz2": {
+          "actual_ratio": 0.2891791044776119,
+          "baseline_mean": 0.08932433867333488,
+          "excess_ratio": 0.19985476580427702
+        },
+        "lzma": {
+          "actual_ratio": 0.44285714285714284,
+          "baseline_mean": 0.11289913568573844,
+          "excess_ratio": 0.3299580071714044
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.4346871569703623,
+      "excess_ratio": 0.34441536802117334,
+      "baseline_mean": 0.09027178894918898,
+      "baseline_n_valid": 5,
+      "output_chars": 462,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3903345724907063,
+          "baseline_mean": 0.06663401117121959,
+          "excess_ratio": 0.3237005613194867
+        },
+        "bz2": {
+          "actual_ratio": 0.37755102040816324,
+          "baseline_mean": 0.08932433867333488,
+          "excess_ratio": 0.28822668173482835
+        },
+        "lzma": {
+          "actual_ratio": 0.5172413793103449,
+          "baseline_mean": 0.11289913568573844,
+          "excess_ratio": 0.4043422436246064
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.15976058931860032,
+      "excess_ratio": 0.06948880036941134,
+      "baseline_mean": 0.09027178894918898,
+      "baseline_n_valid": 5,
+      "output_chars": 3432,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.12834978843441466,
+          "baseline_mean": 0.06663401117121959,
+          "excess_ratio": 0.061715777263195076
+        },
+        "bz2": {
+          "actual_ratio": 0.16223776223776223,
+          "baseline_mean": 0.08932433867333488,
+          "excess_ratio": 0.07291342356442736
+        },
+        "lzma": {
+          "actual_ratio": 0.18716577540106952,
+          "baseline_mean": 0.11289913568573844,
+          "excess_ratio": 0.07426663971533108
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.09981791094189703,
+      "excess_ratio": 0.009546121992708045,
+      "baseline_mean": 0.09027178894918898,
+      "baseline_n_valid": 5,
+      "output_chars": 5160,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.0777998017839445,
+          "baseline_mean": 0.06663401117121959,
+          "excess_ratio": 0.011165790612724907
+        },
+        "bz2": {
+          "actual_ratio": 0.09758602978941962,
+          "baseline_mean": 0.08932433867333488,
+          "excess_ratio": 0.00826169111608474
+        },
+        "lzma": {
+          "actual_ratio": 0.1233140655105973,
+          "baseline_mean": 0.11289913568573844,
+          "excess_ratio": 0.010414929824858865
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.03182870370370377,
+      "excess_ratio": -0.058443085245485214,
+      "baseline_mean": 0.09027178894918898,
+      "baseline_n_valid": 5,
+      "output_chars": 2333,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.0153015301530153,
+          "baseline_mean": 0.06663401117121959,
+          "excess_ratio": -0.051332481018204285
+        },
+        "bz2": {
+          "actual_ratio": 0.029023746701846966,
+          "baseline_mean": 0.08932433867333488,
+          "excess_ratio": -0.06030059197148791
+        },
+        "lzma": {
+          "actual_ratio": 0.04966887417218543,
+          "baseline_mean": 0.11289913568573844,
+          "excess_ratio": -0.06323026151355302
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "model": "claude-opus-4-8",
+  "domain": "Arxiv",
+  "id": "0704.0108",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nDescription of a polynomial time reduction of SAT to 2-SAT of polynomial size.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nDescription of a polynomial time reduction of SAT to 2-SAT of polynomial size.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\nThe provided input is a single-sentence description rather than a full text, and it describes something that cannot actually exist as stated, so I cannot faithfully extract distinct key points from it. Here is an honest summary instead:\n\n- The input consists of only one sentence, so there is not enough content to extract 4–5 genuinely distinct key points.\n- The described object—a polynomial-time, polynomial-size reduction from SAT to 2-SAT—is not known to exist and almost certainly cannot.\n- 2-SAT is solvable in polynomial time, while SAT is NP-complete, so such a reduction would place an NP-complete problem in P.\n- Consequently, this reduction would prove P = NP, which remains an unresolved and widely doubted proposition.\n- If you have an actual document or explanation text, please share it and I can extract the requested bullet points.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe text claims to present a polynomial-time reduction that transforms general SAT instances into equivalent 2-SAT instances of only polynomial size. However, this result would imply P=NP—since 2-SAT is solvable in polynomial time while SAT is NP-complete—so no such valid reduction is known to exist, making the claim almost certainly erroneous rather than a genuine breakthrough.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: Description, SAT"
+  },
+  "outputs": {
+    "L1": "Here are a few polished versions, depending on your intended tone and context:\n\n**Concise version:**\n\"A polynomial-time reduction from SAT to 2-SAT of polynomial size.\"\n\n**More formal/descriptive version:**\n\"A description of a polynomial-time reduction from SAT to 2-SAT, producing an instance of polynomial size.\"\n\n**Fully elaborated version:**\n\"A description of a polynomial-time reduction from SAT to 2-SAT that yields a formula of polynomial size.\"\n\n---\n\n**A note on the content:** I want to flag a potential technical issue, since accuracy matters here. SAT is NP-complete, whereas 2-SAT is solvable in polynomial time. A polynomial-time, polynomial-size reduction from SAT to 2-SAT would therefore imply **P = NP** — which would be a major result rather than a routine construction.\n\nYou may want to double-check whether you actually mean one of the following:\n\n- A reduction from **2-SAT to SAT** (trivial, since 2-SAT is a special case of SAT)\n- A reduction from **3-SAT to SAT** or between other variants\n- A reduction *demonstrating hardness* rather than a standard equivalence\n\nIf the original phrasing is intentional (e.g., it appears in a problem statement asking you to show why such a reduction is unlikely to exist), then the polished text above is fine as-is.\n\nWould you like me to adjust the wording for a specific context?",
+    "L2": "An account of how SAT can be transformed into 2-SAT through a reduction that runs in polynomial time and produces an output of polynomial size.",
+    "L3": "# Response to the Provided Input\n\nThe input I received consists of only a single sentence rather than a complete document. Because of this, there is not enough content available to extract four to five genuinely distinct key points, as such an extraction requires a more substantial body of text to work from. Rather than fabricate points that aren't present in the source material, I want to provide an honest assessment of what the input actually contains.\n\n## The Core Problem with the Described Object\n\nThe input describes a specific technical object: a polynomial-time, polynomial-size reduction from SAT to 2-SAT. This is worth examining closely, because such a reduction is not known to exist and, based on our current understanding of computational complexity, almost certainly cannot exist.\n\nThe reasoning behind this conclusion rests on well-established results in complexity theory:\n\n- **2-SAT is solvable in polynomial time.** It belongs to the complexity class P, meaning efficient algorithms exist to solve it.\n- **SAT is NP-complete.** It is among the hardest problems in the class NP, and no polynomial-time algorithm is known for it.\n\nIf a polynomial-time, polynomial-size reduction from SAT to 2-SAT genuinely existed, it would allow an NP-complete problem to be solved efficiently by reducing it to a problem in P. In effect, this would place an NP-complete problem within P.\n\n## The Broader Implication\n\nThe consequence of such a reduction would be significant: it would constitute a proof that **P = NP**. This remains one of the most important unresolved questions in computer science and mathematics. The prevailing view among researchers is that P ≠ NP, so any claim implying otherwise should be treated with considerable skepticism until rigorously verified.\n\n## A Request for Clarification\n\nIf you have an actual document, explanation, or longer text that you intended to share, please provide it. With genuine source material to work from, I would be glad to extract the requested key points and expand them into a complete, well-structured text.",
+    "L4": "# On the Claim of a Polynomial-Size Reduction from SAT to 2-SAT\n\n## The Claim Under Examination\n\nThe text in question purports to present a remarkable result: a polynomial-time reduction that transforms arbitrary instances of the Boolean satisfiability problem (SAT) into equivalent instances of 2-satisfiability (2-SAT), while keeping the size of the resulting instances bounded by a polynomial in the size of the original. If such a reduction existed and were correct, it would establish a direct algorithmic bridge between a computationally intractable problem and one that is known to be efficiently solvable.\n\n## Why This Would Be Extraordinary\n\nTo appreciate the weight of this claim, it is necessary to recall the standing of these two problems within computational complexity theory.\n\n**2-SAT** is the special case of satisfiability in which every clause contains at most two literals. This restriction makes the problem tractable: 2-SAT can be solved in linear time, for instance by analyzing the strongly connected components of an implication graph derived from the clauses. It belongs firmly to the complexity class **P**, the set of problems solvable in polynomial time.\n\n**General SAT**, by contrast, allows clauses of arbitrary length. It was the first problem proven to be **NP-complete**, by the Cook–Levin theorem. This means that not only does SAT belong to the class NP, but every problem in NP can be reduced to it in polynomial time. SAT thus occupies a position of maximal difficulty among problems in NP; an efficient algorithm for SAT would yield efficient algorithms for all of them.\n\n## The Fatal Implication\n\nHerein lies the problem with the claim. If one could genuinely reduce every SAT instance to a polynomially sized 2-SAT instance in polynomial time, then one could solve SAT by the following procedure: apply the reduction, then solve the resulting 2-SAT instance with the known linear-time algorithm. Both steps would run in polynomial time, so SAT itself would be solvable in polynomial time.\n\nBecause SAT is NP-complete, placing it inside P would force the entire class NP to collapse into P. In other words, the claimed reduction would prove **P = NP**—resolving what is widely regarded as the most important open question in theoretical computer science, and one that the overwhelming consensus of researchers expects to resolve in the opposite direction, with P ≠ NP.\n\n## The Reasonable Conclusion\n\nGiven that no valid polynomial reduction from SAT to 2-SAT is known, and given that its existence would settle a famous and stubbornly unresolved problem in a way most experts consider unlikely, the appropriate response is deep skepticism. It is far more probable that the argument contains a subtle flaw—perhaps a reduction that is not actually polynomial in size, that fails to preserve satisfiability in all cases, or that quietly reintroduces longer clauses—than that it represents a genuine breakthrough overturning decades of complexity theory.\n\nThus, while the claim should not be dismissed without examination, the burden of proof rests heavily on it. Absent an airtight, independently verified construction, the result is almost certainly erroneous rather than a true resolution of the P versus NP question.",
+    "L5": "# Understanding the SAT: A Comprehensive Description\n\n## What is the SAT?\n\nThe SAT is a standardized test widely used for college admissions in the United States. Administered by the College Board, this examination is designed to measure a student's readiness for higher education and provide colleges with a common data point to compare applicants from different backgrounds.\n\n## Structure and Description\n\nThe SAT consists of several key components that assess various academic skills:\n\n**Reading and Writing Section**\nThis portion evaluates a student's ability to comprehend written passages, analyze arguments, and demonstrate command of language conventions. Students encounter texts from literature, history, social studies, and science.\n\n**Mathematics Section**\nThe math component tests problem-solving skills, algebraic reasoning, data analysis, and advanced mathematical concepts. Questions range from straightforward calculations to complex, multi-step problems.\n\n## Scoring System\n\nThe SAT uses a scoring scale ranging from 400 to 1600 points. This total combines two main section scores, each ranging from 200 to 800 points. A higher score generally strengthens a student's college application, though most institutions consider the SAT as just one part of a holistic review process.\n\n## Purpose and Importance\n\nThe primary purpose of the SAT is to provide a standardized benchmark that allows colleges to evaluate students consistently. Because grading standards vary between schools, the SAT offers an objective measure that helps admissions officers make informed decisions.\n\n## Preparation\n\nMany students dedicate significant time to SAT preparation. Common strategies include:\n\n- Taking practice tests under timed conditions\n- Reviewing fundamental concepts and skills\n- Utilizing official study materials\n- Enrolling in preparatory courses\n- Working with tutors when needed\n\n## Modern Developments\n\nIn recent years, the SAT has undergone significant changes, including a transition to a digital format. This shift has made the test shorter, more adaptive, and better suited to contemporary learning environments.\n\n## Conclusion\n\nThe SAT remains an influential element in the college admissions landscape. While its role continues to evolve, understanding its structure and purpose helps students approach the examination with confidence and clarity."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Describe a polynomial time reduction of SAT to 2-SAT of polynomial size.",
+      "output": "## This reduction (almost certainly) does not exist\n\nThis is a trick question — no such reduction is known, and finding one would resolve the biggest open problem in computer science. Here's why.\n\n### The key facts\n\n1. **SAT is NP-complete.** It is among the hardest problems in NP.\n2. **2-SAT is in P.** Instances of 2-SAT (where every clause has at most 2 literals) can be solved in linear time, e.g., via the **implication graph** and strongly connected components (Aspvall–Plass–Tarjan), or via unit propagation.\n\n### The consequence\n\nSuppose you *did* have a polynomial-time reduction $f$ from SAT to 2-SAT. Then you could solve any SAT instance $\\phi$ as follows:\n\n1. Compute $f(\\phi)$, a 2-SAT instance, in polynomial time.\n2. Solve $f(\\phi)$ in polynomial time (2-SAT is in P).\n3. By the definition of a reduction, $\\phi$ is satisfiable **iff** $f(\\phi)$ is satisfiable.\n\nThis gives a **polynomial-time algorithm for SAT**. Since SAT is NP-complete, this would imply:\n\n$$\\textbf{P} = \\textbf{NP}.$$\n\n### Bottom line\n\n- A polynomial-size, polynomial-time reduction from SAT to 2-SAT would prove **P = NP**.\n- Since P vs NP is unresolved (and P ≠ NP is widely believed), **no such reduction is known**, and it is conjectured that none exists.\n\n### Why the \"obvious\" attempt fails\n\nYou might try to convert a 3-clause $(x \\lor y \\lor z)$ into 2-clauses. The standard trick introduces a new variable $w$:\n\n$$(x \\lor y \\lor z) \\;\\equiv\\; (x \\lor w) \\land (\\bar{w} \\lor y \\lor z)$$\n\nBut this still leaves a **3-literal clause** $(\\bar w \\lor y \\lor z)$. There is no way to split a genuine 3-clause into 2-clauses while preserving satisfiability, precisely because doing so would collapse the complexity classes. The \"extra\" expressive power of the third literal is exactly what makes SAT hard.\n\n---\n\n**In summary:** The task as stated is impossible to fulfill under the standard assumption P ≠ NP. If you intended the *reverse* direction (2-SAT → SAT, which is trivial since 2-SAT is a special case of SAT) or a reduction like 3-SAT → SAT, I'd be happy to describe that instead.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Can you show me how to reduce SAT to 2-SAT in polynomial time with a polynomial-size output?",
+      "output": "# Reducing SAT to 2-SAT\n\nI need to be upfront with you: **this reduction is impossible**, and understanding *why* is actually more valuable than a fake construction would be.\n\n## The Core Issue\n\n- **2-SAT is in P** — it can be solved in polynomial time (via implication graphs and strongly connected components).\n- **SAT is NP-complete** — no polynomial-time algorithm is known.\n\nIf you could reduce SAT to 2-SAT in polynomial time with polynomial-size output, you would have proven:\n\n$$\\text{SAT} \\in P \\implies P = NP$$\n\nSo such a reduction existing would resolve the biggest open problem in computer science. No one has done this, and most researchers believe it's impossible.\n\n## Why the Naive Approaches Fail\n\nYou might hope to break a long clause into 2-clauses. The standard trick for **3-SAT** uses auxiliary variables:\n\n$$(x_1 \\lor x_2 \\lor x_3 \\lor x_4) \\equiv (x_1 \\lor x_2 \\lor y) \\land (\\neg y \\lor x_3 \\lor x_4)$$\n\nThis works to shorten clauses **down to 3 literals**, but it **gets stuck at 3**. You cannot split a 3-clause into 2-clauses while preserving satisfiability:\n\n$$(x_1 \\lor x_2 \\lor x_3) \\quad \\not\\equiv \\quad \\text{any fixed set of 2-clauses over these + aux variables}$$\n\nThe \"wall at 3\" is precisely the boundary between P and NP-complete for CNF-SAT.\n\n## What You *Can* Do\n\nHere are related reductions that **are** possible and useful:\n\n| Reduction | Possible? | Notes |\n|-----------|-----------|-------|\n| SAT → 3-SAT | ✅ Yes | Classic, polynomial-size |\n| 3-SAT → SAT | ✅ Trivial | 3-SAT is a special case |\n| 2-SAT → SAT | ✅ Trivial | 2-SAT is a special case |\n| **SAT → 2-SAT** | ❌ No (unless P=NP) | What you asked for |\n\n## What Might You Actually Need?\n\nIf you're working on a real problem, you may want one of these instead:\n\n1. **SAT → 3-SAT** — I'd be happy to show this standard reduction.\n2. **Solving 2-SAT efficiently** — the implication graph / Tarjan's SCC algorithm.\n3. **Understanding NP-completeness** — why the 2-vs-3 boundary exists.\n\nWhich direction would be helpful? Or if this was a homework/exam question, the *expected answer may literally be \"this is impossible because...\"* — in which case the reasoning above is your solution.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "I need a polynomial-time reduction from SAT to 2-SAT that produces a polynomial-sized instance. Explain it.",
+      "output": "# No Such Reduction Exists (Unless P = NP)\n\nI need to be upfront: **a polynomial-time reduction from SAT to 2-SAT producing a polynomial-sized instance would prove P = NP.** This is almost certainly impossible, and no such reduction is known.\n\nLet me explain why.\n\n## The Complexity Argument\n\nThe key facts:\n\n1. **SAT is NP-complete** (Cook-Levin theorem). It's among the \"hardest\" problems in NP.\n\n2. **2-SAT is in P.** It can be solved in linear time using the implication graph / strongly connected components algorithm (Aspvall–Plass–Tarjan).\n\nNow suppose you had a polynomial-time reduction $f$ from SAT to 2-SAT that produces polynomial-sized instances. Then you could solve SAT as follows:\n\n$$\\text{SAT}(\\phi) \\;=\\; \\text{2-SAT}(f(\\phi))$$\n\n- Computing $f(\\phi)$ takes polynomial time.\n- Solving the resulting 2-SAT instance takes polynomial time.\n- Total: **polynomial time to solve SAT.**\n\nSince SAT is NP-complete, this would put **every** NP problem in P, giving **P = NP**.\n\n## Why This Is the Crux\n\nThe whole point of NP-completeness is that reductions go the \"hard\" direction:\n- We reduce known hard problems **to** SAT (or 3-SAT) to show *new* problems are hard.\n- We do **not** reduce SAT *down* to easy problems.\n\nA reduction \"from SAT to 2-SAT\" in the sense you describe would be reducing a hard problem to an easy one — that's exactly what we don't expect to exist.\n\n## What Might You Actually Want?\n\nThere are legitimate, related things that *do* exist:\n\n| What you might mean | Does it exist? |\n|---|---|\n| SAT → 3-SAT reduction | ✅ Yes, standard (clause splitting) |\n| 3-SAT → SAT | ✅ Trivial (it's already SAT) |\n| **SAT → 2-SAT** (poly-size) | ❌ Would imply P = NP |\n| SAT → 2-SAT with exponential blowup | ⚠️ Trivial but useless (just enumerate) |\n| **Max-2-SAT** as NP-hard target | ✅ *Optimization* version IS NP-hard |\n\n### Possibility: Did you mean Max-2-SAT?\n\nIf you need an NP-hard target related to 2-SAT, note that **MAX-2-SAT** (maximize the number of satisfied 2-clauses) *is* NP-hard, and there **are** reductions from 3-SAT to MAX-2-SAT. The decision version \"can we satisfy at least $k$ of these 2-clauses?\" is NP-complete.\n\n## What Would Help Me Help You\n\nCould you clarify your actual goal?\n\n- Are you trying to **reduce SAT to 3-SAT**? (I can give the standard construction.)\n- Do you need a reduction **to MAX-2-SAT**?\n- Are you trying to prove 2-SAT is in P (the *other* direction)?\n- Is this from a textbook problem that might be stated differently?\n\nLet me know and I'll give you the correct, complete construction.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Provide a description of how SAT can be reduced to 2-SAT using a polynomial time reduction of polynomial size.",
+      "output": "# SAT Cannot Be Reduced to 2-SAT (Under Standard Assumptions)\n\nI need to point out an important issue with this request: **there is no known polynomial-time reduction from SAT to 2-SAT, and one is believed not to exist.**\n\n## Why This Reduction Cannot Exist\n\nThe key facts are:\n\n1. **SAT is NP-complete** — it is among the hardest problems in NP.\n\n2. **2-SAT is in P** — it can be solved in polynomial time (e.g., using Aspvall–Plass–Tarjan's algorithm based on strongly connected components of the implication graph).\n\nIf a polynomial-time reduction from SAT to 2-SAT existed, then:\n\n$$\\text{SAT} \\leq_p \\text{2-SAT} \\in P \\implies \\text{SAT} \\in P \\implies P = NP$$\n\nSince whether $P = NP$ is a famous open problem (widely believed to be **false**), no such reduction is known, and finding one would resolve the biggest open question in computer science.\n\n## What Goes Wrong Intuitively\n\nThe difficulty in converting a general clause to 2-clauses is instructive:\n\nConsider a 3-clause $(x_1 \\lor x_2 \\lor x_3)$. A natural attempt introduces an auxiliary variable:\n\n$$(x_1 \\lor x_2 \\lor x_3) \\equiv (x_1 \\lor y) \\land (\\neg y \\lor x_2 \\lor x_3)$$\n\nBut notice the second factor is **still a 3-clause**. This standard trick works in reverse — it reduces longer clauses down to 3-clauses (proving 3-SAT is NP-complete) — but it **cannot break a 3-clause down into 2-clauses** while preserving equivalence. The \"width-3\" constraint is fundamentally more expressive than any conjunction of width-2 constraints.\n\n## Reductions That *Do* Exist\n\nThe reductions that are actually valid go the **other direction** or between equally hard problems:\n\n| Reduction | Exists? | Reason |\n|-----------|---------|--------|\n| 2-SAT $\\leq_p$ SAT | ✅ Yes | Trivial (2-SAT is a special case of SAT) |\n| 2-SAT $\\leq_p$ 3-SAT | ✅ Yes | Trivial embedding |\n| 3-SAT $\\leq_p$ SAT | ✅ Yes | Trivial |\n| SAT $\\leq_p$ 3-SAT | ✅ Yes | Standard clause-splitting reduction |\n| **SAT $\\leq_p$ 2-SAT** | ❌ **Not known** | Would imply $P = NP$ |\n\n## Summary\n\nThe reduction you're asking about would be a landmark result proving $P = NP$. If you're looking for:\n\n- **A valid reduction to demonstrate NP-completeness**, you likely want **SAT ≤ₚ 3-SAT** (which I'm happy to describe in detail).\n- **An efficient algorithm for 2-SAT**, I can explain the **implication-graph/SCC method**.\n\nLet me know which of these would be helpful!",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Explain a poly-time, poly-size reduction from general SAT to 2-SAT.",
+      "output": "# There Is No Such Reduction (And Why)\n\nThis is a bit of a trick question, and it's important to be direct: **a poly-time, poly-size reduction from general SAT to 2-SAT would prove P = NP**, and no such reduction is known to exist.\n\nLet me explain why.\n\n## The Complexity Landscape\n\n- **General SAT** (or 3-SAT) is **NP-complete**.\n- **2-SAT** is in **P** — it's solvable in linear time (e.g., via Aspvall–Plass–Tarjan using strongly connected components of the implication graph).\n\n## Why a Reduction Would Break Complexity Theory\n\nSuppose you had a polynomial-time reduction $f$ that maps any SAT instance $\\phi$ to a 2-SAT instance $f(\\phi)$ such that:\n$$\\phi \\text{ is satisfiable} \\iff f(\\phi) \\text{ is satisfiable}$$\n\nThen you could solve SAT as follows:\n\n1. Given $\\phi$, compute $f(\\phi)$ in polynomial time.\n2. Solve the 2-SAT instance $f(\\phi)$ in polynomial time.\n3. Return the answer.\n\nThis would give a **polynomial-time algorithm for SAT**, implying **P = NP** — one of the biggest open problems in mathematics, widely conjectured to be false.\n\n## The Intuitive Obstruction\n\nThe hardness of SAT lives specifically in clauses of width $\\geq 3$. Consider a 3-clause:\n$$(x \\lor y \\lor z)$$\n\nYou might try to split it using an auxiliary variable $w$:\n$$(x \\lor w) \\land (\\lnot w \\lor y \\lor z)$$\n\nBut the remaining clause $(\\lnot w \\lor y \\lor z)$ is **still width 3**. Any faithful attempt to encode a 3-clause forces you to either:\n\n- Keep a width-3 clause, or\n- Introduce constraints that 2-clauses provably cannot capture.\n\n2-SAT's tractability comes from its **implication structure**: each clause $(a \\lor b)$ is equivalent to two implications $(\\lnot a \\Rightarrow b)$ and $(\\lnot b \\Rightarrow a)$, giving a clean graph-reachability characterization. Width-3 clauses have no such 2-variable implication form.\n\n## What *Does* Exist\n\nThe reductions that go in the **other direction** or between hard problems are the interesting ones:\n\n- **SAT → 3-SAT**: A polynomial reduction exists (gadget-splitting long clauses), because both are NP-complete.\n- **2-SAT → SAT**: Trivial, since 2-SAT is a special case of SAT.\n\n## Summary\n\n| Reduction | Exists in poly-time? |\n|-----------|---------------------|\n| SAT → 3-SAT | ✅ Yes |\n| 3-SAT → 2-SAT | ❌ Would imply P = NP |\n| 2-SAT → SAT | ✅ Trivially |\n\nIf you encountered this as a homework or interview problem, the **expected answer is to explain why the reduction cannot exist** unless P = NP.\n\nWould you like me to walk through the actual poly-time reduction from **SAT to 3-SAT**, or the **linear-time algorithm for 2-SAT**?",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.14167478091528726,
+      "excess_ratio": 0.08581849446646067,
+      "baseline_mean": 0.055856286448826585,
+      "baseline_n_valid": 5,
+      "output_chars": 1341,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1069182389937107,
+          "baseline_mean": 0.04192620012562406,
+          "excess_ratio": 0.06499203886808663
+        },
+        "bz2": {
+          "actual_ratio": 0.1467236467236467,
+          "baseline_mean": 0.05311031158976466,
+          "excess_ratio": 0.09361333513388205
+        },
+        "lzma": {
+          "actual_ratio": 0.16759776536312848,
+          "baseline_mean": 0.0716374053603015,
+          "excess_ratio": 0.09596036000282698
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.47668393782383417,
+      "excess_ratio": 0.4208276513750076,
+      "baseline_mean": 0.055856286448826585,
+      "baseline_n_valid": 5,
+      "output_chars": 143,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.39622641509433965,
+          "baseline_mean": 0.04192620012562406,
+          "excess_ratio": 0.3543002149687156
+        },
+        "bz2": {
+          "actual_ratio": 0.484375,
+          "baseline_mean": 0.05311031158976466,
+          "excess_ratio": 0.43126468841023535
+        },
+        "lzma": {
+          "actual_ratio": 0.5263157894736842,
+          "baseline_mean": 0.0716374053603015,
+          "excess_ratio": 0.4546783841133827
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.2673046251993621,
+      "excess_ratio": 0.2114483387505355,
+      "baseline_mean": 0.055856286448826585,
+      "baseline_n_valid": 5,
+      "output_chars": 2073,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.24011857707509882,
+          "baseline_mean": 0.04192620012562406,
+          "excess_ratio": 0.19819237694947475
+        },
+        "bz2": {
+          "actual_ratio": 0.24535679374389052,
+          "baseline_mean": 0.05311031158976466,
+          "excess_ratio": 0.19224648215412588
+        },
+        "lzma": {
+          "actual_ratio": 0.31272727272727274,
+          "baseline_mean": 0.0716374053603015,
+          "excess_ratio": 0.24108986736697124
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.12623490669593843,
+      "excess_ratio": 0.07037862024711183,
+      "baseline_mean": 0.055856286448826585,
+      "baseline_n_valid": 5,
+      "output_chars": 3256,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.10533333333333333,
+          "baseline_mean": 0.04192620012562406,
+          "excess_ratio": 0.06340713320770927
+        },
+        "bz2": {
+          "actual_ratio": 0.1250845165652468,
+          "baseline_mean": 0.05311031158976466,
+          "excess_ratio": 0.07197420497548214
+        },
+        "lzma": {
+          "actual_ratio": 0.14720812182741116,
+          "baseline_mean": 0.0716374053603015,
+          "excess_ratio": 0.07557071646710967
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.039680352714246345,
+      "excess_ratio": -0.01617593373458024,
+      "baseline_mean": 0.055856286448826585,
+      "baseline_n_valid": 5,
+      "output_chars": 2367,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.020356234096692113,
+          "baseline_mean": 0.04192620012562406,
+          "excess_ratio": -0.021569966028931943
+        },
+        "bz2": {
+          "actual_ratio": 0.044142614601018676,
+          "baseline_mean": 0.05311031158976466,
+          "excess_ratio": -0.008967696988745985
+        },
+        "lzma": {
+          "actual_ratio": 0.05345911949685535,
+          "baseline_mean": 0.0716374053603015,
+          "excess_ratio": -0.01817828586344615
+        }
+      }
+    }
+  }
+}

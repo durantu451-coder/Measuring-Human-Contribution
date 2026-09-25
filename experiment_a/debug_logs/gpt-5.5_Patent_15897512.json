@@ -1,0 +1,169 @@
+{
+  "model": "gpt-5.5",
+  "domain": "Patent",
+  "id": "15897512",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nAccording to one embodiment of the present invention, a video information encoding method comprises: a step of predicting information of the current coding unit to generate prediction information; and a step of determining whether the information of the current coding unit coincides with the prediction information. If the information of the current coding unit coincides with the prediction information, a flag indicating that the information of the current coding unit coincides with the prediction information is encoded and transmitted. If the information of the current coding unit does not coincide with the prediction information, a flag indicating that the information of the current coding unit does not coincide with the prediction information is encoded and transmitted and the information of the current coding unit is encoded and transmitted. In the step of generating prediction information, the prediction information may be generated using the information on the coding unit adjacent to the current coding unit.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nAccording to one embodiment of the present invention, a video information encoding method comprises: a step of predicting information of the current coding unit to generate prediction information; and a step of determining whether the information of the current coding unit coincides with the prediction information. If the information of the current coding unit coincides with the prediction information, a flag indicating that the information of the current coding unit coincides with the prediction information is encoded and transmitted. If the information of the current coding unit does not coincide with the prediction information, a flag indicating that the information of the current coding unit does not coincide with the prediction information is encoded and transmitted and the information of the current coding unit is encoded and transmitted. In the step of generating prediction information, the prediction information may be generated using the information on the coding unit adjacent to the current coding unit.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The method predicts information for a current coding unit to generate prediction information.\n- The method determines whether the current coding unit information matches the generated prediction information.\n- If the current coding unit information matches the prediction information, a flag indicating the match is encoded and transmitted.\n- If the current coding unit information does not match, a flag indicating the mismatch and the actual coding unit information are encoded and transmitted.\n- The prediction information may be generated using information from a coding unit adjacent to the current coding unit.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA video information encoding method predicts information for a current coding unit, using information from adjacent coding units, and determines whether the actual current-unit information matches the prediction. If it matches, only a matching flag is encoded and transmitted, while if it does not match, both a non-matching flag and the current-unit information are sent, reducing transmission overhead when prediction is accurate.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: According"
+  },
+  "outputs": {
+    "L1": "According to one embodiment of the present invention, a video information encoding method comprises: predicting information of a current coding unit to generate prediction information; and determining whether the information of the current coding unit coincides with the prediction information. If the information of the current coding unit coincides with the prediction information, a flag indicating that the information of the current coding unit coincides with the prediction information is encoded and transmitted. If the information of the current coding unit does not coincide with the prediction information, a flag indicating that the information of the current coding unit does not coincide with the prediction information is encoded and transmitted, and the information of the current coding unit is encoded and transmitted. In generating the prediction information, the prediction information may be generated using information on a coding unit adjacent to the current coding unit.",
+    "L2": "In one implementation of the invention, a method for encoding video information includes producing predicted information by estimating the information for a current coding unit, and then checking whether the actual information of that current coding unit matches the predicted information. When the current coding unit’s information is the same as the predicted information, a flag showing that the two coincide is encoded and sent. When they do not match, a flag showing the mismatch is encoded and sent, and the actual information of the current coding unit is also encoded and transmitted. During generation of the predicted information, the prediction may be formed based on information from a coding unit neighboring the current coding unit.",
+    "L3": "The method involves predicting information for a current coding unit in order to generate corresponding prediction information. After the prediction information has been generated, the method determines whether the actual information of the current coding unit matches the generated prediction information.\n\nIf the information of the current coding unit matches the prediction information, the method encodes and transmits a flag indicating that the prediction is correct. In this case, it is not necessary to separately encode and transmit the actual coding unit information, thereby improving coding efficiency.\n\nIf the information of the current coding unit does not match the prediction information, the method encodes and transmits a flag indicating that the prediction is incorrect. In addition, the actual information of the current coding unit is encoded and transmitted so that the decoder can accurately reconstruct or identify the coding unit information.\n\nThe prediction information may be generated based on information from a coding unit adjacent to the current coding unit. For example, information from a neighboring coding unit may be used as a reference to predict the information of the current coding unit, reducing the amount of information that needs to be transmitted when the prediction is accurate.",
+    "L4": "A video information encoding method is provided for reducing the amount of data that must be transmitted when encoding video. In this method, a current coding unit to be encoded is first identified. Information associated with one or more adjacent coding units, such as neighboring coding units located to the left, above, above-left, or above-right of the current coding unit, is then obtained. Based on the information of these adjacent coding units, predicted information for the current coding unit is generated.\n\nAfter the predicted information has been generated, the encoder compares the predicted information with the actual information of the current coding unit. If the predicted information is identical to, or otherwise determined to match, the actual information of the current coding unit, the encoder does not separately encode the actual current-unit information. Instead, the encoder encodes and transmits only a matching flag indicating that the predicted information is to be used for the current coding unit. A decoder receiving this matching flag can reproduce the current-unit information by applying the same prediction process using the adjacent coding units.\n\nIf, however, the predicted information does not match the actual information of the current coding unit, the encoder encodes and transmits a non-matching flag together with the actual information of the current coding unit. The non-matching flag indicates that the prediction cannot be used as the final information for the current coding unit, and the separately transmitted current-unit information is therefore used by the decoder.\n\nBy transmitting only a flag when the prediction is correct, and transmitting the actual information only when the prediction is incorrect, the method reduces the number of bits required for encoding. This is particularly effective when information for neighboring coding units is highly correlated, because the prediction is then likely to be accurate. As a result, the method improves coding efficiency and reduces transmission overhead while still allowing the decoder to reconstruct the necessary coding information accurately.",
+    "L5": "**According**\n\nThe word **“according”** is commonly used to show that information comes from a particular source or follows a certain rule, plan, or standard. It helps connect ideas by explaining where a statement comes from or how something is done.\n\nFor example, in the phrase **“According to the report, sales increased this year,”** the word shows that the information is based on a report. Similarly, **“The work was completed according to the instructions”** means that the work followed the instructions correctly.\n\n“According” is often used in academic writing, news articles, business communication, and everyday conversation. It adds clarity by identifying the source of information or the basis for an action. Because of this, it is an important word for making statements more precise and reliable."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style paragraph describing an embodiment of a video information encoding method that predicts current coding unit information and transmits a flag depending on whether the prediction matches.",
+      "output": "In one embodiment, a video information encoding method includes determining coding unit information for a current coding unit of a current picture, deriving predicted coding unit information for the current coding unit based on coding information of at least one neighboring coding unit, a previously encoded coding unit, or a coding unit in a reference picture, and comparing the predicted coding unit information with the determined coding unit information. The coding unit information may include, for example, a partition mode, a prediction mode, a transform size, motion information, or other syntax information associated with encoding of the current coding unit. When the predicted coding unit information is identical to the determined coding unit information, an encoder encodes and transmits a first value of a prediction match flag indicating that the predicted coding unit information is to be used by a decoder for the current coding unit, and omits transmission of at least a portion of the coding unit information. When the predicted coding unit information is not identical to the determined coding unit information, the encoder encodes and transmits a second value of the prediction match flag indicating that the prediction is not to be used, and further encodes and transmits information specifying the determined coding unit information for the current coding unit. In this manner, signaling overhead associated with coding unit information may be reduced when the predicted coding unit information matches the actual coding unit information.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Write an “according to one embodiment of the present invention” section for a video codec invention where information of a current coding unit is predicted from adjacent coding units and only encoded if it differs.",
+      "output": "According to one embodiment of the present invention, a video encoding apparatus encodes information associated with a current coding unit by predicting the information from one or more coding units adjacent to the current coding unit, and by transmitting syntax information for the current coding unit only when the information of the current coding unit is different from the predicted information.\n\nIn this embodiment, the current coding unit may be a coding block, coding tree unit, prediction unit, transform unit, or any other coding region defined in a video coding structure. The information associated with the current coding unit may include, for example, a coding mode, an intra prediction mode, an inter prediction mode, a motion vector, a reference picture index, a transform size, a partition type, a quantization parameter, a filter-related parameter, or any combination thereof.\n\nThe video encoding apparatus may identify at least one adjacent coding unit that has already been encoded or reconstructed. The adjacent coding unit may include a coding unit located to the left of the current coding unit, above the current coding unit, above-left of the current coding unit, above-right of the current coding unit, or any other spatially or temporally neighboring coding unit available for prediction. The encoder may derive predicted information for the current coding unit based on information of the one or more adjacent coding units. For example, when a plurality of adjacent coding units are available, the predicted information may be selected from one of the adjacent coding units, derived by a predetermined priority order, determined by a majority value, averaged, clipped, merged, or otherwise generated according to a predefined rule.\n\nAfter deriving the predicted information, the encoder compares the predicted information with actual information determined for the current coding unit. When the actual information is identical to the predicted information, the encoder may omit encoding of the actual information and may instead encode a flag, index, or other indication showing that the predicted information is to be used. In some implementations, even the indication may be inferred from context and need not be explicitly transmitted. When the actual information differs from the predicted information, the encoder may encode information indicating the difference. The encoded information may include the actual information itself, a residual value, a delta value, an index identifying an alternative candidate, or another syntax element sufficient to allow a decoder to reconstruct the actual information.\n\nAccordingly, redundant signaling of coding unit information may be reduced. Since neighboring coding units often have similar coding characteristics, predicting coding information from adjacent coding units and encoding only differences can improve coding efficiency while maintaining decoder-side reconstruction compatibility.\n\nA corresponding video decoding apparatus may perform a reciprocal operation. The decoder may identify one or more adjacent coding units that have already been decoded or reconstructed, derive predicted information for a current coding unit based on information of the adjacent coding units, and determine whether syntax information indicating a difference from the predicted information is present in a received bitstream. If no difference information is present, or if a received indication specifies that prediction is used, the decoder sets the information of the current coding unit to the predicted information. If difference information is present, the decoder reconstructs the information of the current coding unit by using the predicted information and the received difference information.\n\nIn one example, when an intra prediction mode of a current coding unit is to be encoded, the encoder may predict the intra prediction mode from an intra prediction mode of a left coding unit or an upper coding unit. If the intra prediction mode of the current coding unit is the same as the predicted intra prediction mode, the encoder may encode a match flag having a first value and may omit separate signaling of the intra prediction mode. If the intra prediction mode of the current coding unit is different from the predicted intra prediction mode, the encoder may encode the match flag having a second value and may encode the intra prediction mode or an index corresponding thereto.\n\nIn another example, when a motion vector of a current coding unit is to be encoded, the encoder may derive a predicted motion vector from a motion vector of an adjacent coding unit. If the motion vector of the current coding unit is equal to the predicted motion vector, the encoder may omit encoding of a motion vector difference. If the motion vector differs from the predicted motion vector, the encoder may encode only a motion vector difference representing a difference between the motion vector of the current coding unit and the predicted motion vector.\n\nThus, according to this embodiment, information of a current coding unit is predicted using adjacent coding units, and encoding of the information is selectively performed depending on whether the actual information of the current coding unit differs from the predicted information, thereby reducing the amount of encoded data required to represent the current coding unit.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Generate a patent claim-like description for a method of encoding video information using prediction information, match/mismatch flags, and neighboring coding unit data.",
+      "output": "1. A method of encoding video information, the method comprising:\n\nreceiving, by one or more processors, video data comprising a plurality of coding units of a current picture;\n\ndetermining, for a current coding unit of the plurality of coding units, prediction information associated with the current coding unit, the prediction information including at least one of an intra prediction mode, an inter prediction mode, motion information, reference picture information, partition information, or transform information;\n\nobtaining neighboring coding unit data associated with one or more neighboring coding units adjacent to or otherwise spatially or temporally related to the current coding unit, the neighboring coding unit data including prediction information of the one or more neighboring coding units;\n\nderiving, based at least in part on the neighboring coding unit data, candidate prediction information for the current coding unit;\n\ncomparing the prediction information determined for the current coding unit with the candidate prediction information derived from the neighboring coding unit data;\n\ngenerating a match/mismatch flag indicating whether the prediction information of the current coding unit matches the candidate prediction information;\n\nencoding the match/mismatch flag into a bitstream;\n\nin response to the match/mismatch flag indicating a match, omitting from the bitstream at least a portion of the prediction information for the current coding unit and causing a decoder to derive the omitted portion from the neighboring coding unit data; and\n\nin response to the match/mismatch flag indicating a mismatch, encoding into the bitstream difference information or explicit prediction information identifying the prediction information for the current coding unit relative to the candidate prediction information.\n\n2. The method of claim 1, wherein the neighboring coding unit data comprises data from at least one of a left neighboring coding unit, an above neighboring coding unit, an above-left neighboring coding unit, an above-right neighboring coding unit, a co-located coding unit in a reference picture, or a previously encoded coding unit.\n\n3. The method of claim 1, wherein deriving the candidate prediction information comprises selecting a most probable prediction mode from prediction modes of the one or more neighboring coding units.\n\n4. The method of claim 1, wherein the match/mismatch flag comprises a binary syntax element indicating whether a prediction mode of the current coding unit is identical to a prediction mode derived from the neighboring coding unit data.\n\n5. The method of claim 1, wherein the difference information comprises an index identifying one of a plurality of candidate prediction modes generated using the neighboring coding unit data.\n\n6. The method of claim 1, further comprising context-adaptively entropy encoding the match/mismatch flag using a context determined based on at least one characteristic of the neighboring coding unit data.\n\n7. The method of claim 1, wherein the prediction information comprises motion vector information, and wherein the match/mismatch flag indicates whether a motion vector predictor derived from the neighboring coding unit data matches a motion vector associated with the current coding unit.\n\n8. The method of claim 1, wherein the prediction information comprises intra prediction direction information, and wherein the match/mismatch flag indicates whether an intra prediction direction of the current coding unit matches an intra prediction direction predicted from the neighboring coding unit data.\n\n9. The method of claim 1, further comprising reconstructing the current coding unit based on the prediction information and residual information, and storing reconstructed data of the current coding unit for use as neighboring coding unit data for encoding a subsequent coding unit.\n\n10. A non-transitory computer-readable medium storing instructions that, when executed by one or more processors, cause the one or more processors to perform the method of claim 1.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Please phrase this in formal patent language: a video encoder predicts current CU information, checks whether it equals the prediction, sends a coincidence flag if equal, and otherwise sends a non-coincidence flag plus the CU information.",
+      "output": "A video encoder is configured to predict information associated with a current coding unit (CU), determine whether the information associated with the current CU is identical to the predicted information, and, in response to determining that the information associated with the current CU is identical to the predicted information, signal a coincidence flag. The video encoder is further configured to, in response to determining that the information associated with the current CU is not identical to the predicted information, signal a non-coincidence flag and signal the information associated with the current CU.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Create a concise patent specification excerpt about reducing video coding overhead by predicting information for a current coding unit from adjacent coding units and conditionally transmitting the actual information.",
+      "output": "### Patent Specification Excerpt\n\n#### Title  \nReducing Video Coding Overhead Using Conditional Transmission of Coding Unit Information\n\n#### Technical Field  \nThe present disclosure relates to video encoding and decoding, and more particularly to reducing signaling overhead by predicting coding information for a current coding unit from information associated with adjacent coding units.\n\n#### Background  \nIn block-based video coding, a picture may be divided into coding units. Various coding parameters, such as prediction mode, motion information, transform information, partition information, or quantization-related information, may be signaled for each coding unit. Signaling such information for every coding unit can increase bitstream overhead, particularly where neighboring coding units exhibit similar characteristics.\n\n#### Summary  \nIn one embodiment, a video encoder determines predicted coding information for a current coding unit based on coding information associated with one or more adjacent coding units. The encoder compares the predicted coding information with actual coding information determined for the current coding unit. If the predicted coding information matches the actual coding information, the encoder transmits an indication that the predicted coding information is to be used, without transmitting the actual coding information. If the predicted coding information does not match the actual coding information, the encoder transmits the actual coding information, optionally together with a flag indicating that prediction is not used.\n\nA corresponding decoder derives predicted coding information for the current coding unit from one or more adjacent coding units using the same prediction rule. The decoder determines, based on a received indication, whether to use the predicted coding information or to parse actual coding information from the bitstream. In this manner, redundant transmission of coding information may be reduced.\n\n#### Detailed Description  \nA current coding unit may be associated with one or more neighboring coding units, including, for example, a left coding unit, an above coding unit, an above-left coding unit, or an above-right coding unit. Coding information from one or more of these adjacent coding units may be selected, combined, or ranked to generate predicted information for the current coding unit.\n\nThe coding information may include at least one of: an intra prediction mode, an inter prediction direction, a motion vector, a reference picture index, a partition type, a transform size, a coded block flag, a quantization parameter delta, or a residual coding parameter.\n\nIn an example, the encoder derives a candidate value from an adjacent coding unit having a same or similar block size. If multiple adjacent coding units are available, the encoder may select a most frequent value, a predefined priority value, or a value associated with the spatially closest coding unit. The encoder then determines whether the candidate value equals the actual value for the current coding unit.\n\nA syntax element may be included in the bitstream to indicate whether the predicted information is used. When the syntax element has a first value, the decoder assigns the predicted information to the current coding unit. When the syntax element has a second value, the decoder parses explicitly transmitted coding information and assigns the parsed information to the current coding unit.\n\n#### Example Claim  \n1. A method of decoding video data, comprising:  \n   deriving predicted coding information for a current coding unit based on coding information of at least one adjacent coding unit;  \n   receiving, from a bitstream, an indication specifying whether the predicted coding information is used for the current coding unit;  \n   in response to the indication specifying use of the predicted coding information, assigning the predicted coding information to the current coding unit; and  \n   in response to the indication specifying non-use of the predicted coding information, parsing actual coding information for the current coding unit from the bitstream and assigning the actual coding information to the current coding unit,  \n   wherein conditionally parsing the actual coding information reduces signaling overhead in the bitstream.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.8321428571428572,
+      "excess_ratio": 0.6800521906595438,
+      "baseline_mean": 0.15209066648331332,
+      "baseline_n_valid": 5,
+      "output_chars": 993,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.8387096774193549,
+          "baseline_mean": 0.11993726445768545,
+          "excess_ratio": 0.7187724129616694
+        },
+        "bz2": {
+          "actual_ratio": 0.7570422535211268,
+          "baseline_mean": 0.14427533049084484,
+          "excess_ratio": 0.6127669230302819
+        },
+        "lzma": {
+          "actual_ratio": 0.8961038961038961,
+          "baseline_mean": 0.18772919095744495,
+          "excess_ratio": 0.7083747051464511
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3940634595701126,
+      "excess_ratio": 0.24197279308679925,
+      "baseline_mean": 0.15209066648331332,
+      "baseline_n_valid": 5,
+      "output_chars": 746,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.3013698630136986,
+          "baseline_mean": 0.11993726445768545,
+          "excess_ratio": 0.18143259855601318
+        },
+        "bz2": {
+          "actual_ratio": 0.42857142857142855,
+          "baseline_mean": 0.14427533049084484,
+          "excess_ratio": 0.2842960980805837
+        },
+        "lzma": {
+          "actual_ratio": 0.43820224719101125,
+          "baseline_mean": 0.18772919095744495,
+          "excess_ratio": 0.2504730562335663
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.357090909090909,
+      "excess_ratio": 0.2050002426075957,
+      "baseline_mean": 0.15209066648331332,
+      "baseline_n_valid": 5,
+      "output_chars": 1323,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.31666666666666665,
+          "baseline_mean": 0.11993726445768545,
+          "excess_ratio": 0.19672940220898122
+        },
+        "bz2": {
+          "actual_ratio": 0.3554603854389722,
+          "baseline_mean": 0.14427533049084484,
+          "excess_ratio": 0.21118505494812734
+        },
+        "lzma": {
+          "actual_ratio": 0.39344262295081966,
+          "baseline_mean": 0.18772919095744495,
+          "excess_ratio": 0.20571343199337472
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.205726872246696,
+      "excess_ratio": 0.05363620576338268,
+      "baseline_mean": 0.15209066648331332,
+      "baseline_n_valid": 5,
+      "output_chars": 2151,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.1622746185852982,
+          "baseline_mean": 0.11993726445768545,
+          "excess_ratio": 0.04233735412761276
+        },
+        "bz2": {
+          "actual_ratio": 0.21438263229308005,
+          "baseline_mean": 0.14427533049084484,
+          "excess_ratio": 0.0701073018022352
+        },
+        "lzma": {
+          "actual_ratio": 0.23645320197044334,
+          "baseline_mean": 0.18772919095744495,
+          "excess_ratio": 0.04872401101299839
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.08912280701754383,
+      "excess_ratio": -0.0629678594657695,
+      "baseline_mean": 0.15209066648331332,
+      "baseline_n_valid": 5,
+      "output_chars": 810,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.0502283105022831,
+          "baseline_mean": 0.11993726445768545,
+          "excess_ratio": -0.06970895395540234
+        },
+        "bz2": {
+          "actual_ratio": 0.09719222462203024,
+          "baseline_mean": 0.14427533049084484,
+          "excess_ratio": -0.047083105868814604
+        },
+        "lzma": {
+          "actual_ratio": 0.11450381679389313,
+          "baseline_mean": 0.18772919095744495,
+          "excess_ratio": -0.07322537416355182
+        }
+      }
+    }
+  }
+}

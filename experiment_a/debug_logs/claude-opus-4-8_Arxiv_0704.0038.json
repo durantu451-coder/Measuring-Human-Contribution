@@ -1,0 +1,175 @@
+{
+  "model": "claude-opus-4-8",
+  "domain": "Arxiv",
+  "id": "0704.0038",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nWe present a review of the discrete dipole approximation (DDA), which is a general method to simulate light scattering by arbitrarily shaped particles. We put the method in historical context and discuss recent developments, taking the viewpoint of a general framework based on the integral equations for the electric field. We review both the theory of the DDA and its numerical aspects, the latter being of critical importance for any practical application of the method. Finally, the position of the DDA among other methods of light scattering simulation is shown and possible future developments are discussed.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nWe present a review of the discrete dipole approximation (DDA), which is a general method to simulate light scattering by arbitrarily shaped particles. We put the method in historical context and discuss recent developments, taking the viewpoint of a general framework based on the integral equations for the electric field. We review both the theory of the DDA and its numerical aspects, the latter being of critical importance for any practical application of the method. Finally, the position of the DDA among other methods of light scattering simulation is shown and possible future developments are discussed.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The discrete dipole approximation (DDA) is a general computational method used to simulate light scattering by particles of arbitrary shape.\n- The review situates the DDA in its historical context while examining recent developments in the field.\n- The method is presented through a general framework based on the integral equations for the electric field.\n- The review covers both the theoretical foundations of the DDA and its numerical aspects, which are critically important for practical applications.\n- The DDA is compared to other light scattering simulation methods, and possible future developments are discussed.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe discrete dipole approximation (DDA), a general method for simulating light scattering by arbitrarily shaped particles, is reviewed within a historical context and a unifying framework based on the integral equations for the electric field, covering both its theoretical foundations and critical numerical aspects. This comprehensive review situates the DDA among other light scattering simulation methods and identifies possible future developments, providing valuable guidance for practical applications of the technique.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: DDA, Finally"
+  },
+  "outputs": {
+    "L1": "Here is a polished version of your text:\n\nWe present a review of the discrete dipole approximation (DDA), a versatile method for simulating light scattering by arbitrarily shaped particles. We situate the method within its historical context and discuss recent developments, adopting the perspective of a general framework grounded in the integral equations for the electric field. We examine both the theoretical foundations of the DDA and its numerical aspects, the latter being of critical importance for any practical application of the method. Finally, we position the DDA relative to other light-scattering simulation methods and discuss potential avenues for future development.\n\nKey improvements made:\n- Changed \"which is a general method\" to \"a versatile method\" for greater concision and impact\n- Replaced \"put the method in\" with \"situate the method within\" for a more polished tone\n- Changed \"taking the viewpoint of\" to \"adopting the perspective of\" for elevated formality\n- Replaced \"based on\" with \"grounded in\" for more sophisticated phrasing\n- Changed \"review both the theory\" to \"examine both the theoretical foundations\" for precision and professionalism\n- Revised the final sentence for smoother flow and parallel structure, changing \"is shown\" (passive) to the active \"we position,\" and \"possible future developments are discussed\" to \"discuss potential avenues for future development\"",
+    "L2": "This paper offers an overview of the discrete dipole approximation (DDA), a versatile technique used to model how light scatters when it encounters particles of any given shape. We situate this approach within its historical background and examine the latest advances, approaching the subject through a unified framework rooted in the integral equations governing the electric field. Our examination covers both the theoretical foundations of the DDA and its computational components—the latter being essential to any real-world use of the technique. To conclude, we illustrate where the DDA stands relative to alternative approaches for simulating light scattering and consider the directions in which it may evolve going forward.",
+    "L3": "# The Discrete Dipole Approximation: A Review\n\nThe discrete dipole approximation (DDA) is a general computational method used to simulate light scattering by particles of arbitrary shape. Its flexibility in handling complex geometries has made it a valuable tool across numerous fields, from atmospheric science to nanophotonics, where accurate modeling of the interaction between electromagnetic radiation and irregularly shaped particles is essential.\n\nThis review situates the DDA within its broader historical context while examining the most recent developments in the field. By tracing the evolution of the method from its origins to its current state, we aim to provide readers with both a foundational understanding and an appreciation of how the technique has matured over time.\n\nTo establish a coherent and rigorous basis, the method is presented through a general framework grounded in the integral equations for the electric field. This formulation offers a unified perspective from which the various implementations and refinements of the DDA can be understood and compared.\n\nThe review addresses both the theoretical foundations of the DDA and its numerical aspects, the latter of which are critically important for practical applications. A thorough treatment of the underlying theory is complemented by a detailed discussion of computational considerations, including accuracy, efficiency, and the strategies employed to overcome common numerical challenges.\n\nFinally, the DDA is compared with other light scattering simulation methods, highlighting its relative strengths and limitations. Building on this comparison, we discuss possible future developments, outlining promising directions that may further extend the capabilities and applicability of the method.",
+    "L4": "# The Discrete Dipole Approximation: A Comprehensive Review\n\n## Introduction\n\nThe interaction of electromagnetic radiation with particulate matter remains one of the most fundamental problems in optics, with far-reaching implications across disciplines ranging from atmospheric science and astrophysics to biomedical diagnostics and nanotechnology. Among the numerous computational techniques developed to address this problem, the discrete dipole approximation (DDA) has emerged as a particularly versatile and widely adopted method. Its principal strength lies in its capacity to simulate light scattering by particles of arbitrary shape, composition, and internal structure—a flexibility that many competing methods cannot match. In this review, we examine the DDA both within its historical context and through a unifying theoretical framework grounded in the integral equations for the electric field, addressing its theoretical foundations alongside the critical numerical considerations that govern its practical performance.\n\n## Historical Development\n\nThe origins of the DDA trace back to the seminal work of Purcell and Pennypacker in 1973, who introduced the method to study the optical properties of interstellar dust grains. Their conceptual insight was elegantly intuitive: an arbitrary target could be represented as an array of point dipoles arranged on a cubic lattice, each responding to both the incident field and the fields radiated by all other dipoles. Over the subsequent decades, the method was refined and formalized by numerous investigators, most notably Draine and Flatau, whose publicly available DDSCAT code became a standard tool for the scientific community. These developments progressively transformed the DDA from a physically motivated approximation into a rigorous numerical technique whose accuracy and convergence properties could be systematically analyzed and improved.\n\n## A Unifying Theoretical Framework\n\nWhile the DDA was originally conceived as a physical model of interacting dipoles, a more rigorous and unifying perspective emerges when the method is derived directly from the integral equations for the electric field. In this formulation, the volume integral equation—which expresses the total field within a scatterer as the sum of the incident field and contributions from the induced polarization throughout the particle's volume—is discretized into a system of coupled linear equations. This approach clarifies that the DDA is fundamentally a method for numerically solving the electromagnetic integral equations rather than merely a heuristic dipole model. Framing the technique in this manner offers several advantages: it provides a systematic basis for understanding the various approximations involved, illuminates the origins of numerical errors, and establishes clear connections to other integral-equation-based methods. Central to this framework are the choices of dipole polarizability prescriptions and the interaction terms that couple the discretized volume elements, both of which critically influence the accuracy of the results.\n\n## Numerical Aspects\n\nThe practical implementation of the DDA involves several numerical challenges that must be carefully managed to achieve reliable results. Foremost among these is the solution of the large system of linear equations arising from the discretization, which is typically accomplished using iterative solvers combined with fast Fourier transform techniques that exploit the translational symmetry of the underlying lattice. This combination dramatically reduces both computational time and memory requirements, enabling the treatment of targets containing millions of dipoles. Additional considerations include the selection of an appropriate discretization resolution to ensure convergence, the treatment of particles with high refractive indices where the method's accuracy tends to degrade, and the accurate representation of surface geometry to minimize shape errors. Understanding the interplay between these factors is essential for obtaining trustworthy simulations and for balancing accuracy against computational cost.\n\n## The DDA Among Other Methods\n\nTo appreciate the appropriate domain of application for the DDA, it is instructive to situate it within the broader landscape of light scattering simulation techniques. Methods such as the T-matrix approach, the finite-difference time-domain method, the finite element method, and various surface integral formulations each possess distinct advantages and limitations. The T-matrix method, for instance, excels in efficiency for symmetric particles but struggles with highly irregular geometries, whereas the finite-difference time-domain method naturally accommodates dispersive and nonlinear media. The DDA distinguishes itself through its ability to handle inhomogeneous and arbitrarily shaped particles with relative conceptual and computational simplicity, particularly for targets whose refractive index does not deviate too strongly from that of the surrounding medium. Recognizing these comparative strengths allows practitioners to select the most suitable method for a given problem.\n\n## Future Directions and Conclusion\n\nLooking ahead, several avenues for the continued development of the DDA present themselves. These include improvements in polarizability prescriptions and correction schemes to extend the method's accuracy to larger refractive indices, the development of more sophisticated discretization strategies to better capture surface features, and enhancements in computational algorithms and parallelization to accommodate ever-larger and more complex targets. Further integration of the DDA with other numerical methods in hybrid schemes also holds considerable promise. This comprehensive review, by consolidating the theoretical foundations, numerical intricacies, and comparative standing of the DDA, aims to serve as a valuable resource and practical guide for researchers seeking to apply the technique effectively and to advance its capabilities in the years to come.",
+    "L5": "# Understanding the DDA Line Drawing Algorithm\n\nWhen you first begin studying computer graphics, one of the earliest challenges you encounter is figuring out how a computer draws a straight line on a screen made up of individual pixels. The **DDA (Digital Differential Analyzer)** algorithm is one of the fundamental solutions to this problem, and understanding it opens the door to more advanced graphics concepts.\n\n## What Is DDA?\n\nThe DDA is an incremental scan-conversion method used to draw lines between two points on a raster display. Instead of calculating each pixel position from scratch using the full line equation, DDA works by calculating intermediate points step by step. It uses the differences between the starting and ending coordinates to determine how the line should progress.\n\n## How the Algorithm Works\n\nThe basic idea is straightforward:\n\n1. Calculate the difference in the x-direction (`dx`) and the y-direction (`dy`).\n2. Determine the number of steps needed, based on the larger of `dx` or `dy`.\n3. Compute the increment for x and y at each step by dividing `dx` and `dy` by the number of steps.\n4. Add these increments repeatedly, rounding the values to the nearest pixel, until the endpoint is reached.\n\nBecause it relies on floating-point addition rather than heavy multiplication, DDA is faster than directly applying the line equation for every pixel.\n\n## Advantages and Limitations\n\nThe main **advantage** of DDA is its simplicity—it is easy to understand and implement, making it an excellent teaching tool. However, it does have **drawbacks**. The use of floating-point operations and rounding can introduce small errors, and the accumulation of these errors may cause the line to drift slightly. For this reason, more precise methods such as Bresenham's algorithm are often preferred in practice.\n\n## Finally\n\n**Finally**, the DDA algorithm remains an important stepping stone in any computer graphics course. While it may not be the most efficient technique available today, it clearly demonstrates the core principle of incremental rendering. Once you grasp how DDA converts a mathematical line into a set of pixels, you'll be far better prepared to appreciate the improvements offered by later algorithms—and to understand the deeper logic behind how our screens display images every single day."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Write an abstract for a review paper on the discrete dipole approximation method for light scattering simulations.",
+      "output": "# Abstract\n\nThe discrete dipole approximation (DDA) has emerged as one of the most versatile and widely used numerical techniques for computing electromagnetic scattering and absorption by particles of arbitrary geometry and composition. This review provides a comprehensive overview of the DDA method, tracing its theoretical foundations from the original formulation by Purcell and Pennypacker to modern computational implementations. We begin by presenting the fundamental principles underlying the approach, in which a target is represented as a finite array of polarizable point dipoles whose interactions with an incident field and with one another are solved self-consistently. Key theoretical aspects are examined in detail, including the choice of dipole polarizabilities, the derivation of scattering quantities such as cross sections and Mueller matrix elements, and the treatment of the interaction matrix.\n\nWe critically assess the accuracy, convergence behavior, and validity criteria of the method, highlighting the roles of discretization resolution, refractive index contrast, and shape effects on numerical error. Particular attention is given to computational efficiency, including the use of fast Fourier transform techniques, iterative solvers, and parallel and GPU-accelerated implementations that have dramatically extended the range of tractable problem sizes. We survey prominent software packages and compare their capabilities and performance.\n\nThe broad applicability of the DDA is illustrated through representative applications spanning atmospheric science, astrophysics, biomedical optics, nanophotonics, and plasmonics, where the technique enables the modeling of irregular dust grains, biological cells, aerosols, and complex nanostructures. Finally, we discuss current limitations and outline promising directions for future development, including extensions to periodic structures, anisotropic and inhomogeneous media, and coupling with other computational methods. This review aims to serve both newcomers seeking an accessible introduction and experienced practitioners requiring a consolidated reference on the state of the art.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize the discrete dipole approximation (DDA) and its role in modeling light scattering by arbitrarily shaped particles.",
+      "output": "# Discrete Dipole Approximation (DDA)\n\n## Overview\n\nThe **Discrete Dipole Approximation** (also called the coupled dipole method) is a computational technique for calculating the scattering and absorption of electromagnetic radiation by particles of arbitrary shape and composition. It was pioneered by Purcell and Pennypacker (1973) and later refined significantly by Draine and Flatau.\n\n## Core Concept\n\nDDA works by **discretizing a continuous target into a finite array of small polarizable points (dipoles)** arranged on a cubic lattice. The key idea is:\n\n1. Replace the actual particle with N discrete dipoles\n2. Each dipole acquires a polarization in response to:\n   - The incident electromagnetic field\n   - The fields radiated by **all other dipoles** in the array\n3. Solve for the self-consistent set of dipole moments\n\n## Mathematical Framework\n\nEach dipole *i* has a polarization:\n\n$$\\mathbf{P}_i = \\alpha_i \\mathbf{E}_{\\text{loc}}(\\mathbf{r}_i)$$\n\nwhere the local field is the sum of the incident field and contributions from other dipoles. This yields a large system of coupled linear equations:\n\n$$\\mathbf{P}_i = \\alpha_i \\left( \\mathbf{E}_{\\text{inc},i} - \\sum_{j \\neq i} \\mathbf{A}_{ij} \\mathbf{P}_j \\right)$$\n\nSolving this system (typically via iterative methods) gives all dipole moments, from which scattering quantities are computed.\n\n## Key Advantages\n\n| Advantage | Description |\n|-----------|-------------|\n| **Geometric flexibility** | Handles arbitrary, irregular, and inhomogeneous shapes |\n| **Material versatility** | Accommodates anisotropic and heterogeneous compositions |\n| **Physical intuition** | Directly represents the material as interacting dipoles |\n| **Established codes** | Mature implementations (e.g., DDSCAT, ADDA) exist |\n\n## Limitations\n\n- **Computationally expensive** for large particles (memory and time scale with N)\n- **Discretization requirements**: The dipole spacing *d* must satisfy |m|kd < 1 (where m is refractive index, k is wavenumber) for accuracy\n- **Surface roughness** from cubic lattice can introduce errors\n- Struggles with **very high refractive index** materials\n\n## Applications\n\n- **Astrophysics**: Interstellar dust grains and cosmic particles\n- **Atmospheric science**: Aerosols, ice crystals, and cloud particles\n- **Nanophotonics/Plasmonics**: Metallic nanoparticles and optical antennas\n- **Biomedical optics**: Scattering by cells and biological structures\n- **Remote sensing**: Characterizing non-spherical scatterers\n\n## Role in Light Scattering Modeling\n\nDDA fills a crucial niche where **analytical solutions like Mie theory fail**. While Mie theory elegantly handles spheres (and its extensions handle spheroids/cylinders), DDA provides a general-purpose numerical tool for the vast majority of **real-world particles that are non-spherical and inhomogeneous**. It computes essential optical properties including:\n\n- Scattering and absorption **cross-sections**\n- **Scattering phase functions** (angular distribution)\n- **Mueller matrices** (polarization behavior)\n\nDDA remains one of the most widely used methods in computational electromagnetics for complex particle geometries, complementing other techniques like the T-matrix method and Finite-Difference Time-Domain (FDTD).",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "I'm writing a review article about DDA. Can you draft an abstract that covers its history, theory, numerical aspects, and comparison to other methods?",
+      "output": "Before I draft this, a quick clarification: \"DDA\" has a couple of common meanings in review literature. The most likely candidate given your topics (history, theory, numerics, method comparison) is the **Discrete Dipole Approximation** (electromagnetic scattering), but it could also be **Discontinuous Deformation Analysis** (rock mechanics/geotechnical modeling).\n\nI've drafted an abstract below assuming the **Discrete Dipole Approximation**. If you meant something else, let me know and I'll revise.\n\n---\n\n**Abstract**\n\nThe Discrete Dipole Approximation (DDA) has become one of the most versatile numerical techniques for computing the scattering and absorption of electromagnetic radiation by particles of arbitrary geometry and composition. This review traces the method from its origins in the coupled-dipole formulation of Purcell and Pennypacker in the 1970s, through the theoretical refinements introduced by Draine, Goodman, and others, to its present role in fields ranging from astrophysics and atmospheric science to nanophotonics and biomedical optics. We first outline the physical foundations of the method, in which a target is represented as a finite array of polarizable point dipoles whose mutual interactions are solved self-consistently. We discuss the central theoretical issues that govern accuracy—including the choice of dipole polarizability prescriptions, lattice dispersion relations, and validity criteria relating dipole spacing to wavelength and refractive index. We then examine the numerical machinery underlying modern implementations, emphasizing iterative solution of the resulting large linear systems, the use of the fast Fourier transform to exploit the block-Toeplitz structure of the interaction matrix, preconditioning strategies, and parallel and GPU-accelerated computation. Practical considerations such as convergence behavior, memory scaling, and the treatment of periodic and layered structures are also addressed. Finally, we compare DDA with alternative approaches—including the T-matrix method, the finite-difference time-domain (FDTD) method, the finite element method (FEM), and Mie theory—highlighting the regimes of particle size, morphology, and material properties in which each method offers advantages. We conclude by identifying current limitations and promising directions for future development, including improved polarizability models, hybrid formulations, and applications to increasingly complex and large-scale scattering problems.\n\n---\n\nWould you like me to:\n- Adjust the length (e.g., condense to ~150 words for a journal limit)?\n- Shift emphasis toward a particular application area or audience?\n- Add specific references or key names you want highlighted?",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Provide a concise scientific abstract describing the discrete dipole approximation as a general framework based on integral equations for the electric field.",
+      "output": "# Discrete Dipole Approximation: A General Framework Based on Integral Equations\n\n## Abstract\n\nThe discrete dipole approximation (DDA) is a versatile numerical method for computing the scattering and absorption of electromagnetic radiation by particles of arbitrary geometry and composition. At its foundation, the DDA is derived from the volume integral equation for the electric field, in which the scatterer is treated as a continuous distribution of polarizable material subject to an incident field and the self-consistent field radiated by all constituent elements. By discretizing the target volume into a finite array of point dipoles arranged on a regular lattice, the continuous integral equation is transformed into a system of coupled linear equations. Each dipole acquires a polarization proportional, through an assigned polarizability, to the local field—comprising the incident wave and the contributions of all other dipoles mediated by the free-space dyadic Green's function.\n\nThe resulting dense linear system is typically solved iteratively, with matrix–vector products efficiently evaluated using fast Fourier transforms that exploit the translational invariance of the interaction matrix on a regular grid. Once the dipole polarizations are determined, all far-field and near-field observables—including extinction, absorption, and scattering cross sections—follow directly. The accuracy of the method depends on the discretization resolution relative to the wavelength and internal field variation, as well as on the prescription used to assign dipole polarizabilities, which can be refined to account for radiative reaction and lattice dispersion effects.\n\nFraming the DDA as a discretization of the electric-field integral equation clarifies its theoretical basis, its relationship to other volume-integral techniques, and the origin of its principal error sources, thereby providing a rigorous foundation for systematic improvement and application to inhomogeneous, anisotropic, and geometrically complex scatterers.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Compose an academic abstract reviewing methods for simulating electromagnetic scattering by particles, focusing on the DDA.",
+      "output": "# Abstract\n\nElectromagnetic scattering by particles of arbitrary shape and composition constitutes a fundamental problem across diverse fields including atmospheric physics, astronomy, biomedical optics, and nanotechnology. This review surveys the principal numerical methods developed for simulating light scattering by non-spherical and inhomogeneous particles, with particular emphasis on the Discrete Dipole Approximation (DDA). We first situate the DDA within the broader landscape of scattering techniques, comparing it to alternative approaches such as the T-matrix method, the Finite-Difference Time-Domain (FDTD) method, the Method of Moments (MoM), and separation-of-variables solutions, highlighting their respective domains of applicability, computational costs, and geometric flexibility. The DDA, originally introduced by Purcell and Pennypacker, approximates a target as a finite array of polarizable point dipoles whose coupled responses to an incident field are solved self-consistently, yielding the scattered field and associated cross-sections. We examine the theoretical foundations of the method, including formulations of the dipole polarizability (such as the Clausius–Mossotti relation, radiative reaction corrections, and the Lattice Dispersion Relation), and analyze the sources of numerical error arising from discretization, shape representation, and high refractive-index contrast. Computational aspects are discussed in detail, notably the use of iterative solvers coupled with Fast Fourier Transform techniques to exploit the convolutional structure of the interaction matrix, thereby reducing memory and time requirements and enabling simulations of increasingly large size parameters. We further review notable extensions and software implementations (e.g., DDSCAT and ADDA), as well as applications to periodic structures, anisotropic and chiral media, and particles near substrates. Finally, we assess the method's principal limitations—including convergence difficulties for high-permittivity materials and computational scaling—and outline ongoing developments aimed at improving accuracy, efficiency, and range of validity. We conclude that, owing to its conceptual simplicity and unrivaled geometric versatility, the DDA remains an indispensable tool for modeling electromagnetic scattering by complex particles, complementing rather than superseding competing methodologies.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.44681884409907724,
+      "excess_ratio": 0.3817279645732148,
+      "baseline_mean": 0.06509087952586243,
+      "baseline_n_valid": 5,
+      "output_chars": 1406,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.44305772230889234,
+          "baseline_mean": 0.04689137971844788,
+          "excess_ratio": 0.3961663425904445
+        },
+        "bz2": {
+          "actual_ratio": 0.3812316715542522,
+          "baseline_mean": 0.05839129184884958,
+          "excess_ratio": 0.32284037970540264
+        },
+        "lzma": {
+          "actual_ratio": 0.5108695652173914,
+          "baseline_mean": 0.08819839053679315,
+          "excess_ratio": 0.4226711746805982
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.3208791208791209,
+      "excess_ratio": 0.2557882413532585,
+      "baseline_mean": 0.06509087952586243,
+      "baseline_n_valid": 5,
+      "output_chars": 731,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.27602905569007263,
+          "baseline_mean": 0.04689137971844788,
+          "excess_ratio": 0.22913767597162477
+        },
+        "bz2": {
+          "actual_ratio": 0.2920353982300885,
+          "baseline_mean": 0.05839129184884958,
+          "excess_ratio": 0.23364410638123892
+        },
+        "lzma": {
+          "actual_ratio": 0.384,
+          "baseline_mean": 0.08819839053679315,
+          "excess_ratio": 0.2958016094632069
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3146598763186614,
+      "excess_ratio": 0.24956899679279895,
+      "baseline_mean": 0.06509087952586243,
+      "baseline_n_valid": 5,
+      "output_chars": 1780,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.30113636363636365,
+          "baseline_mean": 0.04689137971844788,
+          "excess_ratio": 0.2542449839179158
+        },
+        "bz2": {
+          "actual_ratio": 0.26787741203178206,
+          "baseline_mean": 0.05839129184884958,
+          "excess_ratio": 0.20948612018293247
+        },
+        "lzma": {
+          "actual_ratio": 0.3684210526315789,
+          "baseline_mean": 0.08819839053679315,
+          "excess_ratio": 0.28022266209478575
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.08527734577501302,
+      "excess_ratio": 0.02018646624915059,
+      "baseline_mean": 0.06509087952586243,
+      "baseline_n_valid": 5,
+      "output_chars": 6079,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.0689522342064715,
+          "baseline_mean": 0.04689137971844788,
+          "excess_ratio": 0.022060854488023612
+        },
+        "bz2": {
+          "actual_ratio": 0.08480707395498392,
+          "baseline_mean": 0.05839129184884958,
+          "excess_ratio": 0.026415782106134343
+        },
+        "lzma": {
+          "actual_ratio": 0.10182370820668693,
+          "baseline_mean": 0.08819839053679315,
+          "excess_ratio": 0.013625317669893777
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.03159340659340653,
+      "excess_ratio": -0.0334974729324559,
+      "baseline_mean": 0.06509087952586243,
+      "baseline_n_valid": 5,
+      "output_chars": 2334,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.016142735768903994,
+          "baseline_mean": 0.04689137971844788,
+          "excess_ratio": -0.030748643949543887
+        },
+        "bz2": {
+          "actual_ratio": 0.0301255230125523,
+          "baseline_mean": 0.05839129184884958,
+          "excess_ratio": -0.028265768836297278
+        },
+        "lzma": {
+          "actual_ratio": 0.0473186119873817,
+          "baseline_mean": 0.08819839053679315,
+          "excess_ratio": -0.04087977854941145
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T05:13:11.545691+00:00"
+    }
+  ]
+}

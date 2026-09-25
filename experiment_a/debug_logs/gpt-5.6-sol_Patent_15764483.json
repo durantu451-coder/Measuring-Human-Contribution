@@ -1,0 +1,175 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Patent",
+  "id": "15764483",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nIt is disclosed a device for determining an axis joining origins of two reference systems of a rigid body. The device comprises first and a second inertial sensors constrained to the rigid body and for defining the first and second reference systems. The device comprises a processing unit comprising an acquiring module of first data of angular velocities and second data of linear accelerations of the rigid body, a first module for calculating third data of angular accelerations of the rigid body as a function of the first acquired data, a second module for calculating a relative orientation between the first and the second reference system as a function of the first data, a third module for calculating a vector joining origins of the first and second reference system, wherein the primary direction of the primary vector is representative of the axis joining the origins of the two reference systems.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nIt is disclosed a device for determining an axis joining origins of two reference systems of a rigid body. The device comprises first and a second inertial sensors constrained to the rigid body and for defining the first and second reference systems. The device comprises a processing unit comprising an acquiring module of first data of angular velocities and second data of linear accelerations of the rigid body, a first module for calculating third data of angular accelerations of the rigid body as a function of the first acquired data, a second module for calculating a relative orientation between the first and the second reference system as a function of the first data, a third module for calculating a vector joining origins of the first and second reference system, wherein the primary direction of the primary vector is representative of the axis joining the origins of the two reference systems.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The device determines an axis joining the origins of two reference systems on a rigid body.\n- First and second inertial sensors are constrained to the rigid body and define the respective reference systems.\n- A processing unit acquires angular velocity and linear acceleration data from the rigid body.\n- The processing unit calculates angular accelerations and the relative orientation between the two reference systems.\n- The processing unit calculates a vector whose primary direction represents the axis joining the origins of the two reference systems.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nA device determines the axis joining the origins of two reference systems on a rigid body using two constrained inertial sensors and a processing unit that analyzes angular velocity, linear acceleration, angular acceleration, and relative orientation data. It calculates a vector between the two origins whose primary direction identifies the joining axis, enabling spatial alignment of the sensor reference systems.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The"
+  },
+  "outputs": {
+    "L1": "Disclosed is a device for determining an axis joining the origins of two reference systems of a rigid body. The device comprises first and second inertial sensors constrained to the rigid body and defining the first and second reference systems, respectively. The device further comprises a processing unit including: an acquisition module configured to acquire first data relating to angular velocities and second data relating to linear accelerations of the rigid body; a first module configured to calculate third data relating to angular accelerations of the rigid body as a function of the acquired first data; a second module configured to calculate a relative orientation between the first and second reference systems as a function of the first data; and a third module configured to calculate a vector joining the origins of the first and second reference systems, wherein a primary direction of the primary vector is representative of the axis joining the origins of the two reference systems.",
+    "L2": "A device is provided for identifying an axis extending between the origins of two coordinate systems associated with a rigid body. The device includes first and second inertial sensors fixed to the rigid body and respectively defining the first and second coordinate systems. It further includes a processing unit having: an acquisition module configured to obtain first data representing the rigid body’s angular velocities and second data representing its linear accelerations; a first calculation module configured to derive third data representing angular accelerations from the acquired first data; a second calculation module configured to determine the relative orientation of the two coordinate systems based on the first data; and a third calculation module configured to compute a vector extending between the origins of the first and second coordinate systems. The principal direction of that vector represents the axis connecting the two origins.",
+    "L3": "The device determines an axis connecting the origins of two reference systems associated with a rigid body. First and second inertial sensors are fixed to the rigid body, with each sensor defining a respective reference system.\n\nA processing unit acquires angular-velocity and linear-acceleration data from the rigid body through the inertial sensors. Based on these data, the processing unit calculates the angular accelerations of the rigid body and determines the relative orientation between the two reference systems. It then calculates a vector whose principal direction represents the axis joining the origins of the two reference systems.",
+    "L4": "A device is provided for determining the spatial axis that joins the origins of two reference systems associated with a rigid body. The device comprises first and second inertial sensors mounted at different locations on the rigid body and constrained so that no relative movement occurs between them. Each sensor supplies measurement data representative of angular velocity and linear acceleration and may additionally provide angular acceleration or orientation information. A processing unit receives the sensor data and transforms the measurements into a common coordinate system using the known or estimated relative orientation of the two sensor reference systems.\n\nBecause both sensors undergo the same rigid-body rotational motion, the difference between their measured linear accelerations depends on their spatial separation. In particular, the processing unit applies the rigid-body relationship\n\n\\[\n\\mathbf a_2-\\mathbf a_1\n=\n\\boldsymbol{\\alpha}\\times\\mathbf r\n+\n\\boldsymbol{\\omega}\\times\n(\\boldsymbol{\\omega}\\times\\mathbf r),\n\\]\n\nwhere \\(\\mathbf r\\) is the vector from the origin of the first reference system to the origin of the second, \\(\\boldsymbol{\\omega}\\) is the angular velocity of the rigid body, and \\(\\boldsymbol{\\alpha}\\) is its angular acceleration. Angular acceleration may be measured directly or derived from successive angular-velocity measurements. Since gravitational acceleration is common to both sensors after coordinate alignment, it can be eliminated or compensated when the acceleration difference is formed.\n\nThe processing unit evaluates measurements obtained at one or, preferably, multiple instants while the rigid body undergoes rotational motion. The resulting equations are combined to estimate the separation vector, for example by least-squares optimization, filtering, or another numerical estimation method. Using measurements from different rotational states improves observability and reduces the influence of sensor noise, bias, and transient disturbances.\n\nThe primary direction of the calculated separation vector defines the axis joining the two reference-system origins. The vector magnitude may additionally indicate the distance between those origins, while its sign identifies the direction from one origin to the other. The determined axis can then be used to spatially align or calibrate the sensor reference systems, transform measurements between them, verify sensor installation geometry, or support navigation, motion tracking, robotics, and other rigid-body measurement applications.",
+    "L5": "### The Word “The”\n\n“The” is the most frequently used word in the English language. It is known as the definite article and appears before a noun when referring to a particular person, place, object, or idea. For example, “the book” indicates a specific book that is already known or understood by the speaker and listener.\n\nAlthough it is only three letters long, “the” plays an important role in making communication clear and precise. It helps distinguish something specific from something general, as in the difference between “a house” and “the house.” This simple word demonstrates how even the smallest elements of language can carry significant meaning."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "Draft a patent-style abstract for a device that determines the axis connecting the origins of two inertial sensor reference frames mounted on the same rigid body.",
+      "output": "A device for determining an axis connecting respective origins of first and second inertial-sensor reference frames mounted on a common rigid body is disclosed. The device includes an interface configured to receive angular-motion and specific-force measurements from the inertial sensors and processing circuitry configured to determine a relative orientation between the reference frames. During motion of the rigid body, the processing circuitry transforms the measurements into a common coordinate frame and determines a displacement vector between the sensor origins using rigid-body kinematic relationships comprising angular velocity, angular acceleration, and differential specific force. The processing circuitry determines the connecting axis from the displacement vector and may estimate an axis direction, an inter-origin distance, a confidence value, or combinations thereof. Measurements obtained over multiple motion intervals may be combined to reject bias, noise, gravity, and insufficiently observable motion. The determined axis may be used for sensor calibration, sensor fusion, alignment verification, or compensation of rotationally induced acceleration.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Describe an invention using two inertial sensors and a processing unit to calculate the relative orientation and displacement vector between their coordinate systems from angular velocity and linear acceleration data.",
+      "output": "### Dual-Sensor Relative Pose Measurement System\n\nThe invention comprises:\n\n- **A first inertial sensor** defining a first coordinate system and measuring three-axis angular velocity and linear acceleration.\n- **A second inertial sensor** defining a second coordinate system and likewise measuring three-axis angular velocity and linear acceleration.\n- **A processing unit** synchronized with both sensors.\n\nThe processing unit integrates each sensor’s angular-velocity measurements to estimate its orientation over time. It then transforms the measured accelerations into a common reference frame, compensates for gravity, and integrates the corrected accelerations to determine velocity and displacement. The relative orientation is calculated from the difference between the two estimated orientations, for example:\n\n\\[\nR_{12}=R_1^{T}R_2\n\\]\n\nThe displacement vector from the first sensor to the second, expressed in the first sensor’s coordinate system, is calculated as:\n\n\\[\nd_{12}=R_1^{T}(p_2-p_1)\n\\]\n\nwhere \\(R_1\\) and \\(R_2\\) are the estimated sensor orientations and \\(p_1\\) and \\(p_2\\) are their estimated positions.\n\nThe processor may employ calibration, bias estimation, sensor-fusion filtering, known initial conditions, stationary-state detection, or mechanical constraints to reduce integration drift. The resulting relative pose—comprising the relative orientation and three-dimensional displacement vector—may be output in real time for applications such as motion tracking, robotics, structural monitoring, wearable systems, or alignment measurement.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write a concise technical disclosure for a system that identifies the line joining two IMU origins on a rigid body, including modules for acquiring motion data and calculating angular acceleration, relative orientation, and the joining vector.",
+      "output": "### Technical Disclosure: Identification of a Line Joining Two IMU Origins\n\nA system identifies a vector defining the line between the origins of first and second inertial measurement units (IMUs) rigidly mounted on a common body.\n\nThe system includes:\n\n1. **Motion-data acquisition module** configured to receive time-synchronized gyroscope and accelerometer measurements from both IMUs.\n2. **Relative-orientation module** configured to determine a rotation \\(R_{12}\\) mapping measurements from the second IMU frame into the first IMU frame. The rotation may be estimated by matching the angular-rate measurements over a plurality of body motions.\n3. **Angular-acceleration module** configured to calculate body angular acceleration \\(\\boldsymbol{\\alpha}\\), for example by filtering and differentiating measured angular velocity \\(\\boldsymbol{\\omega}\\).\n4. **Joining-vector calculation module** configured to estimate a fixed vector \\(\\mathbf r\\), expressed in the first IMU frame, from the first IMU origin to the second IMU origin.\n\nAfter transforming the second accelerometer output into the first IMU frame, the rigid-body acceleration relationship is\n\n\\[\nR_{12}\\mathbf a_2-\\mathbf a_1\n=\n\\boldsymbol{\\alpha}\\times\\mathbf r\n+\n\\boldsymbol{\\omega}\\times(\\boldsymbol{\\omega}\\times\\mathbf r),\n\\]\n\nsubject to compensation for sensor bias, timing offset, and other measurement errors. Using the skew-symmetric matrix operator \\([\\cdot]_\\times\\), each sample provides\n\n\\[\n\\Delta\\mathbf a\n=\n\\left([\\boldsymbol{\\alpha}]_\\times\n+\n[\\boldsymbol{\\omega}]_\\times^2\\right)\\mathbf r.\n\\]\n\nMeasurements collected during rotational excitation are combined, such as by weighted least squares, robust regression, or recursive estimation, to calculate \\(\\mathbf r\\). The joining line is represented by an anchor at either IMU origin and direction \\(\\mathbf r/\\|\\mathbf r\\|\\); \\(\\|\\mathbf r\\|\\) provides the separation distance. The system may also report an observability or confidence metric based on the rank or conditioning of the accumulated measurement equations.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Convert the following concept into formal patent language: two sensors fixed to a rigid object define separate reference systems, and software uses gyroscope and accelerometer measurements to estimate the direction between the sensors.",
+      "output": "**Patent-style formulation:**\n\nA sensing system comprising a first inertial sensor and a second inertial sensor mounted at spatially separated locations on a rigid body, the first and second inertial sensors respectively defining first and second sensor reference frames. Each inertial sensor is configured to generate gyroscope measurements representative of angular motion and accelerometer measurements representative of specific force. At least one processor is configured to process the gyroscope measurements and the accelerometer measurements to estimate an orientation of at least one of the first and second sensor reference frames relative to a common reference frame and, based on the estimated orientation and a spatial relationship between the first and second inertial sensors, determine a direction of a baseline extending from one of the inertial sensors to the other.\n\n**Example independent claim:**\n\n1. A system comprising:  \n   a rigid body;  \n   a first inertial measurement unit fixed to the rigid body at a first location and defining a first sensor reference frame;  \n   a second inertial measurement unit fixed to the rigid body at a second location spaced apart from the first location and defining a second sensor reference frame; and  \n   one or more processors configured to:  \n   receive gyroscope measurements and accelerometer measurements from at least one of the first and second inertial measurement units;  \n   estimate, using the gyroscope measurements and the accelerometer measurements, an orientation of at least one of the first sensor reference frame or the second sensor reference frame relative to a common reference frame; and  \n   determine, based at least in part on the estimated orientation, a direction of a vector extending between the first location and the second location.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Produce a single-paragraph patent abstract outlining a device for determining an axis between the origins of two reference frames using inertial measurements, differentiated angular velocity data, orientation estimation, and vector calculation.",
+      "output": "A device for determining an axis between origins of first and second reference frames comprises first and second inertial measurement units associated with the respective reference frames, each inertial measurement unit being configured to generate angular velocity and acceleration data. A processor differentiates the angular velocity data to obtain angular acceleration data, estimates a relative orientation between the reference frames, and transforms the inertial measurements into a common coordinate system. The processor calculates a displacement vector between the origins based on relationships among the transformed accelerations, angular velocities, and angular accelerations, including tangential and centripetal acceleration components, and determines the axis from the direction of the calculated displacement vector. The device may update the orientation estimate and displacement vector over multiple measurement intervals and output an axis representation for calibration, navigation, motion tracking, robotic control, or alignment of interconnected bodies.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.6338383838383839,
+      "excess_ratio": 0.4692158827794531,
+      "baseline_mean": 0.16462250105893078,
+      "baseline_n_valid": 5,
+      "output_chars": 1003,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.615819209039548,
+          "baseline_mean": 0.12524341436262504,
+          "excess_ratio": 0.49057579467692297
+        },
+        "bz2": {
+          "actual_ratio": 0.5829268292682926,
+          "baseline_mean": 0.15821923151174894,
+          "excess_ratio": 0.4247075977565437
+        },
+        "lzma": {
+          "actual_ratio": 0.6981132075471698,
+          "baseline_mean": 0.2051316001179559,
+          "excess_ratio": 0.4929816074292139
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.43120676402767105,
+      "excess_ratio": 0.26658426296874027,
+      "baseline_mean": 0.16462250105893078,
+      "baseline_n_valid": 5,
+      "output_chars": 958,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.37755102040816324,
+          "baseline_mean": 0.12524341436262504,
+          "excess_ratio": 0.2523076060455382
+        },
+        "bz2": {
+          "actual_ratio": 0.41950113378684806,
+          "baseline_mean": 0.15821923151174894,
+          "excess_ratio": 0.2612819022750991
+        },
+        "lzma": {
+          "actual_ratio": 0.48717948717948717,
+          "baseline_mean": 0.2051316001179559,
+          "excess_ratio": 0.2820478870615313
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.6110019646365422,
+      "excess_ratio": 0.44637946357761144,
+      "baseline_mean": 0.16462250105893078,
+      "baseline_n_valid": 5,
+      "output_chars": 646,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6118421052631579,
+          "baseline_mean": 0.12524341436262504,
+          "excess_ratio": 0.4865986909005328
+        },
+        "bz2": {
+          "actual_ratio": 0.5263157894736842,
+          "baseline_mean": 0.15821923151174894,
+          "excess_ratio": 0.36809655796193524
+        },
+        "lzma": {
+          "actual_ratio": 0.6881720430107527,
+          "baseline_mean": 0.2051316001179559,
+          "excess_ratio": 0.48304044289279685
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.16306662610282938,
+      "excess_ratio": -0.0015558749561014051,
+      "baseline_mean": 0.16462250105893078,
+      "baseline_n_valid": 5,
+      "output_chars": 2548,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.13145539906103287,
+          "baseline_mean": 0.12524341436262504,
+          "excess_ratio": 0.006211984698407835
+        },
+        "bz2": {
+          "actual_ratio": 0.16326530612244897,
+          "baseline_mean": 0.15821923151174894,
+          "excess_ratio": 0.00504607461070003
+        },
+        "lzma": {
+          "actual_ratio": 0.19230769230769232,
+          "baseline_mean": 0.2051316001179559,
+          "excess_ratio": -0.012823907810263574
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.07463823305407467,
+      "excess_ratio": -0.08998426800485611,
+      "baseline_mean": 0.16462250105893078,
+      "baseline_n_valid": 5,
+      "output_chars": 661,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.0425,
+          "baseline_mean": 0.12524341436262504,
+          "excess_ratio": -0.08274341436262503
+        },
+        "bz2": {
+          "actual_ratio": 0.06697459584295612,
+          "baseline_mean": 0.15821923151174894,
+          "excess_ratio": -0.09124463566879282
+        },
+        "lzma": {
+          "actual_ratio": 0.10833333333333334,
+          "baseline_mean": 0.2051316001179559,
+          "excess_ratio": -0.09679826678462256
+        }
+      }
+    }
+  },
+  "repairs": [
+    {
+      "type": "canonical_metric_recompute",
+      "at_utc": "2026-08-22T04:40:01.231373+00:00"
+    }
+  ]
+}

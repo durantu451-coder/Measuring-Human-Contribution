@@ -1,0 +1,524 @@
+{
+  "model": "gpt-5.6-sol",
+  "domain": "Arxiv",
+  "id": "0704.0540",
+  "warnings": [],
+  "prompts": {
+    "L1": "Please polish the following text to make it more eloquent and professional, keeping all original information unchanged:\n\nThe interference channel with degraded message sets (IC-DMS) refers to a communication model in which two senders attempt to communicate with their respective receivers simultaneously through a common medium, and one of the senders has complete and a priori (non-causal) knowledge about the message being transmitted by the other. A coding scheme that collectively has advantages of cooperative coding, collaborative coding, and dirty paper coding, is developed for such a channel. With resorting to this coding scheme, achievable rate regions of the IC-DMS in both discrete memoryless and Gaussian cases are derived, which, in general, include several previously known rate regions. Numerical examples for the Gaussian case demonstrate that in the high-interference-gain regime, the derived achievable rate regions offer considerable improvements over these existing results.",
+    "L2": "Please rewrite the following text in your own words, keeping all original facts but using completely different expressions and sentence structures:\n\nThe interference channel with degraded message sets (IC-DMS) refers to a communication model in which two senders attempt to communicate with their respective receivers simultaneously through a common medium, and one of the senders has complete and a priori (non-causal) knowledge about the message being transmitted by the other. A coding scheme that collectively has advantages of cooperative coding, collaborative coding, and dirty paper coding, is developed for such a channel. With resorting to this coding scheme, achievable rate regions of the IC-DMS in both discrete memoryless and Gaussian cases are derived, which, in general, include several previously known rate regions. Numerical examples for the Gaussian case demonstrate that in the high-interference-gain regime, the derived achievable rate regions offer considerable improvements over these existing results.",
+    "L3": "Please expand the following bullet points into a complete, well-structured text:\n\n- The interference channel with degraded message sets involves two senders communicating with separate receivers over a shared medium.\n- One sender has complete, non-causal knowledge of the other sender’s message.\n- A coding scheme combining cooperative coding, collaborative coding, and dirty paper coding is developed for this channel.\n- The scheme yields achievable rate regions for both discrete memoryless and Gaussian channel models, encompassing several previously known regions.\n- Numerical Gaussian examples show substantial improvements over existing results in high-interference-gain regimes.",
+    "L4": "Please expand the following two-sentence summary into a complete text:\n\nThe interference channel with degraded message sets involves two senders sharing a medium, with one sender knowing the other’s message noncausally; a coding scheme combining cooperative, collaborative, and dirty-paper coding is developed for discrete memoryless and Gaussian cases. The resulting achievable rate regions encompass several prior regions and provide substantial improvements in Gaussian channels with high interference gain.",
+    "L5": "Please write a text about the following topic:\n\nKeywords: The, DMS, With"
+  },
+  "outputs": {
+    "L1": "The interference channel with degraded message sets (IC-DMS) is a communication model in which two senders simultaneously transmit messages to their respective receivers over a common medium, with one sender having complete, a priori (noncausal) knowledge of the message transmitted by the other. A coding scheme that combines the advantages of cooperative coding, collaborative coding, and dirty-paper coding is developed for this channel. Using this scheme, achievable rate regions are derived for both the discrete memoryless and Gaussian IC-DMS; in general, these regions encompass several previously established rate regions. Numerical examples for the Gaussian case demonstrate that, in the high-interference-gain regime, the derived achievable rate regions provide considerable improvements over existing results.",
+    "L2": "An interference channel with degraded message sets (IC-DMS) is a shared-medium communication system where two transmitters simultaneously send messages to their corresponding receivers, while one transmitter possesses full, non-causal prior knowledge of the other transmitter’s message. For this channel, a coding strategy is proposed that combines the benefits of cooperative coding, collaborative coding, and dirty-paper coding. Using this approach, achievable rate regions are established for both discrete memoryless and Gaussian IC-DMS models. In general, these regions encompass several previously reported rate regions. Numerical results for the Gaussian setting further show that, when the interference gain is high, the new achievable regions substantially outperform existing results.",
+    "L3": "The interference channel with degraded message sets consists of two senders that communicate with separate receivers over a shared medium, causing their transmissions to interfere with one another. A defining feature of this model is that one sender has complete, non-causal knowledge of the other sender’s message. This asymmetric message knowledge creates opportunities for coordinated transmission and more effective interference management.\n\nTo exploit this structure, a coding scheme is developed that combines cooperative coding, collaborative coding, and dirty paper coding. Cooperative coding allows the informed sender to assist in transmitting the other sender’s message, while collaborative coding coordinates the two senders’ signals to improve reception. Dirty paper coding enables the informed sender to mitigate interference that is known in advance without reducing its own transmission rate.\n\nThe resulting scheme provides achievable rate regions for both discrete memoryless and Gaussian versions of the channel. These regions encompass several previously established results as special cases, offering a unified and more general framework for analyzing interference channels with asymmetric message knowledge. Numerical evaluations for Gaussian channels further demonstrate that the proposed scheme can substantially enlarge the achievable rate region compared with existing approaches, particularly when the interference gain is high.",
+    "L4": "The interference channel with degraded message sets models a two-user communication system in which two transmitter–receiver pairs share the same medium and therefore interfere with one another. Unlike the classical interference channel, however, the message knowledge is asymmetric: one sender knows both its own message and the other sender’s message noncausally, while the remaining sender knows only its own message. This asymmetry arises in settings such as cognitive radio, coordinated wireless networks, and systems in which one transmitter has access to another user’s data before transmission. The informed sender can exploit this knowledge both to assist the other communication link and to reduce the interference caused by the known signal.\n\nAn achievable coding strategy can be constructed by combining three complementary mechanisms. First, cooperative coding allows the informed sender to help transmit part of the other sender’s message, creating a form of distributed beamforming or coherent assistance. Second, collaborative coding uses message splitting and superposition so that selected portions of the transmitted information can be decoded at one or both receivers. Third, dirty-paper coding enables the informed sender to precode its own message against interference that it knows in advance, thereby mitigating that interference without requiring the intended receiver to decode it. Rate splitting and appropriate choices of auxiliary random variables coordinate these operations and permit the scheme to adapt to different channel conditions.\n\nFor a discrete memoryless channel, the resulting achievable rate region is expressed through mutual-information constraints associated with the encoding and decoding stages. The uninformed sender encodes its message, while the informed sender superimposes cooperative information and its own private information on the resulting codeword. Depending on the selected distribution and decoding rule, a receiver may decode common or cooperative components before recovering its intended private message. Binning, in the spirit of Gel’fand–Pinsker coding, is used to protect the informed sender’s transmission from the known interference. Taking the union over all admissible input and auxiliary-variable distributions yields an inner bound on the capacity region.\n\nThe same principles extend naturally to Gaussian interference channels. In that setting, the transmit powers can be divided among cooperative, common, and private signal components. Correlation between the users’ channel inputs supports cooperative transmission, while Costa dirty-paper coding is used to pre-cancel the effect of the known signal at the appropriate receiver. The achievable rates can then be evaluated explicitly as logarithmic signal-to-interference-and-noise expressions and optimized over power allocations, correlation coefficients, and message-splitting parameters.\n\nThe proposed framework contains several earlier achievable schemes as special cases. By suppressing cooperation, collaboration, binning, or selected message components, one recovers regions based on simpler superposition coding, partial interference decoding, or dirty-paper coding alone. Because the unified scheme can choose among these strategies—or use them simultaneously—its achievable region encompasses a number of previously reported inner bounds.\n\nNumerical evaluations for Gaussian channels show that the gains are especially pronounced when the cross-channel interference is strong. In high-interference regimes, treating interference as noise is highly inefficient, whereas cooperation and collaborative decoding can turn part of the interfering signal into useful information. At the same time, dirty-paper coding protects the informed transmitter’s own communication from predictable interference. The combined strategy therefore produces substantially larger achievable rate regions, and correspondingly better sum rates or rate tradeoffs, than schemes that rely on only one of these mechanisms.\n\nOverall, the interference channel with degraded message sets demonstrates how asymmetric message knowledge can be converted into a significant communication advantage. A coding architecture that jointly exploits cooperation, collaborative message transmission, and interference pre-cancellation provides a flexible inner bound for both discrete memoryless and Gaussian models, unifies several existing results, and offers particularly strong performance when interference links have large gain.",
+    "L5": "## The DMS With Modern Business Capabilities\n\nThe DMS with advanced digital tools helps organizations store, organize, and manage documents efficiently. A document management system reduces reliance on paper files while making important information easier to access.\n\nThe DMS can include features such as automated workflows, version control, full-text search, access permissions, and secure backups. With these capabilities, employees can collaborate more effectively and retrieve the correct document whenever they need it.\n\nSecurity is another key advantage. The DMS with role-based access and audit trails protects sensitive information while documenting every change. It can also support regulatory compliance by defining retention periods and approval processes.\n\nBy implementing the DMS, businesses can save time, reduce administrative costs, and improve transparency. With the right solution, document management becomes a reliable foundation for digital transformation."
+  },
+  "counterfactuals": [
+    {
+      "prompt": "What is the interference channel with degraded message sets (IC-DMS), and what coding scheme and achievable rate results have been developed for it?",
+      "output": "The **interference channel with degraded message sets (IC-DMS)** is a two-user interference channel in which one transmitter has noncausal knowledge of both users’ messages, while the other transmitter knows only its own message. For example,\n\n\\[\nM_1 \\to \\text{Tx}_1,\\qquad (M_1,M_2)\\to \\text{Tx}_2,\n\\]\n\nwith receiver \\(i\\) required to recover \\(M_i\\). The roles of users 1 and 2 are often reversed by convention. “Degraded” refers to the nested message knowledge, not necessarily to a physically degraded channel. The model is also called the **cognitive interference channel** or **cognitive radio channel**.\n\n### Coding scheme\n\nThe principal achievable schemes combine:\n\n- **Rate splitting:** messages are divided into common/public and private parts.\n- **Superposition coding:** codewords for private parts are layered on common or cooperative codewords.\n- **Cooperative transmission:** because the cognitive transmitter knows the primary message, it can help send that message, including coherent beamforming in Gaussian channels.\n- **Gel’fand–Pinsker binning / dirty-paper coding:** the cognitive transmitter treats the known primary codeword as noncausally known interference and bins its private codeword against it.\n- **Joint or simultaneous decoding:** receivers decode selected common layers and their intended private layer.\n\nA representative binning sub-scheme, for a factorization such as\n\n\\[\np(x_p)p(u|x_p)p(x_c|u,x_p),\n\\]\n\ncan achieve a cognitive-message rate of the form\n\n\\[\nR_c < I(U;Y_c)-I(U;X_p),\n\\]\n\nwhere the subtraction is the binning penalty. More general IC-DMS regions introduce several auxiliary variables and include additional individual-rate and sum-rate constraints corresponding to which public layers are decoded at each receiver.\n\n### Main achievable-rate results\n\nThe resulting single-letter inner bounds:\n\n1. **Generalize ordinary interference-channel coding.**  \n   By turning off cognition or binning, they reduce to Han–Kobayashi-type superposition/rate-splitting schemes.\n\n2. **Generalize state-dependent-channel coding.**  \n   If the primary signal is regarded as known state, the scheme reduces to Gel’fand–Pinsker coding, or dirty-paper coding in the Gaussian case.\n\n3. **Contain simpler cognitive-channel regions.**  \n   Pure superposition, pure binning, cooperative relaying, and combinations of these appear as special cases.\n\n4. **Yield capacity in several special regimes.**  \n   Inner bounds match converse bounds for various degraded, weak-interference, strong/very-strong-interference, and deterministic subclasses, subject to the precise channel conditions used in each formulation.\n\n5. **Give useful Gaussian-channel regions.**  \n   For the Gaussian IC-DMS, the cognitive transmitter splits its power between:\n   - helping the primary transmission, and\n   - sending its own dirty-paper-coded message.\n\n   Optimizing the power split and input correlation produces substantial gains over treating interference as noise or simple time sharing. In several Gaussian regimes these schemes achieve capacity or known constant-gap/near-capacity characterizations.\n\nThus, the central idea of IC-DMS coding is to exploit asymmetric message knowledge twice: **cooperatively** for the message known at both encoders and **precancellatively**, through binning or dirty-paper coding, for the cognitive transmitter’s own message.",
+      "label": "cf_1"
+    },
+    {
+      "prompt": "Summarize the main contributions of a paper on achievable rate regions for discrete memoryless and Gaussian IC-DMS channels.",
+      "output": "The paper’s main contributions are:\n\n- **A new achievable rate region for the discrete memoryless IC-DMS**—an interference channel in which one transmitter has noncausal knowledge of the other transmitter’s message.\n- **A coding scheme combining several techniques:** message splitting, superposition coding, cooperative transmission of the known message, random binning/Gel’fand–Pinsker precoding, and joint decoding.\n- **A unified and enlarged inner bound:** by choosing auxiliary random variables and coding parameters appropriately, the region recovers or improves several previously known achievable regions for cognitive/interference channels.\n- **Specialization to the Gaussian IC-DMS:** the discrete-memoryless construction is translated into Gaussian codebooks using power allocation, correlation between transmitted signals, and dirty-paper-style precoding to mitigate known interference.\n- **Numerical evaluation and comparison:** the Gaussian region is shown to outperform simpler schemes such as treating interference as noise, pure superposition, or earlier inner bounds in relevant channel regimes.\n- **Capacity implications in special cases:** although the general capacity region remains unresolved, the achievable region meets known outer bounds—or reduces to known capacity results—for certain weak-, strong-, or degraded-interference parameter regimes.\n\nOverall, the paper shows how cognition at one transmitter can be exploited both to **cooperate with the primary transmission** and to **precode against interference**, producing broader achievable rate regions for both discrete memoryless and Gaussian models.",
+      "label": "cf_2"
+    },
+    {
+      "prompt": "Write a concise academic abstract describing a coding scheme that combines cooperative coding, collaborative coding, and dirty paper coding for the interference channel with degraded message sets.",
+      "output": "We propose a unified coding scheme for the interference channel with degraded message sets, in which one transmitter noncausally knows both users’ messages. The scheme combines cooperative coding, collaborative coding, and dirty paper coding through rate splitting and superposition. Cooperative codewords enable the informed transmitter to assist transmission of the common message, while collaborative codewords convey information jointly decodable at both receivers. The informed transmitter additionally applies dirty paper coding to pre-cancel interference from the known common-message signal when encoding its private message. Receivers use joint or successive decoding according to the induced codeword structure. The resulting achievable rate region subsumes regions obtained by using cooperation, collaboration, or interference pre-cancellation separately and provides a flexible framework for balancing coherent assistance, common-information decoding, and interference mitigation.",
+      "label": "cf_3"
+    },
+    {
+      "prompt": "Explain how non-causal message knowledge at one sender can improve achievable rates in a two-user interference channel, especially in the Gaussian high-interference-gain regime.",
+      "output": "Non-causal message knowledge converts an interference channel into a **cognitive interference channel**. One transmitter knows the other user’s entire message before transmission, allowing it to coordinate its codeword with the other sender rather than merely reacting to interference.\n\nConsider the Gaussian model\n\\[\nY_p=X_p+aX_c+Z_p,\\qquad\nY_c=bX_p+X_c+Z_c,\n\\]\nwhere the cognitive transmitter \\(c\\) knows both its own message \\(W_c\\) and the primary message \\(W_p\\).\n\n### How the knowledge helps\n\n1. **Cooperative transmission / beamforming**\n\n   The cognitive sender can devote part of its power to transmitting the primary message coherently:\n   \\[\n   X_c=\\sqrt{\\frac{\\alpha P_c}{P_p}}X_p+U,\n   \\]\n   where the first term assists the primary transmission and \\(U\\) carries the cognitive message. With suitable phase alignment, the primary receiver sees an effective desired amplitude\n   \\[\n   \\sqrt{P_p}+a\\sqrt{\\alpha P_c},\n   \\]\n   which can be much larger than \\(\\sqrt{P_p}\\).\n\n2. **Dirty-paper coding**\n\n   Because the cognitive sender knows \\(W_p\\), it knows the primary codeword \\(X_p^n\\) non-causally. It can therefore encode \\(U\\) using Costa dirty-paper coding, treating \\(bX_p\\) as a known state. Ideally, the cognitive rate then behaves as though the primary interference were absent:\n   \\[\n   R_c \\lesssim \\frac12\\log\\!\\left(1+(1-\\alpha)P_c\\right)\n   \\]\n   for unit noise variance, despite a potentially large \\(bX_p\\) term at its receiver.\n\n3. **Rate splitting and joint decoding**\n\n   The cognitive message can be split into common and private parts. A strongly interfered receiver can decode the common part—or the entire cognitive message—rather than treating it as noise. The known primary message also enables superposition coding and correlated Gaussian inputs optimized for both receivers.\n\n### Why high interference gain is especially favorable\n\nIn an ordinary interference channel, a large cross-link can severely reduce rates if interference is treated as noise. With message cognition, a large cross-link becomes useful:\n\n- If \\(|a|\\) is large, the cognitive transmitter has a powerful path to the primary receiver. Its cooperative component provides substantial beamforming gain.\n- The cognitive private signal is also easy for the primary receiver to decode when \\(|a|\\) is large. Thus the primary receiver can jointly decode both messages and remove interference rather than suffer from it.\n- If \\(|b|\\) is large, the cognitive receiver would ordinarily see strong primary interference, but dirty-paper coding pre-cancels that known interference at the encoding stage.\n\nFor example, if the primary receiver initially treats \\(U\\) as noise, an achievable primary rate is roughly\n\\[\nR_p\\le\n\\frac12\\log\\!\\left(\n1+\\frac{\\big(\\sqrt{P_p}+a\\sqrt{\\alpha P_c}\\big)^2}\n{1+a^2(1-\\alpha)P_c}\n\\right).\n\\]\nIn the high-\\(|a|\\) regime, it is often better for that receiver to decode \\(U\\) as well. The receiver then obtains multiple-access-type bounds, including a sum-rate constraint based on the full received signal power, instead of paying the denominator \\(a^2(1-\\alpha)P_c\\) as untreated interference.\n\nThus non-causal knowledge changes the role of strong interference:\n\n\\[\n\\text{unknown strong interference}\n\\quad\\longrightarrow\\quad\n\\text{known state, decodable signal, or cooperative beamforming path}.\n\\]\n\nIn several strong- or very-strong-interference Gaussian regimes, these strategies meet known outer bounds, so the cognitive channel’s capacity region can approach that of a cooperative broadcast/MAC-like system rather than that of a conventional interference-limited channel.",
+      "label": "cf_4"
+    },
+    {
+      "prompt": "Provide a research-style overview of IC-DMS, including the channel model, proposed coding approach, derived rate regions, comparison with previous results, and numerical findings.",
+      "output": "# Interference Channel with Degraded Message Sets (IC-DMS)\n\nThe **interference channel with degraded message sets (IC-DMS)** is a two-user interference channel in which one transmitter knows both users’ messages, while the other knows only its own. It is also widely called the **cognitive interference channel** or **cognitive radio channel with noncausal message knowledge**. The model combines features of interference, broadcast, and state-dependent channels.\n\n## 1. Channel model\n\nA discrete memoryless IC-DMS is specified by finite alphabets and a transition law\n\n\\[\np(y_1,y_2|x_1,x_2).\n\\]\n\nUsing the convention in which transmitter 2 is cognitive:\n\n- transmitter 1 knows message \\(M_1\\);\n- transmitter 2 knows \\((M_1,M_2)\\) noncausally;\n- receiver 1 decodes \\(M_1\\);\n- receiver 2 decodes \\(M_2\\).\n\nThus,\n\n\\[\nX_1^n=f_1(M_1), \\qquad\nX_2^n=f_2(M_1,M_2),\n\\]\n\nwith decoding functions\n\n\\[\n\\widehat M_1=g_1(Y_1^n),\\qquad\n\\widehat M_2=g_2(Y_2^n).\n\\]\n\nThe “degraded message set” description concerns the **message knowledge at the encoders**, not necessarily a physically degraded channel. Because transmitter 2 knows \\(M_1\\), it can:\n\n1. cooperate with transmitter 1 in sending \\(M_1\\);\n2. precode \\(M_2\\) against the known \\(M_1\\)-dependent interference;\n3. correlate \\(X_1\\) and \\(X_2\\) coherently;\n4. choose whether each receiver should decode or treat the other message as noise.\n\nThese possibilities make the IC-DMS strictly richer than the ordinary interference channel.\n\n---\n\n## 2. Coding architecture\n\nThe most general practical inner bounds combine four classical ideas.\n\n### 2.1 Rate splitting\n\nMessages are divided into common and private parts, for example\n\n\\[\nM_1=(M_{1c},M_{1p}),\\qquad\nM_2=(M_{2c},M_{2p}).\n\\]\n\nA common component is decoded at both receivers, while a private component is intended only for its own receiver. This generalizes the Han–Kobayashi strategy.\n\n### 2.2 Superposition and cooperative transmission\n\nCodewords for private messages are superimposed on codewords carrying common or cooperative information. Since the cognitive transmitter knows \\(M_1\\), it may transmit a component correlated with \\(X_1\\), effectively beamforming toward receiver 1 or toward the receiver that must decode a shared layer.\n\n### 2.3 Gel'fand–Pinsker binning\n\nFrom the cognitive transmitter’s viewpoint, the codeword associated with the known message can act as a noncausally known channel state. The cognitive user therefore bins its private codeword against this state. In Gaussian channels, this becomes **Costa dirty-paper coding (DPC)**.\n\nA representative, simplified binning region uses auxiliaries \\(U\\) and \\(V\\) with distribution\n\n\\[\np(q)p(x_1,u|q)p(v|u,x_1,q)p(x_2|u,v,x_1,q).\n\\]\n\nHere \\(U\\) carries cooperative/common information associated with \\(M_1\\), and \\(V\\) carries cognitive information. One achievable pair has the form\n\n\\[\nR_1 \\le I(U,X_1;Y_1|Q),\n\\]\n\n\\[\nR_2 \\le I(V;Y_2|Q)-I(V;U,X_1|Q).\n\\]\n\nThe subtraction is the Gel'fand–Pinsker binning penalty. More elaborate schemes split both messages and jointly bin multiple private layers, producing additional individual- and sum-rate constraints.\n\n### 2.4 Joint or simultaneous decoding\n\nReceivers may jointly decode all layers intended for them and selected interfering common layers. Joint decoding generally gives less restrictive regions than forcing a particular successive-decoding order.\n\n---\n\n## 3. General achievable rate regions\n\nA full IC-DMS inner bound is usually described through auxiliary random variables representing:\n\n- a time-sharing variable \\(Q\\);\n- a common/cooperative layer;\n- a private layer for receiver 1;\n- a common cognitive layer;\n- a private cognitive layer;\n- one or more binning indices.\n\nThe random-coding proof follows the usual sequence:\n\n1. generate common and cooperative codebooks;\n2. superimpose private codebooks;\n3. search for bin indices producing jointly typical codewords;\n4. transmit the selected correlated pair \\((X_1^n,X_2^n)\\);\n5. apply simultaneous typicality decoding;\n6. combine covering and packing inequalities;\n7. eliminate auxiliary rates by Fourier–Motzkin elimination.\n\nThe resulting region contains inequalities of the schematic form\n\n\\[\nR_1 \\le I(\\text{layers decoded at receiver 1};Y_1)\n       -\\text{binning penalties},\n\\]\n\n\\[\nR_2 \\le I(\\text{layers decoded at receiver 2};Y_2)\n       -\\text{binning penalties},\n\\]\n\nand\n\n\\[\nR_1+R_2 \\le\nI(\\text{jointly decoded layers};Y_i)\n-\\text{binning penalties},\n\\]\n\nwith further weighted-sum constraints when both messages are split.\n\nThe operational importance of the region is greater than any single algebraic representation: by setting auxiliaries or split rates to constants, it specializes to several familiar schemes.\n\n- **Han–Kobayashi coding:** suppress cognition and binning.\n- **Gel'fand–Pinsker coding:** retain a private cognitive layer and bin against the known message.\n- **Decode-both or strong-interference coding:** make both messages common.\n- **Broadcast-channel coding:** remove the noncognitive transmitter.\n- **Multiple-access coding:** require both receivers, or the relevant receiver, to decode both messages.\n- **Pure superposition:** eliminate binning.\n- **Dirty-paper coding:** use Gaussian auxiliaries with the Costa coefficient.\n\nSome formulations use **sequential binning**, whereas stronger formulations use **joint binning** or allow a more general correlation structure. The latter generally yield the largest known single-letter inner bounds.\n\n---\n\n## 4. Outer bounds and capacity results\n\nFor an arbitrary discrete memoryless IC-DMS, the full capacity region is not known. Converse bounds are obtained using Fano’s inequality, genie-aided side information, and the fact that the cognitive transmitter knows both messages.\n\nTypical outer-bound terms include\n\n\\[\nR_1 \\le I(Y_1;X_1,X_2|U,Q),\n\\]\n\n\\[\nR_2 \\le I(Y_2;U,X_2|Q),\n\\]\n\nand sum-rate bounds such as\n\n\\[\nR_1+R_2\n\\le I(Y_2;U,X_2|Q)\n   +I(Y_1;X_1|U,X_2,Q),\n\\]\n\nor their receiver-swapped variants. The exact form depends on the message-numbering convention and the chosen auxiliary variable. Outer bounds often permit more input correlation than a noncognitive interference channel because cognition makes correlated transmission feasible.\n\nCapacity is known in several important regimes.\n\n### Strong interference\n\nWhen the unintended receiver can decode the interfering message at least as reliably as the intended receiver, both receivers can decode both relevant message layers. The capacity region then resembles the intersection of multiple-access regions, modified to account for encoder cooperation.\n\n### Very strong interference\n\nIf interference is sufficiently strong that decoding it imposes no additional rate loss, the capacity region reduces further, often to two single-user bounds plus a redundant sum-rate constraint.\n\n### Weak or degraded regimes\n\nUnder suitable stochastic-degradedness or less-noisy conditions, the cognitive receiver need not decode the primary message, or vice versa. Binning/DPC can then achieve the outer bound. These regimes provide some of the cleanest exact capacity results.\n\n### Semi-deterministic and deterministic subclasses\n\nWhen one output is a deterministic function of the inputs, entropy-based inner and outer bounds often coincide. Such models are useful for understanding which message parts should be decoded and which should be precoded.\n\n---\n\n## 5. Gaussian IC-DMS\n\nA common Gaussian convention places cognition at transmitter 1:\n\n\\[\nY_1=X_1+aX_2+Z_1,\n\\]\n\n\\[\nY_2=bX_1+X_2+Z_2,\n\\]\n\nwhere transmitter 1 knows both messages, transmitter 2 knows only the primary message, and\n\n\\[\n\\mathbb E|X_i|^2\\le P_i.\n\\]\n\nThe indices are the reverse of the discrete-memoryless convention used above, but the models are equivalent under relabeling.\n\nA useful Gaussian construction splits the cognitive signal as\n\n\\[\nX_1=X_{1p}\n+\\sqrt{\\frac{\\bar\\alpha P_1}{P_2}}\\,e^{j\\theta}X_2,\n\\qquad \\bar\\alpha=1-\\alpha.\n\\]\n\nThe second term cooperatively reinforces the primary transmission, while \\(X_{1p}\\), with power \\(\\alpha P_1\\), carries the cognitive message. Dirty-paper coding precancels the known \\(X_2\\)-dependent interference at the cognitive receiver.\n\nFor the standard weak-interference case \\(|b|\\le 1\\), one frequently obtained capacity characterization is the union over \\(0\\le\\alpha\\le1\\) of\n\n\\[\nR_1\\le C(\\alpha P_1),\n\\]\n\n\\[\nR_2\\le\nC\\!\\left(\n\\frac{\n\\left(\\sqrt{P_2}+|b|\\sqrt{\\bar\\alpha P_1}\\right)^2\n}{\n1+|b|^2\\alpha P_1\n}\n\\right),\n\\]\n\nwhere \\(C(x)=\\log_2(1+x)\\), up to real/complex normalization conventions.\n\nThis expression illustrates the central tradeoff:\n\n- increasing \\(\\alpha\\) gives more power to the cognitive message;\n- decreasing \\(\\alpha\\) gives more cooperative power to the primary message;\n- the private cognitive layer appears as interference at the primary receiver;\n- DPC removes the known primary interference from the cognitive link.\n\nIn strong Gaussian regimes, both receivers may decode both messages, and the achievable region instead contains MAC-type sum-rate constraints. For intermediate channel gains, combinations of rate splitting, partial decoding, superposition, and DPC are generally required.\n\n---\n\n## 6. Comparison with earlier schemes\n\nThe main advances of modern IC-DMS coding regions over earlier proposals can be summarized as follows.\n\n### Versus treating interference as noise\n\nCognition is used not merely to avoid interference but to shape it. Cooperative correlation and binning can produce large rate gains, especially when the cross-links are not negligible.\n\n### Versus ordinary Han–Kobayashi coding\n\nHan–Kobayashi rate splitting does not exploit noncausal message knowledge. IC-DMS schemes add:\n\n- coherent assistance for the noncognitive user;\n- codeword correlation;\n- Gel'fand–Pinsker binning;\n- asymmetric decoding tailored to cognition.\n\nThe ordinary Han–Kobayashi region is recovered as a special case.\n\n### Versus pure dirty-paper coding\n\nPure DPC protects the cognitive transmission from a known signal, but may fail to exploit partial decoding or cooperative beamforming. It can therefore be suboptimal outside weak-interference regimes.\n\n### Versus early cognitive-interference regions\n\nEarlier regions often imposed restrictive superposition orders, binned only one layer, or required a receiver to decode an unnecessary message component. More general constructions enlarge the region through:\n\n- independent splitting of both messages;\n- joint binning;\n- simultaneous decoding;\n- optimized codeword correlation;\n- flexible designation of common and private layers.\n\n### Relation to broadcast-channel coding\n\nThe cognitive transmitter resembles a broadcast encoder because it knows both messages, but the noncognitive transmitter constrains the available codeword structure. Marton-type binning ideas are relevant, yet the IC-DMS is not simply a broadcast channel because the two channel inputs are generated by encoders with unequal message knowledge.\n\n---\n\n## 7. Numerical findings\n\nNumerical studies of Gaussian IC-DMS regions generally report the following patterns.\n\n1. **Weak interference:**  \n   DPC combined with cooperative transmission closely approaches, and in known weak regimes attains, the outer bound. The optimal strategy typically allocates part of the cognitive power to assisting the primary user.\n\n2. **Strong interference:**  \n   Decode-both or MAC-style strategies become preferable. The value of binning decreases because the interference is strong enough to be decoded reliably.\n\n3. **Intermediate interference:**  \n   The largest improvements from the full coding architecture occur here. Neither treating interference as noise, pure DPC, nor full decoding dominates uniformly. Rate splitting and partial interference decoding give visibly larger achievable regions.\n\n4. **Asymmetric channel gains:**  \n   Cognition provides the largest benefit when the cognitive transmitter has a strong link to the noncognitive receiver. Coherent cooperation can then substantially raise the primary rate with only a moderate reduction in cognitive rate.\n\n5. **Boundary behavior:**  \n   Different sections of the achievable boundary are generated by different parameter choices. One scheme may maximize the cognitive corner point, another the primary corner point, and a mixed scheme the sum-rate portion.\n\n6. **Comparison with outer bounds:**  \n   Inner and outer bounds coincide in established weak, strong, very-strong, degraded, or deterministic regimes. In the general moderate-interference Gaussian case, a gap remains, although sophisticated joint-binning regions are typically tighter than earlier superposition-only or single-binning regions.\n\n7. **Optimization sensitivity:**  \n   Numerical gains depend on optimizing power splits, DPC coefficients, message-split rates, decoding assignments, and input correlations. Restricting these parameters can make two theoretically different regions appear artificially similar.\n\n## 8. Overall significance\n\nThe IC-DMS demonstrates how **asymmetric message knowledge transforms interference into a resource**. The cognitive transmitter can simultaneously precode against known interference, help transmit the other user’s message, and control which signal components are decoded at each receiver. The strongest known achievable regions therefore blend Han–Kobayashi rate splitting, superposition coding, Gel'fand–Pinsker or dirty-paper binning, cooperative transmission, and joint decoding.\n\nThe general capacity region remains open, particularly for Gaussian channels with intermediate interference. Nevertheless, the established inner and outer bounds give exact capacity in several important regimes and show numerically that the benefits of cognition are often largest precisely where neither pure interference cancellation nor full interference decoding is adequate.",
+      "label": "cf_5"
+    }
+  ],
+  "level_metrics": {
+    "L1": {
+      "actual_ratio": 0.667595818815331,
+      "excess_ratio": 0.577087111615347,
+      "baseline_mean": 0.09050870719998405,
+      "baseline_n_valid": 5,
+      "output_chars": 820,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.6880733944954128,
+          "baseline_mean": 0.07119018981939917,
+          "excess_ratio": 0.6168832046760137
+        },
+        "bz2": {
+          "actual_ratio": 0.5469728601252609,
+          "baseline_mean": 0.08454419104259607,
+          "excess_ratio": 0.46242866908266483
+        },
+        "lzma": {
+          "actual_ratio": 0.7615384615384615,
+          "baseline_mean": 0.1135851492104218,
+          "excess_ratio": 0.6479533123280397
+        }
+      }
+    },
+    "L2": {
+      "actual_ratio": 0.44796691936595456,
+      "excess_ratio": 0.3574582121659705,
+      "baseline_mean": 0.09050870719998405,
+      "baseline_n_valid": 5,
+      "output_chars": 794,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.4153498871331828,
+          "baseline_mean": 0.07119018981939917,
+          "excess_ratio": 0.34415969731378365
+        },
+        "bz2": {
+          "actual_ratio": 0.384297520661157,
+          "baseline_mean": 0.08454419104259607,
+          "excess_ratio": 0.29975332961856094
+        },
+        "lzma": {
+          "actual_ratio": 0.5343511450381679,
+          "baseline_mean": 0.1135851492104218,
+          "excess_ratio": 0.42076599582774615
+        }
+      }
+    },
+    "L3": {
+      "actual_ratio": 0.3517401392111369,
+      "excess_ratio": 0.26123143201115284,
+      "baseline_mean": 0.09050870719998405,
+      "baseline_n_valid": 5,
+      "output_chars": 1454,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.32392273402674593,
+          "baseline_mean": 0.07119018981939917,
+          "excess_ratio": 0.25273254420734675
+        },
+        "bz2": {
+          "actual_ratio": 0.3286908077994429,
+          "baseline_mean": 0.08454419104259607,
+          "excess_ratio": 0.2441466167568468
+        },
+        "lzma": {
+          "actual_ratio": 0.39790575916230364,
+          "baseline_mean": 0.1135851492104218,
+          "excess_ratio": 0.28432060995188185
+        }
+      }
+    },
+    "L4": {
+      "actual_ratio": 0.10444524756053492,
+      "excess_ratio": 0.013936540360550864,
+      "baseline_mean": 0.09050870719998405,
+      "baseline_n_valid": 5,
+      "output_chars": 4527,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.07947740881872618,
+          "baseline_mean": 0.07119018981939917,
+          "excess_ratio": 0.008287218999327009
+        },
+        "bz2": {
+          "actual_ratio": 0.10955841252096143,
+          "baseline_mean": 0.08454419104259607,
+          "excess_ratio": 0.025014221478365364
+        },
+        "lzma": {
+          "actual_ratio": 0.12368972746331237,
+          "baseline_mean": 0.1135851492104218,
+          "excess_ratio": 0.010104578252890573
+        }
+      }
+    },
+    "L5": {
+      "actual_ratio": 0.07019631171921481,
+      "excess_ratio": -0.02031239548076924,
+      "baseline_mean": 0.09050870719998405,
+      "baseline_n_valid": 5,
+      "output_chars": 978,
+      "per_compressor": {
+        "zlib": {
+          "actual_ratio": 0.03474903474903475,
+          "baseline_mean": 0.07119018981939917,
+          "excess_ratio": -0.036441155070364425
+        },
+        "bz2": {
+          "actual_ratio": 0.07259528130671507,
+          "baseline_mean": 0.08454419104259607,
+          "excess_ratio": -0.011948909735881003
+        },
+        "lzma": {
+          "actual_ratio": 0.09803921568627451,
+          "baseline_mean": 0.1135851492104218,
+          "excess_ratio": -0.015545933524147293
+        }
+      }
+    }
+  },
+  "api_provenance": {
+    "config": {
+      "gpt_gateway": 2,
+      "max_output_tokens": 4096,
+      "require_status": "completed"
+    },
+    "main_calls": {
+      "L1_polish": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_00a8a7b1372ee12d006a88c6633c208193bdc2284f0779de7f",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 182,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 146,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 328
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:43:03.659656+00:00"
+      },
+      "L2_rewrite": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0c126b4e641d5a79006a88c66a05688190ad21e5396f7a21cd",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 185,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 149,
+          "output_tokens_details": {
+            "reasoning_tokens": 11
+          },
+          "total_tokens": 334
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:43:08.775129+00:00"
+      },
+      "L3_bullets": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0486a29f5c538005006a88c66f87f881959c77e21b4ebb63ac",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 195,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 104,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 299
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:43:13.795025+00:00"
+      },
+      "L3_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_08f8022b06feca6e006a88c67460888195aeeb9bc1fdedff5c",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 121,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 226,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 347
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:43:20.793695+00:00"
+      },
+      "L4_2sent": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_02ebb844c9188edc006a88c67af4548193be05387bf0129a6a",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 207,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 75,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 282
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:43:25.854471+00:00"
+      },
+      "L4_expand": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0ad681cb48acef5e006a88c67fff348193a28c26ab9bfb259d",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 90,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 801,
+          "output_tokens_details": {
+            "reasoning_tokens": 59
+          },
+          "total_tokens": 891
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:43:44.360912+00:00"
+      },
+      "L5_keywords": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_0437afc1175bf8f5006a88c692b47c819489cf55c158811c10",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 23,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 217,
+          "output_tokens_details": {
+            "reasoning_tokens": 50
+          },
+          "total_tokens": 240
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:43:51.557117+00:00"
+      }
+    },
+    "counterfactuals": {
+      "reconstruct": {
+        "api": "responses",
+        "client": "${HC_CLIENT_SCRIPT}",
+        "gateway": 2,
+        "requested_model": "gpt-5.6-sol",
+        "returned_model": "gpt-5.6-sol",
+        "response_id": "resp_01b8bd83508318ff006a88c699c49c81938792b527e0fb4a6e",
+        "status": "completed",
+        "incomplete_details": null,
+        "usage": {
+          "input_tokens": 258,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 160,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 418
+        },
+        "max_output_tokens": 4096,
+        "captured_at_utc": "2026-08-21T21:43:56.452784+00:00"
+      },
+      "outputs": [
+        {
+          "label": "cf_1",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0dde611c55c43bc5006a88c69f32908193943544f655edcc77",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 34,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 1560,
+                "output_tokens_details": {
+                  "reasoning_tokens": 847
+                },
+                "total_tokens": 1594
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:44:28.165640+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_2",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0c86039c41268632006a88c6beb8408195a0c2eb284c5d4777",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 30,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 545,
+                "output_tokens_details": {
+                  "reasoning_tokens": 253
+                },
+                "total_tokens": 575
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:44:42.197029+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_3",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0e685f555fae8c4c006a88c6cc71e881908ca4b8b8f6b6e3bb",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 36,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 238,
+                "output_tokens_details": {
+                  "reasoning_tokens": 76
+                },
+                "total_tokens": 274
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:44:50.293911+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_4",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_0649715cab390aed006a88c6d48ecc81939c2aff0005aa6e85",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 38,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 1488,
+                "output_tokens_details": {
+                  "reasoning_tokens": 655
+                },
+                "total_tokens": 1526
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:45:19.409595+00:00"
+            }
+          ]
+        },
+        {
+          "label": "cf_5",
+          "valid": true,
+          "attempts": [
+            {
+              "api": "responses",
+              "client": "${HC_CLIENT_SCRIPT}",
+              "gateway": 2,
+              "requested_model": "gpt-5.6-sol",
+              "returned_model": "gpt-5.6-sol",
+              "response_id": "resp_082dc6eab25f2339006a88c7267ad481979fc180a6e8ce06b8",
+              "status": "completed",
+              "incomplete_details": null,
+              "usage": {
+                "input_tokens": 38,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 4081,
+                "output_tokens_details": {
+                  "reasoning_tokens": 1002
+                },
+                "total_tokens": 4119
+              },
+              "max_output_tokens": 4096,
+              "captured_at_utc": "2026-08-21T21:47:14.047915+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
